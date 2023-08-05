@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Mako Template</title>
+</head>
+<body>
+    <h1>${word}</h1>
+    <table>
+    	% for rd in rds:
+        	${makerow(rd)}
+    	% endfor
+	</table>
+</body>
+</html>
+<%def name="makerow(row)">
+    <tr>
+    % for name in row:
+        <td>${row[name]}</td>\
+    % endfor
+    </tr>
+</%def>
