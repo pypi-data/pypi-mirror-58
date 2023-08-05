@@ -1,0 +1,12 @@
+README.md
+setup.py
+gcp_jwt.egg-info/PKG-INFO
+gcp_jwt.egg-info/SOURCES.txt
+gcp_jwt.egg-info/dependency_links.txt
+gcp_jwt.egg-info/requires.txt
+gcp_jwt.egg-info/top_level.txt
+gcpjwt/__init__.py
+gcpjwt/jwt.py
+gcpjwt/jwt_signer.py
+resources/requirements.txt
+resources/setup.json
