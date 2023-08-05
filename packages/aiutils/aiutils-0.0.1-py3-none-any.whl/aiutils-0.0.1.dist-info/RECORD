@@ -1,0 +1,10 @@
+aiutils-0.0.1.data/scripts/ml_utils,sha256=JQ459WV4bTKE61LUL47kEwQGBlZcmqNsz4yiJIqiJgg,43
+mlutils/__init__.py,sha256=4RnUo3OMmc1HRkwxuH-4uLYQ3o4YKDE_1GLZHVZM6jw,120
+mlutils/model_comparison/__init__.py,sha256=fXFC5XWE8Pmh2p2wq8akr-PfotP_Z89SiVkWIyNVZoM,148
+mlutils/model_comparison/_classification.py,sha256=x93IkyFq9DNuJja0KKzwTJsD8E_aqwI_hXNVwNSEy5w,3097
+mlutils/model_comparison/_regression.py,sha256=uKrFUyQoy-CrRpuSz_FGYoFxjq_-WPXA5fjg5hm8iIg,687
+aiutils-0.0.1.dist-info/LICENSE,sha256=cANZumfvb43q3v_jLf690ouYzlI6BMErVIU2SeolFxE,1069
+aiutils-0.0.1.dist-info/METADATA,sha256=Qrbr-0zfmEN_WCzhcKA-pZcs1itD8xAoRO-j_7hpctQ,626
+aiutils-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aiutils-0.0.1.dist-info/top_level.txt,sha256=lj6rPZ2ZZq_9UA_ItCI3CE5N5mP-uBwaV7I9vcfz9JY,8
+aiutils-0.0.1.dist-info/RECORD,,
