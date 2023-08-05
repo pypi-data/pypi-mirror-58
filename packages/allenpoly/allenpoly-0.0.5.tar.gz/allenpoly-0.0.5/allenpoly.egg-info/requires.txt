@@ -1,0 +1,5 @@
+python-dateutil<2.8.1,>=2.1
+docutils<0.16,>=0.10
+rhea==0.5.4
+allennlp>=0.9.0
+polyaxon-client>=0.5.6
