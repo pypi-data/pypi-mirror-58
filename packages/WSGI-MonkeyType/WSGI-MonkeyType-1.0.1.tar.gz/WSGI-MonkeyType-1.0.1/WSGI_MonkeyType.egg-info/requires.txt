@@ -1,0 +1,8 @@
+monkeytype
+
+[flask]
+Flask
+
+[mysql]
+mysqlclient
+DBUtils
