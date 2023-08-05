@@ -1,0 +1,11 @@
+Shapely
+colander
+crabpy
+crabpy_pyramid
+geoalchemy2
+geojson<2.5.0
+oe_utils>=1.5.0
+pycountry<=18.5.26
+pyproj
+pyramid
+requests
