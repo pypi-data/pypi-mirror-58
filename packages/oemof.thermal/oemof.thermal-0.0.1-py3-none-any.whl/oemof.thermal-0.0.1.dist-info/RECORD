@@ -1,0 +1,10 @@
+oemof/thermal/__init__.py,sha256=iu1il8nkF-oskp3c-IgjNRbgDlv4_1QIV3I9heu51uk,52
+oemof/thermal/compression_heatpumps_and_chillers.py,sha256=VwfTlseDQGk_7acquJq3v1iw9fOAJRI4-HUiQTFRT9k,8137
+oemof/thermal/concentrating_solar_power.py,sha256=plViQyIyOGEMx-VftOEIVIciGTdw4ASDz9qzZk5OMnM,8979
+oemof/thermal/flat_plate_collector.py,sha256=IrmMTJVxty53V0m_WYurKgp6S0fED3lyme7xdWQf16M,5260
+oemof/thermal/stratified_thermal_storage.py,sha256=qgNLk_n9w3GuWdIioF2A7LtBdKLO5kSlym5jCJGtefU,6049
+oemof.thermal-0.0.1.dist-info/LICENSE,sha256=dDvem5SLO0_jpReXqyK43pTwxfS1K0HM8KGl_EUZYDQ,1079
+oemof.thermal-0.0.1.dist-info/METADATA,sha256=zc5xDdQO3et9s63MABmYJtq3L6i-748D6du1lwM_f2o,3006
+oemof.thermal-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+oemof.thermal-0.0.1.dist-info/top_level.txt,sha256=rPamn2dsitSsJuJRFBk24QkIPnP3ksui9f34PGkqdA0,6
+oemof.thermal-0.0.1.dist-info/RECORD,,
