@@ -1,0 +1,17 @@
+CHANGES.md
+MANIFEST.in
+README.md
+setup.py
+HtmlDiagnose/HtmlDiagnose.py
+HtmlDiagnose/HtmlDiagnose.pyc
+HtmlDiagnose/__init__.py
+HtmlDiagnose/__init__.pyc
+HtmlDiagnose/__main__.py
+HtmlDiagnose.egg-info/PKG-INFO
+HtmlDiagnose.egg-info/SOURCES.txt
+HtmlDiagnose.egg-info/dependency_links.txt
+HtmlDiagnose.egg-info/not-zip-safe
+HtmlDiagnose.egg-info/requires.txt
+HtmlDiagnose.egg-info/top_level.txt
+HtmlDiagnose/__pycache__/HtmlDiagnose.cpython-37.pyc
+HtmlDiagnose/__pycache__/__init__.cpython-37.pyc
