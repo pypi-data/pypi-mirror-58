@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+noflix.egg-info/PKG-INFO
+noflix.egg-info/SOURCES.txt
+noflix.egg-info/dependency_links.txt
+noflix.egg-info/requires.txt
+noflix.egg-info/top_level.txt
