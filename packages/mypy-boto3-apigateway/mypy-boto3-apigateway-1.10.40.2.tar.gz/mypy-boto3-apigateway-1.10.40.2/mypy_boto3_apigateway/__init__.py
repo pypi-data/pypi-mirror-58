@@ -1,0 +1,46 @@
+"Main interface for apigateway service"
+from mypy_boto3_apigateway.client import APIGatewayClient as Client, APIGatewayClient
+from mypy_boto3_apigateway.paginator import (
+    GetApiKeysPaginator,
+    GetAuthorizersPaginator,
+    GetBasePathMappingsPaginator,
+    GetClientCertificatesPaginator,
+    GetDeploymentsPaginator,
+    GetDocumentationPartsPaginator,
+    GetDocumentationVersionsPaginator,
+    GetDomainNamesPaginator,
+    GetGatewayResponsesPaginator,
+    GetModelsPaginator,
+    GetRequestValidatorsPaginator,
+    GetResourcesPaginator,
+    GetRestApisPaginator,
+    GetSdkTypesPaginator,
+    GetUsagePaginator,
+    GetUsagePlanKeysPaginator,
+    GetUsagePlansPaginator,
+    GetVpcLinksPaginator,
+)
+
+
+__all__ = (
+    "APIGatewayClient",
+    "Client",
+    "GetApiKeysPaginator",
+    "GetAuthorizersPaginator",
+    "GetBasePathMappingsPaginator",
+    "GetClientCertificatesPaginator",
+    "GetDeploymentsPaginator",
+    "GetDocumentationPartsPaginator",
+    "GetDocumentationVersionsPaginator",
+    "GetDomainNamesPaginator",
+    "GetGatewayResponsesPaginator",
+    "GetModelsPaginator",
+    "GetRequestValidatorsPaginator",
+    "GetResourcesPaginator",
+    "GetRestApisPaginator",
+    "GetSdkTypesPaginator",
+    "GetUsagePaginator",
+    "GetUsagePlanKeysPaginator",
+    "GetUsagePlansPaginator",
+    "GetVpcLinksPaginator",
+)
