@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: brainfuck-interpreter
+Version: 1.0.0
+Summary: An object-oriented highly flexible brainfuck interpreter.
+Home-page: https://github.com/DismissedGuy/brainfuck-interpreter
+Author: Mike A.
+Author-email: dismissed.is.a.guy@gmail.com
+License: UNKNOWN
+Description: # brainfuck-interpreter
+        An object-oriented highly flexible brainfuck interpreter.
+        
+        ## Why?
+        Even though there are probably countless of other options,
+        I've made this because I found other projects were too high-level for me
+        and didn't provide much control over the interpreter.
+        This module, however, allows the developer to access, modify and
+        control every piece of how the brainfuck is evaluated, making this
+        program superior to other projects.
+        
+        It was also a fun project to work on in general.
+        
+        ## Features
+        * Object-oriented
+        * Easy to use
+        * Logging integration
+        * Allows streaming of brainfuck code
+        * Manual input/output stream control
+        * Manual interpreter stepping
+        
+        ## Examples
+        A basic example which should suit most usages of this library:
+        ```python
+        import brainfuck
+        
+        bf = '+[----->+++<]>+.---.+++++++..+++.[--->+<]>----.'
+        print(brainfuck.evaluate(bf))  # hello!
+        ```
+        For examples featuring more control over the interpreter,
+        check out [the examples directory](examples).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Interpreters
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
