@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sp-ask-running-total-daily-report
+Version: 0.1.5
+Summary: An helper that create and Excel document representing the number of chats per day
+Author: Guinsly Mondesir
+Author-email: guinslym@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: XlsxWriter (>=1.2,<2.0)
+Requires-Dist: ask_academic_dates (>=0.2.3,<0.3.0)
+Requires-Dist: ask_schools (>=0.2.4,<0.3.0)
+Requires-Dist: lh3api (>=0.2.0,<0.3.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: pdbpp (>=0.10.2,<0.11.0)
+Requires-Dist: xlrd (>=1.2,<2.0)
