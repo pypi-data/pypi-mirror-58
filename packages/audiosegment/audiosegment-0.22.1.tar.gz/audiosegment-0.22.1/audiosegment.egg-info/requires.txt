@@ -1,0 +1,9 @@
+pydub
+webrtcvad
+numpy
+
+[Mel Frequencies]
+librosa
+
+[Optimizations]
+scipy

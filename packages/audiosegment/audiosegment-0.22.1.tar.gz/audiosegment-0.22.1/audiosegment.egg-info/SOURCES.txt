@@ -1,0 +1,14 @@
+README.md
+audiosegment.py
+setup.cfg
+setup.py
+algorithms/__init__.py
+algorithms/asa.py
+algorithms/eventdetection.py
+algorithms/filters.py
+algorithms/util.py
+audiosegment.egg-info/PKG-INFO
+audiosegment.egg-info/SOURCES.txt
+audiosegment.egg-info/dependency_links.txt
+audiosegment.egg-info/requires.txt
+audiosegment.egg-info/top_level.txt
