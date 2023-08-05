@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nowcast
+Version: 0.1.1
+Summary: Light, modular framework for dynamic time series modeling
+Home-page: https://github.com/fl16180/nowcast
+Author: Fred Lu
+Author-email: fredlu.flac@gmail.com
+License: GPL-3.0
+Description: See GitHub for description
+Platform: UNKNOWN
