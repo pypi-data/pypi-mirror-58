@@ -1,0 +1,6 @@
+safetydance
+type_extensions
+
+[testing]
+pytest
+pytest-cov
