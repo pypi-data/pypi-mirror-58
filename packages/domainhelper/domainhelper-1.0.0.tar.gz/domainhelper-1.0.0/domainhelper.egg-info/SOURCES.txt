@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+domainhelper/__init__.py
+domainhelper/domain_suffix.json
+domainhelper/domainhelper.py
+domainhelper.egg-info/PKG-INFO
+domainhelper.egg-info/SOURCES.txt
+domainhelper.egg-info/dependency_links.txt
+domainhelper.egg-info/top_level.txt
