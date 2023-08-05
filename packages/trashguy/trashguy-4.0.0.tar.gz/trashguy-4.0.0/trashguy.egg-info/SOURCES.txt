@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+trashguy/__init__.py
+trashguy/__main__.py
+trashguy/_frame_engine.py
+trashguy/_types.py
+trashguy/trashguy.py
+trashguy/version.py
+trashguy.egg-info/PKG-INFO
+trashguy.egg-info/SOURCES.txt
+trashguy.egg-info/dependency_links.txt
+trashguy.egg-info/top_level.txt
+trashguy.egg-info/zip-safe
