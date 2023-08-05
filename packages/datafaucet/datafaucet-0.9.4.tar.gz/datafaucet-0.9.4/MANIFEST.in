@@ -1,0 +1,8 @@
+include datafaucet/cli/templates/metadata.ignore.yml
+include datafaucet/schemas/default.yml
+include datafaucet/schemas/top.yml
+include datafaucet/schemas/provider.yml
+include datafaucet/schemas/resource.yml
+include datafaucet/cli/templates/metadata.ignore.yml
+recursive-include datafaucet/cli/templates/ingest *
+recursive-include datafaucet/cli/templates/default *

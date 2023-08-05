@@ -1,0 +1,31 @@
+%YAML 1.2
+---
+profile: default
+variables: {}
+engine:
+    type: spark
+    master: local[*]
+    config: {}
+    submit: 
+        detect: true
+        jars: []
+        packages: []
+        py-files: []
+        
+providers: {}
+resources: {}
+
+logging:
+    level: info
+    stdout: true
+    file:  null
+    kafka: [ ]
+
+---
+profile: prod
+---
+profile: stage
+---
+profile: test
+---
+profile: dev
