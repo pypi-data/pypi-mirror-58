@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+django-admin-knows-password/__init__.py
+django-admin-knows-password/admin.py
+django-admin-knows-password/forms.py
+django_admin_knows_password.egg-info/PKG-INFO
+django_admin_knows_password.egg-info/SOURCES.txt
+django_admin_knows_password.egg-info/dependency_links.txt
+django_admin_knows_password.egg-info/requires.txt
+django_admin_knows_password.egg-info/top_level.txt
