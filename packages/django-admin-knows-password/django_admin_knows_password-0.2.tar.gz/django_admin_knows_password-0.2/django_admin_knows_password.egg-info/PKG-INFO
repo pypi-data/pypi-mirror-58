@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django-admin-knows-password
+Version: 0.2
+Summary: Django package that provides widget to display images.
+Home-page: https://github.com/serhiibeznisko/django-admin-knows-password
+Author: Serhii Beznisko
+Author-email: beznisko.ss@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: django,admin,user,password,widget
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
