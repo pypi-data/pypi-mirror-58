@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: RobotPy-Limelight
+Version: 2020.0.3
+Summary: RobotPy Limelight utilities
+Home-page: https://pypi.org/project/robotpy-limelight
+Author: Josh Bacon
+Author-email: bacon.josh09@gmail.com
+License: LICENSE
+Description: Robotpy Limelight API
+        =====================
+        
+        
+        This is a simple library for adding a wrapper to use a limelight in robotpy.
+        
+Platform: UNKNOWN
