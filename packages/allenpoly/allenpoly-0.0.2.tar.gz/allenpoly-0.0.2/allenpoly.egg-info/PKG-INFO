@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: allenpoly
+Version: 0.0.2
+Summary: An library to use AllenNLP library in Polyaxon environment.
+Home-page: https://bitbucket.org/evidenceprime/allenpoly
+Author: Evidence Prime Sp. z o.o.
+Author-email: mateusz.pieniak@evidenceprime.com
+License: BSD
+Description: # Allenpoly
+        
+        Extension of AllenNLP that allows to train models in Polyaxon cluster. 
+        
+        Local usage:
+        ```
+        $ export POLYAXON_NO_OP=true
+        $ allenpoly train config.json --include-package your_package --serialization_dir ./experiment_dir/  
+        ```
+        
+        Polyaxon cluster usage:
+        
+        Example experiment file:
+        ```
+        ...
+        
+        run:
+          cmd: allenpoly train config.json --include-package your_package --serialization_dir $POLYAXON_RUN_OUTPUTS_PATH
+        ```
+Keywords: allennlp,polyaxon
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
