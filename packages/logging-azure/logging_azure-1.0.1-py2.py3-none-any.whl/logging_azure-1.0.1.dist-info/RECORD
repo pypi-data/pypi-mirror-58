@@ -1,0 +1,11 @@
+logging_azure/__init__.py,sha256=QAdGkiJgmDbzfNlHiEH48RGO-Wqxjhlod23f_1hULT8,154
+logging_azure/configuration.py,sha256=T7Gn8clCc6otGenWu2Icj5UYjT-XIxMFw58oeTcq61E,952
+logging_azure/handler.py,sha256=jGwmZTAo5rB9SHpGza-gusKWTbMuj0VqF1bvNFmh-AY,981
+logging_azure/log_record.py,sha256=oYVB0kFz8doFFQEQJPqdU4r_qtAtKcq3sdMK4lFo5co,601
+logging_azure/log_service.py,sha256=B4Ift58O7zebTn4OGA5qDJHYFK2jMG1yKvLmc699ZSE,6450
+logging_azure/service_provider.py,sha256=xKOW3bYPd2TEoQM382Tp6lhczlZUKE_Q9Jo5aHdbH48,357
+logging_azure-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+logging_azure-1.0.1.dist-info/METADATA,sha256=cafgIAcUSiA6q6KRxza7DmHT-1JQ3RIDQ9xnwJYuQdQ,7124
+logging_azure-1.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+logging_azure-1.0.1.dist-info/top_level.txt,sha256=DPYJNymrwRtqFi6E9_gDTMBoc6Ywyz6FU7FsIhxY0vQ,14
+logging_azure-1.0.1.dist-info/RECORD,,
