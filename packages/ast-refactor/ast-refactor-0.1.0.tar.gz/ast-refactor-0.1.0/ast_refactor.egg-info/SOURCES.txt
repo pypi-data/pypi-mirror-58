@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements-test.txt
+requirements.txt
+setup.py
+ast_refactor/__init__.py
+ast_refactor/cli.py
+ast_refactor/core.py
+ast_refactor/legacy_pandas.py
+ast_refactor/test_migrator.py
+ast_refactor.egg-info/PKG-INFO
+ast_refactor.egg-info/SOURCES.txt
+ast_refactor.egg-info/dependency_links.txt
+ast_refactor.egg-info/entry_points.txt
+ast_refactor.egg-info/requires.txt
+ast_refactor.egg-info/top_level.txt

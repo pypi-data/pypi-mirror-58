@@ -1,0 +1,3 @@
+[console_scripts]
+ast-refactor = ast_refactor.cli:cli
+
