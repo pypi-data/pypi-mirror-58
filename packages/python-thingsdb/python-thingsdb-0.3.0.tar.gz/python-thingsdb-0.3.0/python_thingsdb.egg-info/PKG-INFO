@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: python-thingsdb
+Version: 0.3.0
+Summary: ThingsDB Connector
+Home-page: https://github.com/thingsdb/python-thingsdb
+Author: Jeroen van der Heijden
+Author-email: jeroen@transceptor.technology
+License: MIT
+Description: The ThingsDB connector can be used to communicate with ThingsDB.
+        
+        Besides a connector it also contains an ORM layer which can be used for
+        creating models and subscribing to things within a collection.
+Keywords: database connector orm
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
