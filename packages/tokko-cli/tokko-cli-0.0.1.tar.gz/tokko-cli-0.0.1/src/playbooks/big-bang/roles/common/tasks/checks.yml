@@ -1,0 +1,4 @@
+--- 
+
+- debug:
+    msg: Check if OS it's Ubuntu 19.10

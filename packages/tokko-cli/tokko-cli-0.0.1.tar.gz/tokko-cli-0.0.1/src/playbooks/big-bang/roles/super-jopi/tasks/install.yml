@@ -1,0 +1,30 @@
+---
+
+- name: Clone repository SuperJopi
+  git:
+    repo: git@github.com:charce36/superjopi.git
+    dest: src/super-jopi-app
+    force: yes
+    version: LoginReact
+
+- name: Create & Install SuperJopi App
+  command: docker-compose -f src/super-jopi-app/docker-compose.yml up -d --force-recreate
+  register: pir 
+
+
+# - name: Lazy validation (UnitTest)
+#   command: docker-compose -f src/super-jopi-app/docker-compose.yml exec passport bash -c "python -m unittest tests.UnitTests" 
+#   register: lv_unit
+
+# - name: Lazy validation (ServiceTest)
+#   command: docker-compose -f src/super-jopi-app/docker-compose.yml exec passport bash -c "python -m unittest tests.ServiceTests" 
+#   register: lv_service
+
+- debug:
+   msg: "SuperJopi is installed."
+  when:  pir.rc == 0
+
+- debug:
+   msg: "SuperJopi installation fails. ErrCode: {{ pir.rc }}"
+  when:  pir.rc > 0
+  

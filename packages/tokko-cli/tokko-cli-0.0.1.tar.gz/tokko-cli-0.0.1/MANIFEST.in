@@ -1,0 +1,7 @@
+include src/playbooks/big-bang/roles/common/tasks/*.yml
+include src/playbooks/big-bang/roles/companies/tasks/*.yml
+include src/playbooks/big-bang/roles/docker/tasks/*.yml
+include src/playbooks/big-bang/roles/gateway/tasks/*.yml
+include src/playbooks/big-bang/roles/passport/tasks/*.yml
+include src/playbooks/big-bang/roles/super-jopi/tasks/*.yml
+include src/playbooks/big-bang/src/
