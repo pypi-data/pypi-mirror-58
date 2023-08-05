@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: goecharger
+Version: 0.0.1
+Summary: A Python API for accessing the go-eCharger EV-Charger
+Home-page: https://github.com/cathiele/goecharger
+Author: Carsten Thiele
+Author-email: software@carsten-thiele.de
+License: UNKNOWN
+Description: # goecharger
+        Python API for accessing the go-eCharger EV-Charger via local http-Endpoint
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
