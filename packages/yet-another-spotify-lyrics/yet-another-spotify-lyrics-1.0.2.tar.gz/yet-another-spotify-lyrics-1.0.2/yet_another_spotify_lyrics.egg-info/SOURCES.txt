@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+spotify_lyrics.py
+yet_another_spotify_lyrics.egg-info/PKG-INFO
+yet_another_spotify_lyrics.egg-info/SOURCES.txt
+yet_another_spotify_lyrics.egg-info/dependency_links.txt
+yet_another_spotify_lyrics.egg-info/entry_points.txt
+yet_another_spotify_lyrics.egg-info/requires.txt
+yet_another_spotify_lyrics.egg-info/top_level.txt
