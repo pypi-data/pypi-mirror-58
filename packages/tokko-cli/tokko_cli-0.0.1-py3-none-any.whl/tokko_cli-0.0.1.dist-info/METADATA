@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tokko-cli
+Version: 0.0.1
+Summary: Tokko broker developers CLI.
+Home-page: https://github.com/josesalgado1024/tokko-cli
+Author: Jose Salgado
+Author-email: jose.salgado.wrk@gmail.com
+License: BSD License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: arrow
+
+
+Seriously, 
+---
+
+I knows you deserve the most complete, easy-to-read, exemplified documentation in the world... 
+well, with all my respect, please let me say you the same Axel said several years ago,
+
+    "All we need is just a little patience" 
+
+
+
+_It is a fact, jokes aren't one of my best skills._
+
+

@@ -1,0 +1,30 @@
+---
+
+- name: Clone repository Passport
+  git:
+    repo: git@github.com:JoseSalgado1024/passport-service.git
+    force: yes
+    version: master
+    dest: src/passport-service
+
+- name: Create & Install Passport Service
+  command: docker-compose -f src/passport-service/docker-compose.yml up -d --force-recreate
+  register: pir 
+
+
+# - name: Lazy validation (ServiceTest)
+#   command: docker-compose -f src/passport-service/docker-compose.yml exec passport bash -c "python -m unittest tests.UnitTests" 
+#   register: lv_unit
+
+# - name: Lazy validation (ServiceTest)
+#   command: docker-compose -f src/passport-service/docker-compose.yml exec passport bash -c "python -m unittest tests.ServiceTests" 
+#   register: lv_service
+
+- debug:
+   msg: "Passport service is installed."
+  when:  pir.rc == 0
+
+- debug:
+   msg: "Passport installation fails. ErrCode: {{ pir.rc }}"
+  when:  pir.rc > 0
+  
