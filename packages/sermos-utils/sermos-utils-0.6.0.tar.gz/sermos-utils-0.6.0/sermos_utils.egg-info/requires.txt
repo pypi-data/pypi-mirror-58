@@ -1,0 +1,15 @@
+click>=7.0
+requests>=2.22.0
+PyYAML>=5.1
+marshmallow>=3.2.1
+
+[dev]
+honcho
+twine
+
+[test]
+pytest<6,>=5.2.4
+tox<4,>=3.14.1
+coverage<5,>=4.5
+mock<2,>=1
+responses<11,>=0.10.7
