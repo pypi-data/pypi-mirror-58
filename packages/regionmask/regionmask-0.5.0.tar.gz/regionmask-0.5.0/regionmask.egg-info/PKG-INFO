@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: regionmask
+Version: 0.5.0
+Summary: plotting and creation of masks for spatial regions
+Home-page: https://github.com/mathause/regionmask
+Author: mathause
+Author-email: mathause@ethz.com
+License: UNKNOWN
+Description: See https://github.com/mathause/regionmask
+Platform: UNKNOWN
+Provides-Extra: docs
