@@ -1,0 +1,14 @@
+README.md
+setup.py
+cli2telegram/__init__.py
+cli2telegram/cli.py
+cli2telegram/config.py
+cli2telegram/util.py
+cli2telegram.egg-info/PKG-INFO
+cli2telegram.egg-info/SOURCES.txt
+cli2telegram.egg-info/dependency_links.txt
+cli2telegram.egg-info/entry_points.txt
+cli2telegram.egg-info/requires.txt
+cli2telegram.egg-info/top_level.txt
+tests/__init__.py
+tests/test_message_processing.py
