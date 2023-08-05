@@ -1,0 +1,7 @@
+README.md
+deployalmera
+setup.py
+deployalmera.egg-info/PKG-INFO
+deployalmera.egg-info/SOURCES.txt
+deployalmera.egg-info/dependency_links.txt
+deployalmera.egg-info/top_level.txt
