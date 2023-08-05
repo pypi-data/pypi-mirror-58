@@ -1,0 +1,3 @@
+[console_scripts]
+insta-crawl = insta_hashtag_crawler.command:crawl
+
