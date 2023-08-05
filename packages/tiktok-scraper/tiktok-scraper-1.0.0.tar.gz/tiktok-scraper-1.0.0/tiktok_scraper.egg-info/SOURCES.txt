@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+tiktok_scraper/__init__.py
+tiktok_scraper/cli.py
+tiktok_scraper/downloader.py
+tiktok_scraper/scrape_utils.py
+tiktok_scraper/scraper.py
+tiktok_scraper.egg-info/PKG-INFO
+tiktok_scraper.egg-info/SOURCES.txt
+tiktok_scraper.egg-info/dependency_links.txt
+tiktok_scraper.egg-info/entry_points.txt
+tiktok_scraper.egg-info/requires.txt
+tiktok_scraper.egg-info/top_level.txt
