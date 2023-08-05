@@ -1,0 +1,11 @@
+LICENSE,sha256=uzz-4Qr5srOmhRuKJRh3xJUcjGwRYMcVRx_H3cYTgdc,1070
+frameup/__init__.py,sha256=yx4J9nELwFWyz4qUk597FvXaSvc5NhF-PKEbDDxvTEQ,104
+frameup/frameup.py,sha256=8FjFUh23fj7fLlJpMLmkWPLFWeB19X-gGvRhgz3CisE,4830
+frameup/serve.py,sha256=dXxm8dIFk2DKR0iAHxwzLMgAR2GXO8lMfChz5CAh_R4,1858
+frameup/templates/example.html,sha256=A5BGhRgXv6wjcRQhO0Md_N80tOJpyQOl6Ta_56q4t8M,1308
+frameup/templates/example.j2.html,sha256=4OFRxEA02ZwlGPYXMNWFWPS3JxR4Cn3Xd3ozejFfN_k,1325
+frameup-0.1.1.dist-info/entry_points.txt,sha256=2WVJiYhH8EAniGbQACWSnSMwRLiRTDNFuZ6vWd5gk_Q,46
+frameup-0.1.1.dist-info/LICENSE,sha256=uzz-4Qr5srOmhRuKJRh3xJUcjGwRYMcVRx_H3cYTgdc,1070
+frameup-0.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+frameup-0.1.1.dist-info/METADATA,sha256=h03IefNSS2kYpW0mOLva6eteJsQI6zenT_xalBeSPBQ,2194
+frameup-0.1.1.dist-info/RECORD,,
