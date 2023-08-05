@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+src/spotlight_sqlalchemy/__init__.py
+src/spotlight_sqlalchemy/errors.py
+src/spotlight_sqlalchemy/plugin.py
+src/spotlight_sqlalchemy/rules.py
+src/spotlight_sqlalchemy.egg-info/PKG-INFO
+src/spotlight_sqlalchemy.egg-info/SOURCES.txt
+src/spotlight_sqlalchemy.egg-info/dependency_links.txt
+src/spotlight_sqlalchemy.egg-info/requires.txt
+src/spotlight_sqlalchemy.egg-info/top_level.txt
+tests/__init__.py
+tests/database.py
+tests/exists_test.py
+tests/plugin_test.py
+tests/unique_test.py
