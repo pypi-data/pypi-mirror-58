@@ -1,0 +1,11 @@
+pipdate/__about__.py,sha256=AhQH_NCPT3vU2yCY50fqLBq06R7F1bhOYZGwr2xZDic,286
+pipdate/__init__.py,sha256=_eiP0_Ty19xJmFHxLnCib0Tvnl1Xi6dUrGTz-iNw93Y,347
+pipdate/cli.py,sha256=kHYTEKGNljz3xvV_2MWOFPQKd56CK1FPmwt3xabOU-4,707
+pipdate/main.py,sha256=IUbrVTLdfSvtv8lOPt_UafdFizES09EXb98yLNyfKnc,6679
+pipdate/update.py,sha256=MWqYZXC4z3FpZGAf0eXvNHhtgkqnND0pGjYOiUUyUyQ,982
+pipdate-0.3.5.dist-info/LICENSE,sha256=W0RENrfQRYi3y5ov8nFxsbXeFM73KgtD_As1Ai6Yj9M,1086
+pipdate-0.3.5.dist-info/METADATA,sha256=DjyR6eSG9QqcFmwTgP_LEszeQJ3JnBFL1vgXnLlQUa4,3363
+pipdate-0.3.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pipdate-0.3.5.dist-info/entry_points.txt,sha256=xVqfKPy-QQATpBGjEx8qu_-YEobxoLaYVaGow0sJHOg,49
+pipdate-0.3.5.dist-info/top_level.txt,sha256=KS2kFt0enQQ2WSD0F0niWSoAw5f968435El_P-mrX4o,8
+pipdate-0.3.5.dist-info/RECORD,,
