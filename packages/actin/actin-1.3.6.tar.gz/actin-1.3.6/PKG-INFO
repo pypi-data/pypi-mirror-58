@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: actin
+Version: 1.3.6
+Summary: Activity Indices Calculator
+Home-page: http://github.com/gomesdasilva/ACTIN
+Author: Joao Gomes da Silva
+Author-email: Joao.Silva@astro.up.pt
+License: MIT
+Download-URL: https://github.com/gomesdasilva/ACTIN/archive/v1.3.2.tar.gz
+Description: UNKNOWN
+Keywords: astronomy,activity,fits,harps,harps-n,espresso,radial velocity,exoplanets
+Platform: UNKNOWN
