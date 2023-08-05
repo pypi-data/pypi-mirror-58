@@ -1,0 +1,7 @@
+README.md
+setup.py
+memgraph/__init__.py
+memgraph.egg-info/PKG-INFO
+memgraph.egg-info/SOURCES.txt
+memgraph.egg-info/dependency_links.txt
+memgraph.egg-info/top_level.txt
