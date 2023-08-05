@@ -1,0 +1,164 @@
+{
+	"shapes": {
+		"enterprise": [{
+			"pen": {"color": "black", "width": 2},
+			"brush": {"color": "white"},
+			"elements": [
+				{
+					"type": "polygon",
+					"points": [
+						[-24, 0], [0, -24], [24, 0], [0, 24], [-24, 0]
+					]
+				}
+			]
+		}],
+
+		"place": [{
+			"pen": {"color": "black", "width": 2},
+			"brush": {"color": "white"},
+			"elements": [
+				{"type": "circle", "x": 0, "y": 0, "r": 18}
+			]
+		}],
+
+		"transition": [{
+			"pen": {"color": "black", "width": 2},
+			"brush": {"color": "white"},
+			"elements": [
+				{"type": "rect", "x": -18, "y": -18, "w": 36, "h": 36}
+			]
+		}],
+
+		"triangle": [{
+			"pen": {"color": "black", "width": 2},
+			"brush": {"color": "white"},
+			"elements": [
+				{
+					"type": "polygon",
+					"points": [
+						[-8, -8], [8, 0], [-8, 8], [-8, -8]
+					]
+				}
+			]
+		}],
+
+		"arrow": [{
+			"pen": {"color": "black", "width": 2},
+			"elements": [
+				{"type": "line", "curve": 0, "x1": -18, "y1": 0, "x2": 18, "y2": 0},
+				{"type": "line", "curve": 0, "x1": 18, "y1": 0, "x2": 10, "y2": 8},
+				{"type": "line", "curve": 0, "x1": 18, "y1": 0, "x2": 10, "y2": -8}
+			]
+		}],
+
+		"message": [{
+			"pen": {"color": "black", "width": 2},
+			"elements": [
+				{"type": "rect", "x": -18, "y": -13, "w": 36, "h": 26},
+				{"type": "line", "curve": 0, "x1": -18, "y1": -13, "x2": 0, "y2": 2},
+				{"type": "line", "curve": 0, "x1": 18, "y1": -13, "x2": 0, "y2": 2}
+			]
+		}],
+
+		"messageAnim": [{
+			"pen": {"color": "black", "width": 2},
+			"brush": {"color": "lightorange"},
+			"elements": [
+				{"type": "rect", "x": -9, "y": -6, "w": 18, "h": 13},
+				{"type": "line", "curve": 0, "x1": -9, "y1": -6, "x2": 0, "y2": 1},
+				{"type": "line", "curve": 0, "x1": 9, "y1": -6, "x2": 0, "y2": 1}
+			]
+		}],
+
+		"selection": [
+			{
+				"pen": {"color": "blue", "width": 2},
+				"brush": {"color": "lightblue"},
+				"elements": [
+					{"type": "rect", "x": -18, "y": -18, "w": 29, "h": 23}
+				]
+			},
+			{
+				"pen": {"color": "black", "width": 2},
+				"brush": {"color": "white"},
+				"elements": [
+					{
+						"type": "polygon",
+						"points": [
+							[7, 0], [7, 16], [11, 13], [14, 18], [17, 17], [14, 12], [18, 10], [7, 0]
+						]
+					}
+				]
+			}
+		],
+
+		"hand": [{
+			"pen": {"color": "black", "width": 2},
+			"brush": {"color": "white"},
+			"elements": [
+				{
+					"type": "polygon",
+					"points": [
+						[-3, -3], [-3, -10], [-8, -10], [0, -18], [8, -10], [3, -10],
+						[3, -3], [10, -3], [10, -8], [18, 0], [10, 8], [10, 3],
+						[3, 3], [3, 10], [8, 10], [0, 18], [-8, 10], [-3, 10],
+						[-3, 3], [-10, 3], [-10, 8], [-18, 0], [-10, -8], [-10, -3],
+						[-3, -3]
+					]
+				}
+			]
+		}],
+
+		"mouseleft": [
+			{
+				"pen": {"color": "black", "width": 2},
+				"elements": [
+					{"type": "arc", "x": -10, "y": -5, "w": 20, "h": 20, "start": 180, "span": 180},
+					{"type": "line", "curve": 0, "x1": -10, "y1": 5, "x2": -10, "y2": -5},
+					{"type": "line", "curve": 0, "x1": 10, "y1": 5, "x2": 10, "y2": -5},
+					{"type": "line", "curve": 0, "x1": -10, "y1": 0, "x2": 10, "y2": 0},
+					{"type": "line", "curve": 0, "x1": 0, "y1": 0, "x2": 0, "y2": -15},
+					{"type": "arc", "x": -10, "y": -15, "w": 20, "h": 20, "start": 0, "span": 90}
+				]
+			},
+			{
+				"pen": {"color": "blue", "width": 2},
+				"brush": {"color": "lightblue"},
+				"elements": [
+					{
+						"type": "polygon",
+						"points": [
+							[-10, 0], [-10, -10], [-5, -15], [0, -15], [0, 0], [-10, 0]
+						]
+					}
+				]
+			}
+		],
+
+		"mouseright": [
+			{
+				"pen": {"color": "black", "width": 2},
+				"elements": [
+					{"type": "arc", "x": -10, "y": -5, "w": 20, "h": 20, "start": 180, "span": 180},
+					{"type": "line", "curve": 0, "x1": -10, "y1": 5, "x2": -10, "y2": -5},
+					{"type": "line", "curve": 0, "x1": 10, "y1": 5, "x2": 10, "y2": -5},
+					{"type": "line", "curve": 0, "x1": -10, "y1": 0, "x2": 10, "y2": 0},
+					{"type": "line", "curve": 0, "x1": 0, "y1": 0, "x2": 0, "y2": -15},
+					{"type": "arc", "x": -10, "y": -15, "w": 20, "h": 20, "start": 90, "span": 90}
+				]
+			},
+			{
+				"pen": {"color": "blue", "width": 2},
+				"brush": {"color": "lightblue"},
+				"elements": [
+					{
+						"type": "polygon",
+						"points": [
+							[10, 0], [10, -10], [5, -15], [0, -15], [0, 0], [10, 0]
+						]
+					}
+				]
+			}
+		]
+	}
+}
