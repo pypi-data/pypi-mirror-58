@@ -1,0 +1,8 @@
+artellapipe
+artellapipe-libs-alembic
+
+[dev]
+wheel
+
+[test]
+pytest
