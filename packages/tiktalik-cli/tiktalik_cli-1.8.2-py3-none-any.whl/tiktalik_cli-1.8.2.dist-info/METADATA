@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tiktalik-cli
+Version: 1.8.2
+Summary: Tiktalik Computing command line interface
+Home-page: http://www.tiktalik.com
+Author: Techstorage sp. z o.o.
+Author-email: kontakt@tiktalik.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: tiktalik (>=1.5)
+
+UNKNOWN
+
+
