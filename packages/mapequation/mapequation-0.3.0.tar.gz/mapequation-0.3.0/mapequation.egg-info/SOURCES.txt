@@ -1,0 +1,10 @@
+README.md
+setup.py
+mapequation/__init__.py
+mapequation/codelength.py
+mapequation/grassberger.py
+mapequation/read_file.py
+mapequation.egg-info/PKG-INFO
+mapequation.egg-info/SOURCES.txt
+mapequation.egg-info/dependency_links.txt
+mapequation.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mapequation
+Version: 0.3.0
+Summary: Map Equation codelength calculator for multilevel state networks
+Home-page: https://github.com/mapequation/mapequation-py
+Author: Anton Eriksson
+Author-email: anton.eriksson@umu.se
+License: UNKNOWN
+Description: # mapequation-py
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
