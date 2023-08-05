@@ -1,0 +1,7 @@
+*.pyc
+.tox/
+TODO.txt
+build/
+dist/
+*egg-info/
+.eggs/
