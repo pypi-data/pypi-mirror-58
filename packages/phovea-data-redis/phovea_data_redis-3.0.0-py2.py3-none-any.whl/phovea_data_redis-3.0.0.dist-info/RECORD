@@ -1,0 +1,13 @@
+phovea_data_redis/__init__.py,sha256=A71XVYhEm9c0l8dqJxHg8Jx7im7B6Scw1sVmjP9lfdU,1034
+phovea_data_redis/assigner.py,sha256=1GZFfVVFPdjeAVSic_RLChj57bewUziFUELOYJsO94M,4909
+phovea_data_redis/cache.py,sha256=24OWK9PnHpXCaoLsMg2ouzNbM3rL5z_UbXF2IW5R27w,852
+phovea_data_redis/config.json,sha256=GVkoHhza7A-A3rTTevW-XouNe5Nd6uEvH1-ofEZXInQ,388
+phovea_data_redis/load.py,sha256=vepq0UR-6KOJWxDCW0QOIGhxvyR7MYvK36N0Gk2bf8s,1564
+phovea_data_redis/mapping_table.py,sha256=VNV6kF2I9GsSL49eH-1taCi98DEdF0DTHr2RfyxnZys,3384
+phovea_data_redis/utils.py,sha256=erRtxKB-vuc9A0MnF8uq7MoF1nP8G76f-dTjuwYW6r8,439
+phovea_data_redis-3.0.0.dist-info/LICENSE,sha256=SjMcNsrAChNglsZmQCRqb6Uf3yuHau84IHh8WBQ0B6Q,1506
+phovea_data_redis-3.0.0.dist-info/METADATA,sha256=Py_HCJRySPEuFVjBOGdyGWvFuABghXMQu8bCgma5ICI,3179
+phovea_data_redis-3.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+phovea_data_redis-3.0.0.dist-info/entry_points.txt,sha256=wjJFr4Ea5_HE-fqq83Oxx1w1sVBOJba3p48oFsIbwv4,133
+phovea_data_redis-3.0.0.dist-info/top_level.txt,sha256=apGrL94t_vot7bLP8W1yl7PhmL6S-Xpu4UMB99u_-Dg,18
+phovea_data_redis-3.0.0.dist-info/RECORD,,
