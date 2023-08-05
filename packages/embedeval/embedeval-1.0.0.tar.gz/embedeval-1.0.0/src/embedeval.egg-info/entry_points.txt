@@ -1,0 +1,3 @@
+[console_scripts]
+embedeval = embedeval.cli:cli
+
