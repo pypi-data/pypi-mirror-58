@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ffx
+Version: 2.0.0
+Summary: Fast Function Extraction: A fast, scalable, and deterministic symbolic regression tool.
+Home-page: https://github.com/natekupp/ffx
+Author: Trent McConaghy
+Author-email: gtrent@gmail.com
+Maintainer: Nate Kupp
+Maintainer-email: nathan.kupp@gmail.com
+License: See LICENSE
+Keywords: symbolic regression machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=5.0)
+Requires-Dist: contextlib2 (>=0.5.4)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: six
+Requires-Dist: sklearn
+
+UNKNOWN
+
+
