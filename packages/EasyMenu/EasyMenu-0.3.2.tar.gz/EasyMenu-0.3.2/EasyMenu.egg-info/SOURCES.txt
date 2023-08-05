@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+EasyMenu/__init__.py
+EasyMenu/menu.py
+EasyMenu/menu_nocolor.py
+EasyMenu.egg-info/PKG-INFO
+EasyMenu.egg-info/SOURCES.txt
+EasyMenu.egg-info/dependency_links.txt
+EasyMenu.egg-info/requires.txt
+EasyMenu.egg-info/top_level.txt
