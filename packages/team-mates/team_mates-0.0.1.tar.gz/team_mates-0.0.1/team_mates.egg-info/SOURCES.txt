@@ -1,0 +1,6 @@
+README.md
+setup.py
+team_mates.egg-info/PKG-INFO
+team_mates.egg-info/SOURCES.txt
+team_mates.egg-info/dependency_links.txt
+team_mates.egg-info/top_level.txt
