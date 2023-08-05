@@ -1,0 +1,2 @@
+recursive-include ros3d/static *.*
+include jupyros/etc/*.json
