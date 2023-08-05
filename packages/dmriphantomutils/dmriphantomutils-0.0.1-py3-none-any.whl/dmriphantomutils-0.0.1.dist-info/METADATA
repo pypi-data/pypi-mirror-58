@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dmriphantomutils
+Version: 0.0.1
+Summary: 3D printed diffusion phantom analysis
+Home-page: https://github.com/tkkuehn/dmri-phantom-utilities
+Author: Tristan Kuehn
+Author-email: tkuehn@uwo.ca
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: dipy
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+# dMRI Phantom Utilities
+
+This project contains tools for describing and analyzing diffusion MR images of 3D printed axon-mimetic (3AM) phantoms.
+
+For more information, please see the [official documentation](https://dmri-phantom-utilities.readthedocs.io/en/latest/).
+
+
+
