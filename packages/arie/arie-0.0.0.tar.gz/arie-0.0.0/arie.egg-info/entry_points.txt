@@ -1,0 +1,3 @@
+[console_scripts]
+arie = arie.__main__:main
+

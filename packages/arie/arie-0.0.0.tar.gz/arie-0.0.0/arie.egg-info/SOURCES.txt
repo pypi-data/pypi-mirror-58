@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+setup.cfg
+setup.py
+tox.ini
+arie/__init__.py
+arie/__main__.py
+arie.egg-info/PKG-INFO
+arie.egg-info/SOURCES.txt
+arie.egg-info/dependency_links.txt
+arie.egg-info/entry_points.txt
+arie.egg-info/top_level.txt
+tests/__init__.py
