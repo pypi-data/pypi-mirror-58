@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: harmonypy
+Version: 0.0.1
+Summary: A data integration method
+Home-page: https://github.com/slowkow/harmonypy
+Author: Kamil Slowikowski
+Author-email: kslowikowski@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# harmonypy
+
+An algorithm for integrating multiple high-dimensional datasets.
+
+This package is a port of the [harmony][harmonyR] R package by [Ilya Korsunsky].
+
+[harmonyR]: https://github.com/immunogenomics/harmony
+[Ilya Korsunsky]: https://github.com/ilyakorsunsky
+
+Status: in development... not tested yet. Please report issues!
+
+
+
