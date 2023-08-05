@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/burnham/__init__.py
+src/burnham/cli.py
+src/burnham.egg-info/PKG-INFO
+src/burnham.egg-info/SOURCES.txt
+src/burnham.egg-info/dependency_links.txt
+src/burnham.egg-info/entry_points.txt
+src/burnham.egg-info/not-zip-safe
+src/burnham.egg-info/requires.txt
+src/burnham.egg-info/top_level.txt

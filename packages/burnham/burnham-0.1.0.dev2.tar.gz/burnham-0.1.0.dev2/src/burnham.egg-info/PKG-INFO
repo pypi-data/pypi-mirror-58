@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: burnham
+Version: 0.1.0.dev2
+Summary: Application for end-to-end testing Mozilla's Glean telemetry. 👩‍🚀
+Home-page: https://github.com/hackebrot/burnham
+Author: Raphael Pierzina
+Author-email: raphael@hackebrot.de
+Maintainer: Raphael Pierzina
+Maintainer-email: raphael@hackebrot.de
+License: MPL 2.0
+Project-URL: Repository, https://github.com/hackebrot/burnham
+Project-URL: Issues, https://github.com/hackebrot/burnham/issues
+Description: # burnham
+        
+        Application for end-to-end testing Mozilla's Glean telemetry. 👩‍🚀
+        
+        ## Development status
+        
+        This project is under active development. Do not use it in production. ⚠️
+        
+Keywords: testing,telemetry,command-line
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
