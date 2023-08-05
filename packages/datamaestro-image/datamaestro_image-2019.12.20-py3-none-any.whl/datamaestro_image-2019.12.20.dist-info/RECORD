@@ -1,0 +1,17 @@
+datamaestro_image/__init__.py,sha256=0OJ4N3CqqdoS6dmC7NFwdxIDYY9erI3SiVzMWi7t3L0,211
+datamaestro_image/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamaestro_image/config/com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamaestro_image/config/com/lecun.py,sha256=CVCOJ3IPKji36JiWyJ2MMgA1k2ASBJdY3mPAzT4IJWE,1349
+datamaestro_image/config/org/cocodataset.yaml,sha256=1NdEu_XBUhdzeWJysmpzrxuMMTYNBz2IetltnKP9Ehg,1534
+datamaestro_image/config/org/imagenet.yaml,sha256=DkpYs-UbKmkLD-vQ1OriaPnqCmOL_DgXEZreLo1aAcg,1244
+datamaestro_image/config/org/visualgenome.yaml,sha256=7WPyGKmgHe72maMPinFQ9ZQnka2U2lWpsiOF4a8_q-k,1754
+datamaestro_image/config/uk/ac/cam/cl/facedb.yaml,sha256=9M--6GuI5_8aG7ZUqiKSkd5iDK2Sf1es6bS7sU_Gjl8,2383
+datamaestro_image/data/__init__.py,sha256=dEutNX6vj8Pe2N8UOmAxQ6zYPpXjRTjM2hO4fd8VIRM,617
+datamaestro_image/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamaestro_image/test/test_datasets.py,sha256=YhvuNRcbPfCIoiacaZ8Y6VUr6PiNqBV85UB_Pz4c1bM,241
+datamaestro_image-2019.12.20.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+datamaestro_image-2019.12.20.dist-info/METADATA,sha256=Ebq2ICLsLWXgPf12NoNyskcMXbJNsrSu2kwONyEGXvA,1541
+datamaestro_image-2019.12.20.dist-info/RECORD,,
+datamaestro_image-2019.12.20.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+datamaestro_image-2019.12.20.dist-info/entry_points.txt,sha256=nv2aCuAKbk18X_WZzVnAZ4REqEYeBcWf5sbAC76If2c,65
+datamaestro_image-2019.12.20.dist-info/top_level.txt,sha256=uksXyHeHzJIgYqyXQ-l_Ny_vhiXVhzdCIX3PcqmM1Xk,18
