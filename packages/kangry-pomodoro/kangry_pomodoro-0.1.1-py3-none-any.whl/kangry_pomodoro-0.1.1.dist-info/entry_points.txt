@@ -1,0 +1,3 @@
+[console_scripts]
+kangry-pomodoro=kangry_pomodoro.app:main
+
