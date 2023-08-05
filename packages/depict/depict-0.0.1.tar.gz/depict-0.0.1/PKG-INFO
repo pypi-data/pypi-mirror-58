@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: depict
+Version: 0.0.1
+Summary: Insightful plots in seconds
+Home-page: https://github.com/vboulanger/depict
+Author: Victor Boulanger
+Author-email: vb@live.fr
+License: UNKNOWN
+Description: # depict
+        Insightful plots in seconds
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
