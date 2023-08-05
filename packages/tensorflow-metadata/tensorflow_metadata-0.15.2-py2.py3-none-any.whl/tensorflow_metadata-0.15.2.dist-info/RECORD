@@ -1,0 +1,14 @@
+tensorflow_metadata/__init__.py,sha256=bFRX4o0z9SamGqLQhmEhVbhZU8Z1T-bSWh-PHtSNLM4,643
+tensorflow_metadata/version.py,sha256=5VJG5Z0i7_ixOKiy28oe85I232MfkqmH8tHORa7pzWo,715
+tensorflow_metadata/proto/__init__.py,sha256=COptIvIFVkZGQqEoE7KjOmsSqXt4ep-5B54srymM1-s,650
+tensorflow_metadata/proto/v0/__init__.py,sha256=2mwmgszyMqskBebKneVF7K6OYBTIl8CwbHQfEAY_IFo,653
+tensorflow_metadata/proto/v0/anomalies_pb2.py,sha256=BcUdKEJEt-q9DuW8eEJ1s5eqOFkPOzxBlYHXumZvjSQ,39784
+tensorflow_metadata/proto/v0/path_pb2.py,sha256=MkQdv3PLaa79qrDWj4IP5eER3vBx-IYEH5MM-vks5J4,2114
+tensorflow_metadata/proto/v0/schema_pb2.py,sha256=MjxMtCqmnhgbwh_Y7g-qxtzWHEQn8Hr10F-mSIYgwFs,99608
+tensorflow_metadata/proto/v0/statistics_pb2.py,sha256=qOeZ-4V6OtSrVVvVLSBnQp109906Z8D7QWnGSyTQfDU,63625
+tensorflow_metadata-0.15.2.dist-info/LICENSE,sha256=nfbNiq8HaBA4RqhQIYbtVaVKRcP3zZ_OUxtXPNQA2Nk,11418
+tensorflow_metadata-0.15.2.dist-info/METADATA,sha256=NFfzUQSFAuwLS_ctPQyUarHP7glL2b2B9cVSy-d6pWs,2244
+tensorflow_metadata-0.15.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+tensorflow_metadata-0.15.2.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tensorflow_metadata-0.15.2.dist-info/top_level.txt,sha256=MICqtr33n8FQrROvw9vgTf53srtogVkHE0SPbrWa9Eo,20
+tensorflow_metadata-0.15.2.dist-info/RECORD,,
