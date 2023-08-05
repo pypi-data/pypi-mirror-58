@@ -1,0 +1,5 @@
+mkdocs>=0.17
+repackage
+jinja2
+termcolor
+pyyaml
