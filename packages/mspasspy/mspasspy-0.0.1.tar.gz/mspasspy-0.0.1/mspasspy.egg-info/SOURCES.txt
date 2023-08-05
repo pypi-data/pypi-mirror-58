@@ -1,0 +1,6 @@
+setup.py
+mspasspy.egg-info/PKG-INFO
+mspasspy.egg-info/SOURCES.txt
+mspasspy.egg-info/dependency_links.txt
+mspasspy.egg-info/not-zip-safe
+mspasspy.egg-info/top_level.txt
