@@ -1,0 +1,10 @@
+gcp_jwt-0.1.8.data/data/resources/requirements.txt,sha256=RjE0oeTt_o1EJLWMAiwVcmkITburIqUVkvbXvZs9-b0,30
+gcp_jwt-0.1.8.data/data/resources/setup.json,sha256=ewjeup_2YDJDjFreGSUi43Ka6hes58QdfrfemFzlAic,261
+gcpjwt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcpjwt/jwt.py,sha256=0ym_DZurW_cTQmMzKs24jzXk8oj1_bzj4hQs6scvdUw,3888
+gcpjwt/jwt_signer.py,sha256=aoqdPJqwqMsWfA9jCs_9U06jLMxS6812SclJi6y2b9M,4549
+gcp_jwt-0.1.8.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+gcp_jwt-0.1.8.dist-info/METADATA,sha256=ImxUeNjdQVvLcZ5SaPbNt_eR9yiiz9k4jgtE6FpFhPc,1967
+gcp_jwt-0.1.8.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+gcp_jwt-0.1.8.dist-info/top_level.txt,sha256=TFsm9_M0G6wzUUVYRE-cxxOlEr0y7xxwjl5NkE1BLvM,7
+gcp_jwt-0.1.8.dist-info/RECORD,,
