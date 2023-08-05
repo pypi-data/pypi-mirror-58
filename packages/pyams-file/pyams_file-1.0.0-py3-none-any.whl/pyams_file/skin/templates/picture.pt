@@ -1,0 +1,55 @@
+<picture tal:define="image_url tales:absolute_url(image);
+					 thumbnails tales:thumbnails(image);">
+	<tal:if condition="xs_width">
+		<!-- xs source -->
+		<source media="(max-width: 767px)"
+				tal:define="width str(round(768 / 12 * xs_width));
+							thumb thumbnails.get_thumbnail(xs_thumb + ':w' + width);
+							timestamp tales:timestamp(thumb);"
+				srcset="${image_url}/++thumb++${xs_thumb}:w${width}?_=${timestamp}" />
+	</tal:if>
+	<source tal:condition="not:xs_width"
+			media="(max-width: 767px)"
+			srcset="/--static--/pyams_skin/img/dot.png" />
+	<tal:if condition="sm_width">
+		<!-- sm source -->
+		<source media="(max-width: 991px)"
+				tal:define="width str(round(992 / 12 * sm_width));
+							thumb thumbnails.get_thumbnail(sm_thumb + ':w' + width);
+							timestamp tales:timestamp(thumb);"
+				srcset="${image_url}/++thumb++${sm_thumb}:w${width}?_=${timestamp}" />
+	</tal:if>
+	<source tal:condition="not:sm_width"
+			media="(max-width: 991px)"
+			srcset="/--static--/pyams_skin/img/dot.png" />
+	<tal:if condition="md_width">
+		<!-- md source -->
+		<source media="(max-width: 1199px)"
+				tal:define="width str(round(1200 / 12 * md_width));
+							thumb thumbnails.get_thumbnail(md_thumb + ':w' + width);
+							timestamp tales:timestamp(thumb);"
+				srcset="${image_url}/++thumb++${md_thumb}:w${width}?_=${timestamp}" />
+	</tal:if>
+	<source tal:condition="not:md_width"
+			media="(max-width: 1199px)"
+			srcset="/--static--/pyams_skin/img/dot.png" />
+	<tal:if condition="lg_width">
+		<!-- lg source -->
+		<source media="(min-width: 1200px)"
+				tal:define="width str(round(1600 / 12 * lg_width));
+							thumb thumbnails.get_thumbnail(lg_thumb + ':w' + width);
+							timestamp tales:timestamp(thumb);"
+				srcset="${image_url}/++thumb++${lg_thumb}:w${width}?_=${timestamp}" />
+	</tal:if>
+	<source tal:condition="not:lg_width"
+			media="(min-width: 1200px)"
+			srcset="/--static--/pyams_skin/img/dot.png" />
+	<tal:if condition="def_width">
+		<!-- fallback image -->
+		<img style="width: 100%;" class="${css_class}"
+			 tal:define="width str(round(1200 / 12 * def_width));
+						 thumb thumbnails.get_thumbnail(def_thumb + ':w' + width);
+						 timestamp tales:timestamp(thumb);"
+			 alt="${alt}" src="${image_url}/++thumb++${def_thumb}:w${width}?_=${timestamp}" />
+	</tal:if>
+</picture>
