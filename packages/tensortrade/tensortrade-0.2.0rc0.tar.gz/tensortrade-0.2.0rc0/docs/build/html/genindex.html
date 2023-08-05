@@ -1,0 +1,1051 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Index &mdash; TensorTrade 0.1.0-rc0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.jpg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/getting_started.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/getting_started.html#docker">Docker</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples/overview.html">Code Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/train_and_evaluate.html">Train and Evaluate</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Component Types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/components.html">Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/component_types/trading_environment.html">Trading Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/component_types/exchange.html">Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/component_types/feature_pipeline.html">Feature Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/component_types/action_scheme.html">Action Scheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/component_types/reward_scheme.html">Reward Scheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/component_types/trading_strategy.html">Trading Strategy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Trading Environment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/environments/TradingEnvironment.html">TradingEnvironment</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Exchanges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/exchanges/Exchange.html">Exchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/exchanges/simulated/SimulatedExchange.html">SimulatedExchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/exchanges/simulated/FBMExchange.html">FBMExchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/exchanges/live/CCXTExchange.html">CCXTExchange</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/exchanges/live/InteractiveBrokersExchange.html">InteractiveBrokersExchange</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/features/FeaturePipeline.html">FeaturePipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/features/FeatureTransformer.html">FeatureTransformer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/features/scalers/MinMaxNormalizer.html">MinMaxNormalizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/features/scalers/StandardNormalizer.html">StandardNormalizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/features/stationarity/FractionalDifference.html">FractionalDifference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/features/indicators/TAlibIndicator.html">TAlibIndicator</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Actions</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/actions/ActionScheme.html">ActionScheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/actions/ContinuousActions.html">ContinuousActions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/actions/DiscreteActions.html">DiscreteActions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/actions/MultiDiscreteActions.html">MultiDiscreteActions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Rewards</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/rewards/RewardScheme.html">Reward Scheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/rewards/RiskAdjustedReturns.html">Risk Adjusted Returns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/rewards/SimpleProfit.html">Simple Profit</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Learning Agents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="agents/learning_agents.html">Learning Agents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agents/stable_baselines.html">Stable Baselines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agents/tensorforce.html">Tensorforce</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Strategies</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components/strategies/TradingStrategy.html">TradingStrategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/strategies/StableBaselinesTradingStrategy.html">StableBaselinesTradingStrategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components/strategies/TensorforceTradingStrategy.html">TensorforceTradingStrategy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/modules.html">API reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TensorTrade</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Index</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#_"><strong>_</strong></a>
+ | <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ 
+</div>
+<h2 id="_">_</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.__enter__">__enter__() (tensortrade.base.context.TradingContext method)</a>
+</li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.__init__">__init__() (tensortrade.actions.action_scheme.ActionScheme method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.__init__">(tensortrade.environments.trading_environment.TradingEnvironment method)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline.__init__">(tensortrade.features.feature_pipeline.FeaturePipeline method)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_transformer.html#tensortrade.features.feature_transformer.FeatureTransformer.__init__">(tensortrade.features.feature_transformer.FeatureTransformer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.indicators.simple_moving_average.html#tensortrade.features.indicators.simple_moving_average.SimpleMovingAverage.__init__">(tensortrade.features.indicators.simple_moving_average.SimpleMovingAverage method)</a>
+</li>
+        <li><a href="api/tensortrade.features.scalers.min_max_normalizer.html#tensortrade.features.scalers.min_max_normalizer.MinMaxNormalizer.__init__">(tensortrade.features.scalers.min_max_normalizer.MinMaxNormalizer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.scalers.standard_normalizer.html#tensortrade.features.scalers.standard_normalizer.StandardNormalizer.__init__">(tensortrade.features.scalers.standard_normalizer.StandardNormalizer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.stationarity.fractional_difference.html#tensortrade.features.stationarity.fractional_difference.FractionalDifference.__init__">(tensortrade.features.stationarity.fractional_difference.FractionalDifference method)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.risk_adjusted_returns.html#tensortrade.rewards.risk_adjusted_returns.RiskAdjustedReturns.__init__">(tensortrade.rewards.risk_adjusted_returns.RiskAdjustedReturns method)</a>
+</li>
+        <li><a href="api/tensortrade.slippage.random_slippage_model.html#tensortrade.slippage.random_slippage_model.RandomUniformSlippageModel.__init__">(tensortrade.slippage.random_slippage_model.RandomUniformSlippageModel method)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.__init__">(tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy method)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy.__init__">(tensortrade.strategies.trading_strategy.TradingStrategy method)</a>
+</li>
+        <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.__init__">(tensortrade.trades.trade.Trade method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.action_scheme">action_scheme() (tensortrade.environments.trading_environment.TradingEnvironment property)</a>
+</li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.action_space">action_space() (tensortrade.actions.action_scheme.ActionScheme property)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.actions">actions() (tensortrade.base.context.TradingContext property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme">ActionScheme (class in tensortrade.actions.action_scheme)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.agent">agent() (tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy property)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.amount">amount() (tensortrade.trades.trade.Trade property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.balance">balance() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.balance">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.balance">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.balance">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.balance">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.Context.base_instrument">base_instrument() (tensortrade.base.context.Context property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.base_instrument">(tensortrade.exchanges.exchange.Exchange property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.base_precision">base_precision() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.base_precision">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.base_precision">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.base_precision">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange">CCXTExchange (class in tensortrade.exchanges.live.ccxt_exchange)</a>
+</li>
+      <li><a href="api/tensortrade.features.feature_transformer.html#tensortrade.features.feature_transformer.FeatureTransformer.columns">columns() (tensortrade.features.feature_transformer.FeatureTransformer property)</a>
+</li>
+      <li><a href="api/tensortrade.base.component.html#tensortrade.base.component.Component">Component (class in tensortrade.base.component)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.Context">Context (class in tensortrade.base.context)</a>
+</li>
+      <li><a href="api/tensortrade.base.component.html#tensortrade.base.component.ContextualizedMixin.context">context() (tensortrade.base.component.ContextualizedMixin property)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.contexts">contexts (tensortrade.base.context.TradingContext attribute)</a>
+</li>
+      <li><a href="api/tensortrade.base.component.html#tensortrade.base.component.ContextualizedMixin">ContextualizedMixin (class in tensortrade.base.component)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.actions.continuous_actions.html#tensortrade.actions.continuous_actions.ContinuousActions">ContinuousActions (class in tensortrade.actions.continuous_actions)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.copy">copy() (tensortrade.trades.trade.Trade method)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.current_price">current_price() (tensortrade.exchanges.exchange.Exchange method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.current_price">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.current_price">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.current_price">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.current_price">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.data_frame">data_frame() (tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.data_frame">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.base.component.html#tensortrade.base.component.Component.default">default() (tensortrade.base.component.Component method)</a>
+</li>
+      <li><a href="api/tensortrade.actions.discrete_actions.html#tensortrade.actions.discrete_actions.DiscreteActions">DiscreteActions (class in tensortrade.actions.discrete_actions)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.dtype">dtype() (tensortrade.actions.action_scheme.ActionScheme property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.actions.discrete_actions.html#tensortrade.actions.discrete_actions.DiscreteActions.dtype">(tensortrade.actions.discrete_actions.DiscreteActions property)</a>
+</li>
+        <li><a href="api/tensortrade.actions.multi_discrete_actions.html#tensortrade.actions.multi_discrete_actions.MultiDiscreteActions.dtype">(tensortrade.actions.multi_discrete_actions.MultiDiscreteActions property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.dtype">(tensortrade.exchanges.exchange.Exchange property)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline.dtype">(tensortrade.features.feature_pipeline.FeaturePipeline property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy.environment">environment() (tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.environment">(tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy property)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy.environment">(tensortrade.strategies.trading_strategy.TradingStrategy property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange">Exchange (class in tensortrade.exchanges.exchange)</a>
+</li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.exchange">exchange() (tensortrade.actions.action_scheme.ActionScheme property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.exchange">(tensortrade.environments.trading_environment.TradingEnvironment property)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.reward_scheme.html#tensortrade.rewards.reward_scheme.RewardScheme.exchange">(tensortrade.rewards.reward_scheme.RewardScheme property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.exchanges">exchanges() (tensortrade.base.context.TradingContext property)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.execute_trade">execute_trade() (tensortrade.exchanges.exchange.Exchange method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.execute_trade">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.execute_trade">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.execute_trade">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.execute_trade">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.simulated.fbm_exchange.html#tensortrade.exchanges.simulated.fbm_exchange.FBMExchange">FBMExchange (class in tensortrade.exchanges.simulated.fbm_exchange)</a>
+</li>
+      <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.feature_pipeline">feature_pipeline() (tensortrade.environments.trading_environment.TradingEnvironment property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.feature_pipeline">(tensortrade.exchanges.exchange.Exchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.feature_pipeline">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline">FeaturePipeline (class in tensortrade.features.feature_pipeline)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.features">features() (tensortrade.base.context.TradingContext property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.features.feature_transformer.html#tensortrade.features.feature_transformer.FeatureTransformer">FeatureTransformer (class in tensortrade.features.feature_transformer)</a>
+</li>
+      <li><a href="api/tensortrade.slippage.random_slippage_model.html#tensortrade.slippage.random_slippage_model.RandomUniformSlippageModel.fill_order">fill_order() (tensortrade.slippage.random_slippage_model.RandomUniformSlippageModel method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.slippage.slippage_model.html#tensortrade.slippage.slippage_model.SlippageModel.fill_order">(tensortrade.slippage.slippage_model.SlippageModel method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.features.stationarity.fractional_difference.html#tensortrade.features.stationarity.fractional_difference.FractionalDifference">FractionalDifference (class in tensortrade.features.stationarity.fractional_difference)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.from_json">from_json() (tensortrade.base.context.TradingContext class method)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.from_yaml">from_yaml() (tensortrade.base.context.TradingContext class method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.simulated.gan_exchange.html#tensortrade.exchanges.simulated.gan_exchange.GANExchange">GANExchange (class in tensortrade.exchanges.simulated.gan_exchange)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.generated_columns">generated_columns() (tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+      <li><a href="api/tensortrade.actions.html#tensortrade.actions.get">get() (in module tensortrade.actions)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.environments.html#tensortrade.environments.get">(in module tensortrade.environments)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.html#tensortrade.exchanges.get">(in module tensortrade.exchanges)</a>
+</li>
+        <li><a href="api/tensortrade.features.html#tensortrade.features.get">(in module tensortrade.features)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.html#tensortrade.rewards.get">(in module tensortrade.rewards)</a>
+</li>
+        <li><a href="api/tensortrade.slippage.html#tensortrade.slippage.get">(in module tensortrade.slippage)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.html#tensortrade.strategies.get">(in module tensortrade.strategies)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.get_context">get_context() (tensortrade.base.context.TradingContext class method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.get_contexts">get_contexts() (tensortrade.base.context.TradingContext class method)</a>
+</li>
+      <li><a href="api/tensortrade.base.registry.html#tensortrade.base.registry.get_major_component_names">get_major_component_names() (in module tensortrade.base.registry)</a>
+</li>
+      <li><a href="api/tensortrade.base.registry.html#tensortrade.base.registry.get_registered_name">get_registered_name() (in module tensortrade.base.registry)</a>
+</li>
+      <li><a href="api/tensortrade.base.registry.html#tensortrade.base.registry.get_registry">get_registry() (in module tensortrade.base.registry)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.reward_scheme.html#tensortrade.rewards.reward_scheme.RewardScheme.get_reward">get_reward() (tensortrade.rewards.reward_scheme.RewardScheme method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.rewards.risk_adjusted_returns.html#tensortrade.rewards.risk_adjusted_returns.RiskAdjustedReturns.get_reward">(tensortrade.rewards.risk_adjusted_returns.RiskAdjustedReturns method)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.simple_profit.html#tensortrade.rewards.simple_profit.SimpleProfit.get_reward">(tensortrade.rewards.simple_profit.SimpleProfit method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.get_trade">get_trade() (tensortrade.actions.action_scheme.ActionScheme method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.actions.continuous_actions.html#tensortrade.actions.continuous_actions.ContinuousActions.get_trade">(tensortrade.actions.continuous_actions.ContinuousActions method)</a>
+</li>
+        <li><a href="api/tensortrade.actions.discrete_actions.html#tensortrade.actions.discrete_actions.DiscreteActions.get_trade">(tensortrade.actions.discrete_actions.DiscreteActions method)</a>
+</li>
+        <li><a href="api/tensortrade.actions.multi_discrete_actions.html#tensortrade.actions.multi_discrete_actions.MultiDiscreteActions.get_trade">(tensortrade.actions.multi_discrete_actions.MultiDiscreteActions method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.has_next_observation">has_next_observation() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.has_next_observation">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.has_next_observation">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.has_next_observation">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.has_next_observation">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.HOLD">HOLD (tensortrade.trades.trade_type.TradeType attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.component.html#tensortrade.base.component.InitContextMeta">InitContextMeta (class in tensortrade.base.component)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.initial_balance">initial_balance() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.initial_balance">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.initial_balance">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.initial_balance">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.initial_balance">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.instrument_balance">instrument_balance() (tensortrade.exchanges.exchange.Exchange method)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.instrument_precision">instrument_precision() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.instrument_precision">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.instrument_precision">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.instrument_precision">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.Context.instruments">instruments() (tensortrade.base.context.Context property)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange">InteractiveBrokersExchange (class in tensortrade.exchanges.live.interactive_brokers_exchange)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.is_buy">is_buy() (tensortrade.trades.trade.Trade property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.is_buy">(tensortrade.trades.trade_type.TradeType property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.is_hold">is_hold() (tensortrade.trades.trade.Trade property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.is_hold">(tensortrade.trades.trade_type.TradeType property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.is_sell">is_sell() (tensortrade.trades.trade.Trade property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.is_sell">(tensortrade.trades.trade_type.TradeType property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.LIMIT_BUY">LIMIT_BUY (tensortrade.trades.trade_type.TradeType attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.LIMIT_SELL">LIMIT_SELL (tensortrade.trades.trade_type.TradeType attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.MARKET_BUY">MARKET_BUY (tensortrade.trades.trade_type.TradeType attribute)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType.MARKET_SELL">MARKET_SELL (tensortrade.trades.trade_type.TradeType attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.max_episode_timesteps">max_episode_timesteps() (tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy property)</a>
+</li>
+      <li><a href="api/tensortrade.features.scalers.min_max_normalizer.html#tensortrade.features.scalers.min_max_normalizer.MinMaxNormalizer">MinMaxNormalizer (class in tensortrade.features.scalers.min_max_normalizer)</a>
+</li>
+      <li><a href="api/tensortrade.actions.multi_discrete_actions.html#tensortrade.actions.multi_discrete_actions.MultiDiscreteActions">MultiDiscreteActions (class in tensortrade.actions.multi_discrete_actions)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.net_worth">net_worth() (tensortrade.exchanges.exchange.Exchange property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.next_observation">next_observation() (tensortrade.exchanges.exchange.Exchange method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.observation_columns">observation_columns() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.observation_columns">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.observation_columns">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.observation_columns">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.observation_columns">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.observation_space">observation_space() (tensortrade.exchanges.exchange.Exchange property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.performance">performance() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.performance">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.performance">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.performance">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.performance">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.portfolio">portfolio() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.portfolio">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.portfolio">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.portfolio">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.portfolio">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.price">price() (tensortrade.trades.trade.Trade property)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.profit_loss_percent">profit_loss_percent() (tensortrade.exchanges.exchange.Exchange property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.slippage.random_slippage_model.html#tensortrade.slippage.random_slippage_model.RandomUniformSlippageModel">RandomUniformSlippageModel (class in tensortrade.slippage.random_slippage_model)</a>
+</li>
+      <li><a href="api/tensortrade.base.registry.html#tensortrade.base.registry.register">register() (in module tensortrade.base.registry)</a>
+</li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.registered_name">registered_name (tensortrade.actions.action_scheme.ActionScheme attribute)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.base.component.html#tensortrade.base.component.Component.registered_name">(tensortrade.base.component.Component attribute)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.registered_name">(tensortrade.exchanges.exchange.Exchange attribute)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline.registered_name">(tensortrade.features.feature_pipeline.FeaturePipeline attribute)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_transformer.html#tensortrade.features.feature_transformer.FeatureTransformer.registered_name">(tensortrade.features.feature_transformer.FeatureTransformer attribute)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.reward_scheme.html#tensortrade.rewards.reward_scheme.RewardScheme.registered_name">(tensortrade.rewards.reward_scheme.RewardScheme attribute)</a>
+</li>
+        <li><a href="api/tensortrade.slippage.slippage_model.html#tensortrade.slippage.slippage_model.SlippageModel.registered_name">(tensortrade.slippage.slippage_model.SlippageModel attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.base.registry.html#tensortrade.base.registry.registered_names">registered_names() (in module tensortrade.base.registry)</a>
+</li>
+      <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.render">render() (tensortrade.environments.trading_environment.TradingEnvironment method)</a>
+</li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#tensortrade.actions.action_scheme.ActionScheme.reset">reset() (tensortrade.actions.action_scheme.ActionScheme method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.reset">(tensortrade.environments.trading_environment.TradingEnvironment method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.reset">(tensortrade.exchanges.exchange.Exchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.reset">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.reset">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.reset">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.fbm_exchange.html#tensortrade.exchanges.simulated.fbm_exchange.FBMExchange.reset">(tensortrade.exchanges.simulated.fbm_exchange.FBMExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.gan_exchange.html#tensortrade.exchanges.simulated.gan_exchange.GANExchange.reset">(tensortrade.exchanges.simulated.gan_exchange.GANExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.reset">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange method)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline.reset">(tensortrade.features.feature_pipeline.FeaturePipeline method)</a>
+</li>
+        <li><a href="api/tensortrade.features.feature_transformer.html#tensortrade.features.feature_transformer.FeatureTransformer.reset">(tensortrade.features.feature_transformer.FeatureTransformer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.scalers.standard_normalizer.html#tensortrade.features.scalers.standard_normalizer.StandardNormalizer.reset">(tensortrade.features.scalers.standard_normalizer.StandardNormalizer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.stationarity.fractional_difference.html#tensortrade.features.stationarity.fractional_difference.FractionalDifference.reset">(tensortrade.features.stationarity.fractional_difference.FractionalDifference method)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.reward_scheme.html#tensortrade.rewards.reward_scheme.RewardScheme.reset">(tensortrade.rewards.reward_scheme.RewardScheme method)</a>
+</li>
+        <li><a href="api/tensortrade.rewards.simple_profit.html#tensortrade.rewards.simple_profit.SimpleProfit.reset">(tensortrade.rewards.simple_profit.SimpleProfit method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy.restore_agent">restore_agent() (tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.restore_agent">(tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy method)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy.restore_agent">(tensortrade.strategies.trading_strategy.TradingStrategy method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.reward_scheme">reward_scheme() (tensortrade.environments.trading_environment.TradingEnvironment property)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.rewards">rewards() (tensortrade.base.context.TradingContext property)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.reward_scheme.html#tensortrade.rewards.reward_scheme.RewardScheme">RewardScheme (class in tensortrade.rewards.reward_scheme)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.risk_adjusted_returns.html#tensortrade.rewards.risk_adjusted_returns.RiskAdjustedReturns">RiskAdjustedReturns (class in tensortrade.rewards.risk_adjusted_returns)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange">RobinhoodExchange (class in tensortrade.exchanges.live.robinhood_exchange)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy.run">run() (tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.run">(tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy method)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy.run">(tensortrade.strategies.trading_strategy.TradingStrategy method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy.save_agent">save_agent() (tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.save_agent">(tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy method)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy.save_agent">(tensortrade.strategies.trading_strategy.TradingStrategy method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.shared">shared() (tensortrade.base.context.TradingContext property)</a>
+</li>
+      <li><a href="api/tensortrade.features.indicators.simple_moving_average.html#tensortrade.features.indicators.simple_moving_average.SimpleMovingAverage">SimpleMovingAverage (class in tensortrade.features.indicators.simple_moving_average)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.simple_profit.html#tensortrade.rewards.simple_profit.SimpleProfit">SimpleProfit (class in tensortrade.rewards.simple_profit)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange">SimulatedExchange (class in tensortrade.exchanges.simulated.simulated_exchange)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext.slippage">slippage() (tensortrade.base.context.TradingContext property)</a>
+</li>
+      <li><a href="api/tensortrade.slippage.slippage_model.html#tensortrade.slippage.slippage_model.SlippageModel">SlippageModel (class in tensortrade.slippage.slippage_model)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy">StableBaselinesTradingStrategy (class in tensortrade.strategies.stable_baselines_strategy)</a>
+</li>
+      <li><a href="api/tensortrade.features.scalers.standard_normalizer.html#tensortrade.features.scalers.standard_normalizer.StandardNormalizer">StandardNormalizer (class in tensortrade.features.scalers.standard_normalizer)</a>
+</li>
+      <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment.step">step() (tensortrade.environments.trading_environment.TradingEnvironment method)</a>
+</li>
+      <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline.steps">steps() (tensortrade.features.feature_pipeline.FeaturePipeline property)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.symbol">symbol() (tensortrade.trades.trade.Trade property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.features.indicators.ta_indicator.html#tensortrade.features.indicators.ta_indicator.TAIndicator">TAIndicator (class in tensortrade.features.indicators.ta_indicator)</a>
+</li>
+      <li><a href="api/tensortrade.features.indicators.talib_indicator.html#tensortrade.features.indicators.talib_indicator.TAlibIndicator">TAlibIndicator (class in tensortrade.features.indicators.talib_indicator)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy">TensorforceTradingStrategy (class in tensortrade.strategies.tensorforce_trading_strategy)</a>
+</li>
+      <li><a href="api/tensortrade.html#module-tensortrade">tensortrade (module)</a>
+</li>
+      <li><a href="api/tensortrade.actions.html#module-tensortrade.actions">tensortrade.actions (module)</a>
+</li>
+      <li><a href="api/tensortrade.actions.action_scheme.html#module-tensortrade.actions.action_scheme">tensortrade.actions.action_scheme (module)</a>
+</li>
+      <li><a href="api/tensortrade.actions.continuous_actions.html#module-tensortrade.actions.continuous_actions">tensortrade.actions.continuous_actions (module)</a>
+</li>
+      <li><a href="api/tensortrade.actions.discrete_actions.html#module-tensortrade.actions.discrete_actions">tensortrade.actions.discrete_actions (module)</a>
+</li>
+      <li><a href="api/tensortrade.actions.multi_discrete_actions.html#module-tensortrade.actions.multi_discrete_actions">tensortrade.actions.multi_discrete_actions (module)</a>
+</li>
+      <li><a href="api/tensortrade.base.html#module-tensortrade.base">tensortrade.base (module)</a>
+</li>
+      <li><a href="api/tensortrade.base.component.html#module-tensortrade.base.component">tensortrade.base.component (module)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#module-tensortrade.base.context">tensortrade.base.context (module)</a>
+</li>
+      <li><a href="api/tensortrade.base.registry.html#module-tensortrade.base.registry">tensortrade.base.registry (module)</a>
+</li>
+      <li><a href="api/tensortrade.environments.html#module-tensortrade.environments">tensortrade.environments (module)</a>
+</li>
+      <li><a href="api/tensortrade.environments.trading_environment.html#module-tensortrade.environments.trading_environment">tensortrade.environments.trading_environment (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.html#module-tensortrade.exchanges">tensortrade.exchanges (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#module-tensortrade.exchanges.exchange">tensortrade.exchanges.exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.html#module-tensortrade.exchanges.live">tensortrade.exchanges.live (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#module-tensortrade.exchanges.live.ccxt_exchange">tensortrade.exchanges.live.ccxt_exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#module-tensortrade.exchanges.live.interactive_brokers_exchange">tensortrade.exchanges.live.interactive_brokers_exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#module-tensortrade.exchanges.live.robinhood_exchange">tensortrade.exchanges.live.robinhood_exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.simulated.html#module-tensortrade.exchanges.simulated">tensortrade.exchanges.simulated (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.simulated.fbm_exchange.html#module-tensortrade.exchanges.simulated.fbm_exchange">tensortrade.exchanges.simulated.fbm_exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.simulated.gan_exchange.html#module-tensortrade.exchanges.simulated.gan_exchange">tensortrade.exchanges.simulated.gan_exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#module-tensortrade.exchanges.simulated.simulated_exchange">tensortrade.exchanges.simulated.simulated_exchange (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.html#module-tensortrade.features">tensortrade.features (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.feature_pipeline.html#module-tensortrade.features.feature_pipeline">tensortrade.features.feature_pipeline (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.feature_transformer.html#module-tensortrade.features.feature_transformer">tensortrade.features.feature_transformer (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.indicators.html#module-tensortrade.features.indicators">tensortrade.features.indicators (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.indicators.simple_moving_average.html#module-tensortrade.features.indicators.simple_moving_average">tensortrade.features.indicators.simple_moving_average (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.indicators.ta_indicator.html#module-tensortrade.features.indicators.ta_indicator">tensortrade.features.indicators.ta_indicator (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.indicators.talib_indicator.html#module-tensortrade.features.indicators.talib_indicator">tensortrade.features.indicators.talib_indicator (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.scalers.html#module-tensortrade.features.scalers">tensortrade.features.scalers (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.scalers.min_max_normalizer.html#module-tensortrade.features.scalers.min_max_normalizer">tensortrade.features.scalers.min_max_normalizer (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.scalers.standard_normalizer.html#module-tensortrade.features.scalers.standard_normalizer">tensortrade.features.scalers.standard_normalizer (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.stationarity.html#module-tensortrade.features.stationarity">tensortrade.features.stationarity (module)</a>
+</li>
+      <li><a href="api/tensortrade.features.stationarity.fractional_difference.html#module-tensortrade.features.stationarity.fractional_difference">tensortrade.features.stationarity.fractional_difference (module)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/tensortrade.rewards.html#module-tensortrade.rewards">tensortrade.rewards (module)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.reward_scheme.html#module-tensortrade.rewards.reward_scheme">tensortrade.rewards.reward_scheme (module)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.risk_adjusted_returns.html#module-tensortrade.rewards.risk_adjusted_returns">tensortrade.rewards.risk_adjusted_returns (module)</a>
+</li>
+      <li><a href="api/tensortrade.rewards.simple_profit.html#module-tensortrade.rewards.simple_profit">tensortrade.rewards.simple_profit (module)</a>
+</li>
+      <li><a href="api/tensortrade.slippage.html#module-tensortrade.slippage">tensortrade.slippage (module)</a>
+</li>
+      <li><a href="api/tensortrade.slippage.random_slippage_model.html#module-tensortrade.slippage.random_slippage_model">tensortrade.slippage.random_slippage_model (module)</a>
+</li>
+      <li><a href="api/tensortrade.slippage.slippage_model.html#module-tensortrade.slippage.slippage_model">tensortrade.slippage.slippage_model (module)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.html#module-tensortrade.strategies">tensortrade.strategies (module)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#module-tensortrade.strategies.stable_baselines_strategy">tensortrade.strategies.stable_baselines_strategy (module)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#module-tensortrade.strategies.tensorforce_trading_strategy">tensortrade.strategies.tensorforce_trading_strategy (module)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.trading_strategy.html#module-tensortrade.strategies.trading_strategy">tensortrade.strategies.trading_strategy (module)</a>
+</li>
+      <li><a href="api/tensortrade.trades.html#module-tensortrade.trades">tensortrade.trades (module)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#module-tensortrade.trades.trade">tensortrade.trades.trade (module)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade_type.html#module-tensortrade.trades.trade_type">tensortrade.trades.trade_type (module)</a>
+</li>
+      <li><a href="api/tensortrade.version.html#module-tensortrade.version">tensortrade.version (module)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade">Trade (class in tensortrade.trades.trade)</a>
+</li>
+      <li><a href="api/tensortrade.trades.trade.html#tensortrade.trades.trade.Trade.trade_type">trade_type() (tensortrade.trades.trade.Trade property)</a>
+</li>
+      <li><a href="api/tensortrade.exchanges.exchange.html#tensortrade.exchanges.exchange.Exchange.trades">trades() (tensortrade.exchanges.exchange.Exchange property)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.exchanges.live.ccxt_exchange.html#tensortrade.exchanges.live.ccxt_exchange.CCXTExchange.trades">(tensortrade.exchanges.live.ccxt_exchange.CCXTExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.interactive_brokers_exchange.html#tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange.trades">(tensortrade.exchanges.live.interactive_brokers_exchange.InteractiveBrokersExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.live.robinhood_exchange.html#tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange.trades">(tensortrade.exchanges.live.robinhood_exchange.RobinhoodExchange property)</a>
+</li>
+        <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.trades">(tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.trades.trade_type.html#tensortrade.trades.trade_type.TradeType">TradeType (class in tensortrade.trades.trade_type)</a>
+</li>
+      <li><a href="api/tensortrade.base.context.html#tensortrade.base.context.TradingContext">TradingContext (class in tensortrade.base.context)</a>
+</li>
+      <li><a href="api/tensortrade.environments.trading_environment.html#tensortrade.environments.trading_environment.TradingEnvironment">TradingEnvironment (class in tensortrade.environments.trading_environment)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy">TradingStrategy (class in tensortrade.strategies.trading_strategy)</a>
+</li>
+      <li><a href="api/tensortrade.features.feature_pipeline.html#tensortrade.features.feature_pipeline.FeaturePipeline.transform">transform() (tensortrade.features.feature_pipeline.FeaturePipeline method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.features.feature_transformer.html#tensortrade.features.feature_transformer.FeatureTransformer.transform">(tensortrade.features.feature_transformer.FeatureTransformer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.indicators.simple_moving_average.html#tensortrade.features.indicators.simple_moving_average.SimpleMovingAverage.transform">(tensortrade.features.indicators.simple_moving_average.SimpleMovingAverage method)</a>
+</li>
+        <li><a href="api/tensortrade.features.indicators.ta_indicator.html#tensortrade.features.indicators.ta_indicator.TAIndicator.transform">(tensortrade.features.indicators.ta_indicator.TAIndicator method)</a>
+</li>
+        <li><a href="api/tensortrade.features.indicators.talib_indicator.html#tensortrade.features.indicators.talib_indicator.TAlibIndicator.transform">(tensortrade.features.indicators.talib_indicator.TAlibIndicator method)</a>
+</li>
+        <li><a href="api/tensortrade.features.scalers.min_max_normalizer.html#tensortrade.features.scalers.min_max_normalizer.MinMaxNormalizer.transform">(tensortrade.features.scalers.min_max_normalizer.MinMaxNormalizer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.scalers.standard_normalizer.html#tensortrade.features.scalers.standard_normalizer.StandardNormalizer.transform">(tensortrade.features.scalers.standard_normalizer.StandardNormalizer method)</a>
+</li>
+        <li><a href="api/tensortrade.features.stationarity.fractional_difference.html#tensortrade.features.stationarity.fractional_difference.FractionalDifference.transform">(tensortrade.features.stationarity.fractional_difference.FractionalDifference method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/tensortrade.exchanges.simulated.simulated_exchange.html#tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange.transform_data_frame">transform_data_frame() (tensortrade.exchanges.simulated.simulated_exchange.SimulatedExchange method)</a>
+</li>
+      <li><a href="api/tensortrade.strategies.stable_baselines_strategy.html#tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy.tune">tune() (tensortrade.strategies.stable_baselines_strategy.StableBaselinesTradingStrategy method)</a>
+
+      <ul>
+        <li><a href="api/tensortrade.strategies.tensorforce_trading_strategy.html#tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy.tune">(tensortrade.strategies.tensorforce_trading_strategy.TensorforceTradingStrategy method)</a>
+</li>
+        <li><a href="api/tensortrade.strategies.trading_strategy.html#tensortrade.strategies.trading_strategy.TradingStrategy.tune">(tensortrade.strategies.trading_strategy.TradingStrategy method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Adam King
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
