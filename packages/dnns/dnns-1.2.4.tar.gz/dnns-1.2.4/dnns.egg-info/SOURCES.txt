@@ -1,0 +1,8 @@
+README.md
+setup.py
+worker.py
+dnns.egg-info/PKG-INFO
+dnns.egg-info/SOURCES.txt
+dnns.egg-info/dependency_links.txt
+dnns.egg-info/requires.txt
+dnns.egg-info/top_level.txt
