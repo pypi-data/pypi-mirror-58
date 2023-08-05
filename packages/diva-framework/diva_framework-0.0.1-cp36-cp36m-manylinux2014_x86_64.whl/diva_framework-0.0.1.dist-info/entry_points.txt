@@ -1,0 +1,3 @@
+[kwiver.cpp_search_paths]
+diva_processes = diva.processes.register_cpp_processes:get_cpp_path
+
