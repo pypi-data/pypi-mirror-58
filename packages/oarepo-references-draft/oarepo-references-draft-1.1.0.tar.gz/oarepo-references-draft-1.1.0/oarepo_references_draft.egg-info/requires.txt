@@ -1,0 +1,11 @@
+oarepo-invenio-records-draft>=3.0.0
+oarepo-references>=1.4.3
+
+[docs]
+Sphinx>=1.5.1
+
+[tests]
+oarepo[tests]~=3.2.0a9
+
+[tests-es7]
+oarepo[tests-es7]~=3.2.0a9

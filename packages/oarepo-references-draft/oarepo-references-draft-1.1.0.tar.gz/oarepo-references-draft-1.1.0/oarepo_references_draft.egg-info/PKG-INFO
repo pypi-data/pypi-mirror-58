@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: oarepo-references-draft
+Version: 1.1.0
+Summary: OArepo module for tracking and updating references in Invenio records.
+Home-page: https://github.com/oarepo/oarepo-references-draft
+Author: Mirek Simek, VSCHT Praha
+Author-email: miroslav.simek@vscht.cz
+License: MIT
+Description: ..
+            Copyright (C) 2019 Mirek Simek, VSCHT Praha.
+        
+            oarepo-references-draft is free software; you can redistribute it and/or
+            modify it under the terms of the MIT License; see LICENSE file for more
+            details.
+        
+        =========================
+         oarepo-references-draft
+        =========================
+        
+        .. image:: https://img.shields.io/travis/oarepo/oarepo-references-draft.svg
+                :target: https://travis-ci.org/oarepo/oarepo-references-draft
+        
+        .. image:: https://img.shields.io/coveralls/oarepo/oarepo-references-draft.svg
+                :target: https://coveralls.io/r/oarepo/oarepo-references-draft
+        
+        .. image:: https://img.shields.io/github/tag/oarepo/oarepo-references-draft.svg
+                :target: https://github.com/oarepo/oarepo-references-draft/releases
+        
+        .. image:: https://img.shields.io/pypi/dm/oarepo-references-draft.svg
+                :target: https://pypi.python.org/pypi/oarepo-references-draft
+        
+        .. image:: https://img.shields.io/github/license/oarepo/oarepo-references-draft.svg
+                :target: https://github.com/oarepo/oarepo-references-draft/blob/master/LICENSE
+        
+        ## Alpha version, do not use yet
+        
+        An extension of oarepo-references to work together with invenio-records-draft
+        
+        Further documentation is available on
+        https://oarepo-references-draft.readthedocs.io/
+        
+        
+        ..
+            Copyright (C) 2019 Mirek Simek, VSCHT Praha.
+        
+            oarepo-references-draft is free software; you can redistribute it and/or
+            modify it under the terms of the MIT License; see LICENSE file for more
+            details.
+        
+        Changes
+        =======
+        
+        Version 0.1.0 (released TBD)
+        
+        - Initial public release.
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 4 - Beta
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: tests-es7
