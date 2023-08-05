@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+goodwan_client/__init__.py
+goodwan_client/classes.py
+goodwan_client/client.py
+goodwan_client/devices.py
+goodwan_client/errors.py
+goodwan_client/event.py
+goodwan_client/helpers.py
+goodwan_client/serializer.py
+goodwan_client.egg-info/PKG-INFO
+goodwan_client.egg-info/SOURCES.txt
+goodwan_client.egg-info/dependency_links.txt
+goodwan_client.egg-info/requires.txt
+goodwan_client.egg-info/top_level.txt
