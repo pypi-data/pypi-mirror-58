@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: arcos-py
+Version: 0.1.0
+Summary: Python equivalent of the Washington Post's ARCOS R-package for accessing their ARCOS API
+Home-page: UNKNOWN
+Author: Marc Rauckhorst
+Author-email: mwrauck@sas.upenn.edu
+License: MIT license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: geopandas
+Requires-Dist: shapely
+Requires-Dist: fiona
+
+UNKNOWN
+
+
