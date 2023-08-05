@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: consumer-helper
+Version: 0.1.0
+Summary: help user to complete data processing when process receive SIGTERM. only for simple processing logic.
+Home-page: UNKNOWN
+Author: Jerry
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: confluent-kafka
+Requires-Dist: configargparse
+
+UNKNOWN
+
+
