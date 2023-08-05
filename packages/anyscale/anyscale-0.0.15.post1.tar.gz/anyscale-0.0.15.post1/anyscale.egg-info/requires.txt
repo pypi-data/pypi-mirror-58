@@ -1,0 +1,7 @@
+boto3
+Click>=7.0
+GitPython
+jsonschema
+ray
+requests
+tabulate
