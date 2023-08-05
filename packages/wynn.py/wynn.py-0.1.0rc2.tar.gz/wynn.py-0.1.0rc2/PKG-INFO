@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: wynn.py
+Version: 0.1.0rc2
+Summary: A Python wrapper for the Wynncraft public API
+Home-page: https://github.com/Zakru/wynn.py
+Author: Zakru
+License: UNKNOWN
+Project-URL: Documentation, https://wynnpy.readthedocs.io/en/stable/
+Project-URL: Source Code, https://github.com/Zakru/wynn.py
+Project-URL: Issue Tracker, https://github.com/Zakru/wynn.py/issues
+Description: # wynn.py
+        
+        [![Documentation Status](https://readthedocs.org/projects/wynnpy/badge/?version=latest)](https://wynnpy.readthedocs.io/en/latest/?badge=latest)
+        [![PyPI](https://img.shields.io/pypi/v/wynn.py)](https://pypi.org/project/wynn.py/)
+        
+        A Python wrapper for the Wynncraft public API
+        
+        ## Basic usage
+        
+        API wrappers are found under the `wynn` package. To fetch a player's
+        data, for example, you can use
+        
+        ```python
+        wynn.player.get_player('playerName')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Provides-Extra: docs
