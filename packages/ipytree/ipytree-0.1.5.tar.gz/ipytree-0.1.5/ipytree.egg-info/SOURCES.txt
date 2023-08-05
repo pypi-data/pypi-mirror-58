@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+ipytree.json
+setup.cfg
+setup.py
+ipytree/__init__.py
+ipytree/_version.py
+ipytree/tree.py
+ipytree.egg-info/PKG-INFO
+ipytree.egg-info/SOURCES.txt
+ipytree.egg-info/dependency_links.txt
+ipytree.egg-info/not-zip-safe
+ipytree.egg-info/requires.txt
+ipytree.egg-info/top_level.txt
+ipytree/static/extension.js
+ipytree/static/index.js
+ipytree/static/index.js.map
