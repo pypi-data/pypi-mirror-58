@@ -1,0 +1,9 @@
+mozprocess/__init__.py,sha256=Lem7AMX8SphPlIuIDMw3p8NUHCxPIUrX9IGSk8Zc8H4,285
+mozprocess/processhandler.py,sha256=09ADNsMdYNk_nZlJN71jXynWO2XZRhxv28eqKUaFOIs,51675
+mozprocess/qijo.py,sha256=qkuL6S_-zJ09qFMt0xX1S0D7ez2xNp29CB-HiVqV0rM,5319
+mozprocess/winprocess.py,sha256=Q0LsEf5k8r-lg4TWEteCIt3i4mSTFiFxRd8ev7_K_Kk,19443
+mozprocess-1.1.0.dist-info/METADATA,sha256=em4JWVVgcasLEcWRBp_-ZTlcqllObVhcsUpqjqYsKwQ,798
+mozprocess-1.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+mozprocess-1.1.0.dist-info/entry_points.txt,sha256=FjKvgvGyIyqokCxiGIVCvaGmkWcXwEXZ8W6zk1mtvZQ,37
+mozprocess-1.1.0.dist-info/top_level.txt,sha256=MOZg2hVGvbHULWKkFHtiXm_CHMQsrsqsaw9t_aPnaVM,11
+mozprocess-1.1.0.dist-info/RECORD,,
