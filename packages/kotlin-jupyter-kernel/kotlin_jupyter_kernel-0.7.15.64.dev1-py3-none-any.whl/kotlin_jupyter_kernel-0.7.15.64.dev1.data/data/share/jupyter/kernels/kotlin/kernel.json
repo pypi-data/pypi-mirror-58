@@ -1,0 +1,5 @@
+{
+  "language": "kotlin",
+  "display_name": "Kotlin",
+  "argv": ["python", "-m", "run_kotlin_kernel", "{connection_file}"]
+}

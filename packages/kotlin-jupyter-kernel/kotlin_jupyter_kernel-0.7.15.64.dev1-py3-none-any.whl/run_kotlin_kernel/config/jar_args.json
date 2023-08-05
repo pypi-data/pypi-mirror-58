@@ -1,0 +1,6 @@
+{
+  "debuggerConfig": "",
+  "librariesPath": "config/config.json",
+  "classPath": ["jupyter-lib.jar", "kotlin-stdlib-1.3.70-dev-2104.jar", "kotlin-stdlib-common-1.3.70-dev-2104.jar", "annotations-13.0.jar"],
+  "mainJar": "kotlin-jupyter-kernel.jar"
+}
