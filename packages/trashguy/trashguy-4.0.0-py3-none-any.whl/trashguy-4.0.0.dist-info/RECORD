@@ -1,0 +1,12 @@
+trashguy/__init__.py,sha256=DYJxXYRYL3u_5rqT-yTk1HQx16Zn3H7VpRtmB6E2dy4,1898
+trashguy/__main__.py,sha256=iVMIANSwozSDpz9bzlRiwB5B3CMaZQEypUIxb-MRzB0,1923
+trashguy/_frame_engine.py,sha256=HBShhULEerjFKysRh-ui54r6YRoGYLyzsJamSn0YvWk,7161
+trashguy/_types.py,sha256=6LA19mdRkK2U_KTVfMkFX16Qtr03HQhDSw3GoiHNPaU,2542
+trashguy/trashguy.py,sha256=Hychx4LuMb3uvJG1umsPNdPHbE7z86fTARSmKBlvLmE,5634
+trashguy/version.py,sha256=2yNgiRQHzf1FlQA092K8Tcel3Wj4wSTXhVFFQXb_-bo,1825
+trashguy-4.0.0.dist-info/LICENSE,sha256=hNA2kMWs6Sn7c3_NaVYXWwm_b6ie96HZgNiAc13suXI,1102
+trashguy-4.0.0.dist-info/METADATA,sha256=EDzOke6nfTA2F3nYw9YUEaWDQPiCFoRsuaYKqn-TvfY,746
+trashguy-4.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+trashguy-4.0.0.dist-info/top_level.txt,sha256=QYrkROJFNey3760IUV7847aPwyH0jFceNyd-xkwAgHE,9
+trashguy-4.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+trashguy-4.0.0.dist-info/RECORD,,
