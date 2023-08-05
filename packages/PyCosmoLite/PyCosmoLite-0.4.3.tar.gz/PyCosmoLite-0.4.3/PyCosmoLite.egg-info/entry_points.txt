@@ -1,0 +1,6 @@
+
+        [console_scripts]
+        trace-generator=PyCosmo.BoltzmannSolver.generator.trace_generator:main
+        compute-fields=PyCosmo.compute_fields:main
+        check-pycosmo-config-file=PyCosmo:check_config_file
+    

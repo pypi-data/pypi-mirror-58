@@ -1,0 +1,4 @@
+include PyCosmo/CosmologyCore.ipynb
+include PyCosmo/cython/*.pyx
+include PyCosmo/cython/*.c
+include PyCosmo/cython/*.h
