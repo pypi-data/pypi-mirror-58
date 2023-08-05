@@ -1,0 +1,12 @@
+README.md
+setup.py
+algokit/__init__.py
+algokit/info.py
+algokit.egg-info/PKG-INFO
+algokit.egg-info/SOURCES.txt
+algokit.egg-info/dependency_links.txt
+algokit.egg-info/requires.txt
+algokit.egg-info/top_level.txt
+algokit/geo/__init__.py
+algokit/geo/adcodes.csv
+algokit/geo/regions.py
