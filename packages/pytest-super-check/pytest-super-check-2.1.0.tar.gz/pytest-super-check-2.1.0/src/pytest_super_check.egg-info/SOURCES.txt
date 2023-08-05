@@ -1,0 +1,15 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pytest_super_check.py
+src/pytest_super_check.egg-info/PKG-INFO
+src/pytest_super_check.egg-info/SOURCES.txt
+src/pytest_super_check.egg-info/dependency_links.txt
+src/pytest_super_check.egg-info/entry_points.txt
+src/pytest_super_check.egg-info/not-zip-safe
+src/pytest_super_check.egg-info/requires.txt
+src/pytest_super_check.egg-info/top_level.txt
+tests/test_pytest_super_check.py
