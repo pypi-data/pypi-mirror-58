@@ -1,0 +1,9 @@
+#documentation
+recursive-include docs/_build/html *
+
+#c functions
+include smospy/c_functions/*.cpp
+include smospy/c_functions/*.h
+include smospy/c_functions/*.pyx
+include smospy/c_functions/*.py
+

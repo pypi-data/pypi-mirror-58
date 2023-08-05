@@ -1,0 +1,3 @@
+[console_scripts]
+J_Cord_to_tiff = smospy.J_Cord_to_tiff:main
+
