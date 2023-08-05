@@ -1,0 +1,11 @@
+numpy
+imageio
+appdirs
+scooby>=0.2.2
+meshio>=3.3.0
+vtk
+
+[colormaps]
+matplotlib
+colorcet
+cmocean
