@@ -1,0 +1,9 @@
+par_batch_map/__init__.py,sha256=BG80W9csCULJuZnpczcjkQ9sRs_DkuKu9Uh7rkYU9Rs,54
+par_batch_map/batch_map.py,sha256=UE6VQQ-Q-zvBv4JECNdEmGVz2sLE-kaQwQkNFnk8188,9473
+par_batch_map/mongodb_example.py,sha256=F8deVpby_qlqvAxVitrjG5PscCM1RQP6WAFQqG7LwCk,10909
+par_batch_map/utils.py,sha256=flddKu4_UGi7JNtn_JLFp7lmFPrkpa_XoVqbf1GjVMk,5984
+par_batch_map-0.0.1.post2.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+par_batch_map-0.0.1.post2.dist-info/METADATA,sha256=hQRew4VlDrax7HyUa-5K14EpVrO0VIgFTAukMDJlJBY,990
+par_batch_map-0.0.1.post2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+par_batch_map-0.0.1.post2.dist-info/top_level.txt,sha256=Q3bzrU8fI_u5a2zJJ24twBB1pPlyaESp53GEdjQpcmI,14
+par_batch_map-0.0.1.post2.dist-info/RECORD,,
