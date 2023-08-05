@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        crisscross=crisscross.cli:cli
+    
