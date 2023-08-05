@@ -1,0 +1,17 @@
+aiohttp[speedups]
+contexttimer
+daiquiri
+humanfriendly
+jsonlines
+lxml
+orjson
+pydantic
+toolz
+typing_extensions
+ujson
+
+[doc]
+sphinx
+
+[test]
+pytest
