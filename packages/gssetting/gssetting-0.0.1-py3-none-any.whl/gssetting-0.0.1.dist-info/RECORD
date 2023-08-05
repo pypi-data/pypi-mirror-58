@@ -1,0 +1,12 @@
+gssetting/__init__.py,sha256=CbK2uTKhYtULBYnpdWnb06v42ZiJkfxcymiWkjRvC7M,218
+gssetting/google_spreadsheet.py,sha256=m_fSz_aVoIAfMHIjWQsMGACBS4MyrTkR-7a5f78-SwU,1420
+gssetting/gssetting.py,sha256=RAeOmWCQwfuv78bbqnGN1qSr6sKjX7vR2cd2Xyl-RME,2722
+gssetting/inheritance.py,sha256=Dy9GuLVfRI_dmqsPrLMR10vAwKmw8VdvYN925ha0xvU,616
+gssetting/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gssetting/model/gssetting.py,sha256=2iCwYDSk7BunpTNQ5xs35OhO7E-hA8tnXnuI3zh9k8Y,549
+gssetting/model/value_render_option.py,sha256=MX0hKvrhZ0dzQKPTOTHWySVbQN1XmEc3MYl5C20lFgU,142
+gssetting-0.0.1.dist-info/LICENSE,sha256=1HedlMdFctY9KLg50lpmIh-_5U2QxQOFcaqaAtCnM74,1065
+gssetting-0.0.1.dist-info/METADATA,sha256=EgaZhkGi7EQx6vLctyre19_RqfbOHb_3Bwu4yxf2Lxg,1459
+gssetting-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gssetting-0.0.1.dist-info/top_level.txt,sha256=BPgDQLUjuxg67c-5aYYTsIO1o--nXLLtWEPL01utjrg,10
+gssetting-0.0.1.dist-info/RECORD,,
