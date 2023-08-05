@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nag-b2b-api-HalfBottleOfMind
+Version: 0.0.1.dev4
+Summary: Library for processing data from https://b2b-api.nag.ru/api
+Home-page: https://github.com/halfbottleofmind/nag-b2b-api
+Author: HalfBottleOfMind
+Author-email: andromalak222@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# nag-b2b-api
+
+Library for processing data from https://b2b-api.nag.ru/api/
+
