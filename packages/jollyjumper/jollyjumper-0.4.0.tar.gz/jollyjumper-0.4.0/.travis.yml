@@ -1,0 +1,48 @@
+language: python
+cache: pip
+env:
+  global:
+  - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+  - SEGFAULT_SIGNALS=all
+  matrix:
+  - TOXENV=check
+  - TOXENV=docs
+matrix:
+  include:
+  - python: '3.7'
+    dist: xenial
+    env:
+    - TOXENV=py37
+before_install:
+- python --version
+- uname -a
+- lsb_release -a
+install:
+- pip install tox
+- virtualenv --version
+- easy_install --version
+- pip --version
+- tox --version
+- set +x
+script:
+- travis_wait 20 tox -v
+after_failure:
+- more .tox/log/* | cat
+- more .tox/*/log/* | cat
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  skip_existing: true
+  user: linhd-postdata
+  password:
+    secure: gtN/KfPdyWOCgt/9E+3x3tsItnMbBcWK/pqABu/F+OEm2hT8F7ZaNVjZw0dBqym2BgedgTalHtA5wLi0Zbc2cmbbcBrlT8J7XF5R0QY721Xb+vhOXzdwF39hZNcQNNXmJJTvoy56cWyyDf5yxc7YMMi6lS2KEOnC8ghHmRuNjzGFX9vumFVxRRWUsPKShabzZz+Ye+UBde2qiTebeyVIQ0bHLbar5JXr8jVqsNP1sGxqLGsXbHAHSFVavaNJe7DnryfsgS8pK2yWL2Rs+gCMQYYQxQJcD86lRMMX9GfhTTHFoo+FKibkDmETvg8wIu/CNMaMU4YkZzkxZPkDMHUPpQ6l3rI7bjmPQoPqt1hpG+iM6MNa0woLbWzgok+q9obC12nIdK8XuMhqBYbSXdlldgmT/XAyxa8aOYzlt93g3G+pd7qRrv2pegHyTwvGOH5n2hLWMKovGI4su95F10OmphmjsZHi8wlkTANxUDtYZg2VPIpVWhGgcKxt7Xf0C/TrXlEHNJa+kC9qz+Ard3Vd+2XHNkM/fReinZWmJ1pt8GvmxgwVCIsORZZls7a+0+OGz9tIXyOoKszk39qvXI6wyjnUzFMKlfoqk+6/8HMKNCwnUhFCJkfpSnwLmpJUcY3TyzvnpA5xJqJ/VMNzJgoCLNghEXbblUwWHPFJnHS4R3o=
+  on:
+    tags: true
+    repo: linhd-postdata/jollyjumper
+    python: 3.7
+    condition: "$TOXENV = py37"
+notifications:
+  email:
+    on_success: never
+    on_failure: always
