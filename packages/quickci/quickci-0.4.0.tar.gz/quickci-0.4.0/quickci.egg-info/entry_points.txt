@@ -1,0 +1,3 @@
+[console_scripts]
+quickci = quickci.cli:main
+

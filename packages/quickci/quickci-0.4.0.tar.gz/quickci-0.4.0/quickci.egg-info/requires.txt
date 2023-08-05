@@ -1,0 +1,4 @@
+Click>=7.0
+requests>=2.21.0
+asyncio>=3.4.3
+aiohttp>=3.5.4
