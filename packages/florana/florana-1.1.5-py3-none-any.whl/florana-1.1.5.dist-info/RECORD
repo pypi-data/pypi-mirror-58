@@ -1,0 +1,11 @@
+florana/__init__.py,sha256=grAGffw2rT93ZE7MOcN_a0rzechHFdSvRt71dyYXYR4,20
+florana/extract.py,sha256=X8BfYKstnMn2tMzazczPIp6JdX44zCJ2LytrmYOK-Jg,20726
+florana/geography.txt,sha256=woAMhhWzfm-4IsLjMLqL6Unw0ByyEjxgfZq6nUHCOM0,431
+florana/key.json,sha256=2EglaKos0FLbkP5sMVRY6gCW7yBqgbHb7IjMkk5XpwM,1602
+florana/locations.txt,sha256=hQqgwQ5T_CnLShm7zXq61OEbfxXqleBQS_axjh60M-Q,769
+florana/test.py,sha256=Eqj-64vQrn64Ld790C8Ndw2tiHUNDvm-Xb23e1_DmeM,600
+florana-1.1.5.dist-info/LICENSE,sha256=pPOl2cCbeV63KHYpgDbHJhRFtMqCvBfBwp38l26Q-gk,1054
+florana-1.1.5.dist-info/METADATA,sha256=5Fbmr2V2imAXp4NO0OZBHtoorj6ZXdjPwTqes3WOiXM,2035
+florana-1.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+florana-1.1.5.dist-info/top_level.txt,sha256=q3xSRmeFDLG2jtV-fwiZhvrxybL0cu3dFLbTDh5j9jY,8
+florana-1.1.5.dist-info/RECORD,,
