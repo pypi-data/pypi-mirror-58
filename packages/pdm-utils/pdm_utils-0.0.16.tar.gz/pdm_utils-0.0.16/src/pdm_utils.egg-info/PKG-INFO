@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pdm-utils
+Version: 0.0.16
+Summary: MySQL phage genomics database management utilities
+Home-page: https://github.com/SEA-PHAGES/pdm_utils
+Author: Travis Mavrich
+Author-email: trm53@pitt.edu
+License: UNKNOWN
+Description: # README #
+        
+        ### Purpose: ###
+        
+        * The pdm_utils repository provides the source code for pdm_utils Python package, developed in the SEA-PHAGES program to create, update, and maintain MySQL phage genomics databases. Documentation for the package is available on https://readthedocs.org/
+        
+        ### Contribution guidelines: ###
+        
+        * Please contact us if you have any contributions or suggestions.
+        
+        ### Developers: ###
+        
+        * Travis Mavrich (trm53@pitt.edu) or Christian Gauthier (christian.gauthier@pitt.edu).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
