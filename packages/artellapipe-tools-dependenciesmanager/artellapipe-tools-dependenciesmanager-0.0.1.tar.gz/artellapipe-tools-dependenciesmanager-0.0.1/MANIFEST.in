@@ -1,0 +1,3 @@
+
+include artellapipe/tools/dependenciesmanager/__logging__.ini
+include artellapipe/tools/dependenciesmanager/resources/images/*.*
