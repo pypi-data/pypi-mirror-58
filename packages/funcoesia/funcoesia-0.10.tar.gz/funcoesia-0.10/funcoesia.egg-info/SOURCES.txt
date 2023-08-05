@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+funcoesia/__init__.py
+funcoesia/math.py
+funcoesia/save.py
+funcoesia.egg-info/PKG-INFO
+funcoesia.egg-info/SOURCES.txt
+funcoesia.egg-info/dependency_links.txt
+funcoesia.egg-info/top_level.txt
