@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: RustyWarePeople
+Version: 0.0.1
+Summary: Some people to extract
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # Rusty People
+        This is to model some people in rusty world
+        
+        ## Installation
+        
+        Run the following to install:
+        ```python 
+        pip install MyPeople
+        ```
+        
+        ## Usage
+        
+        ```python
+        from MyPeople import Rusty
+        
+        # Create a rusty
+        russ = Rusty()
+        print(rusty.getName())
+        
+        # Create anyone else
+        anyone = Person('Bob')
+        print(anyone.getName())
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
