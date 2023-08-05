@@ -1,0 +1,10 @@
+bug_crowd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bug_crowd/client.py,sha256=JlirlSScCzHvOZ_Bp7CZ91SMfHPVdbAPui90HPxH-Bo,6620
+bug_crowd/test.py,sha256=BOz4r-PGTXQcSvSVLcjM65PsExMBOSnLkYi2ExX_ksg,16083
+bug_crowd_api_client-2.2.0.dist-info/AUTHORS,sha256=vcFix6Y4CncwgkTvx6CfhnXyf6GpwhsqSSGqdMIomr0,82
+bug_crowd_api_client-2.2.0.dist-info/LICENSE,sha256=CtyOL-eV-auanNS1c96C3oJKbWVHXZjQ4Z2V6bVl4N0,1074
+bug_crowd_api_client-2.2.0.dist-info/METADATA,sha256=-s1zuiuxUOq63TIG0tdA6jpVt4u25QozMB6diz5mgao,1028
+bug_crowd_api_client-2.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+bug_crowd_api_client-2.2.0.dist-info/pbr.json,sha256=Gj1V9zlLa9Nue68TFDrGztwbHBi8iRgsadPPYZuH_2g,47
+bug_crowd_api_client-2.2.0.dist-info/top_level.txt,sha256=Qyz1l5ERRfWT1zVxq_MDpUc7nk0zWElg1oc93rENK2Y,10
+bug_crowd_api_client-2.2.0.dist-info/RECORD,,
