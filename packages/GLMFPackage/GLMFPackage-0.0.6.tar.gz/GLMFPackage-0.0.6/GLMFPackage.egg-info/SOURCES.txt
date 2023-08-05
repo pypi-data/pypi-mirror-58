@@ -1,0 +1,14 @@
+.gitignore
+.gitlab-ci.yml
+README.md
+build_test_install.sh
+setup.py
+tox.ini
+GLMFPackage.egg-info/PKG-INFO
+GLMFPackage.egg-info/SOURCES.txt
+GLMFPackage.egg-info/dependency_links.txt
+GLMFPackage.egg-info/entry_points.txt
+GLMFPackage.egg-info/top_level.txt
+glmfpackage/__init__.py
+glmfpackage/test_hello.py
+glmfpackage/version.py
