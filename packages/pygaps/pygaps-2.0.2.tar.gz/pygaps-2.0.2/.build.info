@@ -1,0 +1,11 @@
+## Create new branch for release (git flow)
+git flow release start x.y.z
+
+## Ensure all tests are passing
+# or use Travis to run automatically
+pytest --cov --cov-report xml:coverage.xml
+
+## Increase version
+bumpversion major/minor/patch
+
+##
