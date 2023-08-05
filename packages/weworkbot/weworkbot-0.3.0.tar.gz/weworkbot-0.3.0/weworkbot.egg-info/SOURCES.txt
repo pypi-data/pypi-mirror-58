@@ -1,0 +1,9 @@
+setup.py
+weworkbot/__init__.py
+weworkbot/bot.py
+weworkbot/bot_mgr.py
+weworkbot.egg-info/PKG-INFO
+weworkbot.egg-info/SOURCES.txt
+weworkbot.egg-info/dependency_links.txt
+weworkbot.egg-info/requires.txt
+weworkbot.egg-info/top_level.txt
