@@ -1,0 +1,252 @@
+Metadata-Version: 1.0
+Name: refinitiv-dataplatform
+Version: 1.0.0a0
+Summary: Python package for retrieving data.
+Home-page: https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-libraries
+Author: REFINITIV
+Author-email: UNKNOWN
+License: LICENSE
+Description: The Refinitiv Data Plaform Library for Python provides a set of
+        ease-of-use functions and classes that gives your applications a uniform
+        access to the breath and depth of financial data and services available
+        on the Refinitiv Data Platform.
+        
+        Thanks to this library the same Python code can be used to retrieve data
+        whatever the access point your application uses to connect to the
+        Refinitiv Data Platform (either via a direct connection, via Eikon, via
+        the Refinitiv Workspace or even via a deployed Enterprise Platform).
+        
+        The library provides several abstraction layers enabling different
+        programming styles and technics suitable for all developers from
+        Financial Coders to Seasoned Developers (synchronous function calls,
+        async/await, event driven).
+        
+        Some examples
+        =============
+        
+        Import the Refinitiv Data Platform Library
+        ------------------------------------------
+        
+        .. code:: python
+        
+           import refinitiv.dataplatform as rdp
+        
+        Chose your platform access point…
+        ---------------------------------
+        
+        …either directly to the Refinitiv Data Platform…
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           rdp.open_platform_session(
+               '8e9bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1b035d', 
+               rdp.GrantPassword(
+                   'my_login', 
+                   'my_password'
+               )
+           )
+        
+        …or via Eikon/Refinitiv Workspace…
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           rdp.open_desktop_session('8e9bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1b035d')
+        
+        …or via a Deployed Platform
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+           rdp.open_deployed_platform_session(
+               '8e9bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1b035d',
+               'my_deployed_platform_ip',
+               'my_dacs_user_name'
+           )
+        
+        Real-time Pricing - Get Snapshots
+        ---------------------------------
+        
+        .. code:: python
+        
+           rdp.get_snapshot(
+               universe = ['GBP=','JPY='], 
+               fields   = ['BID','ASK']
+           )
+        
+        +---+-------------+----------+----------+
+        |   | Instruments | BID      | ASK      |
+        +===+=============+==========+==========+
+        | 0 | GBP=        | 1.3211   | 1.3212   |
+        +---+-------------+----------+----------+
+        | 1 | JPY=        | 108.6100 | 108.6200 |
+        +---+-------------+----------+----------+
+        
+        Real-time Pricing - Get Streaming Data
+        --------------------------------------
+        
+        .. code:: python
+        
+           streaming_prices = rdp.StreamingPrices(
+               instruments = ['EUR=', 'GBP=', 'JPY=', 'CAD='], 
+               fields = ['DSPLY_NAME', 'BID', 'ASK'],
+               on_update = lambda streaming_price, instrument_name, fields : 
+                   print("Update received for {}: {}".format(instrument_name, fields))
+           )
+        
+           streaming_prices.open()
+        
+        Output:
+        
+        ::
+        
+           <StreamState.Open: 3>
+        
+           Update received for JPY=: {'DSPLY_NAME': 'BARCLAYS     LON', 'BID': 109.59, 'ASK': 109.62}
+           Update received for GBP=: {'DSPLY_NAME': 'ASANPACIFIBK MOW', 'BID': 1.341, 'ASK': 1.3411}
+           Update received for EUR=: {'DSPLY_NAME': 'UBS          ZUR', 'BID': 1.117, 'ASK': 1.1174}
+           Update received for CAD=: {'DSPLY_NAME': 'HSBC         LON', 'BID': 1.3165, 'ASK': 1.3167}
+           Update received for JPY=: {'DSPLY_NAME': 'ASANPACIFIBK MOW', 'BID': 109.59, 'ASK': 109.61}
+           Update received for GBP=: {'DSPLY_NAME': 'INTERPROMBAN MOW', 'BID': 1.341, 'ASK': 1.3412}
+           Update received for EUR=: {'DSPLY_NAME': 'RBS          LON', 'BID': 1.117, 'ASK': 1.1174}
+           Update received for CAD=: {'DSPLY_NAME': 'CIBC         TOR', 'BID': 1.316, 'ASK': 1.3164}
+           Update received for JPY=: {'DSPLY_NAME': 'BARCLAYS     LON', 'BID': 109.59, 'ASK': 109.62}
+           Update received for GBP=: {'DSPLY_NAME': 'INTERPROMBAN MOW', 'BID': 1.341, 'ASK': 1.3413}
+           Update received for EUR=: {'DSPLY_NAME': 'BARCLAYS     LON', 'BID': 1.117, 'ASK': 1.1174}
+           Update received for CAD=: {'DSPLY_NAME': 'CIBC         TOR', 'BID': 1.316, 'ASK': 1.3164}
+           Update received for JPY=: {'DSPLY_NAME': 'ASANPACIFIBK MOW', 'BID': 109.59, 'ASK': 109.61}
+           Update received for GBP=: {'DSPLY_NAME': 'BARCLAYS     LON', 'BID': 1.341, 'ASK': 1.3414}
+        
+        Historical Pricing - Get Interday Summaries
+        -------------------------------------------
+        
+        .. code:: python
+        
+           rdp.get_historical_price_summaries(
+               universe = 'VOD.L', 
+               interval = rdp.Intervals.DAILY,
+               fields = ['BID','ASK','OPEN_PRC','HIGH_1','LOW_1','TRDPRC_1','NUM_MOVES','TRNOVR_UNS']
+           )
+        
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        |       | BID   | ASK   | OPEN  | HIGH  | LOW 1 | TRDPR | NUM   | TRNOV |
+        |       |       |       | PRC   | 1     |       | C     | MOVES | R     |
+        |       |       |       |       |       |       | 1     |       | UNS   |
+        +=======+=======+=======+=======+=======+=======+=======+=======+=======+
+        | 2019- | 144.3 | 144.3 | 144.4 | 145.6 | 143.4 | 144.1 | 12631 | 84983 |
+        | 12-12 | 2     | 4     | 2     | 6     | 6     | 8     | .0    | 47218 |
+        |       |       |       |       |       |       |       |       | .7115 |
+        |       |       |       |       |       |       |       |       | 4     |
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        | 2019- | 143.5 | 143.6 | 142.7 | 144.8 | 142.6 | 143.5 | 10395 | 88154 |
+        | 12-11 | 8     |       | 2     |       | 2     | 8     | .0    | 50412 |
+        |       |       |       |       |       |       |       |       | .6535 |
+        |       |       |       |       |       |       |       |       | 3     |
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        | 2019- | 142.7 | 142.7 | 143.8 | 143.8 | 141.4 | 142.7 | 10311 | 80702 |
+        | 12-10 | 4     | 8     | 4     | 4     | 8     | 4     | .0    | 85210 |
+        |       |       |       |       |       |       |       |       | .4574 |
+        |       |       |       |       |       |       |       |       | 2     |
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        | …     | …     | …     | …     | …     | …     | …     | …     | …     |
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        | 2019- | 152.1 | 152.1 | 154.7 | 155.6 | 152.0 | 152.1 | 14606 | 19322 |
+        | 11-18 |       | 2     | 4     | 6     |       | 2     | .0    | 98863 |
+        |       |       |       |       |       |       |       |       | 9.34  |
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        | 2019- | 154.6 | 154.6 | 160.6 | 160.6 | 154.0 | 154.6 | 17035 | 31993 |
+        | 11-15 |       | 2     | 8     | 8     | 6     | 326   | .0    | 01381 |
+        |       |       |       |       |       |       |       |       | 8.374 |
+        |       |       |       |       |       |       |       |       | 56    |
+        +-------+-------+-------+-------+-------+-------+-------+-------+-------+
+        
+        News - Get Headlines
+        --------------------
+        
+        .. code:: python
+        
+           rdp.get_news_headlines(query = 'LFR', count = 350)
+        
+        +---------------------------+-------+-------------+-------------------+
+        | versionCreated            | text  | storyId     | sourceCode        |
+        +===========================+=======+=============+===================+
+        | 2019-12-12 06:51:36.518   | SGX   | urn:newsml: | NS:GURU           |
+        |                           | FTSE  | reuters.com |                   |
+        |                           | China | :20191212:n |                   |
+        |                           | A50   | GUR92Pj4t:1 |                   |
+        |                           | (Z9)  |             |                   |
+        |                           | intra |             |                   |
+        |                           | day   |             |                   |
+        |                           | :     |             |                   |
+        |                           | prude |             |                   |
+        |                           | nce.  |             |                   |
+        +---------------------------+-------+-------------+-------------------+
+        | 2019-12-12 06:49:52.011   | SSE   | urn:newsml: | NS:GURU           |
+        |                           | Compo | reuters.com |                   |
+        |                           | site  | :20191212:n |                   |
+        |                           | intra | GUR8gt362:1 |                   |
+        |                           | day   |             |                   |
+        |                           | :     |             |                   |
+        |                           | biais |             |                   |
+        |                           | hauss |             |                   |
+        |                           | ier   |             |                   |
+        |                           | au-de |             |                   |
+        |                           | s…    |             |                   |
+        +---------------------------+-------+-------------+-------------------+
+        | 2019-12-12 06:49:33.973   | Elect | urn:newsml: | NS:SDASDE         |
+        |                           | ion   | reuters.com |                   |
+        |                           | du    | :20191212:n |                   |
+        |                           | Conse | NRAafovmk:1 |                   |
+        |                           | il    |             |                   |
+        |                           | fédér |             |                   |
+        |                           | al:   |             |                   |
+        |                           | "repe |             |                   |
+        |                           | nser  |             |                   |
+        |                           | la    |             |                   |
+        |                           | form… |             |                   |
+        +---------------------------+-------+-------------+-------------------+
+        | …                         | …     | …           | …                 |
+        +---------------------------+-------+-------------+-------------------+
+        | 2019-12-11 23:27:13.673   | Le    | urn:newsml: | NS:LESECH         |
+        |                           | nouve | reuters.com |                   |
+        |                           | au    | :20191211:n |                   |
+        |                           | systè | NRAafll6g:1 |                   |
+        |                           | me    |             |                   |
+        |                           | en    |             |                   |
+        |                           | huit  |             |                   |
+        |                           | quest |             |                   |
+        |                           | ions  |             |                   |
+        +---------------------------+-------+-------------+-------------------+
+        | 2019-12-11 23:27:13.653   | Les   | urn:newsml: | NS:LESECH         |
+        |                           | clefs | reuters.com |                   |
+        |                           | du    | :20191211:n |                   |
+        |                           | royau | NRAaflped:1 |                   |
+        |                           | me    |             |                   |
+        +---------------------------+-------+-------------+-------------------+
+        
+        350 rows x 4 columns
+        
+        Learning materals
+        =================
+        
+        To learn more about the Refinitiv Data Platform Library for python just
+        connect to the Refinitiv Developer Community. By
+        `registering <https://developers.refinitiv.com/iam/register>`__ and
+        `login <https://developers.refinitiv.com/iam/login>`__ to the Refinitiv
+        Developer Community portal you will get free access to a number of
+        learning materials like `Quick Start
+        guides <https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-libraries/quick-start>`__,
+        `Tutorials <https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-libraries/learning>`__,
+        `Documentation <https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-libraries/docs>`__
+        and much more.
+        
+        Help and Support
+        ================
+        
+        If you have any questions regarding the API usage, please post them on
+        the `Refinitiv Data Platform Q&A
+        Forum <https://community.developers.thomsonreuters.com>`__. The
+        Refinitiv Developer Community will be very pleased to help you.
+        
+Platform: UNKNOWN
