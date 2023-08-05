@@ -1,0 +1,3 @@
+[console_scripts]
+referencer = referencer.__main__:cli
+

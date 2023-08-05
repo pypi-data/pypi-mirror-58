@@ -1,0 +1,8 @@
+pydoc-markdown
+click
+
+[develop]
+mock
+pylama
+pytest
+pytest-cov
