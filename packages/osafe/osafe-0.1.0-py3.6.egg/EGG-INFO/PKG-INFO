@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: osafe
+Version: 0.1.0
+Summary: A Python implementation of OSafe.
+Home-page: https://github.com/osafe/osafe-python
+Author: Oded Niv
+Author-email: oded.niv@gmail.com
+License: MIT
+Description: # OSafe Python
+        
+        A Python implementation of OSafe.
+        
+        ## Requirements
+        
+        -  Python 3.6+
+        
+        ## Installation
+        
+        ```bash
+        # use --user unless in virtual env
+        pip3.6 install osafe --user
+        ```
+        
+        ## Usage
+        
+        ```bash
+        osafe
+        ```
+        
+        That's it!
+        
+        ## Distribute
+        
+        ```bash
+        python3.6 -m venv venv
+        . venv/bin/activate
+        
+        pip install --upgrade pip setuptools wheel twine
+        rm -rf dist/
+        python setup.py sdist bdist_wheel
+        twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
