@@ -1,0 +1,26 @@
+# remindmebot configuration file
+#
+# copy this file as "remindmebot.rc" and fill in required and optional values
+#
+# This is a comment and will be ignored
+#
+
+# user@server/resource
+JID=
+PASSWORD=
+
+# JID of user with admin powers (debug, shutdown...)
+ADMIN=
+
+# If True, the bot will accept presence requests from anybody,
+# if False, only the admin can add the bot to the roster
+ACCEPT_PRESENCE_REQUEST=False
+
+# If True, the bot will accept invitations to join MUC rooms
+MUC_ACCEPT_INVITE=False
+
+# MUCS=<list of muc room jids separated by ;>
+
+# MUC_NICK=<nickname to use in muc. defaults to "xbot">
+
+# LOGGER=<log level, default DEBUG>

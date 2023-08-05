@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+xchatbot.py
+./echobot.rc.dist
+xchatbot.egg-info/PKG-INFO
+xchatbot.egg-info/SOURCES.txt
+xchatbot.egg-info/dependency_links.txt
+xchatbot.egg-info/requires.txt
+xchatbot.egg-info/top_level.txt

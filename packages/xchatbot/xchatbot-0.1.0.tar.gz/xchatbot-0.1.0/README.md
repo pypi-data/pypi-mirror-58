@@ -1,0 +1,101 @@
+# The Xtensible XMPP Chat Bot
+
+## requirements
+
+- python 3
+- python3-gi
+- python3-nbxmpp
+
+optionally
+
+- pipenv
+
+## run
+
+### with pipenv
+
+    $ pipenv --site-packages --python 3
+    $ pipenv install
+    $ pipenv run ./xchatbot.py
+
+on osx:
+
+    $ brew install python3 pygobject3 pipenv
+
+### on Arch
+
+    # pacman -S python-gobject python-nbxmpp
+    $ ./xchatbot.py
+
+### on Debian:
+
+    # apt install python3-gi python3-nbxmpp
+    $ ./xchatbot.py
+
+
+## configuration
+
+The script loads a configuration file called after the bot class name.
+For a bot class `EchoBot` the script will look for './echobot.rc', 
+'~/.echobot.rc' and '/etc/echobot.rc' in this order, and will load the first it 
+find.
+
+An example config file is provided as `echobot.rc.dist`, with comments.
+
+
+## extend
+
+Subclass `XChatBot` class in `xchatbot` module and implement your commands
+as method of your class.
+Methods must be named `cmd_yourcommand` and must get a `peer` parameter and a
+number of args.
+A docstring should be provided that is used by `help` command to build the help 
+message.
+
+The bot is started calling the classmethod `start()`
+
+In this example a simple echo bot.
+The bot has one command, `echo` and will send back all arguments back to the peer
+
+```python
+from xchatbot import XChatBot
+
+class MyEchoBot(XChatBot):
+    def cmd_echo(self, peer, *args):
+        """Echo back what you typed"""
+        msg = "You said: "
+        msg = msg + " ".join(args)
+        peer.send(msg)
+
+if __name__ == "__main__":
+    MyEchoBot.start()
+```
+
+create a `myechobot.rc` config file and run the bot:
+
+```
+$ python echobot.py
+```
+
+### private commands
+
+A command can be marked as private using the `@private` decorator.
+A private command is list in help and is executed only if the message comes from
+the admin JID setted in config file
+
+```python
+from xchatbot import XChatBot, private
+
+class MyEchoBot(XChatBot):
+    def cmd_echo(self, peer, *args):
+        """Echo back what you typed"""
+        msg = "You said: "
+        msg = msg + " ".join(args)
+        peer.send(msg)
+    
+    @private
+    dev cmd_admin(self, peer, *args):
+        """Bot administration"""
+        peer.send("The admin was succesfull")
+```
+
