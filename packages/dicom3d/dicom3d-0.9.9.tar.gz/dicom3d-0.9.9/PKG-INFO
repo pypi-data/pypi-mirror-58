@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: dicom3d
+Version: 0.9.9
+Summary: Library for reconstructing arbitrary defined 3D sectionsfrom volumetric medical scans
+Home-page: https://github.com/bitdefender/dicom3d
+Author: Alex Mircescu
+Author-email: mircescu@gmail.com
+License: UNKNOWN
+Description: **dicom3d** is a comprehensive Python package for reconstructing arbitrary defined 3D sections 
+        from volumetric medical scans (CTs or RMNs), scale accurate and with a builtin pixel-to-world 
+        coordinate mapping system.
+        
+        It comes preloaded with the necessary mathematical backend to manipulate space information from 
+        medical scans, and provides a mapping system that can transparently handle different imaging 
+        properties such as pixel density, dataset thickness, patient orientation, patient positioning, 
+        etc.
+        
+        Dependencies
+        ------------
+        It relies on **pydicom** for loading DICOM medical images and **numpy** for array manipulation.
+        
+        Repository
+        ----------
+        
+        For source code and documentation visit [dicom3d](https://github.com/bitdefender/dicom3d) **GitHub** repository
+        
+        Installation
+        ------------
+        
+        From **PyPi** package repository:
+        
+            pip install dicom3d
+        
+        License
+        -------
+        Licence for this Python package is the **MIT License** under **Copyright (c) 2020 Bitdefender**.
+        
+        Author
+        -------
+        Developed and maintained by *Alex Mircescu* (`amircescu`@`bitdefender.com`)
+Keywords: python,medical,rmn,ct,dicom,reconstruction,imaging
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
