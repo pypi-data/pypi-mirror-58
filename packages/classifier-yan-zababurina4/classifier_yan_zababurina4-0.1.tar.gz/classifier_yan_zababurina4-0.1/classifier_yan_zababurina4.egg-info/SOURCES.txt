@@ -1,0 +1,8 @@
+setup.py
+classifier_yan_zababurina4/__init__.py
+classifier_yan_zababurina4/module.py
+classifier_yan_zababurina4.egg-info/PKG-INFO
+classifier_yan_zababurina4.egg-info/SOURCES.txt
+classifier_yan_zababurina4.egg-info/dependency_links.txt
+classifier_yan_zababurina4.egg-info/not-zip-safe
+classifier_yan_zababurina4.egg-info/top_level.txt
