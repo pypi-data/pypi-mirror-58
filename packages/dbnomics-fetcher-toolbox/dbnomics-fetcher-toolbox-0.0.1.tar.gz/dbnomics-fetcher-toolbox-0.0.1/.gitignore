@@ -1,0 +1,10 @@
+*.egg-info/
+.cache/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+build/
+dist/
+*.pyc
+*.pyo
