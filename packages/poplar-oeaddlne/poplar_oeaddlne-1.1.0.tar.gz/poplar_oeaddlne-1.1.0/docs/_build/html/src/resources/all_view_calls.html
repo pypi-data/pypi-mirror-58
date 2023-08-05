@@ -1,0 +1,952 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>All View Calls &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Resources" href="../resources.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../walkthrough.html">Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OE1100_oe_add_line.html">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../resources.html">Resources</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">All View Calls</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../resources.html">Resources</a> &raquo;</li>
+        
+      <li>All View Calls</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/resources/all_view_calls.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="all-view-calls">
+<h1>All View Calls<a class="headerlink" href="#all-view-calls" title="Permalink to this headline">¶</a></h1>
+<p>A helpful reference for all supported calls for view scripts.</p>
+<span class="target" id="module-poplar_oeaddlne.resources.all_view_calls"></span><p>This script shows all the entry points that you can use when writing a script for a view.
+It doesn’t actually do anything useful.</p>
+<p>Copyright 2015 Orchid Systems</p>
+<p>Updated 2019 2665093 Ontario Inc.</p>
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterAttributes">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterAttributes</code><span class="sig-paren">(</span><em>e</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterAttributes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after the attributes of a view field are changed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the attribute operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterCancel">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterCancel</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterCancel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterCancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is canceled.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the cancel operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterClose">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterClose</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterClose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterClose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is closed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the close operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterCompose">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterCompose</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterCompose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterCompose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is composed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>event</strong> (<code class="docutils literal notranslate"><span class="pre">accpac.viewComposeArgs</span></code>) – compose event information.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">must return <code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or the view will not load.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterDelete">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterDelete</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterDelete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterDelete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is deleted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the delete operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterDirty">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterDirty</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterDirty"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterDirty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is marked dirty.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the mark dirty operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterFetchLock">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterFetchLock</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterFetchLock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterFetchLock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view releases a lock for a fetch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the fetch lock operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterGet">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterGet</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterGet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterGet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a field view is retrieved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Params event:</th><td class="field-body">undocumented.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterInit">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterInit</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterInit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterInit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is initialized.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the initialization, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterInsert">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterInsert</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterInsert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterInsert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is inserted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the insert operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterPost">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterPost</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterPost"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is posted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the post operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterProcess">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterProcess</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterProcess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view finishes processing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of processing, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterPut">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterPut</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterPut"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterPut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a value is put in the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Params event:</th><td class="field-body">undocumented.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterRead">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterRead</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterRead"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterRead" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a record is read through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the read operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterReadLock">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterReadLock</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterReadLock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterReadLock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view releases a lock for a read.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the read lock operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterRecordClear">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterRecordClear</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterRecordClear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterRecordClear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is cleared.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the clear operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterUnlock">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterUnlock</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterUnlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterUnlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is unlocked.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the unlock operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterUpdate">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterUpdate</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterUpdate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is updated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the update operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onAfterVerify">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onAfterVerify</code><span class="sig-paren">(</span><em>result</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onAfterVerify"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onAfterVerify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called after a view is verified.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result</strong> (<em>int</em>) – result of the verify operation, 0 on success.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeAttributes">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeAttributes</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeAttributes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before the attributes of a view field are changed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Params event:</th><td class="field-body">undocumented.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeCancel">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeCancel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeCancel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeCancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is canceled through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeClose">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeClose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeClose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeClose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is closed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> to allow the close,
+<code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code> to disallow it.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeCompose">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeCompose</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeCompose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeCompose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is composed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>event</strong> (<code class="docutils literal notranslate"><span class="pre">accpac.viewComposeArgs</span></code>) – compose event information.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">must return <code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or the view will not load.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+<p>Get the handles for composed views to make it easier to work with
+related data.</p>
+<p>A script attached to the Order Header <code class="docutils literal notranslate"><span class="pre">OE0520</span></code> view can access
+the composed Order Details <code class="docutils literal notranslate"><span class="pre">OE0522</span></code> view.  Get a handle on before
+compose, store it in the <code class="docutils literal notranslate"><span class="pre">__main__</span></code> (script) namespace, and use
+it in other calls.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">oeordd</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="k">def</span> <span class="nf">onBeforeCompose</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">views</span><span class="p">):</span>
+        <span class="n">oeordd</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">views</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">onAfterPut</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="c1"># If the put succeeded and a field = value, add a new order line</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;FIELD&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;VALUE&quot;</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">oeordd</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">oeordd</span><span class="o">.</span><span class="n">recordGenerate</span><span class="p">()</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">oeordd</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+        <span class="o">...</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeDelete">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeDelete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeDelete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeDelete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is deleted through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeDirty">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeDirty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeDirty"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeDirty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is marked dirty.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeFetch">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeFetch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeFetch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeFetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is fetched through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeFetchLock">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeFetchLock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeFetchLock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeFetchLock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view locks for a fetch.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeGet">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeGet</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeGet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeGet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before the value of a field is retrieved through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Params event:</th><td class="field-body">undocumented.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeInit">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeInit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeInit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeInit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is initialized.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeInsert">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeInsert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeInsert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeInsert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is inserted into the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforePost">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforePost</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforePost"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforePost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is posted through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeProcess">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeProcess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeProcess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view runs processing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforePut">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforePut</code><span class="sig-paren">(</span><em>event</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforePut"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforePut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before the value of a field is put in a view field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Params event:</th><td class="field-body">undocumented.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeRead">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeRead</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeRead"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeRead" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is read from the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeReadLock">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeReadLock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeReadLock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeReadLock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view locks for a read.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeRecordClear">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeRecordClear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeRecordClear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeRecordClear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is cleared.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeUnlock">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeUnlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeUnlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeUnlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is unlocked.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeUpdate">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeUpdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeUpdate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeUpdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a record is updated through the view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onBeforeVerify">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onBeforeVerify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onBeforeVerify"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onBeforeVerify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before a view is verified.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> or <code class="docutils literal notranslate"><span class="pre">accpac.Abort</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onCommitRecord">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onCommitRecord</code><span class="sig-paren">(</span><em>op</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onCommitRecord"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onCommitRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when a record in the revision list has been posted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>op</strong> (<em>int</em>) – <p>operation code, one of:</p>
+<ul class="simple">
+<li>1 = insert</li>
+<li>2 = update</li>
+<li>3 = delete</li>
+<li>4 = move</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onOpen">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onOpen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onOpen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onOpen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when a view is opened.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> to enable the script,
+0 to disable, anything else stops the view loading.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onOpenReadOnly">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onOpenReadOnly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onOpenReadOnly"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onOpenReadOnly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when a view is opened in readonly mode.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">accpac.Continue</span></code> to enable the script,
+0 to disable, anything else stops the view loading.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onRevisionCancelled">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onRevisionCancelled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onRevisionCancelled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onRevisionCancelled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the revision list is cancelled, changes are discarded.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.resources.all_view_calls.onRevisionPosted">
+<code class="descclassname">poplar_oeaddlne.resources.all_view_calls.</code><code class="descname">onRevisionPosted</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/poplar_oeaddlne/resources/all_view_calls.html#onRevisionPosted"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.resources.all_view_calls.onRevisionPosted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when a revision has been posted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../resources.html" class="btn btn-neutral float-left" title="Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

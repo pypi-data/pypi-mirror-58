@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Building the View Script &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Building the Screen Script" href="building_the_screen_script.html" />
+    <link rel="prev" title="Walkthrough" href="../walkthrough.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../walkthrough.html">Walkthrough</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Building the View Script</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-accpac-and-scaffold">Import accpac and Scaffold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implement-the-onafter-call">Implement the onAfter call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-parameters">Add Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#testing">Testing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="building_the_screen_script.html">Building the Screen Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="making_the_module.html">Making an Extender Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_custom_tables.html">Custom Tables for Item Mappings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OE1100_oe_add_line.html">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../walkthrough.html">Walkthrough</a> &raquo;</li>
+        
+      <li>Building the View Script</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/walkthrough/building_the_view_script.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="building-the-view-script">
+<h1>Building the View Script<a class="headerlink" href="#building-the-view-script" title="Permalink to this headline">¶</a></h1>
+<p>A view script it is.  It will attach to the <code class="docutils literal notranslate"><span class="pre">OE0500</span></code> Order Headers
+detail view. On insert it needs to:</p>
+<ol class="arabic simple">
+<li>Check if the operation was successful.</li>
+<li>Check if the item matches “A1-103/0”.</li>
+<li>Generate a new record in the view.</li>
+<li>Populate the record with the Item “A1-105/0” Qty 1.</li>
+<li>Save the record.</li>
+</ol>
+<div class="section" id="import-accpac-and-scaffold">
+<h2>Import accpac and Scaffold<a class="headerlink" href="#import-accpac-and-scaffold" title="Permalink to this headline">¶</a></h2>
+<p>All scripts start the same, import all members of <code class="docutils literal notranslate"><span class="pre">accpac.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Importing <code class="docutils literal notranslate"><span class="pre">*</span></code> is generally not a good idea, you don’t know what is being
+pulled into the namespace.  You can import only the things you need, plus
+some extras, with a little trial and error.</p>
+</div>
+<p>Now we need to decide which events to listen to, do we need to check the record
+before or after insert?  Before the operation occurs we can’t know whether it
+was successful and it may fail.  If we were to act before a successful
+operation we may create new lines when the triggering line failed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">onAfter</span></code> seems the correct choice.  Add the appropriate method with the
+correct signature.  The <a class="reference internal" href="../resources/all_view_calls.html#module-poplar_oeaddlne.resources.all_view_calls" title="poplar_oeaddlne.resources.all_view_calls"><code class="xref py py-mod docutils literal notranslate"><span class="pre">poplar_oeaddlne.resources.all_view_calls</span></code></a> is a
+good place to start.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;After updating, if the item is &quot;A1-103/0&quot;, insert a new line.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Check if the operation was successful</span>
+
+    <span class="c1"># Check if the item matches</span>
+
+    <span class="c1"># Generate a new record in the view</span>
+
+    <span class="c1"># Populate the record</span>
+
+    <span class="c1"># Save the record</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="implement-the-onafter-call">
+<h2>Implement the onAfter call<a class="headerlink" href="#implement-the-onafter-call" title="Permalink to this headline">¶</a></h2>
+<p>The docs for
+<a class="reference internal" href="../resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterInsert" title="poplar_oeaddlne.resources.all_view_calls.onAfterInsert"><code class="xref py py-meth docutils literal notranslate"><span class="pre">poplar_oeaddlne.resources.all_view_calls.onAfterInsert()</span></code></a> tell
+us that the <code class="docutils literal notranslate"><span class="pre">result</span></code> argument contains 0 if the insert succeeded and that the
+function doesn’t need to return.</p>
+<p>Once we have checked the result, we need to see if the item matches.  Use the
+special view object <code class="docutils literal notranslate"><span class="pre">me</span></code> exposed by <code class="docutils literal notranslate"><span class="pre">accpac</span></code> to access the current record
+in the view and use <code class="docutils literal notranslate"><span class="pre">me.get(field)</span></code> to retrive the item number inserted.</p>
+<p>Field names can be found by looking them up using the Extender View Info
+Inquiry or using the Sage <code class="docutils literal notranslate"><span class="pre">accpacViewInfo</span></code> utility.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;After updating, if the item is &quot;A1-103/0&quot;, insert a new line.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Check if the operation was successful</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Check if the item matches</span>
+    <span class="k">if</span> <span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;A1-103/0&quot;</span><span class="p">:</span>
+
+        <span class="c1"># Generate a new record in the view</span>
+
+        <span class="c1"># Populate the record</span>
+
+        <span class="c1"># Save the record</span>
+</pre></div>
+</div>
+<p>Generating a new line is generally accomplished by running two operations on
+the view.  The first, <code class="docutils literal notranslate"><span class="pre">.recordClear()</span></code> resets the state of the view.  The
+second, <code class="docutils literal notranslate"><span class="pre">.recordGenerate()</span></code>, creates a new record in the view. Both return
+0 when successful.</p>
+<p>What should happen if these operations fail?  There is always a silent option,
+but then the user may be confused as to why the line doesn’t isn’t created when
+they expect it to.</p>
+<p>Extender provides a number of ways to notify.  The first is using the
+<code class="docutils literal notranslate"><span class="pre">showMessage(str)</span></code>, <code class="docutils literal notranslate"><span class="pre">showWarning(str)</span></code>, <code class="docutils literal notranslate"><span class="pre">showError(str)</span></code> method.  These
+put messages on the error stack for Sage to display. They may not be displayed
+immediately, which can be helpful for situtations where errors may occur in
+bulk (such as during an import).  They also provide levels and a familiar
+interace.</p>
+<p>The second is to use <code class="docutils literal notranslate"><span class="pre">showMessageBox(str)</span></code> which will pop up a dialog
+immediately. This is generally a better option for things the user needs to
+know now and for any debugging you need.  Show a message box to the user on
+failure.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;After updating, if the item is &quot;A1-103/0&quot;, insert a new line.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Check if the operation was successful</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Check if the item matches</span>
+    <span class="k">if</span> <span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;A1-103/0&quot;</span><span class="p">:</span>
+
+        <span class="c1"># Generate a new record in the view</span>
+        <span class="n">rc</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+        <span class="n">rg</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordGenerate</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">rc</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">rg</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to generate new line.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Populate the record</span>
+
+        <span class="c1"># Save the record</span>
+</pre></div>
+</div>
+<p>Now we just need to populate the record and save it. Set fields in the
+current record by using <code class="docutils literal notranslate"><span class="pre">.put(field,</span> <span class="pre">value)</span></code>.  Once populated,
+use <code class="docutils literal notranslate"><span class="pre">.insert()</span></code> to add write it to the database.  These operations
+also return 0 on success.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;After updating, if the item is &quot;A1-103/0&quot;, insert a new line.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Check if the operation was successful</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Check if the item matches</span>
+    <span class="k">if</span> <span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;A1-103/0&quot;</span><span class="p">:</span>
+
+        <span class="c1"># Generate a new record in the view</span>
+        <span class="n">rc</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+        <span class="n">rg</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordGenerate</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">rc</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">rg</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to generate new line.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Populate the record</span>
+        <span class="n">pi</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">,</span> <span class="s2">&quot;A1-105/0&quot;</span><span class="p">)</span>
+        <span class="n">pq</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;QTYORDERED&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">pi</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">pq</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to put values in new line.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Save the record</span>
+        <span class="n">sv</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">insert</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">sv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to save new line.&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">None</span>
+</pre></div>
+</div>
+<p>And there you have it.  A view script that does exactly what we need.
+Are there any improvements to be had?</p>
+</div>
+<div class="section" id="add-parameters">
+<h2>Add Parameters<a class="headerlink" href="#add-parameters" title="Permalink to this headline">¶</a></h2>
+<p>What if the customer wants to change the items?  Instead of “A1-103/0”
+triggering they may want “A1-900/G” to be the trigger.  What if they wanted
+to add a quantity of 5 instead of 1?  At present, they’d need to change the
+script because the items and quantity are hard coded.</p>
+<p>View scripts support up to 4 user provided parameters of up to 250 characters,
+so 1000 characters of arguments to play with. They are exposed by <code class="docutils literal notranslate"><span class="pre">accpac</span></code> as
+<code class="docutils literal notranslate"><span class="pre">Parameter1</span></code>, <code class="docutils literal notranslate"><span class="pre">Parameter2</span></code>, <code class="docutils literal notranslate"><span class="pre">Parameter3</span></code>, <code class="docutils literal notranslate"><span class="pre">Parameter4</span></code>.</p>
+<p>Let’s change the script to accept parameters from the user.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;OE0500_oe_add_line.py</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+
+<span class="sd">    - Parameter1: Item number to trigger new line</span>
+<span class="sd">    - Parameter2: Item number to set in new line</span>
+<span class="sd">    - Parameter3: Item quantity to set.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c1"># from accpac import (me,</span>
+<span class="c1">#                     Parameter1, Parameter2, Parameter3,</span>
+<span class="c1">#                     showMessageBox, )</span>
+
+<span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;After updating, if the item is Parameter1, insert a new line.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Check if the operation was successful</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Check if the item matches</span>
+    <span class="k">if</span> <span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">Parameter1</span><span class="p">:</span>
+
+        <span class="c1"># Generate a new record in the view</span>
+        <span class="n">rc</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+        <span class="n">rg</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordGenerate</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">rc</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">rg</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to generate new line.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Populate the record</span>
+        <span class="n">pi</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">,</span> <span class="n">Parameter2</span><span class="p">)</span>
+        <span class="n">pq</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;QTYORDERED&quot;</span><span class="p">,</span> <span class="n">Parameter3</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">pi</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">pq</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to put values in new line.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Save the record</span>
+        <span class="n">sv</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">insert</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">sv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to save new line.&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">None</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Time for testing.  Fire up your favourite database and install the script in
+the Extender -&gt; Setup -&gt; Scripts screen.</p>
+<p>Configure it by attaching it to the <code class="docutils literal notranslate"><span class="pre">OE0500</span></code> view in the Extender -&gt; Setup -&gt;
+View Events, Scripts and Workflow.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="building_the_screen_script.html" class="btn btn-neutral float-right" title="Building the Screen Script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../walkthrough.html" class="btn btn-neutral float-left" title="Walkthrough" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

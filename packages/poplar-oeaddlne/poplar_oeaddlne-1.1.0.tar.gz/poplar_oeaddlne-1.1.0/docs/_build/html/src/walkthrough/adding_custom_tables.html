@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Custom Tables for Item Mappings &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Add OE Line - View Script" href="../OE0500_oe_add_line.html" />
+    <link rel="prev" title="Making an Extender Module" href="making_the_module.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../walkthrough.html">Walkthrough</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="building_the_view_script.html">Building the View Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building_the_screen_script.html">Building the Screen Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="making_the_module.html">Making an Extender Module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Custom Tables for Item Mappings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#designing-the-table-schema">Designing the Table Schema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-the-table-schema">Creating the Table Schema</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-custom-tables">Using Custom Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#crafting-by-hand">Crafting by Hand</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-entries-to-the-table">Adding Entries to the Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-the-lookup-to-the-script">Adding the Lookup to the Script</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OE1100_oe_add_line.html">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../walkthrough.html">Walkthrough</a> &raquo;</li>
+        
+      <li>Custom Tables for Item Mappings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/walkthrough/adding_custom_tables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="custom-tables-for-item-mappings">
+<h1>Custom Tables for Item Mappings<a class="headerlink" href="#custom-tables-for-item-mappings" title="Permalink to this headline">¶</a></h1>
+<p>The screen script solution does what we need but is limited in that the
+item mappings are hard-coded.  The user cannot add new mappings themselves
+and if there are many then keeping them in the source becomes unwieldy.</p>
+<p>Enter Extender’s Custom Tables.  They make it easy to store, retrieve, and
+update tables specific to your customization in the database.</p>
+<p>Assume for now that each Item will only ever map to one other.  We can define
+a database table, <code class="docutils literal notranslate"><span class="pre">OEADDLNE.VIITMMAP</span></code>, to allow the user to manage the
+mappings.</p>
+<div class="section" id="designing-the-table-schema">
+<h2>Designing the Table Schema<a class="headerlink" href="#designing-the-table-schema" title="Permalink to this headline">¶</a></h2>
+<p>Before creating a table it needs a schema.  The correct fields and keys (which
+are also indexes) need to be identified.  Every item only maps to one other,
+we can use the trigger item as a key.</p>
+<p>When thinking about keys, think about how you access the data.  If you always
+use two fields together to retrieve from a table, be sure to add a compound key
+on those fields.</p>
+<p>We need the same fields as we had view script parameters, so the following
+should do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Table</span> <span class="n">name</span><span class="p">:</span> <span class="n">VIITMMAP</span>
+<span class="n">Fields</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">TRIGITEM</span> <span class="p">(</span><span class="nb">str</span><span class="p">):</span> <span class="n">item</span> <span class="n">that</span> <span class="n">triggers</span> <span class="n">the</span> <span class="n">new</span> <span class="n">line</span>
+    <span class="o">-</span> <span class="n">NEWITEM</span> <span class="p">(</span><span class="nb">str</span><span class="p">):</span> <span class="n">the</span> <span class="n">item</span> <span class="n">to</span> <span class="n">insert</span>
+    <span class="o">-</span> <span class="n">QTYORDERED</span> <span class="p">(</span><span class="n">bcd</span><span class="p">):</span> <span class="n">the</span> <span class="n">quantity</span> <span class="n">ordered</span>
+<span class="n">Keys</span><span class="p">:</span>
+    <span class="o">-</span> <span class="p">(</span><span class="n">TRIGITEM</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-the-table-schema">
+<h2>Creating the Table Schema<a class="headerlink" href="#creating-the-table-schema" title="Permalink to this headline">¶</a></h2>
+<p>The table schema will be embedded in the module file.  You have two options
+for creating it: interactively with the Custom Tables tool or writing it
+by hand in the modules file.</p>
+<div class="section" id="using-custom-tables">
+<h3>Using Custom Tables<a class="headerlink" href="#using-custom-tables" title="Permalink to this headline">¶</a></h3>
+<p>This is the best way to start.  Once you get the hang of it you can craft them
+by hand.</p>
+<p>To use the Custom Tables tool, start by creating a module:</p>
+<ol class="arabic simple">
+<li>Navigate to Extender -&gt; Setup -&gt; Modules</li>
+<li>Insert a new row using the module name (<code class="docutils literal notranslate"><span class="pre">OEADLNE</span></code>)</li>
+</ol>
+<p>Define the custom table:</p>
+<ol class="arabic simple">
+<li>Navigate to Extender -&gt; Setup -&gt; Custom Tables</li>
+<li>Set the table name to <code class="docutils literal notranslate"><span class="pre">OEADDLNE.VIITMMAP</span></code></li>
+<li>Define the fields. Use <code class="docutils literal notranslate"><span class="pre">accpacViewInfo</span></code> or the extender enquiries to find
+the correct field names, finder information, and description lookups.</li>
+<li>Add the key in the <code class="docutils literal notranslate"><span class="pre">Keys</span></code> tab.</li>
+<li>Save the table.</li>
+</ol>
+<p>Now that the table is defined you can export the module from the Modules screen
+and the table definition will be included.</p>
+</div>
+<div class="section" id="crafting-by-hand">
+<h3>Crafting by Hand<a class="headerlink" href="#crafting-by-hand" title="Permalink to this headline">¶</a></h3>
+<p>After a while you’ll be able to write table definitions by hand.  To start,
+this is what is automatically generated on module export:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">MODULE</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">OEADDLNE</span>
+<span class="n">name</span><span class="o">=</span><span class="n">OEADDLNE</span>
+<span class="n">desc</span><span class="o">=</span><span class="n">Add</span> <span class="n">an</span> <span class="n">OE</span> <span class="n">Order</span> <span class="n">Line</span> <span class="n">after</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">item</span> <span class="ow">is</span> <span class="n">added</span><span class="o">.</span>
+<span class="n">company</span><span class="o">=</span><span class="mi">2665093</span> <span class="n">Ontario</span> <span class="n">Inc</span>
+<span class="n">version</span><span class="o">=</span><span class="mf">0.1</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">website</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="mf">2665093.</span><span class="n">ca</span>
+
+<span class="p">[</span><span class="n">TABLE</span><span class="p">]</span>
+<span class="n">name</span><span class="o">=</span><span class="n">OEADDLNE</span><span class="o">.</span><span class="n">VIITMMAP</span>
+<span class="n">dbname</span><span class="o">=</span><span class="n">VIITMMAP</span>
+
+<span class="p">[</span><span class="n">FIELD1</span><span class="p">]</span>
+<span class="n">field</span><span class="o">=</span><span class="n">TRIGITEM</span>
+<span class="n">datatype</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">size</span><span class="o">=</span><span class="mi">24</span>
+<span class="n">mask</span><span class="o">=%</span><span class="mi">24</span><span class="n">C</span>
+<span class="n">desc</span><span class="o">=</span><span class="n">Trigger</span> <span class="n">item</span> <span class="n">number</span>
+<span class="n">ftable</span><span class="o">=</span><span class="n">IC0310</span>
+<span class="n">ffield</span><span class="o">=</span><span class="n">ITEMNO</span>
+<span class="n">lookup</span><span class="o">=</span><span class="n">FMTITEMNO</span>
+
+<span class="p">[</span><span class="n">FIELD2</span><span class="p">]</span>
+<span class="n">field</span><span class="o">=</span><span class="n">NEWITEM</span>
+<span class="n">datatype</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">size</span><span class="o">=</span><span class="mi">24</span>
+<span class="n">mask</span><span class="o">=%</span><span class="mi">24</span><span class="n">C</span>
+<span class="n">desc</span><span class="o">=</span><span class="n">Item</span> <span class="n">number</span> <span class="n">to</span> <span class="n">insert</span>
+<span class="n">ftable</span><span class="o">=</span><span class="n">IC0310</span>
+<span class="n">ffield</span><span class="o">=</span><span class="n">ITEMNO</span>
+<span class="n">lookup</span><span class="o">=</span><span class="n">FMTITEMNO</span>
+
+<span class="p">[</span><span class="n">FIELD3</span><span class="p">]</span>
+<span class="n">field</span><span class="o">=</span><span class="n">QTYORDERED</span>
+<span class="n">datatype</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">size</span><span class="o">=</span><span class="mi">10</span>
+<span class="n">decimals</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">desc</span><span class="o">=</span><span class="n">Quantity</span>
+
+<span class="p">[</span><span class="n">KEY1</span><span class="p">]</span>
+<span class="n">KEYNAME</span><span class="o">=</span><span class="n">TRIGITEM</span>
+<span class="n">FIELD1</span><span class="o">=</span><span class="n">TRIGITEM</span>
+<span class="n">allowdup</span><span class="o">=</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>Simply add the <code class="docutils literal notranslate"><span class="pre">SCRIPT</span></code> block and we have a full module.</p>
+</div>
+</div>
+<div class="section" id="adding-entries-to-the-table">
+<h2>Adding Entries to the Table<a class="headerlink" href="#adding-entries-to-the-table" title="Permalink to this headline">¶</a></h2>
+<p>Adding entries is easy using the Extender -&gt; Setup -&gt; Custom Table Editor.
+Simply open the editor, open the <code class="docutils literal notranslate"><span class="pre">OEADDLNE.VIITMMAP</span></code> table, and start adding.</p>
+<p>For now, try to add the item we know about, A1-103/0 -&gt; A1-105/0&#64;1.</p>
+</div>
+<div class="section" id="adding-the-lookup-to-the-script">
+<h2>Adding the Lookup to the Script<a class="headerlink" href="#adding-the-lookup-to-the-script" title="Permalink to this headline">¶</a></h2>
+<p>Now we just need to replace out hard coded values with a lookup from our custom
+table.  Custom tables are accessed through the view layer.  Instead of opening
+them based on the View ID (i.e. <code class="docutils literal notranslate"><span class="pre">VI0107</span></code>), always access them by module
+qualified table name. There is no guarantee that your table will always have
+the same roto, so don’t use it.</p>
+<p>Because <code class="docutils literal notranslate"><span class="pre">TRIGITEM</span></code> is our key field, we will use it to look up the mapping.
+The lookup will go something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">view</span> <span class="o">=</span> <span class="n">openView</span><span class="p">(</span><span class="s2">&quot;OEADDLNE.VIITMMAP&quot;</span><span class="p">)</span>
+<span class="n">view</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+<span class="n">view</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;TRIGITEM&quot;</span><span class="p">,</span> <span class="n">itemno</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Extender functions return 0 on success, so if <code class="docutils literal notranslate"><span class="pre">r</span></code> is 0 then there is a
+mapping for <code class="docutils literal notranslate"><span class="pre">itemno</span></code> and the view has read it in.  Any other return
+indicates that <code class="docutils literal notranslate"><span class="pre">itemno</span></code> is not a trigger item and no action is required.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">accpac</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">OeAddLineUI</span><span class="p">(</span><span class="n">UI</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A UI customization that monitors the order details for a trigger</span>
+<span class="sd">    item being inserted and adds a new line.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+        <span class="c1"># Open the data source</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adsOEORDD</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">openDataSource</span><span class="p">(</span><span class="s2">&quot;adsOEORDD&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Open the custom table.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">viitmmap</span> <span class="o">=</span> <span class="n">openView</span><span class="p">(</span><span class="s2">&quot;OEADDLNE.VIITMMAP&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Assign the onAfter callback to the *function*</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adsOEORDD</span><span class="o">.</span><span class="n">onAfterInsert</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">adsOEORDDonAfterInsert</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">get_trigger</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">itemno</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the trigger information for this item number from the table.</span>
+
+<span class="sd">        :param itemno: item number to loopkup trigger information for</span>
+<span class="sd">        :type itemno: str</span>
+<span class="sd">        :rtype: list</span>
+<span class="sd">        :returns:</span>
+<span class="sd">            - If the item number is not in the map table: []</span>
+<span class="sd">            - if the item number is in the table: [newitem, qtyordered]</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">viitmmap</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">viitmmap</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;TRIGITEM&quot;</span><span class="p">,</span> <span class="n">itemno</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">viitmmap</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">r</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">viitmmap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;NEWITEM&quot;</span><span class="p">),</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">viitmmap</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;QTYORDERED&quot;</span><span class="p">),</span> <span class="p">]</span>
+
+
+
+    <span class="k">def</span> <span class="nf">adsOEORDDonAfterInsert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;After updating, if the item is &quot;A1-103/0&quot;, insert a new line.&quot;&quot;&quot;</span>
+
+        <span class="c1"># Check if the item matches an item in the custom table map :</span>
+        <span class="c1"># trigger will be [newitem, qty] if it does, [] (False) if it</span>
+        <span class="c1"># doesn&#39;t.</span>
+        <span class="n">trigger</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_trigger</span><span class="p">(</span><span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">trigger</span><span class="p">:</span>
+
+            <span class="c1"># Generate a new record in the view</span>
+            <span class="n">rc</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+            <span class="n">rg</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordGenerate</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">rc</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">rg</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to generate new line.&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+            <span class="c1"># Populate the record</span>
+            <span class="n">pi</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">,</span> <span class="n">trigger</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">pq</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;QTYORDERED&quot;</span><span class="p">,</span> <span class="n">trigger</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">pi</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">pq</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to put values in new line.&quot;</span><span class="p">)</span>
+                <span class="k">return</span>
+
+            <span class="c1"># Save the record</span>
+            <span class="n">sv</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">insert</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">sv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Failed to save new line.&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">None</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">ui</span> <span class="o">=</span> <span class="n">OeAddLineUI</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Done.  The custom table is now intergated with the script.  The user can
+add and manage as many mappings as they’d like with the custom table
+editor.</p>
+<p>That’s all for now, just a few things to close out…</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../OE0500_oe_add_line.html" class="btn btn-neutral float-right" title="Add OE Line - View Script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="making_the_module.html" class="btn btn-neutral float-left" title="Making an Extender Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

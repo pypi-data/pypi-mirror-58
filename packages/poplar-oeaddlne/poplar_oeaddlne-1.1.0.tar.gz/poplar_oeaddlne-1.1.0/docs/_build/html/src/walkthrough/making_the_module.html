@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Making an Extender Module &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Custom Tables for Item Mappings" href="adding_custom_tables.html" />
+    <link rel="prev" title="Building the Screen Script" href="building_the_screen_script.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../walkthrough.html">Walkthrough</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="building_the_view_script.html">Building the View Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building_the_screen_script.html">Building the Screen Script</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Making an Extender Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-format">Module format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-scripts">View Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="adding_custom_tables.html">Custom Tables for Item Mappings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OE1100_oe_add_line.html">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../walkthrough.html">Walkthrough</a> &raquo;</li>
+        
+      <li>Making an Extender Module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/walkthrough/making_the_module.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="making-an-extender-module">
+<h1>Making an Extender Module<a class="headerlink" href="#making-an-extender-module" title="Permalink to this headline">¶</a></h1>
+<p>Now that we have a working version, it is time to think about
+delivering it to the client. In almost all cases, the correct way
+to distribute your scripts is in a module, even if you only have one.</p>
+<p>A module allows you to group scripts together, track versions and
+author data, and autoamtically configure scripts at module import time.
+Always wrap your tools in modules.</p>
+<div class="section" id="module-format">
+<h2>Module format<a class="headerlink" href="#module-format" title="Permalink to this headline">¶</a></h2>
+<p>Extender modules use an INI style file that includes the metadata,
+scripts, and configuration in one file.</p>
+<p>Create the new <cite>OEADDLNE</cite> module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">MODULE</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">OEADDLNE</span>
+<span class="n">name</span><span class="o">=</span><span class="n">OEADDLNE</span>
+<span class="n">desc</span><span class="o">=</span><span class="n">After</span> <span class="n">an</span> <span class="n">order</span> <span class="n">line</span> <span class="k">with</span> <span class="n">itam</span> <span class="n">A11030</span> <span class="ow">is</span> <span class="n">entered</span><span class="p">,</span> <span class="n">enter</span> <span class="n">one</span> <span class="k">for</span> <span class="n">A11050</span>
+<span class="n">company</span><span class="o">=</span><span class="mi">2665093</span> <span class="n">Ontario</span> <span class="n">Inc</span><span class="o">.</span>
+<span class="n">version</span><span class="o">=</span><span class="mf">0.1</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">website</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="mf">2665093.</span><span class="n">ca</span><span class="o">/</span>
+
+<span class="p">[</span><span class="n">SCRIPT</span><span class="p">]</span>
+<span class="n">FILENAME</span><span class="o">=</span><span class="n">OEADDLNE_OE1100_oe_add_line</span><span class="o">.</span><span class="n">py</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">SCRIPT</span> <span class="o">&gt;&gt;&gt;</span>
+<span class="c1"># OE1100</span>
+<span class="kn">from</span> <span class="nn">accpac</span> <span class="k">import</span> <span class="o">*</span>
+<span class="o">...</span>
+<span class="o">&lt;&lt;&lt;</span> <span class="n">SCRIPT</span> <span class="o">&lt;&lt;&lt;</span>
+</pre></div>
+</div>
+<p>That is all it takes.  Install modules from the Extender -&gt; Setup -&gt; Modules
+screen.  The script will be installed automatically, and when screen scripts
+are installed they are configured by default.</p>
+</div>
+<div class="section" id="view-scripts">
+<h2>View Scripts<a class="headerlink" href="#view-scripts" title="Permalink to this headline">¶</a></h2>
+<p>View scripts get an extra clause in the module file that defines the scripts
+configuration: which view it attaches to, which parameters it accepts, etc.</p>
+<p>Had we been deploying out view script, we could have made a module that
+included an additional <code class="docutils literal notranslate"><span class="pre">VIEWSCRIPT</span></code> block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">MODULE</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">OEADDLNE</span>
+<span class="n">name</span><span class="o">=</span><span class="n">OEADDLNE</span>
+<span class="n">desc</span><span class="o">=</span><span class="n">After</span> <span class="n">an</span> <span class="n">order</span> <span class="n">line</span> <span class="k">with</span> <span class="n">itam</span> <span class="n">A11030</span> <span class="ow">is</span> <span class="n">entered</span><span class="p">,</span> <span class="n">enter</span> <span class="n">one</span> <span class="k">for</span> <span class="n">A11050</span>
+<span class="n">company</span><span class="o">=</span><span class="mi">2665093</span> <span class="n">Ontario</span> <span class="n">Inc</span><span class="o">.</span>
+<span class="n">version</span><span class="o">=</span><span class="mf">0.1</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">website</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="mf">2665093.</span><span class="n">ca</span><span class="o">/</span>
+
+<span class="p">[</span><span class="n">SCRIPT</span><span class="p">]</span>
+<span class="n">FILENAME</span><span class="o">=</span><span class="n">OEADDLNE_OE0500_oe_add_line</span><span class="o">.</span><span class="n">py</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">SCRIPT</span> <span class="o">&gt;&gt;&gt;</span>
+<span class="kn">from</span> <span class="nn">accpac</span> <span class="k">import</span> <span class="o">*</span>
+<span class="o">...</span>
+<span class="o">&lt;&lt;&lt;</span> <span class="n">SCRIPT</span> <span class="o">&lt;&lt;&lt;</span>
+
+<span class="p">[</span><span class="n">VIEWSCRIPT</span><span class="p">]</span>
+<span class="n">VIEWID</span><span class="o">=</span><span class="n">OE0500</span>
+<span class="n">UNIQID</span><span class="o">=</span><span class="mi">2019050100000004</span>
+<span class="n">ACTIVE</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">ORDER</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">SCRIPT</span><span class="o">=</span><span class="n">OEADDLNE_OE0500_oe_add_line</span><span class="o">.</span><span class="n">py</span>
+<span class="n">P1</span><span class="o">=</span><span class="n">A1</span><span class="o">-</span><span class="mi">103</span><span class="o">/</span><span class="mi">0</span>
+<span class="n">P2</span><span class="o">=</span><span class="n">A1</span><span class="o">-</span><span class="mi">105</span><span class="o">/</span><span class="mi">0</span>
+<span class="n">P3</span><span class="o">=</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>Now that we have a module, let’s get back to the question of how to make the
+mappings user configurable.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="adding_custom_tables.html" class="btn btn-neutral float-right" title="Custom Tables for Item Mappings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="building_the_screen_script.html" class="btn btn-neutral float-left" title="Building the Screen Script" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
