@@ -1,0 +1,17 @@
+odoo/addons/delivery_free_fee_removal/README.rst,sha256=1wdC0yiYdNHM0nOg07sj2shJbr40GQR_otv9wQLBRkc,2801
+odoo/addons/delivery_free_fee_removal/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/delivery_free_fee_removal/__manifest__.py,sha256=WFZe4GurfH2q5JO9t4kMRe6THCHTrT7I65x0Almaws0,542
+odoo/addons/delivery_free_fee_removal/i18n/delivery_free_fee_removal.pot,sha256=HF77lkUS8F4tv8QdqkD5ahAezyx1vmTRRQCT6PlgM2c,507
+odoo/addons/delivery_free_fee_removal/i18n/es.po,sha256=Ag-n2wRRc22MGcwYj2DYy9HSAvnc7cUlGUmVrmw0U34,621
+odoo/addons/delivery_free_fee_removal/models/__init__.py,sha256=LsPoCIAYodIFzh85VEjY5GiuzDQDQpiF38txDw10qT0,25
+odoo/addons/delivery_free_fee_removal/models/sale_order.py,sha256=QTqTmkl92CH0Esauj9ihyVs4bfD08KUqEm6dWf5Ds5Q,532
+odoo/addons/delivery_free_fee_removal/readme/CONTRIBUTORS.rst,sha256=ZjSH1EKJqcuo-Mpkun7K6OWTKppZzygw5TvL9S1PmRY,84
+odoo/addons/delivery_free_fee_removal/readme/DESCRIPTION.rst,sha256=4s14w-looe4WgshJsRhRPQ8IH7DDKoDG3D2HQWSv7No,87
+odoo/addons/delivery_free_fee_removal/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/delivery_free_fee_removal/static/description/index.html,sha256=vqxy8PgaIBN0CQ5CZkR-7YPoryjJ0cikwfgIJnfKoHQ,11883
+odoo/addons/delivery_free_fee_removal/tests/__init__.py,sha256=KiE8G9lHIt0hcHU2L3MVbe7mc6N5c6ylQQTVkOx0SfQ,45
+odoo/addons/delivery_free_fee_removal/tests/test_delivery_free_fee_removal.py,sha256=g3GPenmFu76VDjAsQ0Dp32ZCZisWfEj1YWHcfIsl6Dc,2023
+odoo12_addon_delivery_free_fee_removal-12.0.1.0.0.99.dev1.dist-info/METADATA,sha256=UjdarTc9ejr6D8vmoJR5CJMqfR6-pwHE3oSVsSTdMMU,3336
+odoo12_addon_delivery_free_fee_removal-12.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+odoo12_addon_delivery_free_fee_removal-12.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_delivery_free_fee_removal-12.0.1.0.0.99.dev1.dist-info/RECORD,,
