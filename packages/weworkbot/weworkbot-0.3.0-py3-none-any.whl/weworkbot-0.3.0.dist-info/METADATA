@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: weworkbot
+Version: 0.3.0
+Summary: A framework for creating bot for wechat work
+Home-page: https://github.com/MakDon/we-work-bot
+Author: Makdon
+Author-email: makdon@makdon.me
+License: UNKNOWN
+Keywords: wechat bot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: requests
+
+UNKNOWN
+
+
