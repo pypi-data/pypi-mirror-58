@@ -1,0 +1,12 @@
+odddML/__init__.py
+odddML/custom_layers.py
+odddML/setup.py
+odddML/templateModels.py
+odddML/utils.py
+odddML.egg-info/PKG-INFO
+odddML.egg-info/SOURCES.txt
+odddML.egg-info/dependency_links.txt
+odddML.egg-info/requires.txt
+odddML.egg-info/top_level.txt
+odddML/resnet/resnetModels.py
+odddML/resnet/resnet_layers.py
