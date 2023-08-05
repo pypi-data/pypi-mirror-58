@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tobe
+Version: 0.1
+Summary: A small ssh list tool
+Home-page: https://github.com/PoplarYang
+Author: hiyang
+Author-email: echohiyang@foxmail.com
+License: UNKNOWN
+Description: # A small ssh list tool
+        ## Background
+        I need a light-weight tool to list the servers that can be connected via ssh. However, I find no one. Therefore, I create it.
+        
+        It's only a small tool.
+        
+        ## Principle
+        Read configration from `$HOME/.ssh/config`.
+        
+        ## Installation
+        
+        ```python
+        pip install tobe
+        ```
+        
+        ## Usages
+        ```bash
+        ]# tobe
+        ```
+        ![](https://gitee.com/echohiyang/markdown-images/raw/master/UvDcy7.jpg) 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
