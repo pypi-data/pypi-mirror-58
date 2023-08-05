@@ -1,0 +1,8 @@
+evalcache
+pyservoce>=1.15.2
+numpy
+pillow
+pyopengl
+PyQt5
+psutil
+setproctitle
