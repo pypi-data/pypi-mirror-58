@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: craynn
+Version: 0.1.0
+Summary: Yet another neural network toolkit.
+Home-page: https://github.com/craynn/craynn
+Author: Maxim Borisyak and contributors.
+Author-email: maximus.been@gmail.com
+Maintainer: Maxim Borisyak
+Maintainer-email: maximus.been@gmail.com
+License: MIT
+Description: # CRAYNN
+        
+        Yet Another toolkit for Neural Network slightly flavoured by Ultra-High Energy Cosmic Rays. 
+        
+        ## Philosophy
+        
+        - it is just a collection of helpers for constructing tensorflow graphs;
+        - don't force any features;
+        - keep it modular and orthogonal:
+          - e.g. any change in optimizers should not have any effect on the layers module. 
+        
+        ## TODO
+        
+        - def helpers;
+        - common layers;
+        - dense layers;
+        - batch norm layer;
+        - conv layers;
+        - initialization;
+        - optimizers;
+        - network helper class.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
