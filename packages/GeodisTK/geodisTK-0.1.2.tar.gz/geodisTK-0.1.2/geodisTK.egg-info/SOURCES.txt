@@ -1,0 +1,8 @@
+README.md
+setup.py
+setup_pypi.py
+geodisTK.egg-info/PKG-INFO
+geodisTK.egg-info/SOURCES.txt
+geodisTK.egg-info/dependency_links.txt
+geodisTK.egg-info/top_level.txt
+test/test2d.py
