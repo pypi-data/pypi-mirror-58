@@ -1,0 +1,3 @@
+[console_scripts]
+simpleshare = simpleshare.__init__:main
+
