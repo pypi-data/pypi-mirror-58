@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/countries_utils.egg-info/PKG-INFO
+src/countries_utils.egg-info/SOURCES.txt
+src/countries_utils.egg-info/dependency_links.txt
+src/countries_utils.egg-info/top_level.txt
