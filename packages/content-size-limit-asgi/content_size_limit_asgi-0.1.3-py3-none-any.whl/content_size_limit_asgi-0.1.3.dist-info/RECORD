@@ -1,0 +1,7 @@
+content_size_limit_asgi/__init__.py,sha256=yY_qlJ5Ncrw7QdFUlBxFKGgG9Mp0p4ny8gq4Wq2DqSk,175
+content_size_limit_asgi/errors.py,sha256=MRV-fCcsSoRYNXFJZCz5bJtrfx6BwsWs-7vdTi3B1k8,47
+content_size_limit_asgi/logger.py,sha256=otO_xcZX9gpx4Bqii-7b56Idl3t0pMpUJ1pEYZqraMY,430
+content_size_limit_asgi/middleware.py,sha256=8C5ScJCoh4PhPXmqytE87rLiLgj1s3oICORVLjTmy70,1767
+content_size_limit_asgi-0.1.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+content_size_limit_asgi-0.1.3.dist-info/METADATA,sha256=pJvPvZZk4HxMPkhqtpGfkjjy7s5-xv1R8z43jIu1Txk,6648
+content_size_limit_asgi-0.1.3.dist-info/RECORD,,
