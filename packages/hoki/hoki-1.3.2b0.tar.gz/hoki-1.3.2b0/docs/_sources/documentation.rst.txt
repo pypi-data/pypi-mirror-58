@@ -1,0 +1,60 @@
+##################
+**Dependencies**
+##################
+
+Here is a list of dependencies for `hoki`. If you choose to `pip` install it, these will be taken care of automatically. 
+
+- astropy
+- numpy
+- pandas
+- matplotlib
+- pyyaml
+
+##########
+**hoki.load**
+##########
+
+
+.. automodule:: hoki.load
+    :members:
+
+################
+**hoki.hrdiagrams**
+################
+
+
+.. automodule:: hoki.hrdiagrams
+    :members:
+
+
+################
+**hoki.cmd**
+################
+
+
+.. automodule:: hoki.cmd
+    :members:
+
+
+################
+**hoki.constants**
+################
+
+This module just contains BPASS constants and defines variables used in hoki.
+
+.. automodule:: hoki.constants
+    :members:
+
+path_to_settings 
+   path to the `settings.yaml` file located in the package resources
+
+MODELS_PATH 
+   Path to the BPASS models as defined in the settings file. If you have not downloaded the models and updated this path with `load.set_models_path()`, it will not correspond to a valid path on your machine. This is not going to cause issues unless you're using functionalities that require the full set of BPASS models (like making CMDs)
+
+##########
+**hoki.spec**
+##########
+
+.. automodule:: hoki.spec
+    :members:
+
