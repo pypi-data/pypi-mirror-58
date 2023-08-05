@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: sixteen
+Version: 0.1.0
+Summary: python utilities.
+Home-page: https://github.com/idleuncle/sixteen
+Author: Jiangwen Su
+Author-email: 531045572@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+# pypi_template
+Template repository for pypi.
+
+
+
+## How to use
+
+Open https://github.com/idleuncle/pypi_teamplate/generate to create your new pypi project.
+
+### Build
+
+```
+make clean && make build
+```
+
+### Upload to test.pypi.org
+```
+make upload-test
+```
+
+### Install from test.pypi.org
+
+```
+make install-test
+```
+
+
+### Upload to pypi.org
+
+```
+make upload
+```
+
+### Install from pypi.org
+
+```
+make install
+```
+
+### Install from local
+
+```
+pip install .
+```
+
+### Install from github
+
+```
+pip install git+https://github.com/your_name/your_lib.git
+```
+
+
