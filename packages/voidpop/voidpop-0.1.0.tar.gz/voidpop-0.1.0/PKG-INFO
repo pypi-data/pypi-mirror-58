@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: voidpop
+Version: 0.1.0
+Summary: Dummy POP3 server that accepts any login and never has any messages
+Home-page: https://github.com/kalgynirae/voidpop
+Author: Colin Chan
+Author-email: colinchan@lumeh.org
+License: UNKNOWN
+Description: # voidpop
+        
+        This is a dummy POP3 server. It accepts any username/password and always reports
+        that there are no messagess.
+        
+        Installation/usage details coming soon...
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

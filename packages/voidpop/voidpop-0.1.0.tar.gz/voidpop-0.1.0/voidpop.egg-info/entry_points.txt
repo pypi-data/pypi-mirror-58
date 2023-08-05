@@ -1,0 +1,3 @@
+[console_scripts]
+voidpop = voidpop:main
+
