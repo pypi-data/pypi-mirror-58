@@ -1,0 +1,13 @@
+numpy
+scikit-image
+matplotlib
+ipywidgets
+pathlib
+tqdm
+pytest
+scikit-image
+scipy
+opencv-python
+requests
+googledrivedownloader
+jupyterlab
