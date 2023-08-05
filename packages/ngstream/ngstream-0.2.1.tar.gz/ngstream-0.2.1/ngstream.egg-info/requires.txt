@@ -1,0 +1,11 @@
+pokrok
+xphyle>=4.0.0
+
+[pysam]
+pysam
+
+[requests]
+requests
+
+[subby]
+subby>=0.1.7

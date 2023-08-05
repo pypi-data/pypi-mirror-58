@@ -1,0 +1,13 @@
+{
+  "cases": [
+    {
+      "file": "ENCFF000VWO.bam",
+      "servers": [
+        {
+          "name": "dnanexus-aws",
+          "url": "http://htsnexus.rnd.dnanex.us/v1/reads/ENCODE/ENCFF000VWO"
+        }
+      ]
+    }
+  ]
+}
