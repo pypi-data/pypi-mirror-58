@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div style='text-align: center'>
+  <div style=''>
+    <h1>Pagelet Example</h1>
+
+    <h4>Component will appear under here</h4>
+  </div>
+
+  <div class='clearfix'>
+    {{ async_component }}
+  </div>
+
+
+  <div class="clearfix">
+    <h4>And will display above this line</h4>
+
+  </div>
+
+  {{ component }}
+</div>
+  {% endblock %}
