@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: seoaudit
+Version: 0.0.1.dev0
+Summary: Run SEO checks on a set of urls.
+Home-page: https://github.com/Guber/seoaudit
+Author: Emanuel Guberovic
+Author-email: emanuel.guberovic@gmail.com
+License: MIT
+Description: 
+        # SEOAudit
+        
+        SEO tool that analyzer a set of urls, crawls the pages and audits a set of predefiend checks element, page and site
+         tests on them.
+        
+        ## Requirements
+        
+        Python 3.6+ and modules 'requests', 'lxml', 'nltk', 'extruct', 'selenium'
+        
+        ## Installation
+        
+        pip install
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0

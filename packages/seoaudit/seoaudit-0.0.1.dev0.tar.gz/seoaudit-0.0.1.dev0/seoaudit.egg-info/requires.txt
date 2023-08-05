@@ -1,0 +1,8 @@
+requests
+lxml
+nltk
+extruct
+selenium
+
+[selenium parser feature]
+selenium
