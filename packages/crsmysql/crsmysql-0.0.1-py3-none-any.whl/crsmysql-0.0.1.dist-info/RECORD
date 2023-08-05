@@ -1,0 +1,9 @@
+crsdbts/__init__.py,sha256=0C2Sw8k1_bwLTStyNt8PBRnHypRneccndiWjHQGXkXU,80
+crsdbts/crsdbts.py,sha256=cI2M_P6XidKrKPKFmdorYfors_lep2LoAnbufM3fuzA,3998
+crsmysql/__init__.py,sha256=_Uw81nGjJzNrEmnvo4PEL5Vk_ismVabJowgwk5tyzcE,82
+crsmysql/crsmysql.py,sha256=Vcd9I3C8EksngVWwRRqKY8D96iE5ZZg-ECejJRYz9Xk,3096
+crsmysql-0.0.1.dist-info/LICENSE,sha256=aHXqeDHW4TqvdxNVobupuxrnx_Y__m3GBW1cfqDchJk,1094
+crsmysql-0.0.1.dist-info/METADATA,sha256=UChsGvz9J5Xx0Wa8nBXnt33mmfOTFPQGjDhtN9l0Bts,375
+crsmysql-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+crsmysql-0.0.1.dist-info/top_level.txt,sha256=zsJSZCEHMoP-2biTcdspULOcexiElm8Yi2r8OKNxM_I,9
+crsmysql-0.0.1.dist-info/RECORD,,
