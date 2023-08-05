@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: openimu
+Version: 1.0.0
+Summary: Aceinna Open Source Python
+Home-page: https://github.com/Aceinna/python-openimu
+Author: Aceinna OpenIMU
+Author-email: info@aceinna.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+Requires-Dist: pathlib
+Requires-Dist: psutil
+Requires-Dist: azure-storage-blob (==2.1.0)
+Requires-Dist: tornado
+
+# python-openimu
+
+## pack to pip package
+```
+python ./setup.py sdist
+```
+
+## build a executor
+```
+pyinstaller webserver.spec
+```
+
