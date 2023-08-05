@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: KUDF
+Version: 1.0
+Summary: KUDF
+Home-page: https://github/
+Author: Diana Yeji Kang, Jeonghoon Park, Seongyeong Jang
+Author-email: diana_kang@korea.ac.kr
+License: UNKNOWN
+Download-URL: https://github.com/j-sungyeong/MailParser/archive/master.zip
+Keywords: KUDF
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+UNKNOWN
+
+
