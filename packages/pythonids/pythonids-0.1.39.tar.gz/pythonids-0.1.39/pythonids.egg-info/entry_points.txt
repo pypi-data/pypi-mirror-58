@@ -1,0 +1,3 @@
+[enumerateit.commands]
+prettypyids = pythonids.prettypyids:ppretty_pythonids
+
