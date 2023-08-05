@@ -1,0 +1,50 @@
+PixelForest DRF
+===============
+
+This repository host the code of the PixelForest DRF package.
+This package will host most of the reusable applications/code we use on
+a project basis as the PixelForest Dev Team.
+
+**Note** This package is under public licensing because we figured it
+might be useful for other as it is.
+
+Getting started
+===============
+
+Requirements
+------------
+
+The following requirements will need to be installed and configured
+
+- [Python 3.6](https://www.python.org/downloads/release/python-360/)
+- [Django](https://www.djangoproject.com/)
+- [Django Rest Framework](https://www.django-rest-framework.org/)
+- [PostgreSQL](https://www.postgresql.org)
+
+
+Installation
+------------
+
+You can install the package using pip
+
+```bash
+    pip install pixelforest_drf
+```
+
+Contributing
+============
+
+Guidelines
+----------
+
+Please contact the [PixelForest Dev Team](devteam@pixelforest.io) for
+any bug report or feature request.
+
+Contributors
+------------
+
+**Jean-Xavier Raynaud** - [email](mailto:jx@pixelforest.io) - Product Owner / System Architect / Developer
+
+**Milo Parigi** - [email](mailto:milo@pixelforest.io) - Scrum Master / Developer
+
+**Victor Duvernois** - [email](mailto:victornithorynque@pixelforest.io ) -  Developer
