@@ -1,0 +1,6 @@
+README.md
+setup.py
+deploy_cdn_almera.egg-info/PKG-INFO
+deploy_cdn_almera.egg-info/SOURCES.txt
+deploy_cdn_almera.egg-info/dependency_links.txt
+deploy_cdn_almera.egg-info/top_level.txt
