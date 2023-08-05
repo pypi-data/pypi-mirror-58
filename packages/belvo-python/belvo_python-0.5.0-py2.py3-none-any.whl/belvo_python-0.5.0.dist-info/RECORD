@@ -1,0 +1,17 @@
+belvo/__init__.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+belvo/client.py,sha256=_0JrBWqWDbuCeE5ufRXebLp-Am_8fvGARzMJKit1jYI,1453
+belvo/exceptions.py,sha256=zw41tnH7MndQ13GDpLM5qHJ2G863lXRTjiu5VfFcAas,44
+belvo/http.py,sha256=hgtSxEBvM-ZOe7veA_uuhO4MywUFCwgso1T4kfoJNQU,3266
+belvo/resources.py,sha256=DEszdm_2ekj_I6HAfOpCU5l1YgFMqJpZ65LPDTSwleo,5437
+belvo/console/__init__.py,sha256=Igc_eaNUcexoJ2HdJv2Y9zHzxjGsuxNDTuVTWAd4jHc,73
+belvo/console/application.py,sha256=FsBjR4Yl87T_GYgxKv9KUEhf-dxtAquxkS4zsw9DtNU,205
+belvo/console/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+belvo/console/commands/about.py,sha256=BIJjjvpKXL5qOc2uwTOhOZUFAx3FUJQaIeSZUDXvNos,357
+belvo/console/commands/shell/__init__.py,sha256=JhXZU1u3PK-m-GltRWXoud-oRu_FX1SY4dNHBuIAymE,5349
+belvo/console/commands/shell/completers.py,sha256=xeK8OBUl5bQg-wRvKzBV2WE04rGdzec42fHff7-Sn2M,3576
+belvo/console/commands/shell/questions.py,sha256=EfD3GjWMcSKWxLVJmPBF6cZ9eaILC7BtfmcpZmNG8h4,1432
+belvo_python-0.5.0.dist-info/LICENSE,sha256=cuhOmWc7nH2hcCJCuElSbsuoLtxluRsvrRWtkFQ3F0Y,1058
+belvo_python-0.5.0.dist-info/METADATA,sha256=zaNYY-DfjJ0gKnx9Yezgd_80fztQtL-fNKhUfxtfr3M,2447
+belvo_python-0.5.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+belvo_python-0.5.0.dist-info/top_level.txt,sha256=1G9isdC3e5SMd216OORUokT1oo8W5YmAg25fF8f1RIg,6
+belvo_python-0.5.0.dist-info/RECORD,,
