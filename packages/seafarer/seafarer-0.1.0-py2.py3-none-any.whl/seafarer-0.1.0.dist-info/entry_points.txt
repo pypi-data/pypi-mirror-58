@@ -1,0 +1,3 @@
+[console_scripts]
+seafarer = seafarer.__main__:main
+
