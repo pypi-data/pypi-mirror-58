@@ -1,0 +1,3 @@
+[console_scripts]
+comic-dl = comic_dl.core.commands:execute_from_command_line
+
