@@ -1,0 +1,10 @@
+cereal_lazer/__init__.py,sha256=D86UTOk-_KhzGwFufMXtCn2xlt7bLoM1k0m2Mn8aM9s,35
+cereal_lazer/cereal.py,sha256=xJomzxhpNGnWc1dNQ_1VWVK94gCzOMYVl-0SwX4irhE,3082
+cereal_lazer/naive_serializing.py,sha256=RVWKJNSFE4fZ0SA6xzUQQCPa8jYdcExSakgl-2j-xRo,3122
+cereal_lazer-0.1.3.dist-info/AUTHORS,sha256=u5vsbcWZPH_CyVqyb_nQd5ZUg7HdNq7B_Ew-486YhzU,39
+cereal_lazer-0.1.3.dist-info/LICENSE,sha256=4LXvKJLhsFD7Zkp26lgkNnK8hM1h86JACMVUapodvYM,1070
+cereal_lazer-0.1.3.dist-info/METADATA,sha256=eHZOlfBHu69g0FdmLofmOATd2_NR_DlX9kvP7AGjasQ,2059
+cereal_lazer-0.1.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+cereal_lazer-0.1.3.dist-info/pbr.json,sha256=VyP5AJClzCGoRyzDyW8e_Cwy70M_HNey7GFvBILO96o,47
+cereal_lazer-0.1.3.dist-info/top_level.txt,sha256=E-F-gg77iK-syZR3wi6QHM1nEsyXRQMTWEeG2f9kIxc,13
+cereal_lazer-0.1.3.dist-info/RECORD,,
