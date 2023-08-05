@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: aws-lambda-event-models
+Version: 0.0.1
+Summary: Pydantic models for AWS Events
+Home-page: https://github.com/KeltonKarboviak/aws-lambda-event-models
+Author: Kelton Karboviak
+Author-email: kelton.karboviak@gmail.com
+License: MIT license
+Keywords: AWS Lambda Pydantic
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (>=1.2)
+
+# aws-lambda-event-models
+
+[![pypi](https://img.shields.io/pypi/v/aws-lambda-event-models.svg)](https://pypi.python.org/pypi/aws-lambda-event-models)
+[![Build Status](https://img.shields.io/travis/KeltonKarboviak/aws-lambda-event-models.svg)](https://travis-ci.org/KeltonKarboviak/aws-lambda-event-models)
+[![Documentation Status](https://readthedocs.org/projects/aws-lambda-event-models/badge/?version=latest)](https://aws-lambda-event-models.readthedocs.io/en/latest/?badge=latest)
+[![Updates](https://pyup.io/repos/github/KeltonKarboviak/aws-lambda-event-models/shield.svg)](https://pyup.io/repos/github/KeltonKarboviak/aws-lambda-event-models/)
+
+Pydantic models for AWS Events
+
+
+* Free software: MIT license
+* Documentation: https://aws-lambda-event-models.readthedocs.io.
+
+## Features
+
+* TODO
+
+## Credits
+
+This package was created with Cookiecutter and the `audreyr/cookiecutter-pypackage` project template.
+
+* Cookiecutter: <https://github.com/audreyr/cookiecutter>
+* `audreyr/cookiecutter-pypackage`: <https://github.com/audreyr/cookiecutter-pypackage>
+
+
+# History
+
+## 0.0.1 (2019-12-19)
+
+* Second release on PyPI using Travis CI.
+
+## 0.0.0 (2019-12-19)
+
+* First release on PyPI.
+
+
