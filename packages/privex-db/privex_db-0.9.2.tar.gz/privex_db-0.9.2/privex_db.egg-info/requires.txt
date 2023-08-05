@@ -1,0 +1,15 @@
+privex-helpers>=2.6.0
+aiosqlite
+async-property
+python-dateutil
+pytz
+typing-extensions
+
+[async]
+nest_asyncio
+
+[nest]
+nest_asyncio
+
+[postgres]
+psycopg2
