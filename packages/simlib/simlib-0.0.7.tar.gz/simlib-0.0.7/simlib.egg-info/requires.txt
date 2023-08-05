@@ -1,0 +1,8 @@
+codecov
+coverage
+hypothesis
+numpy
+pandas
+pyyaml
+scipy
+sphinx
