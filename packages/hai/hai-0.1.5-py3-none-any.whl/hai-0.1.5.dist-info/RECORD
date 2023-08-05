@@ -1,0 +1,11 @@
+hai/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+hai/boto3_multipart_upload.py,sha256=NVCo2Sqic80xaJuqZ7BzhFfoakzilD7G0qkbNRxE7jU,6923
+hai/event_emitter.py,sha256=uUqCIlYtIVoMRfaUPo8H5KX6zVsPvJK1hPukmzIwB6c,1117
+hai/parallel.py,sha256=zi_oIKd4JpzFmq5HLg3Gs15ycm23PDIpza8AkQwuo_M,6860
+hai/pipe_pump.py,sha256=vAvptlomVjLQpH-FJwusoKjGtAm2i-QSqnvzf7OXETU,8477
+hai/rate_limiter.py,sha256=88crEhpV_7KBHhrRTUmdiLf-VwWgP9dqRyCyAYRG5v8,6621
+hai-0.1.5.dist-info/LICENSE,sha256=J96dVq9hFf76h3fZQGQa7R_gTFyhyZyhDMSHjzq1-SY,1075
+hai-0.1.5.dist-info/METADATA,sha256=co7G9xmAZ3MZnaG7-0clw2kg0PZboO6m3VJRFnoB04I,663
+hai-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hai-0.1.5.dist-info/top_level.txt,sha256=_x0_a_36BRgeUaLiwc9Eq9MwGKPEIT2s02R3wz-LudA,4
+hai-0.1.5.dist-info/RECORD,,
