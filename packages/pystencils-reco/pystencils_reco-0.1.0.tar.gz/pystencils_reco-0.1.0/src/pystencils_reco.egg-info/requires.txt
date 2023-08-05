@@ -1,0 +1,15 @@
+numpy
+pystencils-autodiff>=0.3.2
+scikit-image
+tqdm
+jinja2
+
+[docs]
+sphinx
+nbsphinx
+
+[testing]
+pytest
+pytest-html
+pytest-cov
+pycuda
