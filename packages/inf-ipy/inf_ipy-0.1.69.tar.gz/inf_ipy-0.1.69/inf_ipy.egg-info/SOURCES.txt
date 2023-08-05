@@ -1,0 +1,8 @@
+setup.py
+core/__main__.py
+inf_ipy.egg-info/PKG-INFO
+inf_ipy.egg-info/SOURCES.txt
+inf_ipy.egg-info/dependency_links.txt
+inf_ipy.egg-info/entry_points.txt
+inf_ipy.egg-info/requires.txt
+inf_ipy.egg-info/top_level.txt
