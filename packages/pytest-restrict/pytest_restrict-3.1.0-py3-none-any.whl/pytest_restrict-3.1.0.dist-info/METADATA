@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: pytest-restrict
+Version: 3.1.0
+Summary: Pytest plugin to restrict the test types allowed
+Home-page: https://github.com/adamchainz/pytest-restrict
+Author: Adam Johnson
+Author-email: me@adamj.eu
+License: BSD
+Project-URL: Changelog, https://github.com/adamchainz/pytest-restrict/blob/master/HISTORY.rst
+Keywords: pytest,restrict,class
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: pytest
+
+===============
+pytest-restrict
+===============
+
+.. image:: https://img.shields.io/travis/adamchainz/pytest-restrict.svg
+        :target: https://travis-ci.org/adamchainz/pytest-restrict
+
+.. image:: https://img.shields.io/pypi/v/pytest-restrict.svg
+        :target: https://pypi.python.org/pypi/pytest-restrict
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/python/black
+
+Pytest plugin to restrict the test types allowed.
+
+Features
+========
+
+This plugin allows you to restrict the test types allowed to ensure they
+inherit from one of a given list of classes. You might need this on large
+projects where you have custom test classes that developers might forget about.
+
+About
+=====
+
+I developed this feature in a closed source Nose plugin whilst working on the
+big Django project at YPlan. We had some custom enhancements and fixes on top
+of the Django test classes, but developers sometimes forgot about using them
+and instead used the built-in ``unittest`` classes, or the plain Django ones.
+Our solution was to just make the test runner blow up if it encountered
+non-whitelisted test types. This is a Pytest port of that plugin.
+
+Installation
+============
+
+Install from pip with:
+
+.. code-block:: bash
+
+    pip install pytest-restrict
+
+Python 3.5 to 3.8 supported.
+
+Usage
+=====
+
+Pytest will automatically find the plugin and use it when you run ``pytest``,
+however by default there are no restrictions. To restrict the test types,
+provide ``--restrict-types`` as a comma-separated list of import paths to
+allowable test case base classes, for example:
+
+.. code-block:: bash
+
+    # Allow only test cases that inherit from Django
+    pytest --restrict-types django.test.TestCase,django.test.SimpleTestCase
+
+If you wish to allow function tests and other non-class test types (e.g.
+doctests), provide the special string 'None', for example:
+
+.. code-block:: sh
+
+    # Allow function tests and our custom tests
+    pytest --restrict-types None,myproject.test.TestCase
+
+History
+=======
+
+3.1.0 (2019-12-19)
+------------------
+
+* Update Python support to 3.5-3.8, as 3.4 has reached its end of life.
+* Converted setuptools metadata to configuration file. This meant removing the
+  ``__version__`` attribute from the package. If you want to inspect the
+  installed version, use
+  ``importlib.metadata.version("pytest-restrict")``
+  (`docs <https://docs.python.org/3.8/library/importlib.metadata.html#distribution-versions>`__ /
+  `backport <https://pypi.org/project/importlib-metadata/>`__).
+
+3.0.0 (2018-02-28)
+------------------
+
+* Drop Python 2 support, only Python 3.4+ is supported now.
+
+2.0.0 (2016-04-29)
+------------------
+
+* Changed the format of ``--restrict-types`` to take a comma-separated list of
+  import paths rather than space separated, which fixes the parsing of e.g.
+  ``py.test --restrict-types my.TestCase run/these/test_files.py``.
+
+1.0.0 (2016-04-17)
+------------------
+
+* First release on PyPI
+
+
