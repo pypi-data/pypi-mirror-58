@@ -1,0 +1,16 @@
+calctex/__init__.py,sha256=cuUHnBQWvA1QhGaa1a2BNT4D1M_vn-b3JwoVOulFpfA,111
+calctex/calc.py,sha256=dvIj35wloNTlBHCVMmVzQ74kcvvLveFbWhrPhZ7GbDU,7501
+calctex/common.py,sha256=UTjWmwheTu2D_3anyTFHoZuyabwnl9H76XP0Tl8a5Yc,887
+calctex/constants.py,sha256=0eQZ_DWIlXzuaROzh5KpFrWxYdjmI8bZHwbZ5QPK2Oo,95
+calctex/helper.py,sha256=60sfbG2_PsFroKOXKuwtlfpeTN3D9mAnkZQcMG6yuQU,754
+calctex/value.py,sha256=qa9YA4WaBfoETg_HZfLQiOcggViZuhiNvqMLcPfiVV4,5666
+calctex/unit/__init__.py,sha256=3suepDWl7HFy0DENB7wRJRgCi_-6M9sQ2kf8mx9jVdQ,20
+calctex/unit/basic.py,sha256=TUwSAPsroD1wE4SPvWGU6vEX5_yYW2OUTFmtncEI8cs,114
+calctex/unit/derived.py,sha256=eUNdE41OONLAlnv9ZkViFPFi4wLj8u4RSSDA8kv5VJU,151
+calctex/unit/nonsi.py,sha256=mx4oZnifRkdkM1f97wLIFSbGk4QgmAHEKT_JhuseUuc,173
+calctex/unit/scale.py,sha256=k8HYMQWJlHoq-W6QbYfHlk0dx2t3459tr0qg65UYHu0,111
+calctex/unit/unit.py,sha256=fanBRyihVSYf1nbuwN05eTcHghOhHfVdh2O_m-6G0I8,7802
+calctex-0.0.5.dist-info/METADATA,sha256=1qOdicExefT9X8xmxW0XDlQjsTGjnnfupSzfoFE9Fg8,1451
+calctex-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+calctex-0.0.5.dist-info/top_level.txt,sha256=bh829MUkXDj-jkfP51340mBTUWo6opTnnhsIVI4rcdk,8
+calctex-0.0.5.dist-info/RECORD,,
