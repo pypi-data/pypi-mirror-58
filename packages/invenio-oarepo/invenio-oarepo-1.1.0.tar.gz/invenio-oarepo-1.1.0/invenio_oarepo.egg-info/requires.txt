@@ -1,0 +1,17 @@
+Flask-BabelEx>=0.9.3
+
+[deploy]
+this_is_just_a_library_install_oarepo_package_to_have_a_complete_repository_deployment>=1.0.0
+
+[docs]
+Sphinx>=1.5.1
+
+[tests]
+check-manifest>=0.25
+coverage>=4.0
+isort>=4.3.3
+pydocstyle>=2.0.0
+pytest-cov>=2.5.1
+pytest-pep8>=1.0.6
+Sphinx>=1.5.1
+invenio[auth,base,elasticsearch6,metadata,postgresql]~=3.1.1
