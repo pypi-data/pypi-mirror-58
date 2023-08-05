@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: django-datastore
+Version: 0.1.1
+Summary: Generic data store for Django Rest framework
+Home-page: https://github.com/makinacorpus/django-datastore
+Author: Makina Corpus
+Author-email: terralego-pypi@makina-corpus.com
+License: MIT, see LICENSE file.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=2.2)
+Requires-Dist: psycopg2
+Requires-Dist: djangorestframework
+Requires-Dist: python-magic (<0.5,>=0.4)
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+
+[![Build Status](https://travis-ci.org/Terralego/django-datastore.svg?branch=master)](https://travis-ci.org/Terralego/django-datastore)
+[![codecov](https://codecov.io/gh/Terralego/django-datastore/branch/master/graph/badge.svg)](https://codecov.io/gh/Terralego/django-datastore)
+[![PyPi version](https://pypip.in/v/django-datastore/badge.png)](https://pypi.org/project/django-datastore/)
+
+# Django Datastore
+
+Django application to either :
+  - store unstructured data in JSON format with permission handling
+  - store files for models through a generic foreign key
+
+All of that can be handled with a REST API thanks to Django REST Framework.
+
+
+
+=========
+CHANGELOG
+=========
+
+0.1.1           (2019-12-19)
+----------------------------
+
+* First release
+
+
