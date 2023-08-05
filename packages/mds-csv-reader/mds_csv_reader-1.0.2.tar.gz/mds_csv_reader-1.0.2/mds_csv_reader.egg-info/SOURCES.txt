@@ -1,0 +1,9 @@
+README.rst
+setup.py
+csv_reader/__init__.py
+csv_reader/libcsvread.py
+mds_csv_reader.egg-info/PKG-INFO
+mds_csv_reader.egg-info/SOURCES.txt
+mds_csv_reader.egg-info/dependency_links.txt
+mds_csv_reader.egg-info/not-zip-safe
+mds_csv_reader.egg-info/top_level.txt
