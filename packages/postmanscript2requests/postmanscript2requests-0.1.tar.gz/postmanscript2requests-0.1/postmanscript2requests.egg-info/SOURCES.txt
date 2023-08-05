@@ -1,0 +1,8 @@
+README.md
+setup.py
+postmanscript2requests/__init__.py
+postmanscript2requests/p2r.py
+postmanscript2requests.egg-info/PKG-INFO
+postmanscript2requests.egg-info/SOURCES.txt
+postmanscript2requests.egg-info/dependency_links.txt
+postmanscript2requests.egg-info/top_level.txt
