@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+docker_optimizer/__init__.py
+docker_optimizer/mainapp.py
+docker_optimizer/py.typed
+docker_optimizer.egg-info/PKG-INFO
+docker_optimizer.egg-info/SOURCES.txt
+docker_optimizer.egg-info/dependency_links.txt
+docker_optimizer.egg-info/entry_points.txt
+docker_optimizer.egg-info/requires.txt
+docker_optimizer.egg-info/top_level.txt
+test/__init__.py
+test/docker_optimizer/__init__.py
+test/docker_optimizer/test_docker_optimizer.py
