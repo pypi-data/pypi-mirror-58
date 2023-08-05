@@ -1,0 +1,7 @@
+setup.py
+qcp/__init__.py
+qcp/qcp.py
+qcp.egg-info/PKG-INFO
+qcp.egg-info/SOURCES.txt
+qcp.egg-info/dependency_links.txt
+qcp.egg-info/top_level.txt
