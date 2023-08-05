@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: regionmask
+Version: 0.5.0
+Summary: plotting and creation of masks for spatial regions
+Home-page: https://github.com/mathause/regionmask
+Author: mathause
+Author-email: mathause@ethz.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: shapely
+Requires-Dist: six
+Requires-Dist: rasterio
+Requires-Dist: cartopy
+Requires-Dist: geopandas
+Requires-Dist: affine
+Requires-Dist: xarray
+Provides-Extra: docs
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: jupyter ; extra == 'docs'
+Requires-Dist: nbconvert ; extra == 'docs'
+
+See https://github.com/mathause/regionmask
+
+
