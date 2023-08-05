@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: printmsg4lo2
+Version: 0.0.1
+Summary: Test Package for Printing a Message
+Home-page: UNKNOWN
+Author: Mei-Chun Lo
+Author-email: mcl@mail.shu.edu.tw
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
