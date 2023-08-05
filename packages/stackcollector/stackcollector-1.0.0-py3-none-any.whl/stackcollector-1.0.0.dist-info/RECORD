@@ -1,0 +1,17 @@
+stackcollector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stackcollector/collector.py,sha256=-LJ7Xl7qjdQHhpx61PCJeym6GRV1KfxrUWUFPSyHHU8,2512
+stackcollector/devtools.py,sha256=afU32VW15e7-JZzVjkKBcaYwD76YPXYzXoLVfykc4QQ,3516
+stackcollector/stacksampler.py,sha256=tB7n3jai5w9SZvTFQVt82h2B2WZaZpOW37MfrHAxgjU,4080
+stackcollector/visualizer.py,sha256=eXc4GyJGMhhmyvtEqhpqnB01Y1rk1B9Et5CBeLn6AWs,3070
+stackcollector/static/d3.flameGraph.css,sha256=Q8emYmTRYH6uzbzt7NBDXqrJmIOs1H91XqNej3SQ7us,1581
+stackcollector/static/d3.flameGraph.js,sha256=Y3Zv_abll_1LcWXOssxvwTWL9HmjJR8KVr6OSDO3rBg,11635
+stackcollector/static/d3.js,sha256=_V4P3H_0qTzqJzDbWzo6c_5Usab-dwV14U5yCYuHNHg,336396
+stackcollector/static/d3.slider.css,sha256=HnRDnFMjTFcgF2nGjwQfYu2AfBKcF6RXthcEMsf29AE,1334
+stackcollector/static/d3.slider.js,sha256=3NT3KLFDMVUCeKEIrYcCJMyYnk-H6yIV-Q37SRWUFmw,12624
+stackcollector/static/d3.tip.v0.6.3.js,sha256=if0joVF3bbbdR8ncPvpuKMn_1EQXR_VM8ZQL6gsFREI,6745
+stackcollector/static/index.html,sha256=vcljCgdSZbBBjbOSO7ahkLV3z5UOl64he-pOdxX4sso,3115
+stackcollector-1.0.0.dist-info/LICENSE,sha256=ee_fYgIEtWcQwVVhRfP_i9HSYIgP2e-H6kRy0F0XoBA,1072
+stackcollector-1.0.0.dist-info/METADATA,sha256=34GkSAehWn9D87vJmvEZHtd0UHTZa_QlZ_-tP96oqYA,455
+stackcollector-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+stackcollector-1.0.0.dist-info/top_level.txt,sha256=7gK5J9gBEhcG9SnsnW6eDSxHhBAXA0AZhlNfoCTmrKw,15
+stackcollector-1.0.0.dist-info/RECORD,,
