@@ -1,0 +1,6 @@
+maxminddb>=1.5.2
+requests>=2.22.0
+urllib3>=1.25.2
+
+[:python_version=="2.7"]
+ipaddress
