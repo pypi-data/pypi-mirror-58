@@ -1,0 +1,12 @@
+nbi/__init__.py,sha256=qHJc2FdAu77sQTYu0UczNvfVo32aSIYRdKKepgGzZO8,1817
+nbi/conf.py,sha256=JutFIziL1PjiMCBsjwJTmjSUqQkbW5mjldaVuJKL3MU,134
+nbi/forms.py,sha256=o_CCzYCJsoi7densh6GltPPTKxyARAW-RZ0_lK8q_Og,1698
+nbi/views.py,sha256=7hD4eRlYM4tXseee-q9-KIC3Hil9XaMXlVjqX-LQO4Y,3201
+nbi/static/nbi.css,sha256=Ezge9FiCIPDxnIsct4FE8EpwgwSRoOUhMPDn5M_nsuM,326
+nbi/static/nbi.js,sha256=Mcv3RiiNSTIz75NzcdA7hbZo8To9Yfk1pR0BrVQ0kO0,1318
+nbi/templates/nbi/area_section.html,sha256=_V3X56Z47mjgfFTkiMFsjwuRgf4SNTrz3_fI55yxV1A,382
+nbi/templates/nbi/projects.html,sha256=seJDMLNhJmFchZFTtuIp37D5lKeF-4xm5ID3s9NrqFM,627
+nbi_projects_site-0.2.1.dist-info/METADATA,sha256=8c11mlG7ND1-NsoYyL79nZJexPOPLZ5_9iVRr9p5RPE,1183
+nbi_projects_site-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nbi_projects_site-0.2.1.dist-info/top_level.txt,sha256=uH11g_I6tYC-mPOVIrcZdaeQczdapJMpnO5bjvwKGd0,4
+nbi_projects_site-0.2.1.dist-info/RECORD,,
