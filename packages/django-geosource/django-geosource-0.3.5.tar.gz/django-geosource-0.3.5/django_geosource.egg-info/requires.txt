@@ -1,0 +1,12 @@
+Django>=2.2
+djangorestframework
+django-polymorphic
+celery
+psycopg2
+Fiona
+
+[dev]
+django-filter
+factory-boy
+flake8
+coverage
