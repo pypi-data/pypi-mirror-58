@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: zelos
+Version: 0.0.0.dev0
+Summary: A comprehensive binary emulation platform.
+Home-page: https://github.com/zeropointdynamics/zelos
+Author: Zeropoint Dynamics
+Author-email: zelos@zeropointdynamics.com
+Maintainer: Zeropoint Dynamics
+Maintainer-email: zelos@zeropointdynamics.com
+License: AGPLv3
+Project-URL: Documentation, https://zelos.zeropointdynamics.com/
+Project-URL: Bug Tracker, https://github.com/zeropointdynamics/zelos/issues
+Project-URL: Source Code, https://github.com/zeropointdynamics/zelos
+Keywords: emulation,dynamic analysis,binary analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: colorama (==0.4.1)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: capstone (==4.0.1)
+Requires-Dist: sortedcontainers (==2.1.0)
+Requires-Dist: verboselogs (==1.7)
+Requires-Dist: jsonlines (==1.2.0)
+Requires-Dist: dnslib (==0.9.10)
+Requires-Dist: hexdump (==3.3)
+Requires-Dist: dpkt (==1.9.2)
+Requires-Dist: coloredlogs (==10.0)
+Requires-Dist: configargparse (==0.15.1)
+Requires-Dist: logbook (==1.5.2)
+Requires-Dist: construct (==2.9.45)
+Requires-Dist: tqdm (==4.35.0)
+Requires-Dist: pytz (==2019.2)
+Requires-Dist: psutil (==5.6.3)
+Provides-Extra: azure-pipelines
+Requires-Dist: coverage ; extra == 'azure-pipelines'
+Requires-Dist: hypothesis ; extra == 'azure-pipelines'
+Requires-Dist: pympler ; extra == 'azure-pipelines'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'azure-pipelines'
+Requires-Dist: pytest-azurepipelines ; extra == 'azure-pipelines'
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: hypothesis ; extra == 'dev'
+Requires-Dist: pympler ; extra == 'dev'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinxcontrib-apidoc ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-apidoc ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: hypothesis ; extra == 'tests'
+Requires-Dist: pympler ; extra == 'tests'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'tests'
+
+[![Build Status](https://dev.azure.com/kevin0853/zelos/_apis/build/status/zeropointdynamics.zelos?branchName=master)](https://dev.azure.com/kevin0853/zelos/_build/latest?definitionId=1&branchName=master)
+[![codecov](https://codecov.io/gh/zeropointdynamics/zelos/branch/master/graph/badge.svg)](https://codecov.io/gh/zeropointdynamics/zelos)
+[![Documentation Status](https://readthedocs.org/projects/zelos/badge/?version=latest)](https://zelos.readthedocs.io/en/latest/?badge=latest)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+
+# zelos
+Zelos is a Python-based binary emulation platform.
+
+*Work in Progress*: We are working towards open sourcing the zelos emulation platform. There is no code here *yet*.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install zelos.
+
+```bash
+pip install zelos
+```
+
+## Basic Usage
+
+Command-line usage:
+```bash
+$ zelos run my_binary
+```
+
+Programmatic usage:
+```python
+import zelos
+
+z = zelos.Engine("static_elf_helloworld")
+z.start(timeout=3)
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html)
+
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+
+## [0.0.1] - 2019-12-25
+
+### Added
+
+- Initial open source commit.
+
+### Changed
+
+- Added repository boilerplate.
+
+### Removed
+
+- N/A
+
+[unreleased]: https://github.com/zeropointdynamics/zelos/compare/v1.1.0...HEAD
+[0.0.1]: https://github.com/zeropointdynamics/zelos/releases/tag/v0.0.1
+
+
+# The Core Zelos Team
+
+* [Kevin Valakuzhy](//www.linkedin.com/in/kevin-valakuzhy-319a5447/) - Research Engineer, Developer
+* Ryan C. Court - Research Engineer, Developer
+* [Kevin Z. Snow](//www.linkedin.com/in/kevinsnow/) - Co-Founder, Developer
+
+### Special Thanks To
+
+* Fabian Monrose - Co-Founder
+* Ann Cox - DHS Program Manager
+* Angelos Keromytis - DARPA Program Manager (Former)
+* Dustin Fraze - DARPA Program Manager
+* Suyup Kim - Intern
+
+
