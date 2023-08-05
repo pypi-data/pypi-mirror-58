@@ -1,0 +1,12 @@
+external_arrow/register_cpp_arrow.py,sha256=6XBdfCTVfa1mPF8MNRAtv3U7MqDOXqrbBgxmrLoFRGM,211
+external_arrow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external_arrow/lib/cpp_arrow/test_object_detector.so,sha256=0cBk06vqZ_ZtuGJudTNxwV1BDVYF18Pq4vGSVxmmhY0,345152
+external_arrow/.libs/libvital_vpm-b37f89e5.so.1.4.0,sha256=UF2dK_1J4gLkkGHEx88FYgZ-YfXGJ1uVCYQggjlFKJs,382936
+external_arrow/.libs/libvital_algo-3f88442b.so.1.4.0,sha256=bI1bZsPLPNhloqxXR7lKwuuir0G4DKP9veTqxehcHsY,1220736
+external_arrow/arrow/test_object_detector.py,sha256=L9jN9lIWhxBSF5jFnmaH5IJUMU0NPxzqmQA5VHU2cY8,3069
+external_arrow/arrow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external_arrow-0.0.1a1.dev1.dist-info/RECORD,,
+external_arrow-0.0.1a1.dev1.dist-info/WHEEL,sha256=HhaweCeof-avb62b1uNY4KilCHhVIikNnj9cQPW-rrA,106
+external_arrow-0.0.1a1.dev1.dist-info/top_level.txt,sha256=imFACkHaW1zinqXKW8xIwlRBDTvZe5XRRf-iv865Fvw,15
+external_arrow-0.0.1a1.dev1.dist-info/METADATA,sha256=LF9q99TFzVxvUsEcX7FrmKpSyYg7IhDZLapOa-F2xjQ,4292
+external_arrow-0.0.1a1.dev1.dist-info/entry_points.txt,sha256=kGPVvsdU_sPnzq28hiARbhx-cHh5V-x6ihJAbkLz8Ls,189
