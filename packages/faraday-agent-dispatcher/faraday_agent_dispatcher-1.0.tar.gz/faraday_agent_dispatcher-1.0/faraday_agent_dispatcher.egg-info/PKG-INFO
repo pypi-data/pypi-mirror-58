@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: faraday-agent-dispatcher
+Version: 1.0
+Summary: Faraday agent dispatcher to communicate an agent to faraday
+Home-page: https://github.com/infobyte/faraday_agent_dispatcher
+Author: Eric Horvat
+Author-email: erich@infobytesec.com
+License: GNU General Public License v3
+Description: UNKNOWN
+Keywords: faraday integration
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

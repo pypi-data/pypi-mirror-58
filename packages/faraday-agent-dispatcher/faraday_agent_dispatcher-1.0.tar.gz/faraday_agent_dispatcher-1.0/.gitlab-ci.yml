@@ -1,0 +1,64 @@
+variables:
+    TZ: "America/New_York"
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+    APT_CACHE_DIR: "$CI_PROJECT_DIR/apt-cache"
+    POSTGRES_DB: custom_db
+    POSTGRES_USER: custom_user
+    POSTGRES_PASSWORD: custom_pass
+    FARADAY_USER: custom_user
+    FARADAY_PASSWORD: custom_pass
+    FARADAY_EMAIL: test@test.com
+    FARADAY_REF: white/dev
+    EXECUTOR_DIR: ./basic_executor.py
+
+cache:
+  paths:
+    - "$CI_PROJECT_DIR/.cache/pip"
+    - "$CI_PROJECT_DIR/apt-cache"
+
+
+before_script:
+    - mkdir -pv $APT_CACHE_DIR
+
+stages:
+    - testing
+    - post_testing
+
+services:
+    - postgres:latest
+
+unit_tests:
+    image: python:3
+    stage: testing
+    coverage: '/TOTAL\s+\d+\s+\d+\s+(\d+%)/'
+    script:
+        - pip install virtualenv
+        - virtualenv faraday_venv
+        - source faraday_venv/bin/activate
+        - pip install pytest pytest-cov pytest-aiohttp
+        - python setup.py install
+        - mkdir run_from
+        - cd run_from && mkdir logs && pytest ../tests/unittests --capture=sys -v --cov=../faraday_agent_dispatcher --color=yes --disable-warnings
+    artifacts:
+      when: on_failure
+      paths:
+        - dist/*
+        - run_from/logs/*
+      expire_in: 7 days
+    except:
+      variables:
+        - $INTEGRATION
+        - $CI_COMMIT_REF_NAME =~ /^.*ci-int.*$/
+
+integration_faraday:
+    stage: post_testing
+    script:
+        - apt-get update -qy
+        - apt-get install curl -y
+        - "curl -X POST -F token=$INTEGRATION_TOKEN -F ref=master -F \"variables[DISPATCHER_REF]=$CI_COMMIT_REF_NAME\" -F \"variables[FARADAY_REF]=$FARADAY_REF\" https://gitlab.com/api/v4/projects/15311100/trigger/pipeline"
+    only:
+        variables:
+            - $CI_COMMIT_REF_NAME =~ /^(dev|master)$/
+            - $INTEGRATION
+
+
