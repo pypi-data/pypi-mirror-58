@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyzx7
+Version: 0.0.3
+Summary: ZX7 library Python integration
+Home-page: https://github.com/jsmolina/pyzx7
+Author: jsmolina
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## Description
+Simple wrapper over zx7 compressor. Avoids having to compile it for every platform over your zx spectrum sources/framework.
+Zx7 code is included for convenience, but author is 'Einar Saukas'
+
+# usage:
+```python
+import pyzx7
+pyzx7.compress('out.bin')
+```
+Will automatically generate out.bin.zx7
+
+
