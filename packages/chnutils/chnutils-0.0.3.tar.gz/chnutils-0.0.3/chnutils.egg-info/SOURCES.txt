@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+chnutils.egg-info/PKG-INFO
+chnutils.egg-info/SOURCES.txt
+chnutils.egg-info/dependency_links.txt
+chnutils.egg-info/requires.txt
+chnutils.egg-info/top_level.txt
+scripts/chn-register.py
