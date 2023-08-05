@@ -1,0 +1,2 @@
+include *.txt *.md *.rst
+recursive-include src/wagtail_draftail_plugins/locale *.po *.mo
