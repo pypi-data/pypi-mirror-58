@@ -1,0 +1,7 @@
+arboretum/__init__.py,sha256=l0nur2DIjhA89AH6UusgycvqZG17j40bWm9rmt04pPs,64
+arboretum/core.py,sha256=gSeyoDKu5i-oiQX43WX_p1sMFcxAG1Om6EYKkGJM4eo,9044
+arboretum/libarboretum.so,sha256=kWmJQHwvDMOeUgWQdQqNeRwR2KlOXkjQ0noUSNQafoI,57263704
+arboretum-0.1a4.dist-info/METADATA,sha256=bH2Lc-R7mImSjUbTmCp8PvavpeLcH55dLEpsdh6omCM,848
+arboretum-0.1a4.dist-info/WHEEL,sha256=_4aL6mt7Aky-42hzUSxFMOQYFwL-w8QK2cji9gADiho,106
+arboretum-0.1a4.dist-info/top_level.txt,sha256=4jx7FKk-c1d-D6whJzGfKLGPj0Km_FOd41oD7rV6UF8,10
+arboretum-0.1a4.dist-info/RECORD,,
