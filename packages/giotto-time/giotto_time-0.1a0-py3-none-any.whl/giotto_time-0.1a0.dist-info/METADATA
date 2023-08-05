@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: giotto-time
+Version: 0.1a0
+Summary: Toolbox for Time Series analysis and integration with Machine Learning.
+Home-page: https://github.com/giotto-ai/giotto-time
+Maintainer: Alessio Baccelli
+Maintainer-email: maintainers@giotto.ai
+License: GPLv3
+Download-URL: https://github.com/giotto-ai/giotto-time/tarball/v0.0a0
+Keywords: machine learning time series data analysis topology,persistence diagrams
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: giotto-learn
+Requires-Dist: workalendar (>=7.1.1)
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: numpydoc ; extra == 'doc'
+Requires-Dist: sphinx-issues ; extra == 'doc'
+Provides-Extra: examples
+Provides-Extra: tests
+Requires-Dist: hypothesis ; extra == 'tests'
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: pre-commit ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+
+.. image:: https://www.giotto.ai/static/vector/logo.svg
+   :width: 850
+
+|Azure|_ 
+
+.. |Azure| image:: https://dev.azure.com/maintainers/Giotto/_apis/build/status/giotto-ai.giotto-time?branchName=master
+.. _Azure: https://dev.azure.com/maintainers/Giotto/_build/latest?definitionId=4&branchName=master
+
+giotto-time
+===========
+
+Time series analysis suite
+
+
+
