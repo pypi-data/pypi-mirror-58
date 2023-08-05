@@ -1,0 +1,122 @@
+Metadata-Version: 1.2
+Name: smart-injector
+Version: 0.0.6
+Summary: An easy to use lightweight dependency injection framework
+Home-page: https://github.com/hlevering/python-smart-injector
+Author: Hendrik Levering
+Author-email: h.levering.git@gmail.com
+License: BSD-2-Clause
+Project-URL: Documentation, https://python-smart-injector.readthedocs.io/
+Project-URL: Changelog, https://python-smart-injector.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/hlevering/python-smart-injector/issues
+Description: ========
+        Overview
+        ========
+        Smart-injector is an lightweight dependency injection framework for Python.
+        It was designed to be an easy to use tool to implement dependency injection in your application in a pythonic way.
+        
+        Key features are:
+        - Ligtweight
+        - pure python
+        - leverages type annotations
+        - scopes
+        - non invasive
+        
+        
+        Project Status
+        ==============
+        
+        
+        
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install smart-injector
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/hlevering/python-smart-injector/archive/master.zip
+        
+        
+        Quickstart
+        ==========
+        
+        Basic Usage::
+        
+            >>> class A:
+            ...     pass
+            ...
+            >>> class B:
+            ...     def __init__(self, a: A):
+            ...         self.a = a
+            ...
+            >>> container = create_container(StaticContainer)
+            >>> b = container.get(B)
+            >>> isinstance(b.a, A)
+            True
+        
+        
+        
+        Documentation
+        =============
+        
+        Detailed documentation can be found here:
+        
+        https://python-smart-injector.readthedocs.io/
+        
+        Further usage examples can be found here:
+        https://python-smart-injector.readthedocs.io/en/latest/usage.html
+        
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.0.0 (2019-11-20)
+        ------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
