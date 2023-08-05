@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: timethat
+Version: 1.1.5
+Summary: A human friendly time calculator for functions and code blocks
+Home-page: https://gitlab.com/mozgurbayhan/timethat
+Author: Mehmet Ozgur Bayhan
+Author-email: mozgurbayhan@gmail.com
+License: BSD
+Project-URL: Bug Reports, https://gitlab.com/mozgurbayhan/timethat/issues
+Project-URL: Funding, https://www.losev.org.tr/bagis/Bagis.html
+Project-URL: Say Thanks!, https://gitlab.com/mozgurbayhan/timethat
+Project-URL: Source, https://gitlab.com/mozgurbayhan/timethat
+Description: # Time That
+        [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+        [![PyPI version](https://img.shields.io/pypi/v/timethat)](https://pypi.org/project/timethat/)
+        [![PyPI - Downloads](https://pepy.tech/badge/timethat)](https://pepy.tech/project/timethat)
+        [![PyPI - Implementation](https://img.shields.io/pypi/implementation/timethat)](https://pypi.org/project/timethat/)
+        [![pylint status](https://gitlab.com/mozgurbayhan/timethat/-/jobs/artifacts/master/raw/pylint/pylint.svg?job=pylint)](https://gitlab.com/mozgurbayhan/timethat/commits/master)
+        [![coverage report](https://gitlab.com/mozgurbayhan/timethat/badges/master/coverage.svg)](https://gitlab.com/mozgurbayhan/timethat/commits/master)
+        [![pipeline status](https://gitlab.com/mozgurbayhan/timethat/badges/master/pipeline.svg)](https://gitlab.com/mozgurbayhan/timethat/commits/master)
+        
+        A human friendly time calculator for functions and code blocks
+        ## Install
+        
+        ```bash
+        pip install timethat
+        ```
+        
+        ## Usage
+        
+        
+        ### 1) You can use it directly for functions
+        
+        ```python
+        from timethat import TimedFunction
+        from time import sleep
+        
+        @TimedFunction()
+        def suspicious_function():
+            time.sleep(1)
+        
+        if __name__ == '__main__':
+            suspicious_function()
+        
+        ```
+        **results:**
+        
+        >TimeThat ->    1.00 sec. -> suspicious_function
+        
+        **TimedFunction optional parameters**:
+        
+        **tag**: use tag instead of function name
+        
+        **talk**: directly echo or echo in results
+        
+        For example: @TimedFunction(tag="CustomTag", talk:False)
+        
+        ### 2) Or you can use it in wherever you want
+        
+        ```python
+        from timethat import TimeThat
+        from time import sleep
+        
+        def suspicious_function():
+            TimeThat.start("X1")
+            for x in range(100):
+            	sleep(1)
+            	killer_loop = True    
+            TimeThat.stop("X1")
+        
+        if __name__ == '__main__':
+            suspicious_function()
+        
+        ```
+        
+        results:
+        
+        >TimeThat ->    3.00 sec. -> X1
+        
+        **Stop optional parameters**:
+        
+        **talk**:  echo directly if true else echo later
+        
+        ### 3) Or you can use it to measure total calculations
+        
+        ```python
+        from timethat import TimeThat
+        from time import sleep
+        
+        def suspicious_function():
+            for x in range(3):
+                TimeThat.start("X1")
+                sleep(0.3)
+                killer_loop = True
+                TimeThat.stop("X1",talk=False)
+        
+            for x in range(3):
+                TimeThat.start("X2")
+                sleep(1)
+                killer_loop = True
+                TimeThat.stop("X2",talk=False)
+        
+            TimeThat.summary()
+        
+        if __name__ == '__main__':
+            suspicious_function()
+        
+        ```
+        
+        results:
+        
+        >TimeThat -> Total:    0.90 sec, Average:    0.30 sec, Count:   3  -> X1
+        >
+        >TimeThat -> Total:    3.00 sec, Average:    1.00 sec, Count:   3  -> X2
+        
+        
+        **Summary optional parameters**:
+        
+        **tags:** echos all timers if None else only echo given timers
+        
+        **reset:** resets all timers
+        
+        ### 4) And you can use logging instead of printout
+        
+        ```python
+        import timethat
+        timethat.TALK_TO_LOG = True
+        # Now it will print out to logging instead of console
+        ```
+Keywords: time  development tracker debug
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+Description-Content-Type: text/markdown

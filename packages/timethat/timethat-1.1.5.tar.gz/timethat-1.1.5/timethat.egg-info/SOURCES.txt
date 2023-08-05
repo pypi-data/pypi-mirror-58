@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+timethat.py
+timethat.egg-info/PKG-INFO
+timethat.egg-info/SOURCES.txt
+timethat.egg-info/dependency_links.txt
+timethat.egg-info/top_level.txt
