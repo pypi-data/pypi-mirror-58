@@ -1,0 +1,8 @@
+setup.py
+consumer_helper/__init__.py
+consumer_helper/consumer_helper.py
+consumer_helper.egg-info/PKG-INFO
+consumer_helper.egg-info/SOURCES.txt
+consumer_helper.egg-info/dependency_links.txt
+consumer_helper.egg-info/requires.txt
+consumer_helper.egg-info/top_level.txt

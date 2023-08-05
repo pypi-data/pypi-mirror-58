@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: consumer_helper
+Version: 0.1.0
+Summary: help user to complete data processing when process receive SIGTERM. only for simple processing logic.
+Home-page: UNKNOWN
+Author: Jerry
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
