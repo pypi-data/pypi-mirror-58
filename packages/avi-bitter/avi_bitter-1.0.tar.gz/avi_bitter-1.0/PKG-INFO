@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: avi_bitter
+Version: 1.0
+Summary: Gives you a blessing of the king
+Home-page: https://github.com/cohen3/avi_bitter_the_king
+Author: Elad Cohen
+Author-email: eladc5492@gmail.com
+License: MIT
+Download-URL: https://github.com/cohen3/avi_bitter_the_king/archive/1.1.tar.gz
+Description: UNKNOWN
+Keywords: judaism,basad,BH
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
