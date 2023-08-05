@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kog_lib
+Version: 0.1
+Summary: Simple python lib, processing csv,excel,mail,using for SurfingTech or others
+Home-page: UNKNOWN
+Author: KOG
+Author-email: 52204413@qq.com
+License: BSD License
+Description: # surfing_pylib
+        
+        #### 介绍
+        csv excel mail
+        
+        #### 软件架构
+        
+        
+        
+        #### 安装教程
+        
+        1. 
+        
+        #### 使用说明
+        
+        1. 
+        
+        #### 参与贡献
+        
+        1. 
+        
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

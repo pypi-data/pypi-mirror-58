@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+kog_lib/__init__.py
+kog_lib/sf_csv.py
+kog_lib/sf_excel.py
+kog_lib/sf_mail.py
+kog_lib.egg-info/PKG-INFO
+kog_lib.egg-info/SOURCES.txt
+kog_lib.egg-info/dependency_links.txt
+kog_lib.egg-info/requires.txt
+kog_lib.egg-info/top_level.txt
