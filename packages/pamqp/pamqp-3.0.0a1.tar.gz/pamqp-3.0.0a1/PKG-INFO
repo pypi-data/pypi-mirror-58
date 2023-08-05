@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pamqp
+Version: 3.0.0a1
+Summary: RabbitMQ Focused AMQP low-level library
+Home-page: https://github.com/gmr/pamqp
+Author: Gavin M. Roy
+Author-email: gavinmroy@gmail.com
+License: BSD 3-Clause License
+Project-URL: Bug Tracker, https://github.com/gmr/pamqp/issues
+Project-URL: Documentation, https://pamqp.readthedocs.io
+Project-URL: Source Code, https://github.com/gmr/pamqp/
+Description: pamqp
+        =====
+        pamqp is a pure-python AMQP 0-9-1 frame encoder and decoder. The aim is to create a
+        client agnostic python encoder and decoder for general purpose use.
+        
+        |Version| |Status| |Coverage| |License| |Maintainability| |Downloads|
+        
+        Documentation
+        -------------
+        http://pamqp.readthedocs.org
+        
+        License
+        -------
+        BSD
+        
+        Python Versions Supported
+        -------------------------
+        3.6+
+        
+        .. |Version| image:: https://img.shields.io/pypi/v/pamqp.svg?
+           :target: https://pypi.python.org/pypi/pamqp
+        
+        .. |Status| image:: https://github.com/gmr/pamqp/workflows/Testing/badge.svg?
+           :target: https://github.com/gmr/pamqp/actions?workflow=Testing
+           :alt: Build Status
+        
+        .. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/pamqp.svg?
+           :target: https://codecov.io/github/gmr/pamqp?branch=master
+        
+        .. |License| image:: https://img.shields.io/pypi/l/pamqp.svg?
+           :target: https://pamqp.readthedocs.org
+        
+        .. |Maintainability| image:: https://api.codeclimate.com/v1/badges/9efbb0957abb036254a1/maintainability
+           :target: https://codeclimate.com/github/gmr/pamqp
+        
+        .. |Downloads| image:: https://img.shields.io/pypi/dm/pamqp
+           :target: https://pypi.org/project/pamqp/
+        
+Keywords: amqp,rabbitmq
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: codegen
+Provides-Extra: test
