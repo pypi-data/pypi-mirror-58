@@ -1,0 +1,7 @@
+setup.py
+printmsg4pypi/__init__.py
+printmsg4pypi/print_msg_file.py
+printmsg4pypi.egg-info/PKG-INFO
+printmsg4pypi.egg-info/SOURCES.txt
+printmsg4pypi.egg-info/dependency_links.txt
+printmsg4pypi.egg-info/top_level.txt
