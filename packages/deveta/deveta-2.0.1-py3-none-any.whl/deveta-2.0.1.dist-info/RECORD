@@ -1,0 +1,11 @@
+deveta/__init__.py,sha256=PhJjXtfkT6kxWQUWKmseo4PVAAeXI2Px0uFwPTtm_mw,290
+deveta/kary.py,sha256=8kAKN-EG1clshdXLTMfiwSwTRC4YIEgLrCOzcUP728M,5272
+deveta/locate.py,sha256=Y0KR8P-x7z2RaVQbR5ZvqCE4t_679x4KMWJP51e2gvA,5161
+deveta/stream/__init__.py,sha256=7C-LFCwpoQIkoFiNKIzpB1eHWREj2gl1w-08keEfSQ8,176
+deveta/stream/ansi_colors.py,sha256=PjRIaxuJoKBtKRI3caxBIrJaMXPpGgUZovEAE__Jx2s,281
+deveta/stream/stdout.py,sha256=33c45_3nAAP4uR1cGqAw8nY4BFnRHlRjpcQ6HiEl1zw,5122
+deveta-2.0.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+deveta-2.0.1.dist-info/METADATA,sha256=5yzyzLStY0qyu3z7IdIKLyrzANv3zTRV9Hd1eFHcbwk,272
+deveta-2.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+deveta-2.0.1.dist-info/top_level.txt,sha256=TkLoyYknqFrnroraJ6lFpUQOgMWPfbILLIv6Wwboyd4,7
+deveta-2.0.1.dist-info/RECORD,,
