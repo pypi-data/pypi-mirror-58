@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hydra-range-sweeper-badr
+Version: 0.1.0
+Summary: Custom Hydra Range Sweeper plugin
+Home-page: https://github.com/BadrYoubiIdrissi/hydra-plugins
+Author: Badr Youbi Idrissi
+Author-email: badryoubiidrissi@gmail.com
+License: UNKNOWN
+Description: # Hydra Range Sweeper plugin
+        
+        This hydra plugin provides a range sweeper that lets you specify an integer range with the syntax
+        
+        ```
+        python example.py foo=1:7:2 bar=1:4
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

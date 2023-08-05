@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+hydra_plugins/__init__.py
+hydra_plugins/range_sweeper_badr/__init__.py
+hydra_plugins/range_sweeper_badr/range_sweeper_badr.py
+hydra_plugins/range_sweeper_badr/conf/__init__.py
+hydra_plugins/range_sweeper_badr/conf/hydra/sweeper/range-sweeper.yaml
+hydra_range_sweeper_badr.egg-info/PKG-INFO
+hydra_range_sweeper_badr.egg-info/SOURCES.txt
+hydra_range_sweeper_badr.egg-info/dependency_links.txt
+hydra_range_sweeper_badr.egg-info/requires.txt
+hydra_range_sweeper_badr.egg-info/top_level.txt
