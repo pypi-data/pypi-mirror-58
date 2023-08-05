@@ -1,0 +1,8 @@
+---
+features:
+  - |
+    Adds configurable delay to connection retry attempts with IPA through new
+    config parameter, retry_delay (default: 5 seconds). Enabled by default
+    but ignored when connect_backoff is set, failed attempts to connect to the
+    IPA server will wait N seconds, where N is the retry_delay, before
+    attempting subsequent connections.
