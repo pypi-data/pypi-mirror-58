@@ -1,0 +1,16 @@
+bakalib/__init__.py,sha256=LnF5hU8tAmKRNjAD3K-_jMRqBsByWPVvaYE16OqEwEU,414
+bakalib/_version.py,sha256=J3EzZ3x6JdpmC7cro6HsLkrqCanh8C-YOoVn9gs2ffg,117
+bakalib/utils.py,sha256=181u1YM-2DUzTpsR6f0C01LYeyLbU6U3hUdd8Fwp9gY,1263
+bakalib/core/__init__.py,sha256=OxXCOctWsPToV_l-3ffXXvxxQcoHnBWwG60jB1CbXBg,22
+bakalib/core/client.py,sha256=Tr4fYZb5aKU09YURRJwVs5mJLfpqawSUaqe0POdCBCI,5036
+bakalib/extra/__init__.py,sha256=kxqHCAg9o7FU0T8Qoz3NumbmbJl_GUN-DXgWtnAAMxQ,23
+bakalib/extra/municipality.py,sha256=sIGDXy4GN-tKIyyom0qQZejx60W3jiyaiKcGu8S0JS0,4241
+bakalib/modules/__init__.py,sha256=wBH7e2Y_co7F36OTRceaWzqBydnGLB6kICc9vKvmZKk,25
+bakalib/modules/generic.py,sha256=AyExrxPr81odL-97OXSLMEOCin8rFNW0i0E9uu2H1-Q,950
+bakalib/modules/grades.py,sha256=PW3fs2si-jpCyq5I88O8OB0Cir_qQEGLgbSSnlHxuT4,4184
+bakalib/modules/timetable.py,sha256=1u_sP7xZ70u2fAYmonTNYCeiZICqUu3nFCaKtSAFfZQ,8567
+bakalib-1.0.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+bakalib-1.0.0.dist-info/METADATA,sha256=eSyY8lGKKLxB9WRQKXe5q4KrgvCxDrsjjgI1DjzgzpU,700
+bakalib-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bakalib-1.0.0.dist-info/top_level.txt,sha256=x9jL0w8u6tMZWcEJenvJG5lPSXwxdo41ZOI224xkZwk,8
+bakalib-1.0.0.dist-info/RECORD,,
