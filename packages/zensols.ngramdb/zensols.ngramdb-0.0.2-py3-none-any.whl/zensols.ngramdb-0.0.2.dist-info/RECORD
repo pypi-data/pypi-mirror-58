@@ -1,0 +1,17 @@
+zensols/ngramdb/__init__.py,sha256=WjGP3AaOU48YqTnBAoiLC6kgAd8miryGPOn_bd73u1k,173
+zensols/ngramdb/app.py,sha256=-Z8thAzPVs2uSKLvlby1l9rvCKY4Px3V8TAu-Vgva4I,4495
+zensols/ngramdb/cli.py,sha256=nkGqOl1lRAkksKUbrNUT1J5DFfEA_Ha2N98NBfKa3N8,4446
+zensols/ngramdb/config.py,sha256=5RbKZdyP48BynraV9Od6OXrUnnUPDjsq7928yQqLRw0,2151
+zensols/ngramdb/db.py,sha256=8JtqnyWCoubi_NfsQL1BRQa8NIHGEEtmO9JoP3K2ChQ,3882
+zensols/ngramdb/down.py,sha256=J6LDCe5h3Im8QNNALLrmr-9PG_FMYfP0zY-mQj2tOmk,1526
+zensols/ngramdb/resources/ngram-agg-postgres.sql,sha256=h1VqQFjhPLaNDDPQvVnTgkwCFZvqtpx6Mme9Myewczc,1823
+zensols/ngramdb/resources/ngram-postgres.sql,sha256=k9RkLV5uk6FLr4Httr8M6KVfUZPtEMfN13WK7GeX9H0,1944
+zensols/ngramdb/resources/ngram-sqlite.sql,sha256=r6eiyx_76KjlWmKLkkVR2FW_g9MY7Z2iV6yzvOCyXZA,2858
+zensols/ngramdb/resources/ngramdb-postgres.conf,sha256=Ev3crIjWM5NH_G76wwuvAN62rjxb9VcsxNS6AcLwxNQ,1277
+zensols/ngramdb/resources/ngramdb-sqlite.conf,sha256=dEtwnR5I4FOwASRN24DbdIO6GSrvuv45gwIK-aBEyJ0,791
+zensols.ngramdb-0.0.2.dist-info/LICENSE.txt,sha256=-3nZ2PA1pRrguub2MCELSEpP3xiTYP4zwUc2W0CMUWo,1068
+zensols.ngramdb-0.0.2.dist-info/METADATA,sha256=lek8uTHVrulgCf9Uwxg0SGX6wKvvzwLKajuXznwleeU,7932
+zensols.ngramdb-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+zensols.ngramdb-0.0.2.dist-info/entry_points.txt,sha256=7pUJeCrptXYVaLFGD6xcK-7c94UVOvu1OBuNKtv4srM,50
+zensols.ngramdb-0.0.2.dist-info/top_level.txt,sha256=ak7bxyMxtMS2KzNGJBsLTHtY3sUWFsh3lgEv7ZkyvzA,16
+zensols.ngramdb-0.0.2.dist-info/RECORD,,
