@@ -1,0 +1,13 @@
+gplpy/__init__.py,sha256=Cqn0XSebN6NdRTiQKiwAXjIlRQMlWOslsa0CATE-YF8,168
+gplpy/evo/__init__.py,sha256=Cqn0XSebN6NdRTiQKiwAXjIlRQMlWOslsa0CATE-YF8,168
+gplpy/evo/evolution.py,sha256=1DJaIbbXCRIbxljlQNcoWOsTu2oQyXNEQViRMS1EseA,14715
+gplpy/evo/log.py,sha256=Q_xSNKI7fvJ580XclOP0QPikLqamqVaoeT220nWsLlU,41569
+gplpy/gggp/__init__.py,sha256=Cqn0XSebN6NdRTiQKiwAXjIlRQMlWOslsa0CATE-YF8,168
+gplpy/gggp/derivation.py,sha256=HuFI3vJ4axplDMJ_csIaV23T_iQj_Oplfh0jvfTG1Rg,16633
+gplpy/gggp/grammar.py,sha256=N4cUzbVWcHBSBfV0H0x4lvBr4Nwhff0oatI-7ivwe8E,17325
+gplpy/gggp/metaderivation.py,sha256=QGlrsDKsaFkBD0L81JSTzCmHkH_OqBy_w8qe9XT7sfI,11555
+gplpy-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gplpy-1.1.0.dist-info/METADATA,sha256=iH7JNnKhEP7IsG-jcJci0b0fgXlWy5tTx5YT7nPd-fg,471
+gplpy-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gplpy-1.1.0.dist-info/top_level.txt,sha256=YI6qR72HhJ0I6YcDqs7SkobhjKgUCpnoUcfKpA78kps,6
+gplpy-1.1.0.dist-info/RECORD,,
