@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pytest_sql_bigquery"
+version = "0.0.3"
+description = "Yet another SQL-testing framework for BigQuery provided by pytest plugin "
+authors = ["TKNGUE <takegue@gmail.com>"]
+license = "MIT License"
+
+packages = [
+    { include="pytest_sql_bigquery", from="." }
+]
+
+readme = 'README.md'
+keywords = ['sql', 'bigquery', 'pytest']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+sqlparse = "==0.2.4"
+tabulate = "*"
+pytest = "*"
+google-cloud-bigquery = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
