@@ -1,0 +1,14 @@
+irace/__init__.py,sha256=vBz3VCVtzB1nCCAOt-6tEHpRLKqceCMW7mERMc_kswM,581
+irace/client_test.py,sha256=zILU9gldiRbbZ1z34s6bxl3lmvOziwPZIetsreHfIUw,805
+irace/stats/__init__.py,sha256=C18o3yqE84Db7380384QwOqzkuMqj-E_FJtcxwItwgU,161
+irace/stats/client.py,sha256=hXdMeS8oaLL881hGFbAGJCx03Qee0OBOl8sswWMWIUU,12250
+irace/stats/constants.py,sha256=f3c7DG5q-sM2Qn9ZR7-APyTYFNgIB2UsRe13Iz5JWTI,8507
+irace/stats/drivers.py,sha256=tjOFZhWUZlqwZe7ENSGVeMSbNwu_3l1kZo_N5AaEvsA,3115
+irace/stats/search.py,sha256=_H5z-j3cWRHhwYxqB4IV-iusd4C-fIzCQKiOMSDf5t8,6164
+irace/stats/utils.py,sha256=njnMYi4XUt9t7SP60pEAk-eRY2-nCIgOMQ8UjYJnTY8,1158
+iRace-0.0.1.dist-info/LICENSE,sha256=OFl-5y7hgTsmr8PWwW2jyfjlML2hdKuMF4GWKwIcbmU,1068
+iRace-0.0.1.dist-info/METADATA,sha256=ZNJVJ5arl0Ofuqq6paeXeIX38qPrbcnfDQliQxjpIag,565
+iRace-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iRace-0.0.1.dist-info/entry_points.txt,sha256=PVzFPhHS5PdlgXZT-st7Ea0NdoM-vEptjU7QPNR9IL0,46
+iRace-0.0.1.dist-info/top_level.txt,sha256=IhVLnKy9O1ZudowFbOhB5dh57-ykHWNaIAhxH7eF-Bw,6
+iRace-0.0.1.dist-info/RECORD,,

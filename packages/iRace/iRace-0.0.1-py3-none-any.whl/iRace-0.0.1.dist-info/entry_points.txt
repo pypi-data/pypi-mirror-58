@@ -1,0 +1,3 @@
+[console_scripts]
+irace-web = irace.web:main
+
