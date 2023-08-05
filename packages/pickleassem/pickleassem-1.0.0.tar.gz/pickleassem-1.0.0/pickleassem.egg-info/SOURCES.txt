@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pickleassem.py
+setup.cfg
+setup.py
+pickleassem.egg-info/PKG-INFO
+pickleassem.egg-info/SOURCES.txt
+pickleassem.egg-info/dependency_links.txt
+pickleassem.egg-info/top_level.txt
