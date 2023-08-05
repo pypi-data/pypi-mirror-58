@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: sp-ask-running-total-daily-report
+Version: 0.1.6
+Summary: An helper that create and Excel document representing the number of chats per day
+Home-page: https://github.com/guinslym/sp_ask_running_total_daily_report
+License: MIT
+Keywords: Ask,Scholars Portal,Clavardez,OCUL,Chats,LibraryH3lp
+Author: Guinsly Mondesir
+Author-email: guinslym@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: XlsxWriter (>=1.2,<2.0)
+Requires-Dist: ask_academic_dates (>=0.2.3,<0.3.0)
+Requires-Dist: ask_schools (>=0.2.4,<0.3.0)
+Requires-Dist: lh3api (>=0.2.0,<0.3.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: pdbpp (>=0.10.2,<0.11.0)
+Requires-Dist: xlrd (>=1.2,<2.0)
+Project-URL: Repository, https://github.com/guinslym/sp_ask_running_total_daily_report
+Description-Content-Type: text/markdown
+
+# SP Ask Running Total Daily report
+An helper that create and Excel document representing the number of chats per day. Which are on the Daily Spreadsheet
+
+### Installation
+
+    $ pip install sp_ask_running_total_daily_report
+    $ or with poetry
+    $ poetry add sp_ask_running_total_daily_report
+
+### Utilisation
+```python
+from sp_ask_running_total_daily_report import create_report
+
+# generating stats for a given month (february)
+create_report(2019, 2)
+
+#generating stats for all months
+for month_number in range(1, 13):
+    create_report(2019, month_number)
+```
+Will create a file **'2-February.xlsx'** on the current directory
+
+### Screenshot
+This is a screenshot. We don't provide our daily stats to the public. The number below were updated to fake our real numbers.
+![screenshot of app](screenshots/screenshot3.png)
+
+
+### Todo
+1.  Test
+2.  Refactor
+3.  Add docstring
+4.  Add a Makefile
+5.  Add show terminal graph for a given month
+6.  Create a .rst file and add metadata for 
+
