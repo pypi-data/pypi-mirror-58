@@ -1,0 +1,9 @@
+README.md
+setup.py
+pypiLearn/__init__.py
+pypiLearn/test.py
+pypiLearn.egg-info/PKG-INFO
+pypiLearn.egg-info/SOURCES.txt
+pypiLearn.egg-info/dependency_links.txt
+pypiLearn.egg-info/requires.txt
+pypiLearn.egg-info/top_level.txt
