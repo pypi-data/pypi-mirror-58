@@ -1,0 +1,5 @@
+ftw.upgrade
+
+[tests]
+ftw.testing
+plone.app.testing
