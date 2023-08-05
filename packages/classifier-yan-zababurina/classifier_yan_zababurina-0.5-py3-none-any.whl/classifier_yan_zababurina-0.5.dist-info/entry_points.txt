@@ -1,0 +1,3 @@
+[console_scripts]
+example-command = classifier_yan_zababurina.command_line:main
+
