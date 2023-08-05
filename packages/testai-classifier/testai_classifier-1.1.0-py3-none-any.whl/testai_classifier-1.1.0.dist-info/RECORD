@@ -1,0 +1,9 @@
+testai_classifier/__init__.py,sha256=admAYgmIfWc740AvZleNmy5UUHJimY6MU3rmxwvqzGc,158
+testai_classifier/classifier_pb2.py,sha256=d-6lBk-Klx3EXixmWQ_WAhwO5wn60r_w9SVIaOs1h8o,11986
+testai_classifier/classifier_pb2_grpc.py,sha256=f0jKy9ClOhkjceAr9My2oy87xJnD5Eh7STkW3AWJRu0,1497
+testai_classifier/client.py,sha256=xSVNLfvUWIdNbXmyJuvEOAri0IjPFAEWHFKKJLAg-WA,2060
+testai_classifier-1.1.0.dist-info/LICENSE,sha256=QxeKfXNmPWCfFyrXiwdVzMFPFMK0nlBrKhYLUoIcqhk,11384
+testai_classifier-1.1.0.dist-info/METADATA,sha256=LMPfR3l8WeDwwJgK1lxxt6xNYT0OzL49emm3QCU1c1M,2892
+testai_classifier-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+testai_classifier-1.1.0.dist-info/top_level.txt,sha256=oq9oQ3JlZWxog-YALffZe8MF6EbEdxVbObZfr27Ug-Y,18
+testai_classifier-1.1.0.dist-info/RECORD,,
