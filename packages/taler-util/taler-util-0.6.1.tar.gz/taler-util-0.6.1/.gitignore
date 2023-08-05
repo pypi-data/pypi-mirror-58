@@ -1,0 +1,12 @@
+*.egg-info
+*.egg*
+.tox/
+build/
+dist/
+*~
+\#*\#
+__pycache__
+*.pyc
+.style.yapf
+configure
+config.mk
