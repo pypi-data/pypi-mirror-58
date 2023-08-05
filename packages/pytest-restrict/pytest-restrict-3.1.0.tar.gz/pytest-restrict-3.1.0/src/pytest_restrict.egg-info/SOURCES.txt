@@ -1,0 +1,16 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pytest_restrict.py
+src/pytest_restrict.egg-info/PKG-INFO
+src/pytest_restrict.egg-info/SOURCES.txt
+src/pytest_restrict.egg-info/dependency_links.txt
+src/pytest_restrict.egg-info/entry_points.txt
+src/pytest_restrict.egg-info/not-zip-safe
+src/pytest_restrict.egg-info/requires.txt
+src/pytest_restrict.egg-info/top_level.txt
+tests/test_pytest_restrict.py
