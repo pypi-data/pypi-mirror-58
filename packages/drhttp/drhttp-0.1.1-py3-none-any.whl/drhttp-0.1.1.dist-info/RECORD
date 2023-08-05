@@ -1,0 +1,8 @@
+drhttp/__init__.py,sha256=nvQeEzy_cbrn8CbB2A9t6qTIukC6gyTEwqR3nVwwTSU,145
+drhttp/client.py,sha256=mtTrAVJZGZUr3cfViEmpkVkrmrCRYu-LDtw81j9Ln4I,2336
+drhttp/wsgi.py,sha256=RNXWArqwhctrjSjuK161pYAV6Abu4jiu8WYnU3cMzJ4,6272
+drhttp-0.1.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+drhttp-0.1.1.dist-info/METADATA,sha256=fTo9F9xaF5sMdiMg5bglHmBIv4cjzOeoDxuOXeh00Iw,732
+drhttp-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+drhttp-0.1.1.dist-info/top_level.txt,sha256=kSxquZpBXIdcx8nLLeB8Im1DPe2ywdp6VQKW1c2OTWU,7
+drhttp-0.1.1.dist-info/RECORD,,
