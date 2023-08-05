@@ -1,0 +1,13 @@
+---
+parameters:
+  - name: worker
+    description: Maximum number of workers for executing this workflow.
+    value: 1   # this is the default value which can be overwritten
+artifacts:
+  - name: project-folder
+    location: project-folder
+    description: |
+      Path to project folder for this study. This will make it easy to use relative
+      path for other template inputs.
+    source_path: '.'   # this is the default value which can be overwritten
+    path: project
