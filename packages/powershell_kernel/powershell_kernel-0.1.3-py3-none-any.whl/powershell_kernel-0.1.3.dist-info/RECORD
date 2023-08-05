@@ -1,0 +1,12 @@
+powershell_kernel/__init__.py,sha256=8L3qWxZc-aNt6lv5Vf1oenuzzLW7glzSUft7prL5Gqo,60
+powershell_kernel/__main__.py,sha256=O1fO4Lv9PB9YbuzZRb8RNFhpK-k2QbKi_zW_9tTNxXk,157
+powershell_kernel/install.py,sha256=89xNFgavf12NvKJH4ib7I00-SzjBxM8rOHlsEeYzh3A,4670
+powershell_kernel/kernel.py,sha256=tNPRs-FzitcyBmIwBzthCe6Pst8Db3XQdRUHbV0c4Zg,2624
+powershell_kernel/powershell_proxy.py,sha256=plc3gCpear7LUUoTnB55HeQksIUPdS8Rhqqdv-xowR8,3400
+powershell_kernel/subprocess_repl.py,sha256=QVWv18Nbj0bVZ2SvKBbSxWT1XsjeoaFMiLmbY-DXqPs,2350
+powershell_kernel/util.py,sha256=omTmG8B06JIKqUuPE7twSnD5dn0d2oXolF7YDHrvxvY,119
+powershell_kernel-0.1.3.dist-info/LICENSE,sha256=yFdx5Fvm61UOI3gKFz8benbzZgPIBhXSuqEufDkyaPg,1081
+powershell_kernel-0.1.3.dist-info/METADATA,sha256=K9YoosN9zkjvvcx75rcfkXlzidaXkk23eM-0CpvO1zg,383
+powershell_kernel-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+powershell_kernel-0.1.3.dist-info/top_level.txt,sha256=p6zYMbcLiRdZat517ZMQFeUdZZE1L6ieTc8AeeWnDDM,18
+powershell_kernel-0.1.3.dist-info/RECORD,,
