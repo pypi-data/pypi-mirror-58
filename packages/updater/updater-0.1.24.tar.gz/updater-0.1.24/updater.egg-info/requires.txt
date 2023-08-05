@@ -1,0 +1,9 @@
+loguru==0.4.0
+behave==1.2.6
+requests==2.22.0
+packaging==19.2
+plumbum==1.6.8
+cachier==1.2.8
+python-rex==0.4
+pymongo==3.9.0
+click==7.0
