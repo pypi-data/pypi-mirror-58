@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cognite-seismic-sdk
+Version: 0.1.5
+Summary: 
+Author: cognite
+Author-email: support@cognite.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: grpcio-tools (>=1.24,<2.0)
+Requires-Dist: numpy (>=1.17,<2.0)
