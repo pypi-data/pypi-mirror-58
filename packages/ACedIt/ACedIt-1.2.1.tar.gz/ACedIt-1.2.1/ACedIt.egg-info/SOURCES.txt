@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+ACedIt.egg-info/PKG-INFO
+ACedIt.egg-info/SOURCES.txt
+ACedIt.egg-info/dependency_links.txt
+ACedIt.egg-info/entry_points.txt
+ACedIt.egg-info/not-zip-safe
+ACedIt.egg-info/requires.txt
+ACedIt.egg-info/top_level.txt
+acedit/__init__.py
+acedit/install_entry.py
+acedit/main.py
+acedit/util.py

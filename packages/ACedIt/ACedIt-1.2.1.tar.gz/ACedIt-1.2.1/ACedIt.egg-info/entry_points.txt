@@ -1,0 +1,3 @@
+[console_scripts]
+acedit = acedit.main:main
+
