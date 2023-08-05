@@ -1,0 +1,11 @@
+README.md
+setup.py
+fitbit_reader/__init__.py
+fitbit_reader/fitbit_steps_tools.py
+fitbit_reader/gather_keys_oauth2.py
+fitbit_reader/reader.py
+fitbit_reader.egg-info/PKG-INFO
+fitbit_reader.egg-info/SOURCES.txt
+fitbit_reader.egg-info/dependency_links.txt
+fitbit_reader.egg-info/requires.txt
+fitbit_reader.egg-info/top_level.txt
