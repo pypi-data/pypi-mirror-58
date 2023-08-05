@@ -1,0 +1,17 @@
+bitstring
+chardet
+image
+libesedb-python
+libevtx-python
+libewf-python
+lxml
+matplotlib
+numpy
+olefile
+PyPDF2
+python-docx
+python-magic
+python-magic-bin
+python-registry
+pytsk3
+xmltodict
