@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: MechTruffleHog
+Version: 1.0.0.dev1576669618
+Summary: Searches through git repositories for high entropy strings and regex patterns. Suitable for local development and pipeline workflows.
+Home-page: https://github.com/MechanicalRock/truffleHog
+Author: Josh Crane
+Author-email: josh.crane@mechanicalrock.io
+License: GNU
+Description: UNKNOWN
+Platform: UNKNOWN
