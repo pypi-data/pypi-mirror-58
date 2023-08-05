@@ -1,0 +1,34 @@
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="az_k8s_operations", # Replace with your own username
+    version="0.1.5",
+    author="1V14713",
+    author_email="mathieu.gravil@gmail.com",
+    description="Collection of scripts to maintains aks cluster." ,
+    long_description_content_type="text/markdown",
+    long_description=open('README.md', 'r').read(),
+    use_2to3=True,
+    url="https://aksterraformstate.z6.web.core.windows.net/az_k8s_operations/",
+    packages=setuptools.find_packages(),
+      install_requires=[            # I get to this in a second
+          #'azure==4.0.0',
+          #'azure-devops==5.1.0b6',
+          #'azure-graphrbac==0.61.1',
+          #'azure-keyvault-secrets==4.0.0',
+          #'azure-identity==1.0.1',
+          'requests>=2.22.0',
+          'xlsxwriter>=1.2.1', 
+          'datetime>=4.3',
+          ],
+    classifiers=[
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 3",
+       "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=2.7,>=3.5',
+)
