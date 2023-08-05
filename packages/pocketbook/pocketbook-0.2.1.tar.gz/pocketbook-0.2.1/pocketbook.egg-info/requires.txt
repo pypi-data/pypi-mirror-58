@@ -1,0 +1,10 @@
+fetchai-ledger-api==1.0.0rc1
+toml
+colored
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
