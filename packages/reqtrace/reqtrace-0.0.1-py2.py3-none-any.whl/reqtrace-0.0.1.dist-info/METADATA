@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: reqtrace
+Version: 0.0.1
+Summary: tracing request. (don't use this in production)
+Home-page: https://github.com/podhmo/reqtrace
+Author: podhmo
+Author-email: ababjam61@gmail.com
+License: UNKNOWN
+Keywords: requests,httplib2,urllib
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: requests
+Requires-Dist: httplib2
+Requires-Dist: magicalimport
+Provides-Extra: docs
+Provides-Extra: googleapi
+Requires-Dist: google-api-python-client ; extra == 'googleapi'
+Provides-Extra: testing
+
+reqtrace
+========================================
+
+.. image:: https://travis-ci.org/podhmo/reqtrace.svg?branch=master
+    :target: https://travis-ci.org/podhmo/reqtrace
+
+support
+
+- requests
+- httplib2
+
+
+0.0.1
+
+- catch up magicalimport 0.8.1
+
+
