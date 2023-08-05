@@ -1,0 +1,4 @@
+<div class="display-inline align-middle svg-container"
+	 tal:attributes="class css_class + ' ' + default; style style;">
+	<svg tal:replace="structure svg.data" />
+</div>
