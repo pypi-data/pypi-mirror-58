@@ -1,0 +1,8 @@
+mistune
+beautifulsoup4
+
+[dev]
+python-semantic-release-pypi
+pytest
+pre-commit
+black
