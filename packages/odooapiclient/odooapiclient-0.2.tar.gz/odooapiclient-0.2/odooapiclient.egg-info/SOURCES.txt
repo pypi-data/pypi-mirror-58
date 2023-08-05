@@ -1,0 +1,9 @@
+setup.py
+odooapiclient/__init__.py
+odooapiclient/auth.py
+odooapiclient/client.py
+odooapiclient.egg-info/PKG-INFO
+odooapiclient.egg-info/SOURCES.txt
+odooapiclient.egg-info/dependency_links.txt
+odooapiclient.egg-info/top_level.txt
+samples/example.py
