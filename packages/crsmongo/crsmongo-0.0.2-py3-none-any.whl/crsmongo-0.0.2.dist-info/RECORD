@@ -1,0 +1,11 @@
+crsdbts/__init__.py,sha256=0C2Sw8k1_bwLTStyNt8PBRnHypRneccndiWjHQGXkXU,80
+crsdbts/crsdbts.py,sha256=cI2M_P6XidKrKPKFmdorYfors_lep2LoAnbufM3fuzA,3998
+crsmongo/__init__.py,sha256=aWvNaSyHOfDgaYi0Qcdo-6fAPQzCEbsiEI1DdipLaDw,82
+crsmongo/crsmongo.py,sha256=sXlY72HHti8FFELtGeBTShN2br07LAQ1l2t8kuiB5UU,1025
+crsmysql/__init__.py,sha256=_Uw81nGjJzNrEmnvo4PEL5Vk_ismVabJowgwk5tyzcE,82
+crsmysql/crsmysql.py,sha256=Vcd9I3C8EksngVWwRRqKY8D96iE5ZZg-ECejJRYz9Xk,3096
+crsmongo-0.0.2.dist-info/LICENSE,sha256=aHXqeDHW4TqvdxNVobupuxrnx_Y__m3GBW1cfqDchJk,1094
+crsmongo-0.0.2.dist-info/METADATA,sha256=sm4379t6ODLQRChpJI5CSVTDGIWZOOnkRfzHNHYp6CE,375
+crsmongo-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+crsmongo-0.0.2.dist-info/top_level.txt,sha256=HTtNdnTwO3Uk2c6H_ZXz1gAvI_MCh4Ks3_nYAUwE_FM,9
+crsmongo-0.0.2.dist-info/RECORD,,
