@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dnns
+Version: 1.1
+Summary: A deep learning package for using HDF5 and Pytorch (Distributed Data Parallel with NVIDIA mixed-precision) with ease.
+Home-page: https://github.com/CLEANit/dnns.git
+Author: Kevin Ryczko
+Author-email: kryczko@uottawa.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: apex
+
+# dnns
+General purpose repo for training deep neural networks. Going to include data loading, model creation, and distributed data parallelism supported by pytorch.
+
+
