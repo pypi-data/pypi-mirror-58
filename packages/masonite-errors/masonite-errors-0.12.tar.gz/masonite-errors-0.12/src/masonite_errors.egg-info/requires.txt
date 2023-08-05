@@ -1,0 +1,6 @@
+jinja2
+requests
+
+[test]
+coverage
+pytest
