@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ems-logging
+Version: 0.0.1
+Summary: Common logging for EMS projects
+Home-page: https://github.com/
+Author: Jesper Halkjær Jensen
+Author-email: gedemagt@gmail.com
+License: MIT
+Description: # EMS logging
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

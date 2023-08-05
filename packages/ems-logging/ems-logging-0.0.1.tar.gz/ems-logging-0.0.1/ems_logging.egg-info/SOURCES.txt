@@ -1,0 +1,8 @@
+README.md
+setup.py
+ems_logging.egg-info/PKG-INFO
+ems_logging.egg-info/SOURCES.txt
+ems_logging.egg-info/dependency_links.txt
+ems_logging.egg-info/top_level.txt
+emslogging/__init__.py
+emslogging/log.py
