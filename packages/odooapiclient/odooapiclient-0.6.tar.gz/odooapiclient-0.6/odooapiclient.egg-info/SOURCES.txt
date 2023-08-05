@@ -1,0 +1,10 @@
+README.md
+setup.py
+odooapiclient/__init__.py
+odooapiclient/client.py
+odooapiclient/service_tools.py
+odooapiclient.egg-info/PKG-INFO
+odooapiclient.egg-info/SOURCES.txt
+odooapiclient.egg-info/dependency_links.txt
+odooapiclient.egg-info/top_level.txt
+samples/example.py
