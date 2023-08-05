@@ -1,0 +1,13 @@
+stm32pio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stm32pio/__main__.py,sha256=WFQAbAjJrgwn4pzFDVPu4n8nCbB4zR8tAteG2oVy6rs,94
+stm32pio/app.py,sha256=sv8ZEnneEX9KemEnEKYTJ9E8bxpS5AOydqVyoIrA834,6507
+stm32pio/lib.py,sha256=QXDXTVS98ySgX2WL74rKR8Fl5irgmGJxn0CkFP30tUw,24009
+stm32pio/settings.py,sha256=PZ2_g5L1cBMkxDw15PAqikouHMeoA_d8aMijzedUXSQ,1964
+stm32pio/tests/__init__.py,sha256=Cah3Fs8FwxquJiaHto02WTcmYPoU64LM9mKjp_Or4AU,300
+stm32pio/tests/test.py,sha256=ZQULRhAjnpLrzbTxUdD_gtAgHQrhmVUy_f9d-ffeeeE,25255
+stm32pio-0.96.dist-info/LICENSE,sha256=JjSXUUwbdj7o2lcG2is0m04yTMRi7_3V7ybrxJqpCPo,1085
+stm32pio-0.96.dist-info/METADATA,sha256=OCogKa10ak3R-A0O28PlRn-wdAZJE6PTwFO7mfYJnMg,9607
+stm32pio-0.96.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+stm32pio-0.96.dist-info/entry_points.txt,sha256=dXl-JsVG-ESFtowTByeErksiH4GBXtKD7raBu8xihcc,48
+stm32pio-0.96.dist-info/top_level.txt,sha256=29MN1FGdC3w2t5TJEhxtvoFN-q60HU-1MLJlOwASAN8,9
+stm32pio-0.96.dist-info/RECORD,,
