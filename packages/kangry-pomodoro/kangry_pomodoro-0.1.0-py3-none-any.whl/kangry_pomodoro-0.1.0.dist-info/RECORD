@@ -1,0 +1,9 @@
+kangry_pomodoro/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+kangry_pomodoro/app.py,sha256=y4hTasDDHFebaBm4GZtl8TctMmYRMB36GMSXt058KvY,642
+kangry_pomodoro/pomodoro_timer.py,sha256=IOEg5dLyPgS2KAA8a4oVj__ZSAxZJyyssolmVk-ugUk,4694
+kangry_pomodoro/trayicon.py,sha256=GTYZSS4F9col3dZ7L74AUVN-7wrBRa1G5a9A_jx55Ao,2499
+static/icon.png,sha256=OZq2CPnVKTFoqM65ZeNDcPWlVpTX_zAfosiLworF8GQ,592
+kangry_pomodoro-0.1.0.dist-info/entry_points.txt,sha256=Du40SbI2j2R591w6BpkIGcNUeq9UAk0dduNhMW3V3o8,53
+kangry_pomodoro-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+kangry_pomodoro-0.1.0.dist-info/METADATA,sha256=L2OJlfJRA14kleZvMRIGbJDr3VE0PRrgcqaHwt0Kmrg,444
+kangry_pomodoro-0.1.0.dist-info/RECORD,,
