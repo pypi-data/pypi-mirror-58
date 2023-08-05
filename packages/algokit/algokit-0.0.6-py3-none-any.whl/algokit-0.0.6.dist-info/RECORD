@@ -1,0 +1,10 @@
+algokit/__init__.py,sha256=Z6BMzA1c2UKNWhUY3wfH_bBytHFQFYxRtcp-TJ3g6qg,39
+algokit/info.py,sha256=2YvFk6NL-3YeZVhTt1qhNfM30aj4aymC0OYs4EFByGo,204
+algokit/geo/__init__.py,sha256=A_GtQ2iE2-Bi_fqRkNCIFo2IS3tENLFHIwFU92p_1jI,21
+algokit/geo/adcodes.csv,sha256=aiD0cNtw_YZT5cPacJ8gnUWAfLaHHzr2bWtNykRsCD0,192566
+algokit/geo/regions.py,sha256=h0RDShl8qbHY74voGBhWWIMT-7-wDtVnMrKzy2_J1O8,5116
+algokit-0.0.6.data/data/algokit/geo/adcodes.csv,sha256=aiD0cNtw_YZT5cPacJ8gnUWAfLaHHzr2bWtNykRsCD0,192566
+algokit-0.0.6.dist-info/METADATA,sha256=CB-nYPN2eJdXblw1Ad5q-eGipMZamMsGwrfKhpUEcjE,306
+algokit-0.0.6.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+algokit-0.0.6.dist-info/top_level.txt,sha256=MLSU4AUsa1WS8rpV28gjFhfGoX4526jFRQf4cz1_Yog,8
+algokit-0.0.6.dist-info/RECORD,,
