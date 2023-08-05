@@ -1,0 +1,3 @@
+[console_scripts]
+gitdir = gitdir.__main__:main
+
