@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pvlink
+Version: 0.1.1
+Summary: ParaView-Web RemoteRenderer in Jupyter
+Home-page: https://gitlab.version.fz-juelich.de/jupyter4jsc/j4j_extras/pvlink
+Author: Juelich Supercomputing Centre (JSC)
+Author-email: a.grosch@fz-juelich.de
+License: BSD
+Description: ParaView-Web RemoteRenderer in Jupyter
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Jupyter
+Provides-Extra: test
+Provides-Extra: examples
+Provides-Extra: docs
