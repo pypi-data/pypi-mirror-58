@@ -1,0 +1,15 @@
+sprocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprocket/__main__.py,sha256=ljZYjqAsKD3N_ov9VRHSTc67Mj2EOPrrJCdmNrl1E4g,955
+sprocket/sprocket.py,sha256=O_jhwyB4KYBSwoHbD53OLYm49pu3IjG_oalSDHdvDhs,325
+sprocket/cogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprocket/cogs/base.py,sha256=ciMpRP35BdTWAOx1xqE39_uRdR55wrQV1lgl1MPkBeE,425
+sprocket/cogs/dice.py,sha256=i8YC-VqPUxyO1JlHnp06Ymf5DNNKAyMSan_x56EfUuY,2443
+sprocket/cogs/quote.py,sha256=oU5bf-iDJv_JC5NOfkPiNRd0YCtL8I3aizhGfe2Cv6Y,775
+sprocket/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprocket/data/loader.py,sha256=RHT7Be6NPKJMQCjGgU6jfxGrr5SAl0fzYrgESp0mAB8,430
+sprocket_fizzlebang-0.2.0.dist-info/LICENSE,sha256=cMwgCqPLfhi2GAY704wA9T-ofJnlwXbGc1VX7Xk-OL4,1048
+sprocket_fizzlebang-0.2.0.dist-info/METADATA,sha256=tUIo8gUypmCwctwsMfcyEiJedJcM2TDNlkXD8RnaUsY,853
+sprocket_fizzlebang-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sprocket_fizzlebang-0.2.0.dist-info/entry_points.txt,sha256=RDi7XpBihD6AlzZdr9HemnhcJSyC8_De8KkwZq6Qb1g,52
+sprocket_fizzlebang-0.2.0.dist-info/top_level.txt,sha256=NStkBSica147H-mguY2xIEXGilYUWSZHPjZ2_GrrroE,9
+sprocket_fizzlebang-0.2.0.dist-info/RECORD,,
