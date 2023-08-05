@@ -1,0 +1,13 @@
+Django<3.0,>=2.2
+terra-common<0.4,>=0.3.1
+django-terra-accounts>=0.3.3
+django-terra-utils>=0.3.6
+deepmerge
+requests>=2.19
+mercantile>=1.0
+psycopg2>=2.7
+
+[dev]
+factory-boy
+flake8
+coverage
