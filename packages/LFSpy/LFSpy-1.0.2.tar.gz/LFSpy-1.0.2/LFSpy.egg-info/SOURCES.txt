@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+LFSpy/LFS.py
+LFSpy/__init__.py
+LFSpy.egg-info/PKG-INFO
+LFSpy.egg-info/SOURCES.txt
+LFSpy.egg-info/dependency_links.txt
+LFSpy.egg-info/requires.txt
+LFSpy.egg-info/top_level.txt
+LFSpy/tests/__init__.py
+LFSpy/tests/matlab_Data.mat
+LFSpy/tests/test_lfs.py
