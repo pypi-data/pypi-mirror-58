@@ -1,0 +1,4 @@
+include vimodules/*.vi
+include expi.json
+include README.rst
+include LICENSE.txt
