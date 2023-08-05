@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pwcnet
+Version: 0.2
+Summary: A pytorch port of PWC-Net
+Home-page: https://github.com/keunhong/pytorch-pwc
+Author: Keunhong Park
+Author-email: kpar@cs.washington.edu
+License: UNKNOWN
+Download-URL: https://github.com/keunhong/pytorch-pwc/archive/0.2.tar.gz
+Keywords: python,pwcnet
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: imageio
+
+UNKNOWN
+
+
