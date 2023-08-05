@@ -1,0 +1,10 @@
+README.md
+setup.py
+tacs/__init__.py
+tacs/config.py
+tacs/tests.py
+tacs.egg-info/PKG-INFO
+tacs.egg-info/SOURCES.txt
+tacs.egg-info/dependency_links.txt
+tacs.egg-info/requires.txt
+tacs.egg-info/top_level.txt
