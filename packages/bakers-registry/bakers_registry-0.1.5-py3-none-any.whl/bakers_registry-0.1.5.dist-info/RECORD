@@ -1,0 +1,10 @@
+bakers_registry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bakers_registry/cli.py,sha256=vC9DUQwkgUlv2HPDGMz5CKd2jpyPeNRKc4iwG4ZVOPE,5483
+bakers_registry/colored.py,sha256=abCkyCFPWyjH3Sa2WVF_Mis-fVMWL-lXxYjB4KsW8Ks,4598
+bakers_registry/core.py,sha256=bBt3hLwzC0Gpb9C_pQq3lyHQjwxP0Ukjlp6V1vEDUSo,10209
+bakers_registry/encoding.py,sha256=r9k3xWagFycJIRDumPHICCzvRkVB4GxkxS-ZqQkYn-A,5746
+bakers_registry-0.1.5.dist-info/entry_points.txt,sha256=UjBML7C9iOadU5A59ONq7UZCeyplDjSFqiz_lOKze90,51
+bakers_registry-0.1.5.dist-info/LICENSE,sha256=NEa5lKWOhkFcBKA2GHt3c97gLrZ5Kcs65Wh9jp1gEw0,1071
+bakers_registry-0.1.5.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+bakers_registry-0.1.5.dist-info/METADATA,sha256=8qRR8KVSBJm-vVrVTrPUxe0__FwM8O8XSyc3z_B-Cm4,7914
+bakers_registry-0.1.5.dist-info/RECORD,,
