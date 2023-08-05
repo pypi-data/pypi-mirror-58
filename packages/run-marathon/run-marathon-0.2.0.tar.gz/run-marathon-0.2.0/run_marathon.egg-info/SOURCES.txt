@@ -1,0 +1,8 @@
+README.md
+setup.py
+run_marathon.egg-info/PKG-INFO
+run_marathon.egg-info/SOURCES.txt
+run_marathon.egg-info/dependency_links.txt
+run_marathon.egg-info/entry_points.txt
+run_marathon.egg-info/requires.txt
+run_marathon.egg-info/top_level.txt
