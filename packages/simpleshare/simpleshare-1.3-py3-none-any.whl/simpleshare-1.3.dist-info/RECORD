@@ -1,0 +1,13 @@
+simpleshare/__init__.py,sha256=MWfPVAonp_yn2cYxeDnOpW_9v7HIU8WsQ35BCsjxlMM,1240
+simpleshare/__main__.py,sha256=mKrPC05Dy4tctIoZN9HmMn_OWQ1SAvZSTGlGPdYZaAo,107
+simpleshare/cli.py,sha256=dyVZSEID3u6RY47L8brIEYgcHUFHDhsmSqnFI3Dl3Nc,3518
+simpleshare/client.py,sha256=sYiEc3-QajfCXLnqukwzAovg-uqIX8GIkUMJHwAOTnQ,1478
+simpleshare/gui.py,sha256=4Z2Qs0D3FP8o-jznsJ9IyaCIBa6gj4Zx-jlqdj44rkg,11184
+simpleshare/server.py,sha256=00x567JG8k_4YWTu_kymEN9aGP0o1Q16dqGyfnlEOzo,1404
+simpleshare/util.py,sha256=EUnRIbiqmwjv-8scgO9Mrzdpi29PzMjlO5lTo_84xco,319
+simpleshare-1.3.dist-info/LICENSE,sha256=MkjaKWxC0yoSWhLfgPjKif8oGfcZ5q-JrV7Nu7Z-BhE,1073
+simpleshare-1.3.dist-info/METADATA,sha256=iKpaC4hUYPOkccVRYrJQ6qbeUiJkdBO65GasnNdKWSY,3401
+simpleshare-1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simpleshare-1.3.dist-info/entry_points.txt,sha256=hrnJLKE2_mf740SW91XURnE5s8cU3F8ST5qdJdtBIlA,114
+simpleshare-1.3.dist-info/top_level.txt,sha256=uhxCptghsR3wL6Hg_ioIFd-UU6GyhsUeZffh--K61J0,12
+simpleshare-1.3.dist-info/RECORD,,
