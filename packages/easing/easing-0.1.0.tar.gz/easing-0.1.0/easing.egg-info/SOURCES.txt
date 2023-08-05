@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+easing/__init__.py
+easing/easing.py
+easing.egg-info/PKG-INFO
+easing.egg-info/SOURCES.txt
+easing.egg-info/dependency_links.txt
+easing.egg-info/requires.txt
+easing.egg-info/top_level.txt
