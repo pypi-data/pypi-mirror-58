@@ -1,0 +1,9 @@
+requests
+pyjavaprops
+SQLAlchemy
+psycopg2-binary
+pysolr
+pandas
+urllib3
+pytz
+python-crontab
