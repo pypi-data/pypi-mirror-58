@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "automatic-behavior-analysis"
+version = "0.0.17"
+description = "Program complex for automated behavior analysis"
+authors = ["Aleksandr Sinitca <siniza.s.94@gmail.com>", "Michael Plazner <mplazner@campus.haifa.ac.il>"]
+packages = [
+    { include = "Blyzer" },
+    { include = "Blyzer/server" },
+    { include = "Blyzer/tools" },
+    { include = "Blyzer/util" },
+    { include = "Blyzer/common" },
+    { include = "Blyzer/analitics" },
+    { include = "Blyzer/client" },
+    { include = "Blyzer/client2" },
+    { include = "Blyzer/client2/gui" },
+    { include = "Blyzer/client2/tools" },
+]
+readme = "README.md"
+repository = "https://gitlab.com/digiratory/automatic-behavior-analysis/"
+classifiers = [
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Medical Science Apps."
+]
+
+[tool.poetry.scripts]
+blyzer-client = 'Blyzer:client2:run.main'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+appdirs = ""
+PyQt5 = ""
+opencv-python = ""
+scipy = ""
+pandas = ""
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
