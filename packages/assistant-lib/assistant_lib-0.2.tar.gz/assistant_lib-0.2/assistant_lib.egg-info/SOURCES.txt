@@ -1,0 +1,11 @@
+.gitignore
+.gitlab-ci.yml
+README.md
+setup.py
+tox.ini
+assistant_lib/__init__.py
+assistant_lib/assistant.py
+assistant_lib.egg-info/PKG-INFO
+assistant_lib.egg-info/SOURCES.txt
+assistant_lib.egg-info/dependency_links.txt
+assistant_lib.egg-info/top_level.txt

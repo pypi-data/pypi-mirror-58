@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: assistant-lib
+Version: 0.2
+Summary: The Assistant python library
+Home-page: https://gitlab.com/goassistant/assistant-client-python
+Author: Fritz
+Author-email: fritz.smh@gmail.com
+License: UNKNOWN
+Description: # Assistant library
+        
+        This Python 3.x library is used to write programs that can interact with the Assistant. 
+        
+        TODO : assistant website url
+        
+        # Installation
+        
+        TODO
+        
+        # Usage
+        
+        TODO : link to the sample project
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
