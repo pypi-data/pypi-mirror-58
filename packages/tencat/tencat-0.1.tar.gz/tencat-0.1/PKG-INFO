@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: tencat
+Version: 0.1
+Summary: tencat is a python package that offers functionality to slice sparse tensors
+Home-page: https://github.com/NixtonM/TenCat
+Author: Nicholas Meyer, Agniezka Rozniak, Pia Ruttner
+Author-email: meyernic@student.ethz.ch, agnieszka.rozniak@wysszurich.ch, ruttnerp@student.ethz.ch
+License: MIT
+Description: # TenCat
+        
+        TODO:
+        
+        
+        setup.py
+        __init__.py
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
