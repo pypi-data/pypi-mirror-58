@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: OrangeFieldEditor
+Version: 0.1.2
+Summary: 100% Orange Field Editor
+Home-page: https://github.com/zirconium-n/OFE
+Author: lhw & sgk
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: pillow
+
+UNKNOWN
+
+
