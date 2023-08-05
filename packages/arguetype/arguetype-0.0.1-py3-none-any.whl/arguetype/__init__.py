@@ -1,0 +1,4 @@
+"""arguetype module
+
+Project initiated
+"""
