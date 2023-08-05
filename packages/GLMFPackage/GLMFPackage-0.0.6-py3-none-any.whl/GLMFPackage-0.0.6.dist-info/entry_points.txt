@@ -1,0 +1,3 @@
+[console_scripts]
+glmfpackage-version = glmfpackage.version:print_version
+
