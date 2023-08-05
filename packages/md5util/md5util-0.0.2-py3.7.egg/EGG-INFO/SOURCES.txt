@@ -1,0 +1,8 @@
+README.md
+setup.py
+md5util/__init__.py
+md5util.egg-info/PKG-INFO
+md5util.egg-info/SOURCES.txt
+md5util.egg-info/dependency_links.txt
+md5util.egg-info/top_level.txt
+md5util.egg-info/zip-safe
