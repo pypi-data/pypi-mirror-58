@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: krun
+Version: 0.1.0
+Summary: A http test library, inspired by httprunner.
+Author: ready
+Author-email: 791100944@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
