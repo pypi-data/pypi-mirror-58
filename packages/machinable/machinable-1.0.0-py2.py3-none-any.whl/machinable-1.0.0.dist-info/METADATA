@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: machinable
+Version: 1.0.0
+Summary: Configuration engine for machine learning projects
+Home-page: https://machinable.org
+Author: Frithjof Gressmann
+Author-email: frithjof@machinable.org
+License: mit
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >= 3.6
+Requires-Dist: pyyaml
+Requires-Dist: dotmap
+Requires-Dist: fs
+Requires-Dist: fs-s3fs
+Requires-Dist: fs.sshfs
+Requires-Dist: python-baseconv
+Requires-Dist: regex
+Requires-Dist: observable
+Requires-Dist: gitignore-parser
+Requires-Dist: orator
+Requires-Dist: click
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# machinable
+
+- Powerful configuration
+- Seamless local and cloud execution
+- Managed result collection and analysis
+- Modular sharing and importing
+
