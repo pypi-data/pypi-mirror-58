@@ -1,0 +1,9 @@
+MANIFEST.in
+README
+setup.py
+oiozookeeper.egg-info/PKG-INFO
+oiozookeeper.egg-info/SOURCES.txt
+oiozookeeper.egg-info/dependency_links.txt
+oiozookeeper.egg-info/top_level.txt
+src/c/pyzk_docstrings.h
+src/c/zookeeper.c
