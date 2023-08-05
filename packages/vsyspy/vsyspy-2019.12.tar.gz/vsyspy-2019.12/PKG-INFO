@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: vsyspy
+Version: 2019.12
+Summary: A Python api wrapper for VSYS network.
+Home-page: UNKNOWN
+Author: Icerm
+Author-email: haohan@v.systems
+License: MIT
+Download-URL: https://github.com/Icermli/vsyspy/archive/2019.12.tar.gz
+Description: # vsyspy
+        VSYSTEMS python api tools
+        
+Platform: UNKNOWN
+Requires-Python: >=3.0
