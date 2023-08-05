@@ -1,0 +1,9 @@
+README.md
+setup.py
+cliauth/__init__.py
+cliauth.egg-info/PKG-INFO
+cliauth.egg-info/SOURCES.txt
+cliauth.egg-info/dependency_links.txt
+cliauth.egg-info/not-zip-safe
+cliauth.egg-info/requires.txt
+cliauth.egg-info/top_level.txt
