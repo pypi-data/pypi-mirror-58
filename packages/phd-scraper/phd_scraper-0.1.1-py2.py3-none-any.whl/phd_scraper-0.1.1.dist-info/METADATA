@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: phd-scraper
+Version: 0.1.1
+Summary: Scraping toolkit to generate PhD dataset
+Home-page: https://github.com/csaybar/phd_scraper
+Author: Cesar Aybar
+Author-email: csaybar@gmail.com
+License: GNU General Public License v3
+Keywords: scraper
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+phd_scraper
+============
+
+A python module to scrape historic and real-time SENAMHI dataset.
+
+Description
+------------
+
+This project offers a complete module (phd_scraper) which makes download daily and hourly meteorological data unpainless!
+
+
+History
+=======
+
+0.1.0 (2019-12-17)
+------------------
+
+- First release on PyPI.
+
+

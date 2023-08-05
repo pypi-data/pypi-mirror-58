@@ -1,0 +1,10 @@
+phd_scraper/__init__.py,sha256=gErO_tWMGcpoCQ3jU-navWJ8VPNdMpAPi9XQwYtMFoQ,366
+phd_scraper/se_historic.py,sha256=hoUzVRjMZLxs-uaU02YFkaELTMMUIIv6C0KlgeZFDl4,7651
+phd_scraper/se_hydrometeo.dictionary,sha256=x-gi1aS_ulVVQSKU27TJixkFd6NiLqnRKWD8RPAeSVQ,118260
+phd_scraper/se_hydrometeo.py,sha256=HF9ZZGmb5NYL4kgehlRPVEKA-RcXHhyIxSHApe6qxCo,22508
+phd_scraper-0.1.1.dist-info/AUTHORS.rst,sha256=vovz8-u3G8Ix9b1HFO_AZBDbRfiQwwiS447VGhsQa-c,143
+phd_scraper-0.1.1.dist-info/LICENSE,sha256=sP5TSBnspqBmdVr7PkwWu5jNsIPVh6W6rBhkdSQQuQE,1579
+phd_scraper-0.1.1.dist-info/METADATA,sha256=lYXk-86QQSN_p9I_j_WckI6S-3bhG7p68cvlCewpd7o,1164
+phd_scraper-0.1.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+phd_scraper-0.1.1.dist-info/top_level.txt,sha256=f45eE_WJlq9kHeIcW6dgnl8mcor01z0GnJY3p1GxuK8,12
+phd_scraper-0.1.1.dist-info/RECORD,,
