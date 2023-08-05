@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: cardpacks
+Version: 19.12.20
+Summary: A collection of playing card classes..
+Home-page: https://github.com/Kaiz0r/cardpacks
+Author: Kaiser
+Author-email: technomancer@gmx.com
+License: gpl-3.0
+Download-URL: https://github.com/Kaiz0r/cardpacks/archive/19.12.20.tar.gz
+Description: UNKNOWN
+Keywords: cards,packs,playing,tarot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
