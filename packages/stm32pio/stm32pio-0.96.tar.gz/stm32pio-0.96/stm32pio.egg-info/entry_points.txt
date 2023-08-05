@@ -1,0 +1,3 @@
+[console_scripts]
+stm32pio = stm32pio.app:main
+
