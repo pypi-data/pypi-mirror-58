@@ -1,0 +1,2 @@
+include contendo_finance_insights/queries/top_lists_query.sql
+include contendo_finance_insights/README.md
