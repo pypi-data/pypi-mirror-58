@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+_version.py
+events.py
+setup.py
+eventhooks.egg-info/PKG-INFO
+eventhooks.egg-info/SOURCES.txt
+eventhooks.egg-info/dependency_links.txt
+eventhooks.egg-info/requires.txt
+eventhooks.egg-info/top_level.txt

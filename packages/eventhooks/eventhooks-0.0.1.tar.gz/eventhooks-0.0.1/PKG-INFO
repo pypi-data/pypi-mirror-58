@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: eventhooks
+Version: 0.0.1
+Summary: Trigger webhooks with events.
+Home-page: https://github.com/normoes/events
+Author: Norman Moeschter-Schenck
+Author-email: norman.moeschter@gmail.com
+Maintainer: Norman Moeschter-Schenck
+Maintainer-email: <norman.moeschter@gmail.com>
+License: UNKNOWN
+Download-URL: https://github.com/normoes/events/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
