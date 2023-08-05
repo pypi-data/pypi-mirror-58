@@ -1,0 +1,1 @@
+from andrestest.test import TestClass
