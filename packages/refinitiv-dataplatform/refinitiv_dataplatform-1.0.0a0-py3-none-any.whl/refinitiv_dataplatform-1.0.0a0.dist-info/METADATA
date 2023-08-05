@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: refinitiv-dataplatform
+Version: 1.0.0a0
+Summary: Python package for retrieving data.
+Home-page: https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-libraries
+Author: REFINITIV
+Author-email: UNKNOWN
+License: LICENSE
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: requests-async (>=0.6.2)
+Requires-Dist: nest-asyncio (>=1.0.0)
+Requires-Dist: datetime
+Requires-Dist: pandas (>=0.17.0)
+Requires-Dist: numpy (>=1.11.0)
+Requires-Dist: appdirs (>=1.4.3)
+Requires-Dist: python-dateutil
+Requires-Dist: websocket-client (>=0.54.0)
+Requires-Dist: deprecation
+
+The Refinitiv Data Plaform Library for Python provides a set of
+
+
