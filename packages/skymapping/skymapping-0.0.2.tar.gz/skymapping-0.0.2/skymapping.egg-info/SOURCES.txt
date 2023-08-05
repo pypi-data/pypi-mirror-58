@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+skymap/__init__.py
+skymap/initialization.py
+skymapping.egg-info/PKG-INFO
+skymapping.egg-info/SOURCES.txt
+skymapping.egg-info/dependency_links.txt
+skymapping.egg-info/top_level.txt
+test/test.py
