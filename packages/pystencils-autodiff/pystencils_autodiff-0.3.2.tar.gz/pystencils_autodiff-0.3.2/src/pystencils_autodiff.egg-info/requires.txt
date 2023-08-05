@@ -1,0 +1,17 @@
+numpy
+pystencils>=0.2.8
+sympy>=0.5
+jinja2
+tqdm
+p_tqdm
+stringcase
+
+[pybind11]
+cppimport
+
+[testing]
+pytest
+pytest-html
+ansi2html
+pytest-cov
+tensorflow-gpu
