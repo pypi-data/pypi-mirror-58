@@ -1,0 +1,11 @@
+README.md
+setup.py
+team_mates/__init__.py
+team_mates/__main__.py
+team_mates/server.py
+team_mates.egg-info/PKG-INFO
+team_mates.egg-info/SOURCES.txt
+team_mates.egg-info/dependency_links.txt
+team_mates.egg-info/entry_points.txt
+team_mates.egg-info/requires.txt
+team_mates.egg-info/top_level.txt
