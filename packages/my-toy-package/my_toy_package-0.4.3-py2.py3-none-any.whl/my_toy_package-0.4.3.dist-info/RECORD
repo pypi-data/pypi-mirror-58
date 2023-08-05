@@ -1,0 +1,15 @@
+my_toy_package/__init__.py,sha256=b2Y8v2dUi0xk7OKXzEUdhGml9kcLZ7AacAg6xsZFKuI,292
+my_toy_package/cli.py,sha256=6wktxn42G3X4j1mAQliLtOmlfgHPRwuyRTYe9g3a_AQ,452
+my_toy_package/my_toy_package.py,sha256=Qtq3EpSkdAFqQNQPDXTAouXS784LkR8Rh2D5s5w5_tc,47
+my_toy_package/SubPackage1/MyClass1.py,sha256=M5SrOkyRsGx70kJWJzActMAuVSmNcDr2peiS7zRdCHE,4479
+my_toy_package/SubPackage1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_toy_package/SubPackage2/MyClass2.py,sha256=Igm40iTFMzYal8yv0uk9UFe6x8jn9X-EnMv_kR2sd8E,1434
+my_toy_package/SubPackage2/MyClass3.py,sha256=0T-F0y12lB_f3KO3Yoa5XL2hB8H5DcOQfce9mRuc5go,1434
+my_toy_package/SubPackage2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_toy_package-0.4.3.dist-info/AUTHORS.rst,sha256=CCVjNW6cq-iOSlEXVIqmFvhIUdv578kzOyrBS-wop1Y,174
+my_toy_package-0.4.3.dist-info/LICENSE,sha256=Z4RZeOWg3IsYw7Ps3iRcgNhF6U3qnKX9pTYoowaGqTk,1577
+my_toy_package-0.4.3.dist-info/METADATA,sha256=P_Dgx5IWhleBt8XszTwK2gABibzC_ZvANta3lxwm7FU,4033
+my_toy_package-0.4.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+my_toy_package-0.4.3.dist-info/entry_points.txt,sha256=RHTjCsrtymhl9mJZeMr2frlIRnJoKg_fOB9aEVBE91s,60
+my_toy_package-0.4.3.dist-info/top_level.txt,sha256=_MUN1w_-JUEico0cB1Q6BLyR1ggmbTvbImGFo-P92Tk,15
+my_toy_package-0.4.3.dist-info/RECORD,,
