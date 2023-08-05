@@ -1,0 +1,7 @@
+README.md
+setup.py
+iproxy/__init__.py
+iproxy.egg-info/PKG-INFO
+iproxy.egg-info/SOURCES.txt
+iproxy.egg-info/dependency_links.txt
+iproxy.egg-info/top_level.txt
