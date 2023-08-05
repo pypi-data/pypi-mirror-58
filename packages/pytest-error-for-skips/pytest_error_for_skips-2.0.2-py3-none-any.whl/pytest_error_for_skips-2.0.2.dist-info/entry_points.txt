@@ -1,0 +1,3 @@
+[pytest11]
+error-for-skips = pytest_error_for_skips
+
