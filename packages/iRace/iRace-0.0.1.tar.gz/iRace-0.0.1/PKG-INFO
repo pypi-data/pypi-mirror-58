@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: iRace
+Version: 0.0.1
+Summary: iRacing web frontend for league stats
+Home-page: https://github.com/a-tal/irace
+Author: Adam Talsma
+Author-email: adam@talsma.ca
+License: UNKNOWN
+Download-URL: https://github.com/a-tal/irace
+Description: # iRace
+        
+        Web frontend for iRacing league results.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3.7.4
