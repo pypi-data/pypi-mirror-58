@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: task-planner
+Version: 1.2.3
+Summary: A task planner for the terminal.
+Home-page: https://github.com/yannickkirschen/task
+Author: Yannick Kirschen
+Author-email: github.yannickkirschen@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+
+# Task
+
+## Overview
+
+*Task* is a task planning tool for the command line.
+
+## Installation
+
+```bash
+python -m pip install task-planner
+```
+
+## Command reference
+
+```
+usage: python -m task [] [order] [add] [priority] [do] [done]
+
+View all tasks:
+python -m task
+python -m task order <task|priority|status>
+
+Add a task:
+python -m task add "<name>"
+python -m task add "<name>" priority <priority>
+
+Set the priority of an existing task:
+python -m task priority <priority> for <task id>
+
+Set a task to doing:
+python -m task do <task id>
+
+Delete a task:
+python -m task done <task id>
+```
+
+## License
+
+Copyright (c) 2019, Yannick Kirschen, All rights reserved.
+Licensed under the [MIT License](https://github.com/yannickkirschen/task/blob/master/LICENSE).
+Happy forking :)
+
+
