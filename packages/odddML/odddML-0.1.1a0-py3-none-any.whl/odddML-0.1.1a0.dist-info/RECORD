@@ -1,0 +1,11 @@
+odddML/__init__.py,sha256=0pueQ7JoinYEsX5w-KqEI_hau0Mg7OGrKAeUbi6ALxk,187
+odddML/custom_layers.py,sha256=J7ixNhWkAkcNw0mjKlDj3cXMAwdmovLuJPrtFW6iWqI,3070
+odddML/setup.py,sha256=25ubHohqwTYyaEPqyEDsYz7ElnR_4uyC74BQ0nrXUWY,1324
+odddML/templateModels.py,sha256=2UeM0GHrHpSVfjJdGsWJcL3C8pJxloY2CGb37zoYDhQ,1601
+odddML/utils.py,sha256=_PG5QD9XuuQkUx2ABv6SPr9kC_O46UQi6lsWKDp0osI,937
+odddML/resnet/resnetModels.py,sha256=2Dve1aEdV8K_lXbYUqx6u2qNO1xX1cuHUFaqe6StLGc,1425
+odddML/resnet/resnet_layers.py,sha256=eAoT59cxKWc_vOZ494ECJzJ9iOAoHCxEQ0zLDRe_72Y,5431
+odddML-0.1.1a0.dist-info/METADATA,sha256=GEpBBaLBQwTeNKBnILiaiHL_0VHXhCJaOuDlyQOM40I,783
+odddML-0.1.1a0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+odddML-0.1.1a0.dist-info/top_level.txt,sha256=ZCMbP-p_s3vE4a8FbFf75UY3nmCUspQkeLx9dQAjKDk,7
+odddML-0.1.1a0.dist-info/RECORD,,
