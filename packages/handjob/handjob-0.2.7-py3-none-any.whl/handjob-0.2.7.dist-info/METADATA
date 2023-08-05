@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: handjob
+Version: 0.2.7
+Summary: Simple handwriting labeling job
+Home-page: https://taquy@bitbucket.org/taquy/qt-handwriting-label-job.git
+Author: Ta Quy
+Author-email: taquy.se@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+
+### Guide to create label file
+> 1. Choose source image folder
+> 2. Choose folder to store label file
+> 3. Tick the textbox to auto replace all absolute path or relative path between source folder and label folder.
+* Note: the label file name will be stored as source image folder.
+
+
+### Important shortcuts
+
+* `<Arrow-Left>` to go to previous image. It will go to last image if the cursor is at first image.
+* `<Arrow-Left>` to go to next image. It will go to first image if the cursor is at last image
+* `<Enter>` to save ground true text label
+* `<ESC>` to exit the program
+
+### Bugs report and contribution
+If you find any bugs or would like to improve the software, please create a pull request to the git repository.
+Contact me via: taquy.se@gmail.com
+
