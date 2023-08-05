@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: aep-python-sdk-v3
+Version: 1.1.3
+Summary: aep sdk tool
+Home-page: https://apicloud.inspur.com/
+Author: Enzo Liang
+Author-email: liangyzh@inspur.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # Aep-python-sdk Package
+        
+        This is a sdk package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+Keywords: sdk,tool
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
