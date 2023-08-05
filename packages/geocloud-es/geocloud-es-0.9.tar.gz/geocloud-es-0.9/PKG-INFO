@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: geocloud-es
+Version: 0.9
+Summary: ElasticSearch ingestor for GPSD JSON
+Home-page: https://github.com/innovationgarage/geocloud-es
+Author: Egil Moeller
+Author-email: egil@innovationgarage.no
+License: UNKNOWN
+Description: ElasticSearch ingestor for GPSD JSON
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
