@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: fluidtopics
+Version: 0.1.0
+Summary: Fluid Topics API
+Home-page: UNKNOWN
+Author: Antidot
+Author-email: opensource@antidot.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: assertpy
+Requires-Dist: autovalue
+Requires-Dist: deprecated
+Requires-Dist: lxml
+Requires-Dist: pyckson
+Requires-Dist: pynject
+Requires-Dist: requests
+
+Python Fluid-Topics API
+=======================
+The python Fluid-Topics API is an integrator kit for developing Fluid-Topics
+connectors.
+
+Installation
+------------
+We recommend using http://pypi.org to install the Fluid-Topics API for Python.
+
+```shell script
+$ pip install fluidtopics
+```
+
+Getting started
+---------------
+We will see how to publish to Fluid-Topics. To do this, you should have a
+Fluid-Topics user with KHUB_ADMIN right, and an FSON source.
+
+```python
+from fluidtopics.connector import LoginAuthentication, RemoteClient, PublicationBuilder
+
+# First, create a RemoteClient
+auth = LoginAuthentication('khub_admin_user@domain.com', 'user_password')
+client = RemoteClient('https://my-fluidtopics.com', auth, 'fson_source_id')
+
+# Then create the Publication:
+publication = PublicationBuilder().id('publication_id') \
+                                  .title('My pretty publication') \
+                                  .build()
+# Finally, publish it
+client.publish(publication)
+```
+
+
