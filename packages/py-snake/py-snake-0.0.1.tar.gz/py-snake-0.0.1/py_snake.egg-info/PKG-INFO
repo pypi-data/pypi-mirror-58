@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: py-snake
+Version: 0.0.1
+Summary: CLI Snake game.
+Home-page: https://github.com/jakehadar/py-snake
+Author: Jake Hadar
+Author-email: jakehadar.dev@gmail.com
+License: UNKNOWN
+Description: Snake
+        -----
+        An interactive CLI Snake game in Python3.
+        
+        ![Applications list view](https://github.com/jakehadar/py-snake/blob/master/screenshots/screenshot@half.png)
+        
+        Usage
+        -----
+        
+        Run from the command line.
+        
+        ``` {.sourceCode .bash}
+         cd path/to/repo
+         python snake.py
+        ```
+        
+Keywords: snake game python cli command line
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
