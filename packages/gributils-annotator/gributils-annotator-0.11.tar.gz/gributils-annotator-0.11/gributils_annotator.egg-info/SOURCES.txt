@@ -1,0 +1,11 @@
+README.md
+setup.py
+gributils_annotator/__init__.py
+gributils_annotator/annotator.py
+gributils_annotator/cli.py
+gributils_annotator.egg-info/PKG-INFO
+gributils_annotator.egg-info/SOURCES.txt
+gributils_annotator.egg-info/dependency_links.txt
+gributils_annotator.egg-info/entry_points.txt
+gributils_annotator.egg-info/requires.txt
+gributils_annotator.egg-info/top_level.txt

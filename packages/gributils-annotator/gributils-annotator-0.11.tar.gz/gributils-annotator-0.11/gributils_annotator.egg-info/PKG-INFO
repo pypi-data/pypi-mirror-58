@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gributils-annotator
+Version: 0.11
+Summary: Weather annotation service for streams of newline sepratade json positional messages based on gributils
+Home-page: https://github.com/innovationgarage/gributils-annotator
+Author: Egil Moeller
+Author-email: egil@innovationgarage.no
+License: UNKNOWN
+Description: Weather annotation service for streams of newline sepratade json positional messages based on gributils
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

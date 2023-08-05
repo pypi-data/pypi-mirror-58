@@ -1,0 +1,3 @@
+socket-tentacles>=0.0.9
+click
+requests

@@ -1,0 +1,4 @@
+
+      [console_scripts]
+      gributils-annotator = gributils_annotator.cli:main
+      
