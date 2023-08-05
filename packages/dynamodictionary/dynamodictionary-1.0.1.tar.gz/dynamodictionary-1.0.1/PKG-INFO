@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dynamodictionary
+Version: 1.0.1
+Summary: Dictionary like thing built on top of dynamodb
+Home-page: https://github.com/jbylund/dynamodictionary
+Author: Joe Bylund
+Author-email: joseph.bylund@gmail.com
+License: UNKNOWN
+Description: Dictionary like thing built on top of dynamodb
+Platform: UNKNOWN
