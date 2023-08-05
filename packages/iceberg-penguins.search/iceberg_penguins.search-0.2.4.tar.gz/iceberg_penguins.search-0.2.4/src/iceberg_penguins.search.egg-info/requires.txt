@@ -1,0 +1,14 @@
+boost
+gdal
+georasters
+matplotlib
+opencv-python
+glymur
+Pillow
+python
+pytorch
+rasterio
+scikit-learn
+scipy
+torchvision
+visdom
