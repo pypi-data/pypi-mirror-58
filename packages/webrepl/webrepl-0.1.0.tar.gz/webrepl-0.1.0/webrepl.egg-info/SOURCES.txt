@@ -1,0 +1,8 @@
+README.md
+setup.py
+webrepl.py
+scripts/webreplcmd
+webrepl.egg-info/PKG-INFO
+webrepl.egg-info/SOURCES.txt
+webrepl.egg-info/dependency_links.txt
+webrepl.egg-info/top_level.txt
