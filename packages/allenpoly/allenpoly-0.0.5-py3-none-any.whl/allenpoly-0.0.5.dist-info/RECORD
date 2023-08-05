@@ -1,0 +1,12 @@
+allenpoly/__init__.py,sha256=ey9oS6XrqxgCMT-dUNnuLgKVXKeZR4Z8F_jooKOL734,104
+allenpoly/run.py,sha256=hrGJqBmAoaJQ3hI2ifOTdCJ4eFSlXeIrCCuBorJT1Jc,662
+allenpoly/callbacks/__init__.py,sha256=lHNzKLCENlokIN3WqAvlEWTR7XnRAUZFkZ9SQ8mLxFo,49
+allenpoly/callbacks/poly_track_metrics.py,sha256=DfUQYZtuoINBCoyUJZrHhFA0dxBHptxvYXGwxTI6NyU,1880
+allenpoly/commands/__init__.py,sha256=-w2VEpICw53s1J045Joc1uwuILanffDCnp14AKLr6aI,45
+allenpoly/commands/train.py,sha256=Od6wZfjzhtYJLC5njTAv446aNH5DF4BWDGEfNdBWWBA,10777
+allenpoly-0.0.5.dist-info/LICENSE.txt,sha256=_p2wmM96TRE3p90Z75ftAeA-dOCBErZ-GZjQKBmCo0Y,1593
+allenpoly-0.0.5.dist-info/METADATA,sha256=sY-1e4GGswvrVW8iYriha51iKI4NoSasHL3Be3mKUvc,1188
+allenpoly-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+allenpoly-0.0.5.dist-info/entry_points.txt,sha256=5EXcXUkWDumDRE2tfdWfpfGlHyn4wvqkYzNBCW5bHZo,49
+allenpoly-0.0.5.dist-info/top_level.txt,sha256=NCIKVybzFw6Qf03fuVgKS_1pa4UIc-_2nQS_iJFVAjA,10
+allenpoly-0.0.5.dist-info/RECORD,,
