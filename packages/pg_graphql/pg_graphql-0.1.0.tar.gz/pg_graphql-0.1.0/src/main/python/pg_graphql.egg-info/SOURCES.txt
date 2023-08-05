@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/main/python/pg_graphql/__init__.py
+src/main/python/pg_graphql/cli.py
+src/main/python/pg_graphql/types.py
+src/main/python/pg_graphql/utils.py
+src/main/python/pg_graphql.egg-info/PKG-INFO
+src/main/python/pg_graphql.egg-info/SOURCES.txt
+src/main/python/pg_graphql.egg-info/dependency_links.txt
+src/main/python/pg_graphql.egg-info/entry_points.txt
+src/main/python/pg_graphql.egg-info/requires.txt
+src/main/python/pg_graphql.egg-info/top_level.txt

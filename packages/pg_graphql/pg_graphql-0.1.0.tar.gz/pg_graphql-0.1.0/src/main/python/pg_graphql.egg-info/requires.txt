@@ -1,0 +1,17 @@
+flupy
+
+[dev]
+black
+click
+mkdocs
+pylint
+pygments
+psycopg2-binary
+pytest
+pytest-benchmark
+sqlalchemy
+sqlparse
+
+[nvim]
+neovim
+python-language-server
