@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+tiktokapi/__init__.py
+tiktokapi/api.py
+tiktokwebapi.egg-info/PKG-INFO
+tiktokwebapi.egg-info/SOURCES.txt
+tiktokwebapi.egg-info/dependency_links.txt
+tiktokwebapi.egg-info/entry_points.txt
+tiktokwebapi.egg-info/requires.txt
+tiktokwebapi.egg-info/top_level.txt
