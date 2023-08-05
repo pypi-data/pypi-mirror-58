@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: webvis_mods
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Danil Lykov
+Author-email: lkvdan@gmail.com
+License: MIT
+Description: Package manager for webvis modules
+        
+Keywords: tools,webvis,package manager,data,framework,visualization
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
