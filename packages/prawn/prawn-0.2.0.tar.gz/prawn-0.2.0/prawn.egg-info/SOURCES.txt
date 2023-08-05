@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+short_description.txt
+prawn/__init__.py
+prawn/__main__.py
+prawn/stream.py
+prawn/version.py
+prawn.egg-info/PKG-INFO
+prawn.egg-info/SOURCES.txt
+prawn.egg-info/dependency_links.txt
+prawn.egg-info/top_level.txt
