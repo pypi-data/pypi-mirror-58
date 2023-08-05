@@ -1,0 +1,17 @@
+CoreNLG/DocumentConstructors.py,sha256=KUqPX_FOHqLtGgzp9gTlL2aM-gV_8Dakhng3mZVcmDo,5776
+CoreNLG/Errors.py,sha256=SQDF79lHgvhOpfjG1RC-oeXR8s3I7ia4UMbpVOzoIkY,501
+CoreNLG/Logger.py,sha256=42HLLvv1y0RRZZGbexvoqbeH61EjqoAfuoCLQu67Uks,1650
+CoreNLG/PredefObjects.py,sha256=oXeCf1-EzzAzs810jzABIvQXf8bCF93wkA-45lMC4Mc,1639
+CoreNLG/Quickstart.py,sha256=Q7-u_jNjuYN9SWNRldedr9rIRWts6aS7z2YVjMssV5c,1782
+CoreNLG/__init__.py,sha256=s1SRWnYXMoqsa0mIRYk45Xvz_tSZLLEV7unAeLk4cek,100
+CoreNLG/decorators.py,sha256=DnOjegwOY5it_JlrRA9QBx6JJiU3s-uR5quCDbLZAp0,10314
+CoreNLG/helper.py,sha256=jVyhjq_aEYqpRmY_zJ46fbUo90_2_oISZSOTcLqEeDc,22109
+CoreNLG/tools.py,sha256=JC-0F_CVGZ7U_KbZ1VpkZlHTbFh2xKdYSSGlkooiTl4,1050
+CoreNLG/resources/contraction.py,sha256=m8DDwPloI0c60kVRBBYEie9cZmVZDMaltCxTbNxHMFw,1157
+CoreNLG/resources/default_words.json,sha256=hbKu484EUqwntG6x1wsW1JAmFW0IGKxmELYga2zQUmk,112
+CoreNLG/resources/ponctuation.json,sha256=Tt_crSft_7fJvfinBJYLxy0YigZqQt4sO6sAY4yCBPg,407
+CoreNLG-1.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+CoreNLG-1.1.0.dist-info/METADATA,sha256=zG0RTE2HL0aBMQ3ifoN8-Wcnkg3wB8TG-EgGKklAqZk,14429
+CoreNLG-1.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+CoreNLG-1.1.0.dist-info/top_level.txt,sha256=cHsc400c6Qwi9YZb6TRf0coXY7HW9ycdRZGuKQEtEGI,8
+CoreNLG-1.1.0.dist-info/RECORD,,
