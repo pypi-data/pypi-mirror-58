@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: esiter
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Kxrr
+Author-email: hi@kxrr.us
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+
+# ESITER
+
+
+Wraps some es method to a iterator.
+
+
+
