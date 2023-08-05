@@ -1,0 +1,12 @@
+README
+README.md
+setup.py
+crisscross/cli.py
+crisscross/core.py
+crisscross/util.py
+crisscross.egg-info/PKG-INFO
+crisscross.egg-info/SOURCES.txt
+crisscross.egg-info/dependency_links.txt
+crisscross.egg-info/entry_points.txt
+crisscross.egg-info/requires.txt
+crisscross.egg-info/top_level.txt
