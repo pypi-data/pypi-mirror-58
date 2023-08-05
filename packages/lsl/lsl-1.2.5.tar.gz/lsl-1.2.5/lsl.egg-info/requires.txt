@@ -1,0 +1,10 @@
+pyfits>=3.2
+numpy>=1.2
+scipy>=0.13
+pyephem>=3.7.5.3
+aipy>=1.0,<3.0
+pytz>=2012c
+
+[:python_version<'2.7']
+argparse
+unittest2
