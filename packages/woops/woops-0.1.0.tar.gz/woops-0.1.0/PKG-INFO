@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: woops
+Version: 0.1.0
+Summary: Handle and manage Python errors with ease
+Home-page: https://github.com/sdispater/woops
+License: MIT
+Author: Sébastien Eustace
+Author-email: sebastien@eustace.io
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/sdispater/woops
+Description-Content-Type: text/markdown
+
+# Woops!
+
+Handle and manage Python errors with ease.
+
