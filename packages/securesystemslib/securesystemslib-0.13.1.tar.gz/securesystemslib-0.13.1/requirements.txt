@@ -1,0 +1,6 @@
+cryptography
+pynacl
+six
+colorama
+python-dateutil
+subprocess32; python_version < '3'
