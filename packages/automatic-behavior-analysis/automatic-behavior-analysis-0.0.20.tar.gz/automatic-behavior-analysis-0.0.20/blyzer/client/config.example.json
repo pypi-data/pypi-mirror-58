@@ -1,0 +1,21 @@
+{
+    "protocol": "tcp",
+    "ip": "127.0.0.1",
+    "port": 1217,
+    "secret_key": "zec7wiuSuf9naix",
+    "tcp_client_buffer_size": 1048576,
+    "upload_buffer_max_size": 65536,
+    "color_awake": [52, 152, 211],
+    "color_sleep": [241, 176, 47],
+    "color_unknown": [134, 89, 182],
+    "max_detection_targets": 2,
+    "frame_dump_dir": "data/client-saved-frames",
+    "json_annotation_dir": "{frame_dump_dir}/annotations-json",
+    "xml_annotation_dir": "{frame_dump_dir}/annotations",
+    "annotation_format": "pascal-voc",
+    "video_extension": "mp4",
+    "frame_processing_max_memory": 100,
+    "frame_processing_sleep_threshold": 0.5,
+    "resize_threshold": 640,
+    "send_grayscale": true
+}
