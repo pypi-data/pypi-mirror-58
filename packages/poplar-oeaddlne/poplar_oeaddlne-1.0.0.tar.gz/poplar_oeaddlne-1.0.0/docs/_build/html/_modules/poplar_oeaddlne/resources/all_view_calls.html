@@ -1,0 +1,662 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>poplar_oeaddlne.resources.all_view_calls &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../src/walkthrough.html">Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../src/OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../src/OE1100_oe_add_line.html">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../src/resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>poplar_oeaddlne.resources.all_view_calls</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for poplar_oeaddlne.resources.all_view_calls</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This script shows all the entry points that you can use when writing a script for a view.</span>
+<span class="sd">It doesn&#39;t actually do anything useful.</span>
+
+<span class="sd">Copyright 2015 Orchid Systems</span>
+
+<span class="sd">Updated 2019 2665093 Ontario Inc.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">accpac</span> <span class="k">import</span> <span class="o">*</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<div class="viewcode-block" id="onOpen"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onOpen">[docs]</a><span class="k">def</span> <span class="nf">onOpen</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called when a view is opened.</span>
+
+<span class="sd">    :rtype: int</span>
+<span class="sd">    :returns: ``accpac.Continue`` to enable the script,</span>
+<span class="sd">              0 to disable, anything else stops the view loading.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onOpen&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onOpenReadOnly"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onOpenReadOnly">[docs]</a><span class="k">def</span> <span class="nf">onOpenReadOnly</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called when a view is opened in readonly mode.</span>
+
+<span class="sd">    :rtype: int</span>
+<span class="sd">    :returns: ``accpac.Continue`` to enable the script,</span>
+<span class="sd">              0 to disable, anything else stops the view loading.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onOpenReadOnly&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onBeforeClose"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeClose">[docs]</a><span class="k">def</span> <span class="nf">onBeforeClose</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is closed.</span>
+
+<span class="sd">    :rtype: int</span>
+<span class="sd">    :returns: ``accpac.Continue`` to allow the close,</span>
+<span class="sd">              ``accpac.Abort`` to disallow it.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeClose&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterClose"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterClose">[docs]</a><span class="k">def</span> <span class="nf">onAfterClose</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is closed.</span>
+
+<span class="sd">    :param result: result of the close operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterClose result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeCompose"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeCompose">[docs]</a><span class="k">def</span> <span class="nf">onBeforeCompose</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is composed.</span>
+
+<span class="sd">    :param event: compose event information.</span>
+<span class="sd">    :type event: ``accpac.viewComposeArgs``</span>
+<span class="sd">    :returns: must return ``accpac.Continue`` or the view will not load.</span>
+<span class="sd">    :rtype: int</span>
+
+<span class="sd">    Get the handles for composed views to make it easier to work with</span>
+<span class="sd">    related data.</span>
+
+<span class="sd">    A script attached to the Order Header ``OE0520`` view can access</span>
+<span class="sd">    the composed Order Details ``OE0522`` view.  Get a handle on before</span>
+<span class="sd">    compose, store it in the ``__main__`` (script) namespace, and use</span>
+<span class="sd">    it in other calls.</span>
+
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        oeordd = None</span>
+<span class="sd">        def onBeforeCompose(event):</span>
+<span class="sd">            if len(event.views):</span>
+<span class="sd">                oeordd = event.views[0]</span>
+
+<span class="sd">        def onAfterPut(result):</span>
+<span class="sd">            # If the put succeeded and a field = value, add a new order line</span>
+<span class="sd">            if result == 0 and me.get(&quot;FIELD&quot;) == &quot;VALUE&quot;:</span>
+<span class="sd">                r = oeordd.recordClear()</span>
+<span class="sd">                r = oeordd.recordGenerate()</span>
+<span class="sd">                r = oeordd.put(...)</span>
+<span class="sd">                ...</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Composed with &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">views</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; views&quot;</span>
+    <span class="k">for</span> <span class="n">view</span> <span class="ow">in</span> <span class="n">event</span><span class="o">.</span><span class="n">views</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">view</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  None&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">  &quot;</span> <span class="o">+</span> <span class="n">view</span><span class="o">.</span><span class="n">fieldByPosition</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span>
+    <span class="n">showMessage</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterCompose"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterCompose">[docs]</a><span class="k">def</span> <span class="nf">onAfterCompose</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is composed.</span>
+
+<span class="sd">    :param event: compose event information.</span>
+<span class="sd">    :type event: ``accpac.viewComposeArgs``</span>
+<span class="sd">    :returns: must return ``accpac.Continue`` or the view will not load.</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">result</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">showError</span><span class="p">(</span><span class="s2">&quot;The compose failed&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="onBeforeVerify"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeVerify">[docs]</a><span class="k">def</span> <span class="nf">onBeforeVerify</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is verified.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeVerify&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterVerify"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterVerify">[docs]</a><span class="k">def</span> <span class="nf">onAfterVerify</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is verified.</span>
+
+<span class="sd">    :param result: result of the verify operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterVerify result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeDirty"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeDirty">[docs]</a><span class="k">def</span> <span class="nf">onBeforeDirty</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is marked dirty.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeDirty&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterDirty"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterDirty">[docs]</a><span class="k">def</span> <span class="nf">onAfterDirty</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is marked dirty.</span>
+
+<span class="sd">    :param result: result of the mark dirty operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterDirty result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeInit"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeInit">[docs]</a><span class="k">def</span> <span class="nf">onBeforeInit</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is initialized.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeInit&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterInit"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterInit">[docs]</a><span class="k">def</span> <span class="nf">onAfterInit</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is initialized.</span>
+
+<span class="sd">    :param result: result of the initialization, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterInit result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeRead"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeRead">[docs]</a><span class="k">def</span> <span class="nf">onBeforeRead</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is read from the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeRead&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterRead"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterRead">[docs]</a><span class="k">def</span> <span class="nf">onAfterRead</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a record is read through the view.</span>
+
+<span class="sd">    :param result: result of the read operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterRead result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeInsert"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeInsert">[docs]</a><span class="k">def</span> <span class="nf">onBeforeInsert</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is inserted into the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeInsert&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterInsert"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterInsert">[docs]</a><span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is inserted.</span>
+
+<span class="sd">    :param result: result of the insert operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterInsert result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeUpdate"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeUpdate">[docs]</a><span class="k">def</span> <span class="nf">onBeforeUpdate</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is updated through the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeUpdate&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterUpdate"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterUpdate">[docs]</a><span class="k">def</span> <span class="nf">onAfterUpdate</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is updated.</span>
+
+<span class="sd">    :param result: result of the update operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterUpdate result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeDelete"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeDelete">[docs]</a><span class="k">def</span> <span class="nf">onBeforeDelete</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is deleted through the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeDelete&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterDelete"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterDelete">[docs]</a><span class="k">def</span> <span class="nf">onAfterDelete</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is deleted.</span>
+
+<span class="sd">    :param result: result of the delete operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterDelete result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeFetch"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeFetch">[docs]</a><span class="k">def</span> <span class="nf">onBeforeFetch</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is fetched through the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeFetch&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<span class="k">def</span> <span class="nf">onAfterFetch</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterFetch result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+
+<div class="viewcode-block" id="onBeforePost"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforePost">[docs]</a><span class="k">def</span> <span class="nf">onBeforePost</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is posted through the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforePost&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterPost"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterPost">[docs]</a><span class="k">def</span> <span class="nf">onAfterPost</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is posted.</span>
+
+<span class="sd">    :param result: result of the post operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterPost result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeCancel"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeCancel">[docs]</a><span class="k">def</span> <span class="nf">onBeforeCancel</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a record is canceled through the view.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeCancel&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterCancel"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterCancel">[docs]</a><span class="k">def</span> <span class="nf">onAfterCancel</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is canceled.</span>
+
+<span class="sd">    :param result: result of the cancel operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterCancel result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeProcess"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeProcess">[docs]</a><span class="k">def</span> <span class="nf">onBeforeProcess</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view runs processing.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeProcess&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterProcess"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterProcess">[docs]</a><span class="k">def</span> <span class="nf">onAfterProcess</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view finishes processing.</span>
+
+<span class="sd">    :param result: result of processing, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterProcess result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeFetchLock"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeFetchLock">[docs]</a><span class="k">def</span> <span class="nf">onBeforeFetchLock</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view locks for a fetch.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeFetchLock&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterFetchLock"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterFetchLock">[docs]</a><span class="k">def</span> <span class="nf">onAfterFetchLock</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view releases a lock for a fetch.</span>
+
+<span class="sd">    :param result: result of the fetch lock operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterFetchLock result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeReadLock"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeReadLock">[docs]</a><span class="k">def</span> <span class="nf">onBeforeReadLock</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view locks for a read.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeReadLock&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterReadLock"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterReadLock">[docs]</a><span class="k">def</span> <span class="nf">onAfterReadLock</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view releases a lock for a read.</span>
+
+<span class="sd">    :param result: result of the read lock operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterReadLock result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeUnlock"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeUnlock">[docs]</a><span class="k">def</span> <span class="nf">onBeforeUnlock</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is unlocked.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeUnlock&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterUnlock"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterUnlock">[docs]</a><span class="k">def</span> <span class="nf">onAfterUnlock</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is unlocked.</span>
+
+<span class="sd">    :param result: result of the unlock operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterUnlock result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeRecordClear"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeRecordClear">[docs]</a><span class="k">def</span> <span class="nf">onBeforeRecordClear</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called before a view is cleared.</span>
+
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeRecordClear&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterRecordClear"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterRecordClear">[docs]</a><span class="k">def</span> <span class="nf">onAfterRecordClear</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a view is cleared.</span>
+
+<span class="sd">    :param result: result of the clear operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterRecordClear result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforeAttributes"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeAttributes">[docs]</a><span class="k">def</span> <span class="nf">onBeforeAttributes</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called before the attributes of a view field are changed.</span>
+
+<span class="sd">    :params event: undocumented.</span>
+<span class="sd">    :type event: unknown</span>
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterAttributes"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterAttributes">[docs]</a><span class="k">def</span> <span class="nf">onAfterAttributes</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after the attributes of a view field are changed.</span>
+
+<span class="sd">    :param result: result of the attribute operation, 0 on success.</span>
+<span class="sd">    :type result: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">field</span> <span class="o">==</span> <span class="s2">&quot;AMTCRLIMT&quot;</span><span class="p">:</span>
+        <span class="c1"># e.isChanged = False</span>
+        <span class="c1"># e.isEnabled = False</span>
+        <span class="n">e</span><span class="o">.</span><span class="n">isEditable</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="c1"># e.isKey = False</span>
+        <span class="c1"># e.isCalculate = False</span>
+        <span class="c1"># e.typeChanges = False</span>
+        <span class="c1"># e.presentationChanges = False</span>
+        <span class="c1"># e.isRequired = False</span>
+        <span class="c1"># e.editableChanges = False</span>
+        <span class="k">return</span></div>
+
+<div class="viewcode-block" id="onBeforeGet"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforeGet">[docs]</a><span class="k">def</span> <span class="nf">onBeforeGet</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called before the value of a field is retrieved through the view.</span>
+
+<span class="sd">    :params event: undocumented.</span>
+<span class="sd">    :type event: unknown</span>
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforeGet &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="n">field</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterGet"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterGet">[docs]</a><span class="k">def</span> <span class="nf">onAfterGet</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a field view is retrieved.</span>
+
+<span class="sd">    :params event: undocumented.</span>
+<span class="sd">    :type event: unknown</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterGet [&quot;</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="n">field</span> <span class="o">+</span> <span class="s2">&quot;] is [&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;], result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">result</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="onBeforePut"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onBeforePut">[docs]</a><span class="k">def</span> <span class="nf">onBeforePut</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called before the value of a field is put in a view field.</span>
+
+<span class="sd">    :params event: undocumented.</span>
+<span class="sd">    :type event: unknown</span>
+<span class="sd">    :returns: ``accpac.Continue`` or ``accpac.Abort``</span>
+<span class="sd">    :rtype: int</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onBeforePut [&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;] to [&quot;</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="n">field</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterPut"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onAfterPut">[docs]</a><span class="k">def</span> <span class="nf">onAfterPut</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called after a value is put in the view.</span>
+
+<span class="sd">    :params event: undocumented.</span>
+<span class="sd">    :type event: unknown</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onAfterPut [&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;] to [&quot;</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="n">field</span> <span class="o">+</span> <span class="s2">&quot;], result=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">result</span><span class="p">))</span></div>
+
+<span class="c1"># Called when the revision list has been cancelled - any changes are discarded</span>
+<div class="viewcode-block" id="onRevisionCancelled"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onRevisionCancelled">[docs]</a><span class="k">def</span> <span class="nf">onRevisionCancelled</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called when the revision list is cancelled, changes are discarded.</span>
+
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onRevisionCancelled&quot;</span><span class="p">)</span></div>
+
+<span class="c1"># Called when a record in the revision list has been posted to the database</span>
+<span class="c1"># op:</span>
+<span class="c1">#  1 = insert</span>
+<span class="c1">#  2 = update</span>
+<span class="c1">#  3 = delete</span>
+<span class="c1">#  4 = move</span>
+<div class="viewcode-block" id="onCommitRecord"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onCommitRecord">[docs]</a><span class="k">def</span> <span class="nf">onCommitRecord</span><span class="p">(</span><span class="n">op</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Called when a record in the revision list has been posted.</span>
+
+<span class="sd">    :param op: operation code, one of:</span>
+
+<span class="sd">        -  1 = insert</span>
+<span class="sd">        -  2 = update</span>
+<span class="sd">        -  3 = delete</span>
+<span class="sd">        -  4 = move</span>
+<span class="sd">    :type op: int</span>
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onCommitRecord&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">op</span><span class="p">))</span></div>
+
+<span class="c1"># Called when the revision list has been successfully posted</span>
+<div class="viewcode-block" id="onRevisionPosted"><a class="viewcode-back" href="../../../src/resources/all_view_calls.html#poplar_oeaddlne.resources.all_view_calls.onRevisionPosted">[docs]</a><span class="k">def</span> <span class="nf">onRevisionPosted</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Called when a revision has been posted.</span>
+
+<span class="sd">    :rtype: None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">rvspyTrace</span><span class="p">(</span><span class="s2">&quot;onRevisionPosted&quot;</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>poplar_oeaddlne.OE0500_oe_add_line &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../src/walkthrough.html">Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../src/OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../src/OE1100_oe_add_line.html">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../src/resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>poplar_oeaddlne.OE0500_oe_add_line</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for poplar_oeaddlne.OE0500_oe_add_line</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Insert O/E Line</span>
+
+<span class="sd">Insert a new OE line following the insert of a line with a particular item.</span>
+
+<span class="sd">This script does not work (by design) - why not?</span>
+
+<span class="sd">Part of an introductory training to Extender.  Learn more at</span>
+<span class="sd">https://poplar_addoelne.rtfd.io.</span>
+
+<span class="sd">Parameters:</span>
+<span class="sd">  :param Parameter1: Item number to trigger insert after.</span>
+<span class="sd">  :param Parameter2: Item number to insert</span>
+<span class="sd">  :param Parameter3: Item</span>
+
+<span class="sd">author: Chris Binckly</span>
+<span class="sd">email: cbinckly@gmail.com</span>
+<span class="sd">copyright 2019 2665093 Ontario Inc.</span>
+
+<span class="sd">This file is provided under a Creative Commons 4 Sharealike license.</span>
+<span class="sd">See https://creativecommons.org/licenses/by-sa/4.0/ for details.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">accpac</span> <span class="k">import</span> <span class="o">*</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="c1"># Outside the Extender env this fails, allow it to pass for sphinx/unittest</span>
+    <span class="k">pass</span>
+
+<div class="viewcode-block" id="onOpen"><a class="viewcode-back" href="../../src/OE0500_oe_add_line.html#poplar_oeaddlne.OE0500_oe_add_line.onOpen">[docs]</a><span class="k">def</span> <span class="nf">onOpen</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;onOpen of the script, take no action.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">Continue</span></div>
+
+<div class="viewcode-block" id="onAfterInsert"><a class="viewcode-back" href="../../src/OE0500_oe_add_line.html#poplar_oeaddlne.OE0500_oe_add_line.onAfterInsert">[docs]</a><span class="k">def</span> <span class="nf">onAfterInsert</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;After a line with item ``Parameter1`` is entered, insert line with item</span>
+<span class="sd">    ``Parameter2``.</span>
+
+<span class="sd">    Triggered after an insert of an OE Detail line. If the insert was</span>
+<span class="sd">    successful and the item in the line is the same as that provided in</span>
+<span class="sd">    ``Parameter1``, a new line is added with:</span>
+
+<span class="sd">    - ``LINETYPE``: 1 - standard item line</span>
+<span class="sd">    - ``ITEM``: ``Parameter2``</span>
+<span class="sd">    - ``QTYORDERED``: ``Parameter3``</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#showMessageBox(&quot;Inserted new line {}&quot;.format(me.get(&quot;ITEM&quot;)))</span>
+
+    <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">me</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">Parameter1</span><span class="p">:</span>
+
+        <span class="c1"># Clear the view and generate a new record.</span>
+        <span class="n">rc</span> <span class="o">=</span> <span class="n">oeordd</span><span class="o">.</span><span class="n">recordClear</span><span class="p">()</span>
+        <span class="n">rg</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">recordGenerate</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">sum</span><span class="p">([</span><span class="n">rc</span><span class="p">,</span> <span class="n">rg</span><span class="p">,</span> <span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Unable to generate new record.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">Continue</span>
+
+        <span class="c1"># Put the values from the paramters</span>
+        <span class="n">pl</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;LINETYPE&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">pi</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;ITEM&quot;</span><span class="p">,</span> <span class="n">Parameter2</span><span class="p">)</span>
+        <span class="n">pq</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;QTYORDERED&quot;</span><span class="p">,</span> <span class="n">Parameter3</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">sum</span><span class="p">([</span><span class="n">pi</span><span class="p">,</span> <span class="n">pq</span><span class="p">,</span> <span class="n">pl</span><span class="p">,</span> <span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Unable to generate new record.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">Continue</span>
+
+        <span class="c1"># Insert the new line</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">insert</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">showMessageBox</span><span class="p">(</span><span class="s2">&quot;Unable to insert record.&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">Continue</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

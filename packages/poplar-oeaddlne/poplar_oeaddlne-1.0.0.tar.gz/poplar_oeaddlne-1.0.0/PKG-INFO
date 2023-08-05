@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: poplar_oeaddlne
+Version: 1.0.0
+Summary: Example Extender customization that adds an OE Orderline when a line with a particular item is entered.
+Home-page: https://2665093.ca
+Author: 2665093 Ontario Inc.
+Author-email: chris@2665093.ca
+License: UNKNOWN
+Download-URL: https://pypi.org/project/poplar_oeaddlne
+Description: UNKNOWN
+Keywords: Orchid,Extender,Sage 300,Automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.4

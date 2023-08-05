@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Add OE Line - Screen Script &mdash; poplar_oeaddlne  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Resources" href="resources.html" />
+    <link rel="prev" title="Add OE Line - View Script" href="OE0500_oe_add_line.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> poplar_oeaddlne
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="walkthrough.html">Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OE0500_oe_add_line.html">Add OE Line - View Script</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Add OE Line - Screen Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">poplar_oeaddlne</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Add OE Line - Screen Script</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/src/OE1100_oe_add_line.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="add-oe-line-screen-script">
+<h1>Add OE Line - Screen Script<a class="headerlink" href="#add-oe-line-screen-script" title="Permalink to this headline">¶</a></h1>
+<p>This screen script doesn’t make any customizations to the UI
+but monitors the data sources opened by the screen for changes.
+When a new detail line is added, the screen adds another line with
+a fixed item.</p>
+<p>Unlike in the (broken) view script solution,
+<a class="reference internal" href="OE0500_oe_add_line.html#module-poplar_oeaddlne.OE0500_oe_add_line" title="poplar_oeaddlne.OE0500_oe_add_line"><code class="xref py py-mod docutils literal notranslate"><span class="pre">poplar_oeaddlne.OE0500_oe_add_line</span></code></a>, we cannot pass parameters to the
+screen script so the item mapping is hard coded.</p>
+<span class="target" id="module-poplar_oeaddlne.OE1100_oe_add_line"></span><p>Insert O/E Line</p>
+<p>Insert a new OE line following the insert of a line with a particular item.</p>
+<p>Part of an introductory training to Extender.  Learn more at
+<a class="reference external" href="https://poplar_addoelne.rtfd.io">https://poplar_addoelne.rtfd.io</a>.</p>
+<p>author: Chris Binckly
+email: <a class="reference external" href="mailto:cbinckly&#37;&#52;&#48;gmail&#46;com">cbinckly<span>&#64;</span>gmail<span>&#46;</span>com</a>
+copyright 2019 2665093 Ontario Inc.</p>
+<p>This file is provided under a Creative Commons 4 Sharealike license.
+See <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a> for details.</p>
+<dl class="class">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.AddOeLneUI">
+<em class="property">class </em><code class="descclassname">poplar_oeaddlne.OE1100_oe_add_line.</code><code class="descname">AddOeLneUI</code><a class="reference internal" href="../_modules/poplar_oeaddlne/OE1100_oe_add_line.html#AddOeLneUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.AddOeLneUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>A UI that monitors the order details and inserts a new line.</p>
+<p>This UI class makes no changes to the OE1100 screen, it simply
+monitors and writes to the Data Sources connected to it.</p>
+<dl class="method">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.AddOeLneUI.adsOEORDDonAfterInsert">
+<code class="descname">adsOEORDDonAfterInsert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/poplar_oeaddlne/OE1100_oe_add_line.html#AddOeLneUI.adsOEORDDonAfterInsert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.AddOeLneUI.adsOEORDDonAfterInsert" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the item inserted was <code class="docutils literal notranslate"><span class="pre">ITEM</span></code>, add a new line.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="data">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.ITEM">
+<code class="descclassname">poplar_oeaddlne.OE1100_oe_add_line.</code><code class="descname">ITEM</code><em class="property"> = 'A1-103/0'</em><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.ITEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>The item number that triggers the new line.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.NEW_ITEM_LINETYPE">
+<code class="descclassname">poplar_oeaddlne.OE1100_oe_add_line.</code><code class="descname">NEW_ITEM_LINETYPE</code><em class="property"> = 1</em><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.NEW_ITEM_LINETYPE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The item line type to insert.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.NEW_ITEM_NUM">
+<code class="descclassname">poplar_oeaddlne.OE1100_oe_add_line.</code><code class="descname">NEW_ITEM_NUM</code><em class="property"> = 'A1-105/0'</em><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.NEW_ITEM_NUM" title="Permalink to this definition">¶</a></dt>
+<dd><p>The item number to insert.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.NEW_ITEM_QTY">
+<code class="descclassname">poplar_oeaddlne.OE1100_oe_add_line.</code><code class="descname">NEW_ITEM_QTY</code><em class="property"> = 10</em><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.NEW_ITEM_QTY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The item quantity to insert.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="poplar_oeaddlne.OE1100_oe_add_line.main">
+<code class="descclassname">poplar_oeaddlne.OE1100_oe_add_line.</code><code class="descname">main</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/poplar_oeaddlne/OE1100_oe_add_line.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#poplar_oeaddlne.OE1100_oe_add_line.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executed by VI when the screen is loaded. Create our UI.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="resources.html" class="btn btn-neutral float-right" title="Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="OE0500_oe_add_line.html" class="btn btn-neutral float-left" title="Add OE Line - View Script" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
