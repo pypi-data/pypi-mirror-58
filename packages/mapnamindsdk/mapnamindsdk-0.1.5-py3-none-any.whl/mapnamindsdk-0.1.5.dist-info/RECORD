@@ -1,0 +1,14 @@
+mindsdk/Constants.py,sha256=DMG6BraXB6iRfzA0NggmcUqiNTONF2bjWUPt9zk_pew,177
+mindsdk/__init__.py,sha256=TwbwytLQ9ePx9vN7gZHE3R7vVkJBEcg-wF1K0ThiTWI,179
+mindsdk/Mapper/Mapper.py,sha256=jSbb5bC6Iy_ORnQhUlwYvJKAhHZ6_WaF7Lvt2_DmdaM,1424
+mindsdk/Mapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindsdk/Mind/Mind.py,sha256=W3Q0h0Ry6CG-Cg9H1Qa4Gmmh1FzAfbHFglBx5mgzESg,6718
+mindsdk/Mind/Offline.py,sha256=DL-ZG8oOLB-8i_PIZ3GaM1K8UnCn8q-fC0wQBkPPjvg,4619
+mindsdk/Mind/Online.py,sha256=xkZb0U6Wjpg8Hx_Ft2CYzCIGKz16VZ0VA61RV6W1b3k,2909
+mindsdk/Mind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mindsdk/WS/WS.py,sha256=7Z1jsFwk1tL_IrCrognd4GvP8wYiGPD_Ss0yXh-YGeA,1070
+mindsdk/WS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapnamindsdk-0.1.5.dist-info/METADATA,sha256=r0aP83KhADuE7gKWUw35Jm7nhlPNjE8kBpOqx6vOkow,514
+mapnamindsdk-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mapnamindsdk-0.1.5.dist-info/top_level.txt,sha256=6UAKqDZF1KyLriaYBRgdYdUBwGsn4lY9rQV6TzRiHDg,8
+mapnamindsdk-0.1.5.dist-info/RECORD,,
