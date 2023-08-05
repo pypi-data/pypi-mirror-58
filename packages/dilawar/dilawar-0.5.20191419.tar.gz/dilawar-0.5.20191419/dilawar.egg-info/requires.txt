@@ -1,0 +1,11 @@
+numpy
+matplotlib
+pandas
+scipy
+tables
+brian2
+pint
+panflute
+pandocfilters
+colorama
+pandoc-imagine
