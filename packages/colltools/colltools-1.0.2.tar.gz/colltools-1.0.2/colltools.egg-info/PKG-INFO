@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: colltools
+Version: 1.0.2
+Summary: Tools for iterating and working with collections
+Home-page: https://github.com/JakubTesarek/colltools
+Author: Jakub Tesárek
+Author-email: jakub@tesarek.me
+License: APACHE LICENSE 2.0
+Description: CollTools
+        =========
+        
+        |PyPI version| |License| |Build Status| |Code Coverage|
+        
+        .. |PyPI version| image:: https://badge.fury.io/py/colltools.svg
+           :target: https://badge.fury.io/py/colltools
+        .. |License| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+           :target: https://opensource.org/licenses/Apache-2.0
+        .. |Build Status| image:: https://travis-ci.org/JakubTesarek/colltools.svg?branch=master
+           :target: https://travis-ci.org/JakubTesarek/colltools
+        .. |Code Coverage| image:: https://codecov.io/gh/JakubTesarek/colltools/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/JakubTesarek/colltools
+        
+Keywords: itertools collections iteration
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: test
