@@ -1,0 +1,15 @@
+ipytree/__init__.py,sha256=gKsAxlExhgRiy4_YHDUaJobrygEuc-JpiMnEB2LjsaA,247
+ipytree/_version.py,sha256=_duN9Z3yR671zY9xSagb39EfktA0vJFRuDHtjLqbVPo,102
+ipytree/tree.py,sha256=Vr4ZGKOH2KU-SLtP7hhcW2SVd4Hgo1yjUlTugsMYAR0,4060
+ipytree/static/extension.js,sha256=HAD-ve_pdcm9fmcWtwuzWm9u-qrdRGlMqFjyPOUGkK0,3327
+ipytree/static/index.js,sha256=c2M-6eiG-ocqdKZ9vpjR3wIaBAYbiTjmJdTPBTeF4do,1191318
+ipytree/static/index.js.map,sha256=SW5xrpWJszcy8AfrdqqwdTm3Yl4zhvGtSUsZKENGN8E,1520807
+ipytree-0.1.5.data/data/etc/jupyter/nbconfig/notebook.d/ipytree.json,sha256=NaZGZMiOy0W6ttKdhms4DeeUC20xdvy9ngVUppx3gQI,61
+ipytree-0.1.5.data/data/share/jupyter/nbextensions/ipytree/extension.js,sha256=HAD-ve_pdcm9fmcWtwuzWm9u-qrdRGlMqFjyPOUGkK0,3327
+ipytree-0.1.5.data/data/share/jupyter/nbextensions/ipytree/index.js,sha256=c2M-6eiG-ocqdKZ9vpjR3wIaBAYbiTjmJdTPBTeF4do,1191318
+ipytree-0.1.5.data/data/share/jupyter/nbextensions/ipytree/index.js.map,sha256=SW5xrpWJszcy8AfrdqqwdTm3Yl4zhvGtSUsZKENGN8E,1520807
+ipytree-0.1.5.dist-info/LICENSE,sha256=IhFyZhyrMBlWjUbca3eEUGJEVmODy87J21YFpdGHT2s,1085
+ipytree-0.1.5.dist-info/METADATA,sha256=aP3DuKNPzNSveQgyAetpZdsPgrF0CsCh3syQ6e0jqHw,843
+ipytree-0.1.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ipytree-0.1.5.dist-info/top_level.txt,sha256=REub06iDVA1XKF3Q16qcU2fBBDKwj6gVblHXRmpD910,8
+ipytree-0.1.5.dist-info/RECORD,,
