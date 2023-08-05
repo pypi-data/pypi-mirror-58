@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: data2db
+Version: 0.0.2
+Summary: Data 2 db Migrator
+Home-page: https://github.com/amankhandelwal-ideaspark/data2db
+Author: Aman Khandelwal
+Author-email: amanpoke@gmail.com
+License: UNKNOWN
+Description: The package aims to simplify data transfer between different database.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
