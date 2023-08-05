@@ -1,0 +1,7 @@
+pytest-sql-bigquery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest-sql-bigquery/converter.py,sha256=nIvdRW23MkRRASj2z61Jv7-cO3eYylOz6SfiPAjFpFY,2420
+pytest-sql-bigquery/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest-sql-bigquery/integrations/pytest.py,sha256=9FvtzXDoON54EWzUdFN0qMbt0_2qBy98BYSBjdRpD_0,5090
+pytest_sql_bigquery-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pytest_sql_bigquery-0.0.1.dist-info/METADATA,sha256=7PcoibK7NEPOLwedsor-jbboZagTPOIeaKcKHwcVRtU,525
+pytest_sql_bigquery-0.0.1.dist-info/RECORD,,
