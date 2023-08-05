@@ -1,0 +1,3 @@
+[console_scripts]
+aws-cfn-power-off = aws_cloudformation_power_off.__main__:main
+
