@@ -1,0 +1,16 @@
+CHANGES.rst
+README.rst
+setup.py
+atomsware/__init__.py
+atomsware/pasmp/__init__.py
+atomsware/pasmp/_exceptions.py
+atomsware/pasmp/expatreader.py
+atomsware/pasmp/handler.py
+atomsware/pasmp/models.py
+atomsware/pasmp/mtreader.py
+atomsware/pasmp/mtutils.py
+pasmp.egg-info/PKG-INFO
+pasmp.egg-info/SOURCES.txt
+pasmp.egg-info/dependency_links.txt
+pasmp.egg-info/entry_points.txt
+pasmp.egg-info/top_level.txt

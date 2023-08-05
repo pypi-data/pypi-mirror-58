@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: pasmp
+Version: 0.3.1
+Summary: Python API for Swift Message Processing
+Home-page: https://www.atomsware.co.jp
+Author: atomsware
+Author-email: shimada@atomsware.co.jp
+Maintainer: atomsware
+Maintainer-email: shimada@atomsware.co.jp
+License: MIT
+Description:  Python API for Swift Message Processing (PASMP) is an API for handling Swift messages like SAX and DOM,                         handling XML in Python. It is intended to make it easy to develop a system that handles SWIFT messages                         by making it open source.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
