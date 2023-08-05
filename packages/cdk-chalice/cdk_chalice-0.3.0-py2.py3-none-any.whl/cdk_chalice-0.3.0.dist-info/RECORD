@@ -1,0 +1,7 @@
+cdk_chalice/__init__.py,sha256=aqrGGH3S2693--s6paIu1fwLr4F5GwByPXU8NQbjVZE,29
+cdk_chalice/chalice.py,sha256=6rEjcf7wXAGgIqAx8EL1KPp5uvjs1oypT-mEj28HNYk,3386
+cdk_chalice-0.3.0.dist-info/LICENSE,sha256=vbixvzMPD_x7jtbHAftZE7rWj1v7uflQTpm2E1R6FME,1068
+cdk_chalice-0.3.0.dist-info/METADATA,sha256=Au5kHXn0ELGNoSoPtcXg7IkJzF-84QM1OHaqbtSmBnA,921
+cdk_chalice-0.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+cdk_chalice-0.3.0.dist-info/top_level.txt,sha256=2DVh01W8ZcVpPSzc-4kcib-gxk2x79IjVBNOl3o_-xk,12
+cdk_chalice-0.3.0.dist-info/RECORD,,
