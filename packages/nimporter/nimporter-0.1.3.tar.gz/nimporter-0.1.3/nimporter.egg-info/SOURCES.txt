@@ -1,0 +1,7 @@
+README.md
+nimporter.py
+setup.py
+nimporter.egg-info/PKG-INFO
+nimporter.egg-info/SOURCES.txt
+nimporter.egg-info/dependency_links.txt
+nimporter.egg-info/top_level.txt
