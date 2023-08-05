@@ -1,0 +1,19 @@
+# Dev tools
+/venv
+
+# Python
+__pycache__
+*.pyc
+/src/*.egg-info/
+/.eggs/
+/build/
+/dist/
+
+# Generated
+/.coverage*
+/.tox/
+
+# Vscodium
+/.vscode/*
+!/.vscode/settings.json
+
