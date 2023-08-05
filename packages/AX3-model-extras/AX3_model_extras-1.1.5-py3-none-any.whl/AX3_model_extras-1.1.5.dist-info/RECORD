@@ -1,0 +1,10 @@
+ax3_model_extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ax3_model_extras/fields.py,sha256=dtyYbl0ddyD1zwpnvvhBuRZDQQ64j2dF8Kh-i2OHerw,3377
+ax3_model_extras/storages.py,sha256=Lu3at3zS6biJz5UE43WtLvAV-GUANxatL6Sefv_G7KQ,739
+ax3_model_extras/validators.py,sha256=r34o9rGnpBQ6vCSqWCeDdM7qnzB-EFQoLp3HG6O1zeE,786
+ax3_model_extras/webp.py,sha256=jR1gp2vtxuLls3h8X3GY_X9fHA9oVfmaZzXn4cukQrc,1057
+AX3_model_extras-1.1.5.dist-info/LICENSE,sha256=CTfSwCyOG9_rOOsvx5JhD2bo5KxCiDgQ8n_K6TmcUaM,1065
+AX3_model_extras-1.1.5.dist-info/METADATA,sha256=qUvxnVL4lfz-Q2ScLZREqsd6wSkSLMiiJ7f6lsBg8ec,2653
+AX3_model_extras-1.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AX3_model_extras-1.1.5.dist-info/top_level.txt,sha256=Fmke2zIQJruoHJ4QjhEqGa-_NOTXXXbO-kuVFcFq1AU,17
+AX3_model_extras-1.1.5.dist-info/RECORD,,
