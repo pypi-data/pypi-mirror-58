@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: kvdr
+Version: 1.0.3
+Summary: KVDR - Key/Value Dump and Restore
+Home-page: https://gitlab.com/dejan/kvdr
+Author: Dejan Lekic
+Author-email: dejan.lekic@gmail.com
+License: BSD 3-Clause License
+Download-URL: https://gitlab.com/dejan/kvdr
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Recovery Tools
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: redis (>=3.0.0)
+Requires-Dist: docopt (>=0.6.0)
+
+# kvdr
+
+Key/Value Dump and Restore (KVDR)
+
+Simple tool to dump and restore data from Key/Value (Redis like) databases.
+
+# Requirements
+
+- [redis-py](https://github.com/andymccurdy/redis-py)
+- [docopt](https://github.com/docopt/docopt)
+
+
+# Installation
+
+## Quick (Linux)
+
+Assuming you have pip3 already installed (CentOS: `yum install python3` installs python3-pip too):
+
+    pip3 install --user kvdr
+    kvdr --help
+    # or, in the case .local/bin is not in your $PATH:
+    # .local/bin/kvdr --help
+
+## Quick (Linux, Git)
+
+You may want to install a version that has not been published to PyPI.
+In this case please do the following:
+
+    # Create virtual environment
+    python3 -m venv $HOME/.kvdr
+    # Activate it
+    . $HOME/.kvdr/bin/activate
+    # Install kvdr, version 0.9.8
+    pip3 install git+https://gitlab.com/dejan/kvdr.git@0.9.8#egg=kvdr
+
+In theory every useful change I made in kvdr is tagged with a new (semantic) version, so it may be that
+at the time you read this there were some newer releases, so please check the GitLab page.
+
+Installation on Windows/[ReactOS](http://reactos.org) should be as straightforward. I suggest you
+try [MSYS2](https://www.msys2.org/). In MSYS2, with Python3 packages installed, the installation steps 
+should be the same as above. 
+
+# How to use
+
+Use `kvdr` or `kvdr --help` to see the list of available options. It should look something like:
+
+    KVDR - Key/Value Dump and Restore
+
+    Usage:
+      kvdr dump [--file=<file_name> | --screen] <redis_url>
+      kvdr load (--file=<file_name>) [--dry-run] <redis_url>
+      kvdr --dry-run
+      kvdr (-h | --help)
+      kvdr --version
+
+    Options:
+      -h --help           Show this screen.
+      --version           Show version.
+      --screen            Dump to the console instead of file.
+      --file=<file_name>  A file where we store dumped Redis records. Default: "redis.dump"
+      --dry-run           A trial run. Works only for the loading operation.
+
+    Examples:
+      kvdr dump --file=redis13.backup redis://admin:BABADEDAuikxWx0oPZYfPE3IXJ9BVlSC@localhost:6379/13
+      kvdr load --file=redis13.backup redis://:BABADEDAuikxWx0oPZYfPE3IXJ9BVlSC@localhost:6379/3
+
+## Data dump
+
+    redis-cli -h localhost -a BABADEDAuikxWx0oPZYfPE3IXJ9BVlSC -n 13 < var/test-data.redis
+    kvdr dump --file=redis-dump.txt redis://admin:BABADEDAuikxWx0oPZYfPE3IXJ9BVlSC@localhost:6379/13
+
+If you have just cloned the kvdr repository, but not installed anything, you can run it inside the working
+directory:
+
+    cd <path to the working directory>
+    python3 -m venv $HOME/.kvdr
+    # Activate it
+    . $HOME/.kvdr/bin/activate
+    PYTHONPATH=. python3 -m kvdr.kvdr dump --file=redis-dump.txt redis://admin:BABADEDAuikxWx0oPZYfPE3IXJ9BVlSC@localhost:6379/13
+
+## Data load
+
+Load the `redis.dump` file data into the redis://localhost/3 database
+
+    # Let's first delete all the data in the existing database:
+    redis-cli -h localhost -a BABADEDAuikxWx0oPZYfPE3IXJ9BVlSC -n 3 | echo "flushdb\nquit"
+    # Load the data    
+    kvdr load --file=redis.dump redis://localhost/3
+
+This does not work (yet):
+
+    kvdr load --dry-run --file=redis.dump file:///blah.dat
+
+# Credits
+
+[Andy McCurdy](https://github.com/andymccurdy) - for writing fantastic Python library for Redis.
+
+# Future
+
+- Add support for memcached
+- Add support for DynamoDB
+- Check whether kvdr works out-of-box with [KeyDB](https://keydb.dev/)
+- Design an API so users can write Dumper/Loader implementations of their own.
+
+# Bug reports and feature requests
+
+Please file an [issue on GitLab](https://gitlab.com/dejan/kvdr/issues).
+
+
