@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: diskspace
+Version: 1.0.5
+Summary: Making it possible to use Linux df & du command on Windows
+Home-page: https://github.com/AlexFlipnote/DiskSpace
+Author: AlexFlipnote
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
