@@ -1,0 +1,10 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/main.py,sha256=ey4JFJ7eYvurwgqura2IELIc6E7x9R6yOO7mWQFrr1c,827
+test/rq_push_job.py,sha256=P0JgXlPRPNP305ZNkk7Gl9zeVv9lXVputUOe5-ZCL-Q,1236
+test/sample_plugin.py,sha256=DFeAmCQgLIki-DJB4d36k48KpFH4Ei3-dfLNel4RaSY,2104
+vais_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vais_plugin/plugin_skeleton.py,sha256=XQgaMz9nE4mRuFsKWzfYj7_75CCutM_MnqipEaSzKmc,7050
+vais_plug-0.0.4.dist-info/METADATA,sha256=TYLtdzqH--Vi0VYGrAZS4B8m-Qt1cvYEH418wRTUVYQ,2335
+vais_plug-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vais_plug-0.0.4.dist-info/top_level.txt,sha256=tfgJKeM2kn286JjCUNgF0D3p8-Zssc9J4y6Zs2Zi1pc,17
+vais_plug-0.0.4.dist-info/RECORD,,
