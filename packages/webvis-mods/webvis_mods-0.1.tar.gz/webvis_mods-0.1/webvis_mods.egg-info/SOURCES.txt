@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+webvis_mods/__init__.py
+webvis_mods/build.sh
+webvis_mods/main.py
+webvis_mods/utils.py
+webvis_mods.egg-info/PKG-INFO
+webvis_mods.egg-info/SOURCES.txt
+webvis_mods.egg-info/dependency_links.txt
+webvis_mods.egg-info/requires.txt
+webvis_mods.egg-info/top_level.txt
