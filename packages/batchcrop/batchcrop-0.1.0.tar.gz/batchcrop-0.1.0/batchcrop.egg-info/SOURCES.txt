@@ -1,0 +1,11 @@
+README.md
+setup.py
+batchcrop/__init__.py
+batchcrop.egg-info/PKG-INFO
+batchcrop.egg-info/SOURCES.txt
+batchcrop.egg-info/dependency_links.txt
+batchcrop.egg-info/entry_points.txt
+batchcrop.egg-info/requires.txt
+batchcrop.egg-info/top_level.txt
+batchcrop/cli/__init__.py
+batchcrop/cli/batchcrop.py

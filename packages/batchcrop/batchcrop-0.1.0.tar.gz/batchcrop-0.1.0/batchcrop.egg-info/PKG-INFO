@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: batchcrop
+Version: 0.1.0
+Summary: Crop a batch of images.
+Home-page: https://github.com/tdegeus/batchcrop
+Author: Tom de Geus
+Author-email: tom@geus.me
+License: MIT
+Description: Crop a batch of images.
+Keywords: convert
+Platform: UNKNOWN
