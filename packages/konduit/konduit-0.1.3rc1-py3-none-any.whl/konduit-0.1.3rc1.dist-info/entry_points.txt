@@ -1,0 +1,3 @@
+[console_scripts]
+konduit = cli:cli
+
