@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: inf-ipy
+Version: 0.1.59
+Summary: A REPL interface to communicate with Jupyter kernels in Emacs or CLI.
+Home-page: https://github.com/nakkaya/inf-ipy/
+Author: Nurullah Akkaya
+Author-email: nurullah@nakkaya.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Dist: paramiko
+Requires-Dist: sshtunnel
+Requires-Dist: jupyter-client
+Requires-Dist: IPython
+Requires-Dist: prompt-toolkit
+
+UNKNOWN
+
+
