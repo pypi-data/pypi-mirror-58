@@ -1,0 +1,13 @@
+include *.md
+include LICENSE
+include NOTICE
+
+exclude circle.yml
+exclude Makefile
+exclude .editorconfig
+exclude Pipfile
+exclude Pipfile.lock
+exclude docs
+exclude .readthedocs.yaml
+exclude CODEOWNERS
+recursive-exclude docs *

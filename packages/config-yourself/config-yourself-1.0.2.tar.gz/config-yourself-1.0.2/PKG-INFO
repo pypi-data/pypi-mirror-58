@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: config-yourself
+Version: 1.0.2
+Summary: A python library to decrypt config-yourself files
+Home-page: https://github.com/blinkhealth/config-yourself-python
+Author: Will Richard
+Author-email: william.richard@blinkhealth.com
+License: Apache License 2.0
+Description: # config-yourself-python
+        
+        [![CircleCI](https://circleci.com/gh/blinkhealth/config-yourself-python.svg?style=svg)](https://circleci.com/gh/blinkhealth/config-yourself-python)
+        [![Documentation Status](https://readthedocs.org/projects/config-yourself-python/badge/?version=latest)](https://config-yourself-python.readthedocs.io/en/latest/?badge=latest)
+        
+        `config-yourself` is a python 2.7+ package to help your application read [go-config-yourself files](https://github.com/blinkhealth/go-config-yourself#config-files).
+        
+        ---
+        
+        ## Installation
+        
+        ```sh
+        # choose if you'd like to use `kms`, `gpg` or the `password` provider
+        pip install 'config_yourself[kms]'
+        
+        # or go crazy with all of them
+        pip install 'config_yourself[all]'
+        
+        # with pipenv
+        pipenv install 'config_yourself[kms]'
+        
+        # with poetry
+        poetry add config_yourself --extras kms
+        ```
+        
+        ## Usage
+        
+        Here's how to work with `config_yourself` in python:
+        
+        ## Basic usage
+        
+        ```py
+        import config_yourself as cy
+        
+        # Load one config file
+        encrypted_config = cy.load.file("config/test.yml")
+        config = cy.Config(encrypted_config)
+        # now use it like a dict, all secrets have been decrypted
+        print(config["database"])
+        ```
+        
+        ## Complete usage
+        
+        ```py
+        # Let's get a little more creative
+        # `config_yourself` can take a number of config files, merge, and decrypt them
+        
+        # we start with a defaults file, that defines the valid keys for all subsequent files
+        # then, we take a file path provided from the environment
+        files = ['config/defaults.yml', os.environ['CONFIG_FILE']]
+        
+        # During development, we might choose to have a SCM-ignored personal file, to apply overrides to our personal taste
+        if os.path.exists(personal_config_path):
+          files.append('config/personal.yml')
+        
+        # we take every file, deserialize it from YAML
+        configs = [cy.load.file(path) for path in files]
+        # we can also append regular dicts to this list
+        configs.append({
+          'MODE': os.environ.get('BACKEND_MODE', 'tripolar')
+        })
+        
+        # we can also decide to override values straight from the environment...
+        if os.environ['SHOOT_MYSELF_IN_THE_FOOT']:
+          # config_yourself will parse env values as JSON, so this will turn to False
+          os.environ['CONFIG.someService.enabled'] = 'false'
+          configs.append(cy.load.env('CONFIG'))
+        
+        # Take our list of configs, and pass secrets to the decryption provider
+        config = cy.Config(*configs, secrets={'password': os.environ['SUPER_SECRET_PASSWORD']})
+        # The resulting merged config is finally decrypted
+        
+        print(config['someService']['endpoint']) # => "https://super-secure-service.example.com"
+        print(config['someService']['enabled']) # => False
+        ```
+        
+        ### From a Django or Flask application
+        
+        When using in Flask or Django and you'd like to follow the same pattern above, use the :py:meth:`~config_yourself.AppConfig` method instead:
+        
+        ```py
+        import config_yourself as cy
+        
+        # Use AppConfig
+        config = cy.AppConfig()
+        # functionally equal to:
+        
+        # Remember to set CONFIG_FILE=./config/production.yml
+        cy.Config(**[
+          "./config/defaults.yml",
+          "./config/production.yml",
+        ])
+        
+        # assuming CONFIG_FILE="" and an existing "personal.yml" file
+        cy.Config(**[
+          "./config/defaults.yml",
+          "./config/local.yml",
+          "./config/personal.yml",
+        ])
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: JavaScript
+Requires-Python: >=2.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: gpg
+Provides-Extra: kms
+Provides-Extra: password
+Provides-Extra: all
