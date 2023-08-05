@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aws-codestar-cdk
+Version: 1.0.2
+Summary: AWS CDK package that helps deploying a lambda function into CodeStar.
+Home-page: https://github.com/laimonassutkus/AwsCodeStar.git
+Author: Deividas Tamkus, Laimonas Sutkus
+Author-email: dtamkus@gmail.com, laimonas.sutkus@gmail.com
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Keywords: AWS CDK CodeStar
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: aws-cdk.core
+Requires-Dist: aws-cdk.aws-iam
+Requires-Dist: aws-cdk.custom-resources
+Requires-Dist: aws-cdk.aws-s3
+Requires-Dist: aws-cdk.aws-s3-deployment
+
+UNKNOWN
+
+
