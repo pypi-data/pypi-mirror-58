@@ -1,0 +1,1 @@
+from lhub_extractors.decorators import feature_extractor
