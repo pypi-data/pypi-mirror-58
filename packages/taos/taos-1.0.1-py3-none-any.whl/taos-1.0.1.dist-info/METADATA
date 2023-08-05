@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: taos
+Version: 1.0.1
+Summary: Taos Command Line
+Home-page: https://github.com/taosdevops/taos
+Author: TAOS DevopsNow
+Author-email: devopsnow@taos.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+
+# taos
+
+[![Actions Status](https://github.com/taosdevops/taos-cli/workflows/Test/badge.svg)](https://github.com/taosdevops/taos-cli/actions)
+[![Actions Status](https://readthedocs.org/projects/taos-cli/badge/?version=latest)](https://github.com/taosdevops/taos-cli/actions)
+
+Taos command line utility.
+
+
