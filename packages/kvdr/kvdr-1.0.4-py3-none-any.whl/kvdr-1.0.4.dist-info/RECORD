@@ -1,0 +1,12 @@
+kvdr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kvdr/dump.py,sha256=6OQrgzWGNmwwPbhExT6d_Hp_KWbAaqfQJiCutv3fdHQ,5326
+kvdr/kvdr.py,sha256=fSdCPtVLG-kLmkx9_hoSSmVNdNNeulcgyGEE-oyG93g,2555
+kvdr/load.py,sha256=UREZ4AzbGpHOuhtHVl5lCNpTdtJIlybdUJU_z0pfZHs,6778
+kvdr/util.py,sha256=Vfe2USF6vanMdp8gJLpxa1ns0dnK5S3mO3rw4YNil_Y,1265
+kvdr/version.py,sha256=2j9_wcgDLBeG3flnRs4P1GfDQF9bOd-bqPHM_tgF2Rg,30
+kvdr-1.0.4.dist-info/LICENSE,sha256=XYtAnvnCCo2NGS7hKVS9kgPGa-KQO0n5nAxa2jXcKE0,1511
+kvdr-1.0.4.dist-info/METADATA,sha256=4OJv-pvtCoZBTEDLoLqsR9TOMjm9JdqQJ2nce548P5E,4511
+kvdr-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kvdr-1.0.4.dist-info/entry_points.txt,sha256=xrX-mok6othsx2hGyS9AP_rpOwFCT6CEClWxex6eyQg,41
+kvdr-1.0.4.dist-info/top_level.txt,sha256=XPjo88kr1gOKVQ8w_3dmemwQJQd42WZ5Eqs6IXSTJUc,5
+kvdr-1.0.4.dist-info/RECORD,,
