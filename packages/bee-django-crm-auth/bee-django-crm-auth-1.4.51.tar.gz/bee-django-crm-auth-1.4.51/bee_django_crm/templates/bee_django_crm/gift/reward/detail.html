@@ -1,0 +1,32 @@
+{% extends "bee_django_crm/custom_base.html" %}
+{% load bee_django_crm_filter %}
+{% load static %}
+{% block styles %}
+    <style>
+        .qrcode img {
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+    {% include 'bee_django_crm/gift/reward/_detail.html' %}
+    <div style="margin: 20px 0;">
+    {% if errcode == 0 %}
+        <div style="color: red">{{ request.user }}：以下是您的专属二维码，长按可保存</div>
+        <div class="qrcode">
+            <img src="{{ qrcode }}" alt="">
+        </div>
+    {% else %}
+        <div style="color: red;">二维码生成错误，请刷新页面重试</div>
+    {% endif %}
+    </div>
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+    </script>
+{% endblock %}
