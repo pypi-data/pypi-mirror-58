@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: tpblite
+Version: 0.2.2
+Summary: The Unofficial Pirate Bay Lightweight Python API
+Home-page: https://github.com/mattlyon93/tpb-lite
+Author: Matt Lyon
+Author-email: matthewlyon18@gmail.com
+License: MIT License
+Download-URL: https://github.com/mattlyon93/tpb-lite/archive/v0.2.2.tar.gz
+Description: UNKNOWN
+Keywords: ThePirateBay,PirateBay,torrent
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
