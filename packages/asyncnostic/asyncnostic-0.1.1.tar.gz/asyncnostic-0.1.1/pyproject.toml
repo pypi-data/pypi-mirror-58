@@ -1,0 +1,10 @@
+[tool.poetry]
+name="asyncnostic"
+version="0.1.1"
+description="simple way of using pytest with async unit tests"
+authors=["Derek Yu <derek-nis@hotmail.com>"]
+
+[tool.poetry.dependencies]
+
+[tool.poetry.dev-dependencies]
+pytest=">=4.3.0"
