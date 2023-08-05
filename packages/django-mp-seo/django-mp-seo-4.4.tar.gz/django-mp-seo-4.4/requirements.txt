@@ -1,0 +1,2 @@
+
+django-sitemetrics==0.7.0
