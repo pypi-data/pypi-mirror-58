@@ -1,0 +1,7 @@
+README.md
+setup.py
+memgraph/__init__.py
+memgraph_mfayoumi.egg-info/PKG-INFO
+memgraph_mfayoumi.egg-info/SOURCES.txt
+memgraph_mfayoumi.egg-info/dependency_links.txt
+memgraph_mfayoumi.egg-info/top_level.txt
