@@ -1,0 +1,48 @@
+Metadata-Version: 1.2
+Name: PyPDE
+Version: 1.0.0
+Summary: Solve any hyperbolic/parabolic system of PDEs
+Home-page: https://github.com/haranjackson/pypde
+Author: Haran Jackson
+Author-email: jackson.haran@gmail.com
+License: UNKNOWN
+Description: =====
+        PyPDE
+        =====
+        
+        A Python library for solving any system of hyperbolic or parabolic Partial
+        Differential Equations. The PDEs can have stiff source terms and
+        non-conservative components.
+        
+        Key Features:
+        
+        * Any first or second order system of PDEs
+        * Your fluxes and sources are written in Python for ease
+        * Any number of spatial dimensions
+        * Arbitrary order of accuracy
+        * C++ under the hood for speed
+        * Based on the ADER-WENO method
+        
+        Please feel free to message me with questions/suggestions:
+        jackson.haran@gmail.com
+        
+        .. image:: https://github.com/haranjackson/PyPDE/workflows/Builds/badge.svg
+        
+        Installation
+        ------------
+        
+        ``pip install pypde``
+        
+        
+        Usage
+        -----
+        
+        `Read the docs <https://pypde.readthedocs.io/en/latest/>`_.
+        
+Keywords: ADER,WENO,Discontinuous Galerkin,Finite Volume,PDEs,Partial Differential Equations,Hyperbolic,Parabolic
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
