@@ -1,0 +1,5 @@
+cached-property
+pycrypto
+google-api-python-client
+oauth2client
+click
