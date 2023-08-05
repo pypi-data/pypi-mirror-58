@@ -1,0 +1,8 @@
+pandas
+numpy
+
+[dev]
+nbdev
+matplotlib
+pillow
+torch
