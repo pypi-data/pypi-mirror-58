@@ -1,0 +1,10 @@
+README.md
+app.py
+setup.py
+aic.egg-info/PKG-INFO
+aic.egg-info/SOURCES.txt
+aic.egg-info/dependency_links.txt
+aic.egg-info/entry_points.txt
+aic.egg-info/requires.txt
+aic.egg-info/top_level.txt
+aic.egg-info/zip-safe
