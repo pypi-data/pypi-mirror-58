@@ -1,0 +1,7 @@
+README.md
+setup.py
+drf_dynamics.egg-info/PKG-INFO
+drf_dynamics.egg-info/SOURCES.txt
+drf_dynamics.egg-info/dependency_links.txt
+drf_dynamics.egg-info/requires.txt
+drf_dynamics.egg-info/top_level.txt
