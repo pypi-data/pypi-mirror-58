@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: onvif_zeep-roboticia
+Version: 0.2.12
+Summary: Python Client for ONVIF Camera
+Home-page: https://github.com/jjehl/python-onvif-zeep
+Author: Cherish Chen
+Author-email: sinchb128@gmail.com
+Maintainer: sinchb
+Maintainer-email: sinchb128@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ONVIF,Camera,IPC
+Platform: UNKNOWN

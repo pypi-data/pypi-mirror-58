@@ -1,0 +1,1 @@
+zeep-roboticia>=3.0.0
