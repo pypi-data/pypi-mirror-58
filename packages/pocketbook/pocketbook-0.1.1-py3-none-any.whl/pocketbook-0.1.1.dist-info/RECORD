@@ -1,0 +1,10 @@
+pocketbook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pocketbook/address_book.py,sha256=8DQveYzojLhXQp7qcbYO4UX_3H-j__C_898chFE-7jY,1145
+pocketbook/cli.py,sha256=6j8vkw6BZNzzRB1Nv6HnyOZH8EHG8ecx2BWgXVNutF8,7895
+pocketbook/key_store.py,sha256=RT2rj6dE6B5XkzVf-Ne5nDmex0Z4o0iIazrpkk2uV-s,2807
+pocketbook/table.py,sha256=G2JgfZ92DVPD6HoXSPgvDcA_J2CiIZRA7LbRQmBRc4M,2343
+pocketbook-0.1.1.dist-info/METADATA,sha256=pDFa-B0hxIXcVaORv9bpGYslHAlBI5aEB18wPiA6RnY,532
+pocketbook-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pocketbook-0.1.1.dist-info/entry_points.txt,sha256=qNlCR1j-rb8gIszOjRpuq4HPUyenSfsxSqzMXfA5r68,52
+pocketbook-0.1.1.dist-info/top_level.txt,sha256=8FLduqbCmnfiDS-f02t7vXKUQT6Kr8FL7eLLtuxi79s,11
+pocketbook-0.1.1.dist-info/RECORD,,
