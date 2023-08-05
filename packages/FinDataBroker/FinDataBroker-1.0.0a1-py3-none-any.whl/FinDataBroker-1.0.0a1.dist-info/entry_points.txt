@@ -1,0 +1,3 @@
+[console_scripts]
+FinDataBroker = FinDataBroker.cli:main
+

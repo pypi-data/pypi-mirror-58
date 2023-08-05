@@ -1,0 +1,17 @@
+FinDataBroker/CLI.py,sha256=UVeTm9haNM5Pm6oTwmDfgblqmx4Lli-kH8a53cB8eaA,1953
+FinDataBroker/DataBrokerMongoDb.py,sha256=_2NJX7AHJIff4fxvpcaj9X89sj6rbCitQDkZO58vdaY,4223
+FinDataBroker/DataBrokerSqlite.py,sha256=Hr845N_l1eHM8-kYyv5fcsvEh-5v0uZWkGWNBIENZgc,1260
+FinDataBroker/IndexingMap.py,sha256=eUGntrzbcRUWBc4WNJDEB2B7gOKxjhmqDZ1UikWBEyI,7570
+FinDataBroker/Template.py,sha256=u9hNlcj9Qeo8xtCFhHiAX4NwVk1i5lGBkKyiGwnm7L8,471
+FinDataBroker/__about__.py,sha256=Dc3uR_MkDTSKZgHm3U1NljQ0CwHaBj8zkWchQhZeiDo,236
+FinDataBroker/__init__.py,sha256=h73q1jaLDWYhEI3s1RgohXjK0HZ0wK7lFhxulblD_c0,96
+FinDataBroker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FinDataBroker/tests/test_CLI.py,sha256=DWu0o5-5zNXH2Ke-_ZyCq5TH1Ya0JbjRI5am31LuSmo,3886
+FinDataBroker/tests/test_mongo.py,sha256=pta0TX-DaR4n-Er21EVKCbMZg4wqBLU1auBflQjusO0,1164
+FinDataBroker/tests/test_sqlite.py,sha256=axCLdt1Uvbaa6JE4xaJeS-wQNDChdGrFGJvcSEmzmQQ,2151
+FinDataBroker-1.0.0a1.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+FinDataBroker-1.0.0a1.dist-info/METADATA,sha256=6YzeBZ6Y7w_w2IU69zG5APOY0wcYGZr2h6udbqKbD5I,3913
+FinDataBroker-1.0.0a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+FinDataBroker-1.0.0a1.dist-info/entry_points.txt,sha256=LYP-vCl9RracMH2sTlmaadjBq3d40c6LgMK0gjN7_ao,58
+FinDataBroker-1.0.0a1.dist-info/top_level.txt,sha256=1E4lLUTUl4JEtscny94Ep1kjBArLLq-P4fAxCiS8BdE,14
+FinDataBroker-1.0.0a1.dist-info/RECORD,,
