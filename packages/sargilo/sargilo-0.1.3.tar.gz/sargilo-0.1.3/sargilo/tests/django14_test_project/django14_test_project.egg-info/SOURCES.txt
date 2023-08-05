@@ -1,0 +1,12 @@
+setup.py
+django14_test_project/__init__.py
+django14_test_project/__init__.pyc
+django14_test_project/settings.py
+django14_test_project/settings.pyc
+django14_test_project/urls.py
+django14_test_project/wsgi.py
+django14_test_project.egg-info/PKG-INFO
+django14_test_project.egg-info/SOURCES.txt
+django14_test_project.egg-info/dependency_links.txt
+django14_test_project.egg-info/requires.txt
+django14_test_project.egg-info/top_level.txt
