@@ -1,0 +1,9 @@
+log:
+  path: /Users/vafandal/cxworkspace
+oauth2:
+  authorization: https://services.humanbrainproject.eu/oidc/authorize
+  client-id: f34780ff-7842-499c-8440-5777c28e360d
+  provider-id: HBP
+  redirect-uri: https://127.0.0.1:4443
+workspace:
+  path: /Users/vafandal/cxworkspace
