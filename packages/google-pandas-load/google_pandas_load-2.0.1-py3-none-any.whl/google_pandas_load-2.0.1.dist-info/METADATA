@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: google-pandas-load
+Version: 2.0.1
+Summary: Wrapper for transferring big data from A to B, where A and B are distinct and chosen between BigQuery, Storage, a local folder and a pandas DataFrame.
+Home-page: UNKNOWN
+Author: Augustin Barillec
+Author-email: augustin.barillec@ysance.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: google-cloud-bigquery (==1.*)
+Requires-Dist: google-cloud-storage (==1.*)
+Requires-Dist: pandas (==0.*)
+
+google-pandas-load
+==================
+
+.. image:: https://img.shields.io/pypi/v/google-pandas-load
+    :target: https://pypi.org/project/google-pandas-load/
+
+.. image:: https://img.shields.io/pypi/l/google-pandas-load.svg
+    :target: https://pypi.org/project/google-pandas-load/
+
+.. image:: https://img.shields.io/pypi/pyversions/google-pandas-load.svg
+    :target: https://pypi.org/project/google-pandas-load/
+
+.. image:: https://codecov.io/gh/augustin-barillec/google-pandas-load/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/augustin-barillec/google-pandas-load
+
+.. image:: https://pepy.tech/badge/google-pandas-load
+    :target: https://pepy.tech/project/google-pandas-load
+
+google-pandas-load is a wrapper library for transferring big data from A to B, where A and B are distinct
+and chosen between BigQuery, Storage, a local folder and pandas DataFrame.
+
+Documentation is available at https://google-pandas-load.readthedocs.io/en/latest/.
+
