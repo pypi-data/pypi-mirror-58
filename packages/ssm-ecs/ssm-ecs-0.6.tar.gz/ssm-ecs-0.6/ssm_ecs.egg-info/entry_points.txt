@@ -1,0 +1,3 @@
+[console_scripts]
+ssm-ecs = ssmecs.ssm_ecs:start
+
