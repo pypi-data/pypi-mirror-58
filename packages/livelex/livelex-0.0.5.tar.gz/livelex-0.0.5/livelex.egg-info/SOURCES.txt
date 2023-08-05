@@ -1,0 +1,15 @@
+ChangeLog
+MANIFEST.in
+README.rst
+setup.py
+livelex/__init__.py
+livelex/action.py
+livelex/language.py
+livelex/lex.py
+livelex/lexicon.py
+livelex/pkginfo.py
+livelex/regex.py
+livelex.egg-info/PKG-INFO
+livelex.egg-info/SOURCES.txt
+livelex.egg-info/dependency_links.txt
+livelex.egg-info/top_level.txt
