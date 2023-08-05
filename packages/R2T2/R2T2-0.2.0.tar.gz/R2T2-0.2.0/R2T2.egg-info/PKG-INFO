@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: R2T2
+Version: 0.2.0
+Summary: Research references tracking tool
+Home-page: https://github.com/ImperialCollegeLondon/R2T2
+Author: Research Computing Service, Imperial College London
+Author-email: rcs-support@imperial.ac.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Requires-Python: >=3.0
+Provides-Extra: dev

@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+R2T2.egg-info/PKG-INFO
+R2T2.egg-info/SOURCES.txt
+R2T2.egg-info/dependency_links.txt
+R2T2.egg-info/requires.txt
+R2T2.egg-info/top_level.txt
+r2t2/__init__.py
+r2t2/__main__.py
+r2t2/r2t2.py
+r2t2/runtime_tracker.py
+r2t2/static_tracker.py
+tests/__init__.py
+tests/test_r2t2.py
