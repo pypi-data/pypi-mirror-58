@@ -1,0 +1,15 @@
+numpy
+
+[all]
+lxml
+h5py
+netCDF4
+
+[exodus]
+netCDF4
+
+[hdf5]
+h5py
+
+[xml]
+lxml
