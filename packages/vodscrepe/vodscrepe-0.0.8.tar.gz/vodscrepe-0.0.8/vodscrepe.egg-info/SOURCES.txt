@@ -1,0 +1,11 @@
+README.md
+setup.py
+vodscrepe/__init__.py
+vodscrepe/aliases.py
+vodscrepe/errors.py
+vodscrepe/scraper.py
+vodscrepe/vod.py
+vodscrepe.egg-info/PKG-INFO
+vodscrepe.egg-info/SOURCES.txt
+vodscrepe.egg-info/dependency_links.txt
+vodscrepe.egg-info/top_level.txt
