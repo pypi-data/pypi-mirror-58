@@ -1,0 +1,46 @@
+CHANGES
+=======
+
+0.1.3
+-----
+
+* adding a max depth for naive serializing to avoid recursion errors
+
+0.1.2
+-----
+
+* allowing the shipping of classes
+
+0.1.1
+-----
+
+* catching errors when extracting attributes for emulated objects
+
+0.1.0
+-----
+
+* travis
+* travis
+* travis
+* yapf
+* removing serialize dependency
+
+0.0.3
+-----
+
+* fixed license classifier
+
+0.0.2
+-----
+
+* add requirement
+
+0.0.1
+-----
+
+* removed docs folder
+* linting
+* pinning pytest for the CI gods
+* removed xdist requirement
+* setup CI
+* First commit thx to cookiecutter
