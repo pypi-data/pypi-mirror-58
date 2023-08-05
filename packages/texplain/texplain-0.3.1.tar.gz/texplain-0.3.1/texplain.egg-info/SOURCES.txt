@@ -1,0 +1,10 @@
+README.md
+setup.py
+test/test1.py
+texplain/__init__.py
+texplain.egg-info/PKG-INFO
+texplain.egg-info/SOURCES.txt
+texplain.egg-info/dependency_links.txt
+texplain.egg-info/entry_points.txt
+texplain.egg-info/requires.txt
+texplain.egg-info/top_level.txt
