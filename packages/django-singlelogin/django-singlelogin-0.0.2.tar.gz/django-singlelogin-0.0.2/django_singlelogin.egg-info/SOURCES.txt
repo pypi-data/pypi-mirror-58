@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+django_singlelogin.egg-info/PKG-INFO
+django_singlelogin.egg-info/SOURCES.txt
+django_singlelogin.egg-info/dependency_links.txt
+django_singlelogin.egg-info/top_level.txt
+singlelogin/__init__.py
+singlelogin/admin.py
+singlelogin/apps.py
+singlelogin/middleware.py
+singlelogin/models.py
+singlelogin/tests.py
+singlelogin/views.py
+singlelogin/migrations/0001_initial.py
+singlelogin/migrations/__init__.py

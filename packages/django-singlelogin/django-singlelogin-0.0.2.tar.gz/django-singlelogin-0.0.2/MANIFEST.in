@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+include singlelogin/models.py
+include singlelogin/middleware.py
+include singlelogin/admin.py
+include singlelogin/apps.py

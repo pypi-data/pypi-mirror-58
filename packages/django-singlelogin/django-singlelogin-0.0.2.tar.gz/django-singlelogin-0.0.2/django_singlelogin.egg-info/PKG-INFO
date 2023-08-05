@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: django-singlelogin
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Example Author
+Author-email: aakashjoshi448@gmail.com
+License: UNKNOWN
+Description: #Single Login
+        
+        
+        Single login is a Django app that will restrict concurrent login.
+        
+        
+        **Quick start**
+        
+        
+        1. Add "singlelogin" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'singlelogin',
+            ]
+        
+        2. Add "singlelogin.middleware.OneSessionPerUserMiddleware" to your MIDDLEWARE like this::
+        
+            MIDDLEWARE = [
+                ...
+                'singlelogin.middleware.OneSessionPerUserMiddleware',
+            ]
+        
+        3. Run `python manage.py migrate` to create the singlelogin models.
+        
+        4. That is all.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
