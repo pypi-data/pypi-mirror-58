@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: my-first-python-library
+Version: 0.0.1
+Summary: Sample code to create python package for PyPI library
+Home-page: https://github.com/divyeshvaghani
+Author: Divyesh Vaghani
+Author-email: divyeshvaghani96@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
