@@ -1,0 +1,3 @@
+[console_scripts]
+ajv = abjad.cli:run_ajv
+
