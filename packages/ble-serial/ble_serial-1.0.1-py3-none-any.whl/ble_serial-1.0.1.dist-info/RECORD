@@ -1,0 +1,13 @@
+ble_serial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ble_serial/__main__.py,sha256=PJJ8U5SjKGau10pDPRSv3k8l377QCUcTVe0iZXo_jPw,2193
+ble_serial/constants.py,sha256=YxHGURimETPQrDP2eqP71ibBvjqr3W7Dupw7L9Fh3b4,166
+ble_serial/fs_log.py,sha256=WOvbNWdJLjCWC61C30FU1mroY2jvQaRXGzze5VDeOyQ,654
+ble_serial/interface.py,sha256=iofzPfUhVED0mD35m9x7JkIs3879HqY2coW4rGybGbw,2126
+ble_serial/scan.py,sha256=RK6ymvxKWUmAawkOtDDHrYEcvrqzUCVA4esAkn1RNOs,1942
+ble_serial/virtual_serial.py,sha256=9-5yId74WdGVIveZ0NrTOYQifFeJTUP7uBCVAmDA6sk,1156
+ble_serial-1.0.1.dist-info/LICENSE,sha256=tgJ2Mlqikz64cIEY-hN5mnHVT1Kgx5G7e5uFeQ28PPs,1070
+ble_serial-1.0.1.dist-info/METADATA,sha256=OE-FD1GcsN35gSEqIilQasfsBRq91aytQi9VmtQLm0U,7193
+ble_serial-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ble_serial-1.0.1.dist-info/entry_points.txt,sha256=C_ViXUNLQfEOlXPzY_Y8gvq6BK742aVhPUdPXOUVwbY,89
+ble_serial-1.0.1.dist-info/top_level.txt,sha256=y9Bwgv-YbWt8HQJc6TNSuGSZ_jXjJlf-B0IiS09lDRI,11
+ble_serial-1.0.1.dist-info/RECORD,,
