@@ -1,0 +1,5 @@
+requests>=2.22.0
+xlsxwriter>=1.2.1
+datetime>=4.3
+sendgrid==6.1.0
+filetype==1.0.5
