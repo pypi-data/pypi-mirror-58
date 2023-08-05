@@ -1,0 +1,15 @@
+flickrsyncr/__init__.py,sha256=uZRD3ye9BeVMEWEPQMFQYk-m81mKKhElaER_8c4G6KQ,1684
+flickrsyncr/__main__.py,sha256=BxyTUsd8-Kg1kg8s7dqgj520emaOAY5esF6iaB1OHJ0,5611
+flickrsyncr/config.py,sha256=-nPrKfmUv3obRS9jKTrRYGQ9raSRs26nrUUIbDBe06E,6719
+flickrsyncr/flickrwrapper.py,sha256=0LoycXwGZXE5zsbNDf6bytrccsgD26qPTjfYCkXFwLU,5627
+flickrsyncr/general.py,sha256=WxQFEZQH9sveKZUct7ARS8voo376E_JFjnzsM5rH644,445
+flickrsyncr/settings.py,sha256=_U6gDqY-YgNdsWsY3g9ikD9ZDKOA2iTJibczfAgTQEA,6358
+flickrsyncr/status.py,sha256=8mPntLYBcO68KYmBiAKktoFX83jFlPTaB1-OBXZWD_0,736
+flickrsyncr/sync.py,sha256=OVXsOk2dWPrs-TP6s4Im8Zsuo4CGQhwRrNJqTvITyQA,14566
+flickrsyncr/syncer.py,sha256=hsPXz6qJI1iULuHwzrBUBpyKq8AtUhgiFftK5BtKZ20,11368
+flickrsyncr-0.2.0.dist-info/LICENSE,sha256=auoMU7TQi2QIXE2YW-pafxVYtoAAslJ7f06pKZTos2Q,1071
+flickrsyncr-0.2.0.dist-info/METADATA,sha256=6czmV3QnLV-RNvYSQxcfmOtPmR7poIE8TItB8A9ZW_8,9476
+flickrsyncr-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flickrsyncr-0.2.0.dist-info/entry_points.txt,sha256=h3g9f0ikCtKDnor74lrZrS7XgiIevgW3YsQOru9BKFM,49
+flickrsyncr-0.2.0.dist-info/top_level.txt,sha256=phZz4YMILAsyf7qJsap2JWr03HzDmLFOc0MWBiTvkRk,12
+flickrsyncr-0.2.0.dist-info/RECORD,,
