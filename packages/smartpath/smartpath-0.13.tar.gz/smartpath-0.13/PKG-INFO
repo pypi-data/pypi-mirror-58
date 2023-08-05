@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: smartpath
+Version: 0.13
+Summary: smartpath implements the SmartFileSystem class (and connector classes) to provide unified object-oriented access to filesystems of various protocols.  It draws a number of parallels to the Windows FileSystemObject
+Home-page: http://github.com/miking7/smartpath
+Author: Michael Engelbrecht
+Author-email: michaelndani@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==2.7.*

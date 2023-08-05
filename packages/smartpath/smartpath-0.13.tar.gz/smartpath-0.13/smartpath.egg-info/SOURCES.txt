@@ -1,0 +1,9 @@
+README.md
+setup.py
+smartpath/__init__.py
+smartpath.egg-info/PKG-INFO
+smartpath.egg-info/SOURCES.txt
+smartpath.egg-info/dependency_links.txt
+smartpath.egg-info/not-zip-safe
+smartpath.egg-info/top_level.txt
+smartpath/php/getsecs.php
