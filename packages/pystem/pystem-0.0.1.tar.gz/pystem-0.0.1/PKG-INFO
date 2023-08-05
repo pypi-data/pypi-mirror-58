@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pystem
+Version: 0.0.1
+Summary: A python module for segmentation of STEM images
+Home-page: https://github.com/jkent/python-bchlib
+Author: Ning Wang
+Author-email: nwang@mpie.de
+Maintainer: Ning Wang
+Maintainer-email: nwang@mpie.de
+License: GNU GPLv2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
