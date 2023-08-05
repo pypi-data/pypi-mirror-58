@@ -1,0 +1,3 @@
+[console_scripts]
+jsonfind = jsonfind._cli:cli
+
