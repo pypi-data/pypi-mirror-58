@@ -1,0 +1,43 @@
+[MODULE]
+id=OEADDLNE
+name=OEADDLNE
+desc=Add an OE Order Line after a particular item is added.
+company=2665093 Ontario Inc
+version=0.1.0
+website=https://2665093.ca
+
+[TABLE]
+name=OEADDLNE.VIITMMAP
+dbname=VIITMMAP
+
+[FIELD1]
+field=TRIGITEM
+datatype=1
+size=24
+mask=%24C
+desc=Trigger item number
+ftable=IC0310
+ffield=ITEMNO
+lookup=FMTITEMNO
+
+[FIELD2]
+field=NEWITEM
+datatype=1
+size=24
+mask=%24C
+desc=Item to insert
+ftable=IC0310
+ffield=ITEMNO
+lookup=FMTITEMNO
+
+[FIELD3]
+field=QTYORDERED
+datatype=6
+size=10
+decimals=5
+desc=Quantity of the new item to orde
+
+[KEY1]
+KEYNAME=TRIGITEM
+FIELD1=TRIGITEM
+allowdup=0

@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: poplar-oeaddlne
+Version: 1.1.0
+Summary: Example Extender customization that adds an OE Order line when a line with a particular item is entered.
+Home-page: https://2665093.ca
+Author: 2665093 Ontario Inc.
+Author-email: chris@2665093.ca
+License: UNKNOWN
+Download-URL: https://pypi.org/project/poplar_oeaddlne
+Keywords: Orchid,Extender,Sage 300,Automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.4
+
+An Introduction to Extender
+===========================
+
+Add an OE Order Line
+--------------------
+
+This package contains the content used to deliver an introduction
+to `Orchid Extender`_ to a group of developers.  The training was developed
+and delivered by `2665093 Ontario Inc`_.
+
+.. _Orchid Extender: https://www.orchid.systems/product/extender
+.. _2665093 Ontario Inc: https://2665093.ca
+
+This package contains two extender scripts, both of which do the same thing
+but are implemented in different ways: one as a view script and one as a 
+screen script. The training material also discusses using Extender module
+files to group and version a customization as well as how to add custom
+tables.
+
+The rendered documentation at https://poplar-oeaddlne.readthedocs.io 
+is probably what you want.  This content is distributed under the 
+Creative Commons Share Alike 4 license, feel free to modify, share,
+and reuse it.
+
+
