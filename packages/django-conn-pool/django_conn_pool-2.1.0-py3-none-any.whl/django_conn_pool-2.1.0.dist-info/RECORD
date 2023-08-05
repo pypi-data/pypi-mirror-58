@@ -1,0 +1,8 @@
+django_conn_pool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_conn_pool/mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_conn_pool/mysql/base.py,sha256=aJBdNZqEt3UqF2w35drWFyh6lWsHtoJoWBfRGAXSMXM,3616
+django_conn_pool-2.1.0.dist-info/LICENSE,sha256=PBQmDgebJIGinrUFK0qKSGauFqjQvLUsD5ChH4Gtcww,1062
+django_conn_pool-2.1.0.dist-info/METADATA,sha256=0ixt-YP8WTljgJkasxP6aXxQnfMN2ZHrTPdJihtk_9w,3669
+django_conn_pool-2.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_conn_pool-2.1.0.dist-info/top_level.txt,sha256=8MZvJsrANpOeXbAYk9mt0n7OE5sjZPLzRdURS3k0TDs,17
+django_conn_pool-2.1.0.dist-info/RECORD,,
