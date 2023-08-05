@@ -1,0 +1,8 @@
+README.rst
+geonames.py
+setup.py
+geonames_lib.egg-info/PKG-INFO
+geonames_lib.egg-info/SOURCES.txt
+geonames_lib.egg-info/dependency_links.txt
+geonames_lib.egg-info/requires.txt
+geonames_lib.egg-info/top_level.txt
