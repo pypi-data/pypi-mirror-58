@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions-hunterk/Binomialdistribution.py
+distributions-hunterk/Gaussiandistribution.py
+distributions-hunterk/Generaldistribution.py
+distributions-hunterk/__init__.py
+distributions_hunterk.egg-info/PKG-INFO
+distributions_hunterk.egg-info/SOURCES.txt
+distributions_hunterk.egg-info/dependency_links.txt
+distributions_hunterk.egg-info/not-zip-safe
+distributions_hunterk.egg-info/top_level.txt
