@@ -1,0 +1,10 @@
+sc2_tournament_analysis/__init__.py,sha256=pwGHZYPeashYNxyBWquGhbk28Iu7mlc9fzF8nCQ_ZYw,130
+sc2_tournament_analysis/hsc_analysis.py,sha256=rn3wygmQkIWxzVoo-ii-nZhe-gaHBCi4TI79T-Vo1M4,2571
+sc2_tournament_analysis/json_to_csv.py,sha256=tCMmVc1oblDjA8uAO9QKEMZhv3rsHxVQxZQrSiPvJjA,873
+sc2_tournament_analysis/recursive_parse.py,sha256=CORy1yNO3Hpbp1OyRAW4CgdNJ8mEs8me8eH0erWwmik,5596
+sc2_tournament_analysis/regex.py,sha256=DI7VPlCTpNFQUpkmzpbVVt9VQfSolUqlWwFGwOyEcGk,196
+sc2_tournament_analysis-0.0.6.dist-info/LICENSE,sha256=7iBdvqU77EWnQlV3whLN2vBvD-5cay4fxwxUzRxBpMI,1087
+sc2_tournament_analysis-0.0.6.dist-info/METADATA,sha256=MKUt_gb8aZ1A37NIL3ISyxmfZbAYh3v_oV_zpmf1Oeg,3839
+sc2_tournament_analysis-0.0.6.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+sc2_tournament_analysis-0.0.6.dist-info/top_level.txt,sha256=3NSkAUTiyIX827EWf9RPQ65gfnRp4OV9SPup4YhdXhc,24
+sc2_tournament_analysis-0.0.6.dist-info/RECORD,,
