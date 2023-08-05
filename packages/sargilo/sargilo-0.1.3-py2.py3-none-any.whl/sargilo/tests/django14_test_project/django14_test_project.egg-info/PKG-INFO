@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: django14-test-project
+Version: 1.0.0
+Summary: Django 3.0 Test project for Sargilo
+Home-page: UNKNOWN
+Author: Nick Lehmann
+Author-email: nick@lehmann.sh
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7,<3.0
