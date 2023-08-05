@@ -1,0 +1,6 @@
+Gemfile.lock
+helpme.egg-info
+__pycache__
+dist
+.env
+build
