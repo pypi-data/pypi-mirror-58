@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: PyngPong
+Version: 1.0
+Summary: PyngPong is a pre-built pong game
+Home-page: https://github.com/Ankit404butfound/PyngPong
+Author: Ankit Raj Mahapatra
+Author-email: ankitrajjitendra816@gmail.com
+License: MIT
+Download-URL: https://github.com/Ankit404butfound/awesomepy/archive/1.0.tar.gz
+Keywords: play()
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: keyboard
+
+# PyngPong
+
+PyngPong is a pre-built pong game
+
+## Installation
+
+```bash
+pip install PyngPong
+```
+
+## Usage
+
+```python
+import PyngPong
+
+PyngPong.play()#Will initiate the game
+
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
