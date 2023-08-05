@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import sys
+import requests
+import json
+import zipfile
+ENDPOINT = "http://gitlab.almeraim.com:81/api/v4/projects/36/jobs/1315/artifacts"
+RESOURCE = "/tmp/resources-deploy/"
+
+def download_zip(project_id,output,token):
+    headers={
+      "PRIVATE-TOKEN": token
+    }
+    req = requests.get("http://gitlab.almeraim.com:81/api/v4/projects/"+str(project_id)+"/jobs",headers=headers)
+    jobs = json.loads(req.text)
+    id_job= jobs[0]['id']
+    print (project_id)
+    print (id_job)
+    path=download_file("http://gitlab.almeraim.com:81/api/v4/projects/"+str(project_id)+"/jobs/"+str(id_job)+"/artifacts",headers) 
+    unzip(path,RESOURCE+"artifact")
+    os.system("sudo cp -r  "+RESOURCE+"artifact/public/* "+output )
+ 
+def download_file(url,headers):
+    print (url)
+    local_filename =RESOURCE +url.split('/')[-1]
+    with requests.get(url, stream=True,headers=headers) as r:
+        with open(local_filename, 'wb') as f:
+            f.write(r.content)
+            f.close()
+                    
+    return local_filename
+def unzip(path_file,path_output):
+    with zipfile.ZipFile(path_file, 'r') as zip_ref:
+        zip_ref.extractall(path_output)
+if __name__ == '__main__':
+    # Create the parser
+    my_parser = argparse.ArgumentParser(description='List the content of a folder')
+
+   # Add the arguments
+    my_parser.add_argument("-p", "--project-id",
+                    help="increase output verbosity")
+    my_parser.add_argument("-o", "--output",
+                    help="increase output verbosity")
+    my_parser.add_argument("-t", "--token",
+                    help="increase output verbosity")
+
+    # Execute the parse_args() method
+    args = my_parser.parse_args()
+    input_project_id = args.project_id
+    input_output = args.output
+    input_token = args.token
+    if not os.path.exists(RESOURCE):
+        os.mkdir(RESOURCE)
+    download_zip (input_project_id,input_output,input_token)
