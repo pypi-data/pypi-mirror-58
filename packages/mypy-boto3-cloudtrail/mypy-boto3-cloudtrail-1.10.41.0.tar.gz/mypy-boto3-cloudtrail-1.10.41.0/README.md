@@ -1,0 +1,66 @@
+# mypy-boto3-cloudtrail
+
+Type annotations for
+[boto3.CloudTrail 1.10.41](https://boto3.amazonaws.com/v1/documentation/api/1.10.41/reference/services/cloudtrail.html#CloudTrail) service
+compatible with [mypy](https://github.com/python/mypy), [VSCode](https://code.visualstudio.com/),
+[PyCharm](https://www.jetbrains.com/pycharm/) and other tools.
+
+More information can be found [here](https://vemel.github.io/mypy_boto3/).
+
+- [mypy-boto3-cloudtrail](#mypy-boto3-cloudtrail)
+  - [How to use](#how-to-use)
+    - [Type checking](#type-checking)
+    - [Code auto-complete](#code-auto-complete)
+  - [How it works](#how-it-works)
+
+## How to use
+
+### Type checking
+
+Make sure you have [mypy](https://github.com/python/mypy) installed and activated in your IDE.
+
+Install `boto3-stubs` for `CloudTrail` service.
+
+```bash
+python -m pip install boto3-stubs[mypy-boto3-cloudtrail]
+```
+
+Use `boto3` with `mypy_boto3` in your project and enjoy type checking and auto-complete.
+
+```python
+import boto3
+
+from mypy_boto3 import cloudtrail
+# alternative import if you do not want to install mypy_boto3 package
+# import mypy_boto3_cloudtrail as cloudtrail
+
+# Use this client as usual, now mypy can check if your code is valid.
+# Check if your IDE supports function overloads,
+# you probably do not need explicit type annotations
+# client = boto3.client("cloudtrail")
+client: cloudtrail.CloudTrailClient = boto3.client("cloudtrail")
+
+# works for session as well
+session = boto3.session.Session(region="us-west-1")
+session_client: cloudtrail.CloudTrailClient = session.client("cloudtrail")
+
+
+# Paginators need type annotation on creation
+list_public_keys_paginator: cloudtrail.ListPublicKeysPaginator = client.get_paginator("list_public_keys")
+list_tags_paginator: cloudtrail.ListTagsPaginator = client.get_paginator("list_tags")
+list_trails_paginator: cloudtrail.ListTrailsPaginator = client.get_paginator("list_trails")
+lookup_events_paginator: cloudtrail.LookupEventsPaginator = client.get_paginator("lookup_events")
+```
+
+## How it works
+
+Fully automated [builder](https://github.com/vemel/mypy_boto3) carefully generates
+type annotations for each service, patiently waiting for `boto3` updates. It delivers
+a drop-in type annotations for you and makes sure that:
+
+- All available `boto3` services are covered.
+- Each public class and method of every `boto3` service gets valid type annotations
+  extracted from the documentation (blame `botocore` docs if types are incorrect).
+- Type annotations include up-to-date documentation.
+- Link to documentation is provided for every method.
+- Code is processed by [black](https://github.com/psf/black) for readability.
