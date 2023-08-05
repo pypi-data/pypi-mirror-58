@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: drhttp
+Version: 0.1.1
+Summary: Dr. Ashtetepe (drhttp) agent for python application servers
+Home-page: https://drhttp.com/
+Author: Pierre-Olivier Marec
+Author-email: contact@drhttp.com
+License: UNKNOWN
+Description: This is the application server agent for using Dr. Ashtetepe.
+        See https://drhttp.com/ for more information.
+        This service is not production ready.
+        Dr. Ashtetepe is not responsible for any data lost/stolen or damage to your infrastructure.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
