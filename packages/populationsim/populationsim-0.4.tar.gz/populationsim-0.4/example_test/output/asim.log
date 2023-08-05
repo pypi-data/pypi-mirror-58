@@ -1,0 +1,576 @@
+16/04/2018 12:56:41 - INFO - activitysim - Read logging configuration from: configs\logging.yaml
+16/04/2018 12:56:41 - DEBUG - activitysim - Deleting files in output_dir output
+16/04/2018 12:56:41 - INFO - populationsim - GROUP_BY_INCIDENCE_SIGNATURE: True
+16/04/2018 12:56:41 - INFO - populationsim - INTEGERIZE_WITH_BACKSTOPPED_CONTROLS: True
+16/04/2018 12:56:41 - INFO - populationsim - SUB_BALANCE_WITH_FLOAT_SEED_WEIGHTS: False
+16/04/2018 12:56:41 - INFO - populationsim - meta_control_data: None
+16/04/2018 12:56:41 - INFO - populationsim - control_file_name: None
+16/04/2018 12:56:41 - INFO - populationsim - USE_CVXPY: False
+16/04/2018 12:56:41 - INFO - populationsim - USE_SIMUL_INTEGERIZER: True
+16/04/2018 12:56:41 - INFO - activitysim.core.pipeline - open_pipeline...
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - open_pipeline - new, empty pipeline
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - opened pipeline_store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+16/04/2018 12:56:41 - INFO - activitysim.core.tracing - Time to execute preload_injectables : 0.0 seconds (0.0 minutes)
+16/04/2018 12:56:41 - INFO - populationsim.util - data_dir: data
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input_pre_processor processing households
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - Reading csv file data\seed_households.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input file columns: ['SERIALNO' 'NP' 'WGTP' 'HTYPE' 'PUMA' 'wizard']
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - adding table households
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input_pre_processor processing persons
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - Reading csv file data\seed_persons.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input file columns: ['SERIALNO' 'SPORDER' 'PUMA' 'OSUTAG' 'OCCP' 'WGTP']
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - adding table persons
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input_pre_processor processing geo_cross_walk
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - Reading csv file data\geo_cross_walk.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input file columns: ['TAZ' 'TRACTCE' 'PUMA' 'DISTRICT']
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - adding table geo_cross_walk
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input_pre_processor processing TAZ_control_data
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - Reading csv file data\taz_controls.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input file columns: ['TAZ' 'TRACT' 'PUMA' 'DISTRICT' 'HHBASE' 'HHSIZE1' 'HHSIZE2' 'HHSIZE3'
+ 'HHSIZE4' 'OSUFAM' 'SF']
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - adding table TAZ_control_data
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input_pre_processor processing TRACT_control_data
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - Reading csv file data\tract_controls.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input file columns: ['TRACT' 'PUMA' 'HHBASE' 'HHSIZE1' 'HHSIZE2' 'HHSIZE3' 'HHSIZE4' 'OSUFAM'
+ 'SF']
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - adding table TRACT_control_data
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input_pre_processor processing DISTRICT_control_data
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - Reading csv file data\region_controls.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - input file columns: ['DISTRICT' 'OCCP1' 'OCCP2' 'OCCP3' 'HHBASE' 'HHSIZE1' 'HHSIZE2' 'HHSIZE3'
+ 'HHSIZE4' 'OSUFAM']
+16/04/2018 12:56:41 - INFO - populationsim.steps.input_pre_processor - adding table DISTRICT_control_data
+16/04/2018 12:56:41 - INFO - activitysim.core.tracing - Time to execute run_model 'input_pre_processor' : 0.093 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor timestamp 2018-04-16 12:56:41.320000
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TAZ_control_data get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor writing TAZ_control_data to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df TAZ_control_data/input_pre_processor shape (36, 11) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TRACT_control_data get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor writing TRACT_control_data to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df TRACT_control_data/input_pre_processor shape (12, 9) : 0.013 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name households get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor writing households to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df households/input_pre_processor shape (61, 5) : 0.006 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name persons get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor writing persons to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df persons/input_pre_processor shape (252, 6) : 0.006 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name DISTRICT_control_data get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor writing DISTRICT_control_data to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df DISTRICT_control_data/input_pre_processor shape (3, 10) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name geo_cross_walk get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint input_pre_processor writing geo_cross_walk to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df geo_cross_walk/input_pre_processor shape (37, 4) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (1, 9) : 0.009 seconds (0.0 minutes)
+16/04/2018 12:56:41 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'input_pre_processor' : 0.089 seconds (0.0 minutes)
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - Reading control file configs\controls.csv
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - dropped 1 households not in seed zones
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - kept 60 households in seed zones
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - rewrap - orca.get_raw_table(households)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - rewrap - orca.add_table(households)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - rewrap - orca.get_raw_table(persons)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - rewrap - orca.add_table(persons)
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target num_hh
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression (households.WGTP > 0) & (households.WGTP < np.inf)
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target hh_size_1
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP == 1
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target hh_size_2
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP == 2
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target hh_size_3
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP == 3
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target hh_size_4_plus
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.NP >= 4
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target students_by_housing_type
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OSUTAG == 1
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target hh_by_type
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table households
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression households.HTYPE == 1
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_1
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 1
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_2
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 2
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - control target persons_occ_3
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.seed_table persons
+16/04/2018 12:56:41 - DEBUG - populationsim.steps.setup_data_structures - control_row.expression persons.OCCP == 3
+16/04/2018 12:56:41 - INFO - populationsim.steps.setup_data_structures - grouped incidence table has 36 entries, ungrouped has 60
+16/04/2018 12:56:41 - INFO - activitysim.core.tracing - Time to execute run_model 'setup_data_structures' : 0.153 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures timestamp 2018-04-16 12:56:41.563000
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TRACT_controls get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing TRACT_controls to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df TRACT_controls/setup_data_structures shape (12, 7) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name incidence_table get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing incidence_table to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df incidence_table/setup_data_structures shape (36, 15) : 0.009 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TAZ_controls get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing TAZ_controls to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df TAZ_controls/setup_data_structures shape (36, 6) : 0.005 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name control_spec get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing control_spec to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df control_spec/setup_data_structures shape (10, 6) : 0.015 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name households get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing households to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df households/setup_data_structures shape (60, 5) : 0.006 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name persons get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing persons to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df persons/setup_data_structures shape (252, 6) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name DISTRICT_controls get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing DISTRICT_controls to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df DISTRICT_controls/setup_data_structures shape (3, 10) : 0.006 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name household_groups get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing household_groups to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df household_groups/setup_data_structures shape (60, 3) : 0.008 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name crosswalk get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing crosswalk to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df crosswalk/setup_data_structures shape (36, 4) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name PUMA_controls get_table
+16/04/2018 12:56:41 - DEBUG - activitysim.core.pipeline - add_checkpoint setup_data_structures writing PUMA_controls to store
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df PUMA_controls/setup_data_structures shape (6, 7) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:41 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (2, 17) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:56:41 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'setup_data_structures' : 0.148 seconds (0.0 minutes)
+16/04/2018 12:56:41 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 600
+16/04/2018 12:56:41 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.4912078196784933e-10, 'iter': 726, 'delta': 2.9239242508675528e-10}
+16/04/2018 12:56:41 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 600 = 150.000000205
+16/04/2018 12:56:41 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 601
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.4912078196784933e-10, 'iter': 726, 'delta': 5.8478485017351056e-10}
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 601 = 300.000000411
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 602
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.4912078196784933e-10, 'iter': 726, 'delta': 2.9239242508675528e-10}
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 602 = 150.000000205
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 603
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.4912078196784933e-10, 'iter': 726, 'delta': 5.8478485017351056e-10}
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 603 = 300.000000411
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 604
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.4912078196784933e-10, 'iter': 726, 'delta': 5.8478485017351056e-10}
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 604 = 300.000000411
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - initial_seed_balancing seed id 605
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.4912078196784933e-10, 'iter': 726, 'delta': 5.8478485017351056e-10}
+16/04/2018 12:56:42 - INFO - populationsim.steps.initial_seed_balancing - Total balanced weights for seed 605 = 300.000000411
+16/04/2018 12:56:42 - INFO - activitysim.core.tracing - Time to execute run_model 'initial_seed_balancing' : 0.894 seconds (0.0 minutes)
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - add_checkpoint initial_seed_balancing timestamp 2018-04-16 12:56:42.605000
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name PUMA_weights get_table
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - add_checkpoint initial_seed_balancing writing PUMA_weights to store
+16/04/2018 12:56:42 - DEBUG - activitysim.core.tracing - Time to execute write_df PUMA_weights/initial_seed_balancing shape (36, 3) : 0.011 seconds (0.0 minutes)
+16/04/2018 12:56:42 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (3, 18) : 0.011 seconds (0.0 minutes)
+16/04/2018 12:56:42 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'initial_seed_balancing' : 0.038 seconds (0.0 minutes)
+16/04/2018 12:56:42 - INFO - populationsim.steps.meta_control_factoring - meta_control_factoring 3 targets
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - rewrap table PUMA_controls inplace=False
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - rewrap - orca.get_raw_table(PUMA_controls)
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - rewrap - orca.add_table(PUMA_controls)
+16/04/2018 12:56:42 - INFO - activitysim.core.tracing - Time to execute run_model 'meta_control_factoring' : 0.026 seconds (0.0 minutes)
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - add_checkpoint meta_control_factoring timestamp 2018-04-16 12:56:42.669000
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name PUMA_controls get_table
+16/04/2018 12:56:42 - DEBUG - activitysim.core.pipeline - add_checkpoint meta_control_factoring writing PUMA_controls to store
+16/04/2018 12:56:42 - DEBUG - activitysim.core.tracing - Time to execute write_df PUMA_controls/meta_control_factoring shape (6, 10) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:42 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (4, 18) : 0.009 seconds (0.0 minutes)
+16/04/2018 12:56:42 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'meta_control_factoring' : 0.032 seconds (0.0 minutes)
+16/04/2018 12:56:42 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 600
+16/04/2018 12:56:42 - INFO - populationsim.steps.final_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.9096908456886013e-10, 'iter': 753, 'delta': 3.3948795626533485e-10}
+16/04/2018 12:56:42 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 601
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.9096908456886013e-10, 'iter': 753, 'delta': 6.7897591253066969e-10}
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 602
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.9096908456886013e-10, 'iter': 753, 'delta': 3.3948795626533485e-10}
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 603
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.9096908456886013e-10, 'iter': 753, 'delta': 6.7897591253066969e-10}
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 604
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.9096908456886013e-10, 'iter': 753, 'delta': 6.7897591253066969e-10}
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - final_seed_balancing seed id 605
+16/04/2018 12:56:43 - INFO - populationsim.steps.final_seed_balancing - seed_balancer status: {'converged': True, 'max_gamma_dif': 9.9096908456886013e-10, 'iter': 753, 'delta': 6.7897591253066969e-10}
+16/04/2018 12:56:43 - INFO - activitysim.core.tracing - Time to execute run_model 'final_seed_balancing' : 1.227 seconds (0.0 minutes)
+16/04/2018 12:56:43 - DEBUG - activitysim.core.pipeline - add_checkpoint final_seed_balancing timestamp 2018-04-16 12:56:43.929000
+16/04/2018 12:56:43 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name PUMA_weights rewrap
+16/04/2018 12:56:43 - DEBUG - activitysim.core.pipeline - rewrap table PUMA_weights inplace=True
+16/04/2018 12:56:43 - DEBUG - activitysim.core.pipeline - rewrap - orca.get_table(PUMA_weights)
+16/04/2018 12:56:43 - DEBUG - activitysim.core.pipeline - rewrap - orca.add_table(PUMA_weights)
+16/04/2018 12:56:43 - DEBUG - activitysim.core.pipeline - add_checkpoint final_seed_balancing writing PUMA_weights to store
+16/04/2018 12:56:43 - DEBUG - activitysim.core.tracing - Time to execute write_df PUMA_weights/final_seed_balancing shape (36, 4) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:56:43 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (5, 18) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:56:43 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'final_seed_balancing' : 0.045 seconds (0.0 minutes)
+16/04/2018 12:56:43 - INFO - populationsim.steps.integerize_final_seed_weights - integerize_final_seed_weights seed id 600
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer: 1 out of 6 different from round
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer status for unbackstopped PUMA_600: OPTIMAL
+16/04/2018 12:56:44 - INFO - populationsim.steps.integerize_final_seed_weights - integerize_final_seed_weights seed id 601
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer: 3 out of 6 different from round
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer status for unbackstopped PUMA_601: OPTIMAL
+16/04/2018 12:56:44 - INFO - populationsim.steps.integerize_final_seed_weights - integerize_final_seed_weights seed id 602
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer: 1 out of 6 different from round
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer status for unbackstopped PUMA_602: OPTIMAL
+16/04/2018 12:56:44 - INFO - populationsim.steps.integerize_final_seed_weights - integerize_final_seed_weights seed id 603
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer: 3 out of 6 different from round
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer status for unbackstopped PUMA_603: OPTIMAL
+16/04/2018 12:56:44 - INFO - populationsim.steps.integerize_final_seed_weights - integerize_final_seed_weights seed id 604
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer: 3 out of 6 different from round
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer status for unbackstopped PUMA_604: OPTIMAL
+16/04/2018 12:56:44 - INFO - populationsim.steps.integerize_final_seed_weights - integerize_final_seed_weights seed id 605
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer: 3 out of 6 different from round
+16/04/2018 12:56:44 - DEBUG - populationsim.integerizer - Integerizer status for unbackstopped PUMA_605: OPTIMAL
+16/04/2018 12:56:44 - INFO - activitysim.core.tracing - Time to execute run_model 'integerize_final_seed_weights' : 0.532 seconds (0.0 minutes)
+16/04/2018 12:56:44 - DEBUG - activitysim.core.pipeline - add_checkpoint integerize_final_seed_weights timestamp 2018-04-16 12:56:44.510000
+16/04/2018 12:56:44 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name PUMA_weights rewrap
+16/04/2018 12:56:44 - DEBUG - activitysim.core.pipeline - rewrap table PUMA_weights inplace=True
+16/04/2018 12:56:44 - DEBUG - activitysim.core.pipeline - rewrap - orca.get_table(PUMA_weights)
+16/04/2018 12:56:44 - DEBUG - activitysim.core.pipeline - rewrap - orca.add_table(PUMA_weights)
+16/04/2018 12:56:44 - DEBUG - activitysim.core.pipeline - add_checkpoint integerize_final_seed_weights writing PUMA_weights to store
+16/04/2018 12:56:44 - DEBUG - activitysim.core.tracing - Time to execute write_df PUMA_weights/integerize_final_seed_weights shape (36, 5) : 0.013 seconds (0.0 minutes)
+16/04/2018 12:56:44 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (6, 18) : 0.014 seconds (0.0 minutes)
+16/04/2018 12:56:44 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'integerize_final_seed_weights' : 0.057 seconds (0.0 minutes)
+16/04/2018 12:56:44 - INFO - populationsim.steps.sub_balancing - balancing seed 600, PUMA 600
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 7 zone_count 2
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 8.86314168892 max_gamma_dif 0.545787527244
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00978615386192 max_gamma_dif 0.545544169513
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.019345732193 max_gamma_dif 0.545840250376
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.0365957325334 max_gamma_dif 0.546219560941
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.061978849268 max_gamma_dif 0.5463826231
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.0819478234679 max_gamma_dif 0.545180079281
+16/04/2018 12:56:44 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0596376062733 max_gamma_dif 0.617663962389
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.0203439936376 max_gamma_dif 0.352253555159
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00817872903334 max_gamma_dif 0.378829429072
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00398280598061 max_gamma_dif 0.340182723897
+16/04/2018 12:56:45 - DEBUG - populationsim.steps.sub_balancing - PUMA 600 converged False iter 999
+16/04/2018 12:56:45 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:56:45 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:56:45 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:45 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for PUMA_600 status OPTIMAL. 
+16/04/2018 12:56:45 - INFO - populationsim.steps.sub_balancing - balancing seed 601, PUMA 601
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - 6 positive weight rows out of 6
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 6 control_count 7 zone_count 2
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 14.9263335486 max_gamma_dif 0.57144747684
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.016503125783 max_gamma_dif 0.559693172278
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.0328128317635 max_gamma_dif 0.560736658389
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.0624666871247 max_gamma_dif 0.563430782735
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.106928144309 max_gamma_dif 0.572299756428
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.165580936236 max_gamma_dif 0.841990158272
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0534577353207 max_gamma_dif 0.437579409309
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.025086371474 max_gamma_dif 0.0814172401226
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00898803576239 max_gamma_dif 0.0200851426364
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00219193393353 max_gamma_dif 0.00311029673153
+16/04/2018 12:56:45 - DEBUG - populationsim.steps.sub_balancing - PUMA 601 converged False iter 999
+16/04/2018 12:56:45 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:45 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for PUMA_601 status OPTIMAL. 
+16/04/2018 12:56:45 - INFO - populationsim.steps.sub_balancing - balancing seed 602, PUMA 602
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 7 zone_count 2
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 8.86314168892 max_gamma_dif 0.545787527244
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00978615386192 max_gamma_dif 0.545544169513
+16/04/2018 12:56:45 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.019345732193 max_gamma_dif 0.545840250376
+16/04/2018 12:56:46 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.0365957325334 max_gamma_dif 0.546219560941
+16/04/2018 12:56:46 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.061978849268 max_gamma_dif 0.5463826231
+16/04/2018 12:56:49 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.0819478234679 max_gamma_dif 0.545180079281
+16/04/2018 12:56:49 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0596376062733 max_gamma_dif 0.617663962389
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.0203439936376 max_gamma_dif 0.352253555159
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00817872903334 max_gamma_dif 0.378829429072
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00398280598061 max_gamma_dif 0.340182723897
+16/04/2018 12:56:50 - DEBUG - populationsim.steps.sub_balancing - PUMA 602 converged False iter 999
+16/04/2018 12:56:50 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:56:50 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:56:50 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:50 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for PUMA_602 status OPTIMAL. 
+16/04/2018 12:56:50 - INFO - populationsim.steps.sub_balancing - balancing seed 603, PUMA 603
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - 6 positive weight rows out of 6
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 6 control_count 7 zone_count 2
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 14.9263335486 max_gamma_dif 0.57144747684
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.016503125783 max_gamma_dif 0.559693172278
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.0328128317635 max_gamma_dif 0.560736658389
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.0624666871247 max_gamma_dif 0.563430782735
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.106928144309 max_gamma_dif 0.572299756428
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.165580936236 max_gamma_dif 0.841990158272
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0534577353207 max_gamma_dif 0.437579409309
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.025086371474 max_gamma_dif 0.0814172401226
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00898803576239 max_gamma_dif 0.0200851426364
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00219193393353 max_gamma_dif 0.00311029673153
+16/04/2018 12:56:50 - DEBUG - populationsim.steps.sub_balancing - PUMA 603 converged False iter 999
+16/04/2018 12:56:50 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:50 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for PUMA_603 status OPTIMAL. 
+16/04/2018 12:56:50 - INFO - populationsim.steps.sub_balancing - balancing seed 604, PUMA 604
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - 6 positive weight rows out of 6
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 6 control_count 7 zone_count 2
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 14.9263335486 max_gamma_dif 0.57144747684
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.016503125783 max_gamma_dif 0.559693172278
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.0328128317635 max_gamma_dif 0.560736658389
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.0624666871247 max_gamma_dif 0.563430782735
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.106928144309 max_gamma_dif 0.572299756428
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.165580936236 max_gamma_dif 0.841990158272
+16/04/2018 12:56:50 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0534577353207 max_gamma_dif 0.437579409309
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.025086371474 max_gamma_dif 0.0814172401226
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00898803576239 max_gamma_dif 0.0200851426364
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00219193393353 max_gamma_dif 0.00311029673153
+16/04/2018 12:56:51 - DEBUG - populationsim.steps.sub_balancing - PUMA 604 converged False iter 999
+16/04/2018 12:56:51 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:51 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for PUMA_604 status OPTIMAL. 
+16/04/2018 12:56:51 - INFO - populationsim.steps.sub_balancing - balancing seed 605, PUMA 605
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - 6 positive weight rows out of 6
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 6 control_count 7 zone_count 2
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 14.9263335486 max_gamma_dif 0.57144747684
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.016503125783 max_gamma_dif 0.559693172278
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.0328128317635 max_gamma_dif 0.560736658389
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.0624666871247 max_gamma_dif 0.563430782735
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.106928144309 max_gamma_dif 0.572299756428
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.165580936236 max_gamma_dif 0.841990158272
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0534577353207 max_gamma_dif 0.437579409309
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.025086371474 max_gamma_dif 0.0814172401226
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00898803576239 max_gamma_dif 0.0200851426364
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00219193393353 max_gamma_dif 0.00311029673153
+16/04/2018 12:56:51 - DEBUG - populationsim.steps.sub_balancing - PUMA 605 converged False iter 999
+16/04/2018 12:56:51 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:51 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for PUMA_605 status OPTIMAL. 
+16/04/2018 12:56:51 - INFO - activitysim.core.tracing - Time to execute run_model 'sub_balancing.geography=TRACT' : 7.087 seconds (0.0 minutes)
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TRACT timestamp 2018-04-16 12:56:51.660000
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name trace_TRACT_weights get_table
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TRACT writing trace_TRACT_weights to store
+16/04/2018 12:56:51 - DEBUG - activitysim.core.tracing - Time to execute write_df trace_TRACT_weights/sub_balancing.geography=TRACT shape (6, 6) : 0.008 seconds (0.0 minutes)
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TRACT_weights get_table
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TRACT writing TRACT_weights to store
+16/04/2018 12:56:51 - DEBUG - activitysim.core.tracing - Time to execute write_df TRACT_weights/sub_balancing.geography=TRACT shape (72, 6) : 0.009 seconds (0.0 minutes)
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TRACT_weights_sparse get_table
+16/04/2018 12:56:51 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TRACT writing TRACT_weights_sparse to store
+16/04/2018 12:56:51 - DEBUG - activitysim.core.tracing - Time to execute write_df TRACT_weights_sparse/sub_balancing.geography=TRACT shape (46, 6) : 0.011 seconds (0.0 minutes)
+16/04/2018 12:56:51 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (7, 21) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:56:51 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'sub_balancing.geography=TRACT' : 0.074 seconds (0.0 minutes)
+16/04/2018 12:56:51 - INFO - populationsim.steps.sub_balancing - balancing seed 600, TRACT 1
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 6 zone_count 3
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 1.47124182959 max_gamma_dif 22.4609375
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00188721439949 max_gamma_dif 16.4321175305
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.00280065554677 max_gamma_dif 9.21516127652
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.00314112093384 max_gamma_dif 3.76840189142
+16/04/2018 12:56:51 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.00693950687661 max_gamma_dif 1.46429501903
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.005528368312 max_gamma_dif 1.22168224937
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.00523023820594 max_gamma_dif 1.13933687264
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.00188822866116 max_gamma_dif 1.14662900036
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00315669092651 max_gamma_dif 1.14637725866
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00484269580889 max_gamma_dif 1.1451941409
+16/04/2018 12:56:52 - DEBUG - populationsim.steps.sub_balancing - TRACT 1 converged False iter 999
+16/04/2018 12:56:52 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:56:52 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:56:52 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:52 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_1 status OPTIMAL. 
+16/04/2018 12:56:52 - INFO - populationsim.steps.sub_balancing - balancing seed 600, TRACT 2
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - 2 positive weight rows out of 6
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 2 control_count 6 zone_count 3
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 0.0 max_gamma_dif 0.922154784252
+16/04/2018 12:56:52 - DEBUG - populationsim.steps.sub_balancing - TRACT 2 converged False iter 0
+16/04/2018 12:56:52 - INFO - populationsim.multi_integerizer - omitting 4 zero weight rows out of 6
+16/04/2018 12:56:52 - INFO - populationsim.multi_integerizer - restoring 4 zero weight rows
+16/04/2018 12:56:52 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:56:52 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_2 status OPTIMAL. 
+16/04/2018 12:56:52 - INFO - populationsim.steps.sub_balancing - balancing seed 601, TRACT 21
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 6 zone_count 3
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.95133362155 max_gamma_dif 13.7931034483
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00444364472046 max_gamma_dif 10.6509937884
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.00663135538845 max_gamma_dif 6.33642835303
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.00769456551162 max_gamma_dif 2.78205662825
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.0155603482053 max_gamma_dif 1.41193170493
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.0155670538437 max_gamma_dif 1.18936743115
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0151819637638 max_gamma_dif 1.1047307163
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.00602504537433 max_gamma_dif 1.10822668511
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00170110998077 max_gamma_dif 1.11088133778
+16/04/2018 12:56:52 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.0025604163275 max_gamma_dif 1.11032326743
+16/04/2018 12:56:52 - DEBUG - populationsim.steps.sub_balancing - TRACT 21 converged False iter 999
+16/04/2018 12:57:04 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:57:04 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:57:04 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:04 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_21 status OPTIMAL. 
+16/04/2018 12:57:04 - INFO - populationsim.steps.sub_balancing - balancing seed 601, TRACT 22
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - 3 positive weight rows out of 6
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 3 control_count 6 zone_count 3
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.5527136788e-15 max_gamma_dif 10.8695652174
+16/04/2018 12:57:04 - DEBUG - populationsim.steps.sub_balancing - TRACT 22 converged False iter 0
+16/04/2018 12:57:04 - INFO - populationsim.multi_integerizer - omitting 3 zero weight rows out of 6
+16/04/2018 12:57:04 - INFO - populationsim.multi_integerizer - restoring 3 zero weight rows
+16/04/2018 12:57:04 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:04 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_22 status OPTIMAL. 
+16/04/2018 12:57:04 - INFO - populationsim.steps.sub_balancing - balancing seed 602, TRACT 31
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 6 zone_count 3
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 1.47124182959 max_gamma_dif 22.4609375
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00188721439949 max_gamma_dif 16.4321175305
+16/04/2018 12:57:04 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.00280065554677 max_gamma_dif 9.21516127652
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.00314112093384 max_gamma_dif 3.76840189142
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.00693950687661 max_gamma_dif 1.46429501903
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.005528368312 max_gamma_dif 1.22168224937
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.00523023820594 max_gamma_dif 1.13933687264
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.00188822866116 max_gamma_dif 1.14662900036
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00315669092651 max_gamma_dif 1.14637725866
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.00484269580889 max_gamma_dif 1.1451941409
+16/04/2018 12:57:05 - DEBUG - populationsim.steps.sub_balancing - TRACT 31 converged False iter 999
+16/04/2018 12:57:05 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:57:05 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:57:05 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:05 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_31 status OPTIMAL. 
+16/04/2018 12:57:05 - INFO - populationsim.steps.sub_balancing - balancing seed 602, TRACT 32
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - 2 positive weight rows out of 6
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 2 control_count 6 zone_count 3
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 0.0 max_gamma_dif 0.922154784252
+16/04/2018 12:57:05 - DEBUG - populationsim.steps.sub_balancing - TRACT 32 converged False iter 0
+16/04/2018 12:57:05 - INFO - populationsim.multi_integerizer - omitting 4 zero weight rows out of 6
+16/04/2018 12:57:05 - INFO - populationsim.multi_integerizer - restoring 4 zero weight rows
+16/04/2018 12:57:05 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:05 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_32 status OPTIMAL. 
+16/04/2018 12:57:05 - INFO - populationsim.steps.sub_balancing - balancing seed 603, TRACT 41
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 6 zone_count 3
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.95133362155 max_gamma_dif 13.7931034483
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00444364472046 max_gamma_dif 10.6509937884
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.00663135538845 max_gamma_dif 6.33642835303
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.00769456551162 max_gamma_dif 2.78205662825
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.0155603482053 max_gamma_dif 1.41193170493
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.0155670538437 max_gamma_dif 1.18936743115
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0151819637638 max_gamma_dif 1.1047307163
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.00602504537433 max_gamma_dif 1.10822668511
+16/04/2018 12:57:05 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00170110998077 max_gamma_dif 1.11088133778
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.0025604163275 max_gamma_dif 1.11032326743
+16/04/2018 12:57:06 - DEBUG - populationsim.steps.sub_balancing - TRACT 41 converged False iter 999
+16/04/2018 12:57:06 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:57:06 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:57:06 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:06 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_41 status OPTIMAL. 
+16/04/2018 12:57:06 - INFO - populationsim.steps.sub_balancing - balancing seed 603, TRACT 42
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - 3 positive weight rows out of 6
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 3 control_count 6 zone_count 3
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.5527136788e-15 max_gamma_dif 10.8695652174
+16/04/2018 12:57:06 - DEBUG - populationsim.steps.sub_balancing - TRACT 42 converged False iter 0
+16/04/2018 12:57:06 - INFO - populationsim.multi_integerizer - omitting 3 zero weight rows out of 6
+16/04/2018 12:57:06 - INFO - populationsim.multi_integerizer - restoring 3 zero weight rows
+16/04/2018 12:57:06 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:06 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_42 status OPTIMAL. 
+16/04/2018 12:57:06 - INFO - populationsim.steps.sub_balancing - balancing seed 604, TRACT 51
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 6 zone_count 3
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.95133362155 max_gamma_dif 13.7931034483
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00444364472046 max_gamma_dif 10.6509937884
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.00663135538845 max_gamma_dif 6.33642835303
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.00769456551162 max_gamma_dif 2.78205662825
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.0155603482053 max_gamma_dif 1.41193170493
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.0155670538437 max_gamma_dif 1.18936743115
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0151819637638 max_gamma_dif 1.1047307163
+16/04/2018 12:57:06 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.00602504537433 max_gamma_dif 1.10822668511
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00170110998077 max_gamma_dif 1.11088133778
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.0025604163275 max_gamma_dif 1.11032326743
+16/04/2018 12:57:26 - DEBUG - populationsim.steps.sub_balancing - TRACT 51 converged False iter 999
+16/04/2018 12:57:26 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:57:26 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:57:26 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:26 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_51 status OPTIMAL. 
+16/04/2018 12:57:26 - INFO - populationsim.steps.sub_balancing - balancing seed 604, TRACT 52
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - 3 positive weight rows out of 6
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 3 control_count 6 zone_count 3
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.5527136788e-15 max_gamma_dif 10.8695652174
+16/04/2018 12:57:26 - DEBUG - populationsim.steps.sub_balancing - TRACT 52 converged False iter 0
+16/04/2018 12:57:26 - INFO - populationsim.multi_integerizer - omitting 3 zero weight rows out of 6
+16/04/2018 12:57:26 - INFO - populationsim.multi_integerizer - restoring 3 zero weight rows
+16/04/2018 12:57:26 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:26 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_52 status OPTIMAL. 
+16/04/2018 12:57:26 - INFO - populationsim.steps.sub_balancing - balancing seed 605, TRACT 61
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - 5 positive weight rows out of 6
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 5 control_count 6 zone_count 3
+16/04/2018 12:57:26 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.95133362155 max_gamma_dif 13.7931034483
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 100 delta 0.00444364472046 max_gamma_dif 10.6509937884
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 200 delta 0.00663135538845 max_gamma_dif 6.33642835303
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 300 delta 0.00769456551162 max_gamma_dif 2.78205662825
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 400 delta 0.0155603482053 max_gamma_dif 1.41193170493
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 500 delta 0.0155670538437 max_gamma_dif 1.18936743115
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 600 delta 0.0151819637638 max_gamma_dif 1.1047307163
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 700 delta 0.00602504537433 max_gamma_dif 1.10822668511
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 800 delta 0.00170110998077 max_gamma_dif 1.11088133778
+16/04/2018 12:57:27 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 900 delta 0.0025604163275 max_gamma_dif 1.11032326743
+16/04/2018 12:57:27 - DEBUG - populationsim.steps.sub_balancing - TRACT 61 converged False iter 999
+16/04/2018 12:57:27 - INFO - populationsim.multi_integerizer - omitting 1 zero weight rows out of 6
+16/04/2018 12:57:27 - INFO - populationsim.multi_integerizer - restoring 1 zero weight rows
+16/04/2018 12:57:27 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:27 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_61 status OPTIMAL. 
+16/04/2018 12:57:28 - INFO - populationsim.steps.sub_balancing - balancing seed 605, TRACT 62
+16/04/2018 12:57:28 - DEBUG - populationsim.simul_balancer - 3 positive weight rows out of 6
+16/04/2018 12:57:28 - DEBUG - populationsim.simul_balancer - np_simul_balancer sample_count 3 control_count 6 zone_count 3
+16/04/2018 12:57:28 - DEBUG - populationsim.simul_balancer - np_simul_balancer iteration 0 delta 3.5527136788e-15 max_gamma_dif 10.8695652174
+16/04/2018 12:57:28 - DEBUG - populationsim.steps.sub_balancing - TRACT 62 converged False iter 0
+16/04/2018 12:57:28 - INFO - populationsim.multi_integerizer - omitting 3 zero weight rows out of 6
+16/04/2018 12:57:28 - INFO - populationsim.multi_integerizer - restoring 3 zero weight rows
+16/04/2018 12:57:28 - DEBUG - populationsim.multi_integerizer - SimulIntegerizer status OPTIMAL
+16/04/2018 12:57:28 - INFO - populationsim.multi_integerizer - do_simul_integerizing succeeded for TRACT_62 status OPTIMAL. 
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute run_model 'sub_balancing.geography=TAZ' : 36.35 seconds (1.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TAZ timestamp 2018-04-16 12:57:28.081000
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TAZ_weights_sparse get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TAZ writing TAZ_weights_sparse to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df TAZ_weights_sparse/sub_balancing.geography=TAZ shape (114, 7) : 0.016 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name TAZ_weights get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TAZ writing TAZ_weights to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df TAZ_weights/sub_balancing.geography=TAZ shape (216, 7) : 0.014 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name trace_TAZ_weights get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint sub_balancing.geography=TAZ writing trace_TAZ_weights to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df trace_TAZ_weights/sub_balancing.geography=TAZ shape (6, 7) : 0.013 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (8, 24) : 0.016 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'sub_balancing.geography=TAZ' : 0.089 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute run_model 'expand_households' : 0.12 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint expand_households timestamp 2018-04-16 12:57:28.291000
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name expanded_household_ids get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint expand_households writing expanded_household_ids to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df expanded_household_ids/expand_households shape (1496, 4) : 0.008 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (9, 25) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'expand_households' : 0.034 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_DISTRICT_1
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_DISTRICT_2
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_DISTRICT_3
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_TRACT_aggregate
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_TRACT_PUMA
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_TRACT
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_TAZ_aggregate
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_TAZ_PUMA
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_TAZ
+16/04/2018 12:57:28 - INFO - populationsim.steps.summarize - saving summary table summary_hh_weights
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute run_model 'summarize' : 0.387 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize timestamp 2018-04-16 12:57:28.716000
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_TRACT get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_TRACT to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_TRACT/summarize shape (12, 23) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_TAZ_aggregate get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_TAZ_aggregate to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_TAZ_aggregate/summarize shape (36, 7) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_DISTRICT_2 get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_DISTRICT_2 to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_DISTRICT_2/summarize shape (10, 8) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_DISTRICT_1 get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_DISTRICT_1 to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_DISTRICT_1/summarize shape (10, 8) : 0.014 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_TAZ_PUMA get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_TAZ_PUMA to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_TAZ_PUMA/summarize shape (6, 32) : 0.016 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_TRACT_aggregate get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_TRACT_aggregate to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_TRACT_aggregate/summarize shape (36, 7) : 0.019 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_TRACT_PUMA get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_TRACT_PUMA to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_TRACT_PUMA/summarize shape (6, 32) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_DISTRICT_3 get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_DISTRICT_3 to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_DISTRICT_3/summarize shape (10, 8) : 0.007 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_hh_weights get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_hh_weights to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_hh_weights/summarize shape (36, 6) : 0.009 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint table_name summary_TAZ get_table
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint summarize writing summary_TAZ to store
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df summary_TAZ/summarize shape (36, 20) : 0.008 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (10, 35) : 0.01 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'summarize' : 0.198 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - populationsim.steps.write_tables - writing output file summary_TAZ.csv
+16/04/2018 12:57:28 - INFO - populationsim.steps.write_tables - writing output file expanded_household_ids.csv
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute run_model 'write_tables' : 0.022 seconds (0.0 minutes)
+16/04/2018 12:57:28 - DEBUG - activitysim.core.pipeline - add_checkpoint write_tables timestamp 2018-04-16 12:57:28.938000
+16/04/2018 12:57:28 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (11, 35) : 0.009 seconds (0.0 minutes)
+16/04/2018 12:57:28 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'write_tables' : 0.032 seconds (0.0 minutes)
+16/04/2018 12:57:29 - INFO - activitysim.core.tracing - Time to execute run_model 'write_synthetic_population' : 0.051 seconds (0.0 minutes)
+16/04/2018 12:57:29 - DEBUG - activitysim.core.pipeline - add_checkpoint write_synthetic_population timestamp 2018-04-16 12:57:29.019000
+16/04/2018 12:57:29 - DEBUG - activitysim.core.tracing - Time to execute write_df checkpoints shape (12, 35) : 0.017 seconds (0.0 minutes)
+16/04/2018 12:57:29 - INFO - activitysim.core.tracing - Time to execute add_checkpoint 'write_synthetic_population' : 0.047 seconds (0.0 minutes)
+16/04/2018 12:57:29 - INFO - activitysim.core.tracing - Time to execute run (12 models) : 47.842 seconds (1.0 minutes)
+16/04/2018 12:57:29 - INFO - activitysim.core.pipeline - close_pipeline
+16/04/2018 12:57:29 - INFO - activitysim.core.tracing - Time to execute all models : 47.892 seconds (1.0 minutes)
