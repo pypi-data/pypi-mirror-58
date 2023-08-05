@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+classifier_yan_zababurina2/__init__.py
+classifier_yan_zababurina2/command_line.py
+classifier_yan_zababurina2/module.py
+classifier_yan_zababurina2.egg-info/PKG-INFO
+classifier_yan_zababurina2.egg-info/SOURCES.txt
+classifier_yan_zababurina2.egg-info/dependency_links.txt
+classifier_yan_zababurina2.egg-info/entry_points.txt
+classifier_yan_zababurina2.egg-info/not-zip-safe
+classifier_yan_zababurina2.egg-info/top_level.txt
