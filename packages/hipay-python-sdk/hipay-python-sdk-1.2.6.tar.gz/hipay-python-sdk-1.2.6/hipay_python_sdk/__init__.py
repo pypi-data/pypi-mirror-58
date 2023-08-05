@@ -1,0 +1,3 @@
+from hipay_python_sdk.HiPayMBService import HiPayMBService
+from hipay_python_sdk.HiPayPayshopService import HiPayPayshopService
+from hipay_python_sdk.HiPayCreditService import HiPayCreditService
