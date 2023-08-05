@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: motormtp22peng
+Version: 0.0.39
+Summary: Explore OpenAI Gym environments.
+Home-page: https://github.com/mtp22peng/python_pack
+Author: Ming-tsan Peng
+Author-email: mt.peng@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/mtp22peng/python_pack/archive/1.139.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: docopt
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+
