@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Test - {{ block.super }}{% endblock title %}
+
+{% block fixed-title %}Test{% endblock fixed-title%}
+
+{% block bodyclass %}test{% endblock bodyclass %}
+
+
+{% block content %}
+    <article id="full">
+        <h1 class="title">Test</h1>
+        <div>
+            <p>pk: {{ pk }}.</p>
+        </div>
+    </article>
+
+{% endblock content %}
