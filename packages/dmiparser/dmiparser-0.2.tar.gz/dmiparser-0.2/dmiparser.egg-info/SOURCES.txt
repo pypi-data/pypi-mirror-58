@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dmiparser/__init__.py
+dmiparser.egg-info/PKG-INFO
+dmiparser.egg-info/SOURCES.txt
+dmiparser.egg-info/dependency_links.txt
+dmiparser.egg-info/not-zip-safe
+dmiparser.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dmiparser.py
