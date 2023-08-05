@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: EasyMenu
+Version: 0.2.0
+Summary: Uma biblioteca feita para facilitar o desenvolvimento de menu interativo no Python 3.6.x
+Home-page: https://github.com/nvrsantos/easymenu.py
+Author: nevr001, KevinAp-5
+Author-email: nvrsantos@users.noreply.github.com
+License: MIT License
+Keywords: menu easy menu_Python python_3.6.x
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+.. role:: raw-html-m2r(raw)
+   :format: html
+
+
+EasyMenu.py
+===========
+
+Uma biblioteca feita para facilitar o desenvolvimento de menu interativo no Python 3.6.x\ :raw-html-m2r:`<br>`
+*Visite `EasyMenu Documentation <https://nvrsantos.github.io/easymenu.py/>`_ para uma documentação completa!*
+
+Como Instalar
+-------------
+
+Usando o gerenciador de pacotes `pip <https://pypi.org/>`_ para instalar o *EasyMenu*.
+
+.. code-block:: bash
+
+   pip install EasyMenu
+
+Como Usar
+---------
+
+.. code-block:: python
+
+   from EasyMenu import menu, menu_nocolor
+
+   option = {
+       "Sim": "print('Hello, World!')",
+       "Não": "exit()"
+   }
+
+   menu = menu_nocolor.Menu(option=option, question='Deseja continuar ?', qchoice='Escolha uma opção: ')
+   eval(menu.display())
+
+Menu Final
+----------
+
+..
+
+   Menu Com Cor
+
+
+
+.. image:: https://i.imgur.com/sQFMTv9.png
+   :target: https://i.imgur.com/sQFMTv9.png
+   :alt: 
+
+
+..
+
+   Menu Sem Cor
+
+
+
+.. image:: https://i.imgur.com/vRV2lnJ.png
+   :target: https://i.imgur.com/vRV2lnJ.png
+   :alt: 
+
+
+Contribuição
+------------
+
+Solicitações de contribuições são bem-vindas. Sempre mantendo a beleza do código e a facilidade de usar.\
+Para grandes mudanças, abra um problema primeiro para discutir o que você gostaria de mudar.
+
+License
+-------
+
+`MIT <https://github.com/nvrsantos/easymenu.py/blob/master/LICENSE>`_
+
+
