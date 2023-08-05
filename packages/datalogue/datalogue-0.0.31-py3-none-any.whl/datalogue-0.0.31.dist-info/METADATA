@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: datalogue
+Version: 0.0.31
+Summary: SDK to interact with the datalogue platform
+Home-page: https://github.com/datalogue/dtl-python-sdk
+Author: Nicolas Joseph
+Author-email: nic@datalogue.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+Requires-Dist: validators
+
+dtl-python-sdk
+--------------
+
+The Datalogue python SDK is an SDK to be able to interact with the platform from
+code.
+
+## Use in a python project
+
+*Requirements*
+*You need to have artifactory [set up](https://github.com/datalogue/grimoire/blob/master/docs/getting-started.md) with pip to be able to use this library*
+
+### Install with Pip
+```bash
+pip install datalogue
+```
+
+### Use in requirements.txt file
+
+```txt
+datalogue==0.0.1
+```
+
+## Documentation
+
+- Authentication
+- Datasets
+- Access points
+- Stream
+- Jobs
+
+## Example
+
+```python
+from datalogue import DtlClient
+
+dtl = Dtl(
+    username="user",
+    password="password",
+    uri="https://datalogue-platform-address.com"
+)
+
+dataset_search_query = "I want a dataset that is called x"
+datasets = dtl.datasets.search(dataset_search_query)
+
+if len(datasets) > 0:
+    head_dataset = datasets[0]
+
+    print(head_dataset.description)
+    # "This is dataset x, I contain x y and z and I am already all cleaned up"
+    print(head_dataset.id)
+    # 
+
+    if len(head_dataset.access_points) > 0
+        access_point = head_dataset.access_points[0]
+
+
+    else:
+        print("looks like the selected dataset is empty")
+
+else:
+    print("No dataset that correspond to the query" + dataset_search_query)
+```
+
+## Develop
+
+### Run tests
+
+```bash
+$ pytest --cov=datalogue tests/
+```
+
