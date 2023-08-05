@@ -1,0 +1,10 @@
+{
+    "algorithm": {
+        "name": "VQE",
+        "initial_point": null
+    },
+    "backend": {
+        "provider": "qiskit.BasicAer",
+        "name": "statevector_simulator"
+    }
+}
