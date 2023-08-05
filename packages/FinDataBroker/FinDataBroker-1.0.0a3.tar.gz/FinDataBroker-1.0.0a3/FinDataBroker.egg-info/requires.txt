@@ -1,0 +1,12 @@
+click
+pandas
+h5py
+termcolor
+tables
+xlsxwriter
+xlrd
+pymongo
+mongomock
+tqdm
+dataset
+financejson
