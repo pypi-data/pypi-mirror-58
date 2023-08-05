@@ -1,0 +1,3 @@
+[console_scripts]
+rfid-squeezectl = rfid_squeezectl:main
+

@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: rfid-squeezectl
+Version: 0.1.0
+Summary: Control Logitech Squeezebox using RFID tags
+Home-page: https://github.com/baztian/frid-squeezectl
+Author: Bastian Bowe
+Author-email: bastian.dev@gmail.com
+License: Apache
+Description: UNKNOWN
+Keywords: rfid,raspi,raspberry,lms,squeeze
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
