@@ -1,0 +1,16 @@
+brcurrency/bitcoin.py,sha256=5BNwePDCJGICLagQWY_7UyvyGG0lp1YSGXtWRXlT3-w,1537
+brcurrency/bitcoincash.py,sha256=5Zbk1g6DTOYLgUdk9DBWhPuiJ3c7mCO5H0uV9qKvh_U,1464
+brcurrency/dolar.py,sha256=wmyWGUc8yoH3DebfiQgN9ImTAOQBSLNZ7tnDbpCriwc,1494
+brcurrency/ethereum.py,sha256=-9yCJBTI35-gOm_0sFqg1XkTZgqpVKJ_G7atkkhyR-E,1532
+brcurrency/ethereumclassic.py,sha256=zMhCd1seDpRRzH-_pTsXEeOrGm8JkUnr7fr8kzVuhiM,1491
+brcurrency/euro.py,sha256=w7XRnhdNgfKxxhfMossjUbIvmtWKh8mrphg9vFfr9V8,1507
+brcurrency/iene.py,sha256=zLBL0pDnNSdVzSN8DntvnuqpIjTyP064hAQi3MZ3DOE,1666
+brcurrency/libra.py,sha256=X8hYwkqmDZ4WAh7a1u324kKTjd5i06sDEJh0RJbpCYw,1512
+brcurrency/litecoin.py,sha256=y726ftbYXFKc26F4wEAJ2q0POKNIpzt4Wi3kb258xFo,1428
+brcurrency/monero.py,sha256=FLHiSLBMn95SKE4fnL4hwsrW1GNizmBX05F-uZQ9n2M,1412
+brcurrency/nano.py,sha256=PWMVmcL87WwoL_838YGwkva44VONFLyqdEQ0fKHIB1I,1410
+brcurrency/neo.py,sha256=tlcPnLDjwrSDxiZGV2cfuOEcksFpLH6fm4h7yYdXzMQ,1544
+BRCurrencyPy-0.3.dist-info/METADATA,sha256=1hrtwVwqhXFUguLVWo43jcvjtLgE-Ip2dalGUIlk0D8,1414
+BRCurrencyPy-0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+BRCurrencyPy-0.3.dist-info/top_level.txt,sha256=h0ait3SPrkKpcR06MsDfOfvm7VfeDBiPwWCqeIpKA6A,11
+BRCurrencyPy-0.3.dist-info/RECORD,,
