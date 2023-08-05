@@ -1,0 +1,3 @@
+[console_scripts]
+spotify-lyrics = spotify_lyrics:main
+
