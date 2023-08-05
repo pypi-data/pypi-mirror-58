@@ -1,0 +1,22 @@
+six
+
+[all]
+six
+pytest
+pytest-cov
+codecov
+Pygments
+
+[all:platform_system == "Windows"]
+colorama
+
+[optional]
+Pygments
+
+[optional:platform_system == "Windows"]
+colorama
+
+[tests]
+pytest
+pytest-cov
+codecov
