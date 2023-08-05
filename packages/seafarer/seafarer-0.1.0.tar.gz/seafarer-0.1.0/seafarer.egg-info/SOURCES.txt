@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+seafarer/__init__.py
+seafarer/__main__.py
+seafarer/__version__.py
+seafarer/distance.py
+seafarer.egg-info/PKG-INFO
+seafarer.egg-info/SOURCES.txt
+seafarer.egg-info/dependency_links.txt
+seafarer.egg-info/entry_points.txt
+seafarer.egg-info/top_level.txt
