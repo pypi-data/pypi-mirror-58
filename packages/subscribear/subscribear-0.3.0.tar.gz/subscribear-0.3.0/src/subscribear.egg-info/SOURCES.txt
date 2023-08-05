@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/subscribear/__init__.py
+src/subscribear/subscribear.py
+src/subscribear.egg-info/PKG-INFO
+src/subscribear.egg-info/SOURCES.txt
+src/subscribear.egg-info/dependency_links.txt
+src/subscribear.egg-info/requires.txt
+src/subscribear.egg-info/top_level.txt
