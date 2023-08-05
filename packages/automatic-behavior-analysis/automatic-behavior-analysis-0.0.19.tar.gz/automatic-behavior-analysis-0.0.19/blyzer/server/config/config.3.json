@@ -1,0 +1,22 @@
+{
+    "protocol": "tcp",
+    "port": 1217,
+    "secret_key": "zec7wiuSuf9naix",
+    "tcp_server_max_conn": 3,
+    "tcp_server_buffer_size": 1024,
+    "upload_buffer_max_size": 65536,
+    "model_root": null,
+    "model_path_detector_graph": "{model_root}/dog_detector/models/ssd_mobilenet_v1/actual/frozen_inference_graph.pb",
+    "model_path_detector_label_map": "{model_root}/dog_detector/models/ssd_mobilenet_v1/classes.pbtxt",
+    "model_path_classifier_weights": "{model_root}/dog_classificator/models/lying-8000-grayscale/weights-t.h5",
+    "model_path_classifier_scheme": "{model_root}/dog_classificator/models/lying-8000-grayscale/model.json",
+    "model_path_eye_detector_graph": "{model_root}/eye_detector/models/eyes-1-class-2600/actual/frozen_inference_graph.pb",
+    "model_path_eye_detector_label_map": "{model_root}/eye_detector/models/eyes-1-class-2600/classes.pbtxt",
+    "max_detection_targets": 2,
+    "use_classifier": true,
+    "use_eye_detector": true,
+    "target_classes": [1, 2],
+    "eye_target_classes": [1, 2],
+    "box_overlap_threshold": 0.9,
+    "convert_to_grayscale": true
+}

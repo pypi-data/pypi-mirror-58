@@ -1,0 +1,18 @@
+{
+    "protocol": "tcp",
+    "port": 1217,
+    "secret_key": "zec7wiuSuf9naix",
+    "tcp_server_max_conn": 3,
+    "tcp_server_buffer_size": 1024,
+    "upload_buffer_max_size": 65536,
+    "model_version": 1,
+    "model_root": null,
+    "model_path_detector_graph": "{model_root}/dog_detector/models/ssd_mobilenet_v1/actual/frozen_inference_graph.pb",
+    "model_path_label_map": "{model_root}/dog_detector/data/dog.pbtxt",
+    "model_path_classifier_weights": "{model_root}/dog_classificator/dog_class_model_simple_wight.h5",
+    "model_path_classifier_scheme": "{model_root}/dog_classificator/dog_class_model_simple.json",
+    "max_detection_targets": 2,
+    "target_classes": [1],
+    "box_overlap_threshold": 0.9,
+    "convert_to_grayscale": true
+}
