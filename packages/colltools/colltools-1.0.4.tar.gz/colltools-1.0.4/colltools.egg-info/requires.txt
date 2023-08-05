@@ -1,0 +1,9 @@
+
+[test]
+pytest
+pytest-cov
+codecov
+mypy
+pylint
+sphinx
+sphinxcontrib-spelling

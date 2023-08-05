@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+colltools/__init__.py
+colltools.egg-info/PKG-INFO
+colltools.egg-info/SOURCES.txt
+colltools.egg-info/dependency_links.txt
+colltools.egg-info/requires.txt
+colltools.egg-info/top_level.txt
+tests/__init__.py
+tests/test_batch.py
