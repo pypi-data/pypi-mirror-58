@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pypiLearn
+Version: 0.0.2
+Summary: a test project for learning how to use pypi
+Home-page: https://github.com/xxx/test
+Author: song
+Author-email: soany777@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# pypiLearn
+
+
