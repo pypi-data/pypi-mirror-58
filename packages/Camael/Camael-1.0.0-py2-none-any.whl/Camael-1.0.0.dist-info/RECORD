@@ -1,0 +1,11 @@
+camael/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+camael/classifier_models.py,sha256=s4OP5IHz18_83pTg3VoWmDZbZgWMm0qgdXU4XFgEL6U,15407
+camael/load_data.py,sha256=ZEdFJZua-zP5wxW8RM0b5e_nSG0QwRQKH-lh1Vwz86Q,3820
+camael/preprocessing.py,sha256=_wwbNfW5NEUN4nDrQh9wd94-aNrwyJQ5_AAHLEEF_DM,12508
+camael/regression_models.py,sha256=VsqkVPErSQ21DJOrV6QcIKs6pzDl__Wby2VCOYFh5OY,6707
+camael/test_nn.py,sha256=oiFA2jTqfR3D_mP9Hc9qr0SKv-DGLvlaXRc5nZNm_CY,901
+Camael-1.0.0.dist-info/LICENSE.md,sha256=vGx9RmLXaK3YsRgzAdP9XSgZ0gNdj7nbh9cym27Bx-c,1053
+Camael-1.0.0.dist-info/METADATA,sha256=QJ3ABpVl4623lwuKdlnEdufcKS7Jlr3sIpF4tgDBKQw,1122
+Camael-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+Camael-1.0.0.dist-info/top_level.txt,sha256=XS9h89MoUbp3-I3-ZEiNKn56lw4NNFJ_XANrcvusnr0,7
+Camael-1.0.0.dist-info/RECORD,,
