@@ -1,0 +1,8 @@
+requests
+datetime
+pandas>=0.17.0
+numpy>=1.11.0
+appdirs==1.4.3
+python-dateutil
+websocket-client
+deprecation
