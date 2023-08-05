@@ -1,0 +1,8 @@
+README.md
+setup.py
+fxq/pdbc.py
+fxq_pdbc.egg-info/PKG-INFO
+fxq_pdbc.egg-info/SOURCES.txt
+fxq_pdbc.egg-info/dependency_links.txt
+fxq_pdbc.egg-info/requires.txt
+fxq_pdbc.egg-info/top_level.txt
