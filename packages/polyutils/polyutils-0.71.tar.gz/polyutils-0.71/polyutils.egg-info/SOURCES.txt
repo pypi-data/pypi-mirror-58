@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+polyutils/__init__.py
+polyutils/abstract_polygon.py
+polyutils/overlapping.py
+polyutils/placement_rules.py
+polyutils/polygon.py
+polyutils/rectangle.py
+polyutils/voronoi_generator.py
+polyutils.egg-info/PKG-INFO
+polyutils.egg-info/SOURCES.txt
+polyutils.egg-info/dependency_links.txt
+polyutils.egg-info/requires.txt
+polyutils.egg-info/top_level.txt
