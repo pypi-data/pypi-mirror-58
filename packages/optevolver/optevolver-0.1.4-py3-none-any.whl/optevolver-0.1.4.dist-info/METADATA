@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: optevolver
+Version: 0.1.4
+Summary: Evolutionary parameter search for architecture and hyperparameters
+Home-page: https://github.com/pgfeldman/optevolver
+Author: Phil Feldman
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Contains packages for creating sequence data (generators), working with Excel and JSON files (util) and evolutionary discovery of architecture and hyperparameters (hyperparameter). It is designed to work with Tensorflow 2.0 and can take advantage of multiple processors
+
+
