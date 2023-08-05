@@ -1,0 +1,12 @@
+osc_recorder/__init__.py,sha256=w3syI2OhO_c1DXbISsWZOb6fIcGIQOClHDNEy3Ik8vU,236
+osc_recorder/base.py,sha256=pLkPa9QQhVovyDNmAg49rZEDHtnJEaadP21D6xAbvj0,2929
+osc_recorder/collector.py,sha256=p-8zHTzpc-cqth5OqcCShc6VT54lqsRNGAuUjvrrIoE,1195
+osc_recorder/osc_utils.py,sha256=jESUBxWYyfPCh-ZPnyT6oUa1V3zBAUv5StCW-xzUmYo,5943
+osc_recorder-0.1.5.data/scripts/capture_osc,sha256=J9ga6yrnrsCKWyJrOgf3IEz9U17_Iy3QKunVgLmHwDQ,1519
+osc_recorder-0.1.5.data/scripts/osc_to_csv,sha256=aBNqnBVM9J0SwFI53Wb4WefdmqclJjG6dnQtRgFxb6E,2439
+osc_recorder-0.1.5.data/scripts/replay_osc,sha256=v2WsNwyr50JnvS672gEeFw8k0DFJbNjZ45oTFPsCJVk,1762
+osc_recorder-0.1.5.dist-info/LICENSE,sha256=URyXcdp_JRL_J58AnAMue3d0hkgvhCZBpMIF0p2gzPw,1071
+osc_recorder-0.1.5.dist-info/METADATA,sha256=QeeJPYmTcQyc2w0zA-vM5IsBafrlKGAwgjw9LyWkATM,2200
+osc_recorder-0.1.5.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+osc_recorder-0.1.5.dist-info/top_level.txt,sha256=6DqP6AjtlZx9DXZikL6RIPQsqZLMGJP7P9xeB45Jskc,13
+osc_recorder-0.1.5.dist-info/RECORD,,
