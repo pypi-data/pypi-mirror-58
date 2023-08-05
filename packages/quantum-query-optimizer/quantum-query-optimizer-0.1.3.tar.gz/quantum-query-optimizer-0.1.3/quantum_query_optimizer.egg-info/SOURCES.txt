@@ -1,0 +1,13 @@
+README.md
+setup.py
+quantum_query_optimizer/__init__.py
+quantum_query_optimizer/adm.py
+quantum_query_optimizer/boolean_functions.py
+quantum_query_optimizer/constraints.py
+quantum_query_optimizer/span_program.py
+quantum_query_optimizer/test.py
+quantum_query_optimizer/visualize.py
+quantum_query_optimizer.egg-info/PKG-INFO
+quantum_query_optimizer.egg-info/SOURCES.txt
+quantum_query_optimizer.egg-info/dependency_links.txt
+quantum_query_optimizer.egg-info/top_level.txt
