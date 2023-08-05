@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: codereef
+Version: 0.7.4
+Summary: CodeReef client to deal with portable workflows
+Home-page: https://dev.codereef.ai/portal
+Author: CodeReef
+Author-email: UNKNOWN
+License: Apache Software License (Apache 2.0)
+Description-Content-Type: text/markdown
+Description: A cross-platform Client with a Command Line Interface and a Python API for the open CodeReef portal: https://dev.codereef.ai/portal .
+        
+        More info: https://CodeReef.ai .
+        
+        Copyright 2019 CodeReef SAS
+        
+Keywords: portable workflows,reproducibility,collaborative experiments,portability,dependencies,workflows,automation,pipelines,data pipelines,computer systems,data science
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=2.7
