@@ -1,0 +1,11 @@
+odoo/addons/web_widget_prefixed_url/README.rst,sha256=vxshXQ5bKDdtkgiY1pPMSHo-Rynrf0GGBucG41ruqjs,1017
+odoo/addons/web_widget_prefixed_url/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_widget_prefixed_url/__manifest__.py,sha256=vQImuZBoZXLaranNSz3yXPNBIaccaLeXZgZHlOR3rHs,550
+odoo/addons/web_widget_prefixed_url/i18n/web_widget_prefixed_url.pot,sha256=N54JHX-XC2BQOfdHJah2y4SvlTwG7A9vY8R52uQgoMU,344
+odoo/addons/web_widget_prefixed_url/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_widget_prefixed_url/static/src/js/widget_prefixed_url.js,sha256=MS8ibVNXFRbUA26s44kHT3e2uMnh4gZXTB7q-4ZjTGk,965
+odoo/addons/web_widget_prefixed_url/views/template.xml,sha256=ZDNvjy47aAiduDX2VMJOgzJV_iqFdvhycastAHyHpR4,386
+odoo11_addon_web_widget_prefixed_url-11.0.1.0.0.99.dev1.dist-info/METADATA,sha256=6N_EHQkfr8gCNk6Tp1mT0rN6gNnBEswh7HJZ9du2qXA,1595
+odoo11_addon_web_widget_prefixed_url-11.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+odoo11_addon_web_widget_prefixed_url-11.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_web_widget_prefixed_url-11.0.1.0.0.99.dev1.dist-info/RECORD,,
