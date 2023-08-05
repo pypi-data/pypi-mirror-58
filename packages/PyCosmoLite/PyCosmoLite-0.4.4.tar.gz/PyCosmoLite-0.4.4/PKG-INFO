@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: PyCosmoLite
+Version: 0.4.4
+Summary: A multi-purpose cosmology calculation tool
+Home-page: http://cosmo-docs.phys.ethz.ch/PyCosmo
+Author: Adam Amara
+Author-email: adam.amara@phys.ethz.ch
+License: Proprietary
+Description: =========================================
+        PyCosmo
+        =========================================
+        
+        PyCosmo is a multi-purpose cosmology calculation tool in Python. It is designed to be interactive and user friendly.
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
