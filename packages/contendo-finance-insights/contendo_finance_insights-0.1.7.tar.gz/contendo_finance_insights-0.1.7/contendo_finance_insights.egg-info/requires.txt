@@ -1,0 +1,8 @@
+ta
+statsmodels==0.10.1
+newspaper3k
+nltk
+google-cloud-bigquery
+google-cloud-storage
+python-dotenv
+contendo_utils
