@@ -1,0 +1,16 @@
+jupyter
+jupyter_console==6.0.0
+nose
+notebook
+numpy==1.14.6
+pandas==0.23.4
+seaborn
+skll==1.5.2
+statsmodels
+coverage
+openpyxl
+parameterized
+sphinx
+sphinx_rtd_theme
+xlrd
+xlwt
