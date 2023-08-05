@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fxq-pdbc
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://bitbucket.org/fxqlabs-oss/fxq-pdbc/
+Author: Jonathan Turnock
+Author-email: jonathan.turnock@outlook.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pyodbc
+Requires-Dist: multipledispatch
+
+# FXQLabs-OSS pdbc
+
+
