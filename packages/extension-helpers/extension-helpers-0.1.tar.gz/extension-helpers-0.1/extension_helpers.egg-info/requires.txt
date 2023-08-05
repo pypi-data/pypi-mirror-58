@@ -1,0 +1,8 @@
+
+[docs]
+sphinx-astropy
+
+[test]
+pytest-astropy
+pytest-cov
+coverage<5
