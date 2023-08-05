@@ -1,0 +1,7 @@
+<registry>
+
+    <records prefix="plone.resources/ftw-iframeblock-resources"
+             interface="Products.CMFPlone.interfaces.IBundleRegistry"
+             remove="True"/>
+
+</registry>
