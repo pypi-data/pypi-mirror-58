@@ -1,0 +1,11 @@
+paress/__init__.py,sha256=EwbfSJNHOiwdkm2qAlg8dzYtTJKNsOpH8nH-oc_L2h0,353
+paress/compatibilidad.py,sha256=Q9Gw8F8RObEjZDGl0cTfqh03RVA7bZWs1vLNqHgtiaU,3775
+paress/configura.py,sha256=Eb3BGNrJc3LCjAeI4pWt-tAR9pQgZpllneev8n6jZXQ,485
+paress/paress.py,sha256=cjlJ7kwYueqbNQwvVUKs6L5ljEg475rLAzyb8rxaea4,19025
+paress/plataforma.py,sha256=OMhsW-pUKd70u5OsHQjl23thSIhHq6A-_yCXaUcugyE,735
+paress/reconex.py,sha256=oBb9ytsBXZLG_hzMsHyfgBAEGW4XDUFIR3efkhiNFKw,801
+paress-0.0.3.dist-info/LICENSE,sha256=R95MaQQSIC5JOo0Wj1J1y1xbQomn0b0jz2pkp27dvfw,1104
+paress-0.0.3.dist-info/METADATA,sha256=vwmLE-Aq8mUkh6tEm9oC0oOrgniFQLpiPam3FYvS3fU,2873
+paress-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+paress-0.0.3.dist-info/top_level.txt,sha256=W7Gcw5Y6gIZqrZiOb8ULgGs00a6x_K6fZ81HSV7ZJBA,7
+paress-0.0.3.dist-info/RECORD,,
