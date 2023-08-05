@@ -1,0 +1,14 @@
+README.md
+setup.py
+RobotFramework_PropertyFile.egg-info/PKG-INFO
+RobotFramework_PropertyFile.egg-info/SOURCES.txt
+RobotFramework_PropertyFile.egg-info/dependency_links.txt
+RobotFramework_PropertyFile.egg-info/requires.txt
+RobotFramework_PropertyFile.egg-info/top_level.txt
+robotframework_propertyfile/__init__.py
+robotframework_propertyfile/loader.py
+robotframework_propertyfile.egg-info/PKG-INFO
+robotframework_propertyfile.egg-info/SOURCES.txt
+robotframework_propertyfile.egg-info/dependency_links.txt
+robotframework_propertyfile.egg-info/requires.txt
+robotframework_propertyfile.egg-info/top_level.txt
