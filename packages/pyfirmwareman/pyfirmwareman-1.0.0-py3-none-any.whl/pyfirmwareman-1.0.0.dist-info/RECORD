@@ -1,0 +1,13 @@
+pyfirmwareman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfirmwareman/capifwb.so,sha256=z_Hle3WMfpP3Vle8NQjg-8rROBqQLyiqFKgRpkQ7IAk,90193
+pyfirmwareman/main.py,sha256=MuhAwnrzDU-8LZKZxwlddd7NPs4eKDnf575oWk5QE-A,321
+pyfirmwareman/makebin_bootloaderkeys.py,sha256=PCc5w8yJKKw9Dbfkl2mCpeR3r4sGygEb7n2tQdaZSXU,6318
+pyfirmwareman/makebin_hex.py,sha256=pUOGHqXzLiLBc5tACholrbxZsDjYd95svdXa2wymAHI,19649
+pyfirmwareman/makebin_upgrade.py,sha256=zVcI8KgzvEgvkuah0kG7yUUhbR505NAxWVulqPe2a1c,3343
+pyfirmwareman/pyfirmwaremandef.py,sha256=umoxyBOfCYsa7jyuIRFDjmm8Bgy0rHFNSNX85Q6I3L0,3189
+pyfirmwareman-1.0.0.dist-info/LICENSE.txt,sha256=gzxd5RuotBkaXAahSPphRgnqtnFSn58DHelPHV0Vhbc,1069
+pyfirmwareman-1.0.0.dist-info/METADATA,sha256=_93MYvxeQepsTMtG8D19V4bZ7SQOQMXzjiOGQML_wis,322
+pyfirmwareman-1.0.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pyfirmwareman-1.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyfirmwareman-1.0.0.dist-info/top_level.txt,sha256=COJH5gTgFEnOEF6rDU_BB2cLHlvGEpaVc2SGlXiavBw,14
+pyfirmwareman-1.0.0.dist-info/RECORD,,

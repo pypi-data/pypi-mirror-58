@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyfirmwareman
+Version: 1.0.0
+Summary: file encryption and rsa key generation tool with command line interface support
+Home-page: http://www.sonmicro.com/
+Author: SonMicro Electronics
+Author-email: info@sonmicro.com
+License: MIT
+Requires-Dist: pyfcrypt
+Requires-Dist: prompt-toolkit
+
+pyfcrypt
+
+
