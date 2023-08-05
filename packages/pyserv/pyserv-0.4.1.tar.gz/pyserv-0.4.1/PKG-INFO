@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: pyserv
+Version: 0.4.1
+Summary: Python HTTPD Server to test GET and POST requests
+Home-page: https://github.com/dheerajmpai/pyserv/
+Author: Dheeraj M Pai
+Author-email: contact@advaitlabs.com
+License: MIT
+Download-URL: https://github.com/dheerajmpai/pyserv/
+Description: Simple HTTPD Python Server
+        
+Keywords: HTTPD SERVER,PYTHON HTTPD,SERVER,GET,REQUESTS,HTTPD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
