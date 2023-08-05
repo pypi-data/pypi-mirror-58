@@ -1,0 +1,14 @@
+celery>=4.3
+django-oscar>=2.0.0
+
+[development]
+PyYAML>=3.12
+WebTest<2.1,>=2.0
+coverage>=4.4.2
+django-webtest==1.9.4
+flake8>=3.5.0
+freezegun>=0.3.12
+psycopg2cffi>=2.7.7
+sorl-thumbnail>=11.04
+tox>=2.9.1
+versiontag>=1.2.0
