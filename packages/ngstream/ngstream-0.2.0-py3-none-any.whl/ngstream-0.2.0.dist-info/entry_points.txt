@@ -1,0 +1,8 @@
+[console_scripts]
+htsget_dump = ngstream.protocols.htsget:htsget_dump_cli
+sra_dump = ngstream.protocols.sra:sra_dump_cli
+
+[ngstream.protocol]
+htsget = ngstream.protocols.htsget:HtsgetProtocol [pysam,requests,subby]
+sra = ngstream.protocols.sra:SraProtocol
+
