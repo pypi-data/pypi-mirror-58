@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+winney/__init__.py
+winney/winney.py
+winney_redis.egg-info/PKG-INFO
+winney_redis.egg-info/SOURCES.txt
+winney_redis.egg-info/dependency_links.txt
+winney_redis.egg-info/requires.txt
+winney_redis.egg-info/top_level.txt
