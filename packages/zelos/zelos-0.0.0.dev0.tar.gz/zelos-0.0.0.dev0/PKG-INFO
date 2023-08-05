@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: zelos
+Version: 0.0.0.dev0
+Summary: A comprehensive binary emulation platform.
+Home-page: https://github.com/zeropointdynamics/zelos
+Author: Zeropoint Dynamics
+Author-email: zelos@zeropointdynamics.com
+Maintainer: Zeropoint Dynamics
+Maintainer-email: zelos@zeropointdynamics.com
+License: AGPLv3
+Project-URL: Documentation, https://zelos.zeropointdynamics.com/
+Project-URL: Bug Tracker, https://github.com/zeropointdynamics/zelos/issues
+Project-URL: Source Code, https://github.com/zeropointdynamics/zelos
+Description: [![Build Status](https://dev.azure.com/kevin0853/zelos/_apis/build/status/zeropointdynamics.zelos?branchName=master)](https://dev.azure.com/kevin0853/zelos/_build/latest?definitionId=1&branchName=master)
+        [![codecov](https://codecov.io/gh/zeropointdynamics/zelos/branch/master/graph/badge.svg)](https://codecov.io/gh/zeropointdynamics/zelos)
+        [![Documentation Status](https://readthedocs.org/projects/zelos/badge/?version=latest)](https://zelos.readthedocs.io/en/latest/?badge=latest)
+        [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+        <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+        
+        # zelos
+        Zelos is a Python-based binary emulation platform.
+        
+        *Work in Progress*: We are working towards open sourcing the zelos emulation platform. There is no code here *yet*.
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install zelos.
+        
+        ```bash
+        pip install zelos
+        ```
+        
+        ## Basic Usage
+        
+        Command-line usage:
+        ```bash
+        $ zelos run my_binary
+        ```
+        
+        Programmatic usage:
+        ```python
+        import zelos
+        
+        z = zelos.Engine("static_elf_helloworld")
+        z.start(timeout=3)
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        Please make sure to update tests as appropriate.
+        
+        ## License
+        [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html)
+        
+        
+        # Changelog
+        
+        All notable changes to this project will be documented in this file.
+        
+        The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+        and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+        
+        ## [Unreleased]
+        
+        
+        ## [0.0.1] - 2019-12-25
+        
+        ### Added
+        
+        - Initial open source commit.
+        
+        ### Changed
+        
+        - Added repository boilerplate.
+        
+        ### Removed
+        
+        - N/A
+        
+        [unreleased]: https://github.com/zeropointdynamics/zelos/compare/v1.1.0...HEAD
+        [0.0.1]: https://github.com/zeropointdynamics/zelos/releases/tag/v0.0.1
+        
+        
+        # The Core Zelos Team
+        
+        * [Kevin Valakuzhy](//www.linkedin.com/in/kevin-valakuzhy-319a5447/) - Research Engineer, Developer
+        * Ryan C. Court - Research Engineer, Developer
+        * [Kevin Z. Snow](//www.linkedin.com/in/kevinsnow/) - Co-Founder, Developer
+        
+        ### Special Thanks To
+        
+        * Fabian Monrose - Co-Founder
+        * Ann Cox - DHS Program Manager
+        * Angelos Keromytis - DARPA Program Manager (Former)
+        * Dustin Fraze - DARPA Program Manager
+        * Suyup Kim - Intern
+        
+Keywords: emulation,dynamic analysis,binary analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: azure-pipelines
