@@ -1,0 +1,3 @@
+pymysql
+six
+python-interface
