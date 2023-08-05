@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: uzu-accounts-app
+Version: 1.0
+Summary: AccountsApp is a generic django application tailored to Single Page Applications that abstracts user authentication and verification from the rest of your project.
+Home-page: https://github.com/Kolynes/AccountsApp.git
+Author: Collins C. Chinedu (Kolynes)
+Author-email: collinschinedu@uzucorp.com
+License: MIT
+Download-URL: https://github.com/Kolynes/AccountsApp/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: Authentication,Django,Account Verification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
