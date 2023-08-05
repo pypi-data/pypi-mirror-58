@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Simpleshare.egg-info/PKG-INFO
+Simpleshare.egg-info/SOURCES.txt
+Simpleshare.egg-info/dependency_links.txt
+Simpleshare.egg-info/requires.txt
+Simpleshare.egg-info/top_level.txt
+simpleshare/__init__.py
+simpleshare/__main__.py
+simpleshare/cli.py
+simpleshare/client.py
+simpleshare/gui.py
+simpleshare/server.py
+simpleshare/util.py
