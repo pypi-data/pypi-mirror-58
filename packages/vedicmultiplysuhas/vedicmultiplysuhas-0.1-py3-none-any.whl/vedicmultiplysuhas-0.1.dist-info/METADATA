@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vedicmultiplysuhas
+Version: 0.1
+Summary: A  utility package
+Home-page: https://github.com/suhasgaikwad8902/first_package
+Author: Suhas Gaikwad
+Author-email: suhassureshgaikwad@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+long_description
+
+
