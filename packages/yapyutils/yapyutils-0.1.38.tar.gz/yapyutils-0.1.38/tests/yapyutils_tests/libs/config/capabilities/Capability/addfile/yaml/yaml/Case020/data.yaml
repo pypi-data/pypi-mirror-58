@@ -1,0 +1,11 @@
+section0:
+   dict0:
+      attr0: 1
+      attr1: 2
+      attr2: 3
+
+section1:
+   dict1:
+      - A
+      - 8
+      - X

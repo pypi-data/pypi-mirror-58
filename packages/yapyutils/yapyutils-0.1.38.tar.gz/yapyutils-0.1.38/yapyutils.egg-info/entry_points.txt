@@ -1,0 +1,5 @@
+[console_scripts]
+prettyenv = yapyutils.prettyenv:pprint_environment
+prettypath = yapyutils.prettypath:pprint_path
+prettypypath = yapyutils.prettypypath:pprint_pypath
+

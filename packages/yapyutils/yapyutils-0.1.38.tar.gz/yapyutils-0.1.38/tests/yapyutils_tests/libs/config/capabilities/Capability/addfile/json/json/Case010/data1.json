@@ -1,0 +1,13 @@
+{
+	"section0": {
+		"dict8": {
+   			"attr0": "x",
+			"attr1": "y"
+   		}
+   	},
+	"section1": {
+		"val0": 100,
+		"val1": 200,
+		"val2": 300
+   	}
+}

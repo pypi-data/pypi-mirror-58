@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<section0>
+		<dict0>
+			<attr0>123</attr0>
+			<attr1>456</attr1>
+			<attr2>111</attr2>
+		</dict0>
+	</section0>
+	<section1>
+		<dict1>
+			<attr0>11</attr0>
+			<attr1>22</attr1>
+			<attr2>33</attr2>
+		</dict1>
+	</section1>
+</root>
+

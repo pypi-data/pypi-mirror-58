@@ -1,0 +1,21 @@
+# README
+include README.md
+
+# License
+include LICENSE.txt
+include ArtisticLicense20.html
+include licenses-amendments.txt
+
+# setup
+include setup.py
+include setup.cfg
+
+
+# documentation
+recursive-include doc/en *
+
+# test cases and data
+recursive-include tests *
+recursive-include testdata *
+
+
