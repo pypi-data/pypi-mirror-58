@@ -1,0 +1,67 @@
+Metadata-Version: 1.1
+Name: django-netbox-confluence
+Version: 0.1.2
+Summary: A Django app to connect NetBox and Confluence Wiki.
+Home-page: https://github.com/hovodab/alrescha
+Author: Hovhannes Dabaghyan
+Author-email: hovhannes.dabaghyan@gmail.com
+License: Apache License 2.0
+Description: ========================
+        django_netbox_confluence
+        ========================
+        
+        Django-NetBox-Confluence is a Django app to connect NetBox and Confluence wiki. Define .
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        
+        1. Add "Django-NetBox-Confluence" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...,
+                'django_netbox_confluence',
+            ]
+        
+        2. Include the netbox-wiki URLconf in your project urls.py like this::
+        
+            path('netbox-wiki-api/', include('django_netbox_confluence.urls'))
+        
+        
+        3. Add confluence credentials settings and space key where the data will be stored variables in your Django settings file.
+        
+          DNC_CONFLUENCE_CREDENTIALS = {
+              'url': 'http://localhost:8090',
+              'username': 'admin',
+              'password': 'admin'
+        
+          }
+        
+          DNC_SPACE_KEY = 'NETBOX'
+        
+          DNC_WEBHOOK_TOKEN = "<SECRET_KEY>"
+        
+        4. Run `python manage.py migrate` to create the Django-NetBox-Confluence models.
+        
+        5. Start the development server and visit http://127.0.0.1:8000/admin/
+           to create a configuration (you'll need the Admin app enabled). Set authorization header: {"Authorization": "Token <SECRET_KEY>"}.
+        
+        6. Use http://127.0.0.1:8000/netbox-wiki/model_change_trigger as NetBox webhook endpoint URL field input.
+        
+        See detailed documentation at `github <http://github.com/hovodab/alrescha>`_ repo.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
