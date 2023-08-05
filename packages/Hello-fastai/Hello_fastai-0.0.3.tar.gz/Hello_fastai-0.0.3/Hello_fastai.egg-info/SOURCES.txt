@@ -1,0 +1,12 @@
+README.md
+setup.py
+Hello_fastai/__init__.py
+Hello_fastai/_nbdev.py
+Hello_fastai/core.py
+Hello_fastai.egg-info/PKG-INFO
+Hello_fastai.egg-info/SOURCES.txt
+Hello_fastai.egg-info/dependency_links.txt
+Hello_fastai.egg-info/entry_points.txt
+Hello_fastai.egg-info/not-zip-safe
+Hello_fastai.egg-info/requires.txt
+Hello_fastai.egg-info/top_level.txt
