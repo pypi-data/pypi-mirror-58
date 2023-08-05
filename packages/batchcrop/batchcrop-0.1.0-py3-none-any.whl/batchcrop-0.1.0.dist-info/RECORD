@@ -1,0 +1,9 @@
+batchcrop/__init__.py,sha256=O4HVmRz9NVxF3h6BBi0ZXVPwPt2uQlqEwJ9Gd5aBDp8,7884
+batchcrop/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+batchcrop/cli/batchcrop.py,sha256=h9fyyrHor0Sasg2Bxky0roKfeh1YI5cd3dzTTQPjZwk,1147
+batchcrop-0.1.0.dist-info/LICENSE,sha256=T-VugPjkf0PsKJyihdN67Q2mw06X3bCQiF_ElhFW3Fw,1068
+batchcrop-0.1.0.dist-info/METADATA,sha256=TsfIhkPfT8K9Y1LwSb2otjLF6g0qX63p4yXV-bPI7G0,288
+batchcrop-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+batchcrop-0.1.0.dist-info/entry_points.txt,sha256=v35dlzEKMXaH-9gaKDmq9W3ReRJ-yr3YR3Y-m5ySm7Q,60
+batchcrop-0.1.0.dist-info/top_level.txt,sha256=90e260XxxQU1b5I4ddvUl0gJ9bz8xaH3krb_dCFSFFs,10
+batchcrop-0.1.0.dist-info/RECORD,,

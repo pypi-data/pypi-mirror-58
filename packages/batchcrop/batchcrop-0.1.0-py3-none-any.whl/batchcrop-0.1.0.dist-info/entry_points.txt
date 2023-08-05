@@ -1,0 +1,3 @@
+[console_scripts]
+batchcrop = batchcrop.cli.batchcrop:main
+
