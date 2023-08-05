@@ -1,0 +1,14 @@
+fsource/__init__.py,sha256=2A41ajh-v40OeksQ6Y1y0gbCaMfgX6QLWjyKT8B5pBM,354
+fsource/__main__.py,sha256=VbIOksTapxqkikdpn8jRA-N35Hoc-mFQ07uF02roBPg,6779
+fsource/analyzer.py,sha256=miSJXSPyhQfX8dRhiXjUgql6dcLizFEqaD1L9z1PK7M,224
+fsource/common.py,sha256=iJ2ICOMeAvZsmRFgPHOIk00QLkV0jzPCn8I1kHFc3F8,2492
+fsource/lexer.py,sha256=b-Zxdf3Ko52RpCX4MSuTz6ENJmxrZXXyX1MflTpcUBg,8303
+fsource/parser.py,sha256=xfVbvmtqnrlTbJVy1R9ti2dUHEa5Fh5aM-hQDLG8xvU,60733
+fsource/splicer.py,sha256=-xLZ_SV91OeYPlex_N8CWRS31tB3bJlFdf1OGpf-U2o,8530
+fsource-0.4.1.dist-info/LICENSE.txt,sha256=xQbmYqOD_snN43w0O-dQQUjIScteX3vU6yVXn7qpiSc,42852
+fsource-0.4.1.dist-info/METADATA,sha256=gkrjyJfezT0bCcj8RosNNJHQZuyD_o70CTowy5bOqK0,2438
+fsource-0.4.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fsource-0.4.1.dist-info/entry_points.txt,sha256=GCIc_9f6zZUS2DQjG-H-U3qbq9-Nu2I9oWn5yTB4kIU,51
+fsource-0.4.1.dist-info/top_level.txt,sha256=JiKeCSHRtEuz6LwBXo8QnRklSDtl1g_jeC0anfJFHhY,8
+fsource-0.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fsource-0.4.1.dist-info/RECORD,,
