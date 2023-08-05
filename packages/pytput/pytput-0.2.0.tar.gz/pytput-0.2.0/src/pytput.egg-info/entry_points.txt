@@ -1,0 +1,3 @@
+[console_scripts]
+pytput = pytput.__main__:main
+
