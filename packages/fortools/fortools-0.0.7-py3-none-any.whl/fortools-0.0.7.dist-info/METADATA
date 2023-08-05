@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fortools
+Version: 0.0.7
+Summary: forensics python library fortools
+Home-page: https://github.com/5ha0/fortools/fortools
+Author: 5ha0
+Author-email: fortools.official@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/5ha0/fortools/archive/master.zip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.5
+Description-Content-Type: text/markdown
+Requires-Dist: bitstring
+Requires-Dist: chardet
+Requires-Dist: image
+Requires-Dist: libesedb-python
+Requires-Dist: libevtx-python
+Requires-Dist: libewf-python
+Requires-Dist: lxml
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: olefile
+Requires-Dist: PyPDF2
+Requires-Dist: python-docx
+Requires-Dist: python-magic
+Requires-Dist: python-magic-bin
+Requires-Dist: python-registry
+Requires-Dist: pytsk3
+Requires-Dist: xmltodict
+
+# fortools
+
+# Introduction
+Fortools is a library for python Forensics. It is designed with Python for easy use by beginners to professionals, and improved usability by providing an integrated environment.
+
+# Background
+There are few free integrated Python libraries that can be used from a forensics perspective. So team 5ha0 offers an integrated Python library from a forensics perspective as an open source.
+
+# Installation
+pip install -r requirements.txt
+
+# License 
+
+# How to Use
+For instructions, check the example folder.
+
+# Contact
+If you have any questions , feel free to send us an e-mail(fortools.official@gmail.com).
+
+
