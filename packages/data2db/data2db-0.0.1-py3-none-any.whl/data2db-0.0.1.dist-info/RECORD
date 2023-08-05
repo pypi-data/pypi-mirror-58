@@ -1,0 +1,13 @@
+polls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polls/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+polls/apps.py,sha256=i-aEKgo29FPj0v1ZXYhxGJfeTV6L6E_AwHbe6B_CYD0,90
+polls/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+polls/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+polls/urls.py,sha256=meXWTcQJWDhvQDj0xmbGdAGh8Fh5eYw_W652ivQfKLM,295
+polls/views.py,sha256=x6gEHLwUBVXhfvXbSPm-Ckqn4rrjeCCkfU4TTRitNPY,539
+polls/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data2db-0.0.1.dist-info/LICENSE.txt,sha256=ZsoYQ_e1txPHlC4fqzBH9ga6us1nx8sPG_7zgIb84jg,30195
+data2db-0.0.1.dist-info/METADATA,sha256=W5hbYpAU1xPdPCryAGLPfN9AqyxwzmShWIRXIsgGbYY,477
+data2db-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+data2db-0.0.1.dist-info/top_level.txt,sha256=nFZT9qJU0JMR4qxKFac47WtiOKmzCgOO6US2EbPCAKU,6
+data2db-0.0.1.dist-info/RECORD,,
