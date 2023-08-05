@@ -1,0 +1,10 @@
+README.md
+setup.py
+scrapy_warcio/__init__.py
+scrapy_warcio/warcio.py
+scrapy_warcio.egg-info/PKG-INFO
+scrapy_warcio.egg-info/SOURCES.txt
+scrapy_warcio.egg-info/dependency_links.txt
+scrapy_warcio.egg-info/not-zip-safe
+scrapy_warcio.egg-info/requires.txt
+scrapy_warcio.egg-info/top_level.txt
