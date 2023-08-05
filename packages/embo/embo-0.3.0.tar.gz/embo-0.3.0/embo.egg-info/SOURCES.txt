@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+embo/VERSION
+embo/__init__.py
+embo/core.py
+embo/utils.py
+embo.egg-info/PKG-INFO
+embo.egg-info/SOURCES.txt
+embo.egg-info/dependency_links.txt
+embo.egg-info/requires.txt
+embo.egg-info/top_level.txt
+embo/examples/embo_example.ipynb
+embo/test/__init__.py
+embo/test/test_embo.py
