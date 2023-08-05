@@ -1,0 +1,13 @@
+taler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taler/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taler/util/amount.py,sha256=NVrV0y7NenBa8Vu8gAqhigpIndOMhZ4A9OFt350JE9M,8613
+taler/util/gnunet_log.py,sha256=Bh4JrpHMCDIn7BPgr28KEkeiRdZHsBo7OYnxXDLrcPU,10092
+taler/util/talerconfig.py,sha256=4TbxQXvT6HR8BXggUNVKsjVAZ4El3PfblZFB2Vs8aJ0,20524
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_amount.py,sha256=l1KDNVD5Xu1hl4vb3OmJ9hvug7mdCUz6n2DiDH8cWPY,3009
+tests/test_log.py,sha256=FPQPbHueD5VGBekoLDJ0AH-bKnkmB2OTQ_WhZm4dh64,9178
+taler_util-0.6.2.dist-info/COPYING,sha256=qFPC_-wXBXhyNA7uJCrk2Wy_K1IK4n2QPhsv7xpfnRw,7639
+taler_util-0.6.2.dist-info/METADATA,sha256=gpy20UsOsrxqStFPXdpCa-Ewh2zJ_62KpyQ56iipl14,1387
+taler_util-0.6.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+taler_util-0.6.2.dist-info/top_level.txt,sha256=EOuN9DhlG6-Ln-sGcIiuuHepEgxd1HmMClrXRhMU2ZQ,12
+taler_util-0.6.2.dist-info/RECORD,,
