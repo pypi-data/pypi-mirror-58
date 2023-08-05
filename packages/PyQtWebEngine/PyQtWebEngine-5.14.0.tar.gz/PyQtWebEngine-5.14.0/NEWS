@@ -1,0 +1,19 @@
+v5.14.0 19th December 2019
+  - Added support for Qt v5.14.0.
+
+v5.13.2 3rd November 2019
+  - Added PYQT_WEBENGINE_VERSION and PYQT_WEBENGINE_VERSION_STR.
+  - Added support for SIP v5.
+
+v5.13.1 14th September 2019
+  - Added the missing QWebEnginePage.Feature.Notifications enum member.
+
+v5.13.0 5th July 2019
+  - Added support for Qt v5.13.0.
+
+v5.12.1 19th March 2019
+  - Added support for Qt v5.12.2.
+
+v5.12 10th February 2019
+  - The first release based on Qt v5.12.  Previously the modules were part of
+    PyQt5.
