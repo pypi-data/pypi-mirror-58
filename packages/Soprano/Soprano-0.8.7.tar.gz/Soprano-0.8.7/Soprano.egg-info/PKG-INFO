@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: Soprano
+Version: 0.8.7
+Summary: A Python library to crack crystals
+Home-page: https://ccp-nc.github.io/soprano/
+Author: Simone Sturniolo
+Author-email: simone.sturniolo@stfc.ac.uk
+License: LGPL
+Description: 
+        Soprano is a Python library developed and maintained by the CCP for NMR
+        Crystallography as a tool to help scientists working with crystallography and
+        simulations to generate, manipulate, run calculations on and analyse large
+        data sets of crystal structures, with a particular attention to the output of
+        ab-initio random structure searching,
+        or AIRSS. (https://www.mtg.msm.cam.ac.uk/Codes/AIRSS)
+        
+        It provides a number of functionalities to help automate many common tasks
+        in computational crystallography.
+Keywords: c,r,y,s,t,a,l,l,o,g,r,a,p,h,y, ,c,c,p,n,c, ,c,o,m,p,u,t,a,t,i,o,n,a,l, ,c,h,e,m,i,s,t,r,y
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.1.*
