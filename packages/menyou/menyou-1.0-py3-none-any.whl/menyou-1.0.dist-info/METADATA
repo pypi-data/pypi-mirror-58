@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: menyou
+Version: 1.0
+Summary: A easy-to-use console-based menu.
+Home-page: https://gitlab.com/ricoflow/menyou
+Author: Randall Speake
+Author-email: ranspeake@gmail.com
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyfiglet
+
+# menyou
+An easy-to-use console-based menu module.
+
+## Requirements
+ - Python >= 3.6
+ - pyfiglet
+
+## Installation
+```bash
+pip install menyou
+```
+
+## Basic Usage
+```python
+import menyou as m
+
+# Create a submenu with a couple of options (Opshins)
+sub_menu = m.Menyou(
+    'My Great App',
+    'Sub Menu',
+    [m.Opshin(name='Hello World', payload=print),
+     # This option will be displayed, but disabled
+     m.Opshin(name='Five times x', payload=lambda x: x*5, disabled=True)],
+    'Pick a function to execute: '
+)
+
+# Create the main menu
+main_menu = m.Menyou(
+    'My Great App',
+    'Main Menu',
+    [m.Opshin(name='Sub Menu', payload=sub_menu),
+    # For convenience, the Menyou class has an cross-platform exit function
+    m.Opshin(name='Exit', payload=m.Menyou.exit)],
+    'Pick a submenu to navigate to: '
+)
+
+# Display the menu
+main_menu.display_menu()
+```
+
+## Executing Complex Payloads
+The simplest approach would be to have a your program handle interaction with the user. You can define a parameterless function that captures user input and calls any business logic functions defined in your program. For example:
+```python
+# In your program, setup a parameterless function that handles user input, validation, and calls any necessary functions
+def called_by_menu():
+    name = my_app.prompt_for_name()
+    my_app.greet(name)
+    age = my_app.prompt_for_age()
+    old_enough = my_app.validate_age(age)
+
+    if old_enough:
+        print(f'Congrats{name}, you are old enough.')
+    else:
+        print(f'Sorry, {name}, you are not old enough')
+
+    # Program control returns to Menyou
+
+# Instantiate the menu
+import menyou as m
+
+my_menu = m.Menyou(
+    'Menu Title',
+    'Menu Subtitle',
+    [m.Opshin(name='Interact with my_app', payload=called_by_menu)],
+    'Please choose an option: '
+)
+
+# Display
+my_menu.display_menu()
+
+```
+When you design your program, you may want to keep all the functions that take user input within the Menyou class.
+
+If you want to operate this way you will need to edit the payload_director function in menyou.py. You may also want to add some custom functions to the Menyou class. Here is an example of how you could prompt the user for their name before calling the greet function:
+```python
+
+# Assume you have a function in your program that greets the user with the name they provide
+def greet(name):
+    print(f'Hello {name}')
+
+# Instantiate a menu with the greet function as a payload
+import menyou as m
+
+my_menu = m.menyou('My Menu Title', 
+                   'My Menu Subtitle',
+                   [m.Opshin(name='Greet me', payload=greet)],
+                   'Please choose an option: ')
+
+# Add the prompt_for_name function to the Menyou class
+...
+@staticmethod
+def prompt_for_name():
+    name = input('What is your name?')
+    return name
+
+# Add the logic to the payload_director function so that your_app's greet function gets supplied the correct parameter.
+...
+def payload_director(fn):
+        def inner():
+            # Your 'complex' menu operations go here...
+            if fn.__name__ == your_app.greet.__name__:
+                # call the prompt function you added to the Menyou class:
+                name = self.prompt_for_name()
+                # supply the return value to the payload function:
+                fn(name)  
+            else:
+                # Default behaviour - execute the payload
+                fn()
+        return inner
+```
+Alternatively, your app could provide the functions to execute:
+```python
+# Setup a menu
+import menyou as m
+
+my_menu = m.menyou('My Menu Title', 
+                   'My Menu Subtitle',
+                   [m.Opshin(name='Execute three functions', payload=called_by_menu)],
+                   'Please choose an option: ')
+
+# In your app:
+def called_by_menu():
+    # return a tuple of functions to execute
+    return func1, func2, func3
+
+# In the payload_director function of the Menyou class
+def payload_director(fn):
+        def inner():
+            # Your 'complex' menu operations go here...
+            if fn.__name__ == your_app.called_by_menu.__name__:
+                # call the payload that returns three functions:
+                func1, func2, func3 = fn()
+                # execute them 
+                func1()
+                func2()
+                func3()
+            else:
+                # Default behaviour - execute the payload
+                fn()
+        return inner
+```
+
+## License
+[GNU GPLv3](LICENSE.TXT) 
+
+
