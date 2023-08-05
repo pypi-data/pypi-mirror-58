@@ -1,0 +1,231 @@
+"Main interface for lakeformation service Client"
+from __future__ import annotations
+
+import sys
+from typing import Any, Dict, List
+from botocore.client import BaseClient
+from botocore.exceptions import ClientError as Boto3ClientError
+
+# pylint: disable=import-self
+import mypy_boto3_lakeformation.client as client_scope
+from mypy_boto3_lakeformation.type_defs import (
+    BatchGrantPermissionsResponseTypeDef,
+    BatchPermissionsRequestEntryTypeDef,
+    BatchRevokePermissionsResponseTypeDef,
+    DataLakePrincipalTypeDef,
+    DataLakeSettingsTypeDef,
+    DescribeResourceResponseTypeDef,
+    FilterConditionTypeDef,
+    GetDataLakeSettingsResponseTypeDef,
+    GetEffectivePermissionsForPathResponseTypeDef,
+    ListPermissionsResponseTypeDef,
+    ListResourcesResponseTypeDef,
+    ResourceTypeDef,
+)
+
+if sys.version_info >= (3, 8):
+    from typing import Literal
+else:
+    from typing_extensions import Literal
+
+
+__all__ = ("LakeFormationClient",)
+
+
+class LakeFormationClient(BaseClient):
+    """
+    [LakeFormation.Client documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client)
+    """
+
+    exceptions: client_scope.Exceptions
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def batch_grant_permissions(
+        self, Entries: List[BatchPermissionsRequestEntryTypeDef], CatalogId: str = None
+    ) -> BatchGrantPermissionsResponseTypeDef:
+        """
+        [Client.batch_grant_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def batch_revoke_permissions(
+        self, Entries: List[BatchPermissionsRequestEntryTypeDef], CatalogId: str = None
+    ) -> BatchRevokePermissionsResponseTypeDef:
+        """
+        [Client.batch_revoke_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def can_paginate(self, operation_name: str) -> bool:
+        """
+        [Client.can_paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.can_paginate)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def deregister_resource(self, ResourceArn: str) -> Dict[str, Any]:
+        """
+        [Client.deregister_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def describe_resource(self, ResourceArn: str) -> DescribeResourceResponseTypeDef:
+        """
+        [Client.describe_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def generate_presigned_url(
+        self,
+        ClientMethod: str,
+        Params: Dict[str, Any] = None,
+        ExpiresIn: int = 3600,
+        HttpMethod: str = None,
+    ) -> None:
+        """
+        [Client.generate_presigned_url documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def get_data_lake_settings(self, CatalogId: str = None) -> GetDataLakeSettingsResponseTypeDef:
+        """
+        [Client.get_data_lake_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def get_effective_permissions_for_path(
+        self, ResourceArn: str, CatalogId: str = None, NextToken: str = None, MaxResults: int = None
+    ) -> GetEffectivePermissionsForPathResponseTypeDef:
+        """
+        [Client.get_effective_permissions_for_path documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def grant_permissions(
+        self,
+        Principal: DataLakePrincipalTypeDef,
+        Resource: ResourceTypeDef,
+        Permissions: List[
+            Literal[
+                "ALL",
+                "SELECT",
+                "ALTER",
+                "DROP",
+                "DELETE",
+                "INSERT",
+                "CREATE_DATABASE",
+                "CREATE_TABLE",
+                "DATA_LOCATION_ACCESS",
+            ]
+        ],
+        CatalogId: str = None,
+        PermissionsWithGrantOption: List[
+            Literal[
+                "ALL",
+                "SELECT",
+                "ALTER",
+                "DROP",
+                "DELETE",
+                "INSERT",
+                "CREATE_DATABASE",
+                "CREATE_TABLE",
+                "DATA_LOCATION_ACCESS",
+            ]
+        ] = None,
+    ) -> Dict[str, Any]:
+        """
+        [Client.grant_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def list_permissions(
+        self,
+        CatalogId: str = None,
+        Principal: DataLakePrincipalTypeDef = None,
+        ResourceType: Literal["CATALOG", "DATABASE", "TABLE", "DATA_LOCATION"] = None,
+        Resource: ResourceTypeDef = None,
+        NextToken: str = None,
+        MaxResults: int = None,
+    ) -> ListPermissionsResponseTypeDef:
+        """
+        [Client.list_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def list_resources(
+        self,
+        FilterConditionList: List[FilterConditionTypeDef] = None,
+        MaxResults: int = None,
+        NextToken: str = None,
+    ) -> ListResourcesResponseTypeDef:
+        """
+        [Client.list_resources documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def put_data_lake_settings(
+        self, DataLakeSettings: DataLakeSettingsTypeDef, CatalogId: str = None
+    ) -> Dict[str, Any]:
+        """
+        [Client.put_data_lake_settings documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def register_resource(
+        self, ResourceArn: str, UseServiceLinkedRole: bool = None, RoleArn: str = None
+    ) -> Dict[str, Any]:
+        """
+        [Client.register_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def revoke_permissions(
+        self,
+        Principal: DataLakePrincipalTypeDef,
+        Resource: ResourceTypeDef,
+        Permissions: List[
+            Literal[
+                "ALL",
+                "SELECT",
+                "ALTER",
+                "DROP",
+                "DELETE",
+                "INSERT",
+                "CREATE_DATABASE",
+                "CREATE_TABLE",
+                "DATA_LOCATION_ACCESS",
+            ]
+        ],
+        CatalogId: str = None,
+        PermissionsWithGrantOption: List[
+            Literal[
+                "ALL",
+                "SELECT",
+                "ALTER",
+                "DROP",
+                "DELETE",
+                "INSERT",
+                "CREATE_DATABASE",
+                "CREATE_TABLE",
+                "DATA_LOCATION_ACCESS",
+            ]
+        ] = None,
+    ) -> Dict[str, Any]:
+        """
+        [Client.revoke_permissions documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
+        """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def update_resource(self, RoleArn: str, ResourceArn: str) -> Dict[str, Any]:
+        """
+        [Client.update_resource documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.42/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
+        """
+
+
+class Exceptions:
+    AlreadyExistsException: Boto3ClientError
+    ClientError: Boto3ClientError
+    ConcurrentModificationException: Boto3ClientError
+    EntityNotFoundException: Boto3ClientError
+    InternalServiceException: Boto3ClientError
+    InvalidInputException: Boto3ClientError
+    OperationTimeoutException: Boto3ClientError
