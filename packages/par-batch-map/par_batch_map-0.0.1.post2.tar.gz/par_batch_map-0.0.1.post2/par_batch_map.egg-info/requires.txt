@@ -1,0 +1,4 @@
+pymongo==3.9.0
+haversine==2.1.2
+numpy==1.17.4
+Shapely==1.6.4.post2

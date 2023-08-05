@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: par_batch_map
+Version: 0.0.1.post2
+Summary: Package for parallel batch processing of iterators
+Home-page: https://git.icm.edu.pl/krutk/parallel_batch
+Author: Krzysztof Rutkowski
+Author-email: krutk@icm.edu.pl
+License: UNKNOWN
+Description: # parallel_batch
+        This is package for parallel batch processing.
+        
+        * Function batch_map in functionality is equivalent of map functor.
+        * Result of map(callable, iterable) should be the same as batch_map(callable, iterable),
+        * batch_map function allows parallel computation in batches, especially useful when iterable is stream data (iterator) and we don't know size of the data.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
