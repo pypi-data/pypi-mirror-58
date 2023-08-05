@@ -1,0 +1,8 @@
+ujson
+numpy>=1.16.0
+scipy>=0.16
+numexpr>=2.4.6
+netCDF4
+dask[bag]
+dask[array]
+toolz
