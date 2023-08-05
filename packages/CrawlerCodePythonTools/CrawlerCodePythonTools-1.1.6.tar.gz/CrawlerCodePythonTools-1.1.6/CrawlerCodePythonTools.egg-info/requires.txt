@@ -1,0 +1,6 @@
+colorama
+PyQt5
+telegram
+python-telegram-bot
+selenium
+cloudpickle
