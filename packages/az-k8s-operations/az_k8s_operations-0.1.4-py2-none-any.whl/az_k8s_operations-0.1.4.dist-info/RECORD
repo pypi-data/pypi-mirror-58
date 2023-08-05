@@ -1,0 +1,17 @@
+az_k8s_operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+az_k8s_operations/azdevops.py,sha256=tq-BHpWr6pGdbuwGFYfiQC-0x3LECcIWWktb7Kzrr44,2798
+az_k8s_operations/common.py,sha256=Zvxht-o0ohtHYj5gXCDshdf1FcrBJ2SLftYmODl1Zlk,13974
+az_k8s_operations/k8s.py,sha256=TWqmJGgKDGSHWSJWwiKkwz4CW4-XrzCHKvelt27Z3zk,3704
+az_k8s_operations/spn.py,sha256=WWStUoFAmKrvH_7LtqtOKPMCU7Bg8H-sw8tl5hbk2-M,4551
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/setup.py,sha256=2PL6GJ0Sh13uu2Bs2QRgTFBYnBe2O51AsmDlNZhKnWQ,1180
+package/az_k8s_operations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/az_k8s_operations/azdevops.py,sha256=tq-BHpWr6pGdbuwGFYfiQC-0x3LECcIWWktb7Kzrr44,2798
+package/az_k8s_operations/common.py,sha256=Zvxht-o0ohtHYj5gXCDshdf1FcrBJ2SLftYmODl1Zlk,13974
+package/az_k8s_operations/k8s.py,sha256=TWqmJGgKDGSHWSJWwiKkwz4CW4-XrzCHKvelt27Z3zk,3704
+package/az_k8s_operations/spn.py,sha256=WWStUoFAmKrvH_7LtqtOKPMCU7Bg8H-sw8tl5hbk2-M,4551
+az_k8s_operations-0.1.4.dist-info/LICENSE,sha256=0kKCnroM6A9kVo3DW_yexDYl4iBNHl3DqwCNHHPaJ1Q,1089
+az_k8s_operations-0.1.4.dist-info/METADATA,sha256=gkQZe1dWcxoWz1Cz-WysJ9PPmP_79DQ4nZKROpLvhqo,1092
+az_k8s_operations-0.1.4.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+az_k8s_operations-0.1.4.dist-info/top_level.txt,sha256=P6QA2uBU8_he_k-y2WH7jehZJzRmS8eRUduu6uY05sc,26
+az_k8s_operations-0.1.4.dist-info/RECORD,,
