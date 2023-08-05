@@ -1,0 +1,13 @@
+README.md
+setup.py
+test/test_client.py
+test/test_client_selenium.py
+testai_classifier/__init__.py
+testai_classifier/classifier_pb2.py
+testai_classifier/classifier_pb2_grpc.py
+testai_classifier/client.py
+testai_classifier.egg-info/PKG-INFO
+testai_classifier.egg-info/SOURCES.txt
+testai_classifier.egg-info/dependency_links.txt
+testai_classifier.egg-info/requires.txt
+testai_classifier.egg-info/top_level.txt
