@@ -1,0 +1,10 @@
+hacs_frontend/__init__.py,sha256=SaVeBBAFujAxV9H_jzZidRg9hq1cttHEQGGBJi9QiV0,382
+hacs_frontend/version.py,sha256=66WLJIk3e39kjhAwt8B13PTWmcIRcSfF9jHBoqbX0TQ,12
+hacs_frontend/debug_refs/tags/30.js,sha256=An9fg4gqFx_HWLD5uzlJ3ELeM1lBpoYDdyofNO372PQ,637210
+hacs_frontend/debug_refs/tags/30.js.gz,sha256=c_2ysSx-6ygXBgeBaez-PUa6lhUJDfqY7yXifrBtJSU,160553
+hacs_frontend/main_refs/tags/30.js,sha256=ZrLpCnvKGtDd3EzdLZvxplYP5XmcCbcAPXV1W3blPUQ,358620
+hacs_frontend/main_refs/tags/30.js.gz,sha256=sc3hu5be-sF6cHL4wBQ_2uFVP4Uha2ONhEkv_Dl1O8k,96894
+hacs_frontend-30.dist-info/METADATA,sha256=KXIuM6LJTYNSWq7YjbLAHspbahc5vGE2ZFkz-J5WZ_s,227
+hacs_frontend-30.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hacs_frontend-30.dist-info/top_level.txt,sha256=TxYs6itCaoPswVSRDFquIsxrv08jOk3-flkYe4Hhsqo,14
+hacs_frontend-30.dist-info/RECORD,,
