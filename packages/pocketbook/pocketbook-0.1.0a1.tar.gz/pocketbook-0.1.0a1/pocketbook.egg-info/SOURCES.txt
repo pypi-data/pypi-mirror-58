@@ -1,0 +1,13 @@
+README.md
+setup.py
+pocketbook/__init__.py
+pocketbook/address_book.py
+pocketbook/cli.py
+pocketbook/key_store.py
+pocketbook/table.py
+pocketbook.egg-info/PKG-INFO
+pocketbook.egg-info/SOURCES.txt
+pocketbook.egg-info/dependency_links.txt
+pocketbook.egg-info/entry_points.txt
+pocketbook.egg-info/requires.txt
+pocketbook.egg-info/top_level.txt

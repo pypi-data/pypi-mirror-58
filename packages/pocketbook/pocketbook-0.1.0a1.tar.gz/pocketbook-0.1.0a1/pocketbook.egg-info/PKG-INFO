@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pocketbook
+Version: 0.1.0a1
+Summary: Command line wallet application
+Home-page: https://github.com/fetchai/
+Author: Edward FitzGerald
+Author-email: edward.fitzgerald@fetch.ai
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: test
