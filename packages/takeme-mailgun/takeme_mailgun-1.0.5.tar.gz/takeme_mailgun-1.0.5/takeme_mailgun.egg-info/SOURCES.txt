@@ -1,0 +1,9 @@
+README.md
+setup.py
+takeme_mailgun/__init__.py
+takeme_mailgun.egg-info/PKG-INFO
+takeme_mailgun.egg-info/SOURCES.txt
+takeme_mailgun.egg-info/dependency_links.txt
+takeme_mailgun.egg-info/not-zip-safe
+takeme_mailgun.egg-info/requires.txt
+takeme_mailgun.egg-info/top_level.txt
