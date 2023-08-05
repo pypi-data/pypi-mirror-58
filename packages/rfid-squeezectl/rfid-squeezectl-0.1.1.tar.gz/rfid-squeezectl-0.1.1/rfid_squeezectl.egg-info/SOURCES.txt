@@ -1,0 +1,10 @@
+README.md
+rfid_squeezectl.py
+setup.cfg
+setup.py
+rfid_squeezectl.egg-info/PKG-INFO
+rfid_squeezectl.egg-info/SOURCES.txt
+rfid_squeezectl.egg-info/dependency_links.txt
+rfid_squeezectl.egg-info/entry_points.txt
+rfid_squeezectl.egg-info/requires.txt
+rfid_squeezectl.egg-info/top_level.txt
