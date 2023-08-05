@@ -1,0 +1,3 @@
+include webvis_mods/web/*
+recursive-include webvis_mods/web/src/ *
+include webvis_mods/build.sh
