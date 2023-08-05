@@ -1,0 +1,12 @@
+setup.py
+distributions_gbi/Binomialdistribution.py
+distributions_gbi/Binomialdistribution_challenge.py
+distributions_gbi/Gaussiandistribution.py
+distributions_gbi/Generaldistribution.py
+distributions_gbi/__init__.py
+distributions_gbi/test.py
+distributions_gbi.egg-info/PKG-INFO
+distributions_gbi.egg-info/SOURCES.txt
+distributions_gbi.egg-info/dependency_links.txt
+distributions_gbi.egg-info/not-zip-safe
+distributions_gbi.egg-info/top_level.txt
