@@ -1,0 +1,10 @@
+reze/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reze/api_client.py,sha256=krP5D3OaqaTfPD84jEqSHCSe4p35aEoo7BypUedR8xI,1854
+reze/api_requests/__init__.py,sha256=puvgZ1bnst1Ju2zv8L9seV5qa1j_k8QOnAmvz3L1-4U,223
+reze/api_requests/salebot_add_interaction.py,sha256=lrte5t9k7PUkVIsPSPQs3i2nu4EpCElCe6icwAk2d-c,1020
+reze/api_requests/salebot_bought_together.py,sha256=y_793YwF9EQHww0vmsRLSBQzQklwD1BeCpCaukSDnEM,679
+reze/api_requests/salebot_items_to_item.py,sha256=C-kfhSR7HxnJp4REm2NELb9nzYFjbw8jpqVRzlZI8w8,545
+reze-0.1.dist-info/METADATA,sha256=iW5NCLoV849mdTXdZojcZ0M2z_ghDc6vs7gkRXM9TvM,841
+reze-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+reze-0.1.dist-info/top_level.txt,sha256=-sb5br56nVk4JAIQJZGHySM3x-7ZEIj9QxuuwC8Hy2k,5
+reze-0.1.dist-info/RECORD,,
