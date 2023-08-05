@@ -1,0 +1,8 @@
+README.md
+setup.py
+starlingbank/__init__.py
+starlingbank.egg-info/PKG-INFO
+starlingbank.egg-info/SOURCES.txt
+starlingbank.egg-info/dependency_links.txt
+starlingbank.egg-info/requires.txt
+starlingbank.egg-info/top_level.txt
