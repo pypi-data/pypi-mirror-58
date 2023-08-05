@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: mercs
+Version: 0.0.27
+Summary: MERCS: Multi-Directional Ensembles of Regression and Classification treeS
+Home-page: https://github.com/eliavw
+Author: Elia vw
+Author-email: elia.vw@gmail.com
+License: mit
+Project-URL: Documentation, https://github.com/eliavw
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: networkx
+Requires-Dist: scikit-learn
+Requires-Dist: dask
+Requires-Dist: toolz
+Requires-Dist: tornado
+Requires-Dist: pydot
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+# mercs
+
+Add a short description here!
+
+## Description
+
+A longer description of your project goes here...
+
+## Installation
+
+In order to set up the necessary environment:
+
+1. create an environment `mercs` with the help of [conda],
+   ```
+   conda env create -f environment.yaml
+   ```
+2. activate the new environment with
+   ```
+   conda activate mercs
+   ```
+3. install `mercs` with:
+   ```
+   python setup.py install # or `develop`
+   ```
+
+Then take a look into the `scripts` and `notebooks` folders.
+
+## Dependency Management & Reproducibility
+
+1. Always keep your abstract (unpinned) dependencies updated in `environment.yaml` and eventually
+   in `setup.cfg` if you want to ship and install your package via `pip` later on.
+
+2. Create concrete dependencies as `environment.lock.yaml` for the exact reproduction of your
+   environment with:
+   ```
+   conda env export -n mercs -f environment.lock.yaml
+   ```
+
+   _N.b.: For multi-OS development, consider using `--no-builds` during the export._
+
+3. Update your current environment with respect to a new `environment.lock.yaml` using:
+   ```
+   conda env update -f environment.lock.yaml --prune
+   ```
+
+
