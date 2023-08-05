@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zmq-ses-communications
+Version: 0.1.2
+Summary: communication backend for creating a distributed system for integrating devices in a smart factory
+License: MIT
+Author: Vinu Home
+Author-email: vinuvnair@outlook.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: protobuf (>=3.11.1,<4.0.0)
+Requires-Dist: psutil (>=5.6.7,<6.0.0)
+Requires-Dist: pytest (>=5.3.2,<6.0.0)
+Requires-Dist: pyzmq (>=18.1.1,<19.0.0)
