@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: md5util
+Version: 0.0.2
+Summary: a quick md5 tool
+Home-page: UNKNOWN
+Author: Peng Shiyu
+Author-email: pengshiyuyx@gmail.com
+License: MIT
+Description: a quick md5 tool just like php
+Keywords: md5util
+Platform: UNKNOWN
