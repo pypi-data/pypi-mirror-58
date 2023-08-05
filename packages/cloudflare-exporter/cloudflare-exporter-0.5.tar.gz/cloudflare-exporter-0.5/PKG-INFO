@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cloudflare-exporter
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://github.com/criteo/cloudflare-exporter
+Author: Criteo
+Author-email: github@criteo.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
