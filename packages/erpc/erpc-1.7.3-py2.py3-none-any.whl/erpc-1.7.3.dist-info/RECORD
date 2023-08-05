@@ -1,0 +1,14 @@
+erpc/__init__.py,sha256=xejDJs3TBgtKS3f4zaH7LL-sC1YPoA559vjwLczHv8A,846
+erpc/arbitrator.py,sha256=lyuEjl37QTA0Syn1fzK5xQLIbkRdaaQ0Ei2FXb-ImaY,4417
+erpc/basic_codec.py,sha256=npTVO-Nfw3GGnyoFMlurWjA0gA35H3VR-kDhZsvu5oM,4036
+erpc/client.py,sha256=7T3EU4CmnoWiu4feX1UVDr_cKuxFQ_PEMHAoH6lI50c,2725
+erpc/codec.py,sha256=GzWHY8Z_rVxzbo6fwaCECMvMFzE8bxGSTCnee9bfboY,3422
+erpc/crc16.py,sha256=UvXrKe7VUUGBRK6qH90q2M27xLKjYH79DGBQ_jiflNA,879
+erpc/erpc_version.py,sha256=bEDp4WqVCqzSCaa6AfpNn0USUAXPG1ZS4Sy1ID5NTtA,184
+erpc/server.py,sha256=WBfxAH7BVISkX5aGWCTuX0XG6QiJIROzbOklJLTuTBo,2219
+erpc/simple_server.py,sha256=d4vNKIPtQSgnZwLhsW_bQRi1UUPLjPud2cg-nRWe4i0,1319
+erpc/transport.py,sha256=Y5nQcYbiecAKYKOuCZGfKloedNuWAVgVfcrUhUlxboE,5693
+erpc-1.7.3.dist-info/METADATA,sha256=y53INlPRR_712bsoI3rLgE4h01_FOZ5MbfDn0GOKTQY,1542
+erpc-1.7.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+erpc-1.7.3.dist-info/top_level.txt,sha256=E5ojoyxQltK9X5LxQg2h6RN-AlirzBIPn1QH2zV-HBs,5
+erpc-1.7.3.dist-info/RECORD,,
