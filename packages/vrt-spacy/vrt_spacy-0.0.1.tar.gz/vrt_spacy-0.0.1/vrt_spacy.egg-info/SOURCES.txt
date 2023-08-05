@@ -1,0 +1,8 @@
+README.md
+setup.py
+vrt_spacy/__init__.py
+vrt_spacy.egg-info/PKG-INFO
+vrt_spacy.egg-info/SOURCES.txt
+vrt_spacy.egg-info/dependency_links.txt
+vrt_spacy.egg-info/requires.txt
+vrt_spacy.egg-info/top_level.txt
