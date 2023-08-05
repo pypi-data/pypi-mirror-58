@@ -1,0 +1,1 @@
+django_admin_knows_password
