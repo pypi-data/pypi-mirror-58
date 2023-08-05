@@ -1,0 +1,7 @@
+from django.views.generic import DetailView
+from {{ app_name }}.models import {{ model_name }}
+
+
+class {{ model_name }}DetailView(DetailView):
+    model = {{ model_name }}
+    template_name = '{{ app_name }}/detail.html'
