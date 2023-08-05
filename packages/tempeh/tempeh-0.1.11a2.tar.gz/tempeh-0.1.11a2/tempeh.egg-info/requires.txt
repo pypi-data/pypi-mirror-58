@@ -1,0 +1,10 @@
+lightgbm
+memory_profiler
+numpy
+pandas
+pytest
+requests
+scipy
+shap
+scikit-learn
+xgboost
