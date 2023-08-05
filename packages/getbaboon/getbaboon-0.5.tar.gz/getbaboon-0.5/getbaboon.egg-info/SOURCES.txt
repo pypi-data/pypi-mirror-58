@@ -1,0 +1,7 @@
+README.md
+baboon
+setup.py
+getbaboon.egg-info/PKG-INFO
+getbaboon.egg-info/SOURCES.txt
+getbaboon.egg-info/dependency_links.txt
+getbaboon.egg-info/top_level.txt

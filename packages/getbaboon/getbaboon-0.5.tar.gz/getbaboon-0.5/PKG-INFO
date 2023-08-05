@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: getbaboon
+Version: 0.5
+Summary: A Simple File Copy Tool
+Home-page: https://github.com/prakis/baboon
+Author: Kishore
+Author-email: kishore@tealpod.com
+License: UNKNOWN
+Description: A simple file copy tool for groups.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
