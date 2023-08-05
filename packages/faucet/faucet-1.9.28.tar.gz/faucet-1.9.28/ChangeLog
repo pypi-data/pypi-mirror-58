@@ -1,0 +1,449 @@
+CHANGES
+=======
+
+1.9.28
+------
+
+* Re-add fault-tolerance tests + optimizations
+* Update dependency pytype to v2019.12.17
+* Towards root port should be the port along the chosen shortest path
+* Smoke test faucet to make sure installation was successful at build time. Speed up installation with parallel unit tests
+* Clear swap file
+* label fix for dp\_root\_hop\_port
+* Update grafana/grafana-arm32v7-linux Docker tag to v6.5.2
+* Update grafana/grafana Docker tag to v6.5.2
+* Add dummy ports to tutorial to workaround issue #3383
+* Modify the tutorial to go incremental with two routers instead of one super router as suggested by Brad Cowie
+
+1.9.27
+------
+
+* pylint
+* Document test debug mode
+* Implement debug mode for single test runner
+* Upgrade to test-base v7.0.0 which includes 'm' util
+* Authenticate to pypi with API token instead of user/pass
+* Upgrade to beka v0.3.4
+* Upgrade to chewie v0.0.21
+* Add myself to authors
+* Mention to reload faucet after configuration file change
+* Fix bgp routing tutorial. This patch fixes the following issues:
+* Update dependency pytype to v2019.12.6
+* Upgrade pyyaml to 5.2
+* Add errors\_out to influx
+* Stickler fix
+* Upgrade to eventlet 0.25.1
+* Remove extra paren
+* Updating unit tests with tx\_erors
+* Add tx\_errors to gauge
+* Update dependency sphinx to v2.2.2
+
+1.9.26
+------
+
+* Reorder loop protection test so that hosts learned internally first
+* Add test for VLAN learning flow
+* reset VLAN caches on changed VLANs only
+* Cannot relearn hosts on stacking port after warm start
+* Need to override external flooding flag for all ports not just stacking ports
+* Could create a loop between external ports
+* Don't override edge\_learn\_dp if peer DP is up, prioritize locally learned over external
+* Ignore only KeyError
+* Try just ignoring Exception
+* Report config hash change
+* Add support for --help
+* Update grafana/grafana-arm32v7-linux Docker tag to v6.5.1
+* Update grafana/grafana Docker tag to v6.5.1
+* Update dependency pytype to v2019.11.27
+* Make runtests.sh argument parsing more robust
+* Need to install cython before python-afl
+* Use Ubuntu 18.04 on travis for running tests
+
+1.9.25
+------
+
+* Revert "Add Fault-Tolerance tests & generalise the Multi-DP integration tests"
+* Update grafana/grafana-arm32v7-linux Docker tag to v6.5.0
+* Update grafana/grafana Docker tag to v6.5.0
+* fix tests
+* Need new state for stack uninitalized, so that we don't continually flap in init
+* Verification test
+* adds metric
+* docker/localtest.sh: Update with latest dependencies
+* pytype: Cleanups
+* docs: Clarify 802.1X Per User ACL activation requirements
+* docs: Cleanup Sphinx warnings
+* Remove unused dependency python3-oslo.config
+* skip tests
+* Travis & bug fixes
+* stickler
+* Fix test\_topo & pylint
+* Add Fault-Tolerance tests & generalise the FaucetStringOfDP integration tests
+* helper-funcs: Easier usage from any directory
+* router.py: Add 'repr' implementation for vip\_map\_by\_ipv (#3347)
+* stickler fixes
+* fix int parse empty string
+* remove unit form comments
+* docs entry
+* Check for EVENT\_SOCK\_HEARTBEAT in tests
+
+1.9.24
+------
+
+* Adds heartbeat events to check for health of event sock conn
+*  Update faucet/prometheus-pi Docker tag to v2.14.0
+* pylint
+* Switch to fping for basic fping case. Verify only expected packets mirrored
+* Don't duplicate mirror on flood
+* stickler
+* Make state enumeration congruent with lldp
+* Update lacp state machine
+* lint
+* Fix \_\_str\_\_ when mask is None
+* Add commands to fakeoftable
+* Tidy argument handling
+* Feature: Make fakeoftable \_\_str\_\_ more readable
+* Feature: Allow fakeoftable to be used from the command line
+* Add a default number of tables for fakeoftable
+* Adds Feature: use flowstatsreply to populate fakeoftable
+* Comments for tests for events
+* Update prom/prometheus Docker tag to v2.14.0
+* more stickler fixes
+* stickler fixes
+* Adding additional events
+* Clean up LLDP state
+* Make want variable more descriptive
+* Update unit test docstring
+* Add unit tests to collect and distribute knob
+* Update grafana/grafana-arm32v7-linux Docker tag to v6.4.4
+* Update grafana/grafana Docker tag to v6.4.4
+* copro table should miss to destination not source
+* merge fix (#25)
+* add lacp\_collect\_and\_distribute port config option
+
+1.9.23
+------
+
+* Add missing blank line
+* Add (failing) tests for external links going down
+* Cleanup verify test
+* Make broadcast check return bool
+* Remove outdated information, link back to official cisco docs
+* Add clarifying comment
+* Only catch AssertionError
+* stickler
+* Verify faucet supports icmp/icmp6 packets with 128b of payload
+* Allow ICMP/ICMPv6 packets with up to 128 bytes of payload
+* Upgrade to prometheus-pi 2.13.1
+* Recommend running latest cisco firmware
+* Stickler fix
+* Move helper to superclass
+* Add basic once-only validation
+* Consider a root DP to be unhealthy if all its stack links are down
+* stickler
+* event\_log
+* Test/notify on L3 learning
+* notify events on ARP/ND activity
+* Rename \_notify()
+* stickler
+* relies on #3311
+* lint
+* Update tests to use new filename format
+* add an incrementing suffix to multipart messages
+* Use ISO8601 time format for gauge flow table filenames
+* pep8
+* Protect resolve\_ports() for ACLs being multiply called
+* Remove workaround for github issue #3272
+* Add test for multiply applied tunnel ACLs
+* Improve diagnostics for config dict mismatch
+* Allow stack islands
+* Further deflake L2 learn test
+* Update dependency sphinx to v2.2.1
+* Use tcpdump immediate mode
+* Further L2 host learn randomization
+* L2 connectivity verifier should strictly parse fping and randomize ping targets
+* pytype fail on mininet\_tests.py
+* stickler
+* stickler
+* pylint
+* pylint
+* pylint
+* Use ping not verify\_unicast
+* FaucetSingleStackStringOfDPExtLoopProtUntaggedTest
+* Attempt load deflake of FaucetSingleStackStringOfDPExtLoopProtUntaggedTest
+* Adding delay to make integration tests more stable
+* Add test stability sleep
+* Make testing more explicit
+* FAUCET should handle a bad initial config if auto revert is enabled
+* FAUCET vip cannot be a host address
+* Fix incorrect default for BGP connect mode
+* Stickler
+* Update dependency pytype to v2019.10.17
+* Change the output format for gauge text flow table stats
+* Update prom/prometheus Docker tag to v2.13.1
+* Update grafana/grafana-arm32v7-linux Docker tag to v6.4.3
+* Update grafana/grafana Docker tag to v6.4.3
+* Fixed markup so that docs are generated correctly
+* Fix stickler comments
+* Lint fixes
+* Lint fixes
+* Rename to dps
+* Rename dps\_root\_hop
+* Debugging cleanup
+* Fix valves\_manager typo
+* Reset unit test framework
+* Cleanup refactoring
+* Cleanup of event handling only
+* Stickler
+* Prevent setting timeout values too big
+* Add more content to stacking tutorial
+
+1.9.22
+------
+
+* Increase timers so test passes on hardware
+* More thorough stack ring tests
+* Fix bad lint fix
+* Address linty things
+* Fixing broken link flooding
+* Log use/of stacking flood reflection
+* Faucet unit test fixup
+* test\_passthrough accesses wrong dp for lacp
+* Tutorial tidy
+* Add tutorials for stacking
+* Remove outdated FAQ with incorrect information
+* Enable table size to override estimate always. Allow scaling of port scale tables
+
+1.9.21
+------
+
+* Add DP key to InvalidConfigError exceptions
+* Stickler and test broken ring
+* Update influxdb Docker tag to v1.7
+* Update arm32v7/influxdb Docker tag to v1.7
+* pyup -> renovate
+* Configure .renovaterc.json
+* Add renovate.json
+* conf-zodiac.sh: set Zodiac and OF controller network details
+* FAUCET can send truncated ICMP6 echo replies
+* update grafana to 6.2.4
+* err -> out
+* Pin exabgp to 4.0.10
+* Update apt dependency for python3-prometheus-client
+* Update prometheus\_client from 0.6.0 to 0.7.0
+* Update sphinx from 2.1.0 to 2.1.1
+* test\_topo.py tests clib rather than faucet
+* Simplify get\_config() in mininet\_tests.py
+
+1.9.8
+-----
+
+* Changing age calculation for LACP response
+* Fix LLDP redundant logging
+* Log error for types
+* Fix missing parsing of optional hw\_switch\_config.yaml parameters
+* setup 1.9.9
+* README 1.9.8
+* self.threads continually grows leading to high CPU. thread schedule jitter can be a float for better load distribution
+* Fix crash when optional include file does not exist
+
+1.9.7
+-----
+
+* Handle shell still running
+* setup 1.9.8
+* README 1.9.7
+* Update pytype from 2019.5.24 to 2019.5.31
+* Update sphinx from 2.0.1 to 2.1.0
+* Add diagnostics for docker container tests. Handle read() possibly returning more than ps1
+* host/switch prefixes should be sorted
+* Consolidate common hardware switch remap code. Explicitly garbage collect OVS switches in tearDown()
+* Lengthen marginal test timeouts
+* Make pip cache easier to use for docker test runs
+* Fix SameDp test for hardware
+* Simulated hardware switch needs to be able to configure two VLAN headers
+* pylint
+* DPIDs cannot be duplicated
+* Remove dangling faucet\_log function
+* Stricter syntax checking for hardware test config, and smoke tests for hardware tests
+* Convert to \_lacp\_actions
+* Making test work properly
+* Preversion 1.9.7
+* README 1.9.6
+
+1.9.6
+-----
+
+* Revert "Merge pull request #2957 from lantz/random-ports"
+* ensure config\_hash metric exists even if parsing fails
+* Update pytype from 2019.5.15 to 2019.5.24
+* Increase min pylint to 9.44 (incremental step to 9.5)
+* No longer need to exclude test\_packaging from static analysis
+* Upgrade to chewie 0.0.17
+* Allow building with any version of eventlet
+
+1.9.5
+-----
+
+* Upgrade to grafana 6.2.0
+* Cleanup PR
+* Working test version
+* Fixing basic clone
+* Fix formatting error
+* Adding port cloning
+* Add dyn clone function
+* Trying new test
+* update readme to broaden potential adapters
+* update copyright for 2019
+* Timeout should adjust for packets sent
+* Capture only echo packets for tunnel test
+* Include unicast and routed packets in egress acl unit tests
+* Apply egress ACLs to flooded packets
+* add integration test for egress acls
+* Preversion 1.9.6
+* Bump README 1.9.5
+* Reverting some changes from master
+* Fix conditional iteration
+* Fix porty copy in case of port-down
+* add unit test for egress acls
+* install egress acls on datapath
+* add accept to egress function in ValvePipeline
+* Build egress\_acl table on switch when configured
+* Add configuration for vlan egress acls
+* include egress acl table in pipeline
+* verify\_unicast() doesn't handle for possible packet loss. pylint
+* Add some error debugging info
+* Don't send suppressed lacp
+* Port Randomization Support
+* Cleanup test
+* Loop protect all
+* Working tests, finally
+* Ignore case when searching for "tshark"
+* Make wireshark regex less greedy so it can match newer versions
+* Only check final condition
+* Update control
+* Add failing pasthrough test
+* Remove some code
+* Converting tto pasthrough
+* update variables to match prometheus variables
+* Add monkey@vandervecken to AUTHORS
+* Update ryu from 4.31 to 4.32
+* Update pytype from 2019.4.26 to 2019.5.15
+* Add section on non-beta Cisco IOS XE versions
+* Remove debugging comment
+* Add verify unicast check
+* Adding in unicast tests
+* Add test for missing config
+* TunnelTests should send more than one test packet
+* Update verify\_unicast\_not\_looped to use new scapy\_template format
+* Revert "Workaround for https://www.traviscistatus.com/incidents/kyf149kl6bvp?u=3g7kt113nmgs."
+* Add unicast loop protection
+
+1.9.4
+-----
+
+* Preversion 1.9.5
+* README 1.9.4
+* Workaround for https://www.traviscistatus.com/incidents/kyf149kl6bvp?u=3g7kt113nmgs
+* Unconditionally delete all groups on Aruba as unreferenced groups steal resources from regular flowmods
+* Move tunnel rule generation to stack port state changes
+* Minimum necessary change to support same-DP tunnels
+* Remove more redundant 8021X native VLAN code
+* Use common \_reset\_dot1x\_port\_flood()
+* Move del\_native\_vlan
+* Min. fix for bad 8021x flowdel
+* Verify flowdels
+* Missed VID reference
+* More hardcoded VIDs
+* Correct VID order
+* More hardcoded VIDs
+* Don't hardcode high VLAN VID which can't be used on some platforms
+* drop\_lldp appears to be an old leftover artifact
+* More strict tunnel verification
+* Detect coredumps after tests
+* Update debian/control
+* Upgrade eventlet for later distros (see also https://github.com/openstack/requirements/commit/377dcbb8b267447920739412dc03490013fa5062)
+* setup.cfg to 1.9.4
+* Loop protect test has hard coded port
+
+1.9.3
+-----
+
+* Upgrade images used for docker compose
+* Downgrade pi-gen to 2018-11-13-raspbian-stretch
+* Bump README 1.9.3
+* Add a new option to the hw\_switch\_config.yaml to be able to use the IPv6 of the CPN interface
+* Simplify tunnel rule parsing and fix bug where vlan\_vid update is missed
+* Update pytype from 2019.4.19 to 2019.4.26
+* Re-enable for hardware
+* special case for NUM\_DPS == 2
+* Set minimum performance bar at 100M
+* changed a few too many
+* Change faucet\_config\_hash\_info label format
+
+1.9.2
+-----
+
+* Refactor faucet\_dot1x.py
+* Fix port for reload trigger
+* Check "/" not in label for filename
+* Quote Prom labels for info
+* add dynamic vlan to unit test
+* remove empty test\_untagged from 8021XBaseTest class
+* extract 8021x base test class. find a free udp port for radius
+* change signature for chewie v0.15
+* remove eth\_dst flows for the dynamic vlan
+* tidy up a couple of things
+* remove dynamic vlan on port down
+* change 802.1x event checks to not check order
+* Update pytype from 2019.4.5 to 2019.4.12
+* Update sphinx from 2.0.0 to 2.0.1
+* Add smoke unit test for dot1x\_acl functionality
+* 802.1x ACLs
+* Preversion 1.9.3
+* Release version 1.9.2
+* fix pytype issue
+* add requirements file for rabbitmq for tests
+* minor linting
+* Rename first\_external to use\_external
+* heartbeat\_interval has been deprecated
+* Cleanup PR, no logging
+* Update pytype from 2019.3.21 to 2019.3.27
+* Update sphinx from 1.8.5 to 2.0.0
+* Update pika from 0.13.1 to 1.0.0
+* Fix loop\_protect\_external
+* Only create loop devices if they don't exist
+
+1.9.1
+-----
+
+* prevsion 1.9.2
+* README 1.9.1
+* Need to check for Prometheus thread exceptions
+* Unused import
+* Mark DP disconnected when explicitly closing it
+
+1.9.0
+-----
+
+* Pre-version faucet 1.9.1
+* check auth doesnt occur via wpa status and ping fail
+* pytype multiple syntax
+* pytype
+* Update test-requirements.txt
+* Update scapy from 2.4.0 to 2.4.2
+* Add a method for querying prometheus in code
+* developer\_guide: document env cmdline setup
+* tutorial/nfv\_services: add tcpdump example
+* fix, so 1x falp test runs on software
+
+1.8.34
+------
+
+* Preversion 1.8.35
+
+1.8.33
+------
+
+* Bump README version to 1.8.33
+* Update faucet\_dot1x.py
