@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: roi
+Version: 0.1.2
+Summary: Marketing ROI package
+Home-page: https://github.com/pypa/sampleproject
+Author: Harjot Singh Parmar
+Author-email: hsparmar@uwaterloo.ca
+License: UNKNOWN
+Description: ![](https://imgur.com/UTsF4ji.png)
+        
+        
+        ROI - Return on Investment is an all inclusive package for maketing analytics. The first release focuses on cohort analysis.
+        The plan is to slowly include more analysis, as the package grows. 
+        
+        ### Installation:
+        ---
+        You can install **ROI** using 
+        
+        ```
+        pip install roi
+        ```
+        
+        ### Usage:
+        ---
+        Example: Cohort Analysis 
+        ```python
+        import pandas as pd
+        import matplotlib.pyplot as plt
+        from roi import cohort analysis
+        
+        # Read dataset 
+        data= pd.read_csv('/content/data.csv',encoding='latin',parse_dates=['OrderDate'])
+        
+        #Pass the dataframe to an instance of cohort analysis class and also pass name of the column with UserId and ActivityDate.
+        analysis = cohort_analysis(input_df=data, ActivityDate='OrderDate', CustomerID='UserId')
+        
+        ## Generate retention heatmap
+        
+        analysis.plot_retention()
+        
+        
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
