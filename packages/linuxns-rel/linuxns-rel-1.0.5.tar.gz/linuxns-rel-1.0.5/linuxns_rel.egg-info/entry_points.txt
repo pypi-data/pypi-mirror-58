@@ -1,0 +1,5 @@
+[console_scripts]
+graphns = linuxns_rel.tools.lshierns:graphns
+lspidns = linuxns_rel.tools.lshierns:lspidns
+lsuserns = linuxns_rel.tools.lshierns:lsuserns
+
