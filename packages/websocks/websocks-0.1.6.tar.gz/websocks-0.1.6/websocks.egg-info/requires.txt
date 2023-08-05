@@ -1,0 +1,5 @@
+websockets==8.0.2
+click
+
+[:sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "pypy"]
+uvloop==0.13.0
