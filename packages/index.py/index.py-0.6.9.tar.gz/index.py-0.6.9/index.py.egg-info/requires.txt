@@ -1,0 +1,12 @@
+gunicorn
+uvicorn
+starlette
+aiofiles
+jinja2
+watchdog
+python-multipart
+pyyaml
+pydantic
+
+[:python_version < "3.7"]
+contextvars
