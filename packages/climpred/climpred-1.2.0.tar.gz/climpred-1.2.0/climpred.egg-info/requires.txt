@@ -1,0 +1,8 @@
+eofs
+matplotlib
+numpy
+scipy
+tqdm
+xarray
+xrft
+xskillscore>=0.0.9
