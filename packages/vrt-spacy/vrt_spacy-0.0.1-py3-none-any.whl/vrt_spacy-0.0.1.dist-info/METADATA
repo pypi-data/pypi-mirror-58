@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: vrt-spacy
+Version: 0.0.1
+Summary: creating vrt corpora
+Home-page: https://github.com/miweru/vrt_spacy
+Author: Michael Ruppert
+Author-email: michael.ruppert@fau.de
+License: GPL-3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: smart-open (>=1.9.0)
+Requires-Dist: spacy (>=2.2.3)
+Requires-Dist: vrt-generator (>=0.0.6)
+
+# vrt_spacy
+
+Python class for creating vrt-annotated corpora.
+Still in very early testing stage.
+
+Install by typing:
+```bash
+pip install vrt_spacy
+```
+
+Usage Example:
+```python
+from vrt import Corpus, S, Text
+from vrt_spacy import Annotate
+with Corpus("~","meinkorpus",4,"text_name") as c:
+    annotate = Annotate(c, spacymodel="de_core_news_md")
+    annotate("Das hier ist mein Text", text_name="Text1")
+    with Text(c, text_name="Text2") as t:
+        with S(c) as s:
+            s.writep("Test","TAG","TAG","Lemma")  
+```
+
+Features:
+-
+- Represent Corpus, Text, P and S Attributes
+- Integration of spacy for automatic generation of a vrt-representation of texts
+- Using Context Manager for xml-hierarchy representation
+- Reduces to utf8mb3 and checks formatting compatibility
+
