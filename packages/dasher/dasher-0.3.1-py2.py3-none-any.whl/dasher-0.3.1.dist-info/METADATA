@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: dasher
+Version: 0.3.1
+Summary: Generate interactive plotly dash dashboards in an instant
+Home-page: https://github.com/mfaafm/dasher
+Author: Martijn Arts
+Author-email: m.arts@gmx.net
+License: MIT
+Project-URL: Documentation, https://dasher.readthedocs.io/
+Project-URL: Changelog, https://dasher.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/mfaafm/dasher/issues
+Keywords: dashboard,plotly,dash,prototyping
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Requires-Dist: dash
+Requires-Dist: dash-core-components
+Requires-Dist: dash-html-components
+Requires-Dist: dash-bootstrap-components (>=0.6)
+
+========
+Overview
+========
+
+**dasher**: Generate interactive plotly dash dashboards in an instant
+
+
+
+
+
+Installation
+============
+
+::
+
+    pip install dasher
+
+You can also install the in-development version with::
+
+    pip install https://github.com/mfaafm/dasher/archive/master.zip
+
+
+First steps
+===========
+Creating a simple, interactive dashboard with a nice layout is as easy as this:
+
+.. code:: python
+
+    from dasher import Dasher
+    import dash_html_components as html
+
+    app = Dasher(__name__, title="My first dashboard")
+
+
+    @app.callback(
+        _name="My first callback",
+        _desc="Try out the widgets!",
+        _labels=["Greeting", "Place"],
+        text="Hello",
+        place=["World", "Universe"],
+    )
+    def my_callback(text, place):
+        msg = "{} {}!".format(text, place)
+        return [html.H1(msg)]
+
+
+    if __name__ == "__main__":
+        app.run_server(debug=True)
+
+
+The resulting dashboard looks like this:
+
+.. image:: https://raw.githubusercontent.com/mfaafm/dasher/v0.3.1/docs/images/hello_world.gif
+    :alt: hello world example
+    :align: center
+
+The code for this dashboard can be found in ``examples/readme_example.py``.
+
+Documentation
+=============
+To view the full project documentation, visit https://dasher.readthedocs.io/.
+
+License
+=======
+
+Free software, `MIT License`_
+
+.. _`MIT License`: https://raw.githubusercontent.com/mfaafm/dasher/v0.3.1/LICENSE
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+Changelog
+=========
+
+0.3.1 (2019-12-17)
+------------------
+* Update and fix documentation.
+* Fix documentation build using ``.readthedocs.yml``.
+
+0.3.0 (2019-12-15)
+------------------
+* Generate ``id`` property from ``name`` for every callback. The ``id`` is now used to
+  identify the callback, while ``name`` is used in the layout for displaying.
+
+0.2.0 (2019-11-03)
+------------------
+* Use cookiecutter to create a proper project structure.
+* Refactor core functionality into ``dasher.Api``.
+* Combine widget factory and template logic into unified layout implementation.
+* Fix resizing bug when switching tabs by using callback-based tab switching.
+* Add support of fully custom widgets.
+* Add documentation.
+* Add more examples.
+
+0.1.2 (2019-07-16)
+------------------
+* Add ``_labels`` argument to the ``callback`` decorator to enable customization of
+  widget labels.
+
+0.1.1 (2019-06-10)
+------------------
+* Add ``credits`` argument to DasherStandardTemplate to toggle whether to show credits
+  in the navbar.
+* Update docstrings and documentation.
+* Add margin to navbar.
+
+
