@@ -1,0 +1,68 @@
+"Main interface for directconnect service Paginators"
+from __future__ import annotations
+
+from typing import Generator
+from botocore.paginate import Paginator as Boto3Paginator
+from mypy_boto3_directconnect.type_defs import (
+    DescribeDirectConnectGatewayAssociationsResultTypeDef,
+    DescribeDirectConnectGatewayAttachmentsResultTypeDef,
+    DescribeDirectConnectGatewaysResultTypeDef,
+    PaginatorConfigTypeDef,
+)
+
+
+__all__ = (
+    "DescribeDirectConnectGatewayAssociationsPaginator",
+    "DescribeDirectConnectGatewayAttachmentsPaginator",
+    "DescribeDirectConnectGatewaysPaginator",
+)
+
+
+class DescribeDirectConnectGatewayAssociationsPaginator(Boto3Paginator):
+    """
+    [Paginator.DescribeDirectConnectGatewayAssociations documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.40/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
+    """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def paginate(
+        self,
+        associationId: str = None,
+        associatedGatewayId: str = None,
+        directConnectGatewayId: str = None,
+        virtualGatewayId: str = None,
+        PaginationConfig: PaginatorConfigTypeDef = None,
+    ) -> Generator[DescribeDirectConnectGatewayAssociationsResultTypeDef, None, None]:
+        """
+        [DescribeDirectConnectGatewayAssociations.paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.40/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations.paginate)
+        """
+
+
+class DescribeDirectConnectGatewayAttachmentsPaginator(Boto3Paginator):
+    """
+    [Paginator.DescribeDirectConnectGatewayAttachments documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.40/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
+    """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def paginate(
+        self,
+        directConnectGatewayId: str = None,
+        virtualInterfaceId: str = None,
+        PaginationConfig: PaginatorConfigTypeDef = None,
+    ) -> Generator[DescribeDirectConnectGatewayAttachmentsResultTypeDef, None, None]:
+        """
+        [DescribeDirectConnectGatewayAttachments.paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.40/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments.paginate)
+        """
+
+
+class DescribeDirectConnectGatewaysPaginator(Boto3Paginator):
+    """
+    [Paginator.DescribeDirectConnectGateways documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.40/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
+    """
+
+    # pylint: disable=arguments-differ,redefined-outer-name,redefined-builtin
+    def paginate(
+        self, directConnectGatewayId: str = None, PaginationConfig: PaginatorConfigTypeDef = None
+    ) -> Generator[DescribeDirectConnectGatewaysResultTypeDef, None, None]:
+        """
+        [DescribeDirectConnectGateways.paginate documentation](https://boto3.amazonaws.com/v1/documentation/api/1.10.40/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways.paginate)
+        """
