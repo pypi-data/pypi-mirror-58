@@ -1,0 +1,15 @@
+.sonarcloud.properties
+LICENSE.txt
+README.md
+_config.yml
+setup.py
+stockit/NVDA.csv
+stockit/__init__.py
+stockit/stockit_class.py
+stockit/stockit_class_test.py
+stockit.egg-info/PKG-INFO
+stockit.egg-info/SOURCES.txt
+stockit.egg-info/dependency_links.txt
+stockit.egg-info/requires.txt
+stockit.egg-info/top_level.txt
+stockit/__pycache__/stockit_class.cpython-37.pyc

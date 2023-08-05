@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: stockit
+Version: 1.0.4
+Summary: Python module containing a bundle of algorithms for financial analysis and future stock price estimations.
+Home-page: https://github.com/BenCaunt8300/stockit
+Author: Ben Caunt
+Author-email: bdcaunt@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/BenCaunt8300/stockit/archive/v1.0.4.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
