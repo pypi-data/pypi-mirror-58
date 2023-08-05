@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: odddML
+Version: 0.1.1a0
+Summary: Easy ML for Devs, out of the box ML tools from ODDD Technologies
+Home-page: https://github.com/ODDDTechnologies/BinianML
+Author: Nick Koutroumpinis, ODDD Technologies
+Author-email: nick@odddtech.com
+License: MIT
+Download-URL: https://github.com/ODDDTechnologies/odddML/archive/v0.1.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: Easy,Deep Learning,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
