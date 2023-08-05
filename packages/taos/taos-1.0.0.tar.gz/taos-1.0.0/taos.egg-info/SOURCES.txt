@@ -1,0 +1,15 @@
+README.md
+setup.py
+taos/__init__.py
+taos/bio.py
+taos/cli.py
+taos/config.py
+taos/web.py
+taos.egg-info/PKG-INFO
+taos.egg-info/SOURCES.txt
+taos.egg-info/dependency_links.txt
+taos.egg-info/entry_points.txt
+taos.egg-info/requires.txt
+taos.egg-info/top_level.txt
+tests/taos/__init__.py
+tests/taos/test_bio.py
