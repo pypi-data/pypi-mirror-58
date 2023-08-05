@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: stdpopsim
+Version: 0.1.0
+Summary: A library of population genetic simulation models
+Home-page: https://github.com/popsim-consortium/stdpopsim
+Author: PopSim Consortium
+Author-email: popgen_benchmark@lists.uoregon.edu
+License: GNU GPLv3+
+Project-URL: Bug Reports, https://github.com/popsim-consortium/stdpopsim/issues
+Project-URL: Source, https://github.com/popsim-consortium/stdpopsim
+Description: 
+        Standard models for population genetics simulations in msprime.
+        
+Keywords: simulations,recombination map,models
+Platform: POSIX
+Platform: MacOS X
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
