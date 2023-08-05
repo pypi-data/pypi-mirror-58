@@ -1,0 +1,9 @@
+README.md
+setup.py
+menyou/__init__.py
+menyou/menyou.py
+menyou.egg-info/PKG-INFO
+menyou.egg-info/SOURCES.txt
+menyou.egg-info/dependency_links.txt
+menyou.egg-info/requires.txt
+menyou.egg-info/top_level.txt
