@@ -1,0 +1,3 @@
+[console_scripts]
+cli2telegram = cli2telegram.cli:cli
+
