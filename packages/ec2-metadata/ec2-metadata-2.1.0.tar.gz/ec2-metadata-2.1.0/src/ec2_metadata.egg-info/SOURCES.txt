@@ -1,0 +1,14 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/ec2_metadata.py
+src/ec2_metadata.egg-info/PKG-INFO
+src/ec2_metadata.egg-info/SOURCES.txt
+src/ec2_metadata.egg-info/dependency_links.txt
+src/ec2_metadata.egg-info/not-zip-safe
+src/ec2_metadata.egg-info/requires.txt
+src/ec2_metadata.egg-info/top_level.txt
+tests/test_ec2_metadata.py
