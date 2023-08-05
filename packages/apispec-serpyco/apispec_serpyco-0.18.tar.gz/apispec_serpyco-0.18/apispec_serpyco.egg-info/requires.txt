@@ -1,0 +1,6 @@
+apispec>=1.1.0
+serpyco>=0.18.0
+typing-inspect
+
+[test]
+pytest
