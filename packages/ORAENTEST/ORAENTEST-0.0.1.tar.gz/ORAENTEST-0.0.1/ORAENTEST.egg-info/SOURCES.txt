@@ -1,0 +1,4 @@
+ORAENTEST.egg-info/PKG-INFO
+ORAENTEST.egg-info/SOURCES.txt
+ORAENTEST.egg-info/dependency_links.txt
+ORAENTEST.egg-info/top_level.txt
