@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: chnutils
+Version: 0.0.6
+Summary: Helper scripts for CHN
+Home-page: UNKNOWN
+Author: Drew Stinnett
+Author-email: drew.stinnett@duke.edu
+License: LGPL 2.1
+Description: # chnutils
+        
+        Tools for interacting with CHN host
+        
+Keywords: chn
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
