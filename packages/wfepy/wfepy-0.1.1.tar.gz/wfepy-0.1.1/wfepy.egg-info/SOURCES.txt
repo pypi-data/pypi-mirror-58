@@ -1,0 +1,10 @@
+README.rst
+setup.py
+wfepy/__init__.py
+wfepy/utils.py
+wfepy/workflow.py
+wfepy.egg-info/PKG-INFO
+wfepy.egg-info/SOURCES.txt
+wfepy.egg-info/dependency_links.txt
+wfepy.egg-info/requires.txt
+wfepy.egg-info/top_level.txt
