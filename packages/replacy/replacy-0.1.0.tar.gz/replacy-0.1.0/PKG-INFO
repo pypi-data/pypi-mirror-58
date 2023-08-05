@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: replacy
+Version: 0.1.0
+Summary: ReplaCy = spaCy Matcher + pyInflect. Create rules, correct sentences.
+Home-page: https://github.com/Qordobacode/replaCy
+Author: Qordoba
+Author-email: Sam Havens <sam.havens@qordoba.com>, Melisa Stal <melisa@qordoba.com>
+License: unlicensed
+Description: # replaCy
+        
+        ## Requirements
+        
+        - `spacy >= 2.0` (not installed by default, expected nlp object)
+        
+        
+        ## Quick start
+        
+        ```python
+        from replacy import ReplaceMatcher
+        import spacy
+        from replacy.db import get_match_dict
+        
+        # load custom match_dict, see example in : resources/match_dict.json
+        match_dict = get_match_dict()
+        
+        # load nlp spacy model of your choice
+        nlp = spacy.load("en_core_web_sm")
+        
+        rmatcher = ReplaceMatcher(nlp, match_dict)
+        
+        # get inflected suggestions
+        # look up the first suggestion
+        span = rmatcher("She extracts revenge.")[0]
+        >>> span._.suggestions
+        ['exacts']
+        
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Typing :: Typed
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
