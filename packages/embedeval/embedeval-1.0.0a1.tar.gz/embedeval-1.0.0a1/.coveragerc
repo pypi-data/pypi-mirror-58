@@ -1,0 +1,19 @@
+[run]
+branch = True
+source =
+    embedeval
+
+[paths]
+source =
+   src
+   .tox/*/site-packages
+
+[report]
+show_missing = True
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if __name__ == .__main__.:
+omit =
+    src/embedeval/parsers/word2vec_simple.py
+    src/embedeval/tasks/*.py

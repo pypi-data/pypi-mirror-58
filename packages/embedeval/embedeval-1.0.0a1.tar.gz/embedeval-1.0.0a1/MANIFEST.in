@@ -1,0 +1,36 @@
+# Additional package data
+recursive-include src/embedeval/tasks/data *.txt
+recursive-include src *.in
+
+# Metadata
+include LICENSE *.md *.rst *.toml *.yml *.yaml
+graft .github
+
+# Tests
+include tox.ini .coveragerc
+exclude tests/data/downloads/*
+recursive-include tests *.py
+recursive-include tests *.feature
+recursive-include tests *.sh
+recursive-include tests *.txt
+recursive-include tests *.vec
+recursive-include tests *.bin
+prune tests/data/downloads
+
+# Documentation
+include docs/Makefile docs/docutils.conf
+recursive-include docs *.png
+recursive-include docs *.svg
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs *.ico
+recursive-include docs *.bat
+prune docs/build
+
+# Notebooks
+prune notebooks
+
+# Just to keep check-manifest happy; on releases those files are gone.
+# Last rule wins!
+exclude changelog.d/*.rst
+include changelog.d/towncrier_template.rst
