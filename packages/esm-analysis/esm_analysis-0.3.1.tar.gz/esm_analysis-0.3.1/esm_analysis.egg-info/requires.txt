@@ -1,0 +1,4 @@
+cdo
+Click>=6.0
+pandas
+tabulate
