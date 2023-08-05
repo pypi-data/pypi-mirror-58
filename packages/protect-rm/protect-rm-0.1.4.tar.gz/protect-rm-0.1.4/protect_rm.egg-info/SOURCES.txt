@@ -1,0 +1,12 @@
+README.md
+setup.py
+protect_rm/__init__.py
+protect_rm/config.py
+protect_rm/protect.py
+protect_rm/rm_p.py
+protect_rm.egg-info/PKG-INFO
+protect_rm.egg-info/SOURCES.txt
+protect_rm.egg-info/dependency_links.txt
+protect_rm.egg-info/entry_points.txt
+protect_rm.egg-info/requires.txt
+protect_rm.egg-info/top_level.txt

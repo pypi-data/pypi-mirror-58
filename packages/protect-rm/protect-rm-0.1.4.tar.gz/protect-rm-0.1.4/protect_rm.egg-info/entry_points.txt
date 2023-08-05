@@ -1,0 +1,4 @@
+[console_scripts]
+protect = protect_rm.protect:protect
+rm-p = protect_rm.rm_p:rm
+
