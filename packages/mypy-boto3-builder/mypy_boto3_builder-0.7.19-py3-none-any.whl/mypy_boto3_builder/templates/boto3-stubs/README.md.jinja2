@@ -1,0 +1,92 @@
+# boto3-stubs
+
+Type annotations for
+[boto3 {{ boto3_version }}](https://boto3.amazonaws.com/v1/documentation/api/{{ boto3_version }}/index.html)
+compatible with [mypy](https://github.com/python/mypy), [VSCode](https://code.visualstudio.com/),
+[PyCharm](https://www.jetbrains.com/pycharm/) and other tools.
+
+More information can be found [here](https://vemel.github.io/mypy_boto3/).
+
+- [boto3-stubs](#boto3-stubs)
+  - [How to use](#how-to-use)
+  - [How it works](#how-it-works)
+  - [Submodules](#submodules)
+
+## How to use
+
+Make sure you have [mypy](https://github.com/python/mypy) installed and activated in your IDE.
+
+Install `boto3-stubs`, to add type annotations for `boto3` package.
+
+```bash
+# install type annotations just for boto3
+python -m pip install boto3-stubs
+
+# install `boto3` type annotations
+# for ec2, s3, rds, lambda, sqs, dynamo and cloudformation
+# Consumes ~10 MB of space
+python -m pip install boto3-stubs[essential]
+
+# or install annotations for services you use
+python -m pip install boto3-stubs[acm,apigateway]
+```
+
+Use `boto3` with `{{ master_module_name }}` in your project and enjoy type checking.
+
+```python
+import boto3
+
+from {{ master_module_name }} import dynamodb
+
+# Enjoy auto-complete for now
+client: dynamodb.DynamoDBClient = boto3.client("dynamodb")
+
+# argument hints and correct return type is provided by boto3-stubs
+client.query("my_table")
+```
+
+## How it works
+
+Fully automated [builder](https://github.com/vemel/mypy_boto3) carefully generates
+type annotations for each service, patiently waiting for `boto3` updates. It delivers
+a drop-in type annotations for you and makes sure that:
+
+- All available `boto3` services are covered.
+- Each public class and method of every `boto3` service gets valid type annotations
+  extracted from the documentation (blame `botocore` docs if types are incorrect).
+- Type annotations include up-to-date documentation.
+- Link to documentation is provided for every method.
+- Code is processed by [black](https://github.com/psf/black) for readability.
+
+## Submodules
+
+{% if package.essential_service_names -%}
+    {{ "- `" -}}
+    {{ boto3_stubs_name -}}
+    {{ "[essential]` - Type annotations for " -}}
+    {% for service_name in package.essential_service_names -%}
+        {% if not loop.first -%}
+            {{ " and " if loop.last else ", " -}}
+        {% endif -%}
+        {{ "[" -}}
+        {{ service_name.class_name -}}
+        {{ "](" -}}
+        {{ service_name.doc_link -}}
+        {{ ")" -}}
+    {% endfor -%}
+    {{ " services" if package.essential_service_names|length > 1 else " service" -}}
+    {{ ".\n" -}}
+{% endif -%}
+{% for service_name in package.service_names -%}
+    {{ "- `" -}}
+    {{ boto3_stubs_name -}}
+    {{ "[" -}}
+    {{ service_name.boto3_name -}}
+    {{ "]` - Type annotations for [" -}}
+    {{ service_name.class_name -}}
+    {{ "](" -}}
+    {{ service_name.doc_link -}}
+    {{ ") service." -}}
+    {{ "" if loop.last else "\n" -}}
+{% endfor -%}
+{{ '\n' -}}
