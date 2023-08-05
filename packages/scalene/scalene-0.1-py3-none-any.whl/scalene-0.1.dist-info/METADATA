@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scalene
+Version: 0.1
+Summary: Scalene: A Profiler for Python
+Home-page: https://github.com/emeryberger/scalene
+Author: Emery Berger
+Author-email: emery@cs.umass.edu
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
