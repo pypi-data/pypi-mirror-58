@@ -1,0 +1,11 @@
+jmpr/__init__.py,sha256=IWQjieRJ08fEv77vBHo1AIJ1mQTZl3RW3JuEXBpt_Gs,830
+jmpr/cli.py,sha256=pgePh0wRLMH3jfcBXH4wdj3bkNuud3VdrXmdOKZHdmQ,3985
+jmpr/cloudassets.py,sha256=WbK2-YCaLg3MMRUWmU2i-6HNBj37qk88rD5kfUWSC0I,63957
+jmpr/jmprGui.py,sha256=tMNUV76i_5LwK9Zr6VUrkRVrw8Ar765R7ZrGTtzXIdY,4721
+jmpr/policies.py,sha256=FNgU_q13prPZEMz0JU1hQZKqZc1h8onpEm2nc1qIhBc,12295
+jmpr-0.3.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+jmpr-0.3.1.dist-info/METADATA,sha256=Q9jLZyHajwJLxZ1RAyWmX9Stb8Cz_uNB7oWVsYpEYRY,6586
+jmpr-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jmpr-0.3.1.dist-info/entry_points.txt,sha256=6VDNU-z3Y1yOhPegvP9z8LMdTu8JwVzAPyyTLoTRwcE,40
+jmpr-0.3.1.dist-info/top_level.txt,sha256=jYqzDygTJ5zqLvOboBgZpq746Yxy_QWNCOMiqYdwsBI,5
+jmpr-0.3.1.dist-info/RECORD,,
