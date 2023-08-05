@@ -1,0 +1,74 @@
+#!python
+
+import argparse
+from datetime import datetime, timezone
+import json
+import logging
+from panza.jobs import new_job_workspace, add_logger_handler
+from panza.config import init_config
+
+arg_parser = argparse.ArgumentParser()
+arg_parser.add_argument("-c", "--config-file", type=str)
+arg_parser.add_argument("-i", "--info-file", type=str, required=True)
+arg_parser.add_argument("-r", "--root-dir", type=str, default="/tmp")
+arg_parser.add_argument("--docker-bridge-ip", type=str, default="10.9.8.7/24")
+arg_parser.add_argument("moulinette_directory", type=str)
+
+args = arg_parser.parse_args()
+
+config = {}
+
+if args.config_file:
+    with open(args.config_file, 'r') as config_file:
+        config = json.load(config_file)
+else:
+    config = {}
+
+if args.info_file:
+    with open(args.info_file, 'r') as info_file:
+        infos = json.load(info_file)
+
+init_config({**config, "root_dir": args.root_dir, "docker_bridge_ip": args.docker_bridge_ip})
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s [%(name)s] %(levelname)s: %(message)s')
+console_handler.setFormatter(formatter)
+add_logger_handler(console_handler)
+
+request_date = datetime.now(timezone.utc).astimezone().strftime('%Y-%m-%dT%H:%M:%S%z')
+
+results = []
+
+for info in infos:
+    try:
+        info.setdefault("leader", "login_x")
+        info.setdefault("request_date", request_date)
+        if not all(key in info for key in ("module_id", "activity_id", "group_id")):
+            print(f"Missing mandatory field in {info}")
+            exit(1)
+        environment_name = f"dulcinea-{info['module_id']}-{info['activity_id']}"
+        job_name = f"{info['module_id']}-{info['activity_id']}-{info['group_id']}"
+        with new_job_workspace(args.moulinette_directory, job_name) as workspace:
+            result = workspace \
+                .build_job_environment(environment_name) \
+                .fetch_data(context=info) \
+                .execute_job(context=info)
+            results.append((info['group_id'], result))
+    except Exception as e:
+        print(f"cannot execute job for delivery {info['group_id']}: {str(e)}")
+        exit(1)
+
+print("\nRESULTS\n")
+for name, result in results:
+    print(f"Results for group {name}")
+    status, feedback = result
+    if status.is_success():
+        messages = feedback["messages"]
+        if len(messages) > 0:
+            for message in messages:
+                print(message)
+        else:
+            print("All tests passed")
+    else:
+        print(f"Job execution failed: {status.message}")
