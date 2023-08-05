@@ -1,0 +1,2 @@
+setuptools
+wrapt>=1.11.2
