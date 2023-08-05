@@ -1,0 +1,13 @@
+genie.abstract-19.12-py3.6-nspkg.pth,sha256=h9oTUb5LE_2FqXSiu6TZnnXBniNRCjJ-m892Tw1Sru0,534
+genie/abstract/README.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genie/abstract/__init__.py,sha256=fIR8FepkfVGeBvolwbzqbbRRkmPZERWlNW8TfnA03vk,2498
+genie/abstract/decorator.cpython-36m-darwin.so,sha256=ODBmY0Un4Te3iASZk3ZI0PnvmNtKOYotAWxtzCPRN5o,134744
+genie/abstract/magic.py,sha256=ujnmBBbAoXIShXl2Hg_RKD0id_y5jxCl6fFfzwOVBFI,11721
+genie/abstract/package.cpython-36m-darwin.so,sha256=e_ihFNXUdHMUPAfDsj1TMLXHu0dXYtdnysyvigxHXq8,155992
+genie/abstract/token.cpython-36m-darwin.so,sha256=yKzUdE5S-Vx05TKLvIHcNM_Z_etgnEn-OKqvsmpCsxg,110248
+genie.abstract-19.12.dist-info/METADATA,sha256=_-k8kkh-Ok62bVpX1WFwx7AwxuI5Ij39PEm7zdDIRG4,1654
+genie.abstract-19.12.dist-info/WHEEL,sha256=ogjGhgsKzx706xEGYI52xLr7ggrhHGZ8RP6DKakS-0A,111
+genie.abstract-19.12.dist-info/entry_points.txt,sha256=-olghhqxGgYe7bKkGKYXdvrw4_05uYDyY6-xVegnhG8,71
+genie.abstract-19.12.dist-info/namespace_packages.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie.abstract-19.12.dist-info/top_level.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie.abstract-19.12.dist-info/RECORD,,
