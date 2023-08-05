@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: generate-graphene
+Version: 0.2.2
+Summary: Generate Django-Graphene (graphql) queries and mutations for your Django models 
+Home-page: http://github.com/joeydebreuk/generate_graphene
+Author: Joey van Breukelen
+Author-email: jabreukelen@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: graphene
+Requires-Dist: graphene-django
+Requires-Dist: graphene-django-extras
+Requires-Dist: graphql-core
+Requires-Dist: graphql-relay
+Requires-Dist: djangorestframework
+Requires-Dist: Django
+Requires-Dist: typedecorator
+
+UNKNOWN
+
+
