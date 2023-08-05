@@ -1,0 +1,15 @@
+README.md
+setup.py
+gplpy/__init__.py
+gplpy.egg-info/PKG-INFO
+gplpy.egg-info/SOURCES.txt
+gplpy.egg-info/dependency_links.txt
+gplpy.egg-info/requires.txt
+gplpy.egg-info/top_level.txt
+gplpy/evo/__init__.py
+gplpy/evo/evolution.py
+gplpy/evo/log.py
+gplpy/gggp/__init__.py
+gplpy/gggp/derivation.py
+gplpy/gggp/grammar.py
+gplpy/gggp/metaderivation.py

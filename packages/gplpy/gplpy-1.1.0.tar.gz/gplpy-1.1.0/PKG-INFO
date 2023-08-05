@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gplpy
+Version: 1.1.0
+Summary: Grammar-Guided Genetic Programming Library
+Home-page: https://github.com/aturing/GPLpy.git
+Author: aturing
+Author-email: itic@aturing.com
+License: Apache License 2.0
+Description: # Grammar-Guided Genetic Programming Library
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
