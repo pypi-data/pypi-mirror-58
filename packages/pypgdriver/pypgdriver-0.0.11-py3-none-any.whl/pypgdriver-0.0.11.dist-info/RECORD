@@ -1,0 +1,10 @@
+pypgdriver/__init__.py,sha256=hiU_rp5scA1P5fsYbz24O_RUsChart9LA0KijNB5GvU,23
+pypgdriver/_querydata.py,sha256=Xmy-WB2lSm9fq10rjuS33kp3d_YL-5IsA7yLPFWIGgs,477
+pypgdriver/driver.py,sha256=fPjdUuwNPIB_yOamwydqBtL5HKI8L3yuQGEg2-Kfx4U,19292
+pypgdriver/querydata.py,sha256=4wFAALNpa_XO6ZLmNmc2ZArBzXgfhU-d2ga5j49V44s,190
+pypgdriver/querytype.py,sha256=ItO3I2RR37xe3ZXW3xv08WQ6rFUfZBWu0WCOsD2zQO4,156
+pypgdriver/sqlbuilder.py,sha256=XsS5TtqRD0drthGtI38QdfpcrS3ep8IGltqQKpMct4E,5414
+pypgdriver-0.0.11.dist-info/METADATA,sha256=jpX-prR6Ha2gqEQXLw_UTLxXxcNyMMvQCvdSKynPRT8,474
+pypgdriver-0.0.11.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pypgdriver-0.0.11.dist-info/top_level.txt,sha256=gcgNUkRucdU3A9-0pULM3JQVPlzlTd7KOlbxRVXzAcQ,11
+pypgdriver-0.0.11.dist-info/RECORD,,
