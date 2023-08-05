@@ -1,0 +1,13 @@
+replyify/__init__.py,sha256=IY2QGj7nwTsWbffSOhJ9CT3r-Qq5jYzzBbYIwSTCoig,860
+replyify/api.py,sha256=754Ch6OH984u2--pZkzdFJ2IMOhdEZFFtWKYIBRv0Hc,7618
+replyify/exceptions.py,sha256=JqaJ1JSSdIN_yvfNUgBgB16-PpNqoSBtrUqddshft7Y,1810
+replyify/http_client.py,sha256=argZAXtmr1NBYZQZUx0oBepZsKlwxkU9tn3seRoBxH8,11557
+replyify/resources.py,sha256=Wa5fFh8QXAF32xtsXqwOsdjFZ1r1hfAJPU3jk0sSeUw,18602
+replyify/utils.py,sha256=PhnbmXSmuNXwBdrGhTgnqmuE5zX7i5HtuhcQjHg5_T4,4214
+replyify/version.py,sha256=76rw3Isk4beFNHW4F_LCcO_fvITe8z627sSaT_CNLZA,18
+replyify/data/cacert-2017-01-18.pem,sha256=5ioH5h5YcO_6gbQw4ZAHeJQ8IovX2hJZ3WqVXuImK0c,261889
+replyify-0.1.0.dist-info/LICENSE,sha256=bjaloDBKtcnh857veM4blVgX30KSp8zMstT1_0ZhWOs,1075
+replyify-0.1.0.dist-info/METADATA,sha256=tXnZQwDPE4vuP4gn3Xrh3zgEYs7457Pe-yqnJP_zz5c,2509
+replyify-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+replyify-0.1.0.dist-info/top_level.txt,sha256=8-oa-fwwIBoYpd702KG51Pg90JQlWVKUpXLDFZWkBR4,9
+replyify-0.1.0.dist-info/RECORD,,
