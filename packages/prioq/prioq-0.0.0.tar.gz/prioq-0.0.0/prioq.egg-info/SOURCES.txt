@@ -1,0 +1,7 @@
+README.md
+setup.py
+prioq/__init__.py
+prioq.egg-info/PKG-INFO
+prioq.egg-info/SOURCES.txt
+prioq.egg-info/dependency_links.txt
+prioq.egg-info/top_level.txt
