@@ -1,0 +1,10 @@
+autowinpy/__init__.py,sha256=WiyajXSlE6aqHwTA5fRk1YZeggG4RnmVyUYi3i9YuY4,381
+autowinpy/_classes.py,sha256=55_41rl1G6fx6XsVOHVyNMc7IrZJpsOFo2BNJMwum1M,10114
+autowinpy/_core.py,sha256=EC2_bls8BW425s-V8YlCFEETegra0oxHsxituSbfskM,1253
+autowinpy/_tk.py,sha256=FU9yyhayd4VtjYAPRlQUBes1xp8VRd0T7yJLA2zP-j8,7045
+autowinpy/_win32.py,sha256=4UG7eEUTirYxqOlCU1qKBcb1Y3gDU9sDSINoBQc0kNU,5527
+autowinpy-0.3.2.dist-info/LICENSE,sha256=yFO_mVXc02MRo5vVVmlJgdjVFm3B76JOBgZf-Qc6LaM,1090
+autowinpy-0.3.2.dist-info/METADATA,sha256=MQPThvMy-ya5UTX6bJEw_hqqfkb_bPo8-Qq8LuiXwoc,2728
+autowinpy-0.3.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+autowinpy-0.3.2.dist-info/top_level.txt,sha256=6PknyC_90fK_MmwMkaaYZo5MPuyKjmB4cTOSYNHEWzI,10
+autowinpy-0.3.2.dist-info/RECORD,,
