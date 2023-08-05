@@ -1,0 +1,16 @@
+calculation2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculation2/button_names.py,sha256=JVXLFfU-Ke_AtGhJTMwKnwa3yD2XH9fixi_pgrpdmJ0,1219
+calculation2/calculator.py,sha256=IlGAUPEpUo4_U0AcA4igGIJe6pXwJzfavTV5XOiURwI,615
+calculation2/calculator_date.py,sha256=0mcIP-Ls3ruD-LOnZPzVljWW2DJJTDKnyQzXAqKfujg,1705
+calculation2/calculator_date_page.py,sha256=Hq90vyLm7DJkMtZmUAVvqWB7Yx1Mgnr80uzVCGjuiHo,2448
+calculation2/calculator_page.py,sha256=xUefIh1BAhQ-8SZ7jG_Foa6iN6QGyfPmXj9Hy38AIL4,2438
+calculation2/calculator_standard_science.py,sha256=2X5ZzBN1s3vyn7rznOMOK_JFs3-V5zdMoGnE7tkRsz0,2625
+calculation2/programmer_page.py,sha256=ffRTqEzN81_DJCl6HWg_gKhvG8hoKPURF1L9ykd5E68,4032
+calculation2/science_page.py,sha256=KBfeFqR39XqY9awIc9MRKSBHzIAIbdDuVhGYe484pOM,2800
+calculation2/standard_page.py,sha256=GZjtpduGzQbz5CnHMvQ7jA-HJIQQT6hglbfvYbqDCYA,2716
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculation2-2.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculation2-2.1.0.dist-info/METADATA,sha256=OG9agBSoEIjb1TWNl0U_f36yBk-n6ItJpglxO023wO8,268
+calculation2-2.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+calculation2-2.1.0.dist-info/top_level.txt,sha256=c9Wr0oC_M4YwSIdfEaNnkxG8x7wjXC_4AiSSkg0cB3c,19
+calculation2-2.1.0.dist-info/RECORD,,
