@@ -1,0 +1,8 @@
+dipy
+numpy
+scikit-image
+scipy
+
+[docs]
+Sphinx
+sphinx-rtd-theme
