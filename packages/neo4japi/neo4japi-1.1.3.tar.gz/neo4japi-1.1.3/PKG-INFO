@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: neo4japi
+Version: 1.1.3
+Summary: A simple neo4j api driver
+Home-page: https://github.com/floatliang/neo4japi
+Author: floatsliang
+Author-email: utavianus@qq.com
+License: UNKNOWN
+Description: ### Neo4jApi
+        
+        A simple Neo4j api driver.
+        
+        #### Usage
+        
+        * select node/relation from neo4j:
+        ```python
+        with Neo4jApi() as dbi:
+            res = (dbi.select_by_nodes(
+                Node('ds', labels='DATASET', datasource_id=1)
+                .relationship(Relation('rel'), Node('sj', labels='SUB_DATAJOB')),
+                ds__id=1, ds__name=(['kafka', 'elastisearch'], 'IN')))
+        ```
+        
+        * start a transaction:
+        ```python
+        with Neo4jApi() as dbi:
+            with dbi.start_transaction() as _t:
+                dbi.insert(Node(labels='DATASOURCE', **data_source), t=_t)
+        ```
+Keywords: neo4j driver api
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
