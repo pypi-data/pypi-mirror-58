@@ -1,0 +1,9 @@
+mlflow_redisai/__init__.py,sha256=JEeXVNWfSJ1vRFZpVmBE9ifols7isR5Njp9NIj1Vu-A,6063
+mlflow_redisai/cli.py,sha256=pruuHPePo6o2b6tjEQ7nuIBdBHX-9tCFO7_MSEiIfIE,1285
+mlflow_redisai/pytorch.py,sha256=oZrg0lb3JySmVjGlnknqk5BKbYT6csXlajpyHhNc2Ms,3625
+mlflow_redisai-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlflow_redisai-0.0.1.dist-info/METADATA,sha256=KvZ6R3BEG0S6fhNIGl1bb7WwIKfmMbgDymtjIAY-UsU,516
+mlflow_redisai-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mlflow_redisai-0.0.1.dist-info/entry_points.txt,sha256=HfWxRXERvme7Z2errWtdmwxq8s70OEz0qlxkwOsQYNQ,60
+mlflow_redisai-0.0.1.dist-info/top_level.txt,sha256=d3iC4o73vJRbcPq5rP5WWsLnXBDULoBNLQtoYltZmW4,15
+mlflow_redisai-0.0.1.dist-info/RECORD,,
