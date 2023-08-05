@@ -1,0 +1,4 @@
+marshmallow>=3.2.2
+requests>=2.22.0
+PyYAML>=5.1.2
+urllib3>=1.25.7
