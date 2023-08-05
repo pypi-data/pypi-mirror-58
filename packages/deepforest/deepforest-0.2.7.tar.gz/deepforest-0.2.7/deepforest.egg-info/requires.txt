@@ -1,0 +1,10 @@
+keras>2.3.0
+tensorflow==1.14
+pillow
+pandas
+opencv-python
+pyyaml
+slidingwindow
+matplotlib
+xmltodict
+tqdm
