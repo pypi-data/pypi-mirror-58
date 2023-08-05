@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: text-word
+Version: 1.0.0
+Summary: 中文文本词频统计
+Home-page: https://github.com/Gemini128663/word_frequency_statistics.py
+Author: chang_an
+Author-email: 1286631591@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3

@@ -1,0 +1,10 @@
+README.md
+setup.py
+text/__init__.py
+text/text.py
+text/words.py
+text_word.egg-info/PKG-INFO
+text_word.egg-info/SOURCES.txt
+text_word.egg-info/dependency_links.txt
+text_word.egg-info/requires.txt
+text_word.egg-info/top_level.txt
