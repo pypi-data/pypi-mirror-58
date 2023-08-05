@@ -1,0 +1,10 @@
+README.md
+setup.py
+TPUCameraManager/TPUCameraManager.py
+TPUCameraManager/__init__.py
+TPUCameraManager/gst.py
+TPUCameraManager/gstreamer.py
+TPUCameraManager.egg-info/PKG-INFO
+TPUCameraManager.egg-info/SOURCES.txt
+TPUCameraManager.egg-info/dependency_links.txt
+TPUCameraManager.egg-info/top_level.txt
