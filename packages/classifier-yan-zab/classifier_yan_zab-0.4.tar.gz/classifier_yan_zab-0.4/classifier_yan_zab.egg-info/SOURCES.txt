@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+classifier_yan_zab/__init__.py
+classifier_yan_zab/command_line.py
+classifier_yan_zab/module.py
+classifier_yan_zab.egg-info/PKG-INFO
+classifier_yan_zab.egg-info/SOURCES.txt
+classifier_yan_zab.egg-info/dependency_links.txt
+classifier_yan_zab.egg-info/entry_points.txt
+classifier_yan_zab.egg-info/not-zip-safe
+classifier_yan_zab.egg-info/top_level.txt
