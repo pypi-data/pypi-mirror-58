@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+df2markov/__init__.py
+df2markov.egg-info/PKG-INFO
+df2markov.egg-info/SOURCES.txt
+df2markov.egg-info/dependency_links.txt
+df2markov.egg-info/requires.txt
+df2markov.egg-info/top_level.txt
