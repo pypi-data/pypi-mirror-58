@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+hehey_hupload.egg-info/PKG-INFO
+hehey_hupload.egg-info/SOURCES.txt
+hehey_hupload.egg-info/dependency_links.txt
+hehey_hupload.egg-info/top_level.txt
+hupload/__init__.py
+hupload/upload.py
+hupload/storages/CosStorage.py
+hupload/storages/LocalStorage.py
+hupload/storages/OssStorage.py
+hupload/storages/QiniuStorage.py
+hupload/storages/__init__.py
+hupload/utils/UploadUtil.py
+hupload/utils/__init__.py
