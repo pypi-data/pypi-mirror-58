@@ -1,0 +1,14 @@
+boto3==1.10.34
+commonregex
+cryptography
+cx_Oracle
+peewee
+psycopg2-binary
+pyathena[sqlalchemy]
+pymssql
+pymysql
+pypi-publisher
+python-magic
+pyyaml
+spacy
+tableprint
