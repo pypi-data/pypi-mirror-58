@@ -1,0 +1,14 @@
+quickci/__init__.py,sha256=oTnRqLxu4Omh3Lck1cYJP2CDoIwav63rmJ3LJVzujnA,169
+quickci/classes.py,sha256=4CMIDMwghU6kF3ca5MJjLj7fQhCHK4XeYeL-W5FjVaI,20908
+quickci/cli.py,sha256=5mNl90oVLNMS1XPTeOSIjXp-y9VsgkAE7Q0aMbam9Fg,448
+quickci/quickci.py,sha256=-2t6Bu4b_x9gPNz6-i3vLW2IrFPtDhAZk7EfDjUnpTw,74
+quickci/commands/__init__.py,sha256=-2t6Bu4b_x9gPNz6-i3vLW2IrFPtDhAZk7EfDjUnpTw,74
+quickci/commands/config.py,sha256=jSyOWKQxuz0EVCGob8DXVODZ_QT4TE1mb-PjGlHUiE4,1729
+quickci/commands/status.py,sha256=QOq6TTW4e7M1jNdgLU_RBtMQfD_-m2VmqMMBwbFWnI4,4025
+quickci-0.4.0.dist-info/AUTHORS.rst,sha256=wbKGyltovHOQaaMyENqYa0asHQjS2zg7Z5h0YimPnng,163
+quickci-0.4.0.dist-info/LICENSE,sha256=-3sdoopRZbcVv5QIy7PYA2KUw4HDEP5Bzf-Afg2HgKU,1073
+quickci-0.4.0.dist-info/METADATA,sha256=igBPe1Vfc4CzAoqMWJZYEag0dOPVD4pXfIRh8xxw4b0,6131
+quickci-0.4.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+quickci-0.4.0.dist-info/entry_points.txt,sha256=-ZP7NXk6SPmGOuolxQY3F0v9M6NlNtJyVhiWnCTTmrw,46
+quickci-0.4.0.dist-info/top_level.txt,sha256=6J7hMVkRcESXN-116hT1bYdKN9U2MyWuaSZ01qp3AHc,8
+quickci-0.4.0.dist-info/RECORD,,
