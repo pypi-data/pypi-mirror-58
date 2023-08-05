@@ -1,0 +1,12 @@
+sqla_wrapper/__init__.py,sha256=7XddpBIjxsKnzOWo5O39oeGDqx3GIzaz684LA8QK-0I,229
+sqla_wrapper/base_query.py,sha256=sebfNbTAbGYYFJZAGkbliYewvB8hwHgqDpvmf-oNC8s,1230
+sqla_wrapper/core.py,sha256=7ZkGbHbLFn927TubOPvT7NLrD6IxaMMEtaeYhBsBW7s,4763
+sqla_wrapper/model.py,sha256=dGpjhBliJ4NhYb3U6MeZFbfHIv-mG5vnRLDT38_salo,4121
+sqla_wrapper/paginator.py,sha256=OrHrYlViBHt5Y_CLStnhUoeWc3QjvW9iIpimyejUnLI,7800
+sqla_wrapper/session_proxy.py,sha256=ozouqjQQVuOmFP4tCalfbVzxq8HQxV8F2DucpygMoP8,3994
+sqla_wrapper/version.py,sha256=LEPVN_mFJZMLigat6J0YVX6zgWqj6cB2nPQKrJRqozs,211
+sqla_wrapper-2.0.3.dist-info/LICENSE.txt,sha256=3yx2E7juV4ipDZnFWC3JnzCEBvpXjjs9aHprA0cUY3g,2701
+sqla_wrapper-2.0.3.dist-info/METADATA,sha256=JVpcHFFL61cKLjhRZW9wljqQSsfhPIPDs4UDxrU55qw,3235
+sqla_wrapper-2.0.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+sqla_wrapper-2.0.3.dist-info/top_level.txt,sha256=9Txu75Wb1k0pYn8B1AhQUb5YOOwaMFb1dPPJAAgCTro,13
+sqla_wrapper-2.0.3.dist-info/RECORD,,
