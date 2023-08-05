@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: podiant-audio-analyser
+Version: 0.1
+Summary: Audio analysis toolkit, using ffmpeg
+Home-page: https://git.steadman.io/podiant/podiant-audio-analyser
+Author: Mark Steadman
+Author-email: mark@steadman.io
+License: BSD
+Description: 
+        Audio analysis toolkit, using ffmpeg
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
