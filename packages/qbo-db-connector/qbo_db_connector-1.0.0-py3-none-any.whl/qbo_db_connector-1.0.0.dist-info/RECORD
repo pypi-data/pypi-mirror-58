@@ -1,0 +1,10 @@
+qbo_db_connector/__init__.py,sha256=-UOyaEt12JaJmt6JsqHRKtEhYxmrxQ3TBn9P51HFAWo,140
+qbo_db_connector/extract.py,sha256=kMtmctkJNPUXzXJYxB4dc6E3-5btaoyXXgN7Qk_vxyI,4849
+qbo_db_connector/extract_ddl.sql,sha256=O0PLJ8XIVc92Wloiix0wPd9XpWzzDGKW6xu9NCWWVBw,795
+qbo_db_connector/load.py,sha256=0aZV-TKcrEsjsCI46RAvDPXJVf6CW8XGMVWR1yGc-aI,10715
+qbo_db_connector/load_ddl.sql,sha256=zsnpBmL9m8R2x5nztMveQwu2mlOx6hfbx8uPqwyZvoI,1090
+qbo_db_connector-1.0.0.dist-info/LICENSE,sha256=04EJnF8lBuGQQIC2dnxB6eAFcc_sbyqN1QGQrmhJV9o,1082
+qbo_db_connector-1.0.0.dist-info/METADATA,sha256=ornQRPTGIiAo8ziPCmvU8nSr9rfmVyzfkP66aymdXVE,3431
+qbo_db_connector-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+qbo_db_connector-1.0.0.dist-info/top_level.txt,sha256=L812Ix1oXtp0_CCF4HxG60qJxgrsOkCH9C0qJne6G4g,17
+qbo_db_connector-1.0.0.dist-info/RECORD,,
