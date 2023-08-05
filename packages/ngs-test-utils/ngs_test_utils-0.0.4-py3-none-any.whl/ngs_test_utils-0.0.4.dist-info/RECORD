@@ -1,0 +1,16 @@
+ngs_test_utils/__about__.py,sha256=MWOMWE756AXhK3cqXSnEnXxwEV97HCzZFyUlgPBGCmQ,664
+ngs_test_utils/__init__.py,sha256=JrXzJKHQ88vl713Gf-WO2c647wLHDWSF8oubeN9hGV4,22
+ngs_test_utils/base/__init__.py,sha256=-vfmhJdHWdzktEpFrXeFss5kiSTlQwOpJFWxMb8r0nc,20
+ngs_test_utils/base/fastq.py,sha256=sCKBgocAHjx5ANCPSihV-XIAS4PktmR5bk0BmR9hCfo,1319
+ngs_test_utils/testcase/__init__.py,sha256=0y4DKzZi6Ap_RcEbvvgaQ3JhA-gKzqja8D3_drtRlpg,966
+ngs_test_utils/testcase/bam.py,sha256=ReIkK_PYcMQy3zSi9JxdEGLw_ksCzJk7IhPTa_cgKXk,4794
+ngs_test_utils/testcase/bed.py,sha256=bChZTdgl5iAfX3NAPDN3LVtL-TGpw0k-to0gLMACVVk,946
+ngs_test_utils/testcase/fasta.py,sha256=8OWyqhmDVMl5fWq1EuqD6iDiAwmnlig11d8m4rUuq-I,1399
+ngs_test_utils/testcase/fastq.py,sha256=I0bbG4QIAmC_OG2mdk-GBk48y4PQSwTkQna4Vymltbo,1399
+ngs_test_utils/testcase/gtf.py,sha256=frlzU0P7Y7_Ax98vjdfkjFW3k5Yd7-PXRiJC0xj43pw,1573
+ngs_test_utils/testcase/tsv.py,sha256=4_fb4xs48LIFnSHCRXEvs6-jxW9xB7R842nCrN_V7oI,1312
+ngs_test_utils-0.0.4.dist-info/LICENSE,sha256=czn6QYya0-jhLnStD9JqnMS-hwP5wRByipkrGTvoXLI,11355
+ngs_test_utils-0.0.4.dist-info/METADATA,sha256=pbkNtNih7sqUe2BBNkY-RzMsAWFTeWFn-Z_wK1uXfoc,1542
+ngs_test_utils-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ngs_test_utils-0.0.4.dist-info/top_level.txt,sha256=uHbZGlrXwQ80PFP400MSLlrcv5dKtfQ8rxXafTBBS1s,15
+ngs_test_utils-0.0.4.dist-info/RECORD,,
