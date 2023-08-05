@@ -1,0 +1,12 @@
+tspex/__init__.py,sha256=A8AjOZfbca1dXZjOAZPsZN9AYIgJHjmchzWVFTb6ybw,910
+tspex/cli.py,sha256=r4nZgG7kJ9OaUELbTu4YlAvH_t41pQf_2g3hiG0y5Vc,3701
+tspex/core/__init__.py,sha256=lI00BmV-Sdt5BzTpE2gI70D0G-uZ5RUu8yjKtycuWwc,814
+tspex/core/auxiliary_functions.py,sha256=0o6GEMz2Lk5ghYaGVBi4Gv7VNwZ0qCivDmjInE7mhs8,4207
+tspex/core/specificity_class.py,sha256=uCvWJqs0H97qQ6WUVe2OfHlUYYBkEkbSFHYaSkGtPNA,9651
+tspex/core/specificity_functions.py,sha256=xFpyXxps56_yvGOZwKxEILVbnkq7AxGOBhBudVviU3U,15110
+tspex-0.6.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tspex-0.6.1.dist-info/METADATA,sha256=4BIcR0UaKXBDh-22_e68caaqbj6336UW2WOhOWfFXro,4764
+tspex-0.6.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tspex-0.6.1.dist-info/entry_points.txt,sha256=dHJ-C-crLymC_j3ulthMGN6VjfujlW_x_tokHaMFG-I,42
+tspex-0.6.1.dist-info/top_level.txt,sha256=qFZpyE8ghbNRGzz2dAI0crsv8gL_w3eIuRnQTBOV3Hs,6
+tspex-0.6.1.dist-info/RECORD,,
