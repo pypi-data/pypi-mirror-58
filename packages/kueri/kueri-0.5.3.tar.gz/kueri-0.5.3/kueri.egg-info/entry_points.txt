@@ -1,0 +1,3 @@
+[console_scripts]
+kueri = kueri.main:main
+

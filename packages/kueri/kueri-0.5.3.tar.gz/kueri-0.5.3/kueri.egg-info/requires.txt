@@ -1,0 +1,7 @@
+rootpath
+apache-airflow[gcp]==1.10.5
+apache-airflow==1.10.5
+sqlparse
+requests
+coloredlogs
+click
