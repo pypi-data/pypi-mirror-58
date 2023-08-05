@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+ownpip.egg-info/PKG-INFO
+ownpip.egg-info/SOURCES.txt
+ownpip.egg-info/dependency_links.txt
+ownpip.egg-info/top_level.txt
