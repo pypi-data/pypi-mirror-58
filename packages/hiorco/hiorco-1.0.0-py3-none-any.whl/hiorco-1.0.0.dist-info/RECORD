@@ -1,0 +1,9 @@
+hiorco/__init__.py,sha256=EH60BoLteRlXSJ2o_C2xtt0eryhSD_nvrVtAhUeg8ZI,157
+hiorco/cli.py,sha256=Ja-kT5QTsjny8HqvEwiJiAMGo2-l4HVTIScBaa59At8,1843
+hiorco/method.py,sha256=qeULGwhJgJKvBvLef7dqZrFxVdXDc245rIWrP0pfdtY,3832
+hiorco-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hiorco-1.0.0.dist-info/METADATA,sha256=4f2l-bLjNmoV_FebYSO7udwm_c2BWsqHRGbH7a15cGg,1313
+hiorco-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+hiorco-1.0.0.dist-info/entry_points.txt,sha256=br1uu_UBMfuwq8cmA3b7qxu69g7AWEgkPVUDCLD8G4w,44
+hiorco-1.0.0.dist-info/top_level.txt,sha256=rjDJMw_2PmcUivzxt4xATNL_KDIInW8hIM9zTTFaYtw,7
+hiorco-1.0.0.dist-info/RECORD,,

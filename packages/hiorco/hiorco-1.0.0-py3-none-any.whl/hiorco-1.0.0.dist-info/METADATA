@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: hiorco
+Version: 1.0.0
+Summary: Higher-Order Co-occurrence
+Home-page: https://github.com/cdanielmachado/hiorco
+Author: Daniel Machado
+Author-email: cdanielmachado@gmail.com
+License: Apache Software License 2.0
+Keywords: hiorco
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+
+|License| |PyPI version|
+
+HiOrCo
+======
+
+Computing **Hi**\ gher-\ **Or**\ der **Co**-occurrence patterns in
+microbial samples.
+
+Installation
+~~~~~~~~~~~~
+
+Can be easily installed using **pip**:
+
+::
+
+   pip install hiorco
+
+Usage
+~~~~~
+
+As simple as:
+
+::
+
+   hiorco samples.tsv
+
+You can download our example here:
+`samples.tsv <https://github.com/cdanielmachado/HiOrCo/raw/master/example/samples.tsv>`__,
+and check the documentation for more options and details:
+
+::
+
+   hiorco -h
+
+Credits
+~~~~~~~
+
+Daniel Machado, European Molecular Biology Laboratory (EMBL), 2019
+
+.. |License| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+   :target: https://opensource.org/licenses/Apache-2.0
+.. |PyPI version| image:: https://badge.fury.io/py/hiorco.svg
+   :target: https://badge.fury.io/py/hiorco
+
+
