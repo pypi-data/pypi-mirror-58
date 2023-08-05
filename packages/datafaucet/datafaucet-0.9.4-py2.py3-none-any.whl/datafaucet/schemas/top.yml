@@ -1,0 +1,71 @@
+---
+type: object
+properties:
+
+    profile:
+        type: string
+        default: default
+
+    inherit:
+        type: [string, array]
+
+    engine:
+        type: object
+        properties:
+            type:
+                type: string
+                default: spark
+            config:
+                type: object
+                default: {}
+            master:
+                type: string
+                default: "local[*]"
+            jobname:
+                type: string
+            timezone:
+                type: string
+            submit:
+                type: object
+                properties:
+                    detect:
+                        type: boolean
+                        default: true
+                    jars:
+                        type: array
+                        default: []
+                    packages:
+                        type: array
+                        default: []
+                    py-files:
+                        type: array
+                        default: []
+                additionalProperties: false
+        additionalProperties: false
+
+    providers:
+        type: object
+
+    resources:
+        type: object
+
+    variables:
+        type: object
+        default: {}
+
+    logging:
+        type: object
+        properties:
+            level:
+                type: string
+                default: info
+            stdout:
+                type: boolean
+                default: true
+            file:
+                type: string
+            kafka:
+                type: [string, array]
+                default: []
+        additionalProperties: false
+additionalProperties: false

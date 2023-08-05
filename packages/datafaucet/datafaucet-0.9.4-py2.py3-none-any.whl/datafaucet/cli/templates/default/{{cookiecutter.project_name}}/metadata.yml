@@ -1,0 +1,24 @@
+---
+profile: default
+providers:
+    localfs:
+        service: file
+        path: data
+        format: csv
+        options:
+            header: True
+            inferSchema: True
+            mode: overwrite
+
+resources:
+    ascombe:
+        path: ascombe.csv
+        provider: localfs
+
+    correlation:
+        path: correlation.csv
+        provider: localfs
+
+engine:
+    type: spark
+    master: local[]

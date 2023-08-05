@@ -1,0 +1,27 @@
+---
+type: object
+properties:
+  service:
+    type: string
+  format:
+    type: string
+  hostname:
+    type: string
+  port:
+    type: number
+  database:
+    type: string
+  path:
+    type: string
+  username:
+    type: string
+  password:
+    type: string
+  type:
+    type: string
+  options:
+      type: object
+  additionalProperties: false
+required:
+  - service
+additionalProperties: false

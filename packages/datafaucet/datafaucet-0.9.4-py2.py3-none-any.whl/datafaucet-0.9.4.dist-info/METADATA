@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: datafaucet
+Version: 0.9.4
+Summary: Productivity Utilities for Data Science with Python Notebooks
+Home-page: http://github.com/natbusa/datafaucet
+Author: Natalino Busa
+Author-email: natalino.busa@gmail.com
+License: MIT
+Keywords: Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Requires-Dist: traitlets
+Requires-Dist: cookiecutter
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: dask[complete]
+Requires-Dist: pyarrow
+Requires-Dist: fastparquet
+Requires-Dist: sqlalchemy
+Requires-Dist: s3fs
+Requires-Dist: bokeh
+Requires-Dist: seaborn
+Requires-Dist: HLL
+Requires-Dist: unidecode
+Requires-Dist: faker
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml
+Requires-Dist: jinja2
+Requires-Dist: jsonschema
+Requires-Dist: ipykernel
+Requires-Dist: nbconvert
+Requires-Dist: python-dotenv
+Requires-Dist: gitpython
+Requires-Dist: kafka-python
+Requires-Dist: python-dateutil
+Requires-Dist: cryptography
+Requires-Dist: pyspark
+
+UNKNOWN
+
+
