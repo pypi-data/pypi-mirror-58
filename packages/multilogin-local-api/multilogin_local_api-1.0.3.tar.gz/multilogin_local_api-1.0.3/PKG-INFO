@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: multilogin_local_api
+Version: 1.0.3
+Summary: Multilogin Local REST API
+Home-page: https://github.com/lusi1990/multilogin_local_api
+Author: Master Lu
+Author-email: lusi2114@gmail.com
+License: UNKNOWN
+Description:     Multilogin Local REST API can be used in order to start, stop, share, clone browser profile/-s. You can also check if the profile is already running on your machine by using checkProfileRunning endpoint and import cookies by using cookieImportJSON/cookieImportNetscape endpoint.  # noqa: E501
+            
+Keywords: Swagger,Multilogin Local REST API
+Platform: UNKNOWN
