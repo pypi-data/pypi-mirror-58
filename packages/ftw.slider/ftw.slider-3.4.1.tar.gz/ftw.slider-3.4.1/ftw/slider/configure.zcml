@@ -1,0 +1,53 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:upgrade-step="http://namespaces.zope.org/ftw.upgrade"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="ftw.slider">
+
+  <include file="permissions.zcml" />
+  <include zcml:condition="installed ftw.lawgiver" file="lawgiver.zcml" />
+  <include package="ftw.upgrade" file="meta.zcml" />
+
+  <include package=".browser" />
+  <include package=".viewlets" />
+  <include package=".upgrades" />
+  <include file="resources.zcml" />
+
+  <i18n:registerTranslations directory="locales" />
+
+  <genericsetup:registerProfile
+      zcml:condition="not-have plone-5"
+      name="default"
+      title="ftw.slider"
+      directory="profiles/default"
+      description="Installs the ftw.slider package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      zcml:condition="have plone-5"
+      name="default"
+      title="ftw.slider"
+      directory="profiles/default_plone5"
+      description="Installs the ftw.slider package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      zcml:condition="have plone-5"
+      name="uninstall"
+      title="Uninstall ftw.slider"
+      directory="profiles/uninstall_plone5"
+      description="Uninstalls the ftw.slider package."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+      />
+
+  <upgrade-step:directory
+      profile="ftw.slider:default"
+      directory="./upgrades"
+      />
+
+</configure>
