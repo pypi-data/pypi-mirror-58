@@ -1,0 +1,9 @@
+aiohttp_aiocache/__init__.py,sha256=BRt8etUEdmZ381He1FX6OB_CTGDR6PkTZ--WoaEBD8I,81
+aiohttp_aiocache/_api.py,sha256=VBXqNRJsRT3kagJO3uRWxv0s00vWIqiSkA5ePOfKYwA,542
+aiohttp_aiocache/_middleware.py,sha256=YMBzTZKD4vLQ77LGFhpV5gQdg3Y73Kfutvf73YCgiWQ,1437
+aiohttp_aiocache/_utils.py,sha256=hN7f7-o8lCHLGz5NO0IniWIYVQorToWpTfLaixJjKj8,374
+aiohttp_aiocache/py.typed,sha256=Tax5VCwEb0DFaIMIb4fcDTU0qMhkF1jfe-0zVWwzftE,58
+aiohttp_aiocache-0.1.0.dist-info/LICENSE,sha256=CWkRaG2JXwphu-N8hceI1ZqGCcxk5w4pM1HLXAcj2Ac,1074
+aiohttp_aiocache-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aiohttp_aiocache-0.1.0.dist-info/METADATA,sha256=RBiQ2FPkqJM9TTBTL33bOU9eh8hAFSkBxL1MSMQOniE,2436
+aiohttp_aiocache-0.1.0.dist-info/RECORD,,

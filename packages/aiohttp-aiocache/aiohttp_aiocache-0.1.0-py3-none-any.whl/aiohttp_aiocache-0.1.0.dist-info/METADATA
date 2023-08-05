@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: aiohttp-aiocache
+Version: 0.1.0
+Summary: Caching middleware for aiohttp server with aiocache under the hood
+Home-page: https://github.com/nobbynobbs/aiohttp-aiocache
+License: MIT
+Keywords: cache,aiohttp,redis,memcached
+Author: Roman Bolkhovitin
+Author-email: rbolkhovitin@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Requires-Dist: aiocache (>=0.11.1,<0.12.0)
+Project-URL: Repository, https://github.com/nobbynobbs/aiohttp-aiocache
+Description-Content-Type: text/markdown
+
+# aiohttp-aiocache
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/4b6f49c9d1e4e1e9963d/maintainability)](https://codeclimate.com/github/nobbynobbs/aiohttp-aiocache/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4b6f49c9d1e4e1e9963d/test_coverage)](https://codeclimate.com/github/nobbynobbs/aiohttp-aiocache/test_coverage)
+
+Caching middleware for [aiohttp](https://github.com/aio-libs/aiohttp) server
+with [aiocache](https://github.com/argaen/aiocache) under the hood.
+Inspired by [aiohttp-cache](https://github.com/cr0hn/aiohttp-cache).
+
+## Installation
+
+```bash
+pip install aiohttp-aiocache
+```
+
+or 
+
+```bash
+poetry add aiohttp-aiocache
+```
+
+Optional `aiocache` dependencies for redis, memcached and msgpack support
+will not be installed. Install them manually if required.
+
+## Usage
+```python
+import asyncio
+
+import aiohttp.web as web
+from aiocache import Cache
+from aiocache.serializers import PickleSerializer
+
+from aiohttp_aiocache import cached, register_cache
+
+
+@cached  # mark handler with decorator
+async def handler(_: web.Request) -> web.Response:
+    await asyncio.sleep(1)
+    return web.Response(text="Hello world")
+
+app = web.Application()
+app.router.add_route("GET", "/", handler)
+
+# create aiocache instance
+cache = Cache(
+    Cache.MEMORY,
+    serializer=PickleSerializer(),
+    namespace="main",
+    ttl=60,
+)
+
+# register cache backend in appplication
+register_cache(app, cache)
+
+web.run_app(app)
+```
+
+## Limitations
+
+Support caching for GET requests only.
+
+## License
+
+MIT
