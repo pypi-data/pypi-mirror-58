@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: allenpoly
+Version: 0.0.1
+Summary: An library to use AllenNLP library in Polyaxon environment.
+Home-page: https://bitbucket.org/evidenceprime/allenpoly
+Author: Evidence Prime Sp. z o.o.
+Author-email: mateusz.pieniak@evidenceprime.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.9
