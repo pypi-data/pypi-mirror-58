@@ -1,0 +1,8 @@
+colltools/__init__.py,sha256=ieFHznyxLimMhJuYSBFwbmDDUHSMBjugQiPEvfyzvZ4,1335
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_batch.py,sha256=X0wx5SNbbEsuCIRBvdjbgjUGkodgpFkkMKU2A9w1H_Y,1342
+colltools-1.0.4.dist-info/LICENCE,sha256=rsA16Fy0rL67Cbx84839fwfngZO1P-2uIwP3uFZfeOE,583
+colltools-1.0.4.dist-info/METADATA,sha256=e70CtC6DDgYh9GpSgIaUgu7fyTj1gd8iH6O8sjFU6hk,2385
+colltools-1.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+colltools-1.0.4.dist-info/top_level.txt,sha256=FWeRO_uVzcXjafkqFKb1U8rUMsYQoMyMtkmSgBFhh-0,16
+colltools-1.0.4.dist-info/RECORD,,
