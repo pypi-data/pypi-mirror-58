@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: soco-core-python
+Version: 0.1.1
+Summary: Python SDK for using SOCO platform
+Home-page: https://www.soco.ai
+Author: tinachez
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: nltk (>=3.4)
+Requires-Dist: tqdm (>=4.32.1)
+
+# SOCO-Core Python SDK
+Python client to use SOCO answer-as-as-service platform.
+
+## Install 
+    pip install soco-core-python
+
+## Quick Start
+
+This following example can be found at: quick_start.py. To see more examples, check out /examples folder
+
+First of all, register at https://app.soco.ai. After get your API_KEYs, you can setup a answer answer 
+using 10 lines of code!
+
+    QUERY_API_KEY = ENTER_YOUR_QUERY_API_KEY_HERE
+    ADMIN_API_KEY = ENTER_YOUR_ADMIN_API_KEY_HERE
+
+    q_client = SOCOClient(QUERY_API_KEY)
+    a_client = SOCOClient(ADMIN_API_KEY)
+
+    print("## Add some data to the index")
+    data = load_example_frame_data('mr.sun')
+    a_client.append_to_index(data)
+
+    print("## Wait for indexing is done ... ")
+    a_client.wait_for_ready(check_frequency=2, timeout=10, verbose=False)
+
+    print("## Make a query")
+    responses = q_client.query("how many images", 10)
+    SOCOClient.pprint(responses)
+
+## Citation
+If you use SOCO in research, we would love to be cited:
+
+```latex
+    @misc{soco2019engine,
+      title={SOCO: Answer Engine Platform},
+      author={Tiancheng Zhao and Kyusong Lee},
+      howpublished={\url{https://github.com/ConvMind/soco-core-python}},
+      year={2019}
+    }
+```
+
+

@@ -1,0 +1,10 @@
+soco_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soco_core/convertors.py,sha256=GsplrN77MAD5p-k0ZYcR8UHaldiGKS2RGjY3KiFqLwU,4552
+soco_core/examples.py,sha256=PYsb2N_OK9fZLiwWiC_JZ6qIFANcasUgxB_U_c1JeS4,828
+soco_core/soco_client.py,sha256=hSqJJeFyP6BqGQV30k4lXjzZxv-YaZ-eMI_nJT5lG_Q,3746
+soco_core/utils.py,sha256=-wBWyevnf3NPmdmn41P25myvqRyXORrYdQ6WIXboq9Q,6309
+soco_core_python-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+soco_core_python-0.1.1.dist-info/METADATA,sha256=ejhxUdT0flZ5I0tz99P25mGGXPDqKyJZGG8sqNr09YI,1655
+soco_core_python-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+soco_core_python-0.1.1.dist-info/top_level.txt,sha256=NU2v_7k5G02ittrxfBATwYT7z3_Qu_7qdjQySlyVvlQ,10
+soco_core_python-0.1.1.dist-info/RECORD,,
