@@ -1,0 +1,10 @@
+cv2ools/__init__.py,sha256=_6B2uqq-xAFqw3HjHaViu1URpnBtUWq2C-kuY9CuerI,98
+cv2ools/core.py,sha256=VD7ux6YVO7enirlsmJS1_cyj4tZ75Y7nbLjnSjMexAk,822
+cv2ools/functional.py,sha256=mPzAk2yeUvgCk43L48jkMya4XG-w1I2-sMFhXtUv7iw,530
+cv2ools/logging.py,sha256=qS9J5ZkqyLJAlYfda7HeS5DeQR0NY1fbVBLQaOcvBlc,688
+cv2ools/stream.py,sha256=Y7-FlNUNz6SfA3jBcwvM08QB-tIsyHGGJmgMA2B4qyY,374
+cv2ools-0.0.1.dist-info/LICENSE,sha256=vK26DADDD3vPEl4y8fDmCE1Ub_iX3vSP4APVkSiROZs,1066
+cv2ools-0.0.1.dist-info/METADATA,sha256=QVH27WmeEQY9TEVdLO9Xn1-Ih_qfwyipb09jp77VnDA,231
+cv2ools-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cv2ools-0.0.1.dist-info/top_level.txt,sha256=9qtXHDm0XXPR8K_iYT0EhNtQEopYKYpinsSRAJ44Zh4,8
+cv2ools-0.0.1.dist-info/RECORD,,
