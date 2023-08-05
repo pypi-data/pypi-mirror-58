@@ -1,0 +1,11 @@
+chardet
+click
+dnspython
+lmtpd<7.0.0,>=4
+python-daemon>2.2.0
+six
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinx-click
