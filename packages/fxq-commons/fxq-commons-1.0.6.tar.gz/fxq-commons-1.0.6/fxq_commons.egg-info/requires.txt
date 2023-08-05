@@ -1,0 +1,4 @@
+stringcase
+requests
+multidispatch
+jsonpickle
