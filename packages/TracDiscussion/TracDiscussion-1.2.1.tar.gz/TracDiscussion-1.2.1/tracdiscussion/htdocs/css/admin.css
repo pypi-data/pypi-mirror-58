@@ -1,0 +1,12 @@
+/*  General styles */
+.listing {
+ text-align: left;
+}
+
+.listing td.id, .listing td.moderators, .listing td.forum_group {
+ text-align: center;
+}
+
+.listing td.id {
+ width: 1%;
+}
