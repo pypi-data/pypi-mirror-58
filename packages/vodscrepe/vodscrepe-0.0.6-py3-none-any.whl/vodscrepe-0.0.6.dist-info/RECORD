@@ -1,0 +1,9 @@
+vodscrepe/__init__.py,sha256=-wJy7z-VaFYB5yKlR9KQvXRoyF176f2mpQvfcpLSMnc,84
+vodscrepe/aliases.py,sha256=zZqHHouurHq_msWgrnakuzCRsxMqCzuGyYqM8oWOT1U,3122
+vodscrepe/errors.py,sha256=ijZsP_A0ZYlrwu2G0EFjl8WRn-OnNltMNo60X6tFsTM,256
+vodscrepe/scraper.py,sha256=_UX6N95HRozU_GtwiqJHBJy7E7IjfLClLuHOK2r3Ztk,4812
+vodscrepe/vod.py,sha256=LXaTDj_x4MuMICqeRqOfD-3Ks-fwY_3fjSSevp97V8Y,2436
+vodscrepe-0.0.6.dist-info/METADATA,sha256=hkVvs5KIne8vch4MET094o8IvtBJmx1sGQn6VoFD8uo,445
+vodscrepe-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vodscrepe-0.0.6.dist-info/top_level.txt,sha256=A6NGT8ws_6Hv06LBp4H_-1rgRHqcXBfl14vk6_nTLL4,10
+vodscrepe-0.0.6.dist-info/RECORD,,
