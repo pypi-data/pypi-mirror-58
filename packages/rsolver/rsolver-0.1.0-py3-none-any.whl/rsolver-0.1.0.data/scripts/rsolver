@@ -1,0 +1,9 @@
+#!python
+import rsolver
+from rsolver import helper, parser
+
+scripts = vars(helper.args)["scripts"]
+solv = rsolver.Rsolver(vars(helper.args)["timeout"], scripts=scripts)
+# print(solv.scripts)
+parser.parse(vars(helper.args), solv)
+solv.crack()

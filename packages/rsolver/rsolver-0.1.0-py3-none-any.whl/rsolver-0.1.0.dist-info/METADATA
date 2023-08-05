@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: rsolver
+Version: 0.1.0
+Summary: CTF Solver
+Home-page: https://github.com/puckk
+Author: Jeremías Pretto - Facundo Basso
+Author-email: jpretto@cert.unlp.edu.ar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: colored
+Requires-Dist: factordb-pycli
+Requires-Dist: gmpy
+Requires-Dist: gmpy2
+Requires-Dist: lazy-import
+Requires-Dist: owiener
+Requires-Dist: pycrypto
+Requires-Dist: requests
+Requires-Dist: sympy
+Requires-Dist: termcolor
+
+UNKNOWN
+
+
