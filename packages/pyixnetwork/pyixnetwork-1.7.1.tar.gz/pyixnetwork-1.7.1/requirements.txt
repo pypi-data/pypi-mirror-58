@@ -1,0 +1,10 @@
+future
+configparser
+enum34; python_version<"3.4"
+pytest-runner
+IPy
+requests
+pytest
+tox
+
+pytrafficgen==1.5.5
