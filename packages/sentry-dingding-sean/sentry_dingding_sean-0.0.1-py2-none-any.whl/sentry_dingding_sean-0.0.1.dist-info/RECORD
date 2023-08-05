@@ -1,0 +1,10 @@
+sentry_dingding/__init__.py,sha256=WBxToO41zxKnSAjDCAlIeTg8rOwmV0SPgZtFWHtMCcg,35
+sentry_dingding/forms.py,sha256=8XeiDpngeFbRCDDjz_RHj2rtrR4hoc5AgOuIbWqrvkQ,197
+sentry_dingding/plugin.py,sha256=ep41cHi7pakscGb_8UqOpkDeqoz2ucxZAtnzq4snPhI,2107
+sentry_dingding_sean-0.0.1.dist-info/DESCRIPTION.rst,sha256=CuBKS1rw2X426FARhtoHXn2RnXlqX45MWsxYnO7iOV0,62
+sentry_dingding_sean-0.0.1.dist-info/METADATA,sha256=rIXKCbcruIMX_BLqt63spdWyHsfyGOUFZv2a0CiM2RU,518
+sentry_dingding_sean-0.0.1.dist-info/RECORD,,
+sentry_dingding_sean-0.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+sentry_dingding_sean-0.0.1.dist-info/entry_points.txt,sha256=THP9Hz9QnkwtWy09uirpWYpcR1x5U4NPJ6PW2cXQYdI,74
+sentry_dingding_sean-0.0.1.dist-info/metadata.json,sha256=c1UgfaoqY-nSTr6VViA6GmhwnyR5mxxSzQk493A3KUI,743
+sentry_dingding_sean-0.0.1.dist-info/top_level.txt,sha256=sAkiSHC6wBeNIqc09N5T9Jze_C5s4AorWB5IWE8JGZ8,16
