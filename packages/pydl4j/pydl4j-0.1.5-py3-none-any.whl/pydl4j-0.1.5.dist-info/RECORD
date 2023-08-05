@@ -1,0 +1,16 @@
+pydl4j/__init__.py,sha256=SHr1NiKtqc7EI2_zxq3vcoJag3Hpmuzf8_KvvC2so2I,816
+pydl4j/cli.py,sha256=L80eKNhfCLMTsqNUo0aYKpwYEAfbnN7kxOCYNiM8kQM,8311
+pydl4j/docker.py,sha256=_OxlOQiN2u4MCwOfZ7T7Sn8aDcWfbTGzao3o02Hs8VU,1223
+pydl4j/downloader.py,sha256=pR_ADNBxugzDaLDOqtbonSVrvsHTkT9YNMOyznVcCRY,3179
+pydl4j/jarmgr.py,sha256=TE7AXOe6JhjzB2l6nYm7SW_tIaQVe9xmqBIAfWjajVo,4992
+pydl4j/mvn.py,sha256=aqkn7lRq1zTrfuLqoDAzbyGpqWBCRkiXmQE7EY_h1uc,2304
+pydl4j/pom.py,sha256=KUrIMONpksr4C9AZPaOyTz9Dr4AAHcHAWARw1zKcH_8,10493
+pydl4j/progressbar.py,sha256=azi8-Kpzik-4_rRJEjdG9y6Rw8uKdE5mQlHO8BzPlIE,5090
+pydl4j/pydl4j.py,sha256=POsBS4_q-D_OEXx61iiLUY-PGM5aMmn4XeB72xqdC_Q,11075
+pydl4j-0.1.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pydl4j-0.1.5.dist-info/METADATA,sha256=1ZIkGVIYsLcc4tdIvTEaxopHapOm71NGP1miG--lJmI,907
+pydl4j-0.1.5.dist-info/RECORD,,
+pydl4j-0.1.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pydl4j-0.1.5.dist-info/entry_points.txt,sha256=flvZ-60WBQFGK8GkYzuDsIUJEHowENErv0IZSI_8E9c,46
+pydl4j-0.1.5.dist-info/metadata.json,sha256=Ia4uO9ItGz5yf58rsbNbjZpPo7VrYWB5iQWLbOBl2_k,1018
+pydl4j-0.1.5.dist-info/top_level.txt,sha256=cz5bNWxjT4dJG6nx6m2HoTl99yEDpJzdakHDfv37mdw,7
