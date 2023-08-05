@@ -1,0 +1,6 @@
+apscheduler
+google-api-python-client
+paramiko
+python-heatclient
+python-keystoneclient
+python-novaclient
