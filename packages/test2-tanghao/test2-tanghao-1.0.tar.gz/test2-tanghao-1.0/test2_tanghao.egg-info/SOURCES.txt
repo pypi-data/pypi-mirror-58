@@ -1,0 +1,8 @@
+README.md
+setup.py
+test2/__init__.py
+test2/hello.py
+test2_tanghao.egg-info/PKG-INFO
+test2_tanghao.egg-info/SOURCES.txt
+test2_tanghao.egg-info/dependency_links.txt
+test2_tanghao.egg-info/top_level.txt
