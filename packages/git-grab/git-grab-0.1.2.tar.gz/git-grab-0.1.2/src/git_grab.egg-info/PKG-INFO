@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: git-grab
+Version: 0.1.2
+Summary: Git Helper Tool
+Home-page: https://github.com/boomatang/git-grab.git
+Author: Jim Fitzpatrick
+License: MIT
+Description: # This README has not be updated.
+        
+        
+        Git Grab
+        ========
+        
+        Git Helper Tool (in progress)
+        
+        Initial Goals of the project
+        ----------------------------
+        
+        -   Create a tool to help download git repos
+        -   Repos should be sorted by which site and user they belong to.
+        
+        Rough Current Status
+        --------------------
+        
+        - Basic function works but still been worked out.
+        
+        Short Term TODO items
+        ---------------------
+        
+        -   Switch to flit for packaging
+        -   add black
+        -   add pre-commit hooks with wily and black and testing
+        
+        Long Term TODO items
+        --------------------
+        
+        -   Update all to the documentation
+        -   Set up a CI/CD pipeline.
+        -   Make examples of how the tool is used
+        
+        Usage
+        -----
+        
+        wip
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+click
+tabulate
+tinydb
+pony
+
+[:python_version < "3.7"]
+dataclasses
