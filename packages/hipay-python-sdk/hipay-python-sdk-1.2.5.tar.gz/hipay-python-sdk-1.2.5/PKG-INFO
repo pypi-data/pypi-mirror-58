@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: hipay-python-sdk
+Version: 1.2.5
+Summary: Python SDK for HiPay.com
+Home-page: https://github.com/Menda0
+Author: Marco Mendao
+Author-email: mac.mendao@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: HiPay,Payments,Gateway
+Platform: UNKNOWN
