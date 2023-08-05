@@ -1,0 +1,10 @@
+setup.py
+chaoyi_probability/Binomialdistribution.py
+chaoyi_probability/Gaussiandistribution.py
+chaoyi_probability/Generaldistribution.py
+chaoyi_probability/__init__.py
+chaoyi_probability.egg-info/PKG-INFO
+chaoyi_probability.egg-info/SOURCES.txt
+chaoyi_probability.egg-info/dependency_links.txt
+chaoyi_probability.egg-info/not-zip-safe
+chaoyi_probability.egg-info/top_level.txt
