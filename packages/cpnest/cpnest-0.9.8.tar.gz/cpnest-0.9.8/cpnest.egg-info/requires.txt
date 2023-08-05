@@ -1,0 +1,5 @@
+corner
+cython
+numpy
+scipy
+tqdm
