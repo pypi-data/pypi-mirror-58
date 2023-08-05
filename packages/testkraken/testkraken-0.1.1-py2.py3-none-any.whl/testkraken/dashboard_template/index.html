@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parcoords/0.7.0/d3.parcoords.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.21/c3.min.js"></script>
+
+    <!-- jquery (am I using?) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/6pac-slickgrid/2.4.0/lib/jquery.event.drag-2.3.0.min.js"></script>
+       <!-- End jquery -->
+
+    <!-- Vega -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.4.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.9.0"></script>
+    <!-- End Vega -->
+
+    <!-- Select 2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <!-- End Select 2 -->
+
+
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v2.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+  </head>
+
+  <body>
+
+      <div><h1>TestKraken</h1></div>
+
+      <!-- parallel coordinate plot -->
+      <div id="parcoord-plot" class="parcoords bg-parcoords"></div>
+
+      <br><br/>
+
+      <select multiple name="event_type[]" class="form-control" id="selectEvents"></select>
+
+      <br><br/>
+
+      <!-- grid of test info / results -->
+      <div id="grid-container", style="margin-left:45px;">
+          <div id="grid"></div>
+      </div>
+
+      <!-- summaries / plots based on input csv -->
+      <div id="envs" class="top-buffer">
+          <h2>Description of environments</h2>
+          <div id="envs"></div>
+      </div>
+
+      <!--<div id="js_plots" class="top-buffer">-->
+          <!--<h2>Plots</h2>-->
+
+          <!-- additional plots -->
+          <div class="main top-buffer">
+              <h2>Plots</h2>
+              <div id="left">
+                  <h4>JS barplot</h4>
+                  <select id="histSelect"></select>
+                  <br><br/>
+                  <div id="barplot"></div>
+              </div>
+
+              <div id="right">
+                  <h4>Scatter plot of: </h4><select id="ySelect"></select> vs  <select id="xSelect"></select>
+                  <!--<div id="scatterplot"></div>-->
+                  <svg class="chart"></svg>
+              </div>
+          </div>
+      <!--</div>-->
+      <!--<div id="plots_altair" class="top-buffer">-->
+          <!--<h2>Plots</h2>-->
+      <!--</div>-->
+
+      <script src="dashboard.js"></script>
+
+  </body>
