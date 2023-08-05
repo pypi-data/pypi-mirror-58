@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: my-first-python-library
+Version: 0.0.2
+Summary: Sample code to create python package for PyPI library
+Home-page: https://github.com/divyeshvaghani
+Author: Divyesh Vaghani
+Author-email: divyeshvaghani96@gmail.com
+License: MIT
+Description: # My First Python Library
+        
+        This is a sample code for those newcomers who wants to create python pip installable PyPI package.
+        
+        
+        ## Installation
+        
+        You can install it  from [PyPI](https://pypi.org/project/my-first-python-library/):
+        
+            pip install my-first-python-library
+        
+        This Python Library is supported on Python 3 and above.
+        
+        ## How to use
+        
+        This is a very basic and simple Python library. Just Run following in your .py file
+        
+            from my-first-python-library.python_script import your_method
+            
+            your_method()
+            
+             
+            
+            
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
