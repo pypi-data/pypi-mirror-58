@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: roelies-mailbot
+Version: 0.0.1
+Summary: A package that can automatically send emails
+Home-page: https://github.com/rwolters2000/mailbot
+Author: Raul Wolters
+Author-email: r.wolters@umail.leidenuniv.nl
+License: UNKNOWN
+Description: insert here
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

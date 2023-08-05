@@ -1,0 +1,8 @@
+README.md
+setup.py
+automail/__init__.py
+automail/backup_mail.py
+roelies_mailbot.egg-info/PKG-INFO
+roelies_mailbot.egg-info/SOURCES.txt
+roelies_mailbot.egg-info/dependency_links.txt
+roelies_mailbot.egg-info/top_level.txt
