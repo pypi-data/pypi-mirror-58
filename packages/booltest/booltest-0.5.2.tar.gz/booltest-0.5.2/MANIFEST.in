@@ -1,0 +1,7 @@
+include README.md
+include CONTRIBUTING.md
+include LICENSE
+include booltest/tests/data/*
+include booltest/assets/*
+include assets/*
+include pval_db.json
