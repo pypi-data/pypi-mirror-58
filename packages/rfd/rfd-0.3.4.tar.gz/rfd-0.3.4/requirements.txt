@@ -1,0 +1,4 @@
+beautifulsoup4>=4.8.1
+click>=7.0
+colorama>=0.4.3
+requests>=2.22.0
