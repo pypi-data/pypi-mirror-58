@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: typer
+Version: 0.0.1
+Summary: Typer, an intuitive CLI library based on optional type hints
+Home-page: https://github.com/tiangolo/typer
+License: UNKNOWN
+Author: Sebastián Ramírez
+Author-email: tiangolo@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click >= 7.0.0, <8.0.0
