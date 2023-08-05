@@ -1,0 +1,8 @@
+flake8==2.4.0
+pytest-cov==2.6.0
+pytest-django==3.1.2
+pytest-sugar==0.9.1
+pytest==3.6.4
+dynamic_rest>=1.6.0
+Django>=1.8,<=2.2
+django-debug-toolbar==1.7
