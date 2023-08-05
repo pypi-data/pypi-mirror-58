@@ -1,0 +1,8 @@
+README.md
+setup.py
+crsmongo/__init__.py
+crsmongo/crsmongo.py
+crsmongo.egg-info/PKG-INFO
+crsmongo.egg-info/SOURCES.txt
+crsmongo.egg-info/dependency_links.txt
+crsmongo.egg-info/top_level.txt
