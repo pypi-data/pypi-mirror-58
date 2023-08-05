@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: e1
+Version: 0.1.0
+Summary: Python support for the e1 compression format.
+Home-page: https://github.com/LANL-seismoacoustics/e1
+Author: Jonathan MacCarthy
+Author-email: jkmacc@lanl.gov
+License: MIT
+Download-URL: https://github.com/LANL-seismoacoustics/e1/tarball/0.1.0
+Keywords: seismology,geophysics
+Platform: Mac OS X
+Platform: Linux/Unix
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# e1.py
+
+Python support for the e1 seismic compression format.
+
+
+## Installation
+
+```python
+pip install e1
+```
+
+
