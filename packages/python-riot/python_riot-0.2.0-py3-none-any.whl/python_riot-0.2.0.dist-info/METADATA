@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-riot
+Version: 0.2.0
+Summary: inoffical python lib for the Riot API
+Home-page: https://github.com/FourZeroOne/python_riot
+Author: Johannes Eimer Production (JEP)
+Author-email: info@jep-dev.com
+License: MIT
+Requires-Dist: requests
+
+# python_riot
+
+
