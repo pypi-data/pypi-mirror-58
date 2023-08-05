@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pykovi
+Version: 0.0.1a0
+Summary: A python library that wraps AWS Wrangler allowing mocked clients and a specialized glue job publisher.
+Home-page: https://github.com/kovihq/pykovi
+Author: Johni Michels
+Author-email: johni.michels@gmail.com
+License: UNKNOWN
+Description: # pykovi
+        
+        pykovi aims to fill the gap between testing glue jobs and running them on a production environment.
+        It's specially designed to ease the job of data science CI/CD in AWS.
+        
+        You can see the [examples](examples) for reference.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

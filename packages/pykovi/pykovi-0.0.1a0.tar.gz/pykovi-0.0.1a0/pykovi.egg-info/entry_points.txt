@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pykovi=pykovi:cli.publish_jobs
+    

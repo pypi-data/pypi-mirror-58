@@ -1,0 +1,3 @@
+awswrangler==0.0.11
+click
+list_imports
