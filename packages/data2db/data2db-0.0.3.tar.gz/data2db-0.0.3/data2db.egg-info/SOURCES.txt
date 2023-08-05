@@ -1,0 +1,8 @@
+README.md
+setup.py
+data2db/Data2db.py
+data2db/__init__.py
+data2db.egg-info/PKG-INFO
+data2db.egg-info/SOURCES.txt
+data2db.egg-info/dependency_links.txt
+data2db.egg-info/top_level.txt
