@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: explainerdashboard
+Version: 0.1.7.2
+Summary: package to ease and speed up machine learning model explainability
+Home-page: https://github.com/oegedijk/explainerdashboard
+Author: Oege Dijk
+Author-email: oegedijk@gmail.com
+License: MIT
+Project-URL: Github page, https://github.com/oegedijk/explainerdashboard/
+Project-URL: Documentation, https://explainerdashboard.readthedocs.io/
+Description: explainerdashboard allows you quickly build an interactive dashboard to explain the inner workings of a machine learning model.
+Keywords: machine learning,explainability,shap,feature importances,dash
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Dash
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
