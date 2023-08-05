@@ -1,0 +1,7 @@
+arrow<1,>=0.7.0
+helper<3,>=2.4.1
+pika<1,>=0.10.0
+psutil>=3.3.0
+queries<2,>=1.8.1
+simpleflake==0.1.5
+tornado<4.3,>=4.2
