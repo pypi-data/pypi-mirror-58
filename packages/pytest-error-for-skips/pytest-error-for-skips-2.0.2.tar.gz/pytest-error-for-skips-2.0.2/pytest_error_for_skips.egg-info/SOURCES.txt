@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pytest_error_for_skips.py
+setup.py
+pytest_error_for_skips.egg-info/PKG-INFO
+pytest_error_for_skips.egg-info/SOURCES.txt
+pytest_error_for_skips.egg-info/dependency_links.txt
+pytest_error_for_skips.egg-info/entry_points.txt
+pytest_error_for_skips.egg-info/requires.txt
+pytest_error_for_skips.egg-info/top_level.txt
