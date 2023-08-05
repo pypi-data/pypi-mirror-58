@@ -1,0 +1,4 @@
+distro==1.4.0
+grr-response-client==3.4.0post1
+grr-response-core==3.4.0post1
+pyinstaller==3.5
