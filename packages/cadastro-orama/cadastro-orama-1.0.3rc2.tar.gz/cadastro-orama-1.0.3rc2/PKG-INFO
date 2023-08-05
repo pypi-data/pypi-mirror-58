@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: cadastro-orama
+Version: 1.0.3rc2
+Summary: Criação de Contas
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: cadastro_api@orama.com.br
+License: Apache 2.0
+Description:     API de Criação de Contas.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Criação de Contas
+Platform: UNKNOWN
