@@ -1,0 +1,9 @@
+absl-py==0.8.0
+grr-response-core==3.4.0post1
+pyinstaller==3.5
+chipsec==1.4.4
+xattr==0.9.6
+
+[:sys_platform=="win32"]
+WMI==1.4.9
+pywin32==224
