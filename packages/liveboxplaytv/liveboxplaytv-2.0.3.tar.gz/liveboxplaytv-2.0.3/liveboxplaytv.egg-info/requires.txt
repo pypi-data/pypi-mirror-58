@@ -1,0 +1,5 @@
+fuzzywuzzy
+python-Levenshtein
+pyteleloisirs>=3.6
+requests
+wikipedia
