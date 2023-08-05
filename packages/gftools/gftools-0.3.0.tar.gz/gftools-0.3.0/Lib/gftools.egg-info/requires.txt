@@ -1,0 +1,14 @@
+setuptools
+FontTools[ufo]
+Flask
+absl-py
+glyphsLib
+PyGithub
+pillow
+protobuf
+requests
+tabulate
+unidecode
+fontbakery
+fontdiffenator
+gfdiffbrowsers
