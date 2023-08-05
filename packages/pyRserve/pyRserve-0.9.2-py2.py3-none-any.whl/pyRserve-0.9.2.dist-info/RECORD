@@ -1,0 +1,14 @@
+pyRserve/__init__.py,sha256=-3UrF8ZnTX8ECqlxAurVzhteFlPUEQieKn7Nka0FZ_c,385
+pyRserve/misc.py,sha256=WF8nt4dWz52w6CFDrcIxPDssWD19zwRJOCnrpXHiR8I,2232
+pyRserve/rconn.py,sha256=uL7MiqS1Bhw8zo8pHxA_LU6Ea5qw-hvj9y_W52k1y2o,16449
+pyRserve/rexceptions.py,sha256=wzkyt_d5nnp99QjW4bRam6Tb9uxqLPE4fOBJCUgs3_8,485
+pyRserve/rparser.py,sha256=ZAN0L5u-wULuVTWbCnwdNxqcNE4fyYXMDdqr4avgt1o,25158
+pyRserve/rserializer.py,sha256=3f46i7_VB6YvDW8E2eyslfvd9w56Ayngf14oY6obsWw,17228
+pyRserve/rtypes.py,sha256=8jNRqOzrKBqb3dVVadPVM6GasghTH0jSr_oCLN4BEl4,14844
+pyRserve/taggedContainers.py,sha256=HXv5Gifn0Y2q9deQuTrWBvlgIFGQJqzVM5SkNa0ntAM,11791
+pyRserve/version.txt,sha256=80JIwkSaAi1ByRjR6ZWthYWaHp8Ob4nQryOuSlVRn3E,6
+pyRserve-0.9.2.dist-info/LICENSE,sha256=hmF4X4GNLv5rtnwBgicHqORc_zooLuIsDWyO_oezH2g,1170
+pyRserve-0.9.2.dist-info/METADATA,sha256=GCgzEoSfWalyiWCo9PJV3nDh1f7MOCzYhtEHKA5ZdmQ,8011
+pyRserve-0.9.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyRserve-0.9.2.dist-info/top_level.txt,sha256=pbgwNq-3WjPvmj08_EackmPMIUgjcN2Xp4eh2d7INI4,9
+pyRserve-0.9.2.dist-info/RECORD,,
