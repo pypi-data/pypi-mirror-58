@@ -1,0 +1,3 @@
+![Cryptemis](images/cryptemis.png)
+# Cryptemis [![Repository Size](https://img.shields.io/github/repo-size/0x01h/cryptemis)](https://pypi.python.org/pypi/ansicolortags/) [![Extension Version](https://img.shields.io/github/manifest-json/v/0x01h/bademsavar?style=flat-square)](https://pypi.python.org/pypi/ansicolortags/) [![GitHub License](https://img.shields.io/github/license/0x01h/bademsavar?style=flat-square)](https://pypi.python.org/pypi/ansicolortags/)
+Minimalist symmetric AES image encryption module for paranoids.

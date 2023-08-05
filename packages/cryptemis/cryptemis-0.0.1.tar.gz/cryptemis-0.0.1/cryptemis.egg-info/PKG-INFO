@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cryptemis
+Version: 0.0.1
+Summary: Minimalist symmetric AES image encryption module for paranoids.
+Home-page: https://github.com/0x01h/cryptemis
+Author: Orçun Özdemir
+Author-email: benorcunozdemir@gmail.com
+License: WTFPL
+Description: ![Cryptemis](images/cryptemis.png)
+        # Cryptemis [![Repository Size](https://img.shields.io/github/repo-size/0x01h/cryptemis)](https://pypi.python.org/pypi/ansicolortags/) [![Extension Version](https://img.shields.io/github/manifest-json/v/0x01h/bademsavar?style=flat-square)](https://pypi.python.org/pypi/ansicolortags/) [![GitHub License](https://img.shields.io/github/license/0x01h/bademsavar?style=flat-square)](https://pypi.python.org/pypi/ansicolortags/)
+        Minimalist symmetric AES image encryption module for paranoids.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Security :: Cryptography
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
