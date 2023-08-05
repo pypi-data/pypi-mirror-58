@@ -1,0 +1,3 @@
+[console_scripts]
+authprogs2 = authprogs.authprogs:main
+
