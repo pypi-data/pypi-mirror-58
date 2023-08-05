@@ -1,0 +1,10 @@
+AutoChromedriver/__init__.py,sha256=l4aW81jq1aebQE8EUeExBK_gJtuXPgbrvPwWx7NRYN8,71
+AutoChromedriver/autochromedriver.py,sha256=rt6c9ciIsUZdOEYJPhhk8uoUf298bj72AjSSRQZ02Qg,1163
+AutoChromedriver/chromedriver_lib.py,sha256=dAG2v989bbLZPv4ohbY9ZX7AFpt5Hrg9Ntvr23IMIDg,492
+AutoChromedriver/cli.py,sha256=xAGDhwMQP6s4otHEWgo6LNOOBFF0ZPsn-P_tZ7tv6Uo,274
+AutoChromedriver-2.2.1.dist-info/LICENSE,sha256=73emZhTaqxqABCkMGkQX0n_rNR7QeSPnHjHFzJ0PpQk,10752
+AutoChromedriver-2.2.1.dist-info/METADATA,sha256=HjKjzEDgpW-tpDpiG52O8GYR_DX9aWfWV-ep7L5MLn0,1429
+AutoChromedriver-2.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AutoChromedriver-2.2.1.dist-info/entry_points.txt,sha256=X8yvhUE_OYAT1XX63M3rWne9o7bPrXiBZxnbRxDE4XE,64
+AutoChromedriver-2.2.1.dist-info/top_level.txt,sha256=Saj0BDJpeG0vNGqR2VNt0Dsak71dWMlqofGIdWyZ5XU,17
+AutoChromedriver-2.2.1.dist-info/RECORD,,
