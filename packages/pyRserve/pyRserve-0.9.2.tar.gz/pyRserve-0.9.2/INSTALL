@@ -1,0 +1,37 @@
+
+Install R
+===========
+Requires:
+- X11 devel package (suse), png-devel, jpeg-devel (otherwise it cannot write png/jpeg files!)
+
+Compilation:
+1. curl -LO https://cran.r-project.org/src/base/R-3/R-${RVER}.tar.gz
+2. tar -xf R-3.6.2.tar.gz
+3. $ cd R-3.6.2
+   $ ./configure --enable-R-shlib --with-x=no
+   $ make
+   $ make install
+
+
+Install Rserve:
+===============
+1. curl -LO http://www.rforge.net/Rserve/snapshot/Rserve_1.8-6.tar.gz
+2. R CMD INSTALL Rserve_1.8.6.tar.gz
+
+This way also the debug version will be compiled and installed.
+
+To start Rserver type:
+
+    $ R CMD Rserve
+
+To start Rserve in debug mode type:
+
+    $ R CMD Rserve.dbg
+
+Now it is ready to be connected from a client.
+
+
+Install pyRserve
+================
+
+$ pip install pyRserve

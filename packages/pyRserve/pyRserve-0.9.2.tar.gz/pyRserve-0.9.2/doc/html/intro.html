@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pyRserve &#8212; pyRserve 0.9.2 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Welcome to pyRserve’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to pyRserve’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pyRserve 0.9.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pyrserve">
+<h1>pyRserve<a class="headerlink" href="#pyrserve" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-it-does">
+<h2>What It Does<a class="headerlink" href="#what-it-does" title="Permalink to this headline">¶</a></h2>
+<p>pyRerve is a library for connecting Python to an <a class="reference external" href="http://www.r-project.org/">R process</a>
+(an excellent statistic package) running <a class="reference external" href="http://www.rforge.net/Rserve/">Rserve</a> as a RPC connection gateway.
+Through such a connection variables can be get and set in R from Python, and also R-functions can be called remotely.
+In contrast to <a class="reference external" href="http://rpy.sourceforge.net/">rpy or rpy2</a> the R process does not have to run on the same machine,
+it can run on a remote machine and all variable  access and function calls will be delegated there through the network.</p>
+<p>Furthermore - and this makes everything feel very pythonic - all data structures will automatically be converted
+from native R to native Python and numpy types and back.</p>
+</div>
+<div class="section" id="changes">
+<h2>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>V 0.9.2 (2019-12-19)</dt><dd><ul>
+<li><p>Replaced deprecated numpy.fromstring with numpy.frombuffer</p></li>
+<li><p>Flake8/pep8 cleanup</p></li>
+<li><p>Refactored exception hierarchy</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.9.1 (2017-05-19)</dt><dd><ul>
+<li><p>Removed a bug on some Python3 versions</p></li>
+<li><p>Added proper support for S4 objects (<a class="reference external" href="https://github.com/flying-sheep">thanks to flying-sheep</a>)</p></li>
+<li><p>Added support for Python3 unitests on travis (<a class="reference external" href="https://github.com/flying-sheep">thanks to flying-sheep</a>)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.9.0 (2016-04-11)</dt><dd><ul>
+<li><p>Full support for data objects larger than 2**24 bytes</p></li>
+<li><p>Maximum size of message sent to Rserv can now be 2**64 bytes</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.8.4 (2015-09-06)</dt><dd><ul>
+<li><p>fixed missing requirements.txt in MANIFEST.in</p></li>
+<li><p>fixed bug in installer (setup.py)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.8.3 (2015-09-04)</dt><dd><ul>
+<li><p>Fixed exception catching for Python 3.4 (thanks to eeue56)</p></li>
+<li><p>Some pep8 cleanups</p></li>
+<li><p>explicit initialization of a number of instance variables in some classes</p></li>
+<li><p>cleanup of import statements in test modules</p></li>
+<li><p>Allow for message sizes greater than 4GB coming from R server</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.8.2 (2015-07-11)</dt><dd><ul>
+<li><p>Added support for S4 objects (generated when e.g. creating a db object in R)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.8.1 (2014-07-17)</dt><dd><ul>
+<li><p>Fixed errors in the documentation, updated outdated parts</p></li>
+<li><p>For unittesting run Rserve on different port from the default 6311 to
+avoid clashes with regular Rserve running on the same server</p></li>
+<li><p>Fixed but when passing a R-function as argument to a function call (e.g. to <code class="docutils literal notranslate"><span class="pre">sapply</span></code>),
+added unittest for this</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.8.0 (2014-06-26)</dt><dd><ul>
+<li><p>Added support for remote shutdown of Rserve (thanks to Uwe Schmitt)</p></li>
+<li><p>Added support for Out-Of-Bounds (OOB) messages (thanks to Philipp alias flying-sheep)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.7.3 (2013-08-01)</dt><dd><ul>
+<li><p>Added missing MANIFEST.in to produce a complete tgz package (now includes docs etc)</p></li>
+<li><p>Fixed bug on x64 machines when handling integers larger than 2**31</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.7.2 (2013-07-19)</dt><dd><ul>
+<li><p>Tested with Python 3.3.x, R 3.0.1 and Rserve 1.7.0</p></li>
+<li><p>Updated documentation accordingly</p></li>
+<li><p>Code cleanup for pep8 (mostly)</p></li>
+<li><p>Marked code as production stable</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.7.1 (2013-06-23)</dt><dd><ul>
+<li><p>Added link to new GitHub repository</p></li>
+<li><p>fixed URL to documentation</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.7.0 (2013-02-25)</dt><dd><ul>
+<li><p>Fixed problem when receiving very large result sets from R (added support for XT_LARGE header flag)</p></li>
+<li><p>Correctly translate multi-dimensional R arrays into numpy arrays (preserve axes the right way)
+Removed ‘arrayOrder’ keyword argument as a consequence.
+THIS IS AN API CHANGE - PLEASE CHECK AND ADAPT YOUR CODE, ESPECIALLY IF YOU USE MULTI-DIM ARRAYS!!</p></li>
+<li><p>Support for conn.voidEval and conn.eval and new ‘defaultVoid’-kw argument in the connect() function</p></li>
+<li><p>Fixed bug in receiving multi-dimensional boolean (logical) arrays from R</p></li>
+<li><p>Added support for multi-dimensional string arrays</p></li>
+<li><p>added support for XT_VECTOR_EXPR type generated e.g. via “expression()” in R (will return a list
+with the expression content as list content)</p></li>
+<li><p>windows users can now connect to localhost by pyRserve.connect() (omitting ‘localhost’ parameter)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.6.0 (2012-06-25)</dt><dd><ul>
+<li><p>support for Python3.x</p></li>
+<li><p>Python versions &lt;= 2.5 no more supported (due to Py3 support)</p></li>
+<li><p>support for unicode strings in Python 2.x</p></li>
+<li><p>full support complex numbers, partial support for 64bit integers and arrays</p></li>
+<li><p>suport for Fortran-style ordering of numpy arrays</p></li>
+<li><p>elements of single-item arrays are now translated to native python data types</p></li>
+<li><p>much improved documentation</p></li>
+<li><p>better unit test coverage</p></li>
+<li><p>usage of the deprecated conn(&lt;eval-string&gt;) is no more possible</p></li>
+<li><p>pyRserve.rconnect() now also removed</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.5.2 (2011-12-02)</dt><dd><ul>
+<li><p>Fixed problem with 32bit integers being mistakenly rendered into 64bit integers on 64bit machines</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.5.1 (2011-11-22)</dt><dd><ul>
+<li><p>Fixed improper DeprecationWarning when evaluating R statements via conn.r(…)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.5 (2011-10-03)</dt><dd><ul>
+<li><p>Renamed pyRserve.rconnect() to pyRserve.connect(). The former still works but shows a DeprecationWarning</p></li>
+<li><p>String evaluation should now only be executed on the namespace directly, not on the connection object anymore.
+The latter still works but shows a DeprecationWarning.</p></li>
+<li><p>New kw argument <cite>atomicArray=True</cite> added to pyRserve.connect() for preventing single valued arrays from being
+converted into atomic python data types.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.4 (2011-09-20)</dt><dd><ul>
+<li><p>Added support for nested function calls. E.g. conn.r.t.test( ….) now works.</p></li>
+<li><p>Proper support for boolean variables and vectors</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>V 0.3 (2010-06-08)</dt><dd><ul>
+<li><p>Added conversion of more complex R structures into Python</p></li>
+<li><p>Updated documentation (installation, manual)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>V 0.2 (2010-03-19) Fixed rendering of TaggedArrays</p></li>
+<li><p>V 0.1 (2010-01-10) Initial version</p></li>
+</ul>
+</div>
+<div class="section" id="supported-platforms">
+<h2>Supported Platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>This package has been mainly developed under Linux, and hence should run on all standard unix platforms, as well</dt><dd><p>as on Mac OS X. pyRserve has also been successfully used on Win32 machines. Unittests have been used on the Linux
+and Mac OS X side, however they might just work fine for Win32.</p>
+</dd>
+</dl>
+<p>It has been tested run with Python 2.7.x, 3.6, 3.7, and 3.8</p>
+<p>The latest development has been tested with R versions 3.0.1 and 3.6.2, and Rserve 1.8.0 and 1.8.6.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>pyRserve has been written by <a class="reference external" href="http://www.ralph-heinkel.com/">Ralph Heinkel (www.ralph-heinkel.com)</a> and is
+released under <a class="reference external" href="http://pythonhosted.org/pyRserve/license.html">MIT license</a>.</p>
+</div>
+<div class="section" id="quick-installation">
+<h2>Quick Installation<a class="headerlink" href="#quick-installation" title="Permalink to this headline">¶</a></h2>
+<p>From your unix/windows command line run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">pyRserve</span>
+</pre></div>
+</div>
+<p>For manual installation download the tar.gz or zip package.
+After unpacking, <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the pyRserve directory and run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code>
+from the command line.</p>
+</div>
+<div class="section" id="source-code-repository">
+<h2>Source Code repository<a class="headerlink" href="#source-code-repository" title="Permalink to this headline">¶</a></h2>
+<p>pyRserve is now hosted on GitHub at <a class="reference external" href="https://github.com/ralhei/pyRserve">https://github.com/ralhei/pyRserve</a>.</p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Documentation can be found at <a class="reference external" href="http://packages.python.org/pyRserve/">http://packages.python.org/pyRserve/</a>.</p>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>For discussion of pyRserve issues and getting help please use the Google newsgroup
+available at <a class="reference external" href="http://groups.google.com/group/pyrserve">http://groups.google.com/group/pyrserve</a>.</p>
+</div>
+<div class="section" id="missing-features">
+<h2>Missing Features<a class="headerlink" href="#missing-features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Authentication is implemented in Rserve but not yet in pyRserve</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pyRserve</a><ul>
+<li><a class="reference internal" href="#what-it-does">What It Does</a></li>
+<li><a class="reference internal" href="#changes">Changes</a></li>
+<li><a class="reference internal" href="#supported-platforms">Supported Platforms</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#quick-installation">Quick Installation</a></li>
+<li><a class="reference internal" href="#source-code-repository">Source Code repository</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#support">Support</a></li>
+<li><a class="reference internal" href="#missing-features">Missing Features</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to pyRserve’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="installation.html"
+                        title="next chapter">Installation</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/intro.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to pyRserve’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pyRserve 0.9.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2020 Ralph Heinkel.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>
