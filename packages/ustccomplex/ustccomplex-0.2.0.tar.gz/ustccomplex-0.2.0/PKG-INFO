@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ustccomplex
+Version: 0.2.0
+Summary: A complex network toolbox
+Home-page: UNKNOWN
+Author: qstan
+Author-email: tqs@mail.ustc.edu.cn
+License: MIT Licence
+Description: A complex network toolbox, especially for cnns
+Keywords: pip,ustccomplex,complex
+Platform: any
