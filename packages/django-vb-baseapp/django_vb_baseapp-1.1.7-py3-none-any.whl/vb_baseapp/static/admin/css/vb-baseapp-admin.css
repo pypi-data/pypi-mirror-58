@@ -1,0 +1,60 @@
+table#result_list img.thumbnail {
+    max-height: 200px;
+}
+
+.admin-image-preview img.thumbnail {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+div.softdeleted-object-message-row {
+    background: red;
+    color: white;
+    padding: 1rem 1rem .5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.submit-row input.recover {
+    background: green;
+}
+
+.submit-row input.hard-delete {
+    float: left;
+    background: #ba2121;
+}
+
+.submit-row a.vb-box-button {
+    border-radius: 4px;
+    height: 15px;
+    line-height: 15px;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.submit-row a.vb-box-button.go-back {
+    background: #79aec8;
+    color: #fff;
+}
+.submit-row a.vb-box-button.go-back:focus,
+.submit-row a.vb-box-button.go-back:hover,
+.submit-row a.vb-box-button.go-back:active {
+    background: #79aec8;
+    color: #ff0;
+}
+
+.submit-row a.vb-box-button.align-right {
+    float: none;
+    margin: 0 0 10px;
+}
+
+@media (min-width: 768px){
+    .submit-row a.vb-box-button.align-right {
+        float: right;
+        margin: 0 0 0 8px;
+        padding: 10px 15px;
+    }
+    .admin-image-preview img.thumbnail {
+        max-height: 200px;
+    }
+}
