@@ -1,0 +1,14 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/03relative/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/03relative/config.py,sha256=-SCEfHEfUW1Krx5QeiyZqHoXvWnkJjnTGE6SC9a4Rxw,263
+examples/03relative/main.py,sha256=u8oqx_kAB4b_rSw1HhZqEc_0LF2aeOUvKNlwxj7PJuE,116
+examples/03relative/shapes.py,sha256=PThcmJn9hxZOiHoCeuae6AByxc6lGPCCBGDgGiysP_U,94
+magicalimport/__init__.py,sha256=idh68v6GneU652ZcuwfhWR-3fMEp0mhpym4WrLbrG6I,5162
+magicalimport/_fake.py,sha256=c2yiLcHAAmgm6cV_e5mHqEG9sj3LqlguG2MoUAe19TY,16
+magicalimport/compat.py,sha256=TvTai0yXYzn8b_aNTc6XY6g9E4mp-wgCh-IAD-bCYmA,2251
+magicalimport-0.8.0.dist-info/LICENSE,sha256=Js1C9qRrzeTqCaza7F8Wfdhi5q6RrbitaufIGdMzYEM,1063
+magicalimport-0.8.0.dist-info/METADATA,sha256=nBhZhSqCkRSpM7Ry2AguQmBykZhjVw8bmL5rmvuWBC8,2759
+magicalimport-0.8.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+magicalimport-0.8.0.dist-info/entry_points.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+magicalimport-0.8.0.dist-info/top_level.txt,sha256=uh1i7sainAR-kn0cXV1gar6MWRyqGN1fo97k0GaWVhc,23
+magicalimport-0.8.0.dist-info/RECORD,,
