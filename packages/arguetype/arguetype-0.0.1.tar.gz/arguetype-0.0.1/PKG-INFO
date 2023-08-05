@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: arguetype
+Version: 0.0.1
+Summary: arg typing for workflows
+Home-page: https://github.com/dicaso/arguetype
+Author: Christophe Van Neste
+Author-email: christophe.vanneste@kaust.edu.sa
+License: MIT
+Description: # arguetype
+        
+        Argument typing for workflows allowing automated testing of tasks.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: documentation

@@ -1,0 +1,9 @@
+README.md
+setup.py
+arguetype/__init__.py
+arguetype.egg-info/PKG-INFO
+arguetype.egg-info/SOURCES.txt
+arguetype.egg-info/dependency_links.txt
+arguetype.egg-info/not-zip-safe
+arguetype.egg-info/requires.txt
+arguetype.egg-info/top_level.txt
