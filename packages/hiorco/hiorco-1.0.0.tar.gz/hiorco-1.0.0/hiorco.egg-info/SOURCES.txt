@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+hiorco/__init__.py
+hiorco/cli.py
+hiorco/method.py
+hiorco.egg-info/PKG-INFO
+hiorco.egg-info/SOURCES.txt
+hiorco.egg-info/dependency_links.txt
+hiorco.egg-info/entry_points.txt
+hiorco.egg-info/not-zip-safe
+hiorco.egg-info/top_level.txt
