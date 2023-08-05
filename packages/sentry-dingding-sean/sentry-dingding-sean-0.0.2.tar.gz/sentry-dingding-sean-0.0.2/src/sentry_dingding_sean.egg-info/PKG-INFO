@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sentry-dingding-sean
+Version: 0.0.2
+Summary: sean A Sentry extension which send errors stats to DingDing
+Home-page: UNKNOWN
+Author: sean
+Author-email: ichenxiang@vip.qq.com
+License: MIT
+Description: sean A Sentry extension which send errors stats to DingDing
+Keywords: sentry dingding
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
