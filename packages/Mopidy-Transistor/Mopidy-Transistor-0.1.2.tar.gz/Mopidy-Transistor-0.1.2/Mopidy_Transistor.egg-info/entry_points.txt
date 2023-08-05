@@ -1,0 +1,3 @@
+[mopidy.ext]
+transistor = mopidy_transistor:Extension
+

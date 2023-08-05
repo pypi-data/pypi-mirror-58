@@ -1,0 +1,63 @@
+sudo: false
+
+language: python
+
+python:
+  - "3.8"
+# virtualenv:
+#   system_site_packages: true
+
+# command to install dependencies
+install:
+  # - pip install -r requirements.txt
+  - pip install -U tox-travis
+  - pip install https://github.com/mopidy/mopidy/archive/v3.0.0a6.zip
+  - pip install Pykka >= 2.0.1
+  - pip install setuptools
+  - pip install pyserial
+  - pip install transitions
+  - pip install podcastparser
+  - pip install bcrypt
+  - pip install microparcel
+  - pip install python-dateutil
+  - pip install .
+
+addons:
+  apt:
+    packages:
+      - python3-dev
+      - python3-gst-1.0
+      - gir1.2-gstreamer-1.0
+      - gir1.2-gst-plugins-base-1.0
+      - gstreamer1.0-plugins-good
+      - gstreamer1.0-plugins-ugly
+      - gstreamer1.0-tools
+
+env:
+  - TOX_ENV=py38
+  - TOX_ENV=flake8
+
+install:
+  - "pip install tox"
+
+script:
+  - "tox -e $TOX_ENV"
+
+after_success:
+  - "if [ $TOX_ENV == 'py38' ]; then pip install coveralls; coveralls; fi"
+
+
+deploy:
+  provider: pypi
+  distributions: sdist
+  skip_cleanup: true
+  skip_existing: true
+  user: __token__
+  password:
+    secure: QKJvSWDbXfI4UL3uVCRu3t7FtfmLZvkHL5sKNlBfhV9LhR32ORTy2ti6OLGU3zvI9cmvuwawy/glnFbWQYs8URCEkV4w8ulX6Ag5Hbmn3TunsNOMzllVNyotutQT+k9DtrntqmWeO/RN7Nvv3eVtsEGMIms4M8LCBwOReTOyoo39ga6G1FTaV5dsRqo91uh+63BdIRjmHkmntTg+YcqfN0NEhVnVfMU1qfM6yxx+UjRbYxN1Mp2u/cXFZnUktZ63ROTK0CR3GXZudzs1LlIimKBejvRdXpAJqInmGEzRZFFMyEh4Zo7sVy69bxYorfvxuWQu1b33z14lDw2DNKYPMngy/gy2rHfXWNxaouOEFqZjEVbzmqKPG+U+HIj/U6ETPVnjyVvl+gyMGTI3f1zoWRHfPwTgN5l2ccBFKCifUxyz9TfhcqvvRpbtbSPp1NFPmPjO3qqlI1pKF+ls78erZlRuc6TZQOnivL9c9+Jc8+RY3hA+I50fZNfe+F1QBEUH1RqWpdk2sm5O/s8OAp5fMrP6VJFYzHOPpxACUiorBEf8/aDaJWLXQBDUUZy35fhyMs6gbqyYylUeko56hWtA/5rGgMM09sxyGYHvmmqHSFOI4py1esQVaQI45DwI9Bop8+9vE9vPnO3PdzhxBmykmHmXoSMED8xL4IB5vaB+78M=
+
+  on:
+    tags: true
+    repo: lukh/mopidy-transistor
+    python: 3.8
+

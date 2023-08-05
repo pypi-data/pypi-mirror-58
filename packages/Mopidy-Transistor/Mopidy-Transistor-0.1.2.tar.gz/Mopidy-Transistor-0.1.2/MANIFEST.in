@@ -1,0 +1,9 @@
+include .travis.yml
+include LICENSE
+include MANIFEST.in
+include README.rst
+include mopidy_transistor/ext.conf
+include tox.ini
+
+recursive-include tests *.py
+recursive-include mopidy_transistor/web/site *.html *.css *.svg *.png *.js *.js.map
