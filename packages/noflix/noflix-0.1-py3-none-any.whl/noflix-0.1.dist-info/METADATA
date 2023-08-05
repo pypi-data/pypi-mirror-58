@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: noflix
+Version: 0.1
+Summary: Library to automate series downloads
+Home-page: https://github.com/vinigfer/noflix
+Author: Vinicius Gubiani Ferreira
+Author-email: vini.g.fer@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: feedparser (==5.2.1)
+
+# NoFlix
+
+
