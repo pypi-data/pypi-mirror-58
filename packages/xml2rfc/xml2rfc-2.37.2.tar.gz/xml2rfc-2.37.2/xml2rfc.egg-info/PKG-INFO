@@ -1,0 +1,210 @@
+Metadata-Version: 1.2
+Name: xml2rfc
+Version: 2.37.2
+Summary: Xml2rfc generates RFCs and IETF drafts from document source in XML according to the IETF xml2rfc v2 and v3 vocabularies.
+Home-page: https://tools.ietf.org/tools/xml2rfc/trac/
+Author: Henrik Levkowetz, Josh Bothun
+Author-email: tools-discuss@ietf.org
+Maintainer: Henrik Levkowetz
+Maintainer-email: henrik@levkowetz.com
+License: BSD-3-Clause
+Download-URL: https://pypi.python.org/pypi/xml2rfc
+Description: Introduction
+        ============
+        
+        The IETF_ uses a specific format for the standards and other documents it
+        publishes as RFCs_, and for the draft documents which are produced when
+        developing documents for publications.  There exists a number of different
+        tools to facilitate the formatting of drafts and RFCs according to the
+        existing rules, and this tool, **xml2rfc**, is one of them.  It takes as input
+        an xml file which contains the text and meta-information about author names
+        etc., and transforms it into suitably formatted output.  The input xml file
+        should follow the grammars in RFC7749_ (for v2 documents) or RFC7991_ (for 
+        v3 documents). Note that the grammar for v3 is still being refined, and 
+        changes will eventually be captured in the `bis draft for 7991`_. 
+        Changes not yet captured can be seen in the xml2rfc source `v3.rng`_.
+        
+        **xml2rfc** provides a variety of output formats. See the command line
+        help for a full list of formats. It also provides conversion from v2 to
+        v3, and can run the preptool_ on its input.
+        
+        .. _IETF: https://www.ietf.org/
+        .. _RFCs: https://www.rfc-editor.org/
+        .. _RFC7749: https://tools.ietf.org/html/rfc7749
+        .. _RFC7991: https://tools.ietf.org/html/rfc7991
+        .. _bis draft for 7991: https://tools.ietf.org/html/draft-iab-rfc7991bis
+        .. _v3.rng: https://trac.tools.ietf.org/tools/xml2rfc/trac/browser/trunk/cli/xml2rfc/data/v3.rng
+        .. _preptool: https://tools.ietf.org/html/rfc7998
+        
+        Installation
+        ============
+        
+        Installation of the python package is done as usual with 'pip install xml2rfc',
+        using appropriate switches and/or sudo.
+        
+        Installation of support libraries for the PDF-formatter
+        -------------------------------------------------------
+        
+        In order to generate PDFs, xml2rfc uses the WeasyPrint module, which
+        depends on external libaries that must be installed as native packages
+        on your platform, separately from the xml2rfc install.
+        
+        First, install the Cairo, Pango, and GDK-PixBuf library files on your
+        system.  See installation instructions on the WeasyPrint Docs:
+        
+            https://weasyprint.readthedocs.io/en/stable/install.html
+        
+        (Python 3 is not needed if your system Python is 2.7, though).
+        
+        (On some OS X systems with System Integrity Protection active, you may
+        need to create a symlink from your home directory to the library installation
+        directory (often /opt/local/lib):
+        
+            ln -s /opt/local/lib ~/lib
+        
+        in order for weasyprint to find the installed cairo and pango libraries.
+        Whether this is needed or not depends on whether you used macports or homebrew
+        to install cairo and pango, and the homebrew / macport version.)
+        
+        Next, install the pycairo and weasyprint python modules using pip.
+        Depending on your system, you may need to use 'sudo' or install in
+        user-specific directories, using the --user switch.  On OS X in
+        particular, you may also need to install a newer version of setuptools
+        using --user before weasyprint can be installed.  If you install with 
+        the --user switch, you may need to also set PYTHONPATH, e.g.,
+        
+            PYTHONPATH=/Users/henrik/Library/Python/2.7/lib/python/site-packages
+        
+        for Python 2.7.
+        
+        The basic pip commands (modify as needed according to the text above)
+        are:
+        
+            pip install 'pycairo>=1.18' 'weasyprint<=0.42.3'
+        
+        With these installed and available to xml2rfc, the --pdf switch will be
+        enabled.
+        
+        For PDF output, you also need to install the Noto font set.  Download the full
+        set from https://noto-website-2.storage.googleapis.com/pkgs/Noto-unhinted.zip,
+        and install as appropriate for your platform.
+        
+        Usage
+        =====
+        
+        xml2rfc accepts a single XML document as input and outputs to one or more conversion formats.
+        
+        **Basic Usage**: ``xml2rfc SOURCE [options] FORMATS...``
+        
+        Run ``xml2rfc --help`` for a full listing of command-line options.
+        
+        
+        Changelog
+        =========
+        
+        
+        Version 2.37.2 (17 Dec 2019)
+        ------------------------------------------------
+        
+        
+          * Refined the non-ascii punctuation (smart-quotes, etc.) downcoding, and 
+            eliminated a couple of bugs that could lead to infinite looping or
+            crash.  Fixes issue #473.
+        
+          * Made the xref labels used for different @section values work for 
+            additional value types.
+        
+          * Fixed a couple of preptool bugs found during debugging of issue #473.
+        
+        
+        
+        
+        
+        
+        
+        Version 2.37.1 (12 Dec 2019)
+        ------------------------------------------------
+        
+        
+          * Fixed a bug in the text formatter pagination code where it incorrectly 
+            tried to annotate Comment and PI nodes with page number information.
+        
+          * Updated the v2v3 converter to do essentially what it did before v2.37
+            with respect to unicode downcoding, but with more explicit calls.
+        
+          * Added a base writer method to downcode reference punctuation.
+        
+          * Moved the list of (tag, attr) combinations that permit unicode values 
+            into util.unicode.  Rewrote docwncode_punctuation() to only touch 
+            punctuation.
+        
+          * Restored lost trailing text after <contact> in <t> context for text 
+            output.
+        
+        
+        
+        
+        
+        
+        
+        Version 2.37.0 (10 Dec 2019)
+        ------------------------------------------------
+        
+        
+          * Added a new element <contact> with the same attributes and child
+            elements as <author>, except for @role.  As a child element of
+            <section> it will create a name and address block, as for authors in
+            the Authors' Addresses section; as a child of <t> it will create an
+            inline name entry, similar to <author> in citations.
+        
+          * Changed the handling of block elements within table cells to re-wrap
+            for better column fit.  Fixes issue #454.
+        
+          * Added an error for references without anchor (in v2; in v3 this will
+            be caught by the schema validation step).  Fixes issue #412.
+        
+          * Changed error handling in a couple of places so as to result in
+            non-zero command-line exit values on errors.  Fixes issue #464.
+        
+          * Tweaked the <cref> text renderer to not apply <t> paragraph filling to
+            the <cref> content.  Fixes an issue raised by resnick@episteme.net.
+        
+          * Changed layout of multiple instances of <extaddr> and <street> to show
+            on separate lines instead of one line, comma-separated.  Changed one
+            notice message to warning.
+        
+          * Added an option to silence warnings and notices starting with given
+            strings.
+        
+          * Changed the HTML renderer to not emit email information in both
+            primary and alternative author address blocks.
+        
+          * Added a test case using the new <contact> element, and added a couple
+            of email addresses for increased coverage of email address placement
+            when non-ascii address information is present.
+        
+          * Updated the handling of non-latin address information in the text
+            format to follow RFC7997 and the HTML output more closely.
+        
+          * Added generation of v3.rng from v3.rnc to the Makefile, and fixed a
+            schema error in the .rng file
+        
+          * Changed the default content downcoding done for things like 'smart
+            quotes' to only apply to text content, not to XML element attributes.
+        
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: License :: OSI Approved :: BSD License
