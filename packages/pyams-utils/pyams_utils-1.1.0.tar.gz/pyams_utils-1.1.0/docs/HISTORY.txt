@@ -1,0 +1,13 @@
+
+Changelog
+=========
+
+1.1.0
+-----
+ - corrected "timestamp" TALES extension
+ - added generic *IDataManager* interface definition to PyAMS_utils, so it can be used in any
+   package without using PyAMS_form
+
+1.0.0
+-----
+ - initial release
