@@ -1,0 +1,8 @@
+README.md
+setup.py
+crsmysql/__init__.py
+crsmysql/crsmysql.py
+crsmysql.egg-info/PKG-INFO
+crsmysql.egg-info/SOURCES.txt
+crsmysql.egg-info/dependency_links.txt
+crsmysql.egg-info/top_level.txt
