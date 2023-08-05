@@ -1,0 +1,42 @@
+Metadata-Version: 1.2
+Name: py-helios-solc
+Version: 3.2.2
+Summary: Python wrapper around the helios solc binary
+Home-page: https://github.com/Helios-Protocol/py-helios-solc
+Author: Tommy Mckinnon
+Author-email: tommy@heliosprotocol.io
+License: MIT
+Description: py-solc
+        =======
+        
+        Python wrapper around the Helios Protocol ``solc`` Solidity compiler.
+        
+        Dependency
+        ----------
+        
+        This library requires the ``solc`` executable to be present.
+        
+        Quickstart
+        ----------
+        
+        Installation
+        
+        .. code:: sh
+        
+           pip install py-helios-solc
+        
+        See the ethereum solc docs for more details. This is a clone of that
+        library except for the Helios Protocol version of solc.
+        https://github.com/ethereum/py-solc
+        
+Keywords: ethereum helios protocol solidity solc
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3.4, <4
