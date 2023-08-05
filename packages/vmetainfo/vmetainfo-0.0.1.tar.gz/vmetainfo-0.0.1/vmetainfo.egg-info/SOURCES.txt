@@ -1,0 +1,6 @@
+README.rst
+setup.py
+vmetainfo.egg-info/PKG-INFO
+vmetainfo.egg-info/SOURCES.txt
+vmetainfo.egg-info/dependency_links.txt
+vmetainfo.egg-info/top_level.txt

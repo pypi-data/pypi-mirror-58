@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: vmetainfo
+Version: 0.0.1
+Summary: Get video meta information from video/audio file using ffprobe/avprobe
+Home-page: https://bitbucket.org/pi11/vmetainfo
+Author: pi11
+Author-email: webii@pm.me
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
