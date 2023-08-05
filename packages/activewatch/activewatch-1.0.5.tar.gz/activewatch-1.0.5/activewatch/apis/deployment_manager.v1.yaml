@@ -1,0 +1,373 @@
+openapi: 3.0.2
+info:
+  title: deployment_manager
+  version: '1.0'
+  description: Deployment Manager API
+servers:
+  - url: 'https://9vtzqwoprc.execute-api.us-east-1.amazonaws.com/{basePath}'
+    variables:
+      basePath:
+        default: POC
+paths:
+  '/deployment_manger/v1/{account_id}/deployment_manager/deployments':
+    parameters:
+      - name: account_id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Customer Account ID (CID)
+    post:
+      summary: Create New Deployment
+      operationId: create_deployment
+      responses:
+        '200':
+          description: OK
+      requestBody:
+        content:
+          application/json:
+            schema:
+              title: DeploymentSpecInfo
+              type: object
+              x-examples: {}
+              description: Deployment Spefication Object
+              x-tags:
+                - deployment_manager
+              properties:
+                name:
+                  type: string
+                platform:
+                  type: object
+                  properties:
+                    type:
+                      type: string
+                    id:
+                      type: string
+                mode:
+                  type: string
+                enabled:
+                  type: boolean
+                discover:
+                  type: boolean
+                scan:
+                  type: boolean
+                scope:
+                  type: object
+                  properties:
+                    include:
+                      type: array
+                      items:
+                        title: AssetInfo
+                        type: object
+                        properties:
+                          type:
+                            type: string
+                          key:
+                            type: string
+                        required:
+                          - type
+                          - key
+                    exclude:
+                      type: array
+                      items:
+                        title: AssetInfo
+                        type: object
+                        properties:
+                          type:
+                            type: string
+                          key:
+                            type: string
+                        required:
+                          - type
+                          - key
+                    external_assets:
+                      type: array
+                      items:
+                        title: ExternalAssetInfo
+                        type: object
+                        properties:
+                          type:
+                            type: string
+                          name:
+                            type: string
+                          value:
+                            type: string
+                        required:
+                          - type
+                          - name
+                          - value
+                scanning:
+                  type: object
+                  properties:
+                    internal:
+                      title: ScanScheduleInfo
+                      type: object
+                      properties:
+                        frequency:
+                          type: string
+                        shedule:
+                          type: array
+                          items:
+                            type: string
+                      required:
+                        - frequency
+                        - shedule
+                    external:
+                      title: ScanScheduleInfo
+                      type: object
+                      properties:
+                        frequency:
+                          type: string
+                        shedule:
+                          type: array
+                          items:
+                            type: string
+                      required:
+                        - frequency
+                        - shedule
+                credentials:
+                  title: CredentialsInfo
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    secrets:
+                      oneOf:
+                        - title: AWSCredentialsInfo
+                          type: object
+                          properties:
+                            type:
+                              type: string
+                            arn:
+                              type: string
+                          required:
+                            - type
+                            - arn
+                  required:
+                    - name
+              required:
+                - name
+                - platform
+        description: ''
+      security:
+        - aims_request_authorizer: []
+      parameters: []
+      x-amazon-apigateway-integration:
+        uri: 'arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:481746159046:function:aw_prototype/invocations'
+        responses:
+          default:
+            statusCode: '200'
+        passthroughBehavior: when_no_match
+        httpMethod: POST
+        contentHandling: CONVERT_TO_TEXT
+        type: aws_proxy
+components:
+  schemas:
+    DeploymentSpecInfo:
+      title: DeploymentSpecInfo
+      type: object
+      x-examples: {}
+      description: Deployment Spefication Object
+      x-tags:
+        - deployment_manager
+      properties:
+        name:
+          type: string
+        platform:
+          type: object
+          properties:
+            type:
+              type: string
+            id:
+              type: string
+        mode:
+          type: string
+        enabled:
+          type: boolean
+        discover:
+          type: boolean
+        scan:
+          type: boolean
+        scope:
+          type: object
+          properties:
+            include:
+              type: array
+              items:
+                title: AssetInfo
+                type: object
+                properties:
+                  type:
+                    type: string
+                  key:
+                    type: string
+                required:
+                  - type
+                  - key
+            exclude:
+              type: array
+              items:
+                title: AssetInfo
+                type: object
+                properties:
+                  type:
+                    type: string
+                  key:
+                    type: string
+                required:
+                  - type
+                  - key
+            external_assets:
+              type: array
+              items:
+                title: ExternalAssetInfo
+                type: object
+                properties:
+                  type:
+                    type: string
+                  name:
+                    type: string
+                  value:
+                    type: string
+                required:
+                  - type
+                  - name
+                  - value
+        scanning:
+          type: object
+          properties:
+            internal:
+              title: ScanScheduleInfo
+              type: object
+              properties:
+                frequency:
+                  type: string
+                shedule:
+                  type: array
+                  items:
+                    type: string
+              required:
+                - frequency
+                - shedule
+            external:
+              title: ScanScheduleInfo
+              type: object
+              properties:
+                frequency:
+                  type: string
+                shedule:
+                  type: array
+                  items:
+                    type: string
+              required:
+                - frequency
+                - shedule
+        credentials:
+          title: CredentialsInfo
+          type: object
+          properties:
+            name:
+              type: string
+            secrets:
+              oneOf:
+                - title: AWSCredentialsInfo
+                  type: object
+                  properties:
+                    type:
+                      type: string
+                    arn:
+                      type: string
+                  required:
+                    - type
+                    - arn
+          required:
+            - name
+      required:
+        - name
+        - platform
+    AssetInfo:
+      title: AssetInfo
+      type: object
+      properties:
+        type:
+          type: string
+        key:
+          type: string
+      required:
+        - type
+        - key
+    ExternalAssetInfo:
+      title: ExternalAssetInfo
+      type: object
+      properties:
+        type:
+          type: string
+        name:
+          type: string
+        value:
+          type: string
+      required:
+        - type
+        - name
+        - value
+    ScanScheduleInfo:
+      title: ScanScheduleInfo
+      type: object
+      properties:
+        frequency:
+          type: string
+        shedule:
+          type: array
+          items:
+            type: string
+      required:
+        - frequency
+        - shedule
+    CredentialsInfo:
+      title: CredentialsInfo
+      type: object
+      properties:
+        name:
+          type: string
+        secrets:
+          oneOf:
+            - title: AWSCredentialsInfo
+              type: object
+              properties:
+                type:
+                  type: string
+                arn:
+                  type: string
+              required:
+                - type
+                - arn
+      required:
+        - name
+    AWSCredentialsInfo:
+      title: AWSCredentialsInfo
+      type: object
+      properties:
+        type:
+          type: string
+        arn:
+          type: string
+      required:
+        - type
+        - arn
+  securitySchemes:
+    auth:
+      type: apiKey
+      in: header
+      name: X-AIMS-Auth-Token
+      description: AIMS Authentication Token
+    aims_request_authorizer:
+      type: apiKey
+      name: X-AIMS-Auth-Token
+      in: header
+      x-amazon-apigateway-authtype: custom
+      x-amazon-apigateway-authorizer:
+        authorizerUri: 'arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:481746159046:function:aims_token_authorizer/invocations'
+        authorizerResultTtlInSeconds: 0
+        identitySource: 'method.request.header.X-AIMS-Auth-Token, context.path'
+        type: request
+
