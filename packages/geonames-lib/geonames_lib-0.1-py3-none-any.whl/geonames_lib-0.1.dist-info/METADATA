@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: geonames-lib
+Version: 0.1
+Summary: Library for working with GeoNames dump
+Home-page: https://github.com/abmyii/geonames
+Author: abmyii
+Author-email: abmyii@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Dist: fuzzywuzzy
+Requires-Dist: pandas
+
+geonames
+========
+
+Library to query places from GeoName dumps (http://download.geonames.org/export/dump/).
+
+Installation
+------------
+
+geonames requires Python 2.7 or 3.5+ as well as ``numpy`` and ``pandas`` packages. It can be installed with,
+
+.. code::
+
+    pip install geonames
+
+
