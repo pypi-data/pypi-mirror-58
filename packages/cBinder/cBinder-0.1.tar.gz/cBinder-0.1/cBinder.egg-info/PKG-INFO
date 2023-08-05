@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cBinder
+Version: 0.1
+Summary: Generates python wrapper for calling libraries in C
+Home-page: https://github.com/Tetrite/cBinder
+Author: Tetrite
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: cbinder so dll wrapper shared
+Platform: UNKNOWN
+Provides-Extra: dev
