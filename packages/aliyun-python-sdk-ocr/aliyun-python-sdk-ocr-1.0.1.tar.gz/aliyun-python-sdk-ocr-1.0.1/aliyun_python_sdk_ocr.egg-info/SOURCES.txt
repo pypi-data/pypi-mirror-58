@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+aliyun_python_sdk_ocr.egg-info/PKG-INFO
+aliyun_python_sdk_ocr.egg-info/SOURCES.txt
+aliyun_python_sdk_ocr.egg-info/dependency_links.txt
+aliyun_python_sdk_ocr.egg-info/requires.txt
+aliyun_python_sdk_ocr.egg-info/top_level.txt
+aliyunsdkocr/__init__.py
+aliyunsdkocr/endpoint.py
+aliyunsdkocr/request/__init__.py
+aliyunsdkocr/request/v20191230/RecognizeBankCardRequest.py
+aliyunsdkocr/request/v20191230/RecognizeIdentityCardRequest.py
+aliyunsdkocr/request/v20191230/RecognizeLicensePlateRequest.py
+aliyunsdkocr/request/v20191230/__init__.py
