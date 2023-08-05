@@ -1,0 +1,8 @@
+graphene
+graphene-django
+graphene-django-extras
+graphql-core
+graphql-relay
+djangorestframework
+Django
+typedecorator
