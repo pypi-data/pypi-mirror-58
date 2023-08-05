@@ -1,0 +1,6 @@
+click>=5.0
+contextlib2>=0.5.4
+numpy
+pandas
+six
+sklearn
