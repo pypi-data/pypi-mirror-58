@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/CaptchaLibrary/__init__.py
+src/rf_captchalibrary.egg-info/PKG-INFO
+src/rf_captchalibrary.egg-info/SOURCES.txt
+src/rf_captchalibrary.egg-info/dependency_links.txt
+src/rf_captchalibrary.egg-info/requires.txt
+src/rf_captchalibrary.egg-info/top_level.txt

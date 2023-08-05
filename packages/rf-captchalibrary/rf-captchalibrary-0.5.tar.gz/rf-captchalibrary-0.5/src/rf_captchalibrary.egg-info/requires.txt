@@ -1,0 +1,4 @@
+Pillow==6.2.0
+requests==2.22.0
+robotlibcore-temp
+robotframework==3.1.2
