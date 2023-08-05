@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+wagtailextraicons/__init__.py
+wagtailextraicons/apps.py
+wagtailextraicons/wagtail_hooks.py
+wagtailextraicons.egg-info/PKG-INFO
+wagtailextraicons.egg-info/SOURCES.txt
+wagtailextraicons.egg-info/dependency_links.txt
+wagtailextraicons.egg-info/top_level.txt
+wagtailextraicons/static/.DS_Store
+wagtailextraicons/static/wagtailextraicons/css/main.css
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.506ade92e0d7a83f1c25eeab33f5b589.ttf
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.63126d219ebfc8854841eeafa6a63a97.eot
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.af6c941a61024c0e8af0a3fbefe14f79.woff
+wagtailextraicons/static/wagtailextraicons/fonts/extraicons.fd8bbf99c9f2abb693ebb1f2e7b1d7a6.svg
