@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: algokit
+Version: 0.0.6
+Summary: common utilities and algorithm
+Home-page: https://github.com/wkgreat/algokit
+Author: ke wang
+Author-email: wkgreat@outlook.com
+License: UNKNOWN
+Description: common utilities and algorithm
+Keywords: pip,algokit,algorithm
+Platform: any
