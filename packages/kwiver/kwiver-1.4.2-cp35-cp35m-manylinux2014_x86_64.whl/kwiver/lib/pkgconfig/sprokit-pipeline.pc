@@ -1,0 +1,11 @@
+prefix=/kwiver/python/_skbuild/linux-x86_64-3.5/cmake-install/kwiver
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${prefix}/lib
+sprokitplugindir=${libdir}/sprokit
+
+Name: sprokit-pipeline
+Description: The sprokit-pipeline library
+Version: 
+Requires: sprokit = 
+Libs: -lsprokit_pipeline
