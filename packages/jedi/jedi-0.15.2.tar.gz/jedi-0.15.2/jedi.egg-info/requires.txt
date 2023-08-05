@@ -1,0 +1,6 @@
+parso>=0.5.2
+
+[testing]
+pytest<5.0.0,>=3.9.0
+docopt
+colorama==0.4.1
