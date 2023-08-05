@@ -1,0 +1,13 @@
+taos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taos/bio.py,sha256=9uvnm2MJR-NQ24D9AH3ZIN-6v6F2Vit4AQ4Pb8GpsGE,870
+taos/cli.py,sha256=-6SXegdgzv5rCOMvrXL7aducQ0fampAz3yV4caGxVJU,1181
+taos/config.py,sha256=aOgNXEf39T8HQo95mbtLicAIYFWPBDogkZRw93dAtNs,72
+taos/web.py,sha256=VPtpWMBf0pTNIRUH9CC3wOUhT277-8bv84hgOcDbPHg,27
+tests/taos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/taos/test_bio.py,sha256=3xgS2_SBtP8780T54fYBe_TqT0gio6bolDhynf_9zLU,89
+taos-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+taos-1.0.0.dist-info/METADATA,sha256=ngpAL3UDCuOFYUejDBUoAczKIKqH-pN9ObMHZ65qOsw,758
+taos-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+taos-1.0.0.dist-info/entry_points.txt,sha256=HHoU93ZHfSMHoRWcHSJzYSHA4URCWz0XxMkQeGOPwNw,62
+taos-1.0.0.dist-info/top_level.txt,sha256=YJGZ3t_oJT7juCUH8l0VjV2-Su1psFEFNPikvEGdvaw,11
+taos-1.0.0.dist-info/RECORD,,
