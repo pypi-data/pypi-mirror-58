@@ -1,0 +1,12 @@
+referenceseeker/__init__.py,sha256=aU0CrYAWSvFH-3hlNeGmp_pciPYd8oVqLH_AewQvQz0,20
+referenceseeker/ani.py,sha256=YY3bQSjrhYdoGj2Y4BAZngZEZIPb6yKw5Q5r44Lb-ME,7045
+referenceseeker/constants.py,sha256=dFPxF3PTH2k4dfYIhBpoKcjnYCafkY9OCnKw1owoero,345
+referenceseeker/mash.py,sha256=V76bV8beV_gRE3TBzutihIszMNHanH1y9KGzQQ1HDF0,1132
+referenceseeker/referenceseeker.py,sha256=tMqhf3nnZ06yRH1w0D6Lb4N4aVA_pqmaWsoNNeU0-zc,8906
+referenceseeker/util.py,sha256=8n6_J7oF10FcviKFsXzRM7PAbFM3J4HN93vSOF5zllo,4145
+referenceseeker-1.4.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+referenceseeker-1.4.dist-info/METADATA,sha256=HcgeQp8F6ZWOn0cMyEYt5wNENzorrzA4_YD2IC3uDdQ,10844
+referenceseeker-1.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+referenceseeker-1.4.dist-info/entry_points.txt,sha256=sjUr7zZh5uKFhX7NQF-C6FFULCkCksMECgLm771f5uM,74
+referenceseeker-1.4.dist-info/top_level.txt,sha256=oa2sbr1HuNcZB7kbNGbbC-3sT7XSilskSEvSebtdrHY,16
+referenceseeker-1.4.dist-info/RECORD,,
