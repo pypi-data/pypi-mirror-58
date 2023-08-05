@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyfcrypt
+Version: 1.0.2
+Summary: file encryption and rsa key generation tool with command line interface support
+Home-page: http://www.sonmicro.com/
+Author: SonMicro Electronics
+Author-email: info@sonmicro.com
+License: MIT
+
+pyfcrypt
+
+
