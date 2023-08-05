@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: TracDiscussion
+Version: 1.2
+Summary: Discussion forum plugin for Trac
+Home-page: https://trac-hacks.org/wiki/DiscussionPlugin
+Author: Radek Bartoň
+Author-email: blackhex@post.cz
+License: GPL
+Keywords: trac discussion e-mail
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+Requires-Dist: Trac
+Provides-Extra: spamfilter
+Requires-Dist: TracSpamFilter (>=1.2) ; extra == 'spamfilter'
+Provides-Extra: tags
+Requires-Dist: TracTags (>=0.9) ; extra == 'tags'
+
+UNKNOWN
+
+
