@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>platformids &mdash; platformids 0.1.28 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.28',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="platformids 0.1.28 documentation" href="../index.html" />
+    <link rel="up" title="Module code" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">platformids 0.1.28 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for platformids</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;The package &#39;platformids&#39; provides canonical enumerations of bit encoded numeric platform IDs.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">absolute_import</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="k">import</span> <span class="n">version_info</span><span class="p">,</span> <span class="n">platform</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;Arno-Can Uestuensoez&#39;</span>
+<span class="n">__license__</span> <span class="o">=</span> <span class="s2">&quot;Artistic-License-2.0 + Forced-Fairplay-Constraints&quot;</span>
+<span class="n">__copyright__</span> <span class="o">=</span> <span class="s2">&quot;Copyright (C) 2010-2016 Arno-Can Uestuensoez&quot;</span> \
+                <span class="s2">&quot; @Ingenieurbuero Arno-Can Uestuensoez&quot;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;0.1.28&#39;</span>
+<span class="n">__uuid__</span> <span class="o">=</span> <span class="s2">&quot;7add5ded-c39b-4b6e-8c87-1b3a1c150ee9&quot;</span>
+
+<span class="n">__docformat__</span> <span class="o">=</span> <span class="s2">&quot;restructuredtext en&quot;</span>
+
+
+<span class="n">msg_loponly</span> <span class="o">=</span> <span class="s2">&quot;Logic operators only.&quot;</span>
+
+
+<div class="viewcode-block" id="PlatformIDsError"><a class="viewcode-back" href="../pyplatforms.html#platformids.PlatformIDsError">[docs]</a><span class="k">class</span> <span class="nc">PlatformIDsError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Subsystem *PlatformIDs*.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<span class="c1"># pylint: disable-msg=W0105</span>
+
+
+<div class="viewcode-block" id="getPYVxyz"><a class="viewcode-back" href="../pyplatforms.html#platformids.getPYVxyz">[docs]</a><span class="k">def</span> <span class="nf">getPYVxyz</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Calculates the 16bit integer bi-mask for the provided </span>
+<span class="sd">    Python release values. For example from *sys.version_info*: ::</span>
+
+<span class="sd">       x = sys.version_info[0]  # uses 3bits:  x: 0-7</span>
+<span class="sd">       y = sys.version_info[1]  # uses 5bits:  y: 0-31</span>
+<span class="sd">       z = sys.version_info[2]  # uses 8bits:  z: 0-255</span>
+<span class="sd">    </span>
+<span class="sd">    resulting in: ::</span>
+
+<span class="sd">       Vxyz = 0bxxxyyyyyzzzzzzzz</span>
+
+<span class="sd">    For example: ::</span>
+
+<span class="sd">       x, y, z = (3, 6, 5)</span>
+<span class="sd">       </span>
+<span class="sd">       self.bits = (3, 5, 8)</span>
+
+<span class="sd">       # =&gt; result = 0b 011 00110 00000101 </span>
+<span class="sd">       # =&gt; result = 0b0110011000000101 =  26,117</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        **x**:</span>
+<span class="sd">            The major version number. ::</span>
+
+<span class="sd">               0 &lt;= y</span>
+
+<span class="sd">               0 &lt;= y0 &lt; 4  # internal low-level 16-bit optimization threshold </span>
+
+<span class="sd">        **y**:</span>
+<span class="sd">            The minor version number. ::</span>
+<span class="sd">               0 &lt;= y &lt; 63</span>
+
+<span class="sd">        **z**:</span>
+<span class="sd">            The numeric relase-build tag. ::</span>
+
+<span class="sd">               0 &lt;= y &lt; 257</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The bit-mask.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        pass-through</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span>
+       <span class="p">(</span><span class="n">x</span> <span class="o">&amp;</span> <span class="mi">255</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">13</span>   <span class="c1"># bit 15 - 13 - see version_info[0] - PythonX</span>
+       <span class="o">|</span> <span class="p">(</span><span class="n">y</span> <span class="o">&amp;</span> <span class="mi">31</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span>  <span class="c1"># bit 12 -  8 - see version_info[1] - Pythonx.Y</span>
+       <span class="o">|</span> <span class="p">(</span><span class="n">z</span> <span class="o">&amp;</span> <span class="mi">7</span><span class="p">)</span>        <span class="c1"># bit  7 -  0 - see version_info[2] - Pythonx.y - x.y.Y</span>
+       <span class="p">)</span></div>
+
+<span class="c1">#</span>
+<span class="c1"># Some pre-calculated and cached common Python release values of bit masks </span>
+<span class="c1"># for the use of conditional code segments.</span>
+<span class="c1">#</span>
+<span class="n">PYV2</span> <span class="o">=</span> <span class="mi">16384</span>  <span class="c1"># getPYVxyz(2,)</span>
+<span class="n">PYV26</span> <span class="o">=</span> <span class="mi">17920</span>  <span class="c1"># getPYVxyz(2, 6)</span>
+<span class="n">PYV27</span> <span class="o">=</span> <span class="mi">18176</span>  <span class="c1"># getPYVxyz(2, 7)</span>
+<span class="n">PYV3</span> <span class="o">=</span> <span class="mi">24576</span>  <span class="c1"># getPYVxyz(3,)</span>
+<span class="n">PYV32</span> <span class="o">=</span> <span class="mi">25088</span>  <span class="c1"># getPYVxyz(3, 2)</span>
+<span class="n">PYV34</span> <span class="o">=</span> <span class="mi">25600</span>  <span class="c1"># getPYVxyz(3, 4)</span>
+<span class="n">PYV35</span> <span class="o">=</span> <span class="mi">25856</span>  <span class="c1"># getPYVxyz(3, 5)</span>
+<span class="n">PYV36</span> <span class="o">=</span> <span class="mi">26112</span>  <span class="c1"># getPYVxyz(3, 6)</span>
+<span class="n">PYV362</span> <span class="o">=</span> <span class="mi">26114</span>  <span class="c1"># getPYVxyz(3, 6, 2)</span>
+<span class="n">PYV365</span> <span class="o">=</span> <span class="mi">26117</span>  <span class="c1"># getPYVxyz(3, 6, 5)</span>
+
+<span class="c1">#: The Python release of current process</span>
+<span class="n">PYVxyz</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="c1">#:</span>
+<span class="c1">#: Adjust to current major Python version to Python3 vs. Python2.</span>
+<span class="c1">#:</span>
+<span class="n">V3K</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1">#: Python3.5+</span>
+<span class="k">if</span> <span class="n">PYVxyz</span> <span class="o">&gt;=</span> <span class="n">PYV35</span><span class="p">:</span>
+    <span class="n">V3K</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>  <span class="c1">#: string and unicode</span>
+
+    <span class="c1">#: Superpose for generic Python3 compatibility.</span>
+    <span class="n">unicode</span> <span class="o">=</span> <span class="nb">str</span>  <span class="c1"># @ReservedAssignment</span>
+
+<span class="k">elif</span> <span class="n">PYVxyz</span> <span class="o">&gt;=</span> <span class="n">PYV27</span><span class="p">:</span>
+    <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">unicode</span><span class="p">)</span>  <span class="c1">#: string and unicode</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span>
+        <span class="s2">&quot;Requires Python 2.7+, or 3.5+, current: &quot;</span> 
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">2</span><span class="p">]))</span>
+
+
+<span class="c1"># pylint: enable-msg=W0105</span>
+
+
+<span class="c1">#</span>
+<span class="c1"># current platform as bit-array</span>
+<span class="c1">#</span>
+
+<span class="c1">#</span>
+<span class="c1"># categories - bit-blocks</span>
+<span class="c1">#</span>
+<span class="n">RTE_WIN32</span> <span class="o">=</span> <span class="mi">65536</span> <span class="c1">#: all Windows systems [MS-DTYP]_</span>
+<span class="n">RTE_POSIX</span> <span class="o">=</span> <span class="mi">131072</span> <span class="c1">#: Posix systems using *fcntl* [POSIX]_.</span>
+
+<span class="c1">#:</span>
+<span class="c1">#: special for cross-over conversions 0 the native is reset to the native-enum</span>
+<span class="c1">#:</span>
+<span class="n">RTE_CNP</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1">#: cross native Posix systems using *fcntl* [POSIX]_.</span>
+<span class="n">RTE_CNW</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1">#: cross native all Windows systems [MS-DTYP]_, slightly different from RTE_WIN32</span>
+
+<span class="c1">#</span>
+<span class="c1"># standard platform sets</span>
+<span class="c1">#</span>
+<span class="n">RTE_CYGWIN</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">2</span>  <span class="c1">#: Cygwin [CYGWIN]_</span>
+
+
+<span class="c1"># set: posix</span>
+<span class="n">RTE_DARWIN</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">4</span>  <span class="c1">#: Darwin/OS-X, as Posix system [POSIX]_, no macpath-legacy.</span>
+<span class="n">RTE_OSX</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">8</span>  <span class="c1">#: Darwin/OS-X, as Posix system [POSIX]_, no macpath-legacy.</span>
+<span class="n">RTE_SOLARIS</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">16</span>  <span class="c1">#: UNIX/Solaris, as Posix system [POSIX]_.</span>
+<span class="n">RTE_BSD</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">32</span>  <span class="c1">#: BSD, - OpenBSD, FreeBSD, NetBSD - as Posix system [POSIX]_.</span>
+<span class="n">RTE_LINUX</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">+</span> <span class="mi">64</span>  <span class="c1">#: Linux with specific add-ons - OS, DIST, GNU - as Posix system [POSIX]_.</span>
+
+<span class="c1"># members&quot; Linux</span>
+<span class="n">RTE_CENTOS</span>  <span class="o">=</span> <span class="n">RTE_LINUX</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1">#: CentOS</span>
+<span class="n">RTE_CENTOS4</span> <span class="o">=</span> <span class="n">RTE_CENTOS</span> <span class="o">+</span> <span class="mi">4</span>  <span class="c1">#: CentOS-4</span>
+<span class="n">RTE_CENTOS5</span> <span class="o">=</span> <span class="n">RTE_CENTOS</span> <span class="o">+</span> <span class="mi">5</span>  <span class="c1">#: CentOS-5</span>
+<span class="n">RTE_CENTOS6</span> <span class="o">=</span> <span class="n">RTE_CENTOS</span> <span class="o">+</span> <span class="mi">6</span>  <span class="c1">#: CentOS-6</span>
+<span class="n">RTE_CENTOS7</span> <span class="o">=</span> <span class="n">RTE_CENTOS</span> <span class="o">+</span> <span class="mi">7</span>  <span class="c1">#: CentOS-7</span>
+
+<span class="n">RTE_FEDORA</span> <span class="o">=</span> <span class="n">RTE_LINUX</span> <span class="o">+</span> <span class="mi">32</span>  <span class="c1">#: Fedora</span>
+<span class="n">RTE_FEDORA19</span> <span class="o">=</span> <span class="n">RTE_FEDORA</span> <span class="o">+</span> <span class="mi">19</span>  <span class="c1">#: Fedora-19</span>
+<span class="n">RTE_FEDORA27</span> <span class="o">=</span> <span class="n">RTE_FEDORA</span> <span class="o">+</span> <span class="mi">27</span>  <span class="c1">#: Fedora-27</span>
+
+<span class="n">RTE_DEBIAN</span> <span class="o">=</span> <span class="n">RTE_LINUX</span> <span class="o">+</span> <span class="mi">256</span>  <span class="c1">#: Debian</span>
+<span class="n">RTE_DEBIAN6</span> <span class="o">=</span> <span class="n">RTE_DEBIAN</span> <span class="o">+</span> <span class="mi">6</span>  <span class="c1">#: Debian - squeeze</span>
+<span class="n">RTE_DEBIAN7</span> <span class="o">=</span> <span class="n">RTE_DEBIAN</span> <span class="o">+</span> <span class="mi">7</span>  <span class="c1">#: Debian - wheezy</span>
+<span class="n">RTE_DEBIAN8</span> <span class="o">=</span> <span class="n">RTE_DEBIAN</span> <span class="o">+</span> <span class="mi">8</span>  <span class="c1">#: Debian - jessy</span>
+<span class="n">RTE_DEBIAN9</span> <span class="o">=</span> <span class="n">RTE_DEBIAN</span> <span class="o">+</span> <span class="mi">9</span>  <span class="c1">#: Debian - stretch</span>
+
+<span class="n">RTE_SUSE</span> <span class="o">=</span> <span class="n">RTE_LINUX</span> <span class="o">+</span> <span class="mi">96</span>  <span class="c1">#: OpenSUSE</span>
+
+<span class="n">RTE_UBUNTU</span> <span class="o">=</span> <span class="n">RTE_LINUX</span> <span class="o">+</span> <span class="mi">128</span>  <span class="c1">#: OpenSUSE</span>
+
+<span class="c1"># set: bsd</span>
+<span class="n">RTE_DRAGONFLYBSD</span> <span class="o">=</span> <span class="n">RTE_BSD</span> <span class="o">+</span> <span class="mi">4</span>
+<span class="n">RTE_NETBSD</span> <span class="o">=</span> <span class="n">RTE_BSD</span> <span class="o">+</span> <span class="mi">16</span>
+<span class="n">RTE_OPENBSD</span> <span class="o">=</span> <span class="n">RTE_BSD</span> <span class="o">+</span> <span class="mi">64</span>
+<span class="n">RTE_FREEBSD</span> <span class="o">=</span> <span class="n">RTE_BSD</span> <span class="o">+</span> <span class="mi">256</span>
+
+<span class="c1"># set: win32</span>
+<span class="c1"># currently no sub-categories, some are contained in </span>
+<span class="c1"># the &#39;set: generic&#39;: drives, shares</span>
+<span class="c1">#</span>
+<span class="n">RTE_DOS</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1">#: MS-DOS - frozen</span>
+
+<span class="n">RTE_WINNT4</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">9</span>  <span class="c1">#: Windows-NT4 - frozen</span>
+<span class="n">RTE_WINNT4WS</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">10</span>  <span class="c1">#: Windows-NT4-Workstation - frozen</span>
+<span class="n">RTE_WINNT4S</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">11</span>  <span class="c1">#: Windows-NT4-Server - frozen</span>
+<span class="n">RTE_WIN2000</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">16</span>  <span class="c1">#: Windows-2000 - frozen</span>
+<span class="n">RTE_WINS2000WS</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">17</span>  <span class="c1">#: Windows-2000-Workstation - frozen</span>
+<span class="n">RTE_WINS2000S</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">18</span>  <span class="c1">#: Windows-2000-Server - frozen</span>
+<span class="n">RTE_WINS2008</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">19</span>  <span class="c1">#: Windows-2008-Server - frozen</span>
+
+<span class="n">RTE_POWERSHELL1</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">64</span>  <span class="c1">#: PowerShell-1-Windows</span>
+<span class="n">RTE_POWERSHELL2</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">65</span>  <span class="c1">#: PowerShell-2-Windows</span>
+<span class="n">RTE_POWERSHELL2LINUX</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">66</span>  <span class="c1">#: PowerShell-2-Linux</span>
+
+<span class="n">RTE_WIN7</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">128</span>  <span class="c1">#: Windows7</span>
+<span class="n">RTE_WIN8</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">129</span>  <span class="c1">#: Windows7</span>
+<span class="n">RTE_WIN81</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">130</span>  <span class="c1">#: Windows7</span>
+<span class="n">RTE_WIN10</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">131</span>  <span class="c1">#: Windows10</span>
+<span class="n">RTE_WINS2012</span> <span class="o">=</span> <span class="n">RTE_WIN32</span> <span class="o">+</span> <span class="mi">144</span>  <span class="c1">#: Windows-2012-Server</span>
+
+
+<span class="k">if</span> <span class="n">platform</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;linux&#39;</span><span class="p">,</span> <span class="s1">&#39;linux2&#39;</span><span class="p">):</span>
+    <span class="n">RTE</span> <span class="o">=</span> <span class="n">RTE_LINUX</span>
+    <span class="n">RTE_CNP</span> <span class="o">=</span> <span class="n">RTE_POSIX</span>
+
+<span class="k">elif</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;bsd&#39;</span><span class="p">:</span>
+    <span class="n">RTE</span> <span class="o">=</span> <span class="n">RTE_BSD</span>
+    <span class="n">RTE_CNP</span> <span class="o">=</span> <span class="n">RTE_POSIX</span>
+
+<span class="k">elif</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+    <span class="n">RTE</span> <span class="o">=</span> <span class="n">RTE_DARWIN</span>
+    <span class="n">RTE_CNP</span> <span class="o">=</span> <span class="n">RTE_POSIX</span>
+
+<span class="k">elif</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;cygwin&#39;</span><span class="p">:</span>
+    <span class="n">RTE</span> <span class="o">=</span> <span class="n">RTE_POSIX</span> <span class="o">|</span> <span class="n">RTE_WIN32</span> <span class="o">|</span> <span class="n">RTE_CYGWIN</span>
+    <span class="n">RTE_CNP</span> <span class="o">=</span> <span class="n">RTE_POSIX</span>
+
+<span class="k">elif</span> <span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+    <span class="n">RTE</span> <span class="o">=</span> <span class="n">RTE_WIN32</span>
+    <span class="n">RTE_CNW</span> <span class="o">=</span> <span class="n">RTE_WIN32</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span><span class="s2">&quot;Platform not supported:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">platform</span><span class="p">))</span>
+
+<span class="c1">#</span>
+<span class="c1"># set: generic</span>
+<span class="c1">#</span>
+
+<span class="c1">#: Use the current block-offset only,</span>
+<span class="c1">#: results in the current platformm enum.</span>
+<span class="n">RTE_GENERIC</span> <span class="o">=</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_POSIX</span> <span class="o">&amp;</span> <span class="n">RTE_WIN32</span>
+                    
+<span class="c1">#: Dyanmic local platform, synonym for generic.</span>
+<span class="n">RTE_LOCAL</span> <span class="o">=</span> <span class="n">RTE_GENERIC</span> <span class="o">+</span> <span class="mi">1</span>
+
+
+<div class="viewcode-block" id="ProtectedDict"><a class="viewcode-back" href="../pyplatforms.html#platformids.ProtectedDict">[docs]</a><span class="k">class</span> <span class="nc">ProtectedDict</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">dict</span><span class="o">.</span><span class="n">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+                <span class="c1">#</span>
+                <span class="c1"># key exists - error</span>
+                <span class="c1">#</span>
+                <span class="kn">from</span> <span class="nn">platformids.map_enum_labels</span> <span class="k">import</span> <span class="n">num2enumstr</span> 
+
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+                    <span class="n">_k0</span> <span class="o">=</span> <span class="n">num2enumstr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_k0</span> <span class="o">=</span> <span class="n">get_rte2num</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">_k0</span><span class="p">:</span>
+                    <span class="c1"># known</span>
+                    <span class="n">_k</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">_k0</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># unknown</span>
+                    <span class="n">_k</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    
+                <span class="c1">#</span>
+                <span class="c1"># new value</span>
+                <span class="c1">#</span>
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+                    <span class="n">_v0</span> <span class="o">=</span> <span class="n">num2enumstr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_v0</span> <span class="o">=</span> <span class="n">get_rte2num</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">_v0</span><span class="p">:</span>
+                    <span class="n">_v</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">),</span><span class="nb">str</span><span class="p">(</span> <span class="n">_v0</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_v</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    
+                <span class="c1">#</span>
+                <span class="c1"># old value</span>
+                <span class="c1">#</span>
+                <span class="n">oval</span> <span class="o">=</span> <span class="nb">dict</span><span class="o">.</span><span class="n">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">oval</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+                    <span class="n">_ov</span> <span class="o">=</span> <span class="n">num2enumstr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">oval</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_ov</span> <span class="o">=</span> <span class="n">get_rte2num</span><span class="p">(</span><span class="n">oval</span><span class="p">)</span>
+                    <span class="n">_ovl</span> <span class="o">=</span> <span class="n">num2enumstr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">_ov</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">_ovl</span><span class="p">:</span>
+                        <span class="n">_ov</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">_ov</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">_ovl</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">_ov</span><span class="p">:</span>
+                    
+                    <span class="n">_ov</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">oval</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">_ov</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_ov</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">oval</span><span class="p">)</span>
+
+
+                <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span>
+                    <span class="s2">&quot;READONLY: Key is already present:</span><span class="se">\n</span><span class="s2">  key:     </span><span class="si">%s</span><span class="se">\n</span><span class="s2">  old-val: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">  new-val: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span>
+                        <span class="n">_k</span><span class="p">,</span>
+                       <span class="n">_ov</span><span class="p">,</span>
+                        <span class="n">_v</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span> 
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></div>
+    
+    
+<span class="c1">#: mapping of the rte string and numeric representation to the numeric value</span>
+<span class="n">rte2num</span> <span class="o">=</span> <span class="n">ProtectedDict</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s1">&#39;bsd&#39;</span><span class="p">:</span> <span class="n">RTE_BSD</span><span class="p">,</span>
+        <span class="s1">&#39;centos&#39;</span><span class="p">:</span> <span class="n">RTE_CENTOS</span><span class="p">,</span>
+        <span class="s1">&#39;centos4&#39;</span><span class="p">:</span> <span class="n">RTE_CENTOS4</span><span class="p">,</span>
+        <span class="s1">&#39;centos5&#39;</span><span class="p">:</span> <span class="n">RTE_CENTOS5</span><span class="p">,</span>
+        <span class="s1">&#39;centos6&#39;</span><span class="p">:</span> <span class="n">RTE_CENTOS6</span><span class="p">,</span>
+        <span class="s1">&#39;centos7&#39;</span><span class="p">:</span> <span class="n">RTE_CENTOS7</span><span class="p">,</span>
+        <span class="s1">&#39;cygwin&#39;</span><span class="p">:</span> <span class="n">RTE_CYGWIN</span><span class="p">,</span>
+        <span class="s1">&#39;debian&#39;</span><span class="p">:</span> <span class="n">RTE_DEBIAN</span><span class="p">,</span>
+        <span class="s1">&#39;debian6&#39;</span><span class="p">:</span> <span class="n">RTE_DEBIAN6</span><span class="p">,</span>
+        <span class="s1">&#39;debian7&#39;</span><span class="p">:</span> <span class="n">RTE_DEBIAN7</span><span class="p">,</span>
+        <span class="s1">&#39;debian8&#39;</span><span class="p">:</span> <span class="n">RTE_DEBIAN8</span><span class="p">,</span>
+        <span class="s1">&#39;debian9&#39;</span><span class="p">:</span> <span class="n">RTE_DEBIAN9</span><span class="p">,</span>
+        <span class="s1">&#39;dos&#39;</span><span class="p">:</span> <span class="n">RTE_DOS</span><span class="p">,</span>
+        <span class="s1">&#39;dragonfly&#39;</span><span class="p">:</span> <span class="n">RTE_DRAGONFLYBSD</span><span class="p">,</span>
+        <span class="s1">&#39;fedora&#39;</span><span class="p">:</span> <span class="n">RTE_FEDORA</span><span class="p">,</span>
+        <span class="s1">&#39;fedora19&#39;</span><span class="p">:</span> <span class="n">RTE_FEDORA19</span><span class="p">,</span>
+        <span class="s1">&#39;fedora27&#39;</span><span class="p">:</span> <span class="n">RTE_FEDORA27</span><span class="p">,</span>
+        <span class="s1">&#39;freebsd&#39;</span><span class="p">:</span> <span class="n">RTE_FREEBSD</span><span class="p">,</span>
+        <span class="s1">&#39;linux&#39;</span><span class="p">:</span> <span class="n">RTE_LINUX</span><span class="p">,</span>
+        <span class="s1">&#39;netbsd&#39;</span><span class="p">:</span> <span class="n">RTE_NETBSD</span><span class="p">,</span>
+        <span class="s1">&#39;openbsd&#39;</span><span class="p">:</span> <span class="n">RTE_OPENBSD</span><span class="p">,</span>
+        <span class="s1">&#39;posix&#39;</span><span class="p">:</span> <span class="n">RTE_POSIX</span><span class="p">,</span>
+        <span class="s1">&#39;solaris&#39;</span><span class="p">:</span> <span class="n">RTE_SOLARIS</span><span class="p">,</span>
+        <span class="s1">&#39;suse&#39;</span><span class="p">:</span> <span class="n">RTE_SUSE</span><span class="p">,</span>
+        <span class="s1">&#39;ubuntu&#39;</span><span class="p">:</span> <span class="n">RTE_UBUNTU</span><span class="p">,</span>
+        <span class="s1">&#39;win&#39;</span><span class="p">:</span> <span class="n">RTE_WIN32</span><span class="p">,</span>
+        <span class="s1">&#39;win10&#39;</span><span class="p">:</span> <span class="n">RTE_WIN10</span><span class="p">,</span>
+        <span class="s1">&#39;win2000&#39;</span><span class="p">:</span> <span class="n">RTE_WIN2000</span><span class="p">,</span>
+        <span class="s1">&#39;win32&#39;</span><span class="p">:</span> <span class="n">RTE_WIN32</span><span class="p">,</span>
+        <span class="s1">&#39;win7&#39;</span><span class="p">:</span> <span class="n">RTE_WIN7</span><span class="p">,</span>
+        <span class="s1">&#39;winnt2000s&#39;</span><span class="p">:</span> <span class="n">RTE_WINS2000S</span><span class="p">,</span>
+        <span class="s1">&#39;winnt2000ws&#39;</span><span class="p">:</span> <span class="n">RTE_WINS2000WS</span><span class="p">,</span>
+        <span class="s1">&#39;winnt2008&#39;</span><span class="p">:</span> <span class="n">RTE_WINS2008</span><span class="p">,</span>
+        <span class="s1">&#39;winnt2012&#39;</span><span class="p">:</span> <span class="n">RTE_WINS2012</span><span class="p">,</span>
+        <span class="s1">&#39;winnt4&#39;</span><span class="p">:</span> <span class="n">RTE_WINNT4</span><span class="p">,</span>
+        <span class="s1">&#39;winnt4s&#39;</span><span class="p">:</span> <span class="n">RTE_WINNT4S</span><span class="p">,</span>
+        <span class="s1">&#39;winnt4ws&#39;</span><span class="p">:</span> <span class="n">RTE_WINNT4WS</span><span class="p">,</span>
+        <span class="n">RTE_BSD</span><span class="p">:</span> <span class="n">RTE_BSD</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS4</span><span class="p">:</span> <span class="n">RTE_CENTOS4</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS5</span><span class="p">:</span> <span class="n">RTE_CENTOS5</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS6</span><span class="p">:</span> <span class="n">RTE_CENTOS6</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS7</span><span class="p">:</span> <span class="n">RTE_CENTOS7</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS</span><span class="p">:</span> <span class="n">RTE_CENTOS</span><span class="p">,</span>
+        <span class="n">RTE_CYGWIN</span><span class="p">:</span> <span class="n">RTE_CYGWIN</span><span class="p">,</span>
+        <span class="n">RTE_DARWIN</span><span class="p">:</span> <span class="n">RTE_DARWIN</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN6</span><span class="p">:</span> <span class="n">RTE_DEBIAN6</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN7</span><span class="p">:</span> <span class="n">RTE_DEBIAN7</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN8</span><span class="p">:</span> <span class="n">RTE_DEBIAN8</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN9</span><span class="p">:</span> <span class="n">RTE_DEBIAN9</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN</span><span class="p">:</span> <span class="n">RTE_DEBIAN</span><span class="p">,</span>
+        <span class="n">RTE_DOS</span><span class="p">:</span> <span class="n">RTE_DOS</span><span class="p">,</span>
+        <span class="n">RTE_DRAGONFLYBSD</span><span class="p">:</span> <span class="n">RTE_DRAGONFLYBSD</span><span class="p">,</span>
+        <span class="n">RTE_FEDORA19</span><span class="p">:</span> <span class="n">RTE_FEDORA19</span><span class="p">,</span>
+        <span class="n">RTE_FEDORA27</span><span class="p">:</span> <span class="n">RTE_FEDORA27</span><span class="p">,</span>
+        <span class="n">RTE_FEDORA</span><span class="p">:</span> <span class="n">RTE_FEDORA</span><span class="p">,</span>
+        <span class="n">RTE_FREEBSD</span><span class="p">:</span> <span class="n">RTE_FREEBSD</span><span class="p">,</span>
+        <span class="n">RTE_LINUX</span><span class="p">:</span> <span class="n">RTE_LINUX</span><span class="p">,</span>
+        <span class="n">RTE_NETBSD</span><span class="p">:</span> <span class="n">RTE_NETBSD</span><span class="p">,</span>
+        <span class="n">RTE_OPENBSD</span><span class="p">:</span> <span class="n">RTE_OPENBSD</span><span class="p">,</span>
+        <span class="n">RTE_OSX</span><span class="p">:</span> <span class="n">RTE_OSX</span><span class="p">,</span>
+        <span class="n">RTE_POSIX</span><span class="p">:</span> <span class="n">RTE_POSIX</span><span class="p">,</span>
+        <span class="n">RTE_SOLARIS</span><span class="p">:</span> <span class="n">RTE_SOLARIS</span><span class="p">,</span>
+        <span class="n">RTE_SUSE</span><span class="p">:</span> <span class="n">RTE_SUSE</span><span class="p">,</span>
+        <span class="n">RTE_UBUNTU</span><span class="p">:</span> <span class="n">RTE_UBUNTU</span><span class="p">,</span>
+        <span class="n">RTE_WIN10</span><span class="p">:</span> <span class="n">RTE_WIN10</span><span class="p">,</span>
+        <span class="n">RTE_WIN2000</span><span class="p">:</span> <span class="n">RTE_WIN2000</span><span class="p">,</span>
+        <span class="n">RTE_WIN32</span><span class="p">:</span> <span class="n">RTE_WIN32</span><span class="p">,</span>
+        <span class="n">RTE_WIN32</span><span class="p">:</span> <span class="n">RTE_WIN32</span><span class="p">,</span>
+        <span class="n">RTE_WIN7</span><span class="p">:</span> <span class="n">RTE_WIN7</span><span class="p">,</span>
+        <span class="n">RTE_WINNT4</span><span class="p">:</span> <span class="n">RTE_WINNT4</span><span class="p">,</span>
+        <span class="n">RTE_WINNT4S</span><span class="p">:</span> <span class="n">RTE_WINNT4S</span><span class="p">,</span>
+        <span class="n">RTE_WINNT4WS</span><span class="p">:</span> <span class="n">RTE_WINNT4WS</span><span class="p">,</span>
+        <span class="n">RTE_WINS2000S</span><span class="p">:</span> <span class="n">RTE_WINS2000S</span><span class="p">,</span>
+        <span class="n">RTE_WINS2000WS</span><span class="p">:</span> <span class="n">RTE_WINS2000WS</span><span class="p">,</span>
+        <span class="n">RTE_WINS2008</span><span class="p">:</span> <span class="n">RTE_WINS2008</span><span class="p">,</span>
+        <span class="n">RTE_WINS2012</span><span class="p">:</span> <span class="n">RTE_WINS2012</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+
+<span class="c1">#: mapping of the rte numeric representation to the string value</span>
+<span class="c1">#num2rte = {</span>
+<span class="n">num2rte</span> <span class="o">=</span> <span class="n">ProtectedDict</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="n">RTE_BSD</span><span class="p">:</span> <span class="s1">&#39;bsd&#39;</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS</span><span class="p">:</span> <span class="s1">&#39;centos&#39;</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS4</span><span class="p">:</span> <span class="s1">&#39;centos4&#39;</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS5</span><span class="p">:</span> <span class="s1">&#39;centos5&#39;</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS6</span><span class="p">:</span> <span class="s1">&#39;centos6&#39;</span><span class="p">,</span>
+        <span class="n">RTE_CENTOS7</span><span class="p">:</span> <span class="s1">&#39;centos7&#39;</span><span class="p">,</span>
+        <span class="n">RTE_CYGWIN</span><span class="p">:</span> <span class="s1">&#39;cygwin&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN</span><span class="p">:</span> <span class="s1">&#39;debian&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN6</span><span class="p">:</span> <span class="s1">&#39;debian6&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN7</span><span class="p">:</span> <span class="s1">&#39;debian7&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN8</span><span class="p">:</span> <span class="s1">&#39;debian8&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DEBIAN9</span><span class="p">:</span> <span class="s1">&#39;debian9&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DOS</span><span class="p">:</span> <span class="s1">&#39;dos&#39;</span><span class="p">,</span>
+        <span class="n">RTE_DRAGONFLYBSD</span><span class="p">:</span> <span class="s1">&#39;dragonfly&#39;</span><span class="p">,</span>
+        <span class="n">RTE_FEDORA</span><span class="p">:</span> <span class="s1">&#39;fedora&#39;</span><span class="p">,</span>
+        <span class="n">RTE_FEDORA19</span><span class="p">:</span> <span class="s1">&#39;fedora19&#39;</span><span class="p">,</span>
+        <span class="n">RTE_FEDORA27</span><span class="p">:</span> <span class="s1">&#39;fedora27&#39;</span><span class="p">,</span>
+        <span class="n">RTE_FREEBSD</span><span class="p">:</span> <span class="s1">&#39;freebsd&#39;</span><span class="p">,</span>
+        <span class="n">RTE_LINUX</span><span class="p">:</span> <span class="s1">&#39;linux&#39;</span><span class="p">,</span>
+        <span class="n">RTE_NETBSD</span><span class="p">:</span> <span class="s1">&#39;netbsd&#39;</span><span class="p">,</span>
+        <span class="n">RTE_OPENBSD</span><span class="p">:</span> <span class="s1">&#39;openbsd&#39;</span><span class="p">,</span>
+        <span class="n">RTE_POSIX</span><span class="p">:</span> <span class="s1">&#39;posix&#39;</span><span class="p">,</span>
+        <span class="n">RTE_SOLARIS</span><span class="p">:</span> <span class="s1">&#39;solaris&#39;</span><span class="p">,</span>
+        <span class="n">RTE_SUSE</span><span class="p">:</span> <span class="s1">&#39;suse&#39;</span><span class="p">,</span>
+        <span class="n">RTE_UBUNTU</span><span class="p">:</span> <span class="s1">&#39;ubuntu&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WIN32</span><span class="p">:</span> <span class="s1">&#39;win&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WIN10</span><span class="p">:</span> <span class="s1">&#39;win10&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WIN2000</span><span class="p">:</span> <span class="s1">&#39;win2000&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WIN32</span><span class="p">:</span> <span class="s1">&#39;win32&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WIN7</span><span class="p">:</span> <span class="s1">&#39;win7&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINS2000S</span><span class="p">:</span> <span class="s1">&#39;winnt2000s&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINS2000WS</span><span class="p">:</span> <span class="s1">&#39;winnt2000ws&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINS2008</span><span class="p">:</span> <span class="s1">&#39;winnt2008&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINS2012</span><span class="p">:</span> <span class="s1">&#39;winnt2012&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINNT4</span><span class="p">:</span> <span class="s1">&#39;winnt4&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINNT4S</span><span class="p">:</span> <span class="s1">&#39;winnt4s&#39;</span><span class="p">,</span>
+        <span class="n">RTE_WINNT4WS</span><span class="p">:</span> <span class="s1">&#39;winnt4ws&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+
+<span class="c1">#:</span>
+<span class="c1">#: Initial custom offset and the free number range for custom member add-ons.</span>
+<span class="c1">#: The first 16 bits are reserved for custom bit-blocks.</span>
+<span class="c1">#:</span>
+<span class="n">__CUSTOM_BASE_NUM_DEFAULT</span> <span class="o">=</span> <span class="mi">262144</span>  <span class="c1">#: initial offset</span>
+<span class="n">__CUSTOM_BASE_MIN_MEMBER_REL</span> <span class="o">=</span> <span class="o">+</span> <span class="mi">0</span>  <span class="c1">#: range start for members</span>
+<span class="n">__CUSTOM_BASE_MAX_MEMBER_REL</span> <span class="o">=</span> <span class="mi">65535</span>  <span class="c1">#: inclusive range end for members</span>
+
+
+<span class="c1">#:</span>
+<span class="c1">#: Current value of the next-free custom bit-block</span>
+<span class="c1">#:</span>
+<span class="n">__CUSTOM_BASE_NUM</span> <span class="o">=</span> <span class="n">__CUSTOM_BASE_NUM_DEFAULT</span>
+
+<div class="viewcode-block" id="get_custom_num_base"><a class="viewcode-back" href="../pyplatforms.html#platformids.get_custom_num_base">[docs]</a><span class="k">def</span> <span class="nf">get_custom_num_base</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Reserves and returns the current available base value for </span>
+<span class="sd">    the next bit-block. Each reserved bit-block for custom usage</span>
+<span class="sd">    is 16-bit wide, and could be used by the application arbitrarily.</span>
+
+<span class="sd">    Each call increments the integer address of the next free block</span>
+<span class="sd">    by one bit. </span>
+<span class="sd">    </span>
+<span class="sd">    .. note::</span>
+
+<span class="sd">       In current release the reservation of the value ranges</span>
+<span class="sd">       for bit-blocks is not released until the process termination. </span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        None</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The base index for the new reservation.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        pass-through</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">__CUSTOM_BASE_NUM</span>
+    <span class="n">_ret</span> <span class="o">=</span> <span class="n">__CUSTOM_BASE_NUM</span>
+    <span class="n">__CUSTOM_BASE_NUM</span> <span class="o">=</span> <span class="n">__CUSTOM_BASE_NUM</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span> 
+    <span class="k">return</span>  <span class="n">_ret</span></div>
+
+
+<div class="viewcode-block" id="get_custom_num_range"><a class="viewcode-back" href="../pyplatforms.html#platformids.get_custom_num_range">[docs]</a><span class="k">def</span> <span class="nf">get_custom_num_range</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns the available range of values for </span>
+<span class="sd">    elements within bit blocks.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The inclusive range as tuple: ::</span>
+
+<span class="sd">           (min, max)</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">__CUSTOM_BASE_NUM</span> <span class="o">+</span> <span class="n">__CUSTOM_BASE_MIN_MEMBER_REL</span><span class="p">,</span> 
+        <span class="n">__CUSTOM_BASE_NUM</span> <span class="o">+</span> <span class="n">__CUSTOM_BASE_MAX_MEMBER_REL</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="get_num2rte"><a class="viewcode-back" href="../pyplatforms.html#platformids.get_num2rte">[docs]</a><span class="k">def</span> <span class="nf">get_num2rte</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Gets the corresponding string representation</span>
+<span class="sd">    for the string numeric value.</span>
+<span class="sd">    </span>
+<span class="sd">    Alternatively the official dict *num2rte*</span>
+<span class="sd">    could be used. </span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        **num**:</span>
+<span class="sd">            Numeric enum value of the requested platform.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The string value, or *None**.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        None</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">num2rte</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">num</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="get_rte2num"><a class="viewcode-back" href="../pyplatforms.html#platformids.get_rte2num">[docs]</a><span class="k">def</span> <span class="nf">get_rte2num</span><span class="p">(</span><span class="n">rte</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Gets corresponding numerical representation</span>
+<span class="sd">    for the numeric or string value.</span>
+<span class="sd">    </span>
+<span class="sd">    Alternatively the official dict *rte2num*</span>
+<span class="sd">    could be used. </span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        **rte**:</span>
+<span class="sd">            Numeric enum value or string representation</span>
+<span class="sd">            of the requested platform.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The numeric value, or *None**.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        None</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">rte</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">rte</span>
+    <span class="k">return</span> <span class="n">rte2num</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">rte</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="set_num2rte"><a class="viewcode-back" href="../pyplatforms.html#platformids.set_num2rte">[docs]</a><span class="k">def</span> <span class="nf">set_num2rte</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sets the numeric to string map.</span>
+<span class="sd">    </span>
+<span class="sd">    Alternatively the official dict *num2rte*</span>
+<span class="sd">    could be used. </span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        **key**:</span>
+<span class="sd">            Numeric key value.</span>
+
+<span class="sd">        **value**:</span>
+<span class="sd">            String value.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        *None*</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        PlatformIDsError</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span><span class="s2">&quot;requires a int key, got: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ISSTR</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span><span class="s2">&quot;requires a string value, got: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+    
+    <span class="n">num2rte</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span></div>
+
+
+<div class="viewcode-block" id="set_rte2num"><a class="viewcode-back" href="../pyplatforms.html#platformids.set_rte2num">[docs]</a><span class="k">def</span> <span class="nf">set_rte2num</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sets the rte to numeric mapping</span>
+
+<span class="sd">    Alternatively the official dict *rte2num*</span>
+<span class="sd">    could be used. </span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        **key**:</span>
+<span class="sd">            Numeric or string key value.</span>
+
+<span class="sd">        **value**:</span>
+<span class="sd">            Numeric value.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        *None*</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        None</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span><span class="s2">&quot;requires an int value, got: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+    
+    <span class="n">rte2num</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/pyplatformids-64x64.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">platformids 0.1.28 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Arno-Can Uestuensoez.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

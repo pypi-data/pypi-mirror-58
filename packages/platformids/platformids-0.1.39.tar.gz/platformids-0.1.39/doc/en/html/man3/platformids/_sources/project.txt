@@ -1,0 +1,18 @@
+**Project Data**
+
+* PROJECT=platformids
+
+* MISSION=Support advanced enumerations for the multi-platform development.
+
+* AUTHOR=Arno-Can Uestuensoez
+
+* COPYRIGHT=Copyright (C) 2010,2011,2015-2018 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+
+* LICENSE=Artistic-License-2.0 + Forced-Fairplay-Constraints
+
+* VERSION=0.1.28
+
+* RELEASE=0.1.28
+
+* STATUS=alpha
+

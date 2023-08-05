@@ -1,0 +1,874 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>‘platformids.__init__’ - Module &mdash; platformids 0.1.28 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.28',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="platformids 0.1.28 documentation" href="index.html" />
+    <link rel="next" title="Install" href="install.html" />
+    <link rel="prev" title="Bit Masks for Numeric Vectors" href="python_bitmasks.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="Install"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="python_bitmasks.html" title="Bit Masks for Numeric Vectors"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="shortcuttab"><div class="section" id="platformids-init-module">
+<h1>&#8216;platformids.__init__&#8217; - Module<a class="headerlink" href="#platformids-init-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-platformids.__init__">
+<span id="module"></span><h2>Module<a class="headerlink" href="#module-platformids.__init__" title="Permalink to this headline">¶</a></h2>
+<p>The package &#8216;platformids&#8217; provides canonical enumerations of bit encoded numeric platform IDs.</p>
+</div>
+<div class="section" id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python-version">
+<h3>Python Version<a class="headerlink" href="#python-version" title="Permalink to this headline">¶</a></h3>
+<ul id="index-0">
+<li><p class="first"><strong>V3K</strong>: Python3.5+, else Python2.7</p>
+<pre class="literal-block">
+V3K := (
+     True  # Python3.5+
+   | False # Python2.7
+)
+
+# raises exception <em>platformids.PlatformIDsError</em> when version &lt; 2.7 or in 3.0.0 &lt; 3.5
+</pre>
+</li>
+<li><p class="first"><strong>PYVxyz</strong>: Bit encoded current Python version:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Vxyz</span> <span class="p">:</span><span class="o">=</span> <span class="n">xxxyyyyyzzzzzzzz</span>
+
+<span class="n">xxx</span>      <span class="p">:</span><span class="o">=</span> <span class="n">major</span> <span class="n">version</span>
+<span class="n">yyyyy</span>    <span class="p">:</span><span class="o">=</span> <span class="n">minor</span> <span class="n">version</span>
+<span class="n">zzzzzzzz</span> <span class="p">:</span><span class="o">=</span> <span class="n">build</span>
+
+<span class="n">For</span> <span class="n">example</span> <span class="k">for</span> <span class="n">the</span> <span class="n">version</span> <span class="s2">&quot;3.6.5&quot;</span><span class="p">:</span> <span class="p">::</span>
+
+<span class="n">xxx</span>      <span class="o">=</span> <span class="mi">3</span> <span class="o">=</span> <span class="mi">011</span>
+<span class="n">yyyyy</span>    <span class="o">=</span> <span class="mi">6</span> <span class="o">=</span> <span class="mi">00110</span>
+<span class="n">zzzzzzzz</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">=</span> <span class="mi">00000101</span>
+
+<span class="n">xxxyyyyyzzzzzzzz</span> <span class="o">=</span> <span class="mi">26117</span> <span class="o">=</span> <span class="mb">0b0110011000000101</span>
+</pre></div>
+</div>
+<p>This enables the binary checks with pre-defined integer values for fast frequent
+evaluation:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">Vxyz</span> <span class="o">&amp;</span> <span class="mi">26117</span><span class="p">:</span>  <span class="c1"># 0b0110011000000101</span>
+   <span class="c1"># this is version 3.6.5</span>
+
+<span class="k">if</span> <span class="n">Vxyz</span> <span class="o">&amp;</span> <span class="mi">26112</span><span class="p">:</span>  <span class="c1"># 0b0110011000000000</span>
+   <span class="c1"># this is version 3.6</span>
+
+<span class="k">if</span> <span class="n">Vxyz</span> <span class="o">&lt;</span> <span class="mi">26112</span><span class="p">:</span>
+   <span class="c1"># this is pre-version 3.6, e.g. 3.5.x</span>
+</pre></div>
+</div>
+<p>The use of numerical reference values is here perfectly applicable because of the
+static nature of version dependencies.</p>
+</li>
+<li><p class="first"><strong>PYVxyz</strong>: Predefined values</p>
+<blockquote>
+<div><div class="highlight-default" id="index-1"><div class="highlight"><pre><span></span><span class="n">PYV2</span> <span class="o">=</span> <span class="mi">16384</span>  <span class="c1"># getPYVxyz(2,)</span>
+<span class="n">PYV26</span> <span class="o">=</span> <span class="mi">17920</span>  <span class="c1"># getPYVxyz(2, 6)</span>
+<span class="n">PYV27</span> <span class="o">=</span> <span class="mi">18176</span>  <span class="c1"># getPYVxyz(2, 7)</span>
+<span class="n">PYV3</span> <span class="o">=</span> <span class="mi">24576</span>  <span class="c1"># getPYVxyz(3,)</span>
+<span class="n">PYV32</span> <span class="o">=</span> <span class="mi">25088</span>  <span class="c1"># getPYVxyz(3, 2)</span>
+<span class="n">PYV34</span> <span class="o">=</span> <span class="mi">25600</span>  <span class="c1"># getPYVxyz(3, 4)</span>
+<span class="n">PYV35</span> <span class="o">=</span> <span class="mi">25856</span>  <span class="c1"># getPYVxyz(3, 5)</span>
+<span class="n">PYV36</span> <span class="o">=</span> <span class="mi">26112</span>  <span class="c1"># getPYVxyz(3, 6)</span>
+<span class="n">PYV362</span> <span class="o">=</span> <span class="mi">26114</span>  <span class="c1"># getPYVxyz(3, 6, 2)</span>
+<span class="n">PYV365</span> <span class="o">=</span> <span class="mi">26117</span>  <span class="c1"># getPYVxyz(3, 6, 5)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="string-encoding">
+<h3>String Encoding<a class="headerlink" href="#string-encoding" title="Permalink to this headline">¶</a></h3>
+<ul id="index-2">
+<li><p class="first"><strong>ISSTR</strong>: string and unicode for type comparison:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">V3K</span><span class="p">:</span>
+   <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">unicode</span><span class="p">,)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>unicode</strong>: for Python3, remaps <em>unicode</em> to <em>str</em>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">V3K</span><span class="p">:</span>
+   <span class="n">unicode</span> <span class="o">=</span> <span class="nb">str</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="platform-definitions">
+<span id="enum-platform"></span><h3>Platform Definitions<a class="headerlink" href="#platform-definitions" title="Permalink to this headline">¶</a></h3>
+<p>The internal representation of the platform parameter is an <em>int</em> used
+as bit-array for binary logic operations.
+The most interfaces support the bit-array representation as well as the
+alternatively string name macros as defined by the <em>sys.platform</em> interface.</p>
+<div class="section" id="structure-of-bit-masks">
+<h4>Structure of bit masks<a class="headerlink" href="#structure-of-bit-masks" title="Permalink to this headline">¶</a></h4>
+<p>The predefined bitmasks are provided as a label of form <em>RTE_&lt;name&gt;</em>, which covers
+the grouping of bit-mask blocks and the increments within these groups.</p>
+The comitted
+<span class="textmarker"><bold>interface is<bold></span>
+the
+<span class="textmarker"><bold>NAMED ENUMERATION only<bold></span>
+,
+<span class="textmarker"><bold>NOT the assigned numeric value<bold></span>
+.
+Therefore the values must never be accessed explicitly.
+The same principle with relative offsets as values for enumerations has to
+be applied when defining custom values.<p>The general algorithm of the calculation for the bit-mask is based on the grouping
+of categories, type sets, and members into nested bit-blocks.
+The combination of category bit masks for bit-blocks and the addition of sub-blocks
+for context-bitmasks of it&#8217;s members combines the performance of logical bit-operations
+with the reduction of the number of required bits.
+The principle is similar to the network addresses of TCP networks.
+The lower 16 bits are reserved for the groups and members of a category, which is similar
+to a class-B network address schema.
+This is required due to the vast number of permutations of possible OS releases, which else would lead to
+bit arrays of astronomical dimensions.</p>
+</div>
+<div class="section" id="bit-mask-definitions">
+<h4>Bit-Mask Definitions<a class="headerlink" href="#bit-mask-definitions" title="Permalink to this headline">¶</a></h4>
+<p>The following additional definitions are introduced.</p>
+<ul>
+<li><p class="first">The following aliasses are defined in addition:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="64%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>sys.platform</em></th>
+<th class="head"><em>alias</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>win32</td>
+<td>win</td>
+</tr>
+<tr class="row-odd"><td>darwin</td>
+<td>osx</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">The bit-mask provides the bit for the OS as well as the bit for the
+base category and the set.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="23%" />
+<col width="18%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Syntax Domain</th>
+<th class="head"><em>sys.platform</em></th>
+<th class="head">Category</th>
+<th class="head">set</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Windows</td>
+<td>win</td>
+<td>RTE_WIN32</td>
+<td>RTE_WIN32</td>
+</tr>
+<tr class="row-odd"><td>Cygwin</td>
+<td>cygwin</td>
+<td>RTE_POSIX</td>
+<td>RTE_CYGWIN</td>
+</tr>
+<tr class="row-even"><td>Linux</td>
+<td>linux, linux2</td>
+<td>RTE_POSIX</td>
+<td>RTE_LINUX</td>
+</tr>
+<tr class="row-odd"><td>Solaris</td>
+<td>sunos</td>
+<td>RTE_POSIX</td>
+<td>RTE_SOLARIS</td>
+</tr>
+<tr class="row-even"><td>BSD</td>
+<td>bsd</td>
+<td>RTE_POSIX</td>
+<td>RTE_BSD</td>
+</tr>
+<tr class="row-odd"><td>OS-X</td>
+<td>darwin</td>
+<td>RTE_POSIX</td>
+<td>RTE_OSX</td>
+</tr>
+<tr class="row-even"><td>GENERIC</td>
+<td>n.a.</td>
+<td>RTE_GENERIC</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<ul id="index-3">
+<li><p class="first">Enum Values:</p>
+<ul>
+<li><p class="first">Base type blocks:</p>
+<ul class="simple">
+<li><strong>RTE_CYGWIN</strong> - <strong>cygwin</strong>: Cygwin <a class="reference internal" href="references.html#cygwin" id="id1">[CYGWIN]</a></li>
+<li><strong>RTE_POSIX</strong> - <strong>posix</strong>: Posix systems using <em>fcntl</em> <a class="reference internal" href="references.html#posix" id="id2">[POSIX]</a>.</li>
+<li><strong>RTE_WIN32</strong> - <strong>win</strong>: All Windows systems [MS-DTYP]</li>
+<li><strong>RTE_GENERIC</strong>: Undefined platform for special cases</li>
+</ul>
+</li>
+<li><p class="first">Sets of POSIX base system platformids:</p>
+<ul class="simple">
+<li><strong>RTE_BSD</strong> - <strong>bsd</strong>: BSD, - OpenBSD, FreeBSD, NetBSD - as Posix system <a class="reference internal" href="references.html#posix" id="id4">[POSIX]</a>.</li>
+<li><strong>RTE_DARWIN</strong> - <strong>darwin</strong>: Darwin/OS-X, as Posix system <a class="reference internal" href="references.html#posix" id="id5">[POSIX]</a>, no macpath-legacy.</li>
+<li><strong>RTE_DEBIAN</strong> - <strong>debian</strong>: debian - as Posix system <a class="reference internal" href="references.html#posix" id="id6">[POSIX]</a>.</li>
+<li><strong>RTE_LINUX</strong> - <strong>linux</strong>: Linux with specific add-ons - OS, DIST, GNU - as Posix system <a class="reference internal" href="references.html#posix" id="id7">[POSIX]</a>.</li>
+<li><strong>RTE_OSX</strong> - <strong>osx</strong>: Darwin/OS-X, as Posix system <a class="reference internal" href="references.html#posix" id="id8">[POSIX]</a>, no macpath-legacy.</li>
+<li><strong>RTE_SOLARIS</strong> - <strong>solaris</strong>: UNIX/Solaris, as Posix system <a class="reference internal" href="references.html#posix" id="id9">[POSIX]</a>.</li>
+</ul>
+<p>.</p>
+</li>
+<li><p class="first"><strong>RTE_GENERIC</strong>: Undefined platform for special cases.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Control Variables:</p>
+<ul class="simple">
+<li><strong>RTE</strong>: Current runtime-environment variable.</li>
+</ul>
+</li>
+</ul>
+<p>For the complete list refer to the sources [<a class="reference external" href="_modules/platformids/__init__.html#">platformids.__init__.py</a>].</p>
+</div>
+<div class="section" id="calculation-of-bit-masks">
+<h4>Calculation of bit masks<a class="headerlink" href="#calculation-of-bit-masks" title="Permalink to this headline">¶</a></h4>
+<p>A typical example for the base of the mapping and algorithms is:</p>
+<pre class="literal-block">
+# category: posix
+RTE_POSIX = 8192  #: Posix systems using <em>fcntl</em> <a class="reference internal" href="references.html#posix" id="id10">[POSIX]</a>.
+
+# set: OS-X
+# bit-block: Apple - OS-X
+RTE_DARWIN = RTE_POSIX + 1  #: Darwin/OS-X, as Posix system <a class="reference internal" href="references.html#posix" id="id11">[POSIX]</a>, no macpath-legacy.
+RTE_OSX = RTE_POSIX + 2  #: Darwin/OS-X, as Posix system <a class="reference internal" href="references.html#posix" id="id12">[POSIX]</a>, no macpath-legacy.
+
+# set: Sun - Solaris
+RTE_SOLARIS = RTE_POSIX + 16  #: UNIX/Solaris, as Posix system <a class="reference internal" href="references.html#posix" id="id13">[POSIX]</a>.
+
+# set: BSD
+RTE_BSD = RTE_POSIX + 32  #: BSD, - OpenBSD, FreeBSD, NetBSD - as Posix system <a class="reference internal" href="references.html#posix" id="id14">[POSIX]</a>.
+
+# set: Linux
+RTE_LINUX = RTE_POSIX + 64  #: Linux with specific add-ons - OS, DIST, GNU - as Posix system <a class="reference internal" href="references.html#posix" id="id15">[POSIX]</a>.
+
+# members&quot; Linux
+RTE_CENTOS  = RTE_LINUX + 1  #: CentOS
+RTE_CENTOS4 = RTE_LINUX + 2  #: CentOS-4
+RTE_CENTOS5 = RTE_LINUX + 3  #: CentOS-5
+RTE_CENTOS6 = RTE_LINUX + 4  #: CentOS-6
+RTE_CENTOS7 = RTE_LINUX + 5  #: CentOS-7
+
+RTE_FEDORA = RTE_LINUX + 32  #: Fedora
+RTE_FEDORA19 = RTE_LINUX + 33  #: Fedora-19
+RTE_FEDORA27 = RTE_LINUX + 34  #: Fedora-27
+
+RTE_DEBIAN = RTE_LINUX + 64  #: Debian
+RTE_DEBIAN6 = RTE_LINUX + 65  #: Debian - squeeze
+RTE_DEBIAN7 = RTE_LINUX + 66  #: Debian - wheezy
+RTE_DEBIAN8 = RTE_LINUX + 67  #: Debian - jessy
+RTE_DEBIAN9 = RTE_LINUX + 68  #: Debian - stretch
+</pre>
+<p>The calculations are for OS and distributions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># explicit</span>
+<span class="c1">#</span>
+<span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_POSIX</span><span class="p">:</span> <span class="c1"># use category</span>
+   <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_LINUX</span><span class="p">:</span> <span class="c1"># use set</span>
+   <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_CENTOS</span><span class="p">:</span> <span class="c1"># use distro</span>
+   <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_CENTOS7</span><span class="p">:</span> <span class="c1"># use release</span>
+   <span class="k">pass</span>
+
+<span class="c1">#</span>
+<span class="c1"># hierarchical</span>
+<span class="c1">#</span>
+<span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_POSIX</span><span class="p">:</span> <span class="c1"># use category</span>
+   <span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_LINUX</span><span class="p">:</span> <span class="c1"># use set</span>
+      <span class="c1"># do s.th. ...</span>
+
+      <span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_CENTOS7</span><span class="p">:</span> <span class="c1"># use release</span>
+         <span class="k">pass</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="c1"># do s.th. ...</span>
+
+   <span class="k">elif</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_BSD</span><span class="p">:</span> <span class="c1"># use set</span>
+      <span class="c1"># do s.th. else...</span>
+
+      <span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_OPENBSD</span><span class="p">:</span> <span class="c1"># use release</span>
+         <span class="k">pass</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="c1"># do s.th. else...</span>
+</pre></div>
+</div>
+<p>The calculations are for URI and schemes:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_URI</span><span class="p">:</span> <span class="c1"># use category</span>
+   <span class="k">pass</span>
+
+<span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_HTTP</span><span class="p">:</span> <span class="c1"># use scheme</span>
+   <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="memory-management">
+<h4>Memory Management<a class="headerlink" href="#memory-management" title="Permalink to this headline">¶</a></h4>
+<p>The custom bit-mask blocks are managed by the assignment of reserved value ranges.
+These has to be handled cooperative by the application, no range checks for the assignment of
+net key/value/pairs is done.</p>
+<p>The values are readonly once assigned.
+A basic protection is implemented, where a reassignment attempt raises an exception.</p>
+</div>
+</div>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<p>The following attributes are official interface and could be used alternively
+to the access functions.</p>
+<div class="section" id="rte">
+<h3>RTE<a class="headerlink" href="#rte" title="Permalink to this headline">¶</a></h3>
+<p>The <em>RTE</em> variable is assigned during the initial load of the module.
+The value indicated the current runtime platform as a bit-mask and could be used
+for bit-operations.
+For possible values refer to the constants &#8216;<em>RTE_*</em>&#8216;,
+see <a class="reference external" href="#platform-definitions">Platform Definitions</a>.</p>
+</div>
+<div class="section" id="rte2num">
+<h3>rte2num<a class="headerlink" href="#rte2num" title="Permalink to this headline">¶</a></h3>
+<p>The map of string and for smart coding of the integer values too onto
+the defined numerical enum values.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rte2num</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="o">&lt;</span><span class="nb">str</span><span class="o">-</span><span class="ow">or</span><span class="o">-</span><span class="n">num</span><span class="o">&gt;</span><span class="p">:</span> <span class="n">RTE_</span><span class="o">&lt;*&gt;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># application:</span>
+
+<span class="n">rte2num</span><span class="p">[</span><span class="s1">&#39;bsd&#39;</span><span class="p">]</span>   <span class="o">==</span> <span class="n">RTE_BSD</span>
+<span class="n">rte2num</span><span class="p">[</span><span class="n">RTE_BSD</span><span class="p">]</span> <span class="o">==</span> <span class="n">RTE_BSD</span>
+</pre></div>
+</div>
+<p>For the complete list refer to the sources [<a class="reference external" href="_modules/platformids/__init__.html#">platformids.__init__.py</a>].</p>
+</div>
+<div class="section" id="num2rte">
+<h3>num2rte<a class="headerlink" href="#num2rte" title="Permalink to this headline">¶</a></h3>
+<p>The map of numerical values onto
+the defined string values.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">num2rte</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="n">RTE_</span><span class="o">&lt;*&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="nb">str</span><span class="o">-</span><span class="ow">or</span><span class="o">-</span><span class="n">num</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># application:</span>
+
+<span class="n">rte2num</span><span class="p">[</span><span class="n">RTE_BSD</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;bsd&#39;</span>
+</pre></div>
+</div>
+<p>For the complete list refer to the sources [<a class="reference external" href="_modules/platformids/__init__.html#">platformids.__init__.py</a>].</p>
+</div>
+<div class="section" id="v3k">
+<h3>V3K<a class="headerlink" href="#v3k" title="Permalink to this headline">¶</a></h3>
+<p>Adjust to current major Python version to Python3 vs. Python2.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V3K</span> <span class="o">=</span> <span class="bp">False</span>  <span class="c1">#: Python3.5+</span>
+<span class="k">if</span> <span class="n">PYVxyz</span> <span class="o">&gt;=</span> <span class="n">PYV35</span><span class="p">:</span>
+    <span class="n">V3K</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>  <span class="c1">#: string and unicode</span>
+
+    <span class="c1">#: Superpose for generic Python3 compatibility.</span>
+    <span class="nb">unicode</span> <span class="o">=</span> <span class="nb">str</span>  <span class="c1"># @ReservedAssignment</span>
+
+<span class="k">elif</span> <span class="n">PYVxyz</span> <span class="o">&gt;=</span> <span class="n">PYV27</span><span class="p">:</span>
+    <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">)</span>  <span class="c1">#: string and unicode</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="n">PlatformIDsError</span><span class="p">(</span>
+        <span class="s2">&quot;Requires Python 2.7+, or 3.5+, current: &quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">2</span><span class="p">]))</span>
+</pre></div>
+</td></tr></table></div>
+<p>The definition includes also the helper variables <em>ISSTR</em> and <em>unicode</em>,
+which support basic multiplatform encoding checks for Python2 and Python3.</p>
+</div>
+<div class="section" id="pyvxyz">
+<h3>PYVxyz<a class="headerlink" href="#pyvxyz" title="Permalink to this headline">¶</a></h3>
+<p>The bit encoded Python version of current executable for bit mask operations.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">PYVxyz</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="k">for</span> <span class="n">Python</span><span class="o">-</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">5</span>
+
+<span class="n">xxx</span><span class="p">:</span>      <span class="mo">011</span>
+<span class="n">yyyyy</span><span class="p">:</span>    <span class="mo">00110</span>
+<span class="n">zzzzzzzz</span><span class="p">:</span> <span class="mo">00000101</span>
+
+<span class="n">PYVxyz</span> <span class="o">=</span> <span class="mb">0b0110011000000101</span> <span class="o">=</span> <span class="mh">0x6605</span> <span class="o">=</span> <span class="mi">26117</span>
+</pre></div>
+</td></tr></table></div>
+<p>Du to the static nature of the version number code dependencies the reference values could be
+provided as integer constants when frequent evaluation is required.</p>
+</div>
+<div class="section" id="pre-defined-pyvxyz-constants">
+<h3>Pre-Defined PYVxyz Constants<a class="headerlink" href="#pre-defined-pyvxyz-constants" title="Permalink to this headline">¶</a></h3>
+<p>Predefined values for comon dependencies of changed <em>Python</em> and/or <em>CPython</em> interfaces.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">PYV2</span> <span class="o">=</span> <span class="mi">16384</span>  <span class="c1"># getPYVxyz(2,)</span>
+<span class="n">PYV26</span> <span class="o">=</span> <span class="mi">17920</span>  <span class="c1"># getPYVxyz(2, 6)</span>
+<span class="n">PYV27</span> <span class="o">=</span> <span class="mi">18176</span>  <span class="c1"># getPYVxyz(2, 7)</span>
+<span class="n">PYV3</span> <span class="o">=</span> <span class="mi">24576</span>  <span class="c1"># getPYVxyz(3,)</span>
+<span class="n">PYV32</span> <span class="o">=</span> <span class="mi">25088</span>  <span class="c1"># getPYVxyz(3, 2)</span>
+<span class="n">PYV34</span> <span class="o">=</span> <span class="mi">25600</span>  <span class="c1"># getPYVxyz(3, 4)</span>
+<span class="n">PYV35</span> <span class="o">=</span> <span class="mi">25856</span>  <span class="c1"># getPYVxyz(3, 5)</span>
+<span class="n">PYV36</span> <span class="o">=</span> <span class="mi">26112</span>  <span class="c1"># getPYVxyz(3, 6)</span>
+<span class="n">PYV362</span> <span class="o">=</span> <span class="mi">26114</span>  <span class="c1"># getPYVxyz(3, 6, 2)</span>
+<span class="n">PYV365</span> <span class="o">=</span> <span class="mi">26117</span>  <span class="c1"># getPYVxyz(3, 6, 5)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-custom-num-base">
+<h3>get_custom_num_base<a class="headerlink" href="#get-custom-num-base" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="platformids.__init__.get_custom_num_base">
+<code class="descclassname">platformids.__init__.</code><code class="descname">get_custom_num_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#get_custom_num_base"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.get_custom_num_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reserves and returns the current available base value for 
+the next bit-block. Each reserved bit-block for custom usage
+is 16-bit wide, and could be used by the application arbitrarily.</p>
+<p>Each call increments the integer address of the next free block
+by one bit.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In current release the reservation of the value ranges
+for bit-blocks is not released until the process termination.</p>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>None</dd>
+<dt>Returns:</dt>
+<dd>The base index for the new reservation.</dd>
+<dt>Raises:</dt>
+<dd>pass-through</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="get-custom-num-range">
+<h3>get_custom_num_range<a class="headerlink" href="#get-custom-num-range" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="platformids.__init__.get_custom_num_range">
+<code class="descclassname">platformids.__init__.</code><code class="descname">get_custom_num_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#get_custom_num_range"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.get_custom_num_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the available range of values for 
+elements within bit blocks.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>None.</dd>
+<dt>Returns:</dt>
+<dd><p class="first">The inclusive range as tuple:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="get-num2rte">
+<h3>get_num2rte<a class="headerlink" href="#get-num2rte" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="platformids.__init__.get_num2rte">
+<code class="descclassname">platformids.__init__.</code><code class="descname">get_num2rte</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#get_num2rte"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.get_num2rte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the corresponding string representation
+for the string numeric value.</p>
+<p>Alternatively the official dict <em>num2rte</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>num</strong>:</dt>
+<dd>Numeric enum value of the requested platform.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>The string value, or <em>None*</em>.</dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="get-rte2num">
+<h3>get_rte2num<a class="headerlink" href="#get-rte2num" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="platformids.__init__.get_rte2num">
+<code class="descclassname">platformids.__init__.</code><code class="descname">get_rte2num</code><span class="sig-paren">(</span><em>rte</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#get_rte2num"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.get_rte2num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets corresponding numerical representation
+for the numeric or string value.</p>
+<p>Alternatively the official dict <em>rte2num</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>rte</strong>:</dt>
+<dd>Numeric enum value or string representation
+of the requested platform.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>The numeric value, or <em>None*</em>.</dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="getpyvxyz">
+<h3>getPYVxyz<a class="headerlink" href="#getpyvxyz" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformids</span> <span class="kn">import</span> <span class="n">PYV35</span><span class="p">,</span> <span class="n">PYVxyz</span>  <span class="c1"># pre-defined values</span>
+
+<span class="kn">from</span> <span class="nn">platformids</span> <span class="kn">import</span> <span class="n">getPYVxyz</span>      <span class="c1"># function interface for the calculation</span>
+                                       <span class="c1"># of bit masks for releases</span>
+
+<span class="c1"># calculate non-pre-defined values</span>
+<span class="n">pyv33</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">pyv362</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">PYVxyz</span> <span class="o">&amp;</span> <span class="n">pyv33</span><span class="p">:</span>
+   <span class="c1"># do s.th....</span>
+
+<span class="k">elif</span> <span class="n">PyVxyz</span> <span class="o">&amp;</span> <span class="n">pyv362</span><span class="p">:</span>
+   <span class="c1"># do s.th. else...</span>
+
+<span class="k">elif</span> <span class="n">PyVxyz</span> <span class="o">&gt;=</span> <span class="n">PYV35</span><span class="p">:</span>
+   <span class="c1"># do s.th. else...</span>
+
+<span class="k">else</span><span class="p">:</span>
+   <span class="c1"># support the minimal and/or legacy spec....</span>
+</pre></div>
+</td></tr></table></div>
+<dl class="function">
+<dt id="platformids.__init__.getPYVxyz">
+<code class="descclassname">platformids.__init__.</code><code class="descname">getPYVxyz</code><span class="sig-paren">(</span><em>x=0</em>, <em>y=0</em>, <em>z=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#getPYVxyz"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.getPYVxyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the 16bit integer bi-mask for the provided 
+Python release values. For example from <em>sys.version_info</em>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># uses 3bits:  x: 0-7</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># uses 5bits:  y: 0-31</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># uses 8bits:  z: 0-255</span>
+</pre></div>
+</div>
+<p>resulting in:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Vxyz</span> <span class="o">=</span> <span class="mi">0</span><span class="n">bxxxyyyyyzzzzzzzz</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="bp">self</span><span class="o">.</span><span class="n">bits</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+
+<span class="c1"># =&gt; result = 0b 011 00110 00000101 </span>
+<span class="c1"># =&gt; result = 0b0110011000000101 =  26,117</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>x</strong>:</dt>
+<dd><p class="first">The major version number.</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span>
+
+<span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y0</span> <span class="o">&lt;</span> <span class="mi">4</span>  <span class="c1"># internal low-level 16-bit optimization threshold </span>
+</pre></div>
+</div>
+</dd>
+<dt><strong>y</strong>:</dt>
+<dd><dl class="first last docutils">
+<dt>The minor version number. ::</dt>
+<dd>0 &lt;= y &lt; 63</dd>
+</dl>
+</dd>
+<dt><strong>z</strong>:</dt>
+<dd><p class="first">The numeric relase-build tag.</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">257</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>The bit-mask.</dd>
+<dt>Raises:</dt>
+<dd>pass-through</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="set-num2rte">
+<h3>set_num2rte<a class="headerlink" href="#set-num2rte" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="platformids.__init__.set_num2rte">
+<code class="descclassname">platformids.__init__.</code><code class="descname">set_num2rte</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#set_num2rte"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.set_num2rte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the numeric to string map.</p>
+<p>Alternatively the official dict <em>num2rte</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>key</strong>:</dt>
+<dd>Numeric key value.</dd>
+<dt><strong>value</strong>:</dt>
+<dd>String value.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd><em>None</em></dd>
+<dt>Raises:</dt>
+<dd>PlatformIDsError</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="set-rte2num">
+<h3>set_rte2num<a class="headerlink" href="#set-rte2num" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="platformids.__init__.set_rte2num">
+<code class="descclassname">platformids.__init__.</code><code class="descname">set_rte2num</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids/__init__.html#set_rte2num"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.set_rte2num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the rte to numeric mapping</p>
+<p>Alternatively the official dict <em>rte2num</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>key</strong>:</dt>
+<dd>Numeric or string key value.</dd>
+<dt><strong>value</strong>:</dt>
+<dd>Numeric value.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd><em>None</em></dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="platformids.__init__.PlatformIDsError">
+<em class="property">exception </em><code class="descclassname">platformids.__init__.</code><code class="descname">PlatformIDsError</code><a class="reference internal" href="_modules/platformids/__init__.html#PlatformIDsError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.__init__.PlatformIDsError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subsystem <em>PlatformIDs</em>.</p>
+</dd></dl>
+
+</div></div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/pyplatformids-64x64.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">&#8216;platformids.__init__&#8217; - Module</a><ul>
+<li><a class="reference internal" href="#module-platformids.__init__">Module</a></li>
+<li><a class="reference internal" href="#constants">Constants</a><ul>
+<li><a class="reference internal" href="#python-version">Python Version</a></li>
+<li><a class="reference internal" href="#string-encoding">String Encoding</a></li>
+<li><a class="reference internal" href="#platform-definitions">Platform Definitions</a><ul>
+<li><a class="reference internal" href="#structure-of-bit-masks">Structure of bit masks</a></li>
+<li><a class="reference internal" href="#bit-mask-definitions">Bit-Mask Definitions</a></li>
+<li><a class="reference internal" href="#calculation-of-bit-masks">Calculation of bit masks</a></li>
+<li><a class="reference internal" href="#memory-management">Memory Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#attributes">Attributes</a><ul>
+<li><a class="reference internal" href="#rte">RTE</a></li>
+<li><a class="reference internal" href="#rte2num">rte2num</a></li>
+<li><a class="reference internal" href="#num2rte">num2rte</a></li>
+<li><a class="reference internal" href="#v3k">V3K</a></li>
+<li><a class="reference internal" href="#pyvxyz">PYVxyz</a></li>
+<li><a class="reference internal" href="#pre-defined-pyvxyz-constants">Pre-Defined PYVxyz Constants</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#functions">Functions</a><ul>
+<li><a class="reference internal" href="#get-custom-num-base">get_custom_num_base</a></li>
+<li><a class="reference internal" href="#get-custom-num-range">get_custom_num_range</a></li>
+<li><a class="reference internal" href="#get-num2rte">get_num2rte</a></li>
+<li><a class="reference internal" href="#get-rte2num">get_rte2num</a></li>
+<li><a class="reference internal" href="#getpyvxyz">getPYVxyz</a></li>
+<li><a class="reference internal" href="#set-num2rte">set_num2rte</a></li>
+<li><a class="reference internal" href="#set-rte2num">set_rte2num</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="python_bitmasks.html"
+                        title="previous chapter">Bit Masks for Numeric Vectors</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="install.html"
+                        title="next chapter">Install</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/package_init.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="Install"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="python_bitmasks.html" title="Bit Masks for Numeric Vectors"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Arno-Can Uestuensoez.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

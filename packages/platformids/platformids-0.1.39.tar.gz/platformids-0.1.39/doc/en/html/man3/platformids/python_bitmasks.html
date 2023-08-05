@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Bit Masks for Numeric Vectors &mdash; platformids 0.1.28 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.28',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="platformids 0.1.28 documentation" href="index.html" />
+    <link rel="next" title="‘platformids.__init__’ - Module" href="package_init.html" />
+    <link rel="prev" title="Python2 and Python3 Encoding and Decoding" href="python_encode_decode.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="package_init.html" title="‘platformids.__init__’ - Module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="python_encode_decode.html" title="Python2 and Python3 Encoding and Decoding"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="bit-masks-for-numeric-vectors">
+<h1>Bit Masks for Numeric Vectors<a class="headerlink" href="#bit-masks-for-numeric-vectors" title="Permalink to this headline">¶</a></h1>
+<p>In programming languages the hierarchical information is typically represented as
+an ordered vector with hierrachical semantics of items defined by their position.
+This is in general a very common representation for naturally hierarchical information
+as for paths for example in filesystems, but also for example for version numbers
+combined by multiple major and minor subnumbers as the Python version itself.</p>
+<p>In case of the combined version number the common hierarchical numeric values
+constitute a vector of a logical number assembled with a series of independent
+numbers based on a set of ordered  heterogeneous virtual radix values.
+The following version</p>
+<div class="math" id="equation-hierarchical_integer_vector">
+<p><span class="eqno">(1)</span><img src="_images/math/1646495603b6dc8fdd08dd4e8bd1beca6b00908a.png" alt="\begin{split}
+V(A, B, C) = (A, B, C)
+\end{split}"/></p>
+</div><p>is commonly expressed also by the string</p>
+<div class="math" id="equation-hierarchical_integer_vector">
+<p><span class="eqno">(2)</span><img src="_images/math/ad42a3fb161c1feb405a12d3f10128900ae52062.png" alt="\begin{split}
+V(A, B, C) := 'A.B.C'
+\end{split}"/></p>
+</div><p>The resulting vector requires in programming languages a number of comparison operations
+for logical processing, and the combination into one overall result with eventual additional
+processing for semantical slices.
+This increases linear with the incremental number of required processing, and could sumup
+considerably in larger loops.
+It could result in an overall exponential performance degradation when applied in
+non-linear algorithms.</p>
+<p>The <em>platformids</em> package provides a tiny core library with integer enumerations to be
+commonly used in order to enhance the performance.
+Thus the provided library is designed for minimized overall performance degradation
+for non-matching cases when generally applied.
+The overall performance enhancement should be present after the 2nd. or 3rd. processing
+of the integer replacement value, while the static one-time calculation of the
+enum value is normally negligble impact due to the single-shot
+static calculation.</p>
+<div class="section" id="scalar-representation-of-hierarchical-integer-vectors">
+<h2>Scalar Representation of Hierarchical Integer Vectors<a class="headerlink" href="#scalar-representation-of-hierarchical-integer-vectors" title="Permalink to this headline">¶</a></h2>
+<p>The required operations on hierarchical integer vectors is in a number of cases
+the static comparison of ranges of selected single and combined items.
+The following simple comparison of two static integer vectors example:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V0</span> <span class="o">=</span> <span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">C0</span><span class="p">)</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="p">(</span><span class="n">A1</span><span class="p">,</span> <span class="n">B1</span><span class="p">,</span> <span class="n">C1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">V0</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">:</span>
+   <span class="n">doCode0</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="n">doCode1</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>results actually in the logical hierarchical item comparison:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V0</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="p">(</span>
+        <span class="n">V0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+     <span class="ow">or</span> <span class="p">(</span>
+           <span class="n">V0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">V1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+           <span class="ow">and</span> <span class="p">(</span>
+              <span class="n">V0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+              <span class="ow">or</span>
+                <span class="p">(</span><span class="n">V0</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">V1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">V0</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+           <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">):</span>
+   <span class="n">doCode0</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="n">doCode1</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>Because these could be fragmented over code parts of local scopes and across multiple functions
+and threads, the optimization by a compiler could be tricky or prove to be impossible.</p>
+<p>The reference values to be processed by comparison including the variable value are frequently
+static for the lifetime of the processing systems process or the scope of the relevant code,
+while the results of these comparison operations are applied as a selection criteria
+for distinguished code segments.
+This is in particular the case for version vectors in order to control adaption of variants
+of code segments for compatibility reasons.
+The most obvious version dependency is for Python the <em>CPython</em> interpreter of the
+version <em>Python3</em> itself.
+In particular in case of the <em>Python3.Y(Z)</em> releases a frequently required process due
+to the ongoing incremental agile development.
+It is even more common when Python2 releases are also to be supported by a common
+shared code base.
+Thus the resulting gain of performance could become quickly more than considerable only.</p>
+<p>The basic idea in the enhancement of processing these types of common hierarchical integer
+vectors is to transform these once into a single integer scalar value and process the
+required comparison operations from than on as a single integer operation.
+This proves in particular for short vectors as a fast replacement, while longer
+vectors would still benefit due to the reduction of than large numbers of permutations.
+The following example demonstrates the difference:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V0</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span> <span class="c1"># (A, B, C) =&gt; 0b(aaaabbbbbbccccccc)</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span> <span class="c1"># (D, E, F) =&gt; 0b(ddddeeeeeefffffff)</span>
+
+<span class="c1"># =&gt; type(V0) == type(V1) == int</span>
+
+<span class="k">if</span> <span class="n">V0</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">:</span>
+   <span class="n">doCode0</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="n">doCode1</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>which becomes e.g. in case of the following loop a dominant enhancement:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V0</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span> <span class="c1"># (A, B, C) =&gt; 0b(aaaabbbbbbccccccc)</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span> <span class="c1"># (D, E, F) =&gt; 0b(ddddeeeeeefffffff)</span>
+
+<span class="c1"># =&gt; type(V0) == type(V1) == int</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000000</span><span class="p">)</span>
+   <span class="k">if</span> <span class="n">V0</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">:</span>
+      <span class="n">doCode0</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">doCode1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Similar for</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V0</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span> <span class="c1"># (A, B, C) =&gt; 0b(aaaabbbbbbccccccc)</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span> <span class="c1"># (D, E, F) =&gt; 0b(ddddeeeeeefffffff)</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">G</span><span class="p">)</span> <span class="c1"># (D, E, G) =&gt; 0b(ddddeeeeeeggggggg)</span>
+
+<span class="c1">#</span>
+<span class="c1"># from here on V0, V1, and V2 are constant integer values</span>
+<span class="c1">#</span>
+
+
+<span class="k">def</span> <span class="nf">mySubversionHandler</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">V0</span> <span class="o">==</span> <span class="n">V1</span><span class="p">:</span>
+      <span class="n">doCode1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="k">elif</span> <span class="n">V0</span> <span class="o">&lt;</span> <span class="n">V2</span><span class="p">:</span>
+      <span class="n">doCode1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">doCode1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># =&gt; type(V0) == type(V1) == int</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000000</span><span class="p">)</span>
+   <span class="k">if</span> <span class="n">V0</span> <span class="o">&lt;</span> <span class="n">V1</span><span class="p">:</span>
+      <span class="n">doCode0</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">mySubversionHandler</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>In this vector representation each item is virtually a logical superscript of the dynamic
+radix represented by the righthand sums of the vector items.
+Each resulting radix value is based on it&#8217;s location in the vector and the sum of the bit-mask
+widths of the right-hand side items and in case of an eventual overflow also on the item itself.</p>
+<div class="math" id="equation-scalar_of_hoerarchical_integer_vector">
+<p><span class="eqno">(3)</span><img src="_images/math/1aad02522101b7751a6c77604aefb279c3265809.png" alt="|V(A, B, C)| = |(A, B, C)| = X_{2}(A, B, C){^{A}} + X_{1}(B, C){^{B}} + X_{0}(C){^{C}}"/></p>
+</div><p>Or expressed as a general equotation for the defined adaptive polynominal of fixed size
+bit masks:</p>
+<div class="math" id="equation-datextime_vector_absolute">
+<p><span class="eqno">(4)</span><img src="_images/math/cd36d7aa82e40da54de2014f967e5f01e4c10a6b.png" alt="|V(x_{i}){_{\substack{0&lt;=i&lt;n}}}| =  \sum_{\substack{0&lt;=i&lt;=n\\\text{$i$ item}}}{X_{i}(x_{j})}{^{x_{i}}|{_{\substack{0&lt;=j&lt;=i}}} }:
+n = items(V);  x \in\mathbb{N}{_0}; i,j \in\mathbb{N}{_0}."/></p>
+</div><p>where the resulting numeric value is defined by the sum of each value of the vector items
+once these are moved to their coreesponding bit position via a shift operation.
+E.g.:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">V</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 0b aaaa bbbbb cccccc</span>
+
+ <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="n">b</span> <span class="mo">0011</span> <span class="mo">00010</span> <span class="mo">000001</span> <span class="o">==</span> <span class="mi">6273</span>
+</pre></div>
+</td></tr></table></div>
+<p>This assembly of resulting representation suits particularly for mathematical
+single-shot operations of literal match and threshold passing calculations.
+The maximum gain of performance is given in particular for sizes of overall bit masks
+fitting completely into CPU registers.
+Thus modern CPUs on commercial machines of up to 64bit get the most benefit.
+The advance in case of GPU based processing with wider vectors could be even better
+when thoroughly desined.
+Overall values with larger resulting bit-widths on commercial CPUs will still benefit largely,
+when these consist of a larger number of short-fragmented items with small or moderate individual
+number ranges.
+Here libraries such as <em>decimal</em> provide additional enhancements.</p>
+<p>The corresponding fixed segment of each vector item is defined as it&#8217;s
+shifted bit mask at the final segment-position.
+The concatenated bit-representations of the integer value of each item
+found the resulting integer value.
+The gain of performance is at least proportional to the number of calls with
+a little initial overhead for a few increments only.
+The resulting gain may even benefit exponentially for short bit masks compared
+to the raw processing of the items.</p>
+<p>The already mentioned most typical application of these operations is depicted
+in the following examples.
+These also figure out an easy to go future migration path when the support
+for the older versions is dropped as these pass their end-of-life milestone.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformids</span> <span class="kn">import</span> <span class="n">V3K</span><span class="p">,</span> <span class="n">getPYVxyz</span>
+
+<span class="c1"># bit-mask values               # 0bxxxxyyyyyzzzzzzz</span>
+<span class="n">vref363</span>  <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>     <span class="c1"># 0b0011001100000011 == 13,059</span>
+<span class="n">vref32</span>   <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>        <span class="c1"># 0b0011000100000000 == 12,544</span>
+<span class="n">vref27</span>   <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>        <span class="c1"># 0b0010011100000000 ==  9,984</span>
+<span class="n">vref2714</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>    <span class="c1"># 0b0010011100001110 ==  9,998</span>
+<span class="n">vref26</span>   <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>        <span class="c1"># 0b0010001100000000 ==  8,960</span>
+<span class="n">vref245</span>  <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>     <span class="c1"># 0b0010001000000101 ==  8,709</span>
+
+<span class="n">myStaticScalar</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span>  <span class="c1">#      0bxxxxyyyyyzzzzzzz</span>
+   <span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>   <span class="c1"># e.g. 0b0010010000000011 == 8,709 := (2, 4, 5)</span>
+<span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">myTempPrePython3Handler</span><span class="p">():</span>
+   <span class="k">if</span> <span class="n">myStaticScalar</span> <span class="o">&gt;=</span> <span class="n">vref2714</span><span class="p">:</span>
+      <span class="c1"># for 2.7.14+</span>
+      <span class="n">alternative1a</span><span class="p">()</span>
+
+   <span class="k">elif</span> <span class="n">myStaticScalar</span> <span class="o">&amp;</span> <span class="n">vref27</span><span class="p">:</span>
+      <span class="c1"># for 2.7.0 - 2.7.13</span>
+      <span class="n">alternative1b</span><span class="p">()</span>
+
+   <span class="k">elif</span> <span class="n">myStaticScalar</span> <span class="o">&lt;</span> <span class="n">vref27</span><span class="p">:</span>
+      <span class="c1"># for pre-2.7</span>
+      <span class="n">alternative2</span><span class="p">()</span>
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span>  <span class="c1"># 1.000.000</span>
+
+   <span class="k">if</span> <span class="ow">not</span> <span class="n">V3K</span><span class="p">:</span>
+      <span class="c1"># for PythonX &lt; Python3</span>
+      <span class="n">myTempPrePython3Handler</span><span class="p">()</span>
+
+   <span class="k">elif</span> <span class="n">myStaticScalar</span> <span class="o">&gt;</span> <span class="n">vref363</span><span class="p">:</span>
+      <span class="c1"># for the introduced new feature of 3.6.4+</span>
+      <span class="c1">#</span>
+      <span class="c1"># the only remaining variant for the revision once</span>
+      <span class="c1"># the support for the Python2 and Python 3.0.0 - 3.6.3</span>
+      <span class="c1"># variants are canceld</span>
+      <span class="c1">#</span>
+      <span class="n">target_variant</span><span class="p">()</span>
+
+   <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># for 3.0 &lt;= x &lt;= 3.6.2</span>
+      <span class="n">temporary_alternative_python3_migration</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>This code could be later easily modified to <em>Python3</em> support only:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># bit-mask values               # 0bxxxxyyyyyzzzzzzz</span>
+<span class="n">vref363</span>  <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>     <span class="c1"># 0b0011001100000011 == 13,059</span>
+<span class="n">vref32</span>   <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>        <span class="c1"># 0b0011000100000000 == 12,544</span>
+
+<span class="n">myStaticScalar</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span>  <span class="c1">#      0bxxxxyyyyyzzzzzzz</span>
+   <span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>   <span class="c1"># e.g. 0b0011010000000011 == 8,709 := (3, 4, 5)</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span>  <span class="c1"># 1.000.000</span>
+
+   <span class="k">if</span> <span class="n">myStaticScalar</span> <span class="o">&gt;</span> <span class="n">vref363</span><span class="p">:</span>
+      <span class="c1"># for 3.6.4+</span>
+      <span class="n">target_variant</span><span class="p">()</span>
+
+   <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># for 3.0 &lt;= x &lt;= 3.6.2</span>
+      <span class="n">temporary_alternative_python3_migration</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>and later as easy migrated to the final target of stable <em>Python3</em> features only.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span>  <span class="c1"># 1.000.000</span>
+   <span class="n">target_variant</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>Remember that this code history does not require distributed or nested
+version checks, just simply a cascading of code segments with
+flat integer comparisons.
+Thus the legacy parts could be canceled by simple deletion and could be as
+easily peer-reviewed.</p>
+</div>
+<div class="section" id="bit-masks-for-python-releases">
+<h2>Bit Masks for Python Releases<a class="headerlink" href="#bit-masks-for-python-releases" title="Permalink to this headline">¶</a></h2>
+<p>The bit-mask operations provide a simple means for the efficient bulk-processing of
+static numerical threshold dependencies of vectors.
+This is in particular applicable for short and static vectors as in particular
+common release numbers.
+The Python release itsel is here is a quite good example and actually the originator
+for this package.
+The release dependency of multiple features of the Python library features
+and it&#8217;s implementaiotn by <em>CPython</em>, with all deviations to other interpreters
+such as <em>PyPy</em> <em>IronPython</em> and <em>Jytjon</em> with the additional dependency on the
+runtime environment of the OS is a frequent challange when it comes to the development
+of multi-platform applications and systems layer libraries.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># major version</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># minor version</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># micro version  or build-tag</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># textual label of release level, current:</span>
+                     <span class="c1"># (&#39;alpha&#39; | &#39;beta&#39; | &#39;candidate&#39; | &#39;final&#39;)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>  <span class="c1"># serial number, frequently &#39;0&#39;</span>
+</pre></div>
+</td></tr></table></div>
+<p>The specific bit masks designed for Python releases are of fixed sizes,
+representing the standard values with an appropriate spare range.
+The overall size is designed to fit into a 16bit register.
+The current supported value ranges are:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># major version - 3bits:  0-7</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># minor version - 5bits:  0-31</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># micro version - 8bits:  0-255</span>
+</pre></div>
+</td></tr></table></div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The implementation of the comparison operations could be based on static
+integer constants as reference values. This is suitable because of the
+static code dependencies.
+But future implementations may change the bit mask composition. Therefore
+it is recommended that either the constants should be implemented as
+shared constant values, or by the function interfaces only.</p>
+</div>
+<p>The features  may in addition vary by the specific platform, which results
+in several system dependent libraries with a few to significant differences.
+The ongoing development of the version Python3 evolves with a continous
+change of major and minor features including dependency on the micro versions.
+The system platform is represented by the standard library <em>sys</em> as:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sys</span><span class="o">.</span><span class="n">platform</span>  <span class="c1"># the label of current platform</span>
+              <span class="c1"># e.g. &#39;linux2&#39;, &#39;win32&#39;, &#39;darwin&#39;</span>
+</pre></div>
+</div>
+<p>The <em>platformids</em> provides canonical numerical values on a higher granularity
+for the supported system platforms.
+This enables in addition for code system dependent variants controlled by
+simple and fast integer comparison operations too.
+For the implementation details refer to [<a class="reference external" href="package_init.html#getPYVxyz">getPYVxyz()</a>].</p>
+<p>The following code-example depicts an example for the combined application:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+   <span class="c1"># Python3</span>
+   <span class="c1"># prepare loop</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+      <span class="c1"># Python3</span>
+
+      <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+         <span class="c1"># Python - 3.0 &lt; 3.5</span>
+
+         <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;linux2&#39;</span><span class="p">,</span> <span class="s1">&#39;darwin&#39;</span><span class="p">):</span>
+            <span class="c1"># do s. th.</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># do s.th. else.</span>
+
+      <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="n">an</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+         <span class="c1"># Python - 3.5.0 &lt; 3.5.3</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+         <span class="c1"># Python - 3.5.4 &lt; 3.6.3</span>
+         <span class="c1"># do s. th.</span>
+
+   <span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">:</span>
+      <span class="c1"># Python2.7</span>
+
+      <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;linux2&#39;</span><span class="p">:</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">else</span><span class="p">:</span>
+         <span class="c1"># do s.th. else.</span>
+
+   <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># PythonX &lt;= Python2.6</span>
+
+      <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+         <span class="k">raise</span> <span class="n">Exceptio</span><span class="p">(</span><span class="s2">&quot;Not supported.&quot;</span><span class="p">)</span>
+
+      <span class="c1"># do s.th....</span>
+</pre></div>
+</div>
+<p>The same based on static bit masks of version dependency:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">platformids</span> <span class="k">import</span> <span class="n">V3K</span><span class="p">,</span> <span class="n">Vxyz</span><span class="p">,</span> <span class="n">getPYVxyz</span>
+
+<span class="k">if</span> <span class="n">V3K</span><span class="p">:</span>
+   <span class="c1"># Python3</span>
+   <span class="c1"># prepare loop</span>
+
+<span class="n">v27</span>  <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="n">v35</span>  <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">v353</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">v363</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">V3K</span><span class="p">:</span>
+      <span class="c1"># Python3</span>
+
+      <span class="k">if</span> <span class="ow">not</span> <span class="n">Vxyz</span> <span class="o">&amp;</span> <span class="n">v35</span><span class="p">:</span>
+         <span class="c1"># Python - 3.0 &lt; 3.5</span>
+
+         <span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_POSIX</span><span class="p">:</span>
+            <span class="c1"># do s. th.</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># do s.th. else.</span>
+
+      <span class="k">elif</span>  <span class="n">Vxyz</span> <span class="o">&amp;</span> <span class="n">v353</span><span class="p">:</span>
+         <span class="c1"># Python - 3.5.0 &lt; 3.5.3</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">elif</span> <span class="ow">not</span> <span class="n">Vxyz</span> <span class="o">&amp;</span> <span class="n">v363</span><span class="p">:</span>
+         <span class="c1"># Python - 3.5.4 &lt; 3.6.3</span>
+         <span class="c1"># do s. th.</span>
+
+
+   <span class="k">elif</span> <span class="n">Vxyz</span> <span class="o">&amp;</span> <span class="n">v27</span><span class="p">:</span>
+      <span class="c1"># Python2.7</span>
+
+      <span class="k">if</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_LINUX</span><span class="p">:</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">elif</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_DARWIN</span><span class="p">:</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">elif</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_WIN32</span><span class="p">:</span>
+         <span class="c1"># do s. th.</span>
+
+      <span class="k">else</span><span class="p">:</span>
+         <span class="c1"># do s.th. else.</span>
+
+   <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># PythonX &lt;= Python2.6</span>
+
+      <span class="k">if</span> <span class="ow">not</span> <span class="n">RTE</span> <span class="o">&amp;</span> <span class="n">RTE_WIN32</span><span class="p">:</span>
+         <span class="k">raise</span> <span class="n">Exceptio</span><span class="p">(</span><span class="s2">&quot;Not supported.&quot;</span><span class="p">)</span>
+
+      <span class="c1"># do s.th....</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/pyplatformids-64x64.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Bit Masks for Numeric Vectors</a><ul>
+<li><a class="reference internal" href="#scalar-representation-of-hierarchical-integer-vectors">Scalar Representation of Hierarchical Integer Vectors</a></li>
+<li><a class="reference internal" href="#bit-masks-for-python-releases">Bit Masks for Python Releases</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="python_encode_decode.html"
+                        title="previous chapter">Python2 and Python3 Encoding and Decoding</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="package_init.html"
+                        title="next chapter">&#8216;platformids.__init__&#8217; - Module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/python_bitmasks.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="package_init.html" title="‘platformids.__init__’ - Module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="python_encode_decode.html" title="Python2 and Python3 Encoding and Decoding"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Arno-Can Uestuensoez.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

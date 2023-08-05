@@ -1,0 +1,19 @@
+# README
+include README.md
+
+# License
+include LICENSE.txt
+include ArtisticLicense20.html
+include licenses-amendments.txt
+
+# setup
+include setup.py
+include setup.cfg
+
+
+# documentation
+recursive-include doc/en/html/man3/platformids *
+
+# test cases and data
+include tests/*
+include testdata/*

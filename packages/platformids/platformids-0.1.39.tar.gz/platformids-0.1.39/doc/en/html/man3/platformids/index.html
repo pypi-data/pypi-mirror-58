@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Abstract &mdash; platformids 0.1.28 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.28',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="platformids 0.1.28 documentation" href="#" />
+    <link rel="next" title="Shortcuts" href="shortcuts.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="shortcuts.html" title="Shortcuts"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="abstract">
+<h1>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h1>
+<p>The &#8216;<em>platformids</em>&#8216; package provides the abstract enumeration of runtime  platforms.
+This extends the standard Python facilities by</p>
+<ul class="simple">
+<li>more specific canonical platform enumerations</li>
+<li>provides additional hierarchical bitmasks for faster processing</li>
+<li>provides mapping of string and numeric representation for human display</li>
+<li>provides a boolean flag <em>V3K</em> for Python3</li>
+<li>provides a bitmask <em>Vxyz</em> for the complete Python version for faster operations</li>
+</ul>
+<p>The supported platforms are:</p>
+<ul class="simple">
+<li>Linux, BSD, Unix, OS-X, Cygwin, and Windows</li>
+<li>Python2.7+, Python3.5+</li>
+</ul>
+</div>
+<div class="section" id="cockpit">
+<h1>Cockpit<a class="headerlink" href="#cockpit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="api">
+<h2>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<div class="indextab"><table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="38%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Component</th>
+<th class="head">Shortcuts</th>
+<th class="head">API</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>platformids</td>
+<td><a class="reference internal" href="shortcuts.html#sc-platformids"><span class="std std-ref">platformids</span></a></td>
+<td><a class="reference external" href="package_init.html#">platformids.__init__</a></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+<div class="section" id="documents">
+<h2>Documents<a class="headerlink" href="#documents" title="Permalink to this headline">¶</a></h2>
+<div class="indextab"><table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Artifacts</th>
+<th class="head">Shortcuts</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Concepts and Design</td>
+<td><a class="reference internal" href="shortcuts.html#developmentdocs"><span class="std std-ref">Development Documents</span></a></td>
+</tr>
+<tr class="row-odd"><td>Programming Interfaces</td>
+<td><a class="reference external" href="package_init.html#">platformids</a></td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="blueprint">
+<h1>Blueprint<a class="headerlink" href="#blueprint" title="Permalink to this headline">¶</a></h1>
+<p>The &#8216;platformids&#8217; package provides the hierarchical enumeration of runtime data
+source and target platform IDs.
+The platfom runtime system is therefore logically split into categories, sets, and members
+of specific operating system types and distributions.
+In addition the Python version is packed into a bit-array, what reduces the required code
+for example for the adaptation of current changes of Python3.x.y on subversion-level.</p>
+<p>The following figure depicts a subset only of the current supported platform variants.</p>
+<p><a class="reference internal" href="_images/platformids-blueprint.png"><img alt="platformidsblueprint" src="_images/platformids-blueprint.png" style="width: 800px;" /></a>
+<a class="reference external" href="_static/platformids-blueprint.png"><img alt="zoom" src="_images/zoom.png" style="width: 16px;" /></a></p>
+<ul>
+<li><p class="first"><strong>V3K</strong></p>
+<p>The flag for the <em>Python3</em> version [<a class="reference external" href="package_init.html#v3k">platformids</a>]:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">V3K</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+   <span class="c1"># do sth....</span>
+
+<span class="k">else</span><span class="p">:</span>
+   <span class="c1"># do th. else...</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first"><strong>PYVxyz</strong></p>
+<p>The more granular combined bit-mask-flag of the Python version <em>PythonX.Y</em>
+and release  <em>PythonX.Y(Z)</em> is provided by the variable <em>Vxyz</em>
+[<a class="reference external" href="package_init.html#pyvxyz">PYVxyz</a>]:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">PYVxyz</span> <span class="p">:</span><span class="o">=</span> <span class="mi">0</span><span class="n">bxxxyyyyyzzzzzzzz</span>
+
+<span class="n">xxx</span><span class="p">:</span>     <span class="mi">3</span> <span class="n">bits</span> <span class="o">/</span> <span class="mi">0</span><span class="o">-</span><span class="mi">7</span>   <span class="k">for</span> <span class="n">major</span> <span class="n">version</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="mi">3</span>       <span class="k">for</span> <span class="mf">3.6</span><span class="o">.</span><span class="mi">5</span>  <span class="ow">or</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">future</span> <span class="mf">4.0</span><span class="o">.</span><span class="mi">2</span>
+<span class="n">yyyyy</span><span class="p">:</span>   <span class="mi">5</span> <span class="n">bits</span> <span class="o">/</span> <span class="mi">0</span><span class="o">-</span><span class="mi">31</span>  <span class="k">for</span> <span class="n">minor</span> <span class="n">version</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="mi">6</span>       <span class="k">for</span> <span class="mf">3.6</span><span class="o">.</span><span class="mi">5</span>  <span class="ow">or</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">future</span> <span class="mf">3.14</span><span class="o">.</span><span class="mi">3</span>
+<span class="n">zzzzzz</span><span class="p">:</span>  <span class="mi">8</span> <span class="n">bits</span> <span class="o">/</span> <span class="mi">0</span><span class="o">-</span><span class="mi">255</span> <span class="k">for</span> <span class="n">the</span> <span class="n">release</span> <span class="n">build</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="mi">14</span>  <span class="k">for</span> <span class="mf">2.7</span><span class="o">.</span><span class="mi">14</span> <span class="ow">or</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">future</span> <span class="mf">2.7</span><span class="o">.</span><span class="mi">23</span>
+</pre></div>
+</td></tr></table></div>
+<p>See also [<a class="reference external" href="package_init.html#platformids.__init__.getPYVxyz">getPYVxyz</a>].</p>
+</li>
+<li><p class="first"><strong>getPYVxyz</strong></p>
+<p>Dynamic version evaluation by compressed bitmasks as single integer values
+by the slim and fast function interface
+[<a class="reference external" href="package_init.html#platformids.__init__.getPYVxyz">getPYVxyz</a>].</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">PYV32</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>        <span class="c1"># integer</span>
+<span class="n">myPYVxyz</span> <span class="o">=</span> <span class="n">getPYVxyz</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># integer</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000000</span><span class="p">):</span>
+
+   <span class="k">if</span> <span class="n">PYVxyz</span> <span class="o">&amp;</span> <span class="n">myPYVxyz</span><span class="p">:</span>   <span class="c1"># pure integer comparison</span>
+      <span class="n">callFunction0</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+   <span class="k">elif</span> <span class="n">PYV32</span> <span class="o">&gt;</span> <span class="n">myPYVxyz</span><span class="p">:</span>   <span class="c1"># pure integer comparison</span>
+      <span class="n">callFunction1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first"><strong>ISSTR</strong> and <strong>unicode</strong></p>
+<p>The simplified portability of encodings for Python2 and Python3
+is supported by the adapted type <em>ISSTR</em> and the
+conditional <em>unicode</em> alias
+[<a class="reference external" href="package_init.html#">platformids</a>]:</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">V3K</span><span class="p">:</span>
+   <span class="nb">unicode</span> <span class="o">=</span> <span class="nb">str</span>
+   <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,)</span>
+
+<span class="k">else</span><span class="p">:</span>
+   <span class="n">ISSTR</span> <span class="o">=</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">,)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+</ul>
+</div>
+<div class="section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="shortcuts.html">Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_encode_decode.html">Python2 and Python3 Encoding and Decoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_bitmasks.html">Bit Masks for Numeric Vectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="package_init.html">&#8216;platformids.__init__&#8217; - Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference external" href="references.html">References</a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+<div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<p><strong>Project Data</strong></p>
+<ul class="simple">
+<li>PROJECT=platformids</li>
+<li>MISSION=Support advanced enumerations for the multi-platform development.</li>
+<li>AUTHOR=Arno-Can Uestuensoez</li>
+<li>COPYRIGHT=Copyright (C) 2010,2011,2015-2018 Arno-Can Uestuensoez &#64;Ingenieurbuero Arno-Can Uestuensoez</li>
+<li>LICENSE=Artistic-License-2.0 + Forced-Fairplay-Constraints</li>
+<li>VERSION=0.1.28</li>
+<li>RELEASE=0.1.28</li>
+<li>STATUS=alpha</li>
+</ul>
+<p><strong>Home</strong></p>
+<ul class="simple">
+<li>Sourceforge.net: <a class="reference external" href="https://sourceforge.net/projects/pyplatformids/">https://sourceforge.net/projects/pyplatformids/</a></li>
+</ul>
+<p><strong>Online Documents</strong></p>
+<ul class="simple">
+<li>Sourceforge.net: <a class="reference external" href="https://pyplatformids.sourceforge.io/">https://pyplatformids.sourceforge.io/</a></li>
+</ul>
+<p><strong>Licenses</strong></p>
+<ul>
+<li><p class="first">Artistic-License-2.0(base license): <a class="reference external" href="_static/ArtisticLicense20.html">ArtisticLicense20.html</a></p>
+</li>
+<li><p class="first">Forced-Fairplay-Constraints(amendments): <a class="reference external" href="_static/licenses-amendments.txt">licenses-amendments.txt</a></p>
+<p><a class="reference external" href="_static/profile_info.html"><img alt="profileinfo" src="_images/profile_info.png" style="width: 48px;" /></a>  <a class="reference internal" href="references.html#xkcd" id="id4">[xkcd]</a> Support the OpenSource Authors :-)</p>
+</li>
+</ul>
+<p><strong>Runtime Repository</strong></p>
+<ul class="simple">
+<li>Python Package Index: <a class="reference external" href="https://pypi.org/project/platformids/">https://pypi.org/project/platformids/</a></li>
+</ul>
+<p><strong>Downloads</strong></p>
+<ul class="simple">
+<li>bitbucket.org: <a class="reference external" href="https://bitbucket.org/acue/pyplatformids/">https://bitbucket.org/acue/pyplatformids/</a></li>
+<li>github.com: <a class="reference external" href="https://github.com/ArnoCan/platformids/">https://github.com/ArnoCan/platformids/</a></li>
+<li>Python Package Index: <a class="reference external" href="https://pypi.org/project/platformids/">https://pypi.org/project/platformids/</a></li>
+<li>Sourceforge.net: <a class="reference external" href="https://sourceforge.net/projects/platformids/">https://sourceforge.net/projects/platformids/</a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/pyplatformids-64x64.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Abstract</a></li>
+<li><a class="reference internal" href="#cockpit">Cockpit</a><ul>
+<li><a class="reference internal" href="#api">API</a></li>
+<li><a class="reference internal" href="#documents">Documents</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#blueprint">Blueprint</a></li>
+<li><a class="reference internal" href="shortcuts.html">Shortcuts</a></li><li><a class="reference internal" href="install.html">Install</a></li><li><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="shortcuts.html"
+                        title="next chapter">Shortcuts</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="shortcuts.html" title="Shortcuts"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Arno-Can Uestuensoez.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

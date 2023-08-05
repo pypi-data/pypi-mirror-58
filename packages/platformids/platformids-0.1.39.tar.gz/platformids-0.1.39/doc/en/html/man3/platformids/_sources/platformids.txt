@@ -1,0 +1,22 @@
+platformids package
+===================
+
+Submodules
+----------
+
+platformids.map_enum_labels module
+----------------------------------
+
+.. automodule:: platformids.map_enum_labels
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: platformids
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>‘platformids’ - package &mdash; platformids 0.1.28 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.28',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="platformids 0.1.28 documentation" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="platformids-package">
+<h1>&#8216;platformids&#8217; - package<a class="headerlink" href="#platformids-package" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p><strong>Sources</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="_modules/platformids/pathtools.html#">platformids.pathtools [source]</a></li>
+<li><a class="reference external" href="_modules/platformids/netfiles.html#">platformids.NetFiles [source]</a></li>
+</ul>
+<div class="section" id="id1">
+<h2>platformids package<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="submodules">
+<h3>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="module-platformids.map_enum_labels">
+<span id="platformids-map-enum-labels-module"></span><h3>platformids.map_enum_labels module<a class="headerlink" href="#module-platformids.map_enum_labels" title="Permalink to this headline">¶</a></h3>
+<p>Mapping of numeric and symbolic enum strings, optional loaded on demand for human display of debug info only.</p>
+<dl class="data">
+<dt id="platformids.map_enum_labels.num2enumstr">
+<code class="descclassname">platformids.map_enum_labels.</code><code class="descname">num2enumstr</code><em class="property"> = {131392: 'RTE_DEBIAN', 131137: 'RTE_CENTOS', 131074: 'RTE_CYGWIN', 65667: 'RTE_WIN10', 131076: 'RTE_DARWIN', 131141: 'RTE_CENTOS4', 131142: 'RTE_CENTOS5', 131143: 'RTE_CENTOS6', 131144: 'RTE_CENTOS7', 131401: 'RTE_DEBIAN9', 65664: 'RTE_WIN7', 131232: 'RTE_SUSE', 131264: 'RTE_UBUNTU', 131360: 'RTE_FREEBSD', 131088: 'RTE_SOLARIS', 65547: 'RTE_WINNT4S', 65554: 'RTE_WINS2000S', 65555: 'RTE_WINS2008', 131108: 'RTE_DRAGONFLYBSD', 65536: 'RTE_WIN32', 131072: 'RTE_POSIX', 131104: 'RTE_BSD', 65552: 'RTE_WIN2000', 65537: 'RTE_DOS', 131398: 'RTE_DEBIAN6', 65553: 'RTE_WINS2000WS', 131136: 'RTE_LINUX', 65680: 'RTE_WINS2012', 131399: 'RTE_DEBIAN7', 131168: 'RTE_OPENBSD', 131120: 'RTE_NETBSD', 131400: 'RTE_DEBIAN8', 131187: 'RTE_FEDORA19', 131080: 'RTE_OSX', 65545: 'RTE_WINNT4', 131195: 'RTE_FEDORA27', 65546: 'RTE_WINNT4WS'}</em><a class="headerlink" href="#platformids.map_enum_labels.num2enumstr" title="Permalink to this definition">¶</a></dt>
+<dd><p>mapping of the numeric value to it&#8217;s symbolic representation</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-platformids">
+<span id="module-contents"></span><h3>Module contents<a class="headerlink" href="#module-platformids" title="Permalink to this headline">¶</a></h3>
+<p>The package &#8216;platformids&#8217; provides canonical enumerations of bit encoded numeric platform IDs.</p>
+<dl class="data">
+<dt id="platformids.ISSTR">
+<code class="descclassname">platformids.</code><code class="descname">ISSTR</code><em class="property"> = (&lt;type 'str'&gt;, &lt;type 'unicode'&gt;)</em><a class="headerlink" href="#platformids.ISSTR" title="Permalink to this definition">¶</a></dt>
+<dd><p>string and unicode</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.PYVxyz">
+<code class="descclassname">platformids.</code><code class="descname">PYVxyz</code><em class="property"> = 18181</em><a class="headerlink" href="#platformids.PYVxyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Python release of current process</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="platformids.PlatformIDsError">
+<em class="property">exception </em><code class="descclassname">platformids.</code><code class="descname">PlatformIDsError</code><a class="reference internal" href="_modules/platformids.html#PlatformIDsError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.PlatformIDsError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+<p>Subsystem <em>PlatformIDs</em>.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="platformids.ProtectedDict">
+<em class="property">class </em><code class="descclassname">platformids.</code><code class="descname">ProtectedDict</code><a class="reference internal" href="_modules/platformids.html#ProtectedDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.ProtectedDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_BSD">
+<code class="descclassname">platformids.</code><code class="descname">RTE_BSD</code><em class="property"> = 131104</em><a class="headerlink" href="#platformids.RTE_BSD" title="Permalink to this definition">¶</a></dt>
+<dd><p>BSD, - OpenBSD, FreeBSD, NetBSD - as Posix system <a class="reference internal" href="references.html#posix" id="id2">[POSIX]</a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CENTOS">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CENTOS</code><em class="property"> = 131137</em><a class="headerlink" href="#platformids.RTE_CENTOS" title="Permalink to this definition">¶</a></dt>
+<dd><p>CentOS</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CENTOS4">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CENTOS4</code><em class="property"> = 131141</em><a class="headerlink" href="#platformids.RTE_CENTOS4" title="Permalink to this definition">¶</a></dt>
+<dd><p>CentOS-4</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CENTOS5">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CENTOS5</code><em class="property"> = 131142</em><a class="headerlink" href="#platformids.RTE_CENTOS5" title="Permalink to this definition">¶</a></dt>
+<dd><p>CentOS-5</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CENTOS6">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CENTOS6</code><em class="property"> = 131143</em><a class="headerlink" href="#platformids.RTE_CENTOS6" title="Permalink to this definition">¶</a></dt>
+<dd><p>CentOS-6</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CENTOS7">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CENTOS7</code><em class="property"> = 131144</em><a class="headerlink" href="#platformids.RTE_CENTOS7" title="Permalink to this definition">¶</a></dt>
+<dd><p>CentOS-7</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CNP">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CNP</code><em class="property"> = 131072</em><a class="headerlink" href="#platformids.RTE_CNP" title="Permalink to this definition">¶</a></dt>
+<dd><p>cross native Posix systems using <em>fcntl</em> <a class="reference internal" href="references.html#posix" id="id3">[POSIX]</a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CNW">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CNW</code><em class="property"> = 65537</em><a class="headerlink" href="#platformids.RTE_CNW" title="Permalink to this definition">¶</a></dt>
+<dd><p>cross native all Windows systems [MS-DTYP], slightly different from RTE_WIN32</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_CYGWIN">
+<code class="descclassname">platformids.</code><code class="descname">RTE_CYGWIN</code><em class="property"> = 131074</em><a class="headerlink" href="#platformids.RTE_CYGWIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cygwin <a class="reference internal" href="references.html#cygwin" id="id5">[CYGWIN]</a></p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DARWIN">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DARWIN</code><em class="property"> = 131076</em><a class="headerlink" href="#platformids.RTE_DARWIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Darwin/OS-X, as Posix system <a class="reference internal" href="references.html#posix" id="id6">[POSIX]</a>, no macpath-legacy.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DEBIAN">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DEBIAN</code><em class="property"> = 131392</em><a class="headerlink" href="#platformids.RTE_DEBIAN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debian</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DEBIAN6">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DEBIAN6</code><em class="property"> = 131398</em><a class="headerlink" href="#platformids.RTE_DEBIAN6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debian - squeeze</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DEBIAN7">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DEBIAN7</code><em class="property"> = 131399</em><a class="headerlink" href="#platformids.RTE_DEBIAN7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debian - wheezy</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DEBIAN8">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DEBIAN8</code><em class="property"> = 131400</em><a class="headerlink" href="#platformids.RTE_DEBIAN8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debian - jessy</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DEBIAN9">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DEBIAN9</code><em class="property"> = 131401</em><a class="headerlink" href="#platformids.RTE_DEBIAN9" title="Permalink to this definition">¶</a></dt>
+<dd><p>Debian - stretch</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_DOS">
+<code class="descclassname">platformids.</code><code class="descname">RTE_DOS</code><em class="property"> = 65537</em><a class="headerlink" href="#platformids.RTE_DOS" title="Permalink to this definition">¶</a></dt>
+<dd><p>MS-DOS - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_FEDORA">
+<code class="descclassname">platformids.</code><code class="descname">RTE_FEDORA</code><em class="property"> = 131168</em><a class="headerlink" href="#platformids.RTE_FEDORA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fedora</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_FEDORA19">
+<code class="descclassname">platformids.</code><code class="descname">RTE_FEDORA19</code><em class="property"> = 131187</em><a class="headerlink" href="#platformids.RTE_FEDORA19" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fedora-19</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_FEDORA27">
+<code class="descclassname">platformids.</code><code class="descname">RTE_FEDORA27</code><em class="property"> = 131195</em><a class="headerlink" href="#platformids.RTE_FEDORA27" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fedora-27</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_GENERIC">
+<code class="descclassname">platformids.</code><code class="descname">RTE_GENERIC</code><em class="property"> = 0</em><a class="headerlink" href="#platformids.RTE_GENERIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the current block-offset only,
+results in the current platformm enum.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_LINUX">
+<code class="descclassname">platformids.</code><code class="descname">RTE_LINUX</code><em class="property"> = 131136</em><a class="headerlink" href="#platformids.RTE_LINUX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linux with specific add-ons - OS, DIST, GNU - as Posix system <a class="reference internal" href="references.html#posix" id="id7">[POSIX]</a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_LOCAL">
+<code class="descclassname">platformids.</code><code class="descname">RTE_LOCAL</code><em class="property"> = 1</em><a class="headerlink" href="#platformids.RTE_LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dyanmic local platform, synonym for generic.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_OSX">
+<code class="descclassname">platformids.</code><code class="descname">RTE_OSX</code><em class="property"> = 131080</em><a class="headerlink" href="#platformids.RTE_OSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Darwin/OS-X, as Posix system <a class="reference internal" href="references.html#posix" id="id8">[POSIX]</a>, no macpath-legacy.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_POSIX">
+<code class="descclassname">platformids.</code><code class="descname">RTE_POSIX</code><em class="property"> = 131072</em><a class="headerlink" href="#platformids.RTE_POSIX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Posix systems using <em>fcntl</em> <a class="reference internal" href="references.html#posix" id="id9">[POSIX]</a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_POWERSHELL1">
+<code class="descclassname">platformids.</code><code class="descname">RTE_POWERSHELL1</code><em class="property"> = 65600</em><a class="headerlink" href="#platformids.RTE_POWERSHELL1" title="Permalink to this definition">¶</a></dt>
+<dd><p>PowerShell-1-Windows</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_POWERSHELL2">
+<code class="descclassname">platformids.</code><code class="descname">RTE_POWERSHELL2</code><em class="property"> = 65601</em><a class="headerlink" href="#platformids.RTE_POWERSHELL2" title="Permalink to this definition">¶</a></dt>
+<dd><p>PowerShell-2-Windows</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_POWERSHELL2LINUX">
+<code class="descclassname">platformids.</code><code class="descname">RTE_POWERSHELL2LINUX</code><em class="property"> = 65602</em><a class="headerlink" href="#platformids.RTE_POWERSHELL2LINUX" title="Permalink to this definition">¶</a></dt>
+<dd><p>PowerShell-2-Linux</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_SOLARIS">
+<code class="descclassname">platformids.</code><code class="descname">RTE_SOLARIS</code><em class="property"> = 131088</em><a class="headerlink" href="#platformids.RTE_SOLARIS" title="Permalink to this definition">¶</a></dt>
+<dd><p>UNIX/Solaris, as Posix system <a class="reference internal" href="references.html#posix" id="id10">[POSIX]</a>.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_SUSE">
+<code class="descclassname">platformids.</code><code class="descname">RTE_SUSE</code><em class="property"> = 131232</em><a class="headerlink" href="#platformids.RTE_SUSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>OpenSUSE</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_UBUNTU">
+<code class="descclassname">platformids.</code><code class="descname">RTE_UBUNTU</code><em class="property"> = 131264</em><a class="headerlink" href="#platformids.RTE_UBUNTU" title="Permalink to this definition">¶</a></dt>
+<dd><p>OpenSUSE</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WIN10">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WIN10</code><em class="property"> = 65667</em><a class="headerlink" href="#platformids.RTE_WIN10" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows10</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WIN2000">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WIN2000</code><em class="property"> = 65552</em><a class="headerlink" href="#platformids.RTE_WIN2000" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-2000 - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WIN32">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WIN32</code><em class="property"> = 65536</em><a class="headerlink" href="#platformids.RTE_WIN32" title="Permalink to this definition">¶</a></dt>
+<dd><p>all Windows systems [MS-DTYP]</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WIN7">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WIN7</code><em class="property"> = 65664</em><a class="headerlink" href="#platformids.RTE_WIN7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows7</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WIN8">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WIN8</code><em class="property"> = 65665</em><a class="headerlink" href="#platformids.RTE_WIN8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows7</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WIN81">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WIN81</code><em class="property"> = 65666</em><a class="headerlink" href="#platformids.RTE_WIN81" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows7</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINNT4">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINNT4</code><em class="property"> = 65545</em><a class="headerlink" href="#platformids.RTE_WINNT4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-NT4 - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINNT4S">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINNT4S</code><em class="property"> = 65547</em><a class="headerlink" href="#platformids.RTE_WINNT4S" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-NT4-Server - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINNT4WS">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINNT4WS</code><em class="property"> = 65546</em><a class="headerlink" href="#platformids.RTE_WINNT4WS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-NT4-Workstation - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINS2000S">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINS2000S</code><em class="property"> = 65554</em><a class="headerlink" href="#platformids.RTE_WINS2000S" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-2000-Server - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINS2000WS">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINS2000WS</code><em class="property"> = 65553</em><a class="headerlink" href="#platformids.RTE_WINS2000WS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-2000-Workstation - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINS2008">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINS2008</code><em class="property"> = 65555</em><a class="headerlink" href="#platformids.RTE_WINS2008" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-2008-Server - frozen</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.RTE_WINS2012">
+<code class="descclassname">platformids.</code><code class="descname">RTE_WINS2012</code><em class="property"> = 65680</em><a class="headerlink" href="#platformids.RTE_WINS2012" title="Permalink to this definition">¶</a></dt>
+<dd><p>Windows-2012-Server</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.V3K">
+<code class="descclassname">platformids.</code><code class="descname">V3K</code><em class="property"> = False</em><a class="headerlink" href="#platformids.V3K" title="Permalink to this definition">¶</a></dt>
+<dd><p>Python3.5+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.getPYVxyz">
+<code class="descclassname">platformids.</code><code class="descname">getPYVxyz</code><span class="sig-paren">(</span><em>x=0</em>, <em>y=0</em>, <em>z=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#getPYVxyz"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.getPYVxyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the 16bit integer bi-mask for the provided 
+Python release values. For example from <em>sys.version_info</em>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># uses 3bits:  x: 0-7</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># uses 5bits:  y: 0-31</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># uses 8bits:  z: 0-255</span>
+</pre></div>
+</div>
+<p>resulting in:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Vxyz</span> <span class="o">=</span> <span class="mi">0</span><span class="n">bxxxyyyyyzzzzzzzz</span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="bp">self</span><span class="o">.</span><span class="n">bits</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+
+<span class="c1"># =&gt; result = 0b 011 00110 00000101 </span>
+<span class="c1"># =&gt; result = 0b0110011000000101 =  26,117</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>x</strong>:</dt>
+<dd><p class="first">The major version number.</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span>
+
+<span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y0</span> <span class="o">&lt;</span> <span class="mi">4</span>  <span class="c1"># internal low-level 16-bit optimization threshold </span>
+</pre></div>
+</div>
+</dd>
+<dt><strong>y</strong>:</dt>
+<dd><dl class="first last docutils">
+<dt>The minor version number. ::</dt>
+<dd>0 &lt;= y &lt; 63</dd>
+</dl>
+</dd>
+<dt><strong>z</strong>:</dt>
+<dd><p class="first">The numeric relase-build tag.</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">257</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>The bit-mask.</dd>
+<dt>Raises:</dt>
+<dd>pass-through</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.get_custom_num_base">
+<code class="descclassname">platformids.</code><code class="descname">get_custom_num_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#get_custom_num_base"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.get_custom_num_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reserves and returns the current available base value for 
+the next bit-block. Each reserved bit-block for custom usage
+is 16-bit wide, and could be used by the application arbitrarily.</p>
+<p>Each call increments the integer address of the next free block
+by one bit.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In current release the reservation of the value ranges
+for bit-blocks is not released until the process termination.</p>
+</div>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>None</dd>
+<dt>Returns:</dt>
+<dd>The base index for the new reservation.</dd>
+<dt>Raises:</dt>
+<dd>pass-through</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.get_custom_num_range">
+<code class="descclassname">platformids.</code><code class="descname">get_custom_num_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#get_custom_num_range"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.get_custom_num_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the available range of values for 
+elements within bit blocks.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>None.</dd>
+<dt>Returns:</dt>
+<dd><p class="first">The inclusive range as tuple:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.get_num2rte">
+<code class="descclassname">platformids.</code><code class="descname">get_num2rte</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#get_num2rte"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.get_num2rte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the corresponding string representation
+for the string numeric value.</p>
+<p>Alternatively the official dict <em>num2rte</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>num</strong>:</dt>
+<dd>Numeric enum value of the requested platform.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>The string value, or <em>None*</em>.</dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.get_rte2num">
+<code class="descclassname">platformids.</code><code class="descname">get_rte2num</code><span class="sig-paren">(</span><em>rte</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#get_rte2num"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.get_rte2num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets corresponding numerical representation
+for the numeric or string value.</p>
+<p>Alternatively the official dict <em>rte2num</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>rte</strong>:</dt>
+<dd>Numeric enum value or string representation
+of the requested platform.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>The numeric value, or <em>None*</em>.</dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.num2rte">
+<code class="descclassname">platformids.</code><code class="descname">num2rte</code><em class="property"> = {65664: 'win7', 131264: 'ubuntu', 131074: 'cygwin', 65667: 'win10', 65536: 'win32', 65537: 'dos', 131136: 'linux', 65545: 'winnt4', 65546: 'winnt4ws', 65547: 'winnt4s', 131088: 'solaris', 65553: 'winnt2000ws', 65554: 'winnt2000s', 65555: 'winnt2008', 131072: 'posix', 131232: 'suse', 131108: 'dragonfly', 131398: 'debian6', 131399: 'debian7', 131120: 'netbsd', 131400: 'debian8', 131392: 'debian', 131137: 'centos', 131141: 'centos4', 131142: 'centos5', 131143: 'centos6', 131144: 'centos7', 131401: 'debian9', 131360: 'freebsd', 131168: 'openbsd', 65552: 'win2000', 131104: 'bsd', 65680: 'winnt2012', 131187: 'fedora19', 131195: 'fedora27'}</em><a class="headerlink" href="#platformids.num2rte" title="Permalink to this definition">¶</a></dt>
+<dd><p>mapping of the rte numeric representation to the string value</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="platformids.rte2num">
+<code class="descclassname">platformids.</code><code class="descname">rte2num</code><em class="property"> = {131072: 131072, 65537: 65537, 131074: 131074, 'solaris': 131088, 65536: 65536, 131080: 131080, 'win': 65536, 65546: 65546, 65547: 65547, 65552: 65552, 65553: 65553, 65554: 65554, 65555: 65555, 'winnt2012': 65680, 'linux': 131136, 'suse': 131232, 'netbsd': 131120, 131104: 131104, 131108: 131108, 131120: 131120, 'win2000': 65552, 65545: 65545, 131136: 131136, 131137: 131137, 131398: 131398, 131141: 131141, 131142: 131142, 131399: 131399, 131400: 131400, 131401: 131401, 'dos': 65537, 131168: 131168, 'debian7': 131399, 'debian8': 131400, 'debian9': 131401, 'win32': 65536, 131187: 131187, 'posix': 131072, 'winnt2000s': 65554, 131144: 131144, 131195: 131195, 131076: 131076, 65664: 65664, 131392: 131392, 65667: 65667, 'openbsd': 131168, 'centos': 131137, 'dragonfly': 131108, 65680: 65680, 131232: 131232, 'fedora': 131168, 'debian6': 131398, 131143: 131143, 'win7': 65664, 'fedora27': 131195, 'centos7': 131144, 'centos6': 131143, 'centos5': 131142, 'centos4': 131141, 131264: 131264, 131360: 131360, 'winnt4ws': 65546, 'winnt2000ws': 65553, 'cygwin': 131074, 'ubuntu': 131264, 'bsd': 131104, 'winnt2008': 65555, 'debian': 131392, 'winnt4': 65545, 131088: 131088, 'freebsd': 131360, 'win10': 65667, 'fedora19': 131187, 'winnt4s': 65547}</em><a class="headerlink" href="#platformids.rte2num" title="Permalink to this definition">¶</a></dt>
+<dd><p>mapping of the rte string and numeric representation to the numeric value</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.set_num2rte">
+<code class="descclassname">platformids.</code><code class="descname">set_num2rte</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#set_num2rte"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.set_num2rte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the numeric to string map.</p>
+<p>Alternatively the official dict <em>num2rte</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>key</strong>:</dt>
+<dd>Numeric key value.</dd>
+<dt><strong>value</strong>:</dt>
+<dd>String value.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd><em>None</em></dd>
+<dt>Raises:</dt>
+<dd>PlatformIDsError</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="platformids.set_rte2num">
+<code class="descclassname">platformids.</code><code class="descname">set_rte2num</code><span class="sig-paren">(</span><em>key</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/platformids.html#set_rte2num"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#platformids.set_rte2num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the rte to numeric mapping</p>
+<p>Alternatively the official dict <em>rte2num</em>
+could be used.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt><strong>key</strong>:</dt>
+<dd>Numeric or string key value.</dd>
+<dt><strong>value</strong>:</dt>
+<dd>Numeric value.</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd><em>None</em></dd>
+<dt>Raises:</dt>
+<dd>None</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/pyplatformids-64x64.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">&#8216;platformids&#8217; - package</a><ul>
+<li><a class="reference internal" href="#id1">platformids package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-platformids.map_enum_labels">platformids.map_enum_labels module</a></li>
+<li><a class="reference internal" href="#module-platformids">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pyplatforms.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">platformids 0.1.28 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Arno-Can Uestuensoez.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>

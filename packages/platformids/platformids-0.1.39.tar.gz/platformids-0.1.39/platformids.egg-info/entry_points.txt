@@ -1,0 +1,3 @@
+[enumerateit.commands]
+rtplatformids = platformids.build_apidoc:BuildApidocX
+
