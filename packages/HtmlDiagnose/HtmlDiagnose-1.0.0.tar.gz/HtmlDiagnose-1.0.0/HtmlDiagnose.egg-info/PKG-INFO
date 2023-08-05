@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: HtmlDiagnose
+Version: 1.0.0
+Summary: A web page HTML format diagnoser.
+Home-page: https://github.com/sintrb/HtmlDiagnose
+Author: sintrb
+Author-email: sintrb@gmail.com
+License: Apache
+Description: HtmlDiagnose
+        ===============
+        A web page HTML format diagnoser
+        
+        Install
+        ===============
+        ```bash
+         pip install HtmlDiagnose
+        ```
+        
+        Use
+        ===============
+        run command:
+        
+        ```bash
+         python -m HtmlDiagnose https://www.baidu.com
+        ```
+        more help:
+        ```bash
+         python -m HtmlDiagnose -h
+        ```
+        
+        
+        CHANGES
+        ===============
+        0.0.1 [2014-02-04]
+        
+        - first version
+        
+        
+        1.0.0 [2019-12-17]
+        
+        - compatibly with python2 and python3 
+Keywords: HtmlDiagnose,HTML,Web
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
