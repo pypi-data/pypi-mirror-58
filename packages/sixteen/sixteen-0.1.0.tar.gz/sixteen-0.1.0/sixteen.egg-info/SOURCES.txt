@@ -1,0 +1,8 @@
+README.md
+setup.py
+sixteen/__init__.py
+sixteen/__version__.py
+sixteen.egg-info/PKG-INFO
+sixteen.egg-info/SOURCES.txt
+sixteen.egg-info/dependency_links.txt
+sixteen.egg-info/top_level.txt
