@@ -1,0 +1,9 @@
+spotlight_sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotlight_sqlalchemy/errors.py,sha256=qqYw8bJc6DU4ZzUabbPJQWaFh6utlmAAkQcqqhOftNs,213
+spotlight_sqlalchemy/plugin.py,sha256=7sDR3aJdybnTqGGtShHd4yGaVGLDImEWKd075dlKvQE,287
+spotlight_sqlalchemy/rules.py,sha256=_OhhW1ayvdlnZ9dXwGKBFnoCr3OKzxN8WjGzdmvnlKc,3280
+spotlight_sqlalchemy-1.0.1.dist-info/LICENSE,sha256=tvymqjIcmP-ddYDAmPRP7Qp_6qSu5NevTFCmdPGUujQ,1087
+spotlight_sqlalchemy-1.0.1.dist-info/METADATA,sha256=52oBL0wnNsTcF8h2gA7QvciJPMZAuvdY3ZWE0b1JYSo,2423
+spotlight_sqlalchemy-1.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+spotlight_sqlalchemy-1.0.1.dist-info/top_level.txt,sha256=Kr2Dl3zECVlh8v5p5OEKPmMvRofhhA8tJ0TnrkExrBo,21
+spotlight_sqlalchemy-1.0.1.dist-info/RECORD,,
