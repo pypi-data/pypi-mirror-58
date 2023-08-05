@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: jira-ohsofancy
+Version: 0.4
+Summary: Jira getting a facelift via the command line
+Home-page: https://github.com/chmouel/jira-ohsofancy
+Author: Chmouel Boudjnah
+Author-email: chmouel@chmouel.com
+License: Apache 2.0
+Description: See homepage on https://github.com/chmouel/jira-ohsofancy for a longer description
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Python Software Foundation License
