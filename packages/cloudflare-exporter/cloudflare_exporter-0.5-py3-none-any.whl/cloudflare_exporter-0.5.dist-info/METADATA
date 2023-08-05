@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cloudflare-exporter
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://github.com/criteo/cloudflare-exporter
+Author: Criteo
+Author-email: github@criteo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: aiohttp
+Requires-Dist: cloudflare (>=2.3.1)
+Requires-Dist: prometheus-client
+
+UNKNOWN
+
+
