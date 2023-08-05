@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: StarkLego
+Version: 0.1.1
+Summary: Library used to create lego builds
+Home-page: https://github.com/peken97/StarkLego
+Author: Petar Kenic
+Author-email: kenicpetar@yahoo.com
+License: MIT
+Download-URL: https://github.com/peken97/StarkLego/archive/0.2.1.zip
+Description: UNKNOWN
+Keywords: LEGO,BUILD,LDRAW
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
