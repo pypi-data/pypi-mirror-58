@@ -1,0 +1,4 @@
+
+      [console_scripts]
+      geocloud-nmea = geocloud_nmea:main
+      

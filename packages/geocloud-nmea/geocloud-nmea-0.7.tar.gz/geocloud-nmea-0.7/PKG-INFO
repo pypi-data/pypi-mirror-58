@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: geocloud-nmea
+Version: 0.7
+Summary: NMEA parser service
+Home-page: https://github.com/innovationgarage/geocloud-nmea
+Author: Egil Moeller
+Author-email: egil@innovationgarage.no
+License: UNKNOWN
+Description: NMEA parser service
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
