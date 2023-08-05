@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: roper
+Version: 0.1.1
+Summary: A CLI tool for the roper library.
+Home-page: https://pypi.org/project/roper/
+Author: Øystein S. Haaland
+Author-email: oystein@beat.no
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: invoke (>=1.3.0,<2.0.0)
+Requires-Dist: rope (>=0.14.0,<0.15.0)
+Project-URL: Repository, https://github.com/beat-no/roper
+Description-Content-Type: text/x-rst
+
+=====
+roper
+=====
+
+A CLI tool for the roper library.
+
+Develop
+=======
+This package was setup using https://python-poetry.org/. To get started, install poetry and run
+`poetry install` in the project directory.
+
+Alternatives
+============
+
+IDEs
+----
+* PyCharm - https://www.jetbrains.com/help/pycharm/refactoring-source-code.html
+
+Editor plugins
+--------------
+* vim - https://github.com/python-rope/ropevim
+* emacs - https://github.com/python-rope/ropemacs
+
+Libraries
+---------
+* bowler - https://pybowler.io/
+* libcst - https://libcst.readthedocs.io/en/latest/
+* undebt - https://github.com/Yelp/undebt
+* redbaron - http://redbaron.pycqa.org/en/latest/
+
+Resources
+=========
+* https://realpython.com/python-refactoring/
+
