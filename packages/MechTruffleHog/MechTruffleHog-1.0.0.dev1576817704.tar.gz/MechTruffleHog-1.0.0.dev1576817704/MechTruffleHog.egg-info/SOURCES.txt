@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+MechTruffleHog.egg-info/PKG-INFO
+MechTruffleHog.egg-info/SOURCES.txt
+MechTruffleHog.egg-info/dependency_links.txt
+MechTruffleHog.egg-info/entry_points.txt
+MechTruffleHog.egg-info/requires.txt
+MechTruffleHog.egg-info/top_level.txt
+truffleHog/__init__.py
+truffleHog/truffleHog.py
+truffleHog/whitelist.py
