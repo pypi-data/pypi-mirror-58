@@ -1,0 +1,57 @@
+# Base Configuration file for artellapipe-tools-dependenciesmanager
+
+# Defines tool name
+name: Artella Dependencies Manager
+
+# Unique ID for the tool
+id: artellapipe-tools-dependenciesmanager
+
+# Defines logo name of the tool
+logo: dependenciesmanager_logo
+
+# Defines icon of the tool
+icon: dependencies
+
+# Description of the tool
+description: Tool to easily manage to dependencies of DCC files
+
+# Tags related with this tool
+tags: ['artella', 'manager', 'files', 'dependencies', 'sync']
+
+# Defines the ID used by Sentry to monitorize error traces
+sentry_id: https://bd40ce7d42d44d9eb0ec6fc4f3f58e1c@sentry.io/1840333
+
+# Directory where tool logger will be created
+logger_dir: ${join(user, "artellapipe", "logs", "tools")}
+
+# Default logger level used by tool logger
+logger_level: INFO
+
+# Directory where tool resources are located
+resources_path: ${join(filename, "resources")}
+
+# File that defines tool logger settings
+logging_file: ${join(filename, "__logging__.ini")}
+
+# Menu representation of this tool
+menu_ui:
+  label: "Artella Dependencies Manager"
+  is_checkable: False
+  is_checked: False
+  load_on_startup: False
+
+# Tool Menu definition where this tool is registered
+menu:
+  - label: Artella
+    type: menu
+    children:
+      - id: artellapipe-tools-dependenciesmanager
+        type: tool
+
+# Tool Shelf definition
+shelf:
+  - name: Artella
+    children:
+      - id: artellapipe-tools-dependenciesmanager
+        displayLabel: False
+        type: tool
