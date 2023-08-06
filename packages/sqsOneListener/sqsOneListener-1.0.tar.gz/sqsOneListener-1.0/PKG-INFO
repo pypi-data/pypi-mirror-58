@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: sqsOneListener
+Version: 1.0
+Summary: A simple Python SQS utility package
+Home-page: UNKNOWN
+Author: Benlolo Noam
+Author-email: UNKNOWN
+License: Apache Software License
+Description: UNKNOWN
+Keywords: aws sqsOneListener listener
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7

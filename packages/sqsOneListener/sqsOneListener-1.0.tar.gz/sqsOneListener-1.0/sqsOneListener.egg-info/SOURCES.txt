@@ -1,0 +1,8 @@
+setup.py
+sqsOneListener/__init__.py
+sqsOneListener/listener.py
+sqsOneListener.egg-info/PKG-INFO
+sqsOneListener.egg-info/SOURCES.txt
+sqsOneListener.egg-info/dependency_links.txt
+sqsOneListener.egg-info/requires.txt
+sqsOneListener.egg-info/top_level.txt
