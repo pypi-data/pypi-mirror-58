@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyRazor/__init__.py
+pyRazor/lex.py
+pyRazor/razorview.py
+pyRazor/scopestack.py
+pyRazor/sexylexer.py
+pyRazor.egg-info/PKG-INFO
+pyRazor.egg-info/SOURCES.txt
+pyRazor.egg-info/dependency_links.txt
+pyRazor.egg-info/not-zip-safe
+pyRazor.egg-info/top_level.txt
