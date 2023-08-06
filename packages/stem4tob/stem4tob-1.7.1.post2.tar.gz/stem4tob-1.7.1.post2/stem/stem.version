@@ -1,0 +1,5 @@
+__version__ = '1.7.1.post2'
+__author__ = 'Damian Johnson'
+__contact__ = 'atagar@torproject.org'
+__url__ = 'https://stem.torproject.org/'
+__license__ = 'LGPLv3'
