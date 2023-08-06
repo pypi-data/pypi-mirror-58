@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: izakaya
+Version: 0.0.1
+Summary: Real time event sourcing and application state management in a distributed computing context
+Home-page: https://github.com/kalaspuff/izakaya
+License: MIT
+Keywords: izakaya,event sourcing,cqrs,events,distributed data
+Author: Carl Oscar Aaro
+Author-email: hello@carloscar.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/kalaspuff/izakaya
+Description-Content-Type: text/markdown
+
+# `izakaya`
+[![pypi](https://badge.fury.io/py/izakaya.svg)](https://pypi.python.org/pypi/izakaya/)
+[![Made with Python](https://img.shields.io/pypi/pyversions/izakaya)](https://www.python.org/)
+[![Type hinted - mypy validated](https://img.shields.io/badge/typehinted-yes-teal)](https://github.com/kalaspuff/izakaya)
+[![MIT License](https://img.shields.io/github/license/kalaspuff/izakaya.svg)](https://github.com/kalaspuff/izakaya/blob/master/LICENSE)
+[![Code coverage](https://codecov.io/gh/kalaspuff/izakaya/branch/master/graph/badge.svg)](https://codecov.io/gh/kalaspuff/izakaya/tree/master/izakaya)
+
+*Real time event sourcing and application state management in a distributed computing context.*
+
+
+## Installation with `pip`
+Like you would install any other Python package, use `pip`, `poetry`, `pipenv` or your weapon of choice.
+```
+$ pip install izakaya
+```
+
+
+## Usage and examples
+
+#### Use-case
+```
+import izakaya
+
+```
+
