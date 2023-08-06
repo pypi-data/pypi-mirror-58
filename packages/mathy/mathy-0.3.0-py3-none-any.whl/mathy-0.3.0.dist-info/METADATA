@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mathy
+Version: 0.3.0
+Summary: Mathy - RL environments for solving math problems step-by-step
+Home-page: https://mathy.ai
+Author: Justin DuJardin
+Author-email: justin@dujardinconsulting.com
+License: All rights reserved
+Keywords: math
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow (>=2.0.0)
+Requires-Dist: colr
+Requires-Dist: srsly
+Requires-Dist: pydantic (>=1.0.0)
+Requires-Dist: click
+Requires-Dist: wasabi
+Requires-Dist: gym (<=0.12.5)
+Requires-Dist: tensorflow-probability
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: snakeviz ; extra == 'dev'
+Requires-Dist: tensorboard (>=2.0.0) ; extra == 'dev'
+
+Mathtastic
+---
+
+
+# Development
+
+ - run scripts in `ci` folder from the root
+ - `./tools/setup.sh
+
+. . .
+
+
