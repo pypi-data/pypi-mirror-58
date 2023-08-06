@@ -1,0 +1,7 @@
+README.md
+setup.py
+sqlalchemy_mutablesoup/__init__.py
+sqlalchemy_mutablesoup.egg-info/PKG-INFO
+sqlalchemy_mutablesoup.egg-info/SOURCES.txt
+sqlalchemy_mutablesoup.egg-info/dependency_links.txt
+sqlalchemy_mutablesoup.egg-info/top_level.txt
