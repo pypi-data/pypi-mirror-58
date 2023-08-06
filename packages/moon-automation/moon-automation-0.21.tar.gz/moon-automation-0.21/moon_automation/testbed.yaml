@@ -1,0 +1,8 @@
+devices:
+  R1:
+    connections:
+      cli: {ip: 10.75.37.10, port: 7004, protocol: telnet}
+    credentials:
+      default: {password: cisco, username: admin}
+    os: nxos
+    type: nxos
