@@ -1,0 +1,62 @@
+# David's helpful metrics library
+
+There are many different ways to evaluate a confusion matrix. 
+This helpful module implements a large number of them
+
+    * acc 
+    * accuracy 
+    * acp 
+    * bajic_k 
+    * chisquare 
+    * ctg 
+    * f2measure 
+    * fmeasure 
+    * fprate 
+    * fscore 
+    * gdip1 
+    * gdip2 
+    * gdip3 
+    * ivesgibbs 
+    * list_metrics 
+    * logpower 
+    * power 
+    * precision 
+    * q1 
+    * q2 (True Positive rate, recall, sensitivity)
+    * q3 
+    * q4 
+    * q5 
+    * q6 
+    * q7  (Matthews Correlation Coefficient)
+    * req (relative Error Quotient)
+    * roc 
+    * specificity 
+    * tanimoto (Tanimoto Index)
+    * yule
+    * hamming (Hamming distance as a proportion)
+    * jaccard
+
+The original impelmentation was in Perl around 2005 and I appear to have not 
+noted many of the references. My apologies.
+
+Details of the calcualtion are in the docstring. This module should be used as follows:
+
+`from metrics import Metrics`
+
+`Metrics.list_metrics() # lists method names`
+
+`Metrics.list_metrics(verbose=True) # gives a dictionary with the docstring`
+
+`Metrics.measure(method, tp=TP, fp=FP, tn=TN, fn=FN) # for True Positive, False Negative etc.`
+
+You probably want to wrap this  with `try .. except` as it will show an error if inappropriate data is given.
+The `measure` method will convert counts to proportional data.
+
+Don't forget to `Metrics.cite(method)` which will give a list of citations, if available. If you wish to add to the citations then submit a pull request.
+
+I'd like to expand the help text in due course for each metric.
+
+[Find this on BitBucket]( https://bitbucket.org/davidmam/metrics.git)
+
+
+
