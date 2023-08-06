@@ -1,0 +1,55 @@
+version 0.6.5 (SH Jan  5 2020)
+- deal with matching groups as dicts, much cleaner implementation
+- results are now sorted by filename for each row of matches and by
+  filename for the first shown image
+  
+version 0.6.4 (SH Jan  4 2020)
+- better regrouping algorithm for reducing the series of matches
+- further compacting of condition modules
+
+version 0.6.3 (SH Jan  3 2020)
+- Small layout improvement
+- fixed bug in file delete in viewer windows
+
+version 0.6.2 (SH Jan  2 2020)
+- options to configure thumbnails
+- fixed bug in match-making
+
+version 0.6.1 (SH Jan  1 2020)
+- removed duplicate code in condition modules. They are now faster and
+  much cleaner in design
+- Hiding or showing button below thumbnails without recalculating thumbnails
+
+version 0.6.0 (SH Dec 31 2019)
+- use ttk for theming
+- remove most of the custom style for better fit with host OS
+- clicking anywhere in the thumb pane deselects
+
+version 0.5.2 (SH Dec 30 2019)
+- made imports relative
+
+version 0.5.1 (SH Dec 30 2019)
+- removed ImageHash dependency
+- replaced dhash (horizontal and vertical) versions by my own pure python version
+
+version 0.5.0 (SH Dec 27 2019)
+- fully functional version
+- adapted some text to be more user friendly and less technical
+- merged color matching routines
+
+version 0.4.3 (SH Dec 26 2019)
+- whitespace fixes
+- allow showing 16bit grayscal pngs
+- some code cleaning
+
+version 0.4.2 (SH Dec 19 2019):
+- use get/set consistently for configuration module
+- fix bug not showing last remaining photo
+- added some tool tips to inform about hashing values
+
+version 0.4.1 (SH Dec 17 2019):
+- small bugs in the requirements specifications
+- added NEWS file
+
+version 0.4 (SH Dec 16 2019):
+- first functional version uploaded to PyPi
