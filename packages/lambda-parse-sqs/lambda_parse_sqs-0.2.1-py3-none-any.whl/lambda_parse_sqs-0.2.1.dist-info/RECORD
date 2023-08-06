@@ -1,0 +1,12 @@
+lambda_parse_sqs/__init__.py,sha256=unfpwhx2eR5EfPvkqND26PHRmdWZocm4CBCQ4-7ReO8,76
+lambda_parse_sqs/parse_sqs.py,sha256=eeYsMjj1JNqlVs4mENHiOagb6QycIPHkQWr4kxE7Z5A,769
+lambda_parse_sqs/sqs_message_parser.py,sha256=XD6GJPvzm9WAq9QeMclSRbPy7dfTqyIgCURSEBqMJu8,2268
+lambda_parse_sqs/utils.py,sha256=34i7flNhnv96PUnYHPVfCea7GRMPD-0oAI_B3yJnmtQ,442
+lambda_parse_sqs/errors/__init__.py,sha256=o2bY3vsjANSazMBMqa62wm-Nxb27lfdraML45NxHxWA,126
+lambda_parse_sqs/errors/provider_selection_error.py,sha256=nucf3J94az3Ex3bL2XgNqkrBUl5A1EIY8LyjXd23cCw,112
+lambda_parse_sqs/errors/records_not_found_error.py,sha256=kTCL7pVcxNkMwhNBBZJFR3Nbx38SVN2tCE6TDfBtmVU,110
+lambda_parse_sqs-0.2.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+lambda_parse_sqs-0.2.1.dist-info/METADATA,sha256=GWI7-d3dQ3cqB9A67z_BccZNziAVhaEDUZHK2O3A7iE,940
+lambda_parse_sqs-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lambda_parse_sqs-0.2.1.dist-info/top_level.txt,sha256=KLDscOT610Ce0W0o6SzNZ92rSocnJ4qxxZnyPwI-yKg,17
+lambda_parse_sqs-0.2.1.dist-info/RECORD,,
