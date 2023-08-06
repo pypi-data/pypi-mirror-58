@@ -1,0 +1,7 @@
+README.md
+setup.py
+numutils/__init__.py
+numutils.egg-info/PKG-INFO
+numutils.egg-info/SOURCES.txt
+numutils.egg-info/dependency_links.txt
+numutils.egg-info/top_level.txt
