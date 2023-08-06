@@ -1,0 +1,9 @@
+iparse/__init__.py,sha256=dh7MkY8XZzfQ7HaWr52GeKlVtq4OohnBWVCu6LM6vLc,47
+iparse/_parse.py,sha256=EoU5rYehoDvi0xLKWutYL6Ypq7jtidsVnE85L37cggE,19487
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_iparser.py,sha256=WcAm8eX0nUKKNzfTs8YSvZpGcs96vlnCCFK8T81-s1s,876
+iparse-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+iparse-0.0.3.dist-info/METADATA,sha256=hDm7jVDXdHB9nSYIS86q_3ubTsr3D9FlBHfLl0txU0o,699
+iparse-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iparse-0.0.3.dist-info/top_level.txt,sha256=Kg_AoUGrtYtBskBwqd4TEAlK1bpTKzIYazqwGJbj95E,13
+iparse-0.0.3.dist-info/RECORD,,
