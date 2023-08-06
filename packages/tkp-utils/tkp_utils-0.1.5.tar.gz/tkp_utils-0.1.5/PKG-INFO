@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tkp_utils
+Version: 0.1.5
+Summary: Simple Python Utilities
+Home-page: https://github.com/timkpaine/tkp_utils
+Author: Tim Paine
+Author-email: timothy.k.paine@gmail.com
+License: Apache 2.0
+Description: # tkp_utils_python
+        Whenever I have to write the same code over and over again, I'll put it here
+        
+        [![Build Status](https://travis-ci.org/timkpaine/tkp_utils_python.svg?branch=master)](https://travis-ci.org/timkpaine/tkp_utils_python)
+        [![PyPI](https://img.shields.io/pypi/v/tkp_utils.svg)](https://pypi.python.org/pypi/tkp_utils)
+        [![PyPI](https://img.shields.io/pypi/l/tkp_utils.svg)](https://pypi.python.org/pypi/tkp_utils)
+        
+        
+        [JS Utils](https://github.com/timkpaine/tkp_utils_js)
+Keywords: utilities for python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
