@@ -1,0 +1,17 @@
+twisted[tls]>=16.0.0
+pyOpenSSL
+
+[dev]
+mock
+txsocksx
+txtorcon>=0.16.1
+txi2p>=0.3.2
+
+[i2p]
+txi2p>=0.3.2
+
+[socks]
+txsocksx
+
+[tor]
+txtorcon>=0.16.1
