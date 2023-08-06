@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hldb
+Version: 0.4.0
+Summary: 支持oracle/mysql/hadoop三大库查询，导出csv/excel文件，上传下载ftp，压缩文件等功能，需要自己安装oracle64位客户端和impala驱动
+Home-page: UNKNOWN
+Author: 胡晋
+Author-email: hujin1219@163.com
+License: MIT
+Platform: UNKNOWN
+Requires: pandas
+Requires: numpy
+Requires: cx_Oracle
+Requires: pymysql
+Requires: pyodbc
+Requires: configparser
+Requires: openpyxl
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: cx-Oracle
+Requires-Dist: pymysql
+Requires-Dist: pyodbc
+Requires-Dist: configparser
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+
