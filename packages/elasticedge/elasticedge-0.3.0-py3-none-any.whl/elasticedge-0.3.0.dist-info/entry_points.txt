@@ -1,0 +1,3 @@
+[console_scripts]
+elasticedge=elasticedge.console:main
+
