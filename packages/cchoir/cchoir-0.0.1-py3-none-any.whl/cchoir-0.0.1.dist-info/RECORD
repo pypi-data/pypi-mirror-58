@@ -1,0 +1,11 @@
+cchoir/__init__.py,sha256=DGZAW0WlCiop7mnM5GzZCGLv0ltFUHMy9A-JWliv6-0,50
+cchoir/cli.py,sha256=g2smsBS4b1guRyOUugb9lbHjw9Mb7WfbYI9njLgykNc,323
+cchoir/commands/__init__.py,sha256=0PKGRlqzMdOy8TdQP1ELPNJ47m-XpycC0N3LUnur7B8,1121
+cchoir/commands/command.py,sha256=O9G4PC14CJoUV7Fw5u_MK9LurBG2wVRmLnHSFqp8HNk,602
+cchoir/commands/deploy.py,sha256=G5aLjNSfCOu4xJxpvZph8UoCXcR-R-34FmkzCtkTL2U,297
+cchoir-0.0.1.dist-info/LICENSE,sha256=C1lb3rBp5wUftFiEXlpCohzwM_n2OizMJFjLYdmBYDg,475
+cchoir-0.0.1.dist-info/METADATA,sha256=Khckfx9jE8Sz4wbO9KPeRzgPga1_n6rH3R45qVswuPM,763
+cchoir-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cchoir-0.0.1.dist-info/entry_points.txt,sha256=UursIu0w-SUfAC_RG0Lo_QQK-KbPHZSNnSVXjGg8Nn0,44
+cchoir-0.0.1.dist-info/top_level.txt,sha256=ThFmBqVowhb7zHAOSDLA383ddMVRGXX6K8wLmzNp1QE,7
+cchoir-0.0.1.dist-info/RECORD,,
