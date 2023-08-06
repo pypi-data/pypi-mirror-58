@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: 00000a
+Version: 0.0.2
+Summary: 00 eds sdk
+Home-page: http://test.me
+Author: testa
+Author-email: testa@gmail.com
+License: MIT Licence
+Description: eds sdk for python
+Keywords: pip,datacanvas,eds,xiaoh
+Platform: any
