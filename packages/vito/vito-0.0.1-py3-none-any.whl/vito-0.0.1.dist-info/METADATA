@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: vito
+Version: 0.0.1
+Summary: Python utility package for common computer vision tasks.
+Home-page: https://github.com/snototter/vito
+Author: snototter
+Author-email: muspellr@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: Pillow
+
+# vito - Vision Tools
+
+Python utilities for common computer vision tasks.
+
+## Dependencies
+* `numpy`
+* `PIL`
+
+## Examples
+TODO
+
+## Changelog
+* `0.0.1`
+  * Initial public release
+  * Contains common python/language and camera projection utils
+
+## TODO List
+* flow - read/write/visualize
+* pseudocolor
+* pvt3 imutils
+  * conversion
+  * checks (is_valid_bbox, inside image, etc.)
+  * camera_projections
+* setup
+* runner build/test/deploy
+* remove python2-specific pyutils
+
+
