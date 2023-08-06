@@ -1,0 +1,3 @@
+[console_scripts]
+factorio-changelog-creator=factorio_changelog_creator.cli:main
+
