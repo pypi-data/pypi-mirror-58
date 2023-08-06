@@ -1,0 +1,9 @@
+runner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runner/job.py,sha256=xOibqZcT-fSbUcOhRFNGxVpJmuV0ja_Gkc5rLJx_xq8,6525
+runner/runner.py,sha256=DMjdoyV2E4mnsEGVLURZtAYfk6YrFEr1WM82nLgZ6FE,7489
+toil_runner-1.2.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+toil_runner-1.2.8.dist-info/METADATA,sha256=Lmr9P2FIX1z5MGJzn6n8GSc5xZ3LN53fHmVvzxXpwII,283
+toil_runner-1.2.8.dist-info/RECORD,,
+toil_runner-1.2.8.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+toil_runner-1.2.8.dist-info/metadata.json,sha256=p_F9_2S40EnVKlqMNuzNY-8CJP5Ma1ftv1IyqVTg2tI,415
+toil_runner-1.2.8.dist-info/top_level.txt,sha256=q0nz6xQujhjJT6edIBf1e2FBscTNwELxoNDj3lKXCQ4,7
