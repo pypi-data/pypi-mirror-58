@@ -1,0 +1,7 @@
+sphinx_tabs
+sphinx
+sphinxcontrib-spelling
+pyenchant
+sphinx-autobuild
+sphinx_rtd_theme
+sphinx_tabs
