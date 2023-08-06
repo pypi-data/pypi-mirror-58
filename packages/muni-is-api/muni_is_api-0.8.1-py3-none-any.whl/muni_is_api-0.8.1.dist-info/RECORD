@@ -1,0 +1,11 @@
+muni_is_api/__init__.py,sha256=iridOs253a1r4WxUc5WXaTGSFHvZIKCoRK-cl7_dzg8,219
+muni_is_api/client.py,sha256=2-YpxndrVinmYIB4uT6qzKwsh_xcSpI4T6WQOqiqkHw,9870
+muni_is_api/entities.py,sha256=s3NOVTOnfLj6becpMfcoOIbG0zMsC7NWUa4JEswtKWk,10529
+muni_is_api/errors.py,sha256=9dwGMCy-bNJL_KbXzyACjSY-sTgWizUI9lgQkueRxJU,401
+muni_is_api/files_api.py,sha256=i8XWONL64uD3cpm9SX0FcGsEJoUIlWi8m1m_hcZn6s4,1708
+muni_is_api/log_config.py,sha256=ZdzPiLTn3AgdOQ7Zn_sFlgMZpT3BGMvHjPco283HnTU,3408
+muni_is_api/utils.py,sha256=7sLw-xMo8FZ5HjXA0fyGunD--aczEW68Sy0ZrJCfaic,1621
+muni_is_api-0.8.1.dist-info/LICENSE,sha256=sbuMPtnos2vJ6F9Z0Bk5NRffr1SRLxhgMfjNx2mjZac,1107
+muni_is_api-0.8.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+muni_is_api-0.8.1.dist-info/METADATA,sha256=sTiHJL8GMF1lTTBsCDQlQaoCASSnZ8gYHCANCZu-Vpc,2845
+muni_is_api-0.8.1.dist-info/RECORD,,
