@@ -1,0 +1,11 @@
+dodgy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dodgy/__main__.py,sha256=m4iQn5euSzl1nECOzERD4Aqeaj32kEzrlC_PmgwBGWE,35
+dodgy/__pkginfo__.py,sha256=QxdqjQ2Y6kz6UmCov2uN0V2MVN3vSzCm1QHrGZY0Amw,88
+dodgy/checks.py,sha256=9jrj8V4IJi-jmwFLDOVp8ZFz05WjjYmxOlvqM5nIrC0,2306
+dodgy/run.py,sha256=ooGfBymIp3nKJJHPtZKNDk_w0lIEbCjADwZCz6L5n3E,3155
+dodgy-0.2.0.dist-info/LICENSE,sha256=r77iwkAUYMp4gTOht1eaQCLrh2woBB-jgsFrtckZg7g,1067
+dodgy-0.2.0.dist-info/METADATA,sha256=GADwy78Tbn44KdfY62tlxBn8YcJxqbCKZIgz6_TZFxI,869
+dodgy-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dodgy-0.2.0.dist-info/entry_points.txt,sha256=sjhmv_gfeW1cDVgbt4Q0oE-75S91mnXK1O61ian5v6U,42
+dodgy-0.2.0.dist-info/top_level.txt,sha256=wPysU62rafZPbwt2C4fundsN42POMZSyxEWnJOEqOuw,6
+dodgy-0.2.0.dist-info/RECORD,,
