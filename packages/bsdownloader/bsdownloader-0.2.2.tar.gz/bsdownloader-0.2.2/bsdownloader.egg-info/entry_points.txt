@@ -1,0 +1,4 @@
+[console_scripts]
+bs-downloader = bsdownloader.__main__:main
+bsdownloader = bsdownloader.__main__:main
+
