@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: intents-classifier
+Version: 0.6
+Summary: package for classifiying users requests
+Home-page: http://github.com/theKirill/GensimSample
+Author: Kirill Yanyushkin, Ekaterina Zababurina
+Author-email: ea.zababurina@gmail.com, k.a.yanushkin@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: intents,intent,classifier of intents,requests classifier
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Linguistic

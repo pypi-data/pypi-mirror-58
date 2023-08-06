@@ -1,0 +1,9 @@
+setup.py
+intents_classifier/__init__.py
+intents_classifier/module.py
+intents_classifier.egg-info/PKG-INFO
+intents_classifier.egg-info/SOURCES.txt
+intents_classifier.egg-info/dependency_links.txt
+intents_classifier.egg-info/not-zip-safe
+intents_classifier.egg-info/requires.txt
+intents_classifier.egg-info/top_level.txt
