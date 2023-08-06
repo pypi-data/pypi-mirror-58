@@ -1,0 +1,12 @@
+README.md
+setup.py
+spudtr/__init__.py
+spudtr/epf.py
+spudtr/fake_epochs_data.py
+spudtr.egg-info/PKG-INFO
+spudtr.egg-info/SOURCES.txt
+spudtr.egg-info/dependency_links.txt
+spudtr.egg-info/top_level.txt
+tests/__init__.py
+tests/test_epf.py
+tests/test_epf_fakedata.py
