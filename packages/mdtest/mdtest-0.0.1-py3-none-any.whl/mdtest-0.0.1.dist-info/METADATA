@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mdtest
+Version: 0.0.1
+Summary: Framework for running tests embedded in markdown files.
+Home-page: http://github.com/kgrzywocz/mdtest
+Author: Krzysztof Grzywocz
+Author-email: kgrzywocz@wp.pl
+License: LGPLv3
+Platform: UNKNOWN
+Requires-Dist: python-version (>="3.5")
+Requires-Dist: Markdown (>=3)
+Requires-Dist: docopt (>=0.5)
+
+UNKNOWN
+
+

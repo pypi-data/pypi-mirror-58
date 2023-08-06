@@ -1,0 +1,4 @@
+#!python
+
+import mdtest
+mdtest.main(globals())
