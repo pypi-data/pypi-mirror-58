@@ -1,0 +1,10 @@
+README.md
+setup.py
+p2r/__init__.py
+p2r/p2r.py
+p2r.egg-info/PKG-INFO
+p2r.egg-info/SOURCES.txt
+p2r.egg-info/dependency_links.txt
+p2r.egg-info/entry_points.txt
+p2r.egg-info/requires.txt
+p2r.egg-info/top_level.txt
