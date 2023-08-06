@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pymixconf
+Version: 0.2
+Summary: Load environment-specific configuration like elixir's mix
+Home-page: UNKNOWN
+Author: Hannah Ward
+Author-email: hannah@coffee-and-dreams.uk
+License: MIT
+Project-URL: Source Code, https://github.com/floatingghost/pymixconf
+Description: UNKNOWN
+Keywords: configuration
+Platform: UNKNOWN
