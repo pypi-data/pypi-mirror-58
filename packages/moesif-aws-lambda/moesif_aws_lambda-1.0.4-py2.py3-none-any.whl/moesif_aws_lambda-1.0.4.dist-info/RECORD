@@ -1,0 +1,8 @@
+moesif_aws_lambda/__init__.py,sha256=IAtw9cs0XPVktoku2CN8rkYmDaNO8DPd_1euFUQflNU,43
+moesif_aws_lambda/client_ip.py,sha256=Lp0oQoJbLVj_0J-NdkiXRaDqwgnjftTeQyQZMLGpHQs,4627
+moesif_aws_lambda/middleware.py,sha256=3Ef3VhNUvNXbp4tusX4Dg_KLW1NeDCkxA_iWmL4D_K0,12432
+moesif_aws_lambda-1.0.4.dist-info/LICENSE,sha256=Tarx1ncRgAxj-5yRVw0e8U1jR9_Dw4wN8v9kjvEL83c,11908
+moesif_aws_lambda-1.0.4.dist-info/METADATA,sha256=r2k__DNRnDT4DDlqbu5mh1BQYJ9kywKBRdRAKX1FeUU,8716
+moesif_aws_lambda-1.0.4.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+moesif_aws_lambda-1.0.4.dist-info/top_level.txt,sha256=kEflXTymPfFjGbNBIpggGEOD22k2U5XO0WMdEOdDKbk,18
+moesif_aws_lambda-1.0.4.dist-info/RECORD,,
