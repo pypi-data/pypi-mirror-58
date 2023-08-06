@@ -1,0 +1,13 @@
+gefragt_gejagt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gefragt_gejagt/__main__.py,sha256=w3m1CCqplZu9bhlTIqr3dF8vOaK277mnZskYGaTZL7s,11576
+gefragt_gejagt/game.py,sha256=WQSgrP-kFdwiRM-kGoiC9ZOyUbzCKrcKyte4x5Bc34I,8396
+gefragt_gejagt/offer.py,sha256=0H59t1iAlif0OLCCTF764acB9zQG8dhAxcUF6j50fTI,1153
+gefragt_gejagt/player.py,sha256=BqfUKUBbXopDdazokap6Rm58xY0771LvNmb3pm0quE4,1802
+gefragt_gejagt/question.py,sha256=O-O6-pXsWhRPNfTcSPA_tcpUNA7Gw5QhI02N4v_Oj4Y,2070
+gefragt_gejagt/round.py,sha256=4qPWUaSP68MGpjjcU21mK_XGHeUFnn4_YlOOfJTUa5I,6812
+gefragt_gejagt/team.py,sha256=Y4G6JPV1jOaEPNFUp-mnb1SJT3j-R8_F2BVwpVWBvjc,1867
+gefragt_gejagt-0.0.2.dist-info/LICENSE,sha256=blOZrS9FSNwi3Z7_HDZ9XShu_BVyOJSzo7dyNHtgnRE,13865
+gefragt_gejagt-0.0.2.dist-info/METADATA,sha256=8XdGBku2J5KEt1acNShXSZ8bZn1OPeyRy4gH_dT_kbM,2725
+gefragt_gejagt-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gefragt_gejagt-0.0.2.dist-info/top_level.txt,sha256=kra3xgVrPoPaXooBI2wfnVKWuSBug06x6rNUY7BU2OY,15
+gefragt_gejagt-0.0.2.dist-info/RECORD,,
