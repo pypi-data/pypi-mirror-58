@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: salang
+Version: 0.0.1
+Summary: A langpack package
+Home-page: https://github.com/samlet/salang
+Author: Samlet Wu
+Author-email: xiaofei.wu@gmail.com
+License: UNKNOWN
+Description: # Salang Package
+        
+        This is a langpack package for ner.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

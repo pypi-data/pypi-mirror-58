@@ -1,0 +1,9 @@
+README.md
+setup.py
+sal/__init__.py
+sal/id/__init__.py
+sal/id/indonesia_ner.py
+salang.egg-info/PKG-INFO
+salang.egg-info/SOURCES.txt
+salang.egg-info/dependency_links.txt
+salang.egg-info/top_level.txt
