@@ -1,0 +1,11 @@
+external_arrow/register_cpp_arrow.py,sha256=6XBdfCTVfa1mPF8MNRAtv3U7MqDOXqrbBgxmrLoFRGM,211
+external_arrow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external_arrow/lib/cpp_arrow/test_object_detector.so,sha256=2HVAZSTkz_zFJm-eWh55YZq-Fl4koW9jqWXYtScDRqQ,345152
+external_arrow/arrow/test_object_detector.py,sha256=L9jN9lIWhxBSF5jFnmaH5IJUMU0NPxzqmQA5VHU2cY8,3069
+external_arrow/arrow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+external_arrow-0.0.2a1.dev1.dist-info/RECORD,,
+external_arrow-0.0.2a1.dev1.dist-info/WHEEL,sha256=HhaweCeof-avb62b1uNY4KilCHhVIikNnj9cQPW-rrA,106
+external_arrow-0.0.2a1.dev1.dist-info/LICENSE,sha256=6tOhIK5DqcDrEGuDet7jI4jyZaxl3TtmFg0FHS0Nhz4,1481
+external_arrow-0.0.2a1.dev1.dist-info/top_level.txt,sha256=imFACkHaW1zinqXKW8xIwlRBDTvZe5XRRf-iv865Fvw,15
+external_arrow-0.0.2a1.dev1.dist-info/METADATA,sha256=d_cIJFVUWCbXQDClHzkoR58Fspb9wOGMZ3umMzTZ100,4473
+external_arrow-0.0.2a1.dev1.dist-info/entry_points.txt,sha256=kGPVvsdU_sPnzq28hiARbhx-cHh5V-x6ihJAbkLz8Ls,189
