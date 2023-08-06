@@ -1,0 +1,10 @@
+ffi_navigator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffi_navigator/import_resolver.py,sha256=hk2_d8fgu4oYmbnFXKcBbGWNDfY6s39ilQF7KIY2vZ0,4265
+ffi_navigator/langserver.py,sha256=ksA9qwP07T4a4tBsdBbb4zYDAP3_crMWwNT3ae46cPI,2497
+ffi_navigator/lsp.py,sha256=kTkZAo7cfYz3IcWMNbmHhYkspRfeBpU3YAiJZSAK7nU,315
+ffi_navigator/pattern.py,sha256=RnuVa5y_9IFzImuWkjPuUi4JAFeBfFfGiIFlTiwiv5g,3902
+ffi_navigator/workspace.py,sha256=ezg9EdI2k3Xixg5EOJFRHXGwm5d-qjGH27IeO9_S4io,3807
+ffi_navigator-0.1.dist-info/METADATA,sha256=IdW1AlvMNX4M2czLvHqXnvv-TULnURBIu3agJTZeO4E,1944
+ffi_navigator-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ffi_navigator-0.1.dist-info/top_level.txt,sha256=NNw1oCRKnZoIzJoZvMdNxHSsxid4ctoi_USCqV1gJsA,14
+ffi_navigator-0.1.dist-info/RECORD,,
