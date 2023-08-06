@@ -1,0 +1,8 @@
+README.md
+setup.py
+PandasLibrary/__init__.py
+robotframework_pandaslibrary.egg-info/PKG-INFO
+robotframework_pandaslibrary.egg-info/SOURCES.txt
+robotframework_pandaslibrary.egg-info/dependency_links.txt
+robotframework_pandaslibrary.egg-info/requires.txt
+robotframework_pandaslibrary.egg-info/top_level.txt

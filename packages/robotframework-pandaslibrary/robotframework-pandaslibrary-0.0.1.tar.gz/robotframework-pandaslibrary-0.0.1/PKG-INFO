@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: robotframework-pandaslibrary
+Version: 0.0.1
+Summary: Pandas Module support library for Robot Framework
+Home-page: https://github.com/koshtinikhilesh/robotframework-PandasLibrary
+Author: Koshti Nikhilesh
+Author-email: koshtinikhilesh1993@gmail.com
+License: Apache License 2.0
+Description: Pandas Module support for Robot Framework.
+Keywords: robotframework testing pandas csv
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
