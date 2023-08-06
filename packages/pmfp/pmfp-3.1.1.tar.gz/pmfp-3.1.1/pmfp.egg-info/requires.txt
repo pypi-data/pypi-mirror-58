@@ -1,0 +1,10 @@
+sphinx
+wheel
+coverage
+recommonmark
+sphinxcontrib-napoleon
+mypy
+lxml
+mypy-extensions
+boom
+voluptuous
