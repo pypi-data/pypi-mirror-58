@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: circular-buffer
+Version: 0.1.0
+Summary: Efficient circular buffer implementation in Python with optional Numba JIT compilation
+Home-page: https://github.com/leftys/circular-buffer
+Author: Jan Škoda
+Author-email: skoda@jskoda.cz
+License: MIT
+Description: # circular-buffer
+        Efficient circular buffer implementation in Python with optional Numba JIT compilation
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: numba
