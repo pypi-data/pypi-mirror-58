@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: LGPy
+Version: 1.0.1
+Summary: A Linear Genetic Programming Library
+Home-page: https://github.com/nateriz/lgpy
+Author: NateRiz
+Author-email: nathan.rizik@gmail.com
+License: UNKNOWN
+Description: # LGPy
+        LGPy is a linear genetic programming library implemented in Python to evolve problems. In linear programming, a sequence of assembly-like instructions dictates the flow of a program. Each hardware in LGPy contains a set of instructions and a memory buffer that acts as its program.
+        
+        ## Installing
+        ```pip install LGPy```
+        
+        ## Examples
+        Located in: ```LGPy/Examples/```
+        
+        ```python3 even_odd.py```
+        
+        
+        ## Authors
+        * NateRiz
+        
+        ## Acknowledgements
+        * Inspiration from SignalGP: https://github.com/devosoft/Empirical
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
