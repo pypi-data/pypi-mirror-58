@@ -1,0 +1,8 @@
+htimeseries/__init__.py,sha256=OG_k6fC3OsNsc4QDTqOT6gGv24yOXDURcgGGLeHA1m8,98
+htimeseries/htimeseries.py,sha256=24qkqQ5Yk4iyXboo3-4uT_BnzN2wT00V1gHdV1rP5B4,14516
+htimeseries/tzinfofromstring.py,sha256=xEArPwKvI9tLP3z2Y9l4jpbpKMtOsC5ftHxzAo1bgNs,1238
+htimeseries-2.0.2.dist-info/LICENSE,sha256=jKnQ13MBeiw9ZbiGqlIjynmcQpKAfjvswk6cT91k_UQ,829
+htimeseries-2.0.2.dist-info/METADATA,sha256=Gt3qdmAT8GBsZQqETxm5oB8PxEI84gxcpTm30kiHLHY,16013
+htimeseries-2.0.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+htimeseries-2.0.2.dist-info/top_level.txt,sha256=MN3upzdIufG2Syu7zuX_1xZTS2XH1gp2TzKbDaRqU7U,12
+htimeseries-2.0.2.dist-info/RECORD,,
