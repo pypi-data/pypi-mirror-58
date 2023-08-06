@@ -1,0 +1,6 @@
+tqdm
+
+[dev]
+pycodestyle
+pyflakes
+pylint
