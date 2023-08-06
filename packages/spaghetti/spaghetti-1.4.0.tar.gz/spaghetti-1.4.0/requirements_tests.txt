@@ -1,0 +1,7 @@
+nose
+nose-progressive
+coverage
+coveralls
+matplotlib
+twine
+wheel
