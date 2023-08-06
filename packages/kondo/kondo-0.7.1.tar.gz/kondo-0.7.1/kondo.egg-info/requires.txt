@@ -1,0 +1,8 @@
+numpy
+
+[all]
+torch
+tensorflow
+
+[test]
+pytest>=4.2
