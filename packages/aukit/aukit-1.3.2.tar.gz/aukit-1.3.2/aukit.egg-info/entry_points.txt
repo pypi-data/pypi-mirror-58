@@ -1,0 +1,3 @@
+[console_scripts]
+aup = aukit.audio_cli:play_audio_cli
+
