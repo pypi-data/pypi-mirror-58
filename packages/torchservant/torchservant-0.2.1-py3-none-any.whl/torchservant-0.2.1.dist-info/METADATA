@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: torchservant
+Version: 0.2.1
+Summary: Many useful tools for PyTorch.
+Home-page: https://github.com/QixuanAI/torchservant
+Author: qxsoftware
+Author-email: qxsoftware@163.com
+License: GNU GENERAL PUBLIC LICENSE v3
+Keywords: pytorch,tool,util,servant,deeplearning,visualize
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Requires-Dist: torch
+
+TorchServant is an assembly helping quickly development for PyTorch users.It contains following components:
+modelkeeper:	Manage weights files and checkpoints, keep training process continuous.
+board:		API for visdom and tensorboard, visualize diagrams, illustrations and progresses.
+stats		Resource statistics on GPUs, memories, cpu, and consumed time.
+classicmodels:	Include AlexNet, VGG, Resnet, Inception, etc.
+observer:	Visualize feature maps during training and evaluation process.
+weightransfer:	An Qt-based visual tool to transfer weights between different models.
+
