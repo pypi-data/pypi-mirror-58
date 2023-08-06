@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: garminconnect
+Version: 0.1.1
+Summary: Python 3 API wrapper for Garmin Connect
+Home-page: https://github.com/cyberjunky/python-garminconnect
+Author: Ron Klinkien
+Author-email: ron@cyberjunky.nl
+License: UNKNOWN
+Description: # python-garminconnect
+        Python 3 API wrapper for Garmin Connect to get activity statistics
+        
+        See https://connect.garmin.com/
+        
+        ## Usage
+        Create a new connection by supplying your user credentials
+        ```
+        from garminconnect import Garmin
+        
+        api = Garmin(YOUR_EMAIL, YOUR_PASSWORD)
+        ```
+        
+        Fetch your Garmin Connect activities data
+        ```
+        print(api.fetch_stats())
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
