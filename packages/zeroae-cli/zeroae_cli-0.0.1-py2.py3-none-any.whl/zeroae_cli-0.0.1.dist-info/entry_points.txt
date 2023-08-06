@@ -1,0 +1,3 @@
+[console_scripts]
+zeroae = zeroae.cli.cli:cli
+
