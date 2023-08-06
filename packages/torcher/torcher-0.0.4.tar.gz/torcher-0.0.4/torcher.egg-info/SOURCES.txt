@@ -1,0 +1,8 @@
+README.md
+setup.py
+torcher/Torcher.py
+torcher/__init__.py
+torcher.egg-info/PKG-INFO
+torcher.egg-info/SOURCES.txt
+torcher.egg-info/dependency_links.txt
+torcher.egg-info/top_level.txt
