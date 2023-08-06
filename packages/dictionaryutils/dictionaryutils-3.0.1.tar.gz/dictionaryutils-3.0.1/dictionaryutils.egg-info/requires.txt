@@ -1,0 +1,4 @@
+PyYAML~=5.1
+jsonschema~=3.2
+requests~=2.18
+cdislogging~=1.0
