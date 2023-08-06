@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+privacyfighter/__init__.py
+privacyfighter/build-cli.spec
+privacyfighter/build-osx.spec
+privacyfighter/build.spec
+privacyfighter/pf.py
+privacyfighter/pf.spec
+privacyfighter/version.txt
