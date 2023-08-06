@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+candypi/__init__.py
+candypi/core.py
+candypi/server.py
+candypi.egg-info/PKG-INFO
+candypi.egg-info/SOURCES.txt
+candypi.egg-info/dependency_links.txt
+candypi.egg-info/entry_points.txt
+candypi.egg-info/requires.txt
+candypi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
