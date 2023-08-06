@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: grapl-graph-descriptions-py
+Version: 0.1.1
+Summary: Library for describe Grapl graphs
+Home-page: https://github.com/insanitybit/grapl-graph-descriptions-py/
+Author: insanitybit
+Author-email: insanitybit@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: protobuf
+
+UNKNOWN
+
+
