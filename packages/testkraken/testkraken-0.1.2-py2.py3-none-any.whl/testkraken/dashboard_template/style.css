@@ -1,0 +1,142 @@
+body, .bg-parcoords {
+    background: white;
+    font-family: "Avenir" !important;
+    margin: 25px}
+}
+
+div {
+    display: block;
+    clear: both;
+}
+
+li, p, text {
+  color: rgb(197,202,211);
+}
+h1, h2, h3, h4 {
+color: #2c48a8
+}
+.padding-0 { padding-left: 0; padding-right: 0; }
+.parcoords > canvas {
+  position: absolute;
+  pointer-events: none;
+}
+.parcoords text {
+  font: 16px sans-serif;
+  fill: rgba(0,0,0, 0.5);
+}
+.parcoords text.label {
+  font: 18px sans-serif;
+}
+.parcoords canvas {
+  opacity: 1;
+  transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+}
+.parcoords canvas.faded {
+  opacity: 0.25;
+}
+.parcoords {
+  height: 350px;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.top-buffer {
+  padding-top: 50px;
+}
+
+
+#grid {
+   position: relative;
+   height: 30vh;
+   width: 100%;
+   color: white;
+   bottom: 0;
+}
+
+#grid-container {
+   position: relative;
+   width: 95vw;
+   height: 40vh;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+
+
+.select2-selection__choice {
+    background-color: #5c1cab66 !important;
+    color: black
+}
+
+.select2-selection.select2-selection--multiple {
+
+    background-color: #bea4dd33;
+    margin: 15px;
+}
+
+.main {
+  /*display: block;*/
+  width: 100%;
+  /*margin-left: 30px;*/
+}
+
+#left {
+  float: left;
+  width: 40%;
+}
+
+#right {
+  float: right;
+  width: 50%;
+}
+
+#plots_altair {
+display: block;
+clear: both;
+}
+
+.bar {
+  background: MediumPurple;
+  opacity: 0.6;
+  height: 20px;
+  margin: 2px;
+  color: DarkBlue;
+  text-align: right;
+  padding-top: 1px;
+  display: inline-block;
+}
+
+.barText {
+  display: inline-block;
+  width: 120px; /* might need to change, if the description is longer */
+  color: black;
+}
+
+.dot {
+  stroke: #313E50; /*circle border*/
+  fill: steelblue; /*circle color*/
+  r: 7; /*circle radius*/
+}
+
+.dot_legend {
+  stroke: #313E50; /*circle border*/
+  r: 4; /*circle radius*/
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+
