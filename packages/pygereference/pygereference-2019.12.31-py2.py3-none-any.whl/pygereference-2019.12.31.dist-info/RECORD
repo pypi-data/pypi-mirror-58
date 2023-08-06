@@ -1,0 +1,13 @@
+pygereference/__init__.py,sha256=2lBi2rUV1dM0tsICMdUBGhZVgxmKWQA6VRch5XQELnk,1255
+pygereference/check.py,sha256=a7uVjUl92eB_gYknIG6fmD-RQ4_ehPlDy4QgbJNbLX4,23294
+pygereference/folder.py,sha256=qe2Mj0xGWDqBp-KA6iIPfqL6vG-WUce5pAqBDBEcmk4,10273
+pygereference/normalize.py,sha256=TcJ5RAjsHLwTMzAL0M7ksaW-7pHhHV9IBVMHzfQ-JJ0,23675
+pygereference/ref.py,sha256=N9ciaEW_rgfIFAq2QyqumpUSGqOiTuMLauwYRG2480w,23530
+pygereference/release.py,sha256=eVx95h3HzjsjpooE0sX9NDlhT0nXbLELyZIc7sHSdxU,23809
+pygereference/tree.py,sha256=W93YlG-frCbTiABOSgD3ya1gfeUqmp99ocKY9lUYSLk,7254
+pygereference/version.py,sha256=gbPnuGdCc_GdhsCZw-XLM-lGLx7WvJXY2XoDlPekAas,116
+pygereference-2019.12.31.dist-info/LICENSE.md,sha256=zotrp3VqO1lwvA5ZO_KkYK8EmrUnzDTTPORI4WcGTKA,17030
+pygereference-2019.12.31.dist-info/METADATA,sha256=2VxzRqOXTjDHzRSUAoHvuqs4r8xcCtGp87AhC_hKftk,491
+pygereference-2019.12.31.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+pygereference-2019.12.31.dist-info/top_level.txt,sha256=Rc5ieBBmQDDI4Q4oTROOuzg_5O7w-uMxWI7dhGoPdek,14
+pygereference-2019.12.31.dist-info/RECORD,,
