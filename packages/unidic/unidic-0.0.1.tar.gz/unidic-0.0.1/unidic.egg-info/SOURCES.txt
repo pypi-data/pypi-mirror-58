@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+unidic/__init__.py
+unidic/unidic.py
+unidic.egg-info/PKG-INFO
+unidic.egg-info/SOURCES.txt
+unidic.egg-info/dependency_links.txt
+unidic.egg-info/top_level.txt
+unidic/dicdir/BSD
+unidic/dicdir/char.bin
+unidic/dicdir/dicrc
+unidic/dicdir/matrix.bin.gz
+unidic/dicdir/sys.dic.gz
+unidic/dicdir/unk.dic
