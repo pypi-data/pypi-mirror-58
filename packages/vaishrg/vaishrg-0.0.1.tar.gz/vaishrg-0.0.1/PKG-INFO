@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vaishrg
+Version: 0.0.1
+Summary: A sample python package
+Home-page: https://github.com/vaishnovrg/python-package
+Author: Vaishnov RG
+Author-email: rgvaishnov9550@gmail.com
+License: UNKNOWN
+Description: ## vaishrg
+        This is a sample package to learn the steps of creating and publishing package.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
