@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: py-str-case
+Version: 0.0.2
+Summary: String case converter
+Home-page: https://github.com/ShivaShankerReddy/py_string_case
+Author: shiva
+Author-email: shivashanker.chagamreddy@gmail.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/ShivaShankerReddy/py_string_case.svg?branch=master)](https://travis-ci.org/ShivaShankerReddy/py_string_case)
+        
+        # convert_str
+        
+        This module is extension of [stringcase](https://github.com/okunishinishi/python-stringcase/).
+        
+        Convert string cases between camel case, pascal case, snake case etc...
+        
+        # Examples
+        
+        ```
+        import convert_str
+        convert_str.camelcase('foo_bar_baz') # => "fooBarBaz"
+        convert_str.camelcase('FooBarBaz') # => "fooBarBaz"
+        convert_str.capitalcase('foo_bar_baz') # => "Foo_bar_baz"
+        convert_str.capitalcase('FooBarBaz') # => "FooBarBaz"
+        convert_str.constcase('foo_bar_baz') # => "FOO_BAR_BAZ"
+        convert_str.constcase('FooBarBaz') # => "FOO_BAR_BAZ"
+        convert_str.lowercase('foo_bar_baz') # => "foo_bar_baz"
+        convert_str.lowercase('FooBarBaz') # => "foobarbaz"
+        convert_str.pascalcase('foo_bar_baz') # => "FooBarBaz"
+        convert_str.pascalcase('FooBarBaz') # => "FooBarBaz"
+        convert_str.pathcase('foo_bar_baz') # => "foo/bar/baz"
+        convert_str.pathcase('FooBarBaz') # => "foo/bar/baz"
+        convert_str.sentencecase('foo_bar_baz') # => "Foo bar baz"
+        convert_str.sentencecase('FooBarBaz') # => "Foo bar baz"
+        convert_str.snakecase('foo_bar_baz') # => "foo_bar_baz"
+        convert_str.snakecase('FooBarBaz') # => "foo_bar_baz"
+        convert_str.spinalcase('foo_bar_baz') # => "foo-bar-baz"
+        convert_str.spinalcase('FooBarBaz') # => "-foo-bar-baz"
+        convert_str.titlecase('foo_bar_baz') # => "Foo Bar Baz"
+        convert_str.titlecase('FooBarBaz') # => " Foo Bar Baz"
+        convert_str.trimcase('foo_bar_baz') # => "foo_bar_baz"
+        convert_str.trimcase(' FooBarBaz ') # => "FooBarBaz"
+        convert_str.uppercase('foo_bar_baz') # => "FOO_BAR_BAZ"
+        convert_str.uppercase('FooBarBaz') # => "FOOBARBAZ"
+        convert_str.alphanumcase('_Foo., Bar') # =>'FooBar'
+        convert_str.alphanumcase('Foo_123 Bar!') # =>'Foo123Bar'
+        ```
+        
+        # Failure Message
+        
+        ```
+        convert_str.alphanumcase('') # =>'Enter the string to convert..'
+        ```
+        
+        
+        # Install
+        
+        `pip install convert_str`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
