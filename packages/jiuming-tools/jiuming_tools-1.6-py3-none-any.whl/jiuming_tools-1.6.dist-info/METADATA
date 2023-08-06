@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jiuming-tools
+Version: 1.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: ming
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: psutil
+Requires-Dist: PyYAML
+Requires-Dist: paramiko
+
+UNKNOWN
+
+
