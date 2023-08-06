@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stalker
+Version: 0.2.24.2
+Summary: A Production Asset Management (ProdAM) System
+Home-page: http://github.com/eoyilmaz/stalker
+Author: Erkan Ozgur Yilmaz
+Author-email: eoyilmaz@gmail.com
+License: LGPLv3
+Requires-Dist: psycopg2-binary (<=2.8.3)
+Requires-Dist: sqlalchemy
+Requires-Dist: alembic
+Requires-Dist: jinja2
+Requires-Dist: pytz
+Requires-Dist: tzlocal
+
+|travis| |license| |pyversion| |pypiversion| |wheel|
+
+
