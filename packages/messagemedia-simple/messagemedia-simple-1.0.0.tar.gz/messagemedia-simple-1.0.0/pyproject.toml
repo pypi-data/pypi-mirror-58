@@ -1,0 +1,45 @@
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "messagemedia-simple"
+version = "1.0.0"
+license = "MIT"
+description = "Simple MessageMedia module for sending SMS messages."
+authors = ["Michael Ludvig <mludvig@logix.net.nz>"]
+keywords = [ 'messagemedia', 'sms' ]
+readme = "README.md"
+repository = "https://github.com/mludvig/messagemedia-simple"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+# responses = "^0.10.9"  # Only needed for testing - see below in tox
+requests = "^2.22.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ""
+responses = ""
+tox = "^3.14"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+envlist = py36,py37,py38
+
+[testenv]
+deps =
+  pylint
+  pytest
+  pytest-cov
+  responses
+commands =
+  pylint --exit-zero messagemedia_simple
+  pylint --exit-zero --disable=protected-access test
+  pylint -E messagemedia_simple test
+  pytest -v --cov messagemedia_simple --cov-report term-missing
+
+[tox:.package]
+basepython = python3
+"""
