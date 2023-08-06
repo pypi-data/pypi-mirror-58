@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Taara
+Version: 0.1.5
+Summary: Android ANR Analysis
+Home-page: https://code.byted.org/hproject/taara
+Author: JacksGong
+Author-email: gongzhenjie@bytedance.com
+License: Apache2
+Description: This tool is for analysis Android anr automatically
+Keywords: anr
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
