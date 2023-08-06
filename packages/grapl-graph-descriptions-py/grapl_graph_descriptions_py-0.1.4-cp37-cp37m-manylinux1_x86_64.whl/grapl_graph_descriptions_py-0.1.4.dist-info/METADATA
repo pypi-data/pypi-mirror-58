@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: grapl-graph-descriptions-py
+Version: 0.1.4
+Summary: Python bindings to Grapls graph descriptions library
+Author: Insanitybit <insanitybit@gmail.com>
+Author-Email: Insanitybit <insanitybit@gmail.com>
+License: MIT
