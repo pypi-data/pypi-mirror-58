@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: influxtap
+Version: 0.1.0
+Summary: Daemon-like utility to monitor website responses and push the data into InfluxDB.
+Home-page: https://github.com/Artanicus/influxtap
+Author: artanicus
+Author-email: influxtap@nocturnal.fi
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: absl-py
+Requires-Dist: influxdb
+
+UNKNOWN
+
+

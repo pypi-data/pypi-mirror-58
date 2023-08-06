@@ -1,0 +1,3 @@
+[console_scripts]
+influxtap = influxtap.__main__:main
+
