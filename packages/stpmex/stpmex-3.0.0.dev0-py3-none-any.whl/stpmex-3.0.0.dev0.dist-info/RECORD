@@ -1,0 +1,12 @@
+stpmex/__init__.py,sha256=7GghXXj2FxiUUbI6NtZ0y0eqjMQnb2cQiAyxsInBSaA,135
+stpmex/auth.py,sha256=f_p_45Eecd0z1NXWjCBoHBynT0zyQXcO9n8OAsFawMc,1355
+stpmex/client.py,sha256=QB3PhIy_I1OIVBpe_IMbTFV7tK05irNqtJ1SrsHuMsg,1849
+stpmex/exc.py,sha256=Lqm0SNoNyDZgrhYuZoNl40G_FWFNmyOF6rHqQwxtzhU,590
+stpmex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stpmex/types.py,sha256=LOzXPu_7ksK5N50kkFG6NJST5xXIgvIqzB53PrDEtEI,151
+stpmex/version.py,sha256=eC5QAO2_fEpRRlWDDTS3hUn5V4Yh3YxV7HxLlr0DKTM,27
+stpmex-3.0.0.dev0.dist-info/LICENSE,sha256=9GQPE7kl6j7TtaughgZn1IypobZPB0y6CajRzcZQx2U,1063
+stpmex-3.0.0.dev0.dist-info/METADATA,sha256=S0oPG4W6VIkEVZeSrxX6aB3rjbftevHKFjli5ze_kDE,2089
+stpmex-3.0.0.dev0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+stpmex-3.0.0.dev0.dist-info/top_level.txt,sha256=yzq_SArWwc5tJAK2pqz74quZKPGH782f_s7l2FTf9KQ,7
+stpmex-3.0.0.dev0.dist-info/RECORD,,
