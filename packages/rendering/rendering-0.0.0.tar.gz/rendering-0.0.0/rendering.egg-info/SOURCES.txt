@@ -1,0 +1,5 @@
+setup.py
+rendering.egg-info/PKG-INFO
+rendering.egg-info/SOURCES.txt
+rendering.egg-info/dependency_links.txt
+rendering.egg-info/top_level.txt
