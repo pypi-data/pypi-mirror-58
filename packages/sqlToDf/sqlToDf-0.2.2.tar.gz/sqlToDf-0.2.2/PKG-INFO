@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sqlToDf
+Version: 0.2.2
+Summary: This is just to get started with Pypi
+Home-page: https://github.com/sehanfarooqui
+Author: Arsal Rahim | Sehan Ahmed Farooqui
+Author-email: arsalrahim1994@gmail.com
+License: MIT
+Download-URL: https://github.com/sehanfarooqui/sqlToDf/archive/v0.2.2.tar.gz
+Description: UNKNOWN
+Keywords: bcp,mssql,pandas dataframe
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
