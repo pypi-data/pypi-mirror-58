@@ -1,0 +1,9 @@
+tvm_valuetypes/__init__.py,sha256=9xchkNUoUptbq83KZGwqMhH5HUu9Nd6HThECVzrkqaA,176
+tvm_valuetypes/cell.py,sha256=-2OyznVD8hvNyIWknxndNw8Q374WI6COVP4wDseQJ78,12488
+tvm_valuetypes/dict_utils.py,sha256=0Ld63BNV_nLIB006hRlxv6aEAMSJmf_UtVD-EZbMZ64,2856
+tvm_valuetypes/stack_utils.py,sha256=XE9DwkxyF0mx1Kr0la9sGhHyZhs8ZqrnCQwvO7Mln1g,2054
+tvm_valuetypes-0.0.1.dist-info/LICENSE,sha256=3Yd9_EbxYtaNzGurW_4WbYQ0mROfYQJNJt2c0c0JqOY,1181
+tvm_valuetypes-0.0.1.dist-info/METADATA,sha256=fnwveDyEAn4QioC7K_8-4y9UeD9ZtGeB3rLNoUbpzqM,2177
+tvm_valuetypes-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+tvm_valuetypes-0.0.1.dist-info/top_level.txt,sha256=MXNRlqqlRA29VL_IwtG2xVEUoEnntKH8Ijb7yMo7rak,15
+tvm_valuetypes-0.0.1.dist-info/RECORD,,
