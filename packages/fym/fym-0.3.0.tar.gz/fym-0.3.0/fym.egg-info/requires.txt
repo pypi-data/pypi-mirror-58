@@ -1,0 +1,6 @@
+python>=3.7
+gym
+matplotlib
+numdifftools
+h5py
+tqdm
