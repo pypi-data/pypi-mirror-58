@@ -1,0 +1,11 @@
+biographs/__init__.py,sha256=FIRCQJCOH5vyMm-Avw4edOQ3LyzvglfOIoYYpUkbsKw,41
+biographs/classes/__init__.py,sha256=n29KOcLLehRm0jLUuxh8Lo8xIKWnydycXhRVWQdiuBM,33
+biographs/classes/pmolecule.py,sha256=tp0dey8jRu751v51jc5WGhjakIGUES9Yf97WwvymQ8g,2564
+biographs/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biographs/lib/bgraph.py,sha256=aANMT0vQSCtvOD4oFmeTecTr_SYhHTUyP83MbXIg9a8,672
+biographs/lib/bpdb.py,sha256=bMozEgrzAepi44JccBVqA8Nb8jdmZaR51kew-rx12sQ,3988
+biographs-0.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+biographs-0.1.dist-info/METADATA,sha256=xV_CzGhntbG-0bQJkTZHU41_cBMw3BRSmbg8abWIhRg,389
+biographs-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+biographs-0.1.dist-info/top_level.txt,sha256=CF9G6TZCPasltAdzcQNFz5K2rXyHIsb-JSReXIGr_J8,10
+biographs-0.1.dist-info/RECORD,,

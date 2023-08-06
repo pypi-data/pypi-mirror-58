@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: biographs
+Version: 0.1
+Summary: A package to work with protein structure networks
+Home-page: https://github.com/rodogi/biographs
+Author: Rodrigo Dorantes-Gilardi
+Author-email: rodgdor@gmail.com
+License: UNKNOWN
+Keywords: protein contact network,protein graphs
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: networkx
+Requires-Dist: biopython
+
+UNKNOWN
+
+
