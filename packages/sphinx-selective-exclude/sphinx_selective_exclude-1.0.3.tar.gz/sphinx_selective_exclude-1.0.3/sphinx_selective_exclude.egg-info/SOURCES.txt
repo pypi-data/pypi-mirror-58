@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sphinx_selective_exclude/__init__.py
+sphinx_selective_exclude/eager_only.py
+sphinx_selective_exclude/modindex_exclude.py
+sphinx_selective_exclude/search_auto_exclude.py
+sphinx_selective_exclude.egg-info/PKG-INFO
+sphinx_selective_exclude.egg-info/SOURCES.txt
+sphinx_selective_exclude.egg-info/dependency_links.txt
+sphinx_selective_exclude.egg-info/namespace_packages.txt
+sphinx_selective_exclude.egg-info/not-zip-safe
+sphinx_selective_exclude.egg-info/top_level.txt
