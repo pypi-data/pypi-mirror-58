@@ -1,0 +1,1 @@
+http://github.com/Arcticae/python-ipmi/tarball/master#egg=python-ipmi-0
