@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kmeans-pytorch
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/subhadarship/kmeans_pytorch
+Author: Subhadarshi Panda
+Author-email: spanda@gradcenter.cuny.edu
+License: License :: OSI Approved :: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# kmeans_pytorch
+kmeans using PyTorch
+
