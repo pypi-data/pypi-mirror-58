@@ -1,0 +1,3 @@
+NlpToolkit-WordNet
+NlpToolkit-NamedEntityRecognition
+NlpToolkit-PropBank
