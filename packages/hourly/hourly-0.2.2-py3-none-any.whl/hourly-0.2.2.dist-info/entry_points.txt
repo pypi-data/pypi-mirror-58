@@ -1,0 +1,5 @@
+[console_scripts]
+hourly = cli.main:entry
+hourly-in = cli.main:hourly_in
+hourly-out = cli.main:hourly_out
+
