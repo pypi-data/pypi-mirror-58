@@ -1,0 +1,8 @@
+mathtastic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mathtastic/tree.py,sha256=aTsGYN9tGQcorOn-sDQBLlYJcCtXir5A-96x6uMWWi8,7947
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_tree_node.py,sha256=n-l4qcKuQ7xdaIMP9y5CLc_OX7ojhFna6oRcSpShs-k,437
+mathy-0.0.1.dist-info/METADATA,sha256=kXfFi7Q56odK9R3w6ARqXcwPRgCr8UDwEbZxYj26RyQ,628
+mathy-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mathy-0.0.1.dist-info/top_level.txt,sha256=PVZC1pVw9rU43Dk3ldS3rEIHWApsiJg760QVoqbERzk,17
+mathy-0.0.1.dist-info/RECORD,,
