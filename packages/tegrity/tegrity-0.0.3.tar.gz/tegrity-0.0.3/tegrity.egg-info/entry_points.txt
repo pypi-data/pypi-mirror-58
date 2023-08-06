@@ -1,0 +1,8 @@
+[console_scripts]
+tegrity = tegrity.__main__:cli_main
+tegrity-image = tegrity.image:cli_main
+tegrity-kernel = tegrity.kernel:cli_main
+tegrity-qemu = tegrity.qemu:cli_main
+tegrity-rootfs = tegrity.rootfs:cli_main
+tegrity-toolchain = tegrity.toolchain:cli_main
+
