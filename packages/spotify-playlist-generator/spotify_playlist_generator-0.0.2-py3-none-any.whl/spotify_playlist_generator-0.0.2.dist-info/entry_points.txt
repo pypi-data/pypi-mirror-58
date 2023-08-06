@@ -1,0 +1,4 @@
+[console_scripts]
+spg = src.__main__:main
+spotify-playlist-generator = src.__main__:main
+
