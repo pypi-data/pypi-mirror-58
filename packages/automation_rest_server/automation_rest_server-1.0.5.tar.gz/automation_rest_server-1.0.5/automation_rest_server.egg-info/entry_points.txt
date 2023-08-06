@@ -1,0 +1,3 @@
+[console_scripts]
+redis_run = automation_rest_server.run
+
