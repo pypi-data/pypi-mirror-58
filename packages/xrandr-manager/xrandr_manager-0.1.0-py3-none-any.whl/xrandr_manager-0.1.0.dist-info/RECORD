@@ -1,0 +1,13 @@
+xrandr_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xrandr_manager/console.py,sha256=CpI_7HYmMAC0Tew-s-n03c-TTp-xbvKyRaAY025Q82I,207
+xrandr_manager/executor.py,sha256=Vk57r3HUAveYSNwrm5wejAN3xQv9oaLicppDJPL_LLQ,1827
+xrandr_manager/manager.py,sha256=5i-fgF30g5vgiVgtp3SamuSVHtav7fcNqRfqVxB0sLk,2728
+xrandr_manager/model.py,sha256=8_cq_-0qE6B-_rhCwu0rrNMwPeTMxt3F2Z5BxVv8rxY,803
+xrandr_manager/parser.py,sha256=Hm8NYgfXBH1McsTIh25nwGayjf1DB_dX6bIeLjB-9iw,1103
+xrandr_manager/prompt.py,sha256=S-UQz4BJ94wzzTUuhzTN1Viep4YUumItbf80gBpip5s,703
+xrandr_manager-0.1.0.dist-info/LICENSE,sha256=OWomzgpKKRVbngMmSH8lqWnzqzKeTyg-n5yXvJ3TiX8,1065
+xrandr_manager-0.1.0.dist-info/METADATA,sha256=XEzWxGA7dDR2DHY7UBW4y3HOh4xypzs3V-gbZzRynXI,1005
+xrandr_manager-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+xrandr_manager-0.1.0.dist-info/entry_points.txt,sha256=gibh0a8W9mZyzs-bp5_oJGOOWCfmYqF14Gc1LJAu9qc,63
+xrandr_manager-0.1.0.dist-info/top_level.txt,sha256=MBd83vPsWvQJInV2L8x9kj-dvSsEwucEFdvZVjgpZT0,15
+xrandr_manager-0.1.0.dist-info/RECORD,,

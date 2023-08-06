@@ -1,0 +1,3 @@
+[console_scripts]
+xrandr-manager = xrandr_manager.console:run
+
