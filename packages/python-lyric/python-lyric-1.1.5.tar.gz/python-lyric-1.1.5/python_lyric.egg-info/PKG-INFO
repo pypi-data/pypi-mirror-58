@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: python-lyric
+Version: 1.1.5
+Summary: Python API for talking to the Honeywell Lyric™ Thermostat
+Home-page: https://github.com/bramkragten/python-lyric/
+Author: Bram Kragten
+Author-email: mail@bramkragten.nl
+License: UNKNOWN
+Description: =========================================================
+        Python API for the Honeywell Lyric™ Thermostat
+        =========================================================
+        
+        
+        History
+        =======
+        
+        This module was based on `python-nest http://github.com/technicalpickles/python-nest` 
+        That module was originally a fork of `nest_thermostat <https://github.com/FiloSottile/nest_thermostat>`
+        which was a fork of `pynest <https://github.com/smbaker/pynest`
+Keywords: honeywell lyric thermostat
+Platform: UNKNOWN
