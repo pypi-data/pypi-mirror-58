@@ -1,0 +1,3 @@
+[gui_scripts]
+DWords = DWords.__main__:main
+
