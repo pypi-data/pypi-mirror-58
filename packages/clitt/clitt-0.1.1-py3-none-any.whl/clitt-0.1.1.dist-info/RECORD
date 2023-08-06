@@ -1,0 +1,12 @@
+clitt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clitt/__main__.py,sha256=1Nn5BO9EuuPvtLrCAaUsfWcnKDkO7Zh2U1QBqcZdJfY,447
+clitt/actions.py,sha256=Z6ICYAFZxOncFVMX5YbhVe01F44LTq4fsaH8KVjWNg8,2658
+clitt/auth.py,sha256=FGNKa92sd6Dfe-5Me8D1rjsl4VzxwlW0QWyK_Dn0YD0,1659
+clitt/config/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clitt/config/keys.json,sha256=ZXL-N5RmdekLOyi_jlpHsk237-c3ipk6OKo7XBx4SYo,136
+clitt/config/user_keys.json,sha256=aKyF_aGV6BTWCsDl-lG3-X7RnGCoENH7r5mvI4ZCRpk,142
+clitt/enviroment.py,sha256=P6gNIAbboMxEEAhqwTo8kGcE8Jf6Dt5WJJAIVHW_MUk,284
+clitt-0.1.1.dist-info/LICENSE,sha256=mf1OkWsTjo6whZ3ODvEhvQW_t9vsVT5yu5qFAFCX_5Y,1072
+clitt-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+clitt-0.1.1.dist-info/METADATA,sha256=cXdhaGv_b7Sy5fTjNANiH6QZhlojguPtUnXwnuAhJO8,372
+clitt-0.1.1.dist-info/RECORD,,
