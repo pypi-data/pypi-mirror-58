@@ -1,0 +1,10 @@
+setup.py
+tkitNlp/__init__.py
+tkitNlp/ie.py
+tkitNlp/sentence_parser.py
+tkitNlp/triple_extraction.py
+tkitNlp.egg-info/PKG-INFO
+tkitNlp.egg-info/SOURCES.txt
+tkitNlp.egg-info/dependency_links.txt
+tkitNlp.egg-info/requires.txt
+tkitNlp.egg-info/top_level.txt
