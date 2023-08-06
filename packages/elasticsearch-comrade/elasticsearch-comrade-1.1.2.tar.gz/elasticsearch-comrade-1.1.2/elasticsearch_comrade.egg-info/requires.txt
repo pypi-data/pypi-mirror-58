@@ -1,0 +1,4 @@
+sanic
+ujson
+elasticsearch-async
+click
