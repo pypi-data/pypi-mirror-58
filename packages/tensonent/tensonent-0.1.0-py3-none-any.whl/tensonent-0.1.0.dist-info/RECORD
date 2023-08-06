@@ -1,0 +1,10 @@
+tensonent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensonent/tensor_algebra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensonent/tensor_algebra/kronecker.py,sha256=0_TG06Ezz8vpInyve2T-VRpMyTDvuvdDCAQmzGnNyp4,495
+tensonent/tensor_algebra/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensonent/tensor_algebra/tests/test_kronecker.py,sha256=OZ49GQBS5kJv6P3UA7vzZe8DOwI8PU5De6Weu2XehzY,1424
+tensonent-0.1.0.dist-info/LICENSE,sha256=T8RU4d5mnxMIvLufQbk8oKdfiuybD2oJh6u5Dnizd_g,1066
+tensonent-0.1.0.dist-info/METADATA,sha256=IfCzXSRd7GlmP8SR9N12qhX8MRyu56eQmbFh9jiwRz4,2235
+tensonent-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tensonent-0.1.0.dist-info/top_level.txt,sha256=L7CxnBiOZNBOWj0t1q2mol2m-xqb7xn46p56odRlULI,10
+tensonent-0.1.0.dist-info/RECORD,,
