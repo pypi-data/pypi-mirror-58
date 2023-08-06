@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: athenapp
+Version: 0.0.1
+Summary: python extension for Athena/HARP
+Home-page: https://github.com/luminoctum/athena-harp
+Author: Cheng Li
+Author-email: cli@gps.caltech.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+## This folder contains wrapper functions for the python extension of Athena/HARP.
+## It uses Cython as the software to extend the existing C++ modules
+## To install cython, execute:
+## pip install Cython
+## More information can be found at http://docs.cython.org/
+
+
