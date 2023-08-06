@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: reqchecker
+Version: 0.2.1
+Summary: Compare python package requirements across packages.
+Home-page: https://github.com/robertson-mark/reqchecker
+Author: Mark Robertson
+Author-email: markrobertson@u.boisestate.edu
+License: UNKNOWN
+Keywords: reqchecker
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Requires-Dist: coloredlogs (==6.1)
+Requires-Dist: pygithub (==1.44.1)
+Requires-Dist: requests (==2.20.1)
+
+==========
+reqchecker
+==========
+
+Compare python package requirements across packages by reading the specified requirements files.
+
+
+Install
+--------
+Clone this repository::
+
+  $ git clone https://github.com/robertson-mark/reqchecker
+
+Install::
+
+  $ python setup.py install
+
+
+Usage
+--------
+reqchecker gathers requirements by using a ``.json`` file formatted as::
+
+    {
+      "default": {
+        "source": {"package": "path",
+                   "package": "path"}
+                },
+
+      "my-home": {
+        "source": {"package": "path",
+                   "package": "path"}
+                },
+
+      "my-github": {
+        "github": {"package": "branch",
+                   "package": "branch",
+                   "package": "branch"},
+        "credentials": "<path_to_credentials.json>"
+                }
+    }
+
+A ``default`` field is required, additional sections, in this case ``my-local`` and ``my-github`` can be added and called from the command line.
+
+- ``source`` can be 'local' or 'github'
+
+  | If 'local', must supply 'path' to repository
+  | If 'github', must also include 'credentials' and path to a credentials.json file
+
+The credentials.json file looks like::
+
+    {
+      "user": "github_user",
+      "token": "github_token"
+    }
+
+
+To use by calling the ``"defaults"`` section::
+
+  $ reqchecker
+
+To change the section to read from the saved settings in ``"my-home"``::
+
+  $ reqchecker --section my-home
+
+The user can also overwrite sections by including --packages and --locations with the ``my-home`` option, and --packages and --branches with the ``github`` option.
+
+To call using a different .json than is in this repository::
+
+  $ reqcheckert --file <file>
+
+
+=======
+History
+=======
+
+
+0.1.0 (2019-12-12)
+------------------
+
+0.2.0 (2019-12-16)
+------------------
+- Check local and GitHub sources for package versions in requirements.txt files
+- Basic .json formatting check
+
+- Include terminal output for mismatched package versions 
+
+

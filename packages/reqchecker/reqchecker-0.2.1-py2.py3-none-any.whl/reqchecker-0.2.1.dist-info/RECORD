@@ -1,0 +1,10 @@
+reqchecker/__init__.py,sha256=2RQILrCEIGbOh1ks6QlEo0BLXJ_XBxJi97K10_c5_T0,167
+reqchecker/checkers.py,sha256=oLmJ1lw9O2ydh_Wtm_whlZ2TkGxYUEnEIOC3HZbwyeM,6077
+reqchecker/cli.py,sha256=Z__RYBllzUZy1nmlF7kJcM01TbC6nlDIZuw2ZPlGh0g,3466
+reqchecker/reqchecker.py,sha256=uaBdXfNcbZAJDs9x_DJRsDHcGOCWcfnOd_XC-zy8Cng,5566
+reqchecker-0.2.1.dist-info/AUTHORS.rst,sha256=58gIUTYAOvGTEEEYZ5ANYuq2q3wbezS4pX9jTBKxcrw,170
+reqchecker-0.2.1.dist-info/METADATA,sha256=I39Fjhsxg2iVlKU8KbD3oz6RmOpu0ar7GBuHRm2hTuY,2757
+reqchecker-0.2.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+reqchecker-0.2.1.dist-info/entry_points.txt,sha256=nS33eEJbtfnyPqYn6P9fpbNB8bJEyXExKdStvR6zIqE,52
+reqchecker-0.2.1.dist-info/top_level.txt,sha256=VONMifkkICpscxY2yB8g4OKTm1RVMnmVyLr40C1ugmQ,11
+reqchecker-0.2.1.dist-info/RECORD,,
