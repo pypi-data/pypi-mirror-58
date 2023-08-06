@@ -1,0 +1,40 @@
+# SulfiLogger sensor
+Module for reading data from the SulfiLogger sensor
+
+## python requirements
+* Python 3.7 or newer
+
+## python code example
+### Data acquisition from sensor
+```python
+from pySulfiLoggerAPI.sensor import Sensor
+
+# locate sensor
+sensor = Sensor()
+comport = sensor.findCom()
+
+if(comport == None):
+    print('info','no sensor found.')
+else:
+    # data acquisition
+    sample = sensor.getData(comport)
+    print(['signal', 'unit', 'temperature', 'unit'])
+    print(sample)
+```
+### Data acquisition from webdata.sulfilogger.com
+```python
+from pySulfiLoggerAPI.webData import WebData
+
+# login
+webData = WebData(username ="username", password= "password")
+webData.login()
+# get sites
+sites = webData.getAvailableSites()
+print(sites)
+# get data from time interval
+data=webData.getDataFromPeriod(sites[0], '2019-09-25T00:00:00+02:00','2019-10-05T00:00:00+02:00', "mg/L", "1hr")
+print(data)
+```
+
+## more examples
+A python script for continuously logging and plotting data from the SulfiLogger sensor via the bokeh module is available upon request.
