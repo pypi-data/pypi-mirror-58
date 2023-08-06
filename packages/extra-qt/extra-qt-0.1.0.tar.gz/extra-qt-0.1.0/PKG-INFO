@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: extra-qt
+Version: 0.1.0
+Summary: React-like bindings for PyQt5 without JavaScript.
+Author: Conrad Stansbury
+Author-email: chstansbury@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyQt5 (>=5.14.1,<6.0.0)
