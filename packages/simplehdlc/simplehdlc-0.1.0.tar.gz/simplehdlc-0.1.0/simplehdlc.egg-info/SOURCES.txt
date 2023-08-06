@@ -1,0 +1,7 @@
+README.md
+setup.py
+simplehdlc/__init__.py
+simplehdlc.egg-info/PKG-INFO
+simplehdlc.egg-info/SOURCES.txt
+simplehdlc.egg-info/dependency_links.txt
+simplehdlc.egg-info/top_level.txt
