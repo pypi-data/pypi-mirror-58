@@ -1,0 +1,6 @@
+six
+click
+requests
+pygments
+configparser
+progress
