@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: opsas-pylib
+Version: 0.1.0
+Summary: operation should as a service
+Home-page: https://github.com/calmzhu/opsas-pylib
+Author: Calm Zhu
+Author-email: saint@justcalm.org
+License: UNKNOWN
+Description: # opsas-pylib
+        [![Build Status](https://github.com/calmzhu/opsas-pylib/workflows/build/badge.svg)](https://github.com/calmzhu/opsas-pylib/actions)
+        [![Documentation Status](https://readthedocs.org/projects/opsas-pylib/badge/?version=latest)](https://opsas-pylib.readthedocs.io/en/latest/)
+        
+        ## Install
+        ```
+            pip install opsas-pylib 
+        ```
+        
+        ## Concern:
+        
+        TBD
+        configer client to get config from providers such as db/yaml file.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
