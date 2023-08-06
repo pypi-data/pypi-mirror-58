@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: file-or-name
+Version: 0.0.0
+Summary: File Or Name
+Home-page: https://github.com/file-or-name/file-or-name
+Author: file-or-name
+Author-email: file-or-name@gmail.com
+License: MIT
+Download-URL: https://github.com/file-or-name/file-or-name/archive/0.0.0.tar.gz
+Description: # File Or Name
+        
+        <!-- [![PyPi Version](https://img.shields.io/pypi/v/file-or-name)](https://pypi.org/project/file-or-name/) -->
+        
+        <!-- [![Actions Status](https://github.com/blester125/file-or-name/workflows/Unit%20Test/badge.svg)](https://github.com/blester125/file-or-name/actions) -->
+        
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+        
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
