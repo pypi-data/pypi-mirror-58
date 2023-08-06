@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/__init__.py
+bin/main.py
+cfgrep/__init__.py
+cfgrep/cfgrep.py
+cfgrep.egg-info/PKG-INFO
+cfgrep.egg-info/SOURCES.txt
+cfgrep.egg-info/dependency_links.txt
+cfgrep.egg-info/entry_points.txt
+cfgrep.egg-info/requires.txt
+cfgrep.egg-info/top_level.txt
