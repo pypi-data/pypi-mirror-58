@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pipelinewise-tap-kafka
+Version: 2.0.0
+Summary: Singer.io tap for extracting data from Kafka topic - PipelineWise compatible
+Home-page: https://singer.io
+Author: Stitch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: test
