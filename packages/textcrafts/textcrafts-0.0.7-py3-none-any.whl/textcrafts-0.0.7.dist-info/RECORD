@@ -1,0 +1,12 @@
+textcrafts/__init__.py,sha256=YLYNFPfdyf7_i1SHoYBPYx2q6i55xSH0Qd0BzSVHX58,107
+textcrafts/corenlp_api.py,sha256=O0wtgj7cohUtWf2NCEeLxGFMczgVEEZYvYqaItQfj6w,1960
+textcrafts/deepRank.py,sha256=1XeHWewmirk-wJFvTbS_Tr-LXbfzgGGCEedssVPM7KE,24453
+textcrafts/down.py,sha256=GEG_Tt9abop0BhKGlA95xUdcmZP7heVXCbnqNTASMcE,572
+textcrafts/parser_api.py,sha256=MyKwWFTX88ROqnkN_Bj1PUjKUV8crVscAUaCusOxyd0,604
+textcrafts/sim.py,sha256=InnKiry9d1opNahoy7QJmEU-UwqNgL7UPdRVz7N_AiI,2762
+textcrafts/stanfordnlp_api.py,sha256=K7tFh6y4OGxcM1fHPE5YDzrd_ZTxU8b6aTYUTGN9feo,3069
+textcrafts-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+textcrafts-0.0.7.dist-info/METADATA,sha256=DiIM7S5Tk7aaJ38FL4CohjChX1MJ7lgbhxyhNGoNJTE,2927
+textcrafts-0.0.7.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+textcrafts-0.0.7.dist-info/top_level.txt,sha256=CszPo0027qjIX2VdRG6qiA0qrXNjTpgDT6S21fFQnAQ,11
+textcrafts-0.0.7.dist-info/RECORD,,
