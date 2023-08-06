@@ -1,0 +1,5 @@
+six
+Django<3.1,>=1.8
+tablib
+Babel==2.3.4
+django-modeltranslation
