@@ -1,0 +1,3 @@
+[console_scripts]
+msql_sp = mysql_sp.cli:main
+
