@@ -1,0 +1,3 @@
+[console_scripts]
+variable-updater=variable_updater.__main__:main
+
