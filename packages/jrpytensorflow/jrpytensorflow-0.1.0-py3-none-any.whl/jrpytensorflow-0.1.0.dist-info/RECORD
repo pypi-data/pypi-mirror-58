@@ -1,0 +1,9 @@
+jrpytensorflow/__init__.py,sha256=waXtT-TYX_AduZ9mQtJmJXh-kamyrgC1RRXvdx2WSn4,70
+jrpytensorflow/datasets/__init__.py,sha256=Ru2sqfVG0WiLVJovgnZcvr0NkJXhBR7IB4aydn7UNZM,345
+jrpytensorflow/datasets/data/movies.zip,sha256=qivayc0CcavExRtCYDR553KIHA0vp7L2mrtRcu1hGfU,1355247
+jrpytensorflow/vignettes/practical1.pdf,sha256=jYOHWWTDsYe3o3Bj9uVQRhxTCpaorIHNOwqgL9ueB_k,25490
+jrpytensorflow/vignettes/solutions1.pdf,sha256=vJIx0B6ktkUWaErIXjdyn1iI-_QCOYXHa91lJOcVxFg,28985
+jrpytensorflow/vignettes.py,sha256=gnU3hT5XkaSrhkjpr0ljr5lTJ0XygO0f_X_C32Jb9uE,1091
+jrpytensorflow-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+jrpytensorflow-0.1.0.dist-info/METADATA,sha256=Y_7Bs8U4j4HCJxkNhUNeVJwsyD1elQkbD9KdwlULpNQ,408
+jrpytensorflow-0.1.0.dist-info/RECORD,,
