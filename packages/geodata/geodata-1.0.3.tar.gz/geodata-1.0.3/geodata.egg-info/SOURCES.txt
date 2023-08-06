@@ -1,0 +1,7 @@
+README.md
+setup.py
+geodata.egg-info/PKG-INFO
+geodata.egg-info/SOURCES.txt
+geodata.egg-info/dependency_links.txt
+geodata.egg-info/requires.txt
+geodata.egg-info/top_level.txt
