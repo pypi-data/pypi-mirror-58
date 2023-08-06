@@ -1,0 +1,8 @@
+README.md
+setup.py
+simpleinject/__init__.py
+simpleinject/service_provider.py
+simpleinject.egg-info/PKG-INFO
+simpleinject.egg-info/SOURCES.txt
+simpleinject.egg-info/dependency_links.txt
+simpleinject.egg-info/top_level.txt
