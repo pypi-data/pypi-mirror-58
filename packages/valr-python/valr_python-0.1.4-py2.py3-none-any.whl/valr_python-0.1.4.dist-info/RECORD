@@ -1,0 +1,11 @@
+valr_python/__init__.py,sha256=xVjGxieZXn1Ws_wbfB-_Y0kzy5u8H74K5veiw4LYH3I,72
+valr_python/base_client.py,sha256=UftjyFnFM75kEE6EnwRfxuDoizKBZS04oqT8hrXW29E,34734
+valr_python/client.py,sha256=DQoB7P67umDKyxoy7aKSQ_GzFQPHIoxtzGo0jnjgY1I,3052
+valr_python/decorator.py,sha256=3G801sTR6rhje8fTNW2L0zCb2u1C086GWOgSoCCFUv8,1166
+valr_python/exceptions.py,sha256=69NpN85yCFdHYW_t4sFILl1TlnLIi5IGDeO3z_vbFCc,378
+valr_python-0.1.4.dist-info/AUTHORS.rst,sha256=b0XGD-OBZpOSfNPcwhX3b-zTyScywcR8dgsQBXfENKQ,60
+valr_python-0.1.4.dist-info/LICENSE,sha256=zORfpIEFkTqoni_-LyrdZy28Jk_tDvYwwlkcXuKUvL0,1100
+valr_python-0.1.4.dist-info/METADATA,sha256=rd1q5QCj1MxO2B1q6nWussDUqehunOJgS31neiLzyUE,3307
+valr_python-0.1.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+valr_python-0.1.4.dist-info/top_level.txt,sha256=xw4IAPQxcHoP5WHn5qEaQvGqKYVvFI6SRJGm1IM5wJg,12
+valr_python-0.1.4.dist-info/RECORD,,
