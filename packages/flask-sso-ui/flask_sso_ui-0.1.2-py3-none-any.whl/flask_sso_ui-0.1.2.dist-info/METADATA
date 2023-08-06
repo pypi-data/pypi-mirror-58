@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: flask-sso-ui
+Version: 0.1.2
+Summary: A simple SSO UI CAS wrapper for Flask
+Home-page: https://github.com/DhanarSantika/flask-sso-ui
+Author: Made Wira Dhanar Santika
+Author-email: dhanar.santika@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: python-cas
+Requires-Dist: flask
+Requires-Dist: requests
+
+# flask-sso-ui
+
+Library python yang disediakan untuk aplikasi berbasis Flask
+menggunakan SSO Universitas Indonesia.
+
+## Instalasi
+
+`pip install flask-sso-ui`
+
