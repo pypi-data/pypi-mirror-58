@@ -1,0 +1,3 @@
+lxml
+spyder>=3
+pyzmq
