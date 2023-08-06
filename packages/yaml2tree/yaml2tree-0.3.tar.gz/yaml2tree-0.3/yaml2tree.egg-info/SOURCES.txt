@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+yaml2tree/__init__.py
+yaml2tree/usage.md
+yaml2tree/yaml2tree.py
+yaml2tree.egg-info/PKG-INFO
+yaml2tree.egg-info/SOURCES.txt
+yaml2tree.egg-info/dependency_links.txt
+yaml2tree.egg-info/entry_points.txt
+yaml2tree.egg-info/not-zip-safe
+yaml2tree.egg-info/requires.txt
+yaml2tree.egg-info/top_level.txt
