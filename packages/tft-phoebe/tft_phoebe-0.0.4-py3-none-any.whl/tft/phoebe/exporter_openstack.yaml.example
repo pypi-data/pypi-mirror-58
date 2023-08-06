@@ -1,0 +1,17 @@
+client:
+  os_auth_url: https://my-openstack
+  os_identity_api_version: 3
+  os_user_domain_name: company
+  os_project_domain_name: company
+  os_project_name: my-project
+  os_username: my-username
+  os_password: my-password
+
+metrics:
+  - name: openstack_memory_bytes
+    help: Openstack RAM usage
+    labels:
+      - type: 'used'
+        os-property: 'totalRAMUsed'
+      - type: 'total'
+        os-property: 'maxTotalRAMSize'
