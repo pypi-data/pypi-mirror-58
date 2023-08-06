@@ -1,0 +1,133 @@
+/* basic styles {{{1 */
+.container {
+    padding-bottom: 3cm;
+}
+
+h2, h3, h4, h5, h6 {
+    padding-left: 1mm;
+    margin-right: 2mm;
+}
+
+/* title border lines {{{1 */
+h2::after, h3::after, h4::after, h5::after, h6::after {
+    content: "";
+    display: block;
+    clear: both;
+    border-top: 1pt solid #000;
+}
+
+h2::after {width: 100%;}
+h3::after {width: 90%;}
+h4::after {width: 80%;}
+h5::after {width: 70%;}
+h6::after {width: 60%;}
+
+
+/* dl table styles {{{1 */
+table.dl-table {
+    width: 100%;
+}
+
+.table2-8 th:nth-child(2n+1) {width: 20%;}
+.table2-8 th:nth-child(2n+2) {width: 80%;}
+.table3-7 th:nth-child(2n+1) {width: 30%;}
+.table3-7 th:nth-child(2n+2) {width: 70%;}
+.table4-6 th:nth-child(2n+1) {width: 40%;}
+.table4-6 th:nth-child(2n+2) {width: 60%;}
+.table5-5 th {width: 50%;}
+.table2-2-6 th {width: 20%;}
+.table2-2-6 th:nth-child(3n+3) {width: 60%;}
+.table2-3-5 th:nth-child(3n+1) {width: 20%;}
+.table2-3-5 th:nth-child(3n+2) {width: 30%;}
+.table2-3-5 th:nth-child(3n+3) {width: 50%;}
+.table2-4-4 th:nth-child(3n+1) {width: 20%;}
+.table2-4-4 th {width: 40%;}
+.table2-5-3 th:nth-child(3n+1) {width: 20%;}
+.table2-5-3 th:nth-child(3n+2) {width: 50%;}
+.table2-5-3 th:nth-child(3n+3) {width: 30%;}
+.table2-6-2 th {width: 20%;}
+.table2-6-2 th:nth-child(3n+2) {width: 60%;}
+.table3-3-3 th {width: 33.3%;}
+.table2-2-2-4 th {width: 20%;}
+.table2-2-2-4 th:nth-child(4n+4) {width: 40%;}
+
+
+
+/* dl table 3stamps {{{1 */
+table.table-3stamps {
+    margin: -2.3mm 0 0 -2.3mm;
+    width: 170.2mm;
+
+}
+
+.table-3stamps th:first-child {
+    min-width: 106mm;
+    font-size: 24pt;
+}
+
+.table-3stamps th:first-child div {
+    font-size: 8pt;
+}
+
+.table-3stamps th div {
+    text-align: left;
+}
+
+.table-3stamps th {
+    background: #FFF;
+    min-height: 20mm;
+    min-width: 20mm;
+    text-align: center;
+    /* text-align-last: center; not valid for web-kit */
+    vertical-align: top;
+    font-size: 8pt;
+}
+
+
+/* code blocks {{{1 */
+pre.bash {
+    border: outset 2px #AAA;
+    padding: 3mm;
+}
+
+pre.markdown {
+    border: inset 2px #AAA;
+    padding: 3mm;
+}
+
+pre.css {
+    border: inset 2px #AAA;
+    padding: 3mm;
+}
+
+/* auto-numbered images or tables {{{1 */
+body {
+    counter-reset: num_figure num_table;
+}
+
+img + em, svg + em {
+    display: block;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    counter-increment: num_figure;
+}
+img + em::before, svg + em::before {
+    content: "Fig." counter(num_figure) " ";
+}
+
+table + p > em, em.table-tag {
+    display: block;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    counter-increment: num_table;
+}
+table + p > em::before, .table-tag::before {
+    content: "Table." counter(num_table) " ";
+}
+
+
+/* end of file {{{1 */
+/* vi: ft=css:fdm=marker
+ */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {%- block site_meta %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if page and page.is_homepage %}<meta name="description" content="{{ config['site_description'] }}">{% endif %}
+        {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+        {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+        {% if config.site_favicon %}<link rel="shortcut icon" href="{{ config.site_favicon|url }}">
+        {% else %}<link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">{% endif %}
+      {%- endblock %}
+
+      {%- block htmltitle %}
+        <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+      {%- endblock %}
+
+    <script src="{{ 'topdf.js'|url }}" defer></script>
+
+    {%- block styles %}
+      <link href="{{ 'topdf.css'|url }}" rel="stylesheet">
+      {% if config.topdf_simple %}{% else %}
+      <link href="{{ 'topdf_extra.css'|url }}" rel="stylesheet">
+      {% endif %}
+
+        {%- for path in config['extra_css'] %}
+        <link href="{{ path|url }}" rel="stylesheet">
+        {%- endfor %}
+    {%- endblock %}
+
+      {%- block extrahead %} {% endblock %}
+  </head>
+
+  <body{% if page and page.is_homepage %} class="homepage"{% endif %}>
+
+        <div class="container">
+            {%- block content %}
+                {{ page.content }}
+            {%- endblock %}
+        </div>
+
+      {%- block scripts %}
+        {%- for path in config['extra_javascript'] %}
+        <script src="{{ path|url }}" defer></script>
+        {%- endfor %}
+      {%- endblock %}
+    </body>
+</html>
+{% if page and page.is_homepage %}
+<!--
+MkDocs version : {{ mkdocs_version }}
+Build Date UTC : {{ build_date_utc }}
+-->
+{% endif %}

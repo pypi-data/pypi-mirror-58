@@ -1,0 +1,3 @@
+[mkdocs.themes]
+topdf = topdf
+
