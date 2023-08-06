@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: PyFiFinder
+Version: 0.0.2
+Summary: this is a tool to search for archives by passing their specifc formats
+Home-page: https://github.com/m4rkito/PyFiFinder
+Author: M4rk(Marcelo almeida)
+Author-email: marcelorap345@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyFiFinder
+
+<p>PyFinder is a basic tool to search for archives passing their formats</p>
+
+## How to use?
+
+create PyFiFinder object by passing path to directorie and passing one list that containg all formats to search
+
+```python
+from pyfinder import PyFiFinder
+
+finder = PyFiFinder('path/to/search', ['mp3', 'mp4', 'mkv'])
+print(finder.data)
+```
+
+Author: M4rk
+License: MIT
+
+
