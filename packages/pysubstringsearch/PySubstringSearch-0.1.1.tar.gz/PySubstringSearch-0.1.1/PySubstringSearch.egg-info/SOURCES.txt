@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+PySubstringSearch.egg-info/PKG-INFO
+PySubstringSearch.egg-info/SOURCES.txt
+PySubstringSearch.egg-info/dependency_links.txt
+PySubstringSearch.egg-info/not-zip-safe
+PySubstringSearch.egg-info/requires.txt
+PySubstringSearch.egg-info/top_level.txt
+images/logo.png
+src/msufsort.hpp
+src/pysubstringsearch.cpp
+tests/__init__.py
+tests/test_pysubstringsearch.py
