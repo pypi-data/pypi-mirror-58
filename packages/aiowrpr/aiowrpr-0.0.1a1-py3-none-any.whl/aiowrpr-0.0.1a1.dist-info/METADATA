@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: aiowrpr
+Version: 0.0.1a1
+Summary: UNKNOWN
+Home-page: https://github.com/ishirshov/aiowrpr
+Author: Ildar Shirshov
+Author-email: ildar.shirshov@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/ishirshov/aiowrpr
+Requires-Dist: aiodns (==2.0.0)
+Requires-Dist: aiohttp[speedups] (==3.6.2)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: brotlipy (==0.7.0)
+Requires-Dist: cchardet (==2.1.5)
+Requires-Dist: cffi (==1.13.2)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: marshmallow (==3.3.0)
+Requires-Dist: multidict (==4.7.1)
+Requires-Dist: pycares (==3.1.0)
+Requires-Dist: pycparser (==2.19)
+Requires-Dist: ujson (==1.35)
+Requires-Dist: webargs (==5.5.2)
+Requires-Dist: yarl (==1.4.2)
+
+# aiowrpr
+
+

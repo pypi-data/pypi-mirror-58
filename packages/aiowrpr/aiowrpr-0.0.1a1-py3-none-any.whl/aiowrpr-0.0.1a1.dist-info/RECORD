@@ -1,0 +1,10 @@
+aiowrpr/__init__.py,sha256=m11yHs6_HDicr04iQagWvtAon7pOAn7gdVD1tO9Yrzg,822
+aiowrpr/adaptor.py,sha256=uqxkKplttV022YeawcjwxbgkB2GjLSkm7DL6WlvSHhA,3743
+aiowrpr/generators.py,sha256=sf-v56k6I-IbZkXBK4rBsCj3tF0BiHmDVR5WjMrn9VA,1093
+aiowrpr/routes.py,sha256=iNRQZ-6a9fjm2Au9h7sh7N1xlcYPaZbYnniu5DlcXb4,5787
+aiowrpr-0.0.1a1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+aiowrpr-0.0.1a1.dist-info/METADATA,sha256=Z18RPHT9FGjrKy41FExdiGGRs4fd4bRQmfI6ENw3USg,802
+aiowrpr-0.0.1a1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+aiowrpr-0.0.1a1.dist-info/entry_points.txt,sha256=vB7VGfjLqcWrbNcrtah1pwM3UyReq4uveb-sawd0-l0,76
+aiowrpr-0.0.1a1.dist-info/top_level.txt,sha256=d5_6JWdu30ZlH1X86CSvX_iRcjoDwM1FOrXehh7dP40,8
+aiowrpr-0.0.1a1.dist-info/RECORD,,
