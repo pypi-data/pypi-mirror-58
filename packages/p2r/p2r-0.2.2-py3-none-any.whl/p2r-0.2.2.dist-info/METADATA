@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: p2r
+Version: 0.2.2
+Summary: PostmanScript to RequestsScript
+Home-page: https://github.com/tser/p2r
+Author: Tser
+Author-email: 807447312@qq.com
+License: UNKNOWN
+Keywords: xiaobai p2r postman requests
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+## P2R工具是帮助将PostMan脚本转换成Python-Requests代码
+
+### 安装
+
+    pip install p2r
+
+- 查看帮助文档
+
+    `p2r -h`
+
+- 参数注解 -f PostManScript脚本文件
+
+    `p2r -f postmanScript.json`
+
+更新0.2.2
+
+    统一化请求方式
+
