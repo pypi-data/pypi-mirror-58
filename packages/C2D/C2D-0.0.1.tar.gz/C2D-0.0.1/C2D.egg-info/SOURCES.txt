@@ -1,0 +1,8 @@
+README.md
+setup.py
+C2D/C2D.py
+C2D/__init__.py
+C2D.egg-info/PKG-INFO
+C2D.egg-info/SOURCES.txt
+C2D.egg-info/dependency_links.txt
+C2D.egg-info/top_level.txt
