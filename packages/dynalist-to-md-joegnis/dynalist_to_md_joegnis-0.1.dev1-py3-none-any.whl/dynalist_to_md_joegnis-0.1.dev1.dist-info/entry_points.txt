@@ -1,0 +1,3 @@
+[console_scripts]
+dynalist_to_md = dynalist_to_md.__main__:main
+
