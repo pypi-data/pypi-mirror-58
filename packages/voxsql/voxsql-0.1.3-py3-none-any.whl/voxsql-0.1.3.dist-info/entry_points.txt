@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        voxsql=voxsql.cli:voxsql_cli
+    
