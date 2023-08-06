@@ -1,0 +1,3 @@
+[console_scripts]
+pyupgrade-directory = pyupgrade_directory:main
+

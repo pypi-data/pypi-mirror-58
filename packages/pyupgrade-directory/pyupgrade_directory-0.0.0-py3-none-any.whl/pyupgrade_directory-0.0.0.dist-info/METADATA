@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyupgrade-directory
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/asottile/pyupgrade
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: pyupgrade
+
+UNKNOWN
+
+
