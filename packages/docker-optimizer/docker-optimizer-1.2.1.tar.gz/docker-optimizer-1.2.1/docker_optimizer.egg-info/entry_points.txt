@@ -1,0 +1,3 @@
+[console_scripts]
+docker-optimizer = docker_optimizer.mainapp:main
+

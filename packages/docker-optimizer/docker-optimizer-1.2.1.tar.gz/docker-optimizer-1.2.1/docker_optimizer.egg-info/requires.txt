@@ -1,0 +1,2 @@
+dockerfile==2.2.0
+Click==7.0
