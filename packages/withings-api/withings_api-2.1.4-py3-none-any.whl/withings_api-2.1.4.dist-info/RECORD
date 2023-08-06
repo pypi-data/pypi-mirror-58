@@ -1,0 +1,7 @@
+withings_api/__init__.py,sha256=OdI9urlSp1oIEY4KfTxBfHLWoxaCAxRlYojVe2EUZoo,14700
+withings_api/common.py,sha256=6LFpYStio6VxVT93c9HjoA9Yq0YC1k1Dk4SM68-Rdbw,25095
+withings_api/const.py,sha256=9RJd-Ge2oGnJjRggNQ6EnndreINP757q7J560diSINw,2413
+withings_api-2.1.4.dist-info/LICENSE,sha256=Pjq7tlBnUOeH5ogpXgBYIaFJd5x6CcbQW19VsGf938c,1162
+withings_api-2.1.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+withings_api-2.1.4.dist-info/METADATA,sha256=7B8sy-OW3BugiCpnnlKdQBoXJqezAW5qeln67dUjVAY,3636
+withings_api-2.1.4.dist-info/RECORD,,
