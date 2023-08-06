@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: manganelo
+Version: 0.1
+Summary: Web scrapper package for the Manganelo website.
+Home-page: https://github.com/nixonjoshua98/manganelo-api
+Author: Joshua Nion
+Author-email: nixonjoshua98@gmail.com
+License: MIT
+Download-URL: https://github.com/nixonjoshua98/manganelo-api/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: manga,manganelo,scrapper,web
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
