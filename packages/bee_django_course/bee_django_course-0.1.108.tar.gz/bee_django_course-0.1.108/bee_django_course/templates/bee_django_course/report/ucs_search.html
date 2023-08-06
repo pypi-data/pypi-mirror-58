@@ -1,0 +1,42 @@
+<div>
+    <form method="get">
+        {{ search_form }}
+        <input type="hidden" name="export" id="export">
+
+        <button class="" onclick="click_search()">查询</button>
+        <button class="" onclick="click_export()">导出</button>
+
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#id_course').select2(
+            {
+                placeholder: '输入课程名字筛选',
+                allowClear: true
+            }
+        );
+        $('#id_section').select2(
+            {
+                placeholder: '输入课件名字筛选',
+                allowClear: true
+            }
+        );
+    });
+
+    function click_search() {
+        var $form = $("form");
+        var $export = $("#export");
+        $export.attr("value", "");
+        $form.submit()
+
+    }
+
+    function click_export() {
+        var $form = $("form");
+        var $export = $("#export");
+        $export.attr("value", "1");
+        $form.submit()
+
+    }
+</script>
