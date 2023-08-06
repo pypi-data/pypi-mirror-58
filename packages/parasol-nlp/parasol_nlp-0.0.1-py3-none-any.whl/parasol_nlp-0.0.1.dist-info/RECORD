@@ -1,0 +1,15 @@
+parasol/__init__.py,sha256=ijhpa1uTJp5dAvhhYhpfHhwK0Afp1lMSkJE3rqOcRuA,32
+parasol/compose.py,sha256=AaxCTetyqllOvCXZbarVkGXp51fgBrT0ujJM5CaNRqs,3554
+parasol/tokenize.py,sha256=nSVSoWiWSpQCBUDXV5KdifNN7YOq9fi8JZoRckBgsFU,1390
+parasol/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parasol/resources/composed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parasol/resources/composed/bpe.model,sha256=9pRhwrJMsEwnInsM5T1kbjdprYYBYl0_EQ59HdApfVs,757087
+parasol/resources/composed/bpe.vocab,sha256=cazcIsZ8jCN2_BpFd2N43U5GzNcP7lwMj0KaZZu3Bpw,478250
+parasol/resources/decomposed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parasol/resources/decomposed/bpe.model,sha256=SZWFW4q-w5S554xu22ThPmO1Kk3hD0KY9SBaP1xLpms,1093385
+parasol/resources/decomposed/bpe.vocab,sha256=8b_1y5GfuEtO6ZUV1GZ0d_l5NRE9T2ImxwLjkmMCjX0,815865
+parasol_nlp-0.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+parasol_nlp-0.0.1.dist-info/METADATA,sha256=nf58oEbJx7shmoNzNJ1R8WA-ongV3e-0byXJ2D486RM,1801
+parasol_nlp-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+parasol_nlp-0.0.1.dist-info/top_level.txt,sha256=MDxM6sJDCSEh3ueLcU6R-25JRvSkfRU0HPX9QqjpxPg,8
+parasol_nlp-0.0.1.dist-info/RECORD,,
