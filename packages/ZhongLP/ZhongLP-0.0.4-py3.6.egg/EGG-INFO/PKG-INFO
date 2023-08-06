@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ZhongLP
+Version: 0.0.4
+Summary: A Zhongwen (Chinese) Language Processing Package.
+Home-page: https://github.com/Li-Ming-Fan/ZhongLP
+Author: Ming-Fan Li
+Author-email: li_m_f@163.com
+Maintainer: Ming-Fan Li
+Maintainer-email: li_m_f@163.com
+License: UNKNOWN
+Description: # ZhongLP
+        
+        A Zhongwen (Chinese) Language Processing Package.
+        
+        
+        ## Description
+        
+        ```
+        from ZhongLP.converter import Converter
+        from ZhongLP.segmenter import Segmenter
+        from ZhongLP import utils_zh
+        
+        ```
+        
+        
+        ## Installation
+        
+        From PyPI distribution system:
+        
+        ```
+        pip install ZhongLP
+        ```
+        
+        
+        Or from the code:
+        
+        ```
+        git clone https://github.com/Li-Ming-Fan/ZhongLP
+        cd ZhongLP
+        make clean install
+        ```
+        
+        
+        Or just incorporate the directory ZhongLP/ to your project.
+        
+        
+        
+        ## Usage
+        
+        For usage of this package, please refer to the demo, or the repositories:
+        
+        TODO
+        
+        
+        </br>
+        
+        
+        
+Platform: any
+Description-Content-Type: text/markdown
