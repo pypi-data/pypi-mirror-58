@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    bnrml_usaddress=bnrml_usaddress.cli:cli
+    

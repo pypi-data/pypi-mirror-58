@@ -1,0 +1,4 @@
+bnrml<0.1,>=0.0.1
+CaseInsensitiveDict<2,>=1.0.0
+click<8,>=7.0
+usaddress<0.6,>=0.5.10
