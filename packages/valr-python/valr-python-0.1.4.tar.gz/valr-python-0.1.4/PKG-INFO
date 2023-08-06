@@ -1,0 +1,148 @@
+Metadata-Version: 1.2
+Name: valr-python
+Version: 0.1.4
+Summary: Python SDK for the VALR REST API
+Home-page: https://github.com/jonathanelscpt/valr-python
+Author: Jonathan Els
+Author-email: jonathanelscpt@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/jonathanelscpt/valr-python/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/jonathanelscpt/valr-python/issues
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        Python SDK for the VALR REST API
+        
+        * Free software: MIT license
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install valr-python
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/jonathanelscpt/valr-python/archive/master.zip
+        
+        
+        
+        Authentication
+        ==============
+        
+        Authenticating to the VALR API requires a valid API Key from the `VALR exchange <https://www.valr.com/>`_.
+        
+        
+        Documentation
+        =============
+        
+        
+        To use the project:
+        
+        .. code-block:: python
+        
+            from valr_python import Client
+        
+            c = Client(api_key='api_key', api_secret='api_secret')
+            try:
+                res = c.get_market_summary()
+                print(res)
+            except Exception as e:
+                print(e)
+        
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Donate
+        ======
+        
+        If this library has helped you, or if you would like to support future development, donations are most welcome:
+        
+        ==============  ==========================================
+        Cryptocurrency  Address
+        ==============  ==========================================
+         **BTC**        38c7QWggrB2HLUJZFmhAC2zh4t8C57c1ec
+         **ETH**        0x01eD3b58a07c6d005281Db76e6c1AE2bfF2226AD
+        ==============  ==========================================
+        
+        
+        Changelog
+        =========
+        
+        0.0.0 (2019-12-27)
+        ------------------
+        
+        * Alpha-only. Not released on PyPI.
+        
+        0.1.0 (2019-12-29)
+        ------------------
+        
+        * Initial PyPi release
+        
+        0.1.1 (2019-12-31)
+        ------------------
+        
+        * corrected build error issue in setup.py
+        
+        0.1.2 (2019-12-31)
+        ------------------
+        
+        * Updated readme and documentation
+        
+        0.1.3 (2020-01-02)
+        ------------------
+        
+        * Fixed defect with empty body signed signatures
+        * Updated class importing
+        * Added additional docstrings and unit tests
+        
+        0.1.4 (2020-01-04)
+        ------------------
+        
+        * Streamlined ordering api calls with decorators
+        * Added typing support
+        * Re-worked class design internals to support later async expansion
+        * Fixed bugs with str 'None' insertion with f-strings
+        * Expanded unit tests to cover all api endpoints for synchronous client
+        
+Keywords: VALR,REST,API,Bitcoin,Ethereum
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
