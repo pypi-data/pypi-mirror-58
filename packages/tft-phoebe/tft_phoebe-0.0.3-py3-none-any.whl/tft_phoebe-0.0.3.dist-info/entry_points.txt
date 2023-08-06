@@ -1,0 +1,4 @@
+[console_scripts]
+phoebe-jenkins=tft.phoebe.exporter_jenkins:main
+phoebe-openstack=tft.phoebe.exporter_openstack:main
+
