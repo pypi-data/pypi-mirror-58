@@ -1,0 +1,59 @@
+---
+codecov:
+  #
+  # TODO: Place your codecov.io *BADGE* token here for private repositories
+  badge_token: CODECOV_BADGE_TOKEN
+
+codacy:
+  #
+  # TODO: Place your CODACY Project Id here.
+  #       This is used for displaying your badge in public and private repos
+  project_id: d0799708f30942368739c3c54d4f2b92
+
+cookiecutter:
+  #
+  # TODO: Please pick one, e.g. command_line_interface: Click
+  command_line_interface: Click
+  #
+  # TODO: Please pick one, e.g. open_source_license: MIT
+  open_source_license: MIT
+
+  #
+  # These were guess based on the repository information
+  # You probably want to customize them.
+  project_namespace: "zeroae"
+  project_slug: "cli"
+  project_name: "zeroae's cli"
+
+  #
+  # These are likely correct...
+  anaconda_organization: "zeroae"
+
+  #
+  # These should not be changed at the moment...
+  noarch_python: y
+  use_pytest: y
+  add_pyup_badge: y
+  version: 0.0.0
+
+  #
+  # These should probably be left alone. They came from github
+  full_name: "Patrick Sodré"
+  email: "psodre@gmail.com"
+  github_username: "sodre"
+  github_organization: "zeroae"
+  project_repo: "zeroae-cli"
+  project_short_description: "ZeroAE's CLI"
+
+#
+# These were picked up during Initial Commit...
+github:
+  author:
+    email: psodre@gmail.com
+    name: Patrick Sodré
+    username: sodre
+  repository:
+    name: zeroae-cli
+    full_name: zeroae/zeroae-cli
+    description: ZeroAE's CLI
+    private: false
