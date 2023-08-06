@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hackeeg
+Version: 0.1.5
+Summary: Python client library for HackEEG Arduino Due shield
+Home-page: http://github.com/starcat-io/hackeeg-client-python
+Author: Starcat LLC
+Author-email: adam@starcat.io
+License: Apache 2.0
+Description: 
+        # hackeeg-client-python
+        Python client software for [HackEEG TI ADS1299 Arduino shield](https://github.com/starcat-io/hackeeg-shield)
+        
+        This software allows you to connect to a HackEEG system, configure it, and stream data to Python programs
+        or over the Internet via [Lab Streaming Layer](https://github.com/sccn/labstreaminglayer).
+        
+        See more documentation at [HackEEG on Read The Docs](https://hackeeg-client-python.readthedocs.io/en/latest/).
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
