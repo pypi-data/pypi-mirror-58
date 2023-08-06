@@ -1,0 +1,7 @@
+setup.py
+section/Section.py
+section/__init__.py
+section.egg-info/PKG-INFO
+section.egg-info/SOURCES.txt
+section.egg-info/dependency_links.txt
+section.egg-info/top_level.txt
