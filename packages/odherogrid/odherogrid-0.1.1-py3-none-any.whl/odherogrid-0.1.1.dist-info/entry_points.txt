@@ -1,0 +1,3 @@
+[console_scripts]
+odhg=odherogrid.scripts.cli:run
+
