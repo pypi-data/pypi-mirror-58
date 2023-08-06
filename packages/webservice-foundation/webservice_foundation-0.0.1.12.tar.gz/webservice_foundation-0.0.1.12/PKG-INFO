@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: webservice_foundation
+Version: 0.0.1.12
+Summary: webservice 基盤
+Home-page: https://gitlab.com/python-utils1/webservice_foundation.git
+Author: nozomi.nishinohara
+Author-email: nozomi.nishinohara@n-creativesystem.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
