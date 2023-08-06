@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+meteomoris.egg-info/PKG-INFO
+meteomoris.egg-info/SOURCES.txt
+meteomoris.egg-info/dependency_links.txt
+meteomoris.egg-info/requires.txt
+meteomoris.egg-info/top_level.txt
