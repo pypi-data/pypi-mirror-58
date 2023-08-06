@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pythonplug
+Version: 0.1.2
+Summary: An ASGI web framework
+License: MIT
+Author: Shen Li
+Author-email: dustet@gmail.com
+Requires-Python: >=3.6,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Werkzeug (>=0.15.4)
+Requires-Dist: multidict (>=4.5)
+Description-Content-Type: text/markdown
+
+# PythonPlug
+
+[![Github Actions](https://github.com/ericls/PythonPlug/workflows/Build/badge.svg)](https://github.com/ericls/PythonPlug/actions)
+[![Code Coverage](https://codecov.io/gh/ericls/PythonPlug/branch/master/graph/badge.svg)](https://codecov.io/gh/ericls/PythonPlug)
+[![Python Version](https://img.shields.io/pypi/pyversions/PythonPlug.svg)](https://pypi.org/project/PythonPlug/)
+[![PyPI Package](https://img.shields.io/pypi/v/PythonPlug.svg)](https://pypi.org/project/PythonPlug/)
+[![License](https://img.shields.io/pypi/l/PythonPlug.svg)](https://github.com/ericls/PythonPlug/blob/master/LICENSE.md)
+
+
+ASGI web framework inspired by Elixir's [Plug](https://github.com/elixir-plug/plug)
+
