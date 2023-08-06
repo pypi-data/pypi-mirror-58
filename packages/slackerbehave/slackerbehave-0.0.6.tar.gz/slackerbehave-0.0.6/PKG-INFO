@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: slackerbehave
+Version: 0.0.6
+Summary: A slack report generator for behave using the behave hooks
+Home-page: https://github.com/raghavendranekkanti/slacker-behave
+Author: raghavendranekkanti
+Author-email: raghavendra.nekkanti@inmar.com
+License: MIT
+Download-URL: https://github.com/raghavendranekkanti/slacker-behave/archive/0.0.6.tar.gz
+Description: UNKNOWN
+Keywords: slack-webhook,behave-reports,reports,behave,slack
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
