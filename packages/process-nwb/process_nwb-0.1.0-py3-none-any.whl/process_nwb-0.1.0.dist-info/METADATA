@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: process-nwb
+Version: 0.1.0
+Summary: ECoG preprocessing scripts for NWB files.
+Home-page: UNKNOWN
+Author: Jesse Livezey
+Author-email: jesse.livezey@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# process_nwb
+
+[![Build Status](https://travis-ci.com/BouchardLab/process_nwb.svg?branch=master)](https://travis-ci.com/BouchardLab/process_nwb) [![codecov](https://codecov.io/gh/BouchardLab/process_nwb/branch/master/graph/badge.svg)](https://codecov.io/gh/BouchardLab/process_nwb)
+
+
+
+Functions for preprocessing (ECoG) data stored in the NWB format
+
+
