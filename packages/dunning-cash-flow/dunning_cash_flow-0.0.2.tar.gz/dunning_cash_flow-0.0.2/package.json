@@ -1,0 +1,42 @@
+{
+    "name": "dunning_cash_flow",
+    "description": "Dunning cash flow is wrapper for Twikey REST APIs : Automatic payments for recurring customers",
+    "author": {
+        "name": "Abdelkrim Boujraf",
+        "email": "abo+dunning_cash_flow_pkg@alt-f1.be",
+        "url": "https://github.com/abdelkrim"
+    },
+    "version": "0.0.2",
+    "main": "${workspaceFolder}/dunning_cash_flow/dunning_cash_flow.py",
+    "scripts": {
+        "release": "standard-version",
+        "patch": "npm run release -- --release-as patch",
+        "minor": "npm run release -- --release-as minor",
+        "major": "npm run release -- --release-as major",
+        "push": "git push --follow-tags origin master",
+        "build-push-prod:setup.py": "run-s clean:setup.py build:setup.py push-prod:setup.py",
+        "build-push-test:setup.py": "run-s clean:setup.py build:setup.py push-test:setup.py",
+        "build:setup.py": "python setup.py sdist bdist_wheel",
+        "clean:setup.py": "del-cli build dunning_cash_flow.egg* dist",
+        "clean-build": "run-s clean:setup.py build:setup.py",
+        "push-prod:setup.py": "python -m twine upload dist/*",
+        "push-test:setup.py": "python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+    },
+    "keywords": [
+        "library",
+        "dunning_service",
+        "alt-f1.be"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/altf1be/dunning-cash-flow.git"
+    },
+    "license": "European Union Public Licence 1.2 (EUPL 1.2)",
+    "dependencies": {
+        "standard-version": "^7.0.0"
+    },
+    "devDependencies": {
+        "del-cli": "^3.0.0",
+        "npm-run-all": "^4.1.5"
+    }
+}
