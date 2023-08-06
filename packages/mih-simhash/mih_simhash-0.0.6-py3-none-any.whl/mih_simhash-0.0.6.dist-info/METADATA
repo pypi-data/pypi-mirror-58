@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mih-simhash
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: MIH
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Dist: aioredis (==1.3.1)
+Requires-Dist: hiredis (==1.0.1)
+
+UNKNOWN
+
+
