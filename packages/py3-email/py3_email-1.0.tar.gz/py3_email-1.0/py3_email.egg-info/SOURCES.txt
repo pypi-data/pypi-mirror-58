@@ -1,0 +1,7 @@
+README.txt
+py3_email.py
+setup.py
+py3_email.egg-info/PKG-INFO
+py3_email.egg-info/SOURCES.txt
+py3_email.egg-info/dependency_links.txt
+py3_email.egg-info/top_level.txt
