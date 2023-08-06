@@ -1,0 +1,17 @@
+sprocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprocket/__main__.py,sha256=mHAqRuNN-_oqJTSq1zNa-A8MdDoGRorALqHrhj6ydj0,969
+sprocket/sprocket.py,sha256=O_jhwyB4KYBSwoHbD53OLYm49pu3IjG_oalSDHdvDhs,325
+sprocket/cogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprocket/cogs/audio.py,sha256=-92DhEEqUECgb6Yf_DybA3wd2lhEudqysp2Y4oAok-M,3125
+sprocket/cogs/base.py,sha256=Legg2jvmiOsIYL8vPW3ZxSjG9RNPJufep0J8ZGqS5yY,438
+sprocket/cogs/dice.py,sha256=m8ZllawxO7J2YBisgDkZwZ8nNzXHYe3cjhmFzD_DsdE,2459
+sprocket/cogs/quote.py,sha256=8rqT6DcBJG52V8yLOKqpdoNSHqbU_cVygk7IQlNNVbI,790
+sprocket/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprocket/util/common.py,sha256=lu3ZMP3HUTLYBXnuHotuLzCpvNyHOlPKTPmePjCeEX8,822
+sprocket/util/loader.py,sha256=QiSj7ND2AoVuCIEcAEiZ9e_WevLsUJ-4jd4izT_t1Ic,449
+sprocket_fizzlebang-0.3.0.dist-info/LICENSE,sha256=cMwgCqPLfhi2GAY704wA9T-ofJnlwXbGc1VX7Xk-OL4,1048
+sprocket_fizzlebang-0.3.0.dist-info/METADATA,sha256=JESaYAvC4ElvWvuiWGpqxP0nd9HR4w476tRWFppaaJs,1819
+sprocket_fizzlebang-0.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sprocket_fizzlebang-0.3.0.dist-info/entry_points.txt,sha256=RDi7XpBihD6AlzZdr9HemnhcJSyC8_De8KkwZq6Qb1g,52
+sprocket_fizzlebang-0.3.0.dist-info/top_level.txt,sha256=NStkBSica147H-mguY2xIEXGilYUWSZHPjZ2_GrrroE,9
+sprocket_fizzlebang-0.3.0.dist-info/RECORD,,
