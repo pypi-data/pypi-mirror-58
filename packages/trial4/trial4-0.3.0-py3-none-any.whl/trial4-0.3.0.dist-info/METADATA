@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: trial4
+Version: 0.3.0
+Summary: trial4 is a python package for basic mathematical calculations .
+Home-page: https://github.com/poojaagicha/trial1
+Author: Pooja Agicha
+Author-email: pooja.m.agicha@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5
+Requires-Dist: requests
+
+# Trial
+This is my trial project , use it at your own risk.
+
+
