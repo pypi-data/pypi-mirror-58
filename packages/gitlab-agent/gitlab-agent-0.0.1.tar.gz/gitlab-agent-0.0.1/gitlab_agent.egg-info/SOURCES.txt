@@ -1,0 +1,7 @@
+README.md
+setup.py
+gitlab_agent.egg-info/PKG-INFO
+gitlab_agent.egg-info/SOURCES.txt
+gitlab_agent.egg-info/dependency_links.txt
+gitlab_agent.egg-info/top_level.txt
+gitlabagent/__init__.py
