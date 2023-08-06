@@ -1,0 +1,10 @@
+nuqql_slixmppd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nuqql_slixmppd/client.py,sha256=fWRnXs5V0djOCOGlaIAyVqfVJ4w6XupVwWs4lc7gNVQ,13162
+nuqql_slixmppd/main.py,sha256=tNNo4hXUUw9kz4zDiV307WeQgrs3mku5MrAdDIvXJ2M,303
+nuqql_slixmppd/server.py,sha256=dWdCX8Rr7ZSgPfleEvZ8kCDQoi0pw6RyMuiT9ExDJKA,9117
+nuqql_slixmppd-0.5.dist-info/LICENSE,sha256=me_8EPVOyoudFhDLZ5qUm0qk1RGjmXn4dKnJfZd8ZzE,1062
+nuqql_slixmppd-0.5.dist-info/METADATA,sha256=ug0aC0f1cZLRP84o84P_NsjqDoAIZHGV2qlA2Ll2_tE,4388
+nuqql_slixmppd-0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nuqql_slixmppd-0.5.dist-info/entry_points.txt,sha256=TkyInWxDx3WnhWyf_CBpmUEz_UDHNBy7W0x4u3dXBjM,61
+nuqql_slixmppd-0.5.dist-info/top_level.txt,sha256=r9kqCvc5gXzJE-YydFlUiE27L95H5BskWqjsYasc_HM,15
+nuqql_slixmppd-0.5.dist-info/RECORD,,
