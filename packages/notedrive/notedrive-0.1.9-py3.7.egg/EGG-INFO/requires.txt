@@ -1,0 +1,13 @@
+requests
+demjson
+numpy
+tqdm
+cryptography
+tushare
+pandas
+tensorflow
+keras
+bs4
+pycurl
+scikit-learn
+notetool
