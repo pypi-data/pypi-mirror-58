@@ -1,0 +1,10 @@
+README.md
+setup.py
+agnpy/AGNpy.egg-info/PKG-INFO
+agnpy/AGNpy.egg-info/SOURCES.txt
+agnpy/AGNpy.egg-info/dependency_links.txt
+agnpy/AGNpy.egg-info/top_level.txt
+agnpy/agnpy.egg-info/PKG-INFO
+agnpy/agnpy.egg-info/SOURCES.txt
+agnpy/agnpy.egg-info/dependency_links.txt
+agnpy/agnpy.egg-info/top_level.txt
