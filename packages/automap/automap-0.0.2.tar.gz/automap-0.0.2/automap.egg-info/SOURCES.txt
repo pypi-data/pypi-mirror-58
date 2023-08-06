@@ -1,0 +1,7 @@
+README.md
+automap.c
+setup.py
+automap.egg-info/PKG-INFO
+automap.egg-info/SOURCES.txt
+automap.egg-info/dependency_links.txt
+automap.egg-info/top_level.txt
