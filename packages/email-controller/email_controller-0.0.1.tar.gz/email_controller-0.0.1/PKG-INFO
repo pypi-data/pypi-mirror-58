@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: email_controller
+Version: 0.0.1
+Summary: Package for just basic SMTP email sending
+Home-page: https://github.com/jamberin/email_controller
+Author: James Beringer
+Author-email: jamberin@gmail.com
+License: UNKNOWN
+Description: # email_controller
+        System to handle the emails that are sent via API from the resume site. 
+        Something that should be able to be reused.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Public Domain
+Description-Content-Type: text/markdown
