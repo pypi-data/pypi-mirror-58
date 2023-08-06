@@ -1,0 +1,8 @@
+README.md
+firestore_ci.py
+setup.py
+firestore_ci.egg-info/PKG-INFO
+firestore_ci.egg-info/SOURCES.txt
+firestore_ci.egg-info/dependency_links.txt
+firestore_ci.egg-info/requires.txt
+firestore_ci.egg-info/top_level.txt
