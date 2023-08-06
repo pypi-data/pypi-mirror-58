@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_react_templatetags_es_modules/__init__.py
+django_react_templatetags_es_modules/context_processors.py
+django_react_templatetags_es_modules.egg-info/PKG-INFO
+django_react_templatetags_es_modules.egg-info/SOURCES.txt
+django_react_templatetags_es_modules.egg-info/dependency_links.txt
+django_react_templatetags_es_modules.egg-info/not-zip-safe
+django_react_templatetags_es_modules.egg-info/requires.txt
+django_react_templatetags_es_modules.egg-info/top_level.txt
+django_react_templatetags_es_modules/templatetags/__init__.py
+django_react_templatetags_es_modules/templatetags/es_react.py
