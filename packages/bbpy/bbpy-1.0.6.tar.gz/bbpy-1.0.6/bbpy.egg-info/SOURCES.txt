@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+bbpy/__init__.py
+bbpy/bbpy.py
+bbpy.egg-info/PKG-INFO
+bbpy.egg-info/SOURCES.txt
+bbpy.egg-info/dependency_links.txt
+bbpy.egg-info/requires.txt
+bbpy.egg-info/top_level.txt
+bbpy/pbuf/app_pb2.py
+bbpy/pbuf/app_pb2_grpc.py
+bbpy/pbuf/attr_pb2.py

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bbpy
+Version: 1.0.6
+Summary: This package provides a Python interface to biobtree
+Home-page: https://github.com/tamerh/biobtreePy
+Author: Tamer Gur
+Author-email: tgur@ebi.ac.uk
+License: MIT license
+Description: This package provides a Python interface to biobtree
+Keywords: bioinformatics,identifiers,mapping,biobtree
+Platform: UNKNOWN
