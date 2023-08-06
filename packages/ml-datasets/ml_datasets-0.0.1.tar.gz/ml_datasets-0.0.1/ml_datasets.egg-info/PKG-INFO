@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ml-datasets
+Version: 0.0.1
+Summary: Machine Learning dataset loaders
+Home-page: https://github.com/explosion/ml-datasets
+Author: Explosion
+Author-email: contact@explosion.ai
+License: MIT
+Description: <a href="https://explosion.ai"><img src="https://explosion.ai/assets/img/logo.svg" width="125" height="125" align="right" /></a>
+        
+        # Machine Learning dataset loaders
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
