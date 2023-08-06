@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: phantom
+Version: 0.7.2
+Summary: a library for working with faces in python
+Home-page: https://github.com/bconstanzo/phantom
+Author: Bruno Constanzo
+Author-email: bconstanzo@ufasta.edu.ar
+License: LGPL 2.1
+Description-Content-Type: UNKNOWN
+Description: 
+        A digital image processing library aimed at digital forensic experts, to help
+        them work over photographic, video (or other source media) elements.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
