@@ -1,0 +1,5 @@
+setup.py
+strict_mode.egg-info/PKG-INFO
+strict_mode.egg-info/SOURCES.txt
+strict_mode.egg-info/dependency_links.txt
+strict_mode.egg-info/top_level.txt
