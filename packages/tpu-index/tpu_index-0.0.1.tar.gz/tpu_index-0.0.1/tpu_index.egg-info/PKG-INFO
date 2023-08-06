@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tpu-index
+Version: 0.0.1
+Summary: tpu_index is a package for fast similarity search over large collections of high dimension vectors on TPUs
+Home-page: https://github.com/srihari-humbarwadi/tpu_index
+Author: Text2Vec Team
+Author-email: 
+License: UNKNOWN
+Description: ## TPU Index
+        
+        TPU Index is a package for fast similarity search over large collections of high dimension vectors on TPUs
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
