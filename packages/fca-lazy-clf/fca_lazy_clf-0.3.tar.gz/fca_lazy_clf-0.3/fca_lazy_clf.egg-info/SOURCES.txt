@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+fca_lazy_clf/__init__.py
+fca_lazy_clf.egg-info/PKG-INFO
+fca_lazy_clf.egg-info/SOURCES.txt
+fca_lazy_clf.egg-info/dependency_links.txt
+fca_lazy_clf.egg-info/requires.txt
+fca_lazy_clf.egg-info/top_level.txt
