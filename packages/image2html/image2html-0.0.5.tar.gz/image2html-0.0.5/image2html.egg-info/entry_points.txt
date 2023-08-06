@@ -1,0 +1,4 @@
+[console_scripts]
+image2html = image2html.image2html:image2html
+make_flist = image2html.flist:make_flist
+

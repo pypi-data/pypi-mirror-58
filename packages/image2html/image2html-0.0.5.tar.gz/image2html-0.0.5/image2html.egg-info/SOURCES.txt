@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+image2html/__init__.py
+image2html/flist.py
+image2html/html_generator.py
+image2html/image2html.py
+image2html.egg-info/PKG-INFO
+image2html.egg-info/SOURCES.txt
+image2html.egg-info/dependency_links.txt
+image2html.egg-info/entry_points.txt
+image2html.egg-info/requires.txt
+image2html.egg-info/top_level.txt
