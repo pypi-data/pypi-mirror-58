@@ -1,0 +1,2 @@
+notebook
+fs>=2
