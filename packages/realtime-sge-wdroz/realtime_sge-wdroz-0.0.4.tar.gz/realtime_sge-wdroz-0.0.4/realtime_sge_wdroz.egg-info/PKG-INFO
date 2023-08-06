@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: realtime-sge-wdroz
+Version: 0.0.4
+Summary: Internal tools to use the SGE grid in realtime at Idiap Research Institute
+Home-page: https://gitlab.idiap.ch/william.droz/realtime_sge
+Author: William Droz
+Author-email: william.droz@idiap.ch
+License: UNKNOWN
+Description: # realtime_sge
+        
+        This project aims to provide real-time usage of SGE for user-defined tasks.
+        
+        ## Install using pip
+        
+        `pip install realtime_sge-wdroz`
+        
+        ## Building instruction
+        
+        First create a virtualenv and install the dependencies from **requirements.txt**
+        
+        To compile the protobuf files, type `python3 -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. realtime_sge/protos/*.proto`
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
