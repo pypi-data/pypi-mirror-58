@@ -1,0 +1,17 @@
+deployee/__init__.py,sha256=qHJ_q-NtoZ98rdflBB5GKtBzx_sUvAVe96rJSun_DEU,23
+deployee/deployee.py,sha256=KslKr3GMnlX75C5cLJiRRr_agTILwe0fYV9qOJ03ayQ,3061
+deployee/ansible/ansible.cfg,sha256=5lMUIfW_9MGD0hSEMzZDzJklqYYh1UW4xIHGuKyOnow,245
+deployee/ansible/inventory,sha256=dJtMPy-LYdMAAkuhbhVUG3FxSrNZ5wqNk2WUzIB938M,97
+deployee/ansible/playbook.yml,sha256=IELgf9BO8MNES-kSEUrel5-a1kjMhVh25LVFVQ2hNT4,3252
+deployee/ansible/tasks/cleanup.yml,sha256=Oi95TEUIu7QQ5xtRXml9iJ62o2fumX_hT9q9wUZ7jlc,251
+deployee/ansible/tasks/deploy.yml,sha256=6mt14r-5ckpC7idPII1DwF7YSctOqUlKbZt4zMpCZGA,1271
+deployee/ansible/tasks/django.yml,sha256=ICAj5RK6Uzr0Am7Rsbe11i9bQRzIhzrRn0odwTIIZyo,438
+deployee/ansible/tasks/install.yml,sha256=K1DQvNkGasgHxQ4FUVvG3_fJvsvIg7zS0SOpOZllEOE,717
+deployee/ansible/tasks/test.yml,sha256=1cUJfjGOEKe8Juq0bMY9M5AbTUqfwbWcCwYL0LF7bzI,332
+deployee/ansible/template/supervisor.conf.j2,sha256=706hTStzrFQqNi5FRk3K0BR0v9-q1joV8lnGcEeoGRs,75
+deployee-0.12.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+deployee-0.12.0.dist-info/METADATA,sha256=eXbxx9_C-_NRNoisjb2k8ngdJDI2xzjv0dpqvMRHKbQ,1380
+deployee-0.12.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+deployee-0.12.0.dist-info/entry_points.txt,sha256=_2C8lCYDocS_ziRbPt8KZMIYx2VzH2jrlndu18pjUo8,53
+deployee-0.12.0.dist-info/top_level.txt,sha256=V0H36B3IcUXCk8DoVkgOelGCY-S6D7nGIBtm4qtLAkI,9
+deployee-0.12.0.dist-info/RECORD,,
