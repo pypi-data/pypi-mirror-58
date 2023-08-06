@@ -1,0 +1,4 @@
+[console_scripts]
+duplicate = fs_walker.duplicate:duplicate
+missing = fs_walker.missing:missing
+
