@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flop
+Version: 1.0.1
+Summary: Pytorch based library for L0 based pruning.
+Home-page: UNKNOWN
+Author: ASAPP Inc.
+Author-email: jeremy@asapp.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.1
+Requires-Dist: flambe
+Requires-Dist: sru
+
+UNKNOWN
+
+

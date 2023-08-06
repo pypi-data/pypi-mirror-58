@@ -1,0 +1,12 @@
+flop/__init__.py,sha256=sxQrgZO0fNNqswo1dmWsUSJBridxJPTvJHGgJqlcPSA,556
+flop/hardconcrete.py,sha256=pA4nmgLP__TvDQ-eJJH48MzvfzbEdWu1HHAbV9IVDOg,3984
+flop/linear.py,sha256=RKG5IJnGastpnHtyimWZmZUqq2AEs9lBe6J1bleSLhU,10226
+flop/train.py,sha256=QNN4g45K1r8o7yqXAK9e7rwew9q78YLHVK1FICJ1S4E,12974
+flop/utils.py,sha256=FwRcILD-bHZcG1LjmgB0vq-yKArLdbWTJ3Nvts374eA,4028
+flop/version.py,sha256=_hjEmW4NoU3bjVAglk9ayDJSMhXTjB22RFp5S6TlG5Y,74
+flop-1.0.1.dist-info/METADATA,sha256=o_4jihDQL-hL9QFtKJECNUHgM-G0cLNmbHiD730TG24,282
+flop-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flop-1.0.1.dist-info/dependency_links.txt,sha256=BhVlCfrSgNnDJ8W1TfPiIkK_d2U-bY6LfvniufvYO2U,65
+flop-1.0.1.dist-info/top_level.txt,sha256=baQxGKPhl-OuXsyH3zaiil_n63ZI1az0PnDAdQLh-a0,5
+flop-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+flop-1.0.1.dist-info/RECORD,,
