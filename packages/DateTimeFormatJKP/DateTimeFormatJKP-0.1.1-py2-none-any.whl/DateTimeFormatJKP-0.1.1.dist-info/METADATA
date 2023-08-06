@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: DateTimeFormatJKP
+Version: 0.1.1
+Summary: Library for robot framework
+Home-page: https://github.com/praveenjkp/DateFormat
+Author: Praveen Kumar Kanagaraj
+Author-email: pk292695@gmail.com
+License: apache 2.0 Software License
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >= 2.7.10
+Requires-Dist: DateTime
+Requires-Dist: setuptools (>=36.2)
+Requires-Dist: six
+
+A library file for Robot framework, It is a common library which can be supported by robot framework. Please be cautious that this library is been only used to verify the date formats and also this library is still in development for worldwide usage but this has been distributed touse across my current project --- stay tuned for more updates  Connect with me via LInkedin: https://www.linkedin.com/in/pk296/
+
+
