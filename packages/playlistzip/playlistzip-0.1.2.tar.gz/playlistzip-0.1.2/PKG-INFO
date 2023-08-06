@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: playlistzip
+Version: 0.1.2
+Summary: Join two to four youtube playlists into viewsync links. Joining is accomplished by episode numbers, collected from video titles.
+Home-page: https://gitlab.com/rossvor/playlistzip
+License: GPL-3.0+
+Author: Ross Vorotynskij
+Author-email: ross@rvcg.net
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Dist: jsonpath-rw (>=1.4,<2.0)
+Requires-Dist: pycurl (>=7.43,<8.0)
+Description-Content-Type: text/x-rst
+
+playlistzip
+===========
+
+Join two to four youtube playlists into combined viewsync links. Joining is accomplished either by episode numbers, collected from video titles, or by index pairing.
+
+Supports \*nix and Windows.
+
+Usage
+--------
+
+.. code-block:: sh
+
+    plz "PL1O4GjhJgk40spOiTqpdh5rmp8z6lbpHQ" "PLlwKCy51_4YjSUB4gshARQIdFKOQ7wIqR"
+
+Where positional arguments are *playlist* IDs retrieved from youtube. These are "list" GET parameters, visible in URL when you browse to any playlist page on youtube.
+
+You can also specify regular expressions to be used to pick out episode numbers, directly via command line options. Useful for cases where default regex fail to get the correct episode number, or if you want to filter some videos out. All regular expressions have to contain one capturing group in them (specified by "([0-9]{1,2})" usually) -- capturing the episode number.
+
+.. code-block:: sh
+
+    plz --third-regex="Mathas ([0-9]{1,2})" \
+        "PL1bauNEiHIgyqZ2B_x9kJWVX_dlDKv1cF" \
+        "PLrIoJm0QOWUp-KwSJHNGGODWZCpVnu6km" \
+        "PLH-huzMEgGWD5f_ItXeqF-qBoxkhNUNex"
+
+Regular expression options can be specified several times, it will try them until it gets a match, in order, starting with the first one.
+
+.. code-block:: sh
+
+    plz --third-regex="#([0-9]{1,2})" \
+        --third-regex="Mathas ([0-9]{1,2})" \
+        "PL1bauNEiHIgyqZ2B_x9kJWVX_dlDKv1cF" \
+        "PLrIoJm0QOWUp-KwSJHNGGODWZCpVnu6km" \
+        "PLH-huzMEgGWD5f_ItXeqF-qBoxkhNUNex"
+
+Synopsis:
+    plz [-h] [--first-regex FIRST_REGEX] [--second-regex SECOND_REGEX] [--third-regex THIRD_REGEX] [--fourth-regex FOURTH_REGEX] [--omit-title] [--json] [--join-by-index] playlists [playlists ...]
+
+For each of joined episodes, output includes a title of the video of the first specified playlist, followed by viewsync URL.
+
+``--omit-title`` to get only viewsync URLs as an output.
+
+``--json`` output JSON instead of space separated data.
+
+``--join-by-index`` join playlists by index instead of using regex to match up episode numbers.
+
+Contribute
+----------
+
+- Issue Tracker: gitlab.com/rossvor/playlistzip/issues
+- Source Code: gitlab.com/rossvor/playlistzip
+
+Copyright and License
+---------------------
+Copyright 2019, 2020 Ross Vorotynskij
+
+The project is licensed under the GPL-3.0+ license.
+

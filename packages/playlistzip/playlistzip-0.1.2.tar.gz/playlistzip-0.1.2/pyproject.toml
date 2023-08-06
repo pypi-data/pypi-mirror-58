@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "playlistzip"
+version = "0.1.2"
+description = "Join two to four youtube playlists into viewsync links. Joining is accomplished by episode numbers, collected from video titles."
+readme = "README.rst"
+homepage = "https://gitlab.com/rossvor/playlistzip"
+authors = ["Ross Vorotynskij <ross@rvcg.net>"]
+license = "GPL-3.0+"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+jsonpath-rw = "^1.4"
+pycurl = "^7.43"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+plz = 'playlistzip.cli:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
