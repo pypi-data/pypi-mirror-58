@@ -1,0 +1,13 @@
+README.rst
+setup.py
+awkwardql/__init__.py
+awkwardql/data.py
+awkwardql/index.py
+awkwardql/interpreter.py
+awkwardql/parser.py
+awkwardql/version.py
+awkwardql.egg-info/PKG-INFO
+awkwardql.egg-info/SOURCES.txt
+awkwardql.egg-info/dependency_links.txt
+awkwardql.egg-info/requires.txt
+awkwardql.egg-info/top_level.txt
