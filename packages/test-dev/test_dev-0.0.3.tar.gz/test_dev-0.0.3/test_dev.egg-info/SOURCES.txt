@@ -1,0 +1,11 @@
+README.md
+setup.py
+test_dev/__init__.py
+test_dev/_nbdev.py
+test_dev/core.py
+test_dev.egg-info/PKG-INFO
+test_dev.egg-info/SOURCES.txt
+test_dev.egg-info/dependency_links.txt
+test_dev.egg-info/entry_points.txt
+test_dev.egg-info/not-zip-safe
+test_dev.egg-info/top_level.txt
