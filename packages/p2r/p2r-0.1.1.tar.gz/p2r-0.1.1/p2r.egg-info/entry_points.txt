@@ -1,0 +1,3 @@
+[console_scripts]
+p2r = p2r.p2r:main
+
