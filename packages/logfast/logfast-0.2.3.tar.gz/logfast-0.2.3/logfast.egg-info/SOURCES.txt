@@ -1,0 +1,7 @@
+README.md
+setup.py
+logfast/__init__.py
+logfast.egg-info/PKG-INFO
+logfast.egg-info/SOURCES.txt
+logfast.egg-info/dependency_links.txt
+logfast.egg-info/top_level.txt
