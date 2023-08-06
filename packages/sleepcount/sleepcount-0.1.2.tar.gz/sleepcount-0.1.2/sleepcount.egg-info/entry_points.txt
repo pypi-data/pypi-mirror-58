@@ -1,0 +1,3 @@
+[console_scripts]
+sleepcount = sleepcount:cli
+
