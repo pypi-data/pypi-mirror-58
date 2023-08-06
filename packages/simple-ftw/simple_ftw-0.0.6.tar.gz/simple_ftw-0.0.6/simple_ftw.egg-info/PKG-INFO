@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: simple-ftw
+Version: 0.0.6
+Summary: my first published package
+Home-page: https://github.com/fiona-tw/ftw
+Author: Fiona Tahta-Wraith
+Author-email: fionatw@outlook.com
+License: UNKNOWN
+Description: # ftw package
+        
+        This is my first package published to pypi, so for now contains nothing excitng... watch this space
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
