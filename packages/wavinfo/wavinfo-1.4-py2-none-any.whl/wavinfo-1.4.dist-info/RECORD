@@ -1,0 +1,14 @@
+.DS_Store,sha256=SXEfEI0lR2Kni89VOSSKqgIJFe6irMRKqEgOBg0PYe8,6148
+wavinfo/__init__.py,sha256=g0mZMezpA1AIWrvhCLqZ6tePigVXgakvCUmkIMHpq10,322
+wavinfo/rf64_parser.py,sha256=OvD6FuNwXzisetBgC9Z2FYesa3XkpuIDflceRAKbVoc,1412
+wavinfo/riff_parser.py,sha256=-tD5PvgM21_feNMZtZbxZQ9sv4DGqQDKjsEu9eYrfwc,2370
+wavinfo/wave_bext_reader.py,sha256=XVSKIC1659B6xZCe1RpGlBMmMiypO84xljQx-246zk8,3850
+wavinfo/wave_info_reader.py,sha256=HcYc10NlO7tss0NbtHneMj4RcqWNKfz-TpfFAg6CY-0,3261
+wavinfo/wave_ixml_reader.py,sha256=X0OunyJOslxSz7aSGyFgluUz3Or-KGwFGNdhPdbzCPo,2662
+wavinfo/wave_parser.py,sha256=rwJYGr-6d55Awh0ixFvWF-iauyy5fNWNw-bohxAD4fU,1604
+wavinfo/wave_reader.py,sha256=niBr4GBJJcR7Fxfzm7b0Ig_DWbAQBvbGU7ELKPV4Dbk,5564
+wavinfo-1.4.dist-info/LICENSE,sha256=s_kFBW5rOgSZwR6Y-sX11xV0yqxCo0mKvwlK55tQjwY,1068
+wavinfo-1.4.dist-info/METADATA,sha256=c7pRuGizzfBdzcAxdjMUZ38RtAE5sCAm1lUgAEdbGnw,3373
+wavinfo-1.4.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+wavinfo-1.4.dist-info/top_level.txt,sha256=LsSyoBXc3ipI-xFLrz7E31PNF2wQ1ocFfON2I5INLo8,8
+wavinfo-1.4.dist-info/RECORD,,
