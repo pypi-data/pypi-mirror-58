@@ -1,0 +1,6 @@
+
+[aiopg]
+aiopg>=1.0.0
+
+[aioredis]
+aioredis>=1.2.0
