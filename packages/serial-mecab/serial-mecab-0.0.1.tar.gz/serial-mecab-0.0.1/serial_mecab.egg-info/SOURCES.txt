@@ -1,0 +1,16 @@
+README.md
+setup.py
+serial_mecab.egg-info/PKG-INFO
+serial_mecab.egg-info/SOURCES.txt
+serial_mecab.egg-info/dependency_links.txt
+serial_mecab.egg-info/requires.txt
+serial_mecab.egg-info/top_level.txt
+serialmecab/__init__.py
+serialmecab/text.py
+serialmecab/token.py
+serialmecab/tokenizer.py
+serialmecab/types.py
+tests/__init__.py
+tests/test_text.py
+tests/test_token.py
+tests/test_tokenizer.py

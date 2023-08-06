@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: serial-mecab
+Version: 0.0.1
+Summary: mecab-python3 Wrapper for serialization
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
