@@ -1,0 +1,7 @@
+[console_scripts]
+syntactic=syntactic.cli:cli
+
+[syntactic.transformers]
+bangbang_means_hello=syntactic.examples:transform_bangbang
+unicode_lambda=syntactic.examples:transform_lambda
+

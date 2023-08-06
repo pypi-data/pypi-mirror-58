@@ -1,0 +1,12 @@
+__syntax__.py,sha256=nVeS4jTtyIOf9_8b843vJ9WPMJDF1tNTumRL8DFkGiQ,164
+syntactic/__init__.py,sha256=fq1xODgiZ0JHwcpL5rvErn3BGHxB-t5DRafAoJ68iE0,75
+syntactic/__main__.py,sha256=oiek7Yl_yNLEPoTSFMiLTMtvf6XYHByv9taYtb1Nb60,369
+syntactic/app.py,sha256=94kzKSBgQO5KehGsLQiZAqx1W-e8-PXMs2xHpD9ZZgc,3010
+syntactic/cli.py,sha256=Z6R086cTxWDrLrUdj-FiKtgWQ7d3GUYa7WZiNjJ5L1k,405
+syntactic/examples.py,sha256=iWZi1PCLxiJJPsuXsL8aejanIw0WC8fAgmdsNFjOFM4,1112
+syntactic_installer.pth,sha256=5H1CSBQsX6jy_-SHpMd5ZE0OD2RUuJUBZ6q-qB4rFCM,43
+syntactic-0.1.2.dist-info/entry_points.txt,sha256=vec8LpDygLOpK0lS75MYrbOJwobzeDR0ifjpB_QlLYU,183
+syntactic-0.1.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syntactic-0.1.2.dist-info/WHEEL,sha256=6upcAAvX4rd7BhxBF-R5FqXT39G-3jJUye5-930hcrk,85
+syntactic-0.1.2.dist-info/METADATA,sha256=G0QIw855bcYRroRh-9n1X0POJmgyIN0iEZx7zONOnxQ,3435
+syntactic-0.1.2.dist-info/RECORD,,
