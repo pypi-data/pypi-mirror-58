@@ -1,0 +1,8 @@
+include *.md
+include *.py
+include setup.cfg
+include mypy.ini
+include LICENSE
+include requirements.txt
+include requirements-dev.txt
+recursive-include altair_saver *.py *.json *.png *.svg *.pdf
