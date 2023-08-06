@@ -1,0 +1,3 @@
+[console_scripts]
+create-multi-langs = create_multi_langs.command_line:main
+
