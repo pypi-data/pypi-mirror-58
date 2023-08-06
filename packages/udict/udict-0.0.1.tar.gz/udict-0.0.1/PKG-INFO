@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: udict
+Version: 0.0.1
+Summary: A webscraping tool for Urban Dictionary
+Home-page: https://github.com/pypa/sampleproject
+Author: Tina Chou
+Author-email: tina_chou28@yahoo.com
+License: UNKNOWN
+Description: # udict.py
+        
+        A simple module to get pages from Urban Dictionary
+        
+        
+        ## Installing
+        
+        Python 3.5 or higher is required
+        
+            # Linux/macOS
+            python3 -m pip install -U udict.py
+        
+            # Windows
+            py -3 -m pip install -U udict.py
+        
+        ## Example Usage
+        
+        ```python
+        import udict
+        
+        myPage = udict.get_page("Python")
+        topDef = myPage.definitions[0]
+        print(topDef.meaning) #Prints top definition of a term.
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

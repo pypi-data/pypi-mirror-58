@@ -1,0 +1,6 @@
+README.md
+setup.py
+udict.egg-info/PKG-INFO
+udict.egg-info/SOURCES.txt
+udict.egg-info/dependency_links.txt
+udict.egg-info/top_level.txt
