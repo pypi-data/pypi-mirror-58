@@ -1,0 +1,3 @@
+[console]
+gd = gd.__main__:main
+
