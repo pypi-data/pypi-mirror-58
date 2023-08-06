@@ -1,0 +1,12 @@
+nitdms/__init__.py,sha256=foEGUnKTiaZ3xpKKg_aNx2tb1eNmOZLIPNN5ZyPcopo,172
+nitdms/common.py,sha256=Uart6oiEev4LaHF5yaRi6fvcGqeMU-RlZWN66v8ZHTc,14885
+nitdms/daqmx_scalers.py,sha256=X1kXVrnJrGA-0f0L7nzTTBCEYBBzufBvi4wx3RsSpng,2420
+nitdms/exceptions.py,sha256=HsziFk3IzcjafGCM8TfyLkzIhK_53Bprtb71rLZUva0,781
+nitdms/reader.py,sha256=uRLkLAgvLe29Sci4fG-ieTrp7KAXAvxXXXnt_uHChtE,16589
+nitdms/version.py,sha256=rGocBhuHeNRGD9Mw12JSAzScAfZRx2yp2bKT3quNl5o,742
+nitdms/waveformdatatype.py,sha256=-LwW1HMgY53oMVmIgDYGuQbeXSusyEfMFHPVYQlKm8g,6070
+nitdms-1.4.30.dist-info/LICENSE,sha256=fDth0znEF6FIK8xoJxZtTQkFzNIjlL5C30LGmaXd0YQ,1068
+nitdms-1.4.30.dist-info/METADATA,sha256=o__B32c_ttRfI2z8es_kDxYJUqAQDgk6jPTU7Ha2y80,2085
+nitdms-1.4.30.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nitdms-1.4.30.dist-info/top_level.txt,sha256=XK9ExBI2emItNyxlpZt9PZ0LlP1ABj6M-BSOgMuVSuA,7
+nitdms-1.4.30.dist-info/RECORD,,
