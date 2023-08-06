@@ -1,0 +1,260 @@
+Metadata-Version: 2.1
+Name: pybeandi
+Version: 0.0.2
+Summary: Python Dependency Injection library
+Home-page: https://github.com/Discrimy/pydi
+Author: Aleksander Bespalov
+Author-email: discrimy.off@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Введение
+pyddi - Это библиотека, реализующая внедрение зависимостей в Python
+
+## Описание
+Главным объектом во всей библиотеке является **бин** (bean).
+Бины определяются, создаются и управляются **контекстом** (BeanContext).
+Вы можете внедрять их в другие бины или запрашивать их от самого контекста.
+Тем самым ваш код больше не знает, какие именно объекты к нему приходят, 
+что уменьшает связанность объектов и упрощает поддержку и читаемость, 
+так как теперь управлением вашими объектами и их зависимостями управляет контекст.
+
+## Пример
+
+```python
+import abc
+
+from pybeandi.context import BeanContextBuilder
+from pybeandi.decorators import bean
+
+
+class Service(abc.ABC):
+
+    @abc.abstractmethod
+    def hello(self) -> str:
+        pass
+
+
+@bean(bean_id='service1', profiles={'service1'})
+class My1Service(Service):
+
+    def hello(self) -> str:
+        return 'Hello from 1 service'
+
+
+@bean(bean_id='service2', profiles={'service2'})
+class My2Service(Service):
+
+    def hello(self) -> str:
+        return 'Hello from 2 service'
+
+
+@bean(bean_id='service3', profiles={'service3'}, text="str")
+class My3Service(Service):
+
+    def hello(self) -> str:
+        return f'Hello from 3 service and {self.text}'
+
+    def __init__(self, text):
+        self.text = text
+
+
+if __name__ == '__main__':
+    ctx_builder = BeanContextBuilder()
+    ctx_builder.load_yaml('pybeandi.yaml')
+    ctx_builder.profiles.add('service2')
+    ctx_builder.scan(globals())
+    ctx = ctx_builder.init()
+
+    print(ctx.beans[Service].hello())
+    print(Service in ctx.beans)
+    print(len(ctx.beans))
+    print(ctx.beans)
+    print(ctx.profiles)
+
+```
+
+# Теория
+Каждый бин обладает:
+ - уникальным идендификаторов (**bean_id**), который однозначно определяет его внутри контекста;
+ - конструктором (**factory_func**), который создаёт объект бина
+ - словарём зависимостей (**dependencies**), который указывает, какому полю конструктора соответствует какой бин
+ - функцией профиля (**profile_func**), которая принимает на вход список всех активных профилей и возвращает, нужно ли создавать бин
+
+# Краткое описание инициализации контекста
+Для создания контекста необходимо создать и настроить `BeanContextBuilder`,
+ затем вызвать его метод `init()`, результатом которого будет сам `BeanContext`
+
+ ```python
+ctx_builder = BeanContextBuilder()
+ctx_builder.load_yaml('pybeandi.yaml')
+ctx_builder.profiles.add('service2')
+ctx_builder.scan(globals())
+ctx = ctx_builder.init()
+...
+```
+
+## Способы определения объектов
+Существует несколько способов сообщить контексту, что данный объект является бинов и отдать его под его контроль.
+
+### Напрямую через метод
+Этот метод в основном используется внутри библиотеки.
+
+Синтаксис:
+```python
+ctx_builder.register_bean(bean_id: str,
+                  factory_func: Callable[..., Any],
+                  dependencies: Dict[str, str],
+                  profile_func: Callable[[Set[str]], bool] = lambda profs: True)
+
+# Если класс декорирован @bean
+ctx_builder.register_bean_by_class(Service)
+```
+
+### Добавление вручную
+Полезно для добавления строк, списков или других уже готовых объектов как бинов.
+
+Синтаксис:
+```python
+ctx_builder.add_as_bean(bean_id: str, obj: Any)
+```
+
+### Сканирование
+
+#### Через декорирование класса
+Позволяет задеклорировать бин, не создавая лишних сущностей.
+
+Синтаксис:
+```python
+@bean(bean_id: str,
+      profiles: Set[str] = None,
+      profile_func: Callable[[Set[str]], bool] = lambda profs: True,
+      **depends_on: Dict[str, str])
+class MyService(Service):
+
+    def __init__(self, dep1, dep2, ...):
+        ...
+
+    ...
+```
+
+#### Через метод-фабрику
+Этот метод полезен тогда, когда нет доступа к самому классу или для создания иного метода создания бина, 
+чем у его конструктора.
+
+Синтаксис:
+```python
+@bean(bean_id: str,
+      profiles: Set[str] = None,
+      profile_func: Callable[[Set[str]], bool] = lambda profs: True,
+      **depends_on: Dict[str, str])
+def factory_bean(dep1, dep2, ...):
+    ...
+    return obj
+```
+
+#### Важно
+Если в коде используется декоратор `@bean`, то после необходимо обязательно вызвать 
+```python
+ctx_builder.scan(globals())
+```
+А декорированные классы и методы-фабрики должны находиться в области видимости
+
+## Профили
+Профили - это механизм управления инициализации сразу группой бинов в зависимости от настроек.
+Так, например, если у вас есть две реализации одного интерфейса (абстрактного класса),
+которые используются или в среде разработки, или в среде на "боевой" машине, то эти реализации могут иметь разные профили,
+которые определяют что нужно загружать: реализацию для разработчиков или для клиентов.
+
+### Задание профилей контекста
+```python
+ctx_builder.profiles.add('profile1')
+```
+
+### Задание профилей бина декоратором
+Если необходимо только добавить условие, что все перечисленные профили должны быть активны, то достаточно
+```python
+@bean(..., profiles={'profile1', ...}, ...)
+```
+
+Если же условие сложнее, то необходимо задать функцию.
+Так, например, если условием является то, что профиль 'profile1' нету в активных, то
+```python
+@bean(..., profile_func=lambda profs: 'profile1' not in profs, ...)
+```
+
+# Получение бинов
+Для получения бинов из контекста можно воспользоваться несколькими способами
+
+## Через зависимости
+В параметр **dependencies** декоратора или функции необходимо задать словарь, 
+где ключ - имя параметра в методе-фабрике или конструкторе, а значение - id нужного бина
+
+```python
+@bean(..., dep1='bean1', dep2='bean2')
+class Bean3:
+    def __init__(self, dep1, dep2):
+        ...
+```
+
+```python
+@bean(..., dep1='bean1', dep2='bean2')
+def factory_bean3(dep1, dep2):
+    ...
+```
+
+```python
+ctx.register_bean(..., dependencies={
+    'dep1': 'bean1',
+    'dep2': 'bean2',
+}, ...)
+```
+
+## Напрямую
+Можно получить бин из самого объекта контекста по id или классу бина:
+
+```python
+bean3 = ctx.beans['bean3']
+bean3 = ctx.beans[Bean3]
+```
+Причём, если запросить бин по классу, то будут искать все бины, которые являются объектом этого класса или его потомков.
+
+## Дополнительно
+Узнать, существует ли бин с такой ссылкой, можно через
+```python
+Bean3 in ctx.beans
+```
+Причём если существует несколько подходящих бинов, то будет возвращено `True`
+
+Если необходимо узнать количество бинов в контексте, то используется
+```python
+len(ctx.beans)
+```
+
+## Файл конфигурации
+pyddi позволяет задавать часть конфигурации через специальный YAML-файл. Его формат:
+```yaml
+pyddi:
+    profiles:
+      active:
+        - profile1
+        - ...
+    beans:
+      bean_id1: bean1
+      ...
+```
+`profiles.active` - активные профили
+
+`beans` - бины базовых типов (строки, списки, словари и т.д.)
+
+# Состояние разработки
+pyddi находится на стадии ранней разработки, что значит, что имена, сигнатуры и пути классов, методов и др. могут меняться без объявления. 
+
+Если у Вас есть какие-либо пожелания/замечания по поводу библиотеки или хотите просто пообщаться:
+[Telegram](https://tgmsg.ru/Discrimy) или в [Github Issues](https://github.com/Discrimy/pyddi/issues)
+
