@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+slackpush/__init__.py
+slackpush/__version__.py
+slackpush/slackpush.py
+slackpush.egg-info/PKG-INFO
+slackpush.egg-info/SOURCES.txt
+slackpush.egg-info/dependency_links.txt
+slackpush.egg-info/requires.txt
+slackpush.egg-info/top_level.txt
