@@ -1,0 +1,4 @@
+requests
+django>=2.1
+pycryptodome>=3.9.4
+phpserialize>=1.3
