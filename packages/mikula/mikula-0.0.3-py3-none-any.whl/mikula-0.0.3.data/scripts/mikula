@@ -1,0 +1,13 @@
+#!python
+
+import mikula
+
+parser = mikula.implementation.cli.create_parser()
+args = parser.parse_args()
+
+if "function" in args:
+    command = args.function
+    delattr(args, "function")
+    kwargs = vars(args)
+    command(**kwargs)
+
