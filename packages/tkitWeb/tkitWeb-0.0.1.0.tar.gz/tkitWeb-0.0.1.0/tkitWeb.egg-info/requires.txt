@@ -1,0 +1,2 @@
+requests==2.21.0
+tkitFile==0.0.1.2

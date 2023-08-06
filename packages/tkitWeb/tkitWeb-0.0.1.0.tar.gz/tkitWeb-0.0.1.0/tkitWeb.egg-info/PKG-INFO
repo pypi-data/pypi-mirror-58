@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tkitWeb
+Version: 0.0.1.0
+Summary: Terry toolkit
+Home-page: https://terry-toolkit.terrychan.org/zh/master/
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: 
+        
+        这里是说明
+        
+        web操作库
+        
+         
+        pip install tkitWeb  -i https://pypi.org/simple/
+         
+        
+        # 使用
+         
+        import tkitWeb
+        th=tkitWeb.Http()
+        
+        
+        # 下载文件
+        url="https://files.pythonhosted.org/packages/64/f8/434a36c186aefada16735bc6d8b489fbeaa0144419cf2a5f15033d0d129a/tkitFile-0.0.1.2.tar.gz"
+        name="tkitFile-0.0.1.2.tar.gz"
+        data=th.download(url,name,dirname='tfiles')
+        print(data)
+        
+         
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
