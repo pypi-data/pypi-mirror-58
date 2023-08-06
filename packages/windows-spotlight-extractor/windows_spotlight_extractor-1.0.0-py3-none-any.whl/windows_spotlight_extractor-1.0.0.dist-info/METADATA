@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: windows-spotlight-extractor
+Version: 1.0.0
+Summary: CLI Tool for exporting Windows 10 Spotlight Images as Wallpapers
+Home-page: https://bitbucket.org/Jonathan_Turnock/windows-10-spotlight-extractor
+Author: Jonathan Turnock
+Author-email: Jonathan.Turnock@outlook.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+
+# Windows 10 Spotlight Extractor
+
+This application will scrape the windows spotlight assets folder for wallpapers.
+The folder is located at
+```
+%LOCALAPPDATA%/Packages/Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy/LocalState/Assets
+```
+
+Once found the wallpapers will be copied into the Spotlight images directory. By default this is:
+```
+%USERPROFILE%/OneDrive/Pictures/Spotlight
+```
+
+The application will filter only for images larger than 1920 x 1080
+
+
+## Getting Started
+
+Set the script to run on a schedule or just call using the CLI command ```spotlight```
+You should see an output similar to the following
+```
+[2019-12-26 19:37:40,819] [root] [root] - Copying Windows Spotlight Images Into C:\Users\jonat\OneDrive\Pictures\Spotlight
+[2019-12-26 19:37:40,844] [root] [root] - Successfully Copied 3 files
+```
+
+Modify the Settings in ```C:\Users\jonat\AppData\Local\w10-spotlight-extractor\settings.ini```
+
+I recommend adding the following to the settings to silence the output under the LOGGING section
+CORRECT THE USERNAME FIRST!
+```
+file = C:\Users\jonat\AppData\Local\w10-spotlight-extractor\app.log
+```
+
+
+### Installing
+I Highly recommend using PIPX to install the spotlight extractor to ensure you do not run into issues with other environments and CLI apps installed using PIP   
+https://packaging.python.org/guides/installing-stand-alone-command-line-tools/
+
+Install the spotlight extractor with pip into a Python3 Environment.
+```
+pip3 install windows-spotlight-extractor
+```
+
+## Contributing
+
+Contributions are most welcome to the project, please raise issues first and contribute in response to the issue with a pull request.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://bitbucket.org/fxquants/fxq-ioc-core/downloads/?tab=tags). 
+
+## Authors
+
+* [Jonathan Turnock](https://bitbucket.org/Jonathan_Turnock/) - *Initial work*
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
