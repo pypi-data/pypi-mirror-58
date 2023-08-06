@@ -1,0 +1,11 @@
+__version__ = "0.0.7"
+__git_commiter_name__ = "Arnon Yaari"
+__git_commiter_email__ = "arnony@infinidat.com"
+__git_branch__ = '(HEAD detached at v0.0.7)'
+__git_remote_tracking_branch__ = '(No remote tracking)'
+__git_remote_url__ = '(Not remote tracking)'
+__git_head_hash__ = '20198e42aa2dbc74daf01d72082078507ad4a99b'
+__git_head_subject__ = 'Finished Release v0.0.7'
+__git_head_message__ = ''
+__git_dirty_diff__ = ''
+__git_commit_date__ = '2019-12-23 15:04:54'
