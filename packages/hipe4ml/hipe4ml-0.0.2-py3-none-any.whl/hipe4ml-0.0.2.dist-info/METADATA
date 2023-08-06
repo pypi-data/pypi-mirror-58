@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: hipe4ml
+Version: 0.0.2
+Summary: Minimal heavy ion physics environment for Machine Learning
+Home-page: https://github.com/hipe4ml/hipe4ml
+Author: hipe4ml-developers
+Author-email: hipe4ml@googlegroups.com
+License: GPL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: uproot (==3.10.12)
+Requires-Dist: matplotlib (==3.1.1)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: scikit-learn (==0.22)
+Requires-Dist: xgboost (==0.90)
+Requires-Dist: shap (==0.33)
+Requires-Dist: bayesian-optimization (==1.0.1)
+Provides-Extra: devel
+Requires-Dist: pylint (<=2.3.1) ; extra == 'devel'
+Requires-Dist: twine (>=1.11.0) ; extra == 'devel'
+Requires-Dist: setuptools (>=38.6.0) ; extra == 'devel'
+Requires-Dist: wheel (>=0.31.0) ; extra == 'devel'
+
+# hipe4ml
+
+![](https://github.com/hipe4ml/hipe4ml/workflows/Test%20package/badge.svg)
+
+![](https://sonarcloud.io/api/project_badges/measure?project=hipe4ml_hipe4ml&metric=alert_status) 
+
+![](https://img.shields.io/github/license/hipe4ml/hipe4ml)
+
+
+
+Minimal heavy ion physics environment for Machine Learning
+
+
+
+# Contribute
+
+## Run tests
+
+If you have [Pylint](https://www.pylint.org/#install) and [Flake8](http://flake8.pycqa.org/en/latest/) on your development machine, you can run tests locally by using:
+
+```bash
+
+tests/run_tests.sh
+
+```
+
+in the repository base directory.
+
+## Install in-development package
+
+To install the in-development package, from the repository base directoy:
+
+```bash
+
+pip install -e .
+
+```
+
+
