@@ -1,0 +1,8 @@
+pdfbwan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfbwan/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdfbwan/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+pdfbwan-1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pdfbwan-1.0.dist-info/METADATA,sha256=2m74yZc-qH-MAfaEjPEiXL3MgGZIjPX7Nvx0eNu5FgI,196
+pdfbwan-1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pdfbwan-1.0.dist-info/top_level.txt,sha256=MdVIeB8GTgGFqTmdDb_nuVPJcB5adlq6lUbs5yiWdlY,8
+pdfbwan-1.0.dist-info/RECORD,,
