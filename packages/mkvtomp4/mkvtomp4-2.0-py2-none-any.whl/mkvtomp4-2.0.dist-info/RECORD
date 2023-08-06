@@ -1,0 +1,16 @@
+mkvtomp4-2.0.data/data/share/doc/mkvtomp4/LICENSE,sha256=Jw6kTAykGqTC-mbO0JbzqfImfo1nx6l03ISsyBdxoB8,1093
+mkvtomp4-2.0.data/data/share/doc/mkvtomp4/README.mkd,sha256=03JVpA7qTwUn16kRTZsccoMtvLXrVl2lyi7GNjlaZDY,1218
+mkvtomp4-2.0.data/data/share/doc/mkvtomp4/mkvtomp4.txt,sha256=b03RiORgL4DwvOzDQd4qmcDmTmcv4gupGVIvJWKw2fI,5417
+mkvtomp4-2.0.data/data/share/man/man1/mkvtomp4.1,sha256=0tNZql2d0tDDmA-NT0_DmzPCMeWlmgEWJxrGMvwBNA0,5828
+mkvtomp4-2.0.data/data/share/man/man1/mkvtomp4.1.html,sha256=Zg8ZeZaN1TPaECHxT4wzAKDq6Yj1k4djfL0X3bzY0XM,7697
+mkvtomp4-2.0.data/scripts/mkvtomp4.py,sha256=4TRL6i7QeehLnHpcmB1JV7gAWpzZ_iwvrdgkEX7Rq7U,101
+mkvtomp4-2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mkvtomp4-2.0.dist-info/METADATA,sha256=Iz0On9UDE_NqLUon4v896-ZHFsnQmmoSH_OIDaRyIDM,934
+mkvtomp4-2.0.dist-info/RECORD,,
+mkvtomp4-2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+mkvtomp4-2.0.dist-info/metadata.json,sha256=me-eE8bfYsH5dadNXLCp8zZhPCBZ5Ne6XX7-ESIml6Y,1061
+mkvtomp4-2.0.dist-info/top_level.txt,sha256=Vp1UDge7IYP7x3U9jIF1R6qJSq2qK8NoLcBoueLM7wY,10
+simplemkv/__init__.py,sha256=zKMXZQCBGs8-4r1gXu7KBRTQi_S0BWOfA3oyUCYFhlQ,28
+simplemkv/info.py,sha256=Uq7LMRF9-aT1etrjWpzGCAlMBpcUmsSY0cdogFbCIns,4872
+simplemkv/tomp4.py,sha256=6WC4ITxtInIspyZqHxymBIs7OAzdaqcD6JpNz4MK_Go,21572
+simplemkv/version.py,sha256=-p_1Uid2aXTEu8wIME5hyNm8sWtbW9jHhSVyVWz8NIc,21
