@@ -1,0 +1,16 @@
+README.rst
+setup.py
+pymaths.egg-info/PKG-INFO
+pymaths.egg-info/SOURCES.txt
+pymaths.egg-info/dependency_links.txt
+pymaths.egg-info/not-zip-safe
+pymaths.egg-info/top_level.txt
+pymaths/constants/__init__.py
+pymaths/constants/all.py
+pymaths/constants/chemistry.py
+pymaths/constants/maths.py
+pymaths/constants/physics.py
+pymaths/functions/__init__.py
+pymaths/functions/calculus.py
+pymaths/functions/pure.py
+pymaths/functions/statistics.py
