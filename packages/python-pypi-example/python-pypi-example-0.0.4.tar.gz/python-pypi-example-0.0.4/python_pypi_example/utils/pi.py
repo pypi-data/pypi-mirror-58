@@ -1,0 +1,7 @@
+import math
+
+
+def get_pi_digit(n):
+    digits = list(str(math.pi))
+    digits.remove('.')
+    return int(digits[n-1])
