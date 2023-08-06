@@ -1,0 +1,10 @@
+README.md
+setup.py
+procrust/__init__.py
+procrust/procrust.py
+procrust.egg-info/PKG-INFO
+procrust.egg-info/SOURCES.txt
+procrust.egg-info/dependency_links.txt
+procrust.egg-info/entry_points.txt
+procrust.egg-info/requires.txt
+procrust.egg-info/top_level.txt
