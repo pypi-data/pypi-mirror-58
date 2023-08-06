@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pyxbe.egg-info/PKG-INFO
+pyxbe.egg-info/SOURCES.txt
+pyxbe.egg-info/dependency_links.txt
+pyxbe.egg-info/top_level.txt
+xbe/__init__.py
+xbe/__main__.py
