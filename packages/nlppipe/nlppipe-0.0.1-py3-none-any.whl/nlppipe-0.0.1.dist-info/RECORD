@@ -1,0 +1,10 @@
+nlppipe/__init__.py,sha256=Hzv7UgX3DYiHK8my9DIF8Z794G5-6SfzGrwMzWjKX-Y,69
+nlppipe/adapter.py,sha256=2elQVKFyYeIXr43VOLJtIP8de00krZ61z0JXKIAmAKU,4503
+nlppipe/client.py,sha256=dSMJAgJlM5Zsjm0eqU9qiKn-Cu4psa9g1snntv5VpJE,1969
+nlppipe/config.py,sha256=SdIbada_uyMYY6XSzLLXWbq0ZgGDTup8tBqXhTn8J0Y,640
+nlppipe/server.py,sha256=oWPTmxYqpg_yHaON3EkExPIR-mmnmLmjJnM-6wzoLnc,1816
+nlppipe-0.0.1.dist-info/LICENSE.txt,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+nlppipe-0.0.1.dist-info/METADATA,sha256=GE_9Gk_pnEC1j9kVao2eREnhCYIrMUVqhVLSWvQmvpY,392
+nlppipe-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nlppipe-0.0.1.dist-info/top_level.txt,sha256=z4vHAt-r78kRP73mezsyopGybnm26wQgOqQeaWu93zA,8
+nlppipe-0.0.1.dist-info/RECORD,,
