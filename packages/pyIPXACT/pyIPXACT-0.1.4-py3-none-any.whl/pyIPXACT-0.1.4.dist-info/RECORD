@@ -1,0 +1,11 @@
+pyIPXACT/Catalog.py,sha256=d_nxmprcU01G0uc9DmYGD65kUqm8xFVNe_VV0Lh9ZM4,7907
+pyIPXACT/Component.py,sha256=8OrY-ShwAyMlB-m_g0tJ6skEes6ZCIuAtcnpg9tiaFg,10065
+pyIPXACT/Design.py,sha256=sEy-K8S4-gXq7_XHkewXYRZtK4Sjmj2IKR0C0vSJyzk,4564
+pyIPXACT/DesignConfiguration.py,sha256=5HJUbyG_eJR8FNf7G_alRzxvm1pn4TW2aOKggKnzMzE,4045
+pyIPXACT/GeneratorChain.py,sha256=msnMfXbdPNKMXpuK9bOyTfv5i0-z6rUvZbh4yHE1J48,4289
+pyIPXACT/__init__.py,sha256=rV2EtwfPjC7vXAEtn9p6QRKt0gke2-IBAT-01K80fY8,5583
+pyIPXACT-0.1.4.dist-info/LICENSE.md,sha256=DF4r-Jbsz_ZASY4VjV0ZZVaaHYkH9a20BkVExpq8doE,10571
+pyIPXACT-0.1.4.dist-info/METADATA,sha256=MSAm0qwB3k_RchThUeKsCzC2wSUxDGMH5oaSp7Pi0Ck,2540
+pyIPXACT-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyIPXACT-0.1.4.dist-info/top_level.txt,sha256=2x6cVcld-mRoIoj8cGY8G3t3NjTAYDHxTQM9a851vOM,9
+pyIPXACT-0.1.4.dist-info/RECORD,,
