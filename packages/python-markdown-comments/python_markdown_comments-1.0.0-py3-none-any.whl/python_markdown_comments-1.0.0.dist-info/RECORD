@@ -1,0 +1,7 @@
+markdown/extensions/comments/__init__.py,sha256=GGkhonScZPm6c14mS0pFuulvqmfcFbpvwC3cMyf-2gQ,32
+markdown/extensions/comments/comments.py,sha256=XXptj7VXXDi1rSa_qz_KLBRCZy03Bllo8IxEhC1ln5g,1819
+markdown/extensions/comments/test_comments.py,sha256=Wteyeob9u0-u10q3r5Y0TgdeKioMy66J8szJTTv4pzw,1988
+python_markdown_comments-1.0.0.dist-info/LICENSE.md,sha256=HPJRBymkxhzguyx79IYhANZ_SUVV7Uf4TlEM-BOfIWM,1053
+python_markdown_comments-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+python_markdown_comments-1.0.0.dist-info/METADATA,sha256=VEV3pLkoFM8Zs_rlW28iQnrOqUaN_2hW1zxmRwIvgJk,2806
+python_markdown_comments-1.0.0.dist-info/RECORD,,
