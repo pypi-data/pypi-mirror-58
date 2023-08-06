@@ -1,0 +1,12 @@
+boto3
+dramatiq
+
+[dev]
+bumpversion
+flake8
+flake8-quotes
+isort
+mypy
+pytest
+pytest-cov
+twine
