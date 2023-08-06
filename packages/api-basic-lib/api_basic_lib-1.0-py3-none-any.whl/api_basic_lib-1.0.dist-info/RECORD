@@ -1,0 +1,13 @@
+atapibasiclib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atapibasiclib/apirequest.py,sha256=TgKvV1x9Zuzk7I2TG0UIOv-S5hYDCv98mLqV9RryR6M,5766
+atapibasiclib/apitestbasic.py,sha256=SgcDZB_unNUSCdy76fvSQcdKL2np6vzx5inSB3fYm-4,9283
+atapibasiclib/getfromxls.py,sha256=dsHoL4HiOgIVTSONkxBOS4rsnVW_jp9c3lT_ow0w8LM,1096
+atapibasiclib/jsoncompare.py,sha256=yoL6-Qa67Um4WP6Uaii7O0-lYUf9hBOtVXrNJkeqgzc,10627
+atapibasiclib/mysqllib.py,sha256=QEIw8N392tsEXx8eP6e3c8Z3-62Fd51QWGUFZGjnw8c,5376
+cov/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cov/cau.py,sha256=AUJLI2-9A7NEzR_bJCT2MJ1MIwlnd4ueosGqrM-sfpo,144
+cov/test_cover.py,sha256=dc4RrAjB9FoadIJiNIjHEY_ojBzQFg4hXYPMboMdANI,258
+api_basic_lib-1.0.dist-info/METADATA,sha256=quGXqmPMt6hrjY4hqlpxmo2aszFLTZDIIgfxHyTm0Es,279
+api_basic_lib-1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+api_basic_lib-1.0.dist-info/top_level.txt,sha256=VBlFHJdIau35Pl8gcYBtSuPzU6qfKIkvyNPyR62Khfs,18
+api_basic_lib-1.0.dist-info/RECORD,,
