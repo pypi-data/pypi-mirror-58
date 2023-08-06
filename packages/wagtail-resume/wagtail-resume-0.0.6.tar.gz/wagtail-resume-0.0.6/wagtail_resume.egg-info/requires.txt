@@ -1,0 +1,3 @@
+wagtail-markdown
+wagtail>=2
+wagtail-metadata>=2
