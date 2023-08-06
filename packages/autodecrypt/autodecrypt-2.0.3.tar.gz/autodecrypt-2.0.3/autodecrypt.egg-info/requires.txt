@@ -1,0 +1,10 @@
+certifi
+chardet
+cssselect
+idna
+lxml
+pyquery
+remotezip
+requests
+tabulate
+urllib3
