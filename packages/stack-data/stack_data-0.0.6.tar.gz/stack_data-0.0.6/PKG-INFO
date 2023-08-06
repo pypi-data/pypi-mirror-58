@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stack_data
+Version: 0.0.6
+Summary: Powerful debugging tools for Python
+Home-page: http://github.com/alexmojaki/stack_data
+Author: Alex Hall
+Author-email: alex.mojaki@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Debuggers
+Provides-Extra: tests
