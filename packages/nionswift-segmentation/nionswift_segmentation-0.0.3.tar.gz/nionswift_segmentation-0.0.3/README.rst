@@ -1,0 +1,49 @@
+The Nion Swift Plug-in Package
+=================================
+
+Installing
+------------------------------------
+
+via pip:
+pip install nionswift-segmentation
+
+Usage
+-------------------------------------
+After this package is installed successfully, 
+a new menu item "Segmentation" will be added into 
+the GUI of nionswift. Currently there is only
+one option "Real-space segmentation" in this 
+menu. Click it to perform a segmentation for 
+the image. 
+
+
+Image segmentation
+-------------------------------------
+
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - tests
+      - | |linux|
+    * - package
+      - |version|
+
+
+.. |linux| image:: https://img.shields.io/travis/your-organization/your-project/master.svg?label=Linux%20build
+   :target: https://travis-ci.org/your-organization/your-project
+   :alt: Travis CI build status (Linux)
+
+.. |version| image:: https://img.shields.io/pypi/v/your-plug-in-name-on-pypi.svg
+   :target: https://pypi.org/project/your-plug-in-name-on-pypi/
+   :alt: Latest PyPI version
+
+.. end-badges
+
+
+
+More Information
+----------------
+
+- `Changelog <https://github.com/your-organization/your-project/blob/master/CHANGES.rst>`_
