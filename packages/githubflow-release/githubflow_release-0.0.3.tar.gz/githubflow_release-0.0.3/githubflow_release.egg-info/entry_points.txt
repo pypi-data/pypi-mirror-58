@@ -1,0 +1,3 @@
+[console_scripts]
+githubflow_release = githubflow_release.run:main
+

@@ -1,0 +1,14 @@
+COPYING.txt
+MANIFEST.in
+README.md
+setup.py
+githubflow_release/__init__.py
+githubflow_release/release.py
+githubflow_release/run.py
+githubflow_release.egg-info/PKG-INFO
+githubflow_release.egg-info/SOURCES.txt
+githubflow_release.egg-info/dependency_links.txt
+githubflow_release.egg-info/entry_points.txt
+githubflow_release.egg-info/not-zip-safe
+githubflow_release.egg-info/requires.txt
+githubflow_release.egg-info/top_level.txt

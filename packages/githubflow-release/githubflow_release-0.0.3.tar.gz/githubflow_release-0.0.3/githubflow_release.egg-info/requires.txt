@@ -1,0 +1,4 @@
+GitPython
+docopt
+requests
+semver
