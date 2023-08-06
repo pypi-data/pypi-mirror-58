@@ -1,0 +1,6 @@
+pyserial
+opencv-python-headless
+tqdm
+numpy
+pyudev
+psutil
