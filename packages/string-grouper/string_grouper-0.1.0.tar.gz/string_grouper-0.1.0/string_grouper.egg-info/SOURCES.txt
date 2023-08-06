@@ -1,0 +1,10 @@
+README.md
+setup.py
+string_grouper/__init__.py
+string_grouper/string_grouper.py
+string_grouper.egg-info/PKG-INFO
+string_grouper.egg-info/SOURCES.txt
+string_grouper.egg-info/dependency_links.txt
+string_grouper.egg-info/not-zip-safe
+string_grouper.egg-info/requires.txt
+string_grouper.egg-info/top_level.txt

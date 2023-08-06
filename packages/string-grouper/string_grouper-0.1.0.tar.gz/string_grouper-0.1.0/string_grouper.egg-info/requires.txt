@@ -1,0 +1,4 @@
+pandas>=0.25.3
+scipy
+sklearn
+sparse_dot_topn>=0.2.6
