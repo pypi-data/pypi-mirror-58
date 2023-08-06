@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: MorimotoLab
+Version: 1.0
+Summary: Data-preprocessing
+Home-page: https://github.com/tackb11/Morimotolab.git
+Author: CHAE TACBYOUNG
+Author-email: tackb11@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/tackb11/Morimotolab.git
+Description-Content-Type: UNKNOWN
+Keywords: bot,study,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: requests
+
+# Morimotolab
+
+### These codes writed for Data-preprocessing
+
+
