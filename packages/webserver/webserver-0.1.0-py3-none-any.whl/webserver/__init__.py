@@ -1,0 +1,22 @@
+import click
+from os import path
+from subprocess import run as run_command
+from .run import run
+
+if not path.exists("/etc/webserver"):
+    run_command(["sudo", "mkdir", "-p", "/etc/webserver/dhparams"])
+    run_command(["sudo", "mkdir", "-p", "/etc/webserver/letsencrypt"])
+    run_command(["sudo", "mkdir", "-p", "/etc/webserver/logs"])
+    run_command(["sudo", "mkdir", "-p", "/etc/webserver/static"])
+    run_command(["sudo", "mkdir", "-p", "/etc/webserver/conf.d"])
+
+
+@click.group()
+def cli():
+    pass
+
+
+cli.add_command(run)
+
+if __name__ == "__main__":
+    cli()
