@@ -1,0 +1,24 @@
+include README.rst
+include LICENSE
+include CHANGES.rst
+include .coveragerc
+include AUTHORS
+include INSTALL
+include TODO
+include babel.cfg
+include nose2.cfg
+include tox.ini
+include *.txt
+include *.yml
+include .nti_cover_package
+include .pylintrc
+
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs *.txt
+recursive-include docs Makefile
+recursive-exclude docs changelog.rst
+prune docs/_build
+
+recursive-include src *.zcml
+recursive-include src *.pot
