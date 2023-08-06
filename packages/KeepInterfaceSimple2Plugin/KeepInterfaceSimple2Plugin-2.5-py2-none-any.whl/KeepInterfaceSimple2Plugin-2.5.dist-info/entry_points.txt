@@ -1,0 +1,4 @@
+
+        [trac.plugins]
+        kis2 = kis2.kis
+    
