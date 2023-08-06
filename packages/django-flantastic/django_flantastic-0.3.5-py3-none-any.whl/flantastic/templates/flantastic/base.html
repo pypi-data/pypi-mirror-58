@@ -1,0 +1,20 @@
+{% load static %}
+{% load pwa %}
+<head>
+{% progressive_web_app_meta %}
+</head>
+    <link rel="stylesheet" href="{% static "flantastic/css/style.css" %}">
+<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet"> 
+
+    {% include "flantastic/headerbar.html"%}
+
+    {% block extra_assets %}
+    {% endblock %} 
+
+
+    {% include "flantastic/sidemenu.html" %}
+
+    {% block map_layer %}
+    {% endblock %}
+
+
