@@ -1,0 +1,12 @@
+README.md
+setup.py
+domainbigdata/__init__.py
+domainbigdata/cli.py
+domainbigdata/domainbigdata.py
+domainbigdata.egg-info/PKG-INFO
+domainbigdata.egg-info/SOURCES.txt
+domainbigdata.egg-info/dependency_links.txt
+domainbigdata.egg-info/entry_points.txt
+domainbigdata.egg-info/requires.txt
+domainbigdata.egg-info/top_level.txt
+domainbigdata.egg-info/zip-safe
