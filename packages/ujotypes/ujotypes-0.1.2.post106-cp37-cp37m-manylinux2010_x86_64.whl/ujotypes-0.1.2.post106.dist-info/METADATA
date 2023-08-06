@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: ujotypes
+Version: 0.1.2.post106
+Summary: Ujo Types for PythonPython wrapper for the ujotypes-c libraray for inmemory handling of UJO container objects
+Home-page: https://www.industrial-devops.org/
+Author: wobe-systems GmbH
+Author-email: info@industrial-devops.org
+License: MIT
+Project-URL: Bug Tracker, https://tracker.industrial-devops.org
+Project-URL: Documentation, https://ujotypes-py.readthedocs.org/
+Project-URL: Source Code, https://git.industrial-devops.org/titan/related-projects/ujotypes-py
+Platform: Windows
+Platform: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+
+Ujo Types Python binding
+************************
+
+|Pipeline| |PyPi| |License| |Documentation|
+
+This Python extension allows you to use the ujotypes-c library in Python.
+Use of ujotypes in Python is primairly through a class wrapper. Additionally
+you can access the native C-API functions if you have to.
+
+* Python 3.7.x
+* `Windows x64 and Linux x64 binary wheels available on PyPi <https://pypi.org/project/ujotypes/>`_
+* `Sourcecode <https://git.industrial-devops.org/titan/related-projects/ujotypes-py>`_
+* `Documentation <https://ujotypes-py.readthedocs.io/>`_
+
+Installing the extension
+========================
+
+The `ujotypes <https://pypi.org/project/ujotypes/>`_ extension is available on
+the Python Package Index (PyPi). The extension is available as a binary wheel
+for Linux x64 systems that are `manylinux <https://github.com/pypa/manylinux>`_
+compatible and on Windows x64 systems.
+
+To install it without having to build it yourself open a command line and
+run:
+
+.. code-block:: shell
+
+    pip install ujotypes
+
+Building the extension
+======================
+
+Building the extensions requires a local compiler. When building on Windows
+you need to match the compiler of the Python version you want to build the
+extension for. A `comprehensive listing <https://pythondev.readthedocs.io/windows.html>`_
+is available in the pythondev documentation.
+
+Also the `ujotypes-c <https://git.industrial-devops.org/titan/related-projects/ujotypes-c>`_
+project needs to be cloned and built locally.
+
+The standard build process for the ujotypes-py Python extension
+expects to find the directory of the ujotypes-c project to be next to the
+ujotypes-py directory. Should your clone of the ujotypes-c project be in a
+different location you will have to adjust the paths in the `setup.py` file.
+
+To build and install open a command line and run:
+
+.. code-block:: shell
+
+    python setup.py build
+    pip install .
+
+Running Unit Tests
+------------------
+
+The ujotype-py project comes with a set of unittests.
+To run tests from the package root dir call:
+
+.. code-block:: shell
+
+    python -m unittest discover test -v
+
+Code Quality
+------------
+
+We value code quality and ask you to check your code with pylint and flake8
+before making a merge request.
+
+pylint
+~~~~~~
+
+Running pylint for the python code in this project the following commands are
+used:
+
+.. code-block:: shell
+
+    pylint --rcfile=.pylintrc ./ujotypes/
+    pylint --rcfile=.pylintrc --disable=duplicate-code ./test/
+
+
+flake8
+~~~~~~
+
+You can run flake 8 with:
+
+.. code-block:: shell
+
+    flake8
+
+
+.. |Pipeline| image:: https://git.industrial-devops.org/titan/related-projects/ujotypes-py/badges/master/pipeline.svg
+    :target: https://git.industrial-devops.org/titan/related-projects/ujotypes-py/commits/master
+    :alt: Pipeline Status
+
+.. |PyPi| image:: https://img.shields.io/pypi/v/ujotypes.svg
+    :target: https://pypi.org/project/ujotypes/
+    :alt: Pypi Version
+
+.. |License| image:: https://img.shields.io/pypi/l/ujotypes.svg
+    :target: https://pypi.org/project/ujotypes/
+    :alt: Pypi Version
+
+.. |Documentation| image:: https://readthedocs.org/projects/ujotypes-py/badge/?version=latest
+    :target: https://ujotypes-py.readthedocs.io/en/latest/?badge=latest
+    :alt: Pypi Version
+
+
