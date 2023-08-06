@@ -1,0 +1,8 @@
+README.md
+setup.py
+badmodule/__init__.py
+badmodule/main.py
+naydikota1337.egg-info/PKG-INFO
+naydikota1337.egg-info/SOURCES.txt
+naydikota1337.egg-info/dependency_links.txt
+naydikota1337.egg-info/top_level.txt
