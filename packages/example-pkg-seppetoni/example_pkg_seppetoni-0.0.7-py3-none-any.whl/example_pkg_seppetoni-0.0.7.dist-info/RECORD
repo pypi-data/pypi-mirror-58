@@ -1,0 +1,12 @@
+example_pkg/__init__.py,sha256=UbAQQ4J0JsdrghF_rUpXa8I2BJ90wxA4zRjA-k0PPnQ,30
+example_pkg/main.py,sha256=yAZMGwQgxgQ3hPOG3gy6zqRYLP9c2Fcq60YsESr0Y7Q,106
+example_pkg/myclass.py,sha256=7P1aaxfyRSrlrPhN-CqNQAj9-TvloeS77tcAbMDw6dw,58
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__main__.py,sha256=lQLHSs16ijKeffREJL7oFsQ29NjDhbVO8y-cmpEeASk,82
+src/main.py,sha256=qiWEXpQHPl04BhDOG3RSmRD6UEa2mkDYNIVJSEU5p2E,100
+src/myclass.py,sha256=mS2cP0c1awOgyTOo6Xpz7GY80_TuUNj4aZ7cZWgqFk8,56
+example_pkg_seppetoni-0.0.7.dist-info/METADATA,sha256=OeYWyyb8GEhl8LMDYKQ9Ao2T3-xL7kKdcHZXEZJbRm4,456
+example_pkg_seppetoni-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+example_pkg_seppetoni-0.0.7.dist-info/entry_points.txt,sha256=lLamLgHI9J62L4qC7ETgXp0TupUTg7hQ9R76cUiStHw,51
+example_pkg_seppetoni-0.0.7.dist-info/top_level.txt,sha256=6z5BxHpE17rpY8UuF_FwZjTIbkRc7f6jXImHpIXC7gw,12
+example_pkg_seppetoni-0.0.7.dist-info/RECORD,,
