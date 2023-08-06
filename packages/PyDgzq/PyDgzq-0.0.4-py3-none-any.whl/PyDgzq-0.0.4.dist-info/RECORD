@@ -1,0 +1,11 @@
+pyDgzq/UI.py,sha256=iJoqwBQiue1ZgDlvbYYznNAQoYT2bXOJ2HIkGUS5clo,641
+pyDgzq/__init__.py,sha256=kVkSY2GBDL9kt1POfVQZVr8x-ilSa6Z1PS3MqtMitYc,19
+pyDgzq/md5.py,sha256=X4jzWI93h4V6mlbURNpW-koqOy-OfI3Ui-mukGdUHl0,9101
+pyDgzq/ocr.py,sha256=SvlOPPJZ9FOOT4YD6mDmcJOEQ-zFN8c6nhjzlj5ivdw,1157
+pyDgzq/runner.py,sha256=M4_7Fcq7N_N_KFsyKMAFr5z2H_z1UuDtldiEgDRuTp0,13146
+pyDgzq/tasks.py,sha256=0FfhOLufRSZr3qcC8aO5jFFQMYiDf2r77Qq09jc1GaI,2859
+pyDgzq/ui_elements.py,sha256=LKnds1rdM_7-wphHAZGEirzecWOQi6He3iB2TFyrB6g,10578
+PyDgzq-0.0.4.dist-info/METADATA,sha256=p3IRDKQ9xdQQlUVHXjK6h3sif3UofShTi206quzJkbc,170
+PyDgzq-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+PyDgzq-0.0.4.dist-info/top_level.txt,sha256=ls_XCeP4q-2PFusybFkwY0OXqVI8pJqQ_222RrAnOC0,7
+PyDgzq-0.0.4.dist-info/RECORD,,
