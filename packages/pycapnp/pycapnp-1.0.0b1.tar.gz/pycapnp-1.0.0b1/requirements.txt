@@ -1,0 +1,6 @@
+jinja2
+cython
+setuptools
+pytest
+tox
+wheel
