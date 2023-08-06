@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+wrapymongo/__init__.py
+wrapymongo.egg-info/PKG-INFO
+wrapymongo.egg-info/SOURCES.txt
+wrapymongo.egg-info/dependency_links.txt
+wrapymongo.egg-info/not-zip-safe
+wrapymongo.egg-info/requires.txt
+wrapymongo.egg-info/top_level.txt
