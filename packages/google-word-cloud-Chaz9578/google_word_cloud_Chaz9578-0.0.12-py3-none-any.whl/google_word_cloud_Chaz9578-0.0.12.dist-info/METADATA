@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: google-word-cloud-Chaz9578
+Version: 0.0.12
+Summary: Create word clouds from a google search term
+Home-page: https://github.com/charlie9578/googleWordCloud
+Author: Charlie Plumley
+Author-email: charlie.plumley@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: wordcloud
+Requires-Dist: lxml
+Requires-Dist: fake-useragent
+
+# googleWordCloud
+Python script to search google and produce a word cloud from the abstracts of the first page of results
+
+
