@@ -1,0 +1,25 @@
+{% extends 'simple_wizard/wizard_base_modal.html' %}
+
+{% block modal_body %}{{ block.super }}
+    <img src="/assets/img/crypto_pro_logo.jpg" width="224" height="92" alt="" aria-hidden="true">
+    <div class="js-sign-forms">
+        {{ sign_formset.management_form }}
+        {% for form in sign_formset %}
+            <div class="js-sign_formset_form">
+                {% for field in form.hidden_fields %}
+                    {{ field }}
+                {% endfor %}
+            </div>
+        {% endfor %}
+        <div class="js-sign_certificate_form">
+            {% for field in sign_certificate_form.hidden_fields %}
+                {{ field }}
+            {% endfor %}
+        </div>
+    </div>
+    <div>
+        <select class="input__input input__input_select js-crypto_client_manager-certificate_select" name="certificate">
+            <option value="">Не выбрано</option>
+        </select>
+    </div>
+{% endblock %}

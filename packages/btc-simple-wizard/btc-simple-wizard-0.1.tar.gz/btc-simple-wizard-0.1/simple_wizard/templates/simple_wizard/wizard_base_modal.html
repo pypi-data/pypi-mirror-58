@@ -1,0 +1,21 @@
+<div class="modal-header modal-header_gray">
+    {% block modal_header %}
+        <h4 class="modal-title">{{ title }}</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="/assets/img/close.svg" alt="" aria-hidden="true">
+        </button>
+    {% endblock %}
+</div>
+<div id="form-modal-body" class="modal-body">
+    {% csrf_token %}
+    {% block modal_body %}
+        <div class="alert alert-danger js-modal_error_container hidden"></div>
+    {% endblock %}
+</div>
+<div class="modal-footer">
+    {% block modal_footer %}
+        {% for button in buttons %}
+            {{ button }}
+        {% endfor %}
+    {% endblock %}
+</div>
