@@ -1,0 +1,857 @@
+# German translations for lino-noi.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the lino-noi project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lino-noi 0.0.2\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-03-29 13:26+0200\n"
+"PO-Revision-Date: 2019-01-05 16:19+0200\n"
+"Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: lino_tera/lib/cal/models.py:36
+#, fuzzy
+msgid "Amount"
+msgstr "Gesamtbetrag"
+
+#: lino_tera/lib/cal/models.py:146
+#: lino_tera/lib/courses/config/courses/Course/item_description.html:10
+msgid "Date"
+msgstr ""
+
+#: lino_tera/lib/cal/models.py:147
+#: lino_tera/lib/courses/config/courses/Course/item_description.html:8
+#, fuzzy
+msgid "Time"
+msgstr "Aktiv"
+
+#: lino_tera/lib/cal/models.py:152
+msgid "Insert [Ctrl+S]"
+msgstr "Einfügen [Ctrl+S]"
+
+#: lino_tera/lib/cal/models.py:154
+msgid "Service type"
+msgstr "Dienstleistungsart"
+
+#: lino_tera/lib/cal/models.py:155
+msgid "Service types"
+msgstr "Dienstleistungsarten"
+
+#: lino_tera/lib/cal/models.py:188
+msgid "Amount perceived"
+msgstr "Kassierter Betrag"
+
+#: lino_tera/lib/cal/models.py:259
+msgid "Perceived"
+msgstr "Kassiert"
+
+#: lino_tera/lib/cal/models.py:265
+msgid "My cash roll"
+msgstr "Meine Kassenrolle"
+
+#: lino_tera/lib/coachings/choicelists.py:13
+#: lino_tera/lib/courses/choicelists.py:99
+msgid "Client tariff"
+msgstr ""
+
+#: lino_tera/lib/coachings/choicelists.py:14
+#: lino_tera/lib/courses/choicelists.py:100
+msgid "Client tariffs"
+msgstr ""
+
+#: lino_tera/lib/coachings/choicelists.py:18
+msgid "Plain"
+msgstr ""
+
+#: lino_tera/lib/coachings/choicelists.py:19
+msgid "Reduced"
+msgstr ""
+
+#: lino_tera/lib/coachings/desktop.py:19 lino_tera/lib/contacts/models.py:50
+#: lino_tera/lib/courses/desktop.py:208 lino_tera/lib/products/models.py:47
+#: lino_tera/lib/users/desktop.py:16
+msgid "General"
+msgstr ""
+
+#: lino_tera/lib/coachings/desktop.py:24 lino_tera/lib/contacts/models.py:64
+msgid "Address"
+msgstr ""
+
+#: lino_tera/lib/coachings/desktop.py:32 lino_tera/lib/contacts/models.py:88
+#: lino_tera/lib/courses/desktop.py:238
+msgid "More"
+msgstr ""
+
+#: lino_tera/lib/coachings/fixtures/std.py:15
+msgid "Transfer to colleague"
+msgstr ""
+
+#: lino_tera/lib/coachings/fixtures/std.py:16
+msgid "Moved away"
+msgstr ""
+
+#: lino_tera/lib/coachings/fixtures/std.py:17
+msgid "Abandoned by client"
+msgstr ""
+
+#: lino_tera/lib/contacts/models.py:93 lino_tera/lib/courses/desktop.py:232
+#: lino_tera/lib/courses/desktop.py:246 lino_tera/lib/sales/__init__.py:13
+#: lino_tera/lib/tera/models.py:283
+msgid "Invoicing"
+msgstr ""
+
+#: lino_tera/lib/contacts/models.py:111
+msgid "Purchases"
+msgstr ""
+
+#: lino_tera/lib/courses/__init__.py:20 lino_tera/lib/courses/desktop.py:311
+msgid "Therapies"
+msgstr "Akten"
+
+#: lino_tera/lib/courses/__init__.py:27 lino_tera/lib/tera/user_types.py:60
+msgid "Therapist"
+msgstr "Therapeut"
+
+#: lino_tera/lib/courses/choicelists.py:12
+msgid "Individual therapies"
+msgstr "Einzeltherapien"
+
+#: lino_tera/lib/courses/choicelists.py:14
+msgid "Life groups"
+msgstr "Lebensgruppen"
+
+#: lino_tera/lib/courses/choicelists.py:16
+msgid "Other groups"
+msgstr "Therapeutische Gruppen"
+
+#: lino_tera/lib/courses/choicelists.py:28
+#: lino_tera/lib/courses/choicelists.py:57 lino_tera/lib/tera/choicelists.py:69
+msgid "Active"
+msgstr "Aktiv"
+
+#: lino_tera/lib/courses/choicelists.py:31
+#: lino_tera/lib/courses/choicelists.py:51 lino_tera/lib/tera/choicelists.py:70
+msgid "Closed"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:34
+#: lino_tera/lib/courses/choicelists.py:52
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: lino_tera/lib/courses/choicelists.py:37
+#: lino_tera/lib/courses/choicelists.py:53 lino_tera/lib/tera/choicelists.py:71
+msgid "Cancelled"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:40
+#: lino_tera/lib/courses/choicelists.py:54 lino_tera/lib/tera/choicelists.py:73
+msgid "Forwarded"
+msgstr "Weitergeleitet"
+
+#: lino_tera/lib/courses/choicelists.py:43
+msgid "Draft"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:50
+msgid "Confirmed"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:55
+msgid "First contact"
+msgstr "Erstkontakt"
+
+#: lino_tera/lib/courses/choicelists.py:56
+msgid "Trying"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:65
+msgid "Translator type"
+msgstr "Übersetzung"
+
+#: lino_tera/lib/courses/choicelists.py:66
+msgid "Translator types"
+msgstr "Übersetzungsarten"
+
+#: lino_tera/lib/courses/choicelists.py:69
+msgid "Interpreter"
+msgstr "Dolmetscher"
+
+#: lino_tera/lib/courses/choicelists.py:70
+msgid "SETIS"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:71
+#: lino_tera/lib/courses/choicelists.py:95 lino_tera/lib/tera/choicelists.py:39
+#: lino_tera/lib/tera/fixtures/demo.py:141
+msgid "Other"
+msgstr "Andere"
+
+#: lino_tera/lib/courses/choicelists.py:75
+#: lino_tera/lib/courses/choicelists.py:76
+msgid "Therapy domain"
+msgstr "Bereich"
+
+#: lino_tera/lib/courses/choicelists.py:79
+msgid "Adults"
+msgstr "Erwachsene"
+
+#: lino_tera/lib/courses/choicelists.py:80
+msgid "Children M"
+msgstr "Kinder M"
+
+#: lino_tera/lib/courses/choicelists.py:81
+msgid "Children P"
+msgstr "Kinder P"
+
+#: lino_tera/lib/courses/choicelists.py:87
+msgid "Ending reason"
+msgstr "Beendigungsgrund"
+
+#: lino_tera/lib/courses/choicelists.py:90
+msgid "Successfully ended"
+msgstr "Erfolgreich beendet"
+
+#: lino_tera/lib/courses/choicelists.py:91
+msgid "Health problems"
+msgstr "Gesundheitsprobleme"
+
+#: lino_tera/lib/courses/choicelists.py:92
+msgid "Familiar reasons"
+msgstr "Familiäre Gründe"
+
+#: lino_tera/lib/courses/choicelists.py:93
+msgid "Missing motivation"
+msgstr "Fehlende Motivation"
+
+#: lino_tera/lib/courses/choicelists.py:94
+msgid "Return to home country"
+msgstr "Rückkehr ins Heimatland"
+
+#: lino_tera/lib/courses/choicelists.py:104
+#: lino_tera/lib/tera/choicelists.py:40
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: lino_tera/lib/courses/choicelists.py:105
+msgid "Free"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:106
+#, fuzzy
+msgid "Tariff 2"
+msgstr "Tarif"
+
+#: lino_tera/lib/courses/choicelists.py:107
+#, fuzzy
+msgid "Tariff 5"
+msgstr "Tarif"
+
+#: lino_tera/lib/courses/choicelists.py:108
+#, fuzzy
+msgid "Tariff 10"
+msgstr "Tarif"
+
+#: lino_tera/lib/courses/choicelists.py:109
+#, fuzzy
+msgid "Tariff 15"
+msgstr "Tarif"
+
+#: lino_tera/lib/courses/choicelists.py:110
+#, fuzzy
+msgid "Tariff 20"
+msgstr "Tarif"
+
+#: lino_tera/lib/courses/choicelists.py:111
+msgid "Tariff 39,56"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:115
+msgid "Invoicing policy"
+msgstr "Fakturierungsmethode"
+
+#: lino_tera/lib/courses/choicelists.py:116
+msgid "Invoicing policies"
+msgstr "Fakturierungsmethoden"
+
+#: lino_tera/lib/courses/choicelists.py:119
+msgid "By calendar event"
+msgstr "Pro Termin"
+
+#: lino_tera/lib/courses/choicelists.py:120
+#: lino_tera/lib/tera/fixtures/demo.py:108
+msgid "By presence"
+msgstr "Pro Anwesenheit"
+
+#: lino_tera/lib/courses/choicelists.py:124
+msgid "Residence"
+msgstr "Wohnort"
+
+#: lino_tera/lib/courses/choicelists.py:125
+msgid "Residences"
+msgstr "Wohnorte"
+
+#: lino_tera/lib/courses/choicelists.py:128
+msgid "Inside"
+msgstr "Innerhalb der DG"
+
+#: lino_tera/lib/courses/choicelists.py:129
+msgid "Outside"
+msgstr "Außerhalb der DG"
+
+#: lino_tera/lib/courses/choicelists.py:132
+msgid "Household composition"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:133
+msgid "Household compositions"
+msgstr ""
+
+#: lino_tera/lib/courses/choicelists.py:141
+msgid "No participant below 18"
+msgstr "Kein Teilnehmer unter 18"
+
+#: lino_tera/lib/courses/choicelists.py:142
+msgid "One participant below 18"
+msgstr "Ein Teilnehmer unter 18"
+
+#: lino_tera/lib/courses/choicelists.py:143
+msgid "More than one participant below 18"
+msgstr "Mehr als ein Teilnehmer unter 18"
+
+#: lino_tera/lib/courses/choicelists.py:146
+msgid "Income category"
+msgstr "Einkommenskategorie"
+
+#: lino_tera/lib/courses/choicelists.py:147
+#, fuzzy
+msgid "Income categories"
+msgstr "Gebührenkategorien"
+
+#: lino_tera/lib/courses/desktop.py:104
+msgid "Add a colleague"
+msgstr "Kollegen hinzufügen"
+
+#: lino_tera/lib/courses/desktop.py:219
+msgid "Therapy"
+msgstr "Therapie"
+
+#: lino_tera/lib/courses/desktop.py:226
+msgid "Appointments"
+msgstr "Termine"
+
+#: lino_tera/lib/courses/desktop.py:291
+msgid "Invoice recipient in dossiers"
+msgstr "Rechnungsempfänger in Akten"
+
+#: lino_tera/lib/courses/desktop.py:311
+msgid "My {}"
+msgstr ""
+
+#: lino_tera/lib/courses/models.py:51
+msgid "Dossier type"
+msgstr "Aktenart"
+
+#: lino_tera/lib/courses/models.py:52
+msgid "Dossier types"
+msgstr "Aktenarten"
+
+#: lino_tera/lib/courses/models.py:77
+msgid "Invoiceable fee"
+msgstr "Fakturierbare Gebühr"
+
+#: lino_tera/lib/courses/models.py:86
+msgid "No fee"
+msgstr "Keine Gebühr"
+
+#: lino_tera/lib/courses/models.py:90
+msgid "for"
+msgstr "für"
+
+#: lino_tera/lib/courses/models.py:211
+msgid "{product} on {dates}"
+msgstr "{product} am {dates}"
+
+#: lino_tera/lib/courses/models.py:214
+msgid "{} appointments"
+msgstr "{} Termine"
+
+#: lino_tera/lib/courses/models.py:233
+msgid "No cash daybook defined"
+msgstr "Kein Kassenbuch definiert"
+
+#: lino_tera/lib/courses/models.py:317
+msgid "Dossier"
+msgstr "Akte"
+
+#: lino_tera/lib/courses/models.py:318
+msgid "Dossiers"
+msgstr "Akten"
+
+#: lino_tera/lib/courses/models.py:336
+msgid "Mandatory"
+msgstr "Verpflichtend"
+
+#: lino_tera/lib/courses/models.py:347
+msgid "Invoice recipient"
+msgstr "Rechnungsempfänger"
+
+#: lino_tera/lib/courses/models.py:353 lino_tera/lib/tera/models.py:278
+msgid "Client"
+msgstr "Klient"
+
+#: lino_tera/lib/courses/models.py:469 lino_tera/lib/tera/models.py:125
+msgid "Patient"
+msgstr "Patient"
+
+#: lino_tera/lib/courses/models.py:477
+msgid "Household"
+msgstr ""
+
+#: lino_tera/lib/courses/models.py:485
+msgid "Organization"
+msgstr ""
+
+#: lino_tera/lib/courses/models.py:559
+msgid "Manager"
+msgstr "Verwalter"
+
+#: lino_tera/lib/courses/models.py:592
+msgid "Role"
+msgstr ""
+
+#: lino_tera/lib/courses/models.py:659
+msgid "Participant"
+msgstr "Teilnehmer"
+
+#: lino_tera/lib/courses/models.py:677
+msgid "Phone: {0}"
+msgstr ""
+
+#: lino_tera/lib/courses/models.py:679
+msgid "GSM: {0}"
+msgstr ""
+
+#: lino_tera/lib/courses/models.py:682
+msgid "Payment info"
+msgstr ""
+
+#: lino_tera/lib/courses/config/courses/Course/item_description.html:16
+#: lino_tera/lib/courses/config/courses/Enrolment/item_description.html:8
+msgid "Your start date"
+msgstr ""
+
+#: lino_tera/lib/courses/config/courses/Course/item_description.html:19
+#: lino_tera/lib/courses/config/courses/Enrolment/item_description.html:11
+#, fuzzy
+msgid "Scheduled dates"
+msgstr "Geplant"
+
+#: lino_tera/lib/lists/models.py:20
+msgid "Therapeutical group"
+msgstr ""
+
+#: lino_tera/lib/lists/models.py:21
+msgid "Therapeutical groups"
+msgstr ""
+
+#: lino_tera/lib/lists/fixtures/demo.py:13
+msgid "Women's group {0}"
+msgstr ""
+
+#: lino_tera/lib/lists/fixtures/demo.py:14
+msgid "Men's group {0}"
+msgstr ""
+
+#: lino_tera/lib/lists/fixtures/demo.py:15
+msgid "Children's group {0}"
+msgstr ""
+
+#: lino_tera/lib/notes/models.py:18
+msgid "Note"
+msgstr ""
+
+#: lino_tera/lib/notes/models.py:19
+msgid "Notes"
+msgstr ""
+
+#: lino_tera/lib/notes/models.py:28
+msgid "Detailed description"
+msgstr "Ausführliche BEschreibung"
+
+#: lino_tera/lib/notes/models.py:29
+msgid "Short description"
+msgstr "Kurzbeschreibung"
+
+#: lino_tera/lib/notes/models.py:30
+msgid "Note type"
+msgstr "Notizart"
+
+#: lino_tera/lib/products/__init__.py:19 lino_tera/lib/products/models.py:14
+#: lino_tera/lib/products/models.py:34 lino_tera/lib/tera/fixtures/demo.py:91
+msgid "Fees"
+msgstr "Gebühren"
+
+#: lino_tera/lib/products/models.py:15 lino_tera/lib/tera/fixtures/demo.py:94
+msgid "Cash daybooks"
+msgstr "Kassenbücher"
+
+#: lino_tera/lib/products/models.py:24
+msgid "Fee category"
+msgstr "Gebührenkategorie"
+
+#: lino_tera/lib/products/models.py:25
+msgid "Fee categories"
+msgstr "Gebührenkategorien"
+
+#: lino_tera/lib/products/models.py:33
+msgid "Fee"
+msgstr "Gebühr"
+
+#: lino_tera/lib/products/models.py:56
+msgid "Sales"
+msgstr ""
+
+#: lino_tera/lib/sales/models.py:21
+msgid "Totals"
+msgstr ""
+
+#: lino_tera/lib/sales/models.py:31
+msgid "Product invoice item"
+msgstr "Produktrechnungsposition"
+
+#: lino_tera/lib/sales/models.py:32
+msgid "Product invoice items"
+msgstr "Produktrechnungspositionen"
+
+#: lino_tera/lib/sales/models.py:48
+msgid "Our reference"
+msgstr "Unser Zeichen"
+
+#: lino_tera/lib/sales/models.py:50 lino_tera/lib/sales/models.py:52
+msgid "Total amount"
+msgstr "Gesamtbetrag"
+
+#: lino_tera/lib/teams/__init__.py:24
+msgid "Departments"
+msgstr ""
+
+#: lino_tera/lib/teams/models.py:16
+msgid "Division"
+msgstr "Abteilung"
+
+#: lino_tera/lib/teams/models.py:17
+msgid "Divisions"
+msgstr "Abteilungen"
+
+#: lino_tera/lib/tera/choicelists.py:28
+msgid "Professional situation"
+msgstr "Beruf"
+
+#: lino_tera/lib/tera/choicelists.py:31
+msgid "Independent"
+msgstr "Selbstständig/Freiberufler"
+
+#: lino_tera/lib/tera/choicelists.py:32
+msgid "Employed"
+msgstr "Arbeiter/Angestellter"
+
+#: lino_tera/lib/tera/choicelists.py:33
+msgid "Student"
+msgstr "In Ausbildung"
+
+#: lino_tera/lib/tera/choicelists.py:34
+msgid "Homemaker"
+msgstr "Hausfrau/Hausmann"
+
+#: lino_tera/lib/tera/choicelists.py:35
+msgid "Workless"
+msgstr "Arbeitslos"
+
+#: lino_tera/lib/tera/choicelists.py:36
+msgid "Invalid"
+msgstr "Berufsunfähig"
+
+#: lino_tera/lib/tera/choicelists.py:37
+msgid "Social aid recipient"
+msgstr "Sozialhilfeempfänger"
+
+#: lino_tera/lib/tera/choicelists.py:38
+msgid "Retired"
+msgstr "Im Ruhestand"
+
+#: lino_tera/lib/tera/choicelists.py:41
+msgid "Career interruption"
+msgstr "Laufbahnunterbrechung"
+
+#: lino_tera/lib/tera/choicelists.py:72
+msgid "Abandoned"
+msgstr ""
+
+#: lino_tera/lib/tera/choicelists.py:74
+msgid "Newcomer"
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:7
+msgid "The standard migrator for tera."
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:8
+msgid "min_asset and number_of_events now in Tarif instead Product"
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:9
+msgid "The amount perceived during this appointment."
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:10
+msgid "The residence used to determine the fee for invoicing."
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:11
+msgid "The income category used to determine the fee for invoicing."
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:12
+msgid "The family composition used to determine the fee for invoicing."
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:13
+msgid "A choicelist of \"price factors\"."
+msgstr ""
+
+#: lino_tera/lib/tera/help_texts.py:14
+msgid "The list of price rules."
+msgstr ""
+
+#: lino_tera/lib/tera/layouts.py:72
+msgid "Sales invoices"
+msgstr ""
+
+#: lino_tera/lib/tera/layouts.py:74
+msgid "Purchase invoices"
+msgstr ""
+
+#: lino_tera/lib/tera/models.py:77
+msgid "Procurer"
+msgstr "Vermittler"
+
+#: lino_tera/lib/tera/models.py:78
+msgid "Procurers"
+msgstr "Vermittler"
+
+#: lino_tera/lib/tera/models.py:105
+msgid "Life mode"
+msgstr "Lebensweise"
+
+#: lino_tera/lib/tera/models.py:106
+msgid "Life modes"
+msgstr "Lebensweise"
+
+#: lino_tera/lib/tera/models.py:126
+msgid "Patients"
+msgstr "Patienten"
+
+#: lino_tera/lib/tera/models.py:139
+msgid "Obsoletes"
+msgstr ""
+
+#: lino_tera/lib/tera/models.py:145 lino_tera/lib/tera/models.py:340
+msgid "Nationality"
+msgstr ""
+
+#: lino_tera/lib/tera/models.py:222
+msgid "{} ({}) from {}"
+msgstr ""
+
+#: lino_tera/lib/tera/models.py:226
+msgid "Name"
+msgstr ""
+
+#: lino_tera/lib/tera/models.py:252
+msgid "Primary coach"
+msgstr ""
+
+#: lino_tera/lib/tera/settings.py:122
+msgid "New note"
+msgstr "Notiz erstellen"
+
+#: lino_tera/lib/tera/user_types.py:58
+msgid "Anonymous"
+msgstr ""
+
+#: lino_tera/lib/tera/user_types.py:59
+msgid "Secretary"
+msgstr ""
+
+#: lino_tera/lib/tera/user_types.py:61
+msgid "Administrator"
+msgstr ""
+
+#: lino_tera/lib/tera/workflows.py:24
+msgid "Missed"
+msgstr "Verpasst"
+
+#: lino_tera/lib/tera/workflows.py:25
+msgid "Guest missed the appointment."
+msgstr ""
+
+#: lino_tera/lib/tera/workflows.py:29
+msgid "Called off"
+msgstr "Abgesagt"
+
+#: lino_tera/lib/tera/workflows.py:30
+msgid "Scheduled"
+msgstr "Geplant"
+
+#: lino_tera/lib/tera/fixtures/demo.py:104
+#, fuzzy
+msgid "Sales on therapies"
+msgstr "Umsatz Einzeltherapien"
+
+#: lino_tera/lib/tera/fixtures/demo.py:111
+msgid "Maximum 10"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:115
+msgid "Group therapy"
+msgstr "Gruppentherapie"
+
+#: lino_tera/lib/tera/fixtures/demo.py:125
+#: lino_tera/lib/tera/fixtures/demo.py:132
+msgid "Individual therapy"
+msgstr "Einzeltherapie"
+
+#: lino_tera/lib/tera/fixtures/demo.py:143
+msgid "Cash daybook Daniel"
+msgstr "Kassenbuch Daniel"
+
+#: lino_tera/lib/tera/fixtures/demo.py:147
+msgid "Attendee"
+msgstr "Teilnehmer"
+
+#: lino_tera/lib/tera/fixtures/demo.py:149
+msgid "Colleague"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:154
+msgid "Individual appointment"
+msgstr "Einzelgespräch"
+
+#: lino_tera/lib/tera/fixtures/demo.py:158
+msgid "Group meeting"
+msgstr "Gruppengespräch"
+
+#: lino_tera/lib/tera/fixtures/demo.py:166
+msgid "Alcoholism"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:167
+msgid "Phobia"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:168
+msgid "Insomnia"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:242
+msgid "Alcohol"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:242
+msgid "Burnout"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:242
+msgid "Women"
+msgstr ""
+
+#: lino_tera/lib/tera/fixtures/demo.py:242
+msgid "Children"
+msgstr ""
+
+#: lino_tera/lib/users/models.py:20
+msgid "Cash daybook"
+msgstr "Kassenbuch"
+
+#~ msgid "Attendance"
+#~ msgstr "Teilnahme"
+
+#~ msgid "Attendances"
+#~ msgstr "Teilnahmen"
+
+#~ msgid "New appointment"
+#~ msgstr "Termin erstellen"
+
+#~ msgid "Therapy type"
+#~ msgstr "Therapieart"
+
+#~ msgid "Tariffs"
+#~ msgstr "Tarife"
+
+#~ msgid "Tariff"
+#~ msgstr "Tarif"
+
+#~ msgid "Prepayments"
+#~ msgstr "Anzahlungen"
+
+#~ msgid "Prepayment"
+#~ msgstr "Anzahlung"
+
+#~ msgid "Cash prepayments"
+#~ msgstr "Anzahlungen in bar"
+
+#~ msgid "Payment"
+#~ msgstr "Zahlung"
+
+#~ msgid "Below 900"
+#~ msgstr "Unter 900"
+
+#~ msgid "Above 1800"
+#~ msgstr "Über 1800"
+
+#~ msgid "Enrolments using this fee"
+#~ msgstr "Teilnahmen mit diesem Tarif"
+
+#~ msgid "Attendance fee"
+#~ msgstr "Teilnahmegebühr"
+
+#~ msgid "Enrolments"
+#~ msgstr "Teilnahmen"
+
+#~ msgid "Alone"
+#~ msgstr "Allein lebend"
+
+#~ msgid "2 members"
+#~ msgstr "2 Mitglieder im Haushalt"
+
+#~ msgid "3 members"
+#~ msgstr "3 Mitglieder im Haushalt"
+
+#~ msgid "Participants"
+#~ msgstr "Teilnehmer"
+
+#~ msgid "{} with {} on {}"
+#~ msgstr "{} mit {} am {}"
+
+#~ msgid "Price factor"
+#~ msgstr "Preisfaktor"
+
+#~ msgid "Price factors"
+#~ msgstr "Preisfaktoren"
+
+#~ msgid "Fee rule"
+#~ msgstr "Gebührenregel"
+
+#~ msgid "Fee rules"
+#~ msgstr "Gebührenordnung"
+

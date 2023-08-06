@@ -1,0 +1,25 @@
+{%- if obj.pupil.id != item.voucher.partner.id -%}
+{{rt.models.courses.Pupil._meta.verbose_name}}: {{obj.pupil}}.
+{% endif -%}
+{{rt.models.products.Product._meta.verbose_name}}: {{obj.fee}}.
+{% if obj.course.every_unit != rt.models.cal.Recurrencies.once -%}
+{%- if hasattr(obj.fee, 'tariff') and obj.fee.tariff.number_of_events -%}
+{%- if obj.start_date %}
+{{_("Your start date")}}: {{fds(obj.start_date)}}.
+{% endif -%}
+{%- else -%}
+{{_("Scheduled dates")}}:
+{% set qs = obj.course.events_by_course.order_by('start_date') %}
+{% set qs = rt.models.system.PeriodEvents.started.add_filter(qs, obj) %}
+{% for evt in qs -%}
+{{fds(evt.start_date)}}, {% endfor %}
+{% endif -%}
+{% endif -%}
+{%- if obj.option %}
+{{obj.option}}.
+{% endif -%}
+{%- if False %}
+Angefragt am {{fds(obj.request_date)}} 
+({{obj.user.initials or obj.user.first_name}}). 
+{% endif -%}
+
