@@ -1,0 +1,4 @@
+itsdangerous
+pexpect
+paramiko
+click
