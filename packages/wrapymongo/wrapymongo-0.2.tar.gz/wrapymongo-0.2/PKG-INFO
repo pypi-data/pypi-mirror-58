@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wrapymongo
+Version: 0.2
+Summary: A wrapper for pymonogo driver
+Home-page: http://github.com/shreyasgokhale/wrapymongo
+Author: Shreyas Gokhale
+Author-email: shreyasgokhale@gmail.com
+License: MIT
+Download-URL: https://github.com/shreyasgokhale/wrapymongo/archive/v_02.tar.gz
+Description: Wrapper modlue to handle our mongodb requests using pymongodb driver
+Keywords: mongo,mongodb,pymongo,mongodriver,wrapymongo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
