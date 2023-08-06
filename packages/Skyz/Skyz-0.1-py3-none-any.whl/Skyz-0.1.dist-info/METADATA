@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Skyz
+Version: 0.1
+Summary: A database API scraped from web.py.
+Home-page: https://github.com/pancubs/skyz
+Author: Pancubs.org
+Author-email: dao@pancubs.org
+Maintainer: Pancubs.org
+Maintainer-email: dao@pancubs.org
+License: BSD-3-Clause
+Project-URL: Documentation, https://github.com/pancubs/skyz
+Project-URL: Code, https://github.com/pancubs/skyz
+Project-URL: Issue tracker, https://github.com/pancubs/skyz/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+
+UNKNOWN
+
+
