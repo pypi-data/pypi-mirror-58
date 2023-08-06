@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PyDgzq
+Version: 0.0.10
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: APScheduler
+Requires-Dist: baidu-aip
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: idna
+Requires-Dist: Pillow
+Requires-Dist: PyExecJS
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: tzlocal
+Requires-Dist: urllib3
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+
