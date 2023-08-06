@@ -1,0 +1,5 @@
+
+    # -*- Entry points: -*-
+    [console_scripts]
+    initialize_db = sixfeetup.bowab.scripts.initializedb:main
+    
