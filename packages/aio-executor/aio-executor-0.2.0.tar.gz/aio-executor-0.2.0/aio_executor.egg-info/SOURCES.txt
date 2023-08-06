@@ -1,0 +1,8 @@
+README.md
+aio_executor.py
+setup.py
+aio_executor.egg-info/PKG-INFO
+aio_executor.egg-info/SOURCES.txt
+aio_executor.egg-info/dependency_links.txt
+aio_executor.egg-info/not-zip-safe
+aio_executor.egg-info/top_level.txt
