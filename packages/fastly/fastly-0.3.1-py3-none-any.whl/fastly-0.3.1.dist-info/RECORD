@@ -1,0 +1,15 @@
+fastly/__init__.py,sha256=UfHK1Xvx5ao8K0hwgV4Z6ZvtSRuMdm1uG2ErkbsLLEk,22
+fastly/_version.py,sha256=TZkGuMIRSRmUY3XCIs5owt2o60vXyqYMHWIkhx65uYE,22
+fastly/auth.py,sha256=eiqMPLRFf1mb0oAZqGOKKOsDSiMyOCX6h8-9554_Il0,596
+fastly/connection.py,sha256=hKTsRWCthKz_mKejo6gji-EX507QqcL3oCv7DS2Frr4,1948
+fastly/errors.py,sha256=KIgshpfHJs-knWrie9Arq1qep8CSqC_SrstNy99vxcw,347
+fastly/fastly.py,sha256=n4ZnEyVjRNri0QzDTNk3Jn-v64uMPQPd8KgQlnKtBok,4364
+fastly/models.py,sha256=ypjomQ3W5JhQ751GlTiFVbDDl1Hj6xxtnfyTYXPcUPs,8800
+fastly-0.3.1.data/scripts/purge_key,sha256=CCgDaYANMXUSE_9ncMEH-ILfLCYWzaV4Ak3kz3ruhgI,238
+fastly-0.3.1.data/scripts/purge_service,sha256=dQyWqJybqyhaOkkkahNSvQAneEGxtOcO65TGZODrCmA,220
+fastly-0.3.1.data/scripts/purge_url,sha256=vVeeQ7hFBFYAx8NJaKCXQUJ2wUn1ypH_3WfGW8Iy9Zg,238
+fastly-0.3.1.dist-info/LICENSE,sha256=VVkeKgySJ7pRMIPmxSLzjWXoQEdNJjPYRhHksPsKEQk,1079
+fastly-0.3.1.dist-info/METADATA,sha256=e7SMXTdGgFjdefKDwSKDPmAKSrGf8fqpseNZWLtD4PM,4231
+fastly-0.3.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fastly-0.3.1.dist-info/top_level.txt,sha256=rcA6yKRTQCzYcujU74Vjqu4jzVc1zm4QZAPchiSKykA,7
+fastly-0.3.1.dist-info/RECORD,,
