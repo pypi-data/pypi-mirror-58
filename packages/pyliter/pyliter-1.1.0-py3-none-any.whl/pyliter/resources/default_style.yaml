@@ -1,0 +1,39 @@
+# see documentation for click.style
+DEFAULT:
+  font_name: Source Code Pro
+  font_size: 18
+  background_color: black
+  color: white
+  line_numbers: true
+OP:
+  color: purple
+KEYWORD:
+  color: magenta
+STRING:
+  color: pink
+NAME:
+  color: yellow
+BUILTIN:
+  color: green
+NUMBER:
+  color: red
+SELF:
+  color: red
+  bold: true
+LVAL:
+  color: red
+  bold: true
+FNAME:
+  color: blue
+
+CNAME:
+  color: red
+INAME:
+  color: blue
+COMMENT:
+  color: red
+  bold: true
+DOCSTRING:
+  color: red
+PRIVATE:
+  color: purple
