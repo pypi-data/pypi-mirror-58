@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: CangJie
+Version: 0.0.1
+Summary: This project aims to provide multiple knowledge tracing models.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: tqdm
+Requires-Dist: fire
+Requires-Dist: longling (>=1.3.7)
+Requires-Dist: gensim
+Requires-Dist: Pillow
+Requires-Dist: gluonnlp
+Requires-Dist: jieba
+Requires-Dist: numpy
+Provides-Extra: test
+Requires-Dist: pytest (>=4); extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.0); extra == 'test'
+Requires-Dist: pytest-pep8 (>=1); extra == 'test'
+
+Refer to full documentation https://github.com/bigdata-ustc/XKT/blob/master/README.md for detailed information.
+
+
