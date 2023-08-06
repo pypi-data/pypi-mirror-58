@@ -1,0 +1,5 @@
+requests>=2.18.4
+zeep>=2.5.0
+
+[rst]
+docutils>=0.11

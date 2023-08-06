@@ -1,0 +1,3 @@
+[console_scripts]
+ciscocucmapi = ciscocucmapi.cli:main
+
