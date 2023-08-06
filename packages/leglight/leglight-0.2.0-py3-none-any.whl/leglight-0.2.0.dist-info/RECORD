@@ -1,0 +1,9 @@
+leglight/__init__.py,sha256=WGLG_G1PtRdhtanPSInemGnDabRFZP87v29xfsKrOLk,441
+leglight/__version__.py,sha256=EfY0EvflyqiGR1BFpYB6-Sha2a0MBKDA6ArSwu3nlwo,324
+leglight/discovery.py,sha256=GwjjWXehr1nUZUmKfbdeFi3Rupr6Qg-VJKmO1K8gTqg,1388
+leglight/leglight.py,sha256=LTU2eDptiJmXx8CCAomQQD-Y9qdWu2sAdCUa3mdMiN8,4906
+leglight-0.2.0.dist-info/LICENSE,sha256=_sIEmokcbjjOvH9j5R3kSj8_bQQnI5Iv83LnU5QPieM,1067
+leglight-0.2.0.dist-info/METADATA,sha256=S_AH56S3DdbIRV89Hi8P7LeRrIotWDrHDTKcZsQ4RIM,2707
+leglight-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+leglight-0.2.0.dist-info/top_level.txt,sha256=tFj_yhrLd4HiMx35FmR-bBW6zc2nrstjsexMAW1eS9Q,9
+leglight-0.2.0.dist-info/RECORD,,
