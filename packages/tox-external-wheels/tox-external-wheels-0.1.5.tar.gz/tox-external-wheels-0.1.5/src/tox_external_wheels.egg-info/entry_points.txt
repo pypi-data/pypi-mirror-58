@@ -1,0 +1,3 @@
+[tox]
+tox_external_wheels = tox_external_wheels.plugin
+

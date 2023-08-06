@@ -1,0 +1,13 @@
+tox>=3.12.2
+
+[docs]
+sphinx<3,>=2.0.0
+towncrier>=18.5.0
+pygments-github-lexers>=0.0.5
+sphinxcontrib-autoprogram>=0.1.5
+
+[testing]
+pytest<6,>=4.0.0
+pytest-cov<3,>=2.5.1
+pytest-mock<2,>=1.10.0
+pytest-xdist<2,>=1.22.2
