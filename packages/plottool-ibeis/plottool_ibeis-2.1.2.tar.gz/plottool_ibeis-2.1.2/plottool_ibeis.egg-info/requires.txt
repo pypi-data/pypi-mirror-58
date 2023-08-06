@@ -1,0 +1,37 @@
+six
+ubelt
+matplotlib
+utool
+vtool_ibeis
+guitool_ibeis
+cachetools
+
+[:python_version > "2.7"]
+pyqt5
+
+[all]
+six
+ubelt
+matplotlib
+utool
+vtool_ibeis
+guitool_ibeis
+cachetools
+xdoctest
+pytest
+pytest-cov
+coverage
+codecov
+
+[all:python_version > "2.7"]
+pyqt5
+
+[optional]
+pygraphviz
+
+[tests]
+xdoctest
+pytest
+pytest-cov
+coverage
+codecov
