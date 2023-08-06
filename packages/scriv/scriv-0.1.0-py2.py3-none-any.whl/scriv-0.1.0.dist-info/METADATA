@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: scriv
+Version: 0.1.0
+Summary: Scriv changelog management tool
+Home-page: https://github.com/edx/scriv
+Author: edX
+Author-email: oscm@edx.org
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: attrs
+Requires-Dist: click
+Requires-Dist: click-log
+Requires-Dist: jinja2
+
+=====
+Scriv
+=====
+
+|pypi-badge| |travis-badge| |codecov-badge| |doc-badge| |pyversions-badge|
+|license-badge|
+
+Scriv changelog management tool
+
+Overview
+--------
+
+Scriv is a command-line tool for helping developers maintain useful changelogs.
+It manages a directory of changelog entries. It aggregates them into a
+CHANGELOG file.
+
+Documentation
+-------------
+
+The full documentation is at https://scriv.readthedocs.org.
+
+License
+-------
+
+The code in this repository is licensed under the Apache Software License 2.0 unless
+otherwise noted.
+
+Please see ``LICENSE.txt`` for details.
+
+How To Contribute
+-----------------
+
+Contributions are very welcome.
+
+Please read `How To Contribute <https://github.com/edx/edx-platform/blob/master/CONTRIBUTING.rst>`_ for details.
+
+Even though they were written with ``edx-platform`` in mind, the guidelines
+should be followed for Open edX code in general.
+
+Reporting Security Issues
+-------------------------
+
+Please do not report security issues in public. Please email security@edx.org.
+
+Getting Help
+------------
+
+Have a question about this repository, or about Open edX in general?  Please
+refer to this `list of resources`_ if you need any assistance.
+
+.. _list of resources: https://open.edx.org/getting-help
+
+
+.. |pypi-badge| image:: https://img.shields.io/pypi/v/scriv.svg
+    :target: https://pypi.python.org/pypi/scriv/
+    :alt: PyPI
+
+.. |travis-badge| image:: https://travis-ci.org/edx/scriv.svg?branch=master
+    :target: https://travis-ci.org/edx/scriv
+    :alt: Travis
+
+.. |codecov-badge| image:: http://codecov.io/github/edx/scriv/coverage.svg?branch=master
+    :target: http://codecov.io/github/edx/scriv?branch=master
+    :alt: Codecov
+
+.. |doc-badge| image:: https://readthedocs.org/projects/scriv/badge/?version=latest
+    :target: http://scriv.readthedocs.io/en/latest/
+    :alt: Documentation
+
+.. |pyversions-badge| image:: https://img.shields.io/pypi/pyversions/scriv.svg
+    :target: https://pypi.python.org/pypi/scriv/
+    :alt: Supported Python versions
+
+.. |license-badge| image:: https://img.shields.io/github/license/edx/scriv.svg
+    :target: https://github.com/edx/scriv/blob/master/LICENSE.txt
+    :alt: License
+
+Change Log
+----------
+
+..
+   All enhancements and patches to scriv will be documented
+   in this file.  It adheres to the structure of http://keepachangelog.com/ ,
+   but in reStructuredText instead of Markdown (for ease of incorporation into
+   Sphinx documentation and the PyPI description).
+
+   This project adheres to Semantic Versioning (http://semver.org/).
+
+.. There should always be an "Unreleased" section for changes pending release.
+
+Unreleased
+~~~~~~~~~~
+
+*
+
+[0.1.0] - 2019-12-30
+~~~~~~~~~~~~~~~~~~~~
+
+Added
+_____
+
+* Doesn't really do anything yet.
+
+
