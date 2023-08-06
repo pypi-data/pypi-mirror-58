@@ -1,0 +1,10 @@
+pinform/__init__.py,sha256=md7pOQIJbum3JpRutR0HdVOk6Oa9HuEQUxvp-6gAj1M,15716
+pinform/client.py,sha256=Ut55kLobjN-4k7Wmg08y8TgT0zdhU5MGKkmaiIL9flg,17195
+pinform/utils.py,sha256=tiaxitXNRUdRA8LANjLMLc5ZVwsYbJ0aaDNbFAggHjY,589
+pinform/fields/__init__.py,sha256=Of3hVGT3flAtmI62EKVJXuDyAVt_ayIyDxVZt7LOGo4,8283
+pinform/tags/__init__.py,sha256=F9d9GsZyTS8AH1qqy7JjhajZormN_AAk--inhQRoJ7s,823
+pinform-0.9.1.dist-info/LICENSE,sha256=txPuAl6KOV0mSo3mtNid4K6hSuxppGDvSIDZVlM5Nxk,1054
+pinform-0.9.1.dist-info/METADATA,sha256=DX9RN2TzVoqyDlOnPyJg0X7vOlkaNYygF7fP-2PeD1U,5116
+pinform-0.9.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pinform-0.9.1.dist-info/top_level.txt,sha256=0qm94V_HPQGOe78cDK4-179hNTa-ddfFT425jamvG1s,8
+pinform-0.9.1.dist-info/RECORD,,
