@@ -1,0 +1,6 @@
+README.md
+setup.py
+puckpdf.egg-info/PKG-INFO
+puckpdf.egg-info/SOURCES.txt
+puckpdf.egg-info/dependency_links.txt
+puckpdf.egg-info/top_level.txt
