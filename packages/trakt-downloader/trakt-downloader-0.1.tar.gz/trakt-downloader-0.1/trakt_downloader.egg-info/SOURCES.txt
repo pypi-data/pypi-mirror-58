@@ -1,0 +1,17 @@
+README.md
+setup.py
+trakt_downloader/TraktPuller.py
+trakt_downloader/__init__.py
+trakt_downloader/configuration.py
+trakt_downloader/deluge_connection.py
+trakt_downloader/scraper.py
+trakt_downloader/tracker_db.py
+trakt_downloader/trakt_connection.py
+trakt_downloader/trakt_pull.py
+trakt_downloader.egg-info/PKG-INFO
+trakt_downloader.egg-info/SOURCES.txt
+trakt_downloader.egg-info/dependency_links.txt
+trakt_downloader.egg-info/entry_points.txt
+trakt_downloader.egg-info/not-zip-safe
+trakt_downloader.egg-info/requires.txt
+trakt_downloader.egg-info/top_level.txt

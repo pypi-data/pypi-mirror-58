@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: trakt-downloader
+Version: 0.1
+Summary: Ever remember a film and want to watch it right away? Well that used to be difficult. Until now.
+Home-page: https://github.com/TheSelectiveOppidan/trakt-downloader
+Author: The Selective Oppidan
+Author-email: theselectiveoppidan@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
