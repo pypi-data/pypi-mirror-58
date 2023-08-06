@@ -1,0 +1,38 @@
+#!python
+from scripts.workflow import get_app_name, is_name_valid
+from scripts.workflow import get_args,  is_args_valid
+from scripts.workflow import create_dir, create_app, create_forms, create_templates_folder
+from scripts.manual import print_manual
+from scripts.messages import empty_name, success_msg, failure_msg
+
+app_name = get_app_name()
+args = get_args()
+args.remove(app_name)
+
+# validate name of app!!
+if (is_name_valid(app_name)):
+
+    # validate all arguments first!!
+    if(is_args_valid(args)):
+    
+        # Create folder named app_name
+        create_dir(app_name)
+
+        # create templates folder to hold index.html
+        create_templates_folder(app_name)
+        create_forms(app_name)
+
+        # create app.py in root directory(app_name)
+        create_app(app_name)
+
+        success_msg(app_name)
+    else:
+        print('Unknown argument detected! Please check the help section\n')
+        print_manual()
+        failure_msg(app_name)
+else:
+    if (app_name == '-h' or app_name == '--help'):
+        print_manual()
+    else:
+        print('Please choose another app name')
+        failure_msg(app_name)

@@ -1,0 +1,10 @@
+build_flask_login-0.0.1.data/scripts/build-flask-login,sha256=aqNiXXreRKHh41pMRlR_fY2Cre9NQqU8r5SFds_s-Gk,1126
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/manual.py,sha256=Nw0S-S8vReXp6d00FuDrgwW27IhPgnBz4Hje5RBaihE,71
+scripts/messages.py,sha256=jOmrVlrqRPjRzRe3G6gqdLWPCfrdKIyP8RZU5lSHm4A,323
+scripts/workflow.py,sha256=ysS0rldaKlVd4jVGS4AS-O8iYDdbkvWi30aVtQhi39Y,4746
+build_flask_login-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+build_flask_login-0.0.1.dist-info/METADATA,sha256=uoJGMj048NcD2dtUYwJmZ5Q0qjWulOSz9rRUoKpCMTw,1458
+build_flask_login-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+build_flask_login-0.0.1.dist-info/top_level.txt,sha256=rmzd5mewlrJy4sT608KPib7sM7edoY75AeqJeY3SPB4,8
+build_flask_login-0.0.1.dist-info/RECORD,,

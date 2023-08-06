@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: build-flask-login
+Version: 0.0.1
+Summary: A registration system generator package
+Home-page: https://github.com/kouul/build-flask-login
+Author: Hans Maulloo
+Author-email: maulloohans@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Code Generators
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+## Build Flask Login
+A registration system generator for flask that is run simply by running one command.
+
+### Install using source code
+To download the app generator, you can clone this repository to your local machine.
+```
+$ git clone https://github.com/kouul/build-flask-login
+$ cd build-flask-login
+```
+
+### Install using pip3
+```
+$ pip3 install build-flask-login
+```
+Package @ PyPI repository: https://pypi.org/project/build-flask-login/
+
+### Usage
+Ensure that you have flask installed on your environment. You can install flask using _pip3 install flask_.
+```
+$ build-flask-login app_name
+$ cd app_name
+$ python3 app.py
+```
+Register form can be accessed @ http://localhost:5000/register
+Login form can be accessed @http://localhost:5000/login
+
+
+Feel free to create issue in case something is not working :)
+
