@@ -1,0 +1,9 @@
+README.md
+setup.py
+labelary/__init__.py
+labelary/convert.py
+labelary_mwisslead.egg-info/PKG-INFO
+labelary_mwisslead.egg-info/SOURCES.txt
+labelary_mwisslead.egg-info/dependency_links.txt
+labelary_mwisslead.egg-info/requires.txt
+labelary_mwisslead.egg-info/top_level.txt

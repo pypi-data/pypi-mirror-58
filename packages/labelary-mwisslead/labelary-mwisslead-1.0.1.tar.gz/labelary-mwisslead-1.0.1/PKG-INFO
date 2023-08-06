@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: labelary-mwisslead
+Version: 1.0.1
+Summary: Module for interacting with api.labelary.com
+Home-page: https://github.com/mwisslead/pylabelary
+Author: Michael Wisslead
+Author-email: michael.wisslead@gmail.com
+Maintainer: Michael Wisslead
+Maintainer-email: michael.wisslead@gmail.com
+License: (specified using classifiers)
+Description: # pylabelary
+        Python module for interacting with api.labelary.com
+        
+        ## Usage:
+            >>> import labelary
+            >>>
+            >>> test_label = '^XA^PR2^LRY^LH30,30^Fo),0^GB400,300,300^FS^FO20,10^AF^FDZEBRA^FS^FO20,60' \
+            ...              '^B3,,40^FDAAA001^FS^PF50^FO20,160^AF^FDSLEW EXAMPLE^FS^XZ^XA^PH^XZ^XA^PR2,6' \
+            ...              '^F020,10^AF^FDZEBRA^FS^F020,60^B3,,40^FDAAA001^FS^PFO20,160^AF' \
+            ...              '^FDSLEW EXAMPLE^FS^XZ^XA^LH30,30^FO20,10^AD^FDZEBRA^FS^FO20,60^B3^FDAAA001' \
+            ...              '^FS^XZ'
+            >>>
+            >>> png_labels = labelary.zpl2_to_png(test_label)
+            >>>
+            >>> for i, label in enumerate(png_labels):
+            ...     with open('test_label{}.png'.format(i), 'wb') as fid:
+            ...         fid.write(label)
+            ...
+            >>>
+        
+Platform: (specified using classifiers)
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
