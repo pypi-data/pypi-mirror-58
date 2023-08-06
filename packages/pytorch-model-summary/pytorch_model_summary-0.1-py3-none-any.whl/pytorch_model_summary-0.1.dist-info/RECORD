@@ -1,0 +1,8 @@
+pytorch_model_summary/__init__.py,sha256=jHd_jWSJZPDXnH00o2pJyTXDz90tjpoMOguwTX8kOHs,50
+pytorch_model_summary/hierarchical_summary.py,sha256=s48zq0b3lNg3MQf3r0Ml7ez5TIT0QSyLyyZ6tQ1g7Nw,1846
+pytorch_model_summary/model_summary.py,sha256=T7ALJvQrOC_bfXWxoXArry927sIRxRkHEb9hxbIbTbM,6634
+pytorch_model_summary-0.1.dist-info/LICENSE,sha256=TTLnaSYrGbugRji-lYnXSeGcBkLg9-AsAmow-MsTbKA,1074
+pytorch_model_summary-0.1.dist-info/METADATA,sha256=yAU6bPjAt3nsf_QyH5mX965Y4teFOiA00tG_l_Qd-IY,34739
+pytorch_model_summary-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pytorch_model_summary-0.1.dist-info/top_level.txt,sha256=3K6I8ccsxdCdsSIH1Nhf-r4zmpyFVJBLa179CoEjDcE,22
+pytorch_model_summary-0.1.dist-info/RECORD,,
