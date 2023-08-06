@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rhasspy-asr-pocketsphinx
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/synesthesiam/rhasspy-asr-pocketsphinx
+Author: Michael Hansen
+Author-email: hansen.mike@gmail.com
+License: UNKNOWN
+Description: # Rhasspy ASR Pocketsphinx
+        
+        Automated speech recognition in [Rhasspy](https://github.com/synesthesiam/rhasspy) voice assistant with [Pocketsphinx](https://github.com/cmusphinx/pocketsphinx).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
