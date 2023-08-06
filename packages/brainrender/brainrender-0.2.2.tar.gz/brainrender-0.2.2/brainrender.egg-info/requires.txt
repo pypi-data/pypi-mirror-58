@@ -1,0 +1,13 @@
+numpy
+pandas
+vtkplotter
+vtk
+allensdk
+tqdm
+pyyaml
+scikit-image
+brainio>=0.0.9
+
+[nb]
+jupyter
+k3d

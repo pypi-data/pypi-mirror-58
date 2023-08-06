@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: brainrender
+Version: 0.2.2
+Summary: Python scripts to use Allen Brain Map data for analysis and rendering
+Home-page: https://github.com/BrancoLab/BrainRender
+Author: Federico Claudi
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: nb
