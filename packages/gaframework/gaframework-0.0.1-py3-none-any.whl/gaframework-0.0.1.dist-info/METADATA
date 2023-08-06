@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gaframework
+Version: 0.0.1
+Summary: Simple to use genetic algorithm library
+Home-page: https://bitbucket.org/johnnewcombe/gapy
+Author: John Newcombe
+Author-email: jnewcombeuk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Simple to use genetic algorithm library.
+
+
