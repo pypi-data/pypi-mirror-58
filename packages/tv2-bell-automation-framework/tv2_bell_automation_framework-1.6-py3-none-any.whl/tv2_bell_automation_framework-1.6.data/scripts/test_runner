@@ -1,0 +1,6 @@
+#!python
+
+from tv2test.test_runner import TestRunner
+
+test_runner_object = TestRunner()
+test_runner_object.execute_test_case()
