@@ -1,0 +1,12 @@
+README.md
+setup.py
+aiowrpr/__init__.py
+aiowrpr/adaptor.py
+aiowrpr/generators.py
+aiowrpr/routes.py
+aiowrpr.egg-info/PKG-INFO
+aiowrpr.egg-info/SOURCES.txt
+aiowrpr.egg-info/dependency_links.txt
+aiowrpr.egg-info/entry_points.txt
+aiowrpr.egg-info/requires.txt
+aiowrpr.egg-info/top_level.txt
