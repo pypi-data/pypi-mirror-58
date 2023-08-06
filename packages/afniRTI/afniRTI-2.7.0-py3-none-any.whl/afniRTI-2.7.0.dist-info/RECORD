@@ -1,0 +1,11 @@
+afniRTI/__init__.py,sha256=MHQRR-FnAW1m4UDLyOnMzPkLF4Fx4pV9Pn0wP1PiIjY,1060
+afniRTI/demoExpt.py,sha256=zR0O8stW9xropEfYC_K7ALTP0UTOOnso0XKPQCwAuKU,10442
+afniRTI/experiment.py,sha256=Dxi0DNTDgIbPgaXe1ZMQhTbg2pXKhp-mNnuHj9D44cM,2036
+afniRTI/realtime.py,sha256=uOGUQ7ACT3MD_YfYfrvk2y4l8Qsi9aUntGA2ZMAvKwg,19164
+afniRTI/receiver.py,sha256=Aaiofdgq91SlcbsHjLCbqAYENRrMkc1RNSEasxlKWsM,3932
+afniRTI/testOS.py,sha256=u3UQRbvg7qAVlm4fi3jK8IvZUKIz4BklEU-4oOejVIs,636
+afniRTI-2.7.0.dist-info/LICENSE,sha256=Gk52ceWTQebSM6rV80AUK8wcBukw6UxUHD1k7yrDqWU,7050
+afniRTI-2.7.0.dist-info/METADATA,sha256=r-hh4sHC-xr6cIh7jHLZeescFfNUOD7t0soTikLL99o,1719
+afniRTI-2.7.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+afniRTI-2.7.0.dist-info/top_level.txt,sha256=BrO2cXFxSzEsIkjCvC4VPgN7DWUvdpdydeijqANEcCs,8
+afniRTI-2.7.0.dist-info/RECORD,,
