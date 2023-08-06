@@ -1,0 +1,4 @@
+cognite-sdk>=1.1.0
+google-cloud-logging>=1.12.1
+cognite-prometheus>=0.1.0
+pyyaml>=5.1.0
