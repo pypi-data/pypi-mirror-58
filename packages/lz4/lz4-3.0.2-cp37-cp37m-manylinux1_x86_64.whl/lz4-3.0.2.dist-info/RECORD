@@ -1,0 +1,13 @@
+lz4-3.0.2.dist-info/top_level.txt,sha256=cX6_gxFUdNSo40TfxrGpTCgu7epGm3yW3m2k7irTDzI,4
+lz4-3.0.2.dist-info/RECORD,,
+lz4-3.0.2.dist-info/METADATA,sha256=TX6Qv5yC44tJMBj15vSncPc2ibYOKBF6T8lLCPoVSVc,3611
+lz4-3.0.2.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+lz4/version.py,sha256=1nob0x1QwDtioKOykcCrWuYo6iUATcpRtZ_CQurBBDM,116
+lz4/_version.cpython-37m-x86_64-linux-gnu.so,sha256=fkaMOrTms3adKhWewo8zaq0B7HUfzGqRqYAJWzaCMPk,1134616
+lz4/__init__.py,sha256=hIvOuoGzQpA7LdzgyfP6-byehTRVA_vFXImPS90uB40,628
+lz4/frame/__init__.py,sha256=6VnfprVaLn36amVtC0EdUB6b5s26JIRky2yR-9uO6-0,29444
+lz4/frame/_frame.cpython-37m-x86_64-linux-gnu.so,sha256=1U4Lq2cvmYKVFH-73D-HBHaRdymlcT4BFmYsVx_adDk,2148816
+lz4/block/_block.cpython-37m-x86_64-linux-gnu.so,sha256=9j8V0M4ZakdWl7IvVZbopMvrLPeXDO9Svf0qOvpUIJY,1895024
+lz4/block/__init__.py,sha256=KsSQGgaPpJtVPJ5QfMadVGFduMy0hSetJHWGNmOvpso,70
+lz4/stream/_stream.cpython-37m-x86_64-linux-gnu.so,sha256=-8c5U-hsXHD2QASbhg1403FkQfz-B4kMuGqaZt_PIzE,1921456
+lz4/stream/__init__.py,sha256=etDkyqC_Df_gWVqPvjyukL7KY43J-8Is9ovHDhtdrPk,8589
