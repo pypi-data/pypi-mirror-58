@@ -1,0 +1,13 @@
+README.md
+setup.py
+spanish_chatbot/__init__.py
+spanish_chatbot/load_seq2seq.py
+spanish_chatbot/load_transformer.py
+spanish_chatbot/pre_processing.py
+spanish_chatbot/settings.py
+spanish_chatbot/transformer.py
+spanish_chatbot.egg-info/PKG-INFO
+spanish_chatbot.egg-info/SOURCES.txt
+spanish_chatbot.egg-info/dependency_links.txt
+spanish_chatbot.egg-info/requires.txt
+spanish_chatbot.egg-info/top_level.txt
