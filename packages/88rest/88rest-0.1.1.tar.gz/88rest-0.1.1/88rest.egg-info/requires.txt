@@ -1,0 +1,4 @@
+Django >= 2.2.8, < 3
+django-rest-framework
+requests
+orm88
