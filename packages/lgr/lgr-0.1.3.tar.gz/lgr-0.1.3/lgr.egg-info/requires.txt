@@ -1,0 +1,7 @@
+django
+django-auth-ldap
+djangorestframework
+django-filter
+mysqlclient
+django-nose
+coverage
