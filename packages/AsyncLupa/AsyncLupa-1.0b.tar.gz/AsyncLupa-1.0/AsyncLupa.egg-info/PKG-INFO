@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: AsyncLupa
+Version: 1.0
+Summary: A async wrapper for Lupa
+Home-page: https://github.com/SoulSen/AsyncLupa
+Author: SoulSen
+License: MIT
+Project-URL: Documentation, https://github.com/SoulSen/AsyncLupa/blob/master/README.rst
+Project-URL: Issue tracker, https://github.com/SoulSen/AsyncLupa/issues
+Description: AsyncLupa
+        =========
+        
+        AsyncLupa integrates with the well known Lupa_ library, providing an asynchronous wrapper allowing
+        async function / method calls right from Lua.
+        
+        .. _Lupa: https://github.com/scoder/lupa
+        
+        Installation
+        ------------
+        .. code-block::
+        
+            pip install AsyncLupa
+        
+        If you want the latest version that has not yet been released
+        
+        .. code-block::
+        
+            pip install git+https://github.com/SoulSen/AsyncLupa
+        
+        Calling Async functions in Lua
+        ------------------------------
+        AsyncLupa support all Lupa's methods that execute Lua code in any way.
+        It includes ``AsyncLupa.execute``, ``AsyncLupa.eval``, and ``AsyncLupa.compile``, it also supports all the other methods also.
+        
+        An example is shown below
+        
+        .. code-block:: python
+        
+            from asynclupa import AsyncLuaRuntime
+            import asyncio
+        
+            async def hello():
+                return 1
+        
+            async def main():
+                async_lua = AsyncLuaRuntime()
+                async_lua.globals()['hello'] = hello
+        
+                ret = await async_lua.eval('return python.coroutine(hello())')
+                print(ret)  # Outputs 1
+        
+            asyncio.run(eval_lua(lua_code))
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Other Scripting Engines
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Python: >=2
+Description-Content-Type: text/x-rst
