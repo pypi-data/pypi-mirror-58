@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Chaf_model
+Version: 1.0.6
+Summary: An feature extraction algorithm
+Home-page: https://github.com/Chaphlagical
+Author: WenboChen
+Author-email: chaf@ustc.edu.cn
+License: MIT Licence
+Description: An feature extraction algorithm, improve the FastICA
+Keywords: pip,Chaf_model,featureextraction
+Platform: any

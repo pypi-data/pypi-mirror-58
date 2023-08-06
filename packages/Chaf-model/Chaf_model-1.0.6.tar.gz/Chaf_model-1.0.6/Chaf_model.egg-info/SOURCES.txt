@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+Chaf_model.egg-info/PKG-INFO
+Chaf_model.egg-info/SOURCES.txt
+Chaf_model.egg-info/dependency_links.txt
+Chaf_model.egg-info/top_level.txt
+chaf_model/__init__.py
+chaf_model/chaf_model.py
+chaf_model/tree.model
