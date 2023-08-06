@@ -1,0 +1,7 @@
+README.md
+setup.py
+NRDD.egg-info/PKG-INFO
+NRDD.egg-info/SOURCES.txt
+NRDD.egg-info/dependency_links.txt
+NRDD.egg-info/requires.txt
+NRDD.egg-info/top_level.txt
