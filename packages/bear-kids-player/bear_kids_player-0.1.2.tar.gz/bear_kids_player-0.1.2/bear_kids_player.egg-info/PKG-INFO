@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bear-kids-player
+Version: 0.1.2
+Summary: A player for kids
+Home-page: https://github.com/shawnyanwang/bear_kids_player
+Author: Shawn Wang
+Author-email: shawnyanwang@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
