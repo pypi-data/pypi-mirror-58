@@ -1,0 +1,3 @@
+pycrypto
+capstone
+gmpy2
