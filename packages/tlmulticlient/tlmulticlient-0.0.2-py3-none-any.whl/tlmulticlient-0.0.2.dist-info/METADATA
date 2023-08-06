@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: tlmulticlient
+Version: 0.0.2
+Summary: Multi Sessions addon for Telethon
+Home-page: https://github.com/nitanmarcel/tlmulticlient
+Author: Nitan Alexandru Marcel
+Author-email: nitan.marcel@protonmail.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: telethon
+
+Multi Sessions addon for Telethon
+
+
