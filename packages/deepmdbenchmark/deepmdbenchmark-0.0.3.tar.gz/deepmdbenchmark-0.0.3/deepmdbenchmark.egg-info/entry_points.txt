@@ -1,0 +1,4 @@
+[console_scripts]
+deepmdbenchmark = deepmdbenchmark.benchmark:run
+uploaddpbench = deepmdbenchmark.benchmark:upload_dict
+
