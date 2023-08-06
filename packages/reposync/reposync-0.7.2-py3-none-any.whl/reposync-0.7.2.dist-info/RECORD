@@ -1,0 +1,11 @@
+reposync/__init__.py,sha256=7vIM-tMpAzSQEc1bOE2VB6rXYNo-2W1JbTx7xMjYDpI,31
+reposync/console/__init__.py,sha256=6g-ihjsluo77pvVp6-8qDVrOsqG3fpnGasank0ls7Eg,81
+reposync/git.py,sha256=WlRoYMr3NM99xx8J4rEJIAd6x40VcYjkw48ij-H95ls,1288
+reposync/parser.py,sha256=8lO2t4UJOo-yNiJpS-k3DBhxoBoguXYOMYh7madGuWI,795
+reposync/reposync.py,sha256=Mn8DRQ061RMl2LH0vjHXIUxTGV21dBwW_oJ5-Nut3A4,923
+reposync/tree.py,sha256=8SZO0a55pTmd0nnu4Hgs2qfU53n17wV-vrbOuVInJZ4,606
+reposync-0.7.2.dist-info/entry_points.txt,sha256=vScsXliOjX-C1PoLveJl3-5xCruPXWct-jFg1NxBRF8,50
+reposync-0.7.2.dist-info/LICENSE,sha256=gsdUUdYE4KjUQhBY2AS07ecb3kkdzTEolGSPjynkSkc,1069
+reposync-0.7.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+reposync-0.7.2.dist-info/METADATA,sha256=vMvkKUyn5bY57myhO6NWJsvFDevAfn21M-VfAQMUbEs,1964
+reposync-0.7.2.dist-info/RECORD,,
