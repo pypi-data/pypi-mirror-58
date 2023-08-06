@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: foxtail-blog
+Version: 0.9.0
+Summary: A blog.
+Home-page: https://github.com/dmptrluke/foxtail-blog
+Author: Luke Rogers
+Author-email: lukeroge@gmail.com
+License: UNKNOWN
+Description: # foxtail-blog [![PyPI](https://img.shields.io/pypi/v/foxtail-blog)](https://pypi.org/project/foxtail-blog/)
+        A simple, reusable Django blog application.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
