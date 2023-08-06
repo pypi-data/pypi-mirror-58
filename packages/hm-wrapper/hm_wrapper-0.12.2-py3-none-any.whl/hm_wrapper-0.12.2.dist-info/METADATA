@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hm-wrapper
+Version: 0.12.2
+Summary: UNKNOWN
+Home-page: https://github.com/np-at/hm_wrapper
+Author: npraskins
+Author-email: 
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
+
