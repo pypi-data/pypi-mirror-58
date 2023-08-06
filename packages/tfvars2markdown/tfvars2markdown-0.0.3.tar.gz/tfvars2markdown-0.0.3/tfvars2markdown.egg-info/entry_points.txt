@@ -1,0 +1,3 @@
+[console_scripts]
+tfvars2markdown = src.main:cli
+
