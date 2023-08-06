@@ -1,0 +1,26 @@
+version: 1
+formatters:
+  brief:
+    format: '%(levelname)s - %(message)s'
+  simple:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+loggers:
+  tensorflow:
+    level: INFO
+    handlers: [console]
+  word2vec.main:
+    level: INFO
+    handlers: [console]
+  word2vec.utils:
+    level: INFO
+    handlers: [console]
+  word2vec.estimators.word2vec:
+    level: INFO
+    handlers: [console]
+  word2vec.models.word2vec:
+    level: INFO
+    handlers: [console]
