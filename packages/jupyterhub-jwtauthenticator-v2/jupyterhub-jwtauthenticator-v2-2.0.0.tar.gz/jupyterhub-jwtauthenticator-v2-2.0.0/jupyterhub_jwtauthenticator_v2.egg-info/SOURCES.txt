@@ -1,0 +1,9 @@
+README.md
+setup.py
+jupyterhub_jwtauthenticator_v2.egg-info/PKG-INFO
+jupyterhub_jwtauthenticator_v2.egg-info/SOURCES.txt
+jupyterhub_jwtauthenticator_v2.egg-info/dependency_links.txt
+jupyterhub_jwtauthenticator_v2.egg-info/requires.txt
+jupyterhub_jwtauthenticator_v2.egg-info/top_level.txt
+jwtauthenticator/__init__.py
+jwtauthenticator/jwtauthenticator.py

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: jupyterhub-jwtauthenticator-v2
+Version: 2.0.0
+Summary: JSONWebToken Authenticator for JupyterHub
+Home-page: https://github.com/izihawa/jwtauthenticator_v2
+Author: ppodolsky
+Author-email: ppodolsky@me.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
