@@ -1,0 +1,2 @@
+nidhoggr>=0.5
+requests>=2.22
