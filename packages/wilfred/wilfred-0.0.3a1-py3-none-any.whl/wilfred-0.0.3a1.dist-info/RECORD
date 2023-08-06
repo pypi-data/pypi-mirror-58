@@ -1,0 +1,12 @@
+wilfred/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wilfred/argument_parser.py,sha256=75-Hg_r7ct_pLCrnqny-Zsmfs28PqU43UytEMtWnUac,310
+wilfred/cli.py,sha256=ZpDtsg0fsUMMmN9UV7wVVK-OEq230jlZAwhXYKP-AkM,76
+wilfred/docker_conn.py,sha256=qIiKGKbfaO3ZPZxt_q3Gw4pw-fFg_bDt8XfZkd_CRB0,375
+wilfred/version.py,sha256=mVwAlrshbETnJAblo-mIVp0xNUgMuPJC8gS6m6lyxVA,25
+wilfred/wilfred.py,sha256=TBcYoAATkTWi-eq-PIn_Lgy2qkW7HGzfERNfxxa422o,1202
+wilfred-0.0.3a1.dist-info/LICENSE,sha256=eWl-54ptNfSseKc77kk4rGKYUIZ9ZvCC1oXEj0y6tnk,1070
+wilfred-0.0.3a1.dist-info/METADATA,sha256=NZknjkS2jnSpXsvW6CMaZ3zECvk81CVzkmed3G5IaiQ,924
+wilfred-0.0.3a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wilfred-0.0.3a1.dist-info/entry_points.txt,sha256=RCNFDe7daQWx-BwFvdtYSqJA5BsYcThvxEdHxaDyZ0E,50
+wilfred-0.0.3a1.dist-info/top_level.txt,sha256=9gORBKKCw8V5a51noCSCCR6yC8f-H-kOXaGtMCj50AQ,8
+wilfred-0.0.3a1.dist-info/RECORD,,
