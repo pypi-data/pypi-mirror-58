@@ -1,0 +1,9 @@
+scrapy_wayback_middleware/__init__.py,sha256=2JXrHxVWngDe91PIa6zQDS3IrfsYKKXDqkRqgw2aIHs,73
+scrapy_wayback_middleware/middleware.py,sha256=hqEBONaiPtvussNJqcFfC8f9Zbk6QZ-bS8b0omZyAFc,4217
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_middleware.py,sha256=JZS_g2Tc0gRWx6ZiIEpYMR6NUyAC2boWTVbaXxF_nBI,3444
+scrapy_wayback_middleware-0.3.0.dist-info/LICENSE,sha256=MyHRlMF8FSdGk8XXKwRPOY3umt4WuwwFocEI01CDZKs,1068
+scrapy_wayback_middleware-0.3.0.dist-info/METADATA,sha256=Qdim6Xen_XhWlOb0aiP45Xdu7lkcd-n6RaAj93q1cyI,2309
+scrapy_wayback_middleware-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+scrapy_wayback_middleware-0.3.0.dist-info/top_level.txt,sha256=c4AB8keOvn09l0muJJhlFI3c9R1rH8R1fQX0jmgRyEY,32
+scrapy_wayback_middleware-0.3.0.dist-info/RECORD,,
