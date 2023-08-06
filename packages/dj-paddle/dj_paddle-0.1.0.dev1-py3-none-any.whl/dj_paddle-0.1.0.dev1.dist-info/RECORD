@@ -1,0 +1,13 @@
+djpaddle/__init__.py,sha256=JJT7uM4OAdv-WLwYXGSTOAwbEMD0R2kMITvCVxskqoQ,171
+djpaddle/apps.py,sha256=lm9FaWbROpMWo0D0V1QzBJ9t6YcErlLgj0Oi7a0kOw4,163
+djpaddle/models.py,sha256=5ss1LSuKEIDdP0O6ZPaXBrr2TJwA4eoxAgYzUkiXu7g,3985
+djpaddle/settings.py,sha256=xa4Qt_7oYwwOrslDJTRJVDxufTZGtnSmDsNw9mkAofc,1992
+djpaddle/signals.py,sha256=SgNWjGf42DLt6pJsBiGPhbi5IG1MRNhHIZxE7P-r8YM,1416
+djpaddle/urls.py,sha256=YIrcHzjl-8LdmiRnU6vgATbOWnpOivtu0ShOq1qdnKo,118
+djpaddle/utils.py,sha256=uqGUQ2CKzxCakh0xmSX_f7_46mIrKDLp-kHGdzPuAs4,1172
+djpaddle/views.py,sha256=INCxXNcefgaTKNJDL_wXEhRtCmEKraKGIdwTgZVE-H0,1913
+dj_paddle-0.1.0.dev1.dist-info/LICENSE,sha256=NJr4NX1zQIAR9ygH4JoWkQdcWeWOamGRcKlsLMm50Tg,1072
+dj_paddle-0.1.0.dev1.dist-info/METADATA,sha256=r2UKb5S-_ibvjF7zgBPjJ70DuGlMxq722pV7KJzEaVo,3850
+dj_paddle-0.1.0.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dj_paddle-0.1.0.dev1.dist-info/top_level.txt,sha256=5Bs6OwkGqzh6ZDT2S8RoWOieSS0rM9v1LjeMhkRmkXI,9
+dj_paddle-0.1.0.dev1.dist-info/RECORD,,
