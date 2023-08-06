@@ -1,0 +1,7 @@
+README.rst
+setup.cfg
+setup.py
+numerizer.egg-info/PKG-INFO
+numerizer.egg-info/SOURCES.txt
+numerizer.egg-info/dependency_links.txt
+numerizer.egg-info/top_level.txt
