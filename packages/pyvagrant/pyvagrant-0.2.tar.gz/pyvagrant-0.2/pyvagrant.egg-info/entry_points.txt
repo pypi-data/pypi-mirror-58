@@ -1,0 +1,3 @@
+[console_scripts]
+vagrant-menu = vagrant_menu.menu:main
+
