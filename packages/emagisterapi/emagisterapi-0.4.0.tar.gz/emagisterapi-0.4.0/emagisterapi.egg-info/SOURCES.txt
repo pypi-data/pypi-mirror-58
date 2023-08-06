@@ -1,0 +1,9 @@
+README.md
+setup.py
+emagapi/__init__.py
+emagapi/connect.py
+emagisterapi.egg-info/PKG-INFO
+emagisterapi.egg-info/SOURCES.txt
+emagisterapi.egg-info/dependency_links.txt
+emagisterapi.egg-info/requires.txt
+emagisterapi.egg-info/top_level.txt

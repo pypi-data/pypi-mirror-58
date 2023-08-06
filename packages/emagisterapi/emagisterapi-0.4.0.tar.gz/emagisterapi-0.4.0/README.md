@@ -1,0 +1,1 @@
+# Emagister public API connector
