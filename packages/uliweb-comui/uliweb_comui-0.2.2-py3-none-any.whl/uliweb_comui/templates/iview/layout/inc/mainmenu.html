@@ -1,0 +1,24 @@
+{{block mainmenu_config}}
+{{mainmenu_name,mainmenu_active='MAINMENU','home'}}
+{{end mainmenu_config}}
+
+<i-menu mode="horizontal" theme="light" active-name="{{=mainmenu_active}}">
+  {{block header_logo}}
+  <div class="layout-logo"><a href="{{=settings.LAYOUT.get('logo_url', '/')}}"><img border="0" src="{{=url_for_static('logo.png')}}" class="logo" /></a></div>
+  {{end header_logo}}
+  <div class="layout-nav">
+      {{block sider_trigger}}
+      {{end sider_trigger}}
+      {{for t,m in functions.iter_menu(mainmenu_name):}}
+        {{if t=="item":}}
+      <menu-item name="{{=m['name']}}" to="{{=m.get('link','/')}}">
+          <icon type="{{=m.get('icon-iview','ios-navigate')}}"></icon>
+          {{=m['title']}}
+      </menu-item>
+        {{pass #if}}
+      {{pass #for}}
+  </div>
+  {{block info_menu}}
+  {{include "iview/layout/inc/infomenu.html"}}
+  {{end info_menu}}
+</i-menu>

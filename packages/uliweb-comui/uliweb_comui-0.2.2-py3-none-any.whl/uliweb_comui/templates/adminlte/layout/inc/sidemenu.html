@@ -1,0 +1,30 @@
+{{block sidemenu_config}}
+{{sidemenu_name,sidemenu_active='SIDEMENU',"user/information"}}
+{{end sidemenu_config}}
+
+{{for t,m in functions.iter_menu(sidemenu_name,sidemenu_active):}}
+    {{if t=="begin":}}
+        {{if m["index"]==0:}}
+        <ul class="sidebar-menu tree" data-widget="tree">
+        {{else:}}
+        <ul class="treeview-menu">
+        {{pass #if}}
+    {{elif t=="item":}}
+    <li class="{{='%s%s%s'%('active' if m['active'] else '',' open' if m['expand'] else '', ' treeview' if m['subs'] else '')}}" name="{{=m['name']}}">
+        <a href="{{=m.get('link','#')}}">
+            {{if 'icon' in m and m['icon']:}}
+            <i class="fa {{=m['icon']}}"></i>
+            {{elif m["index"]>1:}}
+            <i class="fa fa-angle-double-right"></i>
+            {{pass #if}}
+            <span>{{=m['title']}}</span>
+            {{if m["subs"]:}}
+            <i class="fa fa-angle-left pull-right"></i>
+            {{pass #if}}
+        </a>
+    {{elif t=="close":}}
+    </li>
+    {{elif t!="open":}}
+    </ul>
+    {{pass #if t}}
+{{pass #for}}

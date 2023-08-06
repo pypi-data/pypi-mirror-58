@@ -1,0 +1,31 @@
+{{if settings.EXPOSES.login:}}
+{{if hasattr(request, 'user') and request.user:}}
+<div class="layout-info-menu">
+  <dropdown trigger="click">
+      <a href="javascript:void(0)">
+          <Avatar src="{{=functions.get_user_image(request.user) if functions.get_user_image else request.user.get_image_url()}}" />
+      </a>
+      <span>{{=str(request.user)}}</span>
+      {{if functions.get_user_image:}}
+      <dropdown-menu slot="list">
+          <dropdown-item><a href="{{=url_for('uliweb_comapps.auth.user_admin.views.UserView.view')}}">Profile</a></dropdown-item>
+      </dropdown-menu>
+      {{pass #if}}
+      <dropdown-menu slot="list">
+          <dropdown-item><a href="{{=url_for('uliweb_comapps.auth.login.views.logout')}}">Logout</a></dropdown-item>
+      </dropdown-menu>
+  </dropdown>
+</div>
+{{else:}}
+<div class="layout-info-menu">
+  <dropdown trigger="click">
+      <a href="javascript:void(0)">
+          <Avatar src="{{=url_for_static('img/user50x50.jpg')}}" />
+      </a>
+      <dropdown-menu slot="list">
+          <dropdown-item><a href="{{=url_for('uliweb_comapps.auth.login.views.login')}}">Login</a></dropdown-item>
+      </dropdown-menu>
+  </dropdown>
+</div>
+{{pass #if user}}
+{{pass #if settings.EXPOSES.login}}

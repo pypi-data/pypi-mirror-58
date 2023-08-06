@@ -1,0 +1,25 @@
+{{extend "iview/layout/full.html"}}
+
+{{block sider_trigger}}
+<li :class="{'sider-trigger':true}"><icon :type=sider_show?"ios-arrow-back":"ios-arrow-forward" size="25" @click="sider_show=!sider_show"/></li>
+{{end sider_trigger}}
+
+{{block sidebar}}
+<sider  v-show="sider_show" hide-trigger :style="{background: '#fff'}">
+    {{block sidemenu}}
+    {{include "iview/layout/inc/sidemenu.html"}}
+    {{end sidemenu}}
+</sider>
+{{end sidebar}}
+
+{{block mainapp_vue}}
+<script>
+new Vue({
+    el: '#mainapp',
+    data: {
+        sider_show: true
+    },
+    delimiters: ['{', '}']
+})
+</script>
+{{end mainapp_vue}}

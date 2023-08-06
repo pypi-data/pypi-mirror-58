@@ -1,0 +1,50 @@
+{{if settings.EXPOSES.login:}}
+{{if hasattr(request, 'user') and request.user:}}
+<div class="navbar-custom-menu">
+  <ul class="nav navbar-nav">
+    <li class="dropdown user user-menu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <img src="{{=(functions.get_user_image(request.user) if functions.get_user_image else request.user.get_image_url())}}"  class="user-image"/>
+        <span class="hidden-xs">{{=str(request.user)}}</span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="user-header">
+            <img src="{{=functions.get_user_image(request.user) if functions.get_user_image else request.user.get_image_url()}}"  class="img-circle"/>
+            <p>{{=str(request.user)}}</p>
+        </li>
+        <li class="user-footer">
+          {{if functions.get_user_image:}}
+          <div class="pull-left">
+            <a href="{{=url_for('uliweb_comapps.auth.user_admin.views.UserView.view')}}" class="btn btn-default btn-flat">Profile</a>
+          </div>
+          {{pass #if}}
+          <div class="pull-right">
+            <a href="{{=url_for('uliweb_comapps.auth.login.views.logout')}}" class="btn btn-default btn-flat">Log out</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+{{else:}}
+<div class="navbar-custom-menu">
+  <ul class="nav navbar-nav">
+    <li class="dropdown user user-menu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <img src="{{=url_for_static('img/user50x50.jpg')}}"  class="user-image"/>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="user-header">
+            <img src="{{=url_for_static('img/user50x50.jpg')}}"  class="img-circle"/>
+        </li>
+        <li class="user-footer">
+          <div class="pull-right">
+            <a href="{{=url_for('uliweb_comapps.auth.login.views.login')}}" class="btn btn-default btn-flat">Login</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+{{pass #if user}}
+{{pass #if settings.EXPOSES.login}}

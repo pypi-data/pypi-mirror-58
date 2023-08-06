@@ -1,0 +1,26 @@
+{{block sidemenu_config}}
+{{sidemenu_name,sidemenu_open,sidemenu_active="SIDEMENU","['user']","information"}}
+{{end sidemenu_config}}
+
+<i-menu active-name="{{=sidemenu_active}}" :open-names="{{=sidemenu_open}}" theme="light" width="auto">
+    {{for t,m in functions.iter_menu(sidemenu_name,sidemenu_active):}}
+        {{if t=="open":}}
+            {{if m.get('index')==0:}}
+            <submenu name="{{=m['name']}}">
+            {{pass #if subs}}
+        {{elif t=="item":}}
+            {{if m.get('subs'):}}
+            <template slot="title">
+                <icon type="{{=m.get('icon-iview','ios-navigate')}}"></icon>
+                {{=m['title']}}
+            </template>
+            {{else:}}
+            <menu-item name="{{=m['name']}}" {{='to="%s"'%(m["link"]) if m["link"] else ''}}>{{=m['title']}}</menu-item>
+            {{pass #if subs}}
+        {{elif t=="close":}}
+            {{if m.get('index')==1:}}
+            </submenu>
+            {{pass #if subs}}
+        {{pass #if t}}
+    {{pass #for}}
+</i-menu>
