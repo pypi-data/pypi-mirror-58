@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: vns_web3
+Version: 0.0.2
+Summary: vns web3.pyl
+Home-page: https://github.com/y19818/vns_web3.py
+Author: y19818
+Author-email: y19818@gmail.com
+License: UNKNOWN
+Description: # Web3.py
+        
+        [![Join the chat at https://gitter.im/vnscoin/web3.py](https://badges.gitter.im/vnscoin/web3.py.svg)](https://gitter.im/vnscoin/web3.py?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+        
+        [![Build Status](https://circleci.com/gh/vnscoin/web3.py.svg?style=shield)](https://circleci.com/gh/vnscoin/web3.py)
+        
+        
+        A Python implementation of [web3.js](https://github.com/vnscoin/web3.js)
+        
+        * Python 3.6+ support
+        
+        ## Developer Setup
+        
+        ```sh# Web3.py
+        
+        [![Join the chat at https://gitter.im/vnscoin/web3.py](https://badges.gitter.im/vnscoin/web3.py.svg)](https://gitter.im/vnscoin/web3.py?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+        
+        [![Build Status](https://circleci.com/gh/vnscoin/web3.py.svg?style=shield)](https://circleci.com/gh/vnscoin/web3.py)
+        
+        
+        A Python implementation of [web3.js](https://github.com/vnscoin/web3.js)
+        
+        * Python 3.6+ support
+        
+        ## Developer Setup
+        
+        ```sh
+        git clone git@github.com:vnscoin/web3.py.git
+        cd web3.py
+        ```
+        
+        Please see OS-specific instructions for:
+        
+        - [Linux](docs/README-linux.md#Developer-Setup)
+        - [Mac](docs/README-osx.md#Developer-Setup)
+        - [Windows](docs/README-windows.md#Developer-Setup)
+        
+        Then run these install commands:
+        ```sh
+        virtualenv venv
+        . venv/bin/activate
+        pip install -e .[dev]
+        ```
+        
+        For different environments, you can set up multiple `virtualenv`. For example, if you want to create a `venvdocs`, then you do the following:
+        
+        ```sh
+        virtualenv venvdocs
+        . venvdocs/bin/activate
+        pip install -e .[docs]
+        pip install -e .
+        ```
+        
+        
+        
+        #### How to Execute the Tests?
+        
+        1. [Setup your development environment](https://github.com/vnscoin/web3.py/#developer-setup).
+        
+        2. Execute `tox` for the tests
+        
+        There are multiple [components](https://github.com/vnscoin/web3.py/blob/master/.circleci/config.yml#L144) of the tests. You can run test to against specific component. For example:
+        
+        ```sh
+        # Run Tests for the Core component (for Python 3.6):
+        tox -e py36-core
+        
+        # Run Tests for the Core component (for Python 3.7):
+        tox -e py37-core
+        ```
+        
+        If for some reason it is not working, add `--recreate` params.
+        
+        `tox` is good for testing against the full set of build targets. But if you want to run the tests individually, `pytest` is better for development workflow. For example, to run only the tests in one file:
+        
+        ```sh
+        pytest tests/core/gas-strategies/test_time_based_gas_price_strategy.py
+        ```
+        
+        ### Release setup
+        
+        For Debian-like systems:
+        ```
+        apt install pandoc
+        ```
+        
+        To release a new version:
+        
+        ```sh
+        make release bump=$$VERSION_PART_TO_BUMP$$
+        ```
+        
+        To preview the upcoming release notes:
+        
+        ```sh
+        towncrier --draft
+        ```
+        
+        #### How to bumpversion
+        
+        The version format for this repo is `{major}.{minor}.{patch}` for stable, and
+        `{major}.{minor}.{patch}-{stage}.{devnum}` for unstable (`stage` can be alpha or beta).
+        
+        To issue the next version in line, specify which part to bump,
+        like `make release bump=minor` or `make release bump=devnum`.
+        
+        If you are in a beta version, `make release bump=stage` will switch to a stable.
+        
+        To issue an unstable version when the current version is stable, specify the
+        new version explicitly, like `make release bump="--new-version 4.0.0-alpha.1 devnum"`
+        
+        git clone git@github.com:vnscoin/web3.py.git
+        cd web3.py
+        ```
+        
+        Please see OS-specific instructions for:
+        
+        - [Linux](docs/README-linux.md#Developer-Setup)
+        - [Mac](docs/README-osx.md#Developer-Setup)
+        - [Windows](docs/README-windows.md#Developer-Setup)
+        Then run these install commands:
+        
+        ```sh
+        virtualenv venv
+        . venv/bin/activate
+        pip install -e .[dev]
+        ```
+        
+        For different environments, you can set up multiple `virtualenv`. For example, if you want to create a `venvdocs`, then you do the following:
+        
+        ```sh
+        virtualenv venvdocs
+        . venvdocs/bin/activate
+        pip install -e .[docs]
+        pip install -e .
+        ```
+        
+        
+        
+        #### How to Execute the Tests?
+        
+        1. [Setup your development environment](https://github.com/vnscoin/web3.py/#developer-setup).
+        
+        2. Execute `tox` for the tests
+        
+        There are multiple [components](https://github.com/vnscoin/web3.py/blob/master/.circleci/config.yml#L144) of the tests. You can run test to against specific component. For example:
+        
+        ```sh
+        # Run Tests for the Core component (for Python 3.6):
+        tox -e py36-core
+        
+        # Run Tests for the Core component (for Python 3.7):
+        tox -e py37-core
+        ```
+        
+        If for some reason it is not working, add `--recreate` params.
+        
+        `tox` is good for testing against the full set of build targets. But if you want to run the tests individually, `pytest` is better for development workflow. For example, to run only the tests in one file:
+        
+        ```sh
+        pytest tests/core/gas-strategies/test_time_based_gas_price_strategy.py
+        ```
+        
+        ### Release setup
+        
+        For Debian-like systems:
+        ```
+        apt install pandoc
+        ```
+        
+        To release a new version:
+        
+        ```sh
+        make release bump=$$VERSION_PART_TO_BUMP$$
+        ```
+        
+        To preview the upcoming release notes:
+        
+        ```sh
+        towncrier --draft
+        ```
+        
+        #### How to bumpversion
+        
+        The version format for this repo is `{major}.{minor}.{patch}` for stable, and
+        `{major}.{minor}.{patch}-{stage}.{devnum}` for unstable (`stage` can be alpha or beta).
+        
+        To issue the next version in line, specify which part to bump,
+        like `make release bump=minor` or `make release bump=devnum`.
+        
+        If you are in a beta version, `make release bump=stage` will switch to a stable.
+        
+        To issue an unstable version when the current version is stable, specify the
+        new version explicitly, like `make release bump="--new-version 4.0.0-alpha.1 devnum"`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

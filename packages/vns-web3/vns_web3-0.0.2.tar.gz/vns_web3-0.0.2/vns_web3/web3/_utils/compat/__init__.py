@@ -1,0 +1,8 @@
+# remove once web3 supports python>=3.8
+# TypedDict was added to typing in 3.8
+import sys
+
+if sys.version_info >= (3, 8):
+	from typing import Literal, Protocol, TypedDict
+else:
+	from typing_extensions import Literal, Protocol, TypedDict
