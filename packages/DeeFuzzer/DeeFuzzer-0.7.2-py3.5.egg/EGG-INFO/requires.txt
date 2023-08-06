@@ -1,0 +1,8 @@
+setuptools
+python-shout==0.2.5
+python-twitter
+mutagen
+pyliblo
+pycurl
+pyyaml
+mysqlclient
