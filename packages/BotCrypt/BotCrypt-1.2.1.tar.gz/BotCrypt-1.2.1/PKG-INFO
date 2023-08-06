@@ -1,0 +1,36 @@
+Metadata-Version: 1.2
+Name: BotCrypt
+Version: 1.2.1
+Summary: crypt and decrypt file
+Home-page: https://github.com/botfg/BotCrypt
+Author: botfg76
+Author-email: botfgbartenevfgzero76@gmail.com
+License: Apache License Version 2.0
+Description: BotCrypt
+        ===============
+        
+        About BotCrypt
+        --------------------------
+        BotCrypt is a Python 3 script that uses `pyAesCrypt`_. to encrypt/decrypt files, directories and text.
+        
+        It is Free Software, released under the `Apache License, Version 2.0`_.
+        
+        
+        
+        
+        
+        
+        
+        
+        .. _pyAesCrypt: https://github.com/marcobellaccini/pyAesCrypt
+        
+        .. _Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.6

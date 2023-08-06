@@ -1,0 +1,11 @@
+README.rst
+setup.py
+BotCrypt/__init__.py
+BotCrypt/main.py
+BotCrypt.egg-info/PKG-INFO
+BotCrypt.egg-info/SOURCES.txt
+BotCrypt.egg-info/dependency_links.txt
+BotCrypt.egg-info/entry_points.txt
+BotCrypt.egg-info/not-zip-safe
+BotCrypt.egg-info/requires.txt
+BotCrypt.egg-info/top_level.txt
