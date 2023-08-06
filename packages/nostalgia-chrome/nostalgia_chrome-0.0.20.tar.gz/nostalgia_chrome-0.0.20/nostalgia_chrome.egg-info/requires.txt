@@ -1,0 +1,4 @@
+lxml
+flask
+fire
+bs4
