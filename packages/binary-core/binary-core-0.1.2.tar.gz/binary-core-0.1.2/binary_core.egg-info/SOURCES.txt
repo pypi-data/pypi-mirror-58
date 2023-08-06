@@ -1,0 +1,8 @@
+README.md
+setup.py
+binary-core/__init__.py
+binary_core.egg-info/PKG-INFO
+binary_core.egg-info/SOURCES.txt
+binary_core.egg-info/dependency_links.txt
+binary_core.egg-info/requires.txt
+binary_core.egg-info/top_level.txt
