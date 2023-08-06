@@ -1,0 +1,3 @@
+[console_scripts]
+meta1-pricefeed = meta1_pricefeed.cli:main
+

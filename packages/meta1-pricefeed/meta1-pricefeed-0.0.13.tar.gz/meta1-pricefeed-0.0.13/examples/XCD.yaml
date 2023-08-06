@@ -1,0 +1,63 @@
+# If true, a new price feed needs manual confirmation
+confirm: False
+
+# The producer name(s)
+producer: $PRODUCER
+
+exchanges:
+    xcd:
+        klass: Manual
+        feed:
+          USD:
+            XCD:
+              price: 0.37037
+              volume: 1.0
+    meta1:
+        klass: Meta1Feed
+        assets:
+            - USD
+
+# Enabled assets that are derived if no asset is provided via command line
+assets:
+  XCD:
+    # max age of a feed
+    maxage: 43200
+
+    # minimum percentage that forces a publish
+    min_change: 0.5
+
+    # warn if price change goes above this percentage
+    warn_change: 1.5
+
+    # skip publishing a feed if price goes above this percentage
+    skip_change: 3
+
+    # Basic Price setup
+    ###################
+    # how to derive a single price from several sources
+    # Choose from: "median", "mean", or "weighted" (by volume)
+    metric: weighted
+
+    # Select sources for this particular asset. Each source
+    # has its own fetch() method and collects several markets
+    # any market of an exchanges is considered but only the
+    # current asset's price is derived
+    #
+    # Choose from: - "*": all,
+    #              - loaded exchanges (see below)
+    sources:
+        - "*"
+
+    # Maximum short squeeze ratio
+    maximum_short_squeeze_ratio: 100.5
+
+    # maintenance collateral ratio (percentage)
+    maintenance_collateral_ratio: 100.1
+
+    # Core exchange factor for paying transaction fees in
+    # non-META1 assets. Premium of 5%
+    core_exchange_rate:
+      orientation: "META1:XCD"
+      factor: 1.05
+      ref_ticker: "USD:META1"
+      ref_ticker_attribute: quoteSettlement_price
