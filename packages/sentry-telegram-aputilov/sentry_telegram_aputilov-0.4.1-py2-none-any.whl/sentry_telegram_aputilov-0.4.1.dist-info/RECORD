@@ -1,0 +1,8 @@
+sentry_telegram/__init__.py,sha256=LHWcNYmoMKn8xSVqPZRq2Ei2GBgggj8TwF0wx1iTaio,124
+sentry_telegram/plugin.py,sha256=d9pudrjy3ztbOIFAGYvNLoSyrreL24lL9X30DxmM5NU,6309
+sentry_telegram_aputilov-0.4.1.dist-info/LICENSE,sha256=wsN9xhEIDCYo_7oKzWQNnkjhQFA9RFAXU4sT5qqYv_o,1075
+sentry_telegram_aputilov-0.4.1.dist-info/METADATA,sha256=z4PajZTCcRViBETV3aCzVuHxuyjZd8ptbIXi_bAAZm8,2610
+sentry_telegram_aputilov-0.4.1.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+sentry_telegram_aputilov-0.4.1.dist-info/entry_points.txt,sha256=baX0OU-GOSY5odxFAjNGbmtWHtnluBgkfkGm6inRiGU,87
+sentry_telegram_aputilov-0.4.1.dist-info/top_level.txt,sha256=RSourJp-Jq7yqI-4iMy0Qxxcvli5MvRyL-5cDAyT-bc,16
+sentry_telegram_aputilov-0.4.1.dist-info/RECORD,,
