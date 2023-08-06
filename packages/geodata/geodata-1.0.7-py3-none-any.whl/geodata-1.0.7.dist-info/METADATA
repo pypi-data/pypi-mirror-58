@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: geodata
+Version: 1.0.7
+Summary: Provide a place lookup gazeteer based on files from geonames.org
+Home-page: https://github.com/corb555/Geodata
+Author: Mike Herbert
+Author-email: corb@aol.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Dist: unidecode
+Requires-Dist: phonetics
+
+
+# Geodata 
+Geodata supports wildcard searches and phonetic searches from the 20M entry geoname.org database.  
+
+<a name="features"></a>
+## Features  
+* Rich place name database from geonames.org 
+* Wildcard search
+* Phonetic search
+* Highlights locations in the US and Canada where the event date is before European settlement
+
+
+[See User Guide Wiki for details](https://github.com/corb555/Geodata/wiki/User-Guide)
+
+
