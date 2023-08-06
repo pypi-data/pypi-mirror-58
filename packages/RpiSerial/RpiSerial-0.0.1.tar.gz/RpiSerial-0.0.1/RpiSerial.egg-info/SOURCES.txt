@@ -1,0 +1,8 @@
+README.md
+setup.py
+RpiSerial/RpiSerial.py
+RpiSerial/__init__.py
+RpiSerial.egg-info/PKG-INFO
+RpiSerial.egg-info/SOURCES.txt
+RpiSerial.egg-info/dependency_links.txt
+RpiSerial.egg-info/top_level.txt
