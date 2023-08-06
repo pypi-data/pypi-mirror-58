@@ -1,0 +1,31 @@
+{% extends "bee_django_message/base.html" %}
+{% block content %}
+    <h4>类型详情</h4>
+    {% if perms.bee_django_message.change_message %}
+        <a href="{% url 'bee_django_message:message_update'  message.id %}">修改</a>
+    {% endif %}
+    <table class="table">
+        <tr>
+            <td class="col-xs-3">id</td>
+            <td>{{ message.identity }}</td>
+        </tr>
+        <tr>
+            <td class="col-xs-3">名称</td>
+            <td>{{ message.name }}</td>
+        </tr>
+        <tr>
+            <td class="col-xs-3">是否需要处理</td>
+            <td>{{ message.get_done }}</td>
+        </tr>
+        <tr>
+            <td class="col-xs-3">处理后发送回执</td>
+            <td>{{ message.get_replay }}</td>
+        </tr>
+        <tr>
+            <td>说明</td>
+            <td>{{ message.info|default:"" }}</td>
+        </tr>
+
+
+    </table>
+{% endblock %}
