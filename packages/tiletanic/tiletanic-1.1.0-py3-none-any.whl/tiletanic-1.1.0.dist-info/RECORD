@@ -1,0 +1,11 @@
+tiletanic/__init__.py,sha256=F6O-VFm3oRq05KFZPN4kMWATT8KsXRV32KC4nUSwh8k,80
+tiletanic/base.py,sha256=aSVz9l2wzhHc3EDDuJRw1J2keC05okeuhoUUjNUOQg8,250
+tiletanic/cli.py,sha256=ciPrpicIGC52O4hARvu9y3bYndkcDAIIvvOUKy9ez2A,4653
+tiletanic/tilecover.py,sha256=kR0Q3q558yCHWYbsfESTn3WDpZYcPs1Xm6XnmA8F4gc,5573
+tiletanic/tileschemes.py,sha256=mIih5KfoCTgXmZIsuSApy9hQtc1Z72LzxuAbZ5-pEuY,25865
+tiletanic-1.1.0.dist-info/LICENSE.txt,sha256=Ju3mis4wSpGB9LRtrUu1yDvi2AMf3wC1GNwut-MsDeI,1079
+tiletanic-1.1.0.dist-info/METADATA,sha256=oJfEmIwoGwrr7EHPdTtyYGc6TCw-EDJ2heBfBKWnuFY,3123
+tiletanic-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tiletanic-1.1.0.dist-info/entry_points.txt,sha256=jOu24CiO4ArUV2J1-tJL9zb1vz81rh4Q8xDVcBaRPkg,71
+tiletanic-1.1.0.dist-info/top_level.txt,sha256=Zz0Q3u3fl3jNuLs1HmSJ_LP156p6V0hWGfxaBojhuPw,10
+tiletanic-1.1.0.dist-info/RECORD,,
