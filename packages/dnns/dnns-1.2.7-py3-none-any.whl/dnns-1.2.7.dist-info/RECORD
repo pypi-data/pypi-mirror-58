@@ -1,0 +1,10 @@
+dnns/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnns/config.py,sha256=k8FtjO2fr5F8UJoKjB9_pjHk7izJdzTZAAMjBCpazvw,1580
+dnns/data.py,sha256=a3X7sEf3eQNGEtG5ihOSvgBL_LmckTHgSDmcgDIiu1o,3442
+dnns/loader.py,sha256=uY6Ml_To8tqCeZW7VRLaqnBD52rnoFnVsqKOSM4TuFY,3455
+dnns-1.2.7.data/scripts/worker.py,sha256=YRRUG-CSYJ1OOie9eex9hUbxF4kagixfagGd4XMsyxo,5632
+dnns-1.2.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dnns-1.2.7.dist-info/METADATA,sha256=aSsxNNImnIdj24le_5ew9P1_65u5U9a06ns5T94vF-0,4969
+dnns-1.2.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dnns-1.2.7.dist-info/top_level.txt,sha256=xbfgpuDviF8kt5XGr_aU1N5Kchv__KIgiQEYcPNhxgU,5
+dnns-1.2.7.dist-info/RECORD,,
