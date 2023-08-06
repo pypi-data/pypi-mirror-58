@@ -1,0 +1,10 @@
+README.md
+setup.py
+digests/__init__.py
+digests/digests.py
+digests.egg-info/PKG-INFO
+digests.egg-info/SOURCES.txt
+digests.egg-info/dependency_links.txt
+digests.egg-info/not-zip-safe
+digests.egg-info/requires.txt
+digests.egg-info/top_level.txt
