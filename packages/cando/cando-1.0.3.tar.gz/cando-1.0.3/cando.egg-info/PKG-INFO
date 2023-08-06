@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cando
+Version: 1.0.3
+Summary: Python USB-CAN(Cando & Cando_pro) access module
+Home-page: https://www.taobao.com
+Author: Codenocold
+Author-email: codenocold@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: Cando,Cando_pro,USB-CAN
+Platform: UNKNOWN
