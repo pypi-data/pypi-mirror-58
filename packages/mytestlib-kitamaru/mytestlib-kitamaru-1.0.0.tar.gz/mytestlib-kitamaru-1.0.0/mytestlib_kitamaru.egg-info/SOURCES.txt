@@ -1,0 +1,7 @@
+setup.py
+mytestlib/__init__.py
+mytestlib/greet.py
+mytestlib_kitamaru.egg-info/PKG-INFO
+mytestlib_kitamaru.egg-info/SOURCES.txt
+mytestlib_kitamaru.egg-info/dependency_links.txt
+mytestlib_kitamaru.egg-info/top_level.txt
