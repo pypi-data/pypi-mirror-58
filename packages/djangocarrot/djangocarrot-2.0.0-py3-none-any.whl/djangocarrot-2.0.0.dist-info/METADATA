@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: djangocarrot
+Version: 2.0.0
+Summary: Carrot -- A simple task Queue for Django.
+Home-page: https://github.com/jbowen7/djangocarrot
+Author: John Bowen
+Author-email: jbowen7@gmail.com
+License: UNKNOWN
+Keywords: django,task,queue
+Platform: UNKNOWN
+Requires-Dist: pika
+
+UNKNOWN
+
+
