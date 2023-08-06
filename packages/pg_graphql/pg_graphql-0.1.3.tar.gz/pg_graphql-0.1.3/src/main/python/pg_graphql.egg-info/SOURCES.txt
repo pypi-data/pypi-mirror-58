@@ -1,0 +1,15 @@
+MANIFEST.in
+pg_graphql.sql
+setup.py
+src/main/python/pg_graphql/__init__.py
+src/main/python/pg_graphql/cli.py
+src/main/python/pg_graphql/types.py
+src/main/python/pg_graphql/utils.py
+src/main/python/pg_graphql/sql/000_setup.sql
+src/main/python/pg_graphql/sql/001_utils.sql
+src/main/python/pg_graphql/sql/002_schema.sql
+src/main/python/pg_graphql/sql/003_tokenizer.sql
+src/main/python/pg_graphql/sql/004_parser.sql
+src/main/python/pg_graphql/sql/005_graphiql.sql
+src/main/python/pg_graphql/sql/006_query_builder.sql
+src/main/python/pg_graphql/sql/__init__.py
