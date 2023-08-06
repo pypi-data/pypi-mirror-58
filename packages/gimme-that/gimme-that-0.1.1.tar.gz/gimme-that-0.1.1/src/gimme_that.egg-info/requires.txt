@@ -1,0 +1,9 @@
+
+[dev]
+pytest
+pre-commit
+flake8>=3.7.9
+tox
+
+[test]
+pytest
