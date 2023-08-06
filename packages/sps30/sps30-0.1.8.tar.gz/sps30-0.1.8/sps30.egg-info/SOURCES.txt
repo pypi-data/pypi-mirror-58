@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/run-sps30
+sps30/__init__.py
+sps30/sps30.py
+sps30.egg-info/PKG-INFO
+sps30.egg-info/SOURCES.txt
+sps30.egg-info/dependency_links.txt
+sps30.egg-info/top_level.txt
