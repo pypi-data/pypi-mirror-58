@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sage-numerical-backends-cplex
+Version: 9.0b9
+Summary: Cplex backend for Sage MixedIntegerLinearProgram
+Home-page: https://github.com/mkoeppe/sage-numerical-backends-cplex
+Author: Nathann Cohen, David Coudert, Matthias Koeppe, Martin Albrecht, John Perry, Jeroen Demeyer, Jori Mäntysalo, Erik M. Bray, and others
+Author-email: mkoeppe@math.ucdavis.edu
+License: GPLv2+
+Description: # sage-numerical-backends-cplex
+        CPLEX backend for Sage
+        
+        To install, either
+        - set compiler/linker flags so that "cplex.h" and "libcplex.so" can be found
+        - or set the `CPLEX_HOME` environment variable, for example as follows:
+        
+                export CPLEX_HOME=/Applications/CPLEX_Studio1210/cplex
+        
+Keywords: milp,linear-programming,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

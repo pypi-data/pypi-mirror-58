@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.py
+sage_numerical_backends_cplex/__init__.py
+sage_numerical_backends_cplex/cplex_backend.c
+sage_numerical_backends_cplex/cplex_backend.pxd
+sage_numerical_backends_cplex/cplex_backend.pyx
+sage_numerical_backends_cplex.egg-info/PKG-INFO
+sage_numerical_backends_cplex.egg-info/SOURCES.txt
+sage_numerical_backends_cplex.egg-info/dependency_links.txt
+sage_numerical_backends_cplex.egg-info/requires.txt
+sage_numerical_backends_cplex.egg-info/top_level.txt
