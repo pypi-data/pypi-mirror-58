@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: moon-automation
+Version: 0.22
+Summary: A automation framework to simplify automation tasks
+Home-page: https://wwwin-github.cisco.com/jiaminli/moon
+Author: Jiaming Li
+Author-email: jiaminli@cisco.com
+License: MIT
+Download-URL: https://wwwin-github.cisco.com/jiaminli/moon/archive/v0.22.tar.gz
+Description: UNKNOWN
+Keywords: AUTOMATION,CISCO
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

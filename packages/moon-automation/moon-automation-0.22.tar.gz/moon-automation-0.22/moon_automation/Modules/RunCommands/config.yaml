@@ -1,0 +1,15 @@
+---
+devices:
+  R1:
+    interfaces:
+      - TenGigE 0/0/0/12
+      - TenGigE 0/0/0/13
+      - TenGigE 0/0/0/14
+    commands: |
+      {% for interface in interfaces %}
+      show interfaces {{interface}}
+      {% endfor %}
+
+log_output: True
+output_folder: outputs
+output_name: "{}_commands"

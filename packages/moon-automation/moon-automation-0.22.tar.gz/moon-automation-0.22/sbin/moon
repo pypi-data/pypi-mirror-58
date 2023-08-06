@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+# Python binary for running tests.
+
+import argparse
+import asyncio
+import os
+
+import yaml
+
+from moon_automation.DeviceParser import DeviceParser
+from moon_automation.ModuleManager import ModuleManager
+import moon_automation.Modules as Mod
+
+
+def load(fp):
+    with open(fp) as f:
+        config = yaml.load(f.read())
+        return config
+
+async def run_automation(config):
+    device_parser = DeviceParser(test_bed_yaml=config["topology"])
+    devices = device_parser.generate_devices()
+    # Load modules
+    modules = config["tasks"]
+    # Dispatch modules
+    resp = {}
+    for module in modules:
+        print("Running Module {}".format(module))
+        if type(module) == str:
+            resp = await ModuleManager(module_name=module, devices_list=devices, input=resp,
+                                 debug=config.get("debug")).dispatch()
+        elif type(module) == dict:
+            module_name = [*module][0]
+            resp = await ModuleManager(module_name=module_name, devices_list=devices, input=resp,
+                                 debug=config.get("debug"), **module[module_name]).dispatch()
+
+
+
+if __name__ == '__main__':
+    # First read all the configurations from config file.
+    parser = argparse.ArgumentParser(description='Moon Automation Dispatcher.')
+    parser.add_argument('--show-modules',
+                        help='Show all installed modules',required=False,action='store_true')
+
+
+    args = parser.parse_args()
+    if args.show_modules:
+        print("Current installed modules:")
+        modules=os.listdir(Mod.__path__[0])
+        for module in modules:
+            if os.path.isdir(os.path.join(os.path.abspath(Mod.__path__[0]), module)) and "__" not in module:
+                print(module)
+        exit(0)
+    try:
+        config = load("config.yaml")
+    except:
+        print("ERROR: config file not found under this folder. Try regenerate workdir using: moon-init")
+        exit(1)
+
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(run_automation(config))
