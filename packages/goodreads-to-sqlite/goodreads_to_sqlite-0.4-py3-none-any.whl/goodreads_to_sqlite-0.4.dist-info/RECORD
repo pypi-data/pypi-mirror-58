@@ -1,0 +1,9 @@
+goodreads_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodreads_to_sqlite/cli.py,sha256=AvZJOFdwdz5CC4gPokx8G294PX3U22NMvr5aK_fycVY,3025
+goodreads_to_sqlite/utils.py,sha256=7BUNSaotO6wVfva7Riz2xpK_FBymyyb4-8cWetJrck4,10123
+goodreads_to_sqlite-0.4.dist-info/LICENSE,sha256=VFwyjHJwnTrce9_VLjwmo7dkMxJ1zC3kuZQZjx5s0O4,564
+goodreads_to_sqlite-0.4.dist-info/METADATA,sha256=tSLww8_nIUZ_DQn0d8DxTkc_SiokMJjqABG--mNdtRM,3907
+goodreads_to_sqlite-0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+goodreads_to_sqlite-0.4.dist-info/entry_points.txt,sha256=MV_sbnwxcdOzCiO0q1K-0dJS5945l4YkOCwUj0O__N8,87
+goodreads_to_sqlite-0.4.dist-info/top_level.txt,sha256=pWnCPSbMOo8QGcDjGgKeug6Uoj01W4KtwwFN_fl5leA,20
+goodreads_to_sqlite-0.4.dist-info/RECORD,,
