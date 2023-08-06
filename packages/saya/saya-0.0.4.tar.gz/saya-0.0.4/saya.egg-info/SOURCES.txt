@@ -1,0 +1,17 @@
+README.md
+setup.py
+saya/StartThread.py
+saya/__init__.py
+saya.egg-info/PKG-INFO
+saya.egg-info/SOURCES.txt
+saya.egg-info/dependency_links.txt
+saya.egg-info/requires.txt
+saya.egg-info/top_level.txt
+saya/VK/Event.py
+saya/VK/LongPoll.py
+saya/VK/PushEvent.py
+saya/VK/Uploader.py
+saya/VK/Vk.py
+saya/VK/VkAuthManager.py
+saya/VK/VkScript.py
+saya/VK/__init__.py
