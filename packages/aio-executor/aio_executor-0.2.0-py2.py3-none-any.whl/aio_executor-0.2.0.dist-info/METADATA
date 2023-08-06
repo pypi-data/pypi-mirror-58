@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: aio-executor
+Version: 0.2.0
+Summary: A concurrent.futures.Executor implementation that runs asynchronous tasks in an asyncio event loop.
+Home-page: http://github.com/miguelgrinberg/aio-executor/
+Author: Miguel Grinberg
+Author-email: miguel.grinberg@gmail.com
+License: MIT
+Platform: any
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# aio-executor
+
+[![Build Status](https://travis-ci.org/miguelgrinberg/aio-executor.svg?branch=master)](https://travis-ci.org/miguelgrinberg/aio-executor)
+
+A concurrent.futures.Executor implementation that runs asynchronous tasks in an asyncio loop.
+
+Example usage:
+
+```python
+from aio_executor import AioExecutor
+
+async def my_async_function(arg):
+    # ...
+
+with AioExecutor() as aioexec:
+    # single invocation
+    f = aioexec.submit(my_async_function, 'foo')
+    result = f.result()
+
+    # multiple concurrent invocations using "map"
+    results = aioexec.map(my_async_function, ['foo', 'bar', 'baz'])
+```
+
+As a convenience, a `run_with_asyncio` decorator is also provided. This
+decorator runs the decorated async function in a `AioExecutor` instance.
+
+The example below shows how to implement an async view function for the Flask
+framework using this decorator:
+
+```python
+@app.route('/')
+@run_with_asyncio
+async def index():
+    return await get_random_quote()
+```
+
+How to Install
+--------------
+
+```
+pip install aio-executor
+```
+
+
