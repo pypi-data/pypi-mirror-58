@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysinewave
+Version: 0.0.2
+Summary: Simple and lightweight package to generate and play (in real time) sine waves that can make smooth, continuous transitions in pitch and volume.
+Home-page: https://github.com/daviddavini/continuous-sine-wave
+Author: David Davini
+Author-email: daviddavini@ucla.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PySineWave
+Simple and lightweight package to generate and play (in real time) sine waves that can make smooth, continuous transitions in pitch and volume.
+
