@@ -1,0 +1,13 @@
+README.md
+setup.py
+BaseEmoji/__init__.py
+BaseEmoji/codecs/BaseEmojiAbstract.py
+BaseEmoji/codecs/__init__.py
+BaseEmoji/codecs/anybase.py
+BaseEmoji/codecs/group256.py
+BaseEmoji/data/emojis.json
+emojibase.egg-info/PKG-INFO
+emojibase.egg-info/SOURCES.txt
+emojibase.egg-info/dependency_links.txt
+emojibase.egg-info/requires.txt
+emojibase.egg-info/top_level.txt
