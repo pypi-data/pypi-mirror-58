@@ -1,0 +1,10 @@
+README.md
+setup.py
+django_sentinel/__init__.py
+django_sentinel/sentinel.py
+django_sentinel.egg-info/PKG-INFO
+django_sentinel.egg-info/SOURCES.txt
+django_sentinel.egg-info/dependency_links.txt
+django_sentinel.egg-info/not-zip-safe
+django_sentinel.egg-info/requires.txt
+django_sentinel.egg-info/top_level.txt
