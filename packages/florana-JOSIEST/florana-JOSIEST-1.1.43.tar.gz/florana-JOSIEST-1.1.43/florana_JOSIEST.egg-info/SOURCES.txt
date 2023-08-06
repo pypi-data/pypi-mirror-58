@@ -1,0 +1,11 @@
+README.md
+setup.py
+florana/__init__.py
+florana/extract.py
+florana/geography.txt
+florana/key.json
+florana/locations.txt
+florana_JOSIEST.egg-info/PKG-INFO
+florana_JOSIEST.egg-info/SOURCES.txt
+florana_JOSIEST.egg-info/dependency_links.txt
+florana_JOSIEST.egg-info/top_level.txt
