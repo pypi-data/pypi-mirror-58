@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_xml2dict.egg-info/PKG-INFO
+python_xml2dict.egg-info/SOURCES.txt
+python_xml2dict.egg-info/dependency_links.txt
+python_xml2dict.egg-info/top_level.txt
