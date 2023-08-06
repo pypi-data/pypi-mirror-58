@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mathy
+Version: 0.3.0
+Summary: Mathy - RL environments for solving math problems step-by-step
+Home-page: https://mathy.ai
+Author: Justin DuJardin
+Author-email: justin@dujardinconsulting.com
+License: All rights reserved
+Description: Mathtastic
+        ---
+        
+        
+        # Development
+        
+         - run scripts in `ci` folder from the root
+         - `./tools/setup.sh
+        
+        . . .
+        
+Keywords: math
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
