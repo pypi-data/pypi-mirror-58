@@ -1,0 +1,4 @@
+paramiko
+jupyter_client
+IPython
+prompt_toolkit
