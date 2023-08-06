@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: russe-pack
+Version: 0.1.0
+Summary: 
+Author: Colin Goutte
+Author-email: cgte@bk.ru
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: lxml (>=4.4.2,<5.0.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
