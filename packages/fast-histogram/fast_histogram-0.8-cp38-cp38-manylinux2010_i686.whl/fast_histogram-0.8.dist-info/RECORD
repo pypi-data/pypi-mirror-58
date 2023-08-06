@@ -1,0 +1,11 @@
+fast_histogram/_histogram_core.cpython-38-i386-linux-gnu.so,sha256=IveOmL4yioflR0VJx0mcqalZHOznavKAbi5p7eQ74Pc,64792
+fast_histogram/__init__.py,sha256=WvlaAG7FplBy9DkuZKnYJ0wUszp8TYpNpw461ZErMA0,69
+fast_histogram/histogram.py,sha256=s9qCoMBraba8OJN13oB5Aqrudjv3lfh6MYcgvCFMe6M,3213
+fast_histogram/version.py,sha256=mCHm6xlWwYKAldgV_SHK-GRbt_nojbDOyQee2ciYKV4,114
+fast_histogram/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_histogram/tests/test_histogram.py,sha256=0rBdgHR4o5THGo3rhq-Sg5ZIGLyFeWTyFcrXBNmCDmM,6478
+fast_histogram-0.8.dist-info/RECORD,,
+fast_histogram-0.8.dist-info/top_level.txt,sha256=K--_HYQ-_LP2Dhb5_cNgfxUASI-wUw82K0aFlBCorTo,15
+fast_histogram-0.8.dist-info/METADATA,sha256=9Y9uQzdukfmwAJIt_yYURoyXpqg6wmU-v14j4_oghEw,6717
+fast_histogram-0.8.dist-info/WHEEL,sha256=KG_VmfmKUlCg_VVI8xWoBKmr06aWiNWdbTT8ToH6Bzw,109
+fast_histogram-0.8.dist-info/LICENSE,sha256=M2Pj19wCoKsdmY1blLiQCCXPxOdMdWnbu92v19e85lM,1299
