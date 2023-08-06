@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: uart-debugger
+Version: 0.0.3
+Summary: 自定义串口调试协议解析
+Home-page: UNKNOWN
+Author: Li Xulun
+Author-email: lixulun99@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyserial
+
+UNKNOWN
+
+
