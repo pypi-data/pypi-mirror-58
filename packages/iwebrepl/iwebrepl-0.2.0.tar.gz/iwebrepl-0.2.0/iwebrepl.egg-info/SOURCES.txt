@@ -1,0 +1,8 @@
+README.md
+setup.py
+iwebrepl.egg-info/PKG-INFO
+iwebrepl.egg-info/SOURCES.txt
+iwebrepl.egg-info/dependency_links.txt
+iwebrepl.egg-info/requires.txt
+iwebrepl.egg-info/top_level.txt
+scripts/iwebrepl
