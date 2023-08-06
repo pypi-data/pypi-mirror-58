@@ -1,0 +1,17 @@
+bareasgi/__init__.py,sha256=vlUKBoRI5WK288LPcJL7EnKMZeyOJ7V3B5hLhs1T6n0,1131
+bareasgi/application.py,sha256=xGBo14XPcyiPy93M03tk4npWrgeQR8s-8xsZdJiXiVk,6380
+bareasgi/basic_router/__init__.py,sha256=beie7r1JHx53FvqUt8uGSS1UWQ_ji7pS-mhmbvi9Xko,189
+bareasgi/basic_router/http_router.py,sha256=CCC6QWkxSB5bpZ1aZGles_YsA6IVK5eJaa3wJDerH9I,3061
+bareasgi/basic_router/path_definition.py,sha256=2t_9C_srQAq0wUeOxG8VeE_VHaau7MYptP2hi4nBZlQ,2844
+bareasgi/basic_router/path_segment.py,sha256=JqEXpz-_Ww0wrEI_NVEQlZ7RpB6edKd2HDIsg45TF3E,3112
+bareasgi/basic_router/web_socket_router.py,sha256=uiCC0PN7wxfvcs1zbLykSfB3f0Gxf5kHUBuWfgnrLBI,1192
+bareasgi/http_instance.py,sha256=pzHoKE6wkx_Ann3PCnyUmxNAIXjb405Q7FvbgnBFW-8,8700
+bareasgi/instance.py,sha256=prpRgWegYEX6GpDGvBd7S2CxwpPLZblmjCSmotXIRy8,1225
+bareasgi/lifespan_instance.py,sha256=nLetGWYkmeOnvowSZ4lWwEw5RlbxJUoAafJsalsmcfA,1650
+bareasgi/middleware.py,sha256=5BBNxoDbjoelGtm9h30BuJeD9y-v8yemdvCNfuWwxKo,1408
+bareasgi/utils.py,sha256=V4MtkaP_72IwW5lWCx1V2EEJV0dofnHxpjbFwnGEH4I,3190
+bareasgi/websocket_instance.py,sha256=2rs-CNrVOCtChqn2a8T_gPpX9cNvnbrrc7qoSnkKIUw,3658
+bareasgi-3.5.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bareasgi-3.5.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+bareasgi-3.5.1.dist-info/METADATA,sha256=_ioExM9rC5Itp8PAZClb3OJ17xjCziBTTxBXZE7JRHY,4100
+bareasgi-3.5.1.dist-info/RECORD,,
