@@ -1,0 +1,10 @@
+cjswidget/__init__.py,sha256=RwwOeiqIGiWV9GIFcB5NYC5lHqXGITlnV_Wan8-8Zqk,116
+cjswidget/apps.py,sha256=23-upkTWUZcad6xiAT9Y-eJHVRB_5WQ-tXehSqGSDk4,138
+cjswidget/widgets.py,sha256=dgNcMCk5W9_9aiFnPMQXd_Kehfmppj2aGEaYt9Fa76Y,318
+cjswidget/static/cjswidget/choices.min.css,sha256=Yq7ZOz0LRsHxr8u2uYyUftt4Dxhmp8vhP9c-su3SuOM,6679
+cjswidget/static/cjswidget/choices.min.js,sha256=j8d7PZYAjWDL5laTHzSU8zS5zwaRJA3l1Ul7Zin6JV4,73783
+cjswidget/templates/cjswidget/widget.html,sha256=ksGHJ2WdEPuZyQD2ny3EdhTVRMCNm88LEIuTnB5n2JY,218
+django_cjswidget-0.3.0.dist-info/LICENSE,sha256=4l8ZV2uKlMrp-9Nw-UO_bzMGOBE3cNI0iVgspZRukjI,1072
+django_cjswidget-0.3.0.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+django_cjswidget-0.3.0.dist-info/METADATA,sha256=pg3hX3BpUg2ozkLjyplc8mdC6-DgJU6sCGuMIE2nJSI,1978
+django_cjswidget-0.3.0.dist-info/RECORD,,
