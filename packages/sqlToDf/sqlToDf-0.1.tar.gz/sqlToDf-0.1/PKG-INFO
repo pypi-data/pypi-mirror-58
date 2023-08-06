@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sqlToDf
+Version: 0.1
+Summary: This package utilize the bcp bulk functionality available in mssql-tools to import the the mssql data into pandas dataframe for analysis purposes
+Home-page: https://github.com/sehanfarooqui
+Author: Sehan Ahmed Farooqui | Arsal Rahim
+Author-email: sehan_ahmed@live.com
+License: MIT
+Download-URL: https://github.com/sehanfarooqui/sqlToDf/archive/SqlToDf_0.1.tar.gz
+Description: UNKNOWN
+Keywords: bcp,mssql,pandas dataframe,mssql-tools,mssql tables to Dataframes
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
