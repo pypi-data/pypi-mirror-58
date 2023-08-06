@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/vec2face.py
+src/data/linear.npz
+src/vec2face.egg-info/PKG-INFO
+src/vec2face.egg-info/SOURCES.txt
+src/vec2face.egg-info/dependency_links.txt
+src/vec2face.egg-info/requires.txt
+src/vec2face.egg-info/top_level.txt
