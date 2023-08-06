@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: test-jx
+Version: 0.0.1
+Summary: used to describe uncertainty in financial data
+Home-page: https://github.com/XuanLyu/SLE
+Author: Xuan Ji
+Author-email: jixuan_1021@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
