@@ -1,0 +1,8 @@
+README.md
+celery_sandbox
+setup.py
+celery_sandbox/__init__.py
+celery_sandbox.egg-info/PKG-INFO
+celery_sandbox.egg-info/SOURCES.txt
+celery_sandbox.egg-info/dependency_links.txt
+celery_sandbox.egg-info/top_level.txt
