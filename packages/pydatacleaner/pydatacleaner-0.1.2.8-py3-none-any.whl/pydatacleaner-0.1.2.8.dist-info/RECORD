@@ -1,0 +1,9 @@
+datacleaner/__init__.py,sha256=glzLPyeNiLfTAFcU30cv6u7n5HpJjXmVXfW7PvcvFk4,103
+datacleaner/camelcase.py,sha256=s_MZLjbJc-RKdi-msu7iLAi0QheGUiXLmjs8e9NyGXs,2061
+datacleaner/datacleaner.py,sha256=Nbp4I1vwoEt6Uf32yx5HCh4WxFZOSVMXBfZc3oFpCBA,24067
+datacleaner/snakecase.py,sha256=cw6tlLiIhjRPFyRm2QbBHlN57n-5VcMzKsm1Lh80cuw,1216
+pydatacleaner-0.1.2.8.dist-info/LICENSE.txt,sha256=ZwqlOVCHwwmf-_Ta0iFFppwh7Gi7ivQSFQlcv5pngP0,10338
+pydatacleaner-0.1.2.8.dist-info/METADATA,sha256=aNepbsPfprQkbGDOTL4sO3t-sVTywjYv_3ER_OEXGrk,8024
+pydatacleaner-0.1.2.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pydatacleaner-0.1.2.8.dist-info/top_level.txt,sha256=KJ3AII70cfPxhwvUlGlg7tLmX-h3n-Xeq5bz4-V265g,12
+pydatacleaner-0.1.2.8.dist-info/RECORD,,
