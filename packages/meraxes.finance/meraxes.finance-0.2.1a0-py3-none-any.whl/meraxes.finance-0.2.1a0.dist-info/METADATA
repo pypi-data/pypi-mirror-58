@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: meraxes.finance
+Version: 0.2.1a0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Stefan Bunde
+Author-email: stefanbunde+git@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Django (>=2)
+Requires-Dist: djangorestframework (>=3.8)
+Provides-Extra: release
+Requires-Dist: twine ; extra == 'release'
+Provides-Extra: testing
+Requires-Dist: tox ; extra == 'testing'
+
+UNKNOWN
+
+
