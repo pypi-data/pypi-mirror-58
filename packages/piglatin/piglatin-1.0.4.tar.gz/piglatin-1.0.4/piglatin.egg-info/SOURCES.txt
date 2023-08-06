@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+piglatin/__init__.py
+piglatin/_version.py
+piglatin.egg-info/PKG-INFO
+piglatin.egg-info/SOURCES.txt
+piglatin.egg-info/dependency_links.txt
+piglatin.egg-info/top_level.txt
