@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+python_bootstrap/__init__.py
+python_bootstrap/main.py
+python_bootstrap.egg-info/PKG-INFO
+python_bootstrap.egg-info/SOURCES.txt
+python_bootstrap.egg-info/dependency_links.txt
+python_bootstrap.egg-info/requires.txt
+python_bootstrap.egg-info/top_level.txt
