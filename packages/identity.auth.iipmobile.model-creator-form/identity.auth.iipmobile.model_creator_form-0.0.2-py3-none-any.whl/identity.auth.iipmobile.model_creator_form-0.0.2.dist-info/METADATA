@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: identity.auth.iipmobile.model-creator-form
+Version: 0.0.2
+Summary: A tool to create/update model for Intuit authz service.
+Home-page: https://github.intuit.com/kaishwarya/AuthzModelCreator.git
+Author: Kumari Aishwarya
+Author-email: k.aishwarya15@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+# QBOModelCreator
+Python based tool for (Authz Library)
+
+
