@@ -1,0 +1,6 @@
+ddtrace_aiomisc/__init__.py,sha256=y3ZinND79vsjeJywcGXx0bkpkwkYxG-MtpEIlGSRqKI,201
+ddtrace_aiomisc/aiomisc.py,sha256=r-ZDLmNKz-e0R62zv6Ob1vebOFMXSrdTBedf6ai6PRI,2874
+ddtrace_aiomisc-1.0.1.dist-info/LICENSE,sha256=Je3US4CEG0DnfNT3lmszFMouMy8OtrC7_1LfaxSfHBk,1065
+ddtrace_aiomisc-1.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ddtrace_aiomisc-1.0.1.dist-info/METADATA,sha256=hoZlf2JXafUBy6sfs9_ymRVJwduE0GGgt2j2JKm8XMw,1069
+ddtrace_aiomisc-1.0.1.dist-info/RECORD,,
