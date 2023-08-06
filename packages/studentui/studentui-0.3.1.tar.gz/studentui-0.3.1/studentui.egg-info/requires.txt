@@ -1,0 +1,2 @@
+PySide2
+bakalib>=1.0.4
