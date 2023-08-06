@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mmpxrt
+Version: 1.1
+Summary: Raytracing code for x-ray (mosaic) spectrometers
+Home-page: https://gitlab.hzdr.de/smid55/mmpxrt
+Author: Michal Smid
+Author-email: m.smid@hzdr.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mmpxrt
+
+This is a raytracing code for design and analysis of x-ray spectrometers. Useful tool for experienced physicist.
+For more info about distribution, installation, usage of this package, please see 
+https://gitlab.hzdr.de/smid55/mmpxrt
+
+The packaging was done by using this manual: https://packaging.python.org/tutorials/packaging-projects/
+
+
