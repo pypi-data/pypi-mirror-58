@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: canvas-api-caller
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/Nudge-Crew/canvas-api-caller
+Author: Noah Scharrenberg
+Author-email: nscharrenberg@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
