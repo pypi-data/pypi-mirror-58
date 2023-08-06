@@ -1,0 +1,6 @@
+{% include 'django/forms/widgets/select.html' %}
+
+<script nonce="{{ csp_nonce }}" type="text/javascript">
+  const element = document.getElementById('{{ widget.attrs.id }}');
+  const choices = new Choices(element);
+</script>

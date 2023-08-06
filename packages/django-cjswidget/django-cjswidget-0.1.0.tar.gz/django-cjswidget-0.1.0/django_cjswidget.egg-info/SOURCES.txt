@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cjswidget/__init__.py
+cjswidget/version.py
+cjswidget/widgets.py
+cjswidget/static/cjswidget/choices.min.css
+cjswidget/static/cjswidget/choices.min.js
+cjswidget/templates/cjswidget/widget.html
+django_cjswidget.egg-info/PKG-INFO
+django_cjswidget.egg-info/SOURCES.txt
+django_cjswidget.egg-info/dependency_links.txt
+django_cjswidget.egg-info/requires.txt
+django_cjswidget.egg-info/top_level.txt
