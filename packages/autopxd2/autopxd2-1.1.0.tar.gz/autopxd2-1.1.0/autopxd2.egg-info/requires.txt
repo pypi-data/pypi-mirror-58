@@ -1,0 +1,7 @@
+six
+Click
+pycparser
+
+[dev]
+pytest
+pycodestyle
