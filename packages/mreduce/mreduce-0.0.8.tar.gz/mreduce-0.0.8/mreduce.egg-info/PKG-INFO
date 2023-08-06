@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: mreduce
+Version: 0.0.8
+Summary: MReduce python sdk
+Home-page: https://mreduce.com
+Author: MReduce
+Author-email: support@mreduce.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7
