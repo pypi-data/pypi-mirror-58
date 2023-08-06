@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: multimetric
+Version: 1.0.5
+Summary: Calculate code metrics in various languages
+Home-page: https://github.com/priv-kweihmann/multimetric
+Author: Konrad Weihmann
+Author-email: kweihmann@outlook.com
+License: UNKNOWN
+Description: multimetric
+        ===========
+        
+        |Build status| |PyPI version| |Python version| |Downloads| |Language
+        grade: Python|
+        
+        Calculate code metrics in various languages
+        
+        Purpose
+        -------
+        
+        This tool tries to calculate the following metrics for many, many
+        programming languages
+        
+        -  Comment to Code percentage
+        -  Cyclomatic complexity according to McCabe
+        -  Number of delivered bugs according to Halstead
+        -  Time required to program according to Halstead
+        -  Difficulty according to Halstead
+        -  Volume according to Halstead
+        -  Effort according to Halstead
+        -  Lines of code
+        -  Maintainability index
+        
+        This tool was heavily inspired by
+        `metrics <https://github.com/markfink/metrics>`__
+        
+        Requirements
+        ------------
+        
+        -  python3
+        -  `Pygments <http://pygments.org/>`__
+        
+        Installation
+        ------------
+        
+        PyPi
+        ~~~~
+        
+        simply run
+        
+        .. code:: sh
+        
+           pip3 install multimetric
+        
+        From source
+        ~~~~~~~~~~~
+        
+        -  Install the needed requirements by running ``pip3 install pygments``
+        -  git clone this repository
+        -  cd to <clone folder>
+        -  run ``python3 setup.py build``
+        
+        Usage
+        -----
+        
+        .. code:: shell
+        
+           usage: multimetric [-h] [--bugpredict {old,new}]
+                              [--maintindex {sei,classic,microsoft}]
+                              files [files ...]
+        
+           Calculate code metrics in various languages
+        
+           positional arguments:
+             files                 Files to parse
+        
+           optional arguments:
+             -h, --help            show this help message and exit
+             --bugpredict {old,new}
+                                   Method how to calculate the bug prediction
+             --maintindex {sei,classic,microsoft}
+                                   Method how to calculate the maintainability index
+        
+        By default tool guesses the content type by the filename, if that
+        doesn’t work for you please see below
+        
+        Output
+        ------
+        
+        Output will be written to stdout as json.
+        
+        Output structure
+        ~~~~~~~~~~~~~~~~
+        
+        -  ``files`` contains a list of each file passed by CLI
+        -  ``overall`` contains the calculated values for all passed files
+        
+        Item structure
+        ^^^^^^^^^^^^^^
+        
+        -  ``comment_ratio`` = Comment to Code percentage
+        -  ``cyclomatic_complexity`` = Cyclomatic complexity according to McCabe
+        -  ``halstead_bugprop`` = Number of delivered bugs according to Halstead
+        -  ``halstead_timerequired`` = Time required to program according to
+           Halstead
+        -  ``halstead_difficulty`` = Difficulty according to Halstead
+        -  ``halstead_volume`` = Volume according to Halstead
+        -  ``halstead_effort`` = Effort according to Halstead
+        -  ``lang`` = list of idendified programming languages
+        -  ``loc`` = Lines of code
+        -  ``maintainability_index`` = Maintainability index
+        -  ``operands_sum`` = Number of used operands
+        -  ``operands_uniq`` = Number of unique used operands
+        -  ``operators_sum`` = Number of used operators
+        -  ``operators_uniq`` = Number of unique used operators
+        
+        Further reading
+        ---------------
+        
+        -  `Pygments <http://pygments.org/>`__
+        
+        Bugs & Contribution
+        -------------------
+        
+        Feel free to create issues or pull requests
+        
+        .. |Build status| image:: https://github.com/priv-kweihmann/tlv/workflows/Build/badge.svg
+        .. |PyPI version| image:: https://badge.fury.io/py/multimetric.svg
+           :target: https://badge.fury.io/py/multimetric
+        .. |Python version| image:: https://img.shields.io/pypi/pyversions/multimetric
+           :target: https://img.shields.io/pypi/pyversions/multimetric
+        .. |Downloads| image:: https://img.shields.io/pypi/dm/multimetric
+           :target: https://img.shields.io/pypi/dm/multimetric
+        .. |Language grade: Python| image:: https://img.shields.io/lgtm/grade/python/g/priv-kweihmann/multimetric.svg?logo=lgtm&logoWidth=18
+           :target: https://lgtm.com/projects/g/priv-kweihmann/multimetric/context:python
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Description-Content-Type: text/x-rst
