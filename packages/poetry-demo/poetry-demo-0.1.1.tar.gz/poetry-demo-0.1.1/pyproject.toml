@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-demo"
+version = "0.1.1"
+description = ""
+authors = ["Shabie Iqbal <shabieiqbal@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^2.7"
+pendulum = "^2.0.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
