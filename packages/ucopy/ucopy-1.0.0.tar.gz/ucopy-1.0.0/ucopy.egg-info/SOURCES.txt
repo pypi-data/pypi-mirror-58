@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/ucopy
+ucopy/__init__.py
+ucopy/ucopy.py
+ucopy.egg-info/PKG-INFO
+ucopy.egg-info/SOURCES.txt
+ucopy.egg-info/dependency_links.txt
+ucopy.egg-info/top_level.txt
