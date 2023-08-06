@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nlppipe
+Version: 0.0.1
+Summary: Latvian NLP Tool Pipeline
+Home-page: https://github.com/LUMII-AILab/nlp-pipe
+License: gpl-3.0
+Description: # NLP-PIPE
+        
+        ## License
+        GPL-3.0
+Keywords: nlp,pipeline,lv
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,12 @@
+README.md
+setup.py
+nlppipe/__init__.py
+nlppipe/adapter.py
+nlppipe/client.py
+nlppipe/config.py
+nlppipe/server.py
+nlppipe.egg-info/PKG-INFO
+nlppipe.egg-info/SOURCES.txt
+nlppipe.egg-info/dependency_links.txt
+nlppipe.egg-info/requires.txt
+nlppipe.egg-info/top_level.txt
