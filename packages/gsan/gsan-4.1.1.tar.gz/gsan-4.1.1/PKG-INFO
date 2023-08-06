@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gsan
+Version: 4.1.1
+Summary: Extract subdomains from HTTPS sites
+License: MIT
+Author: Franccesco Orozco
+Author-email: franccesco@codingdose.info
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: colorama (>=0.4.1,<0.5.0)
+Requires-Dist: ndg-httpsclient (>=0.5.1,<0.6.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: pyasn1 (>=0.4.8,<0.5.0)
+Requires-Dist: pyopenssl (>=19.1,<20.0)
+Requires-Dist: tldextract (>=2.2,<3.0)
