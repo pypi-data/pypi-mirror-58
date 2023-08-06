@@ -1,0 +1,13 @@
+unification/__init__.py,sha256=phTsA3OElt6auZRCQHyqlII2Fffvv_wPUdJHzTvpHtk,208
+unification/_version.py,sha256=7MiNBwmHDYE2NE6TJsr7pJy5rjYAAuNrO9ipgJgcFj8,497
+unification/core.py,sha256=TRolJ8QplCvZCKGNticpwrDWSpErYk5_YboysdcS0o0,2359
+unification/dispatch.py,sha256=160yMEIIG_j2n1ky2RFopemV6CMpWzRFoH0eLIGO-r0,139
+unification/match.py,sha256=Wm2Zq6Nzi9FyIG62_nyd_dD2u9uxDWnqkr7VtITSr7c,3201
+unification/more.py,sha256=wI1OmW9-TBwRNiBjYMj6E9rYJCSFrg_nsyY1LRAhozE,2769
+unification/utils.py,sha256=diDdMMLsD2E3vDa5Fk2n3KLlQpN015KXS-esI-hyvP0,2568
+unification/variable.py,sha256=5RAD1K2hd6PT8SZk-HCHI9YhBYHWDTmdE134ZthbG44,2600
+logical_unification-0.2.6.dist-info/LICENSE.txt,sha256=jD_-M_Qmg4dnTlb3BCQbmRIO7ARTTquWT65LKWEH6WI,1536
+logical_unification-0.2.6.dist-info/METADATA,sha256=LljIjbH8pRPsCa1OrCkF0DF23tPBTQPDJAtAWtUPXJw,4416
+logical_unification-0.2.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+logical_unification-0.2.6.dist-info/top_level.txt,sha256=NN5Q-S85DcmLNbQkmdZkk7ZvmKchUnzWHEsc7HuAX6M,12
+logical_unification-0.2.6.dist-info/RECORD,,
