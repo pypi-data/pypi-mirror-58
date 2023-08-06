@@ -1,0 +1,7 @@
+numpy
+
+[cli]
+argcomplete
+
+[download]
+tqdm
