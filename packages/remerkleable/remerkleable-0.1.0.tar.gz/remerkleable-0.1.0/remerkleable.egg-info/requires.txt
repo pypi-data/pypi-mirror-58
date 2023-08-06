@@ -1,0 +1,6 @@
+
+[linting]
+flake8
+
+[testing]
+pytest
