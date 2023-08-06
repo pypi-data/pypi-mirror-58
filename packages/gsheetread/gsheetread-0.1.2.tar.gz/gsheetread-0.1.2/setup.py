@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['gsheetread']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['google-api-python-client>=1.7.11,<2.0.0',
+ 'google-auth-httplib2>=0.0.3,<0.0.4',
+ 'google-auth-oauthlib>=0.4.1,<0.5.0',
+ 'pandas>=0.25.3,<0.26.0']
+
+setup_kwargs = {
+    'name': 'gsheetread',
+    'version': '0.1.2',
+    'description': '',
+    'long_description': None,
+    'author': 'Ayush Shanker',
+    'author_email': 'shankerayush@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
