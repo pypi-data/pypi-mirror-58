@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: prelm
+Version: 0.0.2
+Summary: A package of pretrained language models.
+Home-page: https://github.com/Li-Ming-Fan/prelm
+Author: Ming-Fan Li
+Author-email: li_m_f@163.com
+Maintainer: Ming-Fan Li
+Maintainer-email: li_m_f@163.com
+License: UNKNOWN
+Description: # prelm
+        
+        Pretrained Language Models. TensorFlow v1.x
+        
+        
+        ## Description
+        
+        ```
+        from prelm import initialize_with_pretrained_ckpt
+        
+        from prelm.bert import BertConfig, BertModule
+        ```
+        
+        
+        ## Installation
+        
+        From PyPI distribution system:
+        
+        ```
+        pip install prelm
+        ```
+        
+        
+        ## Usage
+        
+        TODO
+        
+        
+        </br>
+        
+Platform: any
+Description-Content-Type: text/markdown
