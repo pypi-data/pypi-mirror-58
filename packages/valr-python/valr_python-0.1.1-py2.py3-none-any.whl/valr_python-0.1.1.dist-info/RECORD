@@ -1,0 +1,10 @@
+valr_python/__init__.py,sha256=S7AMhlYyqGZaQy8-Wa6dyDMPdW8WI2ldsCdgKOcB6T8,53
+valr_python/base_client.py,sha256=OMwy4Tzq-npKXSTxj1JnuTOCN7XfYiiIyY-UXSH9994,3971
+valr_python/client.py,sha256=Cysh98rTMklGVhMha2uzwS2TVZ6iEka4XSd3E1i0rTs,31276
+valr_python/error.py,sha256=hfTukhNvkmReV2vkymVZ_TTiJEy_by2vXQoqAWhmwvg,229
+valr_python-0.1.1.dist-info/AUTHORS.rst,sha256=b0XGD-OBZpOSfNPcwhX3b-zTyScywcR8dgsQBXfENKQ,60
+valr_python-0.1.1.dist-info/LICENSE,sha256=zORfpIEFkTqoni_-LyrdZy28Jk_tDvYwwlkcXuKUvL0,1100
+valr_python-0.1.1.dist-info/METADATA,sha256=Mok3F1iSvhc8SmgcYY_rEu8ndOVvUvDWKgy_AJPJmlQ,2039
+valr_python-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+valr_python-0.1.1.dist-info/top_level.txt,sha256=xw4IAPQxcHoP5WHn5qEaQvGqKYVvFI6SRJGm1IM5wJg,12
+valr_python-0.1.1.dist-info/RECORD,,
