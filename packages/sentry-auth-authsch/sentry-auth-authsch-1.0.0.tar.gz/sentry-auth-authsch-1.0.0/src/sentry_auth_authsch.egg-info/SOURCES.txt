@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/sentry_auth_authsch/__init__.py
+src/sentry_auth_authsch/apps.py
+src/sentry_auth_authsch/constants.py
+src/sentry_auth_authsch/provider.py
+src/sentry_auth_authsch/views.py
+src/sentry_auth_authsch.egg-info/PKG-INFO
+src/sentry_auth_authsch.egg-info/SOURCES.txt
+src/sentry_auth_authsch.egg-info/dependency_links.txt
+src/sentry_auth_authsch.egg-info/entry_points.txt
+src/sentry_auth_authsch.egg-info/not-zip-safe
+src/sentry_auth_authsch.egg-info/requires.txt
+src/sentry_auth_authsch.egg-info/top_level.txt
+src/sentry_auth_authsch/templates/sentry_auth_authsch/configure.html
