@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+watchcode/__init__.py
+watchcode/colors.py
+watchcode/config.py
+watchcode/io_handler.py
+watchcode/matching.py
+watchcode/templates.py
+watchcode/trigger.py
+watchcode/watchcode.py
+watchcode.egg-info/PKG-INFO
+watchcode.egg-info/SOURCES.txt
+watchcode.egg-info/dependency_links.txt
+watchcode.egg-info/entry_points.txt
+watchcode.egg-info/requires.txt
+watchcode.egg-info/top_level.txt
