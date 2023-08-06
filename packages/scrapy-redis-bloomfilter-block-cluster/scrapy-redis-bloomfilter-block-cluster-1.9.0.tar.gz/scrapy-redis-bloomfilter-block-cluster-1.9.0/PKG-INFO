@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: scrapy-redis-bloomfilter-block-cluster
+Version: 1.9.0
+Summary: Scrapy Redis BloomFilter Block Cluster
+Home-page: https://github.com/leffss/ScrapyRedisBloomFilterBlockCluster
+Author: leffss
+Author-email: 348926676@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: scrapy,redis,bloomfilter,block,cluster
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
