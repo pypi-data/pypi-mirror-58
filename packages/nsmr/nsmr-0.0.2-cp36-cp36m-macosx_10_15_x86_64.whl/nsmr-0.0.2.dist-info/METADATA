@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nsmr
+Version: 0.0.2
+Summary: Navigation Simulator for Mobile Robot
+Home-page: https://github.com/Jumpei-Arima/Navigation_Simulator_for_Mobile_Robot
+Author: Jumpei Arima
+Author-email: arijun0307@gmail.com
+Maintainer: Jumpei Arima
+Maintainer-email: arijun0307@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >3.5.0
+Requires-Dist: gym (>=0.10.5)
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: tqdm (>=4.32.1)
+
+# Navigation Simulator for Mobile Robot
+
+## Installation
+NSMR can be installed from source code.
+```
+$ git clone https://github.com/Jumpei-Arima/Navigation_Simulator_for_Mobile_Robot
+$ cd Navigation_Simulator_for_Mobile_Robot
+$ pip install -e .
+```
+
+For examples see example
+```
+python examples/run_env.py
+```
+
+
