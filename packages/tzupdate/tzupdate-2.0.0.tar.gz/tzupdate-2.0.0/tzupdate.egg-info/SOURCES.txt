@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tzupdate.py
+tests/requirements.txt
+tzupdate.egg-info/PKG-INFO
+tzupdate.egg-info/SOURCES.txt
+tzupdate.egg-info/dependency_links.txt
+tzupdate.egg-info/entry_points.txt
+tzupdate.egg-info/top_level.txt
