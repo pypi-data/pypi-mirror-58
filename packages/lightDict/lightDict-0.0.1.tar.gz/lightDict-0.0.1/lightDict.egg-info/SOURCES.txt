@@ -1,0 +1,8 @@
+README.md
+setup.py
+lightDict.egg-info/PKG-INFO
+lightDict.egg-info/SOURCES.txt
+lightDict.egg-info/dependency_links.txt
+lightDict.egg-info/requires.txt
+lightDict.egg-info/top_level.txt
+lightdict/__init__.py
