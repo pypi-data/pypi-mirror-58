@@ -1,0 +1,11 @@
+txtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+txtools/clusterer.py,sha256=Pji99DYdTbEuwvmVQkeul5OyfsJXtvaGvuvfEfS4in8,522
+txtools/normalizer.py,sha256=JnddukVVGb0RzOAmM0I0jbD6jQ4QseLUpGKOYXijY04,6584
+txtools/similarity.py,sha256=bXBtsUIG2mreUCGLEbGyMVeCevU9J8UqApS7L1b_3ls,1462
+txtools/utils.py,sha256=CFoo4WNAo_u7931TnHdPMoopoEeOMICoptj5gmUwESw,2940
+txtools/vectorizer.py,sha256=B0E7nEDMcBzHLt2fSmC4Vy-fMC2mVkQjbPe6Jc7FQJU,467
+texcptulz-0.6.0.dist-info/LICENSE,sha256=MSYGeHJ-b8YWUGD9OvIvmP_61dsAdVcme0muPBdh_5o,1057
+texcptulz-0.6.0.dist-info/METADATA,sha256=VSCs7ijnfvr5WXv5YbqMDWTI2lW3r2FW4OWGEon-7Bc,11233
+texcptulz-0.6.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+texcptulz-0.6.0.dist-info/top_level.txt,sha256=jxOP53WxMhgYv0JTtg2phMQMFYTHY-a4iSFqa1lUUjM,8
+texcptulz-0.6.0.dist-info/RECORD,,
