@@ -1,0 +1,120 @@
+setuptools>=38.3.0
+beautifulsoup4<5.0.0,>=4.4.1
+DataProperty<1.0.0,>=0.43.2
+jsonschema<4.0.0,>=2.5.1
+mbstrdecoder<1.0.0,>=0.8.3
+six<2.0.0,>=1.10.0
+tabledata<1.0.0,>=0.9.1
+typepy<1.0.0,>=0.6.4
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version < "3.5"]
+pathvalidate<1
+
+[:python_version <= "3.4"]
+path.py<12
+
+[:python_version > "3.4"]
+path.py<13,>=12.0.1
+
+[:python_version >= "3.5"]
+pathvalidate<2
+
+[all]
+pyOpenSSL
+retryrequests<0.1.0,>=0.0.2
+requests<3.0.0,>=2.18.4
+gspread
+Markdown<3.0.0,>=2.6.6
+SimpleSQLite<1.0.0,>=0.45.3
+simplejson<4.0,>=3.8.1
+oauth2client
+pypandoc
+Logbook<2.0.0,>=0.12.3
+
+[all:python_version < "3.5"]
+xlrd>=0.9.4
+
+[all:python_version >= "3.5"]
+excelrd>=2.0.2
+
+[dev]
+releasecmd<1,>=0.2.0
+twine
+wheel
+path.py
+readmemaker>=1.0.0
+sphinx_rtd_theme
+Sphinx
+pytest
+pytablewriter[excel]>=0.46
+retryrequests<0.1.0,>=0.0.2
+subprocrunner
+requests<3.0.0,>=2.18.4
+Markdown<3.0.0,>=2.6.6
+SimpleSQLite<1.0.0,>=0.45.3
+simplejson<4.0,>=3.8.1
+pypandoc
+responses
+
+[dev:python_version < "3.2"]
+futures
+
+[dev:python_version < "3.5"]
+xlrd>=0.9.4
+
+[dev:python_version >= "3.5"]
+excelrd>=2.0.2
+
+[excel]
+
+[excel:python_version < "3.5"]
+xlrd>=0.9.4
+
+[excel:python_version >= "3.5"]
+excelrd>=2.0.2
+
+[gs]
+gspread
+oauth2client
+pyOpenSSL
+SimpleSQLite<1.0.0,>=0.45.3
+
+[logging]
+Logbook<2.0.0,>=0.12.3
+
+[md]
+Markdown<3.0.0,>=2.6.6
+
+[mediawiki]
+pypandoc
+
+[sqlite]
+SimpleSQLite<1.0.0,>=0.45.3
+
+[test]
+pytest
+pytablewriter[excel]>=0.46
+retryrequests<0.1.0,>=0.0.2
+subprocrunner
+requests<3.0.0,>=2.18.4
+Markdown<3.0.0,>=2.6.6
+SimpleSQLite<1.0.0,>=0.45.3
+simplejson<4.0,>=3.8.1
+pypandoc
+responses
+
+[test:python_version < "3.2"]
+futures
+
+[test:python_version < "3.5"]
+xlrd>=0.9.4
+
+[test:python_version >= "3.5"]
+excelrd>=2.0.2
+
+[url]
+requests<3.0.0,>=2.18.4
+retryrequests<0.1.0,>=0.0.2
