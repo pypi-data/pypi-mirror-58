@@ -1,0 +1,52 @@
+.buttonCard {
+  background: #ffffff;
+  font-size: 150%;
+  font-weight: Bold;
+  opacity: 0.9;
+}
+
+.buttonCard-label:disabled {
+  color: #000000;
+}
+
+.buttonL {
+  font-size: 125%;
+  font-weight: Bold;
+}
+
+.buttonXL {
+  font-size: 150%;
+  font-weight: Bold;
+}
+
+.comboboxL {
+  font-size: 125%;
+  padding: 0;
+}
+
+.entryXL {
+  font-size: 150%;
+}
+
+.grid {
+  background-image: url("../pixmaps/board.svg");
+}
+
+.labelBold {
+  font-weight: Bold;
+}
+
+.labelXL {
+  font-size: 150%;
+  font-weight: Bold;
+}
+
+.labelXXL {
+  font-size: 200%;
+  font-weight: Bold;
+}
+
+.treeunitsXL {
+  font-size: 150%;
+  padding: 0;
+}

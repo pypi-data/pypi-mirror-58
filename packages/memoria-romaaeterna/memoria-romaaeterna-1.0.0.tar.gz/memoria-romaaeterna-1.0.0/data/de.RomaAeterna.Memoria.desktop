@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name[de]=Memoria
+Name[en_GB]=Memoria
+Name=Memoria
+Comment[de]=Memory mit bis zu vier Spielern spielen
+Comment[en_GB]=Play Memory (Matching) for up to four players
+Comment=Play Memory (Matching) for up to four players
+Exec=memoria
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=de.RomaAeterna.Memoria
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Education;Game;GTK;
