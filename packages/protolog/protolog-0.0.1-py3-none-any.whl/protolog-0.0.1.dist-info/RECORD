@@ -1,0 +1,9 @@
+protolog/__init__.py,sha256=YCc9vsjnRA9rtcVfo9qaULCSwSWCDWq0zgavrzAvvjQ,1438
+protolog/test_udp.py,sha256=2zrebbnrQfmQlmSA2QpMr3s6DqPDIR2-P-cjCZVEPmw,504
+protolog/udp.py,sha256=qJvHRbt97dK7Po4prc1hvyzb-Puc6CX9kVlIZ_D8fEI,1909
+protolog-0.0.1.dist-info/LICENSE,sha256=RjFqof0eDI23lMxZsAL3IIccAjwLISfat4DVkQDxpUM,1550
+protolog-0.0.1.dist-info/METADATA,sha256=E9e0CDiZ6g73W9W2rbQZ-cNeqhFU3a8CnNV9FqFliIs,2435
+protolog-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+protolog-0.0.1.dist-info/entry_points.txt,sha256=TwnhkJCAuuUq1FvvrTatoVBV2MaCwqiq9UXj4hYHbk8,43
+protolog-0.0.1.dist-info/top_level.txt,sha256=V2E7wrmImPgXyT6vl0v9xbpeJXbOLLDqmtqQFpfDoyE,9
+protolog-0.0.1.dist-info/RECORD,,
