@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: dynamics365
+Version: 0.1
+Summary: Python Dynamics API Connector
+Home-page: https://github.com/wuttem
+Author: Matthias Wutte
+Author-email: matthias.wutte@gmail.com
+License: UNKNOWN
+Description: # Dynamics365
+        
+        Python Dynamics 365 API Client
+        
+        
+Keywords: dynamics
+Platform: UNKNOWN
