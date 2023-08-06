@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+docs/Makefile
+docs/conf.py
+docs/index.rst
+docs/src/expi_skel.rst
+expi_skel/__init__.py
+expi_skel/expi.json
+expi_skel.egg-info/PKG-INFO
+expi_skel.egg-info/SOURCES.txt
+expi_skel.egg-info/dependency_links.txt
+expi_skel.egg-info/requires.txt
+expi_skel.egg-info/top_level.txt
+expi_skel/vi/EXPISKEL.2665093.vi

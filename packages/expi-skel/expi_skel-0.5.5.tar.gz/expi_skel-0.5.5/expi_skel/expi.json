@@ -1,0 +1,65 @@
+{
+    "module": "EXPISKEL",
+    "sage": {
+        "version": 2019,
+        "product_update": 3.0,
+        "edition": "Premium"
+    },
+    "extender": {
+        "version": 2019,
+        "product_update": 7.1,
+        "edition": "Developer"
+    },
+    "programs": [
+        "AR", "AP", "OE", "PO"
+    ],
+    "views": [
+        "OE0500", "OE0520"
+    ],
+    "screens": [
+        "OE1100"
+    ],
+    "workflows": [],
+    "access": "public|private|authorized",
+    "visibility": "public|private|autorized",
+    "pricing": {
+        "CAD": 100.00,
+        "USD": 80.00,
+        "AUD": 100.00,
+        "EUR": 75.00
+    },
+    "email": "sales@company.com",
+    "postinstall": {
+        "insert": [ 
+            {
+                "view": "VIEWID",
+                "put": {
+                    "FIELD": "VALUE",
+                    "FIELD": "VALUE",
+                    "FIELD": "VALUE"
+                } 
+            }, {
+                "view": "VIEWID",
+                "put": {
+                    "FIELD": "VALUE",
+                    "FIELD": "VALUE",
+                    "FIELD": "VALUE"
+                }
+            }
+        ],
+        "update": [
+            {
+                "view": "VIEWID",
+                "set": {
+                    "FIELD": "VALUE",
+                    "FIELD": "VALUE",
+                    "FIELD": "VALUE"
+                },
+                "where": {
+                    "FIELD": "VALUE"
+                }
+            }
+        ],
+        "run_scripts": ["scriptname", "scriptname"]
+    }
+}
