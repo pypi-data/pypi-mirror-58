@@ -1,0 +1,3 @@
+[distutils.commands]
+format = setuptools_black.setuptools_command:FormatCommand
+
