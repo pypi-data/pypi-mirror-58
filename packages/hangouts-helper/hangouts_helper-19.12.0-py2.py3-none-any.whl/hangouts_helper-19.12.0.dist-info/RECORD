@@ -1,0 +1,10 @@
+hangouts_helper/__init__.py,sha256=WvSmov5mxf99oO_Ko3UtsEWzCE-P7exycFtBAjEzhZU,113
+hangouts_helper/api.py,sha256=dyGZBshuAFoFd2AfmQ1By5fRrwvmebLCMI1Aq0zpnIs,2977
+hangouts_helper/handler.py,sha256=6cpSBybnSWNtdMalwd-6FRL4ILwsQs_9PgGoJfb5YD8,2635
+hangouts_helper/message.py,sha256=ANTnMF0_IJTxgeV-nGBVENVsk0TXlyEAegKE7ZhlRIU,8335
+hangouts_helper/version.py,sha256=Bra1C06RVVepGvmDxAEBr66gS_9NjCJGeyhkIBm8XHQ,216
+hangouts_helper-19.12.0.dist-info/LICENSE,sha256=nqQTip_RmHSex2fXj06KmfAClhAxDeOqbYoksBKRr5k,1062
+hangouts_helper-19.12.0.dist-info/METADATA,sha256=uwD2FDkkS4Ng8xLEDblf8f4Q3Y8H5vXSEA1bP5AFoSA,7099
+hangouts_helper-19.12.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+hangouts_helper-19.12.0.dist-info/top_level.txt,sha256=KI74HoWzvQTtuQVzSXQFy-l8qHNTfX5TCmOEtp6i0qE,16
+hangouts_helper-19.12.0.dist-info/RECORD,,
