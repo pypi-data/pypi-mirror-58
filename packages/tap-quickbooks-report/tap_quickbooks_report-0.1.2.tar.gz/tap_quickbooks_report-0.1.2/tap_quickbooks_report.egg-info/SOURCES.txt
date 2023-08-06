@@ -1,0 +1,14 @@
+README.md
+setup.py
+tap_quickbooks_report/__init__.py
+tap_quickbooks_report/streams.py
+tap_quickbooks_report/utils.py
+tap_quickbooks_report/version.py
+tap_quickbooks_report.egg-info/PKG-INFO
+tap_quickbooks_report.egg-info/SOURCES.txt
+tap_quickbooks_report.egg-info/dependency_links.txt
+tap_quickbooks_report.egg-info/entry_points.txt
+tap_quickbooks_report.egg-info/requires.txt
+tap_quickbooks_report.egg-info/top_level.txt
+tap_quickbooks_report/schemas/profit_and_loss.json
+tap_quickbooks_report/schemas/profit_and_loss_detail.json
