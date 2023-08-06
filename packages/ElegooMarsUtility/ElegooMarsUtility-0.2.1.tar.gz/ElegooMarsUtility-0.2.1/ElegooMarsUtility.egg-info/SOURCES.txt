@@ -1,0 +1,13 @@
+README.md
+setup.py
+ElegooMarsUtility.egg-info/PKG-INFO
+ElegooMarsUtility.egg-info/SOURCES.txt
+ElegooMarsUtility.egg-info/dependency_links.txt
+ElegooMarsUtility.egg-info/entry_points.txt
+ElegooMarsUtility.egg-info/not-zip-safe
+ElegooMarsUtility.egg-info/requires.txt
+ElegooMarsUtility.egg-info/top_level.txt
+elegooMarsUtility/__init__.py
+elegooMarsUtility/emUtility.py
+elegooMarsUtility/main.py
+elegooMarsUtility/xyCompensateGui.py

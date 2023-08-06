@@ -1,0 +1,5 @@
+click
+numpy
+pyphotonfile>=0.2
+scikit-image
+Pillow==6.2.0
