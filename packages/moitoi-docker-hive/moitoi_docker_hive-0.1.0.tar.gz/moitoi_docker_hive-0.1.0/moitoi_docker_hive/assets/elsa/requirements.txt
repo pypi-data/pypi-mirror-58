@@ -1,0 +1,7 @@
+Flask==1.1.1
+Werkzeug==0.16.0
+gunicorn==20.0.4
+flask_restful==0.3.7
+docker==4.1.0
+crossplane==0.5.3
+paramiko==2.7.1
