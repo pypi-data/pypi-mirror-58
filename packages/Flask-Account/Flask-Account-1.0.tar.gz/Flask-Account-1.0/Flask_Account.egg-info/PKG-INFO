@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Flask-Account
+Version: 1.0
+Summary: User account boilerplate for Flask
+Home-page: https://github.com/gerelorant/Flask-Account
+Author: Gere Lóránt
+Author-email: gerelorant@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
