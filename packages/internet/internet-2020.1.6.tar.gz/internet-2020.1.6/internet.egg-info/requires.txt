@@ -1,0 +1,11 @@
+requests
+bs4
+selenium
+chronometry
+slytherin
+abstract
+pensieve
+linguistics
+pandas
+ravenclaw
+silverware
