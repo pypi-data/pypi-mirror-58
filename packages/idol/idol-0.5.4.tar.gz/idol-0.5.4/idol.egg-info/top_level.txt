@@ -1,0 +1,5 @@
+idol
+idol/py
+idol/py/codegen
+idol/py/codegen/schema
+idol/py/schema
