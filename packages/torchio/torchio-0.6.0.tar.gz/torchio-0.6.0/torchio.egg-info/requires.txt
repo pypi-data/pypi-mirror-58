@@ -1,0 +1,7 @@
+Click>=7.0
+nibabel
+numpy
+SimpleITK
+torch>=1.2
+torchvision
+tqdm
