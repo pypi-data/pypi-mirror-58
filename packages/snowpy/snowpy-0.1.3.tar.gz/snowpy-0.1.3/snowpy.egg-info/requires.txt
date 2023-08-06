@@ -1,0 +1,8 @@
+numpy
+scipy
+pyodbc
+pandas
+sqlalchemy
+pymltoolkit
+snowflake-sqlalchemy
+snowflake-connector-python
