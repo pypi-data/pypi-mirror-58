@@ -1,0 +1,14 @@
+README.md
+setup.py
+flop/__init__.py
+flop/hardconcrete.py
+flop/linear.py
+flop/train.py
+flop/utils.py
+flop/version.py
+flop.egg-info/PKG-INFO
+flop.egg-info/SOURCES.txt
+flop.egg-info/dependency_links.txt
+flop.egg-info/requires.txt
+flop.egg-info/top_level.txt
+flop.egg-info/zip-safe
