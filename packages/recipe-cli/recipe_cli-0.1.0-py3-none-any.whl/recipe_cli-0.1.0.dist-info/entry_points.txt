@@ -1,0 +1,3 @@
+[console_scripts]
+recipe=recipe_cli:main
+
