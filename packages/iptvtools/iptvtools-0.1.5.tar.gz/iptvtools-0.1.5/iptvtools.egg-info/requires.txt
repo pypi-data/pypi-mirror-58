@@ -1,0 +1,7 @@
+requests
+tqdm
+
+[dev]
+pycodestyle
+pyflakes
+pylint
