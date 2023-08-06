@@ -1,0 +1,16 @@
+ffi_navigator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffi_navigator/import_resolver.py,sha256=aYsZeOj_L5zeb0HOHqansg2-s7K3D99xzCpiB274124,4678
+ffi_navigator/langserver.py,sha256=pUHvtMGseZTfr40lZo03MV3mAfRYEY6szqany3OfRKI,4276
+ffi_navigator/lsp.py,sha256=i0WaofhuyEqWgFwQY4haPzbXRdcV6n4z9KnU1cZKNts,524
+ffi_navigator/pattern.py,sha256=mBFtx3CNkudeTo1381b4Rro2cBnD2HJy7BCtnacpb_c,10273
+ffi_navigator/workspace.py,sha256=Qo4VF2rSBPVYFiGfdJzOljOymxW8cZc5cHPMqtWbmzA,6230
+ffi_navigator/dialect/__init__.py,sha256=wQ8aXbTI6KETicYJOCnRK0ImPrmycrd_QRm-tfvuyz8,1129
+ffi_navigator/dialect/base_provider.py,sha256=mJR0IqfOz2NQ-KuIT37iByU2oUD8uenQT3rrujHbJnU,2648
+ffi_navigator/dialect/dgl.py,sha256=u_PNLZwVVIOrwD9D3mfFC6EAJ_o15ORpK11kvX46aWg,3724
+ffi_navigator/dialect/mxnet.py,sha256=fnIeYwvKMJkrptDhVnUIxJ2scBlB-koAmz0AbD_E0qY,1064
+ffi_navigator/dialect/torch.py,sha256=X-v5HgDbb3ibDSLCj4qtGjniPWE1V6sWaaJrB_oyttQ,4745
+ffi_navigator/dialect/tvm.py,sha256=b53gaKQinHwLUPolug112TGT9js7C2mT_pnC0cMch2E,4561
+ffi_navigator-0.4.0.dist-info/METADATA,sha256=OjM-DldCJ9XqwUdqzv22XThS-p7RnH4IyyAStNsZxaA,630
+ffi_navigator-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ffi_navigator-0.4.0.dist-info/top_level.txt,sha256=NNw1oCRKnZoIzJoZvMdNxHSsxid4ctoi_USCqV1gJsA,14
+ffi_navigator-0.4.0.dist-info/RECORD,,
