@@ -1,0 +1,6 @@
+googleapis-common-protos
+grpcio
+inotify
+psutil
+pyqtspinner
+qrcode
