@@ -1,0 +1,11 @@
+README.md
+setup.py
+ghidra_jython_kernel/__init__.py
+ghidra_jython_kernel/__main__.py
+ghidra_jython_kernel/kernel.py
+ghidra_jython_kernel/repl.py
+ghidra_jython_kernel.egg-info/PKG-INFO
+ghidra_jython_kernel.egg-info/SOURCES.txt
+ghidra_jython_kernel.egg-info/dependency_links.txt
+ghidra_jython_kernel.egg-info/requires.txt
+ghidra_jython_kernel.egg-info/top_level.txt

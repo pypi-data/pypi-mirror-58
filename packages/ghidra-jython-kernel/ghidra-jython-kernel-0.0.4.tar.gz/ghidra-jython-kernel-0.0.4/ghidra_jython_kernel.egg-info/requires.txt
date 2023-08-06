@@ -1,0 +1,4 @@
+IPython
+ipykernel
+jupyter_client
+pexpect
