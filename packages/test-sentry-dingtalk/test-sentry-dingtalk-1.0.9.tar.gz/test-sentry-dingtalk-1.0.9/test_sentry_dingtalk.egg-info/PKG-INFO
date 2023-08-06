@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: test-sentry-dingtalk
+Version: 1.0.9
+Summary: A Sentry extension which integrates with Dingtalk robot. test
+Home-page: https://code.aliyun.com/PlayGoods-Materiel/wanwu-senstry-dingtalk.git
+Author: dazao
+Author-email: zhaodazao@gmail.com
+License: BSD
+Description: 
+        sentry-Dingtalk
+        ==============
+        
+        An extension for Sentry which integrates with Dingtalk. It will send
+        notifications to dingtalk robot.
+        
+        :copyright: (c) 2017 by guoyong yi, see AUTHORS for more details.
+        :license: BSD, see LICENSE for more details.
+        
+Keywords: test-sentry-dingtalk
+Platform: any
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Provides-Extra: test
