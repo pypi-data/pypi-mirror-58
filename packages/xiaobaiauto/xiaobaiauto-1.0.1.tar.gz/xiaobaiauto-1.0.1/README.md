@@ -1,0 +1,81 @@
+# xiaobaiauto
+
+## 介绍
+简化现有框架Selenium对于页面元素的定位及操作，也扩展了日志搜集、报告生成、
+邮件发送等功能
+
+## 软件架构
+集成了Selenium、SMTP、HTMLTestRunner、Log等模块
+
+## 安装教程
+
+    pip install xiaobaiauto
+
+#### 使用代码之前请确保您的电脑中已经安装好浏览器及对应的驱动内容
+
+[chromedriver](http://npm.taobao.org/mirrors/chromedriver/) √
+
+<b style="color:red">chrome与chromdriver驱动之间存在不兼容问题，所以最好都下载最新版本为最佳效果</b>
+
+## 使用说明
+
+
+### Case文件实例
+
+    import unittest
+    from xiaobaiauto.xiaobaiauto import Report, log, EmailHandler
+
+    class MyTestCase(unittest.TestCase):
+        def setUp(self):
+            """
+                初始化日志
+            :return:
+            """
+            self.logger = log()
+
+        def test_something(self):
+            self.assertEqual(True, True)
+            self.logger.info('提示日志信息')
+            self.logger.debug('调试日志信息')
+            self.logger.warning('警告日志信息')
+            self.logger.error('错误日志信息')
+
+        def tearDown(self):
+            pass
+
+    if __name__ == '__main__':
+        report_file_name = 'TestReport.html'
+        suite = unittest.TestSuite()
+        # 添加测试用例
+        suite.addTest(MyTestCase)
+        fp = open(report_file_name, 'wb')
+        #   生成报告
+        runner = Report(
+            stream=fp,
+            title='测试',
+            description='备注信息',
+            tester='Tser'
+        )
+        runner.run(suite)
+        fp.close()
+        #  将测试报告发送指定邮件
+        email = EmailHandler(smtp='smtp.qq.com', port=25, sender_name='qq号', sender_passwd='邮箱密码')
+        email.sendemail(
+            _to='接收者邮箱',
+            _cc='抄送者邮箱',
+            title='邮件标题',
+            email_content='邮箱内容',
+            _type='html',
+            filename=report_file_name
+        )
+        email.quit()
+
+### 提示
+<b style="color:red">QQ邮箱或者其它企业邮箱必须提前开启SMTP服务</b>
+
+[点击这里了解QQ邮箱如何开启SMTP服务](https://jingyan.baidu.com/article/6079ad0eb14aaa28fe86db5a.html)
+
+#### 参与贡献
+
+作者: <b title="微信号：KonaSoft">@Tser</b><br>
+©<b title="公众号：big_touch">小白科技</b>
