@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+aliyun_python_sdk_visionai.egg-info/PKG-INFO
+aliyun_python_sdk_visionai.egg-info/SOURCES.txt
+aliyun_python_sdk_visionai.egg-info/dependency_links.txt
+aliyun_python_sdk_visionai.egg-info/requires.txt
+aliyun_python_sdk_visionai.egg-info/top_level.txt
+aliyunsdkvisionai/__init__.py
+aliyunsdkvisionai/endpoint.py
+aliyunsdkvisionai/request/__init__.py
+aliyunsdkvisionai/request/v20191024/IdentifyAnimalRequest.py
+aliyunsdkvisionai/request/v20191024/IdentifyPlantRequest.py
+aliyunsdkvisionai/request/v20191024/RecognizeProdcategoryRequest.py
+aliyunsdkvisionai/request/v20191024/RecognizeProdmlabelRequest.py
+aliyunsdkvisionai/request/v20191024/RecognizeVehicleRequest.py
+aliyunsdkvisionai/request/v20191024/__init__.py
