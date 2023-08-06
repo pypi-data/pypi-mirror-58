@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pywavez
+Version: 0.1.0
+Summary: Native Python implementation of the ZWave protocol
+Home-page: https://github.com/spacedentist/pywavez
+Author: Sven Over
+Author-email: sp@cedenti.st
+License: MIT
+Download-URL: https://github.com/spacedentist/pywavez/archive/0.1.0.tar.gz
+Description: pywavez
+        =======
+        
+        pywavez is a native Python3, asynchronous implementation of the ZWave protocol.
+        
+        To create a Controller object:
+        
+        >>> from pywavez import Controller
+        >>> c = await Controller("/dev/ttyACM0")
+        
+        This will execute a basic initialisation procedure. The returned ``Controller``
+        object can be used to communicate with ZWave components.
+        
+        Documentation: to be written...
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
