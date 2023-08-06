@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: fs-omero-pyfs
+Version: 0.0.1
+Summary: OMERO PyFilesystem2 filesystem
+Home-page: https://github.com/manics/fs-omero-pyfs
+Author: Simon Li
+License: BSD 3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Filesystems
+Requires-Python: >=3.5
