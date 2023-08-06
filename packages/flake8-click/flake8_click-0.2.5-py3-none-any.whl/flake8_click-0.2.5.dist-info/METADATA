@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flake8-click
+Version: 0.2.5
+Summary: 
+Home-page: https://r2c.dev
+Author: R2C
+Author-email: hello@returntocorp.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: flake8 (>=3.7,<4.0)
+Requires-Dist: libcst (>=0.2.4,<0.3.0)
