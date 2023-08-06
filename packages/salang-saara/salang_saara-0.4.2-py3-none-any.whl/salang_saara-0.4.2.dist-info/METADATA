@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: salang-saara
+Version: 0.4.2
+Summary: A code for transliterating (romanizing) Arabic text using the ALA-LC standard
+Home-page: https://github.com/samlet/saara
+Author: CompMusic / MTG UPF
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: tabulate
+Requires-Dist: simplejson
+Requires-Dist: fire
+
+UNKNOWN
+
+
