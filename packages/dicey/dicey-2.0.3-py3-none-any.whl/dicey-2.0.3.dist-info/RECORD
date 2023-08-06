@@ -1,0 +1,11 @@
+dicey/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dicey/__main__.py,sha256=4wWRLiRGmqx1_v3kMU5TMnIcgOCJYnslJsgKk8Pn4pY,896
+dicey/dicey.lark,sha256=nhivS7qWiGUUqvoMamSaK4xOuANH6UHjhj9BdpJ2738,585
+dicey/dieparser.py,sha256=8bIG7rkDw6UInftg4GM3mBKTiGotJ9yH93rPAqVxOFo,1842
+dicey/dietransformer.py,sha256=S-XKBgnmzW8UJ9UFF0jrWSELpAGm15Z1RqYGjcKC_Ng,3469
+dicey-2.0.3.dist-info/LICENSE,sha256=cMwgCqPLfhi2GAY704wA9T-ofJnlwXbGc1VX7Xk-OL4,1048
+dicey-2.0.3.dist-info/METADATA,sha256=s5Wy0E7lWIZbnk9A--9lj7UB5sYJm-_jKJS9Fito97c,1351
+dicey-2.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dicey-2.0.3.dist-info/entry_points.txt,sha256=Wi8Y5c-EhVTVxAyfN2BMc1sxynMK4vQ6Botj5b9G_BM,47
+dicey-2.0.3.dist-info/top_level.txt,sha256=7GsasrTrCINdaJq6kawJMEaOjSKDQhjm1V0GHgx5-YI,6
+dicey-2.0.3.dist-info/RECORD,,
