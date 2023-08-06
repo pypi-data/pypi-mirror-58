@@ -1,0 +1,29 @@
+/* Conditional visibility for choice blocks */
+.wagtailuiplus__choice-handler-target--hidden {
+  display: none;
+}
+
+/* Collapsable panels */
+.object > .title-wrapper {
+  cursor: pointer;
+}
+.object > .title-wrapper > label {
+  cursor: pointer;
+}
+.object.wagtailuiplus__panel--collapsed {
+  height: 53px;
+}
+.object.wagtailuiplus__panel--collapsed:last-child {
+  height: 90px;
+}
+.object.wagtailuiplus__panel--collapsed > .object-layout {
+  display: none ;
+}
+.object.wagtailuiplus__panel--collapsed > .title-wrapper label:before,
+.object.wagtailuiplus__panel--collapsed > .title-wrapper:before {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
