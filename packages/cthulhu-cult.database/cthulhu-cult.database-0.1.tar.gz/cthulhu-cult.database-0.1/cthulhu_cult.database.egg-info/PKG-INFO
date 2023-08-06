@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cthulhu-cult.database
+Version: 0.1
+Summary: SQL Alchemy entities for Cthulhu Cult project
+Home-page: https://github.com/derzahal/cthulhu-cult-database
+Author: Przemyslaw Michalak
+Author-email: przemichalak@gmail.com
+License: Proprietary
+Download-URL: https://github.com/derzahal/cthulhu-cult-database/archive/v0.1.tar.gz
+Description: # Cthulhu Cult
+        SQL Alchemy Entities for Cthulhu Cult project
+Keywords: CTHULHU,CULT,ENTITIES
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
