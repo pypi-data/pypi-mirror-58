@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gimpify-watxaut
+Version: 0.0.1.dev3
+Summary: Just a package to create automatic face image montages
+Home-page: https://github.com/watxaut/gimpify
+Author: watxaut
+Author-email: watxaut@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/watxaut/gimpify
+Project-URL: Tracker, https://github.com/watxaut/gimpify/issues
+Description: # Gimpify
+        
+        This repository is intended for creating, editing and sending nightmares 
+        in the form of image montages
+Keywords: face recognition montage
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
