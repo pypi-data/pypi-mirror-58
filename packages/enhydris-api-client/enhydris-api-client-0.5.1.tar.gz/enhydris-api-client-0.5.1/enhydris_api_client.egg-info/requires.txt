@@ -1,0 +1,4 @@
+iso8601
+pandas>=0.20
+requests<3,>=1
+htimeseries<3,>=1.1.1
