@@ -1,0 +1,3 @@
+[console_scripts]
+motto=motto.cli:main
+
