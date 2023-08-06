@@ -1,0 +1,14 @@
+QAStrategy/__init__.py,sha256=IpDo1Mm9s9uP0OiJ7P-ypi3FPMagp0zTWHtTEz_GYsY,162
+QAStrategy/qactabase.py,sha256=CQNfMtIPjxQGwI4XdofW3FCcFCX2DpTnmhqQTG8q1Ug,26661
+QAStrategy/qahedgebase.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QAStrategy/qastockbase.py,sha256=LhacUK6bDr6gYad2THxP4mzTNmKzloQkvMYO1_P6Umw,10883
+QAStrategy/qastrategybase.py,sha256=uall6KU9fTk27bPznWhAggsaXdeC7CmyEkWcNffn2LU,17197
+QAStrategy/setting.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QAStrategy/strategywithreal.py,sha256=VnUgkVwUjFEhP8rvfrHCDHtletvD9imzMO4KSimGSGM,1941
+QAStrategy/util.py,sha256=95mdpOjrQ6DCTItuxhOQtpRXPbobIouvlcH3n1A0yeA,658
+QAStrategy-0.0.14.dist-info/LICENSE,sha256=3r8bwnOzeFx_36xTpjOqVHep4veaNrgR1nJiKm68c-A,1088
+QAStrategy-0.0.14.dist-info/METADATA,sha256=Vfe6dUShfZNABNVfJTXooQeN5yDypKeMnOebC4f82_0,576
+QAStrategy-0.0.14.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+QAStrategy-0.0.14.dist-info/top_level.txt,sha256=B2mV3eNm1SGfHbF9Xjvmf1FEZ4_mCJo8bwfpdt3ptAA,11
+QAStrategy-0.0.14.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+QAStrategy-0.0.14.dist-info/RECORD,,
