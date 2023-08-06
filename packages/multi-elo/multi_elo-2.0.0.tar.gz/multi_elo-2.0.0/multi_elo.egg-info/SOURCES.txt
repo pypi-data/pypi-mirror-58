@@ -1,0 +1,9 @@
+README.rst
+setup.py
+multi_elo/__init__.py
+multi_elo/multi_elo.py
+multi_elo/test_multi_elo.py
+multi_elo.egg-info/PKG-INFO
+multi_elo.egg-info/SOURCES.txt
+multi_elo.egg-info/dependency_links.txt
+multi_elo.egg-info/top_level.txt
