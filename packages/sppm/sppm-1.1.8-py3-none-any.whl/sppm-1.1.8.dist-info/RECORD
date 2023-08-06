@@ -1,0 +1,17 @@
+sppm/__init__.py,sha256=LrUeb5ggJOQMU7inGpG_SAeuegNjzsZy5azIWwVD6sc,286
+sppm/child.py,sha256=mDt1R08E6t7AuMe3yoObH8W2K3UlfU48LaaOuRzprpo,676
+sppm/cmd_action.py,sha256=GUsRsGCV3EMJ15b8SiZyfjQgWwgANA_X9DWcCFXax_Y,2047
+sppm/log_level.py,sha256=6mGdJWoZUSEkCvhkOxyfPdQ58FcUl25pLDAE24Wb5QU,564
+sppm/master.py,sha256=tTkCByDrinefrToW98OYAfNAlzOxSOo31zTxxmL4gbY,5883
+sppm/process_status.py,sha256=N439Hw2wl3GvqeEqD-wsX-wS8hDTf8-3KFR-qav1M9s,2327
+sppm/process_status_lock.py,sha256=uvyCFu0uPz46091mthlXhpLPOFcRH_yVZAJb6HVUEZw,3844
+sppm/settings.py,sha256=MIuuUj72P213_WoZ8hOBLuLoT_eXTCBGfLeBN6tRjRc,443
+sppm/signal_handler.py,sha256=GFwDS1HvpJ8tmSS08ajm0LK685UrLk3DadecLX_Km0o,643
+sppm/sppm_config.py,sha256=XM-5s8hca1WytmPRWEFrE88ybQYRazOgqVnM2FkfqyU,3752
+sppm/utils.py,sha256=7gqtSdAEUxL3IeYs8FYeaEw_cOTZI3BW03woRpa8qz4,1599
+sppm/version.txt,sha256=mTnviWxfu32TdnriwXIi9L7V08GJiIKe9xvXj3QQt_k,5
+sppm-1.1.8.dist-info/LICENSE,sha256=NrK0nvgt_x7V38ZcVzPA06RWRUyUMGdWba9i1-svAO0,1072
+sppm-1.1.8.dist-info/METADATA,sha256=iKhq2qkX6dzhbRgoc2CqGWDJP-0a5Fgo3l7S-NrIVLQ,4727
+sppm-1.1.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sppm-1.1.8.dist-info/top_level.txt,sha256=xRezS4beLWB813_CS6rjR5IF9qXyaHV_xyYaL5cLHVc,5
+sppm-1.1.8.dist-info/RECORD,,
