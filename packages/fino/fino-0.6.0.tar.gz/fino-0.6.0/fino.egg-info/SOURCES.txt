@@ -1,0 +1,15 @@
+.coveragerc
+.gitignore
+.travis.yml
+README.md
+RELEASING.md
+fino.py
+fino_guess.py
+setup.cfg
+setup.py
+test_fino.py
+fino.egg-info/PKG-INFO
+fino.egg-info/SOURCES.txt
+fino.egg-info/dependency_links.txt
+fino.egg-info/not-zip-safe
+fino.egg-info/top_level.txt
