@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pimodules
+Version: 0.1
+Summary: A package which contains code to support PiModules products of various kinds.
+Home-page: http://pimodules.com
+Author: Mike Ray
+Author-email: mike.ray@btinternet.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
