@@ -1,0 +1,17 @@
+README.md
+setup.py
+datafeeds/__init__.py
+datafeeds/logger.py
+datafeeds.egg-info/PKG-INFO
+datafeeds.egg-info/SOURCES.txt
+datafeeds.egg-info/dependency_links.txt
+datafeeds.egg-info/top_level.txt
+datafeeds/client/__init__.py
+datafeeds/client/stockfeeds.py
+datafeeds/jqdatafeeds/__init__.py
+datafeeds/jqdatafeeds/stockfeedsjqdata.py
+datafeeds/tusharefeeds/__init__.py
+datafeeds/tusharefeeds/stockfeedstushare.py
+datafeeds/utils/__init__.py
+datafeeds/winddatabasefeeds/__init__.py
+datafeeds/winddatabasefeeds/stockfeedswinddatabase.py

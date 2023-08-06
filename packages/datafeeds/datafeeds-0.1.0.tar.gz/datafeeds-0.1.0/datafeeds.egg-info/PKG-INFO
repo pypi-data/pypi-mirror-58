@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: datafeeds
+Version: 0.1.0
+Summary: Python Data Source
+Home-page: https://github.com/liuqiuxi/datafeeds
+Author: liuqiuxi
+Author-email: liuqiuxi1990@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
