@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: delnone
+Version: 0.5
+Summary: Function which removes "None"s from data structures.
+Home-page: https://github.com/andrewguy9/delnone
+Author: andrew thomson
+Author-email: athomsonguy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 2.7
