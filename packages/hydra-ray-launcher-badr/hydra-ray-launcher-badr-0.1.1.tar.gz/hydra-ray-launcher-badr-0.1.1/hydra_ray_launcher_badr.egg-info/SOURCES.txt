@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+hydra_plugins/__init__.py
+hydra_plugins/ray_launcher_badr/__init__.py
+hydra_plugins/ray_launcher_badr/ray_launcher.py
+hydra_plugins/ray_launcher_badr/conf/__init__.py
+hydra_plugins/ray_launcher_badr/conf/hydra/launcher/ray.yaml
+hydra_ray_launcher_badr.egg-info/PKG-INFO
+hydra_ray_launcher_badr.egg-info/SOURCES.txt
+hydra_ray_launcher_badr.egg-info/dependency_links.txt
+hydra_ray_launcher_badr.egg-info/requires.txt
+hydra_ray_launcher_badr.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hydra-ray-launcher-badr
+Version: 0.1.1
+Summary: Hydra basic ray launcher
+Home-page: https://github.com/BadrYoubiIdrissi/hydra-plugins
+Author: Badr Youbi Idrissi
+Author-email: badryoubiidrissi@gmail.com
+License: UNKNOWN
+Description: # Hydra Ray Launcher plugin
+        
+        This hydra plugin provides a very basic ray launcher that lets you launch jobs using ray
+        
+        # Installation and usage
+        
+        Install using `pip install hydra-ray-launcher-badr`
+        Then specify `hydra/launcher=ray` in your app config
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
