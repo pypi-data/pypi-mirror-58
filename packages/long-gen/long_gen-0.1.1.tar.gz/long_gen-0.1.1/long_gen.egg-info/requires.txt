@@ -1,0 +1,8 @@
+numpy
+pandas
+sklearn
+scipy
+operator
+itertools
+functools
+sklearn
