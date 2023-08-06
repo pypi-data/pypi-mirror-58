@@ -1,0 +1,15 @@
+ksub/__init__.py,sha256=0A1dVNvMdp2lGpaM2ijnlpCsGh20NLk1Gqaj5WLmhv8,44
+ksub/config.py,sha256=WL7TiOMa9oq-5FKxdh_a8nvkPxe6O9urUfNwRSCDoTk,852
+ksub/decompress.py,sha256=15X9_umn5k1KmqFQB7Ugr2VjgNK0H6BQGYygxQiLX8k,4938
+ksub/get_subtitles.py,sha256=x0RuXFXFEOzzaQIeDyw88fPPUSEMlOMSWF-7U1cUfSM,6737
+ksub/subhd.py,sha256=o3idnk56PE1Lk9kMjt_1IpYKLz1aAo9qw1q6CQ2OIxc,7814
+ksub/subsearch.py,sha256=rL61GUNzwP06BXjd_tl8pu7NECvLgJDSmLYWGJpnSas,11381
+ksub/unrar.exe,sha256=v4z5vUYEMULmDe4jVoMGguzby_iEbx-eRHuS7B1Ww-A,368856
+ksub/utils.py,sha256=eYQErUp2JMsfkXJUfgv6y1g_saxmBINUQcMeXB9ATQ4,4180
+ksub/zimuku.py,sha256=P9So4WoOpePYHLhYcmvP5Iq5kGgdzRBpMZt0IC__tm0,7760
+ksub-1.3.13.dist-info/LICENSE,sha256=Ny9z1rakW9bRgZgjCRPA1MlG0ACKJZqjJzEszJykro8,1045
+ksub-1.3.13.dist-info/METADATA,sha256=oM6oJDvRFqKwdiGHvMwIhchG04G-k0KRof47azNSlo4,406
+ksub-1.3.13.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+ksub-1.3.13.dist-info/entry_points.txt,sha256=DC7nT2KVAhhjLgnKmaR94Vu_zdW58fqNTJNOGFQmrIg,50
+ksub-1.3.13.dist-info/top_level.txt,sha256=DE2ph7FAJY695wvujggAbNXqSFWa34HMz4e-2yslWrg,5
+ksub-1.3.13.dist-info/RECORD,,
