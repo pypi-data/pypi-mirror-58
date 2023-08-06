@@ -1,0 +1,9 @@
+psutil
+
+[develop]
+coverage!=4.3
+coveralls
+pylava
+pytest
+pytest-cov
+mock
