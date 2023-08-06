@@ -1,0 +1,17 @@
+profetorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+profetorch/_nbdev.py,sha256=GM27MR7g61BDn2QbkQLXqXcp4mY0s_r9BxPKNNCTt9o,1336
+profetorch/core.py,sha256=sdcoQ6N906RiyccfVHgqKOvSThccZai03v1eWkt3etg,104
+profetorch/losses.py,sha256=hVyiXOwC9coTmnHZ-TJBwEOsP4fwFRumlhKQ6sAV6xU,1509
+profetorch/callbacks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+profetorch/callbacks/callbacks.py,sha256=aNmXV5AnnixXQB-Ipi6vt617_6inUJK2tKT1GK64e88,1754
+profetorch/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+profetorch/data/data.py,sha256=1VzlG_5d7SXR_tCsv8BR7F-4KJpMY7vLUDC7VJ3mcDs,3629
+profetorch/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+profetorch/model/blocks.py,sha256=hx0oRBWo-D4m9XHieSii2qGN6bWjESa_FQxsgfVNAPk,8252
+profetorch/model/model.py,sha256=x_GSFlvppbED69KCvZbHVKc1UYV8pVJIp1c5r9lnDhU,2522
+profetorch-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+profetorch-0.0.2.dist-info/METADATA,sha256=Ts8nstwoM2KIAy8DZn7OP0f3KnvvwPA8bPKTGgL9DE0,4202
+profetorch-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+profetorch-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+profetorch-0.0.2.dist-info/top_level.txt,sha256=ameloLLOz2MkzEjQUDIOF3SsI1g36f_6XXysIUL9bCQ,11
+profetorch-0.0.2.dist-info/RECORD,,
