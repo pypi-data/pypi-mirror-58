@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+blockchyp.egg-info/PKG-INFO
+blockchyp.egg-info/SOURCES.txt
+blockchyp.egg-info/dependency_links.txt
+blockchyp.egg-info/requires.txt
+blockchyp.egg-info/top_level.txt
+blockchyp.egg-info/zip-safe
+blockchyp/resources/blockchyp.crt
