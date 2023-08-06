@@ -1,0 +1,8 @@
+README.md
+setup.py
+ae/sys_core.py
+ae_sys_core.egg-info/PKG-INFO
+ae_sys_core.egg-info/SOURCES.txt
+ae_sys_core.egg-info/dependency_links.txt
+ae_sys_core.egg-info/requires.txt
+ae_sys_core.egg-info/top_level.txt
