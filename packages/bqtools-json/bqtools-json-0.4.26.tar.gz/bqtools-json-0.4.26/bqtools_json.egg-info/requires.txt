@@ -1,0 +1,7 @@
+jinja2
+google-cloud
+datetime
+google-cloud-bigquery
+google-cloud-storage
+pprint
+deepdiff>=3.3.0
