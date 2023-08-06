@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "taskipy"
+description = "tasks runner for python projects"
+version = "1.0.2"
+authors = ["Roy Sommer <roy@sommer.co.il>"]
+readme = "README.md"
+repository = "https://github.com/illBeRoy/taskipy"
+license = "MIT"
+keywords = ["tasks", "task runner", "development"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Build Tools"
+]
+packages = [
+    { include = "taskipy" }
+]
+
+[tool.poetry.scripts]
+task = 'taskipy.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.5"
+toml = "^0.10.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.4.4"
+mypy = "^0.761"
+rope = "^0.14.0"
+
+[tool.taskipy.tasks]
+test = "python -m unittest -v tests/test_*.py"
+post_test = "./task lint"
+
+lint = "./task lint_pylint && ./task lint_mypy"
+lint_pylint = "pylint tests taskipy"
+lint_mypy = "mypy tests taskipy"
+
+pre_publish = "./task test"
+publish = "poetry publish --build"
+
+pre_publish_patch = "./task test"
+bump_patch_version = "poetry version patch && git add . && git commit -m 'bumped minor version'"
+publish_patch = "./task bump_patch_version && poetry publish --build"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
