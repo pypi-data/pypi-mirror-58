@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scikit-learn
+
+[tf_cpu]
+tensorflow>=1.5.0
+
+[tf_gpu]
+tensorflow-gpu>=1.5.0
