@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: automata-bless
+Version: 0.0.3
+Summary: A CLI application to create user accounts on Linux systems from Gitlab users/group information to use with BLESS
+Home-page: https://github.com/slimm609/automata_bless
+Author: Brian Davis
+Author-email: slimm609@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
