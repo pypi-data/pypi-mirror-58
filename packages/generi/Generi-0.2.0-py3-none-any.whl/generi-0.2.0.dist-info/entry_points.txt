@@ -1,0 +1,3 @@
+[console_scripts]
+generi=generi.cli:main
+
