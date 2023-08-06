@@ -1,0 +1,7 @@
+strax>=0.8.3
+tensorflow
+holoviews
+bokeh
+multihist
+matplotlib
+datashader
