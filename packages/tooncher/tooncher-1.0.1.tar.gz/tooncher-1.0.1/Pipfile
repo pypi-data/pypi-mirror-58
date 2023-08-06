@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tooncher = {editable = true, path = "."}
+
+[dev-packages]
+black = "==19.10b0"
+pylint = "*"
+pylint-import-requirements = "*"
+pytest = "*"
+# pipenv run pytest --cov=tooncher --cov-report=term-missing
+pytest-cov = "*"
+
+[requires]
+python_version = "3"
