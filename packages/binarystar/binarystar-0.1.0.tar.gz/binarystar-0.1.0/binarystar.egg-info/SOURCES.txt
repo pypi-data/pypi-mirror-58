@@ -1,0 +1,8 @@
+README.md
+setup.py
+binarystar/__init__.py
+binarystar.egg-info/PKG-INFO
+binarystar.egg-info/SOURCES.txt
+binarystar.egg-info/dependency_links.txt
+binarystar.egg-info/not-zip-safe
+binarystar.egg-info/top_level.txt
