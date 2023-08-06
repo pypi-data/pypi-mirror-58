@@ -1,0 +1,16 @@
+setup.py
+unimatrix.egg-info/PKG-INFO
+unimatrix.egg-info/SOURCES.txt
+unimatrix.egg-info/dependency_links.txt
+unimatrix.egg-info/requires.txt
+unimatrix.egg-info/top_level.txt
+unimatrix/canon/exc/__init__.py
+unimatrix/const/__init__.py
+unimatrix/const/annotations.py
+unimatrix/lib/__init__.py
+unimatrix/lib/environ.py
+unimatrix/lib/timezone.py
+unimatrix/lib/datastructures/__init__.py
+unimatrix/lib/datastructures/dto.py
+unimatrix/lib/datastructures/tests/__init__.py
+unimatrix/lib/datastructures/tests/test_dto.py
