@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      i18n:domain="icemac.addressbook"
+      tal:define="title provider:addressbook-title">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <tal:block replace="structure provider:login-logout-head" />
+    <tal:block replace="structure provider:fanstatic-viewlets" />
+    <title tal:content="title">icemac.addressbook</title>
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          tal:attributes="href context/@@favicon-url" />
+  </head>
+  <body class="main"
+        tal:define="main_menu provider:main-menu;
+                    add_menu provider:add-menu;
+                    add_menu python:add_menu.strip()">
+    <div id="head">
+      <h1 tal:attributes="class python:'have-main-menu' if main_menu else None"
+          tal:content="title">icemac.addressbook</h1>
+      <span tal:attributes="class python:'LoginLogoutBox have-add-menu' if add_menu else 'LoginLogoutBox'">
+        <tal:block replace="structure provider:login-logout" />
+      </span>
+    </div>
+
+    <div id="body">
+      <div tal:replace="structure main_menu">Main menu</div>
+      <div id="menu-bar">
+        <ul id="breadcrumbs"
+            tal:content="structure provider:breadcrumbs">Breadcrumbs</ul>
+        <ul tal:replace="structure add_menu">Add menu</ul>
+      </div>
+      <div tal:replace="structure provider:messages" />
+      <div id="content"
+           class="clearfix"
+           tal:attributes="lang request/locale/id/language"
+           tal:content="structure provider:pagelet">Page Content</div>
+    </div>
+
+    <div id="foot">
+      <ul tal:replace="structure provider:footer-links" />
+      <i tal:content="provider:copyright">(c) 2008 Michael Howitz</i>
+    </div>
+  </body>
+</html>
