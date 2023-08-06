@@ -1,0 +1,3 @@
+[console_scripts]
+pydeinstaller = pydeinstaller:main
+
