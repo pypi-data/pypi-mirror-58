@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: s2geometry
+Version: 0.9.0
+Summary: Computational geometry and spatial indexing on the sphere
+Home-page: https://github.com/figroc/s2geometry
+Author: Figroc Chen
+Author-email: figroc@gmail.com
+License: Apache-2.0
+Description: A setuptools wrapper around [s2geometry](https://github.com/google/s2geometry).
+        Notes: All credit goes to Google; this is just a wrapper around their lib.
+        
+        Inspired by [s2-py](https://github.com/mira/s2-py).
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.4
+Description-Content-Type: text/plain
