@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: igeWebview
+Version: 0.0.1
+Summary: C++ extension Webview for 3D and 2D games.
+Home-page: https://indigames.net/
+Author: Indigames
+Author-email: dev@indigames.net
+License: MIT
+Keywords: Webview 3D game Indigames
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/markdown
+
+# igeWebview
+
+C++ extension Webview for 3D and 2D games.
+
+### Before running this tutorial, you have to install igefirebase
+	[pip install igeWebview]
+
+
+
