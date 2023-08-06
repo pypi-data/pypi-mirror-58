@@ -1,0 +1,12 @@
+README.md
+setup.py
+influxtap/__init__.py
+influxtap/__main__.py
+influxtap/cache.py
+influxtap/xdg.py
+influxtap.egg-info/PKG-INFO
+influxtap.egg-info/SOURCES.txt
+influxtap.egg-info/dependency_links.txt
+influxtap.egg-info/entry_points.txt
+influxtap.egg-info/requires.txt
+influxtap.egg-info/top_level.txt
