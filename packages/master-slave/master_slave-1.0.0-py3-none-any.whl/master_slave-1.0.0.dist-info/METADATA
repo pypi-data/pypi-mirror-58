@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: master-slave
+Version: 1.0.0
+Summary: package to communicate with infected devices trought a local network
+Home-page: https://github.com/Skorii/ProjetPython2019
+Author: Arnaud "Skorii" Gony
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: argparse
+Requires-Dist: datetime
+Requires-Dist: logging
+Requires-Dist: os
+Requires-Dist: platform
+Requires-Dist: psutil
+Requires-Dist: re
+Requires-Dist: requests
+Requires-Dist: shutil
+Requires-Dist: socket
+Requires-Dist: threading
+Requires-Dist: time
+Requires-Dist: uuid
+
+# Python Henallux Project 2019
+Usage informations about master.py and slave.py classes
+## Class Master
+
+Usage:
+```python
+from master-slave import Master
+
+master = Master(address="", port=50000)
+   # address = address to listen to (empty mean listenning on all addresses)
+   # port = listening port 
+master.start()
+```
+
+## Class Slave
+
+Usage:
+```python
+from master-slave import Slave
+
+slave = Slave(address="192.168.0.10", port=50000)  
+   # address = address of master
+   # port = listening port of master
+slave.start()
+```
+
+
