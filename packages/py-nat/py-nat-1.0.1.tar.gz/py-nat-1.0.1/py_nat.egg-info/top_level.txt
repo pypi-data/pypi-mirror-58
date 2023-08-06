@@ -1,0 +1,11 @@
+archive
+coding
+global_
+log
+media
+nat
+network
+system
+thd
+var_type
+vcs
