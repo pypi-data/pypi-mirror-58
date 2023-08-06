@@ -1,0 +1,8 @@
+README.md
+setup.py
+forbiddenfluent/__init__.py
+forbiddenfluent/forbiddenfluent.py
+forbiddenfluent.egg-info/PKG-INFO
+forbiddenfluent.egg-info/SOURCES.txt
+forbiddenfluent.egg-info/dependency_links.txt
+forbiddenfluent.egg-info/top_level.txt
