@@ -1,0 +1,11 @@
+README.md
+setup.py
+tensonent/__init__.py
+tensonent.egg-info/PKG-INFO
+tensonent.egg-info/SOURCES.txt
+tensonent.egg-info/dependency_links.txt
+tensonent.egg-info/top_level.txt
+tensonent/tensor_algebra/__init__.py
+tensonent/tensor_algebra/kronecker.py
+tensonent/tensor_algebra/tests/__init__.py
+tensonent/tensor_algebra/tests/test_kronecker.py
