@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: zrq-pkg
+Version: 0.0.3
+Summary: PyPI Tutorial
+Home-page: https://github.com/
+Author: zrq
+Author-email: zhang_rq@neusoft.com
+License: UNKNOWN
+Description: # -*- coding: gbk -*-
+        zrq-pkg-0.0.1 helloworld demo
+        zrq_pkg-0.0.2 
+            forward 
+            backward 
+            viterbi 
+        zrq-pkg-0.0.3 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
