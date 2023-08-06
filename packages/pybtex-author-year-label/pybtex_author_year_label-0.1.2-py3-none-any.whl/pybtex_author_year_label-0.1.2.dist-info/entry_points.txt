@@ -1,0 +1,3 @@
+[pybtex.style.labels]
+author_year=pybtex_author_year_label:LabelStyle
+
