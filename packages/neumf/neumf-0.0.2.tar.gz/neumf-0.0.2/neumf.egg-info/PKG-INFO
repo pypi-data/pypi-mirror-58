@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neumf
+Version: 0.0.2
+Summary: neumf module
+Home-page: https://pypi.org/project/neumf/
+Author: Sumner Magruder
+Author-email: sumner.magruder@zmnh.uni-hamburg.de
+License: UNKNOWN
+Description: # NeuMF
+        
+        Based on [Neural Collaborative Filtering][NCF] and TensorFlow's implementation
+        [thereof][TF].
+        
+        
+        [NCF]: https://arxiv.org/pdf/1708.05031.pdf
+        [TF]: https://github.com/tensorflow/models/tree/08bb9eb5ad79e6bceffc71aeea6af809cc78694b/official/recommendation
+        [Metrics]: https://www.comp.nus.edu.sg/~kanmy/papers/cikm15-trirank-cr.pdf
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
