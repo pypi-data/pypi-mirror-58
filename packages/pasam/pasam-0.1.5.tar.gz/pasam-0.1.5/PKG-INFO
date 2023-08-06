@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pasam
+Version: 0.1.5
+Summary: Path sampling package
+Home-page: https://github.com/jaegglic/pasam
+Author: Stefanie Marti, Christoph Jaeggli
+Author-email: stefanie.marti@insel.ch, christoph.jaeggli@insel.ch
+License: MIT License
+Description: =====================
+        Path Sampling (PaSam)
+        =====================
+        
+        PaSam is a python3 implementation of a path sampling tool. It's primary
+        application is to characterize delivery schemes in dynamic trajectory
+        radiotherapy (DTRT).
+        
+        
+        Documentation
+        -------------
+        .. image:: https://readthedocs.org/projects/pasam/badge/?version=latest
+            :target: https://pasam.readthedocs.io/en/latest/?badge=latest
+            :alt: Documentation Status
+        
+        .. image:: https://travis-ci.com/jaegglic/pasam.svg?branch=master
+            :target: https://travis-ci.com/jaegglic/pasam
+            :alt: Build Status
+        
+        Find the sphinx documentation under
+        https://pasam.readthedocs.io/en/latest/
+        
+Keywords: sampling,radiotherapy,delivery path
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
