@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: libreeye
+Version: 0.4.0
+Summary: WIP
+Home-page: https://chponte.github.io/libreeye
+Author: Christian Ponte
+Author-email: chrponte@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/chponte/libreeye/issues
+Project-URL: Funding, https://chponte.github.io/donate/
+Project-URL: Source, https://github.com/chponte/libreeye/
+Project-URL: Docker, https://hub.docker.com/r/chponte/libreeye
+Keywords: libreeye
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: docker
+Requires-Dist: ffmpeg-python
+Requires-Dist: numpy
+Requires-Dist: opencv-python-headless
+Requires-Dist: pyinotify
+Requires-Dist: python-daemon
+
+UNKNOWN
+
+
