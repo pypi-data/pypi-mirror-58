@@ -1,0 +1,8 @@
+iscc/__init__.py,sha256=3aozUjrHHnnb3v0b-wZnKJ9t_2ebWHjqA0K5yQSmVMs,103
+iscc/const.py,sha256=_5z8rM2sQ6hmxjn_bzrOI3EGoT2Q-q4rII1m5EiiSZg,20545
+iscc/iscc.py,sha256=iLnoc4Lf-yER8WMGhKBhnVE2Etijq32bFck50Ty-H9A,13127
+iscc/iscc.pyi,sha256=uOg63Aa6e5RIn96bLRZgNpS4reFjZRZdR6PhUuXys34,1816
+iscc-1.0.5.dist-info/LICENSE,sha256=uj5PFQfir8okfUBZ8yUUlxmNt6p33Ps-1cdGwPwCyy8,21566
+iscc-1.0.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+iscc-1.0.5.dist-info/METADATA,sha256=iH1y5RmbejK1kfEFVXgqpI2ZqeEObLjBfNPboERZoyo,3908
+iscc-1.0.5.dist-info/RECORD,,
