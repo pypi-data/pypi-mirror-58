@@ -1,0 +1,3 @@
+[console_scripts]
+domainbigdata = domainbigdata.cli:main
+
