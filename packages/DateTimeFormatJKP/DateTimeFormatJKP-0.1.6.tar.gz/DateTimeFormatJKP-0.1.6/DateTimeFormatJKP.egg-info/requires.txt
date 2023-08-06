@@ -1,0 +1,2 @@
+robotframework>=2.8.7
+robotframework-selenium2library>=1.7.4
