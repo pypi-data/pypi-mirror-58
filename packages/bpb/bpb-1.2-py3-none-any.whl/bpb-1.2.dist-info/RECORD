@@ -1,0 +1,17 @@
+bpb/__init__.py,sha256=0jumL7szaKEDY1rCrtZdSQli4ZVC-hiPQHI9QMO-0hA,25
+bpb/bpb.py,sha256=JWTIFjZra62I71MHJKpMsl8FhsSWPaMphdTNNaDembs,14951
+bpb/lib/__init__.py,sha256=JH8T_hEixkneBkyOgazWiyVFvSWU-GQHFLVxQtVvP_4,33
+bpb/lib/controller.py,sha256=KKF1_yxdLlReqlxul6SU92Iy9W3wzY8wBUNa2_Lqwsw,2249
+bpb/lib/naver.py,sha256=uXrI4B2GDlLUXC7ZtkUHCervSuiAbGm6hswSz88QVaU,5732
+bpb/parser/__init__.py,sha256=qcH2I_2ZSsWraiUsMBH5PAf8GrSQfZI2K_wr-z_DBp4,22
+bpb/parser/markdown.py,sha256=T6b0C6wq7MPqU4t8hmLT9jueFs2_AetWTtYf89WaqEQ,4318
+bpb/parser/pdf.py,sha256=93HBI_3zjrVPwN5GRX5J0soh_0Xp46yMmmChEyoFfA8,442
+bpb/utils/__init__.py,sha256=14hoQsJLH1vSPOeJb_M7CZRBajEwMgwHMfVxkM2cy3E,26
+bpb/utils/progress_bar.py,sha256=BZaKFtqeuw6-fDLHVtnJTOOKI3cXjIQmWCVYLfesTSM,648
+bpb-1.2.data/scripts/bpb.py,sha256=9r7-AXqPL1tBGZl6YtFacneWef0Q2_8fbSDgpt73_TU,14937
+bpb-1.2.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bpb-1.2.dist-info/METADATA,sha256=V866RkNuX8-J-T6PrqpwrjRj-6RhRNBdhRmaLkRjNWA,3152
+bpb-1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bpb-1.2.dist-info/entry_points.txt,sha256=aWt3d60Nt5raH_KH03oMTUFG4_UvDAa9w66q4FLEV7Q,37
+bpb-1.2.dist-info/top_level.txt,sha256=JxhWRB8cc8oKhu_gQT4Cm8M6KrY825bBqohMe2cx1zg,4
+bpb-1.2.dist-info/RECORD,,
