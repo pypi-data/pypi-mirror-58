@@ -1,0 +1,9 @@
+{
+  "email_controller": {
+    "regex": {
+      "email": "^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$",
+      "names": "[A-Za-z]{2,25}( [A-Za-z]{2,25})?",
+      "special_char_exclusion": "'^[^<>%;{}]+$'"
+    }
+  }
+}
