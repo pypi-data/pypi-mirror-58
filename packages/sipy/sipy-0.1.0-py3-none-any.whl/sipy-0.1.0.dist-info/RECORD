@@ -1,0 +1,8 @@
+sipy/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+sipy/measures.py,sha256=HjbtSu8MAvowKi2DTSEIUfGmHkIniWDqWRO3KA-so4I,10150
+sipy/si_measures.py,sha256=cp06nNJYtYE9a3Ta-oq-Vfuoztk_v7SGlEwDQWBJr7c,1140
+sipy/types.py,sha256=KKAr7LLMWb1FfQB6nlM6Wk4pVjrvV1DOhUPYq47LBEo,138
+sipy/units.py,sha256=29ZHAZReJ9e60VmieOfvBQ553y60qp0NLTCstE3lBv8,882
+sipy-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sipy-0.1.0.dist-info/METADATA,sha256=NjDmqMyiZDP__Qtl-poJ6FIWZQhbdi22vXR8F080B08,338
+sipy-0.1.0.dist-info/RECORD,,
