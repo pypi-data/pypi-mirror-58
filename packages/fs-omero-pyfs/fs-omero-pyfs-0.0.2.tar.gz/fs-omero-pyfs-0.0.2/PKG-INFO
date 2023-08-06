@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fs-omero-pyfs
+Version: 0.0.2
+Summary: OMERO PyFilesystem2 filesystem
+Home-page: https://github.com/manics/fs-omero-pyfs
+Author: Simon Li
+License: BSD 3-Clause
+Description: # OMERO PyFileSystem2 implementation
+        
+        A [Python filesystem abstraction](https://www.pyfilesystem.org/) layer that stores files in [OMERO](https://www.openmicroscopy.org/omero/).
+        
+        
+        ## Example
+        
+        ```python
+        import fs
+        root = fs.open_fs('omero://{username}:{password}@{omerohost}')
+        ```
+        
+        
+        ## Development notes
+        
+        Directories are stored as `TagAnnotation`s in a dedicated namespace.
+        Sub-directories are linked by an `AnnotationAnnotationLink` to the parent directory.
+        
+        Files are stored as `OriginalFile`s, linked by an `OriginaFileAnnotationLink` to the parent directory.
+        The `path` property of the `OriginalFile` is ignored, only `name` is used.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Filesystems
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
