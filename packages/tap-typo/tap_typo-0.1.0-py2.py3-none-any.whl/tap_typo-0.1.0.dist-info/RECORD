@@ -1,0 +1,11 @@
+tap_typo/__init__.py,sha256=i3mZFO1ISmBn9ya6J58OJDcw1mQw_MySp9cnmU0BwoE,6563
+tap_typo/typo.py,sha256=ZZ1qRca_nOSZTehf0iNEFupoq5kvkGJw1teL29EVvOI,4834
+tap_typo/schemas/typo_generic_stream.json,sha256=Eq4h2IJ9UuUV0sUuYXXYU36vChiKQpYFGDwrp88pD2U,112
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=zUF3FbfbHcG_BXYL2sU-xm0y-XnbxcWEaowNZcKq2jM,7569
+tap_typo-0.1.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+tap_typo-0.1.0.dist-info/METADATA,sha256=c9GwQyCYuXuZb7zkD7klnnBUG3rpaIIzmnXGxk0tT3M,2947
+tap_typo-0.1.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+tap_typo-0.1.0.dist-info/entry_points.txt,sha256=T2ddZLWZarPbp0eY6lYM3Wksr4KT1a1wYpXY8cnmrNU,44
+tap_typo-0.1.0.dist-info/top_level.txt,sha256=X7Ji0NVHa9w5lzHz9bkTPeLW-8Fyq3jdrCH7Tghrxig,14
+tap_typo-0.1.0.dist-info/RECORD,,
