@@ -1,0 +1,13 @@
+address-checker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+address-checker/address_checker.py,sha256=0SFJdKncUAJhS8dQlvvSioHXED1Abujw9vBeLDVHimk,2927
+address-checker/address_checker_ori.py,sha256=NV28vvcqmVdq6O58_Hy0YaredFN9YMrSgbAQmBtk8R4,1768
+address-checker/test_address_checker.py,sha256=H2t-jSL1bbSAb9Bi0DmdWW6vZ2XhKS3-93dybJ7MO7Q,1675
+simple_address_checker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_address_checker/address_checker.py,sha256=0SFJdKncUAJhS8dQlvvSioHXED1Abujw9vBeLDVHimk,2927
+simple_address_checker/address_checker_ori.py,sha256=NV28vvcqmVdq6O58_Hy0YaredFN9YMrSgbAQmBtk8R4,1768
+simple_address_checker/test_address_checker.py,sha256=5pDwsBROcsZoHlXhsRluisBQ47IqIxIl8UztNSif1qo,1676
+simple_address_checker-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+simple_address_checker-0.1.0.dist-info/METADATA,sha256=VQ7IQKYfwAn_LFIBGG2obJpx0_vJ4owp_f1cBd_B7bs,596
+simple_address_checker-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simple_address_checker-0.1.0.dist-info/top_level.txt,sha256=w0tGAVLPz_9Mp1zYUOlY4Sgan_NGweGpgmh2d49RTaE,23
+simple_address_checker-0.1.0.dist-info/RECORD,,
