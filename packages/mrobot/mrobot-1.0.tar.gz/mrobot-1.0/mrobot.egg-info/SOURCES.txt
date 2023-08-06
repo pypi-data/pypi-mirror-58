@@ -1,0 +1,6 @@
+README.md
+setup.py
+mrobot.egg-info/PKG-INFO
+mrobot.egg-info/SOURCES.txt
+mrobot.egg-info/dependency_links.txt
+mrobot.egg-info/top_level.txt
