@@ -1,0 +1,11 @@
+
+python setup.py sdist
+
+twine upload dist/*
+
+
+
+
+
+
+make sure `store_errors` is set to `False`.
