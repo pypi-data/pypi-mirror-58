@@ -1,0 +1,7 @@
+setup.py
+Fr0sty/__init__.py
+Fr0sty/flag.py
+Fr0sty.egg-info/PKG-INFO
+Fr0sty.egg-info/SOURCES.txt
+Fr0sty.egg-info/dependency_links.txt
+Fr0sty.egg-info/top_level.txt
