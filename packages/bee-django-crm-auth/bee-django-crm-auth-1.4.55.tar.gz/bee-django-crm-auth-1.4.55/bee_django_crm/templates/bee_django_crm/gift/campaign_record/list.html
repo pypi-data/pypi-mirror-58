@@ -1,0 +1,72 @@
+{% extends "bee_django_crm/base.html" %}
+{% load bee_django_crm_filter %}
+
+{% block content %}
+    {% include 'bee_django_crm/logo.html' %}
+    {% include 'bee_django_crm/nav.html' %}
+    <div class="text-center"><h3>
+        砍价活动列表
+    </h3>
+    </div>
+
+    <div>共{{ paginator.count }}个</div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            {#            <th></th>#}
+            <th>微信昵称</th>
+            <th>参加时间</th>
+            <th>奖品</th>
+            <th>当前结果</th>
+            <th>状态</th>
+            <th>绑定用户</th>
+            <th></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for r in campaign_list %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                {#                <td>{% if not r.is_mk %}新用户{% endif %}</td>#}
+                <td>{{ r.wxuser }}</td>
+                <td>{{ r.created_at }}</td>
+                <td>{{ r.reward }}</td>
+                <td>{{ r.result }}</td>
+                <td>{{ r.get_status }}</td>
+                <td>
+                    {% if r.is_mk and r.bind_user %}
+                        <a href="{{ r.bind_user.get_user_search_link }}">{{ r.bind_user }}</a>
+                    {% endif %}
+                    {% if not r.is_mk and r.bind_preuser %}
+                        <a href="{% url 'bee_django_crm:preuser_detail' r.bind_preuser.id %}">{{ r.bind_preuser.name }}</a>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if perms.bee_django_crm.view_campaign_record_detail %}
+                        <a href="{% url 'bee_django_crm:campaign_record_detail' r.id %}">详情</a>
+                    {% endif %}
+                </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+    {% include 'bee_django_crm/paginator.html' %}
+{% endblock %}
+{% block scripts %}
+    <script>
+        {#function click_del(_this) {#}
+        {#    if (!confirm('确认要执行这个操作？')) {#}
+        {#        return false;#}
+        {#    }#}
+        {#    var url = $(_this).attr('data-confirm');#}
+        {#    $.post(url).done(function (data) {#}
+        {#        alert('删除成功!');#}
+        {#        location.reload();#}
+        {#    });#}
+        {
+        #}#}
+    </script>
+{% endblock %}
