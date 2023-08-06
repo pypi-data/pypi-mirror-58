@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+PyRPIIC.egg-info/PKG-INFO
+PyRPIIC.egg-info/SOURCES.txt
+PyRPIIC.egg-info/dependency_links.txt
+PyRPIIC.egg-info/top_level.txt
+pyrpiic/__init__.py
+pyrpiic/clocks/__init__.py
+pyrpiic/clocks/clock.py
+pyrpiic/clocks/defs.py
+pyrpiic/clocks/lmk61e2.py
+pyrpiic/clocks/si570.py
+pyrpiic/clocks/utils.py
+pyrpiic/eeprom/__init__.py
+pyrpiic/eeprom/eeprom.py
+pyrpiic/eeprom/instances.py
