@@ -1,0 +1,10 @@
+gxdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gxdata/jsoner.py,sha256=ocz0yQ1txONf_5n34TdIWwMoKqYbuSF6rSEh_fpJ--s,1396
+gxdata/texter.py,sha256=WyDD7SQbuLfH8kmlU5fuXAtYY5EVOq_Ogo9mVuh3vdA,612
+lib/gxdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib/gxdata/jsoner.py,sha256=ocz0yQ1txONf_5n34TdIWwMoKqYbuSF6rSEh_fpJ--s,1396
+lib/gxdata/texter.py,sha256=WyDD7SQbuLfH8kmlU5fuXAtYY5EVOq_Ogo9mVuh3vdA,612
+gxdata-0.1.dist-info/METADATA,sha256=hIJQQGC70R1oGKL2oGKRBhySkUR8FMe3mH2VQV1EEQA,333
+gxdata-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+gxdata-0.1.dist-info/top_level.txt,sha256=GuwbKOwDlz-sDWY5Wg4SDxOpMCVt9uf2si9IK4kRt0o,7
+gxdata-0.1.dist-info/RECORD,,
