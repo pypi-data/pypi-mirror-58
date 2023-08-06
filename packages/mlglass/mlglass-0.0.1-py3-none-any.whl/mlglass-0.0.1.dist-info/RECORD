@@ -1,0 +1,14 @@
+mlglass/__init__.py,sha256=ydTc9dYQvayLpuiyQ7PbRRq5O4B8lPGPWgUVvKcJnSk,388
+mlglass/data/__init__.py,sha256=rOq7LVbLs8zoWmwTmtDwEf63A47HkmZG0MQV7gZDRjw,155
+mlglass/data/dataGen.py,sha256=ABKBnXavGyeX-2rdfIgLs6Ex645WFDAen2zYvwUmSjw,15118
+mlglass/data/load_data.py,sha256=jFP7vj_jSRCYJplc5ehgk1-R0lFFBemRSR1cp9DcN_U,449
+mlglass/data/primitive_polynomials_GF2_dict.txt,sha256=CJyvE0-_8IGaSmbekb3Wjyl3fhMUE4i0htDh6BMSOms,6404
+mlglass/ml/LogisticRegression.py,sha256=19Q5qhYFCIXn8Ar-l6XQnNOudzJDsYB6Iy-K5Oj1FpY,5397
+mlglass/ml/Probabilistic.py,sha256=KtEjZUWiftjQpD_eUtoemwJ2HMwEKgGBwMV27aFLGKo,4392
+mlglass/ml/Trees.py,sha256=1amufEZSoMW3y5DN6n0lCbrh3migJ45ETIpmupb2FeI,19790
+mlglass/ml/__init__.py,sha256=qgLastEYeosohOzcjb_XW41SjyU4NYCqMTd0FhPQ2yA,384
+mlglass-0.0.1.dist-info/LICENSE,sha256=man0MlvIllQpvHayBjk2CzKcgC2euN2KvDoHA7HTx6w,1074
+mlglass-0.0.1.dist-info/METADATA,sha256=anuqZDQhT2LDyXH189DHqsenL6bcSTOpLXYMgM6Wym0,3909
+mlglass-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+mlglass-0.0.1.dist-info/top_level.txt,sha256=LuKyF66-UhJj5DjlgzuqOECNsMHUd0qUUg9sMVoOJ-8,8
+mlglass-0.0.1.dist-info/RECORD,,
