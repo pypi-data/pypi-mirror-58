@@ -1,0 +1,9 @@
+setup.py
+mp_string_sim/__init__.py
+mp_string_sim/string_similarity.py
+mp_string_similarity.egg-info/PKG-INFO
+mp_string_similarity.egg-info/SOURCES.txt
+mp_string_similarity.egg-info/dependency_links.txt
+mp_string_similarity.egg-info/pbr.json
+mp_string_similarity.egg-info/requires.txt
+mp_string_similarity.egg-info/top_level.txt
