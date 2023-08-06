@@ -1,0 +1,10 @@
+_tomotopy_avx.cpython-34m.so,sha256=KKBMOpE7MX2ld2yGvxInBdlkkqH4qVvEvm5uAea0ejA,37120389
+_tomotopy.cpython-34m.so,sha256=aZjPZIP_Pye4AWKMJyxtyJ7DTm04Im5K4gfHX9uusBo,36972459
+_tomotopy_avx2.cpython-34m.so,sha256=9g7Z5aljN9i_xAxOjLKZMDdyKedyGEkau-HoHQ-UpRo,37128654
+tomotopy/__init__.py,sha256=7nb9Yk-IhZDsJJeJHa52tQwIJQr1vCU-6guzVv_MwPQ,7255
+tomotopy/documentation.rst,sha256=gYuT6J_UYj7ywramkeM2Pgz7xJl6k5B_7BUzdGc-4X0,14471
+tomotopy/documentation.kr.rst,sha256=gdlPzIymOpwlHUmN5fbo2OrH6PakktNCKGWchlyBo00,16956
+tomotopy-0.5.0.dist-info/RECORD,,
+tomotopy-0.5.0.dist-info/WHEEL,sha256=x7uUT1DITuOWfNQ5Z5nxxiCgay-5C46SfoISIjrweYE,109
+tomotopy-0.5.0.dist-info/top_level.txt,sha256=xDsqdkjudfEXmavpqCETVotQQ96a_2zQspJmSFg8fQQ,48
+tomotopy-0.5.0.dist-info/METADATA,sha256=uLhEQG8Kc5KdSo-B006Oos5s7sCwK7KMKoks7vYGKkE,12584
