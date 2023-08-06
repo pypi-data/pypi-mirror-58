@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+birdyaml/__init__.py
+birdyaml.egg-info/PKG-INFO
+birdyaml.egg-info/SOURCES.txt
+birdyaml.egg-info/dependency_links.txt
+birdyaml.egg-info/requires.txt
+birdyaml.egg-info/top_level.txt
