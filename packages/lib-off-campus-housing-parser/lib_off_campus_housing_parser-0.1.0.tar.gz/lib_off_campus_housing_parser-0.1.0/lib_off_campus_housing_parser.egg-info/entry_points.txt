@@ -1,0 +1,3 @@
+[console_scripts]
+off_campus_housing = lib_off_campus_housing_parser.__main__:main
+

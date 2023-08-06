@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: lib_off_campus_housing_parser
+Version: 0.1.0
+Summary: Optimizes UConn's off campus housing choices
+Home-page: https://github.com/jfuruness/lib_off_campus_housing_parser.git
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Download-URL: https://github.com/jfuruness/lib_off_campus_housing_parser.git
+Description: UNKNOWN
+Keywords: Furuness,UConn,University of Connecticut,Off Campus,Commute,Apartment
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
