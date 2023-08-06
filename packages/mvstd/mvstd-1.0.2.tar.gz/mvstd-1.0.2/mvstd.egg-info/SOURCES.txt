@@ -1,0 +1,8 @@
+setup.py
+mvstd/__init__.py
+mvstd/mvstd.py
+mvstd.egg-info/PKG-INFO
+mvstd.egg-info/SOURCES.txt
+mvstd.egg-info/dependency_links.txt
+mvstd.egg-info/entry_points.txt
+mvstd.egg-info/top_level.txt
