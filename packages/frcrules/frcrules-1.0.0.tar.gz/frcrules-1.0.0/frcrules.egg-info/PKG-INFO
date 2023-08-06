@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: frcrules
+Version: 1.0.0
+Summary: Ruler API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description:     Ruler API is a flexible API for rules. Originally designed for FIRST Robotics Competition, it is flexible in nature to allow for any program to use it.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Ruler API
+Platform: UNKNOWN
