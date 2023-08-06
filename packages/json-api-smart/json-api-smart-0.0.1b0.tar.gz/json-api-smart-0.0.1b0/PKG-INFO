@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: json-api-smart
+Version: 0.0.1b0
+Summary: Is your client library which support ths JSON:API standard.
+Home-page: https://github.com/NilssonPL/json-api-smart
+Author: Nilsson
+Author-email: peter.laudel@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: json:api api json rest resources
+Platform: UNKNOWN
+Provides-Extra: dev

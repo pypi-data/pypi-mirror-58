@@ -1,0 +1,9 @@
+requests
+inflect
+typeguard
+
+[dev]
+pytest
+requests_mock
+coverage
+mypy
