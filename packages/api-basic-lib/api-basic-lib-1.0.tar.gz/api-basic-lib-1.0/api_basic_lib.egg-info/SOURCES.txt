@@ -1,0 +1,15 @@
+setup.py
+api_basic_lib.egg-info/PKG-INFO
+api_basic_lib.egg-info/SOURCES.txt
+api_basic_lib.egg-info/dependency_links.txt
+api_basic_lib.egg-info/not-zip-safe
+api_basic_lib.egg-info/top_level.txt
+atapibasiclib/__init__.py
+atapibasiclib/apirequest.py
+atapibasiclib/apitestbasic.py
+atapibasiclib/getfromxls.py
+atapibasiclib/jsoncompare.py
+atapibasiclib/mysqllib.py
+cov/__init__.py
+cov/cau.py
+cov/test_cover.py
