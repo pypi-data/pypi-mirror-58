@@ -1,0 +1,16 @@
+.flags
+.gitignore
+LICENSE
+README.md
+setup.py
+startup.run
+sal/__init__.py
+sal/id/__init__.py
+sal/id/indonesia_ner.py
+sal/id/__pycache__/__init__.cpython-36.pyc
+sal/id/__pycache__/indonesia_ner.cpython-36.pyc
+salang.egg-info/PKG-INFO
+salang.egg-info/SOURCES.txt
+salang.egg-info/dependency_links.txt
+salang.egg-info/requires.txt
+salang.egg-info/top_level.txt
