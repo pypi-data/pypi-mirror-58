@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+fakerlocationer/__init__.py
+fakerlocationer/fakerlocationer.py
+fakerlocationer.egg-info/PKG-INFO
+fakerlocationer.egg-info/SOURCES.txt
+fakerlocationer.egg-info/dependency_links.txt
+fakerlocationer.egg-info/top_level.txt
