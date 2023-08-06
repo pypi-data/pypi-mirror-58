@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: autodecrypt
+Version: 2.0.1
+Summary: Tool to decrypt iOS firmware images
+Home-page: https://github.com/matteyeux/autodecrypt
+Author: matteyeux
+Author-email: mathieu.hautebas@gmail.com
+License: MIT
+Download-URL: https://github.com/matteyeux/autodecrypt/archive/2.0.1.tar.gz
+Description: UNKNOWN
+Keywords: autodecrypt,iOS,iBoot
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
