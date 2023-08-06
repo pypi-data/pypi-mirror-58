@@ -1,0 +1,9 @@
+README.md
+setup.py
+TextExtract_Img_Aud/TextExtract_Img_Aud.py
+TextExtract_Img_Aud/__init__.py
+TextExtract_Img_Aud.egg-info/PKG-INFO
+TextExtract_Img_Aud.egg-info/SOURCES.txt
+TextExtract_Img_Aud.egg-info/dependency_links.txt
+TextExtract_Img_Aud.egg-info/requires.txt
+TextExtract_Img_Aud.egg-info/top_level.txt
