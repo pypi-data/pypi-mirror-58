@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: graphtorch
+Version: 0.1
+Summary: Package converts sparse graph to matrix
+Home-page: https://github.com/KU-BIG/graphtorch
+Author: Hyeonwoo Yoo
+Author-email: hyeon95y@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/KU-BIG/graphtorch
+Description: content
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6

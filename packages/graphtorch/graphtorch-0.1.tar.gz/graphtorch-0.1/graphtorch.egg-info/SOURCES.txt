@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+graphtorch/__init__.py
+graphtorch/matrix.py
+graphtorch/model.py
+graphtorch/neat_graphtorch.py
+graphtorch.egg-info/PKG-INFO
+graphtorch.egg-info/SOURCES.txt
+graphtorch.egg-info/dependency_links.txt
+graphtorch.egg-info/top_level.txt
