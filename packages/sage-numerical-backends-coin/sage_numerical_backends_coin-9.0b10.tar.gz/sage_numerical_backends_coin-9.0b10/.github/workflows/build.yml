@@ -1,0 +1,67 @@
+name: Build and test Python package
+
+on: [push]
+
+jobs:
+  build_docker_prereq:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: whoan/docker-build-with-cache-action@v2
+      with:
+        username: "${{ secrets.DOCKER_USERNAME }}"
+        password: "${{ secrets.DOCKER_PASSWORD }}"
+        image_name: "mkoeppe/conda-sagemath-coinor"
+  docker_build_and_test:
+    needs: [build_docker_prereq]
+    runs-on: ubuntu-latest
+    container: "mkoeppe/conda-sagemath-coinor"
+    steps:
+      - uses: actions/checkout@v1
+      - name: Test package
+        shell: bash -l {0}
+        run: |
+          conda activate sagecoin
+          sage --version
+          python3 setup.py test
+  conda_build_and_test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: goanpeca/setup-miniconda@v1
+      with:
+        auto-update-conda: true
+        activate-environment: sagecoin
+        environment-file: environment.yml
+        python-version: 3.7
+        auto-activate-base: false
+    - name: Test package
+      shell: bash -l {0}
+      run: |
+        sage --version
+        python3 setup.py test
+    - name: Install package
+      shell: bash -l {0}
+      run: |
+        sage -pip install .
+    - name: Patch in, run parts of the Sage testsuite
+      shell: bash -l {0}
+      run: |
+        sage -c 'import os, sysconfig, sage.env; f = "coin_backend" + sysconfig.get_config_var("EXT_SUFFIX"); d = os.path.join(sage.env.SAGE_LIB, "sage", "numerical", "backends", f); s = os.path.join("..", "..", "..", "sage_numerical_backends_coin", f); os.path.exists(d) and os.path.remove(d); os.symlink(s, d);'
+        sage -c 'B = MixedIntegerLinearProgram().get_backend(); print(B); assert type(B).__module__ == "sage_numerical_backends_coin.coin_backend", "Patching in the new backend did not work"'
+        (cd $(sage -c 'print(sage.env.SAGE_LIB)') && cd sage && sage -t -p graphs/ sat/ geometry/polyhedron/base.py geometry/cone.py homology/simplicial_complex.py knots/ matroids/ coding/ game_theory/ numerical/*.py* combinat/designs/ combinat/integer_vector.py combinat/posets/) || true
+  ubuntu_sagemath_build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install SageMath and CBC
+      run: |
+        sudo DEBIAN_FRONTEND=noninteractive apt-get update
+        sudo DEBIAN_FRONTEND=noninteractive apt-get install sagemath coinor-cbc coinor-libcbc-dev python-pkgconfig python-setuptools python-sphinx cython
+    - name: Test package
+      run: |
+        sage --version
+        sage setup.py test
