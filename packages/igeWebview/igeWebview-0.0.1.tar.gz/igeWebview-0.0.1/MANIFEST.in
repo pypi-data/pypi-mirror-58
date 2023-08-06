@@ -1,0 +1,9 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+include setup.py
+include igeWebview.cpp
+include igeWebview.h
+include Webview.cpp
+include Webview.h
+include igeWebview_doc_en.h

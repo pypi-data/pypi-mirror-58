@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+Webview.cpp
+Webview.h
+igeWebview.cpp
+igeWebview.h
+igeWebview_doc_en.h
+setup.py
+igeWebview.egg-info/PKG-INFO
+igeWebview.egg-info/SOURCES.txt
+igeWebview.egg-info/dependency_links.txt
+igeWebview.egg-info/top_level.txt
+win32/WebViewImpl.cpp
