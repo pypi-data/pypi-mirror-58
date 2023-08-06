@@ -1,0 +1,10 @@
+[console_scripts]
+archer_tools = archer_tools.cli:cli [cli]
+
+[plugin_destination_types]
+archer = archer_tools.remote.archer:ArcherSourceAndDestination
+
+[plugin_source_types]
+archer = archer_tools.remote.archer:ArcherSourceAndDestination
+ldap = archer_tools.remote.ldap:LdapSource
+
