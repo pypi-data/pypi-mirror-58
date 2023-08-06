@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_auth_adfs_db/__init__.py
+django_auth_adfs_db/admin.py
+django_auth_adfs_db/apps.py
+django_auth_adfs_db/backends.py
+django_auth_adfs_db/models.py
+django_auth_adfs_db/settings.py
+django_auth_adfs_db.egg-info/PKG-INFO
+django_auth_adfs_db.egg-info/SOURCES.txt
+django_auth_adfs_db.egg-info/dependency_links.txt
+django_auth_adfs_db.egg-info/not-zip-safe
+django_auth_adfs_db.egg-info/requires.txt
+django_auth_adfs_db.egg-info/top_level.txt
