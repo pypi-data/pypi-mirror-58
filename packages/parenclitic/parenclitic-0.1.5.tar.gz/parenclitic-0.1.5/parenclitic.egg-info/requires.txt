@@ -1,0 +1,5 @@
+numpy
+python-igraph
+pandas
+sklearn
+scipy

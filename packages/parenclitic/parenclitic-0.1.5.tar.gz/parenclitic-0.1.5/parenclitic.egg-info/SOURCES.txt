@@ -1,0 +1,10 @@
+README.md
+setup.py
+parenclitic/__init__.py
+parenclitic/classes.py
+parenclitic.egg-info/PKG-INFO
+parenclitic.egg-info/SOURCES.txt
+parenclitic.egg-info/dependency_links.txt
+parenclitic.egg-info/not-zip-safe
+parenclitic.egg-info/requires.txt
+parenclitic.egg-info/top_level.txt
