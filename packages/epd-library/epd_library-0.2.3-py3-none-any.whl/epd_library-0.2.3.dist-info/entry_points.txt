@@ -1,0 +1,15 @@
+[console_scripts]
+epd1in54 = epd1in54.__main__:main
+epd1in54b = epd1in54b.__main__:main
+epd1in54c = epd1in54c.__main__:main
+epd2in13 = epd2in13.__main__:main
+epd2in13b = epd2in13b.__main__:main
+epd2in7 = epd2in7.__main__:main
+epd2in7b = epd2in7b.__main__:main
+epd2in9 = epd2in9.__main__:main
+epd2in9b = epd2in9b.__main__:main
+epd4in2 = epd4in2.__main__:main
+epd4in2b = epd4in2b.__main__:main
+epd7in5 = epd7in5.__main__:main
+epd7in5b = epd7in5b.__main__:main
+
