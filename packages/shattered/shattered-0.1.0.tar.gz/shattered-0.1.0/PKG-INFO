@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: shattered
+Version: 0.1.0
+Summary: STOMP meets bottle.py
+License: MIT
+Author: Jimmy Bradshaw
+Author-email: james.g.bradshaw@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: stomp.py (>=5.0.0,<6.0.0)
