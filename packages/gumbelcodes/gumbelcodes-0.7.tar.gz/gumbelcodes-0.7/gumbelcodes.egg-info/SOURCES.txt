@@ -1,0 +1,17 @@
+setup.py
+gumbelcodes/__init__.py
+gumbelcodes/benchmark.py
+gumbelcodes.egg-info/PKG-INFO
+gumbelcodes.egg-info/SOURCES.txt
+gumbelcodes.egg-info/dependency_links.txt
+gumbelcodes.egg-info/not-zip-safe
+gumbelcodes.egg-info/requires.txt
+gumbelcodes.egg-info/top_level.txt
+gumbelcodes/models/__init__.py
+gumbelcodes/models/keyedvectors.py
+gumbelcodes/nncompress/__init__.py
+gumbelcodes/nncompress/embed_compress.py
+gumbelcodes/nncompress/workflow.py
+gumbelcodes/utils/__init__.py
+gumbelcodes/utils/fileutils.py
+gumbelcodes/utils/matutils.py
