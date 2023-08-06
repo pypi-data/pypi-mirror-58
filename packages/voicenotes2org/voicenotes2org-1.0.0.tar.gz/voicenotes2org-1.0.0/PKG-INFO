@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: voicenotes2org
+Version: 1.0.0
+Summary: Transcribe voice recordings using the Google Cloud Speech-To-Text API, and export the results to Emacs org-mode headings.
+Home-page: https://github.com/bgutter/voicenotes2org
+License: UNKNOWN
+Description: See https://github.com/bgutter/voicenotes2org for all details!
+Keywords: emacs org org-mode transcribe voice text
+Platform: UNKNOWN
+Requires-Python: >=3.5

@@ -1,0 +1,3 @@
+[console_scripts]
+voicenotes2org = voicenotes2org:main
+

@@ -1,0 +1,8 @@
+setup.py
+src/voicenotes2org.py
+src/voicenotes2org.egg-info/PKG-INFO
+src/voicenotes2org.egg-info/SOURCES.txt
+src/voicenotes2org.egg-info/dependency_links.txt
+src/voicenotes2org.egg-info/entry_points.txt
+src/voicenotes2org.egg-info/requires.txt
+src/voicenotes2org.egg-info/top_level.txt
