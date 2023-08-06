@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SymEnergy
+Version: 1.0.3
+Summary: Lagrange multiplier based energy market toy modeling framework
+Home-page: https://github.com/mcsoini/symenergy
+Author: SymEnergy contributors listed in AUTHORS
+Author-email: m.c.soini@posteo.de
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: orderedset
+Requires-Dist: sympy
+Requires-Dist: numpy
+Requires-Dist: wrapt
+
+SymPy
+
+
