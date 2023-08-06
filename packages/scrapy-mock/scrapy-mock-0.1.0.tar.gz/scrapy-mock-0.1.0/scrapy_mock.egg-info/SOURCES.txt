@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+scrapy_mock.py
+setup.py
+scrapy_mock.egg-info/PKG-INFO
+scrapy_mock.egg-info/SOURCES.txt
+scrapy_mock.egg-info/dependency_links.txt
+scrapy_mock.egg-info/entry_points.txt
+scrapy_mock.egg-info/requires.txt
+scrapy_mock.egg-info/top_level.txt
