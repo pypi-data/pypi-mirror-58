@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ONVIFCameraControl
+Version: 1.0.3
+Summary: Simple camera controls.
+Home-page: https://github.com/MikhaelMIEM/ONVIFCameraControl
+Author: Mikhael
+Author-email: mikhail-miem@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: onvif-zeep (==0.2.12)
+Requires-Dist: zeep (==3.4.0)
+
+# ONVIFCameraControl
+Python module for some basic Onvif camera control actions. List of available functions watch in: github.com/MikhaelMIEM/ONVIFCameraControl/code/ONVIFCameraControl
+# Installation
+```sh
+$ python3.7 -m pip install ONVIFCameraControl
+```
+# Usage
+```sh
+from ONVIFCameraControl import ONVIFCameraControl
+from time import sleep
+
+cam = ONVIFCameraControl(("172.18.200.53", 80), "admin", "password")
+
+ptz_velocity_vector = (1, 1, 1)
+cam.move_continuous(ptz_velocity_vector)  
+sleep(1)  
+cam.stop()
+```
+
