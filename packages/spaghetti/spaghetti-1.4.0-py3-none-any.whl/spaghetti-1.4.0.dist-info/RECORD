@@ -1,0 +1,11 @@
+.DS_Store,sha256=Mr6z9YzE0Qb86GzU1J0liKvy25xb9TEerk62-2oKcbk,6148
+spaghetti/__init__.py,sha256=zubsEFFdfSVo_gIgABRdM1VqtAb1VXn0gGh782-6_oU,271
+spaghetti/analysis.py,sha256=M6XNHUi7MshmHy7oRM7riXUjXPXlDaTpvdHHkULcrH4,12284
+spaghetti/api.py,sha256=gBvOUpaV4p2L5X8hsvx75wTm_p_TCagNLGF5gL7BFyM,376
+spaghetti/network.py,sha256=GSdnuWnifVvWZRokO0xX7dQYcI5yMH9t0RtgtfpVQiE,97303
+spaghetti/util.py,sha256=veFVM2bYmZKvmAfW2zo56EEXMWfxOgcjRYlsxXHPDPQ,16276
+spaghetti-1.4.0.dist-info/LICENSE.txt,sha256=q6S7QxFGt5fJOuE3TfopqKG6BidDAjJxqbv9rs2DJng,1472
+spaghetti-1.4.0.dist-info/METADATA,sha256=WMsD4Dk1Vg7guKLg5TvnUe07kS7k-Mm6_nL3jUOtYQM,8736
+spaghetti-1.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spaghetti-1.4.0.dist-info/top_level.txt,sha256=soPAOVkueFf7npPhGsY0rud7KgVSKLwvSfqmk494ZKQ,10
+spaghetti-1.4.0.dist-info/RECORD,,
