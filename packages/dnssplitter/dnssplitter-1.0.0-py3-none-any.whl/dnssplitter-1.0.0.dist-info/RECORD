@@ -1,0 +1,9 @@
+dnssplitter/DNSSplitter.py,sha256=rEARdcXAneBk9_QKeEiqHRBenenkSSlXhoZvBlxu3Sg,173424
+dnssplitter/__init__.py,sha256=icCO92ugeofa4DQ5gNWkgUpBtGIw14sA6Yc4rWtzwXk,120
+dnssplitter/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnssplitter/scripts/dnssplit.py,sha256=6yZd90Aa3RFi-RGOUZrAbI1PsMhjBapraa7DCRwsMjE,804
+dnssplitter-1.0.0.dist-info/METADATA,sha256=oRqzR8nyEg-8NAn8Ocd8tgeyhLTnMJBFQ1UZ_6D33IA,1320
+dnssplitter-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dnssplitter-1.0.0.dist-info/entry_points.txt,sha256=J1OEZhCdrTOpIRozhJTyJptM07d1FHu6TFXmbyNK68c,64
+dnssplitter-1.0.0.dist-info/top_level.txt,sha256=pTgzGhCD5lpRzoIMtH3TO1OEW6GOf3YwNXVmW_6z5Ds,12
+dnssplitter-1.0.0.dist-info/RECORD,,
