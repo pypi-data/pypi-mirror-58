@@ -1,0 +1,9 @@
+README.md
+setup.py
+vertx/__init__.py
+vertx/__main__.py
+vertx/eventbus.py
+vertx_python_client.egg-info/PKG-INFO
+vertx_python_client.egg-info/SOURCES.txt
+vertx_python_client.egg-info/dependency_links.txt
+vertx_python_client.egg-info/top_level.txt
