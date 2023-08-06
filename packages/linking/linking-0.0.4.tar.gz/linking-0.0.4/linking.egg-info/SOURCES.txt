@@ -1,0 +1,14 @@
+.gitignore
+.travis.yml
+CHANGELOG
+LICENSE
+MANIFEST.in
+README.md
+linking.py
+setup.py
+tox.ini
+linking.egg-info/PKG-INFO
+linking.egg-info/SOURCES.txt
+linking.egg-info/dependency_links.txt
+linking.egg-info/requires.txt
+linking.egg-info/top_level.txt

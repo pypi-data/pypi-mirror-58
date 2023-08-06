@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: linking
+Version: 0.0.4
+Summary: Linkify plain text, convert URLs and emails
+Home-page: http://github.com/w95/linking
+Author: Enrike Nur
+Author-email: enrike.nur@gmail.com
+License: BSD
+Description: #linking
+        
+        [![Badge](https://badge.fury.io/py/linking.svg "Badge")](https://badge.fury.io/py/linking "Badge")
+        
+        linking is easy to use linkifier that converts URLs and emails to HTML hyperlinks
+        
+        | <!-- -->  | <!-- --> |
+        | ------------ | ------------ |
+        | Code | https://github.com/w95/linking |
+        | Issue tracker | https://github.com/w95/linking/issues |
+        | License | MIT License; see LICENSE file |
+        
+        
+        
+        ###Installing linking
+        
+        linking is available on [PyPI](https://pypi.org/project/linking/), so you can install it with ``pip``::
+        
+            $ pip install linking
+        
+        
+        ###Basic use
+        
+        The simplest way to use linking is:
+        
+        ```python
+        import linking
+        
+        linking.text('some text tesla.com, ...')
+        # -> 'some text <a href="http://tesla.com">tesla.com</a>, ...'
+        
+        linking.text('https://tesla.com', {'rel': 'nofollow'})
+        # -> '<a href="https://tesla.com" rel="nofollow">https://tesla.com</a>'
+        
+        linking.text('elon@tesla.com')
+        # -> '<a href="mailto:elon@tesla.com">elon@tesla.com</a>'
+        ```
+        
+Keywords: linking,linkify,email,URL,convert
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
