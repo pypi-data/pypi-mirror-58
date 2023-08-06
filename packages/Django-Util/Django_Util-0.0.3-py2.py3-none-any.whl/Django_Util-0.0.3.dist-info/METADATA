@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Django-Util
+Version: 0.0.3
+Summary: Django Utililies
+Home-page: https://github.com/TheVinhLuong102/Django-Util
+Author: TheVinhLuong102
+Author-email: MBALearnsToCode@UChicago.edu
+License: UNKNOWN
+Keywords: Django Utililies
+Platform: UNKNOWN
+Requires-Dist: Django (>=3.0.2)
+Requires-Dist: URLLib3 (<1.25,>=1.21.1)
+
+Django Utililies
+
+
