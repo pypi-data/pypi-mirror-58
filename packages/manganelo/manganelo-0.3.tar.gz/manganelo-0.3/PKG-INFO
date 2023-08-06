@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: manganelo
+Version: 0.3
+Summary: Unofficial API for the Manganelo (and Mangakakalot) website.
+Home-page: https://github.com/nixonjoshua98/manganelo-api
+Author: Joshua Nixon
+Author-email: nixonjoshua98@gmail.com
+License: MIT
+Download-URL: https://github.com/nixonjoshua98/manganelo-api/archive/v0.3.0.tar.gz
+Description: Unofficial API for the Manganelo (and Mangakakalot) website.
+Keywords: manga,manganelo,scrapper,web,mangakakalot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
