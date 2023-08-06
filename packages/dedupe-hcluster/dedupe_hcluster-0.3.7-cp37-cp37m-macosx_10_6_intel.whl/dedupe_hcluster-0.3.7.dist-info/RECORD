@@ -1,0 +1,10 @@
+hcluster/__init__.py,sha256=FuA0kLeeVgQ1_LN01Hazz-1opOUSwZTaT4OmHHP_MyM,49
+hcluster/_distance_wrap.cpython-37m-darwin.so,sha256=dJCenOHSIYu3xU6XA5UJZ9Mw3jtNt_UaguGsFlFtUxs,127300
+hcluster/_hierarchy.cpython-37m-darwin.so,sha256=Il2iJm_2SDTs3Hn910xaZFwTFKBKC6UboFTedRb5uPE,608580
+hcluster/distance.py,sha256=EcIPcpZTJTzI95_opbq7k-F8HQRf6o8BrlfTMVScJic,73022
+hcluster/hierarchy.py,sha256=izHW3GyezXPq3qy9wfiRjTmKFdNOF2KuFpEn7sbPvXE,93610
+dedupe_hcluster-0.3.7.dist-info/LICENSE.txt,sha256=7zGYvKziah4VyS85xscp1Za8a-JyrNqAObBiKZQK3rk,1637
+dedupe_hcluster-0.3.7.dist-info/METADATA,sha256=jCcokI-ZXBwL0nH_sRsVQLoWrY5e09UPz05ijn4e0SQ,1649
+dedupe_hcluster-0.3.7.dist-info/WHEEL,sha256=ZAPg4sh1IYHKqp2FoarXKab2VRxd7s7md0doFSVDALY,109
+dedupe_hcluster-0.3.7.dist-info/top_level.txt,sha256=Inz6_YsyroIuO_nNL62-HsAv7OSAZydOdUcqtZmwRUU,9
+dedupe_hcluster-0.3.7.dist-info/RECORD,,
