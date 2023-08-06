@@ -1,0 +1,3 @@
+[console_scripts]
+gsan=gsan.cli:cli
+
