@@ -1,0 +1,12 @@
+README.md
+setup.py
+wilfred/__init__.py
+wilfred/docker_conn.py
+wilfred/version.py
+wilfred/wilfred.py
+wilfred.egg-info/PKG-INFO
+wilfred.egg-info/SOURCES.txt
+wilfred.egg-info/dependency_links.txt
+wilfred.egg-info/entry_points.txt
+wilfred.egg-info/requires.txt
+wilfred.egg-info/top_level.txt
