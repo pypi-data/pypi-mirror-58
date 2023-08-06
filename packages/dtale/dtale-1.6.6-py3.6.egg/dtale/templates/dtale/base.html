@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <title>{{ title }}</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='dist/base_styles_bundle.js') }}"></script>
+    {% block css %}{% endblock %}
+    {#
+        Despite the fact we reload these again later on, in order for the header to rendered correctly
+        before the rest of the page is built we need to load them here as well.
+    #}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    </head>
+    <body>
+        {% if config.GITHUB_FORK %}
+        <style id="ribbon">
+            #forkongithub{
+                position:fixed;
+                display:block;
+                top:0;
+                right:0;
+                width:125px;
+                overflow:hidden;
+                height:125px;
+                z-index:9999;
+            }
+            #forkongithub a{
+                background:#000;
+                color:#fff;
+                text-decoration:none;
+                font-family:arial,sans-serif;
+                text-align:center;
+                font-weight:bold;
+                font-size:0.45rem;
+                line-height:2rem;
+                transition:0.5s;
+                width:125px;
+                position:absolute;
+                top:17px;
+                right:-31px;
+                transform:rotate(45deg);
+                -webkit-transform:rotate(45deg);
+                -ms-transform:rotate(45deg);
+                -moz-transform:rotate(45deg);
+                -o-transform:rotate(45deg);
+                box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+            }
+            #forkongithub a:hover{
+                background:#c11;
+                color:#fff;
+            }
+            #forkongithub a::before,#forkongithub a::after{
+                content:"";
+                width:100%;
+                display:block;
+                position:absolute;
+                top:1px;
+                left:0;
+                height:1px;
+                background:#fff;
+            }
+            #forkongithub a::after{
+                bottom:1px;
+                top:auto;
+            }
+        </style>
+        <span id="forkongithub">
+            <a href="https://github.com/man-group/dtale">Fork me on GitHub</a>
+        </span>
+        {% endif %}
+        <input type="hidden" id="data_id" value="{{data_id}}" />
+        <input type="hidden" id="settings" value="{{settings}}" />
+        <input type="hidden" id="version" value="{{version}}" />
+        <input type="hidden" id="hide_shutdown" value="{{config.HIDE_SHUTDOWN}}" />
+        <input type="hidden" id="processes" value={{processes}} />
+        {% block full_content %}{% endblock %}
+        <script type="text/javascript" src="{{ url_for('static', filename='dist/polyfills_bundle.js') }}"></script>
+        {% block js %}{% endblock %}
+        {#
+          In order to get styles to load correctly, we need to reload these files.
+          In CSS, the last style declared takes precedence.
+        #}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    </body>
+</html>
