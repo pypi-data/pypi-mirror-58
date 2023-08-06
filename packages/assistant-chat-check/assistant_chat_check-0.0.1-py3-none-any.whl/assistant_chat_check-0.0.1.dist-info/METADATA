@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: assistant-chat-check
+Version: 0.0.1
+Summary: gensim生成モデルの評価
+Home-page: https://gitlab.com/assistant-service/assistant-chat-keras.git
+Author: nozomi.nishinohara
+Author-email: nozomi.nishinohara@n-creativesystem.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: sklearn
+Requires-Dist: pymongo
+Requires-Dist: pubsub-ncs
+Requires-Dist: tensorflow (==1.14.0)
+
+UNKNOWN
+
+
