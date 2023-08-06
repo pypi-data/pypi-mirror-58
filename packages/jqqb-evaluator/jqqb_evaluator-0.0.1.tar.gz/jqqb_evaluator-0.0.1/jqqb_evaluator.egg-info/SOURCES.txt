@@ -1,0 +1,12 @@
+README.md
+setup.py
+jqqb_evaluator/__init__.py
+jqqb_evaluator/evaluator.py
+jqqb_evaluator/operators.py
+jqqb_evaluator/rule.py
+jqqb_evaluator/rule_group.py
+jqqb_evaluator.egg-info/PKG-INFO
+jqqb_evaluator.egg-info/SOURCES.txt
+jqqb_evaluator.egg-info/dependency_links.txt
+jqqb_evaluator.egg-info/requires.txt
+jqqb_evaluator.egg-info/top_level.txt
