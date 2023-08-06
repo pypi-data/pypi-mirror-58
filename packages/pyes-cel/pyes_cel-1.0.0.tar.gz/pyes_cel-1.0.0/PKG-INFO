@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyes_cel
+Version: 1.0.0
+Summary: Convert CEL To DSL
+Home-page: https://github.com/secoba/pyes_cel
+Author: lynn
+Author-email: lynn@sstsec.com
+License: MIT Licence
+Description: Convert Common Expression Language To Elasticsearch Query String
+Keywords: pip,pycel
+Platform: any
