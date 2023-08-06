@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: thumbor-video-engine
+Version: 1.0.0
+Summary: An engine and tools for manipulating videos with thumbor using ffmpeg
+Home-page: https://github.com/theatlantic/thumbor-video-engine
+Author: Frankie Dintino
+Author-email: fdintino@gmail.com
+License: UNKNOWN
+Description: This package provides a thumbor engine that can read, crop, and transcode mp4
+        and webm videos using ffmpeg.
+        
+        Usage
+        -----
+        
+        To enable this engine, add the following setting to your thumbor.conf:
+        
+        .. code-block:: python
+        
+            ENGINE = 'thumbor_video_engine.engines.video'
+        
+        For non-video files, this engine will fall back to using ``'thumbor.engines.pil'``.
+        
+        To enable transcoding to mp4 (h264 or hevc), webm, and animated gif from other
+        video formats, add ``'thumbor_video_engine.filters.format'`` to your
+        ``FILTERS`` setting. If ``'thumbor.filters.format'`` is already there, replace
+        it with the filter from this package.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, <3
+Description-Content-Type: text/x-rst
