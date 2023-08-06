@@ -1,0 +1,11 @@
+README.md
+setup.py
+catscore/__init__.py
+catscore/logger.py
+catscore/session.py
+catscore/time.py
+catscore.egg-info/PKG-INFO
+catscore.egg-info/SOURCES.txt
+catscore.egg-info/dependency_links.txt
+catscore.egg-info/requires.txt
+catscore.egg-info/top_level.txt

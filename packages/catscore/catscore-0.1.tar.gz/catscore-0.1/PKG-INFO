@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: catscore
+Version: 0.1
+Summary: Core library for cats project
+Home-page: https://rescala.jp
+Author: rv
+Author-email: yo-maruya@rescala.jp
+License: MIT
+Project-URL: Bug Reports, https://github.com/rv-rescala/catscore/issues
+Project-URL: Source, https://github.com/rv-rescala/catscore
+Description: UNKNOWN
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Requires-Python: >=3.5
