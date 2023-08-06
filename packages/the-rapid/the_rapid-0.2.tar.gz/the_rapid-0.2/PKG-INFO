@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: the_rapid
+Version: 0.2
+Summary: Utilizes the Google Directions API to get route information between any two supported locations
+Home-page: https://github.com/kyleronayne
+Author: Kyle Ronayne
+Author-email: kyleronaynep@gmail.com
+License: MIT
+Download-URL: https://github.com/kyleronayne/TheRapid/archive/Beta.tar.gz
+Description: UNKNOWN
+Keywords: Bus,Route,Directions,Google,API,Grand Rapids,GVSU,Grand Valley State University
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
