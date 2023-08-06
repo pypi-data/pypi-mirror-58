@@ -1,0 +1,9 @@
+raster2points/__init__.py,sha256=8nfZl-F4riFJfgI5m9Y3YkjFA49hI9ZqtvB5iqTeqR0,125
+raster2points/raster2csv.py,sha256=TT7TUw5wvzeVpud0fyj3NoBSJDHP1oJngComJOqdDuE,2832
+raster2points/raster2points.py,sha256=IgDU2Y_ykOzpCGFdolP1Ug5jNc4tCR4Gncn6nuXKUoE,11121
+raster2points-0.1.6.data/scripts/raster2csv.py,sha256=TT7TUw5wvzeVpud0fyj3NoBSJDHP1oJngComJOqdDuE,2832
+raster2points-0.1.6.dist-info/LICENSE,sha256=grKYha1bXAyvPZwsSdrsruPITdWOJvDBkT8-NvU3N_w,1082
+raster2points-0.1.6.dist-info/METADATA,sha256=4GWvUR32AtY39adXc9dT4i2kHQrOCNfaX1emGyjNzbk,2414
+raster2points-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+raster2points-0.1.6.dist-info/top_level.txt,sha256=29EB82Mnl5TTks7RopvYNDKgO0HRX-EDViT7N1J_cRA,14
+raster2points-0.1.6.dist-info/RECORD,,
