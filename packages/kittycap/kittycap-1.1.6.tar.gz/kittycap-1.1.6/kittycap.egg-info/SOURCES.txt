@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+kittycap.egg-info/PKG-INFO
+kittycap.egg-info/SOURCES.txt
+kittycap.egg-info/dependency_links.txt
+kittycap.egg-info/entry_points.txt
+kittycap.egg-info/requires.txt
+kittycap.egg-info/top_level.txt
+kittycore/__init__.py
+kittycore/cli.py
+kittycore/kittycap.py
