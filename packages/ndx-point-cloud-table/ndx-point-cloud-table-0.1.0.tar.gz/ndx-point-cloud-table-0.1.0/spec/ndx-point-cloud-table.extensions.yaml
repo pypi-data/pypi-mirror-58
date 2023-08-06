@@ -1,0 +1,62 @@
+groups:
+- data_type_def: PointCloudTable
+  data_type_inc: DynamicTable
+  default_name: PointCloudTable
+  doc: type for storing time-varying 3D point clouds
+  attributes:
+  - name: colnames
+    dtype: text
+    dims:
+    - num_columns
+    shape:
+    - null
+    default_value:
+    - point_cloud
+    doc: The names of the columns in this table. This should be used to specify an
+      order to the columns.
+    required: false
+  datasets:
+  - name: timestamps
+    data_type_inc: VectorData
+    dtype: float
+    dims:
+    - num_frames
+    shape:
+    - null
+    doc: time of each frame in seconds
+  - name: point_cloud
+    data_type_inc: VectorData
+    dtype: float
+    dims:
+    - time
+    - '[x, y, z]'
+    shape:
+    - null
+    - 3
+    doc: datapoints locations over time
+  - name: point_cloud_index
+    data_type_inc: VectorIndex
+    dims:
+    - index
+    shape:
+    - null
+    doc: datapoints indices
+  - name: color
+    data_type_inc: VectorData
+    dtype: float
+    dims:
+    - time
+    - '[r, g, b]'
+    shape:
+    - null
+    - 3
+    doc: datapoints color
+    quantity: '?'
+  - name: color_index
+    data_type_inc: VectorIndex
+    dims:
+    - index
+    shape:
+    - null
+    doc: datapoints colors indices
+    quantity: '?'
