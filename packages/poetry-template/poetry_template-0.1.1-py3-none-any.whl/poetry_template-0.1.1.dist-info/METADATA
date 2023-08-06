@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poetry-template
+Version: 0.1.1
+Summary: 
+Author: Mislav Jaksic
+Author-email: jaksicmislav@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: black (>=19.10b0,<20.0)
+Requires-Dist: pytest-cov (>=2.8.1,<3.0.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: sphinx (>=2.3.1,<3.0.0)
