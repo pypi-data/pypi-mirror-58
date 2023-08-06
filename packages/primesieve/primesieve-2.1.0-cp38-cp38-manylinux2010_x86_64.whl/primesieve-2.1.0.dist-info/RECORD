@@ -1,0 +1,8 @@
+primesieve-2.1.0.dist-info/top_level.txt,sha256=ZLUugzsdRvsXi87pdh37X7aHNBhPqQUCqWcenmqShT4,11
+primesieve-2.1.0.dist-info/RECORD,,
+primesieve-2.1.0.dist-info/METADATA,sha256=axZN7VgUT_mm_pci2slrDth1wI0teq095x2TCzKXqMM,5293
+primesieve-2.1.0.dist-info/WHEEL,sha256=bMGJzfnzmODnc7070hP_ZkCsY-cmPTWm8nY09-AXKjI,111
+primesieve/_primesieve.cpython-38-x86_64-linux-gnu.so,sha256=mQuqCaxiyC36OqNSl_Ompcc-A6YETe-SZ3nDtpA8174,4156024
+primesieve/__init__.py,sha256=w3a9iFWJut1ouqoZW8t_B5D7OSifKeT8fOguvqpSiYM,37
+primesieve/numpy/_numpy.cpython-38-x86_64-linux-gnu.so,sha256=OlyV7VnLOmwPx6FVH_ETWc6Tv-sTcN0HwA1wQRHMAMk,3748504
+primesieve/numpy/__init__.py,sha256=Fqn7DKVB2TigJ50p7B9MQBOPGjtbJyKpHsWT_8JqnzY,88
