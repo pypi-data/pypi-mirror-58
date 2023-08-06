@@ -1,0 +1,15 @@
+setup.py
+acequia/##__init__.py
+acequia/#__init__.py
+acequia/__init__.py
+acequia.egg-info/PKG-INFO
+acequia.egg-info/SOURCES.txt
+acequia.egg-info/dependency_links.txt
+acequia.egg-info/top_level.txt
+acequia/core/__init__.py
+acequia/core/gwlist.py
+acequia/core/gwseries.py
+acequia/read/#__init__.py
+acequia/read/__init__.py
+acequia/read/dinogws.py
+acequia/read/hydromonitor.py
