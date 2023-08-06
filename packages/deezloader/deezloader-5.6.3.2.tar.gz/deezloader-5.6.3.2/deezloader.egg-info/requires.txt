@@ -1,0 +1,6 @@
+Flask
+mutagen
+pycryptodome
+requests
+spotipy
+tqdm
