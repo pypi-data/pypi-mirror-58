@@ -1,0 +1,8 @@
+README.md
+setup.py
+ddx/__init__.py
+ddx/__main__.py
+ddx.egg-info/PKG-INFO
+ddx.egg-info/SOURCES.txt
+ddx.egg-info/dependency_links.txt
+ddx.egg-info/top_level.txt

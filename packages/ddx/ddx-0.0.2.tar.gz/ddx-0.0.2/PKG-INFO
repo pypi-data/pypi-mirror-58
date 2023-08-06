@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ddx
+Version: 0.0.2
+Summary: 快速搭建基于Docker的Django项目
+Home-page: https://github.com/ChanMo/ddx
+Author: ChanMo
+Author-email: chan.mo@outlook.com
+License: UNKNOWN
+Description: # DDX (Django x Docker)
+        
+        > 快速搭建基于Docker的Django项目
+        
+        模板使用[django_boilerplate](https://github.com/ChanMo/django_boilerplate)
+        
+        ## 安装
+        
+        ```bash
+        $ sudo pip install ddx
+        ```
+        
+        ## 使用
+        
+        ```bash
+        $ ddx new demo_com
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
