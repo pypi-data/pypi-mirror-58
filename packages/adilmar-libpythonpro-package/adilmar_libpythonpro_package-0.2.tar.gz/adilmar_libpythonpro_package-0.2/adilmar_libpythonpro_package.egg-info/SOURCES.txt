@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+adilmar_libpythonpro_package.egg-info/PKG-INFO
+adilmar_libpythonpro_package.egg-info/SOURCES.txt
+adilmar_libpythonpro_package.egg-info/dependency_links.txt
+adilmar_libpythonpro_package.egg-info/not-zip-safe
+adilmar_libpythonpro_package.egg-info/requires.txt
+adilmar_libpythonpro_package.egg-info/top_level.txt
+libpythonpro/__init__.py
+libpythonpro/github_api.py
