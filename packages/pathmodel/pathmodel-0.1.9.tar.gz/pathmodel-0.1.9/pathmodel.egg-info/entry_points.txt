@@ -1,0 +1,4 @@
+[console_scripts]
+pathmodel = pathmodel.__main__:main
+pathmodel_plot = pathmodel.plotting:run_pathway_creation
+
