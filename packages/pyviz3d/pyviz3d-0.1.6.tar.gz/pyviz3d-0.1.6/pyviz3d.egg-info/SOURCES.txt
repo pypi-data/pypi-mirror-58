@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyviz3d/__init__.py
+pyviz3d/interactor.py
+pyviz3d/pointcloud.py
+pyviz3d/test.py
+pyviz3d.egg-info/PKG-INFO
+pyviz3d.egg-info/SOURCES.txt
+pyviz3d.egg-info/dependency_links.txt
+pyviz3d.egg-info/not-zip-safe
+pyviz3d.egg-info/requires.txt
+pyviz3d.egg-info/top_level.txt
