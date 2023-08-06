@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Command-line API &#8212; pdfminer.six 20191020 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="High-level functions API" href="highlevel.html" />
+    <link rel="prev" title="API documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="command-line-api">
+<span id="api-commandline"></span><h1>Command-line API<a class="headerlink" href="#command-line-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pdf2txt-py">
+<span id="api-pdf2txt"></span><h2>pdf2txt.py<a class="headerlink" href="#pdf2txt-py" title="Permalink to this headline">¶</a></h2>
+<p><p>A command line tool for extracting text and images from PDF and
+output it to plain text, html, xml or tags.</p>
+</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">python</span> <span class="n">tools</span><span class="o">/</span><span class="n">pdf2txt</span><span class="o">.</span><span class="n">py</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">debug</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">caching</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">page</span><span class="o">-</span><span class="n">numbers</span> <span class="n">PAGE_NUMBERS</span> <span class="p">[</span><span class="n">PAGE_NUMBERS</span> <span class="o">...</span><span class="p">]]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">pagenos</span> <span class="n">PAGENOS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">maxpages</span> <span class="n">MAXPAGES</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">password</span> <span class="n">PASSWORD</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">rotation</span> <span class="n">ROTATION</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">laparams</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">detect</span><span class="o">-</span><span class="n">vertical</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">char</span><span class="o">-</span><span class="n">margin</span> <span class="n">CHAR_MARGIN</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">word</span><span class="o">-</span><span class="n">margin</span> <span class="n">WORD_MARGIN</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">line</span><span class="o">-</span><span class="n">margin</span> <span class="n">LINE_MARGIN</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">boxes</span><span class="o">-</span><span class="n">flow</span> <span class="n">BOXES_FLOW</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">all</span><span class="o">-</span><span class="n">texts</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">outfile</span> <span class="n">OUTFILE</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">output_type</span> <span class="n">OUTPUT_TYPE</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">codec</span> <span class="n">CODEC</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">output</span><span class="o">-</span><span class="nb">dir</span> <span class="n">OUTPUT_DIR</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">layoutmode</span> <span class="n">LAYOUTMODE</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">scale</span> <span class="n">SCALE</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">strip</span><span class="o">-</span><span class="n">control</span><span class="p">]</span>
+                               <span class="n">files</span> <span class="p">[</span><span class="n">files</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Positional Arguments">
+<h3>Positional Arguments<a class="headerlink" href="#Positional Arguments" title="Permalink to this headline">¶</a></h3>
+<dl class="option-list">
+<dt><kbd>files</kbd></dt>
+<dd><p>One or more paths to PDF files.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Named Arguments">
+<h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
+<dl class="option-list">
+<dt><kbd>--debug, -d</kbd></dt>
+<dd><p>Use debug logging level.</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--disable-caching, -C</kbd></dt>
+<dd><p>If caching or resources, such as fonts, should be disabled.</p>
+<p>Default: False</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Parser">
+<h3>Parser<a class="headerlink" href="#Parser" title="Permalink to this headline">¶</a></h3>
+<p>Used during PDF parsing</p>
+<dl class="option-list">
+<dt><kbd>--page-numbers</kbd></dt>
+<dd><p>A space-seperated list of page numbers to parse.</p>
+</dd>
+<dt><kbd>--pagenos, -p</kbd></dt>
+<dd><p>A comma-separated list of page numbers to parse. Included for legacy applications, use –page-numbers for more idiomatic argument entry.</p>
+</dd>
+<dt><kbd>--maxpages, -m</kbd></dt>
+<dd><p>The maximum number of pages to parse.</p>
+<p>Default: 0</p>
+</dd>
+<dt><kbd>--password, -P</kbd></dt>
+<dd><p>The password to use for decrypting PDF file.</p>
+<p>Default: “”</p>
+</dd>
+<dt><kbd>--rotation, -R</kbd></dt>
+<dd><p>The number of degrees to rotate the PDF before other types of processing.</p>
+<p>Default: 0</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Layout analysis">
+<h3>Layout analysis<a class="headerlink" href="#Layout analysis" title="Permalink to this headline">¶</a></h3>
+<p>Used during layout analysis.</p>
+<dl class="option-list">
+<dt><kbd>--no-laparams, -n</kbd></dt>
+<dd><p>If layout analysis parameters should be ignored.</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--detect-vertical, -V</kbd></dt>
+<dd><p>If vertical text should be considered during layout analysis</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--char-margin, -M</kbd></dt>
+<dd><p>If two characters are closer together than this margin they are considered to be part of the same word. The margin is specified relative to the width of the character.</p>
+<p>Default: 2.0</p>
+</dd>
+<dt><kbd>--word-margin, -W</kbd></dt>
+<dd><p>If two words are are closer together than this margin they are considered to be part of the same line. A space is added in between for readability. The margin is specified relative to the width of the word.</p>
+<p>Default: 0.1</p>
+</dd>
+<dt><kbd>--line-margin, -L</kbd></dt>
+<dd><p>If two lines are are close together they are considered to be part of the same paragraph. The margin is specified relative to the height of a line.</p>
+<p>Default: 0.5</p>
+</dd>
+<dt><kbd>--boxes-flow, -F</kbd></dt>
+<dd><p>Specifies how much a horizontal and vertical position of a text matters when determining the order of lines. The value should be within the range of -1.0 (only horizontal position matters) to +1.0 (only vertical position matters).</p>
+<p>Default: 0.5</p>
+</dd>
+<dt><kbd>--all-texts, -A</kbd></dt>
+<dd><p>If layout analysis should be performed on text in figures.</p>
+<p>Default: True</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Output">
+<h3>Output<a class="headerlink" href="#Output" title="Permalink to this headline">¶</a></h3>
+<p>Used during output generation.</p>
+<dl class="option-list">
+<dt><kbd>--outfile, -o</kbd></dt>
+<dd><p>Path to file where output is written. Or “-” (default) to write to stdout.</p>
+<p>Default: “-“</p>
+</dd>
+<dt><kbd>--output_type, -t</kbd></dt>
+<dd><p>Type of output to generate {text,html,xml,tag}.</p>
+<p>Default: “text”</p>
+</dd>
+<dt><kbd>--codec, -c</kbd></dt>
+<dd><p>Text encoding to use in output file.</p>
+<p>Default: “utf-8”</p>
+</dd>
+<dt><kbd>--output-dir, -O</kbd></dt>
+<dd><p>The output directory to put extracted images in. If not given, images are not extracted.</p>
+</dd>
+<dt><kbd>--layoutmode, -Y</kbd></dt>
+<dd><p>Type of layout to use when generating html {normal,exact,loose}. If normal,each line is positioned separately in the html. If exact, each character is positioned separately in the html. If loose, same result as normal but with an additional newline after each text line. Only used when output_type is html.</p>
+<p>Default: “normal”</p>
+</dd>
+<dt><kbd>--scale, -s</kbd></dt>
+<dd><p>The amount of zoom to use when generating html file. Only used when output_type is html.</p>
+<p>Default: 1.0</p>
+</dd>
+<dt><kbd>--strip-control, -S</kbd></dt>
+<dd><p>Remove control statement from text. Only used when output_type is xml.</p>
+<p>Default: False</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="dumppdf-py">
+<span id="api-dumppdf"></span><h2>dumppdf.py<a class="headerlink" href="#dumppdf-py" title="Permalink to this headline">¶</a></h2>
+<p><p>Extract pdf structure in XML format</p>
+</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">python</span> <span class="n">tools</span><span class="o">/</span><span class="n">dumppdf</span><span class="o">.</span><span class="n">py</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">debug</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">extract</span><span class="o">-</span><span class="n">toc</span> <span class="o">|</span> <span class="o">--</span><span class="n">extract</span><span class="o">-</span><span class="n">embedded</span> <span class="n">EXTRACT_EMBEDDED</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">page</span><span class="o">-</span><span class="n">numbers</span> <span class="n">PAGE_NUMBERS</span> <span class="p">[</span><span class="n">PAGE_NUMBERS</span> <span class="o">...</span><span class="p">]]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">pagenos</span> <span class="n">PAGENOS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">objects</span> <span class="n">OBJECTS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="nb">all</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">password</span> <span class="n">PASSWORD</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">outfile</span> <span class="n">OUTFILE</span><span class="p">]</span>
+                               <span class="p">[</span><span class="o">--</span><span class="n">raw</span><span class="o">-</span><span class="n">stream</span> <span class="o">|</span> <span class="o">--</span><span class="n">binary</span><span class="o">-</span><span class="n">stream</span> <span class="o">|</span> <span class="o">--</span><span class="n">text</span><span class="o">-</span><span class="n">stream</span><span class="p">]</span>
+                               <span class="n">files</span> <span class="p">[</span><span class="n">files</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Positional Arguments">
+<h3>Positional Arguments<a class="headerlink" href="#Positional Arguments" title="Permalink to this headline">¶</a></h3>
+<dl class="option-list">
+<dt><kbd>files</kbd></dt>
+<dd><p>One or more paths to PDF files.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Named Arguments">
+<h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
+<dl class="option-list">
+<dt><kbd>--debug, -d</kbd></dt>
+<dd><p>Use debug logging level.</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--extract-toc, -T</kbd></dt>
+<dd><p>Extract structure of outline</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--extract-embedded, -E</kbd></dt>
+<dd><p>Extract embedded files</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Parser">
+<h3>Parser<a class="headerlink" href="#Parser" title="Permalink to this headline">¶</a></h3>
+<p>Used during PDF parsing</p>
+<dl class="option-list">
+<dt><kbd>--page-numbers</kbd></dt>
+<dd><p>A space-seperated list of page numbers to parse.</p>
+</dd>
+<dt><kbd>--pagenos, -p</kbd></dt>
+<dd><p>A comma-separated list of page numbers to parse. Included for legacy applications, use –page-numbers for more idiomatic argument entry.</p>
+</dd>
+<dt><kbd>--objects, -i</kbd></dt>
+<dd><p>Comma separated list of object numbers to extract</p>
+</dd>
+<dt><kbd>--all, -a</kbd></dt>
+<dd><p>If the structure of all objects should be extracted</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--password, -P</kbd></dt>
+<dd><p>The password to use for decrypting PDF file.</p>
+<p>Default: “”</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Output">
+<h3>Output<a class="headerlink" href="#Output" title="Permalink to this headline">¶</a></h3>
+<p>Used during output generation.</p>
+<dl class="option-list">
+<dt><kbd>--outfile, -o</kbd></dt>
+<dd><p>Path to file where output is written. Or “-” (default) to write to stdout.</p>
+<p>Default: “-“</p>
+</dd>
+<dt><kbd>--raw-stream, -r</kbd></dt>
+<dd><p>Write stream objects without encoding</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--binary-stream, -b</kbd></dt>
+<dd><p>Write stream objects with binary encoding</p>
+<p>Default: False</p>
+</dd>
+<dt><kbd>--text-stream, -t</kbd></dt>
+<dd><p>Write stream objects as plain text</p>
+<p>Default: False</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pdfminer.six</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">Using pdfminer.six</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Command-line API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="highlevel.html">High-level functions API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="composable.html">Composable API</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API documentation</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">API documentation</a></li>
+      <li>Next: <a href="highlevel.html" title="next chapter">High-level functions API</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Yusuke Shinyama, Philippe Guglielmetti & Pieter Marsman.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/commandline.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>High-level functions API &#8212; pdfminer.six 20191020 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Composable API" href="composable.html" />
+    <link rel="prev" title="Command-line API" href="commandline.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="high-level-functions-api">
+<span id="api-highlevel"></span><h1>High-level functions API<a class="headerlink" href="#high-level-functions-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="extract-text">
+<span id="api-extract-text"></span><h2>extract_text<a class="headerlink" href="#extract-text" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pdfminer.high_level.extract_text">
+<code class="sig-prename descclassname">pdfminer.high_level.</code><code class="sig-name descname">extract_text</code><span class="sig-paren">(</span><em class="sig-param">pdf_file</em>, <em class="sig-param">password=''</em>, <em class="sig-param">page_numbers=None</em>, <em class="sig-param">maxpages=0</em>, <em class="sig-param">caching=True</em>, <em class="sig-param">codec='utf-8'</em>, <em class="sig-param">laparams=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pdfminer.high_level.extract_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses and returns the text contained in a PDF file.
+Takes loads of optional arguments but the defaults are somewhat sane.
+Returns a string containing all of the text extracted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pdf_file</strong> – Path to the PDF file to be worked on</p></li>
+<li><p><strong>password</strong> – For encrypted PDFs, the password to decrypt.</p></li>
+<li><p><strong>page_numbers</strong> – List of zero-indexed page numbers to extract.</p></li>
+<li><p><strong>maxpages</strong> – The maximum number of pages to parse</p></li>
+<li><p><strong>caching</strong> – If resources should be cached</p></li>
+<li><p><strong>codec</strong> – Text decoding codec</p></li>
+<li><p><strong>laparams</strong> – LAParams object from pdfminer.layout.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="extract-text-to-fp">
+<span id="api-extract-text-to-fp"></span><h2>extract_text_to_fp<a class="headerlink" href="#extract-text-to-fp" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="pdfminer.high_level.extract_text_to_fp">
+<code class="sig-prename descclassname">pdfminer.high_level.</code><code class="sig-name descname">extract_text_to_fp</code><span class="sig-paren">(</span><em class="sig-param">inf</em>, <em class="sig-param">outfp</em>, <em class="sig-param">output_type='text'</em>, <em class="sig-param">codec='utf-8'</em>, <em class="sig-param">laparams=None</em>, <em class="sig-param">maxpages=0</em>, <em class="sig-param">page_numbers=None</em>, <em class="sig-param">password=''</em>, <em class="sig-param">scale=1.0</em>, <em class="sig-param">rotation=0</em>, <em class="sig-param">layoutmode='normal'</em>, <em class="sig-param">output_dir=None</em>, <em class="sig-param">strip_control=False</em>, <em class="sig-param">debug=False</em>, <em class="sig-param">disable_caching=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#pdfminer.high_level.extract_text_to_fp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses text from inf-file and writes to outfp file-like object.</p>
+<p>Takes loads of optional arguments but the defaults are somewhat sane.
+Beware laparams: Including an empty LAParams is not the same as passing</p>
+<blockquote>
+<div><p>None!</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inf</strong> – a file-like object to read PDF structure from, such as a
+file handler (using the builtin <cite>open()</cite> function) or a <cite>BytesIO</cite>.</p></li>
+<li><p><strong>outfp</strong> – a file-like object to write the text to.</p></li>
+<li><p><strong>output_type</strong> – May be ‘text’, ‘xml’, ‘html’, ‘tag’. Only ‘text’ works
+properly.</p></li>
+<li><p><strong>codec</strong> – Text decoding codec</p></li>
+<li><p><strong>laparams</strong> – An LAParams object from pdfminer.layout. Default is None
+but may not layout correctly.</p></li>
+<li><p><strong>maxpages</strong> – How many pages to stop parsing after</p></li>
+<li><p><strong>page_numbers</strong> – zero-indexed page numbers to operate on.</p></li>
+<li><p><strong>password</strong> – For encrypted PDFs, the password to decrypt.</p></li>
+<li><p><strong>scale</strong> – Scale factor</p></li>
+<li><p><strong>rotation</strong> – Rotation factor</p></li>
+<li><p><strong>layoutmode</strong> – Default is ‘normal’, see
+pdfminer.converter.HTMLConverter</p></li>
+<li><p><strong>output_dir</strong> – If given, creates an ImageWriter for extracted images.</p></li>
+<li><p><strong>strip_control</strong> – Does what it says on the tin</p></li>
+<li><p><strong>debug</strong> – Output more logging data</p></li>
+<li><p><strong>disable_caching</strong> – Does what it says on the tin</p></li>
+<li><p><strong>other</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>nothing, acting as it does on two streams. Use StringIO to get
+strings.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pdfminer.six</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">Using pdfminer.six</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="commandline.html">Command-line API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">High-level functions API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="composable.html">Composable API</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API documentation</a><ul>
+      <li>Previous: <a href="commandline.html" title="previous chapter">Command-line API</a></li>
+      <li>Next: <a href="composable.html" title="next chapter">Composable API</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Yusuke Shinyama, Philippe Guglielmetti & Pieter Marsman.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/highlevel.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

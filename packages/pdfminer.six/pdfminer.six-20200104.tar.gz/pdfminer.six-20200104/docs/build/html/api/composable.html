@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Composable API &#8212; pdfminer.six 20191020 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="High-level functions API" href="highlevel.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="composable-api">
+<span id="api-composable"></span><h1>Composable API<a class="headerlink" href="#composable-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="laparams">
+<span id="api-laparams"></span><h2>LAParams<a class="headerlink" href="#laparams" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="pdfminer.layout.LAParams">
+<em class="property">class </em><code class="sig-prename descclassname">pdfminer.layout.</code><code class="sig-name descname">LAParams</code><span class="sig-paren">(</span><em class="sig-param">line_overlap=0.5</em>, <em class="sig-param">char_margin=2.0</em>, <em class="sig-param">line_margin=0.5</em>, <em class="sig-param">word_margin=0.1</em>, <em class="sig-param">boxes_flow=0.5</em>, <em class="sig-param">detect_vertical=False</em>, <em class="sig-param">all_texts=False</em><span class="sig-paren">)</span><a class="headerlink" href="#pdfminer.layout.LAParams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parameters for layout analysis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_overlap</strong> – If two characters have more overlap than this they
+are considered to be on the same line. The overlap is specified
+relative to the minimum height of both characters.</p></li>
+<li><p><strong>char_margin</strong> – If two characters are closer together than this
+margin they are considered to be part of the same word. If
+characters are on the same line but not part of the same word, an
+intermediate space is inserted. The margin is specified relative to
+the width of the character.</p></li>
+<li><p><strong>word_margin</strong> – If two words are are closer together than this
+margin they are considered to be part of the same line. A space is
+added in between for readability. The margin is specified relative
+to the width of the word.</p></li>
+<li><p><strong>line_margin</strong> – If two lines are are close together they are
+considered to be part of the same paragraph. The margin is
+specified relative to the height of a line.</p></li>
+<li><p><strong>boxes_flow</strong> – Specifies how much a horizontal and vertical position
+of a text matters when determining the order of text boxes. The value
+should be within the range of -1.0 (only horizontal position
+matters) to +1.0 (only vertical position matters).</p></li>
+<li><p><strong>detect_vertical</strong> – If vertical text should be considered during
+layout analysis</p></li>
+<li><p><strong>all_texts</strong> – If layout analysis should be performed on text in
+figures.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="todo">
+<h2>Todo:<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><cite>PDFDevice</cite></dt><dd><ul>
+<li><p><cite>TextConverter</cite></p></li>
+<li><p><cite>PDFPageAggregator</cite></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><cite>PDFPageInterpreter</cite></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pdfminer.six</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">Using pdfminer.six</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="commandline.html">Command-line API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="highlevel.html">High-level functions API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Composable API</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">API documentation</a><ul>
+      <li>Previous: <a href="highlevel.html" title="previous chapter">High-level functions API</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Yusuke Shinyama, Philippe Guglielmetti & Pieter Marsman.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/composable.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

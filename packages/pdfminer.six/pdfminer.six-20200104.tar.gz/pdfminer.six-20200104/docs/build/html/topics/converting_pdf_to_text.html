@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Converting a PDF file to text &#8212; pdfminer.six 20191020 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API documentation" href="../api/index.html" />
+    <link rel="prev" title="Using pdfminer.six" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="converting-a-pdf-file-to-text">
+<span id="topic-pdf-to-text"></span><h1>Converting a PDF file to text<a class="headerlink" href="#converting-a-pdf-file-to-text" title="Permalink to this headline">¶</a></h1>
+<p>Most PDF files look like they contain well structured text. But the reality  is
+that a PDF file does not contain anything that resembles a paragraphs,
+sentences or even words. When it comes to text, a PDF file is only aware of
+the characters and their placement.</p>
+<p>This makes extracting meaningful pieces of text from PDF’s files difficult.
+The characters that compose a paragraph are no different from those that
+compose the table, the page footer or the description of a figure. Unlike
+other documents formats, like a <cite>.txt</cite> file or a word document, the PDF format
+does not contain a stream of text.</p>
+<p>A PDF document does consists of a collection of objects that together describe
+the appearance of one or more pages, possibly accompanied by additional
+interactive elements and higher-level application data. A PDF file contains
+the objects making up a PDF document along with associated structural
+information, all represented as a single self-contained sequence of bytes. <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
+<div class="section" id="layout-analysis-algorithm">
+<h2>Layout analysis algorithm<a class="headerlink" href="#layout-analysis-algorithm" title="Permalink to this headline">¶</a></h2>
+<p>PDFMiner attempts to reconstruct some of those structures by using heuristics
+on the positioning of characters. This works well for sentences and
+paragraphs because meaningful groups of nearby characters can be made.</p>
+<p>The layout analysis consist of three different stages: it groups characters
+into words and lines, then it groups lines into boxes and finally it groups
+textboxes hierarchically. These stages are discussed in the following
+sections.  The resulting output of the layout analysis is an ordered hierarchy
+of layout objects on a PDF page.</p>
+<div class="figure align-center" id="id3">
+<img alt="../_images/layout_analysis_output.png" src="../_images/layout_analysis_output.png" />
+<p class="caption"><span class="caption-text">The output of the layout analysis is a hierarchy of layout objects.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>The output of the layout analysis heavily depends on a couple of parameters.
+All these parameters are part of the <a class="reference internal" href="../api/composable.html#api-laparams"><span class="std std-ref">LAParams</span></a> class.</p>
+<div class="section" id="grouping-characters-into-words-and-lines">
+<h3>Grouping characters into words and lines<a class="headerlink" href="#grouping-characters-into-words-and-lines" title="Permalink to this headline">¶</a></h3>
+<p>The first step in going from characters to text is to group characters in a
+meaningful way. Each character has an x-coordinate and a y-coordinate for its
+bottom-left corner and upper-right corner, i.e. its bounding box. Pdfminer
+.six uses these bounding boxes to decide which characters belong together.</p>
+<p>Characters that are both horizontally and vertically close are grouped. How
+close they should be is determined by the <cite>char_margin</cite> (M in figure) and the
+<cite>line_overlap</cite> (not in figure) parameter. The horizontal <em>distance</em> between the
+bounding boxes of two characters should be smaller that the <cite>char_margin</cite> and
+the vertical <em>overlap</em> between the bounding boxes should be smaller the the
+<cite>line_overlap</cite>.</p>
+<style>
+    td {
+        text-align: center;
+    }
+</style>
+<table style="margin: 10px; padding: 10px;">
+    <tr>
+        <td style="text-align: right; border-right:1px red solid">&rarr;</td>
+        <td colspan="4"
+            style="text-align: left; border-left:1px red solid">&larr; <em><font
+                color="red">M</font></em></td>
+    </tr>
+    <tr>
+        <td style="border:1px solid"><code>Q u i</code></td>
+        <td style="border:1px solid"><code>c k</code></td>
+        <td width="10px"></td>
+        <td style="border:1px solid"><code>b r o w n</code></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: right; border-right:1px green solid">
+            &rarr;
+        </td>
+        <td></td>
+        <td colspan="2"
+            style="text-align: left; border-left:1px green solid">&larr;
+            <em><font color="green">W</font></em></td>
+    </tr>
+</table><p>The values of <cite>char_margin</cite> and <cite>line_overlap</cite> are relative to the size of
+the bounding boxes of the characters. The <cite>char_margin</cite> is relative to the
+maximum width of either one of the bounding boxes, and the <cite>line_overlap</cite> is
+relative to the minimum height of either one of the bounding boxes.</p>
+<p>Spaces need to be inserted between characters because the PDF format has no
+notion of the space character. A space is inserted if the characters are
+further apart that the <cite>word_margin</cite> (W in the figure). The <cite>word_margin</cite> is
+relative to the maximum width or height of the new character. Having a larger
+<cite>word_margin</cite> creates smaller words and inserts spaces between characters
+more often. Note that the <cite>word_margin</cite> should be smaller than the
+<cite>char_margin</cite> otherwise all the characters are seperated by a space.</p>
+<p>The result of this stage is a list of lines. Each line consists a list of
+characters. These characters either original <cite>LTChar</cite> characters that
+originate from the PDF file, or inserted <cite>LTAnno</cite> characters that
+represent spaces between words or newlines at the end of each line.</p>
+</div>
+<div class="section" id="grouping-lines-into-boxes">
+<h3>Grouping lines into boxes<a class="headerlink" href="#grouping-lines-into-boxes" title="Permalink to this headline">¶</a></h3>
+<p>The second step is grouping lines in a meaningful way. Each line has a
+bounding box that is determined by the bounding boxes of the characters that
+it contains. Like grouping characters, pdfminer.six uses the bounding boxes
+to group the lines.</p>
+<p>Lines that are both horizontally overlapping and vertically close are grouped.
+How vertically close the lines should be is determined by the <cite>line_margin</cite>.
+This margin is specified relative to the height of the bounding box. Lines
+are close if the gap between the tops (see L <sub>1</sub> in the figure) and bottoms
+(see L <sub>2</sub>) in the figure) of the bounding boxes are closer together
+than the absolute line margin, i.e. the <cite>line_margin</cite> multiplied by the
+height of the bounding box.</p>
+<style>
+    td {
+        text-align: center;
+    }
+</style>
+<table style="margin: 10px; padding: 10px;">
+    <tr>
+        <td></td>
+        <td></td>
+        <td align=right style="border-bottom:1px blue solid">&darr;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="border:1px solid"><code>Q u i c k &nbsp; b r o w
+            n</code></td>
+        <td></td>
+        <td align=right style="border-bottom:1px blue solid">&darr;</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td align=center valign=center><em><font color="blue">
+            L<sub>1</sub>
+        </font></em></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="border:1px solid;">
+            <code>f o x</code>
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td align=right style="border-top:1px blue solid">&uarr;</td>
+        <td align=center valign=center><em><font color="blue">
+            L<sub>2</sub>
+        </font></em></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td align=right style="border-top:1px blue solid">&uarr;</td>
+    </tr>
+</table><p>The result of this stage is a list of text boxes. Each box consist of a list
+of lines.</p>
+</div>
+<div class="section" id="grouping-textboxes-hierarchically">
+<h3>Grouping textboxes hierarchically<a class="headerlink" href="#grouping-textboxes-hierarchically" title="Permalink to this headline">¶</a></h3>
+<p>the last step is to group the text boxes in a meaningful way. This step
+repeatedly merges the two text boxes that are closest to each other.</p>
+<p>The closeness of bounding boxes is computed as the area that is between the
+two text boxes (the blue area in the figure). In other words, it is the area of
+the bounding box that surrounds both lines, minus the area of the bounding
+boxes of the individual lines.</p>
+<style>
+    .background-blue {
+        background-color: lightblue;
+        border: 2px solid lightblue;
+    }
+</style>
+<table style="margin: 10px; padding: 10px;">
+    <tr>
+        <td style="border:1px solid; text-align: left">
+            <code>
+                Q u i c k &nbsp; b r o w n<br/> f o x
+            </code>
+        </td>
+        <td class="background-blue" colspan="3"></td>
+    </tr>
+    <tr style="height: 10px;">
+        <td class="background-blue" colspan="4"></td>
+    </tr>
+    <tr>
+        <td class="background-blue" colspan="3"></td>
+        <td style="border:1px solid"><code>j u m p s ...</code></td>
+    </tr>
+</table></div>
+</div>
+<div class="section" id="working-with-rotated-characters">
+<h2>Working with rotated characters<a class="headerlink" href="#working-with-rotated-characters" title="Permalink to this headline">¶</a></h2>
+<p>The algorithm described above assumes that all characters have the same
+orientation. However, any writing direction is possible in a PDF. To
+accommodate for this, pdfminer.six allows to detect vertical writing with the
+<cite>detect_vertical</cite> parameter. This will apply all the grouping steps as if the
+pdf was rotated 90 (or 270) degrees</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Adobe System Inc. (2007). <em>Pdf reference: Adobe portable document
+format, version 1.7.</em></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pdfminer.six</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Using pdfminer.six</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Converting a PDF file to text</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Using pdfminer.six</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Using pdfminer.six</a></li>
+      <li>Next: <a href="../api/index.html" title="next chapter">API documentation</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Yusuke Shinyama, Philippe Guglielmetti & Pieter Marsman.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/topics/converting_pdf_to_text.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

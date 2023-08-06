@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Get started with command-line tools &#8212; pdfminer.six 20191020 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Get started using the high-level functions" href="highlevel.html" />
+    <link rel="prev" title="Getting started" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="get-started-with-command-line-tools">
+<span id="tutorial-commandline"></span><h1>Get started with command-line tools<a class="headerlink" href="#get-started-with-command-line-tools" title="Permalink to this headline">¶</a></h1>
+<p>pdfminer.six has several tools that can be used from the command line. The
+command-line tools are aimed at users that occasionally want to extract text
+from a pdf.</p>
+<p>Take a look at the high-level or composable interface if you want to use
+pdfminer.six programmatically.</p>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pdf2txt-py">
+<h3>pdf2txt.py<a class="headerlink" href="#pdf2txt-py" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python tools/pdf2txt.py example.pdf
+all the text from the pdf appears on the command line
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="../api/commandline.html#api-pdf2txt"><span class="std std-ref">pdf2txt.py</span></a> tool extracts all the text from a PDF. It uses layout
+analysis with sensible defaults to order and group the text in a sensible way.</p>
+</div>
+<div class="section" id="dumppdf-py">
+<h3>dumppdf.py<a class="headerlink" href="#dumppdf-py" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python tools/dumppdf.py -a example.pdf
+&lt;pdf&gt;&lt;object id=&quot;1&quot;&gt;
+...
+&lt;/object&gt;
+...
+&lt;/pdf&gt;
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="../api/commandline.html#api-dumppdf"><span class="std std-ref">dumppdf.py</span></a> tool can be used to extract the internal structure from a
+PDF. This tool is primarily for debugging purposes, but that can be useful to
+anybody working with PDF’s.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pdfminer.six</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting started</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Get started with command-line tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="highlevel.html">Get started using the high-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="composable.html">Get started using the composable components API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">Using pdfminer.six</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Getting started</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Getting started</a></li>
+      <li>Next: <a href="highlevel.html" title="next chapter">Get started using the high-level functions</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Yusuke Shinyama, Philippe Guglielmetti & Pieter Marsman.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/tutorials/commandline.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

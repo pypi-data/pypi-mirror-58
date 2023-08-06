@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to pdfminer.six’s documentation! &#8212; pdfminer.six 20191020 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started" href="tutorials/index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-pdfminer-six-s-documentation">
+<h1>Welcome to pdfminer.six’s documentation!<a class="headerlink" href="#welcome-to-pdfminer-six-s-documentation" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://travis-ci.org/pdfminer/pdfminer.six"><img alt="Travis-ci build badge" src="https://travis-ci.org/pdfminer/pdfminer.six.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/pdfminer.six/"><img alt="PyPi version badge" src="https://img.shields.io/pypi/v/pdfminer.six.svg" /></a>
+<a class="reference external image-reference" href="https://gitter.im/pdfminer-six/Lobby?utm_source=badge&amp;utm_medium"><img alt="gitter badge" src="https://badges.gitter.im/pdfminer-six/Lobby.svg" /></a>
+<p>Pdfminer.six is a python package for extracting information from PDF documents.</p>
+<p>Check out the source on <a class="reference external" href="https://github.com/pdfminer/pdfminer.six">github</a>.</p>
+<div class="section" id="content">
+<h2>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/commandline.html">Get started with command-line tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/highlevel.html">Get started using the high-level functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/composable.html">Get started using the composable components API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="topics/index.html">Using pdfminer.six</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="topics/converting_pdf_to_text.html">Converting a PDF file to text</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/commandline.html">Command-line API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/highlevel.html">High-level functions API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/composable.html">Composable API</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Parse all objects from a PDF document into Python objects.</p></li>
+<li><p>Analyze and group text in a human-readable way.</p></li>
+<li><p>Extract text, images (JPG, JBIG2 and Bitmaps), table-of-contents, tagged
+contents and more.</p></li>
+<li><p>Support for (almost all) features from the PDF-1.7 specification</p></li>
+<li><p>Support for Chinese, Japanese and Korean CJK) languages as well as vertical
+writing.</p></li>
+<li><p>Support for various font types (Type1, TrueType, Type3, and CID).</p></li>
+<li><p>Support for basic encryption (RC4).</p></li>
+</ul>
+</div>
+<div class="section" id="installation-instructions">
+<h2>Installation instructions<a class="headerlink" href="#installation-instructions" title="Permalink to this headline">¶</a></h2>
+<p>Before using it, you must install it using Python 2.7 or newer.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install pdfminer.six
+</pre></div>
+</div>
+<p>Note that Python 2.7 support is dropped at January, 2020.</p>
+<div class="section" id="common-use-cases">
+<h3>Common use-cases<a class="headerlink" href="#common-use-cases" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="tutorials/commandline.html#tutorial-commandline"><span class="std std-ref">Get started with command-line tools</span></a> if you just want to extract text from a pdf once.</p></li>
+<li><p><a class="reference internal" href="tutorials/highlevel.html#tutorial-highlevel"><span class="std std-ref">Get started using the high-level functions</span></a> if you want to integrate pdfminer.six with your
+Python code.</p></li>
+<li><p><a class="reference internal" href="tutorials/composable.html#tutorial-composable"><span class="std std-ref">Get started using the composable components API</span></a> when you want to tailor the behavior of
+pdfmine.six to your needs.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>We welcome any contributors to pdfminer.six! But, before doing anything, take
+a look at the <a class="reference external" href="https://github.com/pdfminer/pdfminer.six/blob/master/CONTRIBUTING.md">contribution guide</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">pdfminer.six</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topics/index.html">Using pdfminer.six</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="tutorials/index.html" title="next chapter">Getting started</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Yusuke Shinyama, Philippe Guglielmetti & Pieter Marsman.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
