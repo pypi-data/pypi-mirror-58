@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-markdownfield
+Version: 0.5.2
+Summary: A markdown field.
+Home-page: https://github.com/dmptrluke/django-markdownfield
+Author: Luke Rogers
+Author-email: luke@dmptr.com
