@@ -1,0 +1,13 @@
+unification/__init__.py,sha256=phTsA3OElt6auZRCQHyqlII2Fffvv_wPUdJHzTvpHtk,208
+unification/_version.py,sha256=h8-XciVdlwNj5Kn-6kaJENIQrGk9OFU_Kj7jnKXk8-E,497
+unification/core.py,sha256=kvlxvSiE0doXCicPlj610RJQ9NWS8KWai8dxLCWZ_Tg,3814
+unification/dispatch.py,sha256=160yMEIIG_j2n1ky2RFopemV6CMpWzRFoH0eLIGO-r0,139
+unification/match.py,sha256=Wm2Zq6Nzi9FyIG62_nyd_dD2u9uxDWnqkr7VtITSr7c,3201
+unification/more.py,sha256=JKSQxaSfd7IWiG_DhRUIJWZ3vJ1gTesKcqIiAzzXBQs,2486
+unification/utils.py,sha256=JrBVL-M8v5R9PtdlHpP_oYbdIa47q3wEKpmGCMzI2oc,2425
+unification/variable.py,sha256=-Wlq_Ffyx-RMhW57hLOfmwQhnrfohbSqHU1c0mlIu4s,2649
+logical_unification-0.3.2.dist-info/LICENSE.txt,sha256=jD_-M_Qmg4dnTlb3BCQbmRIO7ARTTquWT65LKWEH6WI,1536
+logical_unification-0.3.2.dist-info/METADATA,sha256=W527XrnSz4EMfOTMaEAqIUFiiiqQp_Sv2zO3bbmnRT4,4416
+logical_unification-0.3.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+logical_unification-0.3.2.dist-info/top_level.txt,sha256=NN5Q-S85DcmLNbQkmdZkk7ZvmKchUnzWHEsc7HuAX6M,12
+logical_unification-0.3.2.dist-info/RECORD,,
