@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: birdyaml
+Version: 0.2.1
+Summary: Generic yaml to object parser for python
+Home-page: https://pypi.python.org/pypi/birdyaml
+Author: Anthony Casagrande
+Author-email: birdapi@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: yaml birdapi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
