@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hypster
+Version: 0.0.4
+Summary: HyPSTER is a brand new Python package that helps you find compact and accurate ML Pipelines while staying light and efficient
+Home-page: https://github.com/gilad-rubin/hypster
+License: MIT
+Author: Gilad Rubin
+Author-email: gilad.rubin@gmail.com
+Maintainer: Tal Peretz
+Requires-Python: >=3.5.7,<=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: category_encoders (>=2.1.0,<3.0.0)
+Requires-Dist: lightgbm (>=2.3.1,<3.0.0)
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
+Requires-Dist: optuna (>=0.19.0,<0.20.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: scikit-learn (>=0.22,<0.23)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
+Requires-Dist: xgboost (>=0.90,<0.91)
