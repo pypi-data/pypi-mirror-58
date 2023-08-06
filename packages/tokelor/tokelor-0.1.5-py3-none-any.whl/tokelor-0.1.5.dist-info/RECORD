@@ -1,0 +1,9 @@
+LICENSE,sha256=JRLQDKKJnktFCXilXhfq7uLQPB6K0Nb0ai7gMkZxIw8,1100
+tokelor/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+tokelor/__main__.py,sha256=8fpeif7oYmeToiHZXmrkXTQxyXuAFbercDDp7OoRbu8,109
+tokelor/cli.py,sha256=2I2c3R_TJ6asENljQyYXuvaf4kmHClBM-fKIQa67fJg,2469
+tokelor-0.1.5.dist-info/entry_points.txt,sha256=H6hgvD6n5WeMcoWdi9HZWTLDhnMy-atrAWwFykef-JI,44
+tokelor-0.1.5.dist-info/LICENSE,sha256=JRLQDKKJnktFCXilXhfq7uLQPB6K0Nb0ai7gMkZxIw8,1100
+tokelor-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+tokelor-0.1.5.dist-info/METADATA,sha256=svVjzqt4X4dtNsYpEUKyb5dK-fON3lL78U-BfTNGpls,2206
+tokelor-0.1.5.dist-info/RECORD,,
