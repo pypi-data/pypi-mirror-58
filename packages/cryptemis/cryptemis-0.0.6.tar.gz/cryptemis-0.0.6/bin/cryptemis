@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+
+import argparse
+import getpass
+from cryptemis import Cryptemis
+
+
+class PasswordAction(argparse.Action):
+    def __call__(self, parser, args, values, option_string=None):
+        if values:
+            setattr(args, self.dest, values)
+        else:
+            setattr(args, self.dest, getpass.getpass())
+
+
+parser = argparse.ArgumentParser(prog='cryptemis',
+                                 description='Symmetric AES encryption for images.',
+                                 epilog='Example Usage: cryptemis my_secret_image.png my_super_password')
+parser.add_argument('image_filename', help='filename of image', type=str)
+parser.add_argument('password', help='password for encryption', action=PasswordAction, nargs='?')
+group = parser.add_mutually_exclusive_group()
+group.add_argument('-e', '--encrypt', help='encrypt image', action='store_true', default=True)
+group.add_argument('-d', '--decrypt', help='decrypt image', action='store_true')
+parser.add_argument('-kfn', '--keep-filename', help='do not encrypt/decrypt filename', action='store_true')
+parser.add_argument('-v', '--version', action='version', version='0.0.6')
+args = parser.parse_args()
+
+KEEP_FILENAME = args.keep_filename
+IMAGE_FILENAME = args.image_filename
+PASSWORD = args.password
+ENCRYPT = args.encrypt
+DECRYPT = args.decrypt
+
+cryptemis = Cryptemis()
+cryptemis.img_file_processor(KEEP_FILENAME, PASSWORD, IMAGE_FILENAME, ENCRYPT, DECRYPT)
