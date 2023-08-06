@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: BxModels
+Version: 0.3.0
+Summary: Popular Machine Learning Models in PyTorch with Strong GPU Acceleration.
+Home-page: https://gitlab.lrz.de/borchero/bxmodels
+Author: Oliver Borchert
+Author-email: borchero@icloud.com
+License: License :: OSI Approved :: MIT License
+Description: # BxModels
+        
+        BxModels provides a repository for well-known machine learning models
+        implemented in PyTorch. With the help of PyTorch, these models can benefit from
+        strong GPU acceleration.
+        
+        BxModels is built on top of BxTorch, a library which enables developers to
+        handle PyTorch models even more easily and providing multiple means of speeding
+        up training.
+        
+        ## Installation
+        
+        BxModels is available on PyPi, so simply run the following command:
+        
+        ```bash
+        pip install bxmodels
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
