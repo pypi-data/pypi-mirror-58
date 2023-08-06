@@ -1,0 +1,8 @@
+FastHMM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FastHMM/hmm.py,sha256=V1Yd6Y_2xssrh5q5W-UEGpnSNXEqz50LaT_4LHcz1Co,6605
+FastHMM/non_rec_viterbi.py,sha256=Gpc9WEWa542VK9sPmCXC0h5uAwm3TcKFLOd9SrUj3jo,2812
+FastHMM-0.1.1.dist-info/LICENSE.txt,sha256=3tkExCV1cmbUvakBe_pfKD7VOx1QseTCc2SkdfSi3VY,1052
+FastHMM-0.1.1.dist-info/METADATA,sha256=Gm67sl74a1RUo72fJmkoYNX6po9CQop_BYX6-S4yGC4,2256
+FastHMM-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+FastHMM-0.1.1.dist-info/top_level.txt,sha256=z4EzdT1OfS7TqsdydReTNRpFO8iMYIM8l8KBpwEbZEE,8
+FastHMM-0.1.1.dist-info/RECORD,,
