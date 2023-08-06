@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+stickytoe_device/__init__.py
+stickytoe_device/constants.py
+stickytoe_device/devices.py
+stickytoe_device/inputs.py
+stickytoe_device.egg-info/PKG-INFO
+stickytoe_device.egg-info/SOURCES.txt
+stickytoe_device.egg-info/dependency_links.txt
+stickytoe_device.egg-info/top_level.txt
+stickytoe_device/bin/pip

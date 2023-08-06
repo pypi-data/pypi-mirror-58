@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: stickytoe-device
+Version: 0.0.3
+Summary: Stickytoe device abstract class and constants
+Home-page: https://github.com/ryanchaiyakul/stickytoe_device
+Author: Ryan Chaiyakul
+License: UNKNOWN
+Description: # stickytoe_device
+        
+        Stickytoe device abstract class and constants
+        
+        ## Usage
+        
+        ``` bash
+        pip install stickytoe_device
+        ```
+        
+        Install this framework into your device environment and extend the correct ABC class to implement your device in the Stickytoe ecosystem.
+        
+        ### Current ABC Classes
+        
+        1. I2C
+        
+        #### WIP
+        
+        1. GPIO
+        2. SPI
+        3. Serial
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
