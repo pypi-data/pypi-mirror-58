@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AlbertMarker
+Version: 0.0.1.1
+Summary: Terry Marker
+Home-page: https://github.com/napoler/AlBert-BiLSTM-CRF-pytorch
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: 
+        
+        这里是说明
+        用于自动标记文本内容
+        使用albert
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
