@@ -1,0 +1,4 @@
+[console_scripts]
+ml_models = mlmodels.models:main
+ml_moptim = mlmodels.optim:main
+
