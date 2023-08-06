@@ -1,0 +1,12 @@
+pyyaml
+lucidity
+tpPyUtils
+tpDccLib
+tpQtLib
+tpNameIt
+
+[dev]
+wheel
+
+[test]
+pytest
