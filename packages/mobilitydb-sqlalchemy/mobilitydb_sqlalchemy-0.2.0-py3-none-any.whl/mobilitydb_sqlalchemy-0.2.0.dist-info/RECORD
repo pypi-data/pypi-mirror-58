@@ -1,0 +1,11 @@
+mobilitydb_sqlalchemy/__init__.py,sha256=pGjVjWAoyPfUMsS0bCqTF3hYeXEM470-GkWJzzPnkos,134
+mobilitydb_sqlalchemy/comparator.py,sha256=PFslo9Xe2hdLYK9Ff2EnOvk1RWoHN4o9I8XvMZVtZp4,11584
+mobilitydb_sqlalchemy/types/TBaseType.py,sha256=fI12zTjoE5Odawcj5mplKLRs9BgXDPvs5BXg0cKw0tE,2300
+mobilitydb_sqlalchemy/types/TBool.py,sha256=PnCrp78i9VR4bYT8hqYW1X-3dY92ZEtQPUkq_YsbZx4,619
+mobilitydb_sqlalchemy/types/TFloat.py,sha256=4NoTPF9QH1sCi_IobmllQ2VbjRTv5u94WJescghkjXc,647
+mobilitydb_sqlalchemy/types/TGeomPoint.py,sha256=qRqSEa3fsmPy60U1EGcdoh_1lgHWh7Z00sclfMPq2BI,2521
+mobilitydb_sqlalchemy/types/TInt.py,sha256=3mZozqb_WKUY88NEQ-_Dm-H7l2e8Y8aAf6A2i1KJ33E,596
+mobilitydb_sqlalchemy/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mobilitydb_sqlalchemy-0.2.0.dist-info/WHEEL,sha256=KNDdkjSeigjRXptGlrG4jH7jZgp5SlNmTTETrR633wE,85
+mobilitydb_sqlalchemy-0.2.0.dist-info/METADATA,sha256=ffHJQL2ZitM4IEOmlR-y-XrHyjJidBx5GokGEIgsmwc,5386
+mobilitydb_sqlalchemy-0.2.0.dist-info/RECORD,,
