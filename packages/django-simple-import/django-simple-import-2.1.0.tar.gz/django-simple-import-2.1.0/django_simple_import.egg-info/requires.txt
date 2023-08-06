@@ -1,0 +1,10 @@
+django
+
+[ods]
+odfpy
+
+[xls]
+xlrd
+
+[xlsx]
+openpyxl

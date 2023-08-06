@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-simple-import
+Version: 2.1.0
+Summary: A Django import tool easy enough your users could use it
+Home-page: https://gitlab.com/burke-software/django-simple-import
+Author: David Burke
+Author-email: david@burkesoftware.com
+License: BSD
+Description: UNKNOWN
+Keywords: django import
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Provides-Extra: ods
+Provides-Extra: xls
+Provides-Extra: xlsx
