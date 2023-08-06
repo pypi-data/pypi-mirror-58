@@ -1,0 +1,8 @@
+README.md
+setup.py
+libdct/__init__.py
+libdct/feature.py
+libdct.egg-info/PKG-INFO
+libdct.egg-info/SOURCES.txt
+libdct.egg-info/dependency_links.txt
+libdct.egg-info/top_level.txt
