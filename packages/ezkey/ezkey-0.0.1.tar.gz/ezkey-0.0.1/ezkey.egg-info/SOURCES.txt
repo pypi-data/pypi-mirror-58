@@ -1,0 +1,8 @@
+README.md
+setup.py
+ezkey/__init__.py
+ezkey/ezkey.py
+ezkey.egg-info/PKG-INFO
+ezkey.egg-info/SOURCES.txt
+ezkey.egg-info/dependency_links.txt
+ezkey.egg-info/top_level.txt
