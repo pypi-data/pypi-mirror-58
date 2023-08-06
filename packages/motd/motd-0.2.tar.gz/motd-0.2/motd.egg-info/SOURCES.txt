@@ -1,0 +1,8 @@
+README.md
+setup.py
+motd/__init__.py
+motd/motd.py
+motd.egg-info/PKG-INFO
+motd.egg-info/SOURCES.txt
+motd.egg-info/dependency_links.txt
+motd.egg-info/top_level.txt
