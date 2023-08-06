@@ -1,0 +1,11 @@
+pyqrcodeng/__init__.py,sha256=f4BYZfmY93wLXP5DP_F7S9gF2prZvNXCBPPdIWwHzlE,27418
+pyqrcodeng/builder.py,sha256=-zNGnoX4PGDB-7owVZwN7Q15a2NEmGKKFrYqNC6A3Kk,66469
+pyqrcodeng/cli.py,sha256=x_7sm3KN7ekNczG6QdnJaEuVN-GT6ocHUEAReFwtFwk,6739
+pyqrcodeng/qrspecial.py,sha256=h3i9SCq93_bmka-_hEINNMXpawXnOi8OMJd9d_KxKTg,19258
+pyqrcodeng/tables.py,sha256=rRFF9Q5rK-pBOslAVf7pFJokafAIvfquRWOzDjIq7OY,27432
+PyQRCodeNG-1.3.5.dist-info/LICENSE,sha256=62z6EAgwgz-vLUzVq-tgCjce33m0ap8gE6oOOTXF6Kw,1541
+PyQRCodeNG-1.3.5.dist-info/METADATA,sha256=IhR77trGHGBOV54hqAO30TcxO4S29leqamOWrZiMjuo,11293
+PyQRCodeNG-1.3.5.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+PyQRCodeNG-1.3.5.dist-info/entry_points.txt,sha256=_6LBgjeqRo9fbdBVDLb1bgs6Stht8QIuD4OvGW_0eoI,46
+PyQRCodeNG-1.3.5.dist-info/top_level.txt,sha256=QjNYm4nXvRZ6xKtI1p4WoFfXUEtjtTfvQYyYI2kF1hA,11
+PyQRCodeNG-1.3.5.dist-info/RECORD,,
