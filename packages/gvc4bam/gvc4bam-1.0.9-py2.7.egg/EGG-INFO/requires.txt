@@ -1,0 +1,6 @@
+docker==2.5.1
+pysam
+toil
+toil-runner
+pandas
+numpy
