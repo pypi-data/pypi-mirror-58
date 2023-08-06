@@ -1,0 +1,7 @@
+README.md
+setup.py
+unUsefull/__init__.py
+unUsefull.egg-info/PKG-INFO
+unUsefull.egg-info/SOURCES.txt
+unUsefull.egg-info/dependency_links.txt
+unUsefull.egg-info/top_level.txt
