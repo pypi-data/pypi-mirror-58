@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+djangorestframework_simplejwt_sso.egg-info/PKG-INFO
+djangorestframework_simplejwt_sso.egg-info/SOURCES.txt
+djangorestframework_simplejwt_sso.egg-info/dependency_links.txt
+djangorestframework_simplejwt_sso.egg-info/top_level.txt
+docs/index.rst
+simplejwt_sso/__init__.py
+simplejwt_sso/admin.py
+simplejwt_sso/apps.py
+simplejwt_sso/models.py
+simplejwt_sso/tests.py
+simplejwt_sso/views.py
+simplejwt_sso/migrations/__init__.py
