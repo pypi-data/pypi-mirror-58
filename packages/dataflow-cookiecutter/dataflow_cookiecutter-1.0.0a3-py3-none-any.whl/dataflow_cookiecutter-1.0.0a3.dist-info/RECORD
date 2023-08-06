@@ -1,0 +1,13 @@
+dataflow_cookiecutter/__init__.py,sha256=SIxbIdFmkg0y6_Zuk5bRv1J_ECXjnQF6jrPw6rpVI3A,181
+dataflow_cookiecutter/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflow_cookiecutter/cli/config.py,sha256=5gfCkhnuG-8eg9uPp2fIaz_ikvfaZkye7PktHzJA6FI,166
+dataflow_cookiecutter/cli/ls.py,sha256=5ul_WChCSE6SJjIyClmDDq-d_h1VKtD3M0v_Ny8Geg0,661
+dataflow_cookiecutter/cli/main.py,sha256=oTm2BKQUBZFkpDfUgiTfQX37tfpRDKvM0Rq__OkdyXY,738
+dataflow_cookiecutter/cli/new.py,sha256=IS9m6HGH8OLQOJgxTo6qoOshks3IfVqbr4_4gjjxuNc,3324
+dataflow_cookiecutter/cli/utils.py,sha256=SNbq5RgiIXFTvj-y-UoQLTKvynPK5NIQIpdWm7CS9L8,305
+dataflow_cookiecutter-1.0.0a3.dist-info/METADATA,sha256=fSzrUYUIhyfxVNQHYHEu9ZMJY_7CsGjI2aY5mLTlFvA,2998
+dataflow_cookiecutter-1.0.0a3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dataflow_cookiecutter-1.0.0a3.dist-info/dependency_links.txt,sha256=ddEz6224FTBYXjON5PchCYbdusEntLnHRVTbu7QEAVs,65
+dataflow_cookiecutter-1.0.0a3.dist-info/entry_points.txt,sha256=0UA-WGZOVXdu_VBH2lv9hQtvr2ZWnAa7KcUEOCjTw58,79
+dataflow_cookiecutter-1.0.0a3.dist-info/top_level.txt,sha256=ihHnw5SYxB0gp2_I8T1RppTuw2rzUjYvFJTnrXUWcS0,22
+dataflow_cookiecutter-1.0.0a3.dist-info/RECORD,,
