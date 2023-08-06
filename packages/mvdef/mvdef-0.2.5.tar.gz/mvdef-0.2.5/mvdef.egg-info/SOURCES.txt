@@ -1,0 +1,6 @@
+README.md
+setup.py
+mvdef.egg-info/PKG-INFO
+mvdef.egg-info/SOURCES.txt
+mvdef.egg-info/dependency_links.txt
+mvdef.egg-info/top_level.txt
