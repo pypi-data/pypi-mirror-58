@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: config-file
+Version: 0.2.0
+Summary: Manage your configuration files.
+Home-page: https://github.com/eugenetriguba/config_file
+Keywords: configuration,config file,ini,json,toml,yaml
+Author: Eugene Triguba
+Author-email: eugenetriguba@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pyyaml (>=5.2,<6.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Project-URL: Repository, https://github.com/eugenetriguba/config_file
+Description-Content-Type: text/markdown
+
+# Config File 
+
+> Manage your configuration files
+
+![Python 3.8.0|](https://img.shields.io/badge/python-3.8.0-blue.svg) 
+![Version](https://img.shields.io/badge/version-0.2.0-blue.svg) 
+![Style](https://img.shields.io/badge/code%20style-black-000000.svg)
+
+This python package is currently a work in progress and should not be used in a production environment.
+The API is liable to break at anytime until 1.0.0.
