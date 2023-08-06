@@ -1,0 +1,16 @@
+imdbparser/__init__.py,sha256=NBlYyJxm5R3AiiIEdRUPhu9tF1rinz8TopUNgBQOSDc,59
+imdbparser/__main__.py,sha256=hrWsJDLVaFRQt0lg_-X5sWpcR3htZkAvwdfoQ0l0gp0,2650
+imdbparser/advancedsearchresult.py,sha256=f8BqXCu02tc4UCUvYNuknvrYonjdAcrdZslqglKRYuQ,41138
+imdbparser/base.py,sha256=Zx0Qtcj2SSl-_eLeBAhBLHMRiK-JiXs9_g4L6j2sLbs,916
+imdbparser/chart.py,sha256=Rre2ISWUuw8yRSycKrKIzYCbaAbEXwjga7e6JmoWVfw,1892
+imdbparser/exceptions.py,sha256=hffa4mzMHE4Xtem9Se_-NTx7HkvcVUxuSF07KhUv2eQ,100
+imdbparser/generateadvancedsearchresult.py,sha256=jB3HzEgrG6gOPATm1VjK4302jA4VOONhBIWuc6bfIyI,3936
+imdbparser/imdb.py,sha256=o5-Wphh35ogOXLhnBVsW2jRiQ1ZaPI5uiKzt64y7ZaI,2827
+imdbparser/movie.py,sha256=LLzuaFvMkpOWoYc8vKOOgK01BP3OHvf26xonLIjuSPQ,8722
+imdbparser/person.py,sha256=Mb_hACXmwN_3XKSrKzZF0MJtedG1SBN3-8nMPtG98ac,348
+imdbparser/searchresult.py,sha256=gr3CcPx7ilLMt5E2U-NdvGfUWSJwWWuGl6z05cx127I,2205
+imdbparser-1.0.22.dist-info/LICENSE,sha256=yTXhsPmcDvGADoASVRVu4-8sYsWce6hMQym0v_8PYzw,1056
+imdbparser-1.0.22.dist-info/METADATA,sha256=aTapjYY23q3H2hmd0JJUFI2Pt2C7VcVCHhTo5cXfnYg,2222
+imdbparser-1.0.22.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+imdbparser-1.0.22.dist-info/top_level.txt,sha256=A6kLXoI5eO0TkGRtdgwqbzpxL3OjZzmK4BwUQvPOMD8,11
+imdbparser-1.0.22.dist-info/RECORD,,
