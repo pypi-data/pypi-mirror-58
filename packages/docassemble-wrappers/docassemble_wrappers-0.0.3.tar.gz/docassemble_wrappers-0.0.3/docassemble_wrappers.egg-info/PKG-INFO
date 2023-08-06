@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: docassemble-wrappers
+Version: 0.0.3
+Summary: Wrappers to external functionalities and Docassemble API
+Home-page: https://github.com/silexsistemas/docassemble-wrappers
+Author: Roberto Vasconcelos Novaes, Luiz Guilherme Paim, Iasmini Gomes
+Author-email: rnovaes@ufmg.br, luis.paimadv@gmail.com, iasmini@silexsistemas.com.br
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
