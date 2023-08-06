@@ -1,0 +1,12 @@
+language: ru
+
+pipeline:
+- name: "WhitespaceTokenizer"
+- name: "saai.ner_facade.FacadeEntityExtractor"
+  route: "ru"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "CountVectorsFeaturizer"
+- name: "EmbeddingIntentClassifier"
+
