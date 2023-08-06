@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+fossil.py
+setup.py
+fossilpy.egg-info/PKG-INFO
+fossilpy.egg-info/SOURCES.txt
+fossilpy.egg-info/dependency_links.txt
+fossilpy.egg-info/requires.txt
+fossilpy.egg-info/top_level.txt
