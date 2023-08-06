@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: cm-rgb
+Version: 0.0.3
+Summary: Utility to control RGB on AMD Wraith Prism
+Home-page: http://github.com/cm-rgb
+Author: gfduszynski
+Author-email: gfduszynski@gmail.com
+License: MIT
+Description: ﻿##Control your Wraith Prism RGB without bloatware on Linux
+        
+        
+        ### Installation
+        ‘’’
+        pip install cm-rgb
+        ‘’’
+        
+        
+        
+        ‘’’
+        ‘’’
+        
+Keywords: rgb hid wraith
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
