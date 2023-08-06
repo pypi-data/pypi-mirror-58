@@ -1,0 +1,10 @@
+include README.md LICENSE HISTORY.rst
+include starry/img/*.jpg
+graft lib
+prune docs
+prune notebooks
+prune .ci
+exclude .clang-format
+exclude .gitattributes
+exclude .gitignore
+exclude .pre-commit-config.yaml
