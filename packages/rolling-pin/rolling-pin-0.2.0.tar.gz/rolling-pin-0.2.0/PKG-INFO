@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rolling-pin
+Version: 0.2.0
+Summary: A library of generic tools for ETL work and visualization of JSON blobs and python repositories.
+Home-page: https://github.com/theNewFlesh/rolling-pin
+Author: Alex Braun
+Author-email: Alexander.G.Braun@gmail.com
+License: MIT
+Download-URL: https://github.com/theNewFlesh/rolling-pin/archive/0.2.0.tar.gz
+Description: UNKNOWN
+Keywords: ETL,blob,dependency,graph,svg,networkx,transform
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
