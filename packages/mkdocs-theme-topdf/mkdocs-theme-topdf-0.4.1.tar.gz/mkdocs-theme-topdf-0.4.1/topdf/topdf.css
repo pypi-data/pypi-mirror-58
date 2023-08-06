@@ -1,0 +1,111 @@
+/* page setup {{{1 */
+@page {
+    size: A4 portrait;
+    margin: 20mm 20mm 20mm 20mm;
+    /* border: 1px solid #000;  page overrun effect with paged.js */
+
+    /* page setup for paged.js {{{1 */
+    @top-right {
+        content: string(doc_title) '(' counter(page) '/' counter(pages) ')';
+    }
+}
+
+
+@media print {
+    body {
+        /*! padding-left: 3mm; */
+        min-height: 24cm;
+        margin: 0px;
+    }
+
+    /* border for paged.js {{{1 */
+    .pagedjs_area {
+        border: 1pt solid #000;
+        padding: 2mm;
+    }
+
+    /* toc for paged.js {{{1 */
+    .toc li:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        /* overflow: hidden; */
+        content: ". . . . . . . . . . . . . . . . . . . . . . . . . "
+                 ". . . . . . . . . . . . . . . . . . . . . . . . . "
+                 ". . . . . . . . . . . . . . . ";
+    }
+    .toc a {
+        background: white;
+        padding-right: 1em;
+    }
+    .toc a::after {
+        float: right;
+        content: target-counter(attr(href), page);
+        background: white;
+        padding: 0 1em 0 1em;;
+    }
+}
+
+/* page setup for screen {{{1 */
+@media screen {
+}
+
+/* basic styles {{{1 */
+body > * {
+    margin-left: 2mm;
+}
+
+table {
+    max-width: 98%;
+    border-collapse: collapse;
+    border: 1pt solid #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+thead {
+    background: #EEE;
+}
+td, th {
+    border: 1pt solid #000;
+    padding: 1.0mm;
+}
+ul {
+    padding-left: 1.1em;
+    margin: 0 0 0 0;
+}
+
+img {
+    max-width: 99%;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 1mm auto 1mm auto;
+}
+
+/* page breaks {{{1 */
+@media print {
+    hr {
+        border: none;
+        page-break-after: always;
+    }
+
+    /* document number for paged.js {{{1 */
+    .doc-num {
+        display: none;
+        string-set: doc_title content(text);
+    }
+    .pagedjs_margin-top-right {
+        margin-top: auto;
+    }
+}
+
+.doc-num {
+    font-size: 10pt;
+    text-align: right;
+    width: 100%;
+}
+
+/* end of file {{{1 */
+/* vi: ft=css:fdm=marker
+ */
