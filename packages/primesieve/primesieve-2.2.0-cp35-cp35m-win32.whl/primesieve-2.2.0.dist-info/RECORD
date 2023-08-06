@@ -1,0 +1,9 @@
+primesieve/__init__.py,sha256=UTee855CmHQtW28PVWIUGFv-MhqpW3wap8FuYrL07nU,38
+primesieve/_primesieve.cp35-win32.pyd,sha256=hvTeplPlMxTnVtvkfBxhGMQnCJsuwMLJcA-Q4I-zY7E,181248
+primesieve/numpy/__init__.py,sha256=Xr9R9NysfpJjnDZniw8lDpyRCWDS5DZgM7zCSSKZK10,90
+primesieve/numpy/_numpy.cp35-win32.pyd,sha256=oLdkgHrplk2K5IFrryat4AXHTeO0UpxHHftVVN93kNE,144384
+primesieve-2.2.0.dist-info/LICENSE,sha256=pizvlXEHd-VhkqU-6hXOSRJw1ChX-UGr0nRCYH67vWY,1148
+primesieve-2.2.0.dist-info/METADATA,sha256=nVOPHy9Xdr1dZMFDhBU994zaRKKCUvw2wksoXRHoTHo,230
+primesieve-2.2.0.dist-info/WHEEL,sha256=FLKKguMQuZ4WHVBty5iiZ9evDhm22pJLvfCt6in1SfU,102
+primesieve-2.2.0.dist-info/top_level.txt,sha256=ZLUugzsdRvsXi87pdh37X7aHNBhPqQUCqWcenmqShT4,11
+primesieve-2.2.0.dist-info/RECORD,,
