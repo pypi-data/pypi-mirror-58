@@ -1,0 +1,5 @@
+optlang>=1.4.3
+sbtab>=0.9.72
+matplotlib>=3.0.0
+equilibrator-cache==0.2.6
+component-contribution==0.2.6
