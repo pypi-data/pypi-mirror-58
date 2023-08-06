@@ -1,0 +1,3 @@
+include LICENSE.txt
+global-exclude .DS_Store  # annoying files scattered about on a Mac
+
