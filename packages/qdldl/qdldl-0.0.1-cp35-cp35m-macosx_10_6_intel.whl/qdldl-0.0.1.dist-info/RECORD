@@ -1,0 +1,11 @@
+qdldl/__init__.py,sha256=73VvVkbclHlW-py5OadQin2BwmlmwXJzNmZVZFDfOsY,40
+qdldl/_qdldl.c,sha256=I5y-VwLo_ujC8UEgoCUVvGIzZ_DflCpr1boma__7zwQ,907168
+qdldl/_qdldl.cpython-35m-darwin.so,sha256=Jz2JnaFPdbLzmjWSJGdbkiQu91qRytNxdTaY9rWT8v0,478584
+qdldl/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qdldl/tests/test_solve_ls.py,sha256=lNjEU-UYW5GGa24NVcYVDf8PkyNAn6QrLpcaTO5Fgw4,957
+qdldl/tests/utils.py,sha256=VnsDf3pl5_w0oFKqQTNW8T-Wf-gJtE4V8kGoGAy-80g,114
+qdldl-0.0.1.dist-info/LICENSE,sha256=ZW9jrDuUpunJBqzY8n5-JgoCk9GddzIL-ZEy9c0tHeo,11376
+qdldl-0.0.1.dist-info/METADATA,sha256=BzMPV-lUluGMD8oRUv1Dtb9X1Bx7ywJIB_-O9GyvX9w,1083
+qdldl-0.0.1.dist-info/WHEEL,sha256=BdYa13sefkHen0XB9IN0lCOeSQrE46zSZzvnFK5xexs,109
+qdldl-0.0.1.dist-info/top_level.txt,sha256=cfcVd2gDnrQ_k51fMVwR-2FG-7xFJDEAcTA7o6ppv-A,6
+qdldl-0.0.1.dist-info/RECORD,,
