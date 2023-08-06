@@ -1,0 +1,10 @@
+item_based_recommender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+item_based_recommender/_nbdev.py,sha256=3vrOqFSTltydPT6b7Ypbw7BfvZm9gLi8125Ij-07Hy0,368
+item_based_recommender/core.py,sha256=pHhwaSSbFwstmOS9H4-_t0uJ80_vr7KHKO19FDMG1CQ,106
+item_based_recommender/model.py,sha256=TJaTYqddF88iR-q9EFoId5qi0iHJZVw5N6nsIneu_IE,2198
+item_based_recommender-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+item_based_recommender-1.0.0.dist-info/METADATA,sha256=omvZ8-j2eRh4E5pQSZhyUZOU8nPpzNkbEf3jAnKRtPI,1165
+item_based_recommender-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+item_based_recommender-1.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+item_based_recommender-1.0.0.dist-info/top_level.txt,sha256=R1F17PXZHSABChpRMrnPJJZDAyY0IdStmmz_NCXcUgU,23
+item_based_recommender-1.0.0.dist-info/RECORD,,
