@@ -1,0 +1,11 @@
+controller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+controller/contact_handler.py,sha256=PrJq3pKLlKny98tzpBhDR3ebfQMeOXgd7m7cwkuiqOs,5209
+controller/record_validation.py,sha256=q2zAHQAg8V_bqyYUvrnXmHSPWEivm_O6_Zy3gDCB3Ac,2585
+controller/smtp_controller.py,sha256=k_9lyhtWJU1PPeXBY1U5BVtyeQNSAN8qr1ZocndviU0,3036
+unittests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unittests/test_email_controller.py,sha256=Vy_JLqZtxY2zb3oMO0azNAgqIsKZHpskhGf3XaYhPyU,1421
+email_controller-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+email_controller-0.0.1.dist-info/METADATA,sha256=QEdSnqKatSo3Y_gD9-3qnBsCkc_14PZaycVmsFsZyOY,572
+email_controller-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+email_controller-0.0.1.dist-info/top_level.txt,sha256=c40QH6qJ3qFTr52KGVeNbp9-WlfytnZIVoryLLPCh78,21
+email_controller-0.0.1.dist-info/RECORD,,
