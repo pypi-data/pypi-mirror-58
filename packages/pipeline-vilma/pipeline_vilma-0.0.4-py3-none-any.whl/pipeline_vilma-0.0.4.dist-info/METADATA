@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pipeline-vilma
+Version: 0.0.4
+Summary: Data pipeline
+Home-page: https://github.com/cjcbusatto/pipeline-vilma
+Author: Claudio Busatto
+Author-email: cjcbusatto@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pymongo (==3.4.0)
+Requires-Dist: loguru (==0.3.2)
+Requires-Dist: pika (==1.1.0)
+
+# Pipeline Vilma
+
+## Configuration
+
+```python
+options = {
+    "messager": {
+        "server": "192.168.0.202",
+        "queues": {
+            "provider-to-collector": "p2c",
+            "collector-to-instancer": "c2i",
+            "instancer-to-estimator": "i2e",
+            "estimator-to-app": "e2a"
+        }
+    },
+    "database": {
+        "url": "mongodb://localhost:27017/multisensor",
+        "name": "multisensor",
+        "collections": {
+            "collector": "collector"
+        }
+    }
+}
+```
+
+## Provider
+
+## Collector
+
+## Instancer
+
+## Messager
+
+
