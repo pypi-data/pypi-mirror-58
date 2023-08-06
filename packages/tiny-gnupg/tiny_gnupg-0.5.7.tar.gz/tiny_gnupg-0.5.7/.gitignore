@@ -1,0 +1,17 @@
+.pytest_cache
+__pycache__
+private-keys-v1.d
+openpgp-revocs.d
+pubring.kbx~
+pubring.kbx
+random_seed
+trustdb.gpg
+sshcontrol
+tofu.db
+crls.d
+.coverage
+htmlcov
+build
+dist
+venv
+env
