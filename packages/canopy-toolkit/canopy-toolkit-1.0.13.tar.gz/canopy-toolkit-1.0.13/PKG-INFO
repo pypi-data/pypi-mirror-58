@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: canopy-toolkit
+Version: 1.0.13
+Summary: Nifty utilities to access Canopy resources via python.
+Home-page: https://github.com/Mesitis/aws-lambdas/utilities/canopy-toolkit
+Author: Niranjan Rajendran
+Author-email: niranjan.rajendran@canopy.cloud
+License: proprietary
+Description: 
+        ### Canopy Python Toolkit
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: asyncpg
+Provides-Extra: all
+Provides-Extra: crypto
+Provides-Extra: api
+Provides-Extra: psycopg2
