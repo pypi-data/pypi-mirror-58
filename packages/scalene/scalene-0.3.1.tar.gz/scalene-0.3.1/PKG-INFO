@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: scalene
+Version: 0.3.1
+Summary: Scalene: A high-resolution, low-overhead CPU and memory profiler for Python
+Home-page: https://github.com/emeryberger/scalene
+Author: Emery Berger
+Author-email: emery@cs.umass.edu
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
