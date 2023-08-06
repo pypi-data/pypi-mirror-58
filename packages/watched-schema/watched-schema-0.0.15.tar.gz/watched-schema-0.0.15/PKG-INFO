@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: watched-schema
+Version: 0.0.15
+Summary: WATCHED.com JSON Schema
+Home-page: https://github.com/watchedcom/schema
+Author: WATCHED
+Author-email: dev@watched.com
+License: UNKNOWN
+Description: # WATCHED.com python SDK
+        
+        For more informations, see the WATCHED API documentation.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
