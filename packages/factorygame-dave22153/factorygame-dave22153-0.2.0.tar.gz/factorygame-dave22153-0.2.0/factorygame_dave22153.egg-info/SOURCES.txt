@@ -1,0 +1,8 @@
+README.md
+setup.py
+factorygame/__init__.py
+factorygame/factory_engine.py
+factorygame_dave22153.egg-info/PKG-INFO
+factorygame_dave22153.egg-info/SOURCES.txt
+factorygame_dave22153.egg-info/dependency_links.txt
+factorygame_dave22153.egg-info/top_level.txt
