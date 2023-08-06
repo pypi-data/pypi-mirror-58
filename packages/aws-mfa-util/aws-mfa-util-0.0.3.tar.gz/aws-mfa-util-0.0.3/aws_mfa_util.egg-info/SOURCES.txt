@@ -1,0 +1,12 @@
+README.md
+setup.py
+aws_mfa_util/__init__.py
+aws_mfa_util/credential.py
+aws_mfa_util/util.py
+aws_mfa_util.egg-info/PKG-INFO
+aws_mfa_util.egg-info/SOURCES.txt
+aws_mfa_util.egg-info/dependency_links.txt
+aws_mfa_util.egg-info/requires.txt
+aws_mfa_util.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py
