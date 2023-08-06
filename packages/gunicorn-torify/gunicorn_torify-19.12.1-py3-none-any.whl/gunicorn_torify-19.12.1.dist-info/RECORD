@@ -1,0 +1,9 @@
+gunicorn_torify/__init__.py,sha256=i9gGO7GE3k79SKxyDllz3jcS1WmsQnfc5a6NiZSYqBo,102
+gunicorn_torify/_version.py,sha256=_cokC4FBwZ_t654w2nSgc01dcSAq5xs4lLB9Fd7bivo,285
+gunicorn_torify/api.py,sha256=GBjazapoh8HDzbanzePnrHNcZcnFDa8VKkemxG_tqaA,1185
+gunicorn_torify/config.py,sha256=tdvT9JKODsc7z3NS2oEhr6hU4YkBj8RyojUa12xz-KU,177
+gunicorn_torify-19.12.1.dist-info/LICENSE,sha256=Hr-6bpWJamdM5nqhNFH6RN5T7XgxCRjpqkZAXrHqF3w,1499
+gunicorn_torify-19.12.1.dist-info/METADATA,sha256=Vsw4AuN3xV2pyHkhPRGxpN6POLS_3MlSGAbACUA5bLU,1848
+gunicorn_torify-19.12.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gunicorn_torify-19.12.1.dist-info/top_level.txt,sha256=r3fryMM6pqGvxBU6JxYMlo18WFHCLC8H3u8tAyVGEKo,16
+gunicorn_torify-19.12.1.dist-info/RECORD,,
