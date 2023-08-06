@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sht3x
+Version: 0.0.4
+Summary: Sht3x python driver for stickytoe framework
+Home-page: https://github.com/ryanchaiyakul/sht3x
+Author: Ryan Chaiyakul
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: smbus2 (==0.3.0)
+Requires-Dist: stickytoe-device (==0.0.1)
+
+# Sht3x
+
+Sht3x stickytoe_device
+
