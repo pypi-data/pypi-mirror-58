@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dynamic-window-approach
+Version: 1.0.1
+Summary: Dynamic Window Approach algorithm written in C with Python Bindings
+Home-page: https://github.com/goktug97/DynamicWindowApproach
+Author: Göktuğ Karakaşlı
+Author-email: karakasligk@gmail.com
+License: MIT
+Download-URL: https://github.com/goktug97/DynamicWindowApproach/archive/v1.0.1.tar.gz
+Description: Dynamic Window Approach
+        ===================================
+        
+        ### License
+        MIT License.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
