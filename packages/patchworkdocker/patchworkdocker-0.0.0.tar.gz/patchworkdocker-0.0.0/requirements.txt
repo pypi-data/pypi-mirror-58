@@ -1,0 +1,5 @@
+GitPython
+patch==1.*
+logzero
+frozendict
+thriftybuilder>=1.0.3

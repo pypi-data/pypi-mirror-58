@@ -1,0 +1,3 @@
+[console_scripts]
+patchworkdocker = patchworkdocker.cli:entrypoint
+
