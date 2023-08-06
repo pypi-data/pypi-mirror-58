@@ -1,0 +1,7 @@
+README.rst
+setup.py
+pywin32_cffi_spellcheck.egg-info/PKG-INFO
+pywin32_cffi_spellcheck.egg-info/SOURCES.txt
+pywin32_cffi_spellcheck.egg-info/dependency_links.txt
+pywin32_cffi_spellcheck.egg-info/requires.txt
+pywin32_cffi_spellcheck.egg-info/top_level.txt

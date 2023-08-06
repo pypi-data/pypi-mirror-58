@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pywin32-cffi-spellcheck
+Version: 0.1
+Summary: cffi bindings for Spellcheck.h on Windows
+Home-page: https://github.com/pyenchant/pywin32-cffi-spellcheck
+Author: Dimitri Merejkowsky
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
