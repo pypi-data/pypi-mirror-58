@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: TheSimpleTimer
+Version: 0.1.0
+Summary: Simple Timer with no real features
+Home-page: https://github.com/cowboy8625/TheSimpleTimer
+Author: Cowboy8625
+Author-email: cowboy8625@protonmail.com
+License: Apache License
+Description: # The Simple Timer
+        
+        To install simply do
+        `pip install TheSimpleTimer`
+        
+        To run app simply go to Terminal and type
+        `simpletimer` 
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

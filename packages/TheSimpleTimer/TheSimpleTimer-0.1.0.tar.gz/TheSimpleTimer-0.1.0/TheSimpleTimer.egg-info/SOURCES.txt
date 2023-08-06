@@ -1,0 +1,11 @@
+README.md
+setup.py
+TheSimpleTimer.egg-info/PKG-INFO
+TheSimpleTimer.egg-info/SOURCES.txt
+TheSimpleTimer.egg-info/dependency_links.txt
+TheSimpleTimer.egg-info/not-zip-safe
+TheSimpleTimer.egg-info/top_level.txt
+bin/simpletimer
+bin/simpletimer.bat
+thesimpletimer/__main__.py
+thesimpletimer/simpletimer.py
