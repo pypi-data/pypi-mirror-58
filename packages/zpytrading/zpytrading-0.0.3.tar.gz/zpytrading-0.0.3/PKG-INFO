@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: zpytrading
+Version: 0.0.3
+Summary: Zinnion Streaming / Trading SDK
+Home-page: https://github.com/Zinnion/zpytrading
+Author: Mauro Delazeri
+Author-email: mauro@zinnion.com
+License: MIT
+Download-URL: https://github.com/Zinnion/zpytrading/archive/v0.0.3.tar.gz
+Description: # zpytrading
+        Python - Zinnion SDK
+        
+Keywords: zpytrading,zinnion,sdk,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
