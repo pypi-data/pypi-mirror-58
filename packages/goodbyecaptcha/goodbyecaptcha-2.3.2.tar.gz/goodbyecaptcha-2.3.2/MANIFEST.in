@@ -1,0 +1,6 @@
+include goodbyecaptcha/data/*.*
+include goodbyecaptcha/models/*.*
+include goodbyecaptcha/goodbyecaptcha.example.yaml
+include README.rst
+include setup.py
+include CHANGES.md
