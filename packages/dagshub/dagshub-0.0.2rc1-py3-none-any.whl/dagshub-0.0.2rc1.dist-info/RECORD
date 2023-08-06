@@ -1,0 +1,10 @@
+dagshub/__init__.py,sha256=dApdlTzcleFm2nVK4htd7Nb0V7Iz4NRXxTIngaVIiRs,103
+dagshub/logger.py,sha256=Q3NPp8G7y11uSkH1zCFcSS3JYKq2gW24R-TUEdVXdD4,6326
+dagshub/pytorch_lightning/__init__.py,sha256=VGRNkTL7m4osCUc_aJadLk6gtIc-uQ-8Sw0SmXp5oPM,67
+dagshub/pytorch_lightning/logger.py,sha256=bi7e716jJ6MCGjtI9bpcadt0L7_QMZzKKjPGNgaiGBU,2661
+dagshub/pytorch_lightning/utils.py,sha256=lSr0bL3JUufP14qbOWRmmfI-YPa-HJ7bQmes8AlymLY,392
+dagshub-0.0.2rc1.dist-info/LICENSE,sha256=-ZxhsZjHdYn1Pnhun6Bdue3MM5MzU3CYEfPXxcanQhk,1064
+dagshub-0.0.2rc1.dist-info/METADATA,sha256=d7HfzovDv2DNZrRP1-t3qTCCZXTkQW7e8cp1XdT2sSM,2708
+dagshub-0.0.2rc1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagshub-0.0.2rc1.dist-info/top_level.txt,sha256=95uiJXwlAWNmZ2_c9RIipo0pK04Kg5jg1iH7J6BUlK0,8
+dagshub-0.0.2rc1.dist-info/RECORD,,
