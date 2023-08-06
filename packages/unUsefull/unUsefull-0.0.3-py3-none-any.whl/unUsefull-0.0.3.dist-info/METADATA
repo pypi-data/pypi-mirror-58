@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: unUsefull
+Version: 0.0.3
+Summary: Useless tools
+Home-page: https://github.com/outforpublic/uTools
+Author: outforpublic
+Author-email: fredboi207@gmail.com.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.5
+Description-Content-Type: text/markdown
+
+# unUsefull
+
+This is a bunch of Useless Tools
+
