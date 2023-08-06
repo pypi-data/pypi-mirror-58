@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: web-parser
+Version: 0.0.1
+Summary: This is a parser tool which made all the stuff for you
+Home-page: https://www.bit.ly/bestf2l
+Author: Ivan Vinogradov
+Author-email: author@example.com
+License: UNKNOWN
+Description: this will come later
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
