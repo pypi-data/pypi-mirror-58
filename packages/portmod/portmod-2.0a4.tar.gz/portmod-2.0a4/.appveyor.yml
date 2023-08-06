@@ -1,0 +1,15 @@
+image: Visual Studio 2019
+environment:
+  PATH: '%PATH%;c:\python38\Scripts'
+cache: omwcmd.exe
+build_script:
+- ps: >-
+    pip3 install .
+
+    iwr https://gitlab.com/portmod/omwcmd/uploads/7c4ee7879b2e129152021c43c9fae16d/omwcmd.exe -OutFile c:\python38\Scripts\omwcmd.exe
+
+test_script:
+- cmd: >-
+    pip3 install pytest pytest-cov
+
+    pytest --cov=portmod || exit /b 0
