@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: visions
+Version: 0.1.1
+Summary: Visions
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Provides-Extra: type_geometry
+Provides-Extra: type_image_path
+Provides-Extra: network_plot
+Provides-Extra: dev_docs
+Provides-Extra: all
