@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: tkautoconfig
+Version: 0.1
+Summary: Create metadata file automatically for Teko
+Home-page: https://git.teko.vn/data/libs/auto-config-metadata
+Author: Nguyễn Ngọc Trâm
+Author-email: tram.nn@teko.vn
+License: MIT
+Download-URL: https://git.teko.vn/data/libs/auto-config-metadata/-/archive/v0.1/auto-config-metadata-v0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tkautoconfig/create_metadata.py
+tkautoconfig.egg-info/PKG-INFO
+tkautoconfig.egg-info/SOURCES.txt
+tkautoconfig.egg-info/dependency_links.txt
+tkautoconfig.egg-info/not-zip-safe
+tkautoconfig.egg-info/requires.txt
+tkautoconfig.egg-info/top_level.txt
