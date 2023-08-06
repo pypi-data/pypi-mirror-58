@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: gxdata
+Version: 0.0.2a3
+Summary: data prepare toolkit
+Home-page: UNKNOWN
+Author: yat
+Author-email: liangyi@bupt.edu.cn
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

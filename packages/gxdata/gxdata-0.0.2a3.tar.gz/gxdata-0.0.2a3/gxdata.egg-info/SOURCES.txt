@@ -1,0 +1,9 @@
+setup.py
+gxdata/__init__.py
+gxdata/general.py
+gxdata/jsoner.py
+gxdata/texter.py
+gxdata.egg-info/PKG-INFO
+gxdata.egg-info/SOURCES.txt
+gxdata.egg-info/dependency_links.txt
+gxdata.egg-info/top_level.txt
