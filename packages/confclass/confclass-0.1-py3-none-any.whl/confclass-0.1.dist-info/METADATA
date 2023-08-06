@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: confclass
+Version: 0.1
+Summary: A python package for working with program configuration parameters
+Home-page: https://github.com/eladn/confclass
+Author: Elad Nachmias
+Author-email: eladnah@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: yaml
+
+# confclass
+Python package for working with program configuration parameters
+
+
