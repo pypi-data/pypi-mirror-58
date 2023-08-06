@@ -1,0 +1,9 @@
+README.md
+setup.py
+spider/__init__.py
+spider/__main__.py
+spider/proxy.py
+spider_proxy.egg-info/PKG-INFO
+spider_proxy.egg-info/SOURCES.txt
+spider_proxy.egg-info/dependency_links.txt
+spider_proxy.egg-info/top_level.txt
