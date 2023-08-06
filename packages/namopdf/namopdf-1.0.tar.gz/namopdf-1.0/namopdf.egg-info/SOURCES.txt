@@ -1,0 +1,6 @@
+README.md
+setup.py
+namopdf.egg-info/PKG-INFO
+namopdf.egg-info/SOURCES.txt
+namopdf.egg-info/dependency_links.txt
+namopdf.egg-info/top_level.txt
