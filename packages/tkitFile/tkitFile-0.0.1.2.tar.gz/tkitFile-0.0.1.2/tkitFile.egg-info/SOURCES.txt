@@ -1,0 +1,10 @@
+setup.py
+tkitFile/__init__.py
+tkitFile/csv.py
+tkitFile/file.py
+tkitFile/tjson.py
+tkitFile.egg-info/PKG-INFO
+tkitFile.egg-info/SOURCES.txt
+tkitFile.egg-info/dependency_links.txt
+tkitFile.egg-info/requires.txt
+tkitFile.egg-info/top_level.txt
