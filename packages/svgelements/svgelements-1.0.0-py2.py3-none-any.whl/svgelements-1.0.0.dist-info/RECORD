@@ -1,0 +1,11 @@
+svg/__init__.py,sha256=h-QyvMVzDNpT3jyVskcSbUVFXxGCRxieFPrvTveZG9k,64
+svg/elements/__init__.py,sha256=_h3C4Cpjni2vCsXlVINypqt3fSiT-H9rv7pumE9msd4,52
+svg/elements/svg_elements.py,sha256=RuespWZvESqg-ptjoE6vv4U1FkNaiedylEjBbfidC2o,237257
+svgelements/__init__.py,sha256=T3uFXSpMUrHMe-R7e-WYUgRqvpe4exDxknnhOpSR98U,50
+svgelements/svgelements.py,sha256=RuespWZvESqg-ptjoE6vv4U1FkNaiedylEjBbfidC2o,237257
+svgelements-1.0.0.dist-info/LICENSE,sha256=BgZ3pivc01sOMmJVTvQ_5U9IzAfUJYiykPhHCz6dMpM,1065
+svgelements-1.0.0.dist-info/METADATA,sha256=scC22J0Y3IYjHslFxkezobvrvqkJJAKeoLUIjZ3jHlM,30462
+svgelements-1.0.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+svgelements-1.0.0.dist-info/top_level.txt,sha256=zk-8nniFwP9KVFWtYh-G49REANrlfaVKggD_l3-2b0c,12
+svgelements-1.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+svgelements-1.0.0.dist-info/RECORD,,
