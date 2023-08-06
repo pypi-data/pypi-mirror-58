@@ -1,0 +1,12 @@
+pytest_mypy_testing/__init__.py,sha256=ixilEQ-vMDxS60GEo3r0rDZLTRiN2-SuQYcxDiURkM8,66
+pytest_mypy_testing/message.py,sha256=jsCMvo0tY7T6AKg_e1_OxpDvdsMl4PvvSPEJqSH_sCE,3507
+pytest_mypy_testing/output_processing.py,sha256=tlheYB5xcMJBqFEeCxZnZ7eNzlcttSPJ8wt0ukYtFME,3026
+pytest_mypy_testing/parser.py,sha256=lrRNVbl8M0SpcIeIcLxwzjwauyITpDtq9bbs6jnIj3g,5793
+pytest_mypy_testing/plugin.py,sha256=vpti_PxDprykVc6OaV-BMQqdU5GfjxOtQREFwIuKVxU,5863
+pytest_mypy_testing/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_mypy_testing/strutil.py,sha256=S_BXCYI1NXVBY8KWHPJMXYzDWsoSspjsn8bXQ7vEkDc,321
+pytest_mypy_testing-0.0.2.dist-info/entry_points.txt,sha256=PjOQUCr3T5rZI23u4nNzpJkAwdkvp7fVPsyRqn_0WMY,52
+pytest_mypy_testing-0.0.2.dist-info/LICENSE,sha256=-dpP93z_8_P8jbtMwKNRiRd31L_dabYnk__qrYPS-1E,1082
+pytest_mypy_testing-0.0.2.dist-info/WHEEL,sha256=BO4rLihzJxX3WFgRFhCLEiuIEjpUSRh92PQXyB9DXS0,99
+pytest_mypy_testing-0.0.2.dist-info/METADATA,sha256=M2RDwYgK0NWwqI8mEEpoXHXQfkTPRqgcj65LXQSY3Tc,3825
+pytest_mypy_testing-0.0.2.dist-info/RECORD,,
