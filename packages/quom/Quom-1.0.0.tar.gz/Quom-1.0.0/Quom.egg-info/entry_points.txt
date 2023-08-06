@@ -1,0 +1,3 @@
+[console_scripts]
+quom = quom.__main__:main
+
