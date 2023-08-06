@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tricolour
+Version: 0.1.7
+Summary: Science Data Processing flagging code, wrapped in dask
+Home-page: https://github.com/ska-sa/tricolour
+Author: Simon Perkins
+Author-email: sperkins@ska.ac.za
+License: UNKNOWN
+Description: =========
+        Tricolour
+        =========
+        
+        A variant of the Science Data Processing flagging code, wrapped in dask,
+        operating on Measurement Sets.
+        
+Keywords: tricolour
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Provides-Extra: testing
