@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: fzf-ueberzogen
+Version: 0.0.1
+Summary: Just a script which allows to use fzf with ueberzug
+Home-page: https://github.com/seebye/fzf-ueberzogen
+Author: Nico Baeurer
+License: GPLv3
+Project-URL: Bug Reports, https://github.com/seebye/fzf-ueberzogen/issues
+Project-URL: Source, https://github.com/seebye/fzf-ueberzogen
+Description: UNKNOWN
+Keywords: image media terminal ui fzf
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
