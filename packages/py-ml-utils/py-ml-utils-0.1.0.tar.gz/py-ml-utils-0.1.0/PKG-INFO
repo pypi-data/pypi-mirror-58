@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: py-ml-utils
+Version: 0.1.0
+Summary: Machine learning utilities.
+Home-page: http://github.com/hbasria/py-ml-utils/
+Author: Hasan Basri
+Author-email: h@basri.me
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Deep Learning,Machine Learning,Reinforcement Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
