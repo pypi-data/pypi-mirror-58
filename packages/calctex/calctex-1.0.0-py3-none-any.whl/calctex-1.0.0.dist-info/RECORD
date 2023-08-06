@@ -1,0 +1,17 @@
+calctex/__init__.py,sha256=Lq7WjCJixGGv3bZFOu1pTG2jzHUBShvF9aHPhIUqVBY,113
+calctex/calc.py,sha256=bc2VP4Ple6P1XlHiKw0983FF26DnVcvnagwMC9z1ldQ,11692
+calctex/common.py,sha256=GxI8GztugFD5bfAMIjnp6NGwHC_tJ7xL_ZvsTJbmmmA,946
+calctex/constants.py,sha256=uyV1CKwe_uLlxCcdGOT2dRylKRvj5AQAcECvmw0QxUQ,100
+calctex/helper.py,sha256=5RLSIxle5jGsm5mvh4BiFm_00gQG4Mg73aLgsEGZB_c,1692
+calctex/value.py,sha256=mDUZyqtwPNCHidR6x5qiVj55dD0FPNCqlYJroZMiZDs,5998
+calctex/view.py,sha256=LsUyKa3woZ9HdL9I5cwMKve9pc58uHN1EbGrIeF--DQ,1468
+calctex/unit/__init__.py,sha256=3suepDWl7HFy0DENB7wRJRgCi_-6M9sQ2kf8mx9jVdQ,20
+calctex/unit/basic.py,sha256=_jMWaZKGgLNcRAy1d7yGXD8ahYbT4xehunO0A0EHHTA,122
+calctex/unit/derived.py,sha256=ODkeml7tjC3rvWdLBOEbDRLBVvoPTrkjys3IhkJpW68,163
+calctex/unit/nonsi.py,sha256=urq3zeFMB_16K2VwTZt0l0ROn1Nhd_p0VdfltrTxRT8,183
+calctex/unit/scale.py,sha256=wr0PjHkfbLhDNzq2GNlfVhorC9XhNgDT5fCfS2ENmTg,117
+calctex/unit/unit.py,sha256=Qmc3s7DWXuXjY8YFE4VrbQbflGioJmxloAzCjdArdJc,8045
+calctex-1.0.0.dist-info/METADATA,sha256=jsuE11-cVP9OCrO_Px0lZ_k3KRVgPNnJTL2RpNJ_l2Y,1782
+calctex-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+calctex-1.0.0.dist-info/top_level.txt,sha256=bh829MUkXDj-jkfP51340mBTUWo6opTnnhsIVI4rcdk,8
+calctex-1.0.0.dist-info/RECORD,,
