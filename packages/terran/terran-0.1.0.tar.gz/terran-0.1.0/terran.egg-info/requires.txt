@@ -1,0 +1,10 @@
+click
+ffmpeg-python
+lycon
+numpy
+pycairo
+requests
+scikit-image
+sklearn
+torch
+torchvision
