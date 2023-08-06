@@ -1,0 +1,11 @@
+wagtailaccessibility/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailaccessibility/jinja2tags.py,sha256=jcU1XspjHl0ZMo076__BvuI8Em9p-PfnapUDhl868iM,624
+wagtailaccessibility/static/js/tota11y.min.js,sha256=JldgAwD1a0HBD8l-PazX6ueZIdmK1FNdTxSb75QRwdw,314991
+wagtailaccessibility/templates/wagtailaccessibility/tota11y.html,sha256=hSWwwTcY6Ow-uPfiSJrQyihDOelPnTiEaMqN8bAlDhM,80
+wagtailaccessibility/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailaccessibility/templatetags/wagtailaccessibility_tags.py,sha256=XKpm0lVjT_Ev1fIQjDSZM8UQiQJsOYLCud8YZSYZoec,380
+wagtail_accessibility-0.2.0.dist-info/LICENSE,sha256=C4yqyig47sF8bRH9FHSfMu2RFUheI7FyqMG1NzUXcSY,1489
+wagtail_accessibility-0.2.0.dist-info/METADATA,sha256=tPCOH-UtAJIMiWMu8_hMDWzZIxnSiJsidn7X8eAv-fI,1842
+wagtail_accessibility-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wagtail_accessibility-0.2.0.dist-info/top_level.txt,sha256=2jiS4ppVmOO6F8jQEEgcv6irYQVZZ92VDkuuRmz8fAY,21
+wagtail_accessibility-0.2.0.dist-info/RECORD,,
