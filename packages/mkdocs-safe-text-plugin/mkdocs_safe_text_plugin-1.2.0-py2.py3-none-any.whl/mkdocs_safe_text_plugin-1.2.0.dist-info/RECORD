@@ -1,0 +1,11 @@
+mkdocssafetext/__init__.py,sha256=FhfXwRjgHVFAXJtmIMNIzD1dkarMe8FemYjc9XLDSJ8,1497
+mkdocssafetext/config.py,sha256=mvmRBVnKhCFnsTlA4ZTE-YYqh607QPYwnplZaFn10fc,3035
+mkdocssafetext/plugin.py,sha256=sP5uM5dxbNJ94-qQhcgG1b1acIX51S4BkyoZMlq3mhA,1993
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_config.py,sha256=G8ZmnD2ZAMz1oIZuFTB3BKJSephfBZ9-dmABMG7Fxn8,3058
+mkdocs_safe_text_plugin-1.2.0.dist-info/LICENSE,sha256=yu-YK3nCtGCdCOHj0NzqRxjKbmVW4Ky6VQFsOn2xAoY,1311
+mkdocs_safe_text_plugin-1.2.0.dist-info/METADATA,sha256=vX76AiepNta_ivFkkE4oGhFA11opKguntJH6z0N73CQ,5458
+mkdocs_safe_text_plugin-1.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+mkdocs_safe_text_plugin-1.2.0.dist-info/entry_points.txt,sha256=kn6neIlUX-XZRMMAU6peE4eC7INjdvy0j9GRuLdHalU,74
+mkdocs_safe_text_plugin-1.2.0.dist-info/top_level.txt,sha256=jV0TV_Q-96-P6Fz5mSshtXwVBjErfnr3Dc2eeM1pvYk,15
+mkdocs_safe_text_plugin-1.2.0.dist-info/RECORD,,
