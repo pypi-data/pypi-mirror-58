@@ -1,0 +1,11 @@
+cython
+matplotlib
+natsort
+numpy
+opencv-python
+pandas
+pillow
+pydicom
+scikit-learn
+SimpleITK
+tqdm
