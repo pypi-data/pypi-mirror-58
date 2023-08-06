@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vk-botting
+Version: 0.4.4
+Summary: A basic package for building async VK bots.
+Home-page: https://github.com/mrdandycorn/vk-botting
+Author: MrDandycorn
+Author-email: ypsen@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# VK-Botting
+
+This is a basic package for building async VK bots.<br>
+It is in very early stages of development so it can be very buggy.<br>
+That is also why it does not have any documentation atm.
+
