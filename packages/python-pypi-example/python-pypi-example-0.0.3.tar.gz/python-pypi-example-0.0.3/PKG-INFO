@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: python-pypi-example
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/family-guy/python-pypi-example.git
+Author: Guy King
+Author-email: grking8@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
