@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: imperial-dateutil
+Version: 0.1.0
+Summary: Utility for imperial dating system that supports both era indomitus system and original system
+Home-page: https://github.com/NovemberOscar/imperial-dateutil
+License: GPL-3.0-only
+Keywords: sanic,jwt,json web token
+Author: Seonghyeon Kim
+Author-email: kim@seonghyeon.dev
+Requires-Python: >=3.5,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/NovemberOscar/imperial-dateutil
+Description-Content-Type: text/markdown
+
+# imperial-dateutil
+Utility for imperial dating system that supports both era indomitus system and original system
+
