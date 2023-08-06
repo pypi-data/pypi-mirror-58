@@ -1,0 +1,27 @@
+{% extends "finances/layout.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Upload Transactions from File
+{% endblock %}
+
+{% block content %}
+
+<form method="POST" enctype="multipart/form-data">
+    {# TODO: Disallow files that are larger than ~3 MB #}
+    {% csrf_token %}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Upload Transactions</legend>
+        {{ form|crispy }}
+    </fieldset>
+
+    <br><br>
+
+    <div class="form-group">
+        <button class="btn btn-outline-secondary" type="submit">
+            Submit File
+        </button>
+    </div>
+</form>
+
+{% endblock %}

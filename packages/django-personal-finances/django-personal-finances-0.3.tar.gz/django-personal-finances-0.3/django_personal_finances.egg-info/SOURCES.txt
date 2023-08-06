@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_personal_finances.egg-info/PKG-INFO
+django_personal_finances.egg-info/SOURCES.txt
+django_personal_finances.egg-info/dependency_links.txt
+django_personal_finances.egg-info/top_level.txt
+finances/static/finances/main.css
+finances/templates/finances/add_budget_categories.html
+finances/templates/finances/add_payment_methods.html
+finances/templates/finances/add_transactions.html
+finances/templates/finances/historic_transactions.html
+finances/templates/finances/index.html
+finances/templates/finances/layout.html
+finances/templates/finances/reports.html
+finances/templates/finances/upload_transactions.html

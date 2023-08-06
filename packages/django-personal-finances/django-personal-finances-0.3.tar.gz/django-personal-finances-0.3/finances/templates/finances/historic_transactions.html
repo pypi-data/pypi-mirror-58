@@ -1,0 +1,25 @@
+{% extends "finances/layout.html" %}
+{% load finances_tags %}
+
+{% block title %}
+View Historic Transactions
+{% endblock %}
+
+{% block content %}
+
+<ul>
+    {% for transaction in object_list %}
+        <li>{{ transaction.date|date:"F j, Y" }}: {{ transaction.amount|currency }}</li>
+    {% endfor %}
+</ul>
+
+<p>
+    {% if previous_month %}
+        Previous Month: {{ previous_month|date:"F Y" }}
+    {% endif %}
+    {% if next_month %}
+        Next Month: {{ next_month|date:"F Y" }}
+    {% endif %}
+</p>
+
+{% endblock %}
