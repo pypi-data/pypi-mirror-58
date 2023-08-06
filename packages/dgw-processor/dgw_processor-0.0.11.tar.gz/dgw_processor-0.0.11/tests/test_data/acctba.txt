@@ -1,0 +1,113 @@
+ ##RA001522
+ ##Queens College
+ ##MAJOR=ACCT-BA
+ ##BA in Accounting
+ ##20192020-99999999
+ 
+ 
+ BEGIN
+ 
+ ##StandAloneBlock
+ 
+ 63 Credits
+    Proxy-Advice "63 credits are required.  You currently have <APPLIED>, "
+    Proxy-Advice "you still need <NEEDED> more."
+ MinGPA 2.0
+   Proxy-Advice "Your GPA is <APPLIED>; a GPA of 2.0 is required"
+ ## MinGrade 1.7
+ 
+ ##Queens policy allows a course to share with the Degree, Major, Minor
+ ##Concentrations and in either Primary or LASAR.
+ ##NonExclusive headers with one block type specified such as Major,
+ ##Minor, Degree and Concentrations, allows the course to share in
+ ##these programs.
+ ##NonExclusive with more than one block type specified e.g. Primary and LASAR
+ ##means the course can only share in either area.
+ 
+ NonExclusive (DEGREE)
+ NonExclusive (MAJOR)
+ NonExclusive (MINOR)
+ NonExclusive (CONC)
+ NonExclusive (OTHER=LASAR)
+ NonExclusive (Other=GENED)
+ NonExclusive (OTHER=GEPATH,OTHER=COLLOPT_GE)
+ NonExclusive (OTHER=WRITINTENS)
+ 
+ ##NonExclusive (OTHER=PRIMARY) removed as courses used for Major can't be used
+ ##for ACE Lang option in PRIMARY (10-14-08)
+ 
+ 
+ MinRes 21 Credits
+   Proxy-Advice "A minimum of 21 credits must be taken in residence."
+ MaxPassfail 0 Credits
+ ##No Transfer 499@ courses can be used to fulfill elective courses.
+ MaxCredits 0 in @ 499, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999
+ 
+ MaxClass 1 in ECON 202, 205, 225
+ MaxClass 1 in ECON 201, 206, 226
+ 
+ ;
+ 
+ REMARK " As of August 1, 2009, admission to the Uniform CPA Examination";
+ REMARK "will require completion of an approved 150 credit program.  The";
+ REMARK "Department of Accounting and Information Systems has already ";
+ REMARK "registered such an approved program with NYS Department of Education.";
+ REMARK "Courses taken only to reach the 150 credit requirement for the CPA";
+ REMARK "Examination are NOT eligible for NYS TAP.";
+ 
+ BeginSub
+   1 Class in ACCT 101 MinGrade 1.7 High-Priority
+     Label "Intro Theory & Practice of Acct I";
+   1 Class in ACCT 102 MinGrade 2.0
+     high-priority
+     Label "Intro Theory & Practice of Acct II";
+   1 Class in ACCT 201 MinGrade 2.0 High-Priority
+     Label "Intermediate Accounting I";
+   1 Class in ACCT 202 MinGrade 2.0  High-Priority
+     Label "Intermediate Accounting II";
+   1 Class in ACCT 261, {Hide-From-Advice 361} MinGrade 2.0  High-Priority
+     Label "Business Law I";
+   1 Class in ACCT 305 MinGrade 2.0  High-Priority
+     Label "Cost Accounting";
+   1 Class in ACCT 306 MinGrade 2.0  High-Priority
+     Label "Quantitative Techniques in Planning & Control";
+   1 Class in ACCT 311 MinGrade 2.0  High-Priority
+     Label "Advanced Accounting";
+   1 Class in ACCT 321 MinGrade 2.0  High-Priority
+     Label "Auditing I";
+   1 Class in ACCT 322 MinGrade 2.0  High-Priority
+     Label "Auditing II";
+   1 Class in ACCT 362, 362W MinGrade 2.0  High-Priority
+     Label "Business Law II";
+   1 Class in ACCT 367 MinGrade 2.0  High-Priority
+     Label "Federal & NY State Taxes on Income";
+   1 Class in ACCT 372 MinGrade 2.0 High-Priority
+     Label "Gov't & Not-for-Profit Accounting & Auditing";
+   1 Class in BUS 241  High-Priority
+     Label "Corporate Finance";
+   1 Class in CSCI 48  High-Priority
+     Label "Computers with Bus App or Personal Computers";
+   1 Class in ECON 101
+     Label "Intro to Macroeconomics";
+   1 Class in ECON 102
+     Label "Intro to Microeconomics";
+   1 Class in ECON 215
+     Label "Money & Banking";
+   1 Class in ECON 249, {HIDE MATH 241}
+     Label "Statistics as Applied to Economics & Business";
+ EndSub
+   Label "REQUIRED COURSES";
+ 
+   1 Class in ACCT 331, 341, 343, 350, 355, 363, 368, 369, 373,
+    382, 391, 382, 393W, 398, {Hide-From-Advice 3913} 
+     Label "Additional Accounting elective course";
+   1 Classes in BUS 243, 247, 341, 341W, 351,
+         ECON 201, 202, {Hide-From-Advice 205,} {Hide-From-Advice 206,}
+      213, 214, 217, 218, 220, {Hide 225, 226,} 227, 229, 242,
+       246, 326, 340, 382, {Hide-From-Advice 240}
+      Label "Electives";
+ 
+ END.
+ 
+ LOG: 06-06-19 DA  Open block as per March 2019 AUR
+

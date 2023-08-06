@@ -1,0 +1,120 @@
+ ##RA000912
+ ##Queens College
+ ##MAJOR=CSCI-BS
+ ##BS in Computer Science
+ ##20182019-99999999
+ 
+ BEGIN
+ 
+ 81 Credits
+    Proxy-Advice "81 credits are required.  You currently have <APPLIED>,"
+    Proxy-Advice "you still need <NEEDED> more."
+ MinGPA 2.0
+   Proxy-Advice "Your GPA is <APPLIED>; a GPA of 2.0 is required"
+ 
+ MinGrade 1.7
+ 
+ ##At least 1/2 of the credits must be taken in residence at Queens  pg 34
+ MinRes 41 Credits
+   Proxy-Advice "A minimum of 41 credits must be taken in residence."
+ 
+ ##Queens policy allows a course to share with the Degree, Major, Minor
+ ##Concentrations and in either Primary or LASAR.
+ ##NonExclusive headers with one block type specified such as Major,
+ ##Minor, Degree and Concentrations, allows the course to share in
+ ##these programs.
+ ##NonExclusive with more than one block type specified e.g. Primary and LASAR
+ ##means the course can only share in either area.
+ 
+ NonExclusive (DEGREE)
+ NonExclusive (MAJOR)
+ NonExclusive (MINOR)
+ NonExclusive (CONC)
+ NonExclusive (OTHER=LASAR)
+ NonExclusive (Other=GENED)
+ NonExclusive (OTHER=GEPATH,OTHER=COLLOPT_GE)
+ NonExclusive (OTHER=WRITINTENS)
+ 
+ ##NonExclusive (OTHER=PRIMARY) removed as courses used for Major can't be used
+ ##for ACE Lang option in PRIMARY (10-14-08)
+ 
+ MaxPassfail 0 Credits
+ ##No Transfer 499@ courses can be used to fulfill elective courses.
+ MaxCredits 0 in @ 499, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999
+ 
+ ##Only 3 credit in CSCI 390 through 399 may be used.
+ MaxCredits 3 in CSCI 390:399
+ ##One Math Course or one Physics course may be used from the following
+ MaxClass 1 in MATH 223, 224, 232, 245, 247, 248, 317, 337, 609, 613,
+      619, 621, 623, 624, 625, 626, 633, 634, 635, 636,
+        PHYS 225, 227, 312
+ 
+ 
+ 
+ ;
+ 
+ BeginSub
+   1 Class in CSCI 111
+     Label "Intro to Algorithmic Problem Solving";
+   1 Class in CSCI 211
+     Label "Object Oriented Programming in C++";
+   1 Class in CSCI 212
+     Label "Object Oriented Programming in Java";
+   1 Class in CSCI 220
+     Label "Discrete Structures";
+   1 Class in CSCI 240
+     Label "Computer Organization & Assembly Language";
+   1 Class in CSCI 313
+     Label "Data Structures";
+   1 Class in CSCI 316
+     Label "Principles of Programming Languages";
+   1 Class in CSCI 320
+     Label "Theory of Computation";
+   1 Class in CSCI 323
+     Label "Design & Analysis of Algorithms";
+   1 Class in CSCI 331
+     Label "Database Systems";
+   1 Class in CSCI 340
+     Label "Operating Systems Principles";
+   1 Class in CSCI 343
+     Label "Computer Architecture";
+   1 Class in CSCI 355
+     Label "Web and Internet Technologies";
+   1 Class in CSCI 370
+     Label "Software Engineering";
+ EndSub
+       MinGrade 2.0
+   Label "REQUIRED CSCI COURSES";
+ 
+ BeginSub
+   1 Class in MATH 120
+     Label "Discrete Mathematics for Computer Science";
+   1 Group in
+     (2 Classes in MATH 151 + 152
+        Label "Calculus/Differentiation/Integration") OR
+     (3 Classes in MATH 141 + 142 + 143
+        Label "Calculus Differentiation, Integration, Infinite")
+     Label "CALCULUS REQUIREMENT";
+   1 Class in MATH 241, 611, 621
+     Label "Probability";
+   1 Class in MATH 231, 237
+     Label "Linear Algebra I or Honors Linear Algebra";
+ EndSub
+   Label "MATH REQUIREMENT";
+ 
+   18 Credits in CSCI 300:396 (With Hide DWGrade>=2.0), 3811:3814 (WITH DWGrade >= 2.0),
+  BIOL 330,
+  MATH 202, 223, 224, 232, 224, 242, 245, 247, 248, 317, 333, 337,
+       609, 613, 619, 621, 623, 624, 625, 626, 633, 634, 635, 636,
+  PHYS 225, 227, 265, 311
+       MaxPerDisc 1 Class (MATH, BIOL, PHYS)
+ 
+     Label "Electives";
+ REMARK "Eighteen credits of CSCI 300-396 may be used for electives.";
+ REMARK "One approved course from Biology, Math, or Physics may be used.";
+ 
+ END.
+ 
+ LOG: 08-20-18 KH  Opened block for June 18 CUR
+ LOG: 07-16-19 DA  Updated grade rule of CSCI electives
+

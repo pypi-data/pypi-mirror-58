@@ -1,0 +1,115 @@
+ ##RA001240
+ ##Queens College
+ ##MAJOR=PHYS-BA
+ ##BA in Physics
+ ##20152016-99999999
+
+
+
+ BEGIN
+
+
+ 44 Credits
+    Proxy-Advice "44 credits are required.  You currently have <APPLIED>, "
+    Proxy-Advice "you still need <NEEDED> more."
+
+ ##At least 1/3 of the credits must be taken in residence at Queens  pg 34
+ MinRes 18 Credits
+   Proxy-Advice "A minimum of 18credits must be taken in residence."
+
+
+ ##Queens policy allows a course to share with the Degree, Major, Minor
+ ##Concentrations and in either Primary or LASAR.
+ ##NonExclusive headers with one block type specified such as Major,
+ ##Minor, Degree and Concentrations, allows the course to share in
+ ##these programs.
+ ##NonExclusive with more than one block type specified e.g. Primary and LASAR
+ ##means the course can only share in either area.
+
+ NonExclusive (DEGREE)
+ NonExclusive (MAJOR)
+ NonExclusive (MINOR)
+ NonExclusive (CONC)
+ NonExclusive (OTHER=LASAR)
+ NonExclusive (Other=GENED)
+ NonExclusive (OTHER=GEPATH,OTHER=COLLOPT_GE)
+ NonExclusive (OTHER=WRITINTENS)
+
+ ##NonExclusive (OTHER=PRIMARY) removed as courses used for Major can't be used
+ ##for ACE Lang option in PRIMARY (10-14-08)
+
+ MaxPassfail 0 Credits
+ ##No Transfer 499@ courses can be used to fulfill elective courses.
+ MaxCredits 0 in @ 499, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999
+
+ MinGrade 2.0
+
+
+ ;
+
+ BeginSub
+
+ 1 Group in
+     (2 Classes in PHYS 1454 + 1451
+        Label "Principles of Physics I Lec & Lab") OR
+     (1 Class in PHYS 145
+        Hide-Rule
+        Label "Principles of Physics I")
+     Label "Physics I Requirement";
+   1 Group in
+     (2 Classes in PHYS 1464 + 1461
+        Label "Principles of Physics II Lec & Lab") OR
+     (1 Class in PHYS 146
+     Hide-Rule
+     Label "Principles of Physics II")
+     Label "Physics II Requirement";
+   1 Class in PHYS 222
+     Label "Optics";
+   1 Class in PHYS 233
+     Label "Intermediate Methods of Mathematical Physics I";
+   1 Class in PHYS 234
+     Label "Intermediate Methods of Mathematical Physics II";
+   1 Class in PHYS 235
+     Label "Classical Physics Laboratory I";
+   1 Class in PHYS 237
+     Label "Mechanics";
+   1 Class in PHYS 242, 243
+     Label "Thermodynamics";
+   1 Class in PHYS 260
+     Label "Introduction to Modern Physics";
+   1 Class in PHYS 310
+     Label "Electromagnetism";
+   1 Class in PHYS 377
+     Label "Modern Physics Laboratory";
+   1 Course in PHYS 2@@ Except PHYS 204, 207
+     Label "Electives";
+ EndSub
+   Label "REQUIRED COURSES";
+
+
+
+  1 Group in
+     (4 Classes in MATH 141 + 142 + 143 + 201
+        Label "4 Course Calculus Series") OR
+     (3 Classes in MATH 151 + 152 + 201
+        Label "3 Course Calculus Series")
+     Label "Calculus/Differentiation/Integration/Infinite";
+
+
+   1 BlockType (CONC)
+     Label "Concentration Requirements";
+ REMARK "Students MUST select a concentration in Physics or Applied"
+ REMARK "Physics to complete requirements for the major. Additional credits"
+ REMARK "are required for these concentrations."
+
+
+
+
+
+ END.
+
+ LOG: 04-06-15 KH  Open block as per February 2015 CUR
+ LOG: 06-11-15 KH  Update as per Feb 2015 CUR
+ LOG: 11-22-16 KH  Corrected per Feb 2015 CUR
+ 
+
