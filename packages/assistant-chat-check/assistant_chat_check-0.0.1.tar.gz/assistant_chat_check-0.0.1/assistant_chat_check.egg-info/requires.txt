@@ -1,0 +1,4 @@
+sklearn
+pymongo
+pubsub_ncs
+tensorflow==1.14.0
