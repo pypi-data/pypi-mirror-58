@@ -1,0 +1,6 @@
+[console_scripts]
+e = eln.app:cli
+
+[eln.commands]
+
+
