@@ -1,0 +1,16 @@
+segno/__init__.py,sha256=YcmVY4nPRTn6pCqsLtwjPa5QiQVV5UYn7hUJmbbe9lU,41106
+segno/cli.py,sha256=iSQPGc8hV5ytZCORfueKNn--2jSzIz4aFUsBr-JVTRM,13570
+segno/colors.py,sha256=TTZjNoyZMVacwKPAGi0VEG4DUd-pBprxI7gQrx0i3PU,13244
+segno/consts.py,sha256=GzXyOv7LW1bSWifKnHb_cparpH5qI5eL6AoDijPXjwg,27192
+segno/encoder.py,sha256=4GL17oDb1vRSWiq3FduGosLr1AMjM-y5hYFNM8jYYJg,66606
+segno/helpers.py,sha256=87MGBEE1zu864SYc-pHo5Di-U_2CJ5T7bWkEkKFK-Ac,26047
+segno/moduletypes.py,sha256=FTxwiZy5SBl_SDPczyrfciYytZ4zVjiqAOY935PQQz8,1609
+segno/utils.py,sha256=ckBzZ3_sGQ0WZrI7Y2_4_S7DRQzyocq8nhtqAz5kPE4,10027
+segno/writers.py,sha256=_EVXLhx8ArBYXnFqjKI_i3ZL-mK3fQ-Dd4cfITQNmtM,49378
+segno-0.3.5.data/data/share/man/man1/segno.1,sha256=S7bi60wLnMxbmpjB2N264vhROfQpkoMJE0UtLIYEfNE,8924
+segno-0.3.5.dist-info/LICENSE,sha256=ddhB1R6J5yosPDL5rCW6Cx2Qh81xaQUjnlKfy0CXYXk,1503
+segno-0.3.5.dist-info/METADATA,sha256=qQs9lbHS1RIFEkTptRk7d4aF5dGbg17z3aTjvqrzQSQ,15971
+segno-0.3.5.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+segno-0.3.5.dist-info/entry_points.txt,sha256=x6ukE-knkpjGHj-WR4fIABHkLas_qR7KomM4MR6G83o,42
+segno-0.3.5.dist-info/top_level.txt,sha256=IGWNnN4AkWRjwVbFF-9oU_bm_NDRKLzGHGtN0I_kbws,6
+segno-0.3.5.dist-info/RECORD,,
