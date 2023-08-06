@@ -1,0 +1,4 @@
+path>=13.1.0
+equilibrator-cache==0.2.6
+component-contribution==0.2.6
+equilibrator-api==0.2.6
