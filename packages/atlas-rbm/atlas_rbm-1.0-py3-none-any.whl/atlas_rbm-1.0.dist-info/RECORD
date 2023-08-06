@@ -1,0 +1,17 @@
+atlas-rbm/__init__.py,sha256=VHlrnVtF83B566-rm_Vby8JSN76RkYnxZB9Vh3r507U,108
+atlas-rbm/_version.py,sha256=1NLBy0MXVPczXeQL1Kzi79787JN6EBLzHBDl6qd0DkE,13680
+atlas_rbm-1.0.data/data/notebooks/Expand Metabolic Network.ipynb/Expand Metabolic Network.ipynb,sha256=h7kcc2FgLaqLlLw-jXFvHFBcZiiaKWUuJZgm_P6OXNA,2093
+atlas_rbm-1.0.data/data/notebooks/Monomer+Initials+Observables from metabolic network.ipynb/Monomer+Initials+Observables from metabolic network.ipynb,sha256=ro8NznttRtvv4flAeKHVb3v5yVov-VeLpC6pZhKaOIs,350340
+atlas_rbm-1.0.data/data/notebooks/Rules from SigmaFactors x Architecture.ipynb/Rules from SigmaFactors x Architecture.ipynb,sha256=lT4X4g1sTENuJtiHUkfMuaTOHa6axvwgw6MfEuDVLWg,167820
+atlas_rbm-1.0.data/data/notebooks/Rules from genome architecture.ipynb/Rules from genome architecture.ipynb,sha256=OqebOR6hFgpFXNOZCvN__QLAcEfalcwWx1NOT2KykWE,38575
+atlas_rbm-1.0.data/data/notebooks/Rules from metabolic network.ipynb/Rules from metabolic network.ipynb,sha256=mgyy4KVdAEvPmkSVcRMYvfn579kjjUMmsQVptfEz7FQ,5630
+atlas_rbm-1.0.data/data/notebooks/Rules from protein-protein.ipynb/Rules from protein-protein.ipynb,sha256=U5dwRuuvRrLoYQPhniqxv8y3FLvSZgMNRI1z7LJlxBw,13693
+atlas_rbm-1.0.data/data/notebooks/Rules from protein-small compounds.ipynb/Rules from protein-small compounds.ipynb,sha256=g9n3Qg5Hif_Uir4PnDfQxVEnZ1tWZ-gbrry4nRJtRA8,21793
+atlas_rbm-1.0.data/data/notebooks/Rules from tf-tfbs.ipynb/Rules from tf-tfbs.ipynb,sha256=83fSZ41eHwHXmu8wDP-sORhmO2TSbZE00MgWXPmwYMU,38661
+atlas_rbm-1.0.dist-info/DESCRIPTION.rst,sha256=uvo97qz9lFqRTvFu1m75_1Ru55szHFDj2-i0ze467RU,40
+atlas_rbm-1.0.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+atlas_rbm-1.0.dist-info/METADATA,sha256=A41OJHarrLipxb1oHgK8QuuWKkBaZ8GERThvKGb4ZgI,1114
+atlas_rbm-1.0.dist-info/RECORD,,
+atlas_rbm-1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+atlas_rbm-1.0.dist-info/metadata.json,sha256=zkVBgs0rOFg7CHm8U_HEOdoYWqpnmzXHmIaVHtHV_PM,1126
+atlas_rbm-1.0.dist-info/top_level.txt,sha256=KmgYwWJiFOKuVZWoMI4FBi4KRuaWjFHzVb_wNEmHbdo,10
