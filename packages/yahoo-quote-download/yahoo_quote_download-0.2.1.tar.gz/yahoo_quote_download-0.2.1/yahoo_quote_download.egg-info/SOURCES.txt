@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+yahoo_quote_download/__init__.py
+yahoo_quote_download/downloader.py
+yahoo_quote_download/validater.py
+yahoo_quote_download/yqd.py
+yahoo_quote_download.egg-info/PKG-INFO
+yahoo_quote_download.egg-info/SOURCES.txt
+yahoo_quote_download.egg-info/dependency_links.txt
+yahoo_quote_download.egg-info/entry_points.txt
+yahoo_quote_download.egg-info/not-zip-safe
+yahoo_quote_download.egg-info/requires.txt
+yahoo_quote_download.egg-info/top_level.txt
