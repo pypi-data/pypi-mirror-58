@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/ImportResource/__init__.py
+src/ImportResource/_version.py
+src/robotframework_importresource.egg-info/PKG-INFO
+src/robotframework_importresource.egg-info/SOURCES.txt
+src/robotframework_importresource.egg-info/dependency_links.txt
+src/robotframework_importresource.egg-info/requires.txt
+src/robotframework_importresource.egg-info/top_level.txt

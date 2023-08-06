@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: robotframework-importresource
+Version: 0.1.0
+Summary: Tool to import robotframework resource files from python packages
+Home-page: https://github.com/rasjani/robotframework-importresource
+Author: Jani Mikkonen
+Author-email: jani.mikkonen@gmail.com
+License: Apache License 2.0
+Description: ImportResource
+        ==============
+        
+        Tool to import robot framewort resource files from installed python packages.
+        
+        For example, if you want to distribute the keyword files via pip packages, place those 
+        files into a package within folder "rf-resources" and then, within the testdata:
+        
+        ```robotframework
+        Library   ImportResource  resources=yourpackagename;anotherpackage
+        ```
+        
+        
+        See https://github.com/rasjani/robotframework-importresource-testdata for example package
+        used during acceptance tests on how to package your robotframework resource files.
+        
+Keywords: robot framework testing automation
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Testing
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Description-Content-Type: text/markdown
