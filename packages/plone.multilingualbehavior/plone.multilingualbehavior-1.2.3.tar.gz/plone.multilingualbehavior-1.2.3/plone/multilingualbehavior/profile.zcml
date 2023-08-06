@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plone.multilingualbehavior">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plone.multilingualbehavior"
+      description="Dexterity behavior for enabling multilingual extensions"
+      directory="profiles/default"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plone.multilingualbehavior (uninstall)"
+      description="Dexterity behavior for enabling multilingual extensions"
+      directory="profiles/uninstall"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
+</configure>
