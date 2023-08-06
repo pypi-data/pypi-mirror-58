@@ -1,0 +1,8 @@
+README.md
+setup.py
+snippets/__init__.py
+snippets_dxc.egg-info/PKG-INFO
+snippets_dxc.egg-info/SOURCES.txt
+snippets_dxc.egg-info/dependency_links.txt
+snippets_dxc.egg-info/requires.txt
+snippets_dxc.egg-info/top_level.txt
