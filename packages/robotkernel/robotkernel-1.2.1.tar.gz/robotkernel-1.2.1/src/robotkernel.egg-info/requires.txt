@@ -1,0 +1,9 @@
+docutils
+ipykernel
+ipywidgets
+lunr
+nbformat
+pillow
+pygments
+robotframework>=3.1
+setuptools
