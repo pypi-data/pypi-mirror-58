@@ -1,0 +1,126 @@
+language: python
+os: linux
+dist: xenial
+
+python:
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+
+env:
+  - CC=clang
+  - CC=gcc CFLAGS="--coverage -O0"
+
+jobs:
+  include:
+    # Windows tests!
+    - {python: 3.5, os: windows, env: PYTHON_VERSION=3.5.4, language: sh}
+    - {python: 3.6, os: windows, env: PYTHON_VERSION=3.6.8, language: sh}
+    - {python: 3.7, os: windows, env: PYTHON_VERSION=3.7.4, language: sh}
+    - {python: 3.8, os: windows, env: PYTHON_VERSION=3.8.0, language: sh}
+
+    # This "code quality" stage does static analysis and formatting checks.
+    # Platform- and Python-version-independent.
+    # No python version specified, will use the first listed in the python: list.
+    - stage: code quality
+      python: 3.6  # black requires >= 3.6
+      name: "Formatting"
+      install: pip install black
+      before_script: skip
+      script:
+      # Check that python code is formatted
+      - black --quiet --check --diff .
+      # Check that C code is formatted
+      - astyle --recursive --options=dev/astyle.cfg --suffix=none \
+               --dry-run "src/*.c" | awk '/^Formatted/ { exit 1 }'
+      - astyle --recursive --options=dev/astyle.cfg --suffix=none \
+               --exclude=docstrings.h --exclude=fn_bool.h --exclude=pstdint.h \
+               --dry-run "include/fastnumbers/*.h" | awk '/^Formatted/ { exit 1 }'
+    - stage: code quality
+      name: "Static Analysis"
+      install: pip install flake8 flake8-import-order flake8-bugbear pep8-naming
+      before_script: skip
+      script: flake8
+    - stage: code quality
+      name: "Package Validation"
+      install: pip install twine check-manifest
+      before_script: skip
+      script:
+      - check-manifest
+      - python setup.py sdist
+      - twine check dist/*
+
+    # Deployment! This needs to be run once for each major OS,
+    # as well as once more to deploy the source distribution.
+    - stage: deploy
+      name: "Deploy Source Distribution"
+      before_install: skip
+      install: python -m pip install twine
+      before_script: if [ -z $TRAVIS_TAG ]; then export TWINE_REPOSITORY_URL=https://test.pypi.org/legacy/; fi
+      script: python setup.py sdist --format=gztar
+      after_success: python -m twine upload --user SethMMorton --skip-existing dist/fastnumbers*.tar.gz
+    - stage: deploy
+      name: "Build and Deploy Linux Wheels"
+      python: 3.6
+      services: docker
+      env: CIBW_SKIP="cp27-*"
+      before_install: skip
+      install: python -m pip install twine cibuildwheel==1.0.0
+      before_script: if [ -z $TRAVIS_TAG ]; then export TWINE_REPOSITORY_URL=https://test.pypi.org/legacy/; fi
+      script: python -m cibuildwheel --output-dir wheelhouse
+      after_success: python -m twine upload --user SethMMorton --skip-existing wheelhouse/*.whl
+    - stage: deploy
+      name: "Build and Deploy MacOS Wheels"
+      os: osx
+      env: CIBW_SKIP="cp27-*"
+      language: sh
+      before_install: skip
+      install: python -m pip install twine cibuildwheel==1.0.0
+      before_script: if [ -z $TRAVIS_TAG ]; then export TWINE_REPOSITORY_URL=https://test.pypi.org/legacy/; fi
+      script: python -m cibuildwheel --output-dir wheelhouse
+      after_success: python -m twine upload --user SethMMorton --skip-existing wheelhouse/*.whl
+    - stage: deploy
+      name: "Build and Deploy Windows Wheels"
+      os: windows
+      env: [PYTHON_VERSION=3.6.8, CIBW_SKIP="cp27-*"]
+      language: sh
+      install: python -m pip install twine cibuildwheel==1.0.0
+      before_script: if [ -z $TRAVIS_TAG ]; then export TWINE_REPOSITORY_URL=https://test.pypi.org/legacy/; fi
+      script: python -m cibuildwheel --output-dir wheelhouse
+      after_success: python -m twine upload --user SethMMorton --skip-existing wheelhouse/*.whl
+
+before_install:
+- bash dev/ci-install-python.bash
+- source dev/ci-update-path.bash
+
+install:
+- python -m pip install -U pip
+- python -m pip install codecov
+- python -m pip install -r dev/requirements.txt
+
+before_script:
+- python dev/patch_doctest.py
+
+script:
+- python setup.py install
+- python -m doctest fastnumbers
+- pytest --hypothesis-profile=slow-tests --doctest-glob=README.rst
+
+after_success:
+- (test "$CC" == "gcc" && codecov --gcov-args '-o build/temp.*/src') || echo "skipping coverage!"
+
+stages:
+- code quality
+- test
+- name: deploy
+  if: (branch = master OR tag IS present) AND repo = SethMMorton/fastnumbers
+
+cache:
+  - pip
+  - directories:
+    - $HOME/.pyenv_cache
+    - /c/Python35
+    - /c/Python36
+    - /c/Python37
+    - /c/Python38
