@@ -1,0 +1,11 @@
+README.md
+setup.py
+fajita/__init__.py
+fajita/client.py
+fajita/cookie_repository.py
+fajita/fajita.py
+fajita.egg-info/PKG-INFO
+fajita.egg-info/SOURCES.txt
+fajita.egg-info/dependency_links.txt
+fajita.egg-info/requires.txt
+fajita.egg-info/top_level.txt
