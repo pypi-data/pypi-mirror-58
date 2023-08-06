@@ -1,0 +1,7 @@
+README.md
+setup.py
+minimog/__init__.py
+minimog.egg-info/PKG-INFO
+minimog.egg-info/SOURCES.txt
+minimog.egg-info/dependency_links.txt
+minimog.egg-info/top_level.txt
