@@ -1,0 +1,11 @@
+pyhtmlconv/__init__.py,sha256=l7LrqZFtuLf0DCoGyb3_OuiJPsSzeHdhrlESUdwhvH0,81
+pyhtmlconv/compat.py,sha256=GRWLh47DNEY_eGAjGufSUg_p0joB6NxtuWmbEHHitI0,245
+pyhtmlconv/converter.py,sha256=3UUlNY4vrEh4FNS0FqWFYja2DGerFrA8aMJujTWUYnE,2072
+pyhtmlconv/img.py,sha256=oOEJs6Bz5fpXijykt5yc_d_Fpkt5jZaMTSI0GJ0Vc4Y,997
+pyhtmlconv/pdf.py,sha256=2XWLk_6X1aqp4e9Ibs2SLhVDNJ-HJbrE4Aw167eFrJY,513
+pyhtmlconv/tools.py,sha256=fdKJj3RjPQBO9jhZqHe8UvxvPLhSPgzfPVLlUkYgXfg,856
+pyhtmlconv-1.3.dist-info/LICENSE,sha256=C3N5FpFmMu098C_Z2lk6OdvYrQ3ZXLPaLd8x0htwVlI,1072
+pyhtmlconv-1.3.dist-info/METADATA,sha256=G4YCnp9nQrm2Cx7CI5PfmWJDJbFNm-JdnZhKzjL1CKU,1515
+pyhtmlconv-1.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyhtmlconv-1.3.dist-info/top_level.txt,sha256=XMQOMYFX-3PcHf8VlKl75KLj-Fkr4CNc6nW3LMV05Mc,11
+pyhtmlconv-1.3.dist-info/RECORD,,
