@@ -1,0 +1,17 @@
+cmstoolbox>=0.14.3
+CMSMonitoring
+more-itertools
+cherrypy
+mako
+numpy
+scikit-learn
+passlib
+bcrypt
+pyOpenSSL
+pytest>=4.4.2pyyaml>=5.1
+validators
+tabulate
+pymongo<3.5.0
+cx_Oracle
+pandas
+keras
