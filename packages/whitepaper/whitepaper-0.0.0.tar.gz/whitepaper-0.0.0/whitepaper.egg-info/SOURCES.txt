@@ -1,0 +1,8 @@
+setup.py
+whitepaper/__init__.py
+whitepaper/version.py
+whitepaper.egg-info/PKG-INFO
+whitepaper.egg-info/SOURCES.txt
+whitepaper.egg-info/dependency_links.txt
+whitepaper.egg-info/top_level.txt
+whitepaper.egg-info/zip-safe
