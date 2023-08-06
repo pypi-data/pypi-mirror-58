@@ -1,0 +1,13 @@
+#!python
+import sys
+def reverse_text(x):
+      return x[::-1]
+
+try:
+    while True:
+        text=input()
+        print(reverse_text(text))
+except KeyboardInterrupt:
+    sys.exit()
+
+
