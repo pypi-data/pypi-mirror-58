@@ -1,0 +1,13 @@
+lib_off_campus_housing_parser/__init__.py,sha256=JjhORsNHKNpO2O59cfxG7nCMutiO22NoC4ywdHWpNT0,349
+lib_off_campus_housing_parser/__main__.py,sha256=anGuH81a3ANutz8zrqYbz1waOCRbxdyZi6vGsBjg7ZY,400
+lib_off_campus_housing_parser/excel.py,sha256=ZtJ12Y_v8dFSQc5F7hKe30_9FLt3Sn6I1ax7Cct4K90,1500
+lib_off_campus_housing_parser/google_maps.py,sha256=befJNXi7DJ9_dzfX9jqP7Z0ZqKAHpNSbp7-rF-7wyUI,1941
+lib_off_campus_housing_parser/listing.py,sha256=ph1-hx4Pe75CBSHU-UbGtdJSRKthy22FgYbZWz9sBKY,7147
+lib_off_campus_housing_parser/logger.py,sha256=tORekESHxuQZVT6eM5tOzHVX1Uz7XMtx4SES6pCNNgM,7397
+lib_off_campus_housing_parser/off_campus_parser.py,sha256=EdHSFfo9Lp-9aRrsDQh-CBxCrKX3tVLAE_fZ8wFZ5NU,6653
+lib_off_campus_housing_parser-0.1.0.dist-info/LICENSE,sha256=ziEXA3AIuaiUn1qe4cd1XxCESWTYrk4TjN7Qb06J3l8,1575
+lib_off_campus_housing_parser-0.1.0.dist-info/METADATA,sha256=fS5AR-wKDKJPHgtMILrncRdo7T3q5OteZU3iEmvAMBY,891
+lib_off_campus_housing_parser-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+lib_off_campus_housing_parser-0.1.0.dist-info/entry_points.txt,sha256=C1zDO34ifwJ2oOYEu-aJe9SM68P2YmaA3KW3yFZ-hww,84
+lib_off_campus_housing_parser-0.1.0.dist-info/top_level.txt,sha256=oE_IJNjLXc0OWQRG6UEMTB3ft41yJQxZlYXUSYT7Woc,30
+lib_off_campus_housing_parser-0.1.0.dist-info/RECORD,,
