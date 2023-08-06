@@ -1,0 +1,3 @@
+[console_scripts]
+blitz-tui = blitztui.main:main
+
