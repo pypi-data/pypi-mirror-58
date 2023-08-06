@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: alchemy-catalyst
+Version: 0.0.1
+Summary: Alchemy. ML logging & visualization.
+Home-page: https://github.com/catalyst-team/alchemy
+Author: David Kuryakin
+Author-email: dkuryakin@gmail.com
+License: Apache License 2.0
+Description: 
+        # alchemy
+Keywords: Machine Learning,Deep Learning,PyTorch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
