@@ -1,0 +1,10 @@
+README.txt
+setup.py
+skoffice/__init__.py
+skoffice/skoffice.py
+skoffice.egg-info/PKG-INFO
+skoffice.egg-info/SOURCES.txt
+skoffice.egg-info/dependency_links.txt
+skoffice.egg-info/entry_points.txt
+skoffice.egg-info/requires.txt
+skoffice.egg-info/top_level.txt
