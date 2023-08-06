@@ -1,0 +1,10 @@
+parameter,value,type
+Intervals,180,double
+error_time_threhold,20,double
+type_filter,letter_input,list
+reset_statistics_column,False,bool
+open_shotcut,Ctrl+O,string
+exit_shotcut,Ctrl+F2,string
+correct_fre_filter_threhold,10000,double
+error_fre_filter_threhold,0,double
+correct_rate_filter_threhold,100,double
