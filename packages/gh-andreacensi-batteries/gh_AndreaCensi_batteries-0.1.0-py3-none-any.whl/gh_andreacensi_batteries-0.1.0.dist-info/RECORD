@@ -1,0 +1,10 @@
+lib1/__init__.py,sha256=BdwdD9oQFBhqktpYC8Ym6Lffawco5djPM4bxBC2MTqM,45
+lib1/doc1.md,sha256=MWj51uY-fdb-39tJ_bf-484r49sNhdEt_2CuHHU3bhM,35
+lib1/graph.desc.yaml,sha256=3vzPTHWiFSkoM-KAUOVNPwPLnGcpK3YLVA8ZThRAnBc,24
+lib1/graph.pg,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib1/imp1.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib1/mod1.mcdp,sha256=v2Twp3A6kMqBYNYyyiX1lOZr7dJTEiDWJoLujPJkmwk,10
+mcdpshelf.yaml,sha256=rulReqTEOe7Lh2_bKktPBsAh4fv_W4TXrzYAjBIBUco,154
+gh_andreacensi_batteries-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gh_andreacensi_batteries-0.1.0.dist-info/METADATA,sha256=wX_lrCz2gdIlpYMx4xMEigDSyGv8VonZ6_48WlwT9KQ,304
+gh_andreacensi_batteries-0.1.0.dist-info/RECORD,,
