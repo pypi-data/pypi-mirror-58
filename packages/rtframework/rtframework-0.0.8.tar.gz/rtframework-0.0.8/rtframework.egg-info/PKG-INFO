@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: rtframework
+Version: 0.0.8
+Summary: Test framework geared for stress and load testing
+Home-page: https://github.com/Roba-Boba/rtframework
+Author: Alex Makasoff
+Author-email: alexmakasoff@gmail.com
+License: UNKNOWN
+Description: =====================
+        realtimetestframework
+        =====================
+        
+        Test framework for testing applications in real-time
+        
+        .. image:: https://travis-ci.org/Roba-Boba/rtframework.svg?branch=master
+            :target: https://travis-ci.org/Roba-Boba/rtframework
+        
+        .. image:: https://img.shields.io/pypi/v/rtframework.svg?label=version
+           :target: https://pypi.python.org/pypi/rtframework
+           :alt: Latest version
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
