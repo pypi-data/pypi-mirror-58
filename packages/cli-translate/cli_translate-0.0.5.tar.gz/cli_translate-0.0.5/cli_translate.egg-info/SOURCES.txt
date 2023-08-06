@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+cli_translate/__init__.py
+cli_translate/core.py
+cli_translate.egg-info/PKG-INFO
+cli_translate.egg-info/SOURCES.txt
+cli_translate.egg-info/dependency_links.txt
+cli_translate.egg-info/entry_points.txt
+cli_translate.egg-info/requires.txt
+cli_translate.egg-info/top_level.txt
