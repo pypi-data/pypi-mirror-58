@@ -1,0 +1,9 @@
+china_region/__init__.py,sha256=NQYc-14lSGNdYi6rr0BETzgCCooW3ekXddXcGKCmLpM,1285
+china_region/constants.py,sha256=gKM4hoGis08u2y2srT4oAGF4VucpDkyvK_dT56nDGc8,220
+china_region/core.py,sha256=gHQEP_YXeOqti_DBE61OuXNNQlaDQOPFvD3tUUQdhHk,2979
+china_region/region.csv,sha256=XLNlYvBlYSqCp41s9Z3mf7cN9mLEKnXwhptH3B1geF8,177642
+china_region-0.0.9.1.dist-info/LICENSE,sha256=a0yTIw0Kcs8bCIqcSH5FDGEX1gBkl8pPwADsIK0avxY,1093
+china_region-0.0.9.1.dist-info/METADATA,sha256=0MTffpkA-gCPdFYKlLiNkOzsUXi8bKjTyYgVAWDy1T4,3212
+china_region-0.0.9.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+china_region-0.0.9.1.dist-info/top_level.txt,sha256=UvUz7Gf0SWwtAaiTyFFs3TEQkIQ7hX7bISS154tCD9Q,13
+china_region-0.0.9.1.dist-info/RECORD,,
