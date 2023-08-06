@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Abhilash1_optimizers
+Version: 0.1
+Summary: Stochastic Optimizers for gradient convergence including activation functions
+Home-page: https://github.com/abhilash1910/Abhilash1_optimizers_package
+Author: ABHILASH MAJUMDER
+Author-email: abhilash.majumder@hsbc.co.in
+License: MIT
+Download-URL: https://github.com/abhilash1910/Abhilash1_optimizers_package/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: adam,adagrad,adamax,optimizers,stochastic,sgd,rmsprop,momentum,nesterov adam
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
