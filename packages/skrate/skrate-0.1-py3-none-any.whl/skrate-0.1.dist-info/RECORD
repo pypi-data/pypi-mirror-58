@@ -1,0 +1,11 @@
+skrate/__init__.py,sha256=VeV7pcUJuYjvslzLNZKapKe2haFJpMxtQj7WIub1F9I,68
+skrate/game_logic.py,sha256=45TbWBCg9mr-nwZDnBaz32tqZHPzuN6KnL3T0KJsQAU,8520
+skrate/models.py,sha256=Gl3XEeOaU-VgyZVZPrCVJ8oeIf3VZs736nJ0dwIErl4,9323
+skrate/server.py,sha256=FkkIXxOBtd5VziQB4szBizvSLcZICb5ePQ0ZiU1d2vg,6877
+skrate/tricks.py,sha256=oRrziIeiVFzpP41DKYn9QB6gUA9VIEErVl5ZP0yqVnA,3183
+skrate-0.1.data/scripts/run_skrate,sha256=wwIS750szllhHGEh16-DuY-S83BCH1CgD64_-w5iofY,2877
+skrate-0.1.dist-info/LICENSE.txt,sha256=kxPsjTYvbxWlDdS5tInQCK7bCoa2FdypIdjueGsgWc4,1070
+skrate-0.1.dist-info/METADATA,sha256=gn8Apg9DO6jw9fJeAWvmRzBsbr2ujFsL53zsArVJKvg,6206
+skrate-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+skrate-0.1.dist-info/top_level.txt,sha256=TJhN2WgMJY3sP1Q3dY3IyjdWFUeKOI3dsPqaFowJh9E,7
+skrate-0.1.dist-info/RECORD,,
