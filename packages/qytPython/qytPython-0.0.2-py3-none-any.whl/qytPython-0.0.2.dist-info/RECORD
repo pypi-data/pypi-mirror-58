@@ -1,0 +1,10 @@
+qytPython/__init__.py,sha256=DFHiBj2-E3LbesRAfru0Ib3OAKw309anLBZpZ2OjVfE,98
+qytPython/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qytPython/tools/file.py,sha256=jtejSkN6IW7PhODTO8YWtxkru84Y6JqQ4lpCv18xKVA,2997
+qytPython/tools/file_csv.py,sha256=XpZbZIlzd6SmfokSlANeT_-10mx2DZNpHkQ7fA1XoxA,1929
+qytPython/tools/text.py,sha256=P1B7PHCH2gJF7QGY7qTPP-rhFvdAzuGHrGRn5S7rVVY,905
+qytPython-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qytPython-0.0.2.dist-info/METADATA,sha256=7oc-rN9nA_b25FH1fHlutuJ5UC4dmpMP0sNQIz-3fbw,920
+qytPython-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+qytPython-0.0.2.dist-info/top_level.txt,sha256=iQsPgUw16GgIiBvJYxrYZNrpdIfvbiR3d813TjLFqsc,10
+qytPython-0.0.2.dist-info/RECORD,,
