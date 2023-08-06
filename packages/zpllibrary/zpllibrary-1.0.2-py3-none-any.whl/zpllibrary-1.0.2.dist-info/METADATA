@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zpllibrary
+Version: 1.0.2
+Summary: zpllibrary is a python package to create zpl simply.
+Home-page: https://github.com/scott-david-walker/zpllibrary/tree/master/zpllibrary
+Author: Scott Walker
+Author-email: scott.david.walker@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Requires-Dist: pillow (==7.0.0)
+
+UNKNOWN
+
+
