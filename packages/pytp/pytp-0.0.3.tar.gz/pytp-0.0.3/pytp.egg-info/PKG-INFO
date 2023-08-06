@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pytp
+Version: 0.0.3
+Summary: Useful Tools for Trajectory Prediction.
+Home-page: https://github.com/xuehaouwa/Trajectory-Prediction-Tools
+Author: Hao Xue
+Author-email: xuehaoperth@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
