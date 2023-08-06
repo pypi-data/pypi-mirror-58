@@ -1,0 +1,10 @@
+sigaa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigaa/api.py,sha256=qzZUjDL2fL8YavCdKQxFLpKtlf7HLbGz80lqtIpMsJo,5315
+sigaa/exceptions.py,sha256=xNDwGhe4FyTfIPcaE76VkuK_hfK3sf_-2rnRgXxtZOQ,197
+sigaa/exceptions/__init__.py,sha256=nWnJwEphtAjFsYg_dIYrrbWdkIB0G2Nu89d7d6DJGKc,25
+sigaa/exceptions/exceptions.py,sha256=xNDwGhe4FyTfIPcaE76VkuK_hfK3sf_-2rnRgXxtZOQ,197
+sigaa_cli-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sigaa_cli-0.6.0.dist-info/METADATA,sha256=Nj8itAszkE8nLLvq5yVWv_HN5sq0igDbBXC1ZR6Tb-g,2352
+sigaa_cli-0.6.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sigaa_cli-0.6.0.dist-info/top_level.txt,sha256=LsHNKJYUem6gLMqw9rXl9suvjKI8M2iY04LeOmtH4rI,6
+sigaa_cli-0.6.0.dist-info/RECORD,,
