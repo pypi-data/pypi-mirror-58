@@ -1,0 +1,23 @@
+[console_scripts]
+kwiver = kwiver.kwiver_tools:kwiver
+plugin_explorer = kwiver.kwiver_tools:plugin_explorer
+
+[kwiver.cpp_search_paths]
+applets = kwiver.vital.util.entrypoint:applets_path
+plugin_explorer = kwiver.vital.util.entrypoint:plugin_explorer_path
+sprokit_process = kwiver.vital.util.entrypoint:sprokit_process_path
+
+[kwiver.env.ld_library_path]
+kwiver_ld_library_path = kwiver.vital.util.entrypoint:get_library_path
+
+[kwiver.env.logger_factory]
+vital_log4cplus_logger_factory = kwiver.vital.util.entrypoint:get_vital_logger_factory
+
+[kwiver.python_plugin_registration]
+apply_descriptor = kwiver.sprokit.processes.ApplyDescriptor
+homography_writer = kwiver.sprokit.processes.homography_writer
+print_number_process = kwiver.sprokit.processes.kw_print_number_process
+process_image = kwiver.sprokit.processes.ProcessImage
+pythread_process = kwiver.sprokit.schedulers.pythread_per_process
+pythread_process_scheduler = kwiver.sprokit.schedulers.pythread_per_process_scheduler
+
