@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: himawari8
+Version: 0.8
+Summary: Assists in downloading images of planet earth from the japanese satellite himawari 8
+Home-page: https://github.com/Maharal/Himawari-8
+Author: Raphael Augusto Teixeira Silva
+Author-email: raphaelaugustoteixeirasilva@gmail.com
+License: GPL-3.0
+Download-URL: https://github.com/Maharal/Himawari-8/archive/v0.8.tar.gz
+Description: UNKNOWN
+Keywords: earth,himawari 8,planet,photo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
