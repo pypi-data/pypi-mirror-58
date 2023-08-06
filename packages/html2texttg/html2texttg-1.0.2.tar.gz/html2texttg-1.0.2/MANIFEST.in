@@ -1,0 +1,7 @@
+include COPYING
+include README.md
+include ChangeLog.rst
+include AUTHORS.rst
+include requirements.txt
+
+recursive-include font *.ttf
