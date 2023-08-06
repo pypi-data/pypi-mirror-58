@@ -1,0 +1,129 @@
+CHANGES
+=======
+
+* make recover uiautomator logic more simple
+
+2.4.1
+-----
+
+* add taobao plugin for internal network
+* add long\_click to d.xpath
+
+2.4.0
+-----
+
+* change logic of start uiautomator, upgrade apk version
+* fix bug, reported by h.t
+* am start apk twice to make sure, uiautomator can be recovered
+
+2.3.4
+-----
+
+* show lib version when init for easily debug
+* support config service recover behavior
+
+2.3.3
+-----
+
+* fix d.serial return None bug, fix tests on large screen
+* update doc, add quick-reference.md
+* add quick ref guide
+
+2.3.2
+-----
+
+* fix init command not resolve signature mismatch bug, fix uninstall can not uninstall apk bug
+
+2.3.1
+-----
+
+* add xpath\_debug to settings, fix xpath %xx and xx%
+* update watcher doc
+
+2.3.0
+-----
+
+* add d.watcher method to handle popups
+* add settings code
+* add basic settings.py
+* Update README.md
+* hotfix for windows
+* remove timeout for function: pull
+
+2.2.0
+-----
+
+* add cmd\_purge, add set\_new\_command\_timeout api
+
+2.1.0
+-----
+
+* add image.py, change uiautomator from v1 to v2
+* add uauto
+* typo (#476)
+* fix missing \_parent error, close #477
+* hot fix for #475
+* fix spell error
+* fix logo not show error in readme
+* add hogwarts sponsor
+* add wait to image.py
+* fix xpath start-with and ends-with, add image click
+
+2.0.0
+-----
+
+* remove toast from readme
+* add app list api
+* support multi xpath(xx).xpath(xx), and add .info in xpath
+* add clipboard doc
+* change to uiautomator 1.0
+* Fixes #451
+* add clipboard support
+* Update README.md
+* fix d.xpath.when(..).when(..), thread-safe reset-uiautomator
+
+1.3.6
+-----
+
+* use monkey command to install apk on TMQ platform
+* fix d.xpath.watcher, fix d.shell can not handle & and ? bug
+
+1.3.5
+-----
+
+* add xpath.apply\_watch\_from\_yaml, support xpath.when(1).when(2)
+* fix homepage link
+* fix atx-agent version compare check
+
+1.3.4
+-----
+
+* remove useless cli
+* use jsonrpc.dumpWindowsHierarchy instead of http GET /dump/hierarchy
+* assert file\_size when cache\_download
+
+1.3.3
+-----
+
+* fix uiautomator start error
+
+1.3.2
+-----
+
+* update atx-agent to fix UIAutomation not connected error
+* upgrade apk version
+* enhance reset\_uiautomator()
+
+1.3.1
+-----
+
+* fix adbutils dep version
+
+1.3.0
+-----
+
+* fix check atx-agent
+* fix last commit
+* add function to check atx-agent version
+* update atx-agent version
+* update dingtalk webhook again
