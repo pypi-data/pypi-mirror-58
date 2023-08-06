@@ -1,0 +1,3 @@
+[console_scripts]
+kittycap = kittycore.cli:main
+
