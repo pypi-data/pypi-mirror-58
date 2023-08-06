@@ -1,0 +1,3 @@
+[console_scripts]
+sshconfig = sshconfig.main:main
+
