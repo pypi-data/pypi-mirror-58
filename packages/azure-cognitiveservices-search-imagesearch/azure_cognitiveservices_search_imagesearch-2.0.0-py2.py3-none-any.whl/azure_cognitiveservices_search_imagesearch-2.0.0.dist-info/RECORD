@@ -1,0 +1,14 @@
+azure/cognitiveservices/search/imagesearch/__init__.py,sha256=Djar631sHcEwYxK-I1XfYroe6_4Cb-REJ-PWtM2vzFE,705
+azure/cognitiveservices/search/imagesearch/_configuration.py,sha256=2nycRScrCJwO87mVGzR1-mZezsmQ1EmyI6n21rOSjTc,1750
+azure/cognitiveservices/search/imagesearch/_image_search_client.py,sha256=kVEIrXCJvBDlQT_CJWs9hfykV-Oh7XOKdLWgQ2OgSN8,2304
+azure/cognitiveservices/search/imagesearch/version.py,sha256=kEm35vNrCbalYw8M1CNrJ2sf-C9NQK1ymJVnuEzmGDk,493
+azure/cognitiveservices/search/imagesearch/models/__init__.py,sha256=OVm6O5AcnEJJjRlrYDP6cosQsX8Ezl8XD_Y5Ozj0Q_4,5733
+azure/cognitiveservices/search/imagesearch/models/_image_search_client_enums.py,sha256=o8gFmT9AlBGiXUDXNiFZmDcWZAq8XsAfGsXVMtZLUpM,5927
+azure/cognitiveservices/search/imagesearch/models/_models.py,sha256=b7DQ1RtyBTmmbD_cPknJ6Hxg6U2y7Y8bQ7HMaZkGUAo,104783
+azure/cognitiveservices/search/imagesearch/models/_models_py3.py,sha256=WlgGvs05dg4Py-Ho3Wrqm8F30rpezPgPVsZueWaGJmI,105060
+azure/cognitiveservices/search/imagesearch/operations/__init__.py,sha256=qaZt_LRvAIV6AmoO0LeuOrX3S_M5DDvAYHvKdkzhcVY,562
+azure/cognitiveservices/search/imagesearch/operations/_images_operations.py,sha256=qLUXnJqgkg_q6_U15m98aaNqjiceuuimO5peu2ZzeVk,78888
+azure_cognitiveservices_search_imagesearch-2.0.0.dist-info/METADATA,sha256=-LQQliEQb31eEvoVlhqAecpq1eLL7fICxp1lfBml5m4,5540
+azure_cognitiveservices_search_imagesearch-2.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+azure_cognitiveservices_search_imagesearch-2.0.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_cognitiveservices_search_imagesearch-2.0.0.dist-info/RECORD,,
