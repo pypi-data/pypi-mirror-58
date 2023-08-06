@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pofy
+Version: 0.9.2
+Summary: Python Yaml Object deserializer based on PyYAML.
+Home-page: http://github.com/an-otter-world/pofy/
+Author: An Otter World
+Author-email: an-otter-world@ki-dour.org
+License: WTFPL
+Description: # Pofy (Python yaml objects)
+        
+        [![WTFPL license](https://img.shields.io/badge/License-WTFPL-blue.svg)](https://raw.githubusercontent.com/an-otter-world/pofy/master/COPYING)
+        [![Actions Status](https://github.com/an-otter-world/pofy/workflows/Checks/badge.svg)](https://github.com/an-otter-world/pofy/actions)
+        [![Coverage Status](https://coveralls.io/repos/github/an-otter-world/pofy/badge.svg)](https://coveralls.io/github/an-otter-world/pofy)
+        
+        ## Overview
+        
+        Pofy is a tiny library allowing to declare classes that can be deserialized
+        from YAML, using pyyaml. Classes declares a schema as a list of fields, used
+        to check for data validation during deserialization.
+        
+        Pofy is distributed under the term of the WTFPL V2 (See COPYING file).
+        
+        ## Installation
+        
+        Pofy is tested with Python 3.8. It be installed through pip :
+        
+          `pip install pofy`
+        
+        ## Quickstart
+        
+        To use Pofy, you must declare a schema in the class you want to deserialize :
+        
+          ```python
+              from pofy import StringField, load
+        
+              class SomeObject:
+                  class Schema:
+                      field = StringField()
+        
+              deserialized_object = load(SomeObject, 'field: value')
+              assert deserialized_object.field == 'value`
+          ```
+        
+Keywords: YAML,serialization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
+Description-Content-Type: text/markdown
