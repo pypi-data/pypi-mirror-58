@@ -1,0 +1,9 @@
+requests
+aiohttp
+httpx
+multidict
+async_timeout
+html2text
+loguru
+tqdm
+pyperclip
