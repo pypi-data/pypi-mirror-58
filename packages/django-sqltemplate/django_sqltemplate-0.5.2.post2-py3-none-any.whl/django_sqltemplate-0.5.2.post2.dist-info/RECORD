@@ -1,0 +1,15 @@
+djsqltemplate/__init__.py,sha256=V5xlInxk_gzimtj3FWQyHIq7endZoMNGPLuLigBzdtA,2873
+djsqltemplate/engines.py,sha256=tTpaz42fJsYCF2Gz4lTluGm0Aa9jivI5VnAfOuLvOrE,166
+djsqltemplate/loader.py,sha256=uywnEJ8wALPLU0tXlyhyk2MBAGOMwDMwgMGkN8GOxX8,2028
+djsqltemplate/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djsqltemplate/settings.py,sha256=XEw8EnOEpfm7ogqzKjjmVguGzQSdtKonCY-espJ1YU8,419
+djsqltemplate/loaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djsqltemplate/loaders/app_directories.py,sha256=Gn72V2kpxKQJ3yrvmi_ljtYyc1wRxYiDaLVvBMkQrSE,1517
+djsqltemplate/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djsqltemplate/templatetags/psycopg2_tags.py,sha256=tiEVvKv_xUSXmiZqv6h-l5hrYqF_LSubNqx4_dzFn34,357
+django_sqltemplate-0.5.2.post2.dist-info/LICENSE,sha256=J00PQwxytyMFZgpNE8_7DCR0PKDLwtlTqz25Qsrvq48,1295
+django_sqltemplate-0.5.2.post2.dist-info/METADATA,sha256=blMJg6gZLtdxPg0aV-lrZzEisfngt8vytnj6Oxf21Gk,9751
+django_sqltemplate-0.5.2.post2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_sqltemplate-0.5.2.post2.dist-info/top_level.txt,sha256=-3sRsqU3pkSrl5W1DimBo0GvTGL3A_BnZ1opZi4RZ38,14
+django_sqltemplate-0.5.2.post2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_sqltemplate-0.5.2.post2.dist-info/RECORD,,
