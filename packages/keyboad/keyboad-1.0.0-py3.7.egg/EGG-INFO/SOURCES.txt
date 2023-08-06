@@ -1,0 +1,6 @@
+a.py
+setup.py
+keyboad.egg-info/PKG-INFO
+keyboad.egg-info/SOURCES.txt
+keyboad.egg-info/dependency_links.txt
+keyboad.egg-info/top_level.txt
