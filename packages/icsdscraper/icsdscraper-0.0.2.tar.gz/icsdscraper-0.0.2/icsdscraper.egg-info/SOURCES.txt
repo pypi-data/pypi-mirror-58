@@ -1,0 +1,10 @@
+README.md
+setup.py
+icsdscraper/PapaScrap.py
+icsdscraper/__init__.py
+icsdscraper/examples.py
+icsdscraper/icsd_objects.py
+icsdscraper.egg-info/PKG-INFO
+icsdscraper.egg-info/SOURCES.txt
+icsdscraper.egg-info/dependency_links.txt
+icsdscraper.egg-info/top_level.txt
