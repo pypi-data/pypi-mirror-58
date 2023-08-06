@@ -1,0 +1,9 @@
+query fetchCurrentUser {
+        fetchUser {
+            profiles {
+                ... on ConsoleProfile {
+                    id
+                }
+            }
+        }
+    }
