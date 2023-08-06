@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/gce/__init__.py
+src/gce/gce.py
+src/gce.egg-info/PKG-INFO
+src/gce.egg-info/SOURCES.txt
+src/gce.egg-info/dependency_links.txt
+src/gce.egg-info/entry_points.txt
+src/gce.egg-info/requires.txt
+src/gce.egg-info/top_level.txt
