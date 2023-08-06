@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+teacher.py
+teacher.egg-info/PKG-INFO
+teacher.egg-info/SOURCES.txt
+teacher.egg-info/dependency_links.txt
+teacher.egg-info/top_level.txt
