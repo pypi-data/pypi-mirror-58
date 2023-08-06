@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_string_compounds.py,sha256=_j2XM6azByuXnUXWFKFffEUsOEVSoAd4FLTmpFeHbDU,2678
+tests/test_typo_case.py,sha256=GyLRnaATrbaFuHuO44QzSrbiMAX2xC7G8BsBS8NBCIg,7146
+typocase/__init__.py,sha256=9Q6oD8ubotfuiIU_2JTVfyf_W1jkVpGM-xucEY6muhI,84
+typocase/models.py,sha256=OTAXI09wdSaCQ1FN1Dm8o8P4qcekCO01fxBpkHXXjb0,136
+typocase/string_compounds.py,sha256=NYZBzFWKoEH-4q0_UztAy_TndV3p4j9jcPmLXCuid2U,2304
+typocase/typo_case.py,sha256=A3tfd-DDHaZacNjxmaSQV_ZsoaE5co-Csrn-3KV_dKw,1128
+typocase-0.0.1.dist-info/LICENSE,sha256=JjprLYuVuICNaCmgDA2dnhfgqCj2j3iFN-ZiINozqGg,1074
+typocase-0.0.1.dist-info/METADATA,sha256=9LcF4ceSEqZTjhYcTsRJ8QPKbrS5k8XRAxt3QaJqot8,1447
+typocase-0.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+typocase-0.0.1.dist-info/top_level.txt,sha256=55UZUDK75aW0tAzgXB9VHuSHK6aMTZUYL3luaJh_Qp4,15
+typocase-0.0.1.dist-info/RECORD,,
