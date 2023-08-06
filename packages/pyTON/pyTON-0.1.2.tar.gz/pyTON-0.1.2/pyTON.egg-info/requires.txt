@@ -1,0 +1,9 @@
+aiohttp
+crc16
+ed25519~=1.5
+mnemonic
+pycryptodome
+pynacl
+tvm-valuetypes
+ujson>=1.35
+uvloop
