@@ -1,0 +1,11 @@
+plexmediafixup/__init__.py,sha256=6jEIWSZCPF0OhNrKZQZMbw2UKrVPXl8Mv4sBQja5rW0,653
+plexmediafixup/cli.py,sha256=rXjChxeaNuz1SUF4ej_lHkHELT5HktWV75S-yvK1WP0,11396
+plexmediafixup/fixup.py,sha256=BpUEyzJvVDkd77Nj68Ma43ItF50uHE3MWuVoZ45gHY0,2166
+plexmediafixup/version.py,sha256=BCOl-vHA-qU-bi_Ymsr6v2GQYDH81f8ypX9zexBxGow,401
+plexmediafixup-0.1.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+plexmediafixup-0.1.0.dist-info/METADATA,sha256=b0zPrZ8a6RA7wYtQROTavEdngxj3_frFPetVK-KR5lA,7589
+plexmediafixup-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+plexmediafixup-0.1.0.dist-info/entry_points.txt,sha256=A1E-IP2xN8_rbaW15Drma0arPItWawuNtIeYuNJl-z0,60
+plexmediafixup-0.1.0.dist-info/top_level.txt,sha256=pSIIwllNX9YYzi4g5sOKQNRnDo2wb7DxZvIY-hnqy-U,15
+plexmediafixup-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+plexmediafixup-0.1.0.dist-info/RECORD,,
