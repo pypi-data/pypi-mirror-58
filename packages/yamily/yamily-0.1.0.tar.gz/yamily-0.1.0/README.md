@@ -1,0 +1,106 @@
+# yamily
+
+Define family trees in YAML
+
+## Setup
+
+```sh
+$ sudo apt-get install python3-yaml python3-graphviz # optional on debian / ubuntu
+$ pip3 install --user --upgrade yamily[yaml,graphviz]
+```
+
+## Usage
+
+### Import YAML
+
+```python
+>>> import yaml, yamily, yamily.yaml
+>>> alice_yaml = '''
+... !person
+... identifier: alice
+... name: Alice Test
+... birth_date: 2019-12-23
+... mother: !person
+...   identifier: alice-mother
+...   name: Carol Test
+...   birth_date: 1992-10-26
+... father: !person
+...   identifier: bob
+...   name: Bob Test
+... '''
+>>> alice = yaml.load(alice_yaml, Loader=yamily.yaml.Loader)
+>>> alice
+Person(alice, Alice Test, *2019-12-23)
+>>> alice.mother
+Person(alice-mother, Carol Test, *1992-10-26)
+
+```
+
+#### Multiple YAML Files
+
+```python
+>>> alice_yaml = '''
+... !person
+... identifier: alice
+... name: Alice Test
+... birth_date: 2019-12-23
+... mother: carol
+... '''
+>>> carol_yaml = '''
+... !person
+... identifier: carol
+... name: Carol Test
+... birth_date: 1992-10-26
+... '''
+>>> collection = yamily.PersonCollection()
+>>> for person_yaml in [alice_yaml, carol_yaml]:
+...     person = yaml.load(person_yaml, Loader=yamily.yaml.Loader)
+...     collection.add_person(person)
+Person(alice, Alice Test, *2019-12-23)
+Person(carol, Carol Test, *1992-10-26)
+>>> collection['alice'].mother
+Person(carol, Carol Test, *1992-10-26)
+>>> collection['carol'] is collection['alice'].mother
+True
+
+```
+
+### Export YAML
+
+```python
+>>> import datetime, yaml, yamily, yamily.yaml
+>>> alice = yamily.Person("alice")
+>>> alice.name = "Alice Test"
+>>> alice.birth_date = datetime.date(2019, 12, 23)
+>>> alice
+Person(alice, Alice Test, *2019-12-23)
+
+>>> alice.father = yamily.Person("alice-father")
+>>> alice.father.name = "Bob Test"
+
+>>> print(yaml.dump(alice, Dumper=yamily.yaml.Dumper))
+!person
+birth_date: 2019-12-23
+father: !person
+  identifier: alice-father
+  name: Bob Test
+identifier: alice
+name: Alice Test
+<BLANKLINE>
+
+```
+
+### Plot Family Tree
+
+```sh
+$ yamily-dot . > tree.dot
+$ dot -Tpdf -O tree.dot
+```
+
+## Develop
+
+```sh
+$ git clone git@git.hammerle.me:fphammerle/yamily.git
+$ cd yamily
+$ git config --local core.hooksPath .githooks/
+```

@@ -1,0 +1,11 @@
+!person
+identifier: alice
+name: Alice Test
+mother: !person
+  identifier: alice-mother
+  name: Mum Test
+father: !person
+  identifier: alice-father
+  mother: !person
+    identifier: alice-grandmother
+    name: Grandma Test

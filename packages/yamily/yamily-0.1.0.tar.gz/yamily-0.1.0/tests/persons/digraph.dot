@@ -1,0 +1,33 @@
+digraph yamily {
+	subgraph "cluster_erika-mustermann" {
+		rank=same style=invisible
+		"erika-mustermann" [label="Erika Mustermann\n*1957-08-12" shape=box]
+		"relation-erika-mustermann-thomas-mustermann" [shape=point width=0]
+		"erika-mustermann" -> "relation-erika-mustermann-thomas-mustermann" [arrowhead=none constraint=False]
+		"thomas-mustermann" -> "relation-erika-mustermann-thomas-mustermann" [arrowhead=none constraint=False]
+		"thomas-mustermann" [label="thomas-mustermann" shape=box]
+	}
+	subgraph "cluster_alice-mother" {
+		rank=same style=invisible
+		"alice-mother" [label="Mum Test" shape=box]
+		"relation-alice-father-alice-mother" [shape=point width=0]
+		"alice-father" -> "relation-alice-father-alice-mother" [arrowhead=none constraint=False]
+		"alice-mother" -> "relation-alice-father-alice-mother" [arrowhead=none constraint=False]
+		"alice-father" [label="alice-father" shape=box]
+	}
+	subgraph "cluster_alice-grandmother" {
+		rank=same style=invisible
+		"alice-grandmother" [label="Grandma Test" shape=box]
+	}
+	subgraph cluster_alice {
+		rank=same style=invisible
+		alice [label="Alice Test" shape=box]
+	}
+	subgraph "cluster_max-mustermann" {
+		rank=same style=invisible
+		"max-mustermann" [label="Max Mustermann\n*1976-02-01" shape=box]
+	}
+	"alice-grandmother" -> "alice-father"
+	"relation-alice-father-alice-mother" -> alice
+	"relation-erika-mustermann-thomas-mustermann" -> "max-mustermann"
+}

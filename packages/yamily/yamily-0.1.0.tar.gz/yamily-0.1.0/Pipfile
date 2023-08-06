@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+# workaround for pipenv ignoring extras
+PyYAML = "*"
+black = "==19.10b0"
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+yamily = {editable = true,extras = ["graphviz", "yaml"],path = "."}
+
+[requires]
+python_version = "3"
