@@ -1,0 +1,7 @@
+appdirs
+click
+fuzzywuzzy
+pandas
+pytest-runner
+rtree
+tqdm==4.24
