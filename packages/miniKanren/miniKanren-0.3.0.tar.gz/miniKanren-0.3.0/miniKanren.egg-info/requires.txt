@@ -1,0 +1,4 @@
+toolz
+cons
+multipledispatch
+logical-unification>=0.3.2
