@@ -1,0 +1,520 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AlekSIS (School Information System) 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-23 10:06+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:30 forms.py:66
+msgid "You cannot set a new username when also selecting an existing user."
+msgstr ""
+
+#: forms.py:32 forms.py:68
+msgid "This username is already in use."
+msgstr ""
+
+#: forms.py:57
+msgid "New user"
+msgstr ""
+
+#: forms.py:58
+msgid "Create a new account"
+msgstr ""
+
+#: menus.py:6
+msgid "Account"
+msgstr ""
+
+#: menus.py:11
+msgid "Stop impersonation"
+msgstr ""
+
+#: menus.py:16 templates/registration/login.html:21
+msgid "Login"
+msgstr ""
+
+#: menus.py:21
+msgid "Logout"
+msgstr ""
+
+#: menus.py:28
+msgid "Admin"
+msgstr ""
+
+#: menus.py:33 templates/core/data_management.html:5
+#: templates/core/data_management.html:7
+msgid "Data management"
+msgstr ""
+
+#: menus.py:38 templates/core/system_status.html:5
+#: templates/core/system_status.html:7
+msgid "System status"
+msgstr ""
+
+#: menus.py:43
+msgid "Impersonation"
+msgstr ""
+
+#: menus.py:48
+msgid "Manage school"
+msgstr ""
+
+#: menus.py:55
+msgid "People"
+msgstr ""
+
+#: menus.py:61 templates/core/persons.html:8 templates/core/persons.html:10
+msgid "Persons"
+msgstr ""
+
+#: menus.py:66 templates/core/groups.html:8 templates/core/groups.html:10
+#: templates/core/person_full.html:66
+msgid "Groups"
+msgstr ""
+
+#: menus.py:71
+msgid "Persons and accounts"
+msgstr ""
+
+#: menus.py:80
+msgid "AlekSIS Software"
+msgstr ""
+
+#: menus.py:84
+msgid "Website"
+msgstr ""
+
+#: menus.py:94
+msgid "Support"
+msgstr ""
+
+#: menus.py:98 templates/contact_form/contact_form.html:8
+msgid "Get support"
+msgstr ""
+
+#: menus.py:108
+msgid "Edit school information"
+msgstr ""
+
+#: menus.py:112 templates/core/edit_schoolterm.html:7
+#: templates/core/edit_schoolterm.html:9
+msgid "Edit school term"
+msgstr ""
+
+#: migrations/0001_initial.py:15
+msgid "Default school"
+msgstr ""
+
+#: migrations/0002_school_term.py:16
+msgid "Default term"
+msgstr ""
+
+#: models.py:20
+msgid "Name"
+msgstr ""
+
+#: models.py:21
+msgid "Official name"
+msgstr ""
+
+#: models.py:22
+msgid "Official name of the school, e.g. as given by supervisory authority"
+msgstr ""
+
+#: models.py:24
+msgid "School logo"
+msgstr ""
+
+#: models.py:38
+msgid "Visible caption of the term"
+msgstr ""
+
+#: models.py:42
+msgid "Effective start date of term"
+msgstr ""
+
+#: models.py:44
+msgid "Effective end date of term"
+msgstr ""
+
+#: models.py:57
+msgid "female"
+msgstr ""
+
+#: models.py:58
+msgid "male"
+msgstr ""
+
+#: models.py:65
+msgid "Is person active?"
+msgstr ""
+
+#: models.py:67
+msgid "First name"
+msgstr ""
+
+#: models.py:68
+msgid "Last name"
+msgstr ""
+
+#: models.py:70
+msgid "Additional name(s)"
+msgstr ""
+
+#: models.py:73
+msgid "Short name"
+msgstr ""
+
+#: models.py:76
+msgid "Street"
+msgstr ""
+
+#: models.py:78
+msgid "Street number"
+msgstr ""
+
+#: models.py:80
+msgid "Postal code"
+msgstr ""
+
+#: models.py:82
+msgid "Place"
+msgstr ""
+
+#: models.py:84
+msgid "Home phone"
+msgstr ""
+
+#: models.py:86
+msgid "Mobile phone"
+msgstr ""
+
+#: models.py:88
+msgid "E-mail address"
+msgstr ""
+
+#: models.py:91
+msgid "Date of birth"
+msgstr ""
+
+#: models.py:93
+msgid "Sex"
+msgstr ""
+
+#: models.py:95
+msgid "Photo"
+msgstr ""
+
+#: models.py:99
+msgid "Reference ID of import source"
+msgstr ""
+
+#: models.py:101
+msgid "Guardians / Parents"
+msgstr ""
+
+#: models.py:145
+msgid "Long name of group"
+msgstr ""
+
+#: models.py:147
+msgid "Short name of group"
+msgstr ""
+
+#: models.py:153
+msgid "Parent groups"
+msgstr ""
+
+#: settings.py:218
+msgid "German"
+msgstr ""
+
+#: settings.py:219
+msgid "English"
+msgstr ""
+
+#: templates/403.html:5
+msgid "Forbidden"
+msgstr ""
+
+#: templates/403.html:12
+msgid "You are not allowed to access the requested page or object."
+msgstr ""
+
+#: templates/403.html:16 templates/404.html:20
+msgid ""
+"\n"
+"     If you think this is an error in AlekSIS, please contact your site\n"
+"     administrators.\n"
+"    "
+msgstr ""
+
+#: templates/404.html:5
+msgid "Not found"
+msgstr ""
+
+#: templates/404.html:12
+msgid "The requested page or object was not found."
+msgstr ""
+
+#: templates/404.html:16
+msgid ""
+"\n"
+"     If you were redirected by a link on an external page,\n"
+"     it is possible that that link was outdated.\n"
+"    "
+msgstr ""
+
+#: templates/500.html:5
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:12
+msgid ""
+"\n"
+"      An unexpected error has occured.\n"
+"     "
+msgstr ""
+
+#: templates/500.html:18
+msgid ""
+"\n"
+"     Your site administrators will automatically be notified about this\n"
+"     error.\n"
+"    "
+msgstr ""
+
+#: templates/503.html:5
+msgid "Maintenance mode"
+msgstr ""
+
+#: templates/503.html:12
+msgid ""
+"\n"
+"     The maintenance mode is currently enabled. Please try again later.\n"
+"    "
+msgstr ""
+
+#: templates/contact_form/contact_form.html:14
+msgid "Send"
+msgstr ""
+
+#: templates/contact_form/contact_form_sent.html:9
+msgid ""
+"\n"
+"   The message was successfully submitted.\n"
+"  "
+msgstr ""
+
+#: templates/core/edit_group.html:16 templates/core/edit_group.html:18
+#: templates/core/group_full.html:16
+msgid "Edit group"
+msgstr ""
+
+#: templates/core/edit_group.html:26 templates/core/edit_person.html:28
+#: templates/core/edit_school.html:22 templates/core/edit_schoolterm.html:22
+msgid "Edit"
+msgstr ""
+
+#: templates/core/edit_person.html:7 templates/core/edit_person.html:9
+#: templates/core/person_full.html:16
+msgid "Edit person"
+msgstr ""
+
+#: templates/core/edit_school.html:7 templates/core/edit_school.html:9
+msgid "Edit school"
+msgstr ""
+
+#: templates/core/footer-menu.html:26
+msgid "Assorted"
+msgstr ""
+
+#: templates/core/group_full.html:8
+msgid "Group"
+msgstr ""
+
+#: templates/core/group_full.html:19
+msgid "Details"
+msgstr ""
+
+#: templates/core/group_full.html:28
+msgid "Owners"
+msgstr ""
+
+#: templates/core/group_full.html:31
+msgid "Members"
+msgstr ""
+
+#: templates/core/group_full.html:35
+msgid "Group not found"
+msgstr ""
+
+#: templates/core/group_full.html:38
+msgid ""
+"\n"
+"          There is no group with this id.\n"
+"        "
+msgstr ""
+
+#: templates/core/index.html:8
+msgid ""
+"\n"
+"    AlekSIS (School Information System)\n"
+"  "
+msgstr ""
+
+#: templates/core/index.html:16
+msgid ""
+"\n"
+"        AlekSIS is a web-based school information system (SIS) which can be "
+"used to\n"
+"        manage and/or publish organisational data of educational "
+"institutions.\n"
+"      "
+msgstr ""
+
+#: templates/core/language_form.html:5
+msgid "Language"
+msgstr ""
+
+#: templates/core/no_person.html:8
+msgid ""
+"\n"
+"        You are not linked to a person\n"
+"      "
+msgstr ""
+
+#: templates/core/no_person.html:13
+msgid ""
+"\n"
+"        Your user account is not linked to a person. This means you\n"
+"        cannot access any school-related information. Please contact\n"
+"        the managers of AlekSIS at your school.\n"
+"      "
+msgstr ""
+
+#: templates/core/person_full.html:8 templates/core/persons_accounts.html:41
+msgid "Person"
+msgstr ""
+
+#: templates/core/person_full.html:19
+msgid "Contact details"
+msgstr ""
+
+#: templates/core/person_full.html:70
+msgid "Person not found"
+msgstr ""
+
+#: templates/core/person_full.html:73
+msgid ""
+"\n"
+"          There is no person with this id.\n"
+"        "
+msgstr ""
+
+#: templates/core/persons_accounts.html:17
+#: templates/core/persons_accounts.html:20
+msgid "Link persons to accounts"
+msgstr ""
+
+#: templates/core/persons_accounts.html:26
+msgid ""
+"\n"
+"        You can use this form to assign user accounts to persons. Use the\n"
+"        dropdowns to select existing accounts; use the text fields to create "
+"new\n"
+"        accounts on-the-fly. The latter will create a new account with the\n"
+"        entered username and copy all other details from the person.\n"
+"      "
+msgstr ""
+
+#: templates/core/persons_accounts.html:42
+msgid "Existing account"
+msgstr ""
+
+#: templates/core/persons_accounts.html:43
+msgid "New account"
+msgstr ""
+
+#: templates/core/persons_accounts.html:59
+msgid "Update"
+msgstr ""
+
+#: templates/core/school_management.html:5
+#: templates/core/school_management.html:7
+msgid "School management"
+msgstr ""
+
+#: templates/core/system_status.html:12
+msgid "System checks"
+msgstr ""
+
+#: templates/core/system_status.html:18
+msgid "Maintenance mode enabled"
+msgstr ""
+
+#: templates/core/system_status.html:19
+msgid "Only admin and visitors from internal IPs can access the site."
+msgstr ""
+
+#: templates/core/system_status.html:24
+msgid "Maintenance mode disabled"
+msgstr ""
+
+#: templates/core/system_status.html:25
+msgid "Everyone can access the site."
+msgstr ""
+
+#: templates/core/system_status.html:33
+msgid "Debug mode enabled"
+msgstr ""
+
+#: templates/core/system_status.html:34
+msgid ""
+"The web server throws back debug information on errors. Do not use in "
+"production!"
+msgstr ""
+
+#: templates/core/system_status.html:39
+msgid "Debug mode disabled"
+msgstr ""
+
+#: templates/core/system_status.html:40
+msgid "Debug mode is disabled. Default error pages are displayed on errors."
+msgstr ""
+
+#: templates/core/system_status.html:50
+msgid "Recent backup cron jobs"
+msgstr ""
+
+#: templates/impersonate/list_users.html:8
+msgid "Impersonate user"
+msgstr ""
+
+#: views.py:143
+msgid "The person has been saved."
+msgstr ""
+
+#: views.py:166
+msgid "The group has been saved."
+msgstr ""
+
+#: views.py:211
+msgid "The school has been saved."
+msgstr ""
+
+#: views.py:230
+msgid "The term has been saved."
+msgstr ""

@@ -1,0 +1,18 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load material_form i18n %}
+
+
+{% block page_title %}{% blocktrans %}Edit school term{% endblocktrans %}{% endblock %}
+
+{% block content %}
+
+  <form method="post">
+    {% csrf_token %}
+    {% form form=edit_term_form %}{% endform %}
+    {% include "core/save_button.html" %}
+  </form>
+
+{% endblock %}

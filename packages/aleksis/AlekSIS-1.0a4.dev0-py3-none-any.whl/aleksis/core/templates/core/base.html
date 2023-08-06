@@ -1,0 +1,134 @@
+{# -*- engine:django -*- #}
+
+
+{% load i18n menu_generator static sass_tags any_js %}
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Selbst programmierte Anwendungen für den Schullaltag am Katharineum zu Lübeck">
+
+  <title>School Information System</title>
+
+  {% include 'core/icons.html' %}
+
+  {# CSS #}
+  {% include_css "material-design-icons" %}
+  <link rel="stylesheet" href="{% sass_src 'style.scss' %}">
+
+  {# Include jQuery to provide $(document).ready #}
+  {% include_js "jQuery" %}
+</head>
+<body>
+
+<header>
+  <!-- Menu button (sidenav) -->
+  <div class="container">
+    <a href="#" data-target="slide-out" class="top-nav sidenav-trigger hide-on-large-only">
+      <i class="material-icons">menu</i>
+    </a>
+  </div>
+
+  <!-- Nav bar (logged in as, logout) -->
+  <nav>
+    <a class="brand-logo" href="/">SIS</a>
+
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {% if user.is_authenticated %}
+          <li>{% trans "Logged in as" %} {{ user.get_username }}</li>
+          <li>
+            <a href="{% url 'logout' %}">{% trans "Logout" %} <i class="material-icons right">exit_to_app</i></a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main nav (sidenav) -->
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li class="logo">
+      <a id="logo-container" href="/" class="brand-logo">
+        <img src="{% static 'img/aleksis-logo.png' %}" alt="AlekSIS Logo" style="height: 70px; width:auto;">
+      </a>
+    </li>
+    <li class="no-padding">
+      {% include "core/sidenav.html" %}
+    </li>
+  </ul>
+</header>
+
+
+<main role="main">
+  {% include 'core/no_person.html' %}
+
+  {#  {% bootstrap_messages %}#}
+
+  <h4>{% block page_title %}{% endblock %}</h4>
+
+  {% block content %}{% endblock %}
+</main>
+
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row no-margin footer-row-large">
+      <div class="col l6 s12 no-pad-left height-inherit">
+        <p class="white-text valign-bot">
+          {% include 'core/language_form.html' %}
+
+        </p>
+      </div>
+      <div class="col xl15 l6 offset-xl01 s12 no-pad-right">
+        <ul class="no-margin right">
+          {% include "core/footer-menu.html" %}
+        </ul>
+      </div>
+    </div>
+    <div class="row no-margin footer-row-small">
+            <span class="white-text make-it-higher">
+  {% include 'core/language_form.html' %}
+
+            </span>
+      <ul class="no-margin footer-ul">
+        {% include "core/footer-menu.html" %}
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+            <span class="left">
+              <a class="blue-text text-lighten-4" href="https://aleksis.edugit.org/">
+                AlekSIS — The Free School Information System
+            </a>
+              © The AlekSIS Team @
+              <a class="blue-text text-lighten-4" href="https://www.teckids.org">
+              Teckids e.V.
+            </a>
+              and
+              <a class="blue-text text-lighten-4" href="https://katharineum-zu-luebeck.de">
+                Katharineum zu Lübeck
+              </a>
+            </span>
+      <span class="right">
+                <span id="doit"></span>
+
+                <a class="blue-text text-lighten-4" href="https://katharineum-zu-luebeck.de/impressum/">Impressum</a>
+                ·
+                <a class="blue-text text-lighten-4" href="https://katharineum-zu-luebeck.de/datenschutzerklaerung/">
+                    Datenschutzerklärung
+                </a>
+            </span>
+    </div>
+  </div>
+</footer>
+
+
+{% include_js "materialize" %}
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

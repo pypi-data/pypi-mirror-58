@@ -1,0 +1,11 @@
+{# -*- engine:django -*- #}
+{% extends "core/base.html" %}
+{% load i18n menu_generator %}
+
+
+{% block page_title %}{% blocktrans %}School management{% endblocktrans %}{% endblock %}
+
+{% block content %}
+  {% get_menu "SCHOOL_MANAGEMENT_MENU" as menu %}
+  {% include "core/on_page_menu.html" %}
+{% endblock %}

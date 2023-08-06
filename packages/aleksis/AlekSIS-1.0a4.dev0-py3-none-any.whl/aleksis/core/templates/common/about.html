@@ -1,0 +1,51 @@
+{% load martortags %}
+
+{% include "partials/header.html" %}
+<main>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Entwickler und Copyright</span>
+            <p>{{ COPYRIGHT|linebreaksbr|safe_markdown }}</p>
+            <br>
+            <p>
+                GitHub:
+                <a href="https://github.com/Katharineum/school-apps">https://github.com/Katharineum/school-apps</a>
+            </p>
+            <p>
+                Kontakt:
+                <a href="mailto:support@katharineum.de">support@katharineum.de</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Lizenz</span>
+EUPL v1.2 or later
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Verwendete Open-Source-Komponenten</span>
+            Folgende Open-Source-Komponenten wurden in SchoolApps benutzt:
+
+            <ul class="collection">
+                {% for component in components %}
+                    <li class="collection-item">
+                        <h6>{{ component.0 }}</h6>
+                        <p style="margin-bottom: 10px;">
+                            <a href="{{ component.1 }}">{{ component.1 }}</a>
+                            · Lizensiert unter der
+                            <a href="{{ component.3 }}">{{ component.2 }}</a>
+                        </p>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            Ein Anspruch auf Vollständigkeit wird nicht erhoben.
+        </div>
+    </div>
+</main>
+
+{% include "partials/footer.html" %}

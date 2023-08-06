@@ -1,0 +1,44 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load bootstrap4 i18n static %}
+{% load render_table from django_tables2 %}
+
+{% block bootstrap4_title %}{% blocktrans %}Group{% endblocktrans %} - {{ block.super }}{% endblock %}
+
+{% block content %}
+  <div class="col-sm-12 col-md-12">
+    {% if group %}
+      <h2>{{ group.name }} <small>{{ group.short_name }}</small></h2>
+      <p>
+        <a href="{% url 'edit_group_by_id' group.id %}">
+          <span class="mdi mdi-pencil"></span>
+        </a>
+      </p>
+      <h3>{% blocktrans %}Details{% endblocktrans %}</h3>
+      <table class="table table-responsive-xl table-border table-striped">
+        <tr>
+          <td><span class="mdi mdi-account-group"></span></td>
+          <td>{{ group.name }}</td>
+          <td>{{ group.short_name }}</td>
+        </tr>
+      </table>
+
+      <h3>{% blocktrans %}Owners{% endblocktrans %}</h3>
+      {% render_table owners_table %}
+
+      <h3>{% blocktrans %}Members{% endblocktrans %}</h3>
+      {% render_table members_table %}
+
+    {% else %}
+      <h2>{% blocktrans %}Group not found{% endblocktrans %}</h2>
+
+      <p>
+        {% blocktrans %}
+          There is no group with this id.
+        {% endblocktrans %}
+      </p>
+    {% endif %}
+  </div>
+{% endblock %}

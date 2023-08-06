@@ -1,0 +1,26 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+
+{% block content %}
+
+  <div class="d-flex justify-content-between">
+   <div>
+    <h2>{{ current_head }}</h2>
+   </div>
+   <div class="btn-group" role="group" aria-label="URL actions">
+     <a href="{{ url_prev }}" class="btn btn-dark">
+       <span class="mdi mdi-chevron-left"></span>
+     </a>
+     <a href="{{ url_next }}" class="btn btn-dark">
+       <span class="mdi mdi-chevron-right"></span>
+     </a>
+   </div>
+  </div>
+
+  {% block current_content %}
+
+  {% endblock %}
+
+{% endblock %}

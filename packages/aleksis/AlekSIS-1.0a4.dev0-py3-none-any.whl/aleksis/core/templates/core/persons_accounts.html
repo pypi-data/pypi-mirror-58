@@ -1,0 +1,62 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load bootstrap4 i18n %}
+
+{% block bootstrap4_extra_head %}
+  {{ block.super }}
+  {{ persons_accounts_formset.media.css }}
+{% endblock %}
+
+{% block bootstrap4_extra_script %}
+  {{ block.super }}
+  {{ persons_accounts_formset.media.js }}
+{% endblock %}
+
+{% block bootstrap4_title %}{% blocktrans %}Link persons to accounts{% endblocktrans%} - {{ block.super }}{% endblock %}
+
+{% block page_title %}
+  {% blocktrans %}Link persons to accounts{% endblocktrans %}
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <p>
+      {% blocktrans %}
+        You can use this form to assign user accounts to persons. Use the
+        dropdowns to select existing accounts; use the text fields to create new
+        accounts on-the-fly. The latter will create a new account with the
+        entered username and copy all other details from the person.
+      {% endblocktrans %}
+    </p>
+  </div>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ persons_accounts_formset.management_form }}
+
+    <table class="table table-striped table-bordered table-hover table-condensed table-responsive w-100 d-block d-md-table">
+      <tr>
+        <th>{% blocktrans %}Person{% endblocktrans %}</th>
+        <th>{% blocktrans %}Existing account{% endblocktrans %}</th>
+        <th>{% blocktrans %}New account{% endblocktrans %}</th>
+      </tr>
+      {% for form in persons_accounts_formset %}
+        {{ form.id }}
+        <tr>
+          <td>
+            {{ form.last_name }}
+            {{ form.first_name }}
+          </td>
+          <td>{{ form.user }}</td>
+          <td>{{ form.new_user }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <button type="submit" class="btn btn-dark">
+      {% blocktrans %}Update{% endblocktrans %}
+    </button>
+  </form>
+{% endblock %}

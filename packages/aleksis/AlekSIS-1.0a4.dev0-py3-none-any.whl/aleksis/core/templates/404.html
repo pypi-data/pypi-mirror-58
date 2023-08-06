@@ -1,0 +1,39 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+{% block page_title %}
+ {% blocktrans %}Not found{% endblocktrans %}
+{% endblock %}
+
+{% block content %}
+ <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+   <p class="lead">
+     {{ exception|default:_('The requested page or object was not found.') }}
+   </p>
+   <hr />
+   <p>
+    {% blocktrans %}
+     If you were redirected by a link on an external page,
+     it is possible that that link was outdated.
+    {% endblocktrans %}
+    {% blocktrans %}
+     If you think this is an error in AlekSIS, please contact your site
+     administrators.
+    {% endblocktrans %}
+   </p>
+   <ul>
+    {% for admin in ADMINS %}
+     <li>
+      {{ admin.0 }}
+      &lt;
+      <a href="mailto:{{ admin.1 }}">
+       {{ admin.1 }}
+      </a>
+      &gt;
+     </li>
+    {% endfor %}
+   </ul>
+  </div>
+ </div>
+{% endblock %}

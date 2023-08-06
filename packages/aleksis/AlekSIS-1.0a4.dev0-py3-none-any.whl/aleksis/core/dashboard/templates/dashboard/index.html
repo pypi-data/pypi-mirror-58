@@ -1,0 +1,18 @@
+{% load staticfiles %}
+{% include 'partials/header.html' %}
+
+<main>
+    <script>
+        var API_URL = "{% url "api_information" %}";
+        var MY_PLAN_URL = "{% url "timetable_my_plan" %}";
+    </script>
+    <script src="{% static "js/moment-with-locales.min.js" %}"></script>
+    {% include "components/react.html" %}
+    <script src="{% static "js/dashboard.js" %}"></script>
+
+    <div id="dashboard_container">
+
+    </div>
+</main>
+
+{% include 'partials/footer.html' %}

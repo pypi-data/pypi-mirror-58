@@ -1,0 +1,35 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+{% block page_title %}
+ {% blocktrans %}Forbidden{% endblocktrans %}
+{% endblock %}
+
+{% block content %}
+ <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+   <p class="lead">
+     {{ exception|default:_('You are not allowed to access the requested page or object.') }}
+   </p>
+   <hr />
+   <p>
+    {% blocktrans %}
+     If you think this is an error in AlekSIS, please contact your site
+     administrators.
+    {% endblocktrans %}
+   </p>
+   <ul>
+    {% for admin in ADMINS %}
+     <li>
+      {{ admin.0 }}
+      &lt;
+      <a href="mailto:{{ admin.1 }}">
+       {{ admin.1 }}
+      </a>
+      &gt;
+     </li>
+    {% endfor %}
+   </ul>
+  </div>
+ </div>
+{% endblock %}

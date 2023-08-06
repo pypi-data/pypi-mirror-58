@@ -1,0 +1,22 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load i18n %}
+
+{% block page_title %}
+  {% blocktrans %}
+    AlekSIS (School Information System)
+  {% endblocktrans %}
+{% endblock %}
+
+{% block content %}
+  <div class="flow-text">
+    <p>
+      {% blocktrans %}
+        AlekSIS is a web-based school information system (SIS) which can be used to
+        manage and/or publish organisational data of educational institutions.
+      {% endblocktrans %}
+    </p>
+  </div>
+{% endblock %}

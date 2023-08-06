@@ -1,0 +1,19 @@
+{# -*- engine:django -*- #}
+
+{% load i18n %}
+
+{% if not user.person and not user.is_anonymous %}
+  <div class="alert error">
+    <div>
+      <i class="material-icons left">error</i>
+
+      <p>
+        {% blocktrans %}
+          Your user account is not linked to a person. This means you
+          cannot access any school-related information. Please contact
+          the managers of AlekSIS at your school.
+        {% endblocktrans %}
+      </p>
+    </div>
+  </div>
+{% endif %}
