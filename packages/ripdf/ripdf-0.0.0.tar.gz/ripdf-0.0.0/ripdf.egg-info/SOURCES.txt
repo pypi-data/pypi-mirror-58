@@ -1,0 +1,6 @@
+README.md
+setup.py
+ripdf.egg-info/PKG-INFO
+ripdf.egg-info/SOURCES.txt
+ripdf.egg-info/dependency_links.txt
+ripdf.egg-info/top_level.txt
