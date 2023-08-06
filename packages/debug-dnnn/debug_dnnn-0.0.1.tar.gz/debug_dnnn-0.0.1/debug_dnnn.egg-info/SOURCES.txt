@@ -1,0 +1,8 @@
+README.md
+setup.py
+debug_dnnn/__init__.py
+debug_dnnn/print_str.py
+debug_dnnn.egg-info/PKG-INFO
+debug_dnnn.egg-info/SOURCES.txt
+debug_dnnn.egg-info/dependency_links.txt
+debug_dnnn.egg-info/top_level.txt
