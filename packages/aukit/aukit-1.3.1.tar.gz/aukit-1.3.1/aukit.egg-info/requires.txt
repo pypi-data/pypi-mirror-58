@@ -1,0 +1,10 @@
+webrtcvad
+pydub
+lws
+scipy
+numpy
+librosa
+pyworld
+tensorflow<=1.13.1
+pyaudio
+sounddevice
