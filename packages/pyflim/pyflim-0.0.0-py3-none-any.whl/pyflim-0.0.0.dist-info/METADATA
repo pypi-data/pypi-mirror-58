@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyflim
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/maurosilber/pyflim
+Author: Mauro Silberberg
+Author-email: maurosilber@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: numba
+
+UNKNOWN
+
+
