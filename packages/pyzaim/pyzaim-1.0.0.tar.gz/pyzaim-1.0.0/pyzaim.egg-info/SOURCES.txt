@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyzaim/__init__.py
+pyzaim/pyzaim.py
+pyzaim.egg-info/PKG-INFO
+pyzaim.egg-info/SOURCES.txt
+pyzaim.egg-info/dependency_links.txt
+pyzaim.egg-info/requires.txt
+pyzaim.egg-info/top_level.txt
