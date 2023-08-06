@@ -1,0 +1,10 @@
+mutagen==1.43.0
+mysqlclient==1.4.6
+pycurl==7.43.0.2
+pyliblo==0.10.0
+python-shout==0.2.6
+python-twitter==3.5
+pyyaml==3.13
+setuptools
+wheel
+xmltodict==0.12.0
