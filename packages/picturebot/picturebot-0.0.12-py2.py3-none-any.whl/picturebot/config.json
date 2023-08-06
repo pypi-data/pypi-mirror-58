@@ -1,0 +1,19 @@
+{
+    "workspace": "D:\\HI",
+    "workflow": [
+        "RAW",
+        "Selection",
+        "Edited",
+        "Affinity",
+        "Instagram",
+        "Backup",
+        "Preview"
+    ],
+    "baseflow": "RAW",
+    "backup": "Backup",
+    "selection": "Selection",
+    "edited": "Edited",
+    "preview": "Preview",
+    "editing": "Affinity",
+    "instagram": "Instagram"
+}
