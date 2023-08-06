@@ -1,0 +1,6 @@
+foliant>=1.0.8
+foliantcontrib.utils.combined_options>=1.0.7
+foliantcontrib.utils.preprocessor_ext
+foliantcontrib.utils.header_anchors
+foliantcontrib.meta>=1.2.2
+foliantcontrib.anchors>=1.0.4
