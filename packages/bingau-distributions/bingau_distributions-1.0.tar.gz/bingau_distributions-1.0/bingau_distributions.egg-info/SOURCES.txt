@@ -1,0 +1,10 @@
+setup.py
+bingau_distributions/Binomialdistribution.py
+bingau_distributions/Gaussiandistribution.py
+bingau_distributions/Generaldistribution.py
+bingau_distributions/__init__.py
+bingau_distributions.egg-info/PKG-INFO
+bingau_distributions.egg-info/SOURCES.txt
+bingau_distributions.egg-info/dependency_links.txt
+bingau_distributions.egg-info/not-zip-safe
+bingau_distributions.egg-info/top_level.txt
