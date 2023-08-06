@@ -1,0 +1,8 @@
+[console_scripts]
+atr=mtcli.cli:atr
+bars=mtcli.cli:bars
+ema=mtcli.cli:ema
+fib=mtcli.cli:fib
+mt=mtcli.cli:cli
+sma=mtcli.cli:sma
+
