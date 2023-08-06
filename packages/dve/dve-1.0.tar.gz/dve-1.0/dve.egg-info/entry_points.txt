@@ -1,0 +1,3 @@
+[gui_scripts]
+dve = dve.qt.main:main
+
