@@ -1,0 +1,8 @@
+include README.rst
+include TODO.txt
+include INSTALL.txt
+include CHANGELOG.rst
+exclude nanosite
+recursive-include nano/*/templates *
+recursive-exclude nano/* tests.py
+global_exclude *.py[cod] _pycache__ *.so tests.py
