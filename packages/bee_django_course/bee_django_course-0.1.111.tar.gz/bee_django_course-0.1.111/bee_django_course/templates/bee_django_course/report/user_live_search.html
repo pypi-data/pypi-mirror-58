@@ -1,0 +1,143 @@
+<div style="margin: 10px 0;background: gainsboro;padding: 10px;">
+    <div><h5>快速筛选：</h5></div>
+    <ul class="list-group inline_block">
+        <li class="list-group-item"><a href="javascript:;" onclick="set_range_today()">今天</a></li>
+        <li class="list-group-item"><a href="javascript:;" onclick="set_range_yestoday()">昨天</a></li>
+        <li class="list-group-item"><a href="javascript:;" onclick="set_range_this_week()">本周</a></li>
+        <li class="list-group-item"><a href="javascript:;" onclick="set_range_last_week()">上周</a></li>
+        <li class="list-group-item"><a href="javascript:;" onclick="set_range_this_month()">本月</a></li>
+        <li class="list-group-item"><a href="javascript:;" onclick="set_range_last_month()">上月</a></li>
+    </ul>
+
+    <form method="get">
+        {{ search_form }}
+        <input type="hidden" name="export" id="export">
+        {% if user_class %}
+            <input type="hidden" name="class_id" id="class_id" value="{{ user_class.id }}">
+        {% endif %}
+        {#    <input type="submit" value="查询"/>#}
+
+        <button class="" onclick="click_search()">查询</button>
+        <button class="" onclick="click_export()">导出</button>
+        <span style="color: gray">日期范围不能超过2个月</span>
+
+    </form>
+</div>
+{% block scripts %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+        });
+
+        function click_search() {
+            var $form = $("form");
+            var $export = $("#export");
+            $export.attr("value", "");
+            $form.submit()
+
+        }
+
+        function click_export() {
+            var $form = $("form");
+            var $export = $("#export");
+            $export.attr("value", "1");
+            $form.submit();
+
+        }
+
+        function set_range_today() {
+            var now = new Date();
+            var today = now.getFullYear() + "-" + String(now.getMonth() + 1) + "-" + now.getDate();
+
+            $("#id_end_time").val(today);
+            $("#id_start_time").val(today);
+            var $form = $("form");
+            $form.submit();
+        }
+
+        function set_range_yestoday() {
+            var d = new Date();
+            d.setDate(d.getDate() - 1);
+            var yesterday = d.getFullYear() + "-" + String(d.getMonth() + 1) + "-" + d.getDate();
+
+            $("#id_end_time").val(yesterday);
+            $("#id_start_time").val(yesterday);
+
+            var $form = $("form");
+            $form.submit();
+        }
+
+        function set_range_this_week() {
+            var now = new Date();
+            var today = now.getFullYear() + "-" + String(now.getMonth() + 1) + "-" + now.getDate();
+            $("#id_end_time").val(today);
+
+            var start_date = now.getDate() - now.getDay() + 1;
+            var week_start = new Date(now.setDate(start_date));
+            var start = week_start.getFullYear() + "-" + String(week_start.getMonth() + 1) + "-" + week_start.getDate();
+            $("#id_start_time").val(start);
+
+            var $form = $("form");
+            $form.submit();
+        }
+
+        function set_range_last_week() {
+            var now = new Date();
+            var last_week = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 7);
+
+            var start_date = last_week.getDate() - last_week.getDay() + 1;
+            var end_date = start_date + 6;
+
+            var week_start = new Date(last_week.setDate(start_date));
+            var week_end = new Date(last_week.setDate(end_date));
+
+            $("#id_start_time").val(week_start.getFullYear() + "-" + String(week_start.getMonth() + 1) + "-" + week_start.getDate());
+            $("#id_end_time").val(week_end.getFullYear() + "-" + String(week_end.getMonth() + 1) + "-" + week_end.getDate());
+
+            var $form = $("form");
+            $form.submit();
+        }
+
+        function set_range_this_month() {
+            var now = new Date();
+
+            var start_date = new Date(now.getFullYear(), now.getMonth());
+            var next_month = new Date(now.getFullYear(), now.getMonth() + 1);
+            var end_date = new Date(next_month.setDate(0));
+
+            $("#id_start_time").val(start_date.getFullYear() + "-" + String(start_date.getMonth() + 1) + "-" + start_date.getDate());
+            $("#id_end_time").val(end_date.getFullYear() + "-" + String(end_date.getMonth() + 1) + "-" + end_date.getDate());
+
+            var $form = $("form");
+            $form.submit();
+        }
+
+        function set_range_last_month() {
+            var now = new Date();
+
+            var last_month = new Date(now.getFullYear(), now.getMonth() - 1);
+            var start_date = new Date(last_month.getFullYear(), last_month.getMonth());
+            var this_month = new Date(now.getFullYear(), now.getMonth());
+            var end_date = new Date(this_month.setDate(0));
+
+            $("#id_start_time").val(start_date.getFullYear() + "-" + String(start_date.getMonth() + 1) + "-" + start_date.getDate());
+            $("#id_end_time").val(end_date.getFullYear() + "-" + String(end_date.getMonth() + 1) + "-" + end_date.getDate());
+
+            var $form = $("form");
+            $form.submit();
+        }
+    </script>
+
+{% endblock %}
+
+{% block styles %}
+    <style>
+        .inline_block {
+            display: inline-block;
+        }
+
+        .inline_block li {
+            display: inline-block;
+        }
+    </style>
+{% endblock styles %}
