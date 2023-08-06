@@ -1,0 +1,11 @@
+class_settings/__init__.py,sha256=o-jWQ2R1uH3sp8NQO4f_A01nlpYHDlyQKidM_BBTodY,642
+class_settings/env.py,sha256=0YMTGMrl6Ys2a-WSoDnI-WLc6ctzL3PBmKmm2FxbQ4M,4285
+class_settings/importers.py,sha256=5wEZItGl1M3wS5DOeJyh69K4XbLs9jvLOFi653ib444,5216
+class_settings/options.py,sha256=Zl-PTCmXyQrW42PWL6YQvn4-iTZhFrNj9vQx3U-NINc,343
+class_settings/parsers.py,sha256=RFYaYiunIDVUtOyN4cVFQftrdhTA3oBIxOH3xQk25rg,1871
+class_settings/settings.py,sha256=PiWTQRoTeLC4XQmLitHSjJm-sLVlnWZ-bPgByLfQttA,4065
+class_settings/utils.py,sha256=esGGv17GCwXB4Dh7mT4rYKyta9T_dBqrnY9ghNkgGrM,82
+django_class_settings-0.2.0.dist-info/LICENSE,sha256=ytkNZf0ixUwZGOfDnscStQu3lg5nAm-TxrtVqTTd4ss,1071
+django_class_settings-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_class_settings-0.2.0.dist-info/METADATA,sha256=NKqXHMLXjobpDVow7uCDpVQxVT-nrbW89ulrAmbHMAg,4517
+django_class_settings-0.2.0.dist-info/RECORD,,
