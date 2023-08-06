@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+src/aneki/__init__.py
+src/aneki/core.py
+src/aneki/main.py
+src/aneki/parsers.py
+src/aneki/shytok_net.cert
+src/aneki.egg-info/PKG-INFO
+src/aneki.egg-info/SOURCES.txt
+src/aneki.egg-info/dependency_links.txt
+src/aneki.egg-info/entry_points.txt
+src/aneki.egg-info/requires.txt
+src/aneki.egg-info/top_level.txt
