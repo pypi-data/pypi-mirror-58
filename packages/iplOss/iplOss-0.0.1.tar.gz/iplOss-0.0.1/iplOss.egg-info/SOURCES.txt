@@ -1,0 +1,8 @@
+setup.py
+iplOss/MyOSS.py
+iplOss/MyOSSException.py
+iplOss/OssUtil.py
+iplOss.egg-info/PKG-INFO
+iplOss.egg-info/SOURCES.txt
+iplOss.egg-info/dependency_links.txt
+iplOss.egg-info/top_level.txt
