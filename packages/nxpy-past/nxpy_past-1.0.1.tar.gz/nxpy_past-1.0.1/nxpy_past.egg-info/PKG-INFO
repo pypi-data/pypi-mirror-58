@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: nxpy-past
+Version: 1.0.1
+Summary: Python version based conditionals
+Home-page: https://github.com/nmusatti/nxpy
+Author: Nicola Musatti
+Author-email: nicola.musatti@gmail.com
+License: Boost Software License 1.0 (BSL-1.0)
+Project-URL: Documentation, https://nxpy.readthedocs.io/en/latest/past.html
+Project-URL: Source Code, https://github.com/nmusatti/nxpy/tree/master/libs/past
+Description: Nxpy Past
+        =========
+        
+        You can install the library with pip::
+        
+            pip install nxpy-past
+        
+        *Nxpy Past* provides ways to express conditions on the current Python version to help handling
+        version differences::
+        
+           import nxpy.core.past
+           
+           if nxpy.core.past.V_2_6.at_least():
+               import abc
+           else:
+               class abc(object):
+                   class ABCMeta(type):
+                       def __new__(mcs, name, bases, dict):
+                           return type.__new__(mcs, name, bases, dict)
+        
+        It is also possible to express assertions on the current version to better document why some code
+        fails::
+        
+           import nxpy.core.past
+           
+           nxpy.core.past.enforce_at_least(nxpy.core.past.V_2_6)
+        
+        The library's documentation is available on
+        `ReadTheDocs <https://nxpy.readthedocs.io/en/latest/past.html>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/x-rst
