@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: micropm4py
+Version: 0.0.7
+Summary: MicroPM4Py - Process Mining for Micro-Controllers
+Home-page: http://www.pm4py.org
+Author: Alessandro Berti
+Author-email: alessandro.berti89@gmail.com
+License: GPL 3.0
+Project-URL: Documentation, https://www.micropm4py.org/documentation.html
+Project-URL: Source, https://github.com/Javert899/micropm4py/tree/master/micropm4py
+Project-URL: Tracker, https://github.com/Javert899/micropm4py/issues
+Description: # micropm4py
+        Process Mining in resource-constrained environments
+        
+        Scripts tested on Cortex-M3 with 64KB of RAM
+Platform: UNKNOWN
