@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: PyQtVisa
+Version: 1.1.dev5
+Summary: Qt framework for building PyVISA applications for GPIB, RS232, TCPIP and USB instruments
+Home-page: https://github.com/mesoic/PyQtVisa
+Author: Michael Winters
+Author-email: mesoic@protonmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: Qt VISA GPIB USB serial RS232 measurement acquisition
+Platform: Linux
+Platform: Windows
+Platform: Mac
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
