@@ -1,0 +1,10 @@
+word_search_puzzle/__init__.py,sha256=rMAfsP6Hb75p993EYq2Er99BwmStgG2VR2FptTsBTiY,20
+word_search_puzzle/algorithms.py,sha256=TwqNRhgKzU1z7Hto2ALrRCunDX-bKyOp0kHOdNZd5aw,3237
+word_search_puzzle/exceptions.py,sha256=Ggje9sLFRC8EgcJITkGLoRjcdP97lJTPlD5TK9N1LiM,458
+word_search_puzzle/models.py,sha256=TEo68zNWzsjAz259phq_bwgNi_IvBooeB3e3jJorVvo,5088
+word_search_puzzle/utils.py,sha256=raG7MDwxssHOfyrA_Xylq52P63ecZ9tYZUjO0b6tauA,3651
+word_search_puzzle-1.0.dist-info/LICENSE,sha256=KigXHazxDNtXmoFi7MU7IaYXDUOSKHgAAkMWOeh1NXA,1076
+word_search_puzzle-1.0.dist-info/METADATA,sha256=5bprFwu9hkSLyyDvaBhCMXgaT1jeqtBaEba8dAc_gG8,1359
+word_search_puzzle-1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+word_search_puzzle-1.0.dist-info/top_level.txt,sha256=57DUQOI9CU3LZSJJx39hDZSfT-0MhPURiNUN1YB3JGw,19
+word_search_puzzle-1.0.dist-info/RECORD,,
