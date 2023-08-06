@@ -1,0 +1,11 @@
+README.md
+setup.py
+tekorrect/__init__.py
+tekorrect/pangu.py
+tekorrect/tekorrect.py
+tekorrect.egg-info/PKG-INFO
+tekorrect.egg-info/SOURCES.txt
+tekorrect.egg-info/dependency_links.txt
+tekorrect.egg-info/entry_points.txt
+tekorrect.egg-info/requires.txt
+tekorrect.egg-info/top_level.txt
