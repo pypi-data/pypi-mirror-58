@@ -1,0 +1,6 @@
+README.md
+setup.py
+gostyle.egg-info/PKG-INFO
+gostyle.egg-info/SOURCES.txt
+gostyle.egg-info/dependency_links.txt
+gostyle.egg-info/top_level.txt
