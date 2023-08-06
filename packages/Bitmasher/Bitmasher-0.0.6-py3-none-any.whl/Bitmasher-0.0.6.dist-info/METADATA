@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: Bitmasher
+Version: 0.0.6
+Summary: Bit rotational encryption with steganography
+Home-page: https://github.com/vulogov/Bitmasher
+Author: Vladimir Ulogov
+Author-email: vladimir.ulogov@me.com
+License: MPL+2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Arpeggio (==1.9.0)
+Requires-Dist: astropy (==3.2.3)
+Requires-Dist: Bitmasher (==0.0.4)
+Requires-Dist: bitstring (==3.1.6)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: Cython (==0.29.13)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: dpath (==1.4.2)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: importlib-metadata (==1.3.0)
+Requires-Dist: keyring (==20.0.0)
+Requires-Dist: kiwisolver (==1.1.0)
+Requires-Dist: Logbook (==1.4.3)
+Requires-Dist: matplotlib (==3.1.2)
+Requires-Dist: more-itertools (==8.0.2)
+Requires-Dist: msgpack (==0.6.2)
+Requires-Dist: numpy (==1.17.4)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: photutils (==0.7.1)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: protobuf (==3.10.0)
+Requires-Dist: Pygments (==2.5.2)
+Requires-Dist: pyparsing (==2.4.5)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: scipy (==1.3.3)
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: textX (==2.0.1)
+Requires-Dist: tqdm (==4.41.0)
+Requires-Dist: twine (==3.1.1)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: virtualenv (==16.7.2)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==0.6.0)
+
+# Bitmasher - private key crypto algorithm based on bit buffer rotation and steganography
+
+## Algorithm.
+  Bitmasher is based on three encryption ideas combined in three passes of  encryption.
+
+  - XOR encryption of the data with rotational key
+  - Mixing XOR encrypted block of data with a random data
+  - Bit-rotation ROR/ROL (ROR/ROL for decryption), based on two random keys: one defining the depth of the rotation, other - directionality of the rotation.
+
+  So, in order to break encrypted block of data, you actually need to figure out two keys, and second stage mixing preventing statistical analysis. If you are interested to learn more about algorithm itself, please take a look at this slides. [Buffer bit-rotating cryptography with steganography](https://www.slideshare.net/VladimirUlogov1/short-presentation-of-the-bitmasher-privatekey-encryption)
+
+## "Hello World" of the Bitmasher
+
+```
+>>> from Bitmasher import *
+>>> n = init()
+>>> d = encrypt(n, "This is a BIG secret")
+>>> print(decrypt(n, *d))
+b'This is a BIG secret'
+>>>
+```
+ - First, we have to import Bitmasher functions. Python 3.6 or newer is required.
+ - Next, we initializing namespace for a crypto operations.
+ - We are encrypting. Note, first parameter to a `encrypt` function is a reference to a namespace. You can pass any Python values, supported by `msgpack` serializing library.
+ - Next, we decrypting. Please note, you have to pass namespace as first parameter.
+
+ This is all very simple
+
+## Where is my keys !!!!
+  Bitmasher does not trust you with keys generation. It maintain a "codebook" internally by generating keys on demand. First 1024 keys are generating while calling init(). Each block of data encrypting with uniq key. Key consisting of two parts:
+  - Private key. serves as modulo for the XOR operation during the first pass and number of rotation at third pass.
+  - Masher. Dataset defining directionality of the rotations at third pass.
+
+  Function `encrypt` returning the list of the tuples, where first element of the tuple is key ID and second element is encrypted data. In order to decrypt, you are expecting to load a "used pages" from codebook, that you received by secure means inside Bitmasher namespace.
+
+### How to export pages from a codebook which were used during encryption ?
+
+```
+>>> from Bitmasher import *
+>>> n = init()
+>>> d = encrypt(n, "This is a BIG secret")
+>>> book = cryptobook_save(n)
+>>> len(book)
+21085
+>>> book[:32]
+b'\x82\xda\x00$1ba990f9-6b43-4a9d-9bc1-a820'
+```
+  Yep, it is a msgpack data. And it is contains all your keys.
+
+### How to load pages from a codebook to use for decryption
+
+```
+>>> from Bitmasher import *
+>>> n = init()
+>>> d = encrypt(n, "This is a BIG secret")
+.... saving and transferring cryptobook image
+>>> n = cryptobook_load(n, book)
+>>> print(decrypt(n, *d))
+b'This is a BIG secret'
+```
+
+## Fun stuff
+
+  Let's say, you have to transmit your secret message, encrypted with Bitmasher to your secret correspondent over a radio waves. **LEGAL NOTE:** *this type of the operations is expressly prohibited by FCC rules and I am not responsible for the troubles you will get yourself into, if you will actually try this. So, do not do this for real.* Dust off your straight key or paddle and get your telegram formatted.
+```
+>>> d = encrypt(n, "This is a BIG secret")
+>>> d
+[('cd34242a-c174-4769-b945-23f805d684cf', b'\x16\xb.....
+```
+  After you get your encryption done ...
+```
+>>> tlg = telegram(d[0][1])
+>>> print(tlg)
+022 186 243 218 120 121 196 018
+089 191 101 201 184 042 085 108
+100 047 091 015 226 152 003 093
+111 121 108 086 182 134 061 035
+225 037 182 083 247 230 122 123
+044 072 100 097 135 029 090 080
+238 024 225 141 016 247 075 009
+...
+```
+  Breath deep and use your HAM radio skills for a something good.
+
+73
+
+
