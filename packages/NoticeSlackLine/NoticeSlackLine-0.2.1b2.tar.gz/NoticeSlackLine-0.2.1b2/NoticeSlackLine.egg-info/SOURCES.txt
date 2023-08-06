@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+NoticeSlackLine.egg-info/PKG-INFO
+NoticeSlackLine.egg-info/SOURCES.txt
+NoticeSlackLine.egg-info/dependency_links.txt
+NoticeSlackLine.egg-info/requires.txt
+NoticeSlackLine.egg-info/top_level.txt
+noticesl/__init__.py
+noticesl/noticeapp.py
