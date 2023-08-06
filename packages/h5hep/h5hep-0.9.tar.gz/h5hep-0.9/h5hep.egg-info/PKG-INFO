@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: h5hep
+Version: 0.9
+Summary: File format using HDF5 for heterogeneous length data entries.
+Home-page: https://github.com/mattbellis/h5hep
+Author: Matt Bellis
+Author-email: mbellis@siena.edu
+License: MIT
+Download-URL: https://github.com/mattbellis/h5hep/archive/v0.9.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.6
