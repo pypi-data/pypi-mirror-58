@@ -1,0 +1,3 @@
+[console_scripts]
+kubectl-kadalu = kubectl_kadalu.main:main
+
