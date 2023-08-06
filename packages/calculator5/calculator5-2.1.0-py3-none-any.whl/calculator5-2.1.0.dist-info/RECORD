@@ -1,0 +1,15 @@
+calculator5/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculator5/button_names.py,sha256=JVXLFfU-Ke_AtGhJTMwKnwa3yD2XH9fixi_pgrpdmJ0,1219
+calculator5/calculator.py,sha256=IlGAUPEpUo4_U0AcA4igGIJe6pXwJzfavTV5XOiURwI,615
+calculator5/calculator_date.py,sha256=0mcIP-Ls3ruD-LOnZPzVljWW2DJJTDKnyQzXAqKfujg,1705
+calculator5/calculator_date_page.py,sha256=Hq90vyLm7DJkMtZmUAVvqWB7Yx1Mgnr80uzVCGjuiHo,2448
+calculator5/calculator_page.py,sha256=xUefIh1BAhQ-8SZ7jG_Foa6iN6QGyfPmXj9Hy38AIL4,2438
+calculator5/calculator_standard_science.py,sha256=2X5ZzBN1s3vyn7rznOMOK_JFs3-V5zdMoGnE7tkRsz0,2625
+calculator5/programmer_page.py,sha256=ffRTqEzN81_DJCl6HWg_gKhvG8hoKPURF1L9ykd5E68,4032
+calculator5/science_page.py,sha256=KBfeFqR39XqY9awIc9MRKSBHzIAIbdDuVhGYe484pOM,2800
+calculator5/standard_page.py,sha256=GZjtpduGzQbz5CnHMvQ7jA-HJIQQT6hglbfvYbqDCYA,2716
+calculator5-2.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculator5-2.1.0.dist-info/METADATA,sha256=bPpCDmZ0k3-fwICDMsqpKmnBUnAF9M3aOSBExe5pGXo,267
+calculator5-2.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+calculator5-2.1.0.dist-info/top_level.txt,sha256=QzVjW0tsogGWB1gUAlkgZbCeKpw9UXSVIvSd4FkRgxM,12
+calculator5-2.1.0.dist-info/RECORD,,
