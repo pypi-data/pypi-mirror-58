@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: netfile
+Version: 0.0.0a0.dev0
+Summary: netfile is a minimalistic .NET executable binary parser
+Home-page: https://gitlab.com/malie-library/netfile
+Author: nago
+Author-email: nago@malie.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Disassemblers
+
+Bless this mess
+
+
