@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pweb
+Version: 1.5.1
+Summary: An small python web framework
+Home-page: https://pweb.leafpy.org/
+Author: Yehuaqing
+Author-email: yhq1978@hotmail.com
+License: MIT Licence
+Description: An small python web frame work
+Keywords: pip,pweb,pyweb
+Platform: any
