@@ -1,0 +1,5 @@
+numpy
+mayavi
+pyvoro
+wxPython
+PyQt5
