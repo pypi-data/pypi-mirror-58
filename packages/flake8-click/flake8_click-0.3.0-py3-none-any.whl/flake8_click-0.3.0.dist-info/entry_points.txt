@@ -1,0 +1,3 @@
+[flake8.extension]
+r2c-click-best-practices=flake8_click.flake8_click:ClickPracticeCheckers
+
