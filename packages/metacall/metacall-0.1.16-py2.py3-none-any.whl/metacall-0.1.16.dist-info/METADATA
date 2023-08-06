@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: metacall
+Version: 0.1.16
+Summary: A library for providing inter-language foreign function interface calls
+Home-page: https://github.com/metacall/core
+Author: Vicente Eduardo Ferrer Garcia
+Author-email: vic798@gmail.com
+License: Apache License 2.0
+Keywords: metacall python port ffi polyglot faas serverless
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+===============
+M E T A C A L L
+===============
+A library for providing inter-language foreign function interface calls
+-----------------------------------------------------------------------
+
+Abstract
+========
+
+**METACALL** Python Port is the port of **METACALL** to Python
+Programming Language. With **METACALL** Python Port you can
+transparently execute code from Python to any programming language, for
+example, calling JavaScript, NodeJS, Ruby or C# code from Python.
+
+Install
+========
+
+Install MetaCall binaries first:
+
+.. code:: console
+
+   curl -sL https://raw.githubusercontent.com/metacall/install/master/install.sh | bash
+
+Then install Python package:
+
+.. code:: console
+
+   pip install metacall
+
+Example
+========
+
+``multiply.rb``
+
+.. code:: ruby
+
+    def multiply(left, right)
+        return left * right
+    end
+
+``main.py``
+
+.. code:: python
+
+   from metacall import metacall_load_from_file, metacall
+
+   metacall_load_from_file('rb', [ 'multiply.rb' ]);
+
+   metacall('multiply', 3, 4); # 7
+
+
