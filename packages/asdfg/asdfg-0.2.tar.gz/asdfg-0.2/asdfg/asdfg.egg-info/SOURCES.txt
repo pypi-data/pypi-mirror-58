@@ -1,0 +1,5 @@
+setup.py
+asdfg/asdfg.egg-info/PKG-INFO
+asdfg/asdfg.egg-info/SOURCES.txt
+asdfg/asdfg.egg-info/dependency_links.txt
+asdfg/asdfg.egg-info/top_level.txt
