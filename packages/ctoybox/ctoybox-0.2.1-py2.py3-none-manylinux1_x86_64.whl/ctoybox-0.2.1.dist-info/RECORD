@@ -1,0 +1,9 @@
+ctoybox-0.2.1.dist-info/METADATA,sha256=uJSQGJakvjPxNA6RXe4Qlf8HkruvCc8hRkoG6EUuCxs,851
+ctoybox-0.2.1.dist-info/WHEEL,sha256=5PlEHEeaz9vEcbIivbaOiBXTX2HpPKd4Ud5nhTaSmmw,133
+ctoybox/__init__.py,sha256=MZyNeB0KUL-32lxqyL17wFtv7S05flRcGXyHG1kUoOk,48
+ctoybox/ffi.py,sha256=UdgF1vzXDS5_1fx52BleljAMLocqPHMVyA-h427P-NQ,9886
+ctoybox/human_play.py,sha256=Kd32UC-dKJb-nDRlpOFiJGw6jfs3sV4C4OIHNhcGgF4,2787
+ctoybox/ctoybox/__init__.py,sha256=fAua8dQbFJlLpwheN-qdKEbbyLPRoS-P40C4XkthPaQ,142
+ctoybox/ctoybox/ffi.py,sha256=5VsIMz-hxbr0jFh-Yq06SMFgX2yfeoM_SZec4UGLgeg,2205
+ctoybox/ctoybox/native.so,sha256=VSaGXfSM7vECfZykdi8vV-g1cNKa282EJxOW3cWnWb0,1317096
+ctoybox-0.2.1.dist-info/RECORD,,
