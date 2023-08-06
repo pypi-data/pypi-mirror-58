@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: giftpack
+Version: 1.0
+Summary: A pack for the gift drawing at the Xmas 2019 family lunch
+Home-page: https://github.com/Steffo99/giftpack
+Author: Stefano Pigozzi
+Author-email: ste.pigozzi@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: royalnet[telegram,discord,matrix,alchemy_easy,bard,constellation,sentry,herald,coloredlogs] (>=5.2,<6.0)
+Description-Content-Type: text/markdown
+
+# `giftpack`
+
