@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: confluence-cloud-python
+Version: 1.0.0
+Summary: This package will provide access to Atlassian Confluence REST APIs
+Home-page: https://github.com/erashwani
+Author: Ashwani Sharma
+Author-email: er.ashwani.it@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Project description
+confluence-cloud-ashwani
+confluence-cloud-ashwani is an API wrapper for Atlassian Confluence written in Python
+
+###Installing
+> pip install confluence-cloud-python
+
+###Usage
+Client instantiation
+
+> from confluence-cloud-python.client import Client
+
+> client = Client('CLIENT_ID', 'CLIENT_SECRET') # Host must have trailing slash
+OAuth 2.0 (3LO)
+
+For more information: https://developer.atlassian.com/cloud/jira/platform/oauth-2-authorization-code-grants-3lo-for-apps/
+
+Direct the user to the authorization URL to get an authorization code
+A refresh token can be returned with the access token in your initial authorization flow. To do this, add the offline_access scope to the scope parameter of the authorization URL.
+
+> scope_list = ['read:confluence-space.summary', 'offline_access','read:confluence-props','read:confluence-content.all', 'read:confluence-content.summary', 'search:confluence']
+
+> url = client.authorization_url('REDIRECT_URI', scope_list, 'STATE')
+
+Exchange authorization code for access token
+
+> response = client.exchange_code('REDIRECT_URI', 'CODE')
+
+Set access token in the library
+
+> client.set_access_token('ACCESS_TOKEN')
+
+Get the cloudid for your site
+
+> response = client.get_resource_list()
+
+Set cloudid in the library
+> client.set_cloud_id('CLOUD_ID')
+
+Refresh token
+
+> response = client.refresh_token('REFRESH_TOKEN')
+
+
+
+
