@@ -1,0 +1,9 @@
+README.md
+setup.py
+spyc/__init__.py
+spyc/internal.py
+spyc/spec_types.py
+spyc.egg-info/PKG-INFO
+spyc.egg-info/SOURCES.txt
+spyc.egg-info/dependency_links.txt
+spyc.egg-info/top_level.txt
