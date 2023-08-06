@@ -1,0 +1,3 @@
+[console_scripts]
+key-pressed-count = key_pressed_count.keycount:main
+
