@@ -1,0 +1,16 @@
+magnet2torrent/__init__.py,sha256=lQZbuHPUUshgze9QUxLAFqM3GEsHzC3pG0ZSqAD22LA,113
+magnet2torrent/__main__.py,sha256=62hNbod99lAsZu6B3vMhctHTveY-4u1OiGvSEq5KR0w,2524
+magnet2torrent/bencode.py,sha256=VPTdUVz45b9qneDgfh9G3DGlIQUYQMk455x8WY3MYBg,3242
+magnet2torrent/exceptions.py,sha256=PwOpT-UECiUlv5n-LvVhAfBqsJIgCxpeEkd2mVYTQzc,85
+magnet2torrent/httptracker.py,sha256=zglAAodWwc2P3UfMKftyDZuzU0nGFWuhf8-kMjVfDcQ,1542
+magnet2torrent/magnet2torrent.py,sha256=h8pk8VXlDlF0D4kk_dRP_GlqKLLH4kJpygQZjgyapfk,4525
+magnet2torrent/peer.py,sha256=pxoh_rvQ1r3AC78f0MnNcgbA9SMCAIazVriWBzNkaH8,7419
+magnet2torrent/server.py,sha256=F0gF4FCkdXyJR0JVJK54vzAeSZdmH4FntGepveP-cp4,1397
+magnet2torrent/settings.py,sha256=NUFCNeYuKR_wBt6VK6H-R_QcsyoHzXdqSAQlGl3rjSI,1144
+magnet2torrent/udptracker.py,sha256=CKZNPlCgv49_PB9w2FTo5quIkpInQUOJfT6BT3fb4gU,3049
+magnet2torrent-1.0.2.dist-info/LICENSE.md,sha256=MBX8YRWikpliXPS5oe4bcOVPAAGyw4mnkGNoh4Hn6UA,1052
+magnet2torrent-1.0.2.dist-info/METADATA,sha256=Hqx0QdPJ6Y41RbOoGt-2Om87_CeoiO4NK6Kp1pcMXmY,2008
+magnet2torrent-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+magnet2torrent-1.0.2.dist-info/entry_points.txt,sha256=EZlTVvzcUjDjDKlzx_nvu9oRzutYMGluac1yfuFiBCo,65
+magnet2torrent-1.0.2.dist-info/top_level.txt,sha256=-MS2I_l-HbAzPqABXAwXwssvxJsm-7JT1NMlQAw8k9M,15
+magnet2torrent-1.0.2.dist-info/RECORD,,
