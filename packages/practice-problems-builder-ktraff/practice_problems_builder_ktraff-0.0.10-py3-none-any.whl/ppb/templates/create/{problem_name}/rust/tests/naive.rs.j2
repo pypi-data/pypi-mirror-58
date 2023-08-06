@@ -1,0 +1,20 @@
+extern crate {{ problem_name }};
+
+use {{ problem_name }}::naive;
+use {{ problem_name }}::optimized;
+
+#[test]
+fn larger_can_hold_smaller() {
+    let larger = naive::rectangle::Rectangle { width: 8, height: 7 };
+    let smaller = naive::rectangle::Rectangle { width: 5, height: 1 };
+
+    assert!(larger.can_hold(&smaller));
+}
+
+#[test]
+fn larger_can_hold_smaller_optimized() {
+    let larger = optimized::rectangle::Rectangle { width: 8, height: 7 };
+    let smaller = optimized::rectangle::Rectangle { width: 5, height: 1 };
+
+    assert!(larger.can_hold(&smaller));
+}

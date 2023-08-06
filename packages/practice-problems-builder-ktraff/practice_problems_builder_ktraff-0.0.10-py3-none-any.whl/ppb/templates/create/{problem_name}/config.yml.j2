@@ -1,0 +1,14 @@
+problem_name: "{{ problem_name }}"
+title: "{{ title }}"
+author_name: "{{ author_name }}"
+author_email: "{{ author_email }}"
+description: "{{ description }}"
+difficulty: "{{ difficulty }}"
+tags:
+{% for tag in tags -%}
+  - "{{ tag }}"
+{% endfor -%}
+resources:
+{% for resource in resources -%}
+  - "{{ resource }}"
+{% endfor -%}
