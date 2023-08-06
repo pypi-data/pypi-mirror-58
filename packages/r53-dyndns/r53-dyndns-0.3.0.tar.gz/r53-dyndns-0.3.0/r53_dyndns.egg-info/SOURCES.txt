@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+r53-dyndns.py
+setup.py
+etc/r53-dyndns.cfg
+libr53dyndns/__init__.py
+libr53dyndns/config.py
+libr53dyndns/errors.py
+libr53dyndns/ipget.py
+libr53dyndns/r53.py
+libr53dyndns/utils.py
+r53_dyndns.egg-info/PKG-INFO
+r53_dyndns.egg-info/SOURCES.txt
+r53_dyndns.egg-info/dependency_links.txt
+r53_dyndns.egg-info/requires.txt
+r53_dyndns.egg-info/top_level.txt
