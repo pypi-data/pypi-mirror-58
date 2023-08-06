@@ -1,0 +1,12 @@
+README.md
+setup.py
+pofy/__init__.py
+pofy/errors.py
+pofy/loader.py
+pofy/loading_context.py
+pofy.egg-info/PKG-INFO
+pofy.egg-info/SOURCES.txt
+pofy.egg-info/dependency_links.txt
+pofy.egg-info/not-zip-safe
+pofy.egg-info/requires.txt
+pofy.egg-info/top_level.txt
