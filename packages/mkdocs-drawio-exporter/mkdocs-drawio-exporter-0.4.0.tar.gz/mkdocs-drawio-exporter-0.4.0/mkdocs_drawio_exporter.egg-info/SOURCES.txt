@@ -1,0 +1,11 @@
+README.md
+setup.py
+mkdocs_drawio_exporter.egg-info/PKG-INFO
+mkdocs_drawio_exporter.egg-info/SOURCES.txt
+mkdocs_drawio_exporter.egg-info/dependency_links.txt
+mkdocs_drawio_exporter.egg-info/entry_points.txt
+mkdocs_drawio_exporter.egg-info/requires.txt
+mkdocs_drawio_exporter.egg-info/top_level.txt
+mkdocsdrawioexporter/__init__.py
+mkdocsdrawioexporter/exporter.py
+mkdocsdrawioexporter/plugin.py
