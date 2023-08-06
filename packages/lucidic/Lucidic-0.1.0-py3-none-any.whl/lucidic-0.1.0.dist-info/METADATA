@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lucidic
+Version: 0.1.0
+Summary: Lucidic is a Python dictionary utility designed to simplify dictionary operations and comparisons
+Home-page: https://github.com/TheCloudMage/PyPkgs-Lucidic
+License: GPL-3.0-or-later
+Author: Rich Nason
+Author-email: rnason@cloudmage.io
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Bug Tracking, https://github.com/TheCloudMage/PyPkgs-Lucidic/issues
+Project-URL: Repository, Lucidic
+Project-URL: Releases, https://github.com/TheCloudMage/PyPkgs-Lucidic/releases
+Description-Content-Type: text/markdown
+
+# Lucid Python Dictionary Utility Package Changelog
+
