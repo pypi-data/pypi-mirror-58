@@ -1,0 +1,8 @@
+Click
+scipy
+numpy
+scikit-image
+matplotlib
+pydub
+pyaudio
+appdirs
