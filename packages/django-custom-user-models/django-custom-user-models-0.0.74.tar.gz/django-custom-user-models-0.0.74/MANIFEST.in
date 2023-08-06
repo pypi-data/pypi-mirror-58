@@ -1,0 +1,4 @@
+graft CustomAuth
+graft templates
+graft static
+recursive-exclude auth/*
