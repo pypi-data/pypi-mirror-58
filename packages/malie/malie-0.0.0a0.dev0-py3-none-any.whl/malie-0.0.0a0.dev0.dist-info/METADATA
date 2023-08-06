@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: malie
+Version: 0.0.0a0.dev0
+Summary: malie is a Pokemon TCG Database toolset
+Home-page: https://gitlab.com/malie-library/malie
+Author: nago
+Author-email: nago@malie.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+
+Bless this mess
+
+
