@@ -1,0 +1,7 @@
+README.md
+setup.py
+kinCoke/__init__.py
+kinCoke.egg-info/PKG-INFO
+kinCoke.egg-info/SOURCES.txt
+kinCoke.egg-info/dependency_links.txt
+kinCoke.egg-info/top_level.txt
