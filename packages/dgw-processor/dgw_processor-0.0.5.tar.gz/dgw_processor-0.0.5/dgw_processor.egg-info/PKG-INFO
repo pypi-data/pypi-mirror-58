@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dgw-processor
+Version: 0.0.5
+Summary: Process Degreeworks Scribe Blocks
+Home-page: https://github.com/cvickery/dgw_processor
+Author: Christopher Vickery
+Author-email: christopher.vickery@qc.cuny.edu
+License: UNKNOWN
+Description: # Degreeworks Processor
+        
+        This is a work in progress. The goal is to convert Degreeworks Scribe Blocks into a form that can be
+        used to produce English language descriptions of degree requirements, and for that form to be
+        searchable for requirement attributes.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
