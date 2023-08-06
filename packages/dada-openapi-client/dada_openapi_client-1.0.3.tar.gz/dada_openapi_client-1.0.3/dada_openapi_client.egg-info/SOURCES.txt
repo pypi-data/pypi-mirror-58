@@ -1,0 +1,8 @@
+README.md
+setup.py
+dada_openapi_client/__init__.py
+dada_openapi_client/dada_client.py
+dada_openapi_client.egg-info/PKG-INFO
+dada_openapi_client.egg-info/SOURCES.txt
+dada_openapi_client.egg-info/dependency_links.txt
+dada_openapi_client.egg-info/top_level.txt
