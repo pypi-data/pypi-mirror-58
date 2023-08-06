@@ -1,0 +1,14 @@
+aiohttp>=3.3.0
+
+[console]
+aioconsole
+
+[dev]
+aioconsole
+coverage
+pytest-asyncio
+
+[docs]
+sphinx
+sphinxcontrib_trio
+sphinxcontrib-websupport
