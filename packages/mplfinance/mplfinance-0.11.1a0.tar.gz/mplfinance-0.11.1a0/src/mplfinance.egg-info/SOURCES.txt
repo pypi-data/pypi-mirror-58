@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/mplfinance/__init__.py
+src/mplfinance/_utils.py
+src/mplfinance/_version.py
+src/mplfinance/original_flavor.py
+src/mplfinance/plotting.py
+src/mplfinance.egg-info/PKG-INFO
+src/mplfinance.egg-info/SOURCES.txt
+src/mplfinance.egg-info/dependency_links.txt
+src/mplfinance.egg-info/requires.txt
+src/mplfinance.egg-info/top_level.txt
