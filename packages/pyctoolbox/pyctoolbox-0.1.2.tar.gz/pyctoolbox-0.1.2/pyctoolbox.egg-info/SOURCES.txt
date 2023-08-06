@@ -1,0 +1,9 @@
+README.md
+cli.py
+setup.py
+pyctoolbox.egg-info/PKG-INFO
+pyctoolbox.egg-info/SOURCES.txt
+pyctoolbox.egg-info/dependency_links.txt
+pyctoolbox.egg-info/entry_points.txt
+pyctoolbox.egg-info/requires.txt
+pyctoolbox.egg-info/top_level.txt
