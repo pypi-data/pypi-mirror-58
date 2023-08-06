@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+./requirements.txt
+./deep_talk/clean_utf8.sh
+./deep_talk/qpro.pro
+./deep_talk/words.txt
+deep_talk/__init__.py
+deep_talk/down.py
+deep_talk/qpro.py
+deep_talk.egg-info/PKG-INFO
+deep_talk.egg-info/SOURCES.txt
+deep_talk.egg-info/dependency_links.txt
+deep_talk.egg-info/not-zip-safe
+deep_talk.egg-info/requires.txt
+deep_talk.egg-info/top_level.txt
