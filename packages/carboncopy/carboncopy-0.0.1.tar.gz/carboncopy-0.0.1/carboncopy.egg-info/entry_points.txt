@@ -1,0 +1,3 @@
+[console_scripts]
+carboncopy = src.carboncopy.main:run
+
