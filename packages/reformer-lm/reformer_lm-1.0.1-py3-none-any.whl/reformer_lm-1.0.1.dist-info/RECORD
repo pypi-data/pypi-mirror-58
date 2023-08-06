@@ -1,0 +1,13 @@
+reformer_lm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reformer_lm/attention.py,sha256=3_rjKAMwX0kQt77yNVI3jQ3WZ4fgXuNJ2KZRWk6fU_w,1494
+reformer_lm/broadcasted_dropout.py,sha256=Pm_r4JnHEjfYS1EgcDlOqTqYJe02mst5VVm8y-QYupk,1044
+reformer_lm/chunk.py,sha256=qa0v4ZSn-C0t0PJ93hwx2Cr1GaJFOvInBepjIKzCdmM,712
+reformer_lm/decoder.py,sha256=m4cc5O5t4tNR5jy6ko6E0xH4iXGfGp_TJ4s9q0sOMBk,3380
+reformer_lm/gelu.py,sha256=pbztxXa9PM5UqOUb0Kc-5KoLSe1a8-xhLwTXCilkLnA,317
+reformer_lm/reformer_lm.py,sha256=V18NgElz65FuU7C6pm_4yoPok7XK1cA_l73VUixsHQ0,2726
+reformer_lm/revnetblock.py,sha256=fK9HynHYL0LLHyPQB_g_z6WFUmD6_zvzEEta_jrGnhM,2241
+reformer_lm-1.0.1.dist-info/LICENSE,sha256=UbwFCcZxq8LJkVrA-oWhcn8vMFWLyYb1MQGwDOzKt_M,1070
+reformer_lm-1.0.1.dist-info/METADATA,sha256=J9og6PCF5yOOjr2zXACik0kBf_QlBQvOuzJtsZN8Kd8,1853
+reformer_lm-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+reformer_lm-1.0.1.dist-info/top_level.txt,sha256=vRJmC1hPe6EeJO-0tCOeda_I0mObBgGsUgeUWCdPb-s,12
+reformer_lm-1.0.1.dist-info/RECORD,,
