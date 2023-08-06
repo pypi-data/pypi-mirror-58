@@ -1,0 +1,7 @@
+category_encoders
+lightgbm
+numpy
+pandas
+sklearn
+tqdm
+transformers>=2.3.0
