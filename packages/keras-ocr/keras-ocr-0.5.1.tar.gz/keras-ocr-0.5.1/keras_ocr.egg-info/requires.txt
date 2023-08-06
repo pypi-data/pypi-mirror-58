@@ -1,0 +1,7 @@
+essential_generators
+tqdm
+imgaug
+validators
+fonttools
+editdistance
+pyclipper
