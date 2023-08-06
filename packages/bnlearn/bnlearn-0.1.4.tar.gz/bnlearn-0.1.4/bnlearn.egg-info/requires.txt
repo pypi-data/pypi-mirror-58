@@ -1,0 +1,10 @@
+networkx==1.11
+matplotlib==2.2.3
+pgmpy
+numpy
+pandas
+tqdm
+sklearn
+funcsigs
+statsmodels
+community
