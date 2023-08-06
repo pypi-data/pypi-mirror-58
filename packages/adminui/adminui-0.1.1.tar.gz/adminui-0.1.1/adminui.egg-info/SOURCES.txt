@@ -1,0 +1,15 @@
+setup.py
+adminui/__init__.py
+adminui/actions.py
+adminui/app.py
+adminui/chart.py
+adminui/element.py
+adminui/form.py
+adminui/layout.py
+adminui/page.py
+adminui/table.py
+adminui.egg-info/PKG-INFO
+adminui.egg-info/SOURCES.txt
+adminui.egg-info/dependency_links.txt
+adminui.egg-info/requires.txt
+adminui.egg-info/top_level.txt
