@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: py-key
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: wheel
+Requires-Dist: twine
+Requires-Dist: apscheduler
+Requires-Dist: py-News-key
+
+UNKNOWN
+
+
