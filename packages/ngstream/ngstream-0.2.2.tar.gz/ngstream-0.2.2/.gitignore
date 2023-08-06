@@ -1,0 +1,11 @@
+.cache
+.coverage
+build/
+dist/
+*.pyc
+ngstream.egg-info/
+docs/_build/
+.idea/
+.pytest_cache/
+tests/test_htsget/input/ENCFF000VWO.bam*
+.eggs
