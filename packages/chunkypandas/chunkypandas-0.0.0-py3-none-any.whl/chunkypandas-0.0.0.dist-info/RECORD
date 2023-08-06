@@ -1,0 +1,13 @@
+chunkypandas/__init__.py,sha256=Wt-YunvUJXnOAz5w_oXh1FBRxSs2ilot-sfWnATfMrE,141
+chunkypandas/version.py,sha256=UzIaqhPp14Ovip1UIYvWs8sxODaw0LNQGjdRg9thRS8,21
+chunkypandas/core/__init__.py,sha256=uPtUnQiQkDrkWhi9BqGOkRu9CfN6gVrWKfqHYtpnmeg,155
+chunkypandas/core/base.py,sha256=4IRCyme3EspcFg7G6O6_wUkk3vsR_6ll3_4VtNJW-0A,10195
+chunkypandas/core/dataframe.py,sha256=RtagXnr4zd_BRd0sgDLpKhEW5xhO-2QjMMdGbJKSSFs,3308
+chunkypandas/core/series.py,sha256=4pxZo_jLJYzNpetwmzccPjqRfg0JtuDAjOVyQ-cCyQs,1869
+chunkypandas/utilities/__init__.py,sha256=S4aJlJhMvuEDVNvmVdodmisimJZmedxLldchSAodIKQ,86
+chunkypandas/utilities/utilities.py,sha256=JggcJaIEkpHq4SQfiJbcoPPKLJpov5Udo6pZQSCPfdo,487
+chunkypandas-0.0.0.dist-info/METADATA,sha256=9CDVjFdTNAmDpNPGEGqSUB3xEr5FfwZMWPzvOWLx3yU,428
+chunkypandas-0.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+chunkypandas-0.0.0.dist-info/top_level.txt,sha256=wlsA3SIN3D8pBQlCERHgF1gyMLGOG552qJ7B4Hf7PfY,13
+chunkypandas-0.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+chunkypandas-0.0.0.dist-info/RECORD,,
