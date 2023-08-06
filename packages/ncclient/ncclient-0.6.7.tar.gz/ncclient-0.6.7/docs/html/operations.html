@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>operations – Everything RPC &#8212; ncclient 0.5.3 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="transport – Transport / Session layer" href="transport.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="transport.html" title="transport – Transport / Session layer"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ncclient 0.5.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="api.html" accesskey="U">Complete API documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-ncclient.operations">
+<span id="operations-everything-rpc"></span><h1><a class="reference internal" href="#module-ncclient.operations" title="ncclient.operations: Everything RPC"><code class="xref py py-mod docutils literal notranslate"><span class="pre">operations</span></code></a> – Everything RPC<a class="headerlink" href="#module-ncclient.operations" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ncclient.operations.RaiseMode">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">RaiseMode</code><a class="headerlink" href="#ncclient.operations.RaiseMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Define how errors indicated by RPC should be handled.</p>
+<p>Note that any error_filters defined in the device handler will still be
+applied, even if ERRORS or ALL is defined: If the filter matches, an exception
+will NOT be raised.</p>
+<dl class="attribute">
+<dt id="ncclient.operations.RaiseMode.ALL">
+<code class="sig-name descname">ALL</code><em class="property"> = 2</em><a class="headerlink" href="#ncclient.operations.RaiseMode.ALL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Don’t look at the <cite>error-type</cite>, always raise.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ncclient.operations.RaiseMode.ERRORS">
+<code class="sig-name descname">ERRORS</code><em class="property"> = 1</em><a class="headerlink" href="#ncclient.operations.RaiseMode.ERRORS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raise only when the <cite>error-type</cite> indicates it is an honest-to-god error.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ncclient.operations.RaiseMode.NONE">
+<code class="sig-name descname">NONE</code><em class="property"> = 0</em><a class="headerlink" href="#ncclient.operations.RaiseMode.NONE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Don’t attempt to raise any type of <cite>rpc-error</cite> as <a class="reference internal" href="#ncclient.operations.RPCError" title="ncclient.operations.RPCError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">RPCError</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="base-classes">
+<h2>Base classes<a class="headerlink" href="#base-classes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ncclient.operations.RPC">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">RPC</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all operations, directly corresponding to <em>rpc</em> requests. Handles making the request, and taking delivery of the reply.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <a class="reference internal" href="#ncclient.operations.RPC.is_async" title="ncclient.operations.RPC.is_async"><code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></a></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <a class="reference internal" href="#ncclient.operations.RPC.timeout" title="ncclient.operations.RPC.timeout"><code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></a></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <a class="reference internal" href="#ncclient.operations.RPC.raise_mode" title="ncclient.operations.RPC.raise_mode"><code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></a></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <a class="reference internal" href="#ncclient.operations.RPC.huge_tree" title="ncclient.operations.RPC.huge_tree"><code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></a></p>
+<dl class="attribute">
+<dt id="ncclient.operations.RPC.DEPENDS">
+<code class="sig-name descname">DEPENDS</code><em class="property"> = []</em><a class="headerlink" href="#ncclient.operations.RPC.DEPENDS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses can specify their dependencies on capabilities as a list of URI’s or abbreviated names, e.g. ‘:writable-running’. These are verified at the time of instantiation. If the capability is not available, <a class="reference internal" href="#ncclient.operations.MissingCapabilityError" title="ncclient.operations.MissingCapabilityError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">MissingCapabilityError</span></code></a> is raised.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ncclient.operations.RPC.REPLY_CLS">
+<code class="sig-name descname">REPLY_CLS</code><a class="headerlink" href="#ncclient.operations.RPC.REPLY_CLS" title="Permalink to this definition">¶</a></dt>
+<dd><p>By default <a class="reference internal" href="#ncclient.operations.RPCReply" title="ncclient.operations.RPCReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">RPCReply</span></code></a>. Subclasses can specify a <a class="reference internal" href="#ncclient.operations.RPCReply" title="ncclient.operations.RPCReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">RPCReply</span></code></a> subclass.</p>
+<p>alias of <a class="reference internal" href="#ncclient.operations.RPCReply" title="ncclient.operations.RPCReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">RPCReply</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC._assert">
+<code class="sig-name descname">_assert</code><span class="sig-paren">(</span><em class="sig-param">capability</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPC._assert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses can use this method to verify that a capability is available with the NETCONF
+server, before making a request that requires it. A <a class="reference internal" href="#ncclient.operations.MissingCapabilityError" title="ncclient.operations.MissingCapabilityError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">MissingCapabilityError</span></code></a> will be
+raised if the capability is not available.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC._request">
+<code class="sig-name descname">_request</code><span class="sig-paren">(</span><em class="sig-param">op</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPC._request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implementations of <a class="reference internal" href="#ncclient.operations.RPC.request" title="ncclient.operations.RPC.request"><code class="xref py py-meth docutils literal notranslate"><span class="pre">request()</span></code></a> call this method to send the request and process the reply.</p>
+<p>In synchronous mode, blocks until the reply is received and returns <a class="reference internal" href="#ncclient.operations.RPCReply" title="ncclient.operations.RPCReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">RPCReply</span></code></a>. Depending on the <a class="reference internal" href="#ncclient.operations.RPC.raise_mode" title="ncclient.operations.RPC.raise_mode"><code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></a> a <cite>rpc-error</cite> element in the reply may lead to an <a class="reference internal" href="#ncclient.operations.RPCError" title="ncclient.operations.RPCError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">RPCError</span></code></a> exception.</p>
+<p>In asynchronous mode, returns immediately, returning <cite>self</cite>. The <a class="reference internal" href="#ncclient.operations.RPC.event" title="ncclient.operations.RPC.event"><code class="xref py py-attr docutils literal notranslate"><span class="pre">event</span></code></a> attribute will be set when the reply has been received (see <a class="reference internal" href="#ncclient.operations.RPC.reply" title="ncclient.operations.RPC.reply"><code class="xref py py-attr docutils literal notranslate"><span class="pre">reply</span></code></a>) or an error occured (see <a class="reference internal" href="#ncclient.operations.RPC.error" title="ncclient.operations.RPC.error"><code class="xref py py-attr docutils literal notranslate"><span class="pre">error</span></code></a>).</p>
+<p><em>op</em> is the operation to be requested as an <a class="reference external" href="https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.Element" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.error">
+<em class="property">property </em><code class="sig-name descname">error</code><a class="headerlink" href="#ncclient.operations.RPC.error" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> type if an error occured or <cite>None</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This represents an error which prevented a reply from being received. An <em>rpc-error</em>
+does not fall in that category – see <cite>RPCReply</cite> for that.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.event">
+<em class="property">property </em><code class="sig-name descname">event</code><a class="headerlink" href="#ncclient.operations.RPC.event" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/threading.html#threading.Event" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a> that is set when reply has been received or when an error preventing
+delivery of the reply occurs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.huge_tree">
+<em class="property">property </em><code class="sig-name descname">huge_tree</code><a class="headerlink" href="#ncclient.operations.RPC.huge_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether <cite>huge_tree</cite> support for XML parsing of RPC replies is enabled (default=False)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.is_async">
+<em class="property">property </em><code class="sig-name descname">is_async</code><a class="headerlink" href="#ncclient.operations.RPC.is_async" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies whether this RPC will be / was requested asynchronously. By default RPC’s are synchronous.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.raise_mode">
+<em class="property">property </em><code class="sig-name descname">raise_mode</code><a class="headerlink" href="#ncclient.operations.RPC.raise_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Depending on this exception raising mode, an <cite>rpc-error</cite> in the reply may be raised as an <a class="reference internal" href="#ncclient.operations.RPCError" title="ncclient.operations.RPCError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">RPCError</span></code></a> exception. Valid values are the constants defined in <a class="reference internal" href="#ncclient.operations.RaiseMode" title="ncclient.operations.RaiseMode"><code class="xref py py-class docutils literal notranslate"><span class="pre">RaiseMode</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.reply">
+<em class="property">property </em><code class="sig-name descname">reply</code><a class="headerlink" href="#ncclient.operations.RPC.reply" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#ncclient.operations.RPCReply" title="ncclient.operations.RPCReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">RPCReply</span></code></a> element if reply has been received or <cite>None</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPC.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclasses must implement this method. Typically only the request needs to be built as an
+<a class="reference external" href="https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.Element" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a> and everything else can be handed off to
+<a class="reference internal" href="#ncclient.operations.RPC._request" title="ncclient.operations.RPC._request"><code class="xref py py-meth docutils literal notranslate"><span class="pre">_request()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPC.timeout">
+<em class="property">property </em><code class="sig-name descname">timeout</code><a class="headerlink" href="#ncclient.operations.RPC.timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Timeout in seconds for synchronous waiting defining how long the RPC request will block on a reply before raising <a class="reference internal" href="#ncclient.operations.TimeoutExpiredError" title="ncclient.operations.TimeoutExpiredError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TimeoutExpiredError</span></code></a>.</p>
+<p>Irrelevant for asynchronous usage.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.RPCReply">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">RPCReply</code><span class="sig-paren">(</span><em class="sig-param">raw</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPCReply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents an <em>rpc-reply</em>. Only concerns itself with whether the operation was successful.</p>
+<p><em>raw</em>: the raw unparsed reply</p>
+<p><em>huge_tree</em>: parse XML with very deep trees and very long text content</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the reply has not yet been parsed there is an implicit, one-time parsing overhead to
+accessing some of the attributes defined by this class.</p>
+</div>
+<dl class="method">
+<dt id="ncclient.operations.RPCReply._parsing_hook">
+<code class="sig-name descname">_parsing_hook</code><span class="sig-paren">(</span><em class="sig-param">root</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPCReply._parsing_hook" title="Permalink to this definition">¶</a></dt>
+<dd><p>No-op by default. Gets passed the <em>root</em> element for the reply.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCReply.error">
+<em class="property">property </em><code class="sig-name descname">error</code><a class="headerlink" href="#ncclient.operations.RPCReply.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the first <a class="reference internal" href="#ncclient.operations.RPCError" title="ncclient.operations.RPCError"><code class="xref py py-class docutils literal notranslate"><span class="pre">RPCError</span></code></a> and <cite>None</cite> if there were no errors.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCReply.errors">
+<em class="property">property </em><code class="sig-name descname">errors</code><a class="headerlink" href="#ncclient.operations.RPCReply.errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of <cite>RPCError</cite> objects. Will be empty if there were no <em>rpc-error</em> elements in reply.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCReply.ok">
+<em class="property">property </em><code class="sig-name descname">ok</code><a class="headerlink" href="#ncclient.operations.RPCReply.ok" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean value indicating if there were no errors.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCReply.xml">
+<em class="property">property </em><code class="sig-name descname">xml</code><a class="headerlink" href="#ncclient.operations.RPCReply.xml" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>rpc-reply</em> element as returned.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="ncclient.operations.RPCError">
+<em class="property">exception </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">RPCError</code><span class="sig-paren">(</span><em class="sig-param">raw</em>, <em class="sig-param">errs=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.RPCError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.errors.OperationError</span></code></p>
+<p>Represents an <cite>rpc-error</cite>. It is a type of <a class="reference internal" href="#ncclient.operations.OperationError" title="ncclient.operations.OperationError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">OperationError</span></code></a> and can be raised as such.</p>
+<dl class="method">
+<dt id="ncclient.operations.RPCError.info">
+<em class="property">property </em><code class="sig-name descname">info</code><a class="headerlink" href="#ncclient.operations.RPCError.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>XML string or <cite>None</cite>; representing the <cite>error-info</cite> element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCError.message">
+<em class="property">property </em><code class="sig-name descname">message</code><a class="headerlink" href="#ncclient.operations.RPCError.message" title="Permalink to this definition">¶</a></dt>
+<dd><p>The contents of the <cite>error-message</cite> element if present or <cite>None</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCError.path">
+<em class="property">property </em><code class="sig-name descname">path</code><a class="headerlink" href="#ncclient.operations.RPCError.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The contents of the <cite>error-path</cite> element if present or <cite>None</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCError.severity">
+<em class="property">property </em><code class="sig-name descname">severity</code><a class="headerlink" href="#ncclient.operations.RPCError.severity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The contents of the <cite>error-severity</cite> element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCError.tag">
+<em class="property">property </em><code class="sig-name descname">tag</code><a class="headerlink" href="#ncclient.operations.RPCError.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>The contents of the <cite>error-tag</cite> element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.RPCError.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#ncclient.operations.RPCError.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The contents of the <cite>error-type</cite> element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="operations">
+<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="retrieval">
+<h3>Retrieval<a class="headerlink" href="#retrieval" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="ncclient.operations.Get">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">Get</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p>The <em>get</em> RPC.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="attribute">
+<dt id="ncclient.operations.Get.REPLY_CLS">
+<code class="sig-name descname">REPLY_CLS</code><em class="property"> = &lt;class 'ncclient.operations.retrieve.GetReply'&gt;</em><a class="headerlink" href="#ncclient.operations.Get.REPLY_CLS" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#ncclient.operations.GetReply" title="ncclient.operations.GetReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">GetReply</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.Get.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">filter=None</em>, <em class="sig-param">with_defaults=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Get.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve running configuration and device state information.</p>
+<p><em>filter</em> specifies the portion of the configuration to retrieve (by default entire configuration is retrieved)</p>
+<p><em>with_defaults</em> defines an explicit method of retrieving default values from the configuration (see RFC 6243)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Seealso</dt>
+<dd class="field-odd"><p><a class="reference internal" href="manager.html#filter-params"><span class="std std-ref">Filter parameters</span></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.GetConfig">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">GetConfig</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.GetConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p>The <em>get-config</em> RPC.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="attribute">
+<dt id="ncclient.operations.GetConfig.REPLY_CLS">
+<code class="sig-name descname">REPLY_CLS</code><em class="property"> = &lt;class 'ncclient.operations.retrieve.GetReply'&gt;</em><a class="headerlink" href="#ncclient.operations.GetConfig.REPLY_CLS" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#ncclient.operations.GetReply" title="ncclient.operations.GetReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">GetReply</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.GetConfig.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">filter=None</em>, <em class="sig-param">with_defaults=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.GetConfig.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all or part of a specified configuration.</p>
+<p><em>source</em> name of the configuration datastore being queried</p>
+<p><em>filter</em> specifies the portion of the configuration to retrieve (by default entire configuration is retrieved)</p>
+<p><em>with_defaults</em> defines an explicit method of retrieving default values from the configuration (see RFC 6243)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Seealso</dt>
+<dd class="field-odd"><p><a class="reference internal" href="manager.html#filter-params"><span class="std std-ref">Filter parameters</span></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.GetReply">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">GetReply</code><span class="sig-paren">(</span><em class="sig-param">raw</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.GetReply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPCReply</span></code></p>
+<p>Adds attributes for the <em>data</em> element to <cite>RPCReply</cite>.</p>
+<dl class="method">
+<dt id="ncclient.operations.GetReply.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#ncclient.operations.GetReply.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#ncclient.operations.GetReply.data_ele" title="ncclient.operations.GetReply.data_ele"><code class="xref py py-attr docutils literal notranslate"><span class="pre">data_ele</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.GetReply.data_ele">
+<em class="property">property </em><code class="sig-name descname">data_ele</code><a class="headerlink" href="#ncclient.operations.GetReply.data_ele" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>data</em> element as an <a class="reference external" href="https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.Element" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.GetReply.data_xml">
+<em class="property">property </em><code class="sig-name descname">data_xml</code><a class="headerlink" href="#ncclient.operations.GetReply.data_xml" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>data</em> element as an XML string</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.Dispatch">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">Dispatch</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Dispatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p>Generic retrieving wrapper</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="attribute">
+<dt id="ncclient.operations.Dispatch.REPLY_CLS">
+<code class="sig-name descname">REPLY_CLS</code><em class="property"> = &lt;class 'ncclient.operations.retrieve.GetReply'&gt;</em><a class="headerlink" href="#ncclient.operations.Dispatch.REPLY_CLS" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#ncclient.operations.GetReply" title="ncclient.operations.GetReply"><code class="xref py py-class docutils literal notranslate"><span class="pre">GetReply</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ncclient.operations.Dispatch.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">rpc_command</em>, <em class="sig-param">source=None</em>, <em class="sig-param">filter=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Dispatch.request" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>rpc_command</em> specifies rpc command to be dispatched either in plain text or in xml element format (depending on command)</p>
+<p><em>source</em> name of the configuration datastore being queried</p>
+<p><em>filter</em> specifies the portion of the configuration to retrieve (by default entire configuration is retrieved)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Seealso</dt>
+<dd class="field-odd"><p><a class="reference internal" href="manager.html#filter-params"><span class="std std-ref">Filter parameters</span></a></p>
+</dd>
+</dl>
+<p>Examples of usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dispatch</span><span class="p">(</span><span class="s1">&#39;clear-arp-table&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or dispatch element like</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xsd_fetch</span> <span class="o">=</span> <span class="n">new_ele</span><span class="p">(</span><span class="s1">&#39;get-xnm-information&#39;</span><span class="p">)</span>
+<span class="n">sub_ele</span><span class="p">(</span><span class="n">xsd_fetch</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;xml-schema&quot;</span>
+<span class="n">sub_ele</span><span class="p">(</span><span class="n">xsd_fetch</span><span class="p">,</span> <span class="s1">&#39;namespace&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;junos-configuration&quot;</span>
+<span class="n">dispatch</span><span class="p">(</span><span class="n">xsd_fetch</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="editing">
+<h3>Editing<a class="headerlink" href="#editing" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="ncclient.operations.EditConfig">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">EditConfig</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.EditConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>edit-config</cite> RPC</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.EditConfig.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">config</em>, <em class="sig-param">format='xml'</em>, <em class="sig-param">target='candidate'</em>, <em class="sig-param">default_operation=None</em>, <em class="sig-param">test_option=None</em>, <em class="sig-param">error_option=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.EditConfig.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads all or part of the specified <em>config</em> to the <em>target</em> configuration datastore.</p>
+<p><em>target</em> is the name of the configuration datastore being edited</p>
+<p><em>config</em> is the configuration, which must be rooted in the <cite>config</cite> element. It can be specified either as a string or an <a class="reference external" href="https://docs.python.org/3/library/xml.etree.elementtree.html#xml.etree.ElementTree.Element" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Element</span></code></a>.</p>
+<p><em>default_operation</em> if specified must be one of { <cite>“merge”</cite>, <cite>“replace”</cite>, or <cite>“none”</cite> }</p>
+<p><em>test_option</em> if specified must be one of { <cite>“test_then_set”</cite>, <cite>“set”</cite> }</p>
+<p><em>error_option</em> if specified must be one of { <cite>“stop-on-error”</cite>, <cite>“continue-on-error”</cite>, <cite>“rollback-on-error”</cite> }</p>
+<p>The <cite>“rollback-on-error”</cite> <em>error_option</em> depends on the <cite>:rollback-on-error</cite> capability.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.DeleteConfig">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">DeleteConfig</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.DeleteConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>delete-config</cite> RPC</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.DeleteConfig.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.DeleteConfig.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a configuration datastore.</p>
+<p><em>target</em> specifies the  name or URL of configuration datastore to delete</p>
+<dl class="field-list simple">
+<dt class="field-odd">Seealso</dt>
+<dd class="field-odd"><p><a class="reference internal" href="manager.html#srctarget-params"><span class="std std-ref">Source and target parameters</span></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.CopyConfig">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">CopyConfig</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.CopyConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>copy-config</cite> RPC</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.CopyConfig.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.CopyConfig.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create or replace an entire configuration datastore with the contents of another complete
+configuration datastore.</p>
+<p><em>source</em> is the name of the configuration datastore to use as the source of the copy operation or <cite>config</cite> element containing the configuration subtree to copy</p>
+<p><em>target</em> is the name of the configuration datastore to use as the destination of the copy operation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Seealso</dt>
+<dd class="field-odd"><p><a class="reference internal" href="manager.html#srctarget-params"><span class="std std-ref">Source and target parameters</span></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.Validate">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">Validate</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>validate</cite> RPC. Depends on the <cite>:validate</cite> capability.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.Validate.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">source='candidate'</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Validate.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate the contents of the specified configuration.</p>
+<p><em>source</em> is the name of the configuration datastore being validated or <cite>config</cite> element containing the configuration subtree to be validated</p>
+<dl class="field-list simple">
+<dt class="field-odd">Seealso</dt>
+<dd class="field-odd"><p><a class="reference internal" href="manager.html#srctarget-params"><span class="std std-ref">Source and target parameters</span></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.Commit">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">Commit</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>commit</cite> RPC. Depends on the <cite>:candidate</cite> capability, and the <cite>:confirmed-commit</cite>.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.Commit.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">confirmed=False</em>, <em class="sig-param">timeout=None</em>, <em class="sig-param">persist=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Commit.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Commit the candidate configuration as the device’s new current configuration. Depends on the <cite>:candidate</cite> capability.</p>
+<p>A confirmed commit (i.e. if <em>confirmed</em> is <cite>True</cite>) is reverted if there is no followup commit within the <em>timeout</em> interval. If no timeout is specified the confirm timeout defaults to 600 seconds (10 minutes). A confirming commit may have the <em>confirmed</em> parameter but this is not required. Depends on the <cite>:confirmed-commit</cite> capability.</p>
+<p><em>confirmed</em> whether this is a confirmed commit</p>
+<p><em>timeout</em> specifies the confirm timeout in seconds</p>
+<p><em>persist</em> make the confirmed commit survive a session termination, and set a token on the ongoing confirmed commit</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.DiscardChanges">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">DiscardChanges</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.DiscardChanges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>discard-changes</cite> RPC. Depends on the <cite>:candidate</cite> capability.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.DiscardChanges.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.DiscardChanges.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Revert the candidate configuration to the currently running configuration. Any uncommitted changes are discarded.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.CancelCommit">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">CancelCommit</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.CancelCommit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>cancel-commit</cite> RPC. Depends on the <cite>:candidate</cite> and <cite>:confirmed-commit</cite> capabilities.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.CancelCommit.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">persist_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.CancelCommit.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel an ongoing confirmed commit. Depends on the <cite>:candidate</cite> and <cite>:confirmed-commit</cite> capabilities.</p>
+<p><em>persist-id</em> value must be equal to the value given in the &lt;persist&gt; parameter to the previous &lt;commit&gt; operation.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="locking">
+<h3>Locking<a class="headerlink" href="#locking" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="ncclient.operations.Lock">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">Lock</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>lock</cite> RPC</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.Lock.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">target='candidate'</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Lock.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows the client to lock the configuration system of a device.</p>
+<p><em>target</em> is the name of the configuration datastore to lock</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.Unlock">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">Unlock</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>unlock</cite> RPC</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.Unlock.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">target='candidate'</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.Unlock.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Release a configuration lock, previously obtained with the lock operation.</p>
+<p><em>target</em> is the name of the configuration datastore to unlock</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="session">
+<h3>Session<a class="headerlink" href="#session" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="ncclient.operations.CloseSession">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">CloseSession</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.CloseSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>close-session</cite> RPC. The connection to NETCONF server is also closed.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.CloseSession.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.CloseSession.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request graceful termination of the NETCONF session, and also close the transport.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ncclient.operations.KillSession">
+<em class="property">class </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">KillSession</code><span class="sig-paren">(</span><em class="sig-param">session</em>, <em class="sig-param">device_handler</em>, <em class="sig-param">async_mode=False</em>, <em class="sig-param">timeout=30</em>, <em class="sig-param">raise_mode=0</em>, <em class="sig-param">huge_tree=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.KillSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.operations.rpc.RPC</span></code></p>
+<p><cite>kill-session</cite> RPC.</p>
+<p><em>session</em> is the <a class="reference internal" href="transport.html#ncclient.transport.Session" title="ncclient.transport.Session"><code class="xref py py-class docutils literal notranslate"><span class="pre">Session</span></code></a> instance</p>
+<p><em>device_handler” is the :class:`~ncclient.devices.</em>.*DeviceHandler` instance</p>
+<p><em>async</em> specifies whether the request is to be made asynchronously, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">is_async</span></code></p>
+<p><em>timeout</em> is the timeout for a synchronous request, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">timeout</span></code></p>
+<p><em>raise_mode</em> specifies the exception raising mode, see <code class="xref py py-attr docutils literal notranslate"><span class="pre">raise_mode</span></code></p>
+<p><em>huge_tree</em> parse xml with huge_tree support (e.g. for large text config retrieval), see <code class="xref py py-attr docutils literal notranslate"><span class="pre">huge_tree</span></code></p>
+<dl class="method">
+<dt id="ncclient.operations.KillSession.request">
+<code class="sig-name descname">request</code><span class="sig-paren">(</span><em class="sig-param">session_id</em><span class="sig-paren">)</span><a class="headerlink" href="#ncclient.operations.KillSession.request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Force the termination of a NETCONF session (not the current one!)</p>
+<p><em>session_id</em> is the session identifier of the NETCONF session to be terminated as a string</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="ncclient.operations.OperationError">
+<em class="property">exception </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">OperationError</code><a class="headerlink" href="#ncclient.operations.OperationError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.NCClientError</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="ncclient.operations.MissingCapabilityError">
+<em class="property">exception </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">MissingCapabilityError</code><a class="headerlink" href="#ncclient.operations.MissingCapabilityError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.NCClientError</span></code></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="ncclient.operations.TimeoutExpiredError">
+<em class="property">exception </em><code class="sig-prename descclassname">ncclient.operations.</code><code class="sig-name descname">TimeoutExpiredError</code><a class="headerlink" href="#ncclient.operations.TimeoutExpiredError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ncclient.NCClientError</span></code></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p align="center">
+  <a href="http://oss.schmizz.net/ncclient">
+    <img src="_static/logo.png" width="125" height="125"/>
+  </a>
+</p>
+
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">operations</span></code> – Everything RPC</a><ul>
+<li><a class="reference internal" href="#base-classes">Base classes</a></li>
+<li><a class="reference internal" href="#operations">Operations</a><ul>
+<li><a class="reference internal" href="#retrieval">Retrieval</a></li>
+<li><a class="reference internal" href="#editing">Editing</a></li>
+<li><a class="reference internal" href="#locking">Locking</a></li>
+<li><a class="reference internal" href="#session">Session</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="transport.html"
+                        title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">transport</span></code> – Transport / Session layer</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/operations.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="transport.html" title="transport – Transport / Session layer"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ncclient 0.5.3 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="api.html" >Complete API documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009, Shikhar Bhushan; 2011-2014, Leonidas Poulopoulos.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>
