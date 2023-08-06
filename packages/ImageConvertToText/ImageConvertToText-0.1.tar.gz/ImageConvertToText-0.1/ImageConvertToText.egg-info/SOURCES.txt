@@ -1,0 +1,9 @@
+README.md
+setup.py
+ImageConvertToText/ImageTextConverter.py
+ImageConvertToText/__init__.py
+ImageConvertToText.egg-info/PKG-INFO
+ImageConvertToText.egg-info/SOURCES.txt
+ImageConvertToText.egg-info/dependency_links.txt
+ImageConvertToText.egg-info/requires.txt
+ImageConvertToText.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+# Example Package
+#type following code in python shell after installing library.
+
+
+#Set Environment variable to :-
+
+Variable:-Tesseract-OCR
+
+Path:- Path where Tesseract-OCR is installed like(r'C:\Program Files\Tesseract-OCR\tesseract.exe')
+
+
+
+1st step :
+ from   ImageConvertToText   import ImageTextConverter  
+
+2nd step:
+ImageTextConverter.img2txt('Path_of_your_Image_file')
+
+
+In ('Path_of_your_Image_file') here write the path of image file that u want extract the text from.
+for example 'ImageTextConverter.img2txt(r'C:\Users\Dell\Downloads\Images\PythonKnowledgeGraph.png')'like that only
