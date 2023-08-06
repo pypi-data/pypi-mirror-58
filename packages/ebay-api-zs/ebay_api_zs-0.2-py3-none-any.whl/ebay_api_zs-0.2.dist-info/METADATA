@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ebay-api-zs
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://github.com/kambag
+Author: Kamil Bagaviev
+Author-email: kbagaviev@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: PyYAML (==5.1)
+
+Description
+===========
+
+
