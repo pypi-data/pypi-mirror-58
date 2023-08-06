@@ -1,0 +1,6 @@
+[console_scripts]
+pyops = pyops:main
+
+[pytest11]
+pyops = pyops.pytestplus
+
