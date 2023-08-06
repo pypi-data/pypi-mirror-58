@@ -1,0 +1,7 @@
+README.md
+setup.py
+SerasaPy.egg-info/PKG-INFO
+SerasaPy.egg-info/SOURCES.txt
+SerasaPy.egg-info/dependency_links.txt
+SerasaPy.egg-info/top_level.txt
+serasaPy/__init__.py
