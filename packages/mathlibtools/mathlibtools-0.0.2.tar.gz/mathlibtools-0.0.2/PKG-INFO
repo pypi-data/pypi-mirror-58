@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mathlibtools
+Version: 0.0.2
+Summary: Lean prover mathlib supporting tools.
+Home-page: https://github.com/leanprover-community/mathlib-tools
+Author: The mathlib community
+License: UNKNOWN
+Description: # mathlib-tools
+        
+        Supporting tools for [Lean mathlib](https://leanprover-community.github.io/).
+        
+        [![Build Status](https://travis-ci.org/leanprover-community/mathlib-tools.svg?branch=master)](https://travis-ci.org/leanprover-community/mathlib-tools)
+        [![Build status](https://ci.appveyor.com/api/projects/status/t353pkb62tep1rth?svg=true)](https://ci.appveyor.com/project/cipher1024/mathlib-tools)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
