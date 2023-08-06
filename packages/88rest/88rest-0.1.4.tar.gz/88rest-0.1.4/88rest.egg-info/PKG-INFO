@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: 88rest
+Version: 0.1.4
+Summary: 88 Rest Framework
+Home-page: http://pypi.python.org/pypi/88rest/
+Author: Rimba Prayoga
+Author-email: rimba47prayoga@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
