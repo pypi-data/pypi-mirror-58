@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bytestock
+Version: 0.1
+Summary: On memory CRUD Operations, million in one milisecond.
+Home-page: https://github.com/asirihewage/search-in-ten-million-data-set
+Author: Asiri Hewage
+Author-email: asiri@asicloud.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+ByteStock - On memory CRUD Operations, million in one milisecond.
+Do on-memory CRUD Operations on more that million data set in less than milisecond. 
+This package includes a strategical approach which can do Insert, View, Update and Delete actions.
+
+Assumptions:
+python is installed on your system.
+pip is configured on your system.
+
+
