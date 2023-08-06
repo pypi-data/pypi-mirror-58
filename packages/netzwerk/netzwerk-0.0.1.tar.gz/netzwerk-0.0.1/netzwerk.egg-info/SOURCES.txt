@@ -1,0 +1,14 @@
+README.md
+setup.py
+P2P/__init__.py
+P2P/app.py
+P2P/blockchain.py
+P2P/connection.py
+P2P/file.py
+P2P/message.py
+P2P/node.py
+P2P/vars.py
+netzwerk.egg-info/PKG-INFO
+netzwerk.egg-info/SOURCES.txt
+netzwerk.egg-info/dependency_links.txt
+netzwerk.egg-info/top_level.txt
