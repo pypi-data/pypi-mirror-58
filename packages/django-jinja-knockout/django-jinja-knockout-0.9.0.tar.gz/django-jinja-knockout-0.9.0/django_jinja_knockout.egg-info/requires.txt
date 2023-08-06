@@ -1,0 +1,7 @@
+Jinja2>=2.8
+bleach>=1.4.2
+django>=1.11.0
+ensure>=0.3.2
+lxml>=3.4.4
+pytz
+sqlparse>=0.2.1
