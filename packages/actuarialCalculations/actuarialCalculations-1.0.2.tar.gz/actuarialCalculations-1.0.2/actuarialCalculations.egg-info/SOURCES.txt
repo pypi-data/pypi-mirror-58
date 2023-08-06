@@ -1,0 +1,12 @@
+MANIFEST.in
+README
+README.rst
+setup.cfg
+setup.py
+actuarialCalculations/__init__.py
+actuarialCalculations/main.py
+actuarialCalculations.egg-info/PKG-INFO
+actuarialCalculations.egg-info/SOURCES.txt
+actuarialCalculations.egg-info/dependency_links.txt
+actuarialCalculations.egg-info/requires.txt
+actuarialCalculations.egg-info/top_level.txt
