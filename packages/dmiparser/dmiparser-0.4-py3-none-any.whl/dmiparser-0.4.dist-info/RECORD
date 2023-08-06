@@ -1,0 +1,14 @@
+dmiparser/__init__.py,sha256=BLA5gsRVkJW-gXtcUzjRngvipBMEdAyjg-wNicZ1qh4,88
+dmiparser/dmiparser.py,sha256=EQ9vntkLUxYC55G3HHnB4Kn1PlfQHE1UFC09s0kYlX4,5495
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dmidecode_10.py,sha256=wuxCPbny7OkOs9DcORBqTj-KaNO_gH9ADYnrbh9jB1k,845
+tests/test_dmidecode_13.py,sha256=ykpKhVWvRgn8zsnch9-iK2mc_vdalnTAH5lrBXVK0Gk,600
+tests/test_dmidecode_148.py,sha256=patQn_c0mMz0oFH5zCpOtw1PnFALGi7rkYTcEqHij7I,649
+tests/test_dmidecode_32.py,sha256=kHeMEzEBkgLFQhNvYvXI7ODyxF4s_2ogdorxUwfONHQ,617
+tests/test_dmidecode_9.py,sha256=XdSaShU6Sscl9jUuskD0rCh0yDivDRBWN_WC-bNd6d4,577
+tests/test_dmidecode_full.py,sha256=L0LdbbvsxpsCC-aa6a6unjkO-dJjyC2WmBXZw8AaR3w,443
+dmiparser-0.4.dist-info/LICENSE,sha256=9akK0CKYEpesVUJFwZKE2NVh9PBDeQZj44X0QgyAm6M,1055
+dmiparser-0.4.dist-info/METADATA,sha256=GwAl0_B6aL-LCoAjo3L_cEcasRHcuzX2unBMX1IuZzo,1832
+dmiparser-0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dmiparser-0.4.dist-info/top_level.txt,sha256=ROLlm9GQJtSuz8Rcul6Apo7e-KzTwLQ018FDNNEbtp4,16
+dmiparser-0.4.dist-info/RECORD,,
