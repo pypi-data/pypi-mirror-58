@@ -1,0 +1,4 @@
+Click
+PyQt5
+sqlalchemy
+pycryptodome
