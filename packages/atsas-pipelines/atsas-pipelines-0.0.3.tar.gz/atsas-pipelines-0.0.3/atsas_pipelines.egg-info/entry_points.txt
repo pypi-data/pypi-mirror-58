@@ -1,0 +1,3 @@
+[console_scripts]
+dask-slurm-cluster = atsas_pipelines.cli:run_cluster
+
