@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+newpyfile/__init__.py
+newpyfile/cli.py
+newpyfile.egg-info/PKG-INFO
+newpyfile.egg-info/SOURCES.txt
+newpyfile.egg-info/dependency_links.txt
+newpyfile.egg-info/entry_points.txt
+newpyfile.egg-info/requires.txt
+newpyfile.egg-info/top_level.txt
+newpyfile.egg-info/zip-safe

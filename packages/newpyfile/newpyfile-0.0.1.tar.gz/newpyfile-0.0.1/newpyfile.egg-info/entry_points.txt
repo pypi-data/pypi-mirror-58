@@ -1,0 +1,3 @@
+[console_scripts]
+newpyfile = newpyfile.cli:main
+
