@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aiohttp-retry
+Version: 0.1
+Summary: Simple retry cient for aiohttp
+Home-page: https://github.com/inyutin/aiohttp_retry
+Author: Dmitry Inyutin
+Author-email: inyutin.da@gmail.com
+License: MIT
+Keywords: aiohttp retry client
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+
