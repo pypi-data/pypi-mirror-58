@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: lightweb
+Version: 0.0.1
+Summary: Light Web Utility for Django
+Home-page: https://github.com/ni-ning/lightweb
+Author: ni-ning
+Author-email: nining1314@gmail.com
+License: UNKNOWN
+Keywords: Django,Request,Response
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: six
+
+################################
+Light Web Utility for Django
+################################
+
+
+
+**********
+功能特性
+**********
+
+Django 请求常用工具
+
+
+********
+安装
+********
+
+目前 lightweb 支持的 Python 环境有 3.4+
+
+
+为了简化安装过程，推荐使用 pip 进行安装
+
+.. code-block:: bash
+
+    pip install lightweb
+
+升级 lightmail 到新版本::
+
+    pip install -U lightweb
+
+如果需要安装 GitHub 上最新代码::
+
+    pip install https://github.com/ni-ning/lightweb/archive/master.zip
+
+
+
+********
+使用
+********
+
+
+
+使用案例::
+
+    import lightweb
+
+
+
