@@ -1,0 +1,3 @@
+[console_scripts]
+gryibwc = gryibwc.gryibwc:main
+
