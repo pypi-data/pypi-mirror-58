@@ -1,0 +1,11 @@
+README.md
+setup.py
+catsgmo/__init__.py
+catsgmo/demo_stock_binary.py
+catsgmo.egg-info/PKG-INFO
+catsgmo.egg-info/SOURCES.txt
+catsgmo.egg-info/dependency_links.txt
+catsgmo.egg-info/requires.txt
+catsgmo.egg-info/top_level.txt
+tests/__init__.py
+tests/test_demo_stock_binary.py
