@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+dastr/__init__.py
+dastr/dastr.py
+dastr.egg-info/PKG-INFO
+dastr.egg-info/SOURCES.txt
+dastr.egg-info/dependency_links.txt
+dastr.egg-info/top_level.txt
