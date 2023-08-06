@@ -1,0 +1,9 @@
+README.md
+setup.py
+EtmA2T/AudioTextConverter.py
+EtmA2T/__init__.py
+EtmA2T.egg-info/PKG-INFO
+EtmA2T.egg-info/SOURCES.txt
+EtmA2T.egg-info/dependency_links.txt
+EtmA2T.egg-info/requires.txt
+EtmA2T.egg-info/top_level.txt
