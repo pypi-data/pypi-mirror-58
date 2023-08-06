@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: preptext
+Version: 0.1.6
+Summary: Utilities for preprocessing texts
+Home-page: https://github.com/styxjedi/preptext
+Author: Cunliang Kong
+Author-email: cunliang.kong@outlook.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: six
+
+UNKNOWN
+
+
