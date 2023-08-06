@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: git-python
+Version: 1.1.1
+Summary: combination and simplification of some useful git commands
+Home-page: https://github.com/pynickle/git-python
+Author: code-nick-python
+Author-email: 2330458484@qq.com
+License: UNKNOWN
+Description: git-python
+        ^^^^^^^^^^
+        
+        combination and simplification of some useful git commands
+        
+        Usage
+        *****
+        
+        1. add and commit
+        
+          gp addc -m <message>
+        
+        2. push as tag
+        
+          gp pushc addt -t <tag>
+        
+          gp pushc addr -t <tag> -n <name> -r <remote>
+        
+          gp pushc pusht -t <tag>
+Platform: any

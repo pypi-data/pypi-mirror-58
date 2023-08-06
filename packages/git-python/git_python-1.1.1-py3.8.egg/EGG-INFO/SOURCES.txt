@@ -1,0 +1,13 @@
+.last_tmp.py
+MANIFEST.in
+README.rst
+config.json
+main.py
+setup.cfg
+setup.py
+git_python.egg-info/PKG-INFO
+git_python.egg-info/SOURCES.txt
+git_python.egg-info/dependency_links.txt
+git_python.egg-info/entry_points.txt
+git_python.egg-info/requires.txt
+git_python.egg-info/top_level.txt
