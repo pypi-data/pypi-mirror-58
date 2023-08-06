@@ -1,0 +1,9 @@
+mecab/__init__.py,sha256=AdynCDUP6umWFEfoppxFUEn507wIy-nwwR6NyudNWAM,70
+mecab/cli.py,sha256=EC267vQbuOiufIQ633otVjaOcw-9G5C2vcPZyDDW1mk,528
+mecab/_C.cpython-37m-x86_64-linux-gnu.so,sha256=JBXXhY_6uXvIVyP4E21Cx71zLh7BwIpuf-Tx89Lh98A,4646869
+mecab/lib/libmecab.so,sha256=GOq3cuvlIpWH7Bmw6iQepuQZlOtA9z-urkHS2WYOP9U,1430050
+python_mecab-1.0.0rc2.dist-info/entry_points.txt,sha256=s0mrqWPb8onHgT3rEwN9cZEXlSjy86ZLC-7FM1F-D00,250
+python_mecab-1.0.0rc2.dist-info/RECORD,,
+python_mecab-1.0.0rc2.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+python_mecab-1.0.0rc2.dist-info/top_level.txt,sha256=x8WZ0UArm7kuCMkR2-XXfVKcI1RoSzC6PynQAtwnQsY,6
+python_mecab-1.0.0rc2.dist-info/METADATA,sha256=C5ePkEhuRV5dTOphpIVJLJJDlDK4-W7kDFJZXyVPshk,741
