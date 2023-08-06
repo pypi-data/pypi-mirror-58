@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyslurm_computecanada/__init__.py
+pyslurm_computecanada/pyslurm.py
+pyslurm_computecanada.egg-info/PKG-INFO
+pyslurm_computecanada.egg-info/SOURCES.txt
+pyslurm_computecanada.egg-info/dependency_links.txt
+pyslurm_computecanada.egg-info/top_level.txt
