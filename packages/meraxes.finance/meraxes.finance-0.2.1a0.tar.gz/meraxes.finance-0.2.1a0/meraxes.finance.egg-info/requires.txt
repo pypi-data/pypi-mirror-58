@@ -1,0 +1,8 @@
+Django>=2
+djangorestframework>=3.8
+
+[release]
+twine
+
+[testing]
+tox
