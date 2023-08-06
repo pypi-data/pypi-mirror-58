@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ecnet
+Version: 3.3.0
+Summary: UMass Lowell Energy and Combustion Research Laboratory Neural Network Software
+Home-page: https://github.com/ecrl/ecnet
+Author: Travis Kessler, John Hunter Mack
+Author-email: Travis_Kessler@student.uml.edu, Hunter_Mack@uml.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Requires-Dist: alvadescpy (==0.1.0)
+Requires-Dist: colorlogging (==0.3.5)
+Requires-Dist: ecabc (==2.2.3)
+Requires-Dist: matplotlib (==3.1.2)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: padelpy (==0.1.6)
+Requires-Dist: pyyaml (==5.1.1)
+Requires-Dist: scikit-learn (==0.21.2)
+Requires-Dist: tensorflow (==2.0.0)
+
+UNKNOWN
+
+
