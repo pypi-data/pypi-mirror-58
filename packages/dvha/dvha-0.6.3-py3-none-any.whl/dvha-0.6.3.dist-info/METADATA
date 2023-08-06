@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dvha
+Version: 0.6.3
+Summary: Create a database of DVHs, GUI with wxPython, plots with Bokeh
+Home-page: https://github.com/cutright/DVH-Analytics-Desktop
+Author: Dan Cutright
+Author-email: dan.cutright@gmail.com
+License: MIT License
+Download-URL: https://github.com/cutright/DVH-Analytics-Desktop/archive/master.zip
+Keywords: dvh,radiation therapy,research,dicom,dicom-rt,bokeh,analytics,wxpython
+Platform: UNKNOWN
+Requires-Dist: wxpython
+Requires-Dist: pypubsub
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pydicom (>=1.0)
+Requires-Dist: dicompyler-core
+Requires-Dist: bokeh (>=1.2)
+Requires-Dist: python-dateutil
+Requires-Dist: psycopg2-binary
+Requires-Dist: shapely[vectorized]
+Requires-Dist: statsmodels
+Requires-Dist: scikit-learn
+Requires-Dist: regressors
+
+DVH Database for Clinicians and Researchers
+
+DVH Analytics is a software application to help radiation oncology departments build an in-house database of 
+treatment planning data for the purpose of historical comparisons and statistical analysis. This code is still in 
+development. Please contact the developer if you are interested in testing or collaborating.
+
+The application builds a SQL database of DVHs and various planning parameters from DICOM files (i.e., Plan, Structure, 
+Dose). Since the data is extracted directly from DICOM files, we intend to accommodate an array of treatment planning 
+system vendors.
+
+
