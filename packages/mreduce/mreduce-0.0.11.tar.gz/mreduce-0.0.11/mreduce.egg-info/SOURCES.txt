@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+version
+mreduce/__init__.py
+mreduce.egg-info/PKG-INFO
+mreduce.egg-info/SOURCES.txt
+mreduce.egg-info/dependency_links.txt
+mreduce.egg-info/requires.txt
+mreduce.egg-info/top_level.txt
