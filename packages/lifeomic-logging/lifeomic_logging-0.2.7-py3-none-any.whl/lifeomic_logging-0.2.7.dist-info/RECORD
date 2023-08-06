@@ -1,0 +1,8 @@
+lifeomic_logging/__init__.py,sha256=P8hGKGhhqR3vjLOgFthLu03TsQ_3vXUbDkuf8z0wIq0,295
+lifeomic_logging/logger.py,sha256=yeVdblmlfnRHJS9XWFeGH7DwTRxIEw1VX7Y9GdDcdps,6864
+lifeomic_logging/version.py,sha256=XHypfHSPdgXFKmOdoewn7czU670gt8InhHhzlP5j_aA,22
+lifeomic_logging-0.2.7.dist-info/LICENSE,sha256=Zb776kRXe57rB2HT86rKfBs_xozMoADZwBkNWrKYRSA,1065
+lifeomic_logging-0.2.7.dist-info/METADATA,sha256=YUvtmO9l3JMgQbMstpYClyBLMK8cg1Hexr-9TKErF00,2851
+lifeomic_logging-0.2.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lifeomic_logging-0.2.7.dist-info/top_level.txt,sha256=U0Xrcyo8XobQx_yIYFJee-DG9FJJr2ieExK9OFaCp0w,17
+lifeomic_logging-0.2.7.dist-info/RECORD,,
