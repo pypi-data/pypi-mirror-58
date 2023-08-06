@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: wtpy
+Version: 0.2.0
+Summary: Wonder Trading Platform With Python Wrapper
+Home-page: UNKNOWN
+Author: Wesley Liu
+Author-email: silencesword@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: xlsxwriter
+
+
+﻿setup.py (for humans)
+=======================
+
+暂时没有介绍，以后有空来编辑
+
