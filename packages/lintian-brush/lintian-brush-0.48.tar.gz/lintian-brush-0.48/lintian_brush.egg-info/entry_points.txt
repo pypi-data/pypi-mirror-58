@@ -1,0 +1,4 @@
+[console_scripts]
+apply-multiarch-hints = lintian_brush.multiarch_hints:main
+lintian-brush = lintian_brush.__main__:main
+
