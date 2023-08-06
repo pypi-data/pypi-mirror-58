@@ -1,0 +1,13 @@
+showdown/__init__.py,sha256=rDLwo5241RJaFkfezuqPaAFC4AVXvrwvSKoNgc509do,294
+showdown/client.py,sha256=MLufeJgzMusZ-dEzRMJf7vvWJWSMVdKDJQDgT2PMP3k,32703
+showdown/docutils.py,sha256=cMB6hKJ5BFl7cmXFhqfCaN8nREsTXLYiZ_QUtm6pMAA,3318
+showdown/message.py,sha256=kH4LIozr7Y2RSRjA3QfwjSyPhwoDuSc2sWw6YNvoKss,4329
+showdown/room.py,sha256=5fAFVQZsCA4ckWsSZA-GLb2A1n1kVzLn2AIhlC7ixaU,12165
+showdown/server.py,sha256=hXFhNO13ELZBHCFJrquqaX5hAM3Jc0kbcXHDshzeuRA,10320
+showdown/user.py,sha256=Za78CDovfMBP7H7a45UDZ1HjiwMaFCy3X_5xgCw5OWw,9305
+showdown/utils.py,sha256=MgF2VENIy6zbwL4wzlSijSmGWknkJzqtDHeX0zCp6qM,7554
+showdownpy-0.1.4.dist-info/LICENSE,sha256=OUBE1lmZSldJDyA4OOmxaQGkoCTFCgTI0iBzV9qay0Q,1068
+showdownpy-0.1.4.dist-info/METADATA,sha256=0FjokhA8HVSbCEClcCqmcWG9p8J5yVsFqkpHhQWvz6c,4115
+showdownpy-0.1.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+showdownpy-0.1.4.dist-info/top_level.txt,sha256=8AV8X-CBE3PizPLvfj0mTcfOz3ovre_lnjZ5ERs1EhA,9
+showdownpy-0.1.4.dist-info/RECORD,,
