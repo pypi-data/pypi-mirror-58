@@ -1,0 +1,3 @@
+[ehforwarderbot.middleware]
+online.OnlineMiddleware = efb_online_middleware:OnlineMiddleware
+
