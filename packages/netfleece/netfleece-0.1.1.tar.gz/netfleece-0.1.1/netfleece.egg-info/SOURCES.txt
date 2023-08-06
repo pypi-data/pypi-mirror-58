@@ -1,0 +1,16 @@
+.gitignore
+CHANGELOG.md
+LICENSE
+Makefile
+README.md
+requirements.txt
+setup.py
+bin/netfleece
+netfleece/__init__.py
+netfleece/b64stream.py
+netfleece/netfleece.py
+netfleece/pylintrc
+netfleece.egg-info/PKG-INFO
+netfleece.egg-info/SOURCES.txt
+netfleece.egg-info/dependency_links.txt
+netfleece.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+[BASIC]
+
+# Good variable names which should always be accepted, separated by a comma
+good-names=i,j,k,n,ex,Run,_,f,v,
+           ClassTypeInfo,
+	   RecordTypeEnumeration,
+	   BinaryTypeEnumeration,
+	   PrimitiveTypeEnumeration,
+	   ValueWithCode,
+	   StringValueWithCode,
+	   ArrayOfValueWithCode,
+	   ClassInfo,
+	   MemberTypeInfo,
+	   BinaryArrayTypeEnumeration,
+	   ArrayInfo
