@@ -1,0 +1,16 @@
+README.rst
+setup.py
+django_rest_scaffold.egg-info/PKG-INFO
+django_rest_scaffold.egg-info/SOURCES.txt
+django_rest_scaffold.egg-info/dependency_links.txt
+django_rest_scaffold.egg-info/requires.txt
+django_rest_scaffold.egg-info/top_level.txt
+rest_scaffold/__init__.py
+rest_scaffold/apps.py
+rest_scaffold/middleware.py
+rest_scaffold/settings.py
+rest_scaffold/tests.py
+rest_scaffold/urls.py
+rest_scaffold/views.py
+rest_scaffold/templatetags/__init__.py
+rest_scaffold/templatetags/rest_scaffold.py
