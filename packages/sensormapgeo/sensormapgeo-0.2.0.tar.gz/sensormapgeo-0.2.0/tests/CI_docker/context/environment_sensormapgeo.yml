@@ -1,0 +1,33 @@
+name: sensormapgeo
+
+channels: &id1
+  - http://conda.anaconda.org/conda-forge
+
+dependencies:
+  - python=3.*.*
+  - pip  # avoids that conda uses the wrong pip
+  - numpy
+  - gdal
+  - pyresample>=1.11.0
+
+  # py_tools_ds
+  - pyqt
+  - scikit-image
+  - rasterio
+  - pyproj
+  - lxml
+  - geopandas
+  - ipython
+
+  - pip:
+    - py_tools_ds
+    - sphinx-argparse
+    - flake8
+    - pycodestyle
+    - pylint
+    - pydocstyle
+    - nose
+    - nose2
+    - nose-htmloutput
+    - coverage
+    - rednose
