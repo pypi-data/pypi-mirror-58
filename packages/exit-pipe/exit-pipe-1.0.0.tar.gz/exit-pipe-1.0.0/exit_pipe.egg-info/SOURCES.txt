@@ -1,0 +1,8 @@
+README.md
+setup.py
+exit_pipe/__init__.py
+exit_pipe.egg-info/PKG-INFO
+exit_pipe.egg-info/SOURCES.txt
+exit_pipe.egg-info/dependency_links.txt
+exit_pipe.egg-info/entry_points.txt
+exit_pipe.egg-info/top_level.txt
