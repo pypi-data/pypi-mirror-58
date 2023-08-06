@@ -1,0 +1,8 @@
+README.md
+setup.py
+cicd/__init__.py
+cicd_test.egg-info/PKG-INFO
+cicd_test.egg-info/SOURCES.txt
+cicd_test.egg-info/dependency_links.txt
+cicd_test.egg-info/requires.txt
+cicd_test.egg-info/top_level.txt
