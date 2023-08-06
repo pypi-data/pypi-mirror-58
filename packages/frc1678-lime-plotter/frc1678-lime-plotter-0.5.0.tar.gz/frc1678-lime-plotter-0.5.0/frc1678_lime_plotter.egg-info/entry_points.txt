@@ -1,0 +1,3 @@
+[console_scripts]
+lime-plotter.py = frc1678.limeplotter.main:main
+
