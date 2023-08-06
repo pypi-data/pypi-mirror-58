@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <node>
+	<data>text</data>
+	<withspaces>   some text with spaces and
+	newlines
+	</withspaces>
+	<e />
+	<f>
+	</f>
+ </node>
+</root>
