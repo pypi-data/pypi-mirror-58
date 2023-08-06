@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pbu-log-inspector
+Version: 0.0.1
+Summary: Flask endpoint delivering filtered log messages via REST
+Home-page: https://github.com/ilfrich/pbu-log-inspector
+Author: Peter Ilfrich
+Author-email: peter.ilfrich@au1.ibm.com
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Dist: flask
+
+UNKNOWN
+
+
