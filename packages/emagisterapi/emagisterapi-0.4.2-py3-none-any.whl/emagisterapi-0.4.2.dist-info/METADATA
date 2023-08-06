@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: emagisterapi
+Version: 0.4.2
+Summary: Emagister API client
+Home-page: https://github.com/fdelgados/EmagisterAPI.git
+Author: Cisco Delgado
+Author-email: fdelgados@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: numpy
+
+# Emagister API client
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/fdelgados/EmagisterAPI?style=flat)
+
+emagisterapi is a python client to retrieve information from Emagister API.
+
+## Table of Contents
+* [Installations](#installations)
+* [Project Motivation](#project-motivation)
+* [Modules](#modules)
+* [Instructions](#instructions)
+* [More Info](#more-info)
+* [License](#license)
+
+## Installations
+### Dependencies
+
+emagisterapi requires:
+
+* Python (>=3.6)
+* [NumPy](https://numpy.org/)
+* [requests](https://2.python-requests.org/en/latest/user/quickstart/)
+
+### Installation
+
+You can install emagisterapi using `pip`
+```
+pip install emagisterapi
+```
+That easy.
+
+## Project Motivation
+
+emagisterapi has been created in order to facilitate access to the Emagister API data
+
+## Modules
+
+In this version, emagisterapi has only one module:
+
+### `connect`
+The `connect` module includes classes to connect and retrieve resources from Emagister API.
+
+#### The `Courses` class:
+
+These are the constructor parameters of the `Courses` class:
+
+| **parameter** | **type** | **description**                                                             | **values**          |
+|---------------|----------|-----------------------------------------------------------------------------|---------------------|
+| `country`     |   str    | Country of the site where the data comes from                               | es, uk, fr, mx      |
+| `version`     |   str    | API version. Default: 1.0                                                   | 1.0 or 2.0          |
+| `page_size`   |   int    | Number of results per page. Default: 25                                     | &gt;= 1             |
+| `silent`      |   bool   | If it is `True`, you will see the log printed on screen. Default: `False`   | `True` or `False`   |
+
+The `Courses` class has one method called `get` and these are his parameters:
+
+| **parameter** | **type**     | **description**                                                                                  | *values*                                                         |
+|---------------|--------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| `subset`      | dict or list | Subset of fields to retrieve. If `None`, all fields will be retrieved. Default: `None`           |                                                                  |
+| `filters`     |    dict      | Dictionary or list of filters to apply. Default: `None`                                          | See [documentation](https://www.emagister.com/api/doc#get--api-{version}-courses) |
+| `max_records` |    int       | Maximum number of records to retrieve. If `None`, all records will be retrieved. Default: `None` | >= 1                                                             |
+
+## Instructions
+
+To retrieve course from Emagister API, run this code:
+
+```python
+from emagapi.connect import Courses
+
+courses_api = Courses(country='uk', page_size=100, silent=False)
+
+subset = {'course_id': 'id',
+          'title': 'name',
+          'description': 'description',
+          'center': 'center_name',
+          'type': 'type',
+          'price': 'price',
+          'start_date': 'start_date',
+          'flexible_start': 'flexible_start_date'}
+
+courses = courses_api.get(subset, max_records=25000)
+
+# output (if silent == False)
+# GET: https://www.emagister.co.uk/api/1.0/courses?page=1&size=100 [200]
+# Records: 100/25000
+# GET: https://www.emagister.co.uk/api/1.0/courses?page=2&size=100 [200]
+# Records: 200/25000
+# GET: https://www.emagister.co.uk/api/1.0/courses?page=3&size=100 [200]
+# Records: 300/25000
+# GET: https://www.emagister.co.uk/api/1.0/courses?page=4&size=100 [200]
+# Records: 400/25000
+# ...
+# GET: https://www.emagister.co.uk/api/1.0/courses?page=249&size=100 [200]
+# Records: 24900/25000
+# GET: https://www.emagister.co.uk/api/1.0/courses?page=250&size=100 [200]
+# Records: 25000/25000
+```
+The result is a list of dictionaries whose keys are the values of `subset`:
+
+```python
+
+print(courses[0])
+
+# output
+# {'course_id': '170648149',
+#  'title': 'Advanced Sales Management',
+#  'description': 'Discover new tools for turning the art of management into a reliable science. Strengthen...',
+#  'center': 'Salessense',
+#  'type': 'Course',
+#  'price': '£5,995',
+#  'start_date': None,
+#  'flexible_start': True}
+
+```
+
+## More info
+
+You can read the Emagister API documentation [here](https://www.emagister.com/api/doc).
+
+## License
+
+Copyright (c) 2019 Cisco Delgado
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
