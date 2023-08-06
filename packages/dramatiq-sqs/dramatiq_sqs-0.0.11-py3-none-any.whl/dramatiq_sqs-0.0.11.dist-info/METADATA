@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dramatiq-sqs
+Version: 0.0.11
+Summary: An Amazon SQS broker for Dramatiq.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: boto3
+Requires-Dist: dramatiq
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-quotes ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+Visit https://github.com/Bogdanp/dramatiq_sqs for more information.
+
+
