@@ -1,0 +1,13 @@
+Hallo {{ notification.user.name }},
+wir haben eine neue Nachricht für dich:
+
+
+{{ notification.description }}
+
+{% if notification.link %}
+    Weitere Informationen: {{ notification.link }}
+{% endif %}
+
+Von {{ notification.app }} am {{ notification.created_at }}
+
+Dein SchoolApps-Team

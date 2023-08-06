@@ -1,0 +1,20 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load bootstrap4 i18n %}
+{% load render_table from django_tables2 %}
+
+{% block bootstrap4_title %}{% blocktrans %}Groups{% endblocktrans %} - {{ block.super }}{% endblock %}
+
+{% block page_title %}{% blocktrans %}Groups{% endblocktrans %}{% endblock %}
+
+{% block content %}
+  <div class="btn-group" role="group" aria-lable="Group actions">
+    <a href="{% url 'create_group' %}" class="btn btn-dark">
+      <span class="mdi mdi-plus"></span>
+    </a>
+  </div>
+
+  {% render_table groups_table %}
+{% endblock %}

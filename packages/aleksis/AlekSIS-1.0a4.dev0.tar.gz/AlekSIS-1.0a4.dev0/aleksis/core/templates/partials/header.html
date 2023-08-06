@@ -1,0 +1,441 @@
+{% load static %}
+{% load pwa %}
+{% load url_name %}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Selbst programmierte Anwendungen für den Schullaltag am Katharineum zu Lübeck">
+    <title>SchoolApps – Katharineum zu Lübeck</title>
+
+    <!-- Android  -->
+    <meta name="theme-color" content="#da1f3d">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="SchoolApps">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Windows  -->
+    <meta name="msapplication-navbutton-color" content="#da1f3d">
+    <meta name="msapplication-TileColor" content="#da1f3d">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+
+    <!-- Pinned Sites  -->
+    <meta name="application-name" content="SchoolApps">
+    <meta name="msapplication-tooltip" content="SchoolApps">
+    <meta name="msapplication-starturl" content="/">
+
+    <!-- Tap highlighting  -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- UC Mobile Browser  -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+
+
+    <!-- Main Link Tags  -->
+    <link href="{% static "icons/favicon_16.png" %}" rel="icon" type="image/png" sizes="16x16">
+    <link href="{% static "icons/favicon_32.png" %}" rel="icon" type="image/png" sizes="32x32">
+    <link href="{% static "icons/favicon_48.png" %}" rel="icon" type="image/png" sizes="48x48">
+
+    <!-- iOS  -->
+    <!-- non-retina iPad iOS 7 -->
+    <link rel="apple-touch-icon" href="{% static "icons/apple_76.png" %}" sizes="76x76">
+    <!-- retina iPhone vor iOS 7 -->
+    <link rel="apple-touch-icon" href="{% static "icons/apple_114.png" %}" sizes="114x114">
+    <!-- retina iPad iOS 7 -->
+    <link rel="apple-touch-icon" href="{% static "icons/apple_152.png" %}" sizes="152x152">
+    <!-- retina iPad iOS 7 für iPhone 6 Plus -->
+    <link rel="apple-touch-icon" href="{% static "icons/apple_180.png" %}" sizes="180x180">
+
+
+    <!-- Pinned Tab  -->
+    {#    <link href="path/to/icon.svg" rel="mask-icon" size="any" color="red">#}
+
+    <!-- Android  -->
+    <link href="{% static "icons/android_192.png" %}" rel="icon" sizes="192x192">
+
+    <!-- Others -->
+    {#    <link href="favicon.icon" rel="shortcut icon" type="image/x-icon">#}
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'common/favicon.ico' %}">
+
+    <!-- PWA -->
+    {% progressive_web_app_meta %}
+
+    <!--------->
+    <!-- CSS -->
+    <!--------->
+    <link href="{% static 'css/materialdesignicons-webfont/material-icons.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="{% static 'css/materialize.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'common/style.css' %}">
+    <script src="{% static 'js/jquery/jquery-3.3.1.min.js' %}"></script>
+
+
+    <!-- location (for "active" in sidenav -->
+    <meta name="active-loaction" content="{{ request|url_name }}">
+
+    {% if martor %}
+        <link href="{% static 'plugins/css/ace.min.css' %}" type="text/css" media="all" rel="stylesheet"/>
+        <link href="{% static 'plugins/css/resizable.min.css' %}" type="text/css" media="all" rel="stylesheet"/>
+        <link href="{% static 'martor/css/martor.min.css' %}" type="text/css" media="all" rel="stylesheet"/>
+    {% endif %}
+</head>
+<body>
+<header>
+    <!-- Menu button (sidenav) -->
+    <div class="container">
+        <a href="#" data-target="slide-out" class="top-nav sidenav-trigger hide-on-large-only">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <!-- Nav bar (logged in as, logout) -->
+    <nav class="primary-color">
+        <a class="brand-logo" href="/">SchoolApps</a>
+
+        <div class="nav-wrapper">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                {% if user.is_authenticated %}
+                    <li>Angemeldet als {{ user.get_username }}</li>
+                    <li>
+                        <a href="{% url 'logout' %}">Abmelden <i class="material-icons right">exit_to_app</i></a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <div id="print-header" class="row">
+        <div class="col s6 logo">
+            <img src="{% static 'common/logo.png' %}">
+        </div>
+        <div class="col s6 right-align">
+            <a href="/"><strong>SchoolApps</strong></a>
+            <br>
+            Katharineum zu Lübeck
+        </div>
+    </div>
+
+    <!-- Main nav (sidenav) -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li class="logo">
+            <a id="logo-container" href="/" class="brand-logo">
+                <img src="{% static 'common/logo.png' %}" alt="Logo des Katharineums">
+            </a>
+        </li>
+
+        {% if user.is_authenticated %}
+            <li class="url-dashboard">
+                <a href="{% url 'dashboard' %}">
+                    <i class="material-icons">home</i> Dashboard
+                </a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+
+            <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+
+            {% if perms.aub.apply_for_aub or perms.aub.check1_aub or perms.aub.check2_aub %}
+                <li class="bold url-aub_index url-aub_details url-ab_edit url-aub_apply_for urlaub_applied_for">
+                    <a class="collapsible-header waves-effect waves-primary" href="{% url 'aub_index' %}"><i
+                            class="material-icons">business_center</i>
+                        Unterrichtsbefreiungen
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            {% if perms.aub.check1_aub %}
+                                <li class="url-aub_check1">
+                                    <a href="{% url 'aub_check1' %}"><i class="material-icons">done</i> Anträge
+                                        genehmigen 1
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if perms.aub.check2_aub %}
+                                <li class="url-aub_check2">
+                                    <a href="{% url 'aub_check2' %}"><i class="material-icons">done_all</i>
+                                        Anträge
+                                        genehmigen 2
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if perms.aub.view_archive %}
+                                <li class="url-aub_archive">
+                                    <a href="{% url 'aub_archive' %}"><i class="material-icons">archive</i>
+                                        Archiv
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="divider"></div>
+                </li>
+            {% endif %}
+            {% if perms.fibu.request_booking  or perms.fibu.manage_booking or perms.fibu.manage_costcenter or perms.fibu.manage.account %}
+                <li class="bold url-fibu_index url-fibu_bookings_user_edit">
+                    <a class="collapsible-header waves-effect waves-primary" href="{% url 'fibu_index' %}"><i
+                            class="material-icons">euro_symbol</i>
+                        Finanzen
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            {% if perms.fibu.check_booking %}
+                                <li class="url-fibu_bookings_check">
+                                    <a href="{% url 'fibu_bookings_check' %}"><i class="material-icons">done_all</i>Anträge
+                                        prüfen
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if perms.fibu.manage_booking %}
+                                <li class="url-fibu_bookings url-fibu_bookings_edit url-fibu_bookings_new">
+                                    <a href="{% url 'fibu_bookings' %}"><i class="material-icons">receipt</i>Buchungen
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if perms.fibu.manage_costcenter %}
+                                <li class="url-fibu_cost_centers url-fibu_cost_centers_edit">
+                                    <a href="{% url 'fibu_cost_centers' %}"><i class="material-icons">done</i>Kostenstellen
+                                    </a>
+                                </li>
+                                <li class="url-fibu_accounts url-fibu_accounts_edit">
+                                    <a href="{% url 'fibu_accounts' %}"><i class="material-icons">done</i>Buchungskonten
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if perms.fibu.manage_booking %}
+                                <li class="url-fibu_reports url-fibu_reports_expenses">
+                                    <a href="{% url 'fibu_reports' %}"><i class="material-icons">list</i>Berichte</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+            {% endif %}
+
+            {% if perms.timetable.show_plan %}
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-primary"><i class="material-icons">school</i>
+                        Stundenplan
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li class="url-timetable_my_plan">
+                                <a href="{% url 'timetable_my_plan' %}" style="padding-right: 10px;">
+                                    <i class="material-icons">person</i> Mein Plan
+                                    <span class="badge new primary-color sidenav-badge">SMART PLAN</span>
+                                </a>
+                            </li>
+                            {#                <li>#}
+                            {#                    <a href="{% url 'timetable_admin_all' %}">#}
+                            {#                        <i class="material-icons">grid_on</i> Alle Pläne#}
+                            {#                    </a>#}
+                            {#                </li>#}
+                            <li class="url-timetable_quicklaunch url-timetable_smart_plan url-timetable_regular_plan url-timetable_smart_plan_week">
+                                <a href="{% url 'timetable_quicklaunch' %}">
+                                    <i class="material-icons">grid_on</i> Alle Pläne
+                                </a>
+                            </li>
+                            <li class="url-timetable_substitutions_date url-timetable_substitutions">
+                                <a href="{% url 'timetable_substitutions' %}">
+                                    <i class="material-icons">update</i> Vertretungsplan
+                                </a>
+                            </li>
+                            {% if perms.timetable.view_hint %}
+                                <li class="url-timetable_hints url-timetable_add_hint url-timetable_edit_hint url-timetable_delete_hint">
+                                    <a href="{% url 'timetable_hints' %}">
+                                        <i class="material-icons">announcement</i> Hinweismanagement
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if perms.debug.can_view_debug_log %}
+                                <li class="url-debug_logs url-debug">
+                                    <a href="{% url 'debug_logs' %}">
+                                        <i class="material-icons">error</i> Debuggingtool
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="divider"></div>
+                </li>
+            {% endif %}
+
+            <li>
+                <a href="{% url 'menu_show_current' %}" target="_blank">
+                    <i class="material-icons">picture_as_pdf</i> Aktueller Speiseplan
+                </a>
+            </li>
+
+            {% if perms.menu.add_menu %}
+                <li class="url-menu_index url-menu_upload url-menu_index_msg">
+                    <a href="{% url 'menu_index' %}">
+                        <i class="material-icons">restaurant_menu</i> Speiseplan hochladen
+                    </a>
+                </li>
+            {% endif %}
+
+            <li>
+                <div class="divider"></div>
+            </li>
+
+            <li class="bold">
+                <a class="collapsible-header waves-effect waves-primary"><i class="material-icons">help</i> Support</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li class="url-rebus">
+                            <a href="{% url 'rebus' %}">
+                                <i class="material-icons">bug_report</i> Fehler melden
+                            </a>
+                        </li>
+                        <li class="url-feedback">
+                            <a href="{% url 'feedback' %}">
+                                <i class="material-icons">feedback</i> Feedback
+                            </a>
+                        </li>
+                        <li class="url-faq">
+                            <a href="{% url 'faq' %}">
+                                <i class="material-icons">question_answer</i>FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        {% endif %}
+
+        {% if not user.is_authenticated %}
+            <li class="url-faq">
+                <a href="{% url 'faq' %}">
+                    <i class="material-icons">question_answer</i>FAQ
+                </a>
+            </li>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+            {% if user.is_superuser %}
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-primary"><i class="material-icons">security</i>Administration
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li id="tools">
+                                <a href="{% url "tools" %}">
+                                    <i class="material-icons">build</i> Tools
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/admin/">
+                                    <i class="material-icons">dashboard</i> Django-Administration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/settings/">
+                                    <i class="material-icons">settings</i> Einstellungen
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            {% endif %}
+
+            <li>
+                <div class="divider"></div>
+            </li>
+
+            <li>
+                <a href="{% url 'logout' %}">
+                    <i class="material-icons">exit_to_app</i> Abmelden
+                </a>
+            </li>
+
+            </ul>
+            </li>
+        {% else %}
+
+            <li class="url-login">
+                <a href="{% url 'login' %}">
+                    <i class="material-icons">lock_open</i> Anmelden
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</header>
+{#<header class="alert success">#}
+{#    <p>#}
+{#        <i class="material-icons left">info</i>#}
+{#        Du befindest dich in der ersten veröffentlichten Version von SchoolApps. Daher kann es immer mal wieder noch zu#}
+{#        bislang unvorhergesehenen#}
+{#        Problemen kommen. Es würde uns sehr helfen, wenn du uns dann über#}
+{#        <a href="mailto:support@katharineum.de">support@katharineum.de</a>#}
+{#        schreibst oder die in SchoolApps integrierten#}
+{#        <a href="{% url 'rebus' %}">Fehlermelde-</a>#}
+{#        und#}
+{#        <a href="{% url 'feedback' %}">Feedbackfunktionen</a>#}
+{#        nutzt.#}
+{#    </p>#}
+{#</header>#}
+
+{% if messages %}
+    <header>
+        {% for message in messages %}
+            <div class="alert {% if message.tags %}{{ message.tags }}{% else %}info{% endif %}">
+                <p>
+                    {% if message.tags == "success" %}
+                        <i class="material-icons left">check_circle</i>
+                    {% elif  message.tags == "info" %}
+                        <i class="material-icons left">info</i>
+                    {% elif  message.tags == "warning" %}
+                        <i class="material-icons left">warning</i>
+                    {% elif  message.tags == "error" %}
+                        <i class="material-icons left">error</i>
+                    {% endif %}
+                    {{ message }}
+                </p>
+            </div>
+        {% endfor %}
+    </header>
+{% endif %}
+
+{% if user.is_authenticated %}
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large green">
+            <i class="large material-icons">help</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating tooltipped red" data-position="left" data-tooltip="Fehler melden"
+                   href="{% url 'rebus' %}"><i class="material-icons">bug_report</i></a>
+            </li>
+            <li>
+                <a class="btn-floating tooltipped yellow darken-1" data-position="left" data-tooltip="FAQ"
+                   href="{% url 'faq' %}"><i class="material-icons">question_answer</i></a>
+            </li>
+            <li>
+                <a class="btn-floating tooltipped blue" data-position="left" data-tooltip="Frage stellen"
+                   href="{% url 'ask-faq' %}"><i class="material-icons">chat</i></a>
+            </li>
+        </ul>
+    </div>
+{% endif %}

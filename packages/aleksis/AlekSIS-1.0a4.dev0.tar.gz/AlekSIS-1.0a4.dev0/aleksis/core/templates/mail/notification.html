@@ -1,0 +1,15 @@
+{% include "mail/header.html" %}
+
+<main>
+    <p>Hallo {{ notification.user.get_full_name }}, <br>
+        wir haben eine neue Nachricht für dich:</p>
+    <blockquote>
+        <p>{{ notification.description }}</p>
+        {% if notification.link %}
+            <a href="{{ notification.link }}">Weitere Informationen →</a>
+        {% endif %}
+    </blockquote>
+    <p>Von {{ notification.app }} am {{ notification.created_at }}</p>
+
+    <i>Dein SchoolApps-Team</i>
+</main>

@@ -1,0 +1,135 @@
+{#<!DOCTYPE html>#}
+{#<html lang="de">#}
+{#<head>#}
+{#    <meta charset="utf-8">#}
+{#    <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+{#    <meta name="viewport" content="width=device-width,initial-scale=1">#}
+{#    <meta name="description" content="Selbst programmierte Anwendungen für den Schullaltag am Katharineum zu Lübeck">#}
+{#    <title>SchoolApps – Katharineum zu Lübeck</title>#}
+{##}
+{#    <!-- Android  -->#}
+{#    <meta name="theme-color" content="#da1f3d">#}
+{#    <meta name="mobile-web-app-capable" content="yes">#}
+{##}
+{#    <!-- iOS -->#}
+{#    <meta name="apple-mobile-web-app-title" content="SchoolApps">#}
+{#    <meta name="apple-mobile-web-app-capable" content="yes">#}
+{#    <meta name="apple-mobile-web-app-status-bar-style" content="default">#}
+{##}
+{#    <!-- Windows  -->#}
+{#    <meta name="msapplication-navbutton-color" content="#da1f3d">#}
+{#    <meta name="msapplication-TileColor" content="#da1f3d">#}
+{#    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">#}
+{#    <meta name="msapplication-config" content="browserconfig.xml">#}
+{##}
+{#    <!-- Pinned Sites  -->#}
+{#    <meta name="application-name" content="SchoolApps">#}
+{#    <meta name="msapplication-tooltip" content="SchoolApps">#}
+{#    <meta name="msapplication-starturl" content="/">#}
+{##}
+{#    <!-- Tap highlighting  -->#}
+{#    <meta name="msapplication-tap-highlight" content="no">#}
+{##}
+{#    <!-- UC Mobile Browser  -->#}
+{#    <meta name="full-screen" content="yes">#}
+{#    <meta name="browsermode" content="application">#}
+{##}
+{##}
+{#    <!-- Main Link Tags  -->#}
+{#    <link href="/static/icons/favicon_16.png" rel="icon" type="image/png" sizes="16x16">#}
+{#    <link href="/static/icons/favicon_32.png" rel="icon" type="image/png" sizes="32x32">#}
+{#    <link href="/static/icons/favicon_48.pngg" rel="icon" type="image/png" sizes="48x48">#}
+{##}
+{#    <!-- iOS  -->#}
+{#    <!-- non-retina iPad iOS 7 -->#}
+{#    <link rel="apple-touch-icon" href="/static/icons/apple_76.png" sizes="76x76">#}
+{#    <!-- retina iPhone vor iOS 7 -->#}
+{#    <link rel="apple-touch-icon" href="/static/icons/apple_114.png" sizes="114x114">#}
+{#    <!-- retina iPad iOS 7 -->#}
+{#    <link rel="apple-touch-icon" href="/static/icons/apple_152.png" sizes="152x152">#}
+{#    <!-- retina iPad iOS 7 für iPhone 6 Plus -->#}
+{#    <link rel="apple-touch-icon" href="/static/icons/apple_180.png" sizes="180x180">#}
+{##}
+{##}
+{#    <!-- Pinned Tab  -->#}
+{##}
+{##}
+{#    <!-- Android  -->#}
+{#    <link href="/static/icons/android_192.png" rel="icon" sizes="192x192">#}
+{##}
+{#    <!-- Others -->#}
+{##}
+{##}
+{##}
+{#    <!-- Favicon -->#}
+{#    <link rel="shortcut icon" type="image/x-icon" href="/static/common/favicon.ico">#}
+{#    <link rel="manifest" href="/static/common/manifest.json">#}
+{##}
+{#    <!--------->#}
+{#    <!-- CSS -->#}
+{#    <!--------->#}
+{#    <link href="/static/css/materialdesignicons-webfont/material-icons.css" rel="stylesheet">#}
+{#    <link rel="stylesheet" type="text/css" media="screen"#}
+{#          href="/static/css/materialize.min.css">#}
+{#    <link rel="stylesheet" type="text/css" href="/static/common/style.css">#}
+{#    <script src="/static/js/jquery/jquery-3.3.1.slim.min.js"></script>#}
+{##}
+{##}
+{#    <!-- location (for "active" in sidenav -->#}
+{#    <meta name="active-loaction" content="404">#}
+{##}
+{##}
+{#</head>#}
+{#<body>#}
+{##}
+{#<header>#}
+{#    <!-- Menu button (sidenav) -->#}
+{#    <div class="container">#}
+{#        <a href="#" data-target="slide-out" class="top-nav sidenav-trigger hide-on-large-only">#}
+{#            <i class="material-icons">menu</i>#}
+{#        </a>#}
+{#    </div>#}
+{##}
+{#    <!-- Nav bar (logged in as, logout) -->#}
+{#    <nav class="primary-color">#}
+{#        <a class="brand-logo" href="/">SchoolApps</a>#}
+{#    </nav>#}
+{##}
+{#    <div id="print-header" class="row">#}
+{#        <div class="col s6 logo">#}
+{#            <img src="/static/common/logo.png">#}
+{#        </div>#}
+{#        <div class="col s6 right-align">#}
+{#            <a href="/"><strong>SchoolApps</strong></a><br>#}
+{#            Katharineum zu Lübeck#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#    <!-- Main nav (sidenav) -->#}
+{#    <ul id="slide-out" class="sidenav sidenav-fixed">#}
+{#        <li class="logo">#}
+{#            <a id="logo-container" href="/" class="brand-logo">#}
+{#                <img src="/static/common/logo.png" alt="Logo des Katharineums">#}
+{#            </a>#}
+{#        </li>#}
+{#    </ul>#}
+{#</header>#}
+{% include "partials/header.html" %}
+
+<main>
+    <h3>Leider existiert diese Seite nicht. (Fehler 404)</h3>
+
+    <p class="flow-text">
+      Beim Aufrufen dieser Seite ist ein Fehler aufgetreten. Wahrscheinlich existiert die gewünschte Seite unter der Adresse "<code id="url"></code>" nicht.
+
+        Solltest du der Meinung sein, dass diese Seite eigentlich existieren müsste, wende dich bitte an die
+        <a href="mailto:support@katharineum.de">Computer-AG</a>.
+    </p>
+
+</main>
+
+<script>
+    document.getElementById("url").innerHTML = window.location.pathname;
+</script>
+
+{% include 'partials/footer.html' %}

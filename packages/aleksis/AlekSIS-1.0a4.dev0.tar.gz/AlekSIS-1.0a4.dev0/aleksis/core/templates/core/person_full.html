@@ -1,0 +1,78 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load bootstrap4 i18n static cropping %}
+{% load render_table from django_tables2 %}
+
+{% block bootstrap4_title %}{% blocktrans %}Person{% endblocktrans %} - {{ block.super }}{% endblock %}
+
+{% block content %}
+  <div class="col-sm-12 col-md-12">
+    {% if person %}
+      <h2>{{ person.first_name }} {{ person.last_name }}</h2>
+      <p>
+        <a href="{% url 'edit_person_by_id' person.id %}">
+          <span class="mdi mdi-pencil"></span>
+        </a>
+      </p>
+      <h3>{% blocktrans %}Contact details{% endblocktrans %}</h3>
+      <table class="table table-responsive-xl table-border table-striped">
+        <tr>
+          <td rowspan="6">
+            {% if person.photo %}
+              <img class="person-img" src="{% cropped_thumbnail person 'photo_cropping' max_size='300x400' %}" alt="{{ person.first_name }} {{ person.last_name }}" />
+            {% else %}
+              <img class="person-img" src="{% static 'img/fallback.png' %}" alt="{{ person.first_name }} {{ person.last_name }}" />
+            {% endif %}
+          </td>
+          <td><span class="mdi mdi-account"></span></td>
+          <td>{{ person.first_name }}</td>
+          <td>{{ person.additional_name }}</td>
+          <td>{{ person.last_name }}</td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-gender-male-female"></td>
+          <td colspan="3">{{ person.get_sex_display }}</td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-home"></span></td>
+          <td colspan="2">{{ person.street }} {{ person.housenumber }}</td>
+          <td colspan="2">{{ person.postal_code }} {{ person.place }}</td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-phone"></span></td>
+          <td>{{ person.phone_number }}</td>
+          <td>{{ person.mobile_number }}</td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-email"></span></td>
+          <td colspan="3">{{ person.email }}</td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-cake"></span></td>
+          <td colspan="3">{{ person.date_of_birth|date }}</td>
+        </tr>
+        {% comment %}
+          <tr>
+          <td><span class="mdi mdi-school"></span></td>
+          <td>Class</td>
+          <td>Teacher</td>
+          </tr>
+          {% endcomment %}
+      </table>
+
+      <h3>{% blocktrans %}Groups{% endblocktrans %}</h3>
+      {% render_table groups_table %}
+
+    {% else %}
+      <h2>{% blocktrans %}Person not found{% endblocktrans %}</h2>
+
+      <p>
+        {% blocktrans %}
+          There is no person with this id.
+        {% endblocktrans %}
+      </p>
+    {% endif %}
+  </div>
+{% endblock %}

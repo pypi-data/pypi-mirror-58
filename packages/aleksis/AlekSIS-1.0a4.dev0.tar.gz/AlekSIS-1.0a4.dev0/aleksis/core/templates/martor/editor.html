@@ -1,0 +1,71 @@
+{% load i18n %}
+<div class="main-martor main-martor-{{ field_name }} card" data-field-name="{{ field_name }}">
+    <div class="section-martor card-content">
+        <div class="row">
+            <ul class="tabs col s12 m3 primary-color-text">
+                <li class="tab">
+                    <a class="item" data-tab="editor-tab-{{ field_name }}" href="#editor-{{ field_name }}">
+                        <i class="material-icons">edit</i>
+                        {#                        {% trans "Editor" %}#}
+                    </a>
+                </li>
+                <li class="tab">
+                    <a class="item" data-tab="preview-tab-{{ field_name }}" href="#preview-{{ field_name }}">
+                        <i class="material-icons">slideshow</i>
+                        {#                        {% trans "Preview" %}#}
+                    </a>
+                </li>
+
+            </ul>
+            <div class="col s12 m9">
+                {% include "martor/toolbar.html" %}
+            </div>
+        </div>
+        <div class="col s12 tab segment" data-tab="editor-tab-{{ field_name }}"
+             id="editor-{{ field_name }}">
+            <div class="ui active dimmer upload-progress" style="display:none">
+                <div class="ui text loader">{% trans "Uploading... please wait..." %}</div>
+            </div>
+
+            <div id="martor-{{ field_name }}" class="martor-field martor-field-{{ field_name }}"></div>
+            {{ martor }}
+            <i class="angle double down grey icon expand-editor"></i>
+        </div>
+        <div class="martor-preview col s12 tab segment" data-tab="preview-tab-{{ field_name }}"
+             id="preview-{{ field_name }}">
+            <p>{% trans "Nothing to preview" %}</p>
+        </div>
+    </div><!-- end  /.section-martor -->
+
+    {% include 'martor/guide.html' %}
+    {% include 'martor/emoji.html' %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.tabs').tabs();
+            $('.dropdown-trigger').dropdown();
+            $('.modal').modal();
+        });
+    </script>
+    <style type="text/css">
+        .main-martor .card-content {
+            margin: 0;
+            padding: 0;
+        }
+
+        .martor-toolbar .btn-flat {
+            padding: 0 6px;
+        }
+
+        .maximize::before {
+            content: "fullscreen";
+        }
+
+        .minimize::before {
+            content: "fullscreen_exit";
+        }
+
+        .main-martor .tab a i {
+            line-height: inherit;
+        }
+    </style>
+</div>

@@ -1,0 +1,9 @@
+Hallo {{ user.name }},
+vielen Dank, dass du SchoolApps benutzt.
+
+----
+Weitere Informationen findest du hier:
+- FORUM (forum.katharineum.de)
+----
+
+Deine Computer-AG
