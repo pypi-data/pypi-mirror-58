@@ -1,0 +1,12 @@
+PyYAML
+docopt
+PyGObject
+
+[:python_version < "3.7"]
+importlib_resources
+
+[config]
+xdg
+
+[password_cache]
+keyutils==0.3
