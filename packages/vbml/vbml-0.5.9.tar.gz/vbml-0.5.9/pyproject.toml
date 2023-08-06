@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vbml"
+version = "0.5.9"
+description = "Way to check"
+authors = ["timoniq", "prostomarkeloff"]
+license = "GPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
