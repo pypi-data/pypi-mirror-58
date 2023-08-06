@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bas
+Version: 0.0.1
+Summary: bas client and cli
+Home-page: https://github.com/youka-club/bas
+Author-email: youka.club@gmail.com
+License: UNKNOWN
+Description: # bas
+        Python client and CLI for Bavarian Archive for Speech Signals services.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
