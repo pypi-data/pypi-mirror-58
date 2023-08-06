@@ -1,0 +1,15 @@
+mvl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mvl/bochvar.py,sha256=D7fF4AaPCwr4GOu-6KqXZecDfhDF06Wt1dfULM1RHgE,3137
+mvl/kleene.py,sha256=HfxsCSJt9Y14Kufs68gPAmKLJDc5YREUmWoB-3sKF_8,863
+mvl/lukasiewicz.py,sha256=aTP0otF1Rc8dQus61Z_28WQkNJWmwV7ruj-unXR5nCo,6973
+mvl/priest.py,sha256=qexJ3OxFoJ_oAD3KD8eMkKTBEF_LBZzfoXWtjJ91HDs,961
+mvl/tvl_operators.py,sha256=vk6mFkdx4i8iW1UxjAcm1fy9co5rY8QdtKMlne6oWEg,2120
+mvl/types.py,sha256=f6d2MkdXf1VruCrL7M8C3TMzvrADeJ51L3jDdxZlf0U,203
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_lukasiewicz.py,sha256=VWThp1dGxf-yakkaFFXcKpJVbUXVLMwHOtzL9vXFd6E,6935
+test/test_tvl.py,sha256=x_RVNcw1Y6ndnQXaoUIqTIuxsdAPvAQWE6nz7DxVeWQ,5925
+mvl-0.1.0.dist-info/LICENSE.txt,sha256=PZo48poV8q7nZvvj-L0cItnFDcJm8IncjI5XWSLWvUg,1213
+mvl-0.1.0.dist-info/METADATA,sha256=qfBfZvrtyDlzpy2g7RRRXvC610qWLHKNkLliBWxfxXA,1610
+mvl-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mvl-0.1.0.dist-info/top_level.txt,sha256=CH78VFQiDVolIZUGQV7NREpORW8Qe53c7bRccWxf7oU,9
+mvl-0.1.0.dist-info/RECORD,,
