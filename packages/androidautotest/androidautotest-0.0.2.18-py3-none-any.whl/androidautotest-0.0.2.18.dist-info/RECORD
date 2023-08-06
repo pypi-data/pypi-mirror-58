@@ -1,0 +1,12 @@
+androidautotest/__init__.py,sha256=razcr-8d217nbIF7gDajufScucV0qyzjBX8VX7fN6oc,44
+androidautotest/__main__.py,sha256=GOS7tFcOnzLYxAa1OMN6GpcuBFQIq1qsLVlf-EW3v4U,2113
+androidautotest/api.py,sha256=y01rFn8gNFzDx3ZfDfobHEqMw9C4XFt-fK2eYgyZ-wQ,20115
+androidautotest/client.py,sha256=mr87jcw7-l67ijCiIuWh4iYXDiuZwGoF21qeSiVy-D8,2138
+androidautotest/errors.py,sha256=3fIFeDYgFH0d7mX_v5WSdATo7j6yAJO4mNzysFWd2V0,860
+androidautotest/logger.py,sha256=gsAwCVr3qxhWFN0E6qVuCNF8li4IV-URIdren82VPek,7863
+androidautotest/tool.py,sha256=O3Q_tpYukmSDtTR4RbUfNT7k86qkU1v5KlXFymf_dSs,1284
+androidautotest-0.0.2.18.dist-info/LICENSE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+androidautotest-0.0.2.18.dist-info/METADATA,sha256=D2IKPqLhapaLW9Ky9E_FOUCeSeIHExjczZOptVuCpUI,4046
+androidautotest-0.0.2.18.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+androidautotest-0.0.2.18.dist-info/top_level.txt,sha256=LRFdzHxpUpEytvgdcyHqx4W_jZso1Cjz0R5xcbfstX8,16
+androidautotest-0.0.2.18.dist-info/RECORD,,
