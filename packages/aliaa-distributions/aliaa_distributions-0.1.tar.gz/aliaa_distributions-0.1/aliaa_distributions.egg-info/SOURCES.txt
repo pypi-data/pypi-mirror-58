@@ -1,0 +1,10 @@
+setup.py
+aliaa_distributions/Binomialdistribution.py
+aliaa_distributions/Gaussiandistribution.py
+aliaa_distributions/Generaldistribution.py
+aliaa_distributions/__init__.py
+aliaa_distributions.egg-info/PKG-INFO
+aliaa_distributions.egg-info/SOURCES.txt
+aliaa_distributions.egg-info/dependency_links.txt
+aliaa_distributions.egg-info/not-zip-safe
+aliaa_distributions.egg-info/top_level.txt
