@@ -1,0 +1,8 @@
+zstd.cpython-38-darwin.so,sha256=kr7SM8_Y66sXSTtjSRxUHm2rYtgOlNDMzTVC3jOOajY,1011708
+zstandard/__init__.py,sha256=6g25jGL01oHfIKMq4A0XA9TqvHbcIexwA4UlkKf5mCQ,2447
+zstandard/cffi.py,sha256=SeRL8Xz1tPlvG7_UF_HogsR87K9RMA0XU6BOArsUXmQ,80832
+zstandard-0.13.0.dist-info/LICENSE,sha256=eI_oXlNySkCymQUcSryc901Csn55aDJbgIkcJfea20s,1484
+zstandard-0.13.0.dist-info/METADATA,sha256=dfOL9PglIsQ59Hc2wLDVLijX3BQTXfJ_VEw2kB08Pag,63212
+zstandard-0.13.0.dist-info/WHEEL,sha256=Q2jwauV7SdXlb20cz-bh9vn-BQ4tlA1IGNkj_GWnse8,109
+zstandard-0.13.0.dist-info/top_level.txt,sha256=iR420pOoFrIka6NuTk-IOy-VU6omlD2JG_O16d5Uum8,15
+zstandard-0.13.0.dist-info/RECORD,,
