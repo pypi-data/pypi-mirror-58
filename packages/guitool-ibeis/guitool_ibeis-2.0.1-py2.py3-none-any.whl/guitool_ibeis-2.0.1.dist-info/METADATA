@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: guitool-ibeis
+Version: 2.0.1
+Summary: Guitool - tools pyqt4 guis
+Home-page: https://github.com/Erotemic/guitool
+Author: Jon Crall
+Author-email: erotemic@gmail.com
+License: Apache 2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: six
+Requires-Dist: ubelt
+Requires-Dist: utool
+Requires-Dist: matplotlib
+Requires-Dist: vtool-ibeis
+Requires-Dist: pyflann-ibeis
+Requires-Dist: cachetools
+Requires-Dist: pyqt5 ; python_version > "2.7"
+Provides-Extra: all
+Requires-Dist: setuptools ; extra == 'all'
+Requires-Dist: wheel ; extra == 'all'
+Requires-Dist: scikit-build ; extra == 'all'
+Requires-Dist: cmake ; extra == 'all'
+Requires-Dist: ninja ; extra == 'all'
+Requires-Dist: six ; extra == 'all'
+Requires-Dist: ubelt ; extra == 'all'
+Requires-Dist: utool ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: vtool-ibeis ; extra == 'all'
+Requires-Dist: pyflann-ibeis ; extra == 'all'
+Requires-Dist: cachetools ; extra == 'all'
+Requires-Dist: xdoctest ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: coverage ; extra == 'all'
+Requires-Dist: codecov ; extra == 'all'
+Requires-Dist: pyqt5 ; (python_version > "2.7") and extra == 'all'
+Provides-Extra: build
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Requires-Dist: scikit-build ; extra == 'build'
+Requires-Dist: cmake ; extra == 'build'
+Requires-Dist: ninja ; extra == 'build'
+Provides-Extra: runtime
+Requires-Dist: six ; extra == 'runtime'
+Requires-Dist: ubelt ; extra == 'runtime'
+Requires-Dist: utool ; extra == 'runtime'
+Requires-Dist: matplotlib ; extra == 'runtime'
+Requires-Dist: vtool-ibeis ; extra == 'runtime'
+Requires-Dist: pyflann-ibeis ; extra == 'runtime'
+Requires-Dist: cachetools ; extra == 'runtime'
+Requires-Dist: pyqt5 ; (python_version > "2.7") and extra == 'runtime'
+Provides-Extra: tests
+Requires-Dist: xdoctest ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+
+guitool_ibeis
+=============
+
+|ReadTheDocs| |Pypi| |Downloads| |Codecov| |CircleCI| |Travis| |Appveyor| 
+
+Helpers for pyqt4/pyqt5 gui development for the IBEIS project.
+
+Depends on `vtool_ibeis` and `utool`.
+
+Vision Tools - tools for computer vision. Part of the WildMe / IBEIS Project.
+
+
+.. |CircleCI| image:: https://circleci.com/gh/Erotemic/guitool.svg?style=svg
+    :target: https://circleci.com/gh/Erotemic/guitool
+.. |Travis| image:: https://img.shields.io/travis/Erotemic/guitool/master.svg?label=Travis%20CI
+   :target: https://travis-ci.org/Erotemic/guitool?branch=master
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/github/Erotemic/guitool?branch=master&svg=True
+   :target: https://ci.appveyor.com/project/Erotemic/guitool/branch/master
+.. |Codecov| image:: https://codecov.io/github/Erotemic/guitool/badge.svg?branch=master&service=github
+   :target: https://codecov.io/github/Erotemic/guitool?branch=master
+.. |Pypi| image:: https://img.shields.io/pypi/v/guitool_ibeis.svg
+   :target: https://pypi.python.org/pypi/guitool_ibeis
+.. |Downloads| image:: https://img.shields.io/pypi/dm/guitool_ibeis.svg
+   :target: https://pypistats.org/packages/guitool_ibeis
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/guitool_ibeis/badge/?version=latest
+    :target: http://guitool_ibeis.readthedocs.io/en/latest/
+
+
