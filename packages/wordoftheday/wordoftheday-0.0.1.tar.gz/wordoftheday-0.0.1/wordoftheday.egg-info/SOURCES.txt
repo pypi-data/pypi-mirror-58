@@ -1,0 +1,9 @@
+README.md
+setup.py
+wordoftheday.egg-info/PKG-INFO
+wordoftheday.egg-info/SOURCES.txt
+wordoftheday.egg-info/dependency_links.txt
+wordoftheday.egg-info/requires.txt
+wordoftheday.egg-info/top_level.txt
+wotd/WordOfTheDay.py
+wotd/__init__.py
