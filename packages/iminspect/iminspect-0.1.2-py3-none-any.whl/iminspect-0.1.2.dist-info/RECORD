@@ -1,0 +1,13 @@
+iminspect/__init__.py,sha256=HVBSH_eCiNUKrXMD7Co0aKdEqDNQQpEiC96JPLH2ggw,336
+iminspect/colormaps.py,sha256=KOuLJX_44xVTykl_zu2h2YKlnX8_WwUTUjnFv3SX2OA,75761
+iminspect/imgview.py,sha256=m38U6m6ZDdvawh_vjQTfUcmqV3-LmO_gyFHnUR0LkyQ,16697
+iminspect/inputs.py,sha256=Fbo60lTe4aKeQLfX6Dsd6GrzMIgWevEBq0kltNCqyd8,19437
+iminspect/inspector.py,sha256=4P1pSbDcW4lb3XHVT7rmltAxDkQnNw2ksvOtSuT0h_k,24377
+iminspect/version.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+iminspect/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iminspect/tests/test_inspector.py,sha256=Jt7pcXir8bcXu_HDt0FXvhm-nwJLbM6rumi-HuHuTyk,1667
+iminspect-0.1.2.dist-info/LICENSE,sha256=YarcpiS1q54UyYIFJgCPfCo7ew3IvyA1XkVKbGf_RI8,1066
+iminspect-0.1.2.dist-info/METADATA,sha256=Z0vw19s6QpdE6GdzdiwOwuC-9lO8zPwlyRYfTIRyb6I,2188
+iminspect-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iminspect-0.1.2.dist-info/top_level.txt,sha256=JfJm7USi_KgjDM1NnMNv8JIFIIYcDqJ5Zl6EEKQAEwU,10
+iminspect-0.1.2.dist-info/RECORD,,
