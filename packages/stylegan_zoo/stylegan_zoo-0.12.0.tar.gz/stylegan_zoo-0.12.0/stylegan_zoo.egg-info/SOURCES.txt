@@ -1,0 +1,12 @@
+setup.py
+sgan/__init__.py
+sgan/cache.py
+sgan/lreq.py
+sgan/model.py
+sgan/net.py
+sgan/utils.py
+stylegan_zoo.egg-info/PKG-INFO
+stylegan_zoo.egg-info/SOURCES.txt
+stylegan_zoo.egg-info/dependency_links.txt
+stylegan_zoo.egg-info/requires.txt
+stylegan_zoo.egg-info/top_level.txt
