@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include pytratto/connectivity *
+recursive-include pytratto/systems *
+recursive-exclude pytratto/examples *
