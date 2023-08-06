@@ -1,0 +1,6 @@
+aioworkers>=0.15
+asyncpg
+
+[sa]
+sqlalchemy
+asyncpgsa
