@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kinCoke
+Version: 0.0.1
+Summary: Greetings to you
+Home-page: https://github.com/pypa/sampleproject
+Author: Agustin Pardo
+Author-email: agustinmpardo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Greetings package
+
+This is a simple greeting package.
+
+
