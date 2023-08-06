@@ -1,0 +1,24 @@
+import setuptools
+
+with open("README.md", "r") as f:
+    long_description = f.read()
+
+setuptools.setup(
+    name="PMMatomo",
+    version="0.0.2",
+    author="Philipp Mayr",
+    author_email="me@philipp-mayr.de",
+    description="A Python wrapper for the Matomo HTTP reporting API.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://internal-git.philipp-mayr.de/PhilippMayr/PMMatomo",
+    packages=setuptools.find_packages(),
+    install_requires=['requests', 'deprecated'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: Other/Proprietary License",
+        "Operating System :: OS Independent",
+        "Topic :: Office/Business",
+        "Topic :: Office/Business :: Financial :: Investment",
+    ],
+)
