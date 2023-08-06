@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: KaraPy
+Version: 0.4.96
+Summary: A Kara runtime for Python
+Home-page: https://github.com/Pixelboys_TM/KaraPY
+Author: Pixelboys_TM
+Author-email: none@n.com
+License: UNKNOWN
+Description: This is a Kara runtime for Python for detail look here:
+        [Github-flavored Markdown] (https://github.com/PixelboysTM/KaraPy)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
