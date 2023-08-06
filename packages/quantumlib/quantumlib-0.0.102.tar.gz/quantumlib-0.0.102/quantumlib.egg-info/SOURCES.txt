@@ -1,0 +1,9 @@
+README.md
+setup.py
+quantumlib/__init__.py
+quantumlib.egg-info/PKG-INFO
+quantumlib.egg-info/SOURCES.txt
+quantumlib.egg-info/dependency_links.txt
+quantumlib.egg-info/top_level.txt
+quantumlib/grover/__init__.py
+quantumlib/shor/__init__.py
