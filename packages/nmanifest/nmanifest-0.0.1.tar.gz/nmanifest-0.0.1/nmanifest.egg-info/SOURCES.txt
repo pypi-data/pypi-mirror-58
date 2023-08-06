@@ -1,0 +1,8 @@
+README.md
+setup.py
+nmanifest/__init__.py
+nmanifest/generator.py
+nmanifest.egg-info/PKG-INFO
+nmanifest.egg-info/SOURCES.txt
+nmanifest.egg-info/dependency_links.txt
+nmanifest.egg-info/top_level.txt
