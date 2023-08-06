@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: optable
+Version: 0.1.1
+Summary: Math programming using pandas
+Home-page: https://github.com/dgroner/optable
+Author: Daniel Groner
+Author-email: dgroner@fordham.edu
+License: MIT
+Keywords: LINEAR PROGRAMMING,MATH PROGRAMMING,OPTIMIZATION
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: scipy (>=1.0.0)
+
+optable is a Python package for teaching Math Programming
+using pandas types DataFrame and Series.
+
+Types available are:
+   OptModel - Linear programming models
+   TransportationModel - Transportation and assignment models
+   LpModel - convenience wrapper over scipy linprog
+
+
