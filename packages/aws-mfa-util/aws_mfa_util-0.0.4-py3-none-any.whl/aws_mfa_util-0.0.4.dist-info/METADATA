@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: aws-mfa-util
+Version: 0.0.4
+Summary: AWS CLIにMFA適用アカウントを作成・更新するためのツール
+Home-page: https://github.com/papi-tokei/aws-mfa-util
+Author: hiroya akita
+Author-email: akky.develop@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: PyInquirer
+
+# 概要
+
+AWS CLIをMFAの認証付きで利用する場合、少々手間がかかるので、
+MFA認証済みのクレデンシャルを発行する手順を自動化するツールを作成
+
+依存するライブラリ一覧
+
+* boto3
+* PyInquirer
+
+# インストール方法
+
+```
+$ pip install aws-mfa-util
+```
+
+# 使い方
+
+
+
+
