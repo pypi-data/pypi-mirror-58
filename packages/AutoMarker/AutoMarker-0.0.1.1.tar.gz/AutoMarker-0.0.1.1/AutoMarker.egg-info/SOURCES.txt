@@ -1,0 +1,11 @@
+README.md
+setup.py
+AutoMarker.egg-info/PKG-INFO
+AutoMarker.egg-info/SOURCES.txt
+AutoMarker.egg-info/dependency_links.txt
+AutoMarker.egg-info/requires.txt
+AutoMarker.egg-info/top_level.txt
+marker/__init__.py
+marker/config.py
+marker/marker.py
+marker/utils.py
