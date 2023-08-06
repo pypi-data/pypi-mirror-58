@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wrappy
+Version: 0.1.1
+Summary: Decorators for common developer utility
+Home-page: https://github.com/haochuanwei/wrappy
+Author: Harry Wei
+Author-email: pepsimixt@gmail.com
+License: UNKNOWN
+Description: # wrappy
+        Decorators for common develop utilities.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
