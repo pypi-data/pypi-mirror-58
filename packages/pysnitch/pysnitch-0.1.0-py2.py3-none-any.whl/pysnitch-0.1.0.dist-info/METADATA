@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pysnitch
+Version: 0.1.0
+Summary: Python dependency CVE scanner
+Home-page: https://github.com/doc-E-brown/pysnitch
+Author: Ben Johnston
+Author-email: bjohnston@neomailbox.net
+License: GNU General Public License v3
+Keywords: pysnitch
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: Click (>=7.0)
+
+========
+pysnitch
+========
+
+
+.. image:: https://img.shields.io/pypi/v/pysnitch.svg
+        :target: https://pypi.python.org/pypi/pysnitch
+
+.. image:: https://img.shields.io/travis/doc-E-brown/pysnitch.svg
+        :target: https://travis-ci.org/doc-E-brown/pysnitch
+
+.. image:: https://readthedocs.org/projects/pysnitch/badge/?version=latest
+        :target: https://pysnitch.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/doc-E-brown/pysnitch/shield.svg
+     :target: https://pyup.io/repos/github/doc-E-brown/pysnitch/
+     :alt: Updates
+
+
+
+Python dependency CVE scanner
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://pysnitch.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-12-23)
+------------------
+
+* First release on PyPI.
+
+
