@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tap_typo/__init__.py
+tap_typo/typo.py
+tap_typo.egg-info/PKG-INFO
+tap_typo.egg-info/SOURCES.txt
+tap_typo.egg-info/dependency_links.txt
+tap_typo.egg-info/entry_points.txt
+tap_typo.egg-info/requires.txt
+tap_typo.egg-info/top_level.txt
+tap_typo/schemas/typo_generic_stream.json
+test/__init__.py
+test/test.py
