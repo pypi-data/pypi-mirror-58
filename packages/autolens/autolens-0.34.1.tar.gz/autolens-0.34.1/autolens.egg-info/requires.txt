@@ -1,0 +1,12 @@
+astropy>=3.0.0
+autoarray==0.6.0
+autoastro==0.2.4
+autofit==0.47.0
+matplotlib>=3.0.3
+numba>=0.42.1
+numpy>=1.17.2
+
+[test]
+coverage
+pytest
+pytest-cov
