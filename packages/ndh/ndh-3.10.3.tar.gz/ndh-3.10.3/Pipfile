@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django-autoslug = "*"
+"django-bootstrap4" = "*"
+Django = "*"
+
+[dev-packages]
+"flake8" = "*"
+python-coveralls = "*"
+safety = "*"
+yapf = "*"
+mypy = "*"
+django-stubs = "*"
+pydocstyle = "*"
+pre-commit = "*"
+setuptools-scm = "*"
+
+[requires]
+python_version = "3.8"
