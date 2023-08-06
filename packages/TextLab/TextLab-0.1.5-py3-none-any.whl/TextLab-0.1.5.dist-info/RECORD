@@ -1,0 +1,15 @@
+textlab/__init__.py,sha256=jNTtCceqmGbD7IIwp2XdK-SkPqjmeyZ9OprlARl9Qno,3192
+textlab/classification.py,sha256=1HY8iEd3m1aFlejqAUfVfx3U6ZxmJDSVyO-UGlb4r1U,1067
+textlab/email.py,sha256=imSqZeCX6sXMoKC6NmXwABqORwXYIhfjv5eCCL99tL0,20637
+textlab/mining.py,sha256=T4m4cjOCRSP8PqNYgf-qK0SFMjJXoSastR0A5LmEmsE,3630
+textlab/ocr.py,sha256=l_SHgEmy-dwbUtk2di4WZuEW3ub4E4cypTB6y_65FvI,31491
+textlab/process.py,sha256=1L7zTJxi3zQ7foaWyOBkaaBv0GwR8jHvJhRgO5DjPxY,7247
+textlab/scrape.py,sha256=5jqjiFtImNeUEK3m_-Gbn4B41pJBVZgsvvxCCkoS1Rc,3087
+textlab/server.py,sha256=zjfnfDNeWAcIhyXbfxDC2m0P1bbk2OKAcxa4kLClPqU,15291
+textlab/similarity.py,sha256=0XrMaoLbOZ3-2AyeECy8vL1ly7Py3H_EPLzzSiE30O8,5902
+textlab/utility.py,sha256=9vCrVlOKv08KrWrO3Ulkg5hLnqX6MeJ6CAVXe3EGSXw,1060
+TextLab-0.1.5.dist-info/LICENSE,sha256=fYgQQqrUVtroBbNRX6qzTrB3KCikONseL3s9aAKlS-8,11350
+TextLab-0.1.5.dist-info/METADATA,sha256=1G69EsTPxug1UQcVC6PZJ-7PTGBTfMhKy0Yr8PEjMlw,17147
+TextLab-0.1.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+TextLab-0.1.5.dist-info/top_level.txt,sha256=ajZmjHZQyhpvPYg65GaIBaoPl2zmzqrLODrGZGoxNtY,8
+TextLab-0.1.5.dist-info/RECORD,,
