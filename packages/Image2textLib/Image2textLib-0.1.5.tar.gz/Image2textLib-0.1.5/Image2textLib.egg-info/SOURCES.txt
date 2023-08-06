@@ -1,0 +1,8 @@
+README.md
+setup.py
+Image2textLib/ImageTextConverter.py
+Image2textLib/__init__.py
+Image2textLib.egg-info/PKG-INFO
+Image2textLib.egg-info/SOURCES.txt
+Image2textLib.egg-info/dependency_links.txt
+Image2textLib.egg-info/top_level.txt
