@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: verbose_ls
+Version: 0.0.1
+Summary: Format 'ls' output into verbose, human readable output
+Home-page: https://github.com/NelsonScott/verbose_ls
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
