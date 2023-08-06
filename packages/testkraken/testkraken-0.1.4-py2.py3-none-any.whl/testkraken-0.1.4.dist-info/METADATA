@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: testkraken
+Version: 0.1.4
+Summary: Test workflows in a matrix of computational environments.
+Home-page: https://github.com/ReproNim/testkraken
+Author: Testkraken Developers
+License: Apache License, 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: altair
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: pydra
+Requires-Dist: matplotlib
+Requires-Dist: nibabel
+Requires-Dist: pandas
+Requires-Dist: neurodocker
+Requires-Dist: PyYAML
+Requires-Dist: etelemetry
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+UNKNOWN
+
+
