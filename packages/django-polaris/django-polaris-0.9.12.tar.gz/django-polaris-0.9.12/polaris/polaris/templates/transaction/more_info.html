@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block "title" %}
+<title>Transaction More Info</title>
+{% endblock %}
+
+{% block "content" %}
+<section class="section receipt">
+    {% if instructions is not none %}
+    <div class="field">
+        <label>
+            instructions
+        </label>
+        <div class="field-value">
+            {{ instructions|safe }}
+        </div>
+    </div>
+    {% endif %}
+    <div class="field">
+        <label>
+            kind
+        </label>
+        <div class="field-value">
+            {{ transaction.kind }}
+        </div>
+    </div>
+    
+    <div class="field">
+        <label>
+            id
+        </label>
+        <div class="field-value">
+            {{ transaction.id }}
+        </div>
+    </div>
+
+    <div class="field">
+        <label>
+            amount
+        </label>
+        <div class="field-value">
+            {{ transaction.amount_in|floatformat }}
+        </div>
+    </div>
+
+    <div class="field">
+        <label>
+            status
+        </label>
+        <div class="field-value">
+            {{ transaction.status }}
+        </div>
+    </div>
+
+    <div class="field">
+        <label>
+            start
+        </label>
+        <div class="field-value">
+            {{ transaction.started_at }}
+        </div>
+    </div>
+
+    <div class="field">
+        <label>
+            completed
+        </label>
+        <div class="field-value">
+            {{ transaction.completed_at }}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var tx_json = JSON.parse('{{ tx_json|safe }}');
+        var transaction = tx_json["transaction"];
+
+        postTransactionCallback();
+
+        // Callback function to post the serialized transaction to the wallet.
+        function postTransactionCallback() {
+            var targetWindow;
+
+            if (window.opener != void 0) {
+                targetWindow = window.opener;
+            } else if (window.parent != void 0) {
+                targetWindow = window.parent;
+            } else {
+                return;
+            }
+
+            // Anchors should send a JSON with the the entire transaction object, serialized by
+            // the server, in a transaction property (i.e., the value for the "transaction" key).
+            // The transaction object should not be hand-constructed at this point.
+            // The reference client expects the following fields in the transaction: id, status,
+            // withdraw_anchor_account, withdraw_memo, withdraw_memo_type, amount_in.
+            //
+            // In other terms, the message should have the following structure:
+            // tx_json = {
+            //     "transaction": {
+            //         "id": "fake-transaction-id",
+            //         "status": "completed"
+            //         etc.
+            //     }
+            // }
+            targetWindow.postMessage(tx_json, "*");
+        }
+    </script>
+</section>
+{% endblock %}
