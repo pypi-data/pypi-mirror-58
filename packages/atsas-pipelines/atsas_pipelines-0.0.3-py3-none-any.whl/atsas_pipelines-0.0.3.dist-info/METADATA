@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: atsas-pipelines
+Version: 0.0.3
+Summary: ATSAS pipelines for the NSLS-II LIX beamline
+Home-page: https://github.com/mrakitin/atsas-pipelines
+Author: Brookhaven National Lab
+Author-email: 
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: dask-jobqueue
+Requires-Dist: distributed
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+===============
+ATSAS pipelines
+===============
+
+.. image:: https://img.shields.io/travis/mrakitin/atsas-pipelines.svg
+        :target: https://travis-ci.org/mrakitin/atsas-pipelines
+
+.. image:: https://img.shields.io/pypi/v/atsas-pipelines.svg
+        :target: https://pypi.python.org/pypi/atsas-pipelines
+
+
+ATSAS pipelines for the NSLS-II LIX beamline
+
+* Free software: 3-clause BSD license
+* Documentation: https://mrakitin.github.io/atsas-pipelines.
+
+
