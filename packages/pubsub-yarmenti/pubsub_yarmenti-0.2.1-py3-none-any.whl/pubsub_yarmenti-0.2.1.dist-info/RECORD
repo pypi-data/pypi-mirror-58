@@ -1,0 +1,8 @@
+pubsub/__init__.py,sha256=rLNYKapNGgCSX1eAQ-yU5HkGp1UHNXNopm0Auvwmkl4,202
+pubsub/publisher.py,sha256=IhZH_oqZfPEuaqXnYAabIMgeu2SOwxyNQeC9rPb34K8,2551
+pubsub/subscriber.py,sha256=sxJX3PiJYijnuTIAOi4cXP3G6RQ-3pfZSFz3sCP3yKI,598
+pubsub_yarmenti-0.2.1.dist-info/LICENSE,sha256=BVxUl75MX5KL_AL2B8EJXIOnA3vLzSyq50B7LSlWMjY,1093
+pubsub_yarmenti-0.2.1.dist-info/METADATA,sha256=Cvtg0DW88Akvwpki55MTqD6xtxCx9o80tYrfpT8pykM,654
+pubsub_yarmenti-0.2.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pubsub_yarmenti-0.2.1.dist-info/top_level.txt,sha256=nwNwlJkUc6etwETTzW3cEaV944IsSHzvPZPNU3rk970,7
+pubsub_yarmenti-0.2.1.dist-info/RECORD,,
