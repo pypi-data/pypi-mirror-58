@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+fcpxml.egg-info/PKG-INFO
+fcpxml.egg-info/SOURCES.txt
+fcpxml.egg-info/dependency_links.txt
+fcpxml.egg-info/not-zip-safe
+fcpxml.egg-info/requires.txt
+fcpxml.egg-info/top_level.txt
