@@ -1,0 +1,8 @@
+zstd.so,sha256=avXTfS-nxiaSr5c9T1m35YQto7b9P_kEVZEYCgx1zc0,4344836
+_zstd_cffi.so,sha256=djTXFfXP8WGUPF4U7OLOinhOkb-S-YHi7-EEAuiTsSw,3849888
+zstandard-0.13.0.dist-info/RECORD,,
+zstandard-0.13.0.dist-info/WHEEL,sha256=8GRmmxXR8CYXjQdIZUVeFxekR9F18ZAil6LbbAlMfZ0,107
+zstandard-0.13.0.dist-info/top_level.txt,sha256=lnNgWkJr7yZ_Y2icf7CeCpjILnorYdtVRTichbXIwvY,26
+zstandard-0.13.0.dist-info/METADATA,sha256=v01-iBhoY8V60bMaNXF3YQSVEfkXrS7qTnU6QJpX1Cw,63241
+zstandard/__init__.py,sha256=6g25jGL01oHfIKMq4A0XA9TqvHbcIexwA4UlkKf5mCQ,2447
+zstandard/cffi.py,sha256=SeRL8Xz1tPlvG7_UF_HogsR87K9RMA0XU6BOArsUXmQ,80832
