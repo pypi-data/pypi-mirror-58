@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+master_slave/master.py
+master_slave/slave.py
+master_slave.egg-info/PKG-INFO
+master_slave.egg-info/SOURCES.txt
+master_slave.egg-info/dependency_links.txt
+master_slave.egg-info/entry_points.txt
+master_slave.egg-info/requires.txt
+master_slave.egg-info/top_level.txt

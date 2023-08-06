@@ -1,0 +1,4 @@
+[console_scripts]
+master = master_slave.master:main
+slave = master_slave.slave:main
+
