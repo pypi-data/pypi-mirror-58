@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: qwikstart
+Version: 0.1.0
+Summary: Code injector for automating configuration, setup, and yak shaving.
+Home-page: https://github.com/tonysyu/qwikstart
+License: BSD-3-Clause
+Keywords: console,terminal
+Author: Tony S. Yu
+Author-email: tsyu80@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Provides-Extra: docs
+Requires-Dist: binaryornot (>=0.4.4,<0.5.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: colorlog (>=4.0.2,<5.0.0)
+Requires-Dist: dataclasses (>=0.7,<0.8); python_version >= "3.6" and python_version < "3.7"
+Requires-Dist: ipdb[debug] (>=0.12.2,<0.13.0)
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Requires-Dist: pyyaml (>=5.1,<6.0)
+Requires-Dist: rope (>=0.14.0,<0.15.0)
+Requires-Dist: sphinx (<2); extra == "docs"
+Requires-Dist: sphinx-autobuild; extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon; extra == "docs"
+Requires-Dist: typing-extensions (>=3.7,<4.0)
+Project-URL: Documentation, https://qwikstart.readthedocs.io/
+Project-URL: Repository, https://github.com/tonysyu/qwikstart
+Description-Content-Type: text/x-rst
+
+===========================================
+qwikstart: Code injector for fun and profit
+===========================================
+
+.. default-role:: literal
+
+.. image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
+   :target: https://github.com/tonysyu/qwikstart/blob/master/LICENSE
+
+.. image:: https://travis-ci.com/tonysyu/qwikstart.svg?branch=master
+   :target: https://travis-ci.com/tonysyu/qwikstart
+
+.. image:: https://codecov.io/gh/tonysyu/qwikstart/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/tonysyu/qwikstart
+
+.. image:: https://readthedocs.org/projects/qwikstart/badge/
+   :target: https://qwikstart.readthedocs.io
+
+
+- **Documentation:** https://qwikstart.readthedocs.io
+- **Source:** https://github.com/tonysyu/qwikstart
+
+Install
+=======
+
+The recommended way of installing `qwikstart` is to use `pip`::
+
+    pip install qwikstart
+
+See Also
+========
+
+- `hygen <https://www.hygen.io/>`_: The scalable code generator that saves you
+  time.
+- `cookiecutter <https://cookiecutter.readthedocs.io/>`_:
+  A command-line utility that creates projects from cookiecutters (project
+  templates)
+- `pyscaffold <https://pyscaffold.org/>`: Python project template generator
+  with batteries included.
+
