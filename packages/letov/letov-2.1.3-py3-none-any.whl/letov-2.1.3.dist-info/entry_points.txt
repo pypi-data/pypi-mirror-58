@@ -1,0 +1,3 @@
+[console_scripts]
+letov=letov.cli:cli
+

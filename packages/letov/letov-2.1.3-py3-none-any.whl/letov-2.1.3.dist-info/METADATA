@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: letov
+Version: 2.1.3
+Summary: TripSource logging utilities
+Author: BCD Trip tech
+Author-email: development@bcdtriptech.com
+Requires-Python: >=3.6,<3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: fluent-logger (>=0.9.4,<0.10.0)
+Requires-Dist: zstandard (>=0.11.0,<0.12.0)
