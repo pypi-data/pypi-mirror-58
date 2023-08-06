@@ -1,0 +1,15 @@
+pdpipe/__init__.py,sha256=bsQ3qb4Hh7oFvDg75LXJ7VXhavrnzyggCcKv4bm0DLk,2542
+pdpipe/_version.py,sha256=IbQOw1SegxrbbTNS1nZur3je3rY7uMYB6RgpiHhbNCo,498
+pdpipe/basic_stages.py,sha256=J-xRca88fkVY4YyWD6cI-H_fuWtWbwU92LYqLou1S2A,18901
+pdpipe/col_generation.py,sha256=hBvsdBMSh9vYRrzuOkh8eyLSFVIf-kFcGhHZZ6Jgn74,35836
+pdpipe/core.py,sha256=Do-eG38_kKHS5XJ-KeIsdFqqpN9i8ePyUBCBj-DzDuY,20557
+pdpipe/exceptions.py,sha256=NSG3ZD1PUmXmW9JSdS10ElKTwUO60wCl5BX_aUMr5nU,586
+pdpipe/nltk_stages.py,sha256=P7x6t19ojBeViqALA9YGOoiO3ouLn3KjF2C62VyrDuQ,14921
+pdpipe/shared.py,sha256=qW2PP9rcuB9ZD8CqBc21j6DqJ_OXishhwrOsFWKVtzw,409
+pdpipe/sklearn_stages.py,sha256=xE_GxQ73lQGI3JyGt1Bwhwl4Vr48NnkIoVWR7QexPPw,9690
+pdpipe/util.py,sha256=3ra07c0C6pOWZoeIojLtFNnj62nOeQQPi-DUY1sH7eU,2251
+pdpipe-0.0.35.dist-info/LICENSE,sha256=8sZx0cvuX2vE9eAsPtA3Aw32RkmoMKrQBIkh-u7BP9A,1069
+pdpipe-0.0.35.dist-info/METADATA,sha256=yxYmf2klPw5xhH9m9wwyzw86X3OnE-7ZMcwHXS91O9E,8410
+pdpipe-0.0.35.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pdpipe-0.0.35.dist-info/top_level.txt,sha256=tMZpjS_VAAm0Zt6yMwiof4ZhqCuCeoXEDkF8VEYP90o,7
+pdpipe-0.0.35.dist-info/RECORD,,
