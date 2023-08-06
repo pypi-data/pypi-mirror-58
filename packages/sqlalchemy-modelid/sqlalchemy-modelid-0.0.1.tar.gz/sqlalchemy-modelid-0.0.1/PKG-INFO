@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-modelid
+Version: 0.0.1
+Summary: Base with a `model_id` property for SQLAlchemy models
+Home-page: https://github.com/dsbowen/sqlalchemy-modelid
+Author: Dillon Bowen
+Author-email: dsbowen@wharton.upenn.edu
+License: UNKNOWN
+Description: # SQLAlchemy-ModelId
+        
+        SQAlchemy-ModelID defines a base with a `model_id` property for SQLAlchemy models.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+README.md
+setup.py
+sqlalchemy_modelid/__init__.py
+sqlalchemy_modelid.egg-info/PKG-INFO
+sqlalchemy_modelid.egg-info/SOURCES.txt
+sqlalchemy_modelid.egg-info/dependency_links.txt
+sqlalchemy_modelid.egg-info/top_level.txt
