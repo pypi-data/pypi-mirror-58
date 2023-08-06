@@ -1,0 +1,13 @@
+serialmecab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serialmecab/text.py,sha256=eM1Vzi2UgAx6lnHoQeV08Ve4WaZCYeGVJxqjU1OpxzQ,1601
+serialmecab/token.py,sha256=JedYzzg7o8YE5kOLgv3nLwd0wT_Beh4QedjYftif8vE,1084
+serialmecab/tokenizer.py,sha256=AeFtNJ97yiCUBu5OXiXZY-5JL9WyP8YEPYgR25ZRdf4,1455
+serialmecab/types.py,sha256=0IVgNlOSUXyNbuc7Uppnz3czJdFN445Dupfdfe8PeIc,66
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_text.py,sha256=oKkk-3CXKu_QlX2Az7bN8z6JAJvol8x1Xj6SH2QBE6M,1367
+tests/test_token.py,sha256=ZSBwWIqRV-okJq_IDXwHRKPERRAJgI_w6yd8VgLNn6Y,785
+tests/test_tokenizer.py,sha256=4Emic0LpkcNRXdQssZikDRcgtt2xcEJtsvfXQsd8PxQ,2690
+serial_mecab-0.0.1.dist-info/METADATA,sha256=pIx-WiCf3JyJKYYo3QXHIB7VtQ8KIDnSY56njQVGyLg,510
+serial_mecab-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+serial_mecab-0.0.1.dist-info/top_level.txt,sha256=LIgmoXCETIqpAoXD1jlGZpFMYze3lc4ovEEcdNVR1Vk,18
+serial_mecab-0.0.1.dist-info/RECORD,,
