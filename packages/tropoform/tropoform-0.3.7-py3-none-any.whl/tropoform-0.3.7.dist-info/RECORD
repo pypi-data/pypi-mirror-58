@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=gGWV--UrAVHZsOlWJExMZOf-Im6pbuFcSORuLVUZLeI,35
+tests/test_tropoform.py,sha256=UqUmqXdqjO8ceJJG9K5_eLheCoEjSpxapgdqNCo2ejc,12185
+tests/fixtures/sample_tropo_module.py,sha256=UhlBZ9J_wERf9lRYt1zmU7ehv0g8DQgMUT-3EnMNcYU,915
+tropoform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tropoform/tropoform.py,sha256=JT_B-4Yl83R4PkoJpy5irPjG5U0J1WAzTT_AlQm5AZc,39799
+tropoform-0.3.7.dist-info/METADATA,sha256=k73UuxFQ2HYjqZLcReBDk-YguQEFUnjX1rfw30xhoHk,14881
+tropoform-0.3.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tropoform-0.3.7.dist-info/entry_points.txt,sha256=dYtvdlETx25_eN2eYptxnMGo-yorvHfI1yE4rR2GiqU,56
+tropoform-0.3.7.dist-info/top_level.txt,sha256=Re3WV0zol5V-YvKi-enpxR-NkloNEHVjorDN9JDsaYc,16
+tropoform-0.3.7.dist-info/RECORD,,
