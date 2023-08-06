@@ -1,0 +1,14 @@
+studentui/__init__.py,sha256=tP9o2WUTz7GpC-GNtIYD00CaEY9eshIMPBz0l_CqT6w,54
+studentui/__main__.py,sha256=rSksPTkeyadFX3fzM7GDPbcBaOkRXOKfEol2dcFWJOI,13170
+studentui/_version.py,sha256=bUo-IErmlr7qyYzkdIiZZI_FMGfr6JmoWjKUGmrXWgg,117
+studentui/paths.py,sha256=YtFEEa01Jd8lgcnSdySRFGc_yyVDJoU-jYDlsDaUCy0,170
+studentui/ui_grades.py,sha256=K6adgxFZXaftpGJ_3gLj2wG9fkxZiJUeZrmSZ66yK6w,3036
+studentui/ui_login.py,sha256=3O-Umn4oB3D-XSdmOFZ2g6qI0SJDzfNIrWYM_na5VSg,3524
+studentui/ui_selector.py,sha256=SC9IR-R2EZy7y369Zmbp-9o1u90Q8rP2A9AcxzZrSyM,5266
+studentui/ui_timetable.py,sha256=9_ayqedy5kJ5iqw_cG6v_flO32hO-4leMFcvgag8rtw,2731
+studentui-0.3.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+studentui-0.3.3.dist-info/METADATA,sha256=8K4vEcScUJUiUNZss5Cx2zDJskG6cF4PenvUvl6mxIs,633
+studentui-0.3.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+studentui-0.3.3.dist-info/entry_points.txt,sha256=K4vDBEDGFEuM8Ne54Bnh1tgfUbvawsIyqwNSlaTsGHc,51
+studentui-0.3.3.dist-info/top_level.txt,sha256=TfSkf8eFn0piXFsA33dI1fLa62SX-0NZhawpcTbR0QE,10
+studentui-0.3.3.dist-info/RECORD,,
