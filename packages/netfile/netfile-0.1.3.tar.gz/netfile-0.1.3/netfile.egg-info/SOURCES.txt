@@ -1,0 +1,16 @@
+.gitignore
+CHANGELOG
+LICENSE
+Makefile
+Pipfile
+Pipfile.lock
+README.md
+setup.py
+netfile/.gitignore
+netfile/__init__.py
+netfile/netfile.py
+netfile.egg-info/PKG-INFO
+netfile.egg-info/SOURCES.txt
+netfile.egg-info/dependency_links.txt
+netfile.egg-info/requires.txt
+netfile.egg-info/top_level.txt

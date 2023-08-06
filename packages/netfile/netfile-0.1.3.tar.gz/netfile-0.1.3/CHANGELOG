@@ -1,0 +1,13 @@
+0.1.2 (2019-07-31):
+
+597eabe08f5a6f8c4305a1c42eda0b2b8baf73e3
+- Add string lookup cache and improved string resolution
+
+0.1.1 (2019-06-09):
+
+9a2c4bf150040951b42eb421d18477ad2430ba89
+- Expose relateive_to_absolute method.
+
+0.1.0 (2019-04-14):
+
+- Initial release. Hi!
