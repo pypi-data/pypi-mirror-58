@@ -1,0 +1,10 @@
+ssmp/__init__.py,sha256=WrdfYlifi0eDnREMAHMuH_guXcfcqNut2oA1XovMNp8,22
+ssmp/aws.py,sha256=MopKHleeQA6RLGAm9r29_1LtfspqyZfF6NHbIncbmwU,1079
+ssmp/main.py,sha256=0IQs3bR9XkSBV7DFYuDdkbXE-S1gDcC5vxV5VLLHA3k,443
+ssmp-0.0.4.data/scripts/main.py,sha256=SFvXOLYm7T8E0e5DiKnJgNGVp7HnxDFnAWi_QJrd3oc,429
+ssmp-0.0.4.dist-info/LICENSE,sha256=Jn96Lhnfqd-Zr3dFIJhaDlIZJSk-pbfnZ6sGlp0Gv5E,12
+ssmp-0.0.4.dist-info/METADATA,sha256=KEnB3ncuKWeOXkmSYQYmLM6q98kPg4SncbL-JltVYLc,2315
+ssmp-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ssmp-0.0.4.dist-info/entry_points.txt,sha256=yFT3RhSGM4KGuk4HYb8vXoZ4Igdn_50EVnsI0LEz1ig,40
+ssmp-0.0.4.dist-info/top_level.txt,sha256=v8YJtDL_65ufaTqFInjFMUUIn5h0ZVl1AE0y-kef8DQ,5
+ssmp-0.0.4.dist-info/RECORD,,
