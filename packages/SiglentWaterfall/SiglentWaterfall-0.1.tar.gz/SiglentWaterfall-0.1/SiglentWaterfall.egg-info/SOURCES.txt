@@ -1,0 +1,14 @@
+README.md
+setup.py
+SiglentWaterfall.egg-info/PKG-INFO
+SiglentWaterfall.egg-info/SOURCES.txt
+SiglentWaterfall.egg-info/dependency_links.txt
+SiglentWaterfall.egg-info/entry_points.txt
+SiglentWaterfall.egg-info/requires.txt
+SiglentWaterfall.egg-info/top_level.txt
+siglent/ThreeDGraph.py
+siglent/TwoDGraph.py
+siglent/__init__.py
+siglent/__main__.py
+siglent/background.py
+siglent/log.py

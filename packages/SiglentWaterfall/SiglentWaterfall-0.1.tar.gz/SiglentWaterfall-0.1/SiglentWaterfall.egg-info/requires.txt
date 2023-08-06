@@ -1,0 +1,6 @@
+Click
+pyqtgraph
+PyQt5
+PyOpenGL
+scipy
+pyvisa
