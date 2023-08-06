@@ -1,0 +1,6 @@
+setup.py
+transformer_korean.egg-info/PKG-INFO
+transformer_korean.egg-info/SOURCES.txt
+transformer_korean.egg-info/dependency_links.txt
+transformer_korean.egg-info/requires.txt
+transformer_korean.egg-info/top_level.txt
