@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nubium-utils
+Version: 0.1.0
+Summary: Some Kafka utility functions and patterns for the nubium project
+Home-page: https://gitlab.corp.redhat.com/mkt-ops-de/nubium-utils.git
+Author: Edward Brennan
+Author-email: ebrennan@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: prometheus-client
+
+UNKNOWN
+
+
