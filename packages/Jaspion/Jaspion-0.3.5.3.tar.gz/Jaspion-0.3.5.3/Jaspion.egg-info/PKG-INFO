@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: Jaspion
+Version: 0.3.5.3
+Summary: FreeSwitch Event Handler based in Flask.
+Home-page: https://github.com/Otoru/Jaspion
+Author: Vitor Hugo de Oliveira Vargas
+Author-email: vitor.hugo@sippulse.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/Otoru/Jaspion/issues
+Project-URL: Source Code, https://github.com/Otoru/Jaspion
+Project-URL: Docs, https://github.com/Otoru/jaspion/wiki
+Description: [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8c0fd08c87d2483e9944b0b62fd6ea78)](https://app.codacy.com/app/Otoru/jaspion?utm_source=github.com&utm_medium=referral&utm_content=Otoru/jaspion&utm_campaign=Badge_Grade_Settings)
+        [![Build Status](https://travis-ci.com/Otoru/jaspion.svg?branch=master)](https://travis-ci.com/Otoru/jaspion)
+        [![GitHub](https://img.shields.io/github/license/otoru/jaspion.svg)](https://github.com/Otoru/jaspion/blob/master/LICENSE)
+        [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jaspion.svg)](https://docs.python.org/3/whatsnew/3.7.html)
+        [![PyPI - Status](https://img.shields.io/pypi/status/jaspion.svg)](https://pypi.org/project/Jaspion/)
+        [![PyPI](https://img.shields.io/pypi/v/jaspion.svg)](https://pypi.org/project/Jaspion/)
+        [![GitHub top language](https://img.shields.io/github/languages/top/otoru/jaspion.svg)](https://www.python.org/)
+        
+        ## What is Jaspion?
+        
+        Jaspion is a python library designed to process events received from FreeSwitch via ESL.
+        
+        ## What is FreeSwitch?
+        
+        FreeSWITCH is a free and open-source application server for real-time communication, WebRTC, telecommunications, video and Voice over Internet Protocol (VoIP). Multiplatform, it runs on Linux, Windows, macOS and FreeBSD. It is used to build PBX systems, IVR services, videoconferencing with chat and screen sharing, wholesale least-cost routing, Session Border Controller (SBC) and embedded communication appliances. It has full support for encryption, ZRTP, DTLS, SIPS. It can act as a gateway between PSTN, SIP, WebRTC, and many other communication protocols. Its core library, libfreeswitch, can be embedded into other projects. It is licensed under the Mozilla Public License (MPL), a free software license. [wikipedia](https://en.wikipedia.org/wiki/FreeSWITCH)
+        
+        ## What is ESL?
+        
+        ESL is a way to communicate with FreeSwitch. See more details [here](https://freeswitch.org/confluence/display/FREESWITCH/Event+Socket+Library).
+        
+        ## Docs
+        
+        The project documentation is in [here](https://github.com/Otoru/jaspion/wiki)
+        
+        ## How to contribute?
+        
+        If you are thinking of contributing in any way to the project, you will be very welcome.
+        Whether it's improving existing documentation, suggesting new features or running existing bugs, it's only by working together that the project will grow.
+        Do not forget to see our [Contributing Guide][2] and our [Code of Conduct][3] to always be aligned with the ideas of the project.
+        
+        [2]: https://github.com/Otoru/jaspion/blob/master/CONTRIBUTING.md
+        [3]: https://github.com/Otoru/jaspion/blob/master/CODE_OF_CONDUCT.md
+        
+Keywords: ESL,FreeSwitch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Telephony
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: dev
