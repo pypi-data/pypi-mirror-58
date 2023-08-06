@@ -1,0 +1,12 @@
+bshlocal/__init__.py,sha256=ltaYoK2An6Xz1GqpVQ4G4ptDpTzKVc4LCuv8FZwdKN8,38
+bshlocal/api.py,sha256=tMLN6UHsRyIxnn6NCX79-WhQhtSOXn3Yje895k5gn8o,5231
+bshlocal/device.py,sha256=zB-Q8MTiE03gZiHv_m2IaNFfo-FZtm9_BtEItu70hcg,2958
+bshlocal/device_service.py,sha256=iABHCPrdRyVsxXKKdzFLT7hxi6QgTqfjx0nQNQ9rA-g,1582
+bshlocal/room.py,sha256=b7ID9hFXz8L9JvYZbJU9UQzJpggwMvuJildCtc-3tHM,501
+bshlocal/services_impl.py,sha256=_B1QoQzmpNzLXMhQeWKPO8dlEelErEcUgYD6-ByLkLc,4258
+bshlocal/session.py,sha256=Ckoc8V0njtN2yJ4-w29Q-8gVDQXEBSCRvkUT-hqBP-Y,4524
+bshlocal-0.0.2.dist-info/LICENSE,sha256=003tlWjRCTOdLHgarclgaF05968lVtAvP87lLZv4qgU,1477
+bshlocal-0.0.2.dist-info/METADATA,sha256=Zj_qbRRbPHzK8aL1lGsfJCYpUtN092Iafm5yVra7pjU,1379
+bshlocal-0.0.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+bshlocal-0.0.2.dist-info/top_level.txt,sha256=zlHubAuL83qRn2C4uc4G_l9osasnTX4Uj8Z3O48c_Fw,9
+bshlocal-0.0.2.dist-info/RECORD,,
