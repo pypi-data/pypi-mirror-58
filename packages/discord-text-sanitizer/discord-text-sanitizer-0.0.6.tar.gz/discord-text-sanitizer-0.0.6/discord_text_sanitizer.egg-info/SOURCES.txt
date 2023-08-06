@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+discord_text_sanitizer.egg-info/PKG-INFO
+discord_text_sanitizer.egg-info/SOURCES.txt
+discord_text_sanitizer.egg-info/dependency_links.txt
+discord_text_sanitizer.egg-info/requires.txt
+discord_text_sanitizer.egg-info/top_level.txt
+discordtextsanitizer/__init__.py
+discordtextsanitizer/_sanitizers.py
