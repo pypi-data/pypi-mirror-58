@@ -1,0 +1,17 @@
+.dir-locals.el
+.gitignore
+LICENSE
+README.md
+VERSION
+environment.yml
+setup.py
+.github/workflows/build.yml
+sage_numerical_backends_coin/__init__.py
+sage_numerical_backends_coin/coin_backend.cpp
+sage_numerical_backends_coin/coin_backend.pxd
+sage_numerical_backends_coin/coin_backend.pyx
+sage_numerical_backends_coin.egg-info/PKG-INFO
+sage_numerical_backends_coin.egg-info/SOURCES.txt
+sage_numerical_backends_coin.egg-info/dependency_links.txt
+sage_numerical_backends_coin.egg-info/requires.txt
+sage_numerical_backends_coin.egg-info/top_level.txt

@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: sage_numerical_backends_coin
+Version: 9.0b9
+Summary: COIN-OR backend for Sage MixedIntegerLinearProgram
+Home-page: https://github.com/mkoeppe/sage-numerical-backends-coin
+Author: Nathann Cohen, Yuan Zhou, John Perry, Zeyi Wang, Martin Albrecht, Jori Mäntysalo, Matthias Koeppe, Erik M. Bray, Jeroen Demeyer, Nils Bruin, Julien Puydt, Dima Pasechnik, and others
+Author-email: mkoeppe@math.ucdavis.edu
+License: GPLv2+
+Description: # sage-numerical-backends-coin
+        COIN-OR backend for Sage
+        
+Keywords: milp,linear-programming,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
