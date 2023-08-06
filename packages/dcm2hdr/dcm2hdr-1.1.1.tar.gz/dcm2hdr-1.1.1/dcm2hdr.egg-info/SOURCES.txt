@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dcm2hdr.egg-info/PKG-INFO
+dcm2hdr.egg-info/SOURCES.txt
+dcm2hdr.egg-info/dependency_links.txt
+dcm2hdr.egg-info/requires.txt
+dcm2hdr.egg-info/top_level.txt
+src/dcm2hdr.py

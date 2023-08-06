@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dcm2hdr
+Version: 1.1.1
+Summary: DCM2HDR - DICOM to HDR (16bit TIFF/PNG) converter
+Home-page: https://gitlab.com/dvolgyes/dcm2hdr
+Author: David Völgyes
+Author-email: david.volgyes@ieee.org
+License: AGPL3
+Description: DCM2HDR - DICOM to HDR (16bit TIFF/PNG) converter
+        The aim is to make it easier editing files with regular photo editor tools,
+        e.g. for presentation. The PNG files are single channel grayscale files,
+        the TIFFs are RGB encoded gray files (all channels have the same value).
+        
+Keywords: DICOM,HDR,TIFF,PNG
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
