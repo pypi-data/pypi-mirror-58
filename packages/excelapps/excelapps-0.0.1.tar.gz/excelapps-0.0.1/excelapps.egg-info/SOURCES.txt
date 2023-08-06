@@ -1,0 +1,7 @@
+README.md
+setup.py
+excelapps/__init__.py
+excelapps.egg-info/PKG-INFO
+excelapps.egg-info/SOURCES.txt
+excelapps.egg-info/dependency_links.txt
+excelapps.egg-info/top_level.txt
