@@ -1,0 +1,9 @@
+README.md
+setup.py
+ETMImg2Txt/ImageTextConverter.py
+ETMImg2Txt/__init__.py
+ETMImg2Txt.egg-info/PKG-INFO
+ETMImg2Txt.egg-info/SOURCES.txt
+ETMImg2Txt.egg-info/dependency_links.txt
+ETMImg2Txt.egg-info/requires.txt
+ETMImg2Txt.egg-info/top_level.txt
