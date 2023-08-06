@@ -1,0 +1,9 @@
+README.md
+setup.py
+technic/__init__.py
+technic/technic.py
+technic.egg-info/PKG-INFO
+technic.egg-info/SOURCES.txt
+technic.egg-info/dependency_links.txt
+technic.egg-info/requires.txt
+technic.egg-info/top_level.txt
