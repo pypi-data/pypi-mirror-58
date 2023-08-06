@@ -1,0 +1,9 @@
+drf_dynamics/__init__.py,sha256=t-iSXiLOkOjH7_rqEigYO3jgmWObpi_WPaiJ-xyTz1Q,249
+drf_dynamics/helpers.py,sha256=WT8o7H6YmR7jW4cIBmclef8D1oms7_d2khgz8lK3vZc,5677
+drf_dynamics/mixins.py,sha256=p7Ld-xa2c2si6v_mKLbVxSK7iYz6e1DliG9Bv3p-4wQ,6568
+drf_dynamics/specs.py,sha256=DykAKlKBhiA58evPhqJRmplKMVawkBtMae8gf9FgREg,890
+drf_dynamics-0.0.4.dist-info/LICENCE,sha256=RynbdJ19j-2-mtTHqJUrGN5fmiX3r0G5WtyZ9qXb8zo,1066
+drf_dynamics-0.0.4.dist-info/METADATA,sha256=HEEixD_7LPlqEySi9fancCBmiy3clw65dW2_KGvlgpw,1239
+drf_dynamics-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+drf_dynamics-0.0.4.dist-info/top_level.txt,sha256=Be_A5F1Rn2bsrIqEThFDB9jvujMqPSR20-O6a5kvUso,13
+drf_dynamics-0.0.4.dist-info/RECORD,,

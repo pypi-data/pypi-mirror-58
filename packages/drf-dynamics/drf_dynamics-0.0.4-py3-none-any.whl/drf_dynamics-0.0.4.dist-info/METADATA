@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: drf-dynamics
+Version: 0.0.4
+Summary: Dynamic mixins for Django REST Framework
+Home-page: https://github.com/imbokov/drf_dynamics
+Author: Ilya Bokov
+Author-email: eli.k.bokov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=1.11)
+Requires-Dist: djangorestframework (>=3.7.0)
+
+TBD
+
+
