@@ -1,0 +1,3 @@
+[console_scripts]
+rw-ua = rwspider:print_ua
+
