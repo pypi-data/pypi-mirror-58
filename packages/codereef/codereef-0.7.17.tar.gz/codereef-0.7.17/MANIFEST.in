@@ -1,0 +1,4 @@
+include LICENSE.txt
+include LICENSE.CK.txt
+include README.md
+include codereef/static/favicon.ico
