@@ -1,0 +1,11 @@
+cogneed_protos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cogneed_protos/cogneed_ks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cogneed_protos/cogneed_ks/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cogneed_protos/cogneed_ks/service/forward_audio_pb2.py,sha256=8nlfYzZAZDkOOwo1HAkQF9ircaNoJXPS0jEjSzaNlLM,5514
+cogneed_protos/cogneed_ks/service/forward_audio_pb2_grpc.py,sha256=jEBBKzZ2jT9u4hzWHgiaQMaw1DP8JG68WWPVhJhct94,1852
+cogneed_protos/cogneed_ks/service/predict_pb2.py,sha256=Nr12rfh5CZr1WCUQ5sTiY-MMRkXkEjWwHfBxN-jfODA,4881
+cogneed_protos/cogneed_ks/service/predict_pb2_grpc.py,sha256=wXA4D1jZgErZ7jMvpmKt9vzzfoicB-AyTBI_Ygk9PrM,1765
+cogneed_protos-0.1.0.dist-info/METADATA,sha256=U3hmATEYPpRz5JiFQVMft_BuHeuquSAjqlZLpmRc8oI,206
+cogneed_protos-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cogneed_protos-0.1.0.dist-info/top_level.txt,sha256=K_BemgMKJ-kF15eDRJ65iqX9MsbsuMP_yQJaB14q2Ro,15
+cogneed_protos-0.1.0.dist-info/RECORD,,
