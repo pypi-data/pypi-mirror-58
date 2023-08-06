@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+pyhsics.egg-info/PKG-INFO
+pyhsics.egg-info/SOURCES.txt
+pyhsics.egg-info/dependency_links.txt
+pyhsics.egg-info/top_level.txt
