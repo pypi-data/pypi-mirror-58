@@ -1,0 +1,7 @@
+biopython<2,>=1.74
+numpy<2,>=1.16
+pandas<1,>=0.24
+pyteomics<5,>=3.5
+scipy<2,>=1.2
+tqdm<5,>=4
+tables>=3.4
