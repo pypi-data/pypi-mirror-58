@@ -1,0 +1,10 @@
+mws/__init__.py,sha256=E7r609tkPwNdQbW1U0odNvrdNgX8tYEV00dN3VIDKkw,103
+mws/mws.py,sha256=wyDaTGsK8CHcSYilbt5A6u1D5T7SoSy0sSARAbaVps4,52790
+mws/offamazonpayments.py,sha256=8SlVlDHlCVDkwjxen3l3dcTYIwems0g3pWmh1EXsVWk,5927
+mws/utils.py,sha256=38J5gHtjAqaOaDsJgdoeUNvW_FdzYGAhNQPpABx-ncs,8131
+mws-0.8.7.dist-info/AUTHORS,sha256=7AIWcDIcSa0LLeDq_Q4cXB0x2onpMG1qoDqWBWwQRKI,182
+mws-0.8.7.dist-info/LICENSE.txt,sha256=yiq99pWITHfqS0pbZMp7cy2dnbreTuvBwudsU-njvIM,1210
+mws-0.8.7.dist-info/METADATA,sha256=h7YlOAmQ4uUBk97_Y-5bApzfLNeUzrtdQb4UEq_CwhM,6375
+mws-0.8.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mws-0.8.7.dist-info/top_level.txt,sha256=u3o8uARRDMGZAzvKFEZUUHblMQnbMvZCoWSj3_I98Gs,4
+mws-0.8.7.dist-info/RECORD,,
