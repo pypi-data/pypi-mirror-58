@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pytrex
+Version: 0.7.1
+Summary: Trex Stateless library
+Home-page: https://github.com/shmir/PyTRex
+Author: Yoram Shamir
+Author-email: shmir@ignissoft.com
+License: Apache Software License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: Programming Language :: Python :: 3.7
