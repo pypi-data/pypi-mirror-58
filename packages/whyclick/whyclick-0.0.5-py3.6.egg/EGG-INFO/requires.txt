@@ -1,0 +1,4 @@
+pyderman
+selenium
+beautifulsoup4
+tqdm
