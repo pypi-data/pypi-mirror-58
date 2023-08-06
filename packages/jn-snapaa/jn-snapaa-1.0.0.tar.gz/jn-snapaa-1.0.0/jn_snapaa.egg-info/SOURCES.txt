@@ -1,0 +1,5 @@
+setup.py
+jn_snapaa.egg-info/PKG-INFO
+jn_snapaa.egg-info/SOURCES.txt
+jn_snapaa.egg-info/dependency_links.txt
+jn_snapaa.egg-info/top_level.txt
