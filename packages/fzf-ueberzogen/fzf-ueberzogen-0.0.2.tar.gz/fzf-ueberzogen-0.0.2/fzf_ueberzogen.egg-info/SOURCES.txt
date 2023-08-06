@@ -1,0 +1,8 @@
+README.md
+setup.py
+fzf-ueberzogen/fzf-ueberzogen.sh
+fzf_ueberzogen.egg-info/PKG-INFO
+fzf_ueberzogen.egg-info/SOURCES.txt
+fzf_ueberzogen.egg-info/dependency_links.txt
+fzf_ueberzogen.egg-info/requires.txt
+fzf_ueberzogen.egg-info/top_level.txt
