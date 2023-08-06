@@ -1,0 +1,11 @@
+influxtap/__init__.py,sha256=k5jdax6w5I_k9w2-8jfO_2kAY1TL0UVqYiTr4_hYW7w,3211
+influxtap/__main__.py,sha256=H8eAPSpys3x-coyYXdap-9X28rAwjW99pdhgdvM4EKY,1057
+influxtap/cache.py,sha256=bT5ZWPybHk0WZjmgcjIu_DTeUYq647sWuYMYgaJvUac,1011
+influxtap/xdg.py,sha256=Kuv3wHgkUmlAkedoy8xcSUNGz25m0xV5Q6COkTv7FX4,894
+influxtap-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+influxtap-0.1.1.dist-info/METADATA,sha256=UMB9n0szEHf-oC8RZwwcx51VogxgQMNn1LLCEcZcsi0,407
+influxtap-0.1.1.dist-info/RECORD,,
+influxtap-0.1.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+influxtap-0.1.1.dist-info/entry_points.txt,sha256=FWma5BSgVAEyLaiNyUHGRAa4ez6bT9Vze_Ji00BPBxg,55
+influxtap-0.1.1.dist-info/metadata.json,sha256=euk7IlfGBBbqVxBQHQ_YkhLjV4z3ySfFT7BHY53FSt0,748
+influxtap-0.1.1.dist-info/top_level.txt,sha256=o68G_7E4VQVqG41iQo7kwXjYxlIpz1XhInUWYUVt3Ag,10
