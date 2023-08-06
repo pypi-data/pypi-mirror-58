@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mrst
+Version: 0.5.3
+Summary: 
+Author: Tim Simpson
+Author-email: timsimpson4@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Sphinx (>=2.3.1,<3.0.0)
+Requires-Dist: typing-extensions (>=3.7.4,<4.0.0)
