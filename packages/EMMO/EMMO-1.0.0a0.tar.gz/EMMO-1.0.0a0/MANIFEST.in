@@ -1,0 +1,5 @@
+recursive-include examples *
+recursive-exclude examples old genfigs *.pdf *.html *~
+
+recursive-include demo *
+recursive-exclude demo old __pycache__ *~ *.pyc

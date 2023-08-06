@@ -1,0 +1,57 @@
+// EMMO module dependencies
+digraph {
+	node [edgecolor=blue fillcolor=lightblue shape=box style=filled]
+	edge [arrowtail=open dir=back]
+	rankdir=TB
+	emmo [nodeURL="http://emmo.info/emmo.owl#"]
+	subgraph cluster0 {
+		fillcolor=lightgray fontsize=20 label=base labeljust=c style=filled
+		"emmo-physical" [nodeURL="http://emmo.info/base/emmo-physical.owl#"]
+		"emmo-4d" [nodeURL="http://emmo.info/base/emmo-4d.owl#"]
+		"emmo-mereotopology" [nodeURL="http://emmo.info/base/emmo-mereotopology.owl#"]
+		"emmo-annotations" [nodeURL="http://emmo.info/base/emmo-annotations.owl#"]
+	}
+	subgraph cluster1 {
+		fillcolor=lightgray fontsize=20 label=perspectives labeljust=c style=filled
+		"emmo-impression" [nodeURL="http://emmo.info/perspectives/emmo-impression.owl#"]
+		"emmo-semiotics" [nodeURL="http://emmo.info/perspectives/emmo-semiotics.owl#"]
+		"emmo-processual" [nodeURL="http://emmo.info/perspectives/emmo-processual.owl#"]
+		"emmo-existent" [nodeURL="http://emmo.info/perspectives/emmo-existent.owl#"]
+	}
+	subgraph cluster2 {
+		fillcolor=lightgray fontsize=20 label=domains labeljust=c style=filled
+		"emmo-geometry" [nodeURL="http://emmo.info/domains/emmo-geometry.owl#"]
+		"emmo-math" [nodeURL="http://emmo.info/domains/emmo-math.owl#"]
+		"emmo-graphical" [nodeURL="http://emmo.info/domains/emmo-graphical.owl#"]
+		"emmo-material" [nodeURL="http://emmo.info/domains/emmo-material.owl#"]
+		"emmo-models" [nodeURL="http://emmo.info/domains/emmo-models.owl#"]
+		"emmo-physical-properties" [nodeURL="http://emmo.info/domains/emmo-physical-properties.owl#"]
+		"emmo-properties" [nodeURL="http://emmo.info/domains/emmo-properties.owl#"]
+		"emmo-usercase" [nodeURL="http://emmo.info/domains/emmo-usercase.owl#"]
+	}
+	"emmo-geometry" -> emmo
+	"emmo-math" -> emmo
+	"emmo-models" -> emmo
+	"emmo-usercase" -> emmo
+	"emmo-physical-properties" -> emmo
+	"emmo-material" -> emmo
+	"emmo-math" -> "emmo-geometry"
+	"emmo-graphical" -> "emmo-math"
+	"emmo-semiotics" -> "emmo-math"
+	"emmo-impression" -> "emmo-graphical"
+	"emmo-physical" -> "emmo-impression"
+	"emmo-4d" -> "emmo-physical"
+	"emmo-mereotopology" -> "emmo-4d"
+	"emmo-annotations" -> "emmo-mereotopology"
+	"emmo-processual" -> "emmo-semiotics"
+	"emmo-physical" -> "emmo-processual"
+	"emmo-existent" -> "emmo-material"
+	"emmo-physical" -> "emmo-existent"
+	"emmo-physical-properties" -> "emmo-models"
+	"emmo-math" -> "emmo-models"
+	"emmo-properties" -> "emmo-physical-properties"
+	"emmo-math" -> "emmo-physical-properties"
+	"emmo-graphical" -> "emmo-properties"
+	"emmo-semiotics" -> "emmo-properties"
+	"emmo-existent" -> "emmo-usercase"
+}

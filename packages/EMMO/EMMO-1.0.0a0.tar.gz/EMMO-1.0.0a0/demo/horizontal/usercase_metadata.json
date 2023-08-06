@@ -1,0 +1,5812 @@
+{
+  "7dffcebd-9ca3-5f8e-9e71-1c719129acde": {
+    "meta": {
+      "name": "CollectionSchema",
+      "version": "0.6",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "nrelations": 568
+    },
+    "properties": {
+      "relations": [
+        {
+          "s": "SIUnit",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "8e6643740df42061aa0712a55c64e887fcd680b8"
+        },
+        {
+          "s": "SIUnit",
+          "p": "_has-uuid",
+          "o": "bbc145d4-e636-56e8-b04b-ed07617c78dc",
+          "id": "0f49b3d3baf597b17578e990c2d7229c737054ea"
+        },
+        {
+          "s": "SIUnit",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "cce5ee3324ec631cc857bb1c170c8fddad268d2f"
+        },
+        {
+          "s": "SIUnit",
+          "p": "is_a",
+          "o": "MeasurementUnit",
+          "id": "d897d5ab7769df8cb017a16a05f57bff320ef1df"
+        },
+        {
+          "s": "MeasurementUnit",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "33b5a297907eaeacd7c9ead5b7abc2f6f8b1215a"
+        },
+        {
+          "s": "MeasurementUnit",
+          "p": "_has-uuid",
+          "o": "82b50db4-9801-5d77-ad6f-3df9499c4ef6",
+          "id": "6bd90c0de6fab4fc4baff2afa9b1a4ef6a83f651"
+        },
+        {
+          "s": "MeasurementUnit",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "f55defa53f7ed0aa0e34aa92a3442636b184da69"
+        },
+        {
+          "s": "MeasurementUnit",
+          "p": "is_a",
+          "o": "QuantitativeProperty",
+          "id": "5a3b6c3ee84f07403ce581ec997c07a09791e8cf"
+        },
+        {
+          "s": "QuantitativeProperty",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "8e3f407274b988ebdb0313b2e9f2dc4d7b81554b"
+        },
+        {
+          "s": "QuantitativeProperty",
+          "p": "_has-uuid",
+          "o": "7a9aa8b6-7718-5a24-950b-ede3c105ce72",
+          "id": "c474de636781194793559ec8092d1f795e45d232"
+        },
+        {
+          "s": "QuantitativeProperty",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "b88bccfe51da504f6cab369ac1b58e0b650abab6"
+        },
+        {
+          "s": "QuantitativeProperty",
+          "p": "is_a",
+          "o": "ObjectiveProperty",
+          "id": "15ca46d3fc5550ec4f8018cd3d39306dc9008212"
+        },
+        {
+          "s": "ObjectiveProperty",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d20ea71e1ef01ac5a296f73d468c56a9bff133d0"
+        },
+        {
+          "s": "ObjectiveProperty",
+          "p": "_has-uuid",
+          "o": "1683a29d-f403-5c83-ad01-577dd8126335",
+          "id": "376b8bf25dc1aed9ae06756ef6ad4b019fdd31e8"
+        },
+        {
+          "s": "ObjectiveProperty",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "1ae0e23eb4b872aedeb845f9894f9a25ed3adfba"
+        },
+        {
+          "s": "ObjectiveProperty",
+          "p": "is_a",
+          "o": "Property",
+          "id": "dc0209d47aa5e3b35379caea5ca70815c05d1f4c"
+        },
+        {
+          "s": "Property",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "86ac5579ef9821b9ee36d9beb757f6d447d54ad0"
+        },
+        {
+          "s": "Property",
+          "p": "_has-uuid",
+          "o": "35d1b09a-7234-5c76-af6b-57b1f40037c9",
+          "id": "f0e64b54facd806519f94d9f0bb656aaaa05bafe"
+        },
+        {
+          "s": "Property",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "8b5cb0c1027c898b0fd529539a7c30f33a2dc4c6"
+        },
+        {
+          "s": "Property",
+          "p": "is_a",
+          "o": "SymbolicDomain",
+          "id": "fe4fb04fada543741f7afb069f1a325a8a781111"
+        },
+        {
+          "s": "SymbolicDomain",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "9e7552865e5df0fc0312f50962e8fb1f17fa33eb"
+        },
+        {
+          "s": "SymbolicDomain",
+          "p": "_has-uuid",
+          "o": "07ed1ba0-1a73-5f94-869b-8451b5ed12cb",
+          "id": "a2a1ad52fa51949850c09c3b48ba2dbdcdc51ecf"
+        },
+        {
+          "s": "SymbolicDomain",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "ff0b7ce7f46f030944e0b84d87e7cf2f27c3d944"
+        },
+        {
+          "s": "SymbolicDomain",
+          "p": "is_a",
+          "o": "Symbolic",
+          "id": "7d5af108f03b4518ecf3eda7d215fa2d26ba9249"
+        },
+        {
+          "s": "Symbolic",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "fc00b1e57babef2d8764f81b3dc9526d149d4069"
+        },
+        {
+          "s": "Symbolic",
+          "p": "_has-uuid",
+          "o": "4bea5dd1-49fc-5326-83f0-5bb07eb221b7",
+          "id": "0aeeec5a815e0bab91f5b88ffa62ea87d0b25a29"
+        },
+        {
+          "s": "Symbolic",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "9e2704765eaa85095bb937b112e8e854d35a2c2c"
+        },
+        {
+          "s": "Symbolic",
+          "p": "is_a",
+          "o": "Graphical",
+          "id": "2bcd7c4d0b2fc74ad0e24b0655542cb2cd7c23fb"
+        },
+        {
+          "s": "Graphical",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "b70f83d6feefc2aeeb5c32b4ce1595f53e4fb3a0"
+        },
+        {
+          "s": "Graphical",
+          "p": "_has-uuid",
+          "o": "e5486203-d2e1-5965-9c88-d95472be4e28",
+          "id": "773293396f93659837cdfea919c730ff0631c420"
+        },
+        {
+          "s": "Graphical",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "7566c3d8c0bd9815868575546723373ccaae1c8a"
+        },
+        {
+          "s": "Graphical",
+          "p": "is_a",
+          "o": "Impression",
+          "id": "d200c852e402b5ddf6b69394b40013af62e40410"
+        },
+        {
+          "s": "Impression",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "1baea99a5b3e819deb5f7210c30f1e8b963aaae1"
+        },
+        {
+          "s": "Impression",
+          "p": "_has-uuid",
+          "o": "da1ca90d-c689-55b3-98d9-4f3012d5b3d4",
+          "id": "bfc8477a5d7a8b3c705bf5c6e9ccc8824beb2c35"
+        },
+        {
+          "s": "Impression",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "5af7d2f54d9eb864011b0474ed1adf3a9c5f2c9c"
+        },
+        {
+          "s": "Impression",
+          "p": "is_a",
+          "o": "Physical",
+          "id": "491716f5132135326a7861c1d65d34896c3ee283"
+        },
+        {
+          "s": "Physical",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "24e8e49871893e0b9881f7a036ce9437f0d212e8"
+        },
+        {
+          "s": "Physical",
+          "p": "_has-uuid",
+          "o": "bcb07fdf-0ae6-579a-a31e-cfc233acca58",
+          "id": "a6f8b9e52f3f58c9ba170b65073578621524e52a"
+        },
+        {
+          "s": "Physical",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "b13582cb464fa15937f467fb2512971d4b02b743"
+        },
+        {
+          "s": "Physical",
+          "p": "is_a",
+          "o": "Item",
+          "id": "1a645f2552caca85761f65dab48be5173f9f66f2"
+        },
+        {
+          "s": "Item",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "c472d8d8603a7d46cb9b8f6fb99b2f7abb422726"
+        },
+        {
+          "s": "Item",
+          "p": "_has-uuid",
+          "o": "73071c84-66cf-5834-b79d-86b6316a9f01",
+          "id": "c5231fe0258437c88f761ce33ea8fe84674f7564"
+        },
+        {
+          "s": "Item",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "12dddb381a783b490906db7ec52fadfa93475722"
+        },
+        {
+          "s": "Item",
+          "p": "is_a",
+          "o": "EMMO",
+          "id": "b1da83cb4ed1258b2c8c34fcebad17e9aef4b809"
+        },
+        {
+          "s": "EMMO",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "7302c7ddc567f5717b47e42fa8e9b5fad5c018e9"
+        },
+        {
+          "s": "EMMO",
+          "p": "_has-uuid",
+          "o": "bd3844c2-b053-52a3-a155-a2bad33e7d34",
+          "id": "f0df6c2934be2f19911ac21bf9c625a5658fc19c"
+        },
+        {
+          "s": "EMMO",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "659c01a1419ea3d0141eac8974c525c452e7edc7"
+        },
+        {
+          "s": "Restriction",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "49f0dce456337f09e9103369e89866690b4744e6"
+        },
+        {
+          "s": "Restriction",
+          "p": "_has-uuid",
+          "o": "0ae1f67a-16ba-51fd-a559-72030c0612b0",
+          "id": "31968b98912dbc3e0e1f36afe61d90f41da6441c"
+        },
+        {
+          "s": "Restriction",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "a666d9b5c5726ba4784e96565c54b0beb9fa70e5"
+        },
+        {
+          "s": "29f9e77b-ecf0-4060-9c93-4fe57a22c945",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "cd5396e3d17f248380ec52ed16752415ebbb65e7"
+        },
+        {
+          "s": "29f9e77b-ecf0-4060-9c93-4fe57a22c945",
+          "p": "_has-uuid",
+          "o": "29f9e77b-ecf0-4060-9c93-4fe57a22c945",
+          "id": "7fea69d25513076ad8d2017e6eb83feef9f493bb"
+        },
+        {
+          "s": "29f9e77b-ecf0-4060-9c93-4fe57a22c945",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "df73fa47eea803c6b14b582b924e39045040b1a8"
+        },
+        {
+          "s": "29f9e77b-ecf0-4060-9c93-4fe57a22c945",
+          "p": "hasPart",
+          "o": "Quantum",
+          "id": "cab7c56e615f66a560a7a028f5ffb9ae6bb81113"
+        },
+        {
+          "s": "Quantum",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "83d40f70c33cb335d3619734fa5e1e864f945008"
+        },
+        {
+          "s": "Quantum",
+          "p": "_has-uuid",
+          "o": "2548b771-d12a-5ba4-8e9f-f7bcadbc83ca",
+          "id": "ecd38c63758984ec1b03c2947f69321e30ff0405"
+        },
+        {
+          "s": "Quantum",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "ccfa9f2995fbb591726b49320f8f0650d85a3641"
+        },
+        {
+          "s": "Quantum",
+          "p": "is_a",
+          "o": "Item",
+          "id": "950d3f46a7ca7e1c415e59970a6467ce74f6cda4"
+        },
+        {
+          "s": "93efff74-8777-41e5-9572-ddf03ed3a574",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "863ffa65d30c0ea4b05102d051ac0a6a2714d702"
+        },
+        {
+          "s": "93efff74-8777-41e5-9572-ddf03ed3a574",
+          "p": "_has-uuid",
+          "o": "93efff74-8777-41e5-9572-ddf03ed3a574",
+          "id": "134e35cff9daade8be6563204ed1a578eba2b61e"
+        },
+        {
+          "s": "93efff74-8777-41e5-9572-ddf03ed3a574",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "3f449582d4a198f2a8e7b4e7447d216f814af33a"
+        },
+        {
+          "s": "a5fdb21c-4330-445b-9ae0-3556fc3ee9a3",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "ea6aaa1e5593ff4ac1a27c772b538278b0f9a63c"
+        },
+        {
+          "s": "a5fdb21c-4330-445b-9ae0-3556fc3ee9a3",
+          "p": "_has-uuid",
+          "o": "a5fdb21c-4330-445b-9ae0-3556fc3ee9a3",
+          "id": "0743884e9a89242a6a0b1a1183ce6e661e1dafac"
+        },
+        {
+          "s": "a5fdb21c-4330-445b-9ae0-3556fc3ee9a3",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "f4540e12afdfc5621a37f70d58475d5487dac9a0"
+        },
+        {
+          "s": "a5fdb21c-4330-445b-9ae0-3556fc3ee9a3",
+          "p": "hasPart",
+          "o": "Elementary",
+          "id": "ecf55faa7f56ec6f174fe91cf9b91951c45cdaf7"
+        },
+        {
+          "s": "Elementary",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "1db3ae55c60655169714ef3c94f8dda87fb737b2"
+        },
+        {
+          "s": "Elementary",
+          "p": "_has-uuid",
+          "o": "9c48f275-a5a9-5708-93b6-b3af2b699379",
+          "id": "c56b63d1897cd2b1e33c8e5223b39bdb1499fb61"
+        },
+        {
+          "s": "Elementary",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "2381da2f5bba702b107aa3389c7e9cfe124d0b17"
+        },
+        {
+          "s": "Elementary",
+          "p": "is_a",
+          "o": "Subatomic",
+          "id": "df4619b58bdd70550b0fb32d4e103ef87ba3b3c9"
+        },
+        {
+          "s": "Subatomic",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "709281068fbdb49c3d96118ae4470d8d7afa21b7"
+        },
+        {
+          "s": "Subatomic",
+          "p": "_has-uuid",
+          "o": "fc4ea3de-6928-5936-90e8-e06190283de1",
+          "id": "5306e7364401eeec983ac5c9456b9e471d734145"
+        },
+        {
+          "s": "Subatomic",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "3b3f592ad109eff499f4d663b99f87f26c4d3235"
+        },
+        {
+          "s": "Subatomic",
+          "p": "is_a",
+          "o": "State",
+          "id": "fbc3eee9928c24bd159ddfce56219704cc1661d6"
+        },
+        {
+          "s": "State",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3402e7a2eca23c282d9d0454666c66ea1482596d"
+        },
+        {
+          "s": "State",
+          "p": "_has-uuid",
+          "o": "85af8175-79ba-5701-a51f-259853f1f5ef",
+          "id": "2160bfdc4f17845bb9e0f8d95403e18e9fb71b5e"
+        },
+        {
+          "s": "State",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "8383f84c534565e1f1cf3b40a99d01270d2ee0b3"
+        },
+        {
+          "s": "State",
+          "p": "is_a",
+          "o": "Existent",
+          "id": "88365e5fcfde78c9d499bf39f7382e4066312fa1"
+        },
+        {
+          "s": "Existent",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "c2e36461a4afd4b56a9013e4c41f7ecffcbb3866"
+        },
+        {
+          "s": "Existent",
+          "p": "_has-uuid",
+          "o": "91e189a1-2884-5132-9af6-122b919f37be",
+          "id": "34d446ed649ae6885c3848112c95a4eb6f67066f"
+        },
+        {
+          "s": "Existent",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "0fd0c62a967daa6b7180f8bf609ea4096772fba9"
+        },
+        {
+          "s": "Existent",
+          "p": "is_a",
+          "o": "Physical",
+          "id": "c6ece3031e1a1b9bc6694c0d0b18732e28c60741"
+        },
+        {
+          "s": "ClassConstruct",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "b70dad565689c5c10cbcb3f98bedcd070bab4fa4"
+        },
+        {
+          "s": "ClassConstruct",
+          "p": "_has-uuid",
+          "o": "9eefd8af-3b4d-5115-ab2c-835bb62793b2",
+          "id": "856d5ceb92c638619ea1d5a2dd7d2eca897c75df"
+        },
+        {
+          "s": "ClassConstruct",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "356f597383100767efd9c0de153c713917efc919"
+        },
+        {
+          "s": "46b7037d-6012-4e4a-b41a-a6d5165cdb2b",
+          "p": "has_argument",
+          "o": "State",
+          "id": "bd991b9ed0c7845e33df832c1dcf0db210902cb1"
+        },
+        {
+          "s": "46b7037d-6012-4e4a-b41a-a6d5165cdb2b",
+          "p": "has_argument",
+          "o": "hasTemporalDirectPart.some(State)",
+          "id": "99dca01c68a9bccb03e79498e12a96c0180ac5a3"
+        },
+        {
+          "s": "46b7037d-6012-4e4a-b41a-a6d5165cdb2b",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "47c56a041b9f9ee079c9e0b975ec67f47fba0342"
+        },
+        {
+          "s": "46b7037d-6012-4e4a-b41a-a6d5165cdb2b",
+          "p": "_has-uuid",
+          "o": "46b7037d-6012-4e4a-b41a-a6d5165cdb2b",
+          "id": "41faa5a11dec92695439149ce1248288669faf43"
+        },
+        {
+          "s": "46b7037d-6012-4e4a-b41a-a6d5165cdb2b",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/ClassConstruct",
+          "id": "5cdce553b749297cc9a4197df8f2597d663f8ef2"
+        },
+        {
+          "s": "fd4f501a-5e77-407d-aa4c-383bc09160cd",
+          "p": "has_argument",
+          "o": "Elementary",
+          "id": "297a6157c75f595568a76ce0c8de8c84912f66ec"
+        },
+        {
+          "s": "fd4f501a-5e77-407d-aa4c-383bc09160cd",
+          "p": "has_argument",
+          "o": "hasSpatialDirectPart.some(Existent)",
+          "id": "bfaa99b980360f4dc0efe70de51e1ed3a66c94c9"
+        },
+        {
+          "s": "fd4f501a-5e77-407d-aa4c-383bc09160cd",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "6f3c22089368d150b4668eab69e211e3ad240698"
+        },
+        {
+          "s": "fd4f501a-5e77-407d-aa4c-383bc09160cd",
+          "p": "_has-uuid",
+          "o": "fd4f501a-5e77-407d-aa4c-383bc09160cd",
+          "id": "fd45f041bfdfd3d0464b487b9a8004ef6e2382fc"
+        },
+        {
+          "s": "fd4f501a-5e77-407d-aa4c-383bc09160cd",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/ClassConstruct",
+          "id": "1237dc4efe7334fd0397b52cda7c94c87268fdd2"
+        },
+        {
+          "s": "Elementary",
+          "p": "is_a",
+          "o": "State",
+          "id": "d7a6c133a4926e3238cb7c40c9a3566aa0bd90c3"
+        },
+        {
+          "s": "Elementary",
+          "p": "is_a",
+          "o": "Physical",
+          "id": "d3e2577ae500235f3300c2ff8ab7df04e4ea7637"
+        },
+        {
+          "s": "Elementary",
+          "p": "is_a",
+          "o": "Item",
+          "id": "d87902e7b7c4e5eee27f401987ea0d5c449be4e1"
+        },
+        {
+          "s": "13193e05-bcfb-46e3-ab34-92914cc25de6",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "29e10b9203e66726651d8840475ac2129bd45e68"
+        },
+        {
+          "s": "13193e05-bcfb-46e3-ab34-92914cc25de6",
+          "p": "_has-uuid",
+          "o": "13193e05-bcfb-46e3-ab34-92914cc25de6",
+          "id": "2c63c34e2c1f771885a4009ff5719a52900c4b1f"
+        },
+        {
+          "s": "13193e05-bcfb-46e3-ab34-92914cc25de6",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "fe2c7624309048290c307830a9c30157ed1fd199"
+        },
+        {
+          "s": "9c75ac24-2ab6-4fec-9559-3e41a248cff3",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "ca8ab4372e86e05852b00afd521903bfb9a5d313"
+        },
+        {
+          "s": "9c75ac24-2ab6-4fec-9559-3e41a248cff3",
+          "p": "_has-uuid",
+          "o": "9c75ac24-2ab6-4fec-9559-3e41a248cff3",
+          "id": "31a6531f5a9f5bceb52fad89194e53e489cfb8a7"
+        },
+        {
+          "s": "9c75ac24-2ab6-4fec-9559-3e41a248cff3",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "22e90269183c26daaaccb1ab89dfd3bc5fc6a10f"
+        },
+        {
+          "s": "9c75ac24-2ab6-4fec-9559-3e41a248cff3",
+          "p": "hasTemporalPart",
+          "o": "Elementary",
+          "id": "f680991094d00aa4d8bb2912208bccf0d63b8eb2"
+        },
+        {
+          "s": "2b933574-94a0-45d3-b92a-6f5b1090ffb1",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "a0ebb24eaacf666ba204c15a9fb8d3f36c823315"
+        },
+        {
+          "s": "2b933574-94a0-45d3-b92a-6f5b1090ffb1",
+          "p": "_has-uuid",
+          "o": "2b933574-94a0-45d3-b92a-6f5b1090ffb1",
+          "id": "231948ae80fb552cdb31fffccd1b8a5107dcac3b"
+        },
+        {
+          "s": "2b933574-94a0-45d3-b92a-6f5b1090ffb1",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "f33e60dfbb7cf5e8bd32f623427b79cfab9373b6"
+        },
+        {
+          "s": "2b933574-94a0-45d3-b92a-6f5b1090ffb1",
+          "p": "hasTemporalPart",
+          "o": "Physical",
+          "id": "8c48cd6f31a375b3f2e07b6ba44130da8e58d69d"
+        },
+        {
+          "s": "14084149-4608-4f37-96f2-7c0f9934eacc",
+          "p": "has_argument",
+          "o": "Symbol",
+          "id": "d4637f05245b3cd12dd06cab600e707249f7b8e1"
+        },
+        {
+          "s": "14084149-4608-4f37-96f2-7c0f9934eacc",
+          "p": "has_argument",
+          "o": "emmo-4d.hasSpatialPart.some(Symbol)",
+          "id": "c74f85f290a511e7b85cdc2b8f26d8735707c251"
+        },
+        {
+          "s": "14084149-4608-4f37-96f2-7c0f9934eacc",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "971b893676e41dbf797c4454663c8391fdb8d594"
+        },
+        {
+          "s": "14084149-4608-4f37-96f2-7c0f9934eacc",
+          "p": "_has-uuid",
+          "o": "14084149-4608-4f37-96f2-7c0f9934eacc",
+          "id": "5ea3bd81bee826e812a965a199261b520ec3a7b5"
+        },
+        {
+          "s": "14084149-4608-4f37-96f2-7c0f9934eacc",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/ClassConstruct",
+          "id": "2d46bb0c9796f804fd97cdfb2bab264789a1bcfb"
+        },
+        {
+          "s": "Property",
+          "p": "is_a",
+          "o": "Conventional",
+          "id": "4c5dcba2ec9aae76f0bf887a396e7a87017d9f2f"
+        },
+        {
+          "s": "Conventional",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "04ea99423f329f8ca6297f2ee3d90482112ce057"
+        },
+        {
+          "s": "Conventional",
+          "p": "_has-uuid",
+          "o": "30631b07-744b-53b1-bdd8-66b415e16ba9",
+          "id": "6af7379ee7cdd3bc52a85e19df7cd29d3754e202"
+        },
+        {
+          "s": "Conventional",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "4d2d4c657f54dc5a84bed74c3d81b5d0d45b27e2"
+        },
+        {
+          "s": "Conventional",
+          "p": "is_a",
+          "o": "Sign",
+          "id": "c50617eca7745b427822309bf16159a345723dda"
+        },
+        {
+          "s": "Sign",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "6b07e13951f09e3b78a468f1d32bcce91340469e"
+        },
+        {
+          "s": "Sign",
+          "p": "_has-uuid",
+          "o": "92a56a95-d3ac-5ed5-9925-a088606238d3",
+          "id": "2dd857c4746f1d2942ab1ab4cf3521e009204196"
+        },
+        {
+          "s": "Sign",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "f749d0b99909f821e3677be65ed34a7ed475f53f"
+        },
+        {
+          "s": "Sign",
+          "p": "is_a",
+          "o": "Semiotic",
+          "id": "154a1ee7990c8ba8707b4c42b58b5446649ecd5a"
+        },
+        {
+          "s": "Semiotic",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3c30e019297fc97e316e86829bb7b65a2d9bb403"
+        },
+        {
+          "s": "Semiotic",
+          "p": "_has-uuid",
+          "o": "7b87ecbf-6def-59d7-ab2f-ffa8790d0e00",
+          "id": "5f1efe2fe57c8aad49642eabceb0052afd2bb847"
+        },
+        {
+          "s": "Semiotic",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "2367899b31fda7887d13efb4372227f4741770a6"
+        },
+        {
+          "s": "Semiotic",
+          "p": "is_a",
+          "o": "Participant",
+          "id": "5ce1da59495cdd1eede4fcc702b6bd73f9574ba4"
+        },
+        {
+          "s": "Participant",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "a1e1c737127417a3b10b1e7c83282c9ec9761f18"
+        },
+        {
+          "s": "Participant",
+          "p": "_has-uuid",
+          "o": "0c47bd61-753b-5829-88e3-ba3d58b4aab4",
+          "id": "924fb5133441428eaeb8a0a3db328d47c1706322"
+        },
+        {
+          "s": "Participant",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "b8fc1977afcacc2ff0621e44173376ddc4cbcf1c"
+        },
+        {
+          "s": "Participant",
+          "p": "is_a",
+          "o": "Processual",
+          "id": "1f0b28407d774c7f7c97f9002c4637232e2e5306"
+        },
+        {
+          "s": "Processual",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "19ec3fd7ef4e3128f8685cf0e2c028c0359eaebe"
+        },
+        {
+          "s": "Processual",
+          "p": "_has-uuid",
+          "o": "90d4a846-d97f-5c0a-994e-cb109b0fc4ac",
+          "id": "febdeca39469edd7678bbe6741480aa3cc928499"
+        },
+        {
+          "s": "Processual",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "60d940e64ca0dab02f5d1a479ccbaebc0a52588f"
+        },
+        {
+          "s": "Processual",
+          "p": "is_a",
+          "o": "Physical",
+          "id": "95c05890f04eba334369acbadac95298614d799e"
+        },
+        {
+          "s": "aa407a10-906b-4b06-8692-ca6c030710f3",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "2e6940da22a980527ecb1ea79c490489562cbaed"
+        },
+        {
+          "s": "aa407a10-906b-4b06-8692-ca6c030710f3",
+          "p": "_has-uuid",
+          "o": "aa407a10-906b-4b06-8692-ca6c030710f3",
+          "id": "e4b7925c5e15fa156352c4b4922b1ee400879690"
+        },
+        {
+          "s": "aa407a10-906b-4b06-8692-ca6c030710f3",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "c5081b5fc6775ec23debecd7b4c66013bbb88758"
+        },
+        {
+          "s": "aa407a10-906b-4b06-8692-ca6c030710f3",
+          "p": "Inverse(emmo-processual.hasProperParticipant)",
+          "o": "Semiosis",
+          "id": "7fafbdf9561a045ae1f5717256d775ab76756971"
+        },
+        {
+          "s": "Semiosis",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "6a9ee402f179f65f2f017d600add87b4cb774c38"
+        },
+        {
+          "s": "Semiosis",
+          "p": "_has-uuid",
+          "o": "54a83b1f-0c4e-5929-acb4-ca689ea6d0c6",
+          "id": "1770bf93d99ad2bff794d5af8e66429e75ebb97c"
+        },
+        {
+          "s": "Semiosis",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "66c2bd62df730d09f5205fe1f7edaffbdadf0c63"
+        },
+        {
+          "s": "Semiosis",
+          "p": "is_a",
+          "o": "Process",
+          "id": "2f29486687a48d17561c6167bc6ec4ab7fde3a9e"
+        },
+        {
+          "s": "Process",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "82af779870f30b5e4ab81aa8549a95dc33f15f0a"
+        },
+        {
+          "s": "Process",
+          "p": "_has-uuid",
+          "o": "db9f3307-f815-5ee7-a379-034204d8c474",
+          "id": "867456947bf2e8b7eef6885dbb03d9f3c5b50ac5"
+        },
+        {
+          "s": "Process",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "f1430d0a0678cd976710e97e76319ce164f23209"
+        },
+        {
+          "s": "Process",
+          "p": "is_a",
+          "o": "Processual",
+          "id": "6f1d638fe657f20e61f9127c844c2cd929de70ef"
+        },
+        {
+          "s": "e2842c41-d43a-4852-be63-7a4c0f42f67f",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "488a3f3fe212ba7443ae3be0b09ac494f12d7c69"
+        },
+        {
+          "s": "e2842c41-d43a-4852-be63-7a4c0f42f67f",
+          "p": "_has-uuid",
+          "o": "e2842c41-d43a-4852-be63-7a4c0f42f67f",
+          "id": "6b72d5c1057d1fb6dd1fc45d025eae6c3bf25d31"
+        },
+        {
+          "s": "e2842c41-d43a-4852-be63-7a4c0f42f67f",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "4f1c4a87387041a779f8232c56f12d5e954c07df"
+        },
+        {
+          "s": "e2842c41-d43a-4852-be63-7a4c0f42f67f",
+          "p": "hasParticipant",
+          "o": "Participant",
+          "id": "f87a2ebc24268e5accc82d9ae83c69989cfd7c86"
+        },
+        {
+          "s": "ea07125d-d982-4d12-ae9d-354c01e8f3d5",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "e92d289c98dbd825c7cf2386c5c3657eb077f509"
+        },
+        {
+          "s": "ea07125d-d982-4d12-ae9d-354c01e8f3d5",
+          "p": "_has-uuid",
+          "o": "ea07125d-d982-4d12-ae9d-354c01e8f3d5",
+          "id": "723d9d4e97aaeac975806b61bb4df9c63fa723d2"
+        },
+        {
+          "s": "ea07125d-d982-4d12-ae9d-354c01e8f3d5",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "4f638b06aac43ee80e2c7aebc3459cbd5c070830"
+        },
+        {
+          "s": "ea07125d-d982-4d12-ae9d-354c01e8f3d5",
+          "p": "hasParticipant",
+          "o": "Interpreter",
+          "id": "580d2756594c83d2c6e8f174c8c77cd07a0160a9"
+        },
+        {
+          "s": "Interpreter",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "b9753aec41dfc2d34ebd44bc86ca0f1dd69844df"
+        },
+        {
+          "s": "Interpreter",
+          "p": "_has-uuid",
+          "o": "bef335c8-aa7e-5df5-869f-8ae2e66d5c49",
+          "id": "f39a44c4431e84f154618580da99d4e3f40a6abc"
+        },
+        {
+          "s": "Interpreter",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d46e7f2b24e7a5836b2ab1a6726972c78b94a72e"
+        },
+        {
+          "s": "Interpreter",
+          "p": "is_a",
+          "o": "Semiotic",
+          "id": "51664d300de8e36125100b060dadbb2edea6fd06"
+        },
+        {
+          "s": "03a0c6dc-884f-4979-aad5-fb5d5f22698c",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "497b9f39f8d7197ae0b565a3321d70b153e11839"
+        },
+        {
+          "s": "03a0c6dc-884f-4979-aad5-fb5d5f22698c",
+          "p": "_has-uuid",
+          "o": "03a0c6dc-884f-4979-aad5-fb5d5f22698c",
+          "id": "24eca0626198e3595543882c1ed25449f61ebbd0"
+        },
+        {
+          "s": "03a0c6dc-884f-4979-aad5-fb5d5f22698c",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "0725dd13f192b42b9f84147bdb11b4b2ef723b72"
+        },
+        {
+          "s": "03a0c6dc-884f-4979-aad5-fb5d5f22698c",
+          "p": "hasSpatialPart",
+          "o": "Interpretant",
+          "id": "db88f5f5eec1036489261c3b791048997af6fe70"
+        },
+        {
+          "s": "Interpretant",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "62c1de0637fc69b7801ee145c5ad1b2b38a68c8f"
+        },
+        {
+          "s": "Interpretant",
+          "p": "_has-uuid",
+          "o": "8946afba-cbe7-546b-90b1-452557929384",
+          "id": "ec7224f7db96895fd3037f17f3c72b5f9a5460db"
+        },
+        {
+          "s": "Interpretant",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "ef1fd19c2d7380823a1f1ef6dd870218585c10d6"
+        },
+        {
+          "s": "Interpretant",
+          "p": "is_a",
+          "o": "Sign",
+          "id": "38ef6d2f7a3f48759df9f1fca0fa5f40c5aa31d0"
+        },
+        {
+          "s": "a0f3a63b-23bf-4bd6-ab51-30d36324c2b8",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "1d9d06d082941d025dcfa06987063a704c741cbd"
+        },
+        {
+          "s": "a0f3a63b-23bf-4bd6-ab51-30d36324c2b8",
+          "p": "_has-uuid",
+          "o": "a0f3a63b-23bf-4bd6-ab51-30d36324c2b8",
+          "id": "4f095cf6bd3f92b4c1200e0301abb42da4a6a311"
+        },
+        {
+          "s": "a0f3a63b-23bf-4bd6-ab51-30d36324c2b8",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "1ab09a2a8357218788c7511badc82f84e70f77fc"
+        },
+        {
+          "s": "a0f3a63b-23bf-4bd6-ab51-30d36324c2b8",
+          "p": "hasProperParticipant",
+          "o": "Object",
+          "id": "e97394b599d84901f45c12a3bd5c5a89c1145e13"
+        },
+        {
+          "s": "Object",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "874233d43aa753455dc1ff1ef1b39ab36c3d3b38"
+        },
+        {
+          "s": "Object",
+          "p": "_has-uuid",
+          "o": "0f192ffb-fa1b-52f1-836d-ea3e8d751f04",
+          "id": "78cc3757dd72390053ee9fef6868563fa92af208"
+        },
+        {
+          "s": "Object",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "58faa2a2095cd7f8837b65acb4f2e42cd7ab412e"
+        },
+        {
+          "s": "Object",
+          "p": "is_a",
+          "o": "Semiotic",
+          "id": "afd2d0f748a5ae7f50c4b889967fdd3229ae5f2a"
+        },
+        {
+          "s": "37aac681-3ce0-4d8a-8ce3-f0a1d885a2d3",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d0e9001da6fcba10d43dafa41045980b22a190ba"
+        },
+        {
+          "s": "37aac681-3ce0-4d8a-8ce3-f0a1d885a2d3",
+          "p": "_has-uuid",
+          "o": "37aac681-3ce0-4d8a-8ce3-f0a1d885a2d3",
+          "id": "e9425606b6019769e577c0109eb0d44a6a79e401"
+        },
+        {
+          "s": "37aac681-3ce0-4d8a-8ce3-f0a1d885a2d3",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "a5cb2a9bef0dbff99c037bc9835a899101d753d4"
+        },
+        {
+          "s": "37aac681-3ce0-4d8a-8ce3-f0a1d885a2d3",
+          "p": "hasProperParticipant",
+          "o": "Sign",
+          "id": "9aa71a82079ee979677ebca28d0974e43814c01a"
+        },
+        {
+          "s": "d393d125-682b-411a-befc-0d23ba41dd25",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "9ffff96064e57ac579ef309acc8b57ea7e31e995"
+        },
+        {
+          "s": "d393d125-682b-411a-befc-0d23ba41dd25",
+          "p": "_has-uuid",
+          "o": "d393d125-682b-411a-befc-0d23ba41dd25",
+          "id": "49a90a83675f1c040e7bc0e526c6b948c8c5bba9"
+        },
+        {
+          "s": "d393d125-682b-411a-befc-0d23ba41dd25",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "a031f70f749b38b3cd773f8e30ad7abadb0c0769"
+        },
+        {
+          "s": "d393d125-682b-411a-befc-0d23ba41dd25",
+          "p": "Inverse(emmo-properties.hasProperty)",
+          "o": "Item",
+          "id": "b7b57bb06c87a05a211a70967b6c3fa8fdfa07d1"
+        },
+        {
+          "s": "QuantitativeProperty",
+          "p": "is_a",
+          "o": "Symbolic",
+          "id": "42449a1199a9d57ee99d15651e7210411c997f5a"
+        },
+        {
+          "s": "m",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "9ebe4f364134ec96113f3738afdb89ab402c4c09"
+        },
+        {
+          "s": "m",
+          "p": "_has-uuid",
+          "o": "5b2345dd-91bc-5877-bd63-882874826706",
+          "id": "1701cca2132bf072f2e5655e0bfa3dfeea437c7e"
+        },
+        {
+          "s": "m",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "8fbf8a20cd4c94e9174880bf48fae4fd31fd29d9"
+        },
+        {
+          "s": "m",
+          "p": "is_a",
+          "o": "SIUnit",
+          "id": "4c9828e022e5114baf2441c8c2d6912b664183c4"
+        },
+        {
+          "s": "m²",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "ddd97d34db8a04d0ff9e5726dcf61f8d09beda36"
+        },
+        {
+          "s": "m²",
+          "p": "_has-uuid",
+          "o": "f59a2a8f-1200-5b75-9f7b-67f984792fd4",
+          "id": "fa2a01e3e0180696892abc134fb6f923f01a8428"
+        },
+        {
+          "s": "m²",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "8306f074c2b41567f1a9ed91bded28e66c50def2"
+        },
+        {
+          "s": "m²",
+          "p": "is_a",
+          "o": "SIUnit",
+          "id": "9146363154915d1de3f95d9004719dc589f78e47"
+        },
+        {
+          "s": "Pa",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "e51aa231be0f1981c3a675fc537352839c757d42"
+        },
+        {
+          "s": "Pa",
+          "p": "_has-uuid",
+          "o": "a5a443d2-2bcf-50ad-8770-124db8f54abf",
+          "id": "26df635b905bfd5c839d36b1cc90c654fab481b9"
+        },
+        {
+          "s": "Pa",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "5dad3ca08681bd0b4eff77cb0ed0e87ab74e793d"
+        },
+        {
+          "s": "Pa",
+          "p": "is_a",
+          "o": "SIUnit",
+          "id": "0a9fcb1866947a859db179efa9e72c9b4f6a2d57"
+        },
+        {
+          "s": "Position",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "50332afb6eeb6cf571218c56bccd5c6f4e706dcf"
+        },
+        {
+          "s": "Position",
+          "p": "_has-uuid",
+          "o": "efa4c16b-b356-5490-9d78-0f58f11c8ea8",
+          "id": "aedb139a5bbf59ef8a2d6a87c5a88225e6975058"
+        },
+        {
+          "s": "Position",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "438b7b4ada756fad70d22ed43b929f7cf042067d"
+        },
+        {
+          "s": "Position",
+          "p": "is_a",
+          "o": "PhysicalQuantity",
+          "id": "daa88e754204362ef007cc4203d8949c6e793d6f"
+        },
+        {
+          "s": "PhysicalQuantity",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3ef01e8b0a459e2c04f33eda9a41bfb10124c3af"
+        },
+        {
+          "s": "PhysicalQuantity",
+          "p": "_has-uuid",
+          "o": "233894bb-6b8b-545b-9fd3-2a89c08ab9f0",
+          "id": "483e16c4bd63825e9494a78ebda2ce70eca53e49"
+        },
+        {
+          "s": "PhysicalQuantity",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "4a15227e9661d4f11a15cd1ea97525d3cfc94024"
+        },
+        {
+          "s": "PhysicalQuantity",
+          "p": "is_a",
+          "o": "QuantitativeProperty",
+          "id": "55817d703015b091000c12c8bdcbe6f1e4b2a9d9"
+        },
+        {
+          "s": "1f26f2a5-fcdc-4be0-a18e-a8fbed823d6f",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "6d0ab83ed1aaa838f2050aa7d67ba7b8b943e4c2"
+        },
+        {
+          "s": "1f26f2a5-fcdc-4be0-a18e-a8fbed823d6f",
+          "p": "_has-uuid",
+          "o": "1f26f2a5-fcdc-4be0-a18e-a8fbed823d6f",
+          "id": "7665e8dfa35758f9a59f6aa9de74217507b96762"
+        },
+        {
+          "s": "1f26f2a5-fcdc-4be0-a18e-a8fbed823d6f",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "e57c644ef8fab80a529cc8f10a3025eb42a4abb5"
+        },
+        {
+          "s": "1f26f2a5-fcdc-4be0-a18e-a8fbed823d6f",
+          "p": "hasSpatialPart",
+          "o": "Numeral",
+          "id": "b3b7f4c99ba718b6cce48362f842abaa8f4cfbc7"
+        },
+        {
+          "s": "Numeral",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "eda936c47a11458c395c459703ac46baa585eae5"
+        },
+        {
+          "s": "Numeral",
+          "p": "_has-uuid",
+          "o": "c928d5a8-656f-511a-882c-28643e2dffd3",
+          "id": "b72dcdb0f2f247fdb2098014a00a8b621e652149"
+        },
+        {
+          "s": "Numeral",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "fdf36af2e903ef79eab1476dbc00ed582c26cbe5"
+        },
+        {
+          "s": "Numeral",
+          "p": "is_a",
+          "o": "MathSymbol",
+          "id": "18248386078bf881518491da1ffef1ca21a3d19b"
+        },
+        {
+          "s": "MathSymbol",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "80fc1311589d4100ca9afd483553d7096e7f02e7"
+        },
+        {
+          "s": "MathSymbol",
+          "p": "_has-uuid",
+          "o": "75d1ba28-eb89-54dc-9e67-01daab4c2f8b",
+          "id": "be5b41805166b3f852727f3749816680551970db"
+        },
+        {
+          "s": "MathSymbol",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "adb927613cd7d66baaa6d8433610e5bc810681fc"
+        },
+        {
+          "s": "MathSymbol",
+          "p": "is_a",
+          "o": "Symbol",
+          "id": "fa38f88d73433f4f393cdb3016cb57e6a9857b89"
+        },
+        {
+          "s": "Symbol",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "1b0171fb1378eb8c94bb20bf34518555ac6923f9"
+        },
+        {
+          "s": "Symbol",
+          "p": "_has-uuid",
+          "o": "a60629f2-ff48-510f-86ec-af4cba0f1671",
+          "id": "d6451909cf35581c696a9455579ee3c632573b83"
+        },
+        {
+          "s": "Symbol",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "053930767d7cbf7f717cf9a45460cdd2b02cd980"
+        },
+        {
+          "s": "Symbol",
+          "p": "is_a",
+          "o": "SymbolicStructured",
+          "id": "67b57b2ea3cc290a1a4730549baefbc6ba882144"
+        },
+        {
+          "s": "SymbolicStructured",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "21a398a210f3e6bb0dd8a055127475d108059e24"
+        },
+        {
+          "s": "SymbolicStructured",
+          "p": "_has-uuid",
+          "o": "289ed369-7027-5cf2-afdc-8f63b22db52f",
+          "id": "e6a71d872e8288a110d2e7ce13d228aaf6661739"
+        },
+        {
+          "s": "SymbolicStructured",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "4a0fded9dc8e23f19888e046c0ecb38daed97d0e"
+        },
+        {
+          "s": "SymbolicStructured",
+          "p": "is_a",
+          "o": "Symbolic",
+          "id": "00ee06ae48c895268183b23093b3acf1a9a38a91"
+        },
+        {
+          "s": "MathSymbol",
+          "p": "is_a",
+          "o": "Mathematical",
+          "id": "62dbf56613af7b2d55d5dc9b236e4c5f76aaef54"
+        },
+        {
+          "s": "Mathematical",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "e439bdbd5707dcfae6f30f976609350b75d278f4"
+        },
+        {
+          "s": "Mathematical",
+          "p": "_has-uuid",
+          "o": "b9d07fa6-bf1b-5c25-a9fb-fc8ae4e94a98",
+          "id": "2d57ff001f88f61d72f06dc8fd069b49c8b5ed62"
+        },
+        {
+          "s": "Mathematical",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "941e0e2b8a773dcce044617fd317d4ef685cc7e1"
+        },
+        {
+          "s": "Mathematical",
+          "p": "is_a",
+          "o": "SymbolicDomain",
+          "id": "5b85d50e6baf1cb7130fd8af70503c2073ee2754"
+        },
+        {
+          "s": "64588623-d8ee-41d3-90ff-0309fa3170df",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "8c2ac7c0885bafc404ac0852fc5b1de6da66b82a"
+        },
+        {
+          "s": "64588623-d8ee-41d3-90ff-0309fa3170df",
+          "p": "_has-uuid",
+          "o": "64588623-d8ee-41d3-90ff-0309fa3170df",
+          "id": "2feae8e14585090ea564fd48ec26a43fd7a67ffa"
+        },
+        {
+          "s": "64588623-d8ee-41d3-90ff-0309fa3170df",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "b0de8a1af73b8f6629bbd21f213448507914052e"
+        },
+        {
+          "s": "64588623-d8ee-41d3-90ff-0309fa3170df",
+          "p": "hasProperPart",
+          "o": "Not(Mathematical)",
+          "id": "bc41e6a90b01855a4c440e6716137c1f8ae4ea2f"
+        },
+        {
+          "s": "6691d311-a723-45f3-a828-86ced300505c",
+          "p": "has_argument",
+          "o": "Mathematical",
+          "id": "1225bab1609c06b6d7720ebc1d50214477fd17bf"
+        },
+        {
+          "s": "6691d311-a723-45f3-a828-86ced300505c",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "fa0803309d4801dcfa7d2e76e7f59ed9948fc35a"
+        },
+        {
+          "s": "6691d311-a723-45f3-a828-86ced300505c",
+          "p": "_has-uuid",
+          "o": "6691d311-a723-45f3-a828-86ced300505c",
+          "id": "ddf81bed2628691166475d57f76abf742f9d2827"
+        },
+        {
+          "s": "6691d311-a723-45f3-a828-86ced300505c",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/ClassConstruct",
+          "id": "6d14060c2da63a52e9a4f8a6b5a31541fa99c1e4"
+        },
+        {
+          "s": "Numeral",
+          "p": "is_a",
+          "o": "Symbol",
+          "id": "543d61aef5809b0e018b2684521f30c426373004"
+        },
+        {
+          "s": "Numeral",
+          "p": "is_a",
+          "o": "Mathematical",
+          "id": "4fa4aed70c57b97f201532bb390fbb6eff44d6c6"
+        },
+        {
+          "s": "40649303-332a-4d51-a85f-1b138ca149c6",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "0b3c70e6e616e1c3f2788b0d0e832fc2a7271087"
+        },
+        {
+          "s": "40649303-332a-4d51-a85f-1b138ca149c6",
+          "p": "_has-uuid",
+          "o": "40649303-332a-4d51-a85f-1b138ca149c6",
+          "id": "37af25b6798ca078d7a6575c1ecf81ca832673fe"
+        },
+        {
+          "s": "40649303-332a-4d51-a85f-1b138ca149c6",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "26c0986e02bb9164106085eaa00c526c8d86b397"
+        },
+        {
+          "s": "40649303-332a-4d51-a85f-1b138ca149c6",
+          "p": "hasSpatialPart",
+          "o": "MeasurementUnit",
+          "id": "03ef7457d54312e19b09f722cc104586e72321de"
+        },
+        {
+          "s": "01532dbc-9f6d-42de-8a12-b058ad0a990d",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d1e4cdb789ae14f06522c19a9d54c70a8948f0b2"
+        },
+        {
+          "s": "01532dbc-9f6d-42de-8a12-b058ad0a990d",
+          "p": "_has-uuid",
+          "o": "01532dbc-9f6d-42de-8a12-b058ad0a990d",
+          "id": "211188bc6a3e2431e7870ef466565f37bea7eb55"
+        },
+        {
+          "s": "01532dbc-9f6d-42de-8a12-b058ad0a990d",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "5c402b3c3e5329c32cb81b24a5d45f0734578ad2"
+        },
+        {
+          "s": "01532dbc-9f6d-42de-8a12-b058ad0a990d",
+          "p": "hasUnit",
+          "o": "m",
+          "id": "e027d0ca18d81a84d47e58e0f33f78f27065e67e"
+        },
+        {
+          "s": "d5e424c7-6524-4dea-8ccf-03a49dda6ab8",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "4537fd2a09ef278054ced04758383fd3426a9278"
+        },
+        {
+          "s": "d5e424c7-6524-4dea-8ccf-03a49dda6ab8",
+          "p": "_has-uuid",
+          "o": "d5e424c7-6524-4dea-8ccf-03a49dda6ab8",
+          "id": "64554a13a8acc4fde3617a1cb2d3b011756f884c"
+        },
+        {
+          "s": "d5e424c7-6524-4dea-8ccf-03a49dda6ab8",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "c907dd82cb6f81b77f960df657b6131937c59e09"
+        },
+        {
+          "s": "d5e424c7-6524-4dea-8ccf-03a49dda6ab8",
+          "p": "hasType",
+          "o": "Real",
+          "id": "3ba3c8e16e7f0b5ea22650c87e12d36f4fd52d8e"
+        },
+        {
+          "s": "Real",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "03de0754a5fb89c555f56b5ef60d9d760f1cccf3"
+        },
+        {
+          "s": "Real",
+          "p": "_has-uuid",
+          "o": "4552b05d-31c0-5c58-b715-6cd39b44b544",
+          "id": "e7c4ad10fb138eafade6b16d0ce4ffb8f94004be"
+        },
+        {
+          "s": "Real",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "1fdcb4d12e4bf7ef0939aa13e50bd30b80366d61"
+        },
+        {
+          "s": "Real",
+          "p": "is_a",
+          "o": "Number",
+          "id": "97087d9cb23f50cc4f3e1086a6737a5bf0bf53ce"
+        },
+        {
+          "s": "Number",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "5993f86641d2b440216b568c3b122ba8ab32b0fd"
+        },
+        {
+          "s": "Number",
+          "p": "_has-uuid",
+          "o": "03301844-52cc-5f87-a7ba-2a7294ab0539",
+          "id": "b8289218461d665ddd3fa0ae366b669ace411cb4"
+        },
+        {
+          "s": "Number",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "0624d9db48c81eb1b3c0b95ace6acfb00c37e976"
+        },
+        {
+          "s": "Number",
+          "p": "is_a",
+          "o": "Mathematical",
+          "id": "4d03516d071b084576f89ab5b7d7c0863a651c09"
+        },
+        {
+          "s": "1b362765-d2b9-46d7-88c3-6a5c88c96070",
+          "p": "has_argument",
+          "o": "Numeral",
+          "id": "ab53ef862e546df1687fa025bc8f5c0986af46c2"
+        },
+        {
+          "s": "1b362765-d2b9-46d7-88c3-6a5c88c96070",
+          "p": "has_argument",
+          "o": "emmo-4d.hasSpatialPart.some(Numeral)",
+          "id": "32b37adbc0d9e6de6bf4e4862f218ad24e462f8d"
+        },
+        {
+          "s": "1b362765-d2b9-46d7-88c3-6a5c88c96070",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "5d537bbb4a4785d6962c67c23b9ad4561c0e38cb"
+        },
+        {
+          "s": "1b362765-d2b9-46d7-88c3-6a5c88c96070",
+          "p": "_has-uuid",
+          "o": "1b362765-d2b9-46d7-88c3-6a5c88c96070",
+          "id": "8a30d4acb7ceef16f16fa3907de5e87d4684b061"
+        },
+        {
+          "s": "1b362765-d2b9-46d7-88c3-6a5c88c96070",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/ClassConstruct",
+          "id": "a5fdf1cb323227dfdd4bce1fb8751b135b0b8ed0"
+        },
+        {
+          "s": "Area",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "da60859b69b6e34b394beb6a2c26f93fbc00737a"
+        },
+        {
+          "s": "Area",
+          "p": "_has-uuid",
+          "o": "b6313bef-ad66-5351-8340-998c76cace89",
+          "id": "93855500bf6960cee85639c9235d822a50f0b480"
+        },
+        {
+          "s": "Area",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "30c4477e8cfb6cecb8df9016c776e8c3b9c17f03"
+        },
+        {
+          "s": "Area",
+          "p": "is_a",
+          "o": "PhysicalQuantity",
+          "id": "89e75b18eb60fd8e21de7fff807eeae5ff4ffccc"
+        },
+        {
+          "s": "6062cf91-1dfe-4b61-9917-87903cac3eb4",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "444706c2a0872a1a16f6ef4ad1c4167b1d48180e"
+        },
+        {
+          "s": "6062cf91-1dfe-4b61-9917-87903cac3eb4",
+          "p": "_has-uuid",
+          "o": "6062cf91-1dfe-4b61-9917-87903cac3eb4",
+          "id": "a386197cefd011aa56adddadb9d8cdf5f8dc9a98"
+        },
+        {
+          "s": "6062cf91-1dfe-4b61-9917-87903cac3eb4",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "42e1cc9ce38c72cf281f833ecb8315c6b864d0df"
+        },
+        {
+          "s": "6062cf91-1dfe-4b61-9917-87903cac3eb4",
+          "p": "hasUnit",
+          "o": "m²",
+          "id": "d5a138f8f791a354cd139f73ca5f5931845a6488"
+        },
+        {
+          "s": "71f17912-8878-4651-b971-376b265175d2",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "b44163aa109a89d0964525749fedd1e7a181f471"
+        },
+        {
+          "s": "71f17912-8878-4651-b971-376b265175d2",
+          "p": "_has-uuid",
+          "o": "71f17912-8878-4651-b971-376b265175d2",
+          "id": "751b34fea69ff20d5b5c3dc8054482d9d6938dfa"
+        },
+        {
+          "s": "71f17912-8878-4651-b971-376b265175d2",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "d091305d52127f4902d2de74d41a09a08b130d94"
+        },
+        {
+          "s": "71f17912-8878-4651-b971-376b265175d2",
+          "p": "hasType",
+          "o": "Real",
+          "id": "d19811117b38d402c3c836e7c634bdba05be9776"
+        },
+        {
+          "s": "Pressure",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "53efbb79b42a118fcaef978449d303245acef523"
+        },
+        {
+          "s": "Pressure",
+          "p": "_has-uuid",
+          "o": "382a5b40-5280-5ba7-967a-4e3ffbe574a6",
+          "id": "b293429270014f669a937902e4e2e5949f4acf64"
+        },
+        {
+          "s": "Pressure",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "bb25bc9b8e9d620eb8e65077f9d84a59e111ce06"
+        },
+        {
+          "s": "Pressure",
+          "p": "is_a",
+          "o": "PhysicalQuantity",
+          "id": "fe27dcd3d2d9f4fc85b57caa97166deb9d5686b9"
+        },
+        {
+          "s": "081032fc-d91c-4a19-abdd-a22f61afcb2a",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d22ad854c284c1f01db14fd886747aaeb3922624"
+        },
+        {
+          "s": "081032fc-d91c-4a19-abdd-a22f61afcb2a",
+          "p": "_has-uuid",
+          "o": "081032fc-d91c-4a19-abdd-a22f61afcb2a",
+          "id": "42c0352a4d25e2ac2f2c72e79c797e754f1c1579"
+        },
+        {
+          "s": "081032fc-d91c-4a19-abdd-a22f61afcb2a",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "ca83f74d51aafe1b3f57c156c562d780d8c240ad"
+        },
+        {
+          "s": "081032fc-d91c-4a19-abdd-a22f61afcb2a",
+          "p": "hasUnit",
+          "o": "Pa",
+          "id": "18be20abf63728182142e9b5f7a0a83def4f31d2"
+        },
+        {
+          "s": "b59fe3ea-33ab-4d23-8485-43dc2672e63d",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "04ffbb40191f9dd1386a688a938a42ea46eed27a"
+        },
+        {
+          "s": "b59fe3ea-33ab-4d23-8485-43dc2672e63d",
+          "p": "_has-uuid",
+          "o": "b59fe3ea-33ab-4d23-8485-43dc2672e63d",
+          "id": "ca70062013bd98aa7bc864ba48007e5ed1b638e3"
+        },
+        {
+          "s": "b59fe3ea-33ab-4d23-8485-43dc2672e63d",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "17c26122763b0051ed96ebb9f412d251b6450882"
+        },
+        {
+          "s": "b59fe3ea-33ab-4d23-8485-43dc2672e63d",
+          "p": "hasType",
+          "o": "Real",
+          "id": "5f9bb2927ea85dc3eb7b94dcd7171e13a65e88af"
+        },
+        {
+          "s": "StiffnessTensor",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "57f3a80902adc1e070ce1aa3151d43e6cbcf9510"
+        },
+        {
+          "s": "StiffnessTensor",
+          "p": "_has-uuid",
+          "o": "1f7e423a-626f-515d-ae92-0d5659d362d8",
+          "id": "eee75652bbdd45713919ad8b5f8e0b770f6fd264"
+        },
+        {
+          "s": "StiffnessTensor",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "5a68c350889163097a25541b0f9381e8382fb81e"
+        },
+        {
+          "s": "StiffnessTensor",
+          "p": "is_a",
+          "o": "Pressure",
+          "id": "618c94bf1e41161e7b62941d6c4f0549f35d20c8"
+        },
+        {
+          "s": "bd279042-559c-4d31-9b4d-a3a940541d2b",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "f28e142b60c8c077e82fe96933e5c46c19b4984f"
+        },
+        {
+          "s": "bd279042-559c-4d31-9b4d-a3a940541d2b",
+          "p": "_has-uuid",
+          "o": "bd279042-559c-4d31-9b4d-a3a940541d2b",
+          "id": "12f96bae7e2fd0e8dda0055a3ae74b8996a6e7ed"
+        },
+        {
+          "s": "bd279042-559c-4d31-9b4d-a3a940541d2b",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "4bfbf148fcf08fd86e4e2cf6cca5c73da93eaa0a"
+        },
+        {
+          "s": "bd279042-559c-4d31-9b4d-a3a940541d2b",
+          "p": "hasUnit",
+          "o": "Pa",
+          "id": "4349122ee56611cfc1313afb91dc616805a51d35"
+        },
+        {
+          "s": "a7172ab9-704a-4845-a06d-1eac2f62426f",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "a110ced681d1d1e2e01b272277df5a36d4e4df10"
+        },
+        {
+          "s": "a7172ab9-704a-4845-a06d-1eac2f62426f",
+          "p": "_has-uuid",
+          "o": "a7172ab9-704a-4845-a06d-1eac2f62426f",
+          "id": "d038de9d40d0218b58b4a352fb578f241e7e7d6b"
+        },
+        {
+          "s": "a7172ab9-704a-4845-a06d-1eac2f62426f",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "73dd1eb987d62bbebf3e2319ec1aa284d5da030f"
+        },
+        {
+          "s": "a7172ab9-704a-4845-a06d-1eac2f62426f",
+          "p": "hasType",
+          "o": "Real",
+          "id": "cd596686f0ccd292bcd340e1a5d4879bcfaa7623"
+        },
+        {
+          "s": "AtomicNumber",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "58aec7c9688314ca045c7358637e2fc4ba3d9bad"
+        },
+        {
+          "s": "AtomicNumber",
+          "p": "_has-uuid",
+          "o": "27a762e4-41bc-5c76-9e3c-8dc93a7d17f9",
+          "id": "01a64a7c0c493ce9fb9ec989649f2a972dfecd56"
+        },
+        {
+          "s": "AtomicNumber",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "2a76c194496ec44c1afbb47fbaae38cb07f84b4a"
+        },
+        {
+          "s": "AtomicNumber",
+          "p": "is_a",
+          "o": "PhysicalQuantity",
+          "id": "c4ded826a9da646dd09f408833d9a4b83b5c33f7"
+        },
+        {
+          "s": "9517cda4-91e1-4722-87a6-bcd771f979c8",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "1719ebc85f8efe1e38728e51dd2ee5c1a7e5d5af"
+        },
+        {
+          "s": "9517cda4-91e1-4722-87a6-bcd771f979c8",
+          "p": "_has-uuid",
+          "o": "9517cda4-91e1-4722-87a6-bcd771f979c8",
+          "id": "f7d4c0d161e66d0f294fd8b852d738ad2240fde3"
+        },
+        {
+          "s": "9517cda4-91e1-4722-87a6-bcd771f979c8",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "2e113acf525dd72f55b3f238866862ef87fe3a60"
+        },
+        {
+          "s": "9517cda4-91e1-4722-87a6-bcd771f979c8",
+          "p": "hasType",
+          "o": "Integer",
+          "id": "460bc10fb97bec1f2cf121ad8fabf90477e1fd65"
+        },
+        {
+          "s": "Integer",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "88f71d5f2341bbeb06adcf4026204b82e0a5def6"
+        },
+        {
+          "s": "Integer",
+          "p": "_has-uuid",
+          "o": "35fb2f41-7ebe-5d5e-8580-b8b5283270ce",
+          "id": "d9976fc0ddaa3b4ac9beefe0ccb25be052dd905d"
+        },
+        {
+          "s": "Integer",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "02327b27db6ccc45fc1a06e0da68fdef117a671e"
+        },
+        {
+          "s": "Integer",
+          "p": "is_a",
+          "o": "Number",
+          "id": "ff10508563683a5c7c8af3578f21cbf80ebd69a4"
+        },
+        {
+          "s": "LatticeVector",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "6a20d4b446de83ced43cc8060455c1ad0644c494"
+        },
+        {
+          "s": "LatticeVector",
+          "p": "_has-uuid",
+          "o": "67ae493d-e8b6-5930-8997-b2bed3fd1290",
+          "id": "64cfcba256ceb31048ef3a24b544720faf0bb005"
+        },
+        {
+          "s": "LatticeVector",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "05f627e7ff42bac7d82ea6251549d061415398c7"
+        },
+        {
+          "s": "LatticeVector",
+          "p": "is_a",
+          "o": "PhysicalQuantity",
+          "id": "7dce6d095687a343a2cfe5637020be2db9baedd6"
+        },
+        {
+          "s": "63e99e28-dbd1-4841-8d7b-ea809e126c53",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d80b626ac48c61ecf6fa4bca0b3a8ecf5d582e59"
+        },
+        {
+          "s": "63e99e28-dbd1-4841-8d7b-ea809e126c53",
+          "p": "_has-uuid",
+          "o": "63e99e28-dbd1-4841-8d7b-ea809e126c53",
+          "id": "18eb906efefafdb9fe2d6bef26678d2f15ec3e7d"
+        },
+        {
+          "s": "63e99e28-dbd1-4841-8d7b-ea809e126c53",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "8df9d2c362ea06129070a62fcbc32e4091f20aa9"
+        },
+        {
+          "s": "63e99e28-dbd1-4841-8d7b-ea809e126c53",
+          "p": "hasUnit",
+          "o": "m",
+          "id": "9ddacaf4007622c45a7749d75564b2a0b7015a09"
+        },
+        {
+          "s": "d5281ee3-20d1-4480-b600-c90009a50803",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "f79c103d1e7d115847e4e58d4198f378d7ca785d"
+        },
+        {
+          "s": "d5281ee3-20d1-4480-b600-c90009a50803",
+          "p": "_has-uuid",
+          "o": "d5281ee3-20d1-4480-b600-c90009a50803",
+          "id": "9eca104240d2320b2d4bd9bdcd578d9e68f0d043"
+        },
+        {
+          "s": "d5281ee3-20d1-4480-b600-c90009a50803",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "1725ec357bc2b4e73130cef33cff33b6b72a90af"
+        },
+        {
+          "s": "d5281ee3-20d1-4480-b600-c90009a50803",
+          "p": "hasType",
+          "o": "Real",
+          "id": "29311dc2c6819f51d8c4b13080bac30681597967"
+        },
+        {
+          "s": "Spacegroup",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3b994708ad5fb1ab9eee6cc449628f8dff490662"
+        },
+        {
+          "s": "Spacegroup",
+          "p": "_has-uuid",
+          "o": "912b0c81-11ea-5202-9661-442d8a168722",
+          "id": "5ffc8c97d510599bb0e9629b3d335bdc2b3c622c"
+        },
+        {
+          "s": "Spacegroup",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "51157b6e380f0de6e1519100a7bb75810a4b817e"
+        },
+        {
+          "s": "Spacegroup",
+          "p": "is_a",
+          "o": "DescriptiveProperty",
+          "id": "5d87f42698ea007d93d7e447cee8c35bd79a8a0d"
+        },
+        {
+          "s": "DescriptiveProperty",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "cc1ad08c0137fab101d301656f6f5adc35ee4b93"
+        },
+        {
+          "s": "DescriptiveProperty",
+          "p": "_has-uuid",
+          "o": "e3911cb1-2bc9-5066-8cca-6cf486707dd2",
+          "id": "23da6eca62eec6a1a6fc051bd114da4ba092e3d9"
+        },
+        {
+          "s": "DescriptiveProperty",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "f130f914a943af998926798de2e4b5259a28b387"
+        },
+        {
+          "s": "DescriptiveProperty",
+          "p": "is_a",
+          "o": "QuantitativeProperty",
+          "id": "abcb6a5a3ee48f1b610acab1252c9f2b4a4e986d"
+        },
+        {
+          "s": "61438988-721d-4044-86a2-79e5e13df96e",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "981eb11a2ecf6a3efe202ccb7c77e6a9b4a3473e"
+        },
+        {
+          "s": "61438988-721d-4044-86a2-79e5e13df96e",
+          "p": "_has-uuid",
+          "o": "61438988-721d-4044-86a2-79e5e13df96e",
+          "id": "6dd247be88505861bdbcafc3b758311ed54594e8"
+        },
+        {
+          "s": "61438988-721d-4044-86a2-79e5e13df96e",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "e9d7c0d3b3395aef5a0fc781a90b040276acaf1b"
+        },
+        {
+          "s": "61438988-721d-4044-86a2-79e5e13df96e",
+          "p": "hasType",
+          "o": "String",
+          "id": "43f374cdac328acf2c836eb41c4ee2a36be0e4f6"
+        },
+        {
+          "s": "String",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "83ebc32566f1d69cc35f68b3153b546f65d2f818"
+        },
+        {
+          "s": "String",
+          "p": "_has-uuid",
+          "o": "005e79a2-3eca-5772-b5ed-c031803785a1",
+          "id": "5feedf09b0806b652119234a59a690da7deaaf7b"
+        },
+        {
+          "s": "String",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "76180bdc3e514fb61aa38f4672952207557eddae"
+        },
+        {
+          "s": "String",
+          "p": "is_a",
+          "o": "SymbolicStructured",
+          "id": "8de053080538f9883dcb59b8320860992f24a3ca"
+        },
+        {
+          "s": "fc1a5f2c-1b61-4620-b1da-de740ad6dc87",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "91261c312330d6e3a8c8dfd3bc142e3231ad62c9"
+        },
+        {
+          "s": "fc1a5f2c-1b61-4620-b1da-de740ad6dc87",
+          "p": "_has-uuid",
+          "o": "fc1a5f2c-1b61-4620-b1da-de740ad6dc87",
+          "id": "238c7fc1e29a2754cf389a549880d9abe323421c"
+        },
+        {
+          "s": "fc1a5f2c-1b61-4620-b1da-de740ad6dc87",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "55480c33f5d26376e5afd64a3879ae0c4f87c708"
+        },
+        {
+          "s": "fc1a5f2c-1b61-4620-b1da-de740ad6dc87",
+          "p": "hasProperPart",
+          "o": "Symbol",
+          "id": "1428b793552fe884408d16a02993f8f440bc4bfc"
+        },
+        {
+          "s": "Plasticity",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d292f4a1f1effc5cfa4046d70607073658861a60"
+        },
+        {
+          "s": "Plasticity",
+          "p": "_has-uuid",
+          "o": "0ced42fe-5bf4-5f38-94bf-0c995b35ba39",
+          "id": "336eab1625eda26f3684718812868aea32025632"
+        },
+        {
+          "s": "Plasticity",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "4ff4300eb3a0d9d4eb48f89abb16ae8a13f4285b"
+        },
+        {
+          "s": "Plasticity",
+          "p": "is_a",
+          "o": "PhysicalQuantity",
+          "id": "340e10c6215939674e26d22a7fe85dea64f2e5ec"
+        },
+        {
+          "s": "13d26814-e19c-43cc-b04b-4d8bfaccfe04",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "254b692ccbb5ebb446735d3d2a17651e94445dd9"
+        },
+        {
+          "s": "13d26814-e19c-43cc-b04b-4d8bfaccfe04",
+          "p": "_has-uuid",
+          "o": "13d26814-e19c-43cc-b04b-4d8bfaccfe04",
+          "id": "a313946fd16944d7cfda14c55d6b35e5707696a9"
+        },
+        {
+          "s": "13d26814-e19c-43cc-b04b-4d8bfaccfe04",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "b3a6f0580bb8418d9df9e6b2a0d9a2e17a424d18"
+        },
+        {
+          "s": "13d26814-e19c-43cc-b04b-4d8bfaccfe04",
+          "p": "hasUnit",
+          "o": "Pa",
+          "id": "9c370276705da6df588b4dd524db608c2eac56a0"
+        },
+        {
+          "s": "2ec19268-e5b1-47a4-92c3-1365aaeefb78",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "73de4f02a0db664ebaf43c2c6e254750a468f1f3"
+        },
+        {
+          "s": "2ec19268-e5b1-47a4-92c3-1365aaeefb78",
+          "p": "_has-uuid",
+          "o": "2ec19268-e5b1-47a4-92c3-1365aaeefb78",
+          "id": "b7697e6b87d9044fd415c3f53fb546e5bf20c5f9"
+        },
+        {
+          "s": "2ec19268-e5b1-47a4-92c3-1365aaeefb78",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "5c1e8e5cb9363ca690d8d81196f677e2fda2abff"
+        },
+        {
+          "s": "2ec19268-e5b1-47a4-92c3-1365aaeefb78",
+          "p": "hasType",
+          "o": "Real",
+          "id": "cf6b94143bbb6e0ba9583820e269d6859f20319b"
+        },
+        {
+          "s": "TractionSeparation",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "d4af96420ccc6e73006e36af98fe0284bc8cf345"
+        },
+        {
+          "s": "TractionSeparation",
+          "p": "_has-uuid",
+          "o": "97f01b86-49ad-5a45-871f-4c207a11206e",
+          "id": "4c1cf6796bcdf8b8de4fc484f0a44f63ec522d87"
+        },
+        {
+          "s": "TractionSeparation",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "bebcdf77887a81f53515e19c3a5035544fde4572"
+        },
+        {
+          "s": "TractionSeparation",
+          "p": "is_a",
+          "o": "Pressure",
+          "id": "ce05858f23464d588e7264ad8fc3a8a90f72b4a9"
+        },
+        {
+          "s": "efb80447-e721-48c7-ab6c-18983fdd3064",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "c42d8bc623d19c79a7ec30bc897d2e6df2fcaca4"
+        },
+        {
+          "s": "efb80447-e721-48c7-ab6c-18983fdd3064",
+          "p": "_has-uuid",
+          "o": "efb80447-e721-48c7-ab6c-18983fdd3064",
+          "id": "8b324b1bb24e6cfe89086f45fef78d0aa9759151"
+        },
+        {
+          "s": "efb80447-e721-48c7-ab6c-18983fdd3064",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "310df5f2e32e8e409b19a575a6846ce06c3b0c3c"
+        },
+        {
+          "s": "efb80447-e721-48c7-ab6c-18983fdd3064",
+          "p": "hasUnit",
+          "o": "Pa",
+          "id": "bd537a6c11a2aa674a9ad2e77415be6b86550048"
+        },
+        {
+          "s": "124b4686-ecee-4d59-abe6-9194c9d1fdd2",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "af71d1acb75e095afac5935d4f879180443a753a"
+        },
+        {
+          "s": "124b4686-ecee-4d59-abe6-9194c9d1fdd2",
+          "p": "_has-uuid",
+          "o": "124b4686-ecee-4d59-abe6-9194c9d1fdd2",
+          "id": "fef802cf2b71947fb75fd2c5119f28053ccf8899"
+        },
+        {
+          "s": "124b4686-ecee-4d59-abe6-9194c9d1fdd2",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "8b2359f44835669214e9dbe0232267a0de7805e2"
+        },
+        {
+          "s": "124b4686-ecee-4d59-abe6-9194c9d1fdd2",
+          "p": "hasType",
+          "o": "Real",
+          "id": "d7121333da9cef0bd8b1bb85f4cb0305bf5374ea"
+        },
+        {
+          "s": "LoadCurve",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "1d0f549e837cb9808fc79872939ecad93971a8c8"
+        },
+        {
+          "s": "LoadCurve",
+          "p": "_has-uuid",
+          "o": "1957c0ff-6245-5419-aadd-d41e50c30e15",
+          "id": "ecdb8d0a41446eb345f13c37e742d765e4047684"
+        },
+        {
+          "s": "LoadCurve",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "fccd92ae0dc30f6397d9fe440b2821d78dc2c946"
+        },
+        {
+          "s": "LoadCurve",
+          "p": "is_a",
+          "o": "Pressure",
+          "id": "1c4b8e4e1427438fd0d00ec5a8714c70a67b1c98"
+        },
+        {
+          "s": "f204410f-4b74-44cb-bb84-b87f25d4e8c7",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "0757d9badcaf6a6e586e172783a1f78003bea565"
+        },
+        {
+          "s": "f204410f-4b74-44cb-bb84-b87f25d4e8c7",
+          "p": "_has-uuid",
+          "o": "f204410f-4b74-44cb-bb84-b87f25d4e8c7",
+          "id": "e8da9e1cb62b92c0626f162be911e35764b577ce"
+        },
+        {
+          "s": "f204410f-4b74-44cb-bb84-b87f25d4e8c7",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "25e237b73100b8e87cacbbd115becd1a543c0ca9"
+        },
+        {
+          "s": "f204410f-4b74-44cb-bb84-b87f25d4e8c7",
+          "p": "hasUnit",
+          "o": "Pa",
+          "id": "98922b0cebb8d372419596be1f7d21b0f0c4c722"
+        },
+        {
+          "s": "ea011c9c-2823-4ce6-a906-a8604e407e1d",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "e1c3c2351fd8a72b26266622892a5569c99b058e"
+        },
+        {
+          "s": "ea011c9c-2823-4ce6-a906-a8604e407e1d",
+          "p": "_has-uuid",
+          "o": "ea011c9c-2823-4ce6-a906-a8604e407e1d",
+          "id": "6613ee1958aef44cabf28d468ff4afc225e6c607"
+        },
+        {
+          "s": "ea011c9c-2823-4ce6-a906-a8604e407e1d",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "85a688b01a0e99097a59528388d847706a8363d0"
+        },
+        {
+          "s": "ea011c9c-2823-4ce6-a906-a8604e407e1d",
+          "p": "hasType",
+          "o": "Real",
+          "id": "62f1764a18bb33bbccc1827b22cd7e4f5dece061"
+        },
+        {
+          "s": "Interface",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "f65e39c99d08e4c4972f620ce62502bf15791e79"
+        },
+        {
+          "s": "Interface",
+          "p": "_has-uuid",
+          "o": "0cfc1e4b-a1d8-508c-b5f6-9c43637f64d1",
+          "id": "51dafd494ff296ac80a0c9aa884fd9ba80fd9df8"
+        },
+        {
+          "s": "Interface",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "29ca2d3b54d31d759fa3f3f8ce43b7533c3c54c0"
+        },
+        {
+          "s": "Interface",
+          "p": "is_a",
+          "o": "Plane",
+          "id": "13396545d47ecffefe705d9f5b6454d887b1882f"
+        },
+        {
+          "s": "Plane",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "2c8b43bf729473888127bb0ba18466d24002991c"
+        },
+        {
+          "s": "Plane",
+          "p": "_has-uuid",
+          "o": "acb12ed1-6a4a-5245-9629-948641cb6e11",
+          "id": "60a8433cdf1cd7a83a9843aab4e3742865dfde07"
+        },
+        {
+          "s": "Plane",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "28559a0fbb1484c663117ef37b298a97b8671a02"
+        },
+        {
+          "s": "Plane",
+          "p": "is_a",
+          "o": "2-manifold",
+          "id": "c0eb0c21c5f70cde1c0b6f5b79b00ee4c6db79fd"
+        },
+        {
+          "s": "2-manifold",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "6c785d2002cdb908ce2dfa501353d1a7dddc094c"
+        },
+        {
+          "s": "2-manifold",
+          "p": "_has-uuid",
+          "o": "fd3c1742-f9b9-5916-9478-6a2ccd5994d9",
+          "id": "8dfe16a43b5b5404512309b122a4deaf988b2592"
+        },
+        {
+          "s": "2-manifold",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "dbb657680cbd3750f95a6d534bd7aefa2237adec"
+        },
+        {
+          "s": "2-manifold",
+          "p": "is_a",
+          "o": "Geometrical",
+          "id": "b1459662cdd9ef6c2d0125f6e05abdaee3c211b0"
+        },
+        {
+          "s": "Geometrical",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "03cccec8af080c6a68edb5f8ccb601a07106c21b"
+        },
+        {
+          "s": "Geometrical",
+          "p": "_has-uuid",
+          "o": "4aba2eef-7c29-5db8-b5cc-eaf2bfd2932c",
+          "id": "8bf98598874fff61222d3839a7f6dfaa8ea6f423"
+        },
+        {
+          "s": "Geometrical",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "1dfd1d5119a5736471ab3831ec01b70844851406"
+        },
+        {
+          "s": "Geometrical",
+          "p": "is_a",
+          "o": "Graphical",
+          "id": "4be5820ea7b2500a97e95d15d852fa2adeea315c"
+        },
+        {
+          "s": "CrystalUnitCell",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "b9af3adb641190999c0752dbfef69b6c2ee05a51"
+        },
+        {
+          "s": "CrystalUnitCell",
+          "p": "_has-uuid",
+          "o": "7dd78511-d4a4-50cd-9922-38fbd4db0b17",
+          "id": "1f3ea1d99e2cfd6b4d2e9dd79d58305dc6baab98"
+        },
+        {
+          "s": "CrystalUnitCell",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "6b9c0e60dbd7119062e1632934fc6f25c7301bb8"
+        },
+        {
+          "s": "CrystalUnitCell",
+          "p": "is_a",
+          "o": "Mesoscopic",
+          "id": "091d3284cb6bae2b4eaa68438a8becbec7f63804"
+        },
+        {
+          "s": "Mesoscopic",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "b7d5f331c4bdc38ad29bced744f3614e7c11f625"
+        },
+        {
+          "s": "Mesoscopic",
+          "p": "_has-uuid",
+          "o": "b13dbcc5-f568-5392-a1c2-78e872143bed",
+          "id": "b5cc0b221f99cf37dae551b24dd6af48f68da994"
+        },
+        {
+          "s": "Mesoscopic",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d7b5049f7ae491ead16f9696ed8d5b89a13937ec"
+        },
+        {
+          "s": "Mesoscopic",
+          "p": "is_a",
+          "o": "State",
+          "id": "bcf80cbaeea0948b8359537e2ca9e28407010357"
+        },
+        {
+          "s": "bb88076b-77c9-48bc-9256-b4fac80086d7",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "2a67ffa1237a134c5d796ee14d166e8258d1a8bc"
+        },
+        {
+          "s": "bb88076b-77c9-48bc-9256-b4fac80086d7",
+          "p": "_has-uuid",
+          "o": "bb88076b-77c9-48bc-9256-b4fac80086d7",
+          "id": "987d125a270ccea03dcc5ec368db5e153d51006a"
+        },
+        {
+          "s": "bb88076b-77c9-48bc-9256-b4fac80086d7",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "ffc96748ddc4c8b9492983cf53365bd86b75dd63"
+        },
+        {
+          "s": "bb88076b-77c9-48bc-9256-b4fac80086d7",
+          "p": "hasSpatialDirectPart",
+          "o": "BondedAtom",
+          "id": "aa4b3c5c114fe6729335b5453bc002d6c2c1be3c"
+        },
+        {
+          "s": "BondedAtom",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "327e692c150dc49c8252ae14926cd1224c7ffd7b"
+        },
+        {
+          "s": "BondedAtom",
+          "p": "_has-uuid",
+          "o": "95c936d0-507c-5d36-97a9-30abafbb2d74",
+          "id": "151a6d31adec8e77ffa8cd125a08c08d0889426a"
+        },
+        {
+          "s": "BondedAtom",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "0024aa4df8e0f79a16860145074591a0495d68a5"
+        },
+        {
+          "s": "BondedAtom",
+          "p": "is_a",
+          "o": "Atom",
+          "id": "3c36bd465a6d5d2d4c60b70f5c7374ddfdab9a4c"
+        },
+        {
+          "s": "Atom",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "4b674e2c59705089303c7898ac19c2928bb1a474"
+        },
+        {
+          "s": "Atom",
+          "p": "_has-uuid",
+          "o": "3538b450-39c0-591a-9afa-989bd92a07cf",
+          "id": "4c8d2320d070a479a50134067aaaeca4e3557d0a"
+        },
+        {
+          "s": "Atom",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "43f207e0950492946333545e899fef03e5193abd"
+        },
+        {
+          "s": "Atom",
+          "p": "is_a",
+          "o": "Atomic",
+          "id": "1f996da67fda3ad1c36d3a888b1d437a90369db4"
+        },
+        {
+          "s": "Atomic",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "937eadb331694beba4e1916b3be75edebd04c874"
+        },
+        {
+          "s": "Atomic",
+          "p": "_has-uuid",
+          "o": "c41c6717-56c2-5543-880a-a3fa46b19801",
+          "id": "c4a252f913d3a84d47d4d0edf448213454ab477f"
+        },
+        {
+          "s": "Atomic",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "4dba86ffce7e1257c22e7aa282d61148e76a9a16"
+        },
+        {
+          "s": "Atomic",
+          "p": "is_a",
+          "o": "State",
+          "id": "64e3f428afb6a0f97898621cb535a547c2119334"
+        },
+        {
+          "s": "248bb2cb-4532-44f1-ab67-ef8088fd1bc8",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "4a92a10fd23e3606b8a91fcc2e884d479b3096b9"
+        },
+        {
+          "s": "248bb2cb-4532-44f1-ab67-ef8088fd1bc8",
+          "p": "_has-uuid",
+          "o": "248bb2cb-4532-44f1-ab67-ef8088fd1bc8",
+          "id": "d19312b3b1fb7406eaa2512b70e98c1debb7c48e"
+        },
+        {
+          "s": "248bb2cb-4532-44f1-ab67-ef8088fd1bc8",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "41a84d3f24d51ab1ff0085aee03b11866dc82d7e"
+        },
+        {
+          "s": "248bb2cb-4532-44f1-ab67-ef8088fd1bc8",
+          "p": "hasSpatialDirectPart",
+          "o": "ElectronCloud",
+          "id": "ef7d2a82be11fbc28119c7f7f742ca53e869c8cd"
+        },
+        {
+          "s": "ElectronCloud",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "11a237dea91d61869406f3dbfed0e0538ead0e03"
+        },
+        {
+          "s": "ElectronCloud",
+          "p": "_has-uuid",
+          "o": "53dc62cb-8cba-5472-87b4-5e4da3af8ab1",
+          "id": "183b11dcbda5d8352ed5997d65f6a82b829326d8"
+        },
+        {
+          "s": "ElectronCloud",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "3e8d966b809222091f938732d266906aecb7608b"
+        },
+        {
+          "s": "ElectronCloud",
+          "p": "is_a",
+          "o": "Subatomic",
+          "id": "2fff2c03b7f52aaa8eed98e2f18283aa2c458d7b"
+        },
+        {
+          "s": "bf4899df-f925-46d3-a440-a7ffd0febd99",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "5b12b5ae494677d0a6b7e8d4d090c2bd73c214b2"
+        },
+        {
+          "s": "bf4899df-f925-46d3-a440-a7ffd0febd99",
+          "p": "_has-uuid",
+          "o": "bf4899df-f925-46d3-a440-a7ffd0febd99",
+          "id": "999304397127ec4f756da7cfd2ef3cc50ee61e30"
+        },
+        {
+          "s": "bf4899df-f925-46d3-a440-a7ffd0febd99",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "bede40f0b13e652a4afa943abff93fd59dc79237"
+        },
+        {
+          "s": "bf4899df-f925-46d3-a440-a7ffd0febd99",
+          "p": "hasSpatialDirectPart",
+          "o": "Electron",
+          "id": "2688c480190e15b78f0636727913604c6d6d1757"
+        },
+        {
+          "s": "Electron",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "ff94877baac1326198c8cdbea77e5c940b4845bf"
+        },
+        {
+          "s": "Electron",
+          "p": "_has-uuid",
+          "o": "93a0c2e2-8bbf-5bb0-b202-4951de752e3d",
+          "id": "3c0ffbee612abe808dc3725489f8e9cccdd12f02"
+        },
+        {
+          "s": "Electron",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "0ebe4f12e903a5cfc6e287a136c8ed610434cba0"
+        },
+        {
+          "s": "Electron",
+          "p": "is_a",
+          "o": "Massive",
+          "id": "e2deab55107df36f3e85b0c04621a613b7ee32a9"
+        },
+        {
+          "s": "Massive",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "01f6367432697586e3a2af31f12f72a3c53d922b"
+        },
+        {
+          "s": "Massive",
+          "p": "_has-uuid",
+          "o": "50b23406-bdf6-59fe-b039-ed968f24f270",
+          "id": "e77abe439a13f9736336d9084a4c9e4f422d55d3"
+        },
+        {
+          "s": "Massive",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "b81fbc378beecaca6bd52008d69c1b58ac8d1e9f"
+        },
+        {
+          "s": "Massive",
+          "p": "is_a",
+          "o": "Elementary",
+          "id": "2ab6e56d7a52117ea61f25878557e8f431c67577"
+        },
+        {
+          "s": "96e383de-11d5-4636-9b96-1b1de26fbcd5",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3954b8c440284cdac3e9db373530e1f2d62ad157"
+        },
+        {
+          "s": "96e383de-11d5-4636-9b96-1b1de26fbcd5",
+          "p": "_has-uuid",
+          "o": "96e383de-11d5-4636-9b96-1b1de26fbcd5",
+          "id": "a3654b0e5bf0d5a5182958f576bd37a6790214bb"
+        },
+        {
+          "s": "96e383de-11d5-4636-9b96-1b1de26fbcd5",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "b2aa7bf0b9ac134c97f51e7131376580d03dab0c"
+        },
+        {
+          "s": "96e383de-11d5-4636-9b96-1b1de26fbcd5",
+          "p": "hasSpatialDirectPart",
+          "o": "Nucleus",
+          "id": "1bc92613f4e3ac306bb8abcb9d26ec56141efede"
+        },
+        {
+          "s": "Nucleus",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3763c8c0751919a0b8c595e823e01fd1c4f5dd27"
+        },
+        {
+          "s": "Nucleus",
+          "p": "_has-uuid",
+          "o": "83a57f0a-107a-577d-aa59-a8c072b162ef",
+          "id": "2e9c2ed401ce1796385b4e533f0283151ed5d63c"
+        },
+        {
+          "s": "Nucleus",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d2d1968c55c3ea072279f07c3152df48dea8980d"
+        },
+        {
+          "s": "Nucleus",
+          "p": "is_a",
+          "o": "Subatomic",
+          "id": "f76d4d608b80f00d3632c2effb965b340a8d46e4"
+        },
+        {
+          "s": "7588ed93-f9ec-4f18-ba54-8a4506677cc2",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "7fcc1f2d428a98ceb3597aa07453298b9ae26c1b"
+        },
+        {
+          "s": "7588ed93-f9ec-4f18-ba54-8a4506677cc2",
+          "p": "_has-uuid",
+          "o": "7588ed93-f9ec-4f18-ba54-8a4506677cc2",
+          "id": "8339976d29ad22831e78b236e4456b388499b80a"
+        },
+        {
+          "s": "7588ed93-f9ec-4f18-ba54-8a4506677cc2",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "47be14efeb8049d5fb5a2b1ea6bdaa5024908e56"
+        },
+        {
+          "s": "7588ed93-f9ec-4f18-ba54-8a4506677cc2",
+          "p": "hasSpatialDirectPart",
+          "o": "Nucleon",
+          "id": "e51a8feec64573d4b261195ad2d41c99a768511e"
+        },
+        {
+          "s": "Nucleon",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "c08c872ca5277a845b58d7a748b4386a3c995d43"
+        },
+        {
+          "s": "Nucleon",
+          "p": "_has-uuid",
+          "o": "153e82f9-ac9a-5d76-9e6d-f596959acae0",
+          "id": "1b11ed72a5b3c0e3d1891b78465e51aff426adee"
+        },
+        {
+          "s": "Nucleon",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "1561aad6cd12bed5d8400c8dabc91f8adeca4bf2"
+        },
+        {
+          "s": "Nucleon",
+          "p": "is_a",
+          "o": "Subatomic",
+          "id": "968f2f8f6f004be2ae1913a0c8e5d6cbcc0bbc47"
+        },
+        {
+          "s": "4311cfa4-cff1-4477-9828-31460977e324",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "33b4a9c6d7d8936288b9dcb7e09248f95335ed4e"
+        },
+        {
+          "s": "4311cfa4-cff1-4477-9828-31460977e324",
+          "p": "_has-uuid",
+          "o": "4311cfa4-cff1-4477-9828-31460977e324",
+          "id": "5d1fac802402e8990f217d7279cb29ab8bdf31bb"
+        },
+        {
+          "s": "4311cfa4-cff1-4477-9828-31460977e324",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "6e0a2b714722618cb6418303551bd8bc678b9bfb"
+        },
+        {
+          "s": "4311cfa4-cff1-4477-9828-31460977e324",
+          "p": "hasSpatialDirectPart",
+          "o": "Proton",
+          "id": "194db41d03c8097674a515bde113e23b7cbb6601"
+        },
+        {
+          "s": "Proton",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "f4382108d7978678fc2d32677d1cc5c79e22399d"
+        },
+        {
+          "s": "Proton",
+          "p": "_has-uuid",
+          "o": "5905ba58-8535-5f2c-877d-3b4f49b5286d",
+          "id": "cb908c42fec4adc44e5f19011f8422856b843cf3"
+        },
+        {
+          "s": "Proton",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "241f16c9e47d1dd47e24fdf5749d4054ea318dac"
+        },
+        {
+          "s": "Proton",
+          "p": "is_a",
+          "o": "Nucleon",
+          "id": "185fa74faa8b23d0ca9742ffb16b120a862124a4"
+        },
+        {
+          "s": "6e97a9b6-fe9f-41cd-a336-d7db6fc98955",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "49af28981de33d9a8fcffc11fc97abfedb83dc60"
+        },
+        {
+          "s": "6e97a9b6-fe9f-41cd-a336-d7db6fc98955",
+          "p": "_has-uuid",
+          "o": "6e97a9b6-fe9f-41cd-a336-d7db6fc98955",
+          "id": "ce4dd10c65307cc685a2f17262cd8e0b318f6025"
+        },
+        {
+          "s": "6e97a9b6-fe9f-41cd-a336-d7db6fc98955",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "944ca1fa9366734452fe585ec2694b5cddb3f6d6"
+        },
+        {
+          "s": "6e97a9b6-fe9f-41cd-a336-d7db6fc98955",
+          "p": "hasSpatialDirectPart",
+          "o": "Quark",
+          "id": "b1e1a687443d9133cca6d76fc50eaeef0810df61"
+        },
+        {
+          "s": "Quark",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "5ef20d92eeb52604942bccf9973f7a67d6846c6a"
+        },
+        {
+          "s": "Quark",
+          "p": "_has-uuid",
+          "o": "9bc4c258-4d08-59af-98fd-5692c364c3cb",
+          "id": "298c42e206cd8180e841b230dad450693502de44"
+        },
+        {
+          "s": "Quark",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "96fff416213aa0355d1a4b3c6a8dd70a2121d3a8"
+        },
+        {
+          "s": "Quark",
+          "p": "is_a",
+          "o": "Massive",
+          "id": "1a12bbde458ac8bacb564a1d6d1798cc1be058f6"
+        },
+        {
+          "s": "ef1574c0-1e73-4c4c-a301-b21d65161010",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "e9a4061149b6d3de0a03b09ca05817ace6f5542f"
+        },
+        {
+          "s": "ef1574c0-1e73-4c4c-a301-b21d65161010",
+          "p": "_has-uuid",
+          "o": "ef1574c0-1e73-4c4c-a301-b21d65161010",
+          "id": "f8e24b680265c0291dde7834ced4d1631bcc8650"
+        },
+        {
+          "s": "ef1574c0-1e73-4c4c-a301-b21d65161010",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "f59d7aaa2b4d5444ad96d900347cd130427d15e7"
+        },
+        {
+          "s": "ef1574c0-1e73-4c4c-a301-b21d65161010",
+          "p": "hasSpatialPart",
+          "o": "Interface",
+          "id": "d3ddc37c41aef45d7450f406edd16b823c5821bd"
+        },
+        {
+          "s": "Crystal",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "4897f2b853153e8894cc5be91258847ffdccdc9f"
+        },
+        {
+          "s": "Crystal",
+          "p": "_has-uuid",
+          "o": "0bf5ce5c-c281-5029-a0a8-1c994f174dfa",
+          "id": "ad18650e3fd4afaa63903051c890aec5afd9a8b7"
+        },
+        {
+          "s": "Crystal",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "810b636374eda3cab840b26adf6dcd5573f633a2"
+        },
+        {
+          "s": "Crystal",
+          "p": "is_a",
+          "o": "Solid",
+          "id": "7f9c7e8dbbeadfca5fcdf2e2f0363d522f4deb22"
+        },
+        {
+          "s": "Solid",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "f6e3abb350d82c7f50ae0598b9e418a2c32fc2ff"
+        },
+        {
+          "s": "Solid",
+          "p": "_has-uuid",
+          "o": "7e98003b-ba72-5828-8970-582588059c85",
+          "id": "8033e1ee96cdb474cecf3a094e75235771a00fab"
+        },
+        {
+          "s": "Solid",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d689fd0ef786777e84f9d06f051710c94657d637"
+        },
+        {
+          "s": "Solid",
+          "p": "is_a",
+          "o": "Continuum",
+          "id": "bd266dab103f7a44df11bce1fc5e14d865455a3c"
+        },
+        {
+          "s": "Continuum",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "bdcd4066d46de4985e0c520f5a670a025cad8a81"
+        },
+        {
+          "s": "Continuum",
+          "p": "_has-uuid",
+          "o": "42542ce7-9f3a-5e39-84d3-b8eda8ab4739",
+          "id": "8103780c07550c539b5027c88ca7e05b066aaa05"
+        },
+        {
+          "s": "Continuum",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "bcfd093b255746d799c3d85e55c9f636d3aac11b"
+        },
+        {
+          "s": "Continuum",
+          "p": "is_a",
+          "o": "State",
+          "id": "d6bc597f6e357b6763516379fb516f79e12e48cf"
+        },
+        {
+          "s": "f5ee19a3-54bd-4233-a504-1e82d4f84929",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "dca26a329d0f0083652c425756482c02a483858a"
+        },
+        {
+          "s": "f5ee19a3-54bd-4233-a504-1e82d4f84929",
+          "p": "_has-uuid",
+          "o": "f5ee19a3-54bd-4233-a504-1e82d4f84929",
+          "id": "100e97e13843c2a0067e0c02d6ada6def870fe5a"
+        },
+        {
+          "s": "f5ee19a3-54bd-4233-a504-1e82d4f84929",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "8f9b1622bed988bb38b0634e036fde6eca95877a"
+        },
+        {
+          "s": "f5ee19a3-54bd-4233-a504-1e82d4f84929",
+          "p": "hasSpatialDirectPart",
+          "o": "CrystalUnitCell",
+          "id": "793034146df267912b1c0c427db838ee25bd2bb4"
+        },
+        {
+          "s": "Boundary",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "851483a060b788c30c2162fbcad0343a1351fcf4"
+        },
+        {
+          "s": "Boundary",
+          "p": "_has-uuid",
+          "o": "f21c6ff9-df63-57b2-a947-7e47e6fb9787",
+          "id": "09bd6509a54da9db321e2de3bd3564c5a530b11c"
+        },
+        {
+          "s": "Boundary",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d507ff62d38d8d0ab730693418957ee8bc04591b"
+        },
+        {
+          "s": "Boundary",
+          "p": "is_a",
+          "o": "Continuum",
+          "id": "d80d6542758760c13c47a3ca6d0adba023f74a7e"
+        },
+        {
+          "s": "5675d77e-7898-42d9-9f2c-383314dc44d6",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "a74b2234f0c62fff1ee2de23f6b3447960faa75c"
+        },
+        {
+          "s": "5675d77e-7898-42d9-9f2c-383314dc44d6",
+          "p": "_has-uuid",
+          "o": "5675d77e-7898-42d9-9f2c-383314dc44d6",
+          "id": "1407cecfe143aa836111fe1cf7f6c38f60560970"
+        },
+        {
+          "s": "5675d77e-7898-42d9-9f2c-383314dc44d6",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "e30fb34b24f558875e97f81a0d79b88d1c47bcd4"
+        },
+        {
+          "s": "5675d77e-7898-42d9-9f2c-383314dc44d6",
+          "p": "hasSpatialPart",
+          "o": "Interface",
+          "id": "9ad001dd280d870691494d610debdb5c5f51826f"
+        },
+        {
+          "s": "Phase",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "3ca535ff565ba9e84156f1eb6f39685a2a59b7a8"
+        },
+        {
+          "s": "Phase",
+          "p": "_has-uuid",
+          "o": "5ed1a784-e798-5ffb-97a6-ab67ceb73ebf",
+          "id": "c1b53a82fee9d5f4761b7140cf3fe71b79a42c17"
+        },
+        {
+          "s": "Phase",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d01202e8ed12c1dc126d6118f5283b40e61becd9"
+        },
+        {
+          "s": "Phase",
+          "p": "is_a",
+          "o": "Continuum",
+          "id": "66de6dda152c7ee874a673fb751ddfed2502b290"
+        },
+        {
+          "s": "RVE",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "c656cec4a3c895cd4811f85b5972f791f3c28bf1"
+        },
+        {
+          "s": "RVE",
+          "p": "_has-uuid",
+          "o": "6ba7de33-6999-5c82-8880-95c6046d7a50",
+          "id": "4273c4636bff8c0d31c0a2cda8cd7e3631090621"
+        },
+        {
+          "s": "RVE",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "08eef14ffa4512fcaa6044e294793390ba0057d8"
+        },
+        {
+          "s": "RVE",
+          "p": "is_a",
+          "o": "Continuum",
+          "id": "a78504276ae93dec16528f78588abfbdaee131bf"
+        },
+        {
+          "s": "b8fcb947-0201-427b-9e60-06e7a16ca0de",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "45828eebb2368f48c519bd9b43075a24f6470b2b"
+        },
+        {
+          "s": "b8fcb947-0201-427b-9e60-06e7a16ca0de",
+          "p": "_has-uuid",
+          "o": "b8fcb947-0201-427b-9e60-06e7a16ca0de",
+          "id": "df7356a0309b8f882f190b6bd1e4f569de92417f"
+        },
+        {
+          "s": "b8fcb947-0201-427b-9e60-06e7a16ca0de",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "3504810d20b920253520ec38a95a92d3188dd93d"
+        },
+        {
+          "s": "b8fcb947-0201-427b-9e60-06e7a16ca0de",
+          "p": "hasSpatialDirectPart",
+          "o": "demo.Phase | demo.Boundary",
+          "id": "cfc74583fa49094aeca84815e6607be2e5e9220e"
+        },
+        {
+          "s": "77e79ad2-a984-4574-9b3e-debbc491c7b1",
+          "p": "has_argument",
+          "o": "Phase",
+          "id": "e167fc81b0deb490c19d460db8709749d51c8fff"
+        },
+        {
+          "s": "77e79ad2-a984-4574-9b3e-debbc491c7b1",
+          "p": "has_argument",
+          "o": "Boundary",
+          "id": "c5a776cfa3f29ab52e8aceeb77a7245fb941f560"
+        },
+        {
+          "s": "77e79ad2-a984-4574-9b3e-debbc491c7b1",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "e1edf296ccc5d5ab2d107e41db344426518ddb89"
+        },
+        {
+          "s": "77e79ad2-a984-4574-9b3e-debbc491c7b1",
+          "p": "_has-uuid",
+          "o": "77e79ad2-a984-4574-9b3e-debbc491c7b1",
+          "id": "9953073e7377b296536f279f272ffe50d2953013"
+        },
+        {
+          "s": "77e79ad2-a984-4574-9b3e-debbc491c7b1",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/ClassConstruct",
+          "id": "009340730d27606ac3fb063edd6a52bbe698d37c"
+        },
+        {
+          "s": "WeldedComponent",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "dc6c87eca62342e08e9b62c196d304f7b52009fc"
+        },
+        {
+          "s": "WeldedComponent",
+          "p": "_has-uuid",
+          "o": "195252c2-be1a-565e-a536-6dff34cbc9e6",
+          "id": "82e3ce8e13bb2e273b7801e02f17e60d05a5fdb2"
+        },
+        {
+          "s": "WeldedComponent",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "9e484d42a9e3ec3f8d774a07030bdd152e47374b"
+        },
+        {
+          "s": "WeldedComponent",
+          "p": "is_a",
+          "o": "Component",
+          "id": "2b04c39c3445c9a4f761114cc21372ca9ab0143f"
+        },
+        {
+          "s": "Component",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "0a384d70701b41a210e251254dbd7d208c2b2926"
+        },
+        {
+          "s": "Component",
+          "p": "_has-uuid",
+          "o": "e2fdc40e-18ec-5400-8482-e5c8117e0f0e",
+          "id": "ef9f560670c71d7c092b630c4718fdf3ece4a081"
+        },
+        {
+          "s": "Component",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "e9022c9efa82b7edf250caff6f104c2e9eacca7c"
+        },
+        {
+          "s": "Component",
+          "p": "is_a",
+          "o": "Engineered",
+          "id": "f0a4045b5e998a1936f822616cdd8d8dd9b69955"
+        },
+        {
+          "s": "Engineered",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "a917b3f76b509106c858dab17618943c2b0caf35"
+        },
+        {
+          "s": "Engineered",
+          "p": "_has-uuid",
+          "o": "35ec76ed-d510-5014-b20b-d7b9b79bd32f",
+          "id": "307872e56fd13413bd7c6c71d0a9424cc0fb2aa4"
+        },
+        {
+          "s": "Engineered",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "d239c04d0ad6db84e87784f4dd3945fb0a13fcf5"
+        },
+        {
+          "s": "Engineered",
+          "p": "is_a",
+          "o": "Participant",
+          "id": "1f10cfaa5a0331aea6accc4d03954c521ba50d8e"
+        },
+        {
+          "s": "12bd7ca7-6cdb-47c1-a7a8-28dc1c4fc340",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "bdad22319ffeebe9291cb961e1850f087253dbde"
+        },
+        {
+          "s": "12bd7ca7-6cdb-47c1-a7a8-28dc1c4fc340",
+          "p": "_has-uuid",
+          "o": "12bd7ca7-6cdb-47c1-a7a8-28dc1c4fc340",
+          "id": "29a0e9ad1ad2a1f82b03a4444d0790b8472c3f2a"
+        },
+        {
+          "s": "12bd7ca7-6cdb-47c1-a7a8-28dc1c4fc340",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "5285dd9230e47f96b97868d50e4c148ef9e722f3"
+        },
+        {
+          "s": "12bd7ca7-6cdb-47c1-a7a8-28dc1c4fc340",
+          "p": "Inverse(emmo-processual.hasProperParticipant)",
+          "o": "Manufacturing",
+          "id": "2c404469dfdcdb000f276b89e0ffb68b611e4978"
+        },
+        {
+          "s": "Manufacturing",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "8578a7b085b75615d188c2fd1deb060e7c9d2bbf"
+        },
+        {
+          "s": "Manufacturing",
+          "p": "_has-uuid",
+          "o": "cae1c6f5-6bd9-5846-841e-03ebfc4613a7",
+          "id": "f1173d323cd7cecfa9da356375037ecc8ff4a92d"
+        },
+        {
+          "s": "Manufacturing",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "eef6429d4f39d0fd5a61529aaf0ef210d3d7e517"
+        },
+        {
+          "s": "Manufacturing",
+          "p": "is_a",
+          "o": "Process",
+          "id": "58ece47491923a61900ef52f74670de1b0f692ef"
+        },
+        {
+          "s": "d1ac3bf3-bf76-4be6-85a9-858d0cd08f93",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "406709e0ebdeb38326a01a7b195695e6d275d31a"
+        },
+        {
+          "s": "d1ac3bf3-bf76-4be6-85a9-858d0cd08f93",
+          "p": "_has-uuid",
+          "o": "d1ac3bf3-bf76-4be6-85a9-858d0cd08f93",
+          "id": "c7c5ce8fa59c0fa69cb20c2ed7ba19e31bb6d8a9"
+        },
+        {
+          "s": "d1ac3bf3-bf76-4be6-85a9-858d0cd08f93",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "ef54b37b225682f4c30d269a0ff81c07b5d3c625"
+        },
+        {
+          "s": "d1ac3bf3-bf76-4be6-85a9-858d0cd08f93",
+          "p": "hasProperParticipant",
+          "o": "Engineered",
+          "id": "befeb8d5d72da957a24adb81d67ef3b5ddc401bd"
+        },
+        {
+          "s": "1effd694-5d72-41d6-9f30-43411db5fc19",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "9eab953405ef386449d850bfb326e9443b763026"
+        },
+        {
+          "s": "1effd694-5d72-41d6-9f30-43411db5fc19",
+          "p": "_has-uuid",
+          "o": "1effd694-5d72-41d6-9f30-43411db5fc19",
+          "id": "2e1906b9c1ae5f3e6d56eb0c8750d2ace6ef0856"
+        },
+        {
+          "s": "1effd694-5d72-41d6-9f30-43411db5fc19",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "8c3192a2458a99de1314cfa9e1ef6511eba43c31"
+        },
+        {
+          "s": "1effd694-5d72-41d6-9f30-43411db5fc19",
+          "p": "hasSpatialDirectPart",
+          "o": "Material",
+          "id": "db5f6b9717fcc22401205bdd17f06e196c08d01d"
+        },
+        {
+          "s": "Material",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "4185b40af839d47693b89d61f88ad79f26bc0e0d"
+        },
+        {
+          "s": "Material",
+          "p": "_has-uuid",
+          "o": "2f4d754f-5bbe-56b9-9315-6aa6193e5096",
+          "id": "aa95e577fa8fc7715166c7a1d11fd010580c5193"
+        },
+        {
+          "s": "Material",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "657a8b989b58573214f44cb25df0931d762702b9"
+        },
+        {
+          "s": "Material",
+          "p": "is_a",
+          "o": "Matter",
+          "id": "d32223b4fd9021a69862113bb85e8e1a77d84305"
+        },
+        {
+          "s": "Matter",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "50af6cc4e07957cc9846fba0bbf932b3fe0b065e"
+        },
+        {
+          "s": "Matter",
+          "p": "_has-uuid",
+          "o": "4fa98e4f-4c37-5cfd-9ef3-1d56629c6fd8",
+          "id": "9905aa08b56e6bdce82b946fef988f0ddaab97d2"
+        },
+        {
+          "s": "Matter",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "002c01066364e3cbf95bfd61739bdfd467e5fc51"
+        },
+        {
+          "s": "Matter",
+          "p": "is_a",
+          "o": "Type",
+          "id": "bd5e9f638b8bb5f62eba29ef7f877605269e656f"
+        },
+        {
+          "s": "Type",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "5279dcf6654bf9b1b3eda29d99b38eede12875d7"
+        },
+        {
+          "s": "Type",
+          "p": "_has-uuid",
+          "o": "93c5b9e1-f224-500d-ac26-3b9f5becaa66",
+          "id": "5f4e4e6589ffe3404e4618adc4528cd0dbd3e370"
+        },
+        {
+          "s": "Type",
+          "p": "_has-meta",
+          "o": "http://meta.sintef.no/0.3/EntitySchema",
+          "id": "b0ad5785a559ae68bc8de63212611283003a2990"
+        },
+        {
+          "s": "Type",
+          "p": "is_a",
+          "o": "Physical",
+          "id": "f3af2281ad6a68692b824a85c4542ee35c9fc33a"
+        },
+        {
+          "s": "0c7cb853-4c58-4bf7-b665-9529201dd54d",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "50771ced598a39ffd0559d24fbadddbf7fbaaff8"
+        },
+        {
+          "s": "0c7cb853-4c58-4bf7-b665-9529201dd54d",
+          "p": "_has-uuid",
+          "o": "0c7cb853-4c58-4bf7-b665-9529201dd54d",
+          "id": "0e496345e775919c17db1446ee4da4b7bd4a06e1"
+        },
+        {
+          "s": "0c7cb853-4c58-4bf7-b665-9529201dd54d",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "9aeb1d25b753a19c2d8b8f2c12d708a366a309fc"
+        },
+        {
+          "s": "0c7cb853-4c58-4bf7-b665-9529201dd54d",
+          "p": "hasPart",
+          "o": "Massive",
+          "id": "fa94344ff6f8d22d3eab823e3676e5439bcf00d1"
+        },
+        {
+          "s": "af5bc73a-f845-4d8f-a71f-33faf03cb316",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "ed80a244299960e57b71ce5ff27ab5b1c604493e"
+        },
+        {
+          "s": "af5bc73a-f845-4d8f-a71f-33faf03cb316",
+          "p": "_has-uuid",
+          "o": "af5bc73a-f845-4d8f-a71f-33faf03cb316",
+          "id": "59f0f4a5ba4b5bca2f7dd588198ff6def8a685bc"
+        },
+        {
+          "s": "af5bc73a-f845-4d8f-a71f-33faf03cb316",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "bdcf098e5eebb5614eeb4040cb57481ca1a76e27"
+        },
+        {
+          "s": "af5bc73a-f845-4d8f-a71f-33faf03cb316",
+          "p": "hasTemporalPart",
+          "o": "Matter",
+          "id": "f1eb8ec506ccd794cbf77455a67a611ec1da90cd"
+        },
+        {
+          "s": "58ffd99d-9a45-433b-a432-fa766e5902fa",
+          "p": "_is-a",
+          "o": "Instance",
+          "id": "53289c06c8b1b67942b48e6dff3da34af55093bf"
+        },
+        {
+          "s": "58ffd99d-9a45-433b-a432-fa766e5902fa",
+          "p": "_has-uuid",
+          "o": "58ffd99d-9a45-433b-a432-fa766e5902fa",
+          "id": "84252ea5fa4d849ff69d1f1c7d89b8403d92aaea"
+        },
+        {
+          "s": "58ffd99d-9a45-433b-a432-fa766e5902fa",
+          "p": "_has-meta",
+          "o": "http://www.emmc.info/emmc-csa/demo/0.1/Restriction",
+          "id": "6de34961977bde16172ab20ac929043bec557a11"
+        },
+        {
+          "s": "58ffd99d-9a45-433b-a432-fa766e5902fa",
+          "p": "hasSpatialDirectPart",
+          "o": "Boundary",
+          "id": "3922234d6a887b8fc65620809da35e41bdb788e0"
+        }
+      ]
+    }
+  },
+  "bbc145d4-e636-56e8-b04b-ed07617c78dc": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "SIUnit",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nBase class for all SI units.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "82b50db4-9801-5d77-ad6f-3df9499c4ef6": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "MeasurementUnit",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "7a9aa8b6-7718-5a24-950b-ede3c105ce72": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "QuantitativeProperty",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "1683a29d-f403-5c83-ad01-577dd8126335": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "ObjectiveProperty",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nThe word objective does not mean that each observation will provide the same results. It means that the observation followed a well defined procedure.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "35d1b09a-7234-5c76-af6b-57b1f40037c9": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Property",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nWe know real world entities through observation/perception.\n\nA non-perceivable real world entity does not exist (or it exists on a plane of existance that has no intersection with us and we can say nothing about it).\n\nPerception/observation of a real wolrd entity occurs when the entity stimulate an observer in a peculiar way through a well defined perception channel.\n\nFor this reason each property is related to a specific observation process which involves a specific observer with its own perception mechanisms.\n\nThe observation process (e.g. a look, a photo shot, a measurement) is performed  by an observer (e.g. you, a camera, an instrument) through a specific perception mechanism (e.g. retina impression, CMOS excitation, piezoelectric sensor activation) and involves an observed entity.\n\nAn observation is a semiotic process, since it stimulate an interpretant within the interpreter who can communicate the perception result to other interpreters through a sign which is the property. \n\nProperty subclasses are specializations that depend on the type of observation processes.\n\ne.g. the property 'colour' is related to a process that involves emission or interaction of photon and an observer who can perceive electromagnetic radiation in the visible frequency range. \n\nProperties usually relies on symbolic systems (e.g. for colour it can be palette or RGB).",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "07ed1ba0-1a73-5f94-869b-8451b5ed12cb": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "SymbolicDomain",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "4bea5dd1-49fc-5326-83f0-5bb07eb221b7": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Symbolic",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 'symbol' or a composition of 'symbol'-s not necessarily respecting syntactic rules.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "e5486203-d2e1-5965-9c88-d95472be4e28": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Graphical",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nFrom the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "da1ca90d-c689-55b3-98d9-4f3012d5b3d4": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Impression",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nFrom Latin impressionem: \"a pressing into, onset, attack,\" figuratively \"a perception, mental impression\".\n\nLiterally \"a pressing into\" from Latin imprimere \"press into or upon\".\n\nCOMMENT:\nThis class is the most general superclass that represents real world objects that can stand for something else in a semiotic process (acting as 'signs').\n\nAn impression is not necessarily a 'sign' (e.g. a line sketched on a blackboard is a recognizable 'impression' but it may stand for nothing).",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "bcb07fdf-0ae6-579a-a31e-cfc233acca58": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Physical",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 'physical' is the class that contains all the individuals that stand for real world objects that interact physically with the interpreter.\n\nPerception is a subcategory of interaction.\n\nA physical must be perceived through physical interaction by the ontologist. Then the ontologist can declare an individual standing for the physical object just perceived.\n\nCOMMENT:\nA 'physical' must include at least an 'elementary' part, but can also include void parts.\n\nA 'physical' may include as part also the 'void' surrounding or enclosed by its 'physical' sub parts.\n\nThere are no particular criteria for 'physical'-s structure, except that is made of some 'elementary'-s as proper parts and not only 'void'.\n\nThis is done in order to:\na) take into account the quantum nature of physical systems, in which the actual position of sub-components (e.g. electrons in an atom) is not known except for its probability distribution function (according to the Copenhagen interpretation.)\nb) take into account the fact that large entities (e.g. devices, cars, materials) have some void into them.\n\ne.g. a 'spacetime' that has spatial parts an atom and a cubic light year of 'void' extending for some time can be a 'physical' individual.\n\nCOMMENT:\nA 'physical' with dimensions other than 4D cannot exist, following the restriction of the parent 'emmo' class.\n\nIt follows from the fact that perception is always a process (e.g. it unfolds in time).\n\ne.g. you always have an aperture time when you take a picture or measure a property. Instantaneous perceptions are idealizations (abstractions) or a very small time measurement.\n\nCOMMENT:\nFrom Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”). \n\nHere the word relates to things perceived through the senses as opposed to the mind; tangible or concrete.\n\nCOMMENT:\nIn the EMMO there are no relations such as 'occupies_space', since 'physical'-s are themselves the 4D region.\n\nCOMMENT:\nThe EMMO can be used to represent real world entities as 'physical'-s that are easy to connect to classical or quantum mechanical based models.\n\nClassical mechanics poses no representational issues, for the EMMO: the 4D representation of 'physical'-s is consistent with classical physics systems.\n\nHowever, the representation of 'physical'-s that are typically analized through quantum mechanics (e.g. molecules, atoms, clusters), is not straightforward.\n\n1) De Broglie - Bohm interpretation\nThe most simple approach is to rely on Bohmian mechanics, in which each particle is supposed to exists in a specific position between measurements (hidden variables approach), while its trajectory is calculated using a Guiding Equation based on a quantum field calculated with the Schroedinger Equation.\n\nWhile this approach is really easy to implement in an ontology, since each entity has its own well defined 4D region, its mathematical representation failed to receive large consensus due to the difficulties to include relativistic effects, to be extended to subnuclear scale and the strong non-locality assumtpion of the quantum field.\n\nNevertheless, the Bohmian mechanics is a numerical approach that is used in electronic models to reduce the computational effort of the solution of Schroedinger Equation.\n\nIn practice, an EMMO user can declare a 'physical' individual that stand for the whole quantum system to be described, and at the same time all sub-parts individuals can be declared, having them a well defined position in time, according to De Broglie - Bohm interpretation. The Hamiltonian can be calculated by considering the sub-part individuals.\n\n'physical'-s are then made of 'physical' parts and 'void' parts that stand for the space between 'physical'-s (e.g. the void between electrons and nucleus in an atom).\n\n2) Copenhagen interpretation\nIn this interpretation the properties (e.g. energy level, position, spin) of a particle are not defined in the interval between two measurements and the quantum system is entangled (i.e. properties of particles in the sysyem are correlated) and described by a global wavefunction obtained solving the Schroedinger Equation. \n\nUpon measurement, the wavefunction collapses to a combination of close eigenstates that provide information about bservables of the system components (e.g. position, energy).\n\nThe EMMO can be used to represent 'physical'-s that can be related to Copenhagen based models. In practice, the user should follow these steps:\n\na) define the quantum system as a 'physical' individual (e.g. an H2 molecule) under a specific class (e.g. 'h2_molecule'). This individual is the whole.\n\nb) define the axioms of the  class that describe how many sub-parts are expected for the whole and their class types (e.g. 'h2_molecule' has axioms 'has_proper_part exactly 2 electron' and 'has_proper_part exactly 2 nucleus)\n\nc) the user can now connect the whole to a Schroedinger equation based model whose Hamiltonian is calculated trough the information coming only from the axioms. No individuals are declared for the subparts!\n\nd) a measurement done on the quantum system that provides information on the sub-part observables is interpreted as wavefunction collapse and leads to the end of the whole and the declaration of the sub-parts individuals which can be themselves other quantum systems \n\ne.g. if the outer electron of the H2 molecule interacts with another entity defining its state, then the whole that stands for the entangled H2 molecule becomes a 'physical' made of an electron individual, a quantum system made of one electron and two nuclei and the void between them.\n\ne.g. in the Born-Oppenheimer approximation the user represent the atom by un-entangling nucleus and electronic cloud. The un-entanglement comes in the form of declaration of individual as parts.\n\ne.g. the double slit experiment can be represent in the EMMO as:\na) before the slit: a 'physical' that extend in space and has parts 'electron' and 'void', called 'single_electron_wave_function'. 'electron' and 'void' are only in the axioms and not decalred individuals.\nb) during slit passage: a 'physical' made of one declared individual, the 'electron'.\nc) after the slit: again 'single_electron_wave_function'\nd) upon collision with the detector:  'physical' made of one declared individual, the 'electron'.\n\nCOMMENT:\nThe purpose of the 'physical' branch is to provide a representation of the real world objects, while the models used to explain or predict the behaviour of the real world objects lay under the 'semiotic' branch.\n\nMore than one model can be connected to the same 'physical'.\n\ne.g. Navier-Stokes or Euler equation applied to the same fluid",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "73071c84-66cf-5834-b79d-86b6316a9f01": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Item",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA real world object is self-connected if any two parts that make up the whole are connected to each other (here the concept of connection is primitive). \n\nAlternatively, using the primitive path-connectivity concept we can define a self-connected real world object as an object for which each couple of points is path-connected.\n\nCOMMENT:\nAn 'item' individual stands for a real world self-connected object which can be represented as a whole made of connected parts (e.g. a car made of components).\n\nIn the EMMO, connectivity is the topological foundation of causality.\n\nAll physical systems, i.e. systems whose behaviour is explained by physics laws, are always represented by 'item'-s.\n\nMembers of a 'collection' lack of causality connection, i.e. they do not constitute a physical system as a whole.\n\nCOMMENT:\nFrom Latin item, \"likewise, just so, moreover\".",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "bd3844c2-b053-52a3-a155-a2bad33e7d34": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "EMMO",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\n'emmo' is the disjoint union of 'item' and 'collection' (covering axiom).\n\nThe union implies that 'emmo' individuals can only be 'item' individuals (standing for self-connected real world objects) or 'collection' individuals (standing for a collection of disconnected items).\n\nDisjointness means that a 'collection' individual cannot be an 'item' individual and viceversa, meaning that a real world object cannot be self-connected and non-self connected at the same time.\n\nCOMMENT:\nFor the EMMO the whole universe is represented at meta-ontological level (i.e. the representational level that includes the ontologist, the ontology and the universe) as a 4D path-connected topological manifold (i.e. the spacetime).\n\nMereotopology is the fundamental logical representation used to characterize the universe and to provide the definitions for the EMMO concepts at interpreter's level.\n\nA real world object is then a 4D topological sub-region of the universe. \n\nA universe sub-region is isolated and defined as a real world object by the ontologist. Then, through a semiotic process that occurs at the meta-ontological level (i.e. outside the ontology). an ontology entity (e.g. an OWL individual) is assigned to represent that real world object. \n\nThe fundamental distinction between real world objects, upon which the EMMO is based, is self-connectedness: a real world object can be self-connected xor not self-connected.\n\nCOMMENT:\nIn the EMMO we will refer to the universe as a Minkowski space, restricting the ontology to special relativity only. However, exension to general relativity, will adding more complexity, should not change the overall approach.\n\nCOMMENT:\nParthood relations does not change dimensionality of an 'emmo' individual, i.e. every part of a real world object always retains its 4D dimensionality. \n\nThe smallest part is a 'quantum', that has no proper parts.\n\nIt follows that, for the EMMO, real world objects of dimensionality lower than 4D do not exist (e.g. surfaces, lines).",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "0ae1f67a-16ba-51fd-a559-72030c0612b0": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 2
+    },
+    "properties": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "Class restriction.  For each instance of a class restriction there should be a relation\n\n    (r.label, r.property, r.value.label)\n\nwhere `r.label` is the label associated with the restriction, `r.property` is a relation and `r.value.label` is the label of the value of the restriction.",
+      "dimensions": [],
+      "properties": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Type of restriction.  Valid values for `type` are: \"only\", \"some\", \"exact\", \"min\" and \"max\"."
+        },
+        {
+          "name": "cardinality",
+          "type": "int32",
+          "description": "The cardinality.  Unused for \"only\" and \"some\" restrictions."
+        }
+      ]
+    }
+  },
+  "29f9e77b-ecf0-4060-9c93-4fe57a22c945": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "2548b771-d12a-5ba4-8e9f-f7bcadbc83ca": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Quantum",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 'quantum' is the most fundamental subclass of 'item', since we consider it as the smallest possible self-connected 4D real world object.\n\nThe quantum concept recalls the fact that there is lower epistemological limit to our knowledge of the universe, related to the uncertainity principle.\n\nCOMMENT:\nA 'quantum' stands for a 4D real world object.\n\nCOMMENT:\nA quantum is the EMMO mereological 4D a-tomic entity. \n\nTo avoid confusion with the concept of atom coming from physics, we will use the expression quantum mereology, instead of a-tomistic mereology.\n\nCOMMENT:\nFrom Latin quantum (plural quanta) \"as much as, so much as;\", introduced in physics directly from Latin by Max Planck, 1900.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "93efff74-8777-41e5-9572-ddf03ed3a574": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "a5fdb21c-4330-445b-9ae0-3556fc3ee9a3": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "9c48f275-a5a9-5708-93b6-b3af2b699379": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Elementary",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nAccording to mereology, this should be call 'a-tomistic' in the strict etimological sense of the word (from greek, a-tomos: un-divisible).\n\nMereology based on such items is called atomistic mereology.\n\nHowever, in order not to confuse the lexicon between mereology and physics (in which an atom is a divisible physical entity) we prefer to call it 'elementary', recalling the concept of elementary particle coming from the standard particles model.\n\nCOMMENT:\nWhile a 'quantum' is a-tomistic in time and space, an 'elementary' is a-tomistic only in space, recalling the concept of elementary particle.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "fc4ea3de-6928-5936-90e8-e06190283de1": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Subatomic",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "85af8175-79ba-5701-a51f-259853f1f5ef": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "State",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nDirect partitions declaration is a choice of the ontology developer that choses the classes to be used as direct parts, according to its own world view.\n\nA 'state' can always be direct partitioned in 'elementary'-s and 'void' or 'physical'.\n\ne.g. the water in my glass can be seen as a single object without declaring direct parts, or as made of H2O molecules direct parts.\n\nCOMMENT:\nThe definition of 'state' implies that its spatial direct parts (i.e. 'physicals') are not gained or lost during its temporal extension (they exist from the left to the right side of the time interval), so that the granularity of a 'state' is constant.\n\nThis does not mean that there cannot be a change in the internal structure of the 'state' direct parts. It means only that this change must not affect the existence of the direct part itself.\n\nThere is no change in granularity or cardinality of direct parts within a 'state'.\n\nAlso, the 'state' must cover all the time interval between two successive cardinality changes.\n\nThe use of spatial direct parthood in 'state' definition means that a 'state' cannot overlap in space another 'state'.\n\nCOMMENT:\nThe usefulness of 'state' is that it makes it possible to describe the evolution in time of an 'existent' in terms of series of 'state'-s that can take into account the disappearance or appearance of parts within a 'physical'. \n\nA 'state' is a recognizable granularity level of matter, in the sense that its direct parts do not appear or disappear within its lifetime as it can be for a generic 'existent'.\n\nCOMMENT:\nThere is no change in granularity or cardinality of parts within a state.\n\nThe use of spatial direct parthood in state definition means that a state cannot overlap in space another state that is direct part of the same whole.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "91e189a1-2884-5132-9af6-122b919f37be": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Existent",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\n'existent' is the most important class to be used for representing real world physical objects under a reductionistic (i.e. objects come from the composition of sub-part objects) and epistemological pluralistic (i.e. objects definitions are interpreter dependent) perspectives . \n\n'existent' class collects all individuals that stand for real world physical objects that can be structured in well defined temporal sub-parts called states through the temporal direct parthood.\n\nThis class provides a granularity hierarchy in time, that provides a way to axiomatize tessellation principles for a specific whole with a non-transitivity relation that helps to retain the granularity levels.\n\ne.g. a car, a supersaturated gas with nucleating nanoparticles, an atom that becomes ionized and then recombines with an electron.\n\nCOMMENT:\nex-sistere (latin): to stay (to persist through time) outside others of the same type (to be distinct from the rest).",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "9eefd8af-3b4d-5115-ab2c-835bb62793b2": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 1
+    },
+    "properties": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "Class construct.  For each instance of a class construct there should be one or more relations of type\n\n    (c.label, \"has_argument\", c.value.label)\n\nwhere `c.label` is the label associated with the class construct, `c.value.label` is the label of an argument.",
+      "dimensions": [],
+      "properties": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Type of class construct.  Valid values for `type` are: \"not\", \"inverse\", \"and\" or \"or\"."
+        }
+      ]
+    }
+  },
+  "46b7037d-6012-4e4a-b41a-a6d5165cdb2b": {
+    "meta": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "Or"
+    }
+  },
+  "fd4f501a-5e77-407d-aa4c-383bc09160cd": {
+    "meta": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "Or"
+    }
+  },
+  "13193e05-bcfb-46e3-ab34-92914cc25de6": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "9c75ac24-2ab6-4fec-9559-3e41a248cff3": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "2b933574-94a0-45d3-b92a-6f5b1090ffb1": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "14084149-4608-4f37-96f2-7c0f9934eacc": {
+    "meta": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "Or"
+    }
+  },
+  "30631b07-744b-53b1-bdd8-66b415e16ba9": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Conventional",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nIn Peirce semiotics this kind of sign category is called symbol. However, since symbol is also used in formal languages, the name is changed in conventional.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "92a56a95-d3ac-5ed5-9925-a088606238d3": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Sign",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 'sign' can have temporal-direct-parts which are 'sign' themselves.\n\nA 'sign' usually have 'sign' spatial direct parts only up to a certain elementary semiotic level, in which the part is only a 'physical' and no more a 'sign' (i.e. it stands for nothing). This elementary semiotic level is peculiar to each particular system of signs (e.g. text, painting).\n\nJust like an 'elementary' in the 'physical' branch, each 'sign' branch should have an a-tomistic mereological part.\n\nCOMMENT:\nAccording to Peirce, 'sign' includes three subcategories:\n- symbols: that stand for an object through convention\n- indeces: that stand for an object due to causal continguity\n- icon: that stand for an object due to similitudes e.g. in shape or composition\n\nCOMMENT:\nIn a 4D ontology one could question if a 'sign' should be defined as a spatial direct part of a 'semiosis' i.e. a proper part of a 'semiosis' during all its existence.\n\ne.g. one can say that an unread text is not a 'sign': it was a 'sign' during the 'semiosis' process in which it was written, but after that it is something else, until somebody read it again.\n\nHowever, this is not the case for an ontology, since declaring an individual under the 'sign' class (a semiosis outside the EMMO, a meta-semiosis) is equivalent to say that for the ontologist (an interpreter outside the EMMO, a meta-interpreter) the real entity (an object outside the EMMO, a meta-object) is a 'sign'.\n\nSo the 'semiosis' process within the EMMO is about how other 'interpreter'-s deal with the 'sign'-s here declared.\n\nCOMMENT:\nIt can be defined as the semiotic branch of the EMMO.\n\n'sign' subclasses categorize the type of signs that are used to create representations/models of the real world entities.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "7b87ecbf-6def-59d7-ab2f-ffa8790d0e00": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Semiotic",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nSemiotic subclasse are defined using Peirce's semiotic theory.\n\n\"Namely, a sign is something, A, which brings something, B, its interpretant sign determined or created by it, into the same sort of correspondence with something, C, its object, as that in which itself stands to C.\" (Peirce 1902, NEM 4, 20–21).\n\nThe triadic elements:\n- 'sign': the sign A (e.g. a name)\n- 'interpretant': the sign B as the effects of the sign A on the interpreter (e.g. the mental concept of what a name means)\n- 'object': the object C (e.g. the entity to which the sign A and B refer to)\n\nThis class includes also the 'interpeter' i.e. the entity that connects the 'sign' to the 'object'",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "0c47bd61-753b-5829-88e3-ba3d58b4aab4": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Participant",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nIn the EMMO the relation of participation to a process falls under mereotopology.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "90d4a846-d97f-5c0a-994e-cb109b0fc4ac": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Processual",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "aa407a10-906b-4b06-8692-ca6c030710f3": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "54a83b1f-0c4e-5929-acb4-ca689ea6d0c6": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Semiosis",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "db9f3307-f815-5ee7-a379-034204d8c474": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Process",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 'process' is always a 'physical', since a 'void' does not have elements that evolves in time.\n\nCOMMENT:\nA 'process' is defined as a temporal part of a 'physical' that is categorized according to an EMMO user that recognizes a particular type of evolution in time of the real world object.\n\nFollowing the common definition of process, every 'physical' should be a process, since every 4D object always has a time dimension. \n\nHowever, in the EMMO we restrict the meaning of the word process to 'physical'-s whose evolution in time have a particular meaning for the ontologist.\n\ni.e. a 'process' is not only something that unfolds in time (which is automatically represented in a 4D ontology), but something happening that has a meaning for the ontologist.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "e2842c41-d43a-4852-be63-7a4c0f42f67f": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "ea07125d-d982-4d12-ae9d-354c01e8f3d5": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "bef335c8-aa7e-5df5-869f-8ae2e66d5c49": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Interpreter",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "03a0c6dc-884f-4979-aad5-fb5d5f22698c": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "8946afba-cbe7-546b-90b1-452557929384": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Interpretant",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "a0f3a63b-23bf-4bd6-ab51-30d36324c2b8": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "0f192ffb-fa1b-52f1-836d-ea3e8d751f04": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Object",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nHere is assumed that the concept of 'object' is always relative to a 'semiotic' process. An 'object' does not exists per se, but it's always part of an interpretation.\n\nThe EMMO relies on strong reductionism, i.e. everything real is a formless collection of elementary particles: we give a meaning to real world entities only by giving them boundaries and defining them using 'sign'-s. \n\nIn this way the 'sign'-ed entity become and 'object', and the 'object' is the basic entity needed in order to apply a logical formalism to the real world entities (i.e. we can speak of it through its sign, and use logics on it through its sign).",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "37aac681-3ce0-4d8a-8ce3-f0a1d885a2d3": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "d393d125-682b-411a-befc-0d23ba41dd25": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "5b2345dd-91bc-5877-bd63-882874826706": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "m",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "f59a2a8f-1200-5b75-9f7b-67f984792fd4": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "m²",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "a5a443d2-2bcf-50ad-8770-124db8f54abf": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Pa",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "efa4c16b-b356-5490-9d78-0f58f11c8ea8": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Position",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nSpatial position of an physical entity.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "233894bb-6b8b-545b-9fd3-2a89c08ab9f0": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "PhysicalQuantity",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nMeasured or simulated 'physical propertiy'-s are always defined by a physical law, connected to a physical entity through a model perspective and measurement is done according to the same model.\n\nSystems of units suggests that this is the correct approach, since except for the fundamental units (length, time, charge) every other unit is derived by mathematical relations between these fundamental units, implying a physical laws or definitions.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "1f26f2a5-fcdc-4be0-a18e-a8fbed823d6f": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "c928d5a8-656f-511a-882c-28643e2dffd3": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Numeral",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "75d1ba28-eb89-54dc-9e67-01daab4c2f8b": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "MathSymbol",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "a60629f2-ff48-510f-86ec-af4cba0f1671": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Symbol",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nSubclasses of 'symbol' are alphabets, in formal languages terminology.\n\nA 'symbol' is atomic for that alphabet, i.e. it has no parts that are symbols for the same alphabet.\n\ne.g. a math symbol is not made of other math symbols\n\nCOMMENT:\nSymbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses). \n\nSymbols of a formal language must be capable of being specified without any reference to any interpretation of them. \n(Wikipedia)\n\nCOMMENT:\nThe class is the idea of the symbol, while the individual of that class stands for a specific mark (or token) of that idea.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "289ed369-7027-5cf2-afdc-8f63b22db52f": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "SymbolicStructured",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "b9d07fa6-bf1b-5c25-a9fb-fc8ae4e94a98": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Mathematical",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nThe class of general mathematical symbolic objects.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "64588623-d8ee-41d3-90ff-0309fa3170df": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "6691d311-a723-45f3-a828-86ced300505c": {
+    "meta": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "Not"
+    }
+  },
+  "40649303-332a-4d51-a85f-1b138ca149c6": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "01532dbc-9f6d-42de-8a12-b058ad0a990d": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "d5e424c7-6524-4dea-8ccf-03a49dda6ab8": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 3
+    }
+  },
+  "4552b05d-31c0-5c58-b715-6cd39b44b544": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Real",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "03301844-52cc-5f87-a7ba-2a7294ab0539": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Number",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "1b362765-d2b9-46d7-88c3-6a5c88c96070": {
+    "meta": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "Or"
+    }
+  },
+  "b6313bef-ad66-5351-8340-998c76cace89": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Area",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nArea of a surface.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "6062cf91-1dfe-4b61-9917-87903cac3eb4": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "71f17912-8878-4651-b971-376b265175d2": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "382a5b40-5280-5ba7-967a-4e3ffbe574a6": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Pressure",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nThe force applied perpendicular to the surface of an object per\nunit area.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "081032fc-d91c-4a19-abdd-a22f61afcb2a": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "b59fe3ea-33ab-4d23-8485-43dc2672e63d": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "1f7e423a-626f-515d-ae92-0d5659d362d8": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "StiffnessTensor",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nThe stiffness tensor $c_{ijkl}$ is a property of a continuous\nelastic material that relates stresses to strains (Hooks's\nlaw) according to\n\n    $\\sigma_{ij} = c_{ijkl} \\epsilon_{kl}$\n\nDue to symmetry and using the Voight notation, the stiffness\ntensor can be represented as a symmetric 6x6 matrix\n\n    / c_1111  c_1122  c_1133  c_1123  c_1131  c_1112 \\\n    | c_2211  c_2222  c_2233  c_2223  c_2231  c_2212 |\n    | c_3311  c_3322  c_3333  c_3323  c_3331  c_3312 |\n    | c_2311  c_2322  c_2333  c_2323  c_2331  c_2312 |\n    | c_3111  c_3122  c_3133  c_3123  c_3131  c_3112 |\n    \\ c_1211  c_1222  c_1233  c_1223  c_1231  c_1212 /",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "bd279042-559c-4d31-9b4d-a3a940541d2b": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "a7172ab9-704a-4845-a06d-1eac2f62426f": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 36
+    }
+  },
+  "27a762e4-41bc-5c76-9e3c-8dc93a7d17f9": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "AtomicNumber",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nNumber of protons in the nucleus of an atom.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "9517cda4-91e1-4722-87a6-bcd771f979c8": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "35fb2f41-7ebe-5d5e-8580-b8b5283270ce": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Integer",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "67ae493d-e8b6-5930-8997-b2bed3fd1290": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "LatticeVector",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA vector that participitates defining the unit cell.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "63e99e28-dbd1-4841-8d7b-ea809e126c53": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "d5281ee3-20d1-4480-b600-c90009a50803": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 3
+    }
+  },
+  "912b0c81-11ea-5202-9661-442d8a168722": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Spacegroup",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA spacegroup is the symmetry group off all symmetry operations\nthat apply to a crystal structure.\n\nIt is identifies by its Hermann-Mauguin symbol or space group\nnumber (and setting) in the International tables of\nCrystallography.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "e3911cb1-2bc9-5066-8cca-6cf486707dd2": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "DescriptiveProperty",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "61438988-721d-4044-86a2-79e5e13df96e": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "005e79a2-3eca-5772-b5ed-c031803785a1": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "String",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nIn formal languages the terms word or well-formed formula are used with the same meaning.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "fc1a5f2c-1b61-4620-b1da-de740ad6dc87": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "0ced42fe-5bf4-5f38-94bf-0c995b35ba39": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Plasticity",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nDescribes Yield stress and material hardening.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "13d26814-e19c-43cc-b04b-4d8bfaccfe04": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "2ec19268-e5b1-47a4-92c3-1365aaeefb78": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "min",
+      "cardinality": 2
+    }
+  },
+  "97f01b86-49ad-5a45-871f-4c207a11206e": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "TractionSeparation",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nThe force required to separate two materials a certain distance per\ninterface area.  Hence, traction_separation is a curve, that\nnumerically can be represented as a series of (force,\nseparation_distance) pairs.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "efb80447-e721-48c7-ab6c-18983fdd3064": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "124b4686-ecee-4d59-abe6-9194c9d1fdd2": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "min",
+      "cardinality": 4
+    }
+  },
+  "1957c0ff-6245-5419-aadd-d41e50c30e15": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "LoadCurve",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA measure for the displacement of a material as function of the\nappliced force.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "f204410f-4b74-44cb-bb84-b87f25d4e8c7": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "ea011c9c-2823-4ce6-a906-a8604e407e1d": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "min",
+      "cardinality": 4
+    }
+  },
+  "0cfc1e4b-a1d8-508c-b5f6-9c43637f64d1": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 1,
+      "nproperties": 2
+    },
+    "properties": {
+      "name": "Interface",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 2D surface associated with a boundary.\n\nCommonly referred to as \"interface\".",
+      "dimensions": [
+        {
+          "name": "TractionSeparation_length",
+          "description": "Length of TractionSeparation"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Area",
+          "type": "float64",
+          "unit": "m²",
+          "description": "COMMENT:\nArea of a surface."
+        },
+        {
+          "name": "TractionSeparation",
+          "type": "float64",
+          "dims": [
+            "TractionSeparation_length"
+          ],
+          "unit": "Pa",
+          "description": "COMMENT:\nThe force required to separate two materials a certain distance per\ninterface area.  Hence, traction_separation is a curve, that\nnumerically can be represented as a series of (force,\nseparation_distance) pairs."
+        }
+      ]
+    }
+  },
+  "acb12ed1-6a4a-5245-9629-948641cb6e11": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Plane",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "fd3c1742-f9b9-5916-9478-6a2ccd5994d9": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "2-manifold",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "4aba2eef-7c29-5db8-b5cc-eaf2bfd2932c": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Geometrical",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA 'geometrical' stands for real world objects that express a geometrical concept.\n\nThis can be achieved in many different ways. For example, a line can be expressed by:\na) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'\nb) a line drawn with a pencil on a paper, which is simply a 'graphical' object\nc) a set of axioms, when the properties of a line are inferred by the interpreter reading them, that are both 'graphical' and also 'formula'\n\nThe case a) is a geometrical and mathematical, b) is geometrical and pictorial, while c) is geometrical and a composition of idiomatic strings.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "7dd78511-d4a4-50cd-9922-38fbd4db0b17": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 3,
+      "nproperties": 2
+    },
+    "properties": {
+      "name": "CrystalUnitCell",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA volume defined by the 3 unit cell vectors.  It contains the atoms\nconstituting the unit cell of a crystal.",
+      "dimensions": [
+        {
+          "name": "n_LatticeVectors",
+          "description": "Number of LatticeVector."
+        },
+        {
+          "name": "LatticeVector_length",
+          "description": "Length of LatticeVector"
+        },
+        {
+          "name": "StiffnessTensor_length",
+          "description": "Length of StiffnessTensor"
+        }
+      ],
+      "properties": [
+        {
+          "name": "LatticeVector",
+          "type": "float64",
+          "dims": [
+            "n_LatticeVectors",
+            "LatticeVector_length"
+          ],
+          "unit": "m",
+          "description": "COMMENT:\nA vector that participitates defining the unit cell."
+        },
+        {
+          "name": "StiffnessTensor",
+          "type": "float64",
+          "dims": [
+            "StiffnessTensor_length"
+          ],
+          "unit": "Pa",
+          "description": "COMMENT:\nThe stiffness tensor $c_{ijkl}$ is a property of a continuous\nelastic material that relates stresses to strains (Hooks's\nlaw) according to\n\n    $\\sigma_{ij} = c_{ijkl} \\epsilon_{kl}$\n\nDue to symmetry and using the Voight notation, the stiffness\ntensor can be represented as a symmetric 6x6 matrix\n\n    / c_1111  c_1122  c_1133  c_1123  c_1131  c_1112 \\\n    | c_2211  c_2222  c_2233  c_2223  c_2231  c_2212 |\n    | c_3311  c_3322  c_3333  c_3323  c_3331  c_3312 |\n    | c_2311  c_2322  c_2333  c_2323  c_2331  c_2312 |\n    | c_3111  c_3122  c_3133  c_3123  c_3131  c_3112 |\n    \\ c_1211  c_1222  c_1233  c_1223  c_1231  c_1212 /"
+        }
+      ]
+    }
+  },
+  "b13dbcc5-f568-5392-a1c2-78e872143bed": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Mesoscopic",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "bb88076b-77c9-48bc-9256-b4fac80086d7": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "95c936d0-507c-5d36-97a9-30abafbb2d74": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 1,
+      "nproperties": 2
+    },
+    "properties": {
+      "name": "BondedAtom",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA real bond between atoms is always something hybrid between covalent, metallic and ionic.\n\nIn general, metallic and ionic bonds have atoms sharing electrons.\n\nCOMMENT:\nThe bond types that are covered by this definition are the strong electonic bonds: covalent, metallic and ionic.\n\nCOMMENT:\nThis class can be used to represent molecules as simplified quantum systems, in which outer molecule shared electrons are un-entangled with the inner shells of the atoms composing the molecule.",
+      "dimensions": [
+        {
+          "name": "Position_length",
+          "description": "Length of Position"
+        }
+      ],
+      "properties": [
+        {
+          "name": "AtomicNumber",
+          "type": "int32",
+          "description": "COMMENT:\nNumber of protons in the nucleus of an atom."
+        },
+        {
+          "name": "Position",
+          "type": "float64",
+          "dims": [
+            "Position_length"
+          ],
+          "unit": "m",
+          "description": "COMMENT:\nSpatial position of an physical entity."
+        }
+      ]
+    }
+  },
+  "3538b450-39c0-591a-9afa-989bd92a07cf": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Atom",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nAn 'atom' is a 'nucleus' surrounded by an 'electron_cloud', i.e. a quantum system made of one or more bounded electrons.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "c41c6717-56c2-5543-880a-a3fa46b19801": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Atomic",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "248bb2cb-4532-44f1-ab67-ef8088fd1bc8": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "53dc62cb-8cba-5472-87b4-5e4da3af8ab1": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "ElectronCloud",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "bf4899df-f925-46d3-a440-a7ffd0febd99": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "93a0c2e2-8bbf-5bb0-b202-4951de752e3d": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Electron",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "50b23406-bdf6-59fe-b039-ed968f24f270": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Massive",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "96e383de-11d5-4636-9b96-1b1de26fbcd5": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "83a57f0a-107a-577d-aa59-a8c072b162ef": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Nucleus",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "7588ed93-f9ec-4f18-ba54-8a4506677cc2": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "153e82f9-ac9a-5d76-9e6d-f596959acae0": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Nucleon",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "4311cfa4-cff1-4477-9828-31460977e324": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "min",
+      "cardinality": 1
+    }
+  },
+  "5905ba58-8535-5f2c-877d-3b4f49b5286d": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Proton",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "6e97a9b6-fe9f-41cd-a336-d7db6fc98955": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "9bc4c258-4d08-59af-98fd-5692c364c3cb": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Quark",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "ef1574c0-1e73-4c4c-a301-b21d65161010": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "0bf5ce5c-c281-5029-a0a8-1c994f174dfa": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 1
+    },
+    "properties": {
+      "name": "Crystal",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA periodic crystal structure.",
+      "dimensions": [],
+      "properties": [
+        {
+          "name": "Spacegroup",
+          "type": "string",
+          "description": "COMMENT:\nA spacegroup is the symmetry group off all symmetry operations\nthat apply to a crystal structure.\n\nIt is identifies by its Hermann-Mauguin symbol or space group\nnumber (and setting) in the International tables of\nCrystallography."
+        }
+      ]
+    }
+  },
+  "7e98003b-ba72-5828-8970-582588059c85": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Solid",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "42542ce7-9f3a-5e39-84d3-b8eda8ab4739": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Continuum",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA continuum is made of a sufficient number of parts that it continues to exists as continuum individual even after the loss of one of them i.e. a continuum is a redundant.\n\nCOMMENT:\nA continuum is not necessarily small (i.e. composed by the minimum amount of sates to fulfill the definition).\n\nA single continuum individual can be the whole fluid in a pipe.\n\nCOMMENT:\nA continuum is the bearer of properties that are generated by the interactions of parts such as viscosity and thermal or electrical conductivity.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "f5ee19a3-54bd-4233-a504-1e82d4f84929": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "f21c6ff9-df63-57b2-a947-7e47e6fb9787": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Boundary",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA boundary is a 4D region of spacetime shared by two material\nentities.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "5675d77e-7898-42d9-9f2c-383314dc44d6": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 1
+    }
+  },
+  "5ed1a784-e798-5ffb-97a6-ab67ceb73ebf": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 2,
+      "nproperties": 2
+    },
+    "properties": {
+      "name": "Phase",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA phase is a continuum in which properties are homogeneous and can\nhave different state of matter.",
+      "dimensions": [
+        {
+          "name": "StiffnessTensor_length",
+          "description": "Length of StiffnessTensor"
+        },
+        {
+          "name": "Plasticity_length",
+          "description": "Length of Plasticity"
+        }
+      ],
+      "properties": [
+        {
+          "name": "StiffnessTensor",
+          "type": "float64",
+          "dims": [
+            "StiffnessTensor_length"
+          ],
+          "unit": "Pa",
+          "description": "COMMENT:\nThe stiffness tensor $c_{ijkl}$ is a property of a continuous\nelastic material that relates stresses to strains (Hooks's\nlaw) according to\n\n    $\\sigma_{ij} = c_{ijkl} \\epsilon_{kl}$\n\nDue to symmetry and using the Voight notation, the stiffness\ntensor can be represented as a symmetric 6x6 matrix\n\n    / c_1111  c_1122  c_1133  c_1123  c_1131  c_1112 \\\n    | c_2211  c_2222  c_2233  c_2223  c_2231  c_2212 |\n    | c_3311  c_3322  c_3333  c_3323  c_3331  c_3312 |\n    | c_2311  c_2322  c_2333  c_2323  c_2331  c_2312 |\n    | c_3111  c_3122  c_3133  c_3123  c_3131  c_3112 |\n    \\ c_1211  c_1222  c_1233  c_1223  c_1231  c_1212 /"
+        },
+        {
+          "name": "Plasticity",
+          "type": "float64",
+          "dims": [
+            "Plasticity_length"
+          ],
+          "unit": "Pa",
+          "description": "COMMENT:\nDescribes Yield stress and material hardening."
+        }
+      ]
+    }
+  },
+  "6ba7de33-6999-5c82-8880-95c6046d7a50": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "RVE",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nRepresentative volume element.  The minimum volume that is\nrepresentative for the system in question.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "b8fcb947-0201-427b-9e60-06e7a16ca0de": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "77e79ad2-a984-4574-9b3e-debbc491c7b1": {
+    "meta": {
+      "name": "ClassConstruct",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "Or"
+    }
+  },
+  "195252c2-be1a-565e-a536-6dff34cbc9e6": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 1,
+      "nproperties": 1
+    },
+    "properties": {
+      "name": "WeldedComponent",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nA welded component consisting of two materials welded together\nusing a third welding material.  Hence it has spatial direct\nparts 3 materials and two boundaries.",
+      "dimensions": [
+        {
+          "name": "LoadCurve_length",
+          "description": "Length of LoadCurve"
+        }
+      ],
+      "properties": [
+        {
+          "name": "LoadCurve",
+          "type": "float64",
+          "dims": [
+            "LoadCurve_length"
+          ],
+          "unit": "Pa",
+          "description": "COMMENT:\nA measure for the displacement of a material as function of the\nappliced force."
+        }
+      ]
+    }
+  },
+  "e2fdc40e-18ec-5400-8482-e5c8117e0f0e": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Component",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "35ec76ed-d510-5014-b20b-d7b9b79bd32f": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Engineered",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nWhile the 'state' branch describes single simple entities (e.g. atoms, molecules, nanoparticles), the 'engineered_entity' branch describe entities that show some level of complexity/heterogeneity in their composition, and are made for a specific use.\n\nClasses in this branch are primitive.\n\ne.g. car, tire, composite material.",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "12bd7ca7-6cdb-47c1-a7a8-28dc1c4fc340": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "cae1c6f5-6bd9-5846-841e-03ebfc4613a7": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Manufacturing",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "d1ac3bf3-bf76-4be6-85a9-858d0cd08f93": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "1effd694-5d72-41d6-9f30-43411db5fc19": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 3
+    }
+  },
+  "2f4d754f-5bbe-56b9-9315-6aa6193e5096": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Material",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "COMMENT:\nThe definition states that a 'material' is a portion of a real world object, being that a full functional device or component, or a sample made of that material (or the sample itself).",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "4fa98e4f-4c37-5cfd-9ef3-1d56629c6fd8": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Matter",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "93c5b9e1-f224-500d-ac26-3b9f5becaa66": {
+    "meta": {
+      "name": "EntitySchema",
+      "version": "0.3",
+      "namespace": "http://meta.sintef.no"
+    },
+    "dimensions": {
+      "ndimensions": 0,
+      "nproperties": 0
+    },
+    "properties": {
+      "name": "Type",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo",
+      "description": "",
+      "dimensions": [],
+      "properties": []
+    }
+  },
+  "0c7cb853-4c58-4bf7-b665-9529201dd54d": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "some",
+      "cardinality": 0
+    }
+  },
+  "af5bc73a-f845-4d8f-a71f-33faf03cb316": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "only",
+      "cardinality": 0
+    }
+  },
+  "58ffd99d-9a45-433b-a432-fa766e5902fa": {
+    "meta": {
+      "name": "Restriction",
+      "version": "0.1",
+      "namespace": "http://www.emmc.info/emmc-csa/demo"
+    },
+    "dimensions": {},
+    "properties": {
+      "type": "exactly",
+      "cardinality": 2
+    }
+  }
+}

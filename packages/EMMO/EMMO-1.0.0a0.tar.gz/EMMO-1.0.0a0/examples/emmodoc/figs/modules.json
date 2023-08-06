@@ -1,0 +1,60 @@
+{
+    "http://emmo.info/emmo.owl#": [
+        "http://emmo.info/domains/emmo-geometry.owl#",
+        "http://emmo.info/domains/emmo-math.owl#",
+        "http://emmo.info/domains/emmo-models.owl#",
+        "http://emmo.info/domains/emmo-usercase.owl#",
+        "http://emmo.info/domains/emmo-physical-properties.owl#",
+        "http://emmo.info/domains/emmo-material.owl#"
+    ],
+    "http://emmo.info/domains/emmo-geometry.owl#": [
+        "http://emmo.info/domains/emmo-math.owl#"
+    ],
+    "http://emmo.info/domains/emmo-math.owl#": [
+        "http://emmo.info/domains/emmo-graphical.owl#",
+        "http://emmo.info/perspectives/emmo-semiotics.owl#"
+    ],
+    "http://emmo.info/domains/emmo-graphical.owl#": [
+        "http://emmo.info/perspectives/emmo-impression.owl#"
+    ],
+    "http://emmo.info/perspectives/emmo-impression.owl#": [
+        "http://emmo.info/base/emmo-physical.owl#"
+    ],
+    "http://emmo.info/base/emmo-physical.owl#": [
+        "http://emmo.info/base/emmo-4d.owl#"
+    ],
+    "http://emmo.info/base/emmo-4d.owl#": [
+        "http://emmo.info/base/emmo-mereotopology.owl#"
+    ],
+    "http://emmo.info/base/emmo-mereotopology.owl#": [
+        "http://emmo.info/base/emmo-annotations.owl#"
+    ],
+    "http://emmo.info/base/emmo-annotations.owl#": [],
+    "http://emmo.info/perspectives/emmo-semiotics.owl#": [
+        "http://emmo.info/perspectives/emmo-processual.owl#"
+    ],
+    "http://emmo.info/perspectives/emmo-processual.owl#": [
+        "http://emmo.info/base/emmo-physical.owl#"
+    ],
+    "http://emmo.info/domains/emmo-material.owl#": [
+        "http://emmo.info/perspectives/emmo-existent.owl#"
+    ],
+    "http://emmo.info/perspectives/emmo-existent.owl#": [
+        "http://emmo.info/base/emmo-physical.owl#"
+    ],
+    "http://emmo.info/domains/emmo-models.owl#": [
+        "http://emmo.info/domains/emmo-physical-properties.owl#",
+        "http://emmo.info/domains/emmo-math.owl#"
+    ],
+    "http://emmo.info/domains/emmo-physical-properties.owl#": [
+        "http://emmo.info/domains/emmo-properties.owl#",
+        "http://emmo.info/domains/emmo-math.owl#"
+    ],
+    "http://emmo.info/domains/emmo-properties.owl#": [
+        "http://emmo.info/domains/emmo-graphical.owl#",
+        "http://emmo.info/perspectives/emmo-semiotics.owl#"
+    ],
+    "http://emmo.info/domains/emmo-usercase.owl#": [
+        "http://emmo.info/perspectives/emmo-existent.owl#"
+    ]
+}
