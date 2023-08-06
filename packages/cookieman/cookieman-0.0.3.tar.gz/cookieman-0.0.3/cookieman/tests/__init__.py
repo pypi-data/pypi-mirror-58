@@ -1,0 +1,1 @@
+"""Cookieman test suite."""
