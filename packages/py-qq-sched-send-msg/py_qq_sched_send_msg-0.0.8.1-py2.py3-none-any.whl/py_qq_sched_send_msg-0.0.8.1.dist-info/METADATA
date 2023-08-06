@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: py-qq-sched-send-msg
+Version: 0.0.8.1
+Summary: 这是一个可以快捷地向多个QQ好友或群组发消息的包
+Home-page: https://github.com/Sugobet/QQ-Sched-send-message
+Author: Sugobet
+Author-email: 321355478@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# py-qq-sched-send-message
+
+这个包可以在Windows上使用  对QQ好友、群定时发送消息
+目前这个还处于开发阶段，只能发送文字，未来会支持图片等
+[Github-flavored Markdown](https://github.com/Sugobet/QQ-Sched-send-message)
+
+
