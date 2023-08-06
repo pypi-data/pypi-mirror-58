@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+test.py
+version.txt
+e2fyi/pyspark/__init__.py
+e2fyi/pyspark/schema.py
+e2fyi_pyspark.egg-info/PKG-INFO
+e2fyi_pyspark.egg-info/SOURCES.txt
+e2fyi_pyspark.egg-info/dependency_links.txt
+e2fyi_pyspark.egg-info/not-zip-safe
+e2fyi_pyspark.egg-info/requires.txt
+e2fyi_pyspark.egg-info/top_level.txt
