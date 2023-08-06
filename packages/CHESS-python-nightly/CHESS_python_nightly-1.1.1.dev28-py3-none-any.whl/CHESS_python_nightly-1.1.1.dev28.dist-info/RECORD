@@ -1,0 +1,10 @@
+chess/__init__.py,sha256=e7lmHTCZxMpmBm_a2EhzzJP-T2xqSRgEDL5uNFjB_7w,95
+chess/criterion.py,sha256=B7dd4U_nfTFZR4DlQHH5iTQJBvn6rK4mV5Lkrk38y8Y,4273
+chess/datasets.py,sha256=xrq3bBC5h8ilCrTB253ZICPbA4DCVwrPWT-9JeKT4Qw,4452
+chess/manifold.py,sha256=M3t58LP2dD18tVe0eTNj2dcB2Z5l8DyPj9EvK8SNdNA,29413
+chess/types.py,sha256=5QMls-m0RycETRxX-bkzPLSEPuIF4aBZ-PjsXOh06q0,236
+CHESS_python_nightly-1.1.1.dev28.dist-info/LICENSE.md,sha256=UwFDmvow6lKe-_saLVcodCMermYwg01PwjP0ZAnsFLI,1071
+CHESS_python_nightly-1.1.1.dev28.dist-info/METADATA,sha256=p79uJ1FGk7OyyezVn5uZDRhFpCH93AvIi50qtdkcz2E,1494
+CHESS_python_nightly-1.1.1.dev28.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+CHESS_python_nightly-1.1.1.dev28.dist-info/top_level.txt,sha256=KQh_dmhsO-MtGPgCihpBa-q5XF6tGfA9_MKDXETuyss,6
+CHESS_python_nightly-1.1.1.dev28.dist-info/RECORD,,
