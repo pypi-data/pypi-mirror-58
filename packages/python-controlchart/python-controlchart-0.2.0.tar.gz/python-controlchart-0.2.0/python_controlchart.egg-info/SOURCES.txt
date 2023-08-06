@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+controlchart/__init__.py
+python_controlchart.egg-info/PKG-INFO
+python_controlchart.egg-info/SOURCES.txt
+python_controlchart.egg-info/dependency_links.txt
+python_controlchart.egg-info/top_level.txt

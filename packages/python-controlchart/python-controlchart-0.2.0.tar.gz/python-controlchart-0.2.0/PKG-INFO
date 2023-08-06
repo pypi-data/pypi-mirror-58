@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: python-controlchart
+Version: 0.2.0
+Summary: Creation of control charts with matplotlib
+Home-page: https://github.com/torstenfeld/python-controlchart
+Author: Torsten Feld
+Author-email: torsten@torsten-feld.de
+License: UNKNOWN
+Download-URL: https://github.com/peterldowns/mypackage/tarball/0.1
+Description: UNKNOWN
+Keywords: statistics,spc,chart,tool,process control,shewhart,control chart
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Requires: numpy
+Requires: matplotlib
