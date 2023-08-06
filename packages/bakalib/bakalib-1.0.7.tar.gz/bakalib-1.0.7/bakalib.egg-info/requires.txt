@@ -1,0 +1,5 @@
+cachetools
+grequests
+lxml
+requests
+xmltodict
