@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fouine/__init__.py
+fouine/_download.py
+fouine.egg-info/PKG-INFO
+fouine.egg-info/SOURCES.txt
+fouine.egg-info/dependency_links.txt
+fouine.egg-info/requires.txt
+fouine.egg-info/top_level.txt
