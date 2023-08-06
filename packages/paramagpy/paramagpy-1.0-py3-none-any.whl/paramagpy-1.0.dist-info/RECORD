@@ -1,0 +1,13 @@
+paramagpy/__init__.py,sha256=kMUKrhI1O2Fc56BP6ZKiF-tH08o2eVxg-8lPvhZ1p_Y,162
+paramagpy/_version.py,sha256=rMAfsP6Hb75p993EYq2Er99BwmStgG2VR2FptTsBTiY,20
+paramagpy/dataparse.py,sha256=0MLRt3F1JZVoXpnhknZ47KSgyp_iU1jOVNC6vn7WsFQ,5050
+paramagpy/fit.py,sha256=_LblA_XgJkNVrvewKubjhID8LN5bOgms7vJt3adNOr0,40263
+paramagpy/gui.py,sha256=zbSKl6_bQ74z8GILOLEVbWT9gwEw7IolSnwC3zdO2rw,85542
+paramagpy/icon.gif,sha256=Q5A_TtQQRuRlZ4CK9imfjgx5GNaFXlmHdb3PsHElDo4,16415
+paramagpy/metal.py,sha256=vPzap8T8csa6h_V4iiH5_QR86D5-HwOTbg5cjqxG4G4,55462
+paramagpy/protein.py,sha256=jrWdE45qqQkEJPCCl8mRhxQM3ojoBka7vgDCxwO7Ha8,12452
+paramagpy-1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+paramagpy-1.0.dist-info/METADATA,sha256=l0VC0donmI1GIadlzarKGyCpR9VAne5uzKY1O8Kg7IU,2463
+paramagpy-1.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+paramagpy-1.0.dist-info/top_level.txt,sha256=VBQo4IPebCkpM14KeMoECOenkjdFj9MTJiZJuzUVFAA,10
+paramagpy-1.0.dist-info/RECORD,,
