@@ -1,0 +1,2 @@
+scitools-iris>=2.0.*
+eccodes-python
