@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+particle/__init__.py
+particle/particle.py
+python3_particle.egg-info/PKG-INFO
+python3_particle.egg-info/SOURCES.txt
+python3_particle.egg-info/dependency_links.txt
+python3_particle.egg-info/requires.txt
+python3_particle.egg-info/top_level.txt
