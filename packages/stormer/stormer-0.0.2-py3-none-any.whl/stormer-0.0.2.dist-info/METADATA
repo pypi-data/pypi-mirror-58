@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: stormer
+Version: 0.0.2
+Summary: this is a requester
+Home-page: https://github.com/murray-ma/stormer/
+Maintainer: Murray
+Maintainer-email: murray.ma@qq.com
+License: MIT
+Download-URL: https://github.com/murray-ma/stormer/
+Keywords: stormer,requester,redis
+Platform: Platform Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: redis (>=3.3.11)
+
+## DataClient
+
+### Introduction
+this is a request tool which packaging method server
+
+### Usage
+1. init requester
+```python
+from stormer import Requester
+requester = Requester(host="www.baidu.com")
+
+```
+
+2. register method
+```python
+requester.register(action="get", func="bd_download", uri="download")
+```
+
+3. call method
+```python
+rlt = requester.bd_download()
+response = rlt.resp
+print(response)
+```
+
+
+
+
+
+
