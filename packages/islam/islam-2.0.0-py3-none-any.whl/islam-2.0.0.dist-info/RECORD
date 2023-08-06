@@ -1,0 +1,13 @@
+pyIslam/__init__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+pyIslam/baselib.py,sha256=5otb3gqiRUi5we3SN-8J9XTajCDL0JENFutx2wHICi8,2266
+pyIslam/baselib.test.py,sha256=jr0zRfQOZc79a5BkDgONkF2nqHI_39gvFrN9TYt-P3s,229
+pyIslam/hijri.py,sha256=g98NToPvzeyBYAAi5jA9CFKNrVFxmmmAKHvO28DFAlI,3845
+pyIslam/mirath.py,sha256=xMLqvP6pcPJkH1kaWU1VNsEZX6xYmY7xrLrqaRrk9LM,16623
+pyIslam/praytimes.py,sha256=U6cJHy-xG9VccP1KJiusaINAto30flXsP3PV3iZnUio,7715
+pyIslam/qiblah.py,sha256=VTpyI4MqXRZUrWrPOOrHv5qjwl4FB9Pmx2lg8lCXaHQ,1505
+pyIslam/zakat.py,sha256=l-KkV_QSJQGHj-fRtLguqqRQUmeT24avmaQw8qHyVRU,1282
+islam-2.0.0.dist-info/LICENSE.md,sha256=-XvEu5t66KZTlBBzZ4tcd3Xo3kSgHDvMIefNwUi5DmE,7632
+islam-2.0.0.dist-info/METADATA,sha256=R02Wr2V6nWnDialvBmZGskBq5Z32kYYZbga-T10BFK4,2524
+islam-2.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+islam-2.0.0.dist-info/top_level.txt,sha256=C7KZpvVvvU9QZdnYkHIkFnPt_RH09y_Kl25JzFPLJ-U,8
+islam-2.0.0.dist-info/RECORD,,
