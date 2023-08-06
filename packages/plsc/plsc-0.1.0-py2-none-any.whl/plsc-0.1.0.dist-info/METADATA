@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: plsc
+Version: 0.1.0
+Summary: PaddlePaddle Large Scale Classfication Package.
+Home-page: https://github.com/PaddlePaddle/PLSC
+Author: PaddlePaddle Authors
+Author-email: paddle-dev@baidu.com
+License: Apache 2.0
+Keywords: plsc paddlepaddle large-scale classification model-parallelism distributed-training
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: sklearn
+Requires-Dist: easydict
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: six
+
+UNKNOWN
+
+
