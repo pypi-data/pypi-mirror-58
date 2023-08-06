@@ -1,0 +1,17 @@
+lumigo_log_shipper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lumigo_log_shipper/lumigo_shipper.py,sha256=OL3JoGkEltdyC6-fFJv4_ibAZhs-7ABrsnVuHvalNs8,1602
+lumigo_log_shipper/models.py,sha256=Hhb7183T3I7rbbz_Xba_1gPagUAELITuSbQ6zcfSAuc,806
+lumigo_log_shipper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lumigo_log_shipper/utils/aws_utils.py,sha256=acruO9n2mePCRu6NDOUe62ove1aESwijw7JLrtE9kbk,1489
+lumigo_log_shipper/utils/consts.py,sha256=VXhGJ_T1CXg4JTEMTEXKviluaNGD5YA6-V9ECqpE09Y,744
+lumigo_log_shipper/utils/encoder.py,sha256=hgokpsn8i3MjSxnU9PxGqOTx_f1CxJPsHLyk5wcvTzY,225
+lumigo_log_shipper/utils/firehose_dal.py,sha256=GZG4OOLM1z-cpnisKgSOfssnH4olowRdOllYv_SCLO8,5171
+lumigo_log_shipper/utils/model_builder.py,sha256=N5jg7Ky8ZvRMnwsNTkd9buObXNDllgoyCqCOQHWS3hg,927
+lumigo_log_shipper/utils/shipper_utils.py,sha256=uRcVQ6XKIcYGtct5PHKuk_JPWdMfbmfNp6Iez52UP6A,1211
+lumigo_log_shipper/utils/sts.py,sha256=NY27Xg6P9r9HFeWPCgcn9PY9gOIKljaNucLY_-kSWqQ,337
+lumigo_log_shipper/utils/utils.py,sha256=DBCFXLHXXrWeTM2JBqagoFwhrzEKPivqg9qdEPquhMI,304
+lumigo_log_shipper-1.0.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lumigo_log_shipper-1.0.9.dist-info/METADATA,sha256=yWCogtdjYNFuSDitpefqmJcPeR14ys4Y7-gMpmcx08Q,1809
+lumigo_log_shipper-1.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lumigo_log_shipper-1.0.9.dist-info/top_level.txt,sha256=M5jFKVYd5872RMp8a2OKTP7EuvhdR5PC5Y_mref8tB0,19
+lumigo_log_shipper-1.0.9.dist-info/RECORD,,
