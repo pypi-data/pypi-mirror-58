@@ -1,0 +1,16 @@
+dora/__init__.py,sha256=wQnlRZUbDHKZfl2uyvkGWmrK6EaFisDk0d77u30QW4U,79
+dora/isa.py,sha256=vtvfDoSF3ICENGr9nTIosJmteJtPGu8BCXM-XSoNftY,25723
+dora/ml.py,sha256=Svhh6pxRY7zwVNNiqrvUm0QCWxAGfJLyLfz_enm267E,10965
+dora/interface/Interfaces.py,sha256=moWS1eEnTPPkA1x7jAAL5CG-0253ZNX_HcX_70vRFro,605
+dora/interface/__init__.py,sha256=ia9X2THe-_qGCyQ8Y8sP2n1dT8bUcXOtIBj9j4fPiRg,91
+dora/interface/generic.py,sha256=dJNGuffw_oO7eazpcsI-SQYu9bPX7ZwTuyiq4CrWxe4,318
+dora/interface/jupyter.py,sha256=NF1FQDME4_tP8Q1nRjvriR4MwTRauURKtS8UPvrrYbw,478
+dora/interface/zeppelin.py,sha256=JG1UyBtHcS_6HEIIz3LpP5kyagh_0V8FKoVxhUYfhiM,843
+dora/template/cp/score/code_score.py,sha256=fz1w7gTrl_iqzrFwCi19_3d0VsU2suY7LnlHw2_ZN7Q,643
+dora/template/cp/score/init.py,sha256=jBz8Lo6YuE9acgbU5DEq25RRfzpcocodaAjPEMj4I9g,1202
+dora_isa-0.2.1.10.data/data/lib/python3.7/site-packages/dora/template/Dockerfile,sha256=tahF-gxjz6KykxukhvbrvYgKlUsKCYJfyhTLtizCMT0,846
+dora_isa-0.2.1.10.data/data/lib/python3.7/site-packages/dora/template/cp/score/run.sh,sha256=pUmtNSfEKu8ISTQK_SK3YrRYgK-fVreR5lBCnSZKkiU,1247
+dora_isa-0.2.1.10.dist-info/METADATA,sha256=uXKQVSeMhxrEcori1OeA2VklA2w2mCaC64l2gNFXoX8,772
+dora_isa-0.2.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dora_isa-0.2.1.10.dist-info/top_level.txt,sha256=Rb4Rb0tO928q_PJ68cWAK89M-CaJFg0wsaKTC-7898M,43
+dora_isa-0.2.1.10.dist-info/RECORD,,
