@@ -1,0 +1,94 @@
+[tool.poetry]
+name = "oapilib"
+version = "0.0.1"
+description = "Toolkit for building clients of OGC API family of standards"
+license = "MIT"
+authors = [
+    "Francesco Bartoli <xbartolone@gmail.com>"
+]
+readme = 'README.md'  # Markdown files are supported
+include = [
+    "README.md",
+    "pyproject.toml",
+    "LICENSE"
+]
+
+[[tool.poetry.source]]
+name = "public pypi"
+url = "https://pypi.python.org/simple"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = "^0.7.8"
+pydantic = "^1.0"
+typing-extensions = "^3.7"
+loguru = "^0.3.2"
+structlog = "^19.2"
+pygments = "^2.4"
+pretty-json = "^1.2"
+pout = "^0.7.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0"
+mkdocs = "^1.0"
+mkdocs-material = "^4.4"
+mkdocs-material-components = "^1.10"
+invoke = "^1.3"
+ipython = "^7.9"
+devtools = "^0.5.1"
+pytest-sugar = "^0.9.2"
+black = {version = "^18.3-alpha.0", allow-prereleases = true}
+flake8 = "^3.7"
+isort = "^4.3"
+seed-isort-config = "^1.9"
+pre-commit = "^1.20"
+tox = "^3.14"
+pytest-testmon = "^1.0.1"
+pdoc3 = "^0.7.2"
+docformatter = "^1.3.1"
+portray = "^1.3.1"
+flake8-docstrings = "^1.5.0"
+
+[tool.poetry.extras]
+doc = ["mkdocs", "mkdocs-material", "mkdocs-material-components"]
+
+[tool.poetry.scripts]
+oapi = "cli.main:program.run"
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+      \.git
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+'''
+
+[tool.flake8]
+# Black enforces 88 characters line length
+max_line_length = 88
+docstring-convention = "numpy"
+
+[tool.tox]
+legacy_tox_ini = ""
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+known_third_party = ["httpx", "invoke", "loguru", "pout", "pretty_json", "pydantic", "yaml"]
+
+[tox]
+isolated_build = true
+envlist = "py37"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"

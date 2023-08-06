@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: oapilib
+Version: 0.0.1
+Summary: Toolkit for building clients of OGC API family of standards
+License: MIT
+Author: Francesco Bartoli
+Author-email: xbartolone@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: doc
+Requires-Dist: httpx (>=0.7.8,<0.8.0)
+Requires-Dist: loguru (>=0.3.2,<0.4.0)
+Requires-Dist: pout (>=0.7.9,<0.8.0)
+Requires-Dist: pretty-json (>=1.2,<2.0)
+Requires-Dist: pydantic (>=1.0,<2.0)
+Requires-Dist: pygments (>=2.4,<3.0)
+Requires-Dist: structlog (>=19.2,<20.0)
+Requires-Dist: typing-extensions (>=3.7,<4.0)
+Description-Content-Type: text/markdown
+
+# OAPILib
+
+## description
+
+TBD
+
+## Notes
+
+api.py
+------
+
+# import sys
+
+
+# from .util import StreamToLogger, jsonify
+
+# sys.stdout = StreamToLogger()
+
+
+client.py
+---------
+
+# from httpx.models import BaseResponse
+
+# from typing_extensions import Literal
+
+cli/config.py
+---------
+
+# import sys
+
+# from loguru import logger
+
+core/config.py
+--------------
+

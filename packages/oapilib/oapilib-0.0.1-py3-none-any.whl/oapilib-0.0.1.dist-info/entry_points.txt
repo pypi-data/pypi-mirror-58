@@ -1,0 +1,3 @@
+[console_scripts]
+oapi=cli.main:program.run
+

@@ -1,0 +1,10 @@
+README.md,sha256=VqxE_2VKXbZvzuLF2LntgAkf1YTQ2jWVDQDiFsHmgOg,352
+oapilib/__init__.py,sha256=kAQdKv6YJFPhs2FtQpQw9vF7emCsqRsjSWBb5AnGC4E,47
+oapilib/core/__init__.py,sha256=dxtOP1DopMSNFYGh3Hf12RVcs58R9xwLn-gqfKFo-HE,19
+oapilib/core/client.py,sha256=kX5WIMmwONJSTiCiUi17kEfiNIXBuUlzQA2SL7zFOTk,7485
+oapilib/core/config.py,sha256=H4lTtmcPSmIsyt0B67-lGIwiZRqQXH9-LsvrKaNYX9w,104
+pyproject.toml,sha256=8QNYFqvF7c-aCKSgMaKxR9GPSc5qGCCaciSHQp9RA3I,1847
+oapilib-0.0.1.dist-info/entry_points.txt,sha256=4vPT9gi_m7WKReJS8_yysy2zUKuWpAYWJmm9IZFlATw,45
+oapilib-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+oapilib-0.0.1.dist-info/METADATA,sha256=WGFB9YEtb3RuFcEA0NPx2buAKHZdmbei0g2Oh6gVVws,1149
+oapilib-0.0.1.dist-info/RECORD,,
