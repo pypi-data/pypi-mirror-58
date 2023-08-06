@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: Chinese-holiday
+Version: 0.1.1
+Summary: 从国务院网站解析节假日信息的小工具
+Home-page: https://github.com/chariothy/Chinese-holiday.git
+Author: Henry TIAN
+Author-email: chariothy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5.0
