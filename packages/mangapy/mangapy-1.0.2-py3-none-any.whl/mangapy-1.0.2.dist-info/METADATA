@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: mangapy
+Version: 1.0.2
+Summary: Manga downloader
+Home-page: https://github.com/alemar11/manga
+Author: Alessandro Marzoli
+Author-email: alessandromarzoli@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Python: >=3.7
+Requires-Dist: bs4
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+# mangapy
+
+Manga downloader supporting the following sources:
+
+- fanfox.net
+- mangapark.net
+
+## Installation
+
+```
+pip install mangapy
+```
+
+## Usage
+
+Downloads all Bleach chatpers inside the *Downloads* folder (from Fanfox source).
+```
+mangapy bleach -a -o ~/Downloads
+```
+
+Downloads Bleach chatper 1 inside the *Downloads* folder (from Fanfox source).
+```
+mangapy bleach -c 1 -o ~/Downloads
+```
+
+Downloads Bleach chatpers from 0 to 10 (included) inside the *Downloads* folder using MangaPark as source.
+```
+mangapy bleach -c 0-10 -o ~/Downloads -s mangapark
+```
+
+## Development
+
+Install from local folder
+
+```
+pip install .
+```
+
+Install from local folder (editable mode)
+
+```
+pip install -e .
+```
+
+Install a local setup.py into your virtual environment/Pipfile:
+
+```
+pipenv install -e .
+```
+
+Run tests:
+
+```
+pipenv run pytest
+```
+
