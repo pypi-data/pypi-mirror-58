@@ -1,0 +1,16 @@
+simple_manga_downloader/SMD.py,sha256=EvkV5eeKDMpw7G9M-bwn0mgAuDknXDSh1Ch1CBWI5y8,15894
+simple_manga_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_manga_downloader/decorators.py,sha256=7uw0pxRhQhZMUg4J1hLvKduEC_orb2etegStWh9qsPI,1275
+simple_manga_downloader/modules/__init__.py,sha256=IkwGAgAvNY5q4MIuOhKQBL5Px26soPO9S011_j-WhZM,230
+simple_manga_downloader/modules/config_parser.py,sha256=v3lPqx1gWCxAz-4SlSoY9zUGl5hUm_WSk6M-F30-z4k,6005
+simple_manga_downloader/modules/heavenmanga_org.py,sha256=_0cJ6GwesMvnmXXubyuqbRJIWguCaBqh5mnnHSPHxp8,3240
+simple_manga_downloader/modules/mangadex_org.py,sha256=nGRBojguaGdWJ0rT-B2i_kIYypQmEyYS27d8CSunBog,5635
+simple_manga_downloader/modules/mangakakalot_com.py,sha256=NtTISnB12aWQTj_O34TMS7vgyl9_JR710EuCf3UCmxk,2641
+simple_manga_downloader/modules/mangaseeonline_us.py,sha256=QSFgYPsSPADUmFi4Vf39CWn0jXh8VfejraGzaAsKef8,2282
+simple_manga_downloader/modules/mangatown_com.py,sha256=WdO98IhsNIMMURCTtlDMs40hPjRncbWokHMkIxjyqKo,3053
+simple_manga_downloader-1.5.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simple_manga_downloader-1.5.1.dist-info/METADATA,sha256=qNXwVCMwBUIf9i0yRb1nMKqp7tmDHSy3ZoB5c4Nucx4,4967
+simple_manga_downloader-1.5.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simple_manga_downloader-1.5.1.dist-info/entry_points.txt,sha256=Bt1-l9oLFYYOZYywyvA8WbdoqutG31fW2b9YmZEaCTI,58
+simple_manga_downloader-1.5.1.dist-info/top_level.txt,sha256=40Vc2KqkDCuQDDZd1nwwOhvXl7y2MfWC3jC8-Pga7_A,24
+simple_manga_downloader-1.5.1.dist-info/RECORD,,
