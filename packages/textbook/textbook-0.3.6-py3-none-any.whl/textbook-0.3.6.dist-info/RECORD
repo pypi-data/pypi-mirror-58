@@ -1,0 +1,10 @@
+textbook/__init__.py,sha256=jVa9wzW82jqSBzo5pD6dZtCDeJQZN6PXcYvB3T0nMUg,126
+textbook/dataset.py,sha256=x_vnR66SBWTlSyH1pigCzshjqSkUUIvcu-gpDJ9pj5I,1500
+textbook/renderers.py,sha256=vUrnlHn_Y2Iu1F7oIeGWVpvOwjyf5giLux5WtK9paVM,3685
+textbook/templates.py,sha256=lty48zdWoyoRf2wIsGloPj07WY9gEKPMEs94T8aoH20,5278
+textbook/transforms_video.py,sha256=d-GnVXTZped3XB-_MMs5cIx_1hycJzIDNM6UaiU2MhI,8593
+textbook/utils.py,sha256=YE-CyWw_TQTYwml0g4F8Ri6Fg507rfN6bHUVdBXOGsY,5450
+textbook-0.3.6.dist-info/METADATA,sha256=VHZiy7kO-Y8id9x9lskLeBwRxjvxzyQpae4FR_uHQx0,7526
+textbook-0.3.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+textbook-0.3.6.dist-info/top_level.txt,sha256=nl1jzG0k6yac9oeoZ7QNx9m_jJ4tSFgvFu0WH33feNA,9
+textbook-0.3.6.dist-info/RECORD,,
