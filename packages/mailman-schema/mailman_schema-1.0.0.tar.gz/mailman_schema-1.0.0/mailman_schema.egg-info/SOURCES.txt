@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README
+setup.cfg
+setup.py
+mailman_schema.egg-info/PKG-INFO
+mailman_schema.egg-info/SOURCES.txt
+mailman_schema.egg-info/dependency_links.txt
+mailman_schema.egg-info/entry_points.txt
+mailman_schema.egg-info/not-zip-safe
+mailman_schema.egg-info/requires.txt
+mailman_schema.egg-info/top_level.txt
+paraxor_schema/__init__.py
+paraxor_schema/schema.py
+paraxor_schema/tests/__init__.py
+paraxor_schema/tests/test_schema.py
