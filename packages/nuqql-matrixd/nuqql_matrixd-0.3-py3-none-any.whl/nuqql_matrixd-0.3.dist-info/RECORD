@@ -1,0 +1,11 @@
+nuqql_matrixd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nuqql_matrixd/client.py,sha256=eHqkDOeF5rXt6IhhreiOCJETkdO4okyqYsyW8FCg9Ug,12656
+nuqql_matrixd/main.py,sha256=wpj1wVIUAyOQ2ROOLT3VuLPt-7GKBEpvAyF3Z8_2sro,290
+nuqql_matrixd/matrix.py,sha256=OMQLXH-Y0gWfn5SufDt-AF2rmHgL8R4hAJXiNN5WTu0,15133
+nuqql_matrixd/server.py,sha256=vqPKAKlbXOdwf5c3wpwMIO38um4_Y2EpXhDVxxXdPLg,6750
+nuqql_matrixd-0.3.dist-info/LICENSE,sha256=me_8EPVOyoudFhDLZ5qUm0qk1RGjmXn4dKnJfZd8ZzE,1062
+nuqql_matrixd-0.3.dist-info/METADATA,sha256=QOA2sTlqHu6z1eNmc8gCzr9Eq8ACTMeIl24_loc_ssE,4354
+nuqql_matrixd-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nuqql_matrixd-0.3.dist-info/entry_points.txt,sha256=__vK32FeRNFKyMTvj8M43h7m3R36aUoj9IuyKBibpoM,59
+nuqql_matrixd-0.3.dist-info/top_level.txt,sha256=VpUIzMdNP7gdeep9nyacsCCREiaWkHHvsjLQNWd7q98,14
+nuqql_matrixd-0.3.dist-info/RECORD,,
