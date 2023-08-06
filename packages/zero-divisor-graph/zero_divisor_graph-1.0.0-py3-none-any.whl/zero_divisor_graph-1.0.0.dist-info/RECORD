@@ -1,0 +1,15 @@
+zdg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zdg/counter.py,sha256=plneU4Nkm1xL-cqVPbCeLW0OFmvl5Ca0MOhnYNHcZTE,1033
+zdg/graph.py,sha256=07maCAWRP7ZBJEdjA3UVZLgTSPAMHosx-SnkADhh5zA,1625
+zdg/groupoid.py,sha256=RMsneMxQ1bKlToLyHk2_MYQw55UUq6apYqtA2te15Kc,1698
+zdg/semigroup.py,sha256=a8ViEGL5KqP9FduwADm0wOJa5q991GbK4x1gXHrwhmU,2696
+zdg/zdg.py,sha256=AbhQwbfpWDQGEU2cnDHdMKeumzxfkdis9qBrypJn0fI,899
+zdg/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zdg/tests/test_counter.py,sha256=3Psy1zFuzyMnX83QYy-myk5D5C2eDT44h5_D8QxgeFE,1360
+zdg/tests/test_graph.py,sha256=Rv3xAVeRUOGGjZsF9VzAiAyfLYDNi9iUKdt_lf0yaSU,2252
+zdg/tests/test_groupoid.py,sha256=AeAUqhS7_x4mb_o0P3RIoYTt1aMTfcZXhVWym-zMMQo,1711
+zdg/tests/test_semigroup.py,sha256=vpWVRxe_MRTMr7tBffhcIDdTxxsmpA7JVIRQ7XapIpY,2254
+zero_divisor_graph-1.0.0.dist-info/METADATA,sha256=TE3N46UPYOyPrj5Mda4cv5q5-TF1uAsXDR2SxWq3g7o,1431
+zero_divisor_graph-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+zero_divisor_graph-1.0.0.dist-info/top_level.txt,sha256=61lNuY7w8TkxVT3orZfN5-OBArT9STXH2dDIwwFCrH8,4
+zero_divisor_graph-1.0.0.dist-info/RECORD,,
