@@ -1,0 +1,8 @@
+README.md
+setup.py
+attrs-binary/__init__.py
+attrs_binary.egg-info/PKG-INFO
+attrs_binary.egg-info/SOURCES.txt
+attrs_binary.egg-info/dependency_links.txt
+attrs_binary.egg-info/requires.txt
+attrs_binary.egg-info/top_level.txt
