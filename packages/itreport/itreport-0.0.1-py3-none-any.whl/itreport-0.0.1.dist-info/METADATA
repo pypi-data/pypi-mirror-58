@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: itreport
+Version: 0.0.1
+Summary: Commands to allow command line jira reports.
+Home-page: https://github.com/magmax/jirareport
+Author: Miguel Ángel García
+Author-email: miguelangel.garcia@gmail.com
+License: MIT
+Keywords: jira atlassian report
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: jinja2 (==2.10.3)
+Requires-Dist: jira (==2.0.0)
+Requires-Dist: pyyaml (==5.2)
+
+Quick SetUp
+===========
+
+Jirareport uses python-jira, so it can use the `.netrc` file too.
+
+The easiest setup is:
+
+1. Get an api token. If you are using Jira Cloud, you can get it at
+   https://id.atlassian.com/manage/api-tokens
+
+2. Edit the `~/.netrc` file with an entry like::
+
+       machine <uri to your jira instance>
+         login <your username>
+         password <the jira token>
+
+   example::
+
+       machine example.atlassian.net
+         login fubar@example.org
+         password ASDFHUdflasfj867ua
+
+3. Install jirareport::
+
+    pip install jirareport
+
+
+This install some scripts:
+
+jiradump
+--------
+
+Dumps jira issues, authors and more into yaml files.
+
+Example:
+
+    python -m jiradump --server example.atlassian.net --project EX
+
+This is the only script that works with Jira directly. The others will work with
+`jiradump` results.
+
+
+
+

@@ -1,0 +1,4 @@
+[console_scripts]
+itreport = itreport.report:main
+jiradump = itreport.jiradump:main
+
