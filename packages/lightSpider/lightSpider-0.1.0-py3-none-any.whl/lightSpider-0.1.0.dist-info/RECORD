@@ -1,0 +1,15 @@
+lightspider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightspider/downloader.py,sha256=wst0sP_kMy8rK9WG_a1vixkIsgyJn02jabbZCFcRKDs,600
+lightspider/scheduler.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightspider/spider.py,sha256=vv-pGLwrkzsQqFs2m07cmtGmhIB7nxqp69tyiPxW2rU,2781
+lightspider/worker.py,sha256=_FlzXi8qx15fUivbIT4tilF1yINdAbqp5fqpH2bDOqQ,903
+lightspider/writer.py,sha256=YEHITSnfActPrQn7kFrKk9NU7s2nFRKSG54DOJ1wc-U,1337
+lightspider/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightspider/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lightspider/utils/log.py,sha256=ch4hc-QXFo_KcQqgcgKC06Lgvw-LbpOP20zcJlEjh7M,3582
+lightspider/utils/proxy.py,sha256=0H-C0-aoiMNkx5NnIGicEnDir3m36ZIDVX-PhN4k3qM,274
+lightSpider-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+lightSpider-0.1.0.dist-info/METADATA,sha256=4ULg95iJ9pegJFedeYG9Px-aUjLgOGkl8m0ONNCw5uQ,3973
+lightSpider-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+lightSpider-0.1.0.dist-info/top_level.txt,sha256=fhzCElq2ZwE3QO4Ss-_UjHkt3qUt8uv81sZkYFAgr6Q,12
+lightSpider-0.1.0.dist-info/RECORD,,
