@@ -1,0 +1,7 @@
+README.md
+setup.py
+verbose_ls.egg-info/PKG-INFO
+verbose_ls.egg-info/SOURCES.txt
+verbose_ls.egg-info/dependency_links.txt
+verbose_ls.egg-info/entry_points.txt
+verbose_ls.egg-info/top_level.txt
