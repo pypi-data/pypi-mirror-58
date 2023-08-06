@@ -1,0 +1,169 @@
+{
+    "01.06.02": {
+        "heatingCircuits": {
+            "hastates": {
+                "off": "heating_off",
+                "heat": "exception",
+                "cool": null,
+                "heat_cool": "normal",
+                "auto": "automatic",
+                "dry": null,
+                "fan_only": null
+            },
+            "mode_to_setpoint": {
+                "exception": {
+                    "setpoint": "setpoint1",
+                    "type": "manual"
+                },
+                "normal": {
+                    "setpoint": "setpoint2",
+                    "type": "manual"
+                },
+                "automatic": {
+                    "setpoint": null,
+                    "type": "auto"
+                }
+            },
+            "refs": {
+                "current_temp": {
+                    "id": "roomtemperature",
+                    "name": "Room temperature",
+                    "type": "regular"
+                },
+                "operation_mode": {
+                    "id": "operationMode",
+                    "name": "Operation mode",
+                    "type": "regular"
+                },
+                "setpoint1": {
+                    "id": "temperatureLevels/exception",
+                    "name": "Manual room setpoint",
+                    "type": "setpoint"
+                },
+                "setpoint2": {
+                    "id": "temperatureLevels/normal",
+                    "name": "Temporary room setpoint",
+                    "type": "setpoint"
+                },
+                "status": {
+                    "id": "status",
+                    "name": "Heating circuit status",
+                    "type": "regular"
+                },
+                "activeProgram": {
+                    "id": "activeSwitchProgram",
+                    "name": "Active Switch Program",
+                    "type": "activeProgram"
+                }
+            }
+        },
+        "dhwCircuits": {
+            "hastates": {
+                "off": "Always_Off",
+                "on": "Always_On",
+                "eco": null,
+                "eletric": null,
+                "performance": "Automatic",
+                "high_demand": null,
+                "heat_pump": null,
+                "gas": null
+            },
+            "mode_to_setpoint": {
+                "Automatic": {
+                    "setpoint": null,
+                    "type": "auto"
+                },
+                "Always_Off": {
+                    "setpoint": null,
+                    "type": "off"
+                },
+                "Always_On": {
+                    "setpoint": "setpoint1",
+                    "type": "manual"
+                }
+            },
+            "refs": {
+                "current_temp": {
+                    "id": "actualTemp",
+                    "name": "Room temperature",
+                    "type": "regular"
+                },
+                "operation_mode": {
+                    "id": "operationMode",
+                    "name": "Operation mode",
+                    "type": "regular"
+                },
+                "setpoint1": {
+                    "id": "currentSetpoint",
+                    "name": "DHW on level",
+                    "type": "setpoint"
+                },
+                "status": {
+                    "id": "status",
+                    "name": "DHW status",
+                    "type": "regular"
+                },
+                "activeProgram": {
+                    "id": "activeDhwTimeProgram",
+                    "name": "Active Switch Program",
+                    "type": "activeProgram"
+                }
+            }
+        },
+        "sensors": {
+            "outdoor_t1": {
+                "id": "/system/sensors/temperatures/outdoor_t1",
+                "name": "Outdoor temperature"
+            },
+            "hotWater_t2": {
+                "id": "/system/sensors/temperatures/hotWater_t2",
+                "name": "Hotwater temp"
+            },
+            "supply_t1_setpoint": {
+                "id": "/system/sensors/temperatures/supply_t1_setpoint",
+                "name": "Supply temp setpoint"
+            },
+            "supply_t1": {
+                "id": "/system/sensors/temperatures/supply_t1",
+                "name": "Actual supply temp"
+            },
+            "return": {
+                "id": "/system/sensors/temperatures/return",
+                "name": "Return temp"
+            },
+            "healthStatus": {
+                "id": "/system/healthStatus",
+                "name": "Health status"
+            },
+            "actualPower": {
+                "id": "/heatSources/actualPower",
+                "name": "Actual Power"
+            },
+            "actualModulation": {
+                "id": "/heatSources/actualModulation",
+                "name": "Actual modulation"
+            },
+            "CHpumpModulation": {
+                "id": "/heatSources/CHpumpModulation",
+                "name": "Actual heating pump modulation"
+            },
+            "totalSystem": {
+                "id": "/heatSources/workingTime/totalSystem",
+                "name": "Total system uptime mins"
+            },
+            "energyConsumption": {
+                "id": "/heatSources/energyMonitoring/consumption",
+                "name": "Energy consumption"
+            },
+            "startDateTime": {
+                "id": "/heatSources/energyMonitoring/startDateTime",
+                "name": "Start time"
+            },
+            "systemPressure": {
+                "id": "/heatSources/systemPressure",
+                "name": "System pressure"
+            }
+        },
+        "versionFirmware": "01.06.02"
+    }
+}
