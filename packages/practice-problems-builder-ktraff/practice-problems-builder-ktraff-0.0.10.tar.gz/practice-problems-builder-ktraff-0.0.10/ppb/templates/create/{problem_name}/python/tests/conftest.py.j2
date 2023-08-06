@@ -1,0 +1,14 @@
+import pytest
+
+from src.naive.foo import Foo
+from src.optimized.foo import FooOptimized
+
+
+@pytest.fixture
+def foo():
+    return Foo()
+
+
+@pytest.fixture
+def foo_optimized():
+    return FooOptimized()

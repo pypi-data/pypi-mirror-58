@@ -1,0 +1,10 @@
+import logging
+
+_log = logging.getLogger()
+
+
+class FooOptimized:
+
+    def bar(self, num: int):
+        _log.debug(f'Squaring {num} in a much faster way')
+        return num**2
