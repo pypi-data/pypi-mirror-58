@@ -1,0 +1,15 @@
+django_tequila/__init__.py,sha256=H3aKfys3Lm_O7BtSNRtGd8Tu6BV_-7mhhhzKEnpp-ZY,126
+django_tequila/admin.py,sha256=Xrg0cbE_pbU3aYifHuwMiit7ibhsGFwV9DjzxTe_xz4,2546
+django_tequila/middleware.py,sha256=hriPGtIy3Dsyi_orrKAHWlOfckHRin1oHbiVxeeIMP4,4614
+django_tequila/urls.py,sha256=DrLBNsyHjnruSgqp1s0cjt55G21iXXk0Ot_AgnAZ5bI,386
+django_tequila/django_backend/__init__.py,sha256=YDAbXpQGNWsrV3F9vPRivcrBjgbLruwwUxCm4ygbQNI,7442
+django_tequila/tequila_auth_views/__init__.py,sha256=iuvhj8LirwXS4fIa8gu9YU_PEc32FzTQHjpQRhAJYVQ,2698
+django_tequila/tequila_client/__init__.py,sha256=s-KNKX8KxTVlirdi8seevDrfElcC3pSHQBULBWgxTEU,232
+django_tequila/tequila_client/client.py,sha256=jPFmYIVdHh5Xlc57ZAjflJo8JqTMUyGeSmeGalitT-Y,4718
+django_tequila/tequila_client/config.py,sha256=E0LhgP4WRJ0htVAFcsFV4SistXnHwNMZEm6runpD7R4,2743
+django_tequila-3.0.0.dist-info/DESCRIPTION.rst,sha256=-I7KkcOd04pUneKvtFgx9cAbhaaXp-GNEvg4dAj7PaU,6928
+django_tequila-3.0.0.dist-info/METADATA,sha256=_ONyKNlBzDIN_KREqdArtPdKJJezDsRNBuxz4SC4fRM,7752
+django_tequila-3.0.0.dist-info/RECORD,,
+django_tequila-3.0.0.dist-info/WHEEL,sha256=JTb7YztR8fkPg6aSjc571Q4eiVHCwmUDlX8PhuuqIIE,92
+django_tequila-3.0.0.dist-info/metadata.json,sha256=HUyobrnDL_CzMFe-WgONNeeAHfRicMttw5KdDyfE6Kg,964
+django_tequila-3.0.0.dist-info/top_level.txt,sha256=JSD2usXghxTfDhYKkLQEzVFpdYbRBo9nbmiab5fTpl0,15
