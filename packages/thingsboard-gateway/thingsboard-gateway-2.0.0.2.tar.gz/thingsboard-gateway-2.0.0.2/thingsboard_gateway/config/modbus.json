@@ -1,0 +1,59 @@
+{
+  "server": {
+    "name": "Modbus Default Server",
+    "type": "tcp",
+    "host": "192.168.1.113",
+    "port": 5020,
+    "timeout": 35,
+    "method": "socket",
+    "devices": [
+      {
+        "unitId": 1,
+        "deviceName": "TH_sensor",
+        "attributesPollPeriod": 5000,
+        "timeseriesPollPeriod": 5000,
+        "sendDataOnlyOnChange": false,
+        "attributes": [
+          {
+            "byteOrder": "BIG",
+            "tag": "batteryLevel",
+            "type": "long",
+            "functionCode": 4,
+            "registerCount": 1,
+            "address": 10100
+          }
+        ],
+        "timeseries": [
+          {
+            "byteOrder": "BIG",
+            "tag": "humidity",
+            "type": "long",
+            "functionCode": 4,
+            "registerCount": 1,
+            "address": 10300
+          },
+          {
+            "byteOrder": "BIG",
+            "tag": "temperature",
+            "type": "long",
+            "functionCode": 4,
+            "registerCount": 1,
+            "address": 10200
+          }
+        ],
+        "rpc": {
+          "turnLightOn": {
+            "address": 4,
+            "bit": 2,
+            "value": true
+          },
+          "turnLightOff": {
+            "address": 4,
+            "bit": 2,
+            "value": false
+          }
+        }
+      }
+    ]
+  }
+}

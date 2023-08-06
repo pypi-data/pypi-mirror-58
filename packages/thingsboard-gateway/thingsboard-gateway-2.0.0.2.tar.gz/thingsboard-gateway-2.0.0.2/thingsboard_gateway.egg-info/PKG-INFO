@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: thingsboard-gateway
+Version: 2.0.0.2
+Summary: Thingsboard Gateway for IoT devices.
+Home-page: https://github.com/thingsboard/thingsboard-gateway
+Author: ThingsBoard
+Author-email: info@thingsboard.io
+License: Apache Software License (Apache Software License 2.0)
+Download-URL: https://github.com/thingsboard/thingsboard-gateway/archive/2.0.0.2.tar.gz
+Description: The Thingsboard IoT Gateway is an open-source solution that allows you to integrate devices connected to legacy and third-party systems with Thingsboard.
+Platform: UNKNOWN
+Requires-Python: >=3.4
