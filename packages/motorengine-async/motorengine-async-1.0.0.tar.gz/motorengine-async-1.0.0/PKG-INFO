@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: motorengine-async
+Version: 1.0.0
+Summary: Based on MotorEngine whihch is a port of the amazing MongoEngine Mapper. Instead of using pymongo, MotorEngine uses Motor.
+Home-page: https://github.com/liviaerxin/motorengine
+Author: Frank Chan
+Author-email: 1yue8haogaoqi@gmail.com
+License: MIT
+Download-URL: https://github.com/liviaerxin/motorengine/archive/v2.0.0.tar.gz
+Description: 
+        MotorEngine is a port of the amazing MongoEngine Mapper. Instead of using pymongo, MotorEngine uses Motor.
+        
+Keywords: database mongodb tornado python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: tests
