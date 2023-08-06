@@ -1,0 +1,7 @@
+numpy
+six
+pytz
+pandas
+PyQt5
+playsound
+gtts

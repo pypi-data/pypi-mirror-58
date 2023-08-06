@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+bear_kids_player/__init__.py
+bear_kids_player/bear_kids_player_main.py
+bear_kids_player/compile.py
+bear_kids_player/config_processing.py
+bear_kids_player/question_database_operation.py
+bear_kids_player/run_bear_kids_player.py
+bear_kids_player/test.py
+bear_kids_player.egg-info/PKG-INFO
+bear_kids_player.egg-info/SOURCES.txt
+bear_kids_player.egg-info/dependency_links.txt
+bear_kids_player.egg-info/requires.txt
+bear_kids_player.egg-info/top_level.txt
