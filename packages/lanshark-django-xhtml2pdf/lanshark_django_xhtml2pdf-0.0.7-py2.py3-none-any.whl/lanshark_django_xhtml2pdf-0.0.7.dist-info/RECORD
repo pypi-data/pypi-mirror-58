@@ -1,0 +1,9 @@
+django_xhtml2pdf/__init__.py,sha256=9xNX_c4jJhPWBCqhxWdzau8ierW2STUuBfvXpRe_F8g,312
+django_xhtml2pdf/models.py,sha256=G9sooxi5ZIjmQe12tRqlMEnB5cHLBdEi1o1F3NxTYtI,44
+django_xhtml2pdf/utils.py,sha256=H8oAmo2V1UXNvTr1Yx9Lt5iVXm7V644Ku64yy1fl_F4,4900
+django_xhtml2pdf/views.py,sha256=jwnk0j4i_tMm95fTR2nOJbwQfvM4Ez_xMEljhaW7Rn8,152
+lanshark_django_xhtml2pdf-0.0.7.dist-info/LICENSE,sha256=o8jKCIfzWYf-JsSMHnLQ6qluPt5Bqooy4Hs5bfultNs,1522
+lanshark_django_xhtml2pdf-0.0.7.dist-info/METADATA,sha256=jAqLL_nA0hPub1IXCW7k0jh0mjMnhp6ObOgvvC4tSHU,3001
+lanshark_django_xhtml2pdf-0.0.7.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+lanshark_django_xhtml2pdf-0.0.7.dist-info/top_level.txt,sha256=D4Y8B4qqRAPItYL4DRqtiV4IX8FHES5pg9p1PzLZLek,17
+lanshark_django_xhtml2pdf-0.0.7.dist-info/RECORD,,
