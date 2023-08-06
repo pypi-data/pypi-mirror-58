@@ -1,0 +1,2 @@
+oslo.config == 4.5.0
+oslo.db == 4.21.1
