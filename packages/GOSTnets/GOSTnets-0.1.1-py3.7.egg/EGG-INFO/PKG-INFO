@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: GOSTnets
+Version: 0.1.1
+Summary: Networkx wrapper to simplify geospatial analysis
+Home-page: https://github.com/worldbank/GOSTnets
+Author: Benjamin P. Stewart
+Author-email: ben.gis.stewart@gmail.com
+License: PSF
+Project-URL: Bug Tracker, https://github.com/worldbank/GOSTnets/issues
+Project-URL: Documentation, https://github.com/worldbank/GOSTnets
+Project-URL: Source Code, https://github.com/worldbank/GOSTnets
+Description: UNKNOWN
+Keywords: networkx networks OSM
+Platform: UNKNOWN
