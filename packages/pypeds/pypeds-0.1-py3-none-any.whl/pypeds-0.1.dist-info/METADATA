@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pypeds
+Version: 0.1
+Summary: A python package to help expedite insight generate from publicly available higher education datasets. 
+Home-page: https://github.com/Btibert3/pypeds
+License: UNKNOWN
+Author: Brock Tibert
+Author-email: btibert3@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: altair
+Requires-Dist: dfply
+Requires-Dist: numpy
