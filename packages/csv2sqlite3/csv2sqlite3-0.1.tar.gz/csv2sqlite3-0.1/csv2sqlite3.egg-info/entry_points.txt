@@ -1,0 +1,3 @@
+[console_scripts]
+csv2sqlite3 = csv2sqlite3.cli:main
+
