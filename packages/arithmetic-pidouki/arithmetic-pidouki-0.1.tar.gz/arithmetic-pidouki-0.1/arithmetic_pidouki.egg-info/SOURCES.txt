@@ -1,0 +1,8 @@
+setup.py
+arithmetic/A.py
+arithmetic/__init__.py
+arithmetic_pidouki.egg-info/PKG-INFO
+arithmetic_pidouki.egg-info/SOURCES.txt
+arithmetic_pidouki.egg-info/dependency_links.txt
+arithmetic_pidouki.egg-info/not-zip-safe
+arithmetic_pidouki.egg-info/top_level.txt
