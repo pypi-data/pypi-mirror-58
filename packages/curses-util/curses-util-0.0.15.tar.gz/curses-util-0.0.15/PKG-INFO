@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: curses-util
+Version: 0.0.15
+Summary: UNKNOWN
+Home-page: http://gitlab.com/rvaiya/curses-util
+Author: Raheman Vaiya
+Author-email: r.vaiya@gmail.com
+License: UNKNOWN
+Description: see https://gitlab.com/rvaiya/curses-util for source and documentation.
+Keywords: console menu curses simple
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
