@@ -1,0 +1,4 @@
+pyelftools
+
+[:python_version < "3.3"]
+backports.lzma
