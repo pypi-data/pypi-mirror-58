@@ -1,0 +1,15 @@
+README.rst
+setup.py
+pykzee/__init__.py
+pykzee/inspector/InspectorPlugin.py
+pykzee/inspector/__init__.py
+pykzee/inspector/__version__.py
+pykzee/inspector/resources/index.html
+pykzee/inspector/resources/static/inspector.js
+pykzee/inspector/resources/static/licenses.txt
+pykzee/inspector/resources/static/style.css
+pykzee_inspector.egg-info/PKG-INFO
+pykzee_inspector.egg-info/SOURCES.txt
+pykzee_inspector.egg-info/dependency_links.txt
+pykzee_inspector.egg-info/requires.txt
+pykzee_inspector.egg-info/top_level.txt
