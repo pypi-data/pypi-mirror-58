@@ -1,0 +1,307 @@
+# This is an example configuration file that might need modifications
+# to properly run in your environment
+#
+# API KEYS
+##########
+# Some services require you to obtain an API key and provide it here in
+# the configuration:
+#
+#     * OpenExchangeRates (has a free subscription)
+#     * Currencylayer (has a a free subscription)
+#     * Quandl (has a a free subscription)
+#     * BitcoinAverage (has a a free subscription)
+#     * Fixer (has a free subscription)
+#     * AlphaVantage (has a free subscription)
+#     * WorldCoinIndex (has a free subscription)
+#     
+# The corresponding variables can be defined in the `exchanges` key.
+
+
+# If true, a new price feed needs manual confirmation
+confirm: True
+
+# The producer name(s)
+producer: $PRODUCER
+
+# Exchange settings (Here, you may need to add API keys)
+exchanges:
+
+    ####################################
+    # Fiat Exchange Rates
+    ####################################
+    fixer:
+        klass: Fixer
+        enable: False
+        api_key: 
+        free_subscription: True
+        quotes:
+            - EUR
+            - USD
+            - CNY
+            - TRY
+            - SGD
+            - HKD
+            - NZD
+            - MXN
+            - CAD
+            - CHF
+            - AUD
+            - GBP
+            - JPY
+            - KRW
+            - RUB
+            - SEK
+        bases:
+            - USD
+            - EUR
+            - CNY
+            - JPY
+            - HKD
+        aliases:
+            RUB: RUBLE
+    openexchangerates:
+        klass: OpenExchangeRates
+        enable: False
+        api_key: 
+        free_subscription: True
+        quotes:
+            - ARS
+            - EUR
+            - USD
+            - CNY
+            - TRY
+            - SGD
+            - HKD
+            - NZD
+            - MXN
+            - CAD
+            - CHF
+            - AUD
+            - GBP
+            - JPY
+            - KRW
+            - SEK
+            - RUB
+        bases:
+            # Only USD with free subscription
+            - USD
+    currencylayer:
+        klass: CurrencyLayer
+        enable: False
+        api_key: 
+        free_subscription: True
+        quotes:
+            - ARS
+            - TRY
+            - SGD
+            - HKD
+            - NZD
+            - CNY
+            - MXN
+            - CAD
+            - CHF
+            - AUD
+            - GBP
+            - JPY
+            - EUR
+            - USD
+            - KRW
+            - RUB
+            - SEK
+        bases:
+            # Only USD with free subscription
+            - USD
+        aliases:
+            RUB: RUBLE
+
+    ####################################
+    # Commodities
+    ####################################
+    quandl:
+        klass: Quandl
+        enable: False
+        api_key:
+        datasets:
+            "GOLD:USD": 
+                - LBMA/GOLD
+            "SILVER:USD":
+                - LBMA/SILVER
+
+    ####################################
+    # Bitcoin Exchange Rates
+    ####################################
+    bitstamp:
+        klass: Bitstamp
+        quotes:
+            - BTC
+        bases:
+            - USD
+            - EUR
+    btcavg:
+        klass: BitcoinAverage
+        secret_key:
+        public_key:
+        quotes:
+            - BTC
+        bases:
+            - USD
+            - EUR
+            - CNY
+    okcoin:
+        klass: Okcoin
+        quotes:
+            - BTC
+        bases:
+            - USD
+    huobi:
+        klass: Huobi 
+        enable: False
+        quotes:
+            - BTC
+        bases:
+            - CNY
+    ####################################
+    # Bitcoin Exchange Rates
+    ####################################
+    poloniex:
+        klass: Poloniex
+        quotes:
+            - META1
+        bases:
+            - BTC
+    bittrex:
+        klass: Bittrex
+        enable: False
+        quotes:
+            - META1
+        bases:
+            - BTC
+    zb:
+        klass: Zb
+        quotes:
+            - META1
+        bases:
+            - BTC
+    meta1:
+        klass: Graphene
+        quotes:
+            - USD
+            - CNY
+        bases:
+            - META1
+    coinmarketcap:
+        klass: Coinmarketcap
+        quotes:
+            - BTC
+            - META1
+        bases:
+            - BTC
+            - USD
+    aex:
+        klass: Aex
+        quotes:
+            - META1
+        bases:
+            - BTC
+    lbank:
+        klass: Lbank
+        quotes:
+            - META1
+        bases:
+            - BTC
+
+        
+# default settings
+default:
+    # max age of a feed
+    maxage: 43200
+
+    # minimum percentage that forces a publish
+    min_change: 0.5
+
+    # warn if price change goes above this percentage
+    warn_change: 1.5
+
+    # skip publishing a feed if price goes above this percentage
+    skip_change: 3
+
+    # skip publishing a feed if producer is not an active witness.
+    skip_inactive_witness: True
+
+    # how to derive a single price from several sources
+    # Choose from: "median", "mean", or "weighted" (by volume)
+    metric: weighted
+
+    # Select sources for this particular asset. Each source
+    # has its own fetch() method and collects several markets
+    # any market of an exchanges is considered but only the
+    # current asset's price is derived
+    #
+    # Choose from: - "*": all,
+    #              - loaded exchanges (see below)
+    sources:
+        - fixer
+        - openexchangerates
+        - currencylayer
+        - btcavg
+        - quandl
+        - bitstamp
+        - okcoin
+        - poloniex
+        - zb
+        - coinmarketcap
+        - aex
+        - meta1
+        - lbank
+
+    # Core exchange factor for paying transaction fees in
+    # non-META1 assets. Premium of 5%
+    core_exchange_factor: 1.05
+
+    # maintenance collateral ratio (percentage)
+    maintenance_collateral_ratio: 175.0
+
+    # Maximum short squeeze ratio
+    maximum_short_squeeze_ratio: 110.0
+
+    # If set to True, prices are also derived via 3
+    # markets instead of just two:
+    # E.g.: GOLD:USD -> USD:BTC -> BTC:META1 = GOLD:META1
+    derive_across_3markets: False
+
+    # When deriving price across several markets, limit final volume by the step with minimal volume
+    derive_across_markets_apply_volume_limit: false
+
+# Enabled assets that are derived if no asset is provided via command
+# line
+assets:
+    BTC:
+    USD:
+    CNY:
+        core_exchange_factor: 1.2
+    # TRY:
+    # RUBLE:
+    # EUR:
+    # AUD:
+    # JPY:
+    # CHF:
+    # MXN:
+    # GBP:
+    # CAD:
+    # ARS:
+    # HKD:
+    # SEK:
+    # SGD:
+    # NZD:
+    # KRW:
+    # RUB:
+    # GOLD:
+    # SILVER:
+
+# Intermediate assets are useful for 2 and 3 market price derivation
+# E.g.: USD:BTC -> BTC:META1 = USD:META1
+#       GOLD:USD -> USD:BTC -> BTC:META1 = GOLD:META1
+intermediate_assets:
+    - CNY
+    - USD
+    - BTC
