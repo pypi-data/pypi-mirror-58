@@ -1,0 +1,12 @@
+README.md
+setup.py
+jmusched/__init__.py
+jmusched/__version__.py
+jmusched/classes.py
+jmusched/main.py
+jmusched.egg-info/PKG-INFO
+jmusched.egg-info/SOURCES.txt
+jmusched.egg-info/dependency_links.txt
+jmusched.egg-info/entry_points.txt
+jmusched.egg-info/requires.txt
+jmusched.egg-info/top_level.txt
