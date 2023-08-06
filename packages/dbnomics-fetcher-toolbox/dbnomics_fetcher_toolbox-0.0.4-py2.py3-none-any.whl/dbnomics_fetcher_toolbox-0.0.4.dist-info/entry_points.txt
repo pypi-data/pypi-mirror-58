@@ -1,0 +1,3 @@
+[console_scripts]
+dbnomics-status = dbnomics_fetcher_toolbox.cli:status_stats
+
