@@ -1,0 +1,14 @@
+flattrs-0.1.4.dist-info/top_level.txt,sha256=x109NdMxXwQ2UiFi9PVk1jTNi66_Syp293dZtgBapnE,7
+flattrs-0.1.4.dist-info/WHEEL,sha256=sw-_s1Pntrp7ScKO9PoP8UTSCaWmPd0wDmAqc4ZC5Bg,108
+flattrs-0.1.4.dist-info/RECORD,,
+flattrs-0.1.4.dist-info/METADATA,sha256=poANT73RNsB9MxVR1VboIyqi0x15vZ8_8tJqT0LQhCE,351
+flattr/_fb_attrs.py,sha256=2CbKs8klJVC5TqVZPDZEP5tMbHNvTkaMcK0KI5Jl_As,27182
+flattr/__init__.py,sha256=AKyA30kPK1_4ictWzbr2WkwqkUbkCun46zQk-SFvct8,133
+flattr/cflattr/number_types.pxd,sha256=6qv2uIGx4TPfEYxZEioJg0eyaI6o_mQN_o-wxRrTXFo,351
+flattr/cflattr/encode.cpython-38-x86_64-linux-gnu.so,sha256=XoOAaVnfh86v7WAfFhNYsDUzdWO7Rng7ek3X1DvtYOY,143659
+flattr/cflattr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flattr/cflattr/number_types.pyx,sha256=zov8FPD5VwEvhArj7shKVzGaB9hdVGtK3JHTGo_uRB4,2081
+flattr/cflattr/builder.pyx,sha256=zZSObxoSeJyD83HofMIVAjf0s-yk4eijTODWAkju1Hg,28921
+flattr/cflattr/number_types.cpython-38-x86_64-linux-gnu.so,sha256=qEKXvScapyJi0HCmuhX1mBSC49zPn-P8MwE7amNr9nY,429486
+flattr/cflattr/builder.cpython-38-x86_64-linux-gnu.so,sha256=Dm7YHxZD8tRQFB4k6bZ4buyLx8sYfEwNL02OuM97b04,621593
+flattr/cflattr/encode.pyx,sha256=nUYKQIT4cZRDrJV81PJhevzgX6ryWiZ56xjNT63tPpE,1443
