@@ -1,0 +1,8 @@
+README.md
+setup.py
+file_cache/__init__.py
+file_cache/api.py
+simple_file_cache.egg-info/PKG-INFO
+simple_file_cache.egg-info/SOURCES.txt
+simple_file_cache.egg-info/dependency_links.txt
+simple_file_cache.egg-info/top_level.txt
