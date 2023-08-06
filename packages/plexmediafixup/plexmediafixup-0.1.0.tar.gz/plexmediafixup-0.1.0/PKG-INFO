@@ -1,0 +1,196 @@
+Metadata-Version: 2.1
+Name: plexmediafixup
+Version: 0.1.0
+Summary: Run configurable fixups against the media database of a Plex Media Server
+Home-page: https://github.com/andy-maier/plexmediafixup
+Author: Andreas Maier
+Author-email: andreas.r.maier@gmx.de
+Maintainer: Andreas Maier
+Maintainer-email: andreas.r.maier@gmx.de
+License: Apache Software License 2.0
+Project-URL: Bug Tracker, https://github.com/andy-maier/plexmediafixup/issues
+Project-URL: Documentation, https://plexmediafixup.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/andy-maier/plexmediafixup
+Description: PlexMediaFixup - Run configurable fixups against the media database of a Plex Media Server
+        ==========================================================================================
+        
+        .. image:: https://img.shields.io/pypi/v/plexmediafixup.svg
+            :target: https://pypi.python.org/pypi/plexmediafixup/
+            :alt: Version on Pypi
+        
+        .. image:: https://travis-ci.org/andy-maier/plexmediafixup.svg?branch=master
+            :target: https://travis-ci.org/andy-maier/plexmediafixup
+            :alt: Travis test status (master)
+        
+        .. # .. image:: https://ci.appveyor.com/api/projects/status/i022iaeu3dao8j5x/branch/master?svg=true
+        .. #     :target: https://ci.appveyor.com/project/andy-maier/plexmediafixup
+        .. #     :alt: Appveyor test status (master)
+        
+        .. # .. image:: https://img.shields.io/coveralls/plexmediafixup/plexmediafixup.svg
+        .. #     :target: https://coveralls.io/r/plexmediafixup/plexmediafixup
+        .. #     :alt: Test coverage (master)
+        
+        
+        Overview
+        --------
+        
+        The PlexMediaFixup project provides a command named ``plexmediafixup`` that
+        performs certain changes in the media database of a `Plex Media Server`_.
+        
+        The functionality to perform these changes is organized in plugins called
+        *fixups*. Each fixup can be enabled or disabled and configured as needed.
+        
+        Currently supported fixups are:
+        
+        * sync_sort_title:
+        
+          This fixup walks through the movie, show and episode items of the configured
+          library sections of the Plex Media Server, and syncs the "sort title" field of
+          each item by setting it to the value of its "title" field.
+        
+          Use this fixup if you are not happy with the fact that PMS removes leading
+          articles and other words from the sort title.
+        
+        Look at the example plexmediafixup config file `example_config_file.yml`_ if
+        you want to see what can be configured. It describes each parameter.
+        
+        This project uses the `python-PlexAPI package`_, and access to the Plex Media
+        Server is specified in the `PlexAPI config file`_. The ``plexmediafixup``
+        command supports a choice of using a direct connection to a network-accessible
+        Plex Media Server (which is the faster choice) or using an indirect connection
+        through the Plex web site (which works from anywhere but is slower).
+        
+        
+        Installation and configuration
+        ------------------------------
+        
+        1.  Install the latest released version of the plexmediafixup Python package
+            into your active Python environment:
+        
+            .. code-block:: bash
+        
+                $ pip install plexmediafixup
+        
+            This will also install any prerequisite Python packages, including the
+            `python-PlexAPI package`_.
+        
+        2.  If this is the first time you use the `python-PlexAPI package`_, create its
+            `PlexAPI config file`_ as follows.
+        
+            If you want to use direct connections to a network-accessible Plex Media
+            Server, specify the following parameters:
+        
+            .. code-block:: text
+        
+                [auth]
+                server_baseurl = <URL of your PMS>
+                server_token = <server auth token of your PMS>
+        
+            The server auth token of your PMS can be found as described in
+            `Finding your server auth token`_.
+        
+            If you want to use indirect connections through the Plex web site, specify
+            the following parameters. This is simpler to set up compared to direct
+            connections, but every request goes through the Plex web site and from there
+            to your Plex Media Server:
+        
+            .. code-block:: text
+        
+                [auth]
+                myplex_username = <your plex account username/email>
+                myplex_password = <your plex account password>
+        
+            The `PlexAPI environment variables`_ can also be used.
+        
+        3.  Create a plexmediafixup config file.
+        
+            A plexmediafixup config file is in `YAML format`_ and specifies some general
+            parameters (such as whether to use direct or indirect connections, or the
+            location of the `PlexAPI config file`_) and the fixups that should be run,
+            including any parameters for the fixups.
+        
+            An example plexmediafixup config file is provided as
+            `example_config_file.yml`_. This example config file contains descriptions
+            for all parameters, and describes all supported fixups.
+        
+            Create your plexmediafixup config file by copying that example file and
+            modifying it as needed.
+        
+            The copy of the example file should work without further modifications.
+            By default, it uses a direct connection and has all fixups enabled and
+            configured to process all items. However, please review your copy
+            carefully and make changes as needed.
+        
+        
+        Usage
+        -----
+        
+        To explore the command line options and general usage of the ``plexmediafixup``
+        command, invoke:
+        
+        .. code-block:: bash
+        
+            $ plexmediafixup --help
+        
+        The following commands assume that ``my_config_file.yml`` is the plexmediafixup
+        config file you have created.
+        
+        First, invoke the ``plexmediafixup`` command in dry-run mode. This shows you
+        what would be changed in a real run without actually doing any changes:
+        
+        .. code-block:: bash
+        
+            $ plexmediafixup my_config_file.yml --verbose --dryrun
+        
+        If you are satisfied with what you see, perform the changes:
+        
+        .. code-block:: bash
+        
+            $ plexmediafixup my_config_file.yml --verbose
+        
+        
+        Bugs and features
+        -----------------
+        
+        Please report any bugs and request features via the `issue tracker`_.
+        
+        
+        Contributing
+        ------------
+        
+        Contributions to the PlexMediaFixup project are welcome; for details see
+        `Development <DEVELOPMENT.rst>`_.
+        
+        
+        License
+        -------
+        
+        The PlexMediaFixup project is provided under the
+        `Apache Software License 2.0 <LICENSE>`_.
+        
+        
+        .. _Plex Media Server: https://en.wikipedia.org/wiki/Plex_(software)
+        .. _python-PlexAPI package: https://python-plexapi.readthedocs.io/en/latest/introduction.html
+        .. _PlexAPI config file: https://python-plexapi.readthedocs.io/en/latest/configuration.html
+        .. _PlexAPI environment variables: https://python-plexapi.readthedocs.io/en/latest/configuration.html#environment-variables
+        .. _Finding your server auth token: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
+        .. _example_config_file.yml: example_config_file.yml
+        .. _YAML format: https://yaml.org/start.html
+        .. _issue tracker: https://github.com/andy-maier/plexmediafixup/issues
+        
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/x-rst
