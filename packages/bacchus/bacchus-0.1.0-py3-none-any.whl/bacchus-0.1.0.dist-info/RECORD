@@ -1,0 +1,17 @@
+bacchus/__init__.py,sha256=mupY8lQJloB2B-1akCr8ZxsaTiT4XXdYRU6whrk7TCA,1716
+bacchus/base.py,sha256=o8EQmprkbpyrU_DuurB0UZr8nOfDNZq5euHrB4y7mbM,1959
+bacchus/cli.py,sha256=osAr1NmoC3CeTWvVwWi0VDDhn_u7vqEjZuM9gIkAOQg,813
+bacchus/compose.py,sha256=eGRfOjPiYNCEcOWpoYCXSfBKQQAeQNiZhhz5xKpeSjw,1658
+bacchus/homeassistant.py,sha256=jV7d1egI_J311DxAobR-uxHdzzmEmGkbHVVLmkrrWZU,645
+bacchus/jackett.py,sha256=eYYK4OEQLxd1Hj-Yt004DFiWThMbqL323hrHom1O9rw,410
+bacchus/lidarr.py,sha256=-qjVAYxMK_likesr6ZSN8I-kiQMuBqEhFNeIHlGmakA,492
+bacchus/medusa.py,sha256=8RiUZomOAhk5_KltAjUJvuResJCZQh-BoEv5uCerCW8,520
+bacchus/nextcloud.py,sha256=rr6EvGoj-eZes7EkrVn8OvwyYw4jttljd4dDii4yWHY,4009
+bacchus/nginx.py,sha256=l9cha2xPZ5hShkFBO6MfY2c3Y99FPw_h1tCAokqDa4Y,1981
+bacchus/radarr.py,sha256=6Ts4Q1o5UiVrKmh2EXUlAGrhc0Ja5eY8npaRaadOc0c,493
+bacchus/templates/docker-compose.yml,sha256=PfmRXNMKKIjWw_dLkzy7Mc-zkPz5ASrpuGgWgzIrBYg,3584
+bacchus/templates/nginx.tpl,sha256=GGJFZ2uYqk93BVa5QwrFLqdlQsmEv1c0ywi2bIEGtUY,7825
+bacchus-0.1.0.dist-info/entry_points.txt,sha256=M0jguqml9an7R0KjHpc8vd7WOCAUKeCsUI5c0H8jvVY,44
+bacchus-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+bacchus-0.1.0.dist-info/METADATA,sha256=MM5pY-mDV-cGCgJuOg2b5hhLnLWlk4u7EY9F-LC7mw4,423
+bacchus-0.1.0.dist-info/RECORD,,
