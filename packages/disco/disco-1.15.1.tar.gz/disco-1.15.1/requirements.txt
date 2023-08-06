@@ -1,0 +1,7 @@
+analytics-python~=1.2
+requests~=2.22
+urllib3~=1.25
+setuptools
+click==7.0
+tabulate==0.8.6
+packaging==19.2
