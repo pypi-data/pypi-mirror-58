@@ -1,0 +1,12 @@
+simplejwt_sso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplejwt_sso/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+simplejwt_sso/apps.py,sha256=tzmTCqkMThhkYA-taMHTNvqt_OH9YxU53-v3Kqciu4M,100
+simplejwt_sso/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+simplejwt_sso/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+simplejwt_sso/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+simplejwt_sso/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangorestframework_simplejwt_sso-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangorestframework_simplejwt_sso-0.1.1.dist-info/METADATA,sha256=r10fUzBLPo8nfOhyweaqYd91jMRf0DYKgVnnVHQwtdU,1323
+djangorestframework_simplejwt_sso-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+djangorestframework_simplejwt_sso-0.1.1.dist-info/top_level.txt,sha256=m9oSwPJ9Mq6GZwSYThsYQM8iA_L0zxFiY8Vc9U6MYFE,14
+djangorestframework_simplejwt_sso-0.1.1.dist-info/RECORD,,
