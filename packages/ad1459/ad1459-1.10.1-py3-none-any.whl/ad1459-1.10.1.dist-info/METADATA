@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ad1459
+Version: 1.10.1
+Summary: An IRC Client
+Home-page: UNKNOWN
+Author: Gaven Royer
+Author-email: gavroyer@gmail.com
+License: UNKNOWN
+Keywords: ad1459 irc client chat gui gtk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Gnome
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Dist: pure-sasl
+Requires-Dist: pydle
+
+UNKNOWN
+
+
