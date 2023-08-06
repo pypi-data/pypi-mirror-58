@@ -1,0 +1,9 @@
+README.md
+setup.py
+seastream/__init__.py
+seastream/registry.py
+seastream/stream.py
+seastream.egg-info/PKG-INFO
+seastream.egg-info/SOURCES.txt
+seastream.egg-info/dependency_links.txt
+seastream.egg-info/top_level.txt
