@@ -1,0 +1,4 @@
+Click
+pandas
+gitpython
+dash==1.1.1
