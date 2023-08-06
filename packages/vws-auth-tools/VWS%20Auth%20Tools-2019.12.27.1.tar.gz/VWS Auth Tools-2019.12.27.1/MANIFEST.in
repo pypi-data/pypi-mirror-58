@@ -1,0 +1,5 @@
+include versioneer.py
+include src/vws_auth_tools/_version.py
+include src/vws_auth_tools/py.typed
+include requirements.txt
+include dev-requirements.txt
