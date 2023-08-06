@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: messagemedia-simple
+Version: 0.1.1
+Summary: Simple MessageMedia module for sending SMS messages.
+Home-page: https://github.com/mludvig/messagemedia-simple
+License: MIT
+Keywords: messagemedia,sms
+Author: Michael Ludvig
+Author-email: mludvig@logix.net.nz
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: tox (>=3.14,<4.0)
+Project-URL: Repository, https://github.com/mludvig/messagemedia-simple
+Description-Content-Type: text/markdown
+
+# Simple MessageMedia API wrapper
+
+Simple and easy to use module for sending SMS and MMS messages through MessageMedia.com API.
+
+## Author
+
+Michael Ludvig <mludvig@logix.net.nz>
+
