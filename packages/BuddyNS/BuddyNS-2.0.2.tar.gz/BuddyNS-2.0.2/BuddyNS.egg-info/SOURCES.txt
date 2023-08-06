@@ -1,0 +1,8 @@
+README.md
+setup.py
+BuddyNS/__init__.py
+BuddyNS/errors.py
+BuddyNS.egg-info/PKG-INFO
+BuddyNS.egg-info/SOURCES.txt
+BuddyNS.egg-info/dependency_links.txt
+BuddyNS.egg-info/top_level.txt
