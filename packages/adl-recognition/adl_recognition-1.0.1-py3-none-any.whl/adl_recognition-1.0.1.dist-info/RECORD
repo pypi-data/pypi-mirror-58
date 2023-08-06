@@ -1,0 +1,14 @@
+adl_recognition/__init__.py,sha256=ivu2OHyBYKREo0CpFjhNms91CHsik_PgAVApIzHKy3M,3199
+adl_recognition/audio_data.py,sha256=NLfmo1ND1SlDNe08QSyDYtqeDjEbbRCRJ1F5ru2ba8s,932
+adl_recognition/depth_data.py,sha256=ir4XBZFROXSp6XDvyjoENFhaeZq6Tf16aZ9sTAtyIfs,1723
+adl_recognition/model.py,sha256=jkafKnYd4SGN75dwhzlQJ7PrXEieTVCdE0n08rBueyo,395
+adl_recognition/predict.py,sha256=FlcIHLfNHCl4rrISBaT0l4U2raOmIx3chJzujOv_1nQ,4612
+adl_recognition/models/15_07_14_acc_92.h5,sha256=d6NldcWR7vN_uRpChO1uF2BjwEfz_iKetrSh75XYMLk,110067128
+adl_recognition/models/15_07_14_acc_92.json,sha256=Sp0nPe9sHe2gSSLjOHWDwVeans5nAhpOp7itMjSt_TY,10231
+adl_recognition/models/2019_09_27_02_56_29_2.h5,sha256=XyAPTiHnuBj36ItBXHg_TwipBgVdfjwfA-4Z-DuRryI,8738680
+adl_recognition/models/2019_09_27_02_56_29_2.json,sha256=CrTHTS1SUAE2_SJPST8kxebVp-btuXilTZhrvJB_zvI,23573
+adl_recognition-1.0.1.dist-info/LICENCE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+adl_recognition-1.0.1.dist-info/METADATA,sha256=PaMX5g-qgWl6snsRrjA3UGPG-fVqONVosPv78PIs5FM,1461
+adl_recognition-1.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+adl_recognition-1.0.1.dist-info/top_level.txt,sha256=ZHnyt9UAiylXDScZ5PdICRxbOmy2NZX4jnfVrpOZtEk,16
+adl_recognition-1.0.1.dist-info/RECORD,,
