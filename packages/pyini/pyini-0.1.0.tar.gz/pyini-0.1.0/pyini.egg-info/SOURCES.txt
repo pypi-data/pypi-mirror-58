@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyini/__init__.py
+pyini/configparser.py
+pyini.egg-info/PKG-INFO
+pyini.egg-info/SOURCES.txt
+pyini.egg-info/dependency_links.txt
+pyini.egg-info/top_level.txt
