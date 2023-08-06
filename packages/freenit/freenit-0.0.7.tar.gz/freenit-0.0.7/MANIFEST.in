@@ -1,0 +1,4 @@
+include README.md
+include common_config.py
+include config.py
+include name.py
