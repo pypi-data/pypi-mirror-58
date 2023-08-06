@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: nodedge
+Version: 0.2.0
+Summary: Graphical editor for physical modeling and simulation.
+Home-page: https://www.nodedge.io
+Author: Anthony De Bortoli
+Author-email: anthony.debortoli@protonmail.com
+License: GNU General Public License v3
+Keywords: nodedge,editor,graphical-programming,simulation,physical-modeling,control-systems,dynamic-systems,python3,qt5,pyqt5,platform-indenpendent,windows,linux,macos
+Platform: Windows
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: PyQt5 (>=5.13.1)
+
+=======
+Nodedge
+=======
+Graphical editor for physical modeling and simulation.
+https://www.nodedge.io
+
+
+How to install
+--------------
+:code:`pip install nodedge`
+
+
+
+
+
+
+=======
+History
+=======
+
+0.1.0 (2019-12-12)
+------------------
+
+* First release as a library
+
+
+
+
+
