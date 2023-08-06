@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: AioCacheBucket
+Version: 0.0.1
+Summary: cache for python, base on asyncio.
+Home-page: https://github.com/NatriumLab/AioCacheBucket
+Author: Chenwe-i-lin
+Author-email: 1846913566@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
