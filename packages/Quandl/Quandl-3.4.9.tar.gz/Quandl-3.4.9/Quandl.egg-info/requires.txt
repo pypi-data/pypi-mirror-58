@@ -1,0 +1,7 @@
+pandas<0.25,>=0.14
+numpy<1.17,>=1.8
+requests>=2.7.0
+inflection>=0.3.1
+python-dateutil
+six
+more-itertools<6.0
