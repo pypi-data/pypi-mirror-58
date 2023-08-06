@@ -1,0 +1,8 @@
+---
+topology: testbed.yaml
+tasks:
+  - ConfigureModule:
+      config: config.yaml
+  - BackupConfigModule:
+      config: config2.yaml
+debug: true

@@ -1,0 +1,13 @@
+---
+devices:
+  R1:
+    name: R1
+    users:
+      - ljm625
+      - ljm123
+    template: |
+      {% for user in users %}
+      username {{user}}
+       password 7 08746B7D393D2645425A55
+      !
+      {% endfor %}
