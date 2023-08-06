@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: stilus
+Version: 0.9.0
+Summary: A Stylus css compiler in Python.
+Home-page: https://github.com/jw/stilus
+License: GPL-3.0-or-later
+Keywords: compiler,stylus,css
+Author: Jan Willems
+Author-email: jw@elevenbits.com
+Maintainer: Jan Willems
+Maintainer-email: jw@elevenbits.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: deprecated
+Requires-Dist: lxml
+Requires-Dist: pillow
+Requires-Dist: pyyaml
+Requires-Dist: setuptools (>=44.0.0,<45.0.0)
+Requires-Dist: watchdog (>=0.8.3,<0.9.0)
+Requires-Dist: wheel
+Project-URL: Documentation, https://stilus.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/jw/stilus
+Description-Content-Type: text/markdown
+
+
+# Stilus
+
+[![Travis (.org) branch](https://img.shields.io/travis/jw/stilus/master.svg?style=flat-square)](https://travis-ci.org/jw/stilus)
+[![Codecov branch](https://img.shields.io/codecov/c/github/jw/stilus/master.svg?style=flat-square)](https://codecov.io/gh/jw/stilus)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/stilus.svg?style=flat-square)](https://pypi.org/project/stilus/#files)
+[![PyPI](https://img.shields.io/pypi/v/stilus.svg?style=flat-square)](https://pypi.org/project/stilus/#history)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/stilus.svg?style=flat-square)](https://pypi.org/project/stilus/#description)
+[![PyPI - License](https://img.shields.io/pypi/l/stilus?style=flat-square)](https://pypi.org/project/stilus/)
+
+A Stylus css compiler in Python.
+
+## Installation
+
+Install and update using [pip](https://pypi.org/project/pip/):
+
+    $ python -m pip install -U stilus
+
+or 
+
+    $ pip install -U stilus
+
+## Documentation
+
+There is [some documentation](https://stilus.readthedocs.io) available.
+
+## Missing
+
+Some parts of Stylus are not in Stilus yet:
+
+ - Caching
+ - Plugins
+ - Documentation
+
+All help is appreciated!
+
