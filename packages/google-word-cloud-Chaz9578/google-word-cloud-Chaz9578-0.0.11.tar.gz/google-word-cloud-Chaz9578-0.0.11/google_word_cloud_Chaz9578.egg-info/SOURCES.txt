@@ -1,0 +1,9 @@
+README.md
+setup.py
+googleWordCloud/__init__.py
+googleWordCloud/googleWordCloudFns.py
+google_word_cloud_Chaz9578.egg-info/PKG-INFO
+google_word_cloud_Chaz9578.egg-info/SOURCES.txt
+google_word_cloud_Chaz9578.egg-info/dependency_links.txt
+google_word_cloud_Chaz9578.egg-info/requires.txt
+google_word_cloud_Chaz9578.egg-info/top_level.txt
