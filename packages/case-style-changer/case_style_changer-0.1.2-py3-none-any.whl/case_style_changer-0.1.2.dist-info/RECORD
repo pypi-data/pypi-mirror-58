@@ -1,0 +1,12 @@
+case_style_changer/__init__.py,sha256=uzBBd79IM8f5E66HqYiXMli9aXRDEcp6ecihSNfM5oI,102
+case_style_changer/case_changer.py,sha256=keUgZdyh9690TKzT7J__Ad2t9uTrKVZVw_wyoRVhEsE,1783
+case_style_changer/case_guesser.py,sha256=C1JCJ9iY8ql3F2OwEaiQySbsQffdlUhOxOWC_gznd1w,1016
+case_style_changer/case_style.py,sha256=9rsnMqZ1BAuU3-WE2jGna95aaLKD9-nwV_d64uIApdk,2414
+case_style_changer/cli.py,sha256=5CVs9_zJHZEKcZlSpKVmqWqa_RlobwdoD7sQIjvnhpo,1449
+case_style_changer/text_splitter.py,sha256=UhwZsmGud9zfZdFzezZgnZztfVIGSmp3tfbe5rVpQyw,1411
+case_style_changer-0.1.2.dist-info/LICENSE,sha256=O0HQ625rvHpg0OyyGpLCeWrl9BY8ZvLSLXxM8rbqB2k,1064
+case_style_changer-0.1.2.dist-info/METADATA,sha256=HukjyfX2j3BDx5XGAhsJs8p9zbFnRiIZDEjsBL6vZsw,2696
+case_style_changer-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+case_style_changer-0.1.2.dist-info/entry_points.txt,sha256=jNg1lYmuiJbWOWViwWTRyRquECkFqu1zm8bCd7G6YaE,102
+case_style_changer-0.1.2.dist-info/top_level.txt,sha256=PK48ts5Bl-dASzPl9dUfC4mYoHb0iGO2b2JUzmy08lw,19
+case_style_changer-0.1.2.dist-info/RECORD,,
