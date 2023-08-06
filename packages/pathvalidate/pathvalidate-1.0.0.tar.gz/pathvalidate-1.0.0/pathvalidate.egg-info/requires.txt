@@ -1,0 +1,14 @@
+setuptools>=38.3.0
+
+[dev]
+mypy>=0.761
+releasecmd<1,>=0.1.0
+twine
+wheel
+readmemaker>=1.0.0
+sphinx_rtd_theme
+Sphinx
+
+[test]
+faker
+pytest
