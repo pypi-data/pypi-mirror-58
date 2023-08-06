@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Flask-SSPI
+Version: 0.0.2
+Summary: SSPI authentication support for Flask
+Home-page: http://github.com/ceprio/flask-sspi
+Author: ceprio
+Author-email: c.pypi@zone-c5.com
+License: BSD
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: Flask
+Requires-Dist: pywin32
+Requires-Dist: mock
+
+
+Flask-SSPI
+--------------
+
+Provides SSPI authentication support for Flask applications
+
+Links
+`````
+
+* `documentation <https://flask-sspi.readthedocs.org/en/latest/>`_
+* `development version
+  <http://github.com/ceprio/flask-sspi/zipball/master#egg=Flask-SSPI-dev>`_
+
+
+
