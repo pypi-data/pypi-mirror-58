@@ -1,0 +1,8 @@
+README.rst
+setup.py
+jmUtils.egg-info/PKG-INFO
+jmUtils.egg-info/SOURCES.txt
+jmUtils.egg-info/dependency_links.txt
+jmUtils.egg-info/top_level.txt
+jmutils/__init__.py
+jmutils/show.py
