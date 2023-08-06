@@ -1,0 +1,8 @@
+README.md
+setup.py
+vpsearch/_vpsearch.pyx
+vpsearch.egg-info/PKG-INFO
+vpsearch.egg-info/SOURCES.txt
+vpsearch.egg-info/dependency_links.txt
+vpsearch.egg-info/entry_points.txt
+vpsearch.egg-info/top_level.txt

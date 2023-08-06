@@ -1,0 +1,3 @@
+[console_scripts]
+vpsearch = vpsearch._cli:main
+
