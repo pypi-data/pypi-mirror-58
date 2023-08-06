@@ -1,0 +1,12 @@
+boto3>=1.9
+joblib
+pandas
+pydantic>=0.30
+python-dateutil<2.8.1,>=2.1
+typing-extensions
+
+[:sys_platform == "darwin" or sys_platform == "windows"]
+python-magic-bin==0.4.*
+
+[:sys_platform == "linux"]
+python-magic==0.4.*
