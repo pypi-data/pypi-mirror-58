@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+version.yml
+gitpipe/__init__.py
+gitpipe/git.py
+gitpipe/version.py
+gitpipe.egg-info/PKG-INFO
+gitpipe.egg-info/SOURCES.txt
+gitpipe.egg-info/dependency_links.txt
+gitpipe.egg-info/top_level.txt
+gitpipe.egg-info/zip-safe
