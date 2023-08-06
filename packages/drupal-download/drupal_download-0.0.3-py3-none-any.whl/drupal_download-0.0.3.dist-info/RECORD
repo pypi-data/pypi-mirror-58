@@ -1,0 +1,11 @@
+drupal_download/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drupal_download/__main__.py,sha256=sFEo-AVf9zp--mmx8sVlhFMmDkHC5YSoHQCca3jAiPw,78
+drupal_download/downloader.py,sha256=rdxdggic_IHw8WLyHe4c0n1e84SMLitWNePZ0GzzQUE,6527
+drupal_download/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drupal_download/tests/file_dumper.py,sha256=OO69tjwAXYzz0z16b94rXbHXtXUTjig8UDI62eHoSrg,2533
+drupal_download/tests/test_downloader.py,sha256=UCaUDe_Z76oDrlWxcaTgg2zo53HjmEUjTf6JGPtlhXo,4566
+drupal_download-0.0.3.dist-info/LICENSE,sha256=4AK9yGATRdcc2_h66GoNr3hkFKY_FBNvUv3RC8ve3D0,1064
+drupal_download-0.0.3.dist-info/METADATA,sha256=dThRw8T7VkoxMlMCLg9s5bW4HFNIREvG87tNjSPc6BM,684
+drupal_download-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+drupal_download-0.0.3.dist-info/top_level.txt,sha256=IypOibLNhks8x0mLodGQDLdtOkAVUdKZYIdqsKY0ISA,16
+drupal_download-0.0.3.dist-info/RECORD,,
