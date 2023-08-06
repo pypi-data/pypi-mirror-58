@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+HeidelTime/__init__.py
+HeidelTime/de.unihd.dbs.heideltime.standalone.jar
+python_heideltime_krypton.egg-info/PKG-INFO
+python_heideltime_krypton.egg-info/SOURCES.txt
+python_heideltime_krypton.egg-info/dependency_links.txt
+python_heideltime_krypton.egg-info/top_level.txt
