@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gsheetread
+Version: 0.1.1
+Summary: 
+Author: Ayush Shanker
+Author-email: shankerayush@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: google-api-python-client (>=1.7.11,<2.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.0.3,<0.0.4)
+Requires-Dist: google-auth-oauthlib (>=0.4.1,<0.5.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
