@@ -1,0 +1,7 @@
+setup.py
+shorttexts/Shorttexts.py
+shorttexts/__init__.py
+shorttexts.egg-info/PKG-INFO
+shorttexts.egg-info/SOURCES.txt
+shorttexts.egg-info/dependency_links.txt
+shorttexts.egg-info/top_level.txt
