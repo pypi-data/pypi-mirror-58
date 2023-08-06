@@ -1,0 +1,7 @@
+setup.py
+fuck_snapshot/__init__.py
+fuck_snapshot/snap.js
+fuck_snapshot.egg-info/PKG-INFO
+fuck_snapshot.egg-info/SOURCES.txt
+fuck_snapshot.egg-info/dependency_links.txt
+fuck_snapshot.egg-info/top_level.txt
