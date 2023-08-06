@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: network_diffusion
+Version: 0.5.1
+Summary: Package to design and run diffusion phenomena processes in networks
+Home-page: https://github.com/anty-filidor/network_diffusion
+Author: Michał Czuba
+Author-email: michal.czuba.1995@gmail.com
+License: MIT
+Project-URL: Documentation, https://network-diffusion.readthedocs.io/en/latest/
+Project-URL: Code, https://github.com/anty-filidor/network_diffusion
+Description: UNKNOWN
+Platform: UNKNOWN
