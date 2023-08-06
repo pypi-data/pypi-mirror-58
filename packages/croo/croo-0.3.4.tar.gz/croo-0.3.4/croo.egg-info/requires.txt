@@ -1,0 +1,2 @@
+caper>=0.6.1
+graphviz
