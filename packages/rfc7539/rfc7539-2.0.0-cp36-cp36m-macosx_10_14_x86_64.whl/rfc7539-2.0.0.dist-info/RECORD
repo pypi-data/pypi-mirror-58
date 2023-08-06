@@ -1,0 +1,12 @@
+rfc7539/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rfc7539/_chacha20.cpython-36m-darwin.so,sha256=4bg2DcSgDKYN65E9G7I0vS4f0KmQvDosRwBFfkaTWj8,9500
+rfc7539/_poly1305.cpython-36m-darwin.so,sha256=RdK7juxHEUKYpq-AkMCGiLXia2XekkpBW1d7__oTdGg,13884
+rfc7539/aead.py,sha256=GHyfc936DZ1UCBHwzFveoULfgzvWcZKOHqJSBUeuP6o,1624
+rfc7539/cipher.py,sha256=oh42Sopu7wJXFDd7HjdG9dEsqtzJjvCFDNv-2ov8Yo8,201
+rfc7539/mac.py,sha256=B1W3PD9Y-GgIiJ3fgdrj48HhhF3t86vmBKcjXEgz8WI,141
+rfc7539/test.py,sha256=lWTuMHpok-y-ir9TAoHlvn-bvTJ5YOobOWJfSVFt-Rs,11684
+rfc7539-2.0.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+rfc7539-2.0.0.dist-info/METADATA,sha256=U-NCmCeAifMCAiuXhwEJNKhgZ1lj2z1wmkEqJmtF_n4,2868
+rfc7539-2.0.0.dist-info/WHEEL,sha256=3Gg6F1SoDD6_GeVgk4a-Ut0U7U9I4frqQCJrlHZBYI0,111
+rfc7539-2.0.0.dist-info/top_level.txt,sha256=47bW3jqhPzmDODvHraonDBJSWjTUh8LRmd5gP1V9i30,8
+rfc7539-2.0.0.dist-info/RECORD,,
