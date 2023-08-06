@@ -1,0 +1,16 @@
+README.md
+setup.py
+pytaobao/__init__.py
+pytaobao/auth.py
+pytaobao/exceptions.py
+pytaobao/helper.py
+pytaobao/transport.py
+pytaobao.egg-info/PKG-INFO
+pytaobao.egg-info/SOURCES.txt
+pytaobao.egg-info/dependency_links.txt
+pytaobao.egg-info/not-zip-safe
+pytaobao.egg-info/top_level.txt
+pytaobao/apis/__init__.py
+pytaobao/apis/base.py
+pytaobao/apis/rate.py
+pytaobao/apis/trade.py
