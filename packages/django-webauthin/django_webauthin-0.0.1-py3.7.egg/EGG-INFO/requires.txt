@@ -1,0 +1,1 @@
+webauthnwooo@ https://github.com/duo-labs/py_webauthn/archive/a48ab13c06ad2c44cdf226cc6b8483d45b350691.zip#egg=webauthn
