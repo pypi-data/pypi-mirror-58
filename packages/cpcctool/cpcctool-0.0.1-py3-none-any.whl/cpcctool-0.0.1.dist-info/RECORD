@@ -1,0 +1,10 @@
+cpcctool/__init__.py,sha256=g57C-iL9c55Ji1UgAZLEEMnrMLzhgZGvAdIkCtuqt9k,135
+cpcctool/cpcc_code_docx.py,sha256=5wEeWO776OThVnzoD40-J_7gYXtqPuNndhE8p-K8zHk,1548
+cpcctool/cpcc_count_code_lines.py,sha256=IGH1OfhgJud7x2jB2-HbsBsM1eBPZK_XFjVBOkQn5Yk,575
+cpcctool/source_tie.py,sha256=oEGZQIpzpGY0FzZHrDeYJ6AhyKM1Mowc1tk5ajcYBvo,1912
+cpcctool/txt2docx.py,sha256=aot0gL_DyeYTsgksF77hmTg6F9zM-ZR99uk9NWAGiTQ,1024
+cpcctool-0.0.1.dist-info/LICENSE,sha256=UroNJvUc1T8P_5IYbigtrSPg4O6JjA99l1z0OeV3CCg,1082
+cpcctool-0.0.1.dist-info/METADATA,sha256=W6IQq4i6ziNo0fGDx4yA9OZE7TCrMfnjbvbqpYcz3fU,1949
+cpcctool-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+cpcctool-0.0.1.dist-info/top_level.txt,sha256=gzshx62wXS0ol9e_LpOgI-BbOD0Ij32_f10HC5-jKYs,9
+cpcctool-0.0.1.dist-info/RECORD,,
