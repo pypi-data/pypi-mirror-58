@@ -1,0 +1,9 @@
+README.md
+setup.py
+crses/__init__.py
+crses/crses.py
+crses.egg-info/PKG-INFO
+crses.egg-info/SOURCES.txt
+crses.egg-info/dependency_links.txt
+crses.egg-info/requires.txt
+crses.egg-info/top_level.txt
