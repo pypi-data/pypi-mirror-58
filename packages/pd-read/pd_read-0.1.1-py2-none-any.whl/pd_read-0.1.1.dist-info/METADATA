@@ -1,0 +1,54 @@
+Metadata-Version: 2.0
+Name: pd-read
+Version: 0.1.1
+Summary: Read csv files with the help of pandas library !!
+Home-page: https://pypi.python.org/pypi/PDRead/
+Author: Vikas Shrivastava
+Author-email: vshri119@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: pandas (>=0.25.3)
+
+===========
+PD Read
+===========
+
+PDRead provides such and such and so and so. You might find
+it most useful for tasks involving <x> and also <y>. Typical usage
+often looks like this::
+
+    #!/usr/bin/env python
+
+    from pdread.pd_read import PDRead
+    PDRead('filename.csv')
+
+
+(Note the double-colon and 4-space indent formatting above.)
+
+Paragraphs are separated by blank lines. *Italics*, **bold**,
+and ``monospace`` look like this.
+
+
+A Section
+=========
+
+Lists look like this:
+
+* First
+
+* Second. Can be multiple lines
+  but must be indented properly.
+
+A Sub-Section
+-------------
+
+Numbered lists look like you'd expect:
+
+1. hi there
+
+2. must be going
+
+Urls are http://like.this and links can be
+written `like this <http://www.example.com/foo/bar>`_.
+

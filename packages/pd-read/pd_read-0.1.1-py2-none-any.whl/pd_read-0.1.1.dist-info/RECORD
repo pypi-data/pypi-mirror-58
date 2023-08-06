@@ -1,0 +1,10 @@
+pd_read-0.1.1.dist-info/DESCRIPTION.rst,sha256=F2_a8W1NEcMLCwCuKb4wA1TvSz_6WUMzIot3Z1H20vI,757
+pd_read-0.1.1.dist-info/METADATA,sha256=5ADQUs4ocJOcLSQZx4NdWqCgCgHXK9iqGWVWtUpkdhU,1079
+pd_read-0.1.1.dist-info/RECORD,,
+pd_read-0.1.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+pd_read-0.1.1.dist-info/metadata.json,sha256=pemVobshWQ30ReiDAtMgyFS04Atis13n4ffCi4CwbxM,532
+pd_read-0.1.1.dist-info/top_level.txt,sha256=9BYHBOg4Fq3O886LtHIwOxaWLmhrDY5fXTyOQPqH2sY,7
+pdread/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdread/base_class.py,sha256=LlnHFiKof9daWby7OXTSOCNQmJ92VUHSmT7foU5aObM,143
+pdread/pd_read.py,sha256=jrVHYLa8LblPSrr9RTcnVlyH33-Ud1vPXB4pbS9vGGg,452
+pdread/read_csv.py,sha256=aSA8WSJ-bJ2PeZCotbjDwKlfGlq3nBMK2qD5z6M1zBA,607
