@@ -1,0 +1,11 @@
+PythonCyc-2.0.dist-info/DESCRIPTION.rst,sha256=EmNYCT0e47H5QM9bIA_99wAQH07KM2Je-ObaffVcNug,3083
+PythonCyc-2.0.dist-info/METADATA,sha256=JxJwuvgWSVF8mIZgBe6twLFlMwnF-0UT9UG2BWDO0NQ,3569
+PythonCyc-2.0.dist-info/RECORD,,
+PythonCyc-2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+PythonCyc-2.0.dist-info/metadata.json,sha256=m0vgRls9tmDok8eQOmKlpCopuB91QBx6GZkJS4ar1Io,545
+PythonCyc-2.0.dist-info/top_level.txt,sha256=KeRNDXmxrigGZE0GIb1WzhDwCuATnHedhrXCghetJJk,10
+pythoncyc/PGDB.py,sha256=pdm3l5S8VVrBXTRVR8D-qHbGOwN0dNdzk8pvYJerHdY,107791
+pythoncyc/PTools.py,sha256=7MThI_XPn97RET8ria-sMo6YpfpHnaJaP1hwbaeleDY,7205
+pythoncyc/PToolsFrame.py,sha256=RK3127dl6y-_DIQvsb4_AMFbqchvYG0JNMO6oe64Zgs,9839
+pythoncyc/__init__.py,sha256=P6Bw_zo1p_Yw_6EXR9DRch5qA_GAfdofit52ZS0bCiI,3401
+pythoncyc/config.py,sha256=wejFKne6cxsy01EOQZUnRr_aSlvgXEbnT5QF-B-_EUo,2301
