@@ -1,0 +1,8 @@
+django_redis_sentinel_plugin/__init__.py,sha256=8gBuqdh6NDPwxI2mihLK3dabCxvQwIhJhtjArv3sjUo,87
+django_redis_sentinel_plugin/cache.py,sha256=NHXL7h6syqaEo6HHVBbkASeCedTyRh09uJ03b7uqOQw,725
+django_redis_sentinel_plugin/client/__init__.py,sha256=ORyUtdAEMXFjfKsxh9OjHq7JKEmlQB1eVxuKMZS6gts,38
+django_redis_sentinel_plugin/client/sentinel.py,sha256=TNfqNyCYwuEJ9Mx-ZLDDGMWUhPWZHljFfj_hby6BBHs,3882
+django_redis_sentinel_plugin/pool.py,sha256=DWpIgJX1j8vX4F6sTdhOZXDZenNqyht9eDOHUL2NFEY,4117
+django_redis_sentinel_plugin-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_redis_sentinel_plugin-1.0.0.dist-info/METADATA,sha256=3Jo4koJyg4AOwoTP79v5VImK5J-IOo3xoC2sEJ_c7Zc,899
+django_redis_sentinel_plugin-1.0.0.dist-info/RECORD,,
