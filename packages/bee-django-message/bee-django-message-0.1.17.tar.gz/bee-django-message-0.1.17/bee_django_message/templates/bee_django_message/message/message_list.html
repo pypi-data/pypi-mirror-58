@@ -1,0 +1,69 @@
+{% extends "bee_django_message/base.html" %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        消息类型
+    </h3>
+    </div>
+    {% if perms.bee_django_message.add_message %}
+        <div class="text-right">
+            <a class="btn btn-default" href="{% url 'bee_django_message:message_add' %}">添加消息类型</a>
+        </div>
+    {% endif %}
+    <div>共{{ paginator.count }}个</div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>名称</th>
+            <th>说明</th>
+            <th>是否需要处理</th>
+            <th>处理后发送回执</th>
+            <th></th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for message in message_list %}
+            <tr>
+                <td>{{ message.identity }}</td>
+                <td>{{ message.name }}</td>
+                <td>{{ message.info|default:"" }}</td>
+                <td>{{ message.get_done }}</td>
+                <td>{{ message.get_replay }}</td>
+
+                <td>
+                    {% if perms.bee_django_message.view_message_records %}
+                        <a href="{% url 'bee_django_message:record_list' message.id %}">记录</a>
+                    {% endif %}
+                    <a href="{% url 'bee_django_message:message_detail' message.id %}  ">详情</a>
+                    {% if perms.bee_django_message.change_message %}
+                        <a href="{% url 'bee_django_message:message_update' message.id %}  ">修改</a>
+                    {% endif %}
+                    {% if perms.bee_django_message.delete_message %}
+                        <a href="#" id="delete_{{ message.id }}"
+                           data-confirm="{% url "bee_django_message:message_delete" message.id %}"
+                           onclick="click_del(this)">删除</a>
+                    {% endif %}
+                </td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+    {% include 'bee_django_message/paginator.html' %}
+{% endblock %}
+{% block scripts %}
+    <script>
+        function click_del(_this) {
+            if (!confirm('确认要执行这个操作？')) {
+                return false;
+            }
+            var url = $(_this).attr('data-confirm');
+            $.post(url).done(function (data) {
+                alert('删除成功!');
+                location.reload();
+            });
+        }
+    </script>
+{% endblock %}
