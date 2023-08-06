@@ -1,0 +1,10 @@
+README.md
+setup.py
+qr_filetransfer/__init__.py
+qr_filetransfer/qr_filetransfer.py
+qr_filetransfer.egg-info/PKG-INFO
+qr_filetransfer.egg-info/SOURCES.txt
+qr_filetransfer.egg-info/dependency_links.txt
+qr_filetransfer.egg-info/entry_points.txt
+qr_filetransfer.egg-info/requires.txt
+qr_filetransfer.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+qr-filetransfer = qr_filetransfer:main
+

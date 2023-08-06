@@ -1,0 +1,7 @@
+qrcode
+
+[:platform_system == "Windows"]
+colorama
+
+[extras]
+netifaces
