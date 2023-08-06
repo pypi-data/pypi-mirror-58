@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: mkvtomp4
+Version: 2.0
+Summary: Convert H.264 mkv files to mp4 files playable on the PS3, and "correct" the
+Home-page: https://github.com/gavinbeatty/mkvtomp4/
+Author: Gavin Beatty
+Author-email: public@gavinbeatty.com
+Maintainer: Gavin Beatty
+Maintainer-email: public@gavinbeatty.com
+License: http://opensource.org/licenses/MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Gavin Beatty" />
+  <meta name="dcterms.date" content="2019-11-17" />
+  <title>MKVTOMP4(1)</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">MKVTOMP4(1)</h1>
+<p class="author">Gavin Beatty</p>
+<p class="date">November 17, 2019</p>
+</header>
+<h1 id="name">NAME</h1>
+<p>mkvtomp4.py - convert H.264 mkv files to mp4 files playable on the PS3</p>
+<h1 id="synopsis">SYNOPSIS</h1>
+<p><em>mkvtomp4.py</em> <a href="#options">OPTIONS</a> [--] &lt;mkvfile&gt;</p>
+<p><em>mkvtomp4.py</em> --correct-profile-only [--] &lt;rawh264file&gt;</p>
+<h1 id="description">DESCRIPTION</h1>
+<p>Uses existing tools to convert troublesome mkv files to mp4, that is playable on the PS3. The conversion does not re-encode H.264 video. If the H.264 profile level is not supported by the PS3, we rewrite just some profile level information. The default value is 4.1, but it can be set with <code>--profile-level=4.0</code>, etc. The conversion only re-encodes audio if it doesn’t already use AAC. The resulting mp4 will be playable on the Sony PS3, and similar devices. Tested on profile levels 3.x and 4.x,</p>
+<p>Note that the PS4 Media Player has better support for mkv than mp4 (subtitles work only on mkv).</p>
+<p>We depend on: <em>mkvtoolnix</em> and GPAC’s <em>MP4Box</em> for the conversion. <em>ffmpeg</em> is only required if doing audio transcoding and subtitles.</p>
+<h1 id="options">OPTIONS</h1>
+<dl>
+<dt>-o, --output=&lt;outfile&gt;</dt>
+<dd>Put the completed mp4 into <code>&lt;outfile&gt;</code>.
+</dd>
+<dt>--keep-temp-files</dt>
+<dd>Keep all temporary files created while converting.
+</dd>
+<dt>-v, --verbose</dt>
+<dd>Print info about what is happening.
+</dd>
+<dt>-n, --dry-run</dt>
+<dd>Don’t run any commands, but print them in a shellquoted format that can be safely copy-pasted by the user.
+</dd>
+<dt>--mp4box=&lt;mp4box&gt;</dt>
+<dd>Use <code>&lt;mp4box&gt;</code> as the MP4Box command.
+</dd>
+<dt>--ffmpeg=&lt;ffmpeg&gt;</dt>
+<dd>Use <code>&lt;ffmpeg&gt;</code> as the ffmpeg command.
+</dd>
+<dt>--mkvinfo=&lt;mkvinfo&gt;</dt>
+<dd>Use <code>&lt;mkvinfo&gt;</code> as the mkvinfo command.
+</dd>
+<dt>--mkvextract=&lt;mkvextract&gt;</dt>
+<dd>Use <code>&lt;mkvextract&gt;</code> as the mkvextract command.
+</dd>
+<dt>--video-track=&lt;video_track&gt;</dt>
+<dd>Use <code>&lt;video_track&gt;</code> from the mkv file instead of trying to parse it.
+</dd>
+<dt>--hint, --no-hint</dt>
+<dd>Add info to the mp4 to make it easier to stream over the network.
+</dd>
+<dt>--audio-track=&lt;audio_track&gt;</dt>
+<dd>Use <code>&lt;audio_track&gt;</code> from the mkv file instead of trying to parse it.
+</dd>
+<dt>--audio-delay-ms=&lt;delay_ms&gt;</dt>
+<dd>When importing the audio track, delay by <code>&lt;delay_ms&gt;</code> milliseconds. e.g., <code>--audio-delay-ms</code>=<code>1000</code> delays by 1 second. Only supported by mp4box.
+</dd>
+<dt>--audio-bitrate=&lt;bitrate&gt;</dt>
+<dd>If/When converting audio, use the given bitrate. e.g., <code>128</code>.
+</dd>
+<dt>--audio-channels=&lt;channels&gt;</dt>
+<dd>If/When converting audio, use <code>&lt;channels&gt;</code> channels in the output. e.g., <code>5.1</code>.
+</dd>
+<dt>--audio-codec=&lt;codec&gt;</dt>
+<dd>If/When converting audio, convert to <code>&lt;codec&gt;</code>. Default is <code>aac</code>. This should be something supported by <em>ffmpeg</em>.
+</dd>
+<dt>--audio-lang=&lt;language&gt;</dt>
+<dd>The 3-letter code for the language of the audio track. Only needs to be set if not already specified in the source.
+</dd>
+<dt>--subtitle-track=&lt;subtitle_track&gt;</dt>
+<dd>Use <code>&lt;subtitle_track&gt;</code> from the mkv file instead of trying to parse it.
+</dd>
+<dt>--subtitle-lang=&lt;language&gt;</dt>
+<dd>The 3-letter code for the language of the subtitle track. Only needs to be set if not already specified in the source.
+</dd>
+<dt>--subtitle-default, --subtitle-no-default</dt>
+<dd>Specify whether playback should use the subtitles by default.
+</dd>
+<dt>--correct-profile-only</dt>
+<dd>Only correct the profile.
+</dd>
+<dt>--profile-level=&lt;profile-level&gt;</dt>
+<dd>Use this profile if we need to rewrite the video stream’s H.264 profile level, instead of the default, “4.1”.
+</dd>
+<dt>--force-profile-level, --no-force-profile-level</dt>
+<dd>Rewrite the video stream’s H.264 profile level, even if the existing profile is less than or equal to the new value. Or not.
+</dd>
+<dt>--stop-before-extract-video</dt>
+<dd>Exit before extracting video from <code>&lt;mkvfile&gt;</code>.
+</dd>
+<dt>--stop-before-correct-profile</dt>
+<dd>Exit before correcting profile of raw H.264 stream.
+</dd>
+<dt>--stop-before-extract-audio</dt>
+<dd>Exit before extracting audio from <code>&lt;mkvfile&gt;</code>.
+</dd>
+<dt>--stop-before-convert-audio</dt>
+<dd>Exit before converting audio previously extracted. This will stop even if the audio does not need to be converted.
+</dd>
+<dt>--stop-before-extract-sub</dt>
+<dd>Exit before extracting subtitles from <code>&lt;mkvfile&gt;</code>.
+</dd>
+<dt>--stop-before-mp4</dt>
+<dd>Exit before adding audio and video to the mp4 container.
+</dd>
+<dt>--stop-before-add-sub</dt>
+<dd>Exit before adding subtitles to the mp4.
+</dd>
+<dt>&lt;mkvfile&gt;</dt>
+<dd>The Matroska (.mkv) file you wish to convert.
+</dd>
+<dt>&lt;rawh264file&gt;</dt>
+<dd>The raw H.264 stream file that will have its profile corrected for use on the PS3.
+</dd>
+</dl>
+<h1 id="author">AUTHOR</h1>
+<p>Gavin Beatty <a href="mailto:public@gavinbeatty.com" class="email">public@gavinbeatty.com</a></p>
+<h1 id="resources">RESOURCES</h1>
+<p>Website: <a href="http://github.com/gavinbeatty/mkvtomp4/" class="uri">http://github.com/gavinbeatty/mkvtomp4/</a></p>
+<h1 id="reporting-bugs">REPORTING BUGS</h1>
+<p>Please report all bugs and wishes to <a href="mailto:public@gavinbeatty.com" class="email">public@gavinbeatty.com</a></p>
+<h1 id="copying">COPYING</h1>
+<p>mkvtomp4 Copyright (c) 2012, 2013, 2019 Gavin Beatty, <a href="mailto:public@gavinbeatty.com" class="email">public@gavinbeatty.com</a></p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</body>
+</html>
