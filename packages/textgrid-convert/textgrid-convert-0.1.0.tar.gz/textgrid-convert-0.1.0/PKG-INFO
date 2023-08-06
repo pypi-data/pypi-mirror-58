@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: textgrid-convert
+Version: 0.1.0
+Summary: Convert SRT files to other formats
+Home-page: https://github.com/me/myproject
+Author: Awesome Soul
+Author-email: me@example.com
+License: MIT
+Description: Convert SRT files to other formats
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.0.0
