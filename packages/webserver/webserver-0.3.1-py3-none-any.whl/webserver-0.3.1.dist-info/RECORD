@@ -1,0 +1,16 @@
+webserver/__init__.py,sha256=Cp7qcvT38vrk1mvSZfOdflJ4wjI0KKiDX1xVHpoD6Gg,629
+webserver/__version__.py,sha256=r4xAFihOf72W9TD-lpMi6ntWSTKTP2SlzKP1ytkjRbI,22
+webserver/run.py,sha256=m4Nkx0Yw5Cqr388jeIhmrNy1l3GM7uvWJBpUFz_E7zw,1649
+webserver/update.py,sha256=ec6Ndq90i9C26Rc5p5W2ULU-oa-xe-4-VSfNBydgJWc,962
+webserver/utils.py,sha256=06R4heXO63Qvsgf7THmH5o8MWCN89fagKE-fpjgEXW4,1008
+webserver/config/443-template.conf,sha256=h38u068s0Ru-6FY96SrD7HXLJEL5AtQfRHX_qQzos54,1980
+webserver/config/80-server.conf,sha256=0J_yEmNTTc4P5UD5Wb4Aa0PfuLfgLZuIJ5y00rN2dXU,285
+webserver/config/integrated.yml,sha256=iQb752iq3onDj4Tk68j7EzQ4CJrSaN7nbMqH0ZGz6sU,1053
+webserver/config/nginx.conf,sha256=rdPNUgeoVE_60smSqZNmOMZuQlRL23-abr_S5xo7nVo,1305
+webserver-0.3.1.data/data/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+webserver-0.3.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+webserver-0.3.1.dist-info/METADATA,sha256=V2jAyrLmrCo9E2D8_yHXc1w5L7DozUdQNdJkARkO_bU,2243
+webserver-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+webserver-0.3.1.dist-info/entry_points.txt,sha256=wt-X2uWx7oEFUofjxCQIQtD9D9QzYZN6J2VNmCTKjAY,63
+webserver-0.3.1.dist-info/top_level.txt,sha256=8jIEF0xw_wOp781sLf1tK4692Ltmk2BDNB5yhDih8Oo,10
+webserver-0.3.1.dist-info/RECORD,,
