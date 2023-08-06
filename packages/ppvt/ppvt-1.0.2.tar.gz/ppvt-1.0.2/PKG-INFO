@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: ppvt
+Version: 1.0.2
+Summary: Checks for latest package versions
+Home-page: https://github.com/chatrapathik/python-package-version-tool.git
+Author: chatrapathi
+Author-email: chatrapati.k7@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: ppvt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >3.5.1
