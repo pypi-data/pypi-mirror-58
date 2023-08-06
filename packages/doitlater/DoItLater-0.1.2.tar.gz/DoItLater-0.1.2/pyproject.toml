@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "DoItLater"
+version = "0.1.2"
+description = "When you have to do something... later."
+authors = ["Evaldas Kazlauskis <evaldas@evalkaz.com>"]
+license = "MIT"
+
+readme = "README.md"
+
+repository = "https://github.com/evalkaz/doitlater"
+homepage = "https://github.com/evalkaz/doitlater"
+
+keywords = ['scheduling', 'later']
+
+[tool.poetry.dependencies]
+python = "^3.4"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
