@@ -1,0 +1,9 @@
+README.rst
+setup.py
+src/pyuf/__init__.py
+src/pyuf/pyuf.py
+src/pyuf.egg-info/PKG-INFO
+src/pyuf.egg-info/SOURCES.txt
+src/pyuf.egg-info/dependency_links.txt
+src/pyuf.egg-info/requires.txt
+src/pyuf.egg-info/top_level.txt
