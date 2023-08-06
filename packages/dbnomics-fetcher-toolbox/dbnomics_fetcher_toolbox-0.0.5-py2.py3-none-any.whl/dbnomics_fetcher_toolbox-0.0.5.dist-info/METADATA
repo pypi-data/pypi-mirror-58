@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: dbnomics-fetcher-toolbox
+Version: 0.0.5
+Summary: Toolbox of functions and data types helping writing DBnomics fetchers.
+Home-page: https://git.nomics.world/dbnomics/dbnomics-fetcher-toolbox
+Author: DBnomics Team
+Author-email: contact@nomics.world
+License: AGPLv3+
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp[speedups]
+Requires-Dist: contexttimer
+Requires-Dist: daiquiri
+Requires-Dist: humanfriendly
+Requires-Dist: jsonlines
+Requires-Dist: lxml
+Requires-Dist: orjson
+Requires-Dist: pydantic
+Requires-Dist: toolz
+Requires-Dist: typing-extensions
+Requires-Dist: ujson
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: dlint ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: flake8-blind-except ; extra == 'dev'
+Requires-Dist: flake8-breakpoint ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-builtins ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: flake8-eradicate ; extra == 'dev'
+Requires-Dist: flake8-fixme ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+Requires-Dist: flake8-logging-format ; extra == 'dev'
+Requires-Dist: flake8-mutable ; extra == 'dev'
+Requires-Dist: flake8-print ; extra == 'dev'
+Requires-Dist: flake8-rst-docstrings ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: doc8 ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# dbnomics-fetcher-toolbox
+
+Toolbox of functions and data types helping writing DBnomics fetchers.
+
+## Documentation
+
+Cf https://dbnomics-fetcher-toolbox.readthedocs.io/en/latest/
+
+## Contributing
+
+### Documentation
+
+To contribute to the documentation, install:
+
+```
+pip install --editable .[doc]
+pip install sphinx-autobuild
+```
+
+Then launch:
+
+```
+sphinx-autobuild --watch dbnomics_fetcher_toolbox doc doc/_build/html
+```
+
+
