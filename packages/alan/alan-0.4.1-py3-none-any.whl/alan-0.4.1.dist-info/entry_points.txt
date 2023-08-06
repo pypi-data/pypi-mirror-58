@@ -1,0 +1,3 @@
+[console_scripts]
+alan = alan.__main__:main
+
