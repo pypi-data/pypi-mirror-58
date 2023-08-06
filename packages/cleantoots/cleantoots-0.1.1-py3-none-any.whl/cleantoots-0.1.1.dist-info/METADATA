@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cleantoots
+Version: 0.1.1
+Summary: 
+Author: Gabriel Augendre
+Author-email: gabriel@augendre.info
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Mastodon.py (>=1.5.0,<2.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pendulum (>=2.0.5,<3.0.0)
