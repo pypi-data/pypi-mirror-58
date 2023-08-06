@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+flask_sso_ui/__init__.py
+flask_sso_ui/additional-info.json
+flask_sso_ui/decorators.py
+flask_sso_ui/utils.py
+flask_sso_ui.egg-info/PKG-INFO
+flask_sso_ui.egg-info/SOURCES.txt
+flask_sso_ui.egg-info/dependency_links.txt
+flask_sso_ui.egg-info/requires.txt
+flask_sso_ui.egg-info/top_level.txt
