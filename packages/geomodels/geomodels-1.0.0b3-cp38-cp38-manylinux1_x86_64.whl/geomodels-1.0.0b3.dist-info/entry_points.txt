@@ -1,0 +1,3 @@
+[console_scripts]
+geomodels-download = geomodels.__main__:main
+
