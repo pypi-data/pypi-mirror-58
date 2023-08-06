@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pydantic-odm
+Version: 0.1.4
+Summary: Small async ODM for MongoDB based in Motor and Pydantic
+Home-page: https://github.com/i8enn/pydantic-odm/
+Author: Ivan Galin
+Author-email: gin.voglgorad@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Pydantic ODM
+###### Small async ODM for MongoDB based in Motor and Pydantic
+
+
