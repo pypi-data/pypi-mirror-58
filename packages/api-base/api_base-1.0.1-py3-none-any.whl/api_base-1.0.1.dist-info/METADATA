@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: api-base
+Version: 1.0.1
+Summary: A Python package to connect database
+Home-page: UNKNOWN
+Author: Tung Nguyen
+Author-email: tung.nguyen@quant-edge.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+A Python package base connect database
+
+python3 setup.py sdist bdist_wheel
+
