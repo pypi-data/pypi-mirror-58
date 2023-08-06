@@ -1,0 +1,7 @@
+urllib3
+pytz
+certifi
+python-dateutil
+
+[:python_version < "3.0"]
+future
