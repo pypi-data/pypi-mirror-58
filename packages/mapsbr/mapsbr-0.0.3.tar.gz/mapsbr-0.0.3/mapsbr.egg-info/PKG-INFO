@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mapsbr
+Version: 0.0.3
+Summary: Getting brazilian geospatial data with Python
+Home-page: https://github.com/phelipetls/mapsbr
+Author: Phelipe Teles
+Author-email: phelipe_teles@hotmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://mapsbr.readthedocs.io/
+Description: 
+        MapsBR - Get brazilian geospatial data with Python
+        
+        This package helps you get brazilian geospatial data from IBGE sources directly into a GeoPandas structure. It also has functionalities to retrieve data from an ArcGIS server.
+        
+        Learn more about it in our [repository](https://github.com/phelipetls/mapsbr) or [documentation](https://mapsbr.readthedocs.io).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
