@@ -1,0 +1,67 @@
+#!python
+from __future__ import print_function
+
+import os
+
+import snorkel
+snorkel.shared_mode()
+
+from snorkel.web import app
+from snorkel.presenter import DatasetPresenter, RegisterPresenter
+
+from snorkel.views import ViewSeparator
+
+from snorkel.plugins.snorkel_basic_views import TableView, TimeView, DistView, SamplesView
+from snorkel.plugins.snorkel_basic_views import AreaView, ScatterView, BarView, GroupedDist
+from snorkel.plugins.snorkel_advanced_views import TimelineView, OverviewView, ForecastView, DrilldownView
+from snorkel.plugins.snorkel_advanced_views import DigraphView, WecoView, MapView
+
+def configure_presenters():
+    default_presenter = DatasetPresenter()
+    default_presenter.set_views([
+        TableView,
+        TimeView,
+        DistView,
+        SamplesView,
+        TimelineView,
+        OverviewView,
+        ViewSeparator,
+        AreaView,
+        BarView,
+        ScatterView,
+        GroupedDist,
+        ViewSeparator,
+        DigraphView,
+        MapView,
+        ViewSeparator,
+        WecoView,
+        ForecastView,
+        DrilldownView
+
+    ])
+    RegisterPresenter(".*", default_presenter)
+
+
+configure_presenters()
+
+if __name__ == "__main__":
+    print("STARTING SNORKEL FRONTEND")
+    snorkel.models.create_db_if_not()
+    from snorkel import web
+    from snorkel import models
+    from snorkel import config
+
+
+    no_auth = os.environ.get("SNORKEL_NO_AUTH", False)
+    config.NO_AUTH = no_auth
+    try:
+        models.create_db_if_not()
+    except:
+        pass
+
+    web.app.run(
+        host=os.environ.get('HOST', '0.0.0.0'),
+        port=os.environ.get('PORT', 2333),
+        use_reloader=False)
+
+# vim syntax=python
