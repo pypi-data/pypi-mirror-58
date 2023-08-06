@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+quantastica/qconvert/__init__.py
+quantastica/qconvert/convert.py
+quantastica/qconvert/gate_defs.json
+quantastica/qconvert/qobj_to_pyquil.py
+quantastica_qconvert.egg-info/PKG-INFO
+quantastica_qconvert.egg-info/SOURCES.txt
+quantastica_qconvert.egg-info/dependency_links.txt
+quantastica_qconvert.egg-info/namespace_packages.txt
+quantastica_qconvert.egg-info/top_level.txt
