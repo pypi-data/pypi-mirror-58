@@ -1,0 +1,4 @@
+msprime>=0.7.1
+attrs>=18.2.0
+appdirs
+humanize
