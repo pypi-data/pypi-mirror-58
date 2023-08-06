@@ -1,0 +1,29 @@
+include *.rst
+include *.md
+include coverage.svg
+include LICENSE
+include eegio/__init__.py
+
+recursive-include examples *.py
+recursive-include examples *.txt
+recursive-include eegio *.py
+
+### Exclude
+
+exclude .zenodo
+exclude .github
+exclude .github/PULL_REQUEST_TEMPLATE.md
+exclude Makefile
+exclude ./docs/CONTRIBUTING.md
+exclude ./docs/INSTALLATION.md
+exclude ./docs/TESTING_SETUP.md
+exclude .coveragerc
+exclude *.yml
+exclude .mailmap
+
+recursive-exclude eegio *.pyc
+recursive-exclude docs *
+recursive-exclude paper *
+recursive-exclude annonymize *
+recursive-exclude data *
+recursive-exclude tests *
