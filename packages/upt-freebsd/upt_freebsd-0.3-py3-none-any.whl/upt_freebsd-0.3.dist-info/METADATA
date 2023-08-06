@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: upt-freebsd
+Version: 0.3
+Summary: FreeBSD backend for upt
+Home-page: https://framagit.org/upt/upt-freebsd
+Author: Cyril Roelandt
+Author-email: tipecaml@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2
+Requires-Dist: upt (>=0.4)
+Provides-Extra: test
+
+# Universal Packaging Tool: GUIX backend
+This is a [FreeBSD](https://www.freebsd.org/) backend for
+[upt](https://pypi.python.org/pypi/upt').
+
+
