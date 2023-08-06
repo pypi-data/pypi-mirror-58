@@ -1,0 +1,10 @@
+CTPC/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CTPC/ctpc.py,sha256=74LkktPAILoII1MmazNZGcFJ5u092hk2Izwyz7uOanI,100
+CTPC/indexPage.py,sha256=a0CPjHsiqtMeey1FRkka0YdDJjFn754B2rFNw7cNeAs,427
+CTPC/xiaobaiAuto.py,sha256=rc0Ws2IjRpbgWZmBv-jmn4Yzssxed37uChDDD1Dne5Y,4694
+xiaobaiauto/HTMLTestRunner.py,sha256=FQ6AIyz0FkbaPIVEe_8Qx_WfvpArnfF0BPhpaRUTKDA,25966
+xiaobaiauto/__init__.py,sha256=43DcBrD3mGsoOAGb2Mw8zcOpReeQ1KxFY5YkNgGHmxw,166
+xiaobaiauto-2.0.0.dist-info/METADATA,sha256=pOnaStTqr0SRGxypjtNc-Rr-FhmE5NysOr5DvxuBxNA,4306
+xiaobaiauto-2.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+xiaobaiauto-2.0.0.dist-info/top_level.txt,sha256=yD7ODnCEiUahUbYgqGBTSiyzdqWk-xAnd_oqJWpvOjM,17
+xiaobaiauto-2.0.0.dist-info/RECORD,,
