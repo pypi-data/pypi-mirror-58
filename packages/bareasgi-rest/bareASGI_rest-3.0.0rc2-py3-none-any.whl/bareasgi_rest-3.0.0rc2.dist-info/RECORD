@@ -1,0 +1,10 @@
+bareasgi_rest/__init__.py,sha256=bw7eEDN1mH86X1j8QkfHP7QZJ8DZj_E91RdFf3Mtnn8,258
+bareasgi_rest/config.py,sha256=SHPaQBskYunC2f-563c0G6bIpas4jt6VCoZwcHm1Wio,1552
+bareasgi_rest/helpers.py,sha256=TmpDjlCiO55kh2XjyfZ2QdN1_9rzoemmlnggI6L-bVo,556
+bareasgi_rest/rest_router.py,sha256=shRT8XWe8OJkZFqfX5QP3b9pnT24fHO_LWRHqdRf_Ws,12980
+bareasgi_rest/swagger.py,sha256=jk8ju48GpvX9S0-MQ8WfzWGTdW825nsYonOjV3tCY0k,11100
+bareasgi_rest/templates/swagger.html,sha256=GHv5T9DEBYaSfRadble7EDJcUnev9auQd5QDFTDq5dU,4487
+bareasgi_rest/utils.py,sha256=LiauXzXH8qPTd463IfGD-kJHJBK9XIry0OkUnahj8uQ,6430
+bareasgi_rest-3.0.0rc2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+bareasgi_rest-3.0.0rc2.dist-info/METADATA,sha256=2S-d7lGOmxhfzT7xi5nemID5LK24HPMNEmfI79Kt32E,6386
+bareasgi_rest-3.0.0rc2.dist-info/RECORD,,
