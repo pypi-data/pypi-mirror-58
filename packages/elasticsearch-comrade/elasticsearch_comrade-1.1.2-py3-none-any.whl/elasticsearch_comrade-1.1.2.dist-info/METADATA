@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: elasticsearch-comrade
+Version: 1.1.2
+Summary: Elasticsearch admin panel built for ops and monitoring
+Home-page: UNKNOWN
+Author: Moshe Zada
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: sanic
+Requires-Dist: ujson
+Requires-Dist: elasticsearch-async
+Requires-Dist: click
+
+UNKNOWN
+
+
