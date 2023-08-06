@@ -1,0 +1,3 @@
+[console_script]
+htb = HTBClient.__main__:main
+
