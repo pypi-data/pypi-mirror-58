@@ -1,0 +1,37 @@
+Metadata-Version: 1.2
+Name: arbeiter
+Version: 1.0.0
+Summary: Correct and compute raw score of memory competitor's recall data
+Home-page: https://gitlab.com/Penlect/arbeiter
+Author: Daniel Andersson
+Author-email: daniel.4ndersson@gmail.com
+License: UNKNOWN
+Description: 
+        The arbeiter package
+        --------------------
+        
+        This package is used to correct and compute raw score of memory competitor's
+        recall data.
+        
+        These disciplines are supported
+        
+        * Numbers
+        * Binary Numbers
+        * Words
+        * Historical Dates
+        * Cards
+        * Images
+        * Names & Faces
+        
+Keywords: memory memorization iam wmc recall
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
