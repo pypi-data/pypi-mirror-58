@@ -1,0 +1,3 @@
+[console_scripts]
+tekorrect = tekorrect.tekorrect:exe_main
+
