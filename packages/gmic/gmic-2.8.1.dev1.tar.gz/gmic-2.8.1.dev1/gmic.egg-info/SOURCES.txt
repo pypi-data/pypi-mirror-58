@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+VERSION
+gmicpy.cpp
+setup.cfg
+setup.py
+/home/runner/work/gmic-py/gmic-py/cpython/src/gmic/src/gmic.cpp
+gmic.egg-info/PKG-INFO
+gmic.egg-info/SOURCES.txt
+gmic.egg-info/dependency_links.txt
+gmic.egg-info/top_level.txt
+src/gmic/src/CImg.h
+src/gmic/src/gmic.cpp
+src/gmic/src/gmic.h
+src/gmic/src/gmic_stdlib.h
+src/gmic/src/use_libgmic.cpp
