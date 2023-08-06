@@ -1,0 +1,9 @@
+setup.py
+rest88/__init__.py
+rest88/routers.py
+rest88/serializers.py
+rest88.egg-info/PKG-INFO
+rest88.egg-info/SOURCES.txt
+rest88.egg-info/dependency_links.txt
+rest88.egg-info/requires.txt
+rest88.egg-info/top_level.txt
