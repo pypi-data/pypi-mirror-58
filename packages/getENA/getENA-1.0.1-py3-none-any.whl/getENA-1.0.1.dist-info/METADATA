@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: getENA
+Version: 1.0.1
+Summary: Read the latest Real Python tutorials
+Home-page: https://github.com/EnzoAndree/getENA
+Author: Enzo Guerrero-Araya
+Author-email: biologoenzo@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Requires-Dist: tqdm
+Requires-Dist: pandas
+
+UNKNOWN
+
+
