@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: multi-elo
+Version: 2.0.0
+Summary: ELO score calculator for more than two players
+Home-page: https://github.com/qwhex/multi_elo
+Author: Mice Pápai
+Author-email: qwhexz@gmail.com
+License: Apache-2.0
+Keywords: elo elo-score chess ranking multiplayer scoring score rating
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+multi_elo
+=========
+
+Python `ELO`_ score calculator for more than two players. It can be used
+e.g. for a 4 player multiplayer match and for team-based games as well.
+
+Install
+-------
+
+``pip install multi_elo``
+
+Compatibility
+-------------
+
+Python 3.5+
+
+Usage
+-----
+
+.. code:: python
+
+   from random import randint
+   from multi_elo import EloPlayer, calc_elo
+
+   # Generate players with random ELO.
+   # It can be a list of any elements having the `place` and `elo` properties.
+   elo_players = [EloPlayer(place=place, elo=randint(1200, 1800))
+                  for place in range(1, 5)]
+
+   print('Original ELO scores:')
+   for player in enumerate(elo_players, start=1):
+       print(f'{i}: #{player.place} ({player.elo})')
+
+   # Set the K factor (optional)
+   k_factor = 16
+
+   # Calculate new ELO scores
+   new_elos = calc_elo(elo_players, k_factor)
+
+   print('\nNew ELO scores:')
+   for i, new_elo in enumerate(new_elos, start=1):
+       print(f'{i}: {new_elo}')
+
+Development
+===========
+
+.. code:: bash
+
+   # install dependencies
+   pip install requirements_dev.txt
+   # run tests with all of the supported python interpreters
+   tox
+   # or only with the currently active python interpreter
+   pytest
+
+.. _ELO: https://en.wikipedia.org/wiki/Elo_rating_system
+
