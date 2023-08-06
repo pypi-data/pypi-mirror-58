@@ -1,0 +1,20 @@
+.PHONY: build test run
+
+GOPATH={{ target }}/golang
+
+build:
+	GOPATH=${GOPATH} go build github.com/{{ github_username }}/{{ problem_name }}
+	GOPATH=${GOPATH} go build github.com/{{ github_username }}/naive/string
+	GOPATH=${GOPATH} go build github.com/{{ github_username }}/optimized/string
+
+install:
+	GOPATH=${GOPATH} go install github.com/{{ github_username }}/{{ problem_name }}
+	GOPATH=${GOPATH} go install github.com/{{ github_username }}/naive/string
+	GOPATH=${GOPATH} go install github.com/{{ github_username }}/optimized/string
+
+test:
+	GOPATH=${GOPATH} go test github.com/{{ github_username }}/naive/string
+	GOPATH=${GOPATH} go test github.com/{{ github_username }}/optimized/string
+
+run: build
+	./{{ problem_name }}

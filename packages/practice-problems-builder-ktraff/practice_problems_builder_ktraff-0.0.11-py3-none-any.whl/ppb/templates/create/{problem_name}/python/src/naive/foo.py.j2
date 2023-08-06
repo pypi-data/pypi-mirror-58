@@ -1,0 +1,10 @@
+import logging
+
+_log = logging.getLogger()
+
+
+class Foo:
+
+    def bar(self, num: int):
+        _log.debug(f'Squaring {num}')
+        return num**2
