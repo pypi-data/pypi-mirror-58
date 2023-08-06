@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+plagcheck/__init__.py
+plagcheck/analyze.py
+plagcheck/plagcheck.py
+plagcheck.egg-info/PKG-INFO
+plagcheck.egg-info/SOURCES.txt
+plagcheck.egg-info/dependency_links.txt
+plagcheck.egg-info/requires.txt
+plagcheck.egg-info/top_level.txt
