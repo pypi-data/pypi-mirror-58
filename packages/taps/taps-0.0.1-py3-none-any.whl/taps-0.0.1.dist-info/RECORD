@@ -1,0 +1,12 @@
+taps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taps/attribute_format.py,sha256=cMZiUsMzzr-wm23VCoEg31DNCNvNiavkkW_96TgT9vQ,3312
+taps/config.py,sha256=tKalyWIJNtvpL2r8rnQQbl8cbuLtq_rBTTIXRupLL98,669
+taps/json_fetch.py,sha256=Oat5JbMNrY04ashWkz0e-I9edeDo3csUqb8KOweTP_U,333
+taps/pacman.py,sha256=hian_zkhVWDpgYVAbPQyXD_e8wGmhGlvVS3dOmWXOJE,1190
+taps/text_format.py,sha256=n9KmgTk5O-XXoneTv5MP61W5J7gumuTqolGPvlFg2T0,257
+taps-0.0.1.data/scripts/taps,sha256=9BVC8BlcX1p_AHoaKBV2YTETsKuYHeFspM-GBVDOVMA,7876
+taps-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+taps-0.0.1.dist-info/METADATA,sha256=Fwuq6nvkVt4N5GmH0bkriz9WeeYaSg2GqdhA4Q_pnXA,13385
+taps-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+taps-0.0.1.dist-info/top_level.txt,sha256=qIbDFstBBGnSsgzEGHYhKhSw3UKE6uAUROug8x0P_TM,5
+taps-0.0.1.dist-info/RECORD,,
