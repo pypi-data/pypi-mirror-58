@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: pydeinstaller
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/charles-dyfis-net/pydeinstaller
+Author: Charles Duffy
+Author-email: charles@dyfis.net
+License: GPLv3
+Description: Yet another tool for extracting source from PyInstaller archives.
+        
+        Unlike several (all?) other options, this one supports binaries for non-Windows platforms.
+Platform: UNKNOWN
