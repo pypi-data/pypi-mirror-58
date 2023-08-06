@@ -1,0 +1,10 @@
+README.md
+setup.py
+dslogs/__init__.py
+dslogs/dslogs.py
+dslogs/version.py
+dslogs.egg-info/PKG-INFO
+dslogs.egg-info/SOURCES.txt
+dslogs.egg-info/dependency_links.txt
+dslogs.egg-info/requires.txt
+dslogs.egg-info/top_level.txt

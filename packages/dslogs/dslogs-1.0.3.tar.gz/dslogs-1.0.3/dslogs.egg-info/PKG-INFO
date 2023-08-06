@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dslogs
+Version: 1.0.3
+Summary: FIRST FRC Driver Station log streamer
+Home-page: http://github.com/ligerbots/dslogparser
+Author: Paul Rensing
+Author-email: prensing@ligerbots.org
+License: MIT
+Description: # dslogs
+        
+        dslogs contains the DSlogs class which is useful for streaming log entries to "real time" application. See package dslogparser.
+        
+Keywords: FRC,logfiles
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
