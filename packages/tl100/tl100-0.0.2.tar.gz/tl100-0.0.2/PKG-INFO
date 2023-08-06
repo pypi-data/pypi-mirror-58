@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tl100
+Version: 0.0.2
+Summary: Beurer TL100
+Home-page: https://github.com/azac/tl100
+Author: AZ
+Author-email: adrian.zandberg@gmail.com
+License: UNKNOWN
+Description: # tl100
+        
+        Quick and dirty hacks for Beurer TL100 lamp.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: Public Domain
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
