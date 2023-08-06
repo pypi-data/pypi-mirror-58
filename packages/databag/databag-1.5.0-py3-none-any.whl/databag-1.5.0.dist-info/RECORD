@@ -1,0 +1,10 @@
+databag/__init__.py,sha256=Rm41VUZzRtcWxxdX0xE49Ur3HSuTVDvTiqqNn_nvgz4,40
+databag/main.py,sha256=lc-QSKiMoZsSk8tOsjW6-QcBgMmLzDjobp4lEjoQXKs,18474
+databag/orm/__init__.py,sha256=qMwMOV0Gp5I16Iq_Lhi8Xh5jcPc_jDNbppjuw7P85q0,114
+databag/orm/field.py,sha256=xC-ijDsLliHFxtosb8ap3kSXWL2xdxGlMEG0AxSVqmI,2290
+databag/orm/model.py,sha256=VSuJuLiBqXQ48_UlUnHh-0VxQIjeQkWOGoHwnsoCi8c,3144
+databag-1.5.0.dist-info/LICENSE,sha256=NmP0oxasM_uq37e57St-evC_70TNqPep3VLVsBwC8P0,1081
+databag-1.5.0.dist-info/METADATA,sha256=JLRcfYSu1RdKQy7Zj-ifKLKPlrCZutEi6SOTCNWV57I,5870
+databag-1.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+databag-1.5.0.dist-info/top_level.txt,sha256=IYPHCrf8guw-uGhebrba2-lW8Bz5gmD23EewG14Kv4Y,8
+databag-1.5.0.dist-info/RECORD,,
