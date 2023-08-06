@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zfun
+Version: 1.0.1
+Summary: a function and class sets in common use.
+Home-page: https://github.com/zhenghy/zpy
+Author: Haiyang Zheng
+Author-email: wnfdsfy@gmail.com
+License: MIT
+Description: ### zfun
+        
+          > A function and class sets in common use.
+        
+        ### Install:
+        
+            pip3 install -U zfun
+        
+        ### List:
+          - Class
+        
+          - Function
+        
+Keywords: common,function,class
+Platform: any
+Description-Content-Type: text/markdown
