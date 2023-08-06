@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: deepomatic-oef
+Version: 0.3.0
+Summary: Open Experiment Format
+Home-page: https://github.com/Deepomatic/open-experiment-format
+Author: deepomatic
+Author-email: support@deepomatic.com
+License: MIT License
+Project-URL: Product, https://deepomatic.com
+Project-URL: Source, https://github.com/deepomatic/open-experiment-format
+Project-URL: Tracker, https://github.com/deepomatic/open-experiment-format/issues
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf (>=3.1)
+
+# open-experiment-format
+Open Experiment Format is a collection of protobufs that allows you to serialize an Experiment.
+
+
