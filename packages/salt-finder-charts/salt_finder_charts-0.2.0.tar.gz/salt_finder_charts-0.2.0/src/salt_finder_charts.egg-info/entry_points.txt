@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        saltfc=salt_finder_charts.cli:saltfc
+    

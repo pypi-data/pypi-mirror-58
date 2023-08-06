@@ -1,0 +1,9 @@
+aplpy
+astropy
+astroquery
+Click
+defusedxml
+ephem
+numpy
+pillow
+pytz
