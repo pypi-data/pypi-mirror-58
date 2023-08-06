@@ -1,0 +1,7 @@
+setup.py
+testaab/__init__.py
+testaab.egg-info/PKG-INFO
+testaab.egg-info/SOURCES.txt
+testaab.egg-info/dependency_links.txt
+testaab.egg-info/requires.txt
+testaab.egg-info/top_level.txt
