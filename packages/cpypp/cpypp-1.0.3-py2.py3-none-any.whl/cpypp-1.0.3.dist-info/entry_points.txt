@@ -1,0 +1,3 @@
+[console_scripts]
+cpypp = cpypp.__main__:run
+
