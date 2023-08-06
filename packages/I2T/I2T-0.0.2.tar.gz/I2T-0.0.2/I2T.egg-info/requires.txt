@@ -1,0 +1,4 @@
+os
+PIL.Image
+bs4
+pytesseract
