@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: fakeemail
+Version: 0.11.0
+Summary: A fake Email Server with a Web Front End
+Home-page: https://github.com/tomwardill/FakeEmail
+Author: Tom Wardill
+Author-email: tom@howrandom.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

@@ -1,0 +1,4 @@
+Twisted
+jinja2
+six
+zope.interface>=3.6.0
