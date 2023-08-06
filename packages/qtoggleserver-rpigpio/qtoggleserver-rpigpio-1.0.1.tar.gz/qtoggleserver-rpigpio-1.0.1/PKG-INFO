@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: qtoggleserver-rpigpio
+Version: 1.0.1
+Summary: qToggleServer driver for Raspberry Pi GPIOs
+Home-page: UNKNOWN
+Author: Calin Crisan
+Author-email: ccrisan@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
