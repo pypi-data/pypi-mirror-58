@@ -1,0 +1,10 @@
+README.md
+setup.py
+rdm6300/__init__.py
+rdm6300/reader.py
+rdm6300/test_reader.py
+rdm6300.egg-info/PKG-INFO
+rdm6300.egg-info/SOURCES.txt
+rdm6300.egg-info/dependency_links.txt
+rdm6300.egg-info/requires.txt
+rdm6300.egg-info/top_level.txt
