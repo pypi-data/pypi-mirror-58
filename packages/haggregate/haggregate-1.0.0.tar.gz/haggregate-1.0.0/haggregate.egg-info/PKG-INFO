@@ -1,0 +1,82 @@
+Metadata-Version: 1.1
+Name: haggregate
+Version: 1.0.0
+Summary: Aggregates htimeseries to larger steps
+Home-page: https://github.com/openmeteo/haggregate
+Author: Antonis Christofides
+Author-email: antonis@antonischristofides.com
+License: GNU General Public License v3
+Description: ==========
+        haggregate
+        ==========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/haggregate.svg
+                :target: https://pypi.python.org/pypi/haggregate
+        
+        .. image:: https://img.shields.io/travis/openmeteo/haggregate.svg
+                :target: https://travis-ci.org/openmeteo/haggregate
+        
+        .. image:: https://codecov.io/github/openmeteo/haggregate/coverage.svg
+                :target: https://codecov.io/gh/openmeteo/haggregate
+                :alt: Coverage
+        
+        .. image:: https://pyup.io/repos/github/openmeteo/haggregate/shield.svg
+                 :target: https://pyup.io/repos/github/openmeteo/haggregate/
+                 :alt: Updates
+        
+        Aggregates htimeseries to larger steps
+        
+        
+        * Free software: GNU General Public License v3
+        * Documentation: https://haggregate.readthedocs.io.
+        
+        
+        =======
+        History
+        =======
+        
+        1.0.0 (2020-01-05)
+        ==================
+        
+        - Now uses version 5 of hts file (i.e. different time step notation).
+        
+        0.2.0 (2019-12-05)
+        ==================
+        
+        - Added option target_timestamp_offset.
+        
+        0.1.4 (2019-07-19)
+        ==================
+        
+        - Greatly reduced memory usage.
+        
+        0.1.3 (2019-07-03)
+        ==================
+        
+        - Fixed bug where Timezone wasn't being set in the output file.
+        
+        0.1.2 (2019-06-25)
+        ==================
+        
+        - Fixed erroneous setting of time_step, timestamp_rounding and
+          timestamp_offset in the resulting time series.
+        - You can now import regularize from haggregate (before you imported it
+          from haggregate.regularize).
+        
+        0.1.1 (2019-06-24)
+        ==================
+        
+        - Initial release
+        
+          (There is also a 0.1.0 release on PyPI, which was uploaded during
+          experimentation, but it doesn't work.)
+        
+Keywords: haggregate
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

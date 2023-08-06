@@ -1,0 +1,3 @@
+[console_scripts]
+haggregate = haggregate.cli:main
+

@@ -1,0 +1,2 @@
+Click<8,>=7.0
+htimeseries<3,>=2.0.3
