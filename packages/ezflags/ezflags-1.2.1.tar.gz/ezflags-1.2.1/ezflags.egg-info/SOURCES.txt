@@ -1,0 +1,9 @@
+README.rst
+setup.py
+ezflags/__init__.py
+ezflags/flagparser.py
+ezflags.egg-info/PKG-INFO
+ezflags.egg-info/SOURCES.txt
+ezflags.egg-info/dependency_links.txt
+ezflags.egg-info/requires.txt
+ezflags.egg-info/top_level.txt
