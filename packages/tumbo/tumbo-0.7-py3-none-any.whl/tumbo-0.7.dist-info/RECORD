@@ -1,0 +1,11 @@
+tumbo/__init__.py,sha256=zOSltBUOThe38HvulhVSnCQTNywvnNt0qrm7gNonI58,525
+tumbo/__main__.py,sha256=p_3mj-ll_F-VC83yg4dj7EkYJb2PZw8IBGQnEj3_ZkY,64
+tumbo/cli.py,sha256=97gSlkbm6Vq1bPhBmHBUQ_4c6G_cuGJUDeTY_vxaOQc,1116
+tumbo/tumbo.py,sha256=Nx4KypDXLqhd6C9p38U0gMCJZ2Oqjp3eL1vv-7zj3K0,4056
+tumbo/utils.py,sha256=l0Ez4-FS_Hx5gPj_UM9P2Kkj4K0sJFxxnTtYMb_9rzY,501
+tumbo-0.7.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tumbo-0.7.dist-info/METADATA,sha256=WD3YF6ZDk80OZw40AAbVKDmv-dRiVElPqZt3Q1UYQXg,3350
+tumbo-0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tumbo-0.7.dist-info/entry_points.txt,sha256=A6E2w8G466f7NiAJCDBC9n6O0lf6MRQh50aiDjUkhCg,41
+tumbo-0.7.dist-info/top_level.txt,sha256=E0EARdNdvBtNfCyXVuSU9ZPh1G2OQdg6E6KjvpS_Q9w,6
+tumbo-0.7.dist-info/RECORD,,
