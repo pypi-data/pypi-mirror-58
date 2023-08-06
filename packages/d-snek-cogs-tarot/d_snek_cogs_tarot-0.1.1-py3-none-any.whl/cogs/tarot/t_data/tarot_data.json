@@ -1,0 +1,768 @@
+{
+  "MA": {
+    "FOOL": {
+      "i": 0,
+      "fields": {
+        "beginning": "entering a new phase, striking out on a new path, expanding horizons, starting something new, beginning an adventure, going on a journey, heading into the unknown",
+        "having faith": "trusting the flow, staying open, letting go of worry and fear, feeling protected and loved, living in joy, recapturing innocence, believing",
+        "being spontaneous": "living in the moment, letting go of expectations, doing the unexpected, acting on impulse, feeling uninhibited, surprising someone, feeling carefree",
+        "embracing folly": "accepting your choices, taking the \"foolish\" path, pursuing a pipe dream, being true to yourself, taking a \"crazy\" chance, trusting your heart's desire"
+      },
+      "name": "The Fool"
+    },
+    "MAGICIAN": {
+      "i": 1,
+      "fields": {
+        "taking action": "doing what needs to be done, realizing your potential, making what's possible real, practicing what you preach, carrying out plans, producing magical results, using your talents",
+        "experiencing power": "making a strong impact, having vitality, creating miracles, becoming energized, feeling vigorous, being creative",
+        "concentrating": "having singleness of purpose, being totally committed, applying the force of your will, feeling centered, setting aside distractions, focusing on a goal",
+        "acting consciously": "knowing what you are doing and why, acknowledging your motivations, understanding your intentions, examining the known situation"
+      },
+      "name": "The Magician"
+    },
+    "HIGH PRIESTESS": {
+      "i": 2,
+      "fields": {
+        "sensing the mystery": "looking beyond the obvious, approaching a closed off area, opening to the unknown, remembering something important, sensing the secret and hidden, seeking what is concealed, acknowledging the Shadow",
+        "seeing the potential": "understanding the possibilities, opening to what could be, seeing your hidden talents, allowing development, letting what is there flower",
+        "staying nonactive": "withdrawing from involvement, allowing events to proceed without intervention, being receptive to influence, becoming calm, being passive, waiting patiently",
+        "accessing the unconscious": "using your intuition, seeking guidance from within, trusting your inner voice, opening to dreams and the imagination, being aware of a larger reality"
+      },
+      "name": "The High Priestess"
+    },
+    "EMPRESS": {
+      "i": 3,
+      "fields": {
+        "responding to Nature": "relating to plants and animals, embracing the natural, feeling connected to the Earth, going outdoors, harmonizing with natural rhythms",
+        "welcoming abundance": "enjoying extravagance, receiving lavish reward, luxuriating in plenty, having more than enough, feeling rich",
+        "experiencing the senses": "giving and receiving pleasure, focusing on the body, appreciating beauty, feeling vibrantly healthy, being earthy, doing physical activity",
+        "mothering": "giving birth, nourishing life, nurturing and caring for others, cherishing the world, expressing tenderness, working with children"
+      },
+      "name": "The Empress"
+    },
+    "EMPEROR": {
+      "i": 4,
+      "fields": {
+        "emphasizing structure": "creating order out of chaos, categorizing, being systematic, providing shape and form, being organized, applying reason, coordinating, sticking to a plan",
+        "fathering": "establishing a family line, setting direction and tone, protecting and defending, guiding growth, bringing security and comfort, offering explanations",
+        "exercising authority": "taking a leadership role, commanding, exerting control, representing the establishment, being in a position of strength, coming in contact with officials, setting direction",
+        "regulating": "establishing law and order, operating from sound principles, applying rules or guidelines, working within the legal system, setting standards of behavior, following a regimen"
+      },
+      "name": "The Emperor"
+    },
+    "HIEROPHANT": {
+      "i": 5,
+      "fields": {
+        "identifying with a group": "being committed to a cause, devoting energy to a group, joining an organization, working as part of a team, feeling loyal to others, being in an institutionalized setting",
+        "having a belief system": "sharing a cultural heritage, learning a religious tradition, honoring ritual and ceremony, identifying a world view, following a discipline, knowing where to put your faith",
+        "conforming": "following the rules, taking an orthodox approach, staying within conventional bounds, adapting to the system, fitting in, going along with the program, doing what's expected, being part of the Establishment",
+        "getting an education": "pursuing knowledge, becoming informed, increasing understanding, studying and learning, seeking a deeper meaning, finding out more"
+      },
+      "name": "The Hierophant"
+    },
+    "LOVERS": {
+      "i": 6,
+      "fields": {
+        "determining values": "struggling with temptation, choosing between right and wrong, facing an ethical or moral choice, refusing to let ends justify means, finding out what you care about",
+        "relating to others": "establishing bonds, feeling love, forming a union or marriage, acknowledging kinship, sympathizing with another, getting closer, making a connection, being intimate",
+        "being sexual": "seeking union, experiencing desire, making love, opening to another, responding with passion, feeling a physical attraction, tapping inner energy",
+        "establishing personal beliefs": "questioning received opinions, figuring out where you stand, staying true to yourself, setting your own philosophy, going by your own standards, making up your own mind"
+      },
+      "name": "The Lovers"
+    },
+    "CHARIOT": {
+      "i": 7,
+      "fields": {
+        "achieving victory": "reaching your goal, winning, being successful, dominating, coming out on top, beating the competition",
+        "achieving hard control": "mastering emotions, curbing impulses, maintaining discipline, holding in anger, getting your way, assuming the reins of power, showing authority",
+        "using your will": "being determined to succeed, focusing your intent, rising above temptation, letting nothing distract you, sustaining an effort, concentrating your energies, fixing on a goal",
+        "asserting yourself": "being ego-focused, establishing an identify, knowing who you are, feeling self-confident, having faith in yourself, looking out for your interests"
+      },
+      "name": "The Chariot"
+    },
+    "STRENGTH": {
+      "i": 8,
+      "fields": {
+        "showing strength": "knowing you can endure, having a gallant spirit, feeling an unshakable resolve, taking heart despite setbacks, having stamina, being a rock",
+        "being compassionate": "giving others lots of space, tolerating, understanding what others are feeling, accepting, forgiving imperfection, being kind",
+        "being patient": "dealing calmly with frustration, accepting others, taking time, maintaining composure, refusing to get angry, showing forbearance",
+        "achieving soft control": "persuading, working with, guiding indirectly, being able to influence, tempering force with benevolence, demonstrating the strength of love"
+      },
+      "name": "Strength"
+    },
+    "HERMIT": {
+      "i": 9,
+      "fields": {
+        "receiving/giving guidance": "going to/being a mentor, accepting/offering wise counsel, learning from/being a guru, turning to/being a trusted teacher, being helped/helping",
+        "being introspective": "thinking things over, focusing inward, concentrating less on the senses, quieting yourself, looking for answers within, needing to understand",
+        "searching": "seeking greater understanding, looking for something, wanting the truth at all costs, going on a personal quest, needing more, desiring a new direction",
+        "seeking solitude": "needing to be alone, desiring stillness, withdrawing from the world, experiencing seclusion, giving up distractions, retreating into a private world"
+      },
+      "name": "The Hermit"
+    },
+    "WHEEL OF FORTUNE": {
+      "i": 10,
+      "fields": {
+        "feeling movement": "experiencing change, having the tempo of life speed up, being swept up in new developments, rejoining the world of activity, getting involved",
+        "being at a turning point": "reversing, moving in a different direction, turning things around, having a change in fortune, altering the present course, being surprised at a turn of events",
+        "feeling a sense of destiny": "using what chance offers, seeing life's threads weave together, finding opportunity in an accident, opening to luck, sensing the action of fate, witnessing miracles",
+        "having a personal vision": "seeing how everything connects, becoming more aware, uncovering patterns and cycles, expanding your outlook, gaining greater perspective, discovering your role and purpose"
+      },
+      "name": "The Wheel Of Fortune"
+    },
+    "JUSTICE": {
+      "i": 11,
+      "fields": {
+        "respecting justice": "insisting on fairness, acting on ethical principles, being involved in legal concerns, committing to honesty, seeking equality, being impartial, trying to do what is right",
+        "preparing for a decision": "weighing all sides of an issue, setting a course for the future, balancing all factors, determining right action, choosing with full awareness",
+        "assuming responsibility": "settling old accounts and debts, being accountable, acknowledging the truth, admitting involvement, handling the situation, doing what has to be done",
+        "understanding cause and effect": "accepting the results you created, seeing how you chose your situation, recognizing the action of karma, knowing that what is makes sense, making connections between events"
+      },
+      "name": "Justice"
+    },
+    "HANGED MAN": {
+      "i": 12,
+      "fields": {
+        "letting go": "having an emotional release, accepting what is, surrendering to experience, ending the struggle, being vulnerable and open, giving up control, accepting God's will",
+        "suspending action": "pausing to reflect, feeling outside of time, taking time to just be, giving up urgency, living in the moment, waiting for the best opportunity",
+        "reversing": "turning the world around, changing your mind, overturning old priorities, seeing from a new angle, upending the old order, doing an about-face",
+        "sacrificing": "being a martyr, renouncing a claim, putting self-interest aside, going one step back to go two steps forward, giving up for a higher cause, putting others first"
+      },
+      "name": "The Hanged Man"
+    },
+    "DEATH": {
+      "i": 13,
+      "fields": {
+        "ending": "closing one door to open another, bringing something to a close, completing a chapter, concluding unfinished business, putting the past behind you, having a parting of the ways",
+        "eliminating excess": "cutting out what isn't necessary, shedding old attitudes, getting down to bare bones, concentrating on essentials, getting back to basics",
+        "going through transition": "changing status, moving from the known to the unknown, being cast adrift, waiting in an in-between state, being in the middle",
+        "experiencing inexorable forces": "being in the path of sweeping change, being caught in the inescapable, going through what cannot be avoided, being part of a powerful movement, riding your fate, accepting the inevitable"
+      },
+      "name": "Death"
+    },
+    "TEMPERANCE": {
+      "i": 14,
+      "fields": {
+        "experiencing health": "renewing energy and vigor, healing, enjoying well-being, recovering, flourishing",
+        "combining forces": "gathering together what is needed, joining with others, consolidating, finding the right mix, creating synthesis, getting it all together",
+        "maintaining balance": "experiencing harmony, achieving equilibrium, bringing together opposites, recognizing all sides, fostering cooperation, feeling centered and secure",
+        "being temperate": "finding the middle ground, showing moderation, avoiding excess, mitigating a harsh position, looking for the golden mean, reaching a compromise, offsetting an extreme"
+      },
+      "name": "Temperance"
+    },
+    "DEVIL": {
+      "i": 15,
+      "fields": {
+        "feeling hopeless": "believing the worst, despairing, lacking faith, seeing a cold world, thinking negatively, foreseeing a bleak future, doubting",
+        "focusing on the material": "being caught up in appearances, believing only in the physical, forgetting the spiritual, getting and spending, overindulging the senses",
+        "staying in ignorance": "being unaware, operating within a narrow range, experiencing limitation, choosing to stay in the dark, fearing the unknown, being taken in by appearances",
+        "experiencing bondage": "accepting an unwanted situation, being obsessed, feeling tied down against your will, losing independence, allowing yourself to be controlled, being addicted and enslaved, submitting to another"
+      },
+      "name": "The Devil"
+    },
+    "TOWER": {
+      "i": 16,
+      "fields": {
+        "going through sudden change": "experiencing upheaval, having plans disrupted, being surprised, undergoing a crisis, having routines shaken up, being in chaos",
+        "falling down": "being humbled, experiencing a crash, toppling from the heights, having a downturn in fortune, suffering a blow to the ego",
+        "releasing": "exploding, having an emotional outburst, erupting in anger, crashing through ego defenses, breaking through pretense, letting everything go",
+        "having a revelation": "suddenly realizing the truth, exposing what was hidden, having a burst of insight, seeing through illusions, getting the answer, seeing everything in a flash"
+      },
+      "name": "The Tower"
+    },
+    "STAR": {
+      "i": 17,
+      "fields": {
+        "regaining hope": "having faith in the future, thinking positively, believing, counting your blessings, seeing the light at the end of the tunnel, feeling great expectation, looking forward to success",
+        "feeling serene": "experiencing peace of mind, relaxing, finding your still center, remaining untroubled, savoring perfect calm, being tranquil amid trouble, enjoying harmony",
+        "being inspired": "regaining motivation, realizing an inner strength, seeing the way clear, being stimulated to a higher level, creating, receiving the answer",
+        "being generous": "wanting to give or share, spreading the wealth, opening your heart, giving back what you have received, letting love flow freely, offering with no reservations, holding nothing back"
+      },
+      "name": "The Star"
+    },
+    "MOON": {
+      "i": 18,
+      "fields": {
+        "feeling fear": "releasing inner demons, feeling a nameless apprehension, suffering from phobias, giving in to the shadow self, lacking courage, being overcome by anxieties",
+        "stimulating the imagination": "having vivid dreams or visions, opening to fantasy, plumbing the unconscious, entertaining unusual thoughts, being outlandish and bizarre",
+        "believing illusions": "accepting a false picture, deceiving yourself, having unrealistic ideas, misapprehending the truth, experiencing distortions, chasing after a fantasy",
+        "feeling bewildered": "losing direction and purpose, having trouble thinking clearly, becoming confused, being easily distracted, feeling disoriented, wandering aimlessly"
+      },
+      "name": "The Moon"
+    },
+    "SUN": {
+      "i": 19,
+      "fields": {
+        "experiencing greatness": "achieving prominence, being singled out for notice, having a personal moment of glory, setting an outstanding example, shining forth brilliantly, demonstrating distinction, becoming the center of attention",
+        "having assurance": "feeling free and expansive, honoring your true self, knowing you can succeed, being confident, believing in your worth, trusting your abilities, forgiving yourself",
+        "becoming enlightened": "understanding, finding the sense behind the chaos, attaining a new level of insight, having an intellectual breakthrough, getting to the heart of the matter, realizing the truth",
+        "feeling vitality": "becoming radiantly energized, bursting with enthusiasm, experiencing joy, feeling invigorated, getting charged up, enjoying great health"
+      },
+      "name": "The Sun"
+    },
+    "JUDGEMENT": {
+      "i": 20,
+      "fields": {
+        "feeling reborn": "awakening to possibilities, transforming, enjoying renewed hope, making a fresh start, seeing everything in a new light, discovering joy",
+        "hearing a call": "recognizing your true vocation, feeling inner conviction, feeling an impulse to act, deciding to make a difference, feeling drawn in a new direction, knowing what you must do, answering a need",
+        "finding absolution": "feeling cleansed and refreshed, releasing guilts and sorrows, forgiving yourself and others, atoning for past mistakes, unburdening yourself, feeling sins washed away",
+        "making a judgment": "having a day of reckoning, separating the wheat from the chaff, making an honest appraisal, getting off the fence, using critical faculties, taking a stand, making hard choices"
+      },
+      "name": "Judgement"
+    },
+    "WORLD": {
+      "i": 21,
+      "fields": {
+        "accomplishing": "realizing your goals, prospering, achieving your heart's desire, seeing dreams come true, flourishing, finding a beautiful solution",
+        "becoming involved": "contributing, healing, rendering a service, using a gift or talent, sharing what you have, giving of yourself, feeling engaged, being active",
+        "integrating": "experiencing wholeness, bringing parts together, achieving dynamic balance, combining, creating synthesis, joining together, working in unison",
+        "feeling fulfilled": "savoring the present, taking pleasure in life, enjoying peace of mind, getting satisfaction, finding contentment, counting your blessings"
+      },
+      "name": "The World"
+    }
+  },
+  "WANDS": {
+    "ACE": {
+      "i": 0,
+      "fields": {
+        "using creative force": "inventing a better way, expanding your potential, opening to greater possibilities, conceiving a dream, expressing yourself, stimulating your imagination, allowing a talent to unfold, coming up with a solution",
+        "having confidence": "believing in yourself, feeling assured of your abilities, being sure of success, having high self-esteem, having faith in your path, knowing things will work out",
+        "showing enthusiasm": "feeling fired up and eager, creating an aura of excitement, being ready to tackle the world, inspiring others, sustaining optimism, giving 110%",
+        "proceeding with courage": "tackling a challenging task, going beyond your limits, being true to your beliefs, daring to take a stand, facing your fears, going for it"
+      },
+      "name": "Ace of Wands"
+    },
+    "2": {
+      "i": 1,
+      "fields": {
+        "having personal power": "commanding attention and respect, directing those around you, holding the world in your hands, wielding influence, calling the shots, having authority, swaying others to your position, being able to achieve your goals",
+        "showing originality": "doing what no one else has done, creating your own style, being a pioneer, taking a different approach, inventing something new, diverging from the crowd, marching to a different drummer",
+        "being bold": "daring to do what you want, taking a risk, gambling events will go your way, confronting the situation head-on, taking the initiative, speaking your mind, facing fear directly, taking the bull by the horns, seizing the day"
+      },
+      "name": "Two of Wands"
+    },
+    "3": {
+      "i": 2,
+      "fields": {
+        "exploring the unknown": "seeking out uncharted areas, going in quest of new adventure, expanding horizons, leaving the secure behind, tackling something different",
+        "demonstrating leadership": "showing others the way, taking the main role, providing needed direction, rallying the group behind you, assuming a responsible position, setting an example, serving as a representative",
+        "having foresight": "being visionary, looking for greater possibilities, planning ahead, knowing what to expect, getting a premonition, anticipating obstacles, taking the long view"
+      },
+      "name": "Three of Wands"
+    },
+    "4": {
+      "i": 3,
+      "fields": {
+        "seeking freedom": "getting out of an oppressive situation, breaking free of bonds, cutting loose, opening to new possibilities, escaping unhappy circumstances, claiming self-determination, letting go of limitations",
+        "feeling excited": "bubbling over with delight, feeling thrilled, look forward expectantly, getting caught up in the moment, feeling jubilant, relishing the moment, being surprised",
+        "celebrating": "rejoicing over a happy event, recognizing a success, observing an anniversary, milestone or special time, congratulating on a job well-done, reflecting on accomplishments, enjoying some well-deserved rewards, taking part in a ceremony or rite"
+      },
+      "name": "Four of Wands"
+    },
+    "5": {
+      "i": 4,
+      "fields": {
+        "experiencing hassles": "getting annoyed by demands, having minor setbacks, needing to take care of details, suffering from irritations, being bothered by trivialities",
+        "disagreeing": "feeling everyone is at cross-purposes, being torn by dissension, quarreling, arguing and bickering, becoming embroiled in a debate, being at odds with others, quibbling over details",
+        "experiencing competition": "feeling the thrill of the contest, going against an opponent, rising to the challenge, being involved in a game or sport, trying to outdo yourself, going for the gold, looking for a fight, having a rival, being challenged by an upstart"
+      },
+      "name": "Five of Wands"
+    },
+    "6": {
+      "i": 5,
+      "fields": {
+        "feeling pride": "enjoying healthy self-esteem, strutting your stuff, holding your head up high, feeling worthy of notice, having a high opinion of yourself, putting yourself above others, being arrogant, condescending, feeling self-important",
+        "triumphing": "having your day in the sun, being vindicated, walking away with the prize, prevailing against all comers, coming out on top, achieving success",
+        "receiving acclaim": "being acknowledged, getting a pat on the back, receiving an award or citation, getting praise or a compliment, earning applause, achieving recognition"
+      },
+      "name": "Six of Wands"
+    },
+    "7": {
+      "i": 6,
+      "fields": {
+        "showing conviction": "being sure, having a fixed position, demonstrating strong character, standing up for what you believe, knowing you are right, acting resolutely, being firm",
+        "being defiant": "holding out against pressure, defending your position, opposing all challengers, combating criticism, refusing to yield, saying \"No!\", resisting authority",
+        "being aggressive": "going after what you want, asserting yourself, taking the offensive, firing the first shot, fighting, making your point forcefully, seizing the advantage"
+      },
+      "name": "Seven of Wands"
+    },
+    "8": {
+      "i": 7,
+      "fields": {
+        "taking quick action": "making your move, striking while the iron is hot, declaring yourself openly, putting plans into action, rushing into a new area, moving into high gear, getting caught up in change",
+        "coming to a conclusion": "culminating an effort, having all elements come together, closing out an activity, experiencing a grand finale, finding a successful resolution, completing unfinished business",
+        "receiving news": "getting an important message, obtaining a needed bit of information, finding the missing puzzle piece, discovering the truth, having a meaningful conversation, learning more"
+      },
+      "name": "Eight of Wands"
+    },
+    "9": {
+      "i": 8,
+      "fields": {
+        "persevering": "persisting despite all setbacks, refusing to take \"no\" for an answer, seeing something through to the end, getting knocked down, then standing up, keeping your resolve, trying repeatedly",
+        "defending yourself": "assuming ill will, expecting the worst, taking extra precautions, being paranoid, feeling wary and guarded, protecting others, remembering past attacks",
+        "showing stamina": "continuing despite fatigue, holding fast, drawing on hidden reserves, holding together through force of will, demonstrating physical strength, keeping up the pace"
+      },
+      "name": "Nine of Wands"
+    },
+    "10": {
+      "i": 9,
+      "fields": {
+        "feeling burdened": "never having time to relax, feeling tied to a treadmill, being taxed to the limit, assuming responsibility, being held accountable, carrying out an unpleasant duty, cleaning up a messy situation, being left holding the bag",
+        "overextending": "trying to do too much, refusing to say \"no\", taking all the blame, assuming another's debt, doing the lion's share, having to work overtime, shouldering all the work, being saddled with an extra load",
+        "struggling": "fighting uphill, doing everything the hard way, experiencing resistance, pushing against the current, having to work for every gain, finding that nothing comes easily, laboring"
+      },
+      "name": "Ten of Wands"
+    },
+    "PAGE": {
+      "i": 10,
+      "fields": {
+        "Be Enthusiastic": "jump in wholeheartedly, get excited, show optimism, be the first to volunteer, be passionate, get your blood flowing",
+        "Be Courageous": "take a risk, be daring, have an adventure, avoid the sure thing, take assertive action, be a leader, overcome a fear",
+        "Be Creative": "take a novel approach, be original, invent, find a new area of self-expression, use your art, come up with a solution, go in a new direction",
+        "Be Confident": "tackle a challenge, say \"yes, I can\", believe in yourself, stretch your envelope, move beyond doubts, focus on success, know that where there's a will, there's a way"
+      },
+      "name": "Page of Wands"
+    },
+    "KNIGHT": {
+      "i": 11,
+      "fields": {
+        "Daring... ...Foolhardy": "will risk anything without fear... ...is reckless and rash, will tackle what others avoid... ...will endanger self and others, is the first to volunteer for danger... ...doesn't give danger due respect, loves being a hero... ...is impetuous, boldly goes where no one has gone before... ...is a daredevil",
+        "Adventurous... ...Restless": "loves travel and new experiences... ...is never content to be still, seeks novelty and change... ...can't set down roots or make ties, makes things happen... ...lacks inner peace and serenity, rises to every challenge... ...won't stop to smell the roses, is footloose and fancy-free... ...must have constant stimulation",
+        "Self-confident... ...Cocky": "totally lacks self-doubt... ...overestimates abilities, has a can-do attitude... ...may boast and brag, is convinced of his or her talent... ...exaggerates accomplishments, is self-assured at all times... ...is brash and nervy, doesn't sweat the small stuff... ...is sometimes presumptuous",
+        "Passionate... ...Hot-tempered": "is easily roused to action... ...angers easily, feels strong loyalties... ...is too ready for a fight, feels everything powerfully... ...lashes out when riled, takes a vocal stand... ...often acts without thinking, jumps in with both feet... ...may have a chip on his or her shoulder",
+        "Charming... ...Superficial": "is physically attractive... ...focuses on style and appearance, disarms opposition with a smile... ...can be thoughtless and insensitive, is sexy and seductive... ...pursues sexual conquests, generates glamour and excitement... ...avoids deep or serious matters, is honey-tongued... ...may say or do what's expedient"
+      },
+      "name": "Knight of Wands"
+    },
+    "QUEEN": {
+      "i": 12,
+      "fields": {
+        "Cheerful": "is optimistic and upbeat, has an encouraging word for all, brightens whatever room he or she is in, has a warm and sunny disposition, can shake off the blues easily",
+        "Self-Assured": "quietly demonstrates self-confidence, handles any situation with aplomb, can't be easily rattled or provoked, is spontaneous and gracious in defeat, has faith in his or her abilities",
+        "Attractive": "is appealing and popular, creates a powerful first impression, makes friends easily, has great sex appeal, is warm and outgoing",
+        "Wholehearted": "is loaded with enthusiasm, tackles a task with total dedication, gives the utmost in any situation, is open and sincere, doesn't hold anything back",
+        "Energetic": "leads a busy and active life, is vigorous and strong, radiates health and vitality, has an inner vibrancy, is a natural athlete"
+      },
+      "name": "Queen of Wands"
+    },
+    "KING": {
+      "i": 13,
+      "fields": {
+        "Charismatic": "is often showy and theatrical, enjoys making the gesture with flair, naturally becomes the focus of attention, magnetically attracts others, is watched, imitated and talked about",
+        "Bold": "is intrepid, is willing to take chances when the stakes are high, confronts opposition directly, dares to stand and be different, is unconcerned with what others think, has the courage of his or her convictions",
+        "Creative": "develops innovative projects and ideas, opens up new areas of experience, has natural artistic ability, uses self-expression for useful purposes, masterminds new strategies, is original and inventive",
+        "Forceful": "seems to dominate the environment, has a commanding presence, is assertive when necessary, earns respect and willing compliance, carries authority naturally",
+        "Inspiring": "communicates enthusiasm, creates an atmosphere of excitement, sets an example others want to follow, instills confidence, is a powerful, natural leader"
+      },
+      "name": "King of Wands"
+    }
+  },
+  "CUPS": {
+    "ACE": {
+      "i": 0,
+      "fields": {
+        "using emotional force": "getting in touch with your feelings, letting your heart lead the way, empathizing with others, expressing deep feelings, responding viscerally",
+        "experiencing intimacy": "feeling an attraction grow, falling in love, establishing a bond with another, developing a relationship, getting close to someone, going to a deeper level",
+        "proceeding with love": "expressing affection, opening yourself to others, responding sympathetically, letting your love light shine, giving to those in need, getting rid of negativity, forgiving and forgetting",
+        "developing intuition": "trusting your inner voice, responding to messages from within, experiencing direct knowing, enhancing your psychic awareness, getting in tune with yourself, going with your gut reaction"
+      },
+      "name": "Ace of Cups"
+    },
+    "2": {
+      "i": 1,
+      "fields": {
+        "acknowledging an attraction": "recognizing a bond that is developing, accepting your preferences, letting yourself be drawn in, moving toward, feeling a positive response",
+        "calling a truce": "healing a severed relationship, bringing together opposites, letting bygones be bygones, coming to a satisfactory agreement, declaring peace, forgiving and forgetting",
+        "making a connection": "joining with another, celebrating a marriage or union, cementing a friendship, establishing a partnership, working together, sharing, helping and being helped, seeing commonalities"
+      },
+      "name": "Two of Cups"
+    },
+    "3": {
+      "i": 2,
+      "fields": {
+        "valuing community": "taking part in a support group, developing a team spirit, working together, uniting with others, forming a group bond, helping each other, discovering a common goal, being neighborly",
+        "feeling exuberant": "bursting with energy, being in the flow, celebrating, overflowing with high spirits, feeling on top of the world, dancing and singing, putting yourself out there",
+        "enjoying friendship": "getting together with people you like, experiencing camaraderie, extending/receiving hospitality, sharing, finding companions, trusting others, relying on outside help"
+      },
+      "name": "Three of Cups"
+    },
+    "4": {
+      "i": 3,
+      "fields": {
+        "feeling apathetic": "passively accepting, losing interest, feeling disengaged, making little effort, finding life stale and flat, lacking motivation, feeling little desire",
+        "being self-absorbed": "concentrating on your own feelings, wanting for yourself, being unaware of others, giving out little, withholding affection, seeing only your point of view, ignoring gifts and blessings",
+        "going within": "being introspective, meditating, dreaming, contemplating, pausing to reflect, getting lost in reverie, withdrawing from involvement, losing outer awareness"
+      },
+      "name": "Four of Cups"
+    },
+    "5": {
+      "i": 4,
+      "fields": {
+        "feeling regret": "being disappointed by events, crying over spilt milk, wanting to turn back the clock, wishing for what might have been, believing you made the wrong choice, acknowledging mistakes",
+        "feeling bereft": "breaking up a relationship, feeling deprived of love, longing to be reunited, grieving, feeling sorrow",
+        "suffering a loss": "letting go of a hope, giving up the win, experiencing a setback, being defeated, having a possession taken away, saying good-bye"
+      },
+      "name": "Five of Cups"
+    },
+    "6": {
+      "i": 5,
+      "fields": {
+        "experiencing good will": "acting kindly or charitably, doing a good turn for another, sharing what you have, having a noble impulse, receiving a gift, feeling blessed, being well-intentioned",
+        "focusing on childhood": "being with a child or young person, feeling carefree, being taken care of, feeling nostalgic, indulging in play, enjoying youthful activities, having a baby",
+        "enjoying innocence": "feeling simple contentment, surrounding yourself with goodness, being blissfully unaware, having a clear conscience, shunning corruption, being acquitted, appreciating simple joys"
+      },
+      "name": "Six of Cups"
+    },
+    "7": {
+      "i": 6,
+      "fields": {
+        "having many options": "being offered many alternatives, facing an array of choices, believing in limitless possibilities, looking at a wide open field, getting to pick and choose",
+        "falling into dissipation": "overindulging, letting everything go, becoming disorganized, eating/drinking/partying to excess, neglecting your health, entering into addictive patterns, being inclined toward indolence, being lazy, procrastinating",
+        "indulging in wishful thinking": "creating fantasies, dreaming, getting caught up in illusions, letting your imagination run wild, kidding yourself about the facts, building castles in the air, waiting for your ship to come in, lacking focus and commitment, avoiding putting ideas to the test"
+      },
+      "name": "Seven of Cups"
+    },
+    "8": {
+      "i": 7,
+      "fields": {
+        "growing weary": "feeling drained by demands, dragging through the day, feeling tired and listless, lacking energy, losing hope, getting weighed down by worries, becoming burned out",
+        "moving on": "realizing the current cycle is over, abandoning a hopeless situation, disentangling yourself, starting on a trip of unknown length, letting go, finishing up and walking away",
+        "seeking deeper meaning": "focusing on personal truth, leaving the rat race, looking for answers, concentrating on what is important, starting on a journey of discovery, finding out the facts, devoting more time to the spiritual"
+      },
+      "name": "Eight of Cups"
+    },
+    "9": {
+      "i": 8,
+      "fields": {
+        "having your wish fulfilled": "achieving what you desire, obtaining your goal, getting what you, think, you want, having your dream come true",
+        "enjoying sensual pleasure": "experiencing luxury, savoring a delicious meal, appreciating the arts, making love, relaxing, experiencing beauty, enjoying physical exertion",
+        "feeling satisfied": "indulging in a little smugness, enjoying the situation just as it is, feeling pleased as punch, getting the results you hoped for, feeling all's well with the world, being contented"
+      },
+      "name": "Nine of Cups"
+    },
+    "10": {
+      "i": 9,
+      "fields": {
+        "enjoying peace": "experiencing serenity, doing away with hostilities, restoring harmony, reducing stress and tension, feeling contented and at ease, calling a truce, relaxing",
+        "looking to the family": "working for peace in the home, going on a family event, reaffirming a family commitment, supporting a relative in need, bonding with family members, forgiving someone in the family",
+        "feeling joy": "embracing happiness, having a sense of well-being, radiating love, delighting in good fortune, counting your blessings, expressing delight"
+      },
+      "name": "Ten of Cups"
+    },
+    "PAGE": {
+      "i": 10,
+      "fields": {
+        "Be Intuitive": "receive guidance from within, act on a hunch, remember your dreams, have a psychic experience, experience direct knowing, trust your gut reaction",
+        "Be Intimate": "start or renew a love affair, meet someone you're attracted to, get closer to someone, go beyond formalities, have a special moment of togetherness, solidify a friendship, share something personal",
+        "Be Loving": "make a thoughtful gesture, express sympathy and understanding, forgive yourself, forgive someone who has hurt you, apologize to someone you have hurt, reach out and touch someone, mend a broken relationship, brighten someone's day, respond with caring rather than anger, refuse to judge or condemn",
+        "Be Emotional": "be moved or touched, let your feelings show, respond to beauty, be sentimental or romantic, shed your detachment, let your heart lead the way"
+      },
+      "name": "Page of Cups"
+    },
+    "KNIGHT": {
+      "i": 11,
+      "fields": {
+        "Introspective... ...Introverted": "values the inner life... ...focuses inward to excess, tries to understand why... ...avoids active participation, questions motivations... ...is driven to self-examination, seeks self-improvement... ...exaggerates personal failings, sees below the surface... ...can't relax around others",
+        "Sensitive... ...Temperamental": "is aware of moods and feelings... ...is prone to mood swings, helps others open up... ...can be petulant and sulky, responds deeply to life... ...gels melancholy and depressed, understands the pains of others... ...broods excessively, is tactful and diplomatic... ...takes offense easily",
+        "Romantic... ...Overemotional": "idealizes love... ...lacks self-restraint, emphasizes feelings... ...is often jealous, concentrates on the poetry of life... ...tends to be gushy and melodramatic, remembers special occasions... ...blows hot and cold in affections, expresses sentiments beautifully... ...brings flowers, but forgets to put gas in the car",
+        "Imaginative... ...Fanciful": "can tap the fertile unconscious... ...indulges in idle daydreams, looks beyond the obvious... ...has big ideas that come to nothing, never takes the mundane path... ...has an unrealistic approach, spins marvelous tales... ...has an overactive imagination, is visionary... ...can shade the truth",
+        "Refined... ...Over-refined": "appreciates beauty in all forms... ...leaves dirty work to others, seeks the finest... ...can't face unpleasantness, creates a pleasing environment... ...lacks robust good health, understands subtlety... ...emphasizes style over substance, is suave and gracious... ...gets overwhelmed by pressure"
+      },
+      "name": "Knight of Cups"
+    },
+    "QUEEN": {
+      "i": 12,
+      "fields": {
+        "Tenderhearted": "is easily moved by another's pain, reacts with sensitivity and compassion, is kind and gentle with all creatures, can never turn away someone in need, feels what others are feeling",
+        "Spiritual": "feels oneness with God and the universe, has reverence for all life, finds joy in communion, appreciates the deeper meanings of life, sees the world as a holy place",
+        "Psychic": "is open to the unconscious, has a well-developed sixth sense, can have a telepathic bond with another, has a finely-tuned sensibility, is a natural medium",
+        "Loving": "turns away wrath with caring, is unconditionally accepting, is sensitive to the feelings of others, dispels anger and hate, has infinite patience",
+        "Intuitive": "is always tuned to emotional undercurrents, senses the climate of a situation, is guided by the heart, trusts an inner sense of what is true, understands without having to ask"
+      },
+      "name": "Queen of Cups"
+    },
+    "KING": {
+      "i": 13,
+      "fields": {
+        "Diplomatic": "can balance the needs of many people, keeps everyone working together happily, can diffuse a tense situation, achieves goals through subtle influence, says just the right word at the right time",
+        "Caring": "responds to emotional needs, is a natural healer and therapist, takes action to help those in need, feels compassion for the less fortunate, does volunteer and charity work",
+        "Calm": "maintains his or her composure, has a quieting influence on others, is emotionally stable and secure, keeps his or her head in a crisis, never seems nervous or tense",
+        "Wise": "gives good advice, has a deep grasp of human nature, teaches through loving attention, knows what others need for growth, sees right to the heart of the matter, understands many levels of experience",
+        "Tolerant": "has open and broad-minded views, accepts the limitations of others, is comfortable with all types of people, allows others their freedom, is patient in trying circumstances"
+      },
+      "name": "King of Cups"
+    }
+  },
+  "SWORDS": {
+    "ACE": {
+      "i": 0,
+      "fields": {
+        "proceeding with truth": "dispelling doubts, cutting through confusion, seeing through illusions, having clear understanding, being honest, finding out what is real",
+        "seeking justice": "righting a wrong, championing a cause, doing what is right, establishing the truth, accepting responsibility, wanting what is fair",
+        "using mental force": "being objective, thinking your way through, finding out the facts, analyzing the situation, using your intellect, applying logic and reason",
+        "having fortitude": "overcoming adversity, facing problems, resolving a situation, finding the strength to overcome, surmounting obstacles, being undaunted by setbacks"
+      },
+      "name": "Ace of Swords"
+    },
+    "2": {
+      "i": 1,
+      "fields": {
+        "avoiding the truth": "refusing to look at facts, pretending everything's fine, ignoring the warning signs, closing your eyes to what's going on, avoiding an unpleasantness, choosing not to know",
+        "blocking emotions": "denying true feelings, stifling a natural response, keeping another at arm's length, hiding distress, turning a deaf ear, being defensive, maintaining your cool",
+        "being at a stalemate": "feeling afraid to act, reaching an impasse, staying stuck, refusing to decide, being unwilling to rock the boat, staying on the fence"
+      },
+      "name": "Two of Swords"
+    },
+    "3": {
+      "i": 2,
+      "fields": {
+        "feeling lonely": "being separated, wandering far from home, being spurned or rejected, feeling isolated from those you love, being deserted in time of need, feeling lost",
+        "experiencing betrayal": "discovering a painful truth, finding your trust misplaced, being let down, letting someone down, getting stabbed in the back, turning against someone, breaking your word, acting against",
+        "feeling heartbreak": "causing heartbreak, suffering emotional pain, hurting inside, being disappointed, getting some unsettling news, having your feelings hurt, hurting someone's feelings, receiving little solace"
+      },
+      "name": "Three of Swords"
+    },
+    "4": {
+      "i": 3,
+      "fields": {
+        "contemplating": "gaining a better perspective, listening for your Inner Voice, taking time alone to think, standing back from the situation, examining your motivations, reviewing where you are",
+        "resting": "taking a break, giving your body time to heal, avoiding overexertion, finding peace and quiet, relaxing body and soul, taking life easy",
+        "quietly preparing": "consolidating inner resources, making sure your base is secure, getting ready for the future, coming to terms with what is, tieing up loose ends, stabilizing"
+      },
+      "name": "Four of Swords"
+    },
+    "5": {
+      "i": 4,
+      "fields": {
+        "experiencing discord": "being in a hostile environment, feeling people are set against each other, choosing to battle, having an \"us-against-them\" mentality, creating ill will, experiencing conflict",
+        "acting in your own self-interest": "setting aside the concerns of others, looking out for number one, thinking of your own needs, knowing you must concentrate on yourself, encountering selfishness, indulging in power plays, gloating, going for the win-lose result",
+        "witnessing open dishonor": "losing your moral compass, letting ends justify means, sacrificing integrity, losing sight of what is right, achieving a dubious victory, knowing of criminal activity"
+      },
+      "name": "Five of Swords"
+    },
+    "6": {
+      "i": 5,
+      "fields": {
+        "feeling the blues": "experiencing a low-level sadness, just keeping your head above water, working to get through the day, feeling somewhat depressed, avoiding the lows, but also the highs, feeling listless, functioning, but not much more",
+        "traveling": "changing location, moving from one place to another, taking a trip, experiencing a change of scene, being uprooted, going on a journey, entering into a new frame of mind",
+        "recovering": "dealing with the effects of trauma, getting over a tough time, picking up the pieces, starting to cope, beginning to get your health back, heading toward a more positive place, feeling hope again"
+      },
+      "name": "Six of Swords"
+    },
+    "7": {
+      "i": 6,
+      "fields": {
+        "running away": "shirking responsibility, sneaking off, leaving, avoiding obligations, being afraid to face the music, taking the easy way out, hiding from the truth, procrastinating",
+        "choosing hidden dishonor": "deceiving or being deceived, covering your tracks, maneuvering behind the scenes, being two-faced, seeing others take the rap, controlling without appearing to, avoiding a shameful secret, lying or stealing",
+        "being a lone wolf": "feeling you don't need anyone else, wanting independence, deciding not to help, keeping something to yourself, preferring solitude, staying aloof, wanting to go it alone, holding people at arm's length"
+      },
+      "name": "Seven of Swords"
+    },
+    "8": {
+      "i": 7,
+      "fields": {
+        "feeling restricted": "being fenced in by obstacles, staying in a limited situation, feeling trapped by circumstances, experiencing few options, being blind to freedom, feeling persecuted",
+        "feeling powerless": "waiting for outside rescue, doubting anything you do will help, avoiding responsibility, looking for a white knight, feeling victimized, accepting inaction",
+        "feeling confused": "being unsure which way to turn, feeling at a loss, lacking direction, feeling overwhelmed, floundering around, needing guidance and clarity, not understanding what is happening"
+      },
+      "name": "Eight of Swords"
+    },
+    "9": {
+      "i": 8,
+      "fields": {
+        "worrying": "doubting all will go well, brooding, making yourself sick over your troubles, going over and over an issue, feeling anxious and tense, getting worked up",
+        "suffering anguish": "despairing, feeling you've reached your limits, having sleepless nights, feeling depressed, going through a dark night of the soul, forgetting joy, wanting to cry",
+        "feeling guilty": "regretting some offense, refusing to forgive yourself, wanting to turn back the clock, focusing on your \"sins\", being hard on yourself, denying that you did your best, getting overwhelmed by remorse"
+      },
+      "name": "Nine of Swords"
+    },
+    "10": {
+      "i": 9,
+      "fields": {
+        "feeling like a victim": "bemoaning your fate, feeling powerless, seeing life as hostile, suffering from an attack, wondering \"Why me?\", feeling self-pity, being on the receiving end",
+        "being a martyr": "putting your own interests last, being self-deprecating, feeling like a doormat, taking a back seat, letting others go first, sacrificing",
+        "bottoming out": "having nowhere to go but up, knowing it's darkest before the dawn, being at the lowest point, feeling things can't get worse, preparing for an upturn, reaching the pits"
+      },
+      "name": "Ten of Swords"
+    },
+    "PAGE": {
+      "i": 10,
+      "fields": {
+        "Use Your Mind": "analyze the problem, use logic and reason, reexamine beliefs, develop an idea or plan, study or research the facts, learn or teach, think everything through",
+        "Have Fortitude": "face problems squarely, refuse to be discouraged, meet setbacks with renewed energy, keep a firm resolve, move out of depression, keep your chin up and head high, keep trying",
+        "Be Just": "right a wrong, act ethically, treat others equally, champion a cause, try to be fair, do what you know is right, accept responsibility, acknowledge the other point of view",
+        "Be Truthful": "act honestly, face the facts, stop deceiving, clear up any confusion, expose what is hidden, speak directly"
+      },
+      "name": "Page of Swords"
+    },
+    "KNIGHT": {
+      "i": 11,
+      "fields": {
+        "Incisive... ...Cutting": "has a keen, forceful intellect... ...is prone to biting sarcasm, penetrates to the core... ...lacks sensitivity, expresses ideas succinctly... ...can be critical, is sharp and alert... ...has a barbed wit, debates and argues well... ...derides stupidity",
+        "Direct... ...Blunt": "is frank and outspoken... ...is tactless and rude, gets straight to the point... ...may have a brusque manner, does not mince words... ...does not spare the feelings of others, lets others know where they stand... ...can't hold his or her tongue, gives an honest answer... ...shows little discretion",
+        "Authoritative... ...Overbearing": "speaks with assurance... ...tends to be domineering, commands attention... ...forces a position on others, acts with total certainty... ...expects immediate compliance, gives orders naturally... ...does not welcome dissent, has great influence... ...acts in a high-handed manner",
+        "Logical... ...Unfeeling": "reasons clearly... ...undervalues intuition, analyzes information well... ...treats people like numbers, concentrates on what is correct... ...doesn't temper justice with mercy, can set aside emotional factors... ...is cut off from emotions, makes sense out of confusion... ...is cold and aloof",
+        "Knowledgeable... ...Opinionated": "knows what he or she is talking about... ...believes he or she is always right, can expound on any topic... ...lacks tolerance of other viewpoints, is sought as an expert... ...must have the last word, has well-reasoned positions... ...is arrogant, is highly intelligent... ...can be dogmatic and close-minded"
+      },
+      "name": "Knight of Swords"
+    },
+    "QUEEN": {
+      "i": 12,
+      "fields": {
+        "Astute": "sizes up a situation quickly, understands hidden motives and desires, is difficult to fool, trick or con, figures out the unspoken rules and agendas, is quick on the uptake",
+        "Witty": "has a delightful sense of humor, diffuses awkward situations with a funny remark, never takes anything too seriously, laughs at everything, including him or herself",
+        "Experienced": "has seen and done it all, has strength due to life's hard knocks, is free of self-righteous judgments, has realistic expectations",
+        "Honest": "faces the truth, even if unpleasant, is up front with everyone, likes everything on the table, plays by the rules, avoids lies and deception",
+        "Forthright": "is direct and open in all dealings, gets to the heart of the matter, acts without pretense or guile, is straightforward and no-nonsense, can be candid when necessary"
+      },
+      "name": "Queen of Swords"
+    },
+    "KING": {
+      "i": 13,
+      "fields": {
+        "Just": "renders honest, insightful judgments, understands and honors all sides of an issue, is concerned about truth and fairness, views situations with a dispassionate eye, is impartial and objective",
+        "Analytical": "cuts through confusion and mental fog, applies reason and logic, is talented with games and other mental challenges, easily breaks up complicated subjects, is adept at argument and debate, understands a problem quickly",
+        "Ethical": "is a moral/ethical leader, encourages high standards, works against corruption and dishonesty, takes the high road in all dealings, lives by his or her highest principles",
+        "Articulate": "is adept at language and verbal skills, communicates ideas successfully, is a stimulating conversationalist, often serves as a group spokesperson, is a lucid writer and speaker",
+        "Intellectual": "is comfortable in the world of the mind, uses thought creatively, grasps information quickly and completely, inspires and challenges through ideas, ably carries out research, is knowledgeable"
+      },
+      "name": "King of Swords"
+    }
+  },
+  "PENTACLES": {
+    "ACE": {
+      "i": 0,
+      "fields": {
+        "proceeding with trust": "believing in the good faith of others, feeling safe and protected, knowing you have total security, operating from a known position, having a support system, knowing the situation is stable, consolidating a firm base",
+        "prospering": "having the means to reach a goal, enjoying abundance, drawing to you what you need, flourishing, seeing efforts rewarded, increasing assets, experiencing growth",
+        "being practical": "using common sense, getting down-to-earth, taking advantage of what works, being realistic, grounding yourself in the real world, accepting the tools at hand",
+        "using material force": "focusing on concrete results, having a real-world impact, working with the physical, achieving tangible results, improving the body/health, becoming involved with nature"
+      },
+      "name": "Ace of Pentacles"
+    },
+    "2": {
+      "i": 1,
+      "fields": {
+        "juggling": "keeping everything in balance, coping with demands, getting people to work together, making sure all areas are covered, having a lot of irons in the fire, moving forward smoothly, emphasizing all aspects equally",
+        "having fun": "doing something you enjoy, getting a kick out of life, taking time to play, feeling in high spirits, whistling while you work, seeing the humor in the situation, kicking back",
+        "being flexible": "adapting quickly, feeling free to try new approaches, going with the flow, refusing to let change throw you, opening to developments, seeing the possibilities, handling challenges, changing directions easily"
+      },
+      "name": "Two of Pentacles"
+    },
+    "3": {
+      "i": 2,
+      "fields": {
+        "being competent": "getting the job done, carrying out an assignment well, meeting your goals, proving your ability, achieving more than what's expected, knowing what to do and how to do it, being up to the job",
+        "working as a team": "coordinating with others, finding all the needed elements, functioning as a unit, getting the job done together, contributing to the group, cooperating, combining efforts",
+        "planning": "organizing resources, following a schedule, operating in the know, nailing down the details, being an ant, not a grasshopper, reviewing beforehand, going over possible problems, being prepared"
+      },
+      "name": "Three of Pentacles"
+    },
+    "4": {
+      "i": 3,
+      "fields": {
+        "wanting to possess": "keeping what you have, getting your share, acquiring material goods, hanging on to someone, being greedy, penny-pinching, declaring ownership, saving",
+        "blocking change": "maintaining the status quo, wanting everything to stay the same, refusing to look at new approaches, stagnating, obstructing new developments, holding on to the present, resisting the flow",
+        "maintaining control": "wanting to be in charge, denying weakness, directing, demanding compliance, insisting on your own way, imposing structure, setting limits and rules, creating order"
+      },
+      "name": "Four of Pentacles"
+    },
+    "5": {
+      "i": 4,
+      "fields": {
+        "experiencing hard times": "running into material troubles, losing a job or income, feeling insecure, going through a period of hardship, lacking what you need, struggling to make ends meet",
+        "being rejected": "lacking support, having the door slammed in your face, taking an unpopular position, being ostracized, feeling excluded, standing alone, receiving disapproval",
+        "suffering ill health": "feeling run down and tired, refusing to take care of yourself, neglecting your body and its needs, feeling ragged around the edges, getting medical attention, abusing your body"
+      },
+      "name": "Five of Pentacles"
+    },
+    "6": {
+      "i": 5,
+      "fields": {
+        "having/not having resources": "giving/receiving, taking care of/being taken care of, sponsoring/being sponsored, supporting/being supported, offering/receiving a gift or reward, acquiring/not acquiring what you need",
+        "having/not having power": "leading/following, dominating/submitting, acting with authority/deference, asserting/denying your wishes, coercing/being coerced, doing all the talking/listening",
+        "having/not having knowledge": "teaching/learning, imparting/receiving information, becoming/finding a mentor, offering/taking advice, showing/being shown the ropes, knowing/not knowing a secret"
+      },
+      "name": "Six of Pentacles"
+    },
+    "7": {
+      "i": 6,
+      "fields": {
+        "considering a direction change": "weighing a different approach, pondering alternatives, thinking about change, opening to a new strategy, questioning your choices, standing at a crossroads",
+        "reaping a reward": "finally seeing some results, enjoying the first fruits, getting returns on investments, receiving payoffs, being able to let up a bit, reaching a milestone",
+        "assessing": "evaluating the status, reflecting on progress to date, reviewing what's been done, pausing to check results, making sure you're on course, finding out where you stand, taking stock"
+      },
+      "name": "Seven of Pentacles"
+    },
+    "8": {
+      "i": 7,
+      "fields": {
+        "showing diligence": "making an effort, working hard, applying yourself totally, being absorbed in a project, dedicating yourself to a task, plugging away, producing steady results",
+        "paying attention to detail": "being painstaking, being extra careful, approaching a task methodically, getting down to the nitty-gritty, handling all the loose ends, checking and rechecking, noticing the fine points",
+        "increasing knowledge": "taking a course, learning a new craft or skill, receiving training, pursuing greater understanding, researching, finding out the facts, increasing expertise"
+      },
+      "name": "Eight of Pentacles"
+    },
+    "9": {
+      "i": 8,
+      "fields": {
+        "relying on yourself": "handling the situation alone, acting on your own, falling back on your own resources, doing it all by yourself, wanting to be alone, feeling sure your way is best",
+        "being disciplined": "exercising self-control, showing restraint, reining in impulses, sacrificing to reach a goal, sticking to a program, taking a step-by-step approach",
+        "pursuing refinement": "achieving a comfortable lifestyle, avoiding the coarse and unsavory, being tactful and diplomatic, seeking high-minded activities, enjoying the finer things of life, remembering to be gracious, enjoying leisure"
+      },
+      "name": "Nine of Pentacles"
+    },
+    "10": {
+      "i": 9,
+      "fields": {
+        "seeking permanence": "looking for a solution that will last, creating a lasting foundation, feeling secure as things are, being concerned with the long-term, having an orderly family life, moving beyond makeshift arrangements, nailing down the plan",
+        "following convention": "staying within established guidelines, proceeding according to the rules, taking part in traditions, becoming part of the Establishment, being conservative, trusting in the tried-and-true, continuing in known patterns",
+        "enjoying affluence": "having material abundance, being free from money problems, enjoying business success, feeling financially secure, seeing your ventures flourish, having a run of good fortune"
+      },
+      "name": "Ten of Pentacles"
+    },
+    "PAGE": {
+      "i": 10,
+      "fields": {
+        "Be Trusting/Trustworthy": "accept that the solution is well in hand, have faith in others, accommodate uncertainty, accept others at their word, keep your word, prove yourself dependable, stick by your commitments, establish credibility",
+        "Have an Effect": "make your plans real, mold the physical world, use your body, experience nature, achieve tangible results, act on your dreams, get events in motion",
+        "Be Prosperous": "draw to you what you need, increase your means, grow and expand, enrich yourself, go out to meet success, seek abundance, become secure",
+        "Be Practical": "take a realistic approach, apply the tools at hand, find a solution that works, use common sense, stop daydreaming, work with what you have, concentrate on what's effective"
+      },
+      "name": "Page of Pentacles"
+    },
+    "KNIGHT": {
+      "i": 11,
+      "fields": {
+        "Cautious... ...Unadventurous": "checks and double-checks... ...is too conservative, examines all angles beforehand... ...misses chances by waiting, proceeds slowly and carefully... ...is reluctant to try something new, prefers the safe, known path... ...settles for safe, small gains, is prudent and careful... ...is afraid of risking",
+        "Hard-Working... ...Grinding": "becomes dedicated to a task... ...focuses too narrowly on work, is diligent and industrious... ...can be humorless and grim, produces as much as two people... ...sees playtime as wasteful, tackles any chore vigorously... ...drives everyone too hard, is tireless and unflagging... ...forgets life should be fun",
+        "Realistic... ...Pessimistic": "is willing to look at the facts... ...concentrates on what's wrong, faces the truth... ...thinks others are dreamers, is not lured by false hopes... ...sees a glass as half empty, not half full, assesses circumstances candidly... ...takes the gloomy view, predicts problems in advance... ...dooms a project from the start",
+        "Unwavering... ...Stubborn": "is dogged in pursuit of a goal... ...is hardheaded and obstinate, will not quit... ...digs into a position, stands firm against opposition... ...must have his or her own way, stays fixed to a chosen course... ...refuses to listen to reason, keeps true to personal convictions... ...resists compromise",
+        "Thorough... ...Obsessive": "takes care of every detail... ...does not know when to quit, is meticulous... ...is too picky, wraps up all loose ends... ...must have everything just so, never leaves a job half done... ...is inflexible and compulsive, is painstaking... ...insists on perfection, completes anything started... ...can't leave well enough alone"
+      },
+      "name": "Knight of Pentacles"
+    },
+    "QUEEN": {
+      "i": 12,
+      "fields": {
+        "Nurturing": "gives love and support, creates a warm, secure environment, makes people feel better, responds to the natural world, has a green thumb, has a way with children and animals",
+        "Bighearted": "will do any service for others, is a soft touch, always has an open door and welcoming smile, gives freely and abundantly, is warm, generous and unselfish",
+        "Resourceful": "finds a use for whatever's at hand, is handy and versatile, makes a little go a long way, gets around every obstacle, comes up with what's needed",
+        "Down-to-Earth": "handles problems matter-of-factly, allows others to be themselves, has no pretensions or affectations, takes a simple, sensible approach, appreciates all the senses",
+        "Trustworthy": "keeps confidences and secrets, is loyal and steadfast, comes through in a pinch, keeps faith with others, is true to his or her word"
+      },
+      "name": "Queen of Pentacles"
+    },
+    "KING": {
+      "i": 13,
+      "fields": {
+        "Supporting": "encourages the accomplishments of others, readily jumps in to help, is a philantropist, gives generously of time and attention, sponsors worthwhile projects",
+        "Adept": "is informed about practical matters, has a wide range of natural abilities, has quick reflexes, is skillful with his or her hands, handles any situation competently",
+        "Steady": "works toward a goal with firm resolve, avoids mood and behavior swings, has regular habits and activities, maintains a calm, even approach, is a stabilizing influence",
+        "Enterprising": "makes any venture successful, finds opportunity everywhere, attracts wealth, takes an idea and makes it work, is a natural manager and businessperson, has the Midas touch",
+        "Reliable": "meets all commitments and promises, assumes responsibility, is dependable and unfailing, can be counted on in a crisis, serves as a rock for others to lean on"
+      },
+      "name": "King of Pentacles"
+    }
+  }
+}
