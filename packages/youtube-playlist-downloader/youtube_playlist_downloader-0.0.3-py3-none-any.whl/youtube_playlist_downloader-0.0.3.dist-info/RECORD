@@ -1,0 +1,11 @@
+youtube_playlist_downloader/__init__.py,sha256=nVKwdYbaTfD0hXaIJW2PG24yyrfVrIRrIxEBCcff8PA,962
+youtube_playlist_downloader/__main__.py,sha256=CHgi8hQzEe7wN-bmmgOZdN6HSQeJtpIs8IV-17KoTKc,1370
+youtube_playlist_downloader/api_client.py,sha256=pRhC4jFPCx8Qv3GbWdYRcNQ1hrBMj98ajtwJORoHf60,3545
+youtube_playlist_downloader/main.py,sha256=CkN2hP_KNcTflUe1IukxXpqwdArb8SJDWshP3jURi8Y,8530
+youtube_playlist_downloader/playlist_downloader.py,sha256=w3kRf6OymK5Va8phwCpjbWpp4XwRT1UtOegwTlVX8HQ,6707
+youtube_playlist_downloader-0.0.3.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+youtube_playlist_downloader-0.0.3.dist-info/METADATA,sha256=dtqLLHEXblXDvb761JVvP8Xulx8WspDnN0ld_W_YepQ,1921
+youtube_playlist_downloader-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+youtube_playlist_downloader-0.0.3.dist-info/entry_points.txt,sha256=gvhEsk-7YI2f02lgcI_k_jiI_KW52lRcg3z62-G_jjM,87
+youtube_playlist_downloader-0.0.3.dist-info/top_level.txt,sha256=R7I2xtE5DU1KPCbtnVbIVHxanaAEclAz87o6CdmLBkw,28
+youtube_playlist_downloader-0.0.3.dist-info/RECORD,,

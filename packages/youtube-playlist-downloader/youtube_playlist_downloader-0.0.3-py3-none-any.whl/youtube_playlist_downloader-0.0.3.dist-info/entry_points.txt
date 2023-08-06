@@ -1,0 +1,3 @@
+[console_scripts]
+youtube-playlist-downloader = youtube_playlist_downloader.main:main
+
