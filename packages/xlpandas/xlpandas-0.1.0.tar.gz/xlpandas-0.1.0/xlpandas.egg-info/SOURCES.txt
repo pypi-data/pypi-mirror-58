@@ -1,0 +1,8 @@
+README.md
+setup.py
+xlpandas/__init__.py
+xlpandas.egg-info/PKG-INFO
+xlpandas.egg-info/SOURCES.txt
+xlpandas.egg-info/dependency_links.txt
+xlpandas.egg-info/requires.txt
+xlpandas.egg-info/top_level.txt
