@@ -1,0 +1,9 @@
+requests==2.22.0
+meta1
+uptick
+prettytable
+click
+colorama
+tqdm
+pyyaml
+quandl
