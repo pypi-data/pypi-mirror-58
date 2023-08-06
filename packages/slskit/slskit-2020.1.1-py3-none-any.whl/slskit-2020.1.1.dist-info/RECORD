@@ -1,0 +1,9 @@
+slskit/__init__.py,sha256=zIP8iIjH6wMKWNGQnGKIgLWknXInU6dKwRqlrYYoCRU,93
+slskit/__main__.py,sha256=vyiCFlP9orcR9CZ1Ii2_EtoPQCWwg8sC5O0KtIUcbO0,1330
+slskit/opts.py,sha256=uFr3UWVb0bESCAhA332Aj412JgpYkd-wGU_BWsg9oMs,2424
+slskit/pillar.py,sha256=qKbTBmJi_CLNqtDsyoR6BTxwUAm7yytcjv_R0i2sjvA,482
+slskit/state.py,sha256=PsU06MUUvnu71ulGR_J7K7F6d6sIsvOREpqp0p-Z9CE,457
+slskit-2020.1.1.dist-info/entry_points.txt,sha256=ISzfU1WC4ose5OkK3aeG48maCxlXePkYbFQwjRESEKM,44
+slskit-2020.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+slskit-2020.1.1.dist-info/METADATA,sha256=PvHlVlgdoy4jwITwqIRMvsL2qg0Kfmw36TLIbtNqWZM,1619
+slskit-2020.1.1.dist-info/RECORD,,
