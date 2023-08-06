@@ -1,0 +1,12 @@
+ostk/__init__.py,sha256=6999tprjWwBy4DXMJCJ9vxzSKj7A8sDbFlp202bdC8o,519
+ostk/core/OpenSpaceToolkitCorePy.so,sha256=2-Z1xJMoL3QvFfVE0PrStM-P17Kr5g5eL2lQpLvV6W0,1013816
+ostk/core/__init__.py,sha256=wZANaElUaKi11C5-Mjh4M6KwVUfmfoANXo7kWiy6Odk,734
+ostk/core/libboost_python37.so.1.69.0,sha256=ZB-USxPLnCG75ArFAmLpyVAt3quJU9KDxZ_RwiP7g-A,348768
+ostk/core/libopen-space-toolkit-core.so.0,sha256=-nGui8C2Re8MmuB_jLEbME_3LsuRwRQ73sFuItdbJlE,978576
+ostk/core/test/__init__.py,sha256=0YDocigW7uTg8R4pZjCziQQZmnb1zGiomJLIlIMTa68,515
+ostk/core/test/types/__init__.py,sha256=tFed1OO5y2aUEUlGj123rqPhxix4v89QluedfBj_6PY,521
+ostk/core/test/types/test_integer.py,sha256=-NpVpTO84uRKnDP-x6ZeQc0EqKExDjn15cmL3-ri2dA,956
+open_space_toolkit_core-0.3.1.dist-info/METADATA,sha256=KkpzIBlCvKWslTeeioioh8XSyw72TKmVws1tv8XQMS0,1711
+open_space_toolkit_core-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+open_space_toolkit_core-0.3.1.dist-info/top_level.txt,sha256=zOR18699uDYnafgarhL8WU_LmTZY_5NVqutv-flp_x4,5
+open_space_toolkit_core-0.3.1.dist-info/RECORD,,
