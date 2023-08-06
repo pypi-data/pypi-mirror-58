@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: link-jam-handle
+Version: 0.1
+Summary: A bunch of database management for linkkt software.
+Home-page: http://packages.python.org/an_example_pypi_project
+Author: Kevin Hill
+Author-email: kah.kevin.hill@gmail.com
+License: BSD
+Description: # Data Handlers
+        
+        ... Something goes here
+Keywords: example documentation tutorial
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
