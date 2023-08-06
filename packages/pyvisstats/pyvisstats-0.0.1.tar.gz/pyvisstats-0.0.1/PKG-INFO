@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyvisstats
+Version: 0.0.1
+Summary: Python package for computing and visualizing statistics.
+Home-page: https://github.com/ad12/pyvisstats
+Author: Arjun Desai
+Author-email: arjundd@stanford.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
