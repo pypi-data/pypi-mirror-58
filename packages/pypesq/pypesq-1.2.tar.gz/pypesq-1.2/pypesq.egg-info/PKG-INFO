@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pypesq
+Version: 1.2
+Summary: A package to compute pesq score.
+Home-page: https://github.com/vBaiCai/python-pesq
+Author-email: zhuroubaicai@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: pesq,speech,speech quality
+Platform: UNKNOWN
+Requires-Python: !=3.0.*, !=3.1.*, !=3.2.*, <4
