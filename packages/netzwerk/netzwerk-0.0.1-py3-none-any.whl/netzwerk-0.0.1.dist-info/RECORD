@@ -1,0 +1,13 @@
+P2P/__init__.py,sha256=XvPk5fEAIsdxuNTdTi7e8KcHjdYdNQmFuyMi_lYViE0,150
+P2P/app.py,sha256=DdHvyoJyG3rfP5lhvaz7OcxhRJFomYFujFrbtr-8Gkc,23
+P2P/blockchain.py,sha256=E66So4iW1muY9Ekw1KSveWM62buv5g7YRIOZ5Fcd_A8,28
+P2P/connection.py,sha256=AHD4QYpIl0BlP28v1hYk1vM4bk-921qvxPGeUm90ruo,2410
+P2P/file.py,sha256=W_ToFS6JkwOpLBuSnOchJ3VIO2cfqHzR-6_wIa3Jbpc,2028
+P2P/message.py,sha256=Qco1jfpmN8JVL2uuvXIolhVD2qfG8Phes_ZNxV0LYwQ,438
+P2P/node.py,sha256=HYL-FvJh0RhapsX-_QODdGSkNZyRlCClFxZUnpnh_aw,5385
+P2P/vars.py,sha256=2VWBEMyEl89vbF91Sm9fPKgLtKwyFC7tWb4zHBptjRw,97
+netzwerk-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netzwerk-0.0.1.dist-info/METADATA,sha256=fZiV_sDbFdhP5h2TYR8igk9-fibgM2UVzQ9LXMQ600c,472
+netzwerk-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+netzwerk-0.0.1.dist-info/top_level.txt,sha256=Ng1lGv9DId2d1EweOw5U2fkapl42WJ9_GlEZgegxv-g,4
+netzwerk-0.0.1.dist-info/RECORD,,
