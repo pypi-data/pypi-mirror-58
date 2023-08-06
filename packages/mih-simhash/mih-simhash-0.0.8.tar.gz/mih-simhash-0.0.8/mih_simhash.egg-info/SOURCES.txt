@@ -1,0 +1,11 @@
+__init__.py
+redis.py
+setup.py
+simhash.py
+mih_simhash.egg-info/PKG-INFO
+mih_simhash.egg-info/SOURCES.txt
+mih_simhash.egg-info/dependency_links.txt
+mih_simhash.egg-info/namespace_packages.txt
+mih_simhash.egg-info/requires.txt
+mih_simhash.egg-info/top_level.txt
+mih_simhash.egg-info/zip-safe
