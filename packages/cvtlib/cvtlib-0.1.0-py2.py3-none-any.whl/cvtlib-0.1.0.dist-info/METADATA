@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cvtlib
+Version: 0.1.0
+Summary: Tools library for computer vision.
+Home-page: https://github.com/raikel/cvtlib
+Author: Raikel Bordon
+Author-email: raikelbl@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: opencv-python (>=4.1.0.25)
+
+
+# cvtlib
+
+A set of tools for computer vision with opencv
+
