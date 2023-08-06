@@ -1,0 +1,8 @@
+__version__ = "0.0.1.3"
+__name__ = "skytable"
+__description__ = "Python API Wrapper for the MongoDB"
+__url__ = "https://github.com/mindey/skytable"
+__author__ = "Mindey I."
+__authoremail__ = "mindey@qq.com"
+__license__ = "The MIT License (MIT)"
+__copyright__ = "Copyright 2019 Mindey I."
