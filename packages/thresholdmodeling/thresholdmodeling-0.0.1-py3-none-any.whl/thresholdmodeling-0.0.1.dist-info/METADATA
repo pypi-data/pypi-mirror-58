@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: thresholdmodeling
+Version: 0.0.1
+Summary: This package is intended for those who wish to conduct an extreme values analysis. It provides the whole toolkit necessary to create a threshold model in a simple and efficient way, presenting the main methods towards the Peak-Over-Threshold Method and the fit in the Generalized Pareto Distribution. For installing and use it, go to https://github.com/iagolemos1/thresholdmodeling
+Home-page: https://github.com/iagolemos1/thresholdmodeling
+Author: Iago Pereira Lemos
+Author-email: lemosiago123@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: rpy2
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+This package is intended for those who wish to conduct an extreme values analysis. It provides the whole toolkit necessary to create a threshold model in a simple and efficient way, presenting the main methods towards the Peak-Over-Threshold method and the fit in the Generalized Pareto Distribution. 
+
+
