@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: django-basic-email-user
+Version: 0.1
+Summary: Modify Django default User to use email as unique identifier with single name
+Home-page: https://github.com/garyburgmann/django-basic-email-user
+Author: Gary Burgmann
+Author-email: garyburgmann@gmail.com
+License: UNKNOWN
+Description: # Django Basic Email User
+        
+        Used to replace default Django User model with 'email', instead of the 'username', as the unique identifer. Also removes ['username', 'first_name', 'last_name'] fields and adding a 'name' field (required).
+        
+        The Django admin panel is customised to accommodate these changes, along with the User forms basic_email_user.forms.CustomUserCreationForm and basic_email_user.forms.CustomUserChangeForm
+        
+        Simply add basic_email_user to your installed apps, configure the AUTH_USER_MODEL, and run the migrations
+        
+        ```
+        INSTALLED_APPS = [
+            ...
+            'basic_email_user'
+        ]
+        
+        AUTH_USER_MODEL = 'basic_email_user.User'
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

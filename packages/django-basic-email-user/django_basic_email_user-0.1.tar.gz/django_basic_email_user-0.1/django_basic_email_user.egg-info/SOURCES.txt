@@ -1,0 +1,15 @@
+README.md
+setup.py
+basic_email_user/__init__.py
+basic_email_user/admin.py
+basic_email_user/apps.py
+basic_email_user/forms.py
+basic_email_user/models.py
+basic_email_user/tests.py
+basic_email_user/views.py
+basic_email_user/migrations/0001_initial.py
+basic_email_user/migrations/__init__.py
+django_basic_email_user.egg-info/PKG-INFO
+django_basic_email_user.egg-info/SOURCES.txt
+django_basic_email_user.egg-info/dependency_links.txt
+django_basic_email_user.egg-info/top_level.txt
