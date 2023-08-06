@@ -1,0 +1,8 @@
+pyramid_marshmallow/__init__.py,sha256=Oz62L0bZrEucDnLb1s9ANfC6XwXGly72bC0weuDARDM,1708
+pyramid_marshmallow/generatespec.py,sha256=ExT4iXSGRB6ouxQUAZTOZe9vhiGgAFomGU5pVy_J2ps,3032
+pyramid_marshmallow/spec.py,sha256=HmW810MX_wpNJyzFtI6ARse4kdLsepPP7hyUidiRcoo,5826
+pyramid_marshmallow/utils.py,sha256=DhzdEa0RrrrImqdt_27XlLf8FFQ8HdpdZnQ2Wl7HE1Y,463
+pyramid_marshmallow-0.6.0b2.dist-info/entry_points.txt,sha256=4FTzebURpfNDXMqWcAM_JbkV4QoSJ5PmzEJNpc0IP2Y,75
+pyramid_marshmallow-0.6.0b2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pyramid_marshmallow-0.6.0b2.dist-info/METADATA,sha256=XzZLIdyaNG2yU2nmsRHVcbWcztKeRhOaRH-1FAaj2xc,9481
+pyramid_marshmallow-0.6.0b2.dist-info/RECORD,,
