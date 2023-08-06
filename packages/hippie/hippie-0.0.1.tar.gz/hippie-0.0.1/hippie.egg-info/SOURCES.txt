@@ -1,0 +1,7 @@
+setup.py
+hippie/__init__.py
+hippie.egg-info/PKG-INFO
+hippie.egg-info/SOURCES.txt
+hippie.egg-info/dependency_links.txt
+hippie.egg-info/not-zip-safe
+hippie.egg-info/top_level.txt
