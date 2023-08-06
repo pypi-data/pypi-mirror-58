@@ -1,0 +1,4 @@
+Pillow>=6.0.0
+
+[animate]
+imageio>=2.5.0
