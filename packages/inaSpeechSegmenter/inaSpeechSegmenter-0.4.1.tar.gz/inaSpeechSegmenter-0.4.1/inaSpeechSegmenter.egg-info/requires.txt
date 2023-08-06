@@ -1,0 +1,7 @@
+numpy
+keras
+scikit-image
+sidekit==1.2.4
+pyannote.algorithms==0.8
+pyannote.core==3.0
+pyannote.parser==0.7.1
