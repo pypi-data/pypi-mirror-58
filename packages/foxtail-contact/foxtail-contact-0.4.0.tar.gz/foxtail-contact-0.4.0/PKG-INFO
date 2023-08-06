@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: foxtail-contact
+Version: 0.4.0
+Summary: A simple contact form for Django 
+Home-page: https://github.com/dmptrluke/foxtail-contact
+Author: Luke Rogers
+Author-email: luke@dmptr.com
