@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: catsgmo
+Version: 0.1
+Summary: GMO証券のAPIです/API for click-sec.com
+Home-page: https://finance.rescala.jp
+Author: RV
+Author-email: yo-maruya@rescala.jp
+License: MIT
+Project-URL: Bug Reports, https://github.com/rv-rescala/catsgmo/issues
+Project-URL: Source, https://github.com/rv-rescala/catsgmo
+Description: # What is this?
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
