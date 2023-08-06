@@ -1,0 +1,10 @@
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bin/main.py,sha256=UwQhkDqILYmO73FiLB4z3ooT6vJ7V84IzmR_uIRf2x8,860
+cfgrep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfgrep/cfgrep.py,sha256=tdW5ULPRYMtLnG0xSt_s_HzgwD3hleSGmxs6vREmyO0,9657
+cfgrep-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cfgrep-1.0.3.dist-info/METADATA,sha256=jE2hP7nJkGBBB7G8uFTEhrPPq--W0kaVP8dji72qhKw,1956
+cfgrep-1.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cfgrep-1.0.3.dist-info/entry_points.txt,sha256=3gNrNRd4lbrvmg29GmXrgr5IGSzPmC5zGUSO53Fwi0A,42
+cfgrep-1.0.3.dist-info/top_level.txt,sha256=Z_Oc22qGzsIC20KifP-zCV0qrbN1YOLDXB_PtBSJl2k,11
+cfgrep-1.0.3.dist-info/RECORD,,
