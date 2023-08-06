@@ -1,0 +1,6 @@
+securesystemslib[crypto,pynacl]>=0.12.0
+attrs
+python-dateutil
+iso8601
+six
+pathspec
