@@ -1,0 +1,134 @@
+.humannotator {
+    display: grid;
+    grid-template-areas:
+        "name name"
+        "rcrd rcrd"
+        "task task"
+        "anno anno";
+}
+/* GRID AREAS */
+div.humannotator__name {
+    grid-area: name;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+div.humannotator__idx__counter,
+div.humannotator__task__counter {
+    justify-self: end;
+}
+div.humannotator__record {
+    grid-area: rcrd;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1em;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: .25rem;
+}
+div.humannotator__item {
+    grid-column: 2 / 4;
+}
+div.humannotator__rule {
+    grid-column: 1 / 4;
+    border-bottom: 1px solid black;
+}
+div.humannotator__task {
+    grid-area: task;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+div.humannotator__task__instruction,
+div.humannotator__error {
+    grid-column: 1 / 3;
+}
+div.humannotator__annotation {
+    grid-area: anno;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: .5rem;
+    font-size: .85em;
+}
+/* GENERAL */
+div.humannotator__name,
+div.humannotator__id,
+div.humannotator__idx__counter,
+div.humannotator__label,
+div.humannotator__task,
+div.humannotator__annotation {
+    padding: .25rem .5rem;
+}
+div.humannotator__value {
+    overflow-y: scroll;
+}
+div.humannotator__label {
+    font-size: .8em;
+    margin-right: 1em;
+}
+div.humannotator__annotation div.humannotator__label,
+div.humannotator__annotation div.humannotator__value {
+    font-size: .75em;
+}
+div.humannotator__annotation div.humannotator__value {
+    font-weight: bold;
+}
+span.humannotator__user {
+    font-size: .8em;
+    font-weight: 400;
+}
+div.humannotator__task {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9em;
+}
+div.humannotator__task__name {
+    font-size: 1.2em;
+    margin-bottom: .25rem;
+}
+div.humannotator__error {
+    font-style: italic;
+    color: darkred;
+}
+.humannotator mark {
+    padding: 1px 8px;
+    border-radius: 2px;
+}
+/* EXPANDABLE */
+.humannotator__expandable,
+.humannotator__content {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font: inherit;
+}
+button.humannotator__expandable,
+button.humannotator__content {
+    padding: 0;
+}
+.humannotator__expandable:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.humannotator__active:after {
+    content: "-";
+}
+.humannotator__expandable:hover {
+    background-color: rgba(176, 196, 222, 0.5);
+}
+.humannotator__content {
+    display: none;
+    overflow: hidden;
+}
