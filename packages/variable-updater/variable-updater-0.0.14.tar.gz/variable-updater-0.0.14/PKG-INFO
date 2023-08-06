@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: variable-updater
+Version: 0.0.14
+Summary: 
+Author: Rob Wilson
+Author-email: roobert@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: hvac (>=0.9.6,<0.10.0)
+Requires-Dist: pyyaml (>=5.2,<6.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
