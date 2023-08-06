@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+inliner/__init__.py
+inliner/common.py
+inliner/inliner.py
+inliner/tracer.py
+inliner/transforms.py
+inliner/visitors.py
+inliner.egg-info/PKG-INFO
+inliner.egg-info/SOURCES.txt
+inliner.egg-info/dependency_links.txt
+inliner.egg-info/not-zip-safe
+inliner.egg-info/requires.txt
+inliner.egg-info/top_level.txt
