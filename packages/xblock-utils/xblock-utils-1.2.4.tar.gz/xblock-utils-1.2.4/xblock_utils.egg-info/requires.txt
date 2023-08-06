@@ -1,0 +1,7 @@
+web-fragments
+simplejson
+mako
+Xblock
+
+[:python_version == "2.7"]
+futures
