@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gpg-vault
+Version: 1.4
+Summary: Simple GPG based file encryption utility.
+Home-page: https://github.com/ptaylor/gpg-vault
+Author: Paul Taylor
+Author-email: pftylr@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.7
+
+UNKNOWN
+
+
