@@ -1,0 +1,11 @@
+suttonforecast/__init__.py,sha256=jiZPHsFGRodqMUFWDWh5IkLbnhnZwnaCGW8AmJCcbt8,189
+suttonforecast/customerservice.py,sha256=lhVln_FvAT0V61JE9NnBOR9NsSzoFpsCd11NUVG4UmU,53
+suttonforecast/designer.py,sha256=IOFms9SbYZIlZeDPECw1s5DH1ohCoEokxojOwypeS6E,1153
+suttonforecast/forecast.py,sha256=b1LLFLCTShQRYSuVFePHMlTpAMj3yg9Q48OmnF1sRlM,4712
+suttonforecast/journalist.py,sha256=nWV-7GS78hagK35hcOzVkyaa9bTM27_N0iw1vc4tuQA,4645
+suttonforecast/towncrier.py,sha256=kRCnYmPJK79NJX_EkXHQMo8UtBdvEv0I4oIJQU_Z28k,501
+suttonforecast_bourgonlaurent-1.1.3.dist-info/LICENSE,sha256=GIF2EDm3VL2hy6IFOeBk-rhb4_d9dDMgDV3nzickNYQ,1072
+suttonforecast_bourgonlaurent-1.1.3.dist-info/METADATA,sha256=hai14y1II9U-qb1jrU6tMP92o4MVEdFSTa8JP64gUF8,495
+suttonforecast_bourgonlaurent-1.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+suttonforecast_bourgonlaurent-1.1.3.dist-info/top_level.txt,sha256=dZkkOu1Un_vZnSJnwjMWeakj2e5a1VytmDOrOKvQ7gI,15
+suttonforecast_bourgonlaurent-1.1.3.dist-info/RECORD,,
