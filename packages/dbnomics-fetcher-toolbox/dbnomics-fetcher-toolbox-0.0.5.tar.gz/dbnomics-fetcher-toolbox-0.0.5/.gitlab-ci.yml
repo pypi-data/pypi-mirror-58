@@ -1,0 +1,69 @@
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Use a global cache common to all jobs.
+cache:
+  paths:
+    - .cache/pip
+
+Check code and doc quality:
+  stage: test
+  tags:
+    - dbnomics-fetcher-toolbox
+  image: python:3.8
+  before_script:
+    - pip install tox
+  script:
+    - tox -e quality
+
+Run tests on Python 3.7:
+  stage: test
+  tags:
+    - dbnomics-fetcher-toolbox
+  image: python:3.7
+  before_script:
+    - pip install tox
+  script:
+    - tox -e py37
+
+Run tests on Python 3.8:
+  stage: test
+  tags:
+    - dbnomics-fetcher-toolbox
+  image: python:3.8
+  before_script:
+    - pip install tox
+  script:
+    - tox -e py38
+
+Trigger doc build on readthedocs.org:
+  stage: deploy
+  tags:
+    - dbnomics-fetcher-toolbox
+  image: alpine:3
+  before_script:
+    - apk add curl jq
+  script:
+    - |
+      OUT=$(curl --silent --fail -X POST -d "branches=$CI_COMMIT_REF_NAME" -d "token=$READTHEDOCS_TOKEN" https://readthedocs.org/api/v2/webhook/dbnomics-fetcher-toolbox/107732/)
+      echo $OUT
+      echo $OUT | jq --exit-status ".build_triggered == true"
+
+Publish package on PyPI:
+  stage: deploy
+  only:
+    - tags
+  tags:
+    - dbnomics-fetcher-toolbox
+  image: python:3.8
+  variables:
+    TWINE_USERNAME: __token__
+    # TWINE_API_TOKEN: # Secret variable, see project CI settings.
+  before_script:
+    - pip install twine
+  script:
+    - python setup.py sdist bdist_wheel
+    - twine upload dist/*
+  environment:
+    name: PyPI
+    url: https://pypi.org/project/dbnomics-fetcher-toolbox/$CI_COMMIT_TAG

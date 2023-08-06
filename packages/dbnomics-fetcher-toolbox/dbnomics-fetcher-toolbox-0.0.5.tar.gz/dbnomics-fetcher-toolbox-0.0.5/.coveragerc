@@ -1,0 +1,2 @@
+[run]
+omit = dbnomics_fetcher_toolbox/tests/*
