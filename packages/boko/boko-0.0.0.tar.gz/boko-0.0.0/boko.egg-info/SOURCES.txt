@@ -1,0 +1,7 @@
+README.md
+setup.py
+boko/__init__.py
+boko.egg-info/PKG-INFO
+boko.egg-info/SOURCES.txt
+boko.egg-info/dependency_links.txt
+boko.egg-info/top_level.txt
