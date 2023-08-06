@@ -1,0 +1,11 @@
+xdgenvpy/__init__.py,sha256=BN1NorTdm0ZMzkH0FCnNQcLdDyW0wDMUSJXDOOLCDtg,239
+xdgenvpy/__main__.py,sha256=Vx4Dj-qp8UL79LqZdSm2AFdrrCDYVbr_cb3JrQ_PeGQ,4888
+xdgenvpy/_xdg_posix.py,sha256=pga4uCkgTvq5H6uLJxcsLk771Y8H8NBcyQmcD9JnSBw,9562
+xdgenvpy/_xdg_windows.py,sha256=Rm7573-8it2xNVznNbqQTKdihCNrm7Nq_TwRa57AZuE,10678
+xdgenvpy/xdgenv.py,sha256=pESzuYIUaKhH842MN_rFLypKcnd4V-Gh6byMU49rBu8,4810
+xdgenvpy-2.2.1.dist-info/LICENSE,sha256=yMN6sLx4glXlXjIfk90OaidwMy_lKzvOEPnVYx9Adzg,35051
+xdgenvpy-2.2.1.dist-info/METADATA,sha256=MpQP02MtE0_UmLsK-8I1s3qorHPVDms3TGzNtqsospw,6927
+xdgenvpy-2.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+xdgenvpy-2.2.1.dist-info/entry_points.txt,sha256=VW6s-nycRsT9kyWkRs9DXNT-0rxUhvj4JZ290yX-FdI,52
+xdgenvpy-2.2.1.dist-info/top_level.txt,sha256=4VDUKYBDwTlQkgD7RaAAdbCFX-vRLUvPcVS-VDAEiuY,9
+xdgenvpy-2.2.1.dist-info/RECORD,,
