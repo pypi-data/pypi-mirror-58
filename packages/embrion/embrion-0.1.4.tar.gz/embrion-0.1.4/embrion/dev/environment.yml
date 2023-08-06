@@ -1,0 +1,12 @@
+name: embrion_dev
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - jupyter
+  - jupyterlab
+  - nb_conda_kernels
+  - nodejs # Needed for jupyterlab extensions
