@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: fca_lazy_clf
+Version: 0.1
+Summary: Lazy binary classifier based on Formal Concept Analysis
+Home-page: https://github.com/vpozdnyakov/fca_lazy_clf
+Author: Vitaliy Pozdnyakov
+Author-email: pozdnyakov.vitaliy@yandex.ru
+License: MIT
+Download-URL: https://github.com/vpozdnyakov/fca_lazy_clf/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: fca,formal-concept-analysis,lazy-learning,binary-classification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
