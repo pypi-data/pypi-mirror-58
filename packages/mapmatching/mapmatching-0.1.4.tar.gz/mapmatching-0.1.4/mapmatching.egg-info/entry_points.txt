@@ -1,0 +1,3 @@
+[console_scripts]
+mapmatching = mapmatching.main:main
+
