@@ -1,0 +1,15 @@
+sweetjwt/__init__.py,sha256=pGcU2Kl8vWpudniMfyg_xSfTJltif394SNxZDqafVhc,226
+sweetjwt/authentication.py,sha256=2vZNwCFqxPk-bbLEyxqI57iFMAIml5U6_gR0FG93jUs,3817
+sweetjwt/compat.py,sha256=EXAKepDjbEYKZF2TP-wgBEL4n_6sAykvnkN_5ZyBnBs,887
+sweetjwt/exceptions.py,sha256=0xxJW5CJR7J5YOJVz43q--ObkyxG_t-owExOEy13FtA,166
+sweetjwt/models.py,sha256=dVutJp_qrv-cnHRxAlmas5mWwLPumZC9xGul5crvs_o,51
+sweetjwt/serializers.py,sha256=f1BsTQgHQvcneIUIhj3TQJF7QpXYq9QVjVDI9cKMBmY,5264
+sweetjwt/settings.py,sha256=vcuU2Qjld4DhEOHw4ijpLJtq71SEn2PAVWfYOJj67ds,1618
+sweetjwt/test.py,sha256=U3xfcCt9TeeXh1ayXaNjAqM1E6iICCwhBclX5Hf4J8o,784
+sweetjwt/utils.py,sha256=L12CTZntrqYcRWaMGGnx_Zet0u4GJwcvsvZFatK20BM,3468
+sweetjwt/views.py,sha256=z_8c-UxWOzIhbyCxxzRczbN18IlHrj_N5f7W2c6jck0,3712
+djangosweet_jwt-0.0.1.dist-info/LICENSE,sha256=jL1ybeg2AQgVvm3gd3hky7poC1s_G53zOKepbexiWfM,1102
+djangosweet_jwt-0.0.1.dist-info/METADATA,sha256=AHNFztSjy2f49ct5sJ8gpKq6GSs_FdNurOCE5lLBS0Y,1502
+djangosweet_jwt-0.0.1.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+djangosweet_jwt-0.0.1.dist-info/top_level.txt,sha256=a_HmT_DMZI_li50uCrRU5FRhg217U9hScxFRXo0cr6o,9
+djangosweet_jwt-0.0.1.dist-info/RECORD,,
