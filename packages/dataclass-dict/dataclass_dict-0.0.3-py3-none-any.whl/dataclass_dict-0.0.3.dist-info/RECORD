@@ -1,0 +1,9 @@
+src/dataclass_dict/__init__.py,sha256=bN5svcote2gl5BuYqyTK5pkOBwW3UqUbWWtiIOxci68,5855
+src/dataclass_dict/__version__.py,sha256=smA9c0CTLewINRoxj2VBHoiYDESoFGtXYFDvRT31dgs,27
+src/dataclass_dict/threaded_request.py,sha256=QwFQIXdxqx2hWGtlgPLb6hv2knPVXp-0HSsWymW-JFM,2205
+src/dataclass_dict/utils.py,sha256=oLvm0swF0Hjiyo8nGTf5AkpQ1jql0JHhFdXFAzu0zX4,2538
+dataclass_dict-0.0.3.dist-info/LICENSE,sha256=7Kqvk8cYDJf1UOaMmhnxfuQGrhok-K7F3FfVIL_fGVE,1100
+dataclass_dict-0.0.3.dist-info/METADATA,sha256=GGtBkyJjxrQ9CuWb_ltyVZgqu5RJVRGAEoVpEQqMIlM,4174
+dataclass_dict-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dataclass_dict-0.0.3.dist-info/top_level.txt,sha256=suhhhbWLpkTf29G4UFQMT4MY_25hd1PFCB638wQF5WY,19
+dataclass_dict-0.0.3.dist-info/RECORD,,
