@@ -1,0 +1,3 @@
+[console_scripts]
+gamma-spectroscopy = gamma_spectroscopy.gamma_spectroscopy_gui:main
+

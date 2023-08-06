@@ -1,0 +1,11 @@
+gamma_spectroscopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamma_spectroscopy/fake_picoscope.py,sha256=sbS1FUiDomq1TQcmiHQbNBf8ZiauRgqoCYs01jCuAnc,9993
+gamma_spectroscopy/gamma_spectroscopy_gui.py,sha256=DjaoZirZeSS2DJJXCIGCo2_b2YV1-OUVLgs65vFr2_4,19649
+gamma_spectroscopy/gamma_spectroscopy_gui.ui,sha256=i8yX--lKrvTiRuvYsFSjNfzG7ARI7Q7eZuKNj2yPwPQ,19434
+gamma_spectroscopy/picoscope_5000a.py,sha256=N6d3ilY86rCVT839h2kjR3NTCfsKqvZE33I6N3Moc0A,18616
+gamma_spectroscopy-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gamma_spectroscopy-1.0.dist-info/METADATA,sha256=dgrO2U3nzGfVaHRY31Qpdr-UzrXu9eHgkhFasKPKEVw,4211
+gamma_spectroscopy-1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gamma_spectroscopy-1.0.dist-info/entry_points.txt,sha256=Wpt2j7gSo6k_Q4j_aGZCwJtHuZMBguf10qhRwxhWZ-w,87
+gamma_spectroscopy-1.0.dist-info/top_level.txt,sha256=0P4QHr3hf35dGVzS9Lu-djMO0LDXRFFI3EFeBfqsduk,19
+gamma_spectroscopy-1.0.dist-info/RECORD,,
