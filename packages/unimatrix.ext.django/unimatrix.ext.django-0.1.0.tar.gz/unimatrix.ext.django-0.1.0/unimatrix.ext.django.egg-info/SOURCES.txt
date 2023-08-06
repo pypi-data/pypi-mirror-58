@@ -1,0 +1,9 @@
+setup.py
+unimatrix.ext.django.egg-info/PKG-INFO
+unimatrix.ext.django.egg-info/SOURCES.txt
+unimatrix.ext.django.egg-info/dependency_links.txt
+unimatrix.ext.django.egg-info/requires.txt
+unimatrix.ext.django.egg-info/top_level.txt
+unimatrix/ext/django/__init__.py
+unimatrix/ext/django/settings/__init__.py
+unimatrix/ext/django/urls/__init__.py
