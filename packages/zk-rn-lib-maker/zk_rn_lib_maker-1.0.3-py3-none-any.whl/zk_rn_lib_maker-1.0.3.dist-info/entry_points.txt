@@ -1,0 +1,3 @@
+[console_scripts]
+zk-rn-lib-maker = zk_rn_lib_maker.__main__:main
+
