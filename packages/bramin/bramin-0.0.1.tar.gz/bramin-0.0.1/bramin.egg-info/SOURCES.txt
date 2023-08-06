@@ -1,0 +1,15 @@
+README.md
+setup.py
+bramin/__init__.py
+bramin/_utils.py
+bramin/curry.py
+bramin/io.py
+bramin/patch.py
+bramin/pipe.py
+bramin/subp.py
+bramin.egg-info/PKG-INFO
+bramin.egg-info/SOURCES.txt
+bramin.egg-info/dependency_links.txt
+bramin.egg-info/not-zip-safe
+bramin.egg-info/requires.txt
+bramin.egg-info/top_level.txt
