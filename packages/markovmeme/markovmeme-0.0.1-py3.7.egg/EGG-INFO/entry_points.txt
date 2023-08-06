@@ -1,0 +1,3 @@
+[console_scripts]
+markov-meme = markovmeme.client:main
+
