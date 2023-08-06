@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tradssat
+Version: 0.1.5
+Summary: DSSAT input and output file reader and writer
+Home-page: UNKNOWN
+Author: Julien Jean Malard; श्रेया संजय यादव
+Requires-Dist: numpy
+Requires-Dist: chardet
+
+Author-email: julien.malard@mail.mcgill.ca
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
