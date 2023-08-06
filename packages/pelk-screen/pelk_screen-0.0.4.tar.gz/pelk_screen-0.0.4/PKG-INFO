@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: pelk_screen
+Version: 0.0.4
+Summary: Screenshot lib
+Home-page: https://github.com/PerfectELK/pelk_screen
+Author: PerfectELK
+Author-email: perfect-elk@perfect-elk.ru
+License: UNKNOWN
+Description: # pelk_screen Package
+        
+        This is a screen library package. You can use
+        [Github-flavored Markdown](https://github.com/PerfectELK/pelk_screen/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
