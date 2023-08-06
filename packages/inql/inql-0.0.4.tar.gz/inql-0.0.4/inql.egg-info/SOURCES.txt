@@ -1,0 +1,16 @@
+README.md
+setup.py
+bin/inql
+inql/__init__.py
+inql/burp_loader.py
+inql/constants.py
+inql/introspection.py
+inql/utils.py
+inql.egg-info/PKG-INFO
+inql.egg-info/SOURCES.txt
+inql.egg-info/dependency_links.txt
+inql.egg-info/top_level.txt
+inql/generators/__init__.py
+inql/generators/html.py
+inql/generators/query.py
+inql/generators/schema.py
