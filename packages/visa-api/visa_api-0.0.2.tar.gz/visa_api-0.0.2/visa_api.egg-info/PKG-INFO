@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: visa-api
+Version: 0.0.2
+Summary: Visa Card Services API
+Home-page: https://github.com/lpreimesberger/visa_dps
+Author: UNKNOWN
+Author-email: lpreimesberger@gmail.com
+License: UNKNOWN
+Description:     Current - manages pre-paid debit card services.
+            
+Keywords: Swagger,Card Services API
+Platform: UNKNOWN
