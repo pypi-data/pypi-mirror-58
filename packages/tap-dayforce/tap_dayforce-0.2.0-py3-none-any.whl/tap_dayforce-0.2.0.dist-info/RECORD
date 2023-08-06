@@ -1,0 +1,16 @@
+tap_dayforce/__init__.py,sha256=1oCOddr0PEsbnZ_omyLxD69nPJmGfM64GeeKIkf84iU,3481
+tap_dayforce/streams.py,sha256=mKTLy5Q8GyS1OWMTiHNFef5R9r-Jm4DXbJEkgFTZC8Q,11821
+tap_dayforce/utils.py,sha256=cT5-kdqVHvN2psE8fGm5HiGq3J0bed-dZIXQkcOdViA,2817
+tap_dayforce/version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+tap_dayforce/whitelisting.py,sha256=O5mHgiNF3kejZTZxNcsxpHiR4V-dgRly8VlX9qr7Hn8,389
+tap_dayforce/schemas/employee_punches.json,sha256=1gDKTGZaXRpyoaC-Bf-69e616oQGmXPbYRv3ko2imo8,5162
+tap_dayforce/schemas/employee_raw_punches.json,sha256=TlvvPu1t0NPK1PXZSCDUalVQSfdNXKH1iLdzbtjaflY,3303
+tap_dayforce/schemas/employees.json,sha256=VfdSe7B6V7tn3nkXKp5jF7DTvCV4FL98V0OVHoHFVJ0,60021
+tap_dayforce/schemas/employees_full.json,sha256=Yf_lQKw_nSjt-7d1MEM8F2vC80dbom7I2G165byN3LY,56290
+tap_dayforce/schemas/pay_summary_report.json,sha256=heV8Uii59KpXU1Wnvj9PGhznTgoVh4kGjsw2kbgv1T8,1417
+tap_dayforce-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tap_dayforce-0.2.0.dist-info/METADATA,sha256=usBT-0YatWL2MLNSKYMtjaVOtLb_eLFaPLLTkB2y_Fs,9014
+tap_dayforce-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tap_dayforce-0.2.0.dist-info/entry_points.txt,sha256=doM6wD5DngISqR1E_P4GjevwQy1LpIg02Mrar97Vpxo,52
+tap_dayforce-0.2.0.dist-info/top_level.txt,sha256=9lb2bwuvSHcvT4cgXC1q-JVzvA3XVCzeWbdejUPci4s,13
+tap_dayforce-0.2.0.dist-info/RECORD,,
