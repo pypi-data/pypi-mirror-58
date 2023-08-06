@@ -1,0 +1,6 @@
+README.md
+setup.py
+dgw_processor.egg-info/PKG-INFO
+dgw_processor.egg-info/SOURCES.txt
+dgw_processor.egg-info/dependency_links.txt
+dgw_processor.egg-info/top_level.txt
