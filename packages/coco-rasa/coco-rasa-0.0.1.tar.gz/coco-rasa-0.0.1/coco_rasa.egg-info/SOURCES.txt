@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+coco_rasa/__init__.py
+coco_rasa/coco_rasa.py
+coco_rasa.egg-info/PKG-INFO
+coco_rasa.egg-info/SOURCES.txt
+coco_rasa.egg-info/dependency_links.txt
+coco_rasa.egg-info/requires.txt
+coco_rasa.egg-info/top_level.txt
