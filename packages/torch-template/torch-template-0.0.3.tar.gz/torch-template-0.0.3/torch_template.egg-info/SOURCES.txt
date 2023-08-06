@@ -1,0 +1,12 @@
+README.md
+setup.py
+torch_template/__init__.py
+torch_template/version.py
+torch_template.egg-info/PKG-INFO
+torch_template.egg-info/SOURCES.txt
+torch_template.egg-info/dependency_links.txt
+torch_template.egg-info/requires.txt
+torch_template.egg-info/top_level.txt
+torch_template/utils/__init__.py
+torch_template/utils/misc_utils.py
+torch_template/utils/torch_utils.py
