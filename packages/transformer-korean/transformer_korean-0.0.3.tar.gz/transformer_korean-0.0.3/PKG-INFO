@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: transformer_korean
+Version: 0.0.3
+Summary: Text-to-Text Transformer for Korean QA Task
+Home-page: https://github.com/yeontaek/Text-to-Text-Transformer
+Author: yeontaek oh
+Author-email: oh31400@naver.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
