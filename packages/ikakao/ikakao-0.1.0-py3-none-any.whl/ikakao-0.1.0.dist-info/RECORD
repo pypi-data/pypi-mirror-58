@@ -1,0 +1,12 @@
+ikakao/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ikakao/utils.py,sha256=-QoY3TP_7A4SwcfNUMVngVVvSNeKVbyS-9InNjMSdWA,83
+ikakao/skill/__init__.py,sha256=_u_TmUMkwULTibO8ce6EJuPDvx_JZRjjKc_hbJ9ip48,100
+ikakao/skill/components.py,sha256=Q4cFHfAPYa5GzPzBvs_dXXUtkYsGc6LbpdiMNjEcwVI,12156
+ikakao/skill/exceptions.py,sha256=qqtLoZOlaNuLtgMV9xAy3HAK_w1b67NaJIxdaLPaYik,151
+ikakao/skill/response.py,sha256=5DLfbY1kv_hz5f0yKWfLkowg7mVvlisv27WpqivPQm8,1063
+ikakao/skill/serializable.py,sha256=dlsvsYEHnrukPW1ird6iaSzR-me1ljmzPWSxx1-J7Fo,181
+ikakao/skill/template.py,sha256=DGRqH1navkfUwshGZW8vSaXab85veH0Y_tEBlrFyV30,1359
+ikakao-0.1.0.dist-info/METADATA,sha256=A7uK8b7FzBO_Q0xUshbbeNjlOyr3f88qbCzo54d3suI,4431
+ikakao-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ikakao-0.1.0.dist-info/top_level.txt,sha256=Vjh9NsxrTQdDukyhyTAIdfTvF50Q-fZ8wwzuwjZtyP4,7
+ikakao-0.1.0.dist-info/RECORD,,
