@@ -1,0 +1,7 @@
+README.md
+setup.py
+python/basskick/__init__.py
+python/basskick.egg-info/PKG-INFO
+python/basskick.egg-info/SOURCES.txt
+python/basskick.egg-info/dependency_links.txt
+python/basskick.egg-info/top_level.txt

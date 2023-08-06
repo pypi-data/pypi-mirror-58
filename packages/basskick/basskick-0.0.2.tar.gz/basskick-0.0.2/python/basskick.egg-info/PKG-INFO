@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: basskick
+Version: 0.0.2
+Summary: Blender Animation Studio System
+Home-page: https://gitlab.com/basskick/basskick
+Author: Damien "dee" Coureau
+Author-email: contact@basskick.org
+License: LGPLv3+
+Description: # basskick
+        
+        Blender Animation Studio System.
+        kickin'it !
+        
+        www.basskick.org
+        
+        Soon... ^.^
+Keywords: b3d blender vfx animation pipeline workflow
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: System :: Shells
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.7
