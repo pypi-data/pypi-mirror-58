@@ -1,0 +1,12 @@
+README.md
+setup.py
+chitubox/__init__.py
+chitubox/__main__.py
+chitubox/network.py
+chitubox/session.py
+chitubox.egg-info/PKG-INFO
+chitubox.egg-info/SOURCES.txt
+chitubox.egg-info/dependency_links.txt
+chitubox.egg-info/entry_points.txt
+chitubox.egg-info/top_level.txt
+chitubox.egg-info/zip-safe
