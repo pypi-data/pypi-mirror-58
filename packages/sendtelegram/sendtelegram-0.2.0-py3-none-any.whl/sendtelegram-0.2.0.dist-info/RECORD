@@ -1,0 +1,9 @@
+sendtelegram/__init__.py,sha256=3sbPmdFv3RgcvgLZ3vMlysAWnr4hAtX73VJaVVe4YtA,187
+sendtelegram/cli.py,sha256=b2kRsMEBg-hF9gZ6OD6Kw9-ij2Ak-7gLEd2uqDRzRIw,222
+sendtelegram/commands.py,sha256=y1O3I6NP13VVVGJfocdbiZdOzurWXTu4GH_Wos8N8Og,1356
+sendtelegram-0.2.0.dist-info/LICENSE,sha256=uZhJ6swms8WTycjhXIEtC5yWqLq2rM7BXDuJAd-uzU8,1122
+sendtelegram-0.2.0.dist-info/METADATA,sha256=Eyz9N3OePTiBNhcnArlxJvf073vjsXtwz_ASbOjZ58I,1591
+sendtelegram-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sendtelegram-0.2.0.dist-info/entry_points.txt,sha256=YkZtTglwsi8WOqTEhf858PZdNbu9yMPRr-adc-H1ysI,56
+sendtelegram-0.2.0.dist-info/top_level.txt,sha256=vjtFxIk7PYf-4egwEKgE3aGU--S1S7jPf5Xw597a7Bg,13
+sendtelegram-0.2.0.dist-info/RECORD,,
