@@ -1,0 +1,1 @@
+from rusmarkup.rusmarkup2html import rusmarkup2html, tags_map

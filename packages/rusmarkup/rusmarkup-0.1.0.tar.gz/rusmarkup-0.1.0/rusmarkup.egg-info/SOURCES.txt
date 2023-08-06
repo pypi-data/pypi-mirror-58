@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+rusmarkup/__init__.py
+rusmarkup/rusmarkup2html.py
+rusmarkup.egg-info/PKG-INFO
+rusmarkup.egg-info/SOURCES.txt
+rusmarkup.egg-info/dependency_links.txt
+rusmarkup.egg-info/not-zip-safe
+rusmarkup.egg-info/top_level.txt
