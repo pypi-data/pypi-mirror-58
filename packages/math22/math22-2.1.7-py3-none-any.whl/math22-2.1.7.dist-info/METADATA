@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: math22
+Version: 2.1.7
+Summary: useful math functions
+Home-page: https://baidu.com
+Author: math22
+Author-email: 2691475984@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This project provides 9 functions and a new object that can help mathematics computation and code evaluation.
+Is_prime (num) function is used to judge whether a number is prime.  Input should be a number above zero and output is true or false.
+
+Function of is_square(num) is used to judge if a number is square number by commutating its square root. input should be a number above zero and result is true or false.
+
+The quad_equation_1unknown (a, b, c) function is used to compute the root of equation of two degree. 3 input values are coefficients of equation. the results are roots of quadratic equation with one unknown. If there is no solution for this equation, the result will be “none”. If all inputs are zero, the result will be “not an equation”
+
+The function of fib(num) is to compute the nth number in Fibonacci sequence . 
+
+The functions [random _method1(len1), random_method2(len1) and random_all(len1)] can provide a random password with an input length of password. The function “random_method1” includes all letters (both upper case and lower case). The function “random_method2” includes all letters and numbers. The function “random_all” includes all printable characters (except whitespaces).
+
+The next function is “level(string1)” that is used to evaluate level of password. You should give a string object to the function and it will return the strength grade of this password. The levels from good to bad are [perfect, very good, very strong, average, low and too low]. It has an attach function “level_store” and it is only used to support the “level” function.
+
+The function of encode(st) is used to encode a string by using an encryption algorithm. Every character of this string will be replaced by next character in alphabet. The space will be replaced to the character “!”.
+
+There is also a new object which is used to express polynomials. You can use code like “a = Func (3)”. The value in the parentheses is the highest power of the polynomial.
+
+Users can use a.add_thing (c, d) to add something to the polynomial. The value c is the coefficient of the thing you want to add. The value d is the power. For example, if you use the” a.add_thing (4,5)”, the polynomial will add “4*x^5”.
+
+“a.print ()” function can be used to print the polynomial. The result will be like”6x^9+8x^5+3x^3”. If you want to reverse the result (from small powers to big), you should use “a.print(reverse=True)” to print it. If you did not give the reverse value, the value will be False.
+(these are the functions in version 2.1.6(28th December, 2019).The new functions are under this sentence.)
+
+(version 2.1.7, 3rd January, 2020 add)
+Function “line_equation_2unknown(a, b, u, c, d, v):”gives the root of a linear equation in two unknowns ”ax+by=u, cx+dy=v”.If it has no roots, the result will be none.
+
+If there’s a new version, the descriptions of the new functions will be add into the text.
+
+This project is created by a 12-year-old student. You can send emails to 2691475984@qq.com to contact with me.
+
+
+
+
+
