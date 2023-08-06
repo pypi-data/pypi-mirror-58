@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ptrender
+Version: 0.0.1
+Summary: Conveniences for rendering text files from pyratemp templates and json or yaml var files
+Home-page: https://github.com/andydecleyre/ptrender
+License: WTFPL
+Author: Andy Kluger
+Requires-Dist: plumbum
+Requires-Dist: pyratemp
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: ipython ; extra == "dev"
+Requires-Dist: strictyaml ; extra == "yaml"
+Provides-Extra: dev
+Provides-Extra: yaml
