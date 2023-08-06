@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.py
+colorinput/__init__.py
+colorinput/apps.py
+colorinput/models.py
+colorinput/tests.py
+colorinput/forms/__init__.py
+colorinput/forms/fields.py
+colorinput/forms/widgets.py
+colorinput/templates/colorinput/widgets/colorinput.html
+django_colorinput.egg-info/PKG-INFO
+django_colorinput.egg-info/SOURCES.txt
+django_colorinput.egg-info/dependency_links.txt
+django_colorinput.egg-info/top_level.txt
