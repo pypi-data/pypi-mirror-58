@@ -1,0 +1,3 @@
+[lektor.plugins]
+mistune-smartypants = lektor_mistune_smartypants:MistuneSmartypantsPlugin
+

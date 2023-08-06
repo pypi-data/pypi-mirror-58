@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lektor-mistune-smartypants
+Version: 1.0
+Summary: Adds curly quotes to your markdown paragraphs and headings.
+Home-page: https://github.com/jeanpaul/lektor-mistune-smartypants
+Author: Jean-Paul van Oosten
+Author-email: pypi@jpvanoosten.nl
+License: MIT
+Description: # mistune-smartypants
+        
+        Integrates smartypants with the mistune markdown parser, used by Lektor. Just
+        install it and it works its magic.
+        
+Keywords: smartypants lektor
+Platform: UNKNOWN
+Classifier: Framework :: Lektor
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
