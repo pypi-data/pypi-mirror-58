@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: simple-file-cache
+Version: 0.0.6
+Summary: Simple File Cache based on pickle or json
+Home-page: https://github.com/easyforgood/simple_file_cache
+Author: Sip
+Author-email: siplexy.pi@outlook.com
+License: UNKNOWN
+Description: # simple_file_cache
+        Python Simple cache based on pickle or json file
+        
+        
+        
+        
+        
+        ## Usage
+        
+        ```python
+        data = { "hi":"hello" }
+        
+        # usage 1: as a file cache
+        @file_cache(file='export.json', type='json')
+        def do_job():
+          return data
+        
+        # usage 2: load file as fast as
+        rs = load_file(file='export.json', type='json')
+        
+        # usage 3: dump file as fast as
+        rs = dump_file(file='export.json', type='json', data=data)
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
