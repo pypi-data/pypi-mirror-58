@@ -1,0 +1,17 @@
+giftpack/__init__.py,sha256=kfqcVEBQycwvY85lvo85nOtBG4OMC3727mkT27hjaMk,525
+giftpack/commands/__init__.py,sha256=9S22bqRjuA4Fn4WDb4HgfdFLBX60pwovj2FVbHhpadQ,633
+giftpack/commands/addgift.py,sha256=NR8Z4whWmt0PoOnzDJeLbNv9PU3C8k-FuHlwcd83-wM,745
+giftpack/commands/delgift.py,sha256=VAfeeA76rjRQ212yBgqTZ76MavPZ6IF33k04Oe07Qxk,654
+giftpack/commands/getgift.py,sha256=hg6YmF6y0xxCdyjm5O9Clv9ZP7XrI1l3Lz9_lQCtcgQ,860
+giftpack/commands/getgiftdst.py,sha256=BmEdxI2GnfRSlLbd553DXcR10B0_tkQR5GyK8Br0JXI,553
+giftpack/commands/getgiftid.py,sha256=36rMw0itsu-WNx3LmMv4a-o2M5FaykTZG2HKRfgGBCk,531
+giftpack/commands/getgiftsrc.py,sha256=jzclMNdIHi3vMWK7BUBgedZHivhS9naciqcMkLD3vmI,540
+giftpack/commands/listgifts.py,sha256=Q7HMsqlNqYqUm46s0Lc0HC0H5tCeIri6uBMwZpvfs9o,536
+giftpack/events/__init__.py,sha256=pJoFYnnkeaM6qrzFN0bZXyXROpag2GWJti2f8yvG05U,208
+giftpack/stars/__init__.py,sha256=K5g409kI1P8f-i3VDIwwe-0QsEYLnLquLrOCloE5VUE,328
+giftpack/tables/__init__.py,sha256=ITH_cK0LbUSr2wONnNmAy5GLXn3fm9KXF797T-IxGrE,246
+giftpack/tables/xmasgift.py,sha256=d63RBJaKeAQZV0iKNVarBLoGfgj0ogp7M8HBjd8Dljk,905
+giftpack/version.py,sha256=Fp26WaDpDth9Xf7e4hW6qvJbHm39twKdaD6I55ldtV4,19
+giftpack-1.0.2.dist-info/WHEEL,sha256=f95LVduNtzpTFjazLUqsKUdxXxeVYa-JFalaYoFdJQI,85
+giftpack-1.0.2.dist-info/METADATA,sha256=V-U5phdH94AoMuiUBLkIoNy7_w6HBDz8Gjd3DckU7UM,1434
+giftpack-1.0.2.dist-info/RECORD,,
