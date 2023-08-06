@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: py-servicehost
+Version: 1.0.1
+Summary: Python ServiceHost for managing multi-service and UNIX signal handling
+Home-page: https://github.com/Ujang360/py-servicehost
+Author: Aditya Kresna
+Author-email: aditya.kresna@outlook.co.id
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Ujang360/py-servicehost/issues
+Project-URL: Source, https://github.com/Ujang360/py-servicehost
+Keywords: multiprocess
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.*, <4
+Description-Content-Type: text/markdown
+
+# Python - Service Host
+
+This is an utility class for controlling (start/stop) multi-threaded/process services
+
+## Install using PyPI
+
+```bash
+pip install py-servicehost
+```
+
+
