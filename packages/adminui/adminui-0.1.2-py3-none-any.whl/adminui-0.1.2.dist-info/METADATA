@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: adminui
+Version: 0.1.2
+Summary: Write professional web interface with Python
+Home-page: https://github.com/bigeyex/python-adminui
+Author: Yu Wang (bigeyex)
+Author-email: bigeyex@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+
+# Python AdminUI
+
+Write professional web interface with Python.
+
+If you need a simple web interface and you don't want to mess around with
+React, Angular, Webpack or other fancy Javascript stuff, this project is for you.  
+Now you can write web pages, forms, charts and dashboards with only Python.
+
+This library is good for: data projects, tools and scripts, small IT systems and management systems,
+Hacker or Hackathon projects.
+
+# Installation
+
+
+
+
+
