@@ -1,0 +1,1780 @@
+test_doctests.py           114 INFO     Executing Suite - 
+test_doctests.py            84 INFO     Executing doctests
+mathutils.py                75 WARNING  float_to_int converted +inf to +2147483648.
+mathutils.py                79 WARNING  float_to_int converted -inf to -2147483648.
+mathutils.py                70 WARNING  float_to_int converted nan to 0.
+__init__.py                822 INFO     --- fix_scale ---
+__init__.py                822 INFO       scaling by factor 0.100000
+__init__.py                822 INFO       ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO         ~~~ NiNode [bone1] ~~~
+__init__.py                822 INFO         ~~~ NiTriShape [] ~~~
+__init__.py                822 INFO           ~~~ NiSkinInstance [] ~~~
+__init__.py                822 INFO             ~~~ NiSkinData [] ~~~
+__init__.py               7133 WARNING  StringPalette: no string starts at offset 5 (string is b'ef', preceeding character is b'd')
+__init__.py                822 INFO     parsing string palette
+__init__.py                822 INFO     updating empty links
+__init__.py                822 INFO     updated 'property_type_offset' for b'hello' node
+__init__.py                822 INFO     updated 'controller_type_offset' for b'hello' node
+__init__.py                822 INFO     updated 'variable_2_offset' for b'hello' node
+__init__.py               7133 WARNING  StringPalette: no string starts at offset 16 (string is b'', preceeding character is b't')
+__init__.py               7133 WARNING  StringPalette: no string starts at offset 16 (string is b'', preceeding character is b't')
+__init__.py               7133 WARNING  StringPalette: no string starts at offset 16 (string is b'', preceeding character is b't')
+__init__.py                822 INFO     === tests/spells/cgf/files/invalid.cgf ===
+__init__.py               1349 ERROR    FAILED ON tests/spells/cgf/files/invalid.cgf - with the follow exception
+__init__.py               1350 ERROR    EXPT MSG : Invalid signature (got 'b'INVALI'' instead of 'CryTek' or 'NCAion')
+__init__.py               1351 ERROR    If you were running a spell that came with PyFFI
+__init__.py               1352 ERROR    Please report this issue - https://github.com/niftools/pyffi/issues
+__init__.py                822 INFO     === tests/spells/cgf/files/test.cgf ===
+__init__.py                822 INFO       --- check_readwrite ---
+__init__.py                822 INFO         writing to temporary file
+__init__.py                822 INFO           comparing file sizes
+__init__.py                822 INFO           original size: 166
+__init__.py                822 INFO           written size:  168
+__init__.py                822 INFO           padding:       2
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/kfm/files/invalid.kfm ===
+__init__.py               1349 ERROR    FAILED ON tests/spells/kfm/files/invalid.kfm - with the follow exception
+__init__.py               1350 ERROR    EXPT MSG : Not a KFM file.
+__init__.py               1351 ERROR    If you were running a spell that came with PyFFI
+__init__.py               1352 ERROR    Please report this issue - https://github.com/niftools/pyffi/issues
+__init__.py                822 INFO     === tests/spells/kfm/files/test.kfm ===
+__init__.py                822 INFO       --- check_readwrite ---
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/kfm/files/test.kfm ===
+__init__.py                822 INFO       --- dump ---
+__init__.py                822 INFO         <pyffi.formats.kfm.KfmFormat.Data object at 0x10926f2b0>
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/invalid.nif ===
+__init__.py               1349 ERROR    FAILED ON tests/spells/nif/files/invalid.nif - with the follow exception
+__init__.py               1350 ERROR    EXPT MSG : type object 'NifFormat' has no attribute 'NiInvalid!'
+__init__.py               1351 ERROR    If you were running a spell that came with PyFFI
+__init__.py               1352 ERROR    Please report this issue - https://github.com/niftools/pyffi/issues
+__init__.py                822 INFO     === tests/spells/nif/files/invalid.nif ===
+__init__.py               1349 ERROR    FAILED ON tests/spells/nif/files/invalid.nif - with the follow exception
+__init__.py               1350 ERROR    EXPT MSG : type object 'NifFormat' has no attribute 'NiInvalid!'
+__init__.py               1351 ERROR    If you were running a spell that came with PyFFI
+__init__.py               1352 ERROR    Please report this issue - https://github.com/niftools/pyffi/issues
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/nds.nif ===
+__init__.py                822 INFO       --- check_readwrite ---
+__init__.py                822 INFO         writing to temporary file
+__init__.py                822 INFO           comparing file sizes
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/neosteam.nif ===
+__init__.py                822 INFO       --- check_readwrite ---
+__init__.py                822 INFO         writing to temporary file
+__init__.py                822 INFO           comparing file sizes
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/test.nif ===
+__init__.py                822 INFO       --- check_readwrite ---
+__init__.py                822 INFO         writing to temporary file
+__init__.py                822 INFO           comparing file sizes
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/invalid.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/nds.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/neosteam.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_centerradius.nif ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_check_tangentspace1.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_check_tangentspace2.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_check_tangentspace3.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_check_tangentspace4.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_convexverticesshape.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_dump_tex.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_clampmaterialalpha.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_cleanstringpalette.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_detachhavoktristripsdata.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_disableparallax.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_ffvt3rskinpartition.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_mergeskeletonroots.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_tangentspace.nif ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_texturepath.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_grid_128x128.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_grid_64x64.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_mopp.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_collision_complex_mopp.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_collision_mopp.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_collision_packed.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_collision_to_boxshape.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_collision_to_boxshape_notabox.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_collision_unpacked.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_delunusedbones.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_dupgeomdata.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_dupverts.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_emptyproperties.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_grid_layout.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_mergeduplicates.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_vertex_cache.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_opt_zeroscale.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_skincenterradius.nif (skipped) ===
+__init__.py                822 INFO     === tests/spells/nif/files/test_vertexcolor.nif (skipped) ===
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/test.nif ===
+__init__.py                822 INFO       --- fix_delunusedroots & opt_cleanreflists & fix_detachhavoktristripsdata & fix_texturepath & fix_clampmaterialalpha & fix_bhksubshapes & fix_emptyskeletonroots ---
+__init__.py                822 INFO         ~~~ NiNode [test] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Cube] ~~~
+__init__.py                822 INFO       --- opt_geometry ---
+__init__.py                822 INFO         ~~~ NiNode [test] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Cube] ~~~
+__init__.py                822 INFO             removing duplicate vertices
+__init__.py                822 INFO             (num vertices was 8 and is now 8)
+__init__.py                822 INFO             optimizing triangle ordering
+__init__.py                822 INFO             (ATVR stable at 1.000)
+__init__.py                822 INFO             optimizing vertex ordering
+__init__.py               1349 ERROR    FAILED ON tests/spells/nif/files/test.nif - with the follow exception
+__init__.py               1350 ERROR    EXPT MSG : 'NiTriShapeData' object has no attribute 'extra_vectors_flags'
+__init__.py               1351 ERROR    If you were running a spell that came with PyFFI
+__init__.py               1352 ERROR    Please report this issue - https://github.com/niftools/pyffi/issues
+__init__.py                822 INFO     === tests/spells/nif/files/test_fix_detachhavoktristripsdata.nif ===
+__init__.py                822 INFO       --- check_bhkbodycenter ---
+__init__.py                822 INFO         ~~~ NiNode [MiddleWolfRug01] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [MiddleWolfRug01:0] ~~~
+__init__.py                822 INFO             ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO               ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO                 getting rigid body mass, center, and inertia
+__init__.py                822 INFO                 recalculating...
+__init__.py                822 INFO                 checking center...
+check.py                   327 WARNING  center does not match; original [  0.000  0.000  0.000  0.000 ], calculated [ -1.085 18.465  6.887  0.000 ]
+__init__.py                822 INFO                 checking inertia...
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === tests/spells/nif/files/test_centerradius.nif ===
+__init__.py                822 INFO       --- check_centerradius ---
+__init__.py                822 INFO         ~~~ NiNode [test] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Cube] ~~~
+__init__.py                822 INFO             ~~~ NiTriShapeData [] ~~~
+__init__.py                822 INFO               getting bounding sphere
+__init__.py                822 INFO               checking that all vertices are inside
+check.py                   402 WARNING  not all vertices inside bounding sphere (vertex [ 10.000 -10.000 -10.000 ], error 7.916472867168917)
+__init__.py                822 INFO               recalculating bounding sphere
+__init__.py                822 INFO               comparing old and new spheres
+check.py                   412 WARNING  center does not match; original [ -1.000 -0.000  0.000 ], calculated [  0.000 -0.000  0.000 ]
+check.py                   420 WARNING  radius does not match; original 10.0, calculated 17.320508901595915
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpqcs5q2jb/monkey.cgf ===
+__init__.py                822 INFO       --- check_tangentspace ---
+__init__.py                822 INFO         ~~~ NodeChunk [Merged] ~~~
+__init__.py                822 INFO           ~~~ MeshChunk [] ~~~
+__init__.py                822 INFO             recalculating new tangent space
+__init__.py                822 INFO             validating and checking old with new
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5375225074007386, -0.8401745658742027, 0.07141331217383343) (-0.7587817011017182, -0.5778984954374828, -0.30042420728171637)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.26429029206213567, -0.9644154179509873, -0.005676442762535478) (-0.9183935056611835, -0.2358165227210303, -0.3176671651356548)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.26712851344340344, -0.9261146885586108, -0.2663045136875515) (-0.825739310892056, -0.5468306527909177, -0.13815729239783928)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.26215399639881587, -0.9222083193456831, -0.28415784173100983) (-0.9318521683400983, -0.35813470870082703, -0.057802056947538684)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   151 WARNING  (error is 0.146631)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.392317)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.5383770256660665, -0.8330637531662953, -0.12695699942014832) (-0.2834253975035859, -0.08560441908017212, -0.9551377910702842)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.8610797448652607, -0.45417645802179024, 0.22846156193731498) (-0.24515518662068544, -0.7601550340281381, -0.6017029328287606)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.4524063844721824, -0.8664204840235603, -0.21112704855494857) (-0.8290353099154637, -0.09906308175908689, -0.5503402813806574)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.07028412732322153, -0.8740501113925596, 0.48069704275643177) (-0.9986877040925322, 0.050813318277535324, -0.006225775933103427)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.28882717368083743, -0.8211004974517044, 0.4922330393383587) (-0.9819330423902096, -0.16846217230750452, 0.0858790856654561)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.737161)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6250495925778985, -0.1250343333231605, 0.7704702902310251) (-0.9090243232520524, 0.3705862605670339, -0.19055757316812647)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.250160222174749, -0.8454542680135502, 0.4717551194799646) (-0.9760734885708182, -0.21729178746910002, 0.006012146366771447)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.760760)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.3401287881099887, -0.2708212530899991, 0.9005096591082492) (-0.9201940977202674, -0.35926389355143895, 0.15524765770439772)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.3565477462080752, -0.8427991576891385, 0.4031495101779229) (-0.9761345255897702, -0.12799462874233222, 0.1752983184301279)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278933)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.13217566454054383, -0.7645191808832057, 0.630878627887814) (-0.5525986510818811, -0.6678365428632466, -0.4985503707998901)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.07596057008575702, -0.9607837153233436, 0.2666402172917875) (-0.6974089785454879, -0.43604846339304787, -0.5686819055757317)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.6893520920438245, -0.7037568285164952, 0.17157506027405622) (-0.543565172276986, -0.7437971129490035, -0.3888973662526322)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.33271279030732137, -0.9409772026734214, -0.06176946317941832) (-0.8353221228675192, -0.29383220923490094, -0.46461378826258126)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278582)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.0728171636097293, -0.9166539506210517, 0.39292580950346384) (-0.5881527146214179, 0.40946684163945435, 0.6974089785454879)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.2736899929807428, -0.9597155674916837, -0.0630817590868862) (-0.727713858455153, -0.0005188146610919523, 0.685872981963561)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.109524)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.26288644062623984, -0.881252479628895, -0.39271217993713187) (-0.8451185644093142, 0.2814111758781701, 0.4544511246070742)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.35248878444776754, -0.9000518814661091, -0.25611133152256843) (-0.7327494125186926, 0.4330271309549242, 0.5249183629871517)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.160312)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6261482589190344, -0.7593615527817621, -0.17685476241340373) (-0.4811548203985717, 0.3059175389873959, 0.8214972380748924)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6859340189825129, -0.6674092837305826, -0.2898037659840693) (-0.4803918576616718, 0.34037293618579667, 0.8082827234717856)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.04730368968779565, -0.8770104068117314, 0.47807245094149603) (-0.586352122562334, 0.33332316049684135, 0.7382732627338481)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.15066988128299813, -0.9109469893490402, 0.3839838862269967) (-0.5774712363048189, 0.2338938566240425, 0.782158879360332)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.12515640736106448, -0.8420361949522386, 0.5246742149113437) (-0.9966429639576403, -0.06820886867885373, 0.04489272743919187)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.018311105685598315, -0.8506729331339458, 0.5253456221198156) (-0.9768669698171941, -0.15933713797418134, 0.1424298837244789)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.107149)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.27469710379345075, -0.6792809839167455, 0.6804712057863094) (-0.49967955565050204, -0.5797601245155186, -0.6435438093203528)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.14218573564867093, 0.05664235358745079, 0.9881893368327891) (-0.5273598437452315, -0.6892910550248725, -0.4966887417218543)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278933)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.13217566454054383, -0.7645191808832057, 0.630878627887814) (-0.5525986510818811, -0.6678365428632466, -0.4985503707998901)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.3164159062471389, -0.826288644062624, 0.46592608417004916) (-0.6419568468276009, -0.5944090090639973, -0.48426770836512345)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.737161)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6250495925778985, -0.1250343333231605, 0.7704702902310251) (-0.9090243232520524, 0.3705862605670339, -0.19055757316812647)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.988952299569689, -0.14410840174565875, -0.03381450849940489) (-0.9937131870479445, -0.09375286111026337, -0.06076235236671041)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.07028412732322153, -0.8740501113925596, 0.48069704275643177) (-0.9986877040925322, 0.050813318277535324, -0.006225775933103427)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.29282509842219306, 0.8200323496200446, -0.4916531876583148) (-0.957029938657796, 0.24292733542893766, -0.15826899014252144)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.160179)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.3100070192571795, 0.4720297860652486, 0.82525101474044) (0.7873470259712516, -0.5935544907986694, 0.1665089877010407)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.511459700308237, 0.31394390697958313, 0.7998901333658864) (0.6864528336436049, -0.6671956541642506, -0.2891323587755974)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.108549)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.48020874660481583, 0.6850489822077089, 0.5477462080751976) (0.7949461348307749, -0.6044495986816004, -0.051698355052339245)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.770989104892117, 0.37446211127048556, 0.5150914029358806) (0.29081087679677725, -0.912045655690176, -0.2890713217566454)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154384)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5705435346537675, -0.7076326792199469, 0.41673024689474164) (0.3814813684499649, -0.12408825952940458, -0.9159825434125797)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.2923062837611011, -0.3860591448713645, 0.8749046296578875) (0.5386211737418745, -0.543778801843318, -0.6435132908108768)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.07699819940794092, -0.8229926450392163, 0.5627613147373882) (0.847804193243202, -0.3252662739951781, -0.41874446852015745)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.0045167394024475845, -0.8719138157292398, 0.489608447523423) (0.8353221228675192, -0.20172734763634145, -0.511368144779809)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.130892)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.11896114993743706, -0.6891689809869685, 0.7147434919278542) (0.9847407452620014, 0.16544083986938077, -0.05371257667775506)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.051026947843867305, -0.6082033753471481, 0.7921079134495072) (0.9895016327402569, 0.0336924344615009, 0.1403241065706351)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.248507)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.23737296670430616, -0.8501846369823298, -0.4698934904019288) (0.978911709952086, -0.031464583269753106, -0.20172734763634145)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.14087343974120303, -0.9412213507492294, -0.30695516830957975) (0.9973448896755882, -0.04248176519058809, -0.05883968626972259)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.158876)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6765037995544297, -0.45063631092257456, 0.5824152348399304) (-0.30915250099185154, -0.8601031525620288, -0.4057130649739067)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.4152348399304178, -0.9085055085909605, -0.04657124546037172) (0.5954771568956572, -0.028870509964293346, -0.8028199102755822)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.0705282753990295, -0.9280678731650747, 0.36558122501297036) (0.8572954496902371, 0.16537980285042878, 0.4874721518601032)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.007599108859523301, -0.9201330607013154, 0.39149143955809196) (0.8446302682576983, 0.02685628833887753, 0.5346537675099948)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.105458)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.40250862147892696, 0.173955504013184, 0.8987090670491653) (0.6363109225745415, 0.7005218665120395, -0.32297738578447827)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.18720053712576679, -0.35383159886471144, 0.9163487655262917) (0.42774742881557665, 0.3617053743095187, 0.8283639027069918)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.178872)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.03860591448713645, -0.9278237250892667, -0.3709524826807459) (0.8359324930570391, -0.08075197607348857, 0.5428327280495621)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.15176854762413403, -0.9535508285775323, -0.26013977477340006) (0.8930021057771539, -0.027130954924161503, 0.4492019409772027)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.143321)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.19983520004882963, -0.6119571520126957, -0.7651905880916776) (0.7094027527695548, -0.315103610339671, 0.630390331736198)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.32013916440321055, -0.553971984008301, -0.7684865871150853) (0.6698507644886623, -0.41386150700399793, 0.6164433729056673)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   151 WARNING  (error is 0.146631)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.392317)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.304239020966216, 0.05380413220618305, 0.9510483108005005) (0.4336069826349681, -0.815301980651265, -0.3836787011322367)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5477462080751976, 0.6176030762657552, 0.56434827723014) (0.8622699667348247, -0.3608508560441908, -0.3552964873195593)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.7231971190527055, 0.52088991973632, 0.4534134952848903) (0.6785485396893216, -0.543748283333842, -0.4938200018311106)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.3093661305581835, -0.5315713980529191, 0.7884762108218635) (0.6470839564195685, 0.7567064424573504, -0.09292886135441145)
+check.py                   151 WARNING  (error is 0.262873)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.328827)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3093661305581835, -0.5315713980529191, 0.7884762108218635) (0.6470839564195685, 0.7567064424573504, -0.09292886135441145)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.3608813745536668, 0.6341135898922696, 0.6838282418286691) (0.39722891933957943, 0.23026215399639882, -0.8883327738273262)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154384)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5705435346537675, -0.7076326792199469, 0.41673024689474164) (0.3814813684499649, -0.12408825952940458, -0.9159825434125797)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.531846064638203, -0.6264839625232703, 0.5697500534073916) (0.391033661915952, -0.36677144688253427, -0.8441114535966063)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.2703329569383831, -0.7755973998229927, 0.5703909421063875) (-0.42228461561937314, -0.6423841059602649, -0.6395153660695212)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.29096346934415723, -0.7637562181463058, 0.5761589403973509) (-0.37537766655476545, -0.651936399426252, -0.6588030640583514)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.104593)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.0640888698995941, -0.9978637043366801, 0.010406811731315043) (-0.7948850978118228, 0.14514603106784266, -0.5890987884151738)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.6544083986938078, -0.6466566972869046, 0.39185766167180397) (-0.5567186498611408, -0.728659932248909, -0.3988158818323313)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.6105533005767998, -0.631427961058382, 0.47798089541306804) (-0.056276131473738826, -0.5702688680684835, -0.8195135349589526)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.586931974242378, -0.6528519547105319, 0.47883541367839594) (-0.048310800500503556, -0.6710715048677023, -0.7397991882076479)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.107149)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.27469710379345075, -0.6792809839167455, 0.6804712057863094) (-0.49967955565050204, -0.5797601245155186, -0.6435438093203528)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.3709524826807459, -0.6395458845789972, 0.67329935605945) (-0.4412671285134434, -0.5301065095980713, -0.7240211188085574)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.158876)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6765037995544297, -0.45063631092257456, 0.5824152348399304) (-0.30915250099185154, -0.8601031525620288, -0.4057130649739067)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6359141819513535, -0.6535538804284798, 0.41041291543321023) (-0.09176915799432356, -0.8847621082186345, -0.456862086855678)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278933)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.13217566454054383, -0.7645191808832057, 0.630878627887814) (-0.5525986510818811, -0.6678365428632466, -0.4985503707998901)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.18121890926847134, -0.9164098025452437, 0.3567918942838832) (-0.5638294625690481, -0.7318338572344126, -0.3827326273384808)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.104283)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.32004760887478256, -0.36048463393047886, 0.8760948515274514) (-0.9082308420056765, -0.22797326578569901, -0.35084078493606374)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5817743461409345, -0.31250953703421125, 0.7508774071474349) (-0.7782219916379284, -0.14526810510574664, -0.6109195226905118)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.07028412732322153, -0.8740501113925596, 0.48069704275643177) (-0.9986877040925322, 0.050813318277535324, -0.006225775933103427)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.10089419232764672, -0.8558610797448652, 0.5072176274910734) (-0.9976500747703482, 0.05151524399548326, -0.04510635700552385)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154185)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.35581530198065126, -0.12219611194189275, 0.9265114291817987) (-0.8836024048585467, 0.4393749809259316, -0.16177861873226113)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.05337687307351909, -0.46488845484786523, 0.8837244788964507) (-0.9142429883724479, 0.3296304208502457, 0.23548081911679433)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.104283)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.32004760887478256, -0.36048463393047886, 0.8760948515274514) (-0.9082308420056765, -0.22797326578569901, -0.35084078493606374)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.35581530198065126, -0.26493118076113165, 0.8962065492721335) (-0.9373455000457778, -0.26013977477340006, -0.23166600543229468)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.133402)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.21662038026062808, -0.006500442518387402, 0.9762260811181982) (-0.4693746757408368, 0.8570513016144291, -0.21234778893398845)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.35856196783349104, -0.6018555253761406, 0.7135532700582904) (-0.554063539536729, 0.7155674916837061, 0.4253364665669729)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.107149)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.27469710379345075, -0.6792809839167455, 0.6804712057863094) (-0.49967955565050204, -0.5797601245155186, -0.6435438093203528)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.412640766624958, -0.6883449812311166, 0.5965453047273171) (-0.510818811609241, -0.6564531388286996, -0.5550401318399609)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.05533005767998291, -0.22641682180242317, 0.9724417859431745) (-0.6827295754875332, -0.56587420270394, 0.4621723075045015)
+check.py                   151 WARNING  (error is 0.211794)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.131590)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.05533005767998291, -0.22641682180242317, 0.9724417859431745) (-0.6827295754875332, -0.56587420270394, 0.4621723075045015)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.4029969176305429, -0.8349253822443312, 0.37473677785576953) (0.1782891323587756, 0.6018860438856166, 0.7784051026947844)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.113875)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.18933683278908658, -0.9799798577837459, -0.06149479659413434) (-0.781945249794, -0.1683706167790765, 0.6001464888454848)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.18127994628742333, -0.9707632679219947, -0.15723136082033753) (-0.8237250892666402, -0.1781060213019196, 0.5382549516281625)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.20087282937101353, -0.413037507248146, 0.8882717368083742) (-0.5724662007507554, -0.67345194860683, 0.46766563921018095)
+check.py                   151 WARNING  (error is 0.411646)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.105601)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.20087282937101353, -0.413037507248146, 0.8882717368083742) (-0.5724662007507554, -0.67345194860683, 0.46766563921018095)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.32026123844111454, -0.489608447523423, 0.8109683523056734) (-0.521134067812128, -0.6748252815332499, 0.522476882229072)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.5565660573137607, 0.7201452681051057, 0.4141972106082339) (0.6367381817072054, 0.7459639271217994, -0.19510483108005006)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5840632343516343, 0.6991790520950957, 0.41230506302072206) (0.6167485580004273, 0.7509689626758629, -0.2357860042115543)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6566057313760796, 0.7224951933347575, 0.2164677877132481) (0.772209845271157, 0.6152531510361035, 0.1584826197088534)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6388744773705253, 0.728720969267861, 0.24646748252815331) (0.825891903439436, 0.5509201330607013, 0.11981566820276497)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.3093661305581835, -0.5315713980529191, 0.7884762108218635) (0.6470839564195685, 0.7567064424573504, -0.09292886135441145)
+check.py                   151 WARNING  (error is 0.262873)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.328827)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3093661305581835, -0.5315713980529191, 0.7884762108218635) (0.6470839564195685, 0.7567064424573504, -0.09292886135441145)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.006530961027863399, 0.2667012543107395, 0.9637440107425154) (0.6434217352824488, 0.6866664632099369, -0.33826715903195287)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.155701)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.15768913846247748, 0.28971221045564133, 0.9439985351115452) (0.522446363719596, 0.7370525223548082, -0.42869350260933253)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.18842127750480667, 0.30558183538315986, 0.9333170567949461) (0.6710104678487503, 0.6881618701742607, -0.2759788811914426)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5477462080751976, 0.6176030762657552, 0.56434827723014) (0.8622699667348247, -0.3608508560441908, -0.3552964873195593)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.565172276985992, 0.6121097445600757, 0.5530564287240212) (0.9273049104281746, 0.28598895229956967, 0.2413708914456618)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.09665211951048311, 0.5613879818109684, 0.8218634601886043) (0.5699636829737236, 0.7429120761741996, -0.35093234046449173)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.15686513870662558, 0.5597094637897885, 0.8136844996490371) (0.543717764824366, 0.7494430372020631, -0.3777581102938932)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.105458)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.40250862147892696, 0.173955504013184, 0.8987090670491653) (0.6363109225745415, 0.7005218665120395, -0.32297738578447827)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.3556016724143193, 0.26914273506881925, 0.8950163274025696) (0.5889156773583178, 0.7264931180761132, -0.3540452284310434)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.44795068208868677, 0.38782921842097234, 0.8055360576189459) (0.05038605914487136, 0.8326364940336314, -0.5514694662312692)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.37321085238196966, 0.5527512436292612, 0.7450483718375195) (0.09183019501327555, 0.7806024353770562, -0.6182134464552751)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278978)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.5829645680104983, 0.5053865169225135, 0.6361583300271615) (0.14761803033539841, 0.7486190374462112, -0.6463209936826685)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6463820307016205, 0.5844904934842983, 0.4904324472792749) (0.36146122623371074, 0.7867366557817316, -0.500350962858974)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.133402)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.21662038026062808, -0.006500442518387402, 0.9762260811181982) (-0.4693746757408368, 0.8570513016144291, -0.21234778893398845)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.4322946867275002, 0.49955748161259805, 0.7506637775811029) (-0.3675649281289102, 0.6125370036927397, -0.6997589037751396)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.4385204626606037, 0.5896481215857418, 0.6781823175756097) (0.06665242469557787, 0.8133182775353252, -0.5779595324564348)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.36906033509323405, 0.5953550828577532, 0.7136448255867184) (0.07919553209021271, 0.8007446516312143, -0.5937070833460494)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.113701)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6516617328409681, 0.6194036683248391, 0.4377574999237037) (0.5399945066682943, 0.7030854213080233, -0.46263008514664145)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6355174413281656, 0.63106173894467, 0.4447767571031831) (0.6064333017975402, 0.7014679403057955, -0.3743705557420576)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.04632709738456374, 0.47236548966948455, 0.880153813287759) (-0.42341380046998506, 0.8998687704092532, 0.10446485793633839)
+check.py                   151 WARNING  (error is 0.156239)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.927829)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.04632709738456374, 0.47236548966948455, 0.880153813287759) (-0.42341380046998506, 0.8998687704092532, 0.10446485793633839)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.7700735496078371, 0.5233314004943999, 0.36475722525711846) (0.4900357066560869, 0.5055391094698934, -0.7101046784875027)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.143440)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.22684408093508712, 0.6264534440137943, 0.7456892605365154) (-0.7149571214941862, 0.3273110141300699, -0.6177861873226111)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.3750114444410535, 0.5875423444318979, 0.7170018616290781) (-0.6624042481765191, 0.40165410321359907, -0.6323129978331858)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.195517)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.7054048280281991, 0.3531601916562395, 0.6145207068086794) (-0.7151097140415662, 0.6537675099948118, -0.24729148228400524)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.2345957823419904, 0.9255958738975189, 0.2969450972014527) (-0.673360393078402, 0.7098910489211707, -0.206457716605121)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154185)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.35581530198065126, -0.12219611194189275, 0.9265114291817987) (-0.8836024048585467, 0.4393749809259316, -0.16177861873226113)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.8769188512833033, 0.21485030671102023, 0.42991424298837244) (-0.35593737601855524, 0.5492721335489975, -0.7560045167394025)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.6339304788354136, -0.5479293191320536, 0.5457625049592578) (0.771172215948973, 0.586260567033906, -0.24805444502090518)
+check.py                   151 WARNING  (error is 0.674482)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.131598)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6339304788354136, -0.5479293191320536, 0.5457625049592578) (0.771172215948973, 0.586260567033906, -0.24805444502090518)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.2294381542405469, 0.9684133426923429, 0.09759819330423902) (-0.15274513992736594, 0.9534897915585803, 0.2597430341502121)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.37961973937192905, 0.8839381084627826, 0.2728965117343669) (-0.467909787285989, 0.8631855220191046, -0.18948942533646657)
+check.py                   151 WARNING  (error is 0.542083)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.927830)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.37961973937192905, 0.8839381084627826, 0.2728965117343669) (-0.467909787285989, 0.8631855220191046, -0.18948942533646657)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.7522202215643788, 0.576464125492111, 0.3191015350810266) (0.47108371227149265, 0.5280007324442274, -0.706564531388287)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.6105533005767998, -0.631427961058382, 0.47798089541306804) (-0.056276131473738826, -0.5702688680684835, -0.8195135349589526)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.5883663441877499, -0.6406445509201331, 0.49330118717001864) (-0.03924680318613239, -0.6804712057863094, -0.7317117831965086)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.8610797448652607, -0.45417645802179024, 0.22846156193731498) (-0.24515518662068544, -0.7601550340281381, -0.6017029328287606)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8553117465742973, -0.44639423810541096, 0.26294747764519183) (-0.18353831598864712, -0.8085879085665456, -0.5589465010528886)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.6893520920438245, -0.7037568285164952, 0.17157506027405622) (-0.543565172276986, -0.7437971129490035, -0.3888973662526322)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8307443464461196, -0.47993408001953186, 0.28189947202978605) (-0.27991576891384623, -0.8970305490279855, -0.34199041718802453)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5747245704519791, -0.6494338816492202, 0.4978789635914182) (0.03869747001556444, -0.5779900509659108, -0.815088351084933)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.6080813013092441, -0.6838587603381451, 0.4031800286873989) (0.05786309396649068, -0.4859767448957793, -0.8720358897671437)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154384)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5705435346537675, -0.7076326792199469, 0.41673024689474164) (0.3814813684499649, -0.12408825952940458, -0.9159825434125797)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.6295052949613941, -0.7141636402478103, 0.30603961302529986) (0.2262031922360912, -0.1772820215460677, -0.9577929013946959)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278933)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.13217566454054383, -0.7645191808832057, 0.630878627887814) (-0.5525986510818811, -0.6678365428632466, -0.4985503707998901)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.6219977416302988, -0.4071779534287545, 0.6687826166570024) (-0.4607379375591296, -0.847956785790582, -0.2620319223609119)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5375225074007386, -0.8401745658742027, 0.07141331217383343) (-0.7587817011017182, -0.5778984954374828, -0.30042420728171637)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8094119083223975, -0.5488448744163336, 0.2087771233252968) (-0.3219702749717704, -0.9273049104281746, -0.19083223975341043)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5820184942167425, -0.6820886867885373, 0.4427014984588153) (0.8435316019165624, 0.2799768059327982, -0.45826593829157386)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.7783440656758324, -0.5524155400250251, 0.2982573931089206) (0.5552842799157689, 0.49897762993255407, -0.6653035065767388)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.130892)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.11896114993743706, -0.6891689809869685, 0.7147434919278542) (0.9847407452620014, 0.16544083986938077, -0.05371257667775506)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8434400463881344, -0.2436902981658376, 0.47871333964049195) (0.3064973906674398, 0.6024964140751365, -0.7368694112979522)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.126121)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.47456282235175634, 0.6888943144016846, 0.5478682821131016) (0.945310831019013, 0.26657918027283545, -0.18778038880581072)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5185705130161443, 0.6657918027283547, 0.5364238410596026) (0.9204687643055514, 0.26279488509781185, -0.2891628772850734)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.160387)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3274636066774499, 0.45704519791253395, 0.82692953276162) (0.7694936979277932, 0.6291085543382061, -0.10995818964201788)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.3227332377086703, 0.45698416089358196, 0.8288216803491317) (0.847712637714774, 0.5303201391644032, -0.010467848750267038)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.7859736930448317, 0.057252723776970736, 0.6155888546403394) (0.20441297647022919, 0.968169194616535, 0.14432203131199073)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6531876583147679, 0.3819696646015809, 0.6537369914853358) (0.7209387493514817, 0.5891903439436018, -0.36475722525711846)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.108549)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.48020874660481583, 0.6850489822077089, 0.5477462080751976) (0.7949461348307749, -0.6044495986816004, -0.051698355052339245)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.1979430524613178, 0.9212927640614033, 0.3346659749137852) (0.8615070039979248, 0.19013031403546252, 0.4707785271767327)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.160179)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.3100070192571795, 0.4720297860652486, 0.82525101474044) (0.7873470259712516, -0.5935544907986694, 0.1665089877010407)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.23163548692281868, 0.6927396465956602, 0.6829432050538652) (0.8274788659321879, -0.08215582750938444, 0.5554063539536729)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.44795068208868677, 0.38782921842097234, 0.8055360576189459) (0.05038605914487136, 0.8326364940336314, -0.5514694662312692)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.2535782952360607, -0.40693380535294654, 0.8775292214728233) (-0.36915189062166204, 0.1773735770744957, 0.9122592852565081)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.04632709738456374, 0.47236548966948455, 0.880153813287759) (-0.42341380046998506, 0.8998687704092532, 0.10446485793633839)
+check.py                   151 WARNING  (error is 0.156239)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.927829)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.04632709738456374, 0.47236548966948455, 0.880153813287759) (-0.42341380046998506, 0.8998687704092532, 0.10446485793633839)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.2696005127109592, -0.718161564989166, 0.641499069185461) (-0.7885982848597675, 0.141453291421247, 0.5983764152958769)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.195517)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.7054048280281991, 0.3531601916562395, 0.6145207068086794) (-0.7151097140415662, 0.6537675099948118, -0.24729148228400524)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8792992950224311, -0.2630695516830958, 0.39698477126377146) (-0.8934293649098178, 0.13238929410687583, -0.4292123172704245)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.109524)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.26288644062623984, -0.881252479628895, -0.39271217993713187) (-0.8451185644093142, 0.2814111758781701, 0.4544511246070742)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.10122989593188268, -0.9204992828150274, -0.37736136967070527) (-0.9205908383434553, -0.2619403668324839, 0.28962065492721334)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.12515640736106448, -0.8420361949522386, 0.5246742149113437) (-0.9966429639576403, -0.06820886867885373, 0.04489272743919187)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.028748435926389357, -0.8495132297738578, 0.5267494735557116) (-0.9628589739677114, 0.2468031861323893, -0.10940885647144993)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.37873470259712516, -0.9254737998596149, 0.0014648884548478652) (-0.7357707449568163, -0.23886837366863004, -0.6336558122501297)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.008392590105899229, -0.9450056459242531, -0.3268532364879299) (-0.7991576891384625, 0.14816736350596638, -0.5825373088778344)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.7859736930448317, 0.057252723776970736, 0.6155888546403394) (0.20441297647022919, 0.968169194616535, 0.14432203131199073)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.7940610980559709, -0.08011108737449263, 0.6025269325846125) (-0.018219550157170323, 0.9381694998016297, 0.3456221198156682)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.7855464339121677, -0.5258949552903837, 0.325998718222602) (-0.4798120059816279, 0.7439802240058595, -0.4649800103762932)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.82525101474044, -0.49610889004181036, 0.2697836237678152) (-0.2632831812494278, 0.815088351084933, -0.5160069582201605)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.110473)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.9367656483657338, 0.31104464857936337, -0.16025269325846125) (-0.03353984191412091, 0.880184331797235, 0.47337260048219243)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.9124423963133641, 0.3142490920743431, -0.2619708853419599) (-0.02902310251167333, 0.913296914578692, 0.40620136112552263)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.5095675527207251, -0.2780236213263344, 0.814264351329081) (-0.727652821436201, 0.37598803674428544, -0.5736564226203192)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.39844965971861934, -0.31040375988036745, 0.8630329294717246) (-0.7792596209601123, 0.38975188451796017, -0.49070711386455884)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.6851710562456129, 0.5717337565233314, 0.4511856440931425) (0.5577257606738487, -0.7020783104953154, 0.4427320169682913)
+check.py                   151 WARNING  (error is 0.188159)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154600)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6851710562456129, 0.5717337565233314, 0.4511856440931425) (0.5577257606738487, -0.7020783104953154, 0.4427320169682913)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.48359630115665153, 0.5798821985534226, -0.6556291390728477) (0.6039002655110325, -0.6926175725577562, 0.3943906979583117)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.8642841883602405, 0.3548081911679434, -0.35645619067964723) (0.3542283394878994, -0.23889889217810603, 0.9041108432264168)
+check.py                   151 WARNING  (error is 0.299101)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.802277)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.8642841883602405, 0.3548081911679434, -0.35645619067964723) (0.3542283394878994, -0.23889889217810603, 0.9041108432264168)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.8743552964873196, -0.4446546830652791, -0.19434186834315012) (-0.23416852320932646, -0.5142979216895047, -0.8249763481551561)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.158876)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6765037995544297, -0.45063631092257456, 0.5824152348399304) (-0.30915250099185154, -0.8601031525620288, -0.4057130649739067)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5573900570696128, -0.8034302804651021, 0.20914334543900875) (-0.2862025818659017, -0.9300210577715384, -0.2304757835627308)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.3736075930051576, -0.924588763084811, 0.07425153355510117) (-0.315500350962859, -0.9376812036500137, -0.14542069765312662)
+check.py                   151 WARNING  (error is 0.773880)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.128564)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3736075930051576, -0.924588763084811, 0.07425153355510117) (-0.315500350962859, -0.9376812036500137, -0.14542069765312662)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.8064821314127018, -0.3497726371044038, -0.47663808099612415) (0.053132724997711114, -0.9619129001739555, 0.2680440687276833)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (0.20334482863856929, 0.8709372234260079, 0.44730979338969085) (-0.3716849269081698, -0.9260231330301828, 0.06564531388286995)
+check.py                   151 WARNING  (error is 0.477692)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.128588)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.20334482863856929, 0.8709372234260079, 0.44730979338969085) (-0.3716849269081698, -0.9260231330301828, 0.06564531388286995)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.5250404370250557, 0.8350169377727592, 0.16437269203772087) (0.6358836634418775, -0.5227820673238319, 0.5677053132724997)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.104647)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.43205053865169224, 0.8616290780358288, 0.2662434766685995) (0.6496475112155522, -0.5663014618366039, 0.5071565904721214)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.38795129245887633, 0.8726462599566637, 0.2965788750877407) (0.6995757927182836, -0.5744499038666951, 0.42490920743430893)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.3190710165715506, 0.8420361949522386, 0.434858241523484) (0.3492843409527879, -0.6367076631977294, 0.6874294259468368)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.27329325235755486, 0.8444471572008423, 0.46061586352122563) (0.3413800469985046, -0.6651509140293588, 0.6640522476882229)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.37873470259712516, -0.9254737998596149, 0.0014648884548478652) (-0.7357707449568163, -0.23886837366863004, -0.6336558122501297)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.7992492446668905, -0.2479934080019532, 0.5474105044709616) (-0.4287850581377606, -0.6892910550248725, -0.5839106418042542)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.12515640736106448, -0.8420361949522386, 0.5246742149113437) (-0.9966429639576403, -0.06820886867885373, 0.04489272743919187)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.2707602160710471, -0.8240607928708762, 0.49754325998718224) (-0.7696768089846492, -0.5268715475936155, 0.36048463393047886)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.6851710562456129, 0.5717337565233314, 0.4511856440931425) (0.5577257606738487, -0.7020783104953154, 0.4427320169682913)
+check.py                   151 WARNING  (error is 0.188159)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154600)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6851710562456129, 0.5717337565233314, 0.4511856440931425) (0.5577257606738487, -0.7020783104953154, 0.4427320169682913)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.44386120181890315, 0.42905972472304454, 0.7866756187627796) (0.6040528580584125, -0.6927396465956602, 0.3939024018066958)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.158876)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6765037995544297, -0.45063631092257456, 0.5824152348399304) (-0.30915250099185154, -0.8601031525620288, -0.4057130649739067)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.532364879299295, 0.18997772148808253, 0.8248847926267281) (-0.38291573839533677, -0.9187902462843714, -0.09582811975463118)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.07699819940794092, -0.8229926450392163, 0.5627613147373882) (0.847804193243202, -0.3252662739951781, -0.41874446852015745)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.826105533005768, 0.1185644093142491, 0.5508590960417493) (0.25800347911008026, -0.912869655446028, 0.3163243507187109)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5820184942167425, -0.6820886867885373, 0.4427014984588153) (0.8435316019165624, 0.2799768059327982, -0.45826593829157386)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.1282387768181402, -0.7270424512466811, 0.674489577929014) (0.9745475630970183, -0.1183812982573931, -0.1902218695638905)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.3093661305581835, -0.5315713980529191, 0.7884762108218635) (0.6470839564195685, 0.7567064424573504, -0.09292886135441145)
+check.py                   151 WARNING  (error is 0.262873)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.328827)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3093661305581835, -0.5315713980529191, 0.7884762108218635) (0.6470839564195685, 0.7567064424573504, -0.09292886135441145)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6442762535477767, -0.7601245155186621, 0.08410901211584826) (0.6261177404095584, 0.7777336954863124, 0.05511642811365093)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   151 WARNING  (error is 0.146631)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.392317)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.565599536118656, -0.8239692373424482, -0.03360087893307291) (0.5088045899838252, -0.8343760490737633, -0.21182897427289651)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.155701)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.15768913846247748, 0.28971221045564133, 0.9439985351115452) (0.522446363719596, 0.7370525223548082, -0.42869350260933253)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.674336985381634, -0.7326273384807886, -0.09195226905117954) (0.5933713797418134, 0.6830042420728172, 0.4258552812280648)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5747245704519791, -0.6494338816492202, 0.4978789635914182) (0.03869747001556444, -0.5779900509659108, -0.815088351084933)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.4817957090975677, -0.825464644306772, -0.293954283272805) (0.29099398785363323, -0.7119663075655385, -0.6390575884273813)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.195517)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.7054048280281991, 0.3531601916562395, 0.6145207068086794) (-0.7151097140415662, 0.6537675099948118, -0.24729148228400524)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8629108554338206, 0.1774040955839717, 0.47312845240638446) (-0.0783715323343608, 0.9856868190557573, 0.14917447431867428)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.105458)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.40250862147892696, 0.173955504013184, 0.8987090670491653) (0.6363109225745415, 0.7005218665120395, -0.32297738578447827)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.40253913998840296, 0.3289590136417737, 0.8542435987426374) (0.5071565904721214, 0.663167210913419, -0.5504318369090854)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.0705282753990295, -0.9280678731650747, 0.36558122501297036) (0.8572954496902371, 0.16537980285042878, 0.4874721518601032)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.8376415295876949, -0.011108737449262978, 0.5460676900540178) (0.12988677632984405, 0.9413129062776574, -0.31153294473097937)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.7788628803369243, 0.5286416211432233, -0.33744315927610097) (0.24954985198522905, -0.9510788293099764, -0.18210394604327523)
+check.py                   151 WARNING  (error is 0.228095)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.179552)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.7788628803369243, 0.5286416211432233, -0.33744315927610097) (0.24954985198522905, -0.9510788293099764, -0.18210394604327523)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.858943449201941, 0.35493026520584736, -0.36899929807428206) (0.043427838984344005, -0.9850154118472854, -0.16684469130527665)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.4692526017029328, 0.858516190069277, -0.206640827661977) (0.4174932096316416, -0.8992278817102572, -0.130588702047792)
+check.py                   151 WARNING  (error is 0.661517)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.927910)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.4692526017029328, 0.858516190069277, -0.206640827661977) (0.4174932096316416, -0.8992278817102572, -0.130588702047792)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.7903988769188512, 0.43189794610431226, 0.434369945371868) (0.11801507614368115, -0.9029816583758049, 0.41306802575762197)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.792962431714835, -0.5858638264107181, 0.1672109134189886) (-0.6482436597796564, -0.5535142063661611, 0.5228431043427839)
+check.py                   151 WARNING  (error is 0.621913)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.131592)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.792962431714835, -0.5858638264107181, 0.1672109134189886) (-0.6482436597796564, -0.5535142063661611, 0.5228431043427839)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.391613513595996, 0.8567461165196691, -0.33548997466963715) (0.29438154240546893, -0.9539780877101962, 0.05676442762535478)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.629718924527726, -0.6982940153202918, 0.3402508621478927) (0.009186071352275156, -0.22858363597521897, 0.9734488967558824)
+check.py                   151 WARNING  (error is 0.125589)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.105598)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.629718924527726, -0.6982940153202918, 0.3402508621478927) (0.009186071352275156, -0.22858363597521897, 0.9734488967558824)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5354777672658467, -0.6865443891720329, 0.49180578020569476) (-0.5034028138065737, -0.6599627674184393, 0.5576342051454207)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.104593)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.0640888698995941, -0.9978637043366801, 0.010406811731315043) (-0.7948850978118228, 0.14514603106784266, -0.5890987884151738)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.3773003326517533, -0.8794824060792871, -0.2900173955504013) (-0.7412335581530198, 0.4923551133762627, -0.45616016113773006)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.788976)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6871547593615528, 0.15973387859736932, 0.7087008270516068) (-0.7520065919980469, 0.3400982696005127, -0.5645924253059481)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.9250160222174749, -0.37894833216345714, -0.02673421430097354) (-0.7938779869991149, -0.4944303720206305, -0.35389263588366343)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154384)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5705435346537675, -0.7076326792199469, 0.41673024689474164) (0.3814813684499649, -0.12408825952940458, -0.9159825434125797)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.33088167973876154, -0.4260078737754448, 0.8420056764427626) (-0.5345622119815668, 0.6290780358287301, -0.564317758720664)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.3736075930051576, -0.924588763084811, 0.07425153355510117) (-0.315500350962859, -0.9376812036500137, -0.14542069765312662)
+check.py                   151 WARNING  (error is 0.773880)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.128564)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3736075930051576, -0.924588763084811, 0.07425153355510117) (-0.315500350962859, -0.9376812036500137, -0.14542069765312662)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.4923551133762627, -0.8597064119388409, -0.13571581163975951) (-0.6351817377239296, 0.5239112521744438, -0.5674611651966918)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.8642841883602405, 0.3548081911679434, -0.35645619067964723) (0.3542283394878994, -0.23889889217810603, 0.9041108432264168)
+check.py                   151 WARNING  (error is 0.299101)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.802277)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.8642841883602405, 0.3548081911679434, -0.35645619067964723) (0.3542283394878994, -0.23889889217810603, 0.9041108432264168)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6814783165990173, -0.5281228064821314, -0.5065767387920774) (-0.9428998687704092, -0.2806787316507462, 0.17920468764305553)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.12515640736106448, -0.8420361949522386, 0.5246742149113437) (-0.9966429639576403, -0.06820886867885373, 0.04489272743919187)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.26996673482467115, -0.8242439039277322, 0.4976958525345622) (-0.97796563615833, 0.19421979430524614, -0.07617419965208899)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.04730368968779565, -0.8770104068117314, 0.47807245094149603) (-0.586352122562334, 0.33332316049684135, 0.7382732627338481)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.19861445966978972, -0.6235236671040987, 0.7561265907773065) (-0.587054048280282, 0.5972472304452651, 0.5464339121677297)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.7855464339121677, -0.5258949552903837, 0.325998718222602) (-0.4798120059816279, 0.7439802240058595, -0.4649800103762932)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6527909176915799, -0.6570024719992675, 0.3770561845759453) (-0.93465987121189, 0.28202154606769003, -0.2164372692037721)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.5095675527207251, -0.2780236213263344, 0.814264351329081) (-0.727652821436201, 0.37598803674428544, -0.5736564226203192)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6113162633136997, -0.21842097231971191, 0.760612811670278) (-0.6591692861720634, 0.423932615131077, -0.6210821863460189)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.3736075930051576, -0.924588763084811, 0.07425153355510117) (-0.315500350962859, -0.9376812036500137, -0.14542069765312662)
+check.py                   151 WARNING  (error is 0.773880)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 1.128564)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.3736075930051576, -0.924588763084811, 0.07425153355510117) (-0.315500350962859, -0.9376812036500137, -0.14542069765312662)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.347880489516892, -0.8274788659321879, 0.4406567583239235) (-0.8052003540147099, -0.35593737601855524, -0.4742576372569964)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.2703329569383831, -0.7755973998229927, 0.5703909421063875) (-0.42228461561937314, -0.6423841059602649, -0.6395153660695212)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.3224890896328623, -0.7052827539902952, 0.631275368511002) (-0.4394360179448836, -0.4303720206305124, -0.7884151738029115)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.158876)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6765037995544297, -0.45063631092257456, 0.5824152348399304) (-0.30915250099185154, -0.8601031525620288, -0.4057130649739067)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.652119510483108, -0.5946531571398053, 0.47016815698721276) (-0.6037476729636525, -0.7312540055543687, 0.3173619800408948)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.760760)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.3401287881099887, -0.2708212530899991, 0.9005096591082492) (-0.9201940977202674, -0.35926389355143895, 0.15524765770439772)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.6073488570818201, -0.729026154362621, 0.315622425000763) (-0.9872432630390332, 0.1567735831781976, 0.02694784386730552)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.278582)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.0728171636097293, -0.9166539506210517, 0.39292580950346384) (-0.5881527146214179, 0.40946684163945435, 0.6974089785454879)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.053956724753563036, -0.967436750389111, 0.24726096377452925) (-0.7016510513626515, 0.41929380169072544, 0.576067384868923)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.133402)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.21662038026062808, -0.006500442518387402, 0.9762260811181982) (-0.4693746757408368, 0.8570513016144291, -0.21234778893398845)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.325998718222602, -0.5627613147373882, 0.7595751823480941) (-0.4848170415356914, 0.5874202703939939, 0.6479689931943724)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.104283)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.32004760887478256, -0.36048463393047886, 0.8760948515274514) (-0.9082308420056765, -0.22797326578569901, -0.35084078493606374)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.2974028748435926, -0.25052644428846094, 0.9212622455519273) (-0.9085970641193885, -0.23136082033753472, -0.347697378460036)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.154185)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.35581530198065126, -0.12219611194189275, 0.9265114291817987) (-0.8836024048585467, 0.4393749809259316, -0.16177861873226113)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6542252876369518, -0.05496383556627094, 0.7542649616992706) (-0.8410901211584826, 0.5058442945646534, -0.1913510544145024)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.143440)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.22684408093508712, 0.6264534440137943, 0.7456892605365154) (-0.7149571214941862, 0.3273110141300699, -0.6177861873226111)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.23789178136539813, 0.49940488906521807, 0.8330332346568193) (-0.6642048402356029, 0.4045533616138188, -0.6286202581865902)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.247584)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6047547837763604, 0.6264229255043183, 0.49174474318674277) (-0.9229102450636311, -0.380596331675161, -0.057954649494918666)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.7034516434217353, 0.6642963957640309, 0.25263222144230474) (-0.9165013580736717, -0.38999603259376814, -0.08874782555619984)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.158876)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.6765037995544297, -0.45063631092257456, 0.5824152348399304) (-0.30915250099185154, -0.8601031525620288, -0.4057130649739067)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5557725760673848, 0.13556321909237953, 0.8201849421674245) (-0.5006866664632099, -0.8601031525620288, 0.09750663777581103)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   151 WARNING  (error is 0.146631)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.392317)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.522446363719596, -0.7162999359111301, 0.46250801110873746) (0.5825678273873104, -0.6323740348521378, -0.5105441450239571)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.49073763237403484, -0.2761314737388226, 0.826349681081576) (0.22547074800866726, -0.6796166875209815, -0.6980193487350078)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5375225074007386, -0.8401745658742027, 0.07141331217383343) (-0.7587817011017182, -0.5778984954374828, -0.30042420728171637)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.868739890743736, -0.43391216772972807, 0.23868526261177403) (-0.3946653645435957, -0.8942228461561937, -0.21112704855494857)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5747245704519791, -0.6494338816492202, 0.4978789635914182) (0.03869747001556444, -0.5779900509659108, -0.815088351084933)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.4707480086672567, -0.2881862849818415, 0.8338572344126712) (0.25049592577898494, -0.6779992065187537, -0.6910306100650044)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.130892)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.11896114993743706, -0.6891689809869685, 0.7147434919278542) (0.9847407452620014, 0.16544083986938077, -0.05371257667775506)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.9705801568651387, -0.04226813562425611, 0.2369762260811182) (0.10641804254280221, 0.6104922635578478, -0.7848139896847438)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.155701)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.15768913846247748, 0.28971221045564133, 0.9439985351115452) (0.522446363719596, 0.7370525223548082, -0.42869350260933253)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.5463728751487777, 0.6447340311899167, 0.5345622119815668) (0.23178807947019867, 0.141331217383343, -0.9624317148350474)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5820184942167425, -0.6820886867885373, 0.4427014984588153) (0.8435316019165624, 0.2799768059327982, -0.45826593829157386)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.9659413434247871, -0.25269325846125673, -0.0554216132084109) (0.28727072969756157, 0.6362498855555895, -0.7159642323068941)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.007110812707907346, -0.8767662587359233, 0.48081911679433575) (0.9609973448896756, 0.23310037537766656, -0.14862514114810632)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.062318796349986265, -0.8583330790124211, 0.5092623676259651) (0.9563890499588, 0.2569353312784204, -0.13882869960631122)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.8902554399243141, -0.0967741935483871, -0.44499038666951507) (0.847956785790582, 0.41154210028382215, -0.33402508621478927)
+check.py                   151 WARNING  (error is 0.236797)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.761849)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.8902554399243141, -0.0967741935483871, -0.44499038666951507) (0.847956785790582, 0.41154210028382215, -0.33402508621478927)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.11474959562974944, -0.8846400341807306, 0.4519180883205664) (0.9603564561906797, 0.18845179601428266, -0.2053285317545091)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (0.5316629535813471, -0.7050996429334392, -0.4691610461745048) (0.43186742759483626, -0.41587572862941374, -0.8003173924985504)
+check.py                   151 WARNING  (error is 0.560756)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.133635)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.5316629535813471, -0.7050996429334392, -0.4691610461745048) (0.43186742759483626, -0.41587572862941374, -0.8003173924985504)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (0.5233924375133518, -0.6560563982055116, -0.54368724631489) (0.4467604602191229, -0.5232703634754479, -0.7256385998107853)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.168980)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.5174718466750083, -0.728537858211005, 0.4487746818445387) (0.00924710837122715, 0.07599108859523301, 0.9970397045808282)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.6399731437116611, -0.6379894405957213, 0.4282052064577166) (0.006561479537339396, 0.11740470595416119, 0.9930417798394726)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.130892)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (0.11896114993743706, -0.6891689809869685, 0.7147434919278542) (0.9847407452620014, 0.16544083986938077, -0.05371257667775506)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.8447523422956023, -0.39420758690145574, 0.3618579668568987) (0.26572466200750755, -0.5584887234107486, 0.7857600634784997)
+check.py                   148 WARNING  tan and bin not orthogonal
+check.py                   149 WARNING  (-0.629718924527726, -0.6982940153202918, 0.3402508621478927) (0.009186071352275156, -0.22858363597521897, 0.9734488967558824)
+check.py                   151 WARNING  (error is 0.125589)
+check.py                   155 WARNING  norm not cross product of tangent and binormal
+check.py                   161 WARNING  (error is 0.105598)
+check.py                   174 WARNING  old and new tangents differ substantially
+check.py                   175 WARNING  old tangent
+check.py                   176 WARNING  (-0.629718924527726, -0.6982940153202918, 0.3402508621478927) (0.009186071352275156, -0.22858363597521897, 0.9734488967558824)
+check.py                   177 WARNING  new tangent
+check.py                   178 WARNING  (-0.5833307901242103, -0.7226477858821375, 0.3707388531144139) (0.130466628009888, -0.0025940733054597613, 0.9914242988372448)
+__init__.py                822 INFO         ~~~ NodeChunk [CryExportNode_monkey-CGF-monkey-DoExport-MergeNodes] ~~~
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpggm3_fye/monkey.cgf ===
+__init__.py                822 INFO       --- check_vcols ---
+__init__.py                822 INFO         ~~~ NodeChunk [Merged] ~~~
+__init__.py                822 INFO           ~~~ MeshChunk [] ~~~
+__init__.py                822 INFO         ~~~ NodeChunk [CryExportNode_monkey-CGF-monkey-DoExport-MergeNodes] ~~~
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp8zn7s9ba/vcols.cgf ===
+__init__.py                822 INFO       --- check_vcols ---
+__init__.py                822 INFO         ~~~ NodeChunk [Monkey] ~~~
+__init__.py                822 INFO           ~~~ MeshChunk [] ~~~
+__init__.py                822 INFO             has vertex colors!
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpkazcszeg/test.cgf ===
+__init__.py                822 INFO       --- dump ---
+__init__.py                822 INFO         ~~~ SourceInfoChunk [] ~~~
+__init__.py                822 INFO           <struct 'SourceInfoChunk'> instance at 0x1095229B0
+__init__.py                822 INFO           * source_file : <None>
+__init__.py                822 INFO           * date : Fri Sep 28 22:40:44 2007
+__init__.py                822 INFO           * author : blender@BLENDER
+__init__.py                822 INFO           
+__init__.py                822 INFO         ~~~ TimingChunk [GlobalRange] ~~~
+__init__.py                822 INFO           <struct 'TimingChunk'> instance at 0x109522C88
+__init__.py                822 INFO           * secs_per_tick : 0.00020833333837799728
+__init__.py                822 INFO           * ticks_per_frame : 160
+__init__.py                822 INFO           * global_range :
+__init__.py                822 INFO               <struct 'RangeEntity'> instance at 0x109522AC8
+__init__.py                822 INFO               * name : GlobalRange
+__init__.py                822 INFO               * start : 0
+__init__.py                822 INFO               * end : 100
+__init__.py                822 INFO           * num_sub_ranges : 0
+__init__.py                822 INFO           
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence.kf ===
+__init__.py                822 INFO       --- modify_getbonepriorities ---
+__init__.py                822 INFO         ~~~ NiControllerSequence [TestAction] ~~~
+__init__.py                822 INFO         writing /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_bonepriorities.txt
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence.kf ===
+__init__.py                822 INFO       --- modify_setbonepriorities ---
+__init__.py                822 INFO         reading /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_bonepriorities.txt
+__init__.py                822 INFO         ~~~ NiControllerSequence [TestAction] ~~~
+__init__.py                822 INFO           setting 'Bip01' priority to 33 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Pelvis' priority to 29 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Spine' priority to 42 (was 75)
+__init__.py                822 INFO       writing /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/_test_controllersequence.kf
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence.kf ===
+__init__.py                822 INFO       --- modify_setbonepriorities ---
+__init__.py                822 INFO         reading /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_bonepriorities.txt
+__init__.py                822 INFO         ~~~ NiControllerSequence [TestAction] ~~~
+__init__.py                822 INFO           setting 'Bip01' priority to 38 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Pelvis' priority to 22 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Spine' priority to 47 (was 75)
+__init__.py                822 INFO       overwriting /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/_test_controllersequence.kf
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_fo3.kf ===
+__init__.py                822 INFO       --- modify_getbonepriorities ---
+__init__.py                822 INFO         ~~~ NiControllerSequence [TestAction] ~~~
+__init__.py                822 INFO         writing /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_fo3_bonepriorities.txt
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_fo3.kf ===
+__init__.py                822 INFO       --- modify_setbonepriorities ---
+__init__.py                822 INFO         reading /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_fo3_bonepriorities.txt
+__init__.py                822 INFO         ~~~ NiControllerSequence [TestAction] ~~~
+__init__.py                822 INFO           setting 'Bip01' priority to 33 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Pelvis' priority to 29 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Spine' priority to 42 (was 75)
+__init__.py                822 INFO       writing /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/_test_controllersequence_fo3.kf
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_fo3.kf ===
+__init__.py                822 INFO       --- modify_setbonepriorities ---
+__init__.py                822 INFO         reading /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/test_controllersequence_fo3_bonepriorities.txt
+__init__.py                822 INFO         ~~~ NiControllerSequence [TestAction] ~~~
+__init__.py                822 INFO           setting 'Bip01' priority to 38 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Pelvis' priority to 22 (was 27)
+__init__.py                822 INFO           setting 'Bip01 Spine' priority to 47 (was 75)
+__init__.py                822 INFO       overwriting /Users/gmoran/workspace/local/os/nift/pyffi/tests/spells/kf/_test_controllersequence_fo3.kf
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp9z2olxmk/test_fix_ffvt3rskinpartition.nif ===
+__init__.py                822 INFO       --- dump_tex ---
+__init__.py                822 INFO         ~~~ NiNode [Bip01] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Bip01 Pelvis] ~~~
+__init__.py                822 INFO             ~~~ NiNode [Bip01 Spine] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 Spine1] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 Spine2] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 Neck] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 Head] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Clavicle] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 L UpperArm] ~~~
+__init__.py                822 INFO                         ~~~ NiNode [Bip01 L Forearm] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R Clavicle] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 R UpperArm] ~~~
+__init__.py                822 INFO                         ~~~ NiNode [Bip01 R Forearm] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 L Thigh] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 L Calf] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 L Foot] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Toe0] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 R Thigh] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 R Calf] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 R Foot] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R Toe0] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Body] ~~~
+__init__.py                822 INFO             ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO               [base] body.dds
+__init__.py                822 INFO               apply mode 2
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Material] ~~~
+__init__.py                822 INFO               ambient    0.50 0.50 0.50
+__init__.py                822 INFO               diffuse    1.00 1.00 1.00
+__init__.py                822 INFO               specular   0.50 0.50 0.50
+__init__.py                822 INFO               emissive   0.00 0.00 0.00
+__init__.py                822 INFO               glossiness 12.500000
+__init__.py                822 INFO               alpha      1.000000
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- fix_clampmaterialalpha ---
+__init__.py                822 INFO       ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO         ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 0] ~~~
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO               clamping alpha value (1000.000000 -> 1.0)
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 1] ~~~
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Green] ~~~
+__init__.py                822 INFO               clamping alpha value (-1000.000000 -> 0.0)
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 2] ~~~
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Blue] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 3] ~~~
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Yellow] ~~~
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpp9x917yn/test_fix_clampmaterialalpha.nif ===
+__init__.py                822 INFO       --- fix_clampmaterialalpha ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO             ~~~ NiTriShape [Tri Cone 0] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO                 clamping alpha value (1000.000000 -> 1.0)
+__init__.py                822 INFO             ~~~ NiTriShape [Tri Cone 1] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Green] ~~~
+__init__.py                822 INFO                 clamping alpha value (-1000.000000 -> 0.0)
+__init__.py                822 INFO             ~~~ NiTriShape [Tri Cone 2] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Blue] ~~~
+__init__.py                822 INFO             ~~~ NiTriShape [Tri Cone 3] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Yellow] ~~~
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- fix_cleanstringpalette ---
+__init__.py                822 INFO       ~~~ NiNode [TestCleanStringPalette] ~~~
+__init__.py                822 INFO         ~~~ NiControllerManager [] ~~~
+__init__.py                822 INFO           parsing string palette
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpp6jjvu6d/test_fix_cleanstringpalette.nif ===
+__init__.py                822 INFO       --- fix_cleanstringpalette ---
+__init__.py                822 INFO         ~~~ NiNode [TestCleanStringPalette] ~~~
+__init__.py                822 INFO           ~~~ NiControllerManager [] ~~~
+__init__.py                822 INFO             parsing string palette
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- fix_detachhavoktristripsdata ---
+__init__.py                822 INFO       ~~~ NiNode [MiddleWolfRug01] ~~~
+__init__.py                822 INFO         ~~~ NiTriStrips [MiddleWolfRug01:0] ~~~
+__init__.py                822 INFO           ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO             ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO               ~~~ bhkListShape [] ~~~
+__init__.py                822 INFO                 ~~~ bhkNiTriStripsShape [] ~~~
+__init__.py                822 INFO                   detaching havok data
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp5vstj9t4/test_fix_detachhavoktristripsdata.nif ===
+__init__.py                822 INFO       --- fix_detachhavoktristripsdata ---
+__init__.py                822 INFO         ~~~ NiNode [MiddleWolfRug01] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [MiddleWolfRug01:0] ~~~
+__init__.py                822 INFO             ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO               ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO                 ~~~ bhkListShape [] ~~~
+__init__.py                822 INFO                   ~~~ bhkNiTriStripsShape [] ~~~
+__init__.py                822 INFO                     detaching havok data
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpvr765go0/test_fix_ffvt3rskinpartition.nif ===
+__init__.py                822 INFO       --- fix_ffvt3rskinpartition ---
+__init__.py                822 INFO         ~~~ NiNode [Bip01] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Bip01 Pelvis] ~~~
+__init__.py                822 INFO             ~~~ NiNode [Bip01 Spine] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 Spine1] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 Spine2] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 Neck] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 Head] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Clavicle] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 L UpperArm] ~~~
+__init__.py                822 INFO                         ~~~ NiNode [Bip01 L Forearm] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R Clavicle] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 R UpperArm] ~~~
+__init__.py                822 INFO                         ~~~ NiNode [Bip01 R Forearm] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 L Thigh] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 L Calf] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 L Foot] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Toe0] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 R Thigh] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 R Calf] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 R Foot] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R Toe0] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Body] ~~~
+__init__.py                822 INFO             updating skin partition
+__init__.py               6483 INFO     Counted minimum of 1 and maximum of 3 bones per vertex
+__init__.py               6486 INFO     Imposing maximum of 4 bones per vertex.
+__init__.py               6508 INFO     Imposing maximum of 4 bones per triangle (and hence, per partition).
+__init__.py               6572 INFO     Creating partitions
+__init__.py               6646 INFO     Created 12 small partitions.
+__init__.py               6649 INFO     Merging partitions.
+__init__.py               6681 INFO     Skin has 12 partitions.
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 0
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 1
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 2
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 3
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 4
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 5
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 6
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 7
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 8
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 9
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 10
+__init__.py               6760 INFO     Optimizing triangle ordering in partition 11
+__init__.py                822 INFO       overwriting /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpvr765go0/test_fix_ffvt3rskinpartition.nif
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpavsrfcrz/test_fix_cleanstringpalette.nif ===
+__init__.py                822 INFO       --- modify_substitutestringpalette ---
+__init__.py                822 INFO         ~~~ NiNode [TestCleanStringPalette] ~~~
+__init__.py                822 INFO           ~~~ NiControllerManager [] ~~~
+__init__.py                822 INFO             parsing string palette
+__init__.py                822 INFO             b'Test' -> b'Woops'
+__init__.py                822 INFO             b'Test NonAccum' -> b'Woops NonAccum'
+__init__.py                822 INFO             b'Test' -> b'Woops'
+__init__.py                822 INFO             b'Test NonAccum' -> b'Woops NonAccum'
+__init__.py                822 INFO       overwriting /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpavsrfcrz/test_fix_cleanstringpalette.nif
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- fix_addtangentspace ---
+__init__.py                822 INFO       ~~~ NiNode [Bip01] ~~~
+__init__.py                822 INFO         ~~~ NiNode [Bip01 Pelvis] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Bip01 Spine] ~~~
+__init__.py                822 INFO             ~~~ NiNode [Bip01 Spine1] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 Spine2] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 Neck] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 Head] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 L Clavicle] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L UpperArm] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 L Forearm] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 R Clavicle] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R UpperArm] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 R Forearm] ~~~
+__init__.py                822 INFO             ~~~ NiNode [Bip01 L Thigh] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 L Calf] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 L Foot] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 L Toe0] ~~~
+__init__.py                822 INFO             ~~~ NiNode [Bip01 R Thigh] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 R Calf] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 R Foot] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 R Toe0] ~~~
+__init__.py                822 INFO         ~~~ NiTriShape [Body] ~~~
+__init__.py                822 INFO           adding tangent space
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp4clqf3xu/test_fix_tangentspace.nif ===
+__init__.py                822 INFO       --- fix_deltangentspace & fix_addtangentspace ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Sphere] ~~~
+__init__.py                822 INFO             removing tangent space block
+__init__.py                822 INFO             adding tangent space
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp8ojva61x/test_fix_tangentspace.nif ===
+__init__.py                822 INFO       --- fix_deltangentspace ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Sphere] ~~~
+__init__.py                822 INFO             removing tangent space block
+__init__.py                822 INFO       --- fix_addtangentspace ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Sphere] ~~~
+__init__.py                822 INFO             adding tangent space
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmppbedye0h/test_fix_texturepath.nif ===
+__init__.py                822 INFO       --- fix_texturepath & fix_addtangentspace ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Sphere] ~~~
+__init__.py                822 INFO             adding tangent space
+__init__.py                822 INFO             ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO                 fixed file name 'path\test1.dds'
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO                 fixed file name 'an\other\path\also\backslashes\test2.dds'
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO                 fixed file name 'evil\rants\IS\not\good\no\no\test4.dds'
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO                 fixed file name 'doubleslash\test6.dds'
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpdzb9ze6a/test_opt_mergeduplicates.nif ===
+__init__.py                822 INFO       --- modify_delalphaprop ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO             ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 0] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO               ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 1] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [AlsoRed] ~~~
+__init__.py                822 INFO               ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 2] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Skin] ~~~
+__init__.py                822 INFO               ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 3] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO               ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO       overwriting /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpdzb9ze6a/test_opt_mergeduplicates.nif
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpwrera667/test_opt_mergeduplicates.nif ===
+__init__.py                822 INFO       --- modify_delbranches ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO             stripping this branch
+__init__.py                822 INFO           ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO             stripping this branch
+__init__.py                822 INFO           ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO             stripping this branch
+__init__.py                822 INFO           ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO             stripping this branch
+__init__.py                822 INFO           ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO             ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO               stripping this branch
+__init__.py                822 INFO             ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO               stripping this branch
+__init__.py                822 INFO             ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO               stripping this branch
+__init__.py                822 INFO             ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO               stripping this branch
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 0] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 1] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [AlsoRed] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 2] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Skin] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 3] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO                 stripping this branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO       overwriting /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpwrera667/test_opt_mergeduplicates.nif
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpfykl5ea6/test_vertexcolor.nif ===
+__init__.py                822 INFO       --- modify_delvertexcolor ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Cube] ~~~
+__init__.py                822 INFO             ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO               stripping this branch
+__init__.py                822 INFO             ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO               removing vertex colors
+__init__.py                822 INFO       overwriting /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpfykl5ea6/test_vertexcolor.nif
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- opt_collisionbox ---
+__init__.py                822 INFO       ~~~ NiNode [no_box_opt_test] ~~~
+__init__.py                822 INFO         ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO           ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO             ~~~ bhkMoppBvTreeShape [] ~~~
+__init__.py                822 INFO     --- opt_collisiongeometry ---
+__init__.py                822 INFO       ~~~ NiNode [TestBhkMoppBvTreeShape] ~~~
+__init__.py                822 INFO         ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO           ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO             ~~~ bhkMoppBvTreeShape [] ~~~
+__init__.py                822 INFO               optimizing mopp
+__init__.py                822 INFO               removing duplicate vertices
+__init__.py                822 INFO               (processing subshape 0)
+__init__.py                822 INFO               (num vertices in collision shape was 24 and is now 8)
+__init__.py                822 INFO               removing duplicate triangles
+__init__.py                822 INFO               (num triangles in collision shape was 12 and is now 12)
+__init__.py               2520 ERROR    Havok mopp generator failed, falling back on simple mopp (but collisions may be flawed in-game!).If you are using the PyFFI that was shipped with Blender, and you are on Windows, then you may wish to install the full version of PyFFI from https://github.com/niftools/pyffi instead, which includes the (closed source) Havok mopp generator.
+NoneType: None
+__init__.py                822 INFO         ~~~ NiTriShape [Stuff] ~~~
+__init__.py                822 INFO     --- opt_collisiongeometry ---
+__init__.py                822 INFO       ~~~ NiNode [TestBhkNiTriStripsShape] ~~~
+__init__.py                822 INFO         ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO           ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO     --- opt_collisiongeometry ---
+__init__.py                822 INFO       ~~~ NiNode [TestBhkPackedNiTriStripsShape] ~~~
+__init__.py                822 INFO         ~~~ bhkCollisionObject [] ~~~
+__init__.py                822 INFO           ~~~ bhkRigidBodyT [] ~~~
+__init__.py                822 INFO     --- opt_delunusedbones ---
+__init__.py                822 INFO       ~~~ NiNode [Bip01] ~~~
+__init__.py                822 INFO         ~~~ NiNode [Bip01 Pelvis] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Test] ~~~
+__init__.py                822 INFO             removing unreferenced bone
+__init__.py                822 INFO           ~~~ NiNode [Dummy] ~~~
+__init__.py                822 INFO             ~~~ NiNode [Bip01 Spine] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 Spine1] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 Spine2] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 Neck] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 Head] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 Brain] ~~~
+__init__.py                822 INFO                         removing unreferenced bone
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Clavicle] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 L UpperArm] ~~~
+__init__.py                822 INFO                         ~~~ NiNode [Bip01 L Forearm] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R Clavicle] ~~~
+__init__.py                822 INFO                       ~~~ NiNode [Bip01 R UpperArm] ~~~
+__init__.py                822 INFO                         ~~~ NiNode [Bip01 R Forearm] ~~~
+__init__.py                822 INFO               ~~~ NiNode [Bip01 L Thigh] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 L Calf] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 L Foot] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Toe0] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 L Toe1] ~~~
+__init__.py                822 INFO                       removing unreferenced bone
+__init__.py                822 INFO               ~~~ NiNode [Bip01 R Thigh] ~~~
+__init__.py                822 INFO                 ~~~ NiNode [Bip01 R Calf] ~~~
+__init__.py                822 INFO                   ~~~ NiNode [Bip01 R Foot] ~~~
+__init__.py                822 INFO                     ~~~ NiNode [Bip01 R Toe0] ~~~
+__init__.py                822 INFO     --- opt_delzeroscale ---
+__init__.py                822 INFO       ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO         ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 0] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 1] ~~~
+__init__.py                822 INFO             removing zero scaled branch
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 2] ~~~
+__init__.py                822 INFO             removing zero scaled branch
+__init__.py                822 INFO           ~~~ NiTriShape [Tri Cone 3] ~~~
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmpvuil0dsi/test_opt_mergeduplicates.nif ===
+__init__.py                822 INFO       --- opt_mergeduplicates ---
+__init__.py                822 INFO         ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO           ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO           ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO             ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 0] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO               ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 1] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [AlsoRed] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 2] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Skin] ~~~
+__init__.py                822 INFO               ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStrips [Tri Cone 3] ~~~
+__init__.py                822 INFO               ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO                 removing duplicate branch
+__init__.py                822 INFO               ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO       writing to temporary file
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- opt_mergeduplicates ---
+__init__.py                822 INFO       ~~~ NiNode [Scene Root] ~~~
+__init__.py                822 INFO         ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO         ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO         ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO         ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO         ~~~ NiNode [Cone] ~~~
+__init__.py                822 INFO           ~~~ NiZBufferProperty [] ~~~
+__init__.py                822 INFO             removing duplicate branch
+__init__.py                822 INFO           ~~~ NiVertexColorProperty [] ~~~
+__init__.py                822 INFO             removing duplicate branch
+__init__.py                822 INFO           ~~~ NiStencilProperty [] ~~~
+__init__.py                822 INFO             removing duplicate branch
+__init__.py                822 INFO           ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO             removing duplicate branch
+__init__.py                822 INFO           ~~~ NiTriStrips [Tri Cone 0] ~~~
+__init__.py                822 INFO             ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO               ~~~ NiSourceTexture [] ~~~
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO             ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Tri Cone 1] ~~~
+__init__.py                822 INFO             ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiMaterialProperty [AlsoRed] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiSpecularProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Tri Cone 2] ~~~
+__init__.py                822 INFO             ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Skin] ~~~
+__init__.py                822 INFO             ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO             ~~~ NiAlphaProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO           ~~~ NiTriStrips [Tri Cone 3] ~~~
+__init__.py                822 INFO             ~~~ NiTexturingProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiMaterialProperty [Red] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiWireframeProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiDitherProperty [] ~~~
+__init__.py                822 INFO               removing duplicate branch
+__init__.py                822 INFO             ~~~ NiTriStripsData [] ~~~
+__init__.py                822 INFO     === /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp9pziu_lw/test.nif ===
+__init__.py                822 INFO       --- fix_delunusedroots & opt_cleanreflists & fix_detachhavoktristripsdata & fix_texturepath & fix_clampmaterialalpha & fix_bhksubshapes & fix_emptyskeletonroots ---
+__init__.py                822 INFO         ~~~ NiNode [test] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Cube] ~~~
+__init__.py                822 INFO       --- opt_geometry ---
+__init__.py                822 INFO         ~~~ NiNode [test] ~~~
+__init__.py                822 INFO           ~~~ NiTriShape [Cube] ~~~
+__init__.py                822 INFO             removing duplicate vertices
+__init__.py                822 INFO             (num vertices was 8 and is now 8)
+__init__.py                822 INFO             optimizing triangle ordering
+__init__.py                822 INFO             (ATVR stable at 1.000)
+__init__.py                822 INFO             optimizing vertex ordering
+__init__.py               1349 ERROR    FAILED ON /var/folders/8f/h7_nkk411wdfptt2hhxnc3v40000gq/T/tmp9pziu_lw/test.nif - with the follow exception
+__init__.py               1350 ERROR    EXPT MSG : 'NiTriShapeData' object has no attribute 'extra_vectors_flags'
+__init__.py               1351 ERROR    If you were running a spell that came with PyFFI
+__init__.py               1352 ERROR    Please report this issue - https://github.com/niftools/pyffi/issues
+__init__.py               1241 WARNING  This script will modify your files, in particular if something goes wrong it may destroy them.
+__init__.py               1242 WARNING  Make a backup of your files before running this script.
+__init__.py               1244 INFO     Script aborted by user.
+__init__.py               1146 INFO     Finished.
+__init__.py                822 INFO     --- opt_geometry ---
+__init__.py                822 INFO       ~~~ NiNode [fan] ~~~
+__init__.py                822 INFO         ~~~ NiTriShape [fan01] ~~~
+__init__.py                822 INFO           removing duplicate vertices
+__init__.py                822 INFO           (num vertices was 32 and is now 32)
+__init__.py                822 INFO           optimizing triangle ordering
+__init__.py                822 INFO           (ATVR stable at 1.059)
+__init__.py                822 INFO           optimizing vertex ordering
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+optimize.py                348 WARNING  unused vertex
+__init__.py                822 INFO           recalculating tangent space
