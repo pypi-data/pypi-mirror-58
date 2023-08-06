@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ci/__init__.py
+ci/ci.py
+ci/git.py
+ci_py.egg-info/PKG-INFO
+ci_py.egg-info/SOURCES.txt
+ci_py.egg-info/dependency_links.txt
+ci_py.egg-info/not-zip-safe
+ci_py.egg-info/top_level.txt
+tests/__init__.py
+tests/test_ci.py
