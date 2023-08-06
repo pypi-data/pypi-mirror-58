@@ -1,0 +1,11 @@
+[console_scripts]
+nb = nefelibata.console:main
+
+[nefelibata.announcer]
+facebook = nefelibata.announcers.facebook:FacebookAnnouncer
+fawm = nefelibata.announcers.fawm:FAWMAnnouncer
+twitter = nefelibata.announcers.twitter:TwitterAnnouncer
+
+[nefelibata.publisher]
+S3 = nefelibata.publishers.s3:S3Publisher
+
