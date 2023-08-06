@@ -1,0 +1,10 @@
+README.md
+setup.py
+psycopg2_wrapper/__init__.py
+psycopg2_wrapper/database.py
+psycopg2_wrapper/validator.py
+psycopg2_wrapper.egg-info/PKG-INFO
+psycopg2_wrapper.egg-info/SOURCES.txt
+psycopg2_wrapper.egg-info/dependency_links.txt
+psycopg2_wrapper.egg-info/requires.txt
+psycopg2_wrapper.egg-info/top_level.txt
