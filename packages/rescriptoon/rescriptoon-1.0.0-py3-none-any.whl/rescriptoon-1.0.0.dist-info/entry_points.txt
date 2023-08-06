@@ -1,0 +1,3 @@
+[console_scripts]
+rescriptoon = rescriptoon._cli:main
+
