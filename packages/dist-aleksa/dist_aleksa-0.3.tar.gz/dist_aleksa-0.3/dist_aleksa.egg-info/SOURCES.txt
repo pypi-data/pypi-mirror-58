@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+dist_aleksa/Binomialdistribution.py
+dist_aleksa/Gaussiandistribution.py
+dist_aleksa/Generaldistribution.py
+dist_aleksa/__init__.py
+dist_aleksa.egg-info/PKG-INFO
+dist_aleksa.egg-info/SOURCES.txt
+dist_aleksa.egg-info/dependency_links.txt
+dist_aleksa.egg-info/not-zip-safe
+dist_aleksa.egg-info/top_level.txt
