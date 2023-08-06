@@ -1,0 +1,14 @@
+dcspy/__init__.py,sha256=cxh_BnxCGbdkjZZUA_0gBVxp5ENLxrAYmzeEzhCD_lE,80
+dcspy/aircrafts.py,sha256=11Eq09fSRCotDJeMbq5w8DoYy1FcCeUA8IG2G7ZjWVY,9829
+dcspy/dcsbios.py,sha256=jZA34nKqnS5hwEqHyMF_I5gkDLiwkCgJv7H6yf3KEx0,4645
+dcspy/dcspy.py,sha256=-wFeecWdP_JSocqzUCrqIWa86Qp9z_XIozTkC2lJa4A,3321
+dcspy/logitech.py,sha256=_j3dYrQCpRqY4LvZZxhfE0xU9WeOFXGhDxeQYMSwoGQ,5102
+dcspy/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcspy/sdk/lcd_sdk.py,sha256=y5z01IDsLlfjejZf0gLpyf4cBIrM9-nGPyN_BU3EZhI,3132
+dcspy-0.9.1.data/data/dcspy_data/dcspy.ico,sha256=xLJu7miJRS8tUec5f9RP7fi-KyyXKlQPvh3NSydA1tE,23535
+dcspy-0.9.1.dist-info/LICENSE.md,sha256=1_qfluaryS6m2UjF8gseFhoD0F3soV53MX8JX8kAyRE,1071
+dcspy-0.9.1.dist-info/METADATA,sha256=JHKa8OBNw9Z8iuu9tZWyGgJf62uQGUkYjNcuGHVvvBg,5293
+dcspy-0.9.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dcspy-0.9.1.dist-info/entry_points.txt,sha256=kUS7obc9s3S-exSoXxY4ykTclI9494SNKrvwnOwLWHM,43
+dcspy-0.9.1.dist-info/top_level.txt,sha256=alfi1xMOhs2IcfQo6LVlQpad3aUBrVKSIMo7PH81Jgc,6
+dcspy-0.9.1.dist-info/RECORD,,
