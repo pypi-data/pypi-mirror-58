@@ -1,0 +1,13 @@
+setup.py
+cogneed_protos/__init__.py
+cogneed_protos.egg-info/PKG-INFO
+cogneed_protos.egg-info/SOURCES.txt
+cogneed_protos.egg-info/dependency_links.txt
+cogneed_protos.egg-info/requires.txt
+cogneed_protos.egg-info/top_level.txt
+cogneed_protos/cogneed_ks/__init__.py
+cogneed_protos/cogneed_ks/service/__init__.py
+cogneed_protos/cogneed_ks/service/forward_audio_pb2.py
+cogneed_protos/cogneed_ks/service/forward_audio_pb2_grpc.py
+cogneed_protos/cogneed_ks/service/predict_pb2.py
+cogneed_protos/cogneed_ks/service/predict_pb2_grpc.py
