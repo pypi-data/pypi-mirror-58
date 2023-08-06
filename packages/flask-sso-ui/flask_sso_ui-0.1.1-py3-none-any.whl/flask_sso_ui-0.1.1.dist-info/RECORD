@@ -1,0 +1,8 @@
+flask_sso_ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_sso_ui/decorators.py,sha256=v7rsNApay_hOmubKlZWloHBm9rw6yR1NXceGpEeNhKU,1860
+flask_sso_ui/utils.py,sha256=Jzm3vNzA8zYJHG9SZBDe2g4h0F8HtAqFChknJISrnvc,1617
+flask_sso_ui-0.1.1.dist-info/LICENSE,sha256=RzlumpKiZBsriRDWxG_F7scno8FnSk8fI6_K1wyRFEI,1102
+flask_sso_ui-0.1.1.dist-info/METADATA,sha256=xbp0-BU2BkF29i4v3RC3T9QaEl--VCN7gj-dsKSSbCQ,683
+flask_sso_ui-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+flask_sso_ui-0.1.1.dist-info/top_level.txt,sha256=4rIoGDdb7D7r6_3z6QtHGQfgCwSZe_eq2gXTsIKCr_M,13
+flask_sso_ui-0.1.1.dist-info/RECORD,,
