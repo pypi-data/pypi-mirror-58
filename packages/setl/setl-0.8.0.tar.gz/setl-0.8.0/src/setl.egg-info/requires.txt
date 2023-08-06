@@ -1,0 +1,7 @@
+packaging
+pep517
+toml
+twine
+
+[test]
+pytest
