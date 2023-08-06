@@ -1,0 +1,8 @@
+setup.py
+xain_proto/__init__.py
+xain_proto.egg-info/PKG-INFO
+xain_proto.egg-info/SOURCES.txt
+xain_proto.egg-info/dependency_links.txt
+xain_proto.egg-info/not-zip-safe
+xain_proto.egg-info/top_level.txt
+xain_proto/fl/__init__.py
