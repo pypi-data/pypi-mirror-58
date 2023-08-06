@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: async-redis-objects
+Version: 0.0
+Summary: Object orient interface to aioredis.
+Home-page: https://github.com/adam-douglass/async-redis-objects/
+Author: Adam Douglass
+Author-email: douglass@malloc.ca
+License: UNKNOWN
+Keywords: utility redis oop object-oriented
+Platform: UNKNOWN
+Requires-Dist: aioredis
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+
+UNKNOWN
+
+

@@ -1,0 +1,8 @@
+async_redis_objects/__init__.py,sha256=m6rw0DuFyMM5kuA8-DEiUXgnwWQyGuH6JPig1cSL4B0,35
+async_redis_objects/mocks.py,sha256=9NNPKqs8YUQrKfCvNFSZ573DeWm0SUcUl0ib-gi_XWk,3903
+async_redis_objects/objects.py,sha256=nvvhwKd4DIB0Xnpq1qc98h4eDrIEzSmrBiL79vICvgU,3592
+async_redis_objects/test_objects.py,sha256=jRUx_J_yFefENqSlJp8C-4lz3hmQymcAea8UFUIkXKQ,3700
+async_redis_objects-0.0.dist-info/METADATA,sha256=aTjZMaAbGabbbK2Wylt4BXpdq4bxhoMAYV7vSNI1M1Q,450
+async_redis_objects-0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+async_redis_objects-0.0.dist-info/top_level.txt,sha256=m2U7-oim-JQ7JRhtp1cnCT-Is23-278RWYrPk_inBMg,20
+async_redis_objects-0.0.dist-info/RECORD,,
