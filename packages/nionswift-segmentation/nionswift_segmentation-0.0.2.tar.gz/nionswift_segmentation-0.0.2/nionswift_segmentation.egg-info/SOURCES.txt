@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+nion/segmentation/_stemdescriptor.c
+nion/segmentation/calculate_descriptor.c
+nion/segmentation/calculate_descriptor.h
+nion/segmentation/stemclustering.py
+nion/segmentation/stemdescriptor.py
+nion/segmentation/stemsegmentation.py
+nionswift_plugin/nion_segmentation/__init__.py
+nionswift_plugin/nion_segmentation/segMenuItem.py
+nionswift_segmentation.egg-info/PKG-INFO
+nionswift_segmentation.egg-info/SOURCES.txt
+nionswift_segmentation.egg-info/dependency_links.txt
+nionswift_segmentation.egg-info/not-zip-safe
+nionswift_segmentation.egg-info/top_level.txt
