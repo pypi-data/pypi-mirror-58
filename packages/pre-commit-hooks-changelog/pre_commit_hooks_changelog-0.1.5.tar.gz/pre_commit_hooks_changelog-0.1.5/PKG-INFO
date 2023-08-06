@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pre_commit_hooks_changelog
+Version: 0.1.5
+Summary: generate Changelog.md from yaml files in changelog folder
+Home-page: https://https://github.com/chrysa/pre-commit-hooks-changelog
+Author: Anthony Greau
+Author-email: greau.anthony@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/chrysa/pre-commit-hooks-changelog/archive/v0.1.5.tar.gz
+Description: # pre-commit-hooks-changelog
+        
+        generate a markdown changelog from folder of yaml files
+        
+        ## Using pre-commit-hooks-changelog with pre-commit
+        
+        Add this to your `.pre-commit-config.yaml`
+        
+            -   repo: https://github.com/chrysa/pre-commit-hooks-changelog
+                rev: v0.1.0  # Use the ref you want to point at
+                hooks:
+                -   id: generate-changelog
+                    files: 'changelog/.*(?<!\.yaml|.yml)$'
+        
+        ## Options
+        
+        |   |   |
+        |---|---|
+        | `--output-file` | define changelog outpout |
+        | `--changelog-folder` | source folder of changelogs |
+        | `--rebuild` | rebuild changelog see below |
+        
+        ### Rebuild options
+        
+        |   |   |
+        |---|---|
+        | `all` | rebuild changelog from scratch |
+        | `versions` | rebuild changelog for each version |
+        | `latest` | rebuild latest changelog |
+        | `home` | rebuild changelog file on repo root |
+        
+        ## Standalone
+        
+        `pip install pre-commit-hooks-changelog`
+        
+        ## [Changelog](changelog.md)
+        
+Keywords: pre-commit,changelog
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: pre_commit
+Provides-Extra: push
+Provides-Extra: tests

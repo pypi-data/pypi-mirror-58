@@ -1,0 +1,16 @@
+ruamel.yaml>=0.16.5
+
+[pre_commit]
+PyYAML==5.1.2
+isort==4.3.21
+pipenv==2018.11.26
+
+[push]
+twine
+
+[tests]
+coverage
+mock
+pytest
+pytest-env
+tox

@@ -1,0 +1,3 @@
+[console_scripts]
+pre-commit-generate-changelog = generate_changelog:main
+
