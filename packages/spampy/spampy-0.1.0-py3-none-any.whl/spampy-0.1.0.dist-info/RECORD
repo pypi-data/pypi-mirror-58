@@ -1,0 +1,15 @@
+spampy/__init__.py,sha256=t1czDZ7Fh7P0qcDEmniNnKtneBaAv5Wri3FZNKH9vjM,608
+spampy/__main__.py,sha256=1tWW6dX8vjpL-RWR5jQhVyWTjSMuBQ84kbzNnK6uTGo,2118
+spampy/dataset_downloader.py,sha256=UwyrN-v4_dBXTOqKFXdfmZPxa186DuBXrc-0xbcrnBQ,218
+spampy/email_processor.py,sha256=TctUSilPJlbbc1ZLWlbXlkIP0cck3COy0Ac46mg5N-Q,7900
+spampy/spam_classifier.py,sha256=qyNJ8rDOLYSLlcn7zx7x6Gk_hCZ2JP2mSNdAg8CobMs,2728
+spampy/datasets/spamTest.mat,sha256=QI3gObWVcIaP9Erqa568ivRaIWhdEVW07atsgXjJNzE,112717
+spampy/datasets/spamTrain.mat,sha256=CjzUskIW-VcOhorFZVMJ2aHDwJqGEGrMxT1-LBCIpX0,428814
+spampy/datasets/vocablary.txt,sha256=dawFyY0kVY2koN4oevBkQXcFNp1cpG1LjHXkRUANPyo,20239
+spampy-0.1.0.dist-info/COPYING,sha256=mPgn8EPNCIa4RpnlDFbfP34Sto-i-Wr7_vueQkeHez4,1071
+spampy-0.1.0.dist-info/LICENSE,sha256=mPgn8EPNCIa4RpnlDFbfP34Sto-i-Wr7_vueQkeHez4,1071
+spampy-0.1.0.dist-info/METADATA,sha256=fpeUkQyQushkUw8duelYqsrml1SpJe02muYbB2OdO_s,3474
+spampy-0.1.0.dist-info/NOTICE,sha256=tUUqXRcIzaAzsnKDuB1hc7ekVU2F04fgu-1hCaFYdsM,91
+spampy-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+spampy-0.1.0.dist-info/top_level.txt,sha256=jFk6lqPK6FpIqGr2Rp0ghHDv7OPjW0_cGRQlY1RSttc,7
+spampy-0.1.0.dist-info/RECORD,,

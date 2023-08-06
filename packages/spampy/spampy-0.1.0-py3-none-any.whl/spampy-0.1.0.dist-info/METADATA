@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: spampy
+Version: 0.1.0
+Summary: Spam filtering module with Machine Learning using SVM.
+Home-page: https://github.com/abdullahselek/spampy
+Author: Abdullah Selek
+Author-email: abdullahselek@gmail.com
+Maintainer: Abdullah Selek
+Maintainer-email: abdullahselek@gmail.com
+License: MIT License
+Download-URL: https://github.com/abdullahselek/spampy
+Keywords: machine learning,spam filter,support vector machine,spam,svm
+Platform: Any
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: click
+
+spampy
+======
+
+Spam filtering module with Machine Learning using SVM. **spampy** is a classifier that uses ``Support Vector Machines``
+which tries to classify given raw emails if they are spam or not.
+
+Support vector machines (SVMs) are supervised learning models with associated learning algorithms that analyze data used
+for classification and regression analysis. Given a set of training examples, each marked as belonging to one or the other
+of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making
+it a non-probabilistic binary linear classifier.
+
+Many email services today provide spam filters that are able to classify emails into spam and non-spam email with high accuracy.
+**spampy** is a learning project that you can use filtering spam mails.
+
+**spampy** uses two different datasets for classification. One of the datasets is already imported inside the project under ``spampy/datasets/`` folder.
+Second dataset is `enron-spam <http://www.aueb.gr/users/ion/data/enron-spam/>`_ dataset and inside the ``spampy`` folder I created a shell script which
+downloads and extract it for you.
+
+Project tree
+------------
+
+* email_processor ``Helper to collect features and labels from datasets.``
+* spam_classifier ``Classifies given raw emails.``
+* dataset_downloader ``Enron dataset downloader which uses dataset_downloader.sh``
+
+Dependency List
+---------------
+
+* scikit_learn
+* scipy
+* numpy
+* nltk
+* click (for CLI)
+
+Two main function of ``spam_classifier`` classifies given raw email.
+
+* ``classify_email``
+* ``classify_email_with_enron``
+
+CLI
+---
+
+For available commands ``python -m spampy -h``
+
+.. code-block::
+
+    Spam filtering module with Machine Learning using SVM.
+    Usage
+      $ python spampy [<options>]
+    Options
+      --help, -h              Display help message
+      --download, -d          Download enron dataset
+      --eclassify, -ec        Classify given raw email with enron dataset, prompts for raw email
+      --classify, -c          Classify given raw email, prompts for raw email
+      --version, -v           Display installed version
+    Examples
+      $ python spampy --help
+      $ python spampy --download
+      $ python spampy --eclassify
+      $ python spampy --classify
+
+
