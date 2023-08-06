@@ -1,0 +1,6 @@
+path<14,>=13.0.0
+
+[dev]
+releasecmd<1,>=0.1.0
+twine
+wheel
