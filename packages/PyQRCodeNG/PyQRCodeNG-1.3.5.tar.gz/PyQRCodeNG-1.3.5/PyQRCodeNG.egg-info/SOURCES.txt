@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+PyQRCodeNG.egg-info/PKG-INFO
+PyQRCodeNG.egg-info/SOURCES.txt
+PyQRCodeNG.egg-info/dependency_links.txt
+PyQRCodeNG.egg-info/entry_points.txt
+PyQRCodeNG.egg-info/requires.txt
+PyQRCodeNG.egg-info/top_level.txt
+pyqrcodeng/__init__.py
+pyqrcodeng/builder.py
+pyqrcodeng/cli.py
+pyqrcodeng/qrspecial.py
+pyqrcodeng/tables.py
