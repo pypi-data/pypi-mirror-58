@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: wrapymongo
+Version: 0.1
+Summary: A wrapper for pymonogo driver
+Home-page: http://github.com/shreyasgokhale/wrapymongo
+Author: Shreyas Gokhale
+Author-email: shreyasgokhale@gmail.com
+License: MIT
+Description: Really, the funniest around.
+Keywords: mongo,mongodb,pymongo,mongodriver,wrapymongo
+Platform: UNKNOWN
