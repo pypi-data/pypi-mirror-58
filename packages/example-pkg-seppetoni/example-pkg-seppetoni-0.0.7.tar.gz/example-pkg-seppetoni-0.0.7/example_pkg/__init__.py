@@ -1,0 +1,2 @@
+from .myclass import MyClass
+

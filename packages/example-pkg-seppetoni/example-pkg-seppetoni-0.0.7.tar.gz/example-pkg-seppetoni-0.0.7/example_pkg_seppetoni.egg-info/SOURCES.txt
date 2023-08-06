@@ -1,0 +1,10 @@
+README.md
+setup.py
+example_pkg/__init__.py
+example_pkg/main.py
+example_pkg/myclass.py
+example_pkg_seppetoni.egg-info/PKG-INFO
+example_pkg_seppetoni.egg-info/SOURCES.txt
+example_pkg_seppetoni.egg-info/dependency_links.txt
+example_pkg_seppetoni.egg-info/entry_points.txt
+example_pkg_seppetoni.egg-info/top_level.txt
