@@ -1,0 +1,14 @@
+setuptools>=38.3.0
+chardet<4,>=3.0.4
+
+[all]
+
+[dev]
+releasecmd<1,>=0.1.0
+twine
+wheel
+
+[test]
+Faker>=1.0.2
+pytest
+six
