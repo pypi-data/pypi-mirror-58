@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bulb-channels
+Version: 2.4.0
+Summary: For of the django-channels project to make it compatible with bulb.
+Home-page: http://github.com/Bulb-Core/bulb-channels
+Author: LilianCruanes
+Author-email: cruaneslilian@protonmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.5
+Provides-Extra: tests
