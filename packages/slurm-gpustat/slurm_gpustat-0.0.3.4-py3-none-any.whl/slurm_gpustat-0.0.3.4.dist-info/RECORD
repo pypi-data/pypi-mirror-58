@@ -1,0 +1,7 @@
+slurm_gpustat/daemon.py,sha256=sslSHOsVYkkVB4qQ02OYhW7Jy7kWlhjTIAs6WHHPUpQ,3785
+slurm_gpustat/slurm_gpustat.py,sha256=3QikvL6hKE-d21cQcb4i-tF81gsfFsclRIN6hE0l8xo,21843
+slurm_gpustat-0.0.3.4.dist-info/METADATA,sha256=cNQ16gOMLWMcAuD1tVIY_CSKqBHe7obo2pZxMz9EgwY,2150
+slurm_gpustat-0.0.3.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+slurm_gpustat-0.0.3.4.dist-info/entry_points.txt,sha256=2QdzbXsUa1XT4MX-axqF8qksmnIbWGYvaeaZ6VGOBqs,68
+slurm_gpustat-0.0.3.4.dist-info/top_level.txt,sha256=XEjqkBiUnG9gDowXnR4tfnrso3KQpWZM24mWhF5P8tA,14
+slurm_gpustat-0.0.3.4.dist-info/RECORD,,
