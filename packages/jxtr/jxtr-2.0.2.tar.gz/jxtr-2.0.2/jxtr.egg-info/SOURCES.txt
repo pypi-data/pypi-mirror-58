@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+jxtr/__init__.py
+jxtr/t.py
+jxtr.egg-info/PKG-INFO
+jxtr.egg-info/SOURCES.txt
+jxtr.egg-info/dependency_links.txt
+jxtr.egg-info/not-zip-safe
+jxtr.egg-info/top_level.txt
