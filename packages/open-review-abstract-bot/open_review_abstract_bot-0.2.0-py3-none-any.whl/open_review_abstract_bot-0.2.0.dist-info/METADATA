@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: open-review-abstract-bot
+Version: 0.2.0
+Summary: 
+License: BSD-3-Clause
+Author: Stelios Tymvios
+Author-email: solliet@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attr (>=0.3.1,<0.4.0)
+Requires-Dist: beautifulsoup4 (>=4.8.2,<5.0.0)
+Requires-Dist: html2text (>=2019.9.26,<2020.0.0)
+Requires-Dist: praw (>=6.4.0,<7.0.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)

@@ -1,0 +1,3 @@
+[console_scripts]
+openreviewbot=open_review_abstract_bot.console:run
+
