@@ -1,0 +1,35 @@
+#!python
+
+template = []
+template.append('from midasbdk.brains.brain import Brain\n')
+template.append('from midasbdk.brains.brain import execfeature\n')
+template.append('from midasbdk.brains.brain import regfeature\n')
+template.append('\n')
+template.append('from midasbdk.midas.Stock.util import download_stock_codes\n')
+template.append('\n')
+template.append('class template(Brain):\n')
+template.append('    def __init__(self, trader, timeInterval):\n')
+template.append('        super().__init__(trader)\n')
+template.append('\n')
+template.append('    def getCandidates(self):\n')
+template.append('        return download_stock_codes(\'kosdaq\')\n')
+template.append('\n')
+template.append('    def getRequiredSeqLen(self):\n')
+template.append('        return 12\n')
+template.append('\n')
+template.append('    @execfeature\n')
+template.append('    def preprocessor(self, data):\n')
+template.append('        pass\n')
+template.append('\n')
+template.append('    def doTrade(self, data, code):\n')
+template.append('        if self.position:\n')
+template.append('            #self.skipSell()\n')
+template.append('            #self.processSell(...)\n')
+template.append('        else:\n')
+template.append('            #self.skipBuy()\n')
+template.append('            #self.processBuy()\n')
+template.append('\n')
+
+with open('tmp','w') as f:
+    for line in template:
+        f.write(line)
