@@ -1,0 +1,10 @@
+yahooquery/__init__.py,sha256=TCYRAp9pYLkaArKR_yMfCPzBtd5TWOO8tTyci71hs-s,59
+yahooquery/base.py,sha256=xe0VzaLvaMWuFQsT7nVBUNFX_f-O07gTYB7nsZ6r6uU,3007
+yahooquery/ticker.py,sha256=ttXJdyzxR6BjmF6r-WLDZD5Wtj2Gbq8_Dfd9LetBrOo,22931
+yahooquery/utils/__init__.py,sha256=1MVEiDqbG6-wMvYK3MOrPe6jyScpMtinzKYrsk4Mhao,515
+yahooquery/utils/exceptions.py,sha256=vvpPrCDhgTfCzJ6dqPnZ809Nt5sd3xnbJMKUadLDyrg,411
+yahooquery-1.0.6.dist-info/LICENSE.txt,sha256=Qvf9-3dT7a0MB-VvCCDyF2YetMLrynqZm7psOp6aszY,1088
+yahooquery-1.0.6.dist-info/METADATA,sha256=gR7Re6kTIUDk8OTMW4NR0Qzsqd7hGSbaB9LvkgFd65I,7451
+yahooquery-1.0.6.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+yahooquery-1.0.6.dist-info/top_level.txt,sha256=k3WewmkysFwqdZ2FZrillR8iGCPv1kDuI0VlGiaIya0,11
+yahooquery-1.0.6.dist-info/RECORD,,
