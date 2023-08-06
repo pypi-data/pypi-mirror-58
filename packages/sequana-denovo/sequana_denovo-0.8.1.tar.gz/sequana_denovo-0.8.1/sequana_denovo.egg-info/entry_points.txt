@@ -1,0 +1,4 @@
+[console_scripts]
+sequana_denovo = sequana_pipelines.denovo.main:main
+sequana_pipelines_denovo = sequana_pipelines.denovo.main:main
+

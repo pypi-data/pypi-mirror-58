@@ -1,0 +1,9 @@
+- run_busco
+- bwa
+- freebayes
+- picard
+- prokka
+- quast.py
+- spades
+- sambamba
+- samtools
