@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: yaml2tree
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/0cd/yaml2tree
+Author: Puneet Arora
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
