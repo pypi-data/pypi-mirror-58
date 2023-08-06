@@ -1,0 +1,12 @@
+dataflow_cookiecutter/__init__.py,sha256=trW8BqbxwJMF0-cM87-5tsDSFDBtfYCSpJzh2WEl8b0,181
+dataflow_cookiecutter/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataflow_cookiecutter/cli/config.py,sha256=24hZLRmEO97aMHscMvCY5RptdjxuIz4_0JBQrqBYSoU,166
+dataflow_cookiecutter/cli/ls.py,sha256=-tl4FF7qIfy_UQSYK3QWqaXXa3jmK-FaVOPOnOCnFHw,662
+dataflow_cookiecutter/cli/main.py,sha256=oTm2BKQUBZFkpDfUgiTfQX37tfpRDKvM0Rq__OkdyXY,738
+dataflow_cookiecutter/cli/mixins.py,sha256=SNbq5RgiIXFTvj-y-UoQLTKvynPK5NIQIpdWm7CS9L8,305
+dataflow_cookiecutter/cli/new.py,sha256=qD_qIHfwaatOOQcwMxOtWRYgxNoDAWGOHF6aL00tdx0,3221
+dataflow_cookiecutter-1.0.0a1.dist-info/METADATA,sha256=NySqCEfjdsYHcdvGZCu1m563ZBJ08MXKMx9vMqAz2V8,2959
+dataflow_cookiecutter-1.0.0a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dataflow_cookiecutter-1.0.0a1.dist-info/entry_points.txt,sha256=0UA-WGZOVXdu_VBH2lv9hQtvr2ZWnAa7KcUEOCjTw58,79
+dataflow_cookiecutter-1.0.0a1.dist-info/top_level.txt,sha256=ihHnw5SYxB0gp2_I8T1RppTuw2rzUjYvFJTnrXUWcS0,22
+dataflow_cookiecutter-1.0.0a1.dist-info/RECORD,,
