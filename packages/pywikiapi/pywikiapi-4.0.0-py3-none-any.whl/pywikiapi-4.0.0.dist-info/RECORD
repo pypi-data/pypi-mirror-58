@@ -1,0 +1,11 @@
+pywikiapi/Site.py,sha256=cUGSDATTBEI0T_s7tdtn7tX6a3lzj9YE7whcmt0UpwE,16701
+pywikiapi/__init__.py,sha256=pfIeOWFEh23aAu8mUFsipfYNcJDCk4JPstanCZBOZpk,330
+pywikiapi/api.py,sha256=u0GAa1TNn8-p_RCh5bu-rdphdwLmCuMtjoxMpR8Lv54,606
+pywikiapi/utils.py,sha256=BrpDoDVqTdIR9p1eh8046qyiyQwgAsoFvwJVne3_Ndo,1759
+pywikiapi/version.py,sha256=SQa6Ci17DORmGXi_wkOW9pPlUojF-qtjH6NV1WOThsU,22
+pywikiapi-4.0.0.dist-info/LICENSE,sha256=VS8o2vhhMdCG7VlxrFhOY6_V8TnsHGKt5ooejUs7W7c,1076
+pywikiapi-4.0.0.dist-info/METADATA,sha256=0FG3Xao-KUrfBxGkVPcWPVGOvC8odSNFHElmWUTIajI,2823
+pywikiapi-4.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pywikiapi-4.0.0.dist-info/entry_points.txt,sha256=Ur6LHoeossgw2Pyi1yuDI9NxNXUaL8GN4SRoDg0g2Rk,52
+pywikiapi-4.0.0.dist-info/top_level.txt,sha256=8uwtpi44QmhdVcK8nFBmF5M2jMH48RTaS21fmuTJnqM,10
+pywikiapi-4.0.0.dist-info/RECORD,,
