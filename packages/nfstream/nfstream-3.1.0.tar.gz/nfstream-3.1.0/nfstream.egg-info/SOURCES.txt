@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nfstream/__init__.py
+nfstream/cache.py
+nfstream/entry.py
+nfstream/ndpi.py
+nfstream/observer.py
+nfstream/plugin.py
+nfstream/streamer.py
+nfstream.egg-info/PKG-INFO
+nfstream.egg-info/SOURCES.txt
+nfstream.egg-info/dependency_links.txt
+nfstream.egg-info/requires.txt
+nfstream.egg-info/top_level.txt
+nfstream/libs/libndpi.so
