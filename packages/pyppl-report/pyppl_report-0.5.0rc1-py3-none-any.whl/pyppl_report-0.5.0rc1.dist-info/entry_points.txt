@@ -1,0 +1,7 @@
+[console_scripts]
+pyppl-report=pyppl_report.console:main
+pyppl_report=pyppl_report.console:main
+
+[pyppl]
+pyppl_report=pyppl_report
+
