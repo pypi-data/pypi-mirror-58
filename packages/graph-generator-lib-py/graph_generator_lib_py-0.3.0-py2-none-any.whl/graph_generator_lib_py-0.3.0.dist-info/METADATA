@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: graph-generator-lib-py
+Version: 0.3.0
+Summary: Library for generating graphs for Grapls
+Home-page: https://github.com/insanitybit/ggraph-generator-lib-py/
+Author: insanitybit
+Author-email: insanitybit@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: protobuf
+
+UNKNOWN
+
+
