@@ -1,0 +1,7 @@
+README.md
+bver.py
+setup.py
+bver.egg-info/PKG-INFO
+bver.egg-info/SOURCES.txt
+bver.egg-info/dependency_links.txt
+bver.egg-info/top_level.txt
