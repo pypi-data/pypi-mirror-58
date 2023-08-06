@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: queued
+Version: 2019.12.24
+Summary: turn python functions into mini high performance microservices
+Home-page: https://github.com/CodyKochmann/queued
+Author: Cody Kochmann
+Author-email: kochmanncody@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/CodyKochmann/queued/tarball/2019.12.24
+Description: UNKNOWN
+Keywords: queued,queue,async,nonblocking,blocking,thread,multiprocessing,parallel,message,event,push,microservice,microservices,performance
+Platform: UNKNOWN
