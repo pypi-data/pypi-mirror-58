@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cresbot
+Version: 0.0.1
+Summary: A library for interacting with the RuneScape and RuneScape Wiki APIs.
+Home-page: https://gitlab.com/weirdgloop/cresbot-lib
+Author: Matthew Dowdell
+Author-email: matthew.dowdell@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: dataclasses ; python_version < "3.7"
+
+UNKNOWN
+
+
