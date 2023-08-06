@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: seoapi
+Version: 2019.12.25
+Summary: Библиотека для сервиса seoapi.ru
+Home-page: https://github.com/pavelmaksimov/seoapi-lib
+Author: Pavel Maksimov
+License: MIT
+Description: # Библиотека для сервиса seoapi.ru
+        
+        Написано на python версии 3.6
+        
+        ### Установка
+            pip install seoapi
+            
+        ## Инструкция
+        
+        Писать лень. Смотрите как пользоваться в файлах тестов.
+Keywords: python,seo,api,seoapi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+README.md
+setup.py
+seoapi/__init__.py
+seoapi/exceptions.py
+seoapi/seoapi.py
+seoapi.egg-info/PKG-INFO
+seoapi.egg-info/SOURCES.txt
+seoapi.egg-info/dependency_links.txt
+seoapi.egg-info/requires.txt
+seoapi.egg-info/top_level.txt
