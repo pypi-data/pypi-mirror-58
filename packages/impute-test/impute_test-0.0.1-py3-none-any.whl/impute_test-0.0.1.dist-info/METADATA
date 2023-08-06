@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: impute-test
+Version: 0.0.1
+Summary: 测试poetry上传到pipy
+Home-page: https://github.com/Asdil/impute_test
+License: MIT
+Author: Asdil
+Author-email: fake_add@126.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
+Project-URL: Repository, https://github.com/Asdil/impute_test
+Description-Content-Type: text/markdown
+
+# impute_test
+打包到pipy的示例
+
