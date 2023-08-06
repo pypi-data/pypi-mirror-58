@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dockship
+Version: 0.1.3
+Summary: Run AI models in Docker containers
+Home-page: https://github.com/dockship/dockship
+Author: Unreal AI Technologies Pvt. Ltd.
+Author-email: deepak@unrealai.xyz
+License: UNKNOWN
+Description: # dockship
+        
+        ### Installation
+        You can install dockship from PyPI:
+        
+        `pip install dockship`
+        
+        dockship requires python == 3.6 and docker installed.
+        
+        ### How to use
+        `dockship` is a command line application. It supports two commands:
+        
+        ### run
+        
+         Downloads model from Dockship and runs the model in docker container.
+         
+         Args:
+         
+            modelID (string) : Model's unique id shown at dockship.io
+            port (string)    : Port number for running model
+            
+        ### stop
+        
+         Stops the already runnng model.
+         
+         Args:
+        
+            modelID : Model's unique id which needs to be stopped.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+README.md
+setup.py
+dockship/__init__.py
+dockship/__main__.py
+dockship/utils.py
+dockship.egg-info/PKG-INFO
+dockship.egg-info/SOURCES.txt
+dockship.egg-info/dependency_links.txt
+dockship.egg-info/entry_points.txt
+dockship.egg-info/requires.txt
+dockship.egg-info/top_level.txt
