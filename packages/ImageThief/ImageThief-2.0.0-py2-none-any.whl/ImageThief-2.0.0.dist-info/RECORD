@@ -1,0 +1,9 @@
+ImageThief/__init__.py,sha256=eyFgNxFMAw8tvdUl1PzBUb3WOWYPm7aQFCqqA5Z-C3g,59
+ImageThief/_endpointProcessor.py,sha256=y1GZdET5PxOLlm4Gtoon4uXN7JykZCT96MFWSjU92_4,904
+ImageThief/_fileDecoder.py,sha256=p_NF4_ZE4XfBMQMboHEoaIO9oq5QtcOyJUiutNV15Zw,383
+ImageThief/_globalDict.py,sha256=KB4V45OqT90JL0LvM10C1phxUOvz0Au_vH92Gd_euV4,69
+ImageThief/_thief.py,sha256=oBIN35yuQFBg94Gk1fgbggSr1JT0L-p2DL-G248RofM,977
+ImageThief-2.0.0.dist-info/METADATA,sha256=HqfafKtqK7BYADJhQPaTEi9uy4ZexXZMPiPfLvkNnNE,1651
+ImageThief-2.0.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+ImageThief-2.0.0.dist-info/top_level.txt,sha256=nevvF4N_yqwHqzN5gUDCImonRmOcnNBT285Vm22A148,11
+ImageThief-2.0.0.dist-info/RECORD,,
