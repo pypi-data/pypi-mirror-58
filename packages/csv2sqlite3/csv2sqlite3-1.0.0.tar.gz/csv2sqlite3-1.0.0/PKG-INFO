@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: csv2sqlite3
+Version: 1.0.0
+Summary: Simple console script for fast data analyse
+Home-page: https://github.com/machineandme/csv2sqlite3
+Author: Machine & Me
+Author-email: ceo@machineand.me
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/machineandme/csv2sqlite3/issues
+Project-URL: Funding, https://www.patreon.com/machineandme
+Project-URL: Source, https://github.com/machineandme/csv2sqlite3
+Description: # Csv2Sqlite3
+        
+        [![Build Status](https://travis-ci.org/machineandme/csv2sqlite3.svg?branch=master)](https://travis-ci.org/machineandme/csv2sqlite3)
+        
+        Simple console script for fast data analyse
+        
+        :wq
+Keywords: csv sqlite
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.*
+Description-Content-Type: text/markdown
