@@ -1,0 +1,8 @@
+omikuji/__init__.py,sha256=EqPmG6X-4nj833hXbBZVoJE2O7P2Hze5ny5FTi_cmpI,4133
+omikuji/_libomikuji.py,sha256=Snm9A4cuRSqAGiSLX_deFbKW-tbC4wlKGWkEYxonMIU,207
+omikuji/_libomikuji__ffi.py,sha256=Ja7PEVxhvIkTzvvg8PfVvb3122AJM__zqQhEB0muf4I,2560
+omikuji/_libomikuji__lib.cp36-win_amd64.pyd,sha256=njeB-t0448w86aQuSOMP5gQuu2r2l9aPeWzvzEy0Jo4,867328
+omikuji-0.2.0.dist-info/METADATA,sha256=RYS9K4Hmqr-mjQ6OGTXMTuB9c69Syo6UzDTct2s07XQ,16463
+omikuji-0.2.0.dist-info/RECORD,,
+omikuji-0.2.0.dist-info/WHEEL,sha256=xq3J6sB2oJqjv0tDC7tGUGvne1fOugw1JUmk86QA7UM,106
+omikuji-0.2.0.dist-info/top_level.txt,sha256=50zNAoAOdVkzcWxdiqJCt8nzuGE-HlnKQGfJrwdGBUU,8
