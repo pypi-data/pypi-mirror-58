@@ -1,0 +1,239 @@
+body {
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .text-center {
+        width: 100%;
+        max-width: 720px;
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+    }
+
+    p#loading_text {
+        margin: 1rem 0;
+    }
+}
+
+.filetree {
+    ul.voila-notebooks {
+        margin-top: 10px;
+    }
+}
+
+.navbar {
+    background-color: #F37626 !important;
+    height: 51px;
+
+    .navbar-brand {
+        color: #fff;
+        font-weight: 300;
+
+        &:hover {
+            color: #fff !important;
+        }
+    }
+
+    .navbar-nav {
+        li {
+            a {
+                color: #FFF;
+            }
+
+            &:not(.active) a {
+                &:hover {
+                    color: #DDD;
+                }
+            }
+        }
+    }
+}
+
+.dashboard-container {
+    width: 100%;
+    height: calc(100% - 51px);
+    padding: 0.5rem;
+
+    .sidebar {
+        padding: 15px 0 15px 15px;
+    }
+
+    .single-page {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .section {
+        width: 100%;
+        height: 100%;
+
+        &.section-row {
+            // This are for orientation=rows
+            padding-top: 0.5rem;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &:only-child {
+                padding: 0;
+            }
+
+            + .section-column {
+                padding-top: 0.5rem;
+                padding-left: 0;
+            }
+        }
+
+        &.section-column {
+            // This are for orientation=rows -> flex direction=column
+            padding-left: 0.5rem;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:only-child {
+                padding: 0;
+            }
+
+            + .section-row {
+                padding-top: 0;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    .nav-tabs {
+        a {
+            color: #495057;
+        }
+    }
+
+    .tab-content {
+
+        &.page-tabs {
+            width: 100%;
+            height: 100%;
+        }
+
+        &.section-tabs{
+            width: 100%;
+            height: 100%;
+            background-color: #FFF;
+            border-radius: .25rem;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-top: none;
+
+            .card {
+                border: none;
+                border-radius: 0;
+            }
+        }
+    }
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+
+    // Read as cards inside a row section
+    &.card-row {
+        margin-right: 0.5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    // Read as cards inside a columns section
+    &.card-column {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .card-body {
+        padding: 0.5rem;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Modify default ouput of cells
+
+table.dataframe {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #000;
+    font-size: 12px;
+    table-layout: fixed;
+    width: 100%;
+
+    thead {
+        border-bottom: 1px solid #000;
+        vertical-align: bottom;
+    }
+    tr, th, td {
+        text-align: right;
+        vertical-align: middle;
+        padding: 0.5em 0.5em;
+        line-height: normal;
+        white-space: normal;
+        max-width: none;
+        border: none;
+    }
+    th {
+        font-weight: bold;
+    }
+    tbody tr:nth-child(odd) {
+        background: #f5f5f5;
+    }
+    tbody tr:hover {
+        background: rgba(66, 165, 245, 0.2);
+    }
+    * + table {margin-top: 1em;}
+}
+
+.js-plotly-plot {
+    width: 100%;
+    height: 100%;
+}
+
+.bk-root {
+    width: 100%;
+    height: 100%;
+}
+
+// ipywidgets
+
+.jupyter-widgets {
+
+    .widget-inline-hbox {
+        width: 99%;
+
+        input, select {
+            width: 100%;
+        }
+
+        .slider-container {
+            width: 80%;
+        }
+    }
+}
