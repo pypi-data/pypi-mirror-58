@@ -1,0 +1,10 @@
+isogeo-pysdk<3.4,==3.2.*
+docxtpl==0.6.*
+
+[dev]
+black
+python-dotenv
+
+[test]
+pytest
+pytest-cov
