@@ -1,0 +1,4 @@
+#!python
+
+from enconv import enportal
+enportal.main()
