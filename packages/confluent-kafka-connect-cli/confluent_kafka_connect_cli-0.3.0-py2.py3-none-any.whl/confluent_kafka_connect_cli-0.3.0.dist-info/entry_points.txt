@@ -1,0 +1,3 @@
+[console_scripts]
+kc = confluent_kafka_connect_cli.cli:main
+

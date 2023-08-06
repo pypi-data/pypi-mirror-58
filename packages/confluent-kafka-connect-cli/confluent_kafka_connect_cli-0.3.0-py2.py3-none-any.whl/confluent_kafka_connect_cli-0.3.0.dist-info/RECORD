@@ -1,0 +1,10 @@
+confluent_kafka_connect_cli/__init__.py,sha256=wV2teeTiLo5zY-8jdgXe9ZbFjFQo9TPBZgvTggx-duo,153
+confluent_kafka_connect_cli/call.py,sha256=2KIl8pNSTGUr7RavyCg_TyoAyqoRa9aQaC1oQ0NpbZc,2291
+confluent_kafka_connect_cli/cli.py,sha256=fA9M2xlXCrx0NJ3kf-3mZJGAcp-vcJ-_FrbC6aWx2XA,1547
+confluent_kafka_connect_cli-0.3.0.dist-info/AUTHORS.rst,sha256=Na-nTr77K9ZpnfYO5SSxONzR5UjKyZhb4bYqrBpe_QU,164
+confluent_kafka_connect_cli-0.3.0.dist-info/LICENSE,sha256=tEJE0LD7aM6TgjnbZeV8rZnBOCRvp9sehllCjFdyN8M,1070
+confluent_kafka_connect_cli-0.3.0.dist-info/METADATA,sha256=ndRHvvPtwqlcOtwPg5BO4BY0wckDPvocZk5AN7lbpqw,2062
+confluent_kafka_connect_cli-0.3.0.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+confluent_kafka_connect_cli-0.3.0.dist-info/entry_points.txt,sha256=Os2RgOCd4O173MdgHqELBO9173z8DfIbGsvnSup4mkA,61
+confluent_kafka_connect_cli-0.3.0.dist-info/top_level.txt,sha256=mu8d4xinmaCQE5aEZpcgz9RWjxHJUvwwTLgvia1Y-OQ,28
+confluent_kafka_connect_cli-0.3.0.dist-info/RECORD,,
