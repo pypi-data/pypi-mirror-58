@@ -1,0 +1,12 @@
+unificontrol/__init__.py,sha256=HrCQ5zBhBl_lshzPuDiMReJCPqdSixE1yULkKEW6ETg,1136
+unificontrol/constants.py,sha256=OvzKpdoeDhTt-c7Zh9zILq5HdGDahccBlalClP-s2MQ,1493
+unificontrol/exceptions.py,sha256=yHJQHFwib2mbFqljnI7UPxCnsDmQwrRs_eHExF7NgRM,448
+unificontrol/json_fixers.py,sha256=BgvmMvddfEx-D0z_vIZbh-CiqDsIPdmyAvI_UQSZDdA,4907
+unificontrol/metaprogram.py,sha256=NQ7IXBMyK5yPT60LEzf1geknKAGiFgIff7GfW6GQq2E,5864
+unificontrol/pinned_requests.py,sha256=Lodsm2Iw1sc_xJAZpMTpnL_jUgN9ZQyJgKSJd6lcJeg,3143
+unificontrol/unifi.py,sha256=OBWStPIESHp9yta0A68xLWfqHHF96LsNJGJU78Z99nE,37042
+unificontrol-0.2.6.dist-info/LICENSE.txt,sha256=ac6UYGpmH6MpDurKIfP5rX1z3Jhf-jRqEQRwRUj3LZM,9139
+unificontrol-0.2.6.dist-info/METADATA,sha256=C8nxNel-mErumW6aZ7ILEgNqr_1EYrbnKcIkyXO3cnE,2095
+unificontrol-0.2.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+unificontrol-0.2.6.dist-info/top_level.txt,sha256=26CkFJk9XOGzgtUKRyz9vT3QL7dTpuZD7SfzMFseAls,13
+unificontrol-0.2.6.dist-info/RECORD,,
