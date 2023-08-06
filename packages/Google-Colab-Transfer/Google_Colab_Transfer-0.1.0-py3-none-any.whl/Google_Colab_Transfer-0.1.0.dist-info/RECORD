@@ -1,0 +1,9 @@
+colab_transfer/__init__.py,sha256=GXCpJTPZta4yRPStp8wwn6T5lNWq_Qoew1TDRHO1LbM,216
+colab_transfer/google_drive.py,sha256=pQSz8mFsxSQYMkRsjxVlZRtqtZsPm0C6WzRKLJgAKa8,759
+colab_transfer/transfer.py,sha256=pUQi0hftChc3v1id-X14_eIOsdjnlCJOT4ve9LmpKuM,2249
+colab_transfer/utils.py,sha256=chFjgkrQwWf8NNhEBWkXXFFi3QEoYzX3RrnUg595dKg,875
+Google_Colab_Transfer-0.1.0.dist-info/LICENSE,sha256=wXTFp5m3CsXbmaXycjf3TIJL9ttcLBm5isy-Ed7eOt0,1081
+Google_Colab_Transfer-0.1.0.dist-info/METADATA,sha256=goXNo0mmwytNRcQN3UxC_05dfsuQgjWExoT749ngde4,611
+Google_Colab_Transfer-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Google_Colab_Transfer-0.1.0.dist-info/top_level.txt,sha256=bhfjCsHnc576yPrrqD-PxpexIzkPHLE1WZHEi4qEiSA,15
+Google_Colab_Transfer-0.1.0.dist-info/RECORD,,
