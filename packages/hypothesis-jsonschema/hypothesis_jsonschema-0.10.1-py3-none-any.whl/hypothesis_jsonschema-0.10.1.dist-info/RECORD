@@ -1,0 +1,9 @@
+hypothesis_jsonschema/__init__.py,sha256=cGccA8qmb65za23O1xhUyOvD6bhs2C6nqsAA--Cacw0,210
+hypothesis_jsonschema/_canonicalise.py,sha256=v-6GQl-MfoBom8bKEzgEWAOVXe3N2LjlSNIeZW4D9n8,22104
+hypothesis_jsonschema/_from_schema.py,sha256=PfgIBgG1sPJqmLz-EWBZOc83sGhZu4gXCv8rxJL6G30,16065
+hypothesis_jsonschema/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypothesis_jsonschema-0.10.1.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+hypothesis_jsonschema-0.10.1.dist-info/METADATA,sha256=qF6sbxo8jCIOofGnYr5sreP2TFJwBwdQIleBraKP7sg,8007
+hypothesis_jsonschema-0.10.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+hypothesis_jsonschema-0.10.1.dist-info/top_level.txt,sha256=eg0-nFEa_7aT92vKGrSL9IQnmcqHTgFcIhTkPSoUllg,22
+hypothesis_jsonschema-0.10.1.dist-info/RECORD,,
