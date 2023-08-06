@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: re-view
+Version: 0.3.0
+Summary: Terminal based regex visualization tool and debugger.
+Home-page: https://github.com/wqferr/re-view
+Author: William Quelho Ferreira
+Author-email: wqferr@gmail.com
+License: GPLv3
+Description: # re-view
+        Regex visualizer for the terminal (python-flavored)
+        
+Keywords: regex visualization tool debug
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
