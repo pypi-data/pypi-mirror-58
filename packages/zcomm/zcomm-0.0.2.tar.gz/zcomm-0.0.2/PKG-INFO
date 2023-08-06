@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: zcomm
+Version: 0.0.2
+Summary: PyZMQ structures and objects to help write microservices.
+Home-page: https://github.com/Lamden/zcomm
+Author: Stuart Farmer
+Author-email: stuart@lamden.io
+License: GPL3
+Description: UNKNOWN
+Platform: UNKNOWN

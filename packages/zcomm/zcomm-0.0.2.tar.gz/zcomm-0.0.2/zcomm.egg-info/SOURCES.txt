@@ -1,0 +1,9 @@
+README.md
+setup.py
+zcomm/__init__.py
+zcomm/services.py
+zcomm.egg-info/PKG-INFO
+zcomm.egg-info/SOURCES.txt
+zcomm.egg-info/dependency_links.txt
+zcomm.egg-info/requires.txt
+zcomm.egg-info/top_level.txt
