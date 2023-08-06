@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nmr-classifier
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/riverKangg/nmr_classifier.git
+Author: Jisun Kang
+Author-email: riverkangg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+# nmr-classifier
+
+*Jisun Kang*
+
+nmr-classifier is the Python implementation of the nuclear norm regression for classification.
+This package uses facial structural information to recognize facial images.
+
+## Installation
+
+### User installation
+The easiest way to install scikit-learn is using
+
+```{Python}
+pip install nmr_classifier
+```
+
+## Resource
+- https://github.com/riverKangg/nmr_classifier.git
+
+## Recommendations
+- Python3
+

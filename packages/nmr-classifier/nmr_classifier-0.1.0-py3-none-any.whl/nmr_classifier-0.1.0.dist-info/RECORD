@@ -1,0 +1,8 @@
+nmr_classifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmr_classifier/admm_nmr.py,sha256=I4p6eBZ4SM41gVx8saVmgtAZUgKU5s5OiIDcTmQf10Y,3503
+nmr_classifier/fast_admm_nmr.py,sha256=VTD_f35LIPjkHPHMJIO46fMNIbOUmgUUoHhQKtMtfw0,4267
+nmr_classifier/fast_admm_nmr_classifier.py,sha256=TCNk4-IlF9BNP9XEsLRznTj2c4JFnc0C-JJqtVw-aZU,5527
+nmr_classifier-0.1.0.dist-info/METADATA,sha256=MY67NVXsIz92TXlmt9RJQXWngKd_O7cM1mvTXR5ncsE,1025
+nmr_classifier-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+nmr_classifier-0.1.0.dist-info/top_level.txt,sha256=iMRu_w3Dqx6RB9U5oNkZhM9T2AUk5bLmgdF8Yli70qA,15
+nmr_classifier-0.1.0.dist-info/RECORD,,
