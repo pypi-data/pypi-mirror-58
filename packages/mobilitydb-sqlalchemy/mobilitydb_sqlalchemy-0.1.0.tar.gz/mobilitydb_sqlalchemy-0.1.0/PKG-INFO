@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mobilitydb-sqlalchemy
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/adonmo/mobilitydb_sqlalchemy
+Keywords: geo,gis,postgres,mobilitydb,sqlalchemy,orm
+Author: B Krishna Chaitanya
+Author-email: bkchaitan94@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Dist: geoalchemy2 (>=0.6.3,<0.7.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: shapely (>=1.6.4,<2.0.0)
+Requires-Dist: sqlalchemy (>=1.3.11,<2.0.0)
+Project-URL: Documentation, https://mobilitydb_sqlalchemy.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/adonmo/mobilitydb_sqlalchemy
