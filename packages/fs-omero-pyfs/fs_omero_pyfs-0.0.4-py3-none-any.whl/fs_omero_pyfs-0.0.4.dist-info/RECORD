@@ -1,0 +1,9 @@
+fs_omero_pyfs/__init__.py,sha256=TmRVJDuUbCr5mtO0Ayu2r8lbAEmDMa5pbVMsGpTnWKs,109
+fs_omero_pyfs/fs.py,sha256=lSQZAY66NO-ISaIrWeORmpbYCU-SskCMDN1buF5GCfg,15956
+fs_omero_pyfs/opener.py,sha256=HiPkPVdey-kfrqUN1qozK7nY8ePThp-uG2mbiC_itzU,1181
+fs_omero_pyfs-0.0.4.dist-info/LICENSE,sha256=ha9ViKPFI7792pUKhGjDj3jXO8_Xq5f-BBrCtv1mweY,1065
+fs_omero_pyfs-0.0.4.dist-info/METADATA,sha256=RO4YLpORbqW5j5RtlHl3xOqhxduCD7lw4FbwbOgHJ4g,1511
+fs_omero_pyfs-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fs_omero_pyfs-0.0.4.dist-info/entry_points.txt,sha256=CypGbTDYH_0x9krbYkpXGNsDzg3KHx50GO36mKRwuUM,128
+fs_omero_pyfs-0.0.4.dist-info/top_level.txt,sha256=j6HED7rjkG7xOriOpNYK1Xnim0HFxGc7QQkuIchFRm0,14
+fs_omero_pyfs-0.0.4.dist-info/RECORD,,
