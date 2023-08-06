@@ -1,0 +1,6 @@
+README.md
+setup.py
+djrobot.egg-info/PKG-INFO
+djrobot.egg-info/SOURCES.txt
+djrobot.egg-info/dependency_links.txt
+djrobot.egg-info/top_level.txt
