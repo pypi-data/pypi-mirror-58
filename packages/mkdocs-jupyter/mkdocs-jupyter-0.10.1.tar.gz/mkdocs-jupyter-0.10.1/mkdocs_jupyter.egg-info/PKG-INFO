@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mkdocs-jupyter
+Version: 0.10.1
+Summary: MkDocs Jupyter
+Home-page: https://github.com/danielfrg/mkdocs-jupyter
+Author: Daniel Rodriguez
+Author-email: df.rodriguez143@gmail.com
+License: Apache 2.0
+Description: # mkdocs-jupyter: Use Jupyter Notebooks in mkdocs
+        
+        [![PyPI version](https://badge.fury.io/py/mkdocs-jupyter.svg)](https://pypi.org/project/mkdocs-jupyter)
+        
+        - Add Jupyter Notebooks directly to the mkdocs navigation
+        - Feel and look the regular Jupyter Notebook style inside mkdocs pages
+        - Option to execute the notebook before converting
+        - Show ipywidgets (requires execution of the notebook)
+        - Support for mkdocs TOC
+        
+        ![mkdocs-jupyter](https://raw.githubusercontent.com/danielfrg/mkdocs-jupyter/master/screenshot.png)
+        
+        ## Usage
+        
+        ```
+        pip install mkdocs-jupyter
+        ```
+        
+        In your `mkdocs.yml`:
+        
+        ```
+        nav:
+        - Notebook: notebook.ipynb
+        
+        plugins:
+          - mkdocs-jupyter
+        ```
+        
+Keywords: jupyter,mkdocs
+Platform: UNKNOWN
+Requires-Python: >=3.0,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
+Description-Content-Type: text/markdown
