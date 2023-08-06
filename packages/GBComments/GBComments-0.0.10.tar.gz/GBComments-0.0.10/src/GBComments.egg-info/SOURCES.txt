@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/GBComments.py
+src/GBComments.egg-info/PKG-INFO
+src/GBComments.egg-info/SOURCES.txt
+src/GBComments.egg-info/dependency_links.txt
+src/GBComments.egg-info/top_level.txt
+src/data/__init__.py
+src/data/data.py
