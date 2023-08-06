@@ -1,0 +1,4 @@
+#!python
+
+import tv2test.send_command
+
