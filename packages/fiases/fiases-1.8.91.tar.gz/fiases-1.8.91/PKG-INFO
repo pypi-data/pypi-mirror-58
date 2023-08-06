@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: fiases
+Version: 1.8.91
+Summary: FIAS Elasticsearch integration
+Home-page: https://github.com/u4097/elasticsearch-fias
+Author: Oleg Sitnikov
+Author-email: oleg.sitnikov@icloud.com
+License: UNKNOWN
+Description: Пакет импорта данных ФИАС в Elasticsearch
+        =========================================
+        
+        Реализованный функционал
+        ------------------------
+        
+        * Пакет ``fiases`` позволяет осуществить  импорт таблиц ``ADDROBJ`` и ``HOUSES`` в формате XML из
+        ФИАС (Федеральной информационной адресной системы)  в ``Elasticsearch``
+        * Обновление до актуальной версии на сайте ФИАС
+        * Создание индекса для полнотекстового поиска
+        
+        Установка
+        ---------
+        
+        pip install fiases
+        
+        Зависимости (устанавливаются автоматически)
+        -------------------------------------------
+        
+        * elasticsearch>=7.1.0,
+        * elasticsearch-dsl>=7.1.0,
+        * hurry.filesize>=0.9,
+        * rarfile>=3.1,
+        * tqdm>=4.40.1,
+        * urllib3>=1.25.7,
+        * lxml>=4.4.2,
+        * py-dateutil>=2.2
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Natural Language :: Russian
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
