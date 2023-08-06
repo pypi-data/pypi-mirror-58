@@ -1,0 +1,9 @@
+gdal2tiles/__init__.py,sha256=h67RDFL3kSXt-LOUgcPQy6Fmm8iu02MZxKSVMpMFV7M,200
+gdal2tiles/gdal2tiles.py,sha256=gcgbNSjZsK5V0QqRu5HFeUvXQkv1Zezrd7khAJIdBlA,119180
+gdal2tiles/utils.py,sha256=-xWlat4xqDGABazw08EJu-OJNmKZV7UQL7O7lTrcWro,2576
+gdal2tiles-0.1.6.dist-info/AUTHORS.rst,sha256=1BvhyVlEJ6E_T75MY00nc2FsB55NaziWuIxlNxrp4So,159
+gdal2tiles-0.1.6.dist-info/LICENSE,sha256=w6_NfuXyca90TrOIIdVOCcL_NcL2GArpB_Ta2O1vdX0,1068
+gdal2tiles-0.1.6.dist-info/METADATA,sha256=Oi6r1VOoBqobjRxTgQIF1LOyrNs517kZIcuw4xCxu4A,4677
+gdal2tiles-0.1.6.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+gdal2tiles-0.1.6.dist-info/top_level.txt,sha256=hebssr4kAwOjCnpE0knRgKPf_e5vVhLIKbMr5A3JYTY,11
+gdal2tiles-0.1.6.dist-info/RECORD,,
