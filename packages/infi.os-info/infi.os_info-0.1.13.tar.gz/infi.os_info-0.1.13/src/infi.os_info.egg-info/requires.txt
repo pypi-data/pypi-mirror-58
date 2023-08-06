@@ -1,0 +1,4 @@
+distro
+git-py
+setuptools
+infi.unittest
