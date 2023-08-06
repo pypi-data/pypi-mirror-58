@@ -1,0 +1,11 @@
+aws_mfa_util/__init__.py,sha256=eA8cXq71gl43rkzsnGK9OfWW0QXG8kVEfpRO610vWt8,6199
+aws_mfa_util/credential.py,sha256=CeN000cYULFRqpRB45kLRKWFsMagfKzr4hHI2MKRB0Y,3547
+aws_mfa_util/util.py,sha256=kzUv7QjAWXe4u42fhsmXr-NsvJzvxbU8yOo9l_4r51A,2959
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=7Ad3tnpvGII3bACXv2DP1StBJgsfutVoXuiyLmDYVUM,310
+aws_mfa_util-0.1.0.dist-info/LICENSE,sha256=-sdOtxmq0NIreLZeLIINPR-VDIl-WYAph5jfu1afHgY,1056
+aws_mfa_util-0.1.0.dist-info/METADATA,sha256=cPH97WU0dUxsLEDie2JbqTWwGgsEWu88deHhWBZ1vQ4,5290
+aws_mfa_util-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_mfa_util-0.1.0.dist-info/entry_points.txt,sha256=VqsvcyPr5O19SjFKazXPy-GlA_CukcxFRptzKLYpIgA,52
+aws_mfa_util-0.1.0.dist-info/top_level.txt,sha256=4EzylqLZ4gtonL1dY2GmYY-BCOTwrGzy2kJmJQK_Ufk,19
+aws_mfa_util-0.1.0.dist-info/RECORD,,
