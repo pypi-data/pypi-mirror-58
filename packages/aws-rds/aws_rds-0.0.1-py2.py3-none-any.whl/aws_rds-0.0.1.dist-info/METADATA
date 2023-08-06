@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: aws-rds
+Version: 0.0.1
+Summary: Manage AWS RDS tokens
+Home-page: https://github.com/gigitsu/aws-rds
+Author: Luigi Clemente
+Author-email: luigi.clemente@gsquare.it
+License: MIT
+Keywords: aws rds db auth token db_auth_token generate_db_auth_token
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: pyperclip
+
+aws-rds: Easily manage your AWS RDS token
+=================================================================================================
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Gigitsu/aws-rds/blob/master/LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/aws-rds.svg)](https://pypi.org/project/aws-rds)
+[![PyPi page link -- Python versions](https://img.shields.io/pypi/pyversions/aws-rds.svg)](https://pypi.python.org/pypi/aws-rds)
+
+Installation:
+-------------
+Option 1
+```sh
+$ pip install aws-rds
+```
+
+Option 2
+```sh
+1. Clone this repo
+2. $ python setup.py install
+```
+
+
+
