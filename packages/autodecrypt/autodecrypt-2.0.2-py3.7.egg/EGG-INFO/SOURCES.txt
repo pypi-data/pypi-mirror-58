@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+autodecrypt/__init__.py
+autodecrypt/autodecrypt.py
+autodecrypt/decrypt_img.py
+autodecrypt/ipsw_dl.py
+autodecrypt/ipsw_utils.py
+autodecrypt/scrapkeys.py
+autodecrypt.egg-info/PKG-INFO
+autodecrypt.egg-info/SOURCES.txt
+autodecrypt.egg-info/dependency_links.txt
+autodecrypt.egg-info/entry_points.txt
+autodecrypt.egg-info/requires.txt
+autodecrypt.egg-info/top_level.txt
