@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: whitepaper
+Version: 0.0.0
+Summary: A package for report generation
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+A package for report generation
+
+
