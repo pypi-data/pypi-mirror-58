@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-cjswidget
+Version: 0.3.0
+Summary: choices.js widget for Django
+Home-page: https://github.com/dmptrluke/django-cjswidget
+Author: Luke Rogers
+Author-email: luke@dmptr.com
