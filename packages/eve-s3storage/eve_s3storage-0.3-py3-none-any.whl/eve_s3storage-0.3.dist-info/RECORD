@@ -1,0 +1,11 @@
+eve_s3storage/__init__.py,sha256=2nDbpZFzlkRUAz60vqSKAXkbS3eGzxeI0TcPCZ0PEvU,39
+eve_s3storage/s3_file.py,sha256=A4EgmC65Id2tqH0J58VBGla1oMKqcYnDGsV_cQMg_Pk,544
+eve_s3storage/s3_storage.py,sha256=3nx4voVLsuGIWtDO3IBH5eGwj-QEKLGCP0UB7xLNAvc,2917
+eve_s3storage/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eve_s3storage/tests/test_s3_storage.py,sha256=fqpvb3QaaG4ToWM70oZy--79DGb5tsoTlsDxYLXYZaY,17266
+eve_s3storage/tests/utils.py,sha256=VRZaglxWiaQ7PdMn5SRQ7VjkynN2OjR4DYX3TLTKGEw,5543
+eve_s3storage-0.3.dist-info/LICENSE,sha256=IXYTgJqxd7KfhrpWnhvBtrgVy9h6yL20uE0T98vNgy4,760
+eve_s3storage-0.3.dist-info/METADATA,sha256=8NNXR-prnuk9aeHI7dJZgCCrW0TTyFsQ2K8rWGUuacU,1140
+eve_s3storage-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+eve_s3storage-0.3.dist-info/top_level.txt,sha256=qEohlMAzRsygPj9S_04liaRcvbJTOpXZFRJVsD3eB0Q,14
+eve_s3storage-0.3.dist-info/RECORD,,
