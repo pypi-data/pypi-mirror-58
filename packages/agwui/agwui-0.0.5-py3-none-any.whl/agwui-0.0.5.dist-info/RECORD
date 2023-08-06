@@ -1,0 +1,14 @@
+agwui/ExtraType.py,sha256=c1ZF4MROvYOgQbvXLUMfdyHYjZrLJfTnsyYMq7BvGYk,171
+agwui/FunctionDefinition.py,sha256=w1fnObUeg_j3e91oc6o8fct2cHGfPH66rjUiYok8bKQ,1292
+agwui/FunctionEntrypoint.py,sha256=xAuQ8aa1RG5JZ92VVlO3rsIJrDEYaZ6Q1NuWREWF7vA,576
+agwui/FunctionParameter.py,sha256=FWlBSIh7ruk0PUx1ES9fQplRprfdR_dpL6ZyJTPt-88,396
+agwui/Injector.py,sha256=tSbja4FXHz4puq1EcpDg6dM1htGgWQzkMkojOwWxUQk,3503
+agwui/__init__.py,sha256=JpPQzurLqQzVcI-xx47YQYXbX3eutxKOxdA3u-SAnNk,108
+agwui/inspect_test.py,sha256=lhlQ4VbxAP0uefXRZ2MLmfzYXyEL6NKcztDBQHG_52o,142
+agwui/templates/class.html,sha256=JzixCNtpDuKPeFujx8lbhCCMKfjUGN4fbW7BdsKPgNE,765
+agwui/templates/function.html,sha256=EqvCb95LhT91JjPMZekgy0yh_TvoQV0FplnUGWu4fts,1425
+agwui/templates/preview_image.html,sha256=lHLSq3OIHlfeC-SVVH26Iro_BmMVqi0UKFCEpMvWnDk,106
+agwui-0.0.5.dist-info/METADATA,sha256=4Y2WdfOeRQwEaC3n8NolAQOsRl8Aa6HTLbgypjQYQYc,901
+agwui-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+agwui-0.0.5.dist-info/top_level.txt,sha256=8dSBydIad_Rwx8V2gyxlw-GV_dxDyM-vsbPvuheGNZ8,6
+agwui-0.0.5.dist-info/RECORD,,

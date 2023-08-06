@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <article>
+            <h1>{{ name }}</h1>
+            <section>
+                <h2>description</h2>
+                <div>{{ description }}</div>
+            </section>
+            {% for function_entrypoint in function_entrypoints %}
+                <section>
+                    <h2>
+                        <a href="{{ function_entrypoint.path }}">{{ function_entrypoint.function_definition.name }}</a>
+                    </h2>
+                    <h3>description</h3>
+                    <p>
+                        {{ function_entrypoint.function_definition.description }}
+                    </p>                        
+                </section>
+            {% endfor %}
+        </article>
+    </body>
+</html>
