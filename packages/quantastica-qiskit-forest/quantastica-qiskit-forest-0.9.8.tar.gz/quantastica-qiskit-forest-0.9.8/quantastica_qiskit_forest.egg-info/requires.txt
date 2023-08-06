@@ -1,0 +1,4 @@
+qiskit
+pyquil
+numpy
+quantastica-qconvert
