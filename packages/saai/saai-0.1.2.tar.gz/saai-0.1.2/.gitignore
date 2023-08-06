@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+__pycache__/
+models/
+models_kb/
+out/
+dist/
+build/
+*.egg-info
+
+

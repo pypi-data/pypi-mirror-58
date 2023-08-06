@@ -1,0 +1,10 @@
+language: "zh"
+
+pipeline:
+- name: "JiebaTokenizer"
+- name: "saai.ner_jieba.JiebaEntityExtractor"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "CountVectorsFeaturizer"
+- name: "EmbeddingIntentClassifier"
