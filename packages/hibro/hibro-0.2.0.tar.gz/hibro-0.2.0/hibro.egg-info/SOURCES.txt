@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+hibro/__init__.py
+hibro/__main__.py
+hibro/dashboard.py
+hibro/data.py
+hibro/plot.py
+hibro/wsgi.py
+hibro.egg-info/PKG-INFO
+hibro.egg-info/SOURCES.txt
+hibro.egg-info/dependency_links.txt
+hibro.egg-info/entry_points.txt
+hibro.egg-info/not-zip-safe
+hibro.egg-info/requires.txt
+hibro.egg-info/top_level.txt

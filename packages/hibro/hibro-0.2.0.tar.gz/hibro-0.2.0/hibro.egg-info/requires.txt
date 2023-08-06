@@ -1,0 +1,7 @@
+Click>=7.0
+dash
+pandas
+pyyaml
+sqlalchemy
+tzlocal
+voluptuous
