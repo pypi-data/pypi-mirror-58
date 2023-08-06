@@ -1,0 +1,9 @@
+README.md
+setup.py
+boppy/__init__.py
+boppy.egg-info/PKG-INFO
+boppy.egg-info/SOURCES.txt
+boppy.egg-info/dependency_links.txt
+boppy.egg-info/requires.txt
+boppy.egg-info/top_level.txt
+boppy/tests/__init__.py
