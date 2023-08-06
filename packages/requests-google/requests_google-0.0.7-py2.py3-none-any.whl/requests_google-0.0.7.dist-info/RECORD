@@ -1,0 +1,12 @@
+requests_google/__init__.py,sha256=SIi0oIT8xEXIE4NnJILtu33wiQCtwbCfQDuiMVXVBao,56
+requests_google/api.py,sha256=5QdWcM8bqm2cETZFDNPiWLXSJYAS3vHs7rEnD-EOCuQ,782
+requests_google/googlenews.py,sha256=bV09qap4BiOlkQ0vjFRFIRCJF8eM9i9ERAXlp3eg2zs,1020
+requests_google/utils.py,sha256=HG5CkVx5c_hAPntacUiPEyAPrVcmJ7s29iGydL0VsqA,544
+requests_google/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requests_google/cli/requests_googlenews.py,sha256=jRrD_nKyPby0VJa2NQPf5YpBmNCo-3CNCJ4rQurCVnM,1387
+requests_google-0.0.7.dist-info/LICENSE,sha256=-FGOV-lDh0r11aLSOonB4Lq1i7vktOsJ07uMr_FH4c4,1067
+requests_google-0.0.7.dist-info/METADATA,sha256=UiPO_iSI6Kg0jtv5HN6lEh8uF76fazeLSgsqjMNI9Uw,1591
+requests_google-0.0.7.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+requests_google-0.0.7.dist-info/entry_points.txt,sha256=aoruh009Sd_S9-Y4IMpcCoHWzvh0Nm3lMXN2OJ9RtH4,86
+requests_google-0.0.7.dist-info/top_level.txt,sha256=VEqMtnqZQXKDzyyS7hrlcdIXvHDqZj7k09q8moEENKo,16
+requests_google-0.0.7.dist-info/RECORD,,
