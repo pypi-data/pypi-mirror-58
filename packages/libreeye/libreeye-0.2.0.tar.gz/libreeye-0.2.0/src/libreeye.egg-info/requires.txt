@@ -1,0 +1,6 @@
+boto3
+botocore
+docker
+ffmpeg-python
+numpy
+python-daemon
