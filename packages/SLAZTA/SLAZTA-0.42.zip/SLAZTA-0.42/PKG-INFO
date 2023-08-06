@@ -1,0 +1,32 @@
+Metadata-Version: 1.0
+Name: SLAZTA
+Version: 0.42
+Summary: SLAZTA is a tool to create self-contained areas from commuting data.
+Home-page: https://github.com/CSBP-CPSE/SLA-ZTA/
+Author: Ash Munro
+Author-email: anne.munro@canada.com
+License: MIT License
+Description: 
+        La version française suit.
+        
+        The SLAZTA scripts are a set of tools used to create Self-contained Labour Areas (in French Zones de Travail Autonomes) from labour commuting data. In the international literature SLAs are also referred to as functional areas. 
+        
+        The script is designed to take a set of commuting flows between areas of any type and group areas into clusters meeting a user’s definition for self-containment. As a result of this clustering, the self-contained labour areas created are territorial units where most of the residents with jobs are working in the same area and most of the jobs in each area are filled by workers residing in the area.
+        Developed at the Centre for Special Business Projects (Statistics Canada), this is a Python version of a code that was originally implemented in SAS®. It has been rewritten in Python to improve the replicability, transferability and adaptability of this methodology through open source software. 
+        
+        In the current specification, SLAZTA focuses on the creation of self-contained clusters for the non-metropolitan municipalities of Canada, preserving in this way the pre-existing census metropolitan area and census agglomeration geography.
+        
+        The only requirement to run the program is a commuting data file formatted as a CSV file with three columns: RES, POW, and TotalFlow. The RES and POW columns should contain a numeric code representing the origin and destination areas for the flow, while the TotalFlow column should contain the numeric value of that commuting flow.
+        
+        **Description du projet**
+        
+        Les scripts SLAZTA sont un ensemble d'outils utilisés pour créer des Zones de Travail Autonomes – ZTA – en anglais Self-contained Labour Areas) à partir de données sur les déplacements domicile-travail. Dans la littérature internationale, les ZTA sont aussi appelés zones fonctionnelles. 
+        
+        Le script est conçu pour considerer un ensemble de flux de migration alternante entre les zones de tout type et de regrouper les zones en clusters répondant à la définition de l'utilisateur pour l'autonomie. En conséquence de ce regroupement, les zones de travail autonomes créées sont des unités territoriales où la plupart des résidents ayant un emploi travaillent dans la même zone et où la plupart des emplois de chaque zone sont occupés par des travailleurs résidants dans la zone.
+        Développé au Centre des Projets Spéciaux sur les Entreprise (Statistique Canada), il s'agit d'une version Python d'un code qui a été developpé à l'origine sous SAS®. Il a été réécrit en Python pour améliorer la reproductibilité, la transférabilité et l'adaptabilité de cette méthodologie par le biais de logiciels libres.
+         
+        Dans la spécification actuelle, SLAZTA se concentre sur la création de grappes autonomes pour les municipalités non métropolitaines du Canada, préservant ainsi la géographie préexistante des régions métropolitaines de recensement et des agglomérations de recensement.
+        
+        La seule exigence pour exécuter le programme est un fichier de données sur les déplacements domicile-travail formaté en fichier CSV à trois colonnes : RES, POW et TotalFlow. Les colonnes RES et POW doivent contenir un code numérique représentant les zones d'origine et de destination du flux, tandis que la colonne TotalFlow doit contenir la valeur numérique de ce flux de déplacement domicile-travail.
+        
+Platform: UNKNOWN
