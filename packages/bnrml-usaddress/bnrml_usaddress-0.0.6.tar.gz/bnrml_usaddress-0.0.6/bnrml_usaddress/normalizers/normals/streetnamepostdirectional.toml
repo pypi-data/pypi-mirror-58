@@ -1,0 +1,40 @@
+[normalizer]
+type = 'bnrml.normalizers.SimpleNormalizer'
+
+    [normalizer.args]
+    prefer = 'abbreviation'
+
+    [normalizer.args.normals]
+
+        [normalizer.args.normals.North]
+        abbreviation = 'N'
+        aliases = []
+
+        [normalizer.args.normals.East]
+        abbreviation = 'E'
+        aliases = []
+
+        [normalizer.args.normals.West]
+        abbreviation = 'W'
+        aliases = []
+
+        [normalizer.args.normals.South]
+        abbreviation = 'S'
+        aliases = []
+
+        [normalizer.args.normals.Northeast]
+        abbreviation = 'NE'
+        aliases = ['north east']
+
+        [normalizer.args.normals.Northwest]
+        abbreviation = 'NW'
+        aliases = ['north west']
+
+        [normalizer.args.normals.Southeast]
+        abbreviation = 'SE'
+        aliases = ['south east']
+
+        [normalizer.args.normals.Southwest]
+        abbreviation = 'SW'
+        aliases = ['south west']
+

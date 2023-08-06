@@ -1,0 +1,19 @@
+[normalizer]
+type = 'bnrml.normalizers.SimpleNormalizer'
+
+    [normalizer.args]
+    prefer = 'abbreviation'
+
+    [normalizer.args.normals]
+
+        [normalizer.args.normals.Parish]
+        abbreviation = 'PAR'
+        aliases = []
+
+        [normalizer.args.normals.Saint]
+        abbreviation = 'ST'
+        aliases = []
+
+        [normalizer.args.normals.Township]
+        abbreviation = 'TWSP'
+        aliases = ['twp']
