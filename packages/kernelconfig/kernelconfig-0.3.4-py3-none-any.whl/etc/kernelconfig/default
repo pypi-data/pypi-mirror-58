@@ -1,0 +1,18 @@
+[source]
+arch
+
+[options]
+
+enable MCORE2
+
+# Not using an initramfs so we want those built-in, not as modules
+enable ATA SATA_AHCI BLK_DEV_NVME EXT4_FS BTRFS_FS
+
+# ThinkPad X1 Carbon
+enable TCG_TPM TCG_CRB
+
+# USB printers are managed via libusb
+disable USB_PRINTER
+
+# Docker
+enable MEMCG_SWAP_ENABLED RT_GROUP_SCHED

@@ -1,0 +1,15 @@
+etc/kernelconfig/default,sha256=xHISttbzGHVXHRr-wNfG6QxWKpLqWFzhnoyIbwgx21w,314
+kernelconfig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kernelconfig/kernel.py,sha256=VlL4ig-vhl4luVwpj2n0KNvTxQ9axpRzOXqYzBaw-IU,2777
+kernelconfig/main.py,sha256=fMJ99Kss66C1cxgGT5UuYp-AGQxSzgkJQloZLEaRiis,2821
+kernelconfig/settings.py,sha256=Z2XvEaGwTBwdHDxFcrBjeUUWWG6LPbRjSaTWho4x0q8,6962
+kernelconfig-0.3.4.data/data/share/doc/kernelconfig-0.3.4/README.html,sha256=l8ydE9M5yiqyL5AitXAqjuAaGmzU2fNa1_Dg_f-lyKI,17408
+kernelconfig-0.3.4.data/data/share/kernelconfig/sources/arch,sha256=x7_QvoRhtfQYShERNz0PEU3fMz9Z3GeDV3mBiTlN6P4,1266
+kernelconfig-0.3.4.data/data/share/kernelconfig/sources/liquorix,sha256=B9CixBLKL1WmdjEdJpohMS1s5-ShOtDbgerbmV2chL8,333
+kernelconfig-0.3.4.data/data/share/kernelconfig/sources/ubuntu,sha256=bK2-DTmn3W4czt99L5-6GoPHfhYw9MpPX329llqBe4w,5689
+kernelconfig-0.3.4.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+kernelconfig-0.3.4.dist-info/METADATA,sha256=VpJzeKWM7J2A-RHlCudIBmZTe75jKnFlIrO1OBwinKE,8673
+kernelconfig-0.3.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kernelconfig-0.3.4.dist-info/entry_points.txt,sha256=YvwhtXsL7zRQbGDzSCkVJK1IC8ufMCgOMnka8T7U2i4,56
+kernelconfig-0.3.4.dist-info/top_level.txt,sha256=LChBJVNL0bCzbhEEJtfpaFvV2EpkpQQBKzeFBrZZomI,13
+kernelconfig-0.3.4.dist-info/RECORD,,
