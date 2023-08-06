@@ -1,0 +1,6 @@
+datamodels==0.8.2
+sqly==0.4.5
+
+[dev]
+
+[test]
