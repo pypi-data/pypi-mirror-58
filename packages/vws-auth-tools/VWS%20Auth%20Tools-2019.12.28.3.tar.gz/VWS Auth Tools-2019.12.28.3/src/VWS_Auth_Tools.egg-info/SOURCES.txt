@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+dev-requirements.txt
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+src/VWS_Auth_Tools.egg-info/PKG-INFO
+src/VWS_Auth_Tools.egg-info/SOURCES.txt
+src/VWS_Auth_Tools.egg-info/dependency_links.txt
+src/VWS_Auth_Tools.egg-info/not-zip-safe
+src/VWS_Auth_Tools.egg-info/requires.txt
+src/VWS_Auth_Tools.egg-info/top_level.txt
+src/vws_auth_tools/__init__.py
+src/vws_auth_tools/_version.py
+src/vws_auth_tools/py.typed
