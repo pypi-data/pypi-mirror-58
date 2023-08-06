@@ -1,0 +1,10 @@
+README.md
+setup.py
+greedy/__init__.py
+greedy/greedy.py
+greedy.egg-info/PKG-INFO
+greedy.egg-info/SOURCES.txt
+greedy.egg-info/dependency_links.txt
+greedy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_greedy.py
