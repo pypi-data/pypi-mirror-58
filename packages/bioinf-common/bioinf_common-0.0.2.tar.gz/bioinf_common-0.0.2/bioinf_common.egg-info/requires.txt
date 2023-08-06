@@ -1,0 +1,16 @@
+numpy
+pandas
+networkx
+dask[complete]
+scipy
+statsmodels
+gene_map
+obonet
+tqdm
+joblib
+bs4
+jupyter
+click
+psutil
+pybind11
+mypy_extensions
