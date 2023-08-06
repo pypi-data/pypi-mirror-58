@@ -1,0 +1,7 @@
+*.egg-info
+*.py[cdo]
+.*.sw[nop]
+.coverage
+.eggs/
+build/
+dist/

@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: yamily
+Version: 0.2.0
+Summary: Define family trees in YAML
+Home-page: https://git.hammerle.me/fphammerle/yamily
+Author: Fabian Peter Hammerle
+Author-email: fabian@hammerle.me
+License: GPLv3+
+Description: # yamily
+        
+        Define family trees in YAML
+        
+        ## Setup
+        
+        ### Debian / Ubuntu
+        
+        ```sh
+        $ sudo apt-get install python3-yaml python3-graphviz
+        $ pip3 install --user --upgrade yamily
+        ```
+        
+        ### Mac
+        
+        ```sh
+        $ brew install graphviz
+        $ pip3 install --upgrade yamily[yaml,graphviz]
+        ```
+        
+        ### Windows
+        
+        1. [Download](https://graphviz.gitlab.io/_pages/Download/Download_windows.html) and install Graphviz.
+        2. [Download](https://www.python.org/downloads/windows/) and install Python.
+        3. Open Command Prompt / `cmd.exe`.
+        4. Run command `pip install --user --upgrade yamily[yaml,graphviz]`.
+        
+        ## Usage
+        
+        ### Import YAML
+        
+        ```python
+        >>> import yaml, yamily, yamily.yaml
+        >>> alice_yaml = '''
+        ... !person
+        ... identifier: alice
+        ... name: Alice Test
+        ... birth_date: 1919-12-23
+        ... mother: !person
+        ...   identifier: alice-mother
+        ...   name: Carol Test
+        ...   birth_date: 1892-10-26
+        ...   death_date: 1983-11-02
+        ... father: !person
+        ...   identifier: bob
+        ...   name: Bob Test
+        ... '''
+        >>> alice = yaml.load(alice_yaml, Loader=yamily.yaml.Loader)
+        >>> alice
+        Person(alice, Alice Test, *1919-12-23)
+        >>> alice.mother
+        Person(alice-mother, Carol Test, *1892-10-26, †1983-11-02)
+        
+        ```
+        
+        #### Multiple YAML Files
+        
+        ```python
+        >>> alice_yaml = '''
+        ... !person
+        ... identifier: alice
+        ... name: Alice Test
+        ... birth_date: 2019-12-23
+        ... mother: carol
+        ... '''
+        >>> carol_yaml = '''
+        ... !person
+        ... identifier: carol
+        ... name: Carol Test
+        ... birth_date: 1992-10-26
+        ... '''
+        >>> collection = yamily.PersonCollection()
+        >>> for person_yaml in [alice_yaml, carol_yaml]:
+        ...     person = yaml.load(person_yaml, Loader=yamily.yaml.Loader)
+        ...     collection.add_person(person)
+        Person(alice, Alice Test, *2019-12-23)
+        Person(carol, Carol Test, *1992-10-26)
+        >>> collection['alice'].mother
+        Person(carol, Carol Test, *1992-10-26)
+        >>> collection['carol'] is collection['alice'].mother
+        True
+        
+        ```
+        
+        ### Export YAML
+        
+        ```python
+        >>> import datetime, yaml, yamily, yamily.yaml
+        >>> alice = yamily.Person("alice")
+        >>> alice.name = "Alice Test"
+        >>> alice.birth_date = datetime.date(2019, 12, 23)
+        >>> alice
+        Person(alice, Alice Test, *2019-12-23)
+        
+        >>> alice.father = yamily.Person("alice-father")
+        >>> alice.father.name = "Bob Test"
+        
+        >>> print(yaml.dump(alice, Dumper=yamily.yaml.Dumper))
+        !person
+        birth_date: 2019-12-23
+        father: !person
+          identifier: alice-father
+          name: Bob Test
+        identifier: alice
+        name: Alice Test
+        <BLANKLINE>
+        
+        ```
+        
+        ### Plot Family Tree
+        
+        ```sh
+        $ yamily-dot . > tree.dot
+        $ dot -Tpdf -O tree.dot
+        ```
+        
+        ## Develop
+        
+        ```sh
+        $ git clone git@git.hammerle.me:fphammerle/yamily.git
+        $ cd yamily
+        $ git config --local core.hooksPath .githooks/
+        ```
+        
+Keywords: ancestors,family-tree,genealogy,plot,visualize
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Sociology :: Genealogy
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Provides-Extra: graphviz
+Provides-Extra: yaml
