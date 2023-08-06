@@ -1,0 +1,3 @@
+[console_scripts]
+transit-chem=transit_chem.cli:cli
+
