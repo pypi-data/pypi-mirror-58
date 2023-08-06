@@ -1,0 +1,8 @@
+requests==2.22.0
+furl==2.1.0
+enum34==1.1.6
+
+[docs]
+sphinx==1.8.5
+sphinxcontrib_trio==1.1.0
+sphinxcontrib-websupport

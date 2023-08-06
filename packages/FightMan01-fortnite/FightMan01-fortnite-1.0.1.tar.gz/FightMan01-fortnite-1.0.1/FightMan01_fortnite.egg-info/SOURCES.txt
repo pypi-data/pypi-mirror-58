@@ -1,0 +1,7 @@
+README.rst
+setup.py
+FightMan01_fortnite.egg-info/PKG-INFO
+FightMan01_fortnite.egg-info/SOURCES.txt
+FightMan01_fortnite.egg-info/dependency_links.txt
+FightMan01_fortnite.egg-info/requires.txt
+FightMan01_fortnite.egg-info/top_level.txt
