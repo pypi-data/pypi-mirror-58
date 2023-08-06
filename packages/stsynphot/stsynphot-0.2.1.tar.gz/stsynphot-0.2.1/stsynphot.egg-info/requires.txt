@@ -1,0 +1,16 @@
+numpy>=1.13
+astropy>=2
+synphot
+beautifulsoup4
+
+[docs]
+numpy
+scipy
+matplotlib
+sphinx-astropy
+astropy
+synphot
+
+[test]
+pytest-astropy
+ci-watson
