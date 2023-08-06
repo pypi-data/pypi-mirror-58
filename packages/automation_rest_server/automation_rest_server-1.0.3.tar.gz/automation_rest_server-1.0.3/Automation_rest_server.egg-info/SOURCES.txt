@@ -1,0 +1,14 @@
+README.rst
+setup.py
+Automation_rest_server.egg-info/PKG-INFO
+Automation_rest_server.egg-info/SOURCES.txt
+Automation_rest_server.egg-info/dependency_links.txt
+Automation_rest_server.egg-info/requires.txt
+Automation_rest_server.egg-info/top_level.txt
+automation_rest_server/run.py
+automation_rest_server.egg-info/PKG-INFO
+automation_rest_server.egg-info/SOURCES.txt
+automation_rest_server.egg-info/dependency_links.txt
+automation_rest_server.egg-info/entry_points.txt
+automation_rest_server.egg-info/requires.txt
+automation_rest_server.egg-info/top_level.txt
