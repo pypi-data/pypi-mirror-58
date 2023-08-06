@@ -1,0 +1,10 @@
+cointanalysis/__init__.py,sha256=jUB-U7DRjnqNcLz0-AvXqt9FsOe9zTMbSP76tlmj5pY,83
+cointanalysis/_aeg_pca.py,sha256=qw95njiFnrf605f8PrOGYG9fVSC4hnRoz70V6gmo0NQ,1203
+cointanalysis/_utils.py,sha256=7wtsSn9MsiCHEOotjEoauUaVwfFwSCvx3JOUakBMzhc,129
+cointanalysis/coint.py,sha256=gB_dHzYoApAF23V4oQjItWCrQbIe5vmDXiBwTcbAElQ,8286
+cointanalysis/ou.py,sha256=TkaSro2HsVv0uFLwIDuPhaKgDzDT6yzbJAmkwtFDKBg,2167
+cointanalysis/stat.py,sha256=5bC_XLT3tfcA8wgIh3jJ4W6pEmTKzBStQi6QxBra-N4,1733
+cointanalysis-0.1.1.dist-info/LICENSE,sha256=jEEe24J1LXCaWMt8Nrad5pcp2gNVAgSPYllsZcrMT3M,1516
+cointanalysis-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cointanalysis-0.1.1.dist-info/METADATA,sha256=CtwEVDQGPMyIcv_aB199ia7dzlEh_Sb_OrSW8jOTS8s,3800
+cointanalysis-0.1.1.dist-info/RECORD,,
