@@ -1,0 +1,7 @@
+anchorpoint
+apispec
+beautifulsoup4
+lxml
+marshmallow
+pint
+requests
