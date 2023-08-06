@@ -1,0 +1,17 @@
+autorest/__init__.py,sha256=XMMbGmvOu3iSC7O90OOa1SyjHm-4h2p5UFCIdZQfHac,72
+autorest/apps.py,sha256=xNKbjPSbFlNEo_Jd8P5EiLWND7RynEPzpiOAhRUc-uU,119
+autorest/permissions.py,sha256=KBGUPkJpF7z7WMNKjGehxXdQxnSv9BBksMqqhNOIC9o,964
+autorest/sample_user_viewset.py,sha256=xyOW44MU8aqqTAcMFSKECrAh3VqWNzdSEIhMEv2dmcA,3001
+autorest/settings.py,sha256=hABfIc3TuHhqaZOO6iotJWRL668y-YrJnM_swoiWJE8,3719
+autorest/tests.py,sha256=hIzMlwzljmFuQAuE9WakxdNe0ndd-TwHTlG4nRuQdKE,5161
+autorest/urls.py,sha256=vMrXZGyYPuv2EZKs4VMNeJyYaF2aNckjnKrAFkOIUx4,242
+autorest/wsgi.py,sha256=a2nfYsHLExUpAEI75bc5_HjRY9PR_n1E0PUF6AML70o,168
+autorest/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autorest/api/url_inflect.py,sha256=TrNWAW4EqDJQlmGD0iEhdECJlv6GSmpePZukgD558sw,390
+autorest/api/urls.py,sha256=fnB47V5CNfoIajFSRCSVTgQltTwIYVVkNYjJ6dRstWw,377
+autorest/api/views.py,sha256=nuDE_Aueh1_kLioeofZsd4hqREM5uI6uOxXTGX6zk5M,6557
+django_autorest-1.0.1.dist-info/LICENSE,sha256=i6KYKElsx1_aia5LlJzYJByZKl4qyZhaUgeSLL95K_U,1074
+django_autorest-1.0.1.dist-info/METADATA,sha256=TUPUG1c0g7R-0fb8HAdPhcs7xDufG28PvdaL2Mp6efo,4459
+django_autorest-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_autorest-1.0.1.dist-info/top_level.txt,sha256=kuH_36CcFWXH7GLbA_A9O2fpbhIIgrmBv_78pyYqQs4,9
+django_autorest-1.0.1.dist-info/RECORD,,
