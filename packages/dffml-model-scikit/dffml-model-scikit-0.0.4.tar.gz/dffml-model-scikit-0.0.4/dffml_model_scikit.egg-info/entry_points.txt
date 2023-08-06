@@ -1,0 +1,29 @@
+[dffml.model]
+scikitadaboost = dffml_model_scikit.scikit_models:AdaBoostClassifierModel
+scikitard = dffml_model_scikit.scikit_models:ARDRegressionModel
+scikitbgc = dffml_model_scikit.scikit_models:BaggingClassifierModel
+scikitbnb = dffml_model_scikit.scikit_models:BernoulliNBModel
+scikitbyr = dffml_model_scikit.scikit_models:BayesianRidgeModel
+scikitdtc = dffml_model_scikit.scikit_models:DecisionTreeClassifierModel
+scikitdtr = dffml_model_scikit.scikit_models:DecisionTreeRegressorModel
+scikiteln = dffml_model_scikit.scikit_models:ElasticNetModel
+scikitetc = dffml_model_scikit.scikit_models:ExtraTreesClassifierModel
+scikitgbc = dffml_model_scikit.scikit_models:GradientBoostingClassifierModel
+scikitgnb = dffml_model_scikit.scikit_models:GaussianNBModel
+scikitgpc = dffml_model_scikit.scikit_models:GaussianProcessClassifierModel
+scikitgpr = dffml_model_scikit.scikit_models:GaussianProcessRegressorModel
+scikitknn = dffml_model_scikit.scikit_models:KNeighborsClassifierModel
+scikitlars = dffml_model_scikit.scikit_models:LarsModel
+scikitlas = dffml_model_scikit.scikit_models:LassoModel
+scikitlda = dffml_model_scikit.scikit_models:LinearDiscriminantAnalysisModel
+scikitlor = dffml_model_scikit.scikit_models:LogisticRegressionModel
+scikitlr = dffml_model_scikit.scikit_models:LinearRegressionModel
+scikitmlp = dffml_model_scikit.scikit_models:MLPClassifierModel
+scikitmnb = dffml_model_scikit.scikit_models:MultinomialNBModel
+scikitomp = dffml_model_scikit.scikit_models:OrthogonalMatchingPursuitModel
+scikitqda = dffml_model_scikit.scikit_models:QuadraticDiscriminantAnalysisModel
+scikitrfc = dffml_model_scikit.scikit_models:RandomForestClassifierModel
+scikitridge = dffml_model_scikit.scikit_models:RidgeModel
+scikitrsc = dffml_model_scikit.scikit_models:RANSACRegressorModel
+scikitsvc = dffml_model_scikit.scikit_models:SVCModel
+
