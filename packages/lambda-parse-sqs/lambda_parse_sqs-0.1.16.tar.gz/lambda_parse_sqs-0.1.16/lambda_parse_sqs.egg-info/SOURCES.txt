@@ -1,0 +1,14 @@
+README.md
+setup.py
+lambda_parse_sqs/__init__.py
+lambda_parse_sqs/parse_sqs.py
+lambda_parse_sqs/sqs_message_parser.py
+lambda_parse_sqs/utils.py
+lambda_parse_sqs.egg-info/PKG-INFO
+lambda_parse_sqs.egg-info/SOURCES.txt
+lambda_parse_sqs.egg-info/dependency_links.txt
+lambda_parse_sqs.egg-info/not-zip-safe
+lambda_parse_sqs.egg-info/top_level.txt
+lambda_parse_sqs/errors/__init__.py
+lambda_parse_sqs/errors/provider_selection_error.py
+lambda_parse_sqs/errors/records_not_found_error.py
