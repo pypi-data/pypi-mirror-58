@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cchoir
+Version: 0.0.1
+Summary: Lightweight container orchestrator using LXD
+Home-page: http://github.com/an-otter-world/cchoir/
+Author: An Otter World
+Author-email: an-otter-world@ki-dour.org
+License: WTFPL
+Description: # C-Choir
+        
+        # Overwiew
+        C-Choir is a lightweight container orchestrator based on LXD.
+        
+        # Installation
+        
+        Use pip :
+        
+        ```bash
+            pip install cchoir
+        ```
+        
+Keywords: LXD,container,deployment
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

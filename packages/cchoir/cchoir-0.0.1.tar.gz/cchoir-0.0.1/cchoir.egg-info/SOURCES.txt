@@ -1,0 +1,14 @@
+README.md
+setup.py
+cchoir/__init__.py
+cchoir/cli.py
+cchoir.egg-info/PKG-INFO
+cchoir.egg-info/SOURCES.txt
+cchoir.egg-info/dependency_links.txt
+cchoir.egg-info/entry_points.txt
+cchoir.egg-info/not-zip-safe
+cchoir.egg-info/requires.txt
+cchoir.egg-info/top_level.txt
+cchoir/commands/__init__.py
+cchoir/commands/command.py
+cchoir/commands/deploy.py
