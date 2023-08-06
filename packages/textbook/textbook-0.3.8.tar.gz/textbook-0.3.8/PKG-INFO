@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: textbook
+Version: 0.3.8
+Summary: Text classification datasets
+Home-page: https://github.com/ChenghaoMou/textbook
+Author: Chenghao
+Author-email: mouchenghao@gmail.com
+License: UNKNOWN
+Description: ![Logo](./textbook-logo.svg)
+        
+        [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![PyPI version](https://badge.fury.io/py/textbook.svg)](https://badge.fury.io/py/textbook) ![PyPI - License](https://img.shields.io/pypi/l/textbook) ![Madein](https://img.shields.io/badge/MADEIN-ISI-brightgreen)
+        
+        <!-- [![Actions Status](https://github.com/chenghaomou/textbook/workflows/Upload%20Python%20Package/badge.svg)](https://github.com/ChenghaoMou/textbook/actions?query=workflow%3A%22Upload+Python+Package%22) -->
+        
+        The framework is designed with `BERT` in mind and currently support seven commonsense reasoning datsets(`alphanli`, `hellaswag`, `physicaliqa`, `socialiqa`, `codah`, `cosmosqa`, and `commonsenseqa`). It can be also applied to other datasets with few line of codes.
+        
+        <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+        
+        <!-- code_chunk_output -->
+        
+        - [Architecture](#architecture)
+        - [Dependency](#dependency)
+        - [Download raw datasets](#download-raw-datasets)
+        - [Usage](#usage)
+          - [Template](#template)
+          - [Renderer](#renderer)
+          - [BatchTool](#batchtool)
+          - [Load a dataset with pandas](#load-a-dataset-with-pandas)
+          - [Create a multitask dataset with multiple datasets](#create-a-multitask-dataset-with-multiple-datasets)
+          - [Impletement a New template or rennderer](#impletement-a-new-template-or-rennderer)
+        - [Contact](#contact)
+        
+        <!-- /code_chunk_output -->
+        
+        ## Architecture
+        
+        ![Architecture Image](./textbook.svg)
+        
+        ## Dependency
+        
+        ```bash
+        conda install av -c conda-forge
+        ```
+        
+        ```bash
+        pip install -r requirements.txt
+        pip install --editable .
+        
+        # or
+        
+        pip install textbook
+        ```
+        
+        ## Download raw datasets
+        
+        ```bash
+        ./fetch.sh
+        ```
+        
+        It downloads `alphanli`, `hellaswag`, `physicaliqa`, `socialiqa`, `codah`, `cosmosqa`, and `commonsenseqa` from AWS in `data_cache`.
+        In case you want to use something-something, pelase download the dataset from 20bn's website.
+        
+        ## Usage
+        
+        ### Template
+        
+        The goal of a template is to transform raw text into a intermediate datum where abstractive information are provided for later use.
+        
+        Ideally, the template should do the following things:
+        
+        - construct `text`: a list of list. The outer list is ideal for multichoice situations and inner list if for each input pairs/triplets(e.g context, question, and choice);
+        - construct `label`: an integer representing a zero-indexed label for the truth, or `None`;
+        - construct `token_type_id` and `attention`: abstractive representation of the segment id and attention. In the following example of anli, both `token_type_id` and `attention` have three digits, each for the three components of each row of the text.
+        - construct `image`: any forms of image id/path you want to read later.
+        
+        One example of anli is as follows:
+        
+        ```python
+        # raw
+        case = {"story_id": "58090d3f-8a91-4c89-83ef-2b4994de9d241", "obs1": "Ron started his new job as a landscaper today.",
+                "obs2": "Ron is immediately fired for insubordination.", "hyp1": "Ron ignores his bosses's orders and called him an idiot.",
+                "hyp2": "Ron's boss called him an idiot.", "label": "1"}
+        
+        # target intermediate datum
+        target = {
+            'text':
+            [['Ron started his new job as a landscaper today.', "Ron ignores his bosses's orders and called him an idiot.",
+                'Ron is immediately fired for insubordination.'],
+                ['Ron started his new job as a landscaper today.', "Ron's boss called him an idiot.",
+                'Ron is immediately fired for insubordination.']],
+            'label': 0, 'image': None, 'token_type_id': [0, 1, 0],
+            'attention': [1, 1, 1]}
+        
+        LABEL2INT = {
+            "anli": {
+                "1": 0,
+                "2": 1,
+            },
+        }
+        assert template_anli(case, LABEL2INT['anli']) == target
+        
+        ```
+        
+        ### Renderer
+        
+        Renderer transformer your intermediate datum into a fully blown datum. Each renderer takes care of different part of the datum. For example, `renderer_text` renders the text into `input_id` and generate all token-based `attention` and `token_type_id`, while `renderer_video` renders the `image` path to an `image` tensor. renderers are passed to the dataset constructer in a list, therefore are execute sequentially.
+        
+        ### BatchTool
+        
+        We provided a BatchTool where MLM or padding can be used easily, you can check the doc for the class for more information.
+        
+        ### Load a dataset with pandas
+        
+        ```python
+        from transformers import BertTokenizer
+        from textbook import MultiModalDataset, template_anli, renderer_text, BatchTool, TokenBasedSampler
+        from torch.utils.data import Dataset, DataLoader
+        from textbook import LABEL2INT
+        import pandas as pd
+        
+        tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+        
+        d1 = MultiModalDataset(
+            df=pd.read_json("data_cache/alphanli/train.jsonl", lines=True),
+            template=lambda x: template_anli(x, LABEL2INT['anli']),
+            renderers=[lambda x: renderer_text(x, tokenizer)],
+        )
+        bt1 = BatchTool(tokenizer, source="anli")
+        i1 = DataLoader(d1, batch_sampler=TokenBasedSampler(d1, batch_size=64), collate_fn=bt1.collate_fn)
+        ```
+        
+        ### Create a multitask dataset with multiple datasets
+        
+        ```python
+        from transformers import BertTokenizer
+        from textbook import *
+        import pandas as pd
+        
+        tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+        
+        # add additional tokens for each task as special `cls_token`
+        tokenizer.add_special_tokens({"additional_special_tokens": [
+                "[ANLI]", "[HELLASWAG]"
+        ]})
+        
+        d1 = MultiModalDataset(
+            df=pd.read_json("data_cache/alphanli/train.jsonl", lines=True),
+            template=lambda x: template_anli(x, LABEL2INT['anli']),
+            renderers=[lambda x: renderer_text(x, tokenizer, "[ANLI]")],
+        )
+        bt1 = BatchTool(tokenizer, source="anli")
+        i1 = DataLoader(d1, batch_sampler=TokenBasedSampler(d1, batch_size=64), collate_fn=bt1.collate_fn)
+        
+        d2 = MultiModalDataset(
+                df=pd.read_json("data_cache/hellaswag/train.jsonl", lines=True),
+                template=lambda x: template_hellaswag(x, LABEL2INT['hellaswag']),
+                renderers=[lambda x: renderer_text(x, tokenizer, "[HELLASWAG]")],
+            )
+        bt2 = BatchTool(tokenizer, source="hellaswag")
+        i2 = DataLoader(d2, batch_sampler=TokenBasedSampler(d1, batch_size=64), collate_fn=bt2.collate_fn)
+        
+        d = MultiTaskDataset([i1, i2], shuffle=False)
+        
+        #! batch size must be 1 for multitaskdataset, because we already batched in each sub dataset.
+        for batch in DataLoader(d, batch_size=1, collate_fn=BatchTool.uncollate_fn):
+        
+            pass
+        
+            # {
+            #     "source": "anli" or "hellaswag",
+            #     "labels": ...,
+            #     "input_ids": ...,
+            #     "attentions": ...,
+            #     "token_type_ids": ...,
+            #     "images": ...,
+            # }
+        ```
+        
+        ### Impletement a New template or rennderer
+        
+        It is advised to follow the following conventions but you can do whatever you like since you can call `lambda` anywhere.
+        
+        ```python
+        def template_xxx(raw_datum, *args, **kwargs):
+            pass
+        
+        def renderer_xxx(intermediate_datum, *args, **kwargs):
+            pass
+        ```
+        
+        # Contact
+        
+        Author: Chenghao Mou
+        Email: mouchenghao@gmail.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
