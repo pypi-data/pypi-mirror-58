@@ -1,0 +1,8 @@
+torch
+transformers
+torchvision
+av
+pandas
+tqdm
+loguru
+numpy
