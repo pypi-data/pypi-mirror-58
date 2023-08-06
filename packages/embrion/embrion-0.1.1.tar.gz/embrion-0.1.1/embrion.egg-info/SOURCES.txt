@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+embrion/__init__.py
+embrion/cli.py
+embrion/docker-compose.yml
+embrion.egg-info/PKG-INFO
+embrion.egg-info/SOURCES.txt
+embrion.egg-info/dependency_links.txt
+embrion.egg-info/entry_points.txt
+embrion.egg-info/requires.txt
+embrion.egg-info/top_level.txt
+embrion/dev/Dockerfile
+embrion/dev/environment.yml
+embrion/dev/startup.sh
+embrion/dev/update_environment.sh
