@@ -1,0 +1,14 @@
+-c requirements.in
+pytest
+black
+invoke
+pyyaml
+mypy
+pip-tools
+semver
+twine
+wheel
+py-githooks
+pytest-cov
+codecov
+isort
