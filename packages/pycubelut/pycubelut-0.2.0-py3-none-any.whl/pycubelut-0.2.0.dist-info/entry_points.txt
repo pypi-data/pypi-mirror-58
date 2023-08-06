@@ -1,0 +1,3 @@
+[console_scripts]
+cubelut=pycubelut:main
+
