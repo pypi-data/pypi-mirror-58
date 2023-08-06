@@ -1,0 +1,6 @@
+nesteryql.py
+setup.py
+nesteryql.egg-info/PKG-INFO
+nesteryql.egg-info/SOURCES.txt
+nesteryql.egg-info/dependency_links.txt
+nesteryql.egg-info/top_level.txt
