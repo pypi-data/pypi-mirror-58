@@ -1,0 +1,5 @@
+purl
+dateutils
+lxml
+cssselect
+requests
