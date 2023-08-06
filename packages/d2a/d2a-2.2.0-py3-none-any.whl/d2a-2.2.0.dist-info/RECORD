@@ -1,0 +1,11 @@
+d2a/__init__.py,sha256=VzfNPtea5w_6VBdMypUTy_x8Dg-YNRJT7v5kkOc5cVw,5349
+d2a/apps.py,sha256=L_RpGy1dRv15IHMgJf02stug9hPyDzYnfV1CdgykKxc,550
+d2a/compat.py,sha256=YyXw05Rqrrirn0wNWkNK8O3q8TDM__23ON8o7VFOuYY,197
+d2a/db.py,sha256=R2hv_nHoq75bKHPe1vMQdaOXSjhnBfIgXzqhvmry9nc,8563
+d2a/fields.py,sha256=0Z9618ItKF8fetzmSLW3x2Mmhpexys8SYBhXaQ5aN9s,15150
+d2a/parsers.py,sha256=Rz8g_uq0RjTgYQMygkutjtVXypMysF0vxmT6oMicgQw,2038
+d2a/utils.py,sha256=_mW4lQyruntNalmWJxKJG26QkMQjhyrwZEZ7ocFHp0Q,261
+d2a-2.2.0.dist-info/METADATA,sha256=xNg1aTRIYaq7phlwz5ZtTya5Bwkqm3F3PtJYg2GBJN0,14293
+d2a-2.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+d2a-2.2.0.dist-info/top_level.txt,sha256=idhJCLBMEzqbjC0U_MQmjKu7TzF120SqHW14soXWLig,4
+d2a-2.2.0.dist-info/RECORD,,
