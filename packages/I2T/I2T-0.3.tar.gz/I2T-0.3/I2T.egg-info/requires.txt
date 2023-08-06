@@ -1,0 +1,4 @@
+os
+Pillow
+bs4
+pytesseract
