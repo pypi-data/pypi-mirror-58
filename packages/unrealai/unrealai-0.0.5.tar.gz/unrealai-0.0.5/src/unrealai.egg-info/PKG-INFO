@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: unrealai
+Version: 0.0.5
+Summary: Added Travis Integration and fixed build badge
+Home-page: https://github.com/nishgaba-ai/unrealai
+Author: Nishchal Gaba
+Author-email: nishgaba.ai@gmail.com
+License: UNKNOWN
+Description: [![PyPI version](https://badge.fury.io/py/unrealai.svg)](https://badge.fury.io/py/unrealai)
+        
+        [![Build Status](https://travis-ci.org/nishgaba-ai/unrealai.svg?branch=master)](https://travis-ci.org/nishgaba-ai/unrealai)
+        
+        ## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/nishgaba-ai/unrealai/issues)
+        
+        # unrealai
+        Image/Machine Learning Tool Interface
+        
+        
+        # Installation
+        Run the following to install:
+        
+        '''python
+        pip install unrealai
+        '''
+        
+        ## Usage
+        '''python
+        from helloworld import say_hello
+        
+        # Generate "Hello, World!"
+        say_hello()
+        
+        # Generate "Hello, Everybody!"
+        say_hello("Everybody")
+        '''
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
