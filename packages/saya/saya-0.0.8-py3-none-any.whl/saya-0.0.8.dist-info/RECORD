@@ -1,0 +1,17 @@
+saya/StartThread.py,sha256=IqEiRq6dtdnB3DovFHKGVVTcJeFAXaAcDJnW6sUf3TQ,368
+saya/__init__.py,sha256=c1PgNH-DVH8d1WITWnt6EPTp4RSqvAJXM7r8t03eljM,439
+saya/VK/Button.py,sha256=iym0DsFIhoZFRoQVK3mAl0isWtwWFLpkFE9iOSbk35c,457
+saya/VK/Event.py,sha256=muidTOAFXWgODHoUMqp-TQabfmY51opWIysoOJuJYzw,2295
+saya/VK/Keyboard.py,sha256=SvITUPI2N2lx_1WoqFSftxQAPXMoTuesymIysIyj_t0,1218
+saya/VK/LongPoll.py,sha256=Ji-zdjZ_SRajQUYnGP8EllflL_By6jqnJ3ywrUHHA9I,1877
+saya/VK/Template.py,sha256=q3I4CNt1LCgJ43LituWUvBWG7KePVLtZMh1ToaJQMYM,479
+saya/VK/TemplateElement.py,sha256=PlSAAEhMfE9RZLa8WRV0m-okzDHCQkI63cLTi9xLOoc,611
+saya/VK/Uploader.py,sha256=UsaEGrz6-fpk93cJxMRkYYZQVQN8FAmnovcze8WJACs,16002
+saya/VK/Vk.py,sha256=R3wOgp8-17OfD34qpFXq_-MaPtIIS9JC-b9q988ChdY,3668
+saya/VK/VkAuthManager.py,sha256=Xf8IF4SPEtQLt3blqmb8ncUucY-H0eRwRI40hzZu6Gs,2605
+saya/VK/VkScript.py,sha256=WJlnlHCNu5NwAIGDJwm_acBnrKUCl6nPzbtgd2aKbqE,7854
+saya/VK/__init__.py,sha256=A20L1y3YEi8iBhhnXlagIhgK0xnLOC4QJ7M0EAbrkkQ,531
+saya-0.0.8.dist-info/METADATA,sha256=wORr0mgCMGDQivIwLnR1N-zR0wkeTwHhWJMZTeZkjWw,2223
+saya-0.0.8.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+saya-0.0.8.dist-info/top_level.txt,sha256=LPlNfXeHp1uJeW4z3IVx3CQNhUg-xAAjxkApZx-VJw0,5
+saya-0.0.8.dist-info/RECORD,,
