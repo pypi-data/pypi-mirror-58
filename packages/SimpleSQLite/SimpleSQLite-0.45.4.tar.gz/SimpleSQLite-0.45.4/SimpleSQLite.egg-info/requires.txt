@@ -1,0 +1,30 @@
+setuptools>=38.3.0
+DataProperty<1,>=0.43.2
+mbstrdecoder<1,>=0.8.3
+six<2.0.0,>=1.10.0
+sqliteschema<1.0.0,>=0.16.2
+tabledata<1.0.0,>=0.9.1
+typepy<1,>=0.6.4
+
+[:python_version < "3.5"]
+pathvalidate<1
+
+[:python_version >= "3.5"]
+pathvalidate<2
+
+[dev]
+releasecmd<1,>=0.2.0
+twine
+wheel
+path.py
+readmemaker>=1.0.0
+sphinx_rtd_theme
+Sphinx
+
+[logging]
+Logbook<2.0.0,>=0.12.3
+
+[test]
+pytablereader>=0.26
+pytablewriter>=0.46
+pytest
