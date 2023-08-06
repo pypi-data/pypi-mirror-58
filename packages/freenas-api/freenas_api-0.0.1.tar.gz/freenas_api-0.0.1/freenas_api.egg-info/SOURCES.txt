@@ -1,0 +1,6 @@
+README.md
+setup.py
+freenas_api.egg-info/PKG-INFO
+freenas_api.egg-info/SOURCES.txt
+freenas_api.egg-info/dependency_links.txt
+freenas_api.egg-info/top_level.txt
