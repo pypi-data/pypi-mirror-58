@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hime
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: HoangTien Le (SamKunio)
+Author-email: samkunio@gmail.com
+Maintainer: HoangTien Le (SamKunio)
+Maintainer-email: samkunio@gmail.com
+License: BSD
+Project-URL: Bug Tracker, https://github.com/samkunio/hime/issues
+Project-URL: Source Code, https://github.com/samkunio/hime
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Cython
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
