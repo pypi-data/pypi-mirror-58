@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import argparse
+import sys
+from pprint import pprint
+
+from geopy.geocoders import Nominatim
+
+from experiment_impact_tracker.emissions.get_region_metrics import (
+    get_current_region_info, get_sorted_region_infos,
+    get_zone_information_by_coords)
+
+
+def cmdline_args():
+    # Make parser object
+    p = argparse.ArgumentParser(description=
+        """
+        This is a test of the command line argument parser in Python.
+        """,
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    
+    p.add_argument("command", help="Choose a command among: [current, top, bottom, longlat, address]. Current uses the IP address to get current region info. Top and bottom list the N regions of most and least carbon intensity. longlat uses geocoordinates. address uses address info to lookup carbon info.")
+    p.add_argument("--n", type=int, help="The number of emissions to print if command is: [top,bottom]")
+    p.add_argument("--lat", type=float, help="Latitude if using longlat command")
+    p.add_argument("--lon", type=float, help="Longitude if using longlat command")
+    p.add_argument("--address", type=str, help="The address to lookup if using the address command")
+    return(p.parse_args())
+
+
+if __name__ == '__main__':
+    
+    if sys.version_info<(3,0,0):
+        sys.stderr.write("You need python 3.0 or later to run this script\n")
+        sys.exit(1)
+        
+    args = cmdline_args()
+    if args.command == "current":
+        pprint(get_current_region_info())
+    elif args.command == "top":
+        pprint(get_sorted_region_infos()[:args.n])
+    elif args.command == "bottom":
+        pprint(get_sorted_region_infos()[-args.n:])
+    elif args.command == "longlat":
+        pprint(get_zone_information_by_coords((args.lat, args.lon)))
+    elif args.command == "address":
+        geolocator = Nominatim(user_agent="experiment_impact_tracker")
+        location = geolocator.geocode(args.address)
+        pprint(get_zone_information_by_coords((location.latitude, location.longitude)))
