@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_tls_rvanlaar.egg-info/PKG-INFO
+django_tls_rvanlaar.egg-info/SOURCES.txt
+django_tls_rvanlaar.egg-info/dependency_links.txt
+django_tls_rvanlaar.egg-info/not-zip-safe
+django_tls_rvanlaar.egg-info/requires.txt
+django_tls_rvanlaar.egg-info/top_level.txt
+tls/__init__.py
