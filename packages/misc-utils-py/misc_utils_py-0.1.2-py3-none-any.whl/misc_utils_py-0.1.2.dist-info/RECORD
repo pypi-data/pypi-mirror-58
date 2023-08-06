@@ -1,0 +1,10 @@
+miscutils/__init__.py,sha256=8vWF4q2OvGhH3_RdJ652szrndXUs2cVbb2Ms-D6Cxf4,135
+miscutils/logging_config.py,sha256=qAFfyU8upJI0nZB9-k68GxIXOjfl6CPO1p28O7ovgrQ,3753
+miscutils/testing.py,sha256=MG7mfwFp_fHdi8dVlNI97vIbcd0u9k2sHP9ZC21gcNs,644
+miscutils/timer.py,sha256=Ji2Z8CdM2ZsszhmnScgqzYVWYlwVqj73pVqx0NnR3JY,1186
+misc_utils_py-0.1.2.dist-info/LICENSE,sha256=Rj-i7ftXfj1bCdV0HSHfrg2OGBQlT09wxWuBy9ODsSA,11343
+misc_utils_py-0.1.2.dist-info/METADATA,sha256=M8ywFnX1q8PK_AJFAGLxN2tsfyXTc1tljHLqParImIk,2857
+misc_utils_py-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+misc_utils_py-0.1.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+misc_utils_py-0.1.2.dist-info/top_level.txt,sha256=27EwPRGvxHHtdYAe8Ilzdg3SeDdrWA9e-WUDdT11S9U,10
+misc_utils_py-0.1.2.dist-info/RECORD,,
