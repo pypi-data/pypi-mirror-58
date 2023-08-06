@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+test_requirements.txt
+anyrun/__init__.py
+anyrun/client.py
+anyrun/tests.py
+anyrun.egg-info/PKG-INFO
+anyrun.egg-info/SOURCES.txt
+anyrun.egg-info/dependency_links.txt
+anyrun.egg-info/not-zip-safe
+anyrun.egg-info/requires.txt
+anyrun.egg-info/top_level.txt
