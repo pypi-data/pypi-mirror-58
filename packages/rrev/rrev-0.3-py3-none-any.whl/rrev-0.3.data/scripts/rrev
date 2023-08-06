@@ -1,0 +1,24 @@
+#!python
+import sys, getopt
+
+def reverse_text(x):
+      return x[::-1]
+
+if len(sys.argv) ==2 and sys.argv[1] == "-h":
+    print("usage: rrver -h shows this help")
+    print("usage: rrver string to reverse here")
+    print("usage: rrver to start interactive program where every")
+    print("newline will be reversed. Exit with ctrl-c.")
+    sys.exit()
+elif len(sys.argv) > 1:
+    print(reverse_text(''.join(sys.argv[1:])))
+    sys.exit()
+else:
+    try:
+        while True:
+            text=raw_input()
+            print(reverse_text(text))
+    except KeyboardInterrupt:
+        sys.exit()
+
+
