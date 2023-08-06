@@ -1,0 +1,12 @@
+pytratto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytratto/connectivity/Connectivity.py,sha256=HVDt6i9aYtjdA4FMtef6D_WRSOS2nxRF4AHqpB1DyFw,4278
+pytratto/connectivity/__init__.py,sha256=dhmpNrNd5la3t3oFP4t8YMclqR3UAH6eUDdOww_4Oag,24
+pytratto/examples/__init__.py,sha256=dhmpNrNd5la3t3oFP4t8YMclqR3UAH6eUDdOww_4Oag,24
+pytratto/examples/test.py,sha256=Gw_6Lzr17LFn70nnJNsbehsG_SVS7Kc14gKf6DPhOz8,509
+pytratto/systems/Systems.py,sha256=R_VZDa97MGTi_UzCd65QEZpxJryvRPFxcQlsmSBSBec,1400
+pytratto/systems/__init__.py,sha256=TTw06hHvWWMntNaRU3HbSykTkNbDaqkODxHp7mOpq10,26
+py_tratto-0.0.2.dist-info/LICENSE,sha256=QI_0nGYHVxtcyt0pr6NG6NNQCuXaEf-xpX5gGNjywvM,1521
+py_tratto-0.0.2.dist-info/METADATA,sha256=ZtFSMYbGE4_U7_4mlx6YyTNIjy-zOwoe8Zel8gsI9TA,354
+py_tratto-0.0.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+py_tratto-0.0.2.dist-info/top_level.txt,sha256=0QFwkLCndGa4ewofAvhi3GStmW8jCJf6fG-k1T9rjco,9
+py_tratto-0.0.2.dist-info/RECORD,,
