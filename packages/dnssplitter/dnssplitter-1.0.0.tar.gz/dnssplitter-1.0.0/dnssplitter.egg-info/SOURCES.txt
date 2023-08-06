@@ -1,0 +1,11 @@
+README.md
+setup.py
+dnssplitter/DNSSplitter.py
+dnssplitter/__init__.py
+dnssplitter.egg-info/PKG-INFO
+dnssplitter.egg-info/SOURCES.txt
+dnssplitter.egg-info/dependency_links.txt
+dnssplitter.egg-info/entry_points.txt
+dnssplitter.egg-info/top_level.txt
+dnssplitter/scripts/__init__.py
+dnssplitter/scripts/dnssplit.py
