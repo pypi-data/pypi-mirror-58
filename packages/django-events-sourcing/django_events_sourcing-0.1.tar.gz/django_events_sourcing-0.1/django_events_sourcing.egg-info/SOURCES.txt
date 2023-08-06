@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_events_sourcing/__init__.py
+django_events_sourcing/admin.py
+django_events_sourcing/apps.py
+django_events_sourcing/models.py
+django_events_sourcing/signals.py
+django_events_sourcing/tests.py
+django_events_sourcing/views.py
+django_events_sourcing.egg-info/PKG-INFO
+django_events_sourcing.egg-info/SOURCES.txt
+django_events_sourcing.egg-info/dependency_links.txt
+django_events_sourcing.egg-info/top_level.txt
+django_events_sourcing/migrations/__init__.py
