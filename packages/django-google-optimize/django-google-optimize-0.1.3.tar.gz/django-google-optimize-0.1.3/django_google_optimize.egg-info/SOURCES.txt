@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_google_optimize.egg-info/PKG-INFO
+django_google_optimize.egg-info/SOURCES.txt
+django_google_optimize.egg-info/dependency_links.txt
+django_google_optimize.egg-info/top_level.txt
+docs/conf.py
+docs/getting_started.rst
+docs/index.rst
+google_optimize/__init__.py
+google_optimize/context_processors.py
+google_optimize/utils.py
