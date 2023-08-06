@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django-tgb-basics/__init__.py
+django-tgb-basics/backends.py
+django_tgb_basics.egg-info/PKG-INFO
+django_tgb_basics.egg-info/SOURCES.txt
+django_tgb_basics.egg-info/dependency_links.txt
+django_tgb_basics.egg-info/top_level.txt
