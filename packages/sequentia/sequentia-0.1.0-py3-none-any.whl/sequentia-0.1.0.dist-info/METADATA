@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: sequentia
+Version: 0.1.0
+Summary: A machine learning interface for isolated temporal sequence classification algorithms in Python.
+Home-page: https://github.com/eonu/sequentia
+Author: Edwin Onuonga
+Author-email: ed@eonu.net
+License: MIT
+Project-URL: Bug Tracker, https://github.com/eonu/sequentia/issues
+Project-URL: Source Code, https://github.com/eonu/sequentia
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Natural Language :: English
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (<2,>=1.17)
+Requires-Dist: pomegranate (<1,>=0.11)
+Requires-Dist: fastdtw (<0.4,>=0.3)
+Requires-Dist: scipy (<2,>=1.3)
+Requires-Dist: scikit-learn (<1,>=0.22)
+Requires-Dist: tqdm (<5,>=4.36)
+
+# Sequentia
+
+_A machine learning interface for isolated temporal sequence classification algorithms in Python._
+
+## Introduction
+
+<img src="https://i.ibb.co/gPymgs4/classifier.png" width="40%" align="right"></img>
+
+Temporal sequences are sequences of observations that occur over time. Changing patterns over time naturally provide many interesting opportunities and challenges for machine learning.
+
+This library specifically aims to tackle classification problems for isolated temporal sequences by creating an interface to a number of classification algorithms.
+
+Despite these types of sequences sounding very specific, you probably observe some of them on a regular basis!
+
+**Some examples of classification problems for isolated temporal sequences include classifying**:
+
+- isolated word utterances in speech audio signals,
+- [isolated hand-written characters according to their pen-tip trajectories](./examples/Pen-Tip%20Trajectories%20(Example).ipynb),
+- isolated hand or head gestures in a video or motion-capture recording.
+
+## Features
+
+Sequentia offers the use of **multivariate observation sequences with differing durations** in conjunction with the following algorithms and methods.
+
+### Classication algorithms
+
+- [x] Ensemble Hidden Markov Models
+  - [x] Multivariate Gaussian emission distributions
+  - [ ] Gaussian Mixture Model emission distributions (soon!)
+- [x] Approximate Dynamic Time Warping k-Nearest Neighbors (implemented with [FastDTW](https://github.com/slaypni/fastdtw) – also see [[1]](#references))
+- [ ] Long Short-Term Memory Networks (soon!)
+
+### Preprocessing methods
+
+- [x] Sequence Normalization
+- [x] Downsampling (by decimation and averaging)
+- [x] Discrete (Fast) Fourier Transform
+
+> **Disclaimer**: The package currently remains largely untested and is still in its first alpha stages – use carefully!
+
+## Installation
+
+```
+pip install sequentia
+```
+
+## References
+
+<table><tbody><tr><td>[1]</td><td><a href="https://pdfs.semanticscholar.org/05a2/0cde15e172fc82f32774dd0cf4fe5827cad2.pdf">Stan Salvador, and Philip Chan. <b>"FastDTW: Toward accurate dynamic time  warping in linear time and space."</b> Intelligent Data Analysis 11.5  (2007): 561-580.</a></td></tr></tbody></table>
+
+# Contributors
+
+All contributions to this repository are greatly appreciated. Contribution guidelines can be found [here](/CONTRIBUTING.md).
+
+<table>
+	<thead>
+		<tr>
+			<th align="center">
+                <a href="https://github.com/eonu">
+                <img src="https://avatars0.githubusercontent.com/u/24795571?s=460&v=4" alt="Edwin Onuonga" width="60px">
+                <br/><sub><b>Edwin Onuonga</b></sub>
+                </a>
+                <br/>
+                <a href="mailto:ed@eonu.net">✉️</a>
+                <a href="https://eonu.net">🌍</a>
+			</th>
+			<!-- Add more <th></th> blocks for more contributors -->
+		</tr>
+	</thead>
+</table>
+
+---
+
+<p align="center">
+  <b>Sequentia</b> &copy; 2019-2020, Edwin Onuonga - Released under the <a href="https://opensource.org/licenses/MIT">MIT</a> License.<br/>
+  <em>Authored and maintained by Edwin Onuonga.</em>
+</p>
+
