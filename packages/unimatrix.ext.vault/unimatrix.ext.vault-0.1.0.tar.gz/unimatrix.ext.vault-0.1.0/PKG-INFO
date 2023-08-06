@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: unimatrix.ext.vault
+Version: 0.1.0
+Summary: Unimatrix One Vault subsystem client library
+Home-page: https://gitlab.com/unimatrixone/libraries/python-unimatrix/vault
+Author: Cochise Ruhulessin
+Author-email: cochise.ruhulessin@digitalcitizen.nl
+License: GPLv3
+Description: # Unimatrix Vault Client Library
+        
+        ## Synopsis
+        
+        The Unimatrix Vault subsystem maintains secrets, such as
+        passwords and private keys, on the behalf of Unimatrix One
+        users. This Python package provides a client library that
+        exposes a simple API for most common operations.
+        
+        ```
+        import os
+        
+        import ioc
+        
+        
+        secret_id = '00000000-00000000-00000000-00000000'
+        service = ioc.require('VaultService')
+        with service.asymmetric(secret_id) as fp:
+            assert os.path.exists(fp)
+        
+        
+        assert not os.path.exists(fp)
+        ```
+        
+        
+        ## Installation
+        
+        ```
+        pip3 install unimatrix.ext.vault
+        ```
+        
+        ## Features
+        
+        - Remove sensitive data immediately from the local
+          system after use.
+        - Django integration through the `python-ioc` module.
+        
+        
+        ## License
+        
+        GPLv3
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+README.md
+setup.py
+unimatrix.ext.vault.egg-info/PKG-INFO
+unimatrix.ext.vault.egg-info/SOURCES.txt
+unimatrix.ext.vault.egg-info/dependency_links.txt
+unimatrix.ext.vault.egg-info/requires.txt
+unimatrix.ext.vault.egg-info/top_level.txt
