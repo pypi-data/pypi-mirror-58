@@ -1,0 +1,13 @@
+README.md
+setup.py
+autoBinning.egg-info/PKG-INFO
+autoBinning.egg-info/SOURCES.txt
+autoBinning.egg-info/dependency_links.txt
+autoBinning.egg-info/top_level.txt
+utils/__init__.py
+utils/backwardSplit.py
+utils/forwardSplit.py
+utils/mapa.py
+utils/simpleMethods.py
+utils/trendDiscretization.py
+utils/trendSplit.py
