@@ -1,0 +1,3 @@
+[console_scripts]
+cfn-ami-to-mapping = cfn_ami_to_mapping.run:main
+

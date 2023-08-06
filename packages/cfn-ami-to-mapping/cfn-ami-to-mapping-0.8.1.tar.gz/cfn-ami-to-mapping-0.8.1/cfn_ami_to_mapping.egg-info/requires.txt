@@ -1,0 +1,6 @@
+argparse
+boto3
+pyjson
+pyyaml
+more-itertools
+futures
