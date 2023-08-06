@@ -1,0 +1,9 @@
+setup.py
+loginspect/__init__.py
+loginspect/endpoint.py
+pbu_log_inspector.egg-info/PKG-INFO
+pbu_log_inspector.egg-info/SOURCES.txt
+pbu_log_inspector.egg-info/dependency_links.txt
+pbu_log_inspector.egg-info/not-zip-safe
+pbu_log_inspector.egg-info/requires.txt
+pbu_log_inspector.egg-info/top_level.txt
