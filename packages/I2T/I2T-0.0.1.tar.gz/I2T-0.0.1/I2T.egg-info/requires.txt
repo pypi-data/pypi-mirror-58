@@ -1,0 +1,16 @@
+validators
+beautifulsoup4
+os
+requests
+numpy
+PIL.Image
+PIL.ImageTk
+bs4
+cv2
+PIL
+re
+bs4
+pandas
+pytesseract
+urllib
+urllib.request
