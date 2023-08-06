@@ -1,0 +1,13 @@
+setup.py
+mapsbr/__init__.py
+mapsbr/arcgis.py
+mapsbr/ibgemaps.py
+mapsbr.egg-info/PKG-INFO
+mapsbr.egg-info/SOURCES.txt
+mapsbr.egg-info/dependency_links.txt
+mapsbr.egg-info/requires.txt
+mapsbr.egg-info/top_level.txt
+mapsbr/helpers/__init__.py
+mapsbr/helpers/ibgetools.py
+mapsbr/helpers/request.py
+mapsbr/helpers/utils.py
