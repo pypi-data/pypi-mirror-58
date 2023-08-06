@@ -1,0 +1,8 @@
+README.md
+setup.py
+llconfig/__init__.py
+llconfig/converters.py
+llconfig.egg-info/PKG-INFO
+llconfig.egg-info/SOURCES.txt
+llconfig.egg-info/dependency_links.txt
+llconfig.egg-info/top_level.txt
