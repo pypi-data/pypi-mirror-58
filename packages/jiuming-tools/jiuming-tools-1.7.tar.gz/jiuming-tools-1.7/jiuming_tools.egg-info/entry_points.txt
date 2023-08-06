@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ming=ming:cli
+    
