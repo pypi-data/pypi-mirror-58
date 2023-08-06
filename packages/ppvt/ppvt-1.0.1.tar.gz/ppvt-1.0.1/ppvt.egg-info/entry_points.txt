@@ -1,0 +1,3 @@
+[console_scripts]
+ppvt = pypi:run
+
