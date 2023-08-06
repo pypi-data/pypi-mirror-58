@@ -1,0 +1,82 @@
+netjson-rest
+======
+
+A simple flask rest API's to convert from json config to openwrt and vice versa
+
+The code is Python 2, but Python 3 compatible.
+
+Installation
+------------
+
+Fast install:
+
+::
+
+    pip install -i https://test.pypi.org/simple/ netjson-rest
+
+For a manual install get this package:
+
+::
+
+    wget git@github.com:umeshahp/netjson-rest.git
+    unzip master.zip
+    rm master.zip
+    cd netjson-rest
+
+Install the package:
+
+::
+
+    python setup.py install
+
+Example
+--------
+To run
+python flaskRestAPI.py
+
+
+
+
+Usage:
+#
+Call this to convert from json  to openwrt : http://<IP>:6000//spanfi/api/v1/toopen_wrt
+# test.py
+data = {
+    "hostname" :  "spanidea",
+    "timezone" :  "IST",
+    "radios" : [{
+    "name" : "Spanidea",
+    "protocol" : "802.11ac" ,
+    "channel" : 36,
+    "channel_width" : 20,
+    "tx_power " : 10,
+    "country" : "IN"
+
+        }
+]
+,
+"wireless": [
+        {
+            "name": "lo",
+            "type": "wireless",
+            "addresses": [
+                {
+                    "address": "127.0.0.1",
+                    "mask": 8,
+                    "proto": "static",
+                    "family": "ipv4"
+                }
+            ]
+        }
+    ]
+}
+x = request.post(data =data, url = 'http://<IP>:6000/spanfi/api/v1/toopen_wrt')
+
+::
+Call this to convert from  openwrt to json : http://<IP>:6000/spanfi/api/v1/tojson
+multipart_form_data = {
+    'file2': ('custom_file_name.zip', open('myfile.zip', 'rb')),
+    'action': (None, 'store'),
+    'path': (None, '/path1')
+}
+x = request.post(data = data, url = 'http://<IP>:6000/spanfi/api/v1/tojson', files=multipart_form_data )
