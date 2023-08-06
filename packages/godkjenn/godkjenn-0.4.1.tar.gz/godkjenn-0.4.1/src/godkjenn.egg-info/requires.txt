@@ -1,0 +1,15 @@
+click
+exit-codes
+stevedore
+toml
+
+[dev]
+bumpversion
+twine
+
+[pytest-plugin]
+pytest
+
+[test]
+hypothesis
+pytest

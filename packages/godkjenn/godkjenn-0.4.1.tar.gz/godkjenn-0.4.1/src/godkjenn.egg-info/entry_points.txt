@@ -1,0 +1,9 @@
+[console_scripts]
+godkjenn = godkjenn.cli:main
+
+[godkjenn.vault]
+fs-vault = godkjenn.fs_vault:plugin
+
+[pytest11]
+godkjenn = godkjenn.integration.pytest_plugin
+
