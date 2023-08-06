@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: decouple
+Version: 0.0.3
+Summary: Decoupling logic
+Home-page: https://github.com/andrey-avdeev/decouple
+Author: Andrey Avdeev
+Author-email: seorazer@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/andrey-avdeev/decouple/archive/v_0.0.3.tar.gz
+Description: # Decouple
+        
+        Library for decoupling system's logic by mediator and modularity.
+Keywords: decouple mediator decoupling
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
