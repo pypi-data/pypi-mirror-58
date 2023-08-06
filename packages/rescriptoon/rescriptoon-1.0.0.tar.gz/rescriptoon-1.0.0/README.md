@@ -1,0 +1,62 @@
+# rescriptoon
+Control one or two Toons in Toontown Rewritten via keyboard
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Last Release](https://img.shields.io/pypi/v/rescriptoon.svg)](https://pypi.org/project/rescriptoon/#history)
+[![Python Version](https://img.shields.io/pypi/pyversions/rescriptoon.svg)](https://pypi.org/project/rescriptoon/)
+
+## Installation
+
+Compatible with X Window System (X11)
+
+```sh
+$ sudo apt-get install python3-xlib `# optional`
+$ pip3 install --user --upgrade rescriptoon
+```
+
+## Usage
+
+1. Launch one or two Toontown engines
+2. Run `rescriptoon`
+
+`rescriptoon --help` shows all available options.
+
+While in the game press `` ` `` (grave) to disable key remapping.
+Press `` ` `` again to re-enable.
+
+```sh
+$ rescriptoon --toggle slash
+```
+
+## Mappings
+
+![default mapping](docs/extended-controls/default-mapping.svg)
+
+(based on <https://en.wikipedia.org/wiki/File:Qwerty.svg>)
+
+### Movement
+
+| Key   | Action                          | Target Engine |
+| ----- | ------------------------------- | ------------- |
+| `     | turn key remapping on / off     |               |
+| w     | walk forward                    | 0             |
+| s     | walk backward                   | 0             |
+| a     | turn left                       | 0             |
+| d     | turn right                      | 0             |
+| v     | low throw                       | 0             |
+| o     | walk forward                    | 1             |
+| l     | walk backward                   | 1             |
+| k     | turn left                       | 1             |
+| ;     | turn right                      | 1             |
+| /     | jump                            | 1             |
+| n     | low throw                       | 1             |
+| space | jump                            | all           |
+
+### Gag Selection
+
+| Key   | Action                          | Target Engine |
+| ----- | ------------------------------- | ------------- |
+| e     | select elephant trunk in battle | 0             |
+| i     | select elephant trunk in battle | 1             |
+| f     | select fog in battle            | 0             |
+| j     | select fog in battle            | 1             |
