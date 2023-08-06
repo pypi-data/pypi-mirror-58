@@ -1,0 +1,7 @@
+README.md
+setup.py
+tensonent/__init__.py
+tensonent.egg-info/PKG-INFO
+tensonent.egg-info/SOURCES.txt
+tensonent.egg-info/dependency_links.txt
+tensonent.egg-info/top_level.txt
