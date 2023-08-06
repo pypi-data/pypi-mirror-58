@@ -1,0 +1,3 @@
+==================rt.categorysupport
+==================
+User documentation

@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-09-03 16:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./behaviors/configure.zcml:13
+msgid "Adds possibility to add categories to some content"
+msgstr "Aggiunge la possibilita di aggiungere tassonomie per i contenuti dexterity"
+
+#: ./configure.zcml:30
+msgid "Installs the rt.categorysupport add-on."
+msgstr "Installa il plugin rt.categorysupport."
+
+#: ./browser/configure.zcml:50
+msgid "Taxonomies info view"
+msgstr "Vista Temi"
+
+#: ./profiles/default/controlpanel.xml
+msgid "Taxonomy Settings"
+msgstr "Impostazioni Temi"
+
+#: ./behaviors/configure.zcml:13
+msgid "Taxonomy support behavior"
+msgstr "Comportamento supporto temi"
+
+#: ./configure.zcml:39
+msgid "Uninstalls the rt.categorysupport add-on."
+msgstr "Disinstalla il plugin rt.categorysupport."
+
+#. Default: "Category list"
+#: ./browser/settings.py:10
+msgid "category_list"
+msgstr "Lista di temi"
+
+#. Default: "Filed under:"
+#: ./browser/templates/keywords.pt:9
+msgid "label_filed_under"
+msgstr "Categorie:"
+
+#. Default: "Categorization"
+#: ./behaviors/category.py:16
+msgid "label_schema_categorization"
+msgstr ""
+
+#. Default: "Taxonomies:"
+#: ./browser/templates/keywords.pt:24
+msgid "label_taxonomies_under"
+msgstr "Temi:"
+
+#: ./configure.zcml:30
+msgid "rt.categorysupport"
+msgstr ""
+
+#: ./configure.zcml:39
+msgid "rt.categorysupport (uninstall)"
+msgstr ""
+
+#. Default: "Taxonomies"
+#: ./behaviors/category.py:21
+msgid "taxonomies"
+msgstr "Temi"
+
+#. Default: "Un campo aggiuntivo per la gestione di nuove parole chiave."
+#: ./behaviors/category.py:22
+msgid "taxonomies_description"
+msgstr ""
+
+#. Default: "Taxonomy Settings"
+#: ./browser/settings.py:20
+msgid "taxonomy_settings"
+msgstr "Impostazioni Temi"

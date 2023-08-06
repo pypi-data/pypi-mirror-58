@@ -1,0 +1,38 @@
+<nav i18n:domain="rt.categorysupport"
+     id="category"
+     class="documentByLine"
+     role="navigation"
+     tal:define="categories context/Subject|nothing;
+                 taxonomies context/taxonomies|nothing;
+                 url_quote  nocall:modules/Products.PythonScripts.standard/url_quote;">
+  <div tal:condition="categories">
+    <span id="categories-filed-under"><tal:filedunder i18n:translate="label_filed_under">Filed under:</tal:filedunder></span>
+    <ul aria-labelledby="categories-filed-under">
+      <li tal:repeat="category categories">
+        <a href=""
+           class="link-category"
+           rel="tag"
+           tal:content="category"
+           tal:define="quotedCat python:url_quote(category)"
+           tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/@@search?Subject%3Alist=${quotedCat}">
+          Category
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div tal:condition="taxonomies">
+    <span id="taxonomies-filed-under"><tal:filedunder i18n:translate="label_taxonomies_under">Taxonomies:</tal:filedunder></span>
+    <ul aria-labelledby="taxonomies-filed-under">
+      <li tal:repeat="taxonomy taxonomies">
+        <a href=""
+           class="link-taxonomy"
+           rel="taxonomy"
+           tal:content="taxonomy"
+           tal:define="quotedCat python:url_quote(taxonomy)"
+           tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/@@search?taxonomies%3Alist=${quotedCat}">
+          Taxonomies
+          </a>
+      </li>
+    </ul>
+  </div>
+</nav>
