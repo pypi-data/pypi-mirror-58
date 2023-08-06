@@ -1,0 +1,6 @@
+include *.lock
+include *.txt
+include *.rst
+include Pipfile
+include example_config.ini
+recursive-include coimbra_chamber *.py
