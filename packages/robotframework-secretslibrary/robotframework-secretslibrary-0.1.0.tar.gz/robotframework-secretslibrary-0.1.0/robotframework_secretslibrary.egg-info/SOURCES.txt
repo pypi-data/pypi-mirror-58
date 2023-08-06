@@ -1,0 +1,7 @@
+README.rst
+setup.py
+robotframework_secretslibrary.egg-info/PKG-INFO
+robotframework_secretslibrary.egg-info/SOURCES.txt
+robotframework_secretslibrary.egg-info/dependency_links.txt
+robotframework_secretslibrary.egg-info/requires.txt
+robotframework_secretslibrary.egg-info/top_level.txt
