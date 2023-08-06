@@ -1,0 +1,8 @@
+structured_data/__init__.py,sha256=vSuw1fsZSrMHUOLO9W_oLki34Ys2kw19JGyr4OSg6p0,170
+structured_data/apps.py,sha256=VeaElG9otLb4KBqodtEwyeyinVHol8hDFLfQpvMxYO4,154
+structured_data/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+structured_data/templatetags/jsonld.py,sha256=yOa2UKDgYKGm9Fcp_Lx6RLWDWlu61RThTOFsOkhsoqo,783
+django_structured_data-0.1.0.dist-info/LICENSE,sha256=4l8ZV2uKlMrp-9Nw-UO_bzMGOBE3cNI0iVgspZRukjI,1072
+django_structured_data-0.1.0.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+django_structured_data-0.1.0.dist-info/METADATA,sha256=8jDSuxTUvxFw1h1vshOpmkw6aP25YvOu9g8KXs8b15s,2622
+django_structured_data-0.1.0.dist-info/RECORD,,
