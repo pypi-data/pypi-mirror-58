@@ -1,0 +1,7 @@
+README.md
+setup.py
+moomba/__init__.py
+moomba.egg-info/PKG-INFO
+moomba.egg-info/SOURCES.txt
+moomba.egg-info/dependency_links.txt
+moomba.egg-info/top_level.txt
