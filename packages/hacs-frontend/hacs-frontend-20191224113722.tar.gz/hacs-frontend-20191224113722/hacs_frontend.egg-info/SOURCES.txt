@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+hacs_frontend/__init__.py
+hacs_frontend/debug_20191224113722.js
+hacs_frontend/debug_20191224113722.js.gz
+hacs_frontend/main_20191224113722.js
+hacs_frontend/main_20191224113722.js.gz
+hacs_frontend/version.py
+hacs_frontend.egg-info/PKG-INFO
+hacs_frontend.egg-info/SOURCES.txt
+hacs_frontend.egg-info/dependency_links.txt
+hacs_frontend.egg-info/not-zip-safe
+hacs_frontend.egg-info/top_level.txt
