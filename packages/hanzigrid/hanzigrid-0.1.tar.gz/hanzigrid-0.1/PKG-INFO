@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: hanzigrid
+Version: 0.1
+Summary: Generate a Chinese character grid for study
+Home-page: https://github.com/proycon/hanzigrid
+Author: Maarten van Gompel
+Author-email: proycon@anaproy.nl
+License: GPL
+Description: Hanzi Grid Tool
+        ====================
+        
+        This is the command line tool that generated the above chinese character study grids, and with which you can create your
+        own study grids.
+        
+        * **SVG images** - great for printing, making your own chinese character poster and hanging it on your wall!
+        * **An interactive HTML page** (using the SVG images - for study on computers or mobile devices. There's also
+          Javascript/JSON output which you can immediately reuse in your own applications.
+        
+        The tool is fed a list of input characters (a plain text file), and it will look up each character in HSK level 1 to 6
+        and draw it on the grid along with additional information. This means you can use it to generate custom grids with
+        exactly the characters **you** want and in the order you want.
+        
+        Features
+        --------------
+        
+        * Characters can be assigned a colour corresponding to the tone (1 - red, 2 - yellow, 3 - green, 4 - blue). Characters that
+          have multiple readings, are neutral tone, or for which no pinyin could be found (if they're not in HSK) are always shown in black.
+        * HSK levels can be indicated by cell background colour (HSK1-3: white, HSK4: light grey; HSK5: yellow, HSK6: red, not
+          in HSK: dark grey).  This may act as a cue for you to skip the character until you're proficient in the lowel levels.
+        * Example words from the HSK lexicon are shown (up to two in the images). In the interactive form, click a character words in which they occur.
+        * Showing pinyin on the grid is supported (but not enabled by default)
+        * Pinyin ordering is supported (not enabled by default)
+        * The alternative character (simlified/traditional) can be shown in the bottom-right corner of the cell.
+        * You can determines the columns/rows/cell sizes.
+        
+        Installation
+        ---------------
+        
+        Familiarity with Python and the command line is assumed if you want to use this tool to make your own hanzi grids,
+        install hanzigrid using pip as follows::
+        
+            pip install hanzigrid
+        
+        Usage
+        --------
+        
+        See ``hanzigrid --help``
+        
+        
+        Notes
+        -------
+        
+        The interactive page HTML outputted by this tool has to be served from a proper webserver, serving locally from ``file:///`` will not work well!
+        
+        
+        
+        
+        
+        
+        
+        
+Keywords: chinese hanzi characters
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
