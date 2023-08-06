@@ -1,0 +1,10 @@
+jgt_common/__init__.py,sha256=66asQd-MMsId0msJEvfm98nrpRi5Y77yq_j6lyi0eIM,46722
+jgt_common/assert_.py,sha256=m-MFq5Z9AvD_flLTf4bnAhamw8ZrLfrSAYcTXYAdtF4,1938
+jgt_common/check.py,sha256=aSF0pTeprJm9Sp6RQo7iFAD5WIJztrTFMj21ziP__oU,6123
+jgt_common/http_helpers.py,sha256=zvEoqcH1elgNluY4gTIUw7Ypc9wyQF6lNtyyLrjpkxo,15491
+jgt_common/tag_to_url.py,sha256=VMv8HFrdRaCGWHnlCGc_XBdgqTHsZCBIxb1N3FvdY3U,442
+jgt_common/uuid_replacer.py,sha256=j2ha2LAQi8qhTYZyZk_SahpWz6cyrFK4SEOyoUsOV3g,3752
+jgt_common-1.0.6.dist-info/entry_points.txt,sha256=FTKjrO5nzdJGUXsQaiK9HBuPKcbLxOe1LJf5BqRPkh0,185
+jgt_common-1.0.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+jgt_common-1.0.6.dist-info/METADATA,sha256=7LaLesdnJ1Xtu5yPwsdpw3QhdOKY5LlEH55GWbHCzAk,936
+jgt_common-1.0.6.dist-info/RECORD,,
