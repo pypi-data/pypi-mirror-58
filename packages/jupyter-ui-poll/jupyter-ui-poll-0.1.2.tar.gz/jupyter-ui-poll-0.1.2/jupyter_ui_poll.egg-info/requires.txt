@@ -1,0 +1,5 @@
+ipython
+
+[dev]
+wheel
+jupyter
