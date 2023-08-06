@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: thejoker
+Version: 1.0
+Summary: A custom Monte Carlo sampler for the two-body problem.
+Home-page: https://github.com/adrn/thejoker
+Author: Adrian Price-Whelan
+Author-email: adrianmpw@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
