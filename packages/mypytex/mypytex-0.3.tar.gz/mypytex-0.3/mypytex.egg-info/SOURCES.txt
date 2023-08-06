@@ -1,0 +1,11 @@
+README.rst
+setup.py
+mypytex.egg-info/PKG-INFO
+mypytex.egg-info/SOURCES.txt
+mypytex.egg-info/dependency_links.txt
+mypytex.egg-info/requires.txt
+mypytex.egg-info/top_level.txt
+pytex/__init__.py
+pytex/latex_error_parser.py
+pytex/pytex.py
+pytex/texenv.py
