@@ -1,0 +1,7 @@
+setup.py
+dataflow/__init__.py
+dataflow/dataflow.py
+pydataflow.egg-info/PKG-INFO
+pydataflow.egg-info/SOURCES.txt
+pydataflow.egg-info/dependency_links.txt
+pydataflow.egg-info/top_level.txt
