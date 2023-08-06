@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block body %}
+{% include "navigation.html" %}
+{% if back_ %}
+<a href="{{ back_ }}">Back</a>
+{% endif %}
+{% if place_before %}
+    {% include user_content_ %}
+{% endif %}
+<div class="album-container">
+    <ul class="child-albums-list">
+        {% for title, url, thumbnail in albums_ %}
+        <li>
+            <a href="{{ url }}">
+                {% if thumbnail %}
+                <img class="album-thumbnail" src="{{ thumbnail }}"/>
+                {% else %}
+                <div class="album-default-thumbnail"></div>
+                {% endif %}
+            </a>
+            <p class="child-album-title">{{ title }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="thumbnail-container">
+    <ul class="thumbnails-list">
+        {% for title, url, thumbnail in thumbnails_ %}
+        <li class="thumbnail-item">
+            <a href="{{ url }}">
+                <img class="picture" src="{{ thumbnail }}"/>
+            </a>
+            <p class="thumbnail-title">{{ title }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% if not place_before %}
+    {% include user_content_ %}
+{% endif %}
+{% endblock body %}
