@@ -1,0 +1,12 @@
+neumf/__init__.py,sha256=mP4cvZbMA7EXAfz5eSuxKA8CpW0zVUE1IRYuDAFbGrA,491
+neumf/settings.py,sha256=smPeKZpknOZ2N0RBv_CqSbUvtBimT4_3t84PvmSx9AA,581
+neumf/utils.py,sha256=2L__hklkODxI5j2W2RNUE2BRQw37Naf7vyzt50DXES0,56
+neumf/keras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neumf/keras/data.py,sha256=_BMaCVGcM8S_GZ_GiyDmvHXRTYrOdA4w1YSHIEj4tno,6299
+neumf/keras/layers.py,sha256=9Rb8WRqtNxmI374aXEbjRmtISk5R4wLVkY5ehtYl4NU,1370
+neumf/keras/model.py,sha256=y5-V1PwkDkWf0dqjhsmZqSqXZtYf36lQxh7f3I0n6nY,7810
+neumf/keras/utils.py,sha256=p2xMr4NnjyxgTLRtqioJ68Ik-Dl5UR8t8ObpzaqPCwA,3760
+neumf-0.0.2.dist-info/METADATA,sha256=HQ836xDUBTYX1mzUw8WkwWXmrFPalKdbxs5HYcT_6EU,751
+neumf-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+neumf-0.0.2.dist-info/top_level.txt,sha256=1kVSWXqu-MehAmXhKX7wZ3RUGHs8qc4WCzQlPxS4vZU,6
+neumf-0.0.2.dist-info/RECORD,,
