@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: AdamTools
+Version: 0.0.3
+Summary: My tool library. You probably don't want this
+Home-page: https://github.com/AdamSwenson/AdLib
+Author: adam swenson
+Author-email: adam.swenson@csun.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+
+
+# Adam's Standard Library
+
+Tools that I use in lots of projects. Doubt you want these....
+
