@@ -1,0 +1,10 @@
+jinja2
+google-cloud
+datetime
+google-cloud-bigquery
+google-cloud-storage
+pprint
+absl-py
+boto
+queue
+deepdiff>=3.3.0
