@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: WiPi
+Version: 0.0.7
+Summary: A general use class based WPA network manager
+Home-page: https://github.com/ryanchaiyakul/WiPi
+Author: Ryan Chaiyakul
+License: UNKNOWN
+Description: # PyFi
+        
+        A general use class based WPA network manager.
+        
+        ## Supports
+        
+         - Linux (information, setting network, setting interface mode, scanning)
+         - Windows (scanning)
+        
+        ## Improvements
+        
+        **Listed by priority**
+        
+         - Testing suite
+         - Increased windows support
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
