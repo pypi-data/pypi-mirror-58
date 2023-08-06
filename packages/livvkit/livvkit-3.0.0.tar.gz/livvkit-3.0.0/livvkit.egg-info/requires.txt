@@ -1,0 +1,17 @@
+numpy
+scipy
+netCDF4
+matplotlib
+jinja2
+json_tricks==3.11.0
+pybtex
+pandas
+
+[develop]
+requests
+pytest
+pytest-cov
+tox
+sphinx
+sphinx-js
+sphinx-py3doc-enhanced-theme
