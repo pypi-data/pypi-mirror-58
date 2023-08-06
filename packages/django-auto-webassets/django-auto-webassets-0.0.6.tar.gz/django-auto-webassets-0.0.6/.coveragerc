@@ -1,0 +1,4 @@
+[run]
+branch = True
+source = django_auto_webassets
+omit = */tests/*, */migrations/*

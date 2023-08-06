@@ -1,0 +1,20 @@
+{
+  "name": "test_django_auto_webassets",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:obob/obob_subjectdb.git"
+  },
+  "author": "",
+  "license": "None",
+  "dependencies": {
+    "requirejs": "^2.3.0",
+    "bootstrap-sass": "~3",
+    "jquery": "~3"
+  }
+}
