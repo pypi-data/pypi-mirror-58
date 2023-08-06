@@ -1,0 +1,16 @@
+CHANGELOG.rst
+CONTRIBUTORS.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/bfabio.sphinx_rst_builder.egg-info/PKG-INFO
+src/bfabio.sphinx_rst_builder.egg-info/SOURCES.txt
+src/bfabio.sphinx_rst_builder.egg-info/dependency_links.txt
+src/bfabio.sphinx_rst_builder.egg-info/requires.txt
+src/bfabio.sphinx_rst_builder.egg-info/top_level.txt
+src/bfabio.sphinx_rst_builder.egg-info/zip-safe
+src/sphinx_rst_builder/__init__.py
+src/sphinx_rst_builder/_builder.py
+src/sphinx_rst_builder/_writer.py
