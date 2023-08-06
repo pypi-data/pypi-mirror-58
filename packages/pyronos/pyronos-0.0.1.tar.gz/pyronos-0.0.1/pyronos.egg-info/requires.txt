@@ -1,0 +1,5 @@
+requests==2.21.0
+validators==0.14.0
+numpy==1.16.4
+matplotlib==2.2.3
+tqdm==4.31.1

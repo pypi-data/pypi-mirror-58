@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pyronos
+Version: 0.0.1
+Summary: Simple and sweet load testing module.
+Home-page: https://github.com/0x01h/pyronos
+Author: Orçun Özdemir
+Author-email: benorcunozdemir@gmail.com
+License: WTFPL
+Description: ![Pyronos](images/pyronos.png)
+        # Pyronos ![PyPI](https://img.shields.io/pypi/v/pyronos) [![Repository Size](https://img.shields.io/github/repo-size/0x01h/pyronos)](https://pypi.python.org/pypi/ansicolortags/) [![GitHub License](https://img.shields.io/github/license/0x01h/cryptemis?style=flat-square)](https://pypi.python.org/pypi/ansicolortags/)
+        Simple and sweet load testing module.
+        
+        ## Installation
+        ```bash
+        pip3 install pyronos
+        ```
+        
+        ## Command Line Interpreter (CLI)
+        Creates a **"results"** folder in the current directory to store all of the load testings.
+        ```bash
+        # Simple usage.
+        pyronos https://my.website get 25 simple
+        
+        # Send head request.
+        pyronos https://my.website head 25 simple
+        
+        # Dump logs.
+        pyronos https://my.website get 25 simple -d
+        
+        # Send requests sequentially.
+        pyronos https://my.website get 25 simple -s
+        
+        # Print progress of sequential requests.
+        pyronos https://my.website get 25 simple -s -p
+        
+        ```
+        
+        ## Module
+        ```python
+        from pyronos import Pyronos
+        
+        
+        URL = 'https://my.website'
+        HTTP_METHOD = 'get'  # or 'head', 'options', 'delete', 'post', 'put'.
+        NUM_OF_REQS = 25
+        DATA = {}  # Add request body.
+        HEADERS = {}  # Add request headers.
+        FIGURE = 'simple'  # or 'stem', 'step'.
+        OUTPUT = 'csv'  # or 'json', 'yml'.
+        SEQUENTIAL = False
+        PRINT_PROGRESS = False
+        DUMP_LOGS = True
+        
+        load_tester = Pyronos(URL, HTTP_METHOD,
+                              num_requests=NUM_OF_REQS, figure=FIGURE,
+                              output=OUTPUT, sequential=SEQUENTIAL,
+                              print_progress=PRINT_PROGRESS, dump_log=DUMP_LOGS)
+        load_tester.dispatcher()  # Dispatch requests to start load testing.
+        ```
+        
+        ## Example Stem Figure
+        ![Example Stem Figure](images/example_figure.png)
+        
+        ## Example JSON Output
+        ```json
+        {
+            'starting_time': '30/12/2019 02:56:38',
+            'finishing_time': '30/12/2019 02:56:42',
+            'response_times': [0.314406, 0.268947, 0.286585, 0.303832, 0.30449, 0.276836, 0.294791, 0.308027, 0.270716, 0.289745, 0.304603, 0.276385, 0.303491, 0.29894, 0.275576], 'response_codes': [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200],
+            'num_of_failed_responses': 0,
+            'q1': 0.2766105,
+            'median': 0.294791,
+            'q3': 0.304161,
+            'std': 0.014522718628258128
+        }
+        ```
+        
+        ## PyPI
+        https://pypi.org/project/pyronos/
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

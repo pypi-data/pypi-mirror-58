@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+
+import argparse
+
+from pyronos import Pyronos
+from pyronos.pyronos import VERSION
+from pyronos.pyronos import AVAILABLE_FIGURES
+from pyronos.pyronos import AVAILABLE_METHODS
+from pyronos.pyronos import AVAILABLE_OUTPUTS
+
+parser = argparse.ArgumentParser(prog='pyronos',
+                                 description='Simple and sweet load testing module.',
+                                 epilog='Example Usage: pyronos https://my.website get 25 simple')
+parser.add_argument('url', help='url of website', type=str)
+parser.add_argument('method', help='http method', type=str, choices=AVAILABLE_METHODS)
+parser.add_argument('num_of_reqs', help='number of requests', type=int)
+parser.add_argument('-f', '--figure', help='type of figure', type=str, default='simple', choices=AVAILABLE_FIGURES)
+parser.add_argument('-o', '--output', help='type of output', type=str, default='csv', choices=AVAILABLE_OUTPUTS)
+parser.add_argument('-s', '--sequential', help='sequential requests', action='store_true')
+parser.add_argument('-p', '--print-progress', help='print progress', action='store_true')
+parser.add_argument('-d', '--dump-logs', help='dump logs', action='store_true')
+parser.add_argument('-v', '--version', action='version', version=VERSION)
+args = parser.parse_args()
+
+URL = args.url
+HTTP_METHOD = args.method
+NUM_OF_REQS = args.num_of_reqs
+FIGURE = args.figure
+OUTPUT = args.output
+SEQUENTIAL = args.sequential
+PRINT_PROGRESS = args.print_progress
+DUMP_LOGS = args.dump_logs
+
+load_tester = Pyronos(URL, HTTP_METHOD,
+                      num_requests=NUM_OF_REQS, figure=FIGURE,
+                      output=OUTPUT, sequential=SEQUENTIAL,
+                      print_progress=PRINT_PROGRESS, dump_log=DUMP_LOGS)
+load_tester.dispatcher()
