@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: cdk-spa-deploy
+Version: 0.1.15
+Summary: cdk-spa-deploy
+Home-page: https://github.com/nideveloper/CDK-SPA-Deploy.git
+Author: matt@vs-software.co.uk
+License: MIT
+Project-URL: Source, https://github.com/nideveloper/CDK-SPA-Deploy.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsii (~=0.20.11)
+Requires-Dist: publication (>=0.0.3)
+Requires-Dist: aws-cdk.aws-certificatemanager (>=1.19.0,~=1.19)
+Requires-Dist: aws-cdk.aws-cloudfront (>=1.19.0,~=1.19)
+Requires-Dist: aws-cdk.aws-s3 (>=1.19.0,~=1.19)
+Requires-Dist: aws-cdk.aws-s3-deployment (>=1.19.0,~=1.19)
+Requires-Dist: aws-cdk.core (>=1.19.0,~=1.19)
+
+# CDK-SPA-Deploy
+
+This is an AWS CDK Construct to make deploying a website to S3 behind SSL/Cloudfront easier
+![cdk-spa-deploy example](img/spadeploy.png)
+
+## Installation
+
+### Typescript
+
+npm install --save cdk-spa-deploy
+
+### Python
+
+pip install cdk-spa-deploy
+
+## Advanced Usage
+
+You can also pass the ARN for an SSL certification and your alias routes to cloudfront
+
+![cdk-spa-deploy alias](img/cdkdeploy-alias.png)
+
+## Issues / Feature Requests
+
+https://github.com/nideveloper/CDK-SPA-Deploy
+
+
