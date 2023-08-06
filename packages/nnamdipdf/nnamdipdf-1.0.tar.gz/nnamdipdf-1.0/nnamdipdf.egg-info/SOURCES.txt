@@ -1,0 +1,9 @@
+README.md
+setup.py
+nnamdipdf/__init__.py
+nnamdipdf/pdf2image.py
+nnamdipdf/pdf2text.py
+nnamdipdf.egg-info/PKG-INFO
+nnamdipdf.egg-info/SOURCES.txt
+nnamdipdf.egg-info/dependency_links.txt
+nnamdipdf.egg-info/top_level.txt
