@@ -1,0 +1,3 @@
+#!python
+from pervane import serve
+serve.main()
