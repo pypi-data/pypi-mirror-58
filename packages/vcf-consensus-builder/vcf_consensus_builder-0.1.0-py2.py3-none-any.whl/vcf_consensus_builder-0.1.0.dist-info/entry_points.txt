@@ -1,0 +1,3 @@
+[console_scripts]
+vcf_consensus_builder = vcf_consensus_builder.cli:main
+
