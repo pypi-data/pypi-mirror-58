@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tellor
+Version: 0.3.8
+Summary: python wrapper for tellor decentralized oracle
+Author: banteg
+Author-email: banteeg@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: web3 (>=5.4.0,<6.0.0)
