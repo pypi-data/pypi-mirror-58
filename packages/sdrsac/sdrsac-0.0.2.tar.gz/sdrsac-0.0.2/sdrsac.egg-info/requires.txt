@@ -1,0 +1,6 @@
+pybind11>=2.2
+numpy
+open3d
+cvxopt
+picos
+scipy

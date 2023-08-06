@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sdrsac
+Version: 0.0.2
+Summary: Global and Robust Point Cloud Registration
+Home-page: https://github.com/neka-nat/sdrsac
+Author: neka-nat
+Author-email: nekanat.stock@gmail.com
+License: UNKNOWN
+Description: # SDRSAC
+        [![PyPI version](https://badge.fury.io/py/sdrsac.svg)](https://badge.fury.io/py/sdrsac)
+        
+        Python package of ["SDRSAC: Semidefinite-Based Randomized Approach for Robust Point Cloud Registration without Correspondences"](https://arxiv.org/abs/1904.03483)
+        
+        ## Installation
+        
+        ```
+        pip install sdrsac
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
