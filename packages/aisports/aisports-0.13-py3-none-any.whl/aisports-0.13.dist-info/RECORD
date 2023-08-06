@@ -1,0 +1,10 @@
+aisports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisports/checkers.py,sha256=z6XgpS6j6UFmO19XxKPmUi7C8vzuoVaN3EVo-WLfiko,2571
+aisports/checkers/Actions.py,sha256=M6TZnAqU1YEjoJWtCn-VoNykI5DAd_5MaUzwAb83fM4,53
+aisports/checkers/Chckers.py,sha256=N6sKmoeK0iLuAsgUDWysrKTDPrl0QoKeYfCGkMBsveo,229
+aisports/checkers/Checkers.py,sha256=N6sKmoeK0iLuAsgUDWysrKTDPrl0QoKeYfCGkMBsveo,229
+aisports/checkers/__init__.py,sha256=JRDjMXFHnhW4JpFoShajPq0KLHpV85cKilxoALwd4xk,29
+aisports-0.13.dist-info/METADATA,sha256=EG5Ae4BzMFCGSV5GMLV-fCY78hkXbiAHDKR42WrwLFg,350
+aisports-0.13.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aisports-0.13.dist-info/top_level.txt,sha256=kuBrcT4IofE9edCSKw8zhoOKvFsShgnfcH7Iifg8xGc,9
+aisports-0.13.dist-info/RECORD,,
