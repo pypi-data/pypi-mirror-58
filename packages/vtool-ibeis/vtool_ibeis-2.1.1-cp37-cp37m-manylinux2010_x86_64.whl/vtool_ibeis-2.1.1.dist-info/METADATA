@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: vtool-ibeis
+Version: 2.1.1
+Summary: vision tools
+Home-page: https://github.com/Erotemic/vtool_ibeis
+Author: Avi Weinstock, Chuck Stewart, Hendrik WeidemanJason ParhamJon CrallZackary Rutfield
+Author-email: erotemic@gmail.com
+License: Apache 2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: Pillow
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pyflann-ibeis
+Requires-Dist: pyhesaff
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: ubelt
+Requires-Dist: utool
+Requires-Dist: functools32 ; python_version < "3.0"
+Provides-Extra: all
+Requires-Dist: setuptools ; extra == 'all'
+Requires-Dist: wheel ; extra == 'all'
+Requires-Dist: scikit-build ; extra == 'all'
+Requires-Dist: cmake ; extra == 'all'
+Requires-Dist: ninja ; extra == 'all'
+Requires-Dist: Pillow ; extra == 'all'
+Requires-Dist: networkx ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: opencv-python ; extra == 'all'
+Requires-Dist: pyflann-ibeis ; extra == 'all'
+Requires-Dist: pyhesaff ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: six ; extra == 'all'
+Requires-Dist: scikit-image ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: statsmodels ; extra == 'all'
+Requires-Dist: ubelt ; extra == 'all'
+Requires-Dist: utool ; extra == 'all'
+Requires-Dist: xdoctest ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: coverage ; extra == 'all'
+Requires-Dist: codecov ; extra == 'all'
+Requires-Dist: functools32 ; (python_version < "3.0") and extra == 'all'
+Provides-Extra: build
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Requires-Dist: scikit-build ; extra == 'build'
+Requires-Dist: cmake ; extra == 'build'
+Requires-Dist: ninja ; extra == 'build'
+Provides-Extra: runtime
+Requires-Dist: Pillow ; extra == 'runtime'
+Requires-Dist: networkx ; extra == 'runtime'
+Requires-Dist: numpy ; extra == 'runtime'
+Requires-Dist: opencv-python ; extra == 'runtime'
+Requires-Dist: pyflann-ibeis ; extra == 'runtime'
+Requires-Dist: pyhesaff ; extra == 'runtime'
+Requires-Dist: scipy ; extra == 'runtime'
+Requires-Dist: six ; extra == 'runtime'
+Requires-Dist: scikit-image ; extra == 'runtime'
+Requires-Dist: scikit-learn ; extra == 'runtime'
+Requires-Dist: statsmodels ; extra == 'runtime'
+Requires-Dist: ubelt ; extra == 'runtime'
+Requires-Dist: utool ; extra == 'runtime'
+Requires-Dist: functools32 ; (python_version < "3.0") and extra == 'runtime'
+Provides-Extra: tests
+Requires-Dist: xdoctest ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+
+vtool_ibeis
+===========
+
+|ReadTheDocs| |Pypi| |Downloads| |Codecov| |CircleCI| |Travis| |Appveyor| 
+
+Vision Tools - tools for computer vision. Part of the WildMe / IBEIS Project.
+
+
+.. |CircleCI| image:: https://circleci.com/gh/Erotemic/vtool.svg?style=svg
+    :target: https://circleci.com/gh/Erotemic/vtool
+.. |Travis| image:: https://img.shields.io/travis/Erotemic/vtool/master.svg?label=Travis%20CI
+   :target: https://travis-ci.org/Erotemic/vtool?branch=master
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/github/Erotemic/vtool?branch=master&svg=True
+   :target: https://ci.appveyor.com/project/Erotemic/vtool/branch/master
+.. |Codecov| image:: https://codecov.io/github/Erotemic/vtool/badge.svg?branch=master&service=github
+   :target: https://codecov.io/github/Erotemic/vtool?branch=master
+.. |Pypi| image:: https://img.shields.io/pypi/v/vtool_ibeis.svg
+   :target: https://pypi.python.org/pypi/vtool_ibeis
+.. |Downloads| image:: https://img.shields.io/pypi/dm/vtool_ibeis.svg
+   :target: https://pypistats.org/packages/vtool_ibeis
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/vtool_ibeis/badge/?version=latest
+    :target: http://vtool_ibeis.readthedocs.io/en/latest/
+
+
