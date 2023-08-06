@@ -1,0 +1,3 @@
+[console_scripts]
+githost = githost.githost:main
+
