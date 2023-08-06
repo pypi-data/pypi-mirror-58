@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vocabulary_generator
+Version: 0.0.1
+Summary: Simple search unknown words in text.
+Home-page: UNKNOWN
+Author: Daria Zakharova
+Author-email: zakharovadaria96@gmail.com
+License: MIT
+Project-URL: Code, https://github.com/zakharovadaria/vocabulary_generator
+Project-URL: Issue tracker, https://github.com/zakharovadaria/vocabulary_generator/issues
+Description: Vocabulary Generator
+        ====================
+        
+        .. image:: https://coveralls.io/repos/github/zakharovadaria/vocabulary_generator/badge.svg?branch=master
+            :target: https://coveralls.io/github/zakharovadaria/vocabulary_generator?branch=master
+        
+        .. image:: https://travis-ci.org/zakharovadaria/vocabulary_generator.svg?branch=master
+            :target: https://travis-ci.org/zakharovadaria/vocabulary_generator
+Platform: UNKNOWN
+Provides-Extra: dev
