@@ -1,0 +1,8 @@
+anytree
+cityhash
+h5py
+numpy~=1.16.5
+pyhashxx
+scikit-learn
+scipy
+sympy
