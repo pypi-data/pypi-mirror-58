@@ -1,0 +1,9 @@
+README.md
+api.py
+setup.py
+my_httpserver.egg-info/PKG-INFO
+my_httpserver.egg-info/SOURCES.txt
+my_httpserver.egg-info/dependency_links.txt
+my_httpserver.egg-info/entry_points.txt
+my_httpserver.egg-info/requires.txt
+my_httpserver.egg-info/top_level.txt
