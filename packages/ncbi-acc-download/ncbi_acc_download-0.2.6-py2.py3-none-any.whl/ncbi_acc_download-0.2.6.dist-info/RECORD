@@ -1,0 +1,12 @@
+ncbi_acc_download/__init__.py,sha256=T150U4daRZ7ULOwxGUzzoBDAqm3bW9UydvCf0KJii9I,22
+ncbi_acc_download/__main__.py,sha256=r7U5lnU0TV2Yx-E8kfiR7sD_jhubEOznkfhntnpJ5pI,3004
+ncbi_acc_download/core.py,sha256=lbrcptkL7I_zg6Spxa35lCbbr6gMFxg5TuSuW3JZAbM,5524
+ncbi_acc_download/download.py,sha256=DE4pS-P9Yp75nQ98SdlGzjinXtsl7IpqwvdF8VFQWdQ,3603
+ncbi_acc_download/errors.py,sha256=UeCxQtMSgOjkqryZDn8r0ZD8dhcR3mDGufhybeMfvyU,1241
+ncbi_acc_download/validate.py,sha256=7D3N02ZVmgI7PETEGIFd4nBv5fQhDrYvVVWMK9Pr_tA,1030
+ncbi_acc_download/wgs.py,sha256=wLEgfQxT14VQrQRjKuEjWYnn6e90Tjd-Ftcv-8zaLks,5630
+ncbi_acc_download-0.2.6.dist-info/METADATA,sha256=TNt90Zqf88j8XJQ2KjUl8ScAIlhGNfY86i22MTatew0,3680
+ncbi_acc_download-0.2.6.dist-info/RECORD,,
+ncbi_acc_download-0.2.6.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ncbi_acc_download-0.2.6.dist-info/entry_points.txt,sha256=QnYSTl2Eo3Lk4IXN0fSyj9sg8ryEv39NxfL-qYtVhEc,109
+ncbi_acc_download-0.2.6.dist-info/top_level.txt,sha256=_SV_tNLr9GLGAPDaT_oMHzM-L7L-f2nWS6iH15q1PMg,18
