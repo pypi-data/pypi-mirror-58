@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cmd-colorizer
+Version: 0.0.1
+Summary: Python library for using color text in cmd
+Home-page: https://github.com/KoChan-s/cmd_colorizer
+Author: KoChan-s
+Author-email: needahentai@gmail.com
+License: MIT
+Project-URL: Github, https://github.com/KoChan-s/cmd_colorizer
+Project-URL: Documentation, https://github.com/KoChan-s/cmd_colorizer/blob/master/README.md
+Description: # cmd_colorizer
+        Python library for using color text in cmd
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

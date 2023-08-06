@@ -1,0 +1,9 @@
+README.md
+setup.py
+cmd_colorizer/__init__.py
+cmd_colorizer/colorizer.py
+cmd_colorizer.egg-info/PKG-INFO
+cmd_colorizer.egg-info/SOURCES.txt
+cmd_colorizer.egg-info/dependency_links.txt
+cmd_colorizer.egg-info/requires.txt
+cmd_colorizer.egg-info/top_level.txt
