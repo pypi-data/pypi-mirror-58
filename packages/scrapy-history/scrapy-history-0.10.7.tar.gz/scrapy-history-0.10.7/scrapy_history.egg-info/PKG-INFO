@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: scrapy-history
+Version: 0.10.7
+Summary: Scrapy downloader middleware to enable persistent storage.
+Home-page: http://github.com/Kpler/scrapy-history-middleware
+Author: Kpler engineering
+Author-email: engineering@kpler.com
+License: Copyright (c) 2014-2017 Kpler S.A.S., all right reserved. Proprietary and confidential, not for distribution.
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Provides-Extra: test
