@@ -1,0 +1,4 @@
+pathlib
+requests
+pap_logger
+argparse
