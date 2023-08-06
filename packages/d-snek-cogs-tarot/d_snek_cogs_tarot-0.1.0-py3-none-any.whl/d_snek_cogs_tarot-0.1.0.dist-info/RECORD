@@ -1,0 +1,12 @@
+cogs/tarot/__init__.py,sha256=4VaSWzIlaP3NsPxAETtgPrlP2JarF1fz3ApV1fsSEMY,4277
+cogs/tarot/t_data/__init__.py,sha256=cdgcMEidvkP--1xVWaa7vk1FAqWUjSmGiEmjEnUbIno,1280
+cogs/tarot/t_data/json_data.py,sha256=cRPlaODEAd1-5JetBoSZ-gnpTmDUUdF9BR4K_RrEW_o,375
+cogs/tarot/t_data/tarot_data.json,sha256=evW58DN1SkNEmU4MkEisw7M2ulu4qqSmaMrT6taMK4M,67195
+cogs/tarot/t_data/tarot_skins.json,sha256=6LnSFETSGYSHUJR2hDqoCHiwpOcdy7_ZsHFZakONld4,5613
+cogs/tarot/t_data/tarot_spreads.json,sha256=FRtNMrk7eQYsFPkt1M-M5JBr8hSi7aVS58ZbHTcgb0Q,517
+cogs/tarot/t_data/__pycache__/__init__.cpython-38.pyc,sha256=ws3ENe2cWfKhcFdcRdSaK8RfivTGU2qNrJtQP-Kmnhk,2192
+cogs/tarot/t_data/__pycache__/json_data.cpython-38.pyc,sha256=zu53HQ49ADvl_MTcVpSnLozMPPHZe-ahl3EVktDq04Y,481
+d_snek_cogs_tarot-0.1.0.dist-info/METADATA,sha256=L6zefzqAi7u2PH2lo4AuxP5Yr_ldR3KomCn-giPLzfw,592
+d_snek_cogs_tarot-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+d_snek_cogs_tarot-0.1.0.dist-info/top_level.txt,sha256=dAAGN-CjbvExcfrvs57gYU2Xu8vbBHpPph7DrAiPNRY,5
+d_snek_cogs_tarot-0.1.0.dist-info/RECORD,,
