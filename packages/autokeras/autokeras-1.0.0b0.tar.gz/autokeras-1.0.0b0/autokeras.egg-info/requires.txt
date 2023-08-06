@@ -1,0 +1,13 @@
+tensorflow>=2.0.0
+keras-tuner>=1.0.0
+scikit-learn
+numpy
+pandas
+lightgbm
+
+[tests]
+pytest>=4.4.0
+flake8
+pytest-xdist
+pytest-cov
+coverage==4.5.4
