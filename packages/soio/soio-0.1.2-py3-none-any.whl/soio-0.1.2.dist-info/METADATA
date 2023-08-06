@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: soio
+Version: 0.1.2
+Summary: A single objective intelligent optimization package
+Home-page: https://github.com/zzw95/SOIO
+Author: Zhenwei Zhu
+Author-email: zhuzhenwei95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This is a **Single Objective Optimization Algorithm** framework
+Author: Zhenwei Zhu, zhuzhenwei95@gmail.com, zhuzhenwei@sjtu.edu.cn
+Environment: Python 3.*
+
+## Meta-heuristics for continuous optimization problems
+
+* BBO
+* DE, JADE
+* HS
+* GWO, CGWO
+* WOA, CWOA
+
+
+## Meta-heuristics for combinatorial optimization problems
+
+* GA
+* MBO
+
+pip install soio
+
+
