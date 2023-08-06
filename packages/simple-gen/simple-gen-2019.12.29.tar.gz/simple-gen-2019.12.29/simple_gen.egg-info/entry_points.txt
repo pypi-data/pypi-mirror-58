@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        hello = packages.gen:hello
+        s = packages.group:hello
+    
