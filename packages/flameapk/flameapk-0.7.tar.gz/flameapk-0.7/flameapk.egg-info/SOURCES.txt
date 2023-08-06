@@ -1,0 +1,7 @@
+README.md
+flameapk.py
+setup.py
+flameapk.egg-info/PKG-INFO
+flameapk.egg-info/SOURCES.txt
+flameapk.egg-info/dependency_links.txt
+flameapk.egg-info/top_level.txt

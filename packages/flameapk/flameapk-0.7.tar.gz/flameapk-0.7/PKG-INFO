@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: flameapk
+Version: 0.7
+Summary: APK Deep Data Swiss Knife
+Home-page: https://github.com/haroonawanofficial/flameapk
+Author: Haroon Awan
+Author-email: mrharoonawan@gmail.com
+License: UNKNOWN
+Description: # F.A.Q
+        - Flame can decompile and extract APK Data
+        
+        <div align="center">
+            <img src="https://i.ibb.co/pw3n0F7/cab1bb5f-2fbc-42bb-b20a-42f024ed643c-200x200.png"</img> 
+        </div>
+        
+        
+        # Data Extraction List
+        - Endpoints
+        - URLs
+        - SQL Information
+        - Hidden Domains
+        - Usernames,Passwords
+        - Query paths 
+        - Ports
+        - API
+        - Inner library 
+        - Folder paths 
+        - Directory locations
+        - Emails
+        - I.P Addresses
+        and more...
+        
+        # Interface
+        <div align="center">
+            <img src="https://i.ibb.co/R7NY2bm/python3-flame.png"</img> 
+        </div>
+        
+        # Requirements
+        - python3 
+        
+        # Run
+        - ./Flame.sh jadx/apktool andoird_file_here.apk
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
