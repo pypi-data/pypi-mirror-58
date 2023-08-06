@@ -1,0 +1,8 @@
+six
+requests
+evalidate
+python-daemon
+configargparse
+fasteners
+okerrupdate>=1.1.17
+psutil
