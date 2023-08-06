@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aursync
+Version: 0.0.4
+Summary: Synchronization library for Aurora
+Home-page: https://github.com/Zenith00/aur-message
+Author: Zenith00
+Author-email: Zenith00dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: aioredis
+Requires-Dist: async-timeout
+Requires-Dist: hiredis
+Requires-Dist: jsonpickle
+
+# aur-sync
+Synchronization library meant for use with Aurora
+
