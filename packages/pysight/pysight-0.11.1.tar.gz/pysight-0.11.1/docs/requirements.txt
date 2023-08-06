@@ -1,0 +1,22 @@
+numpy >= 1.16
+matplotlib >= 3.0
+pandas >= 0.24
+attrs == 19.3
+cython >= 0.29
+scipy >= 1.2
+scikit-learn >= 0.20
+zarr >= 2.3
+tqdm >= 4.29
+numba >= 0.42
+ansimarkup >= 1.4
+psutil >= 5.4
+toml >= 0.9
+pytest
+sphinx
+bumpversion
+twine
+black
+mypy
+flake8
+typed-ast
+-e .
