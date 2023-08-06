@@ -1,0 +1,16 @@
+ormex/__init__.py,sha256=mTVBLSmfgZ-irF-x8qW2XwUE8Aa6OhJT8lvS3N4tBv0,238
+ormex/aggregations/__init__.py,sha256=K0TZ9Eul0h2V9LWG9gHw96vJ1zNLKKWEyio1Qdx06cg,180
+ormex/aggregations/group_concat/__init__.py,sha256=xZE9RrjDYSYnEqxDgMNYC8DUn9gJQKgAMhoxFR_VX6k,288
+ormex/aggregations/group_concat/base.py,sha256=f3A4lNamKGzMzoUwZ7lyfUV3936thH_4i_4hggKDBlM,714
+ormex/aggregations/group_concat/django_gte_1_10.py,sha256=n_nAxWfRq5_aUlNLVRVAuCRx5LXVeEMvQwoDtXMPDVE,5276
+ormex/aggregations/group_concat/django_lte_1_9.py,sha256=ey8qIWeKHN717cUpiIvAfGgkW_1_l172aE588G7zjvY,4893
+ormex/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ormex/tests/base.py,sha256=bR-wLPTv6WJpMsJ3BJB-_ZxiRRq4KJiTlLhlhf2D448,1967
+ormex/tests/helpers.py,sha256=ogOWkJwg-6DqTueRRuKcKLSKKI3vGVXJUWpDHMrV10Y,662
+ormex/tests/test_aggregations.py,sha256=ZpBOpa4ExsZFl0_ihCDpheU8kF4tP-7HuBlkwvwJchg,2913
+django_ormex-0.2.1.dist-info/LICENSE_GPL2.0.txt,sha256=_GMTQ7jAzfyQi9v7UXICuwTJpLPwlVnkR7djnOOWX3U,18055
+django_ormex-0.2.1.dist-info/LICENSE_LGPL_2.1.txt,sha256=6e7VdzF2UvYdxhO1b7N30JnmYjgPLCj1m9cjr5MSAXY,26493
+django_ormex-0.2.1.dist-info/METADATA,sha256=uMlUsFTjnPUnpTV5aby1mQEvE5DaqRuBs9JQbhGNtnY,7303
+django_ormex-0.2.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_ormex-0.2.1.dist-info/top_level.txt,sha256=k9SoGr4MG1P93wTsaiwNEipK0O5gBbbKqGX0KptcqQE,6
+django_ormex-0.2.1.dist-info/RECORD,,
