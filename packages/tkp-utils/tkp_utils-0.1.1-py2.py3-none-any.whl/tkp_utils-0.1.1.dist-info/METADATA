@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: tkp-utils
+Version: 0.1.1
+Summary: Simple Python Utilities
+Home-page: https://github.com/timkpaine/tkp_utils
+Author: Tim Paine
+Author-email: timothy.k.paine@gmail.com
+License: Apache 2.0
+Keywords: utilities for python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: jinja2 (>=2.10)
+Requires-Dist: sqlalchemy (>=1.3.0)
+Requires-Dist: tornado (>=6.0.3)
+Requires-Dist: ujson (>=1.35)
+Provides-Extra: dev
+Requires-Dist: flake8 (>=3.7.8) ; extra == 'dev'
+Requires-Dist: mock (>=3.0.5) ; extra == 'dev'
+Requires-Dist: pybind11 (>=2.4.0) ; extra == 'dev'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'dev'
+Requires-Dist: Sphinx (>=1.8.4) ; extra == 'dev'
+Requires-Dist: sphinx-markdown-builder (>=0.5.2) ; extra == 'dev'
+Requires-Dist: jinja2 (>=2.10) ; extra == 'dev'
+Requires-Dist: sqlalchemy (>=1.3.0) ; extra == 'dev'
+Requires-Dist: tornado (>=6.0.3) ; extra == 'dev'
+Requires-Dist: ujson (>=1.35) ; extra == 'dev'
+
+# tkp_utils_python
+Whenever I have to write the same code over and over again, I'll put it here
+
+[![Build Status](https://travis-ci.org/timkpaine/tkp_utils_python.svg?branch=master)](https://travis-ci.org/timkpaine/tkp_utils_python)
+[![PyPI](https://img.shields.io/pypi/v/tkp_utils.svg)](https://pypi.python.org/pypi/tkp_utils)
+[![PyPI](https://img.shields.io/pypi/l/tkp_utils.svg)](https://pypi.python.org/pypi/tkp_utils)
+
+
+[JS Utils](https://github.com/timkpaine/tkp_utils_js)
+
