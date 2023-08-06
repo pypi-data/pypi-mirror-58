@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    cubeai_model_runner=cubeai_model_runner.runner:run_app_cli
+    

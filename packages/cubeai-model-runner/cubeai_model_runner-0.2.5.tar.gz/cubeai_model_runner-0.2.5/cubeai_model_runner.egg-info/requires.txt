@@ -1,0 +1,9 @@
+ucumos
+lark-parser
+connexion==1.5.3
+gunicorn
+pyyaml
+jinja2
+protobuf
+flask-cors
+swagger_ui_bundle
