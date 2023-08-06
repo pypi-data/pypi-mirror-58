@@ -1,0 +1,4 @@
+Quart>=0.10.0
+
+[dotenv]
+python-dotenv
