@@ -1,0 +1,9 @@
+README.md
+setup.py
+anova/AnovaCooker.py
+anova/__init__.py
+pyanova_api.egg-info/PKG-INFO
+pyanova_api.egg-info/SOURCES.txt
+pyanova_api.egg-info/dependency_links.txt
+pyanova_api.egg-info/requires.txt
+pyanova_api.egg-info/top_level.txt
