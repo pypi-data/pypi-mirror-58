@@ -1,0 +1,9 @@
+README.md
+setup.py
+uji.py
+uji.egg-info/PKG-INFO
+uji.egg-info/SOURCES.txt
+uji.egg-info/dependency_links.txt
+uji.egg-info/entry_points.txt
+uji.egg-info/requires.txt
+uji.egg-info/top_level.txt
