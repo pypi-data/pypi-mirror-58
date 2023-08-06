@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: textgrid-convert
+Version: 0.3.0
+Summary: textgrid-convert converts audio transcripts such as sbv or srt files to Praat and DARLA compatible TextGrids.
+Home-page: https://github.com/patrickschu/textgrid-convert/
+Author: Patrick Schultz, Lars Hinrichs
+Author-email: patrickschultz@utexas.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.0.0
+Requires-Dist: astroid (>=2.3.3)
+Requires-Dist: attrs (>=19.3.0)
+Requires-Dist: et-xmlfile (>=1.0.1)
+Requires-Dist: importlib-metadata (>=1.1.0)
+Requires-Dist: isort (>=4.3.21)
+Requires-Dist: jdcal (>=1.4.1)
+Requires-Dist: lazy-object-proxy (>=1.4.3)
+Requires-Dist: mccabe (>=0.6.1)
+Requires-Dist: more-itertools (>=8.0.0)
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: openpyxl (>=2.6.2)
+Requires-Dist: packaging (>=19.2)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: pluggy (>=0.13.1)
+Requires-Dist: py (>=1.8.0)
+Requires-Dist: pylint (>=2.4.4)
+Requires-Dist: pyparsing (>=2.4.5)
+Requires-Dist: pytest (>=5.3.1)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: pytz (>=2019.1)
+Requires-Dist: six (>=1.12.0)
+Requires-Dist: typed-ast (>=1.4.0)
+Requires-Dist: virtualenv (>=16.7.2)
+Requires-Dist: wcwidth (>=0.1.7)
+Requires-Dist: wrapt (>=1.11.2)
+Requires-Dist: XlsxWriter (>=1.1.8)
+
+textgrid-convert converts audio transcripts such as sbv or srt files to Praat and DARLA compatible TextGrids.
+
+
