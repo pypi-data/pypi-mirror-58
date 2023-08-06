@@ -1,0 +1,11 @@
+scrapyu/__init__.py,sha256=kr1xSnMrXT4j8weKmVF0t9I4g2p0doyaN7L5WjuTP_g,238
+scrapyu/_cookies.py,sha256=dDSaV2rORdbPV7BYbf-gv8z_UpFvjgHoi82aomzgsbg,763
+scrapyu/_markdown.py,sha256=RBE0qts0v8rydN7cmLZmDKdw62ANVduUi65bwQOO_zI,908
+scrapyu/_mongodb.py,sha256=NTXBy8FT7czSrHXapR7HqL3Dk97TGz68v9n0aTBBoCg,3055
+scrapyu/_redis.py,sha256=nUSmQTQIlDTjK-fQa0j1QOegxa7c3P9ijyd4gwnapJ4,1831
+scrapyu/_useragent.py,sha256=yutwTsnHW1nX6YaZiwrLTzi09uZvjsbUM-fze5r684w,407
+scrapyu/utils.py,sha256=erEqn2MG6aC24iuwD-lehhtG3XpbYjfmVueZ6co4ln4,1494
+scrapyu-0.1.10.dist-info/LICENSE,sha256=-D6b2Em6gaFb2__C37VL_3azTYFzWifWtoQd99bmWyE,1089
+scrapyu-0.1.10.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+scrapyu-0.1.10.dist-info/METADATA,sha256=zh_3Fi_DqSuX05wew3_FW1xLm7UQv-pC1c2RLP2cDxU,3214
+scrapyu-0.1.10.dist-info/RECORD,,
