@@ -1,0 +1,15 @@
+README.md
+setup.py
+textcrafts/__init__.py
+textcrafts/corenlp_api.py
+textcrafts/deepRank.py
+textcrafts/down.py
+textcrafts/parser_api.py
+textcrafts/sim.py
+textcrafts/stanfordnlp_api.py
+textcrafts.egg-info/PKG-INFO
+textcrafts.egg-info/SOURCES.txt
+textcrafts.egg-info/dependency_links.txt
+textcrafts.egg-info/not-zip-safe
+textcrafts.egg-info/requires.txt
+textcrafts.egg-info/top_level.txt
