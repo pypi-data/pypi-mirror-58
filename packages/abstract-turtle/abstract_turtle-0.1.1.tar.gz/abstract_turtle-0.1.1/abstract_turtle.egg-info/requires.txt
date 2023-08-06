@@ -1,0 +1,4 @@
+
+[pillow_canvas]
+numpy==1.18.0
+Pillow==6.2.1
