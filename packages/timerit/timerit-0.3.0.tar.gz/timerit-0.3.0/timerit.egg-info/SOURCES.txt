@@ -1,0 +1,9 @@
+README.rst
+setup.py
+timerit/__init__.py
+timerit/core.py
+timerit.egg-info/PKG-INFO
+timerit.egg-info/SOURCES.txt
+timerit.egg-info/dependency_links.txt
+timerit.egg-info/requires.txt
+timerit.egg-info/top_level.txt
