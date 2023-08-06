@@ -1,0 +1,9 @@
+README.md
+setup.py
+kikipdf/__init__.py
+kikipdf/pdf2image.py
+kikipdf/pdf2text.py
+kikipdf.egg-info/PKG-INFO
+kikipdf.egg-info/SOURCES.txt
+kikipdf.egg-info/dependency_links.txt
+kikipdf.egg-info/top_level.txt
