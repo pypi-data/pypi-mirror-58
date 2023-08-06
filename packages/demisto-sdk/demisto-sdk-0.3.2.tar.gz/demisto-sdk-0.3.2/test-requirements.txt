@@ -1,0 +1,5 @@
+mock
+pre-commit
+pytest
+pytest-mock
+urllib3

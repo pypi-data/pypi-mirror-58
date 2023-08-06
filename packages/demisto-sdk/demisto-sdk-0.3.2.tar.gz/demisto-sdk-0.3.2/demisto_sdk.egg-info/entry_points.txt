@@ -1,0 +1,3 @@
+[console_scripts]
+demisto-sdk = demisto_sdk.main:demisto_sdk_cli
+
