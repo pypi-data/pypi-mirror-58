@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: netfleece
+Version: 0.0.0a0.dev0
+Summary: Python 3.7+ Microsoft .NET Remoting Binary Format (MS-NRBF) to JSON parser
+Home-page: https://gitlab.com/malie-library/netfleece
+Author: nago
+Author-email: nago@malie.io
+License: UNKNOWN
+Description: Bless this mess
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Disassemblers

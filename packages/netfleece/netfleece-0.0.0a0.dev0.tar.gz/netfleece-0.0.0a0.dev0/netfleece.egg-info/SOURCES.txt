@@ -1,0 +1,8 @@
+.gitignore
+Makefile
+setup.py
+netfleece/__init__.py
+netfleece.egg-info/PKG-INFO
+netfleece.egg-info/SOURCES.txt
+netfleece.egg-info/dependency_links.txt
+netfleece.egg-info/top_level.txt
