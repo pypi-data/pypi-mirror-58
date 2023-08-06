@@ -1,0 +1,16 @@
+plex_mpv_shim/client.py,sha256=98ZpP4lkrcPaf4tYWmJ6iEvLIqYpzlQZeZe-00Zqn_Q,14583
+plex_mpv_shim/conf.py,sha256=1Jzqi3Q5QJFZ73_N7jgPP_DfmLyM6MrohZnLao8iTYc,4076
+plex_mpv_shim/conffile.py,sha256=KtrRKO7-l-7YDL0Kxq_Ff6tuw311sC34jjpuoWMvPVE,1042
+plex_mpv_shim/gdm.py,sha256=raQ92zkoT8wsSDzBUywVJnWD47-4YtSSjmxqCjrEU_8,8518
+plex_mpv_shim/media.py,sha256=eL6EKyejBr-quBWYIRGhN-GndE5STqRuP9axqmPn0dc,19591
+plex_mpv_shim/mpv_shim.py,sha256=svv5h-yCrd8UFHbmQyHvi5rgdBYhW6mBVRJeT0CFGJA,1454
+plex_mpv_shim/player.py,sha256=0ueUZPbCMKm_7_U2uJfhBeL4DAUe7aK2y0QxycWO7bg,8673
+plex_mpv_shim/subscribers.py,sha256=wZC-T_rDSVfKuw42XE85mdHRDZrFWnfJRAH37EM6nik,3504
+plex_mpv_shim/timeline.py,sha256=Roo-bo3AHhiagBARKbkwn23uG_HcWV5zWp4DoAd4hTs,8782
+plex_mpv_shim/utils.py,sha256=YHWsnRNx6GngQz3SuAMAOpRvMrBIijpvAFBUqBxye9w,3895
+plex_mpv_shim-1.2.0.dist-info/LICENSE.md,sha256=C9x_nLCGhdEaMt3lqgUzFOS4ZQ2lUWWttR8mmkN3wOE,1090
+plex_mpv_shim-1.2.0.dist-info/METADATA,sha256=H0VZ2Q67yAtTjbwVNSBm291U4ZDKBjt1VEx-4JBjqsU,6566
+plex_mpv_shim-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+plex_mpv_shim-1.2.0.dist-info/entry_points.txt,sha256=b495bqFFm2bw2c63-InD795GmxaLcQX6MiUnC8Vl2tc,63
+plex_mpv_shim-1.2.0.dist-info/top_level.txt,sha256=GdVEoSp_bJ-KuW4Gfxtzc1oihoGBm8P8gxSanaP35wI,14
+plex_mpv_shim-1.2.0.dist-info/RECORD,,
