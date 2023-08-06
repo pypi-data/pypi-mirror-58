@@ -1,0 +1,5 @@
+numpy
+matplotlib
+scikit-learn
+tensorflow>=1.15.0
+nvidia-ml-py3

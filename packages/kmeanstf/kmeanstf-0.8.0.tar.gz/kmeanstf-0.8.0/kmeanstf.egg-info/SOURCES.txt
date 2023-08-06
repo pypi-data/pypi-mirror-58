@@ -1,0 +1,11 @@
+README.md
+setup.py
+kmeanstf/__init__.py
+kmeanstf/__version__.py
+kmeanstf/_initializer.py
+kmeanstf/kmeanstf.py
+kmeanstf.egg-info/PKG-INFO
+kmeanstf.egg-info/SOURCES.txt
+kmeanstf.egg-info/dependency_links.txt
+kmeanstf.egg-info/requires.txt
+kmeanstf.egg-info/top_level.txt
