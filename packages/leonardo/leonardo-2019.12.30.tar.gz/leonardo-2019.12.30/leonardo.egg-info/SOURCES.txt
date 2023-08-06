@@ -1,0 +1,17 @@
+README.md
+setup.py
+leonardo/Colour.py
+leonardo/Gradient.py
+leonardo/Scheme.py
+leonardo/__init__.py
+leonardo/colour_schemes.py
+leonardo/colourize.py
+leonardo/convert_rgb_to_hsl.py
+leonardo.egg-info/PKG-INFO
+leonardo.egg-info/SOURCES.txt
+leonardo.egg-info/dependency_links.txt
+leonardo.egg-info/top_level.txt
+leonardo.egg-info/zip-safe
+leonardo/data_files/colour_schemes.pickle
+leonardo/data_files/svg_colours.pickle
+leonardo/data_files/x11_colours.pickle
