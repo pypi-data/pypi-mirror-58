@@ -1,0 +1,6 @@
+wf-cv-datetime-utils>=0.1.0
+opencv-python>=3.4.1
+numpy>=1.14
+scipy>=1.1
+matplotlib>=2.2
+boto3>=1.7
