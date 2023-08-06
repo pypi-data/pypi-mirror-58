@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: python-markdown-comments
+Version: 1.1.0
+Summary: A Python-Markdown extension to ignore html comments opened by three dashes.
+Home-page: https://github.com/johanvergeer/python-markdown-comments
+License: MIT
+Keywords: markdown,extensions,comments
+Author: Johan Vergeer
+Author-email: johanvergeer@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: markdown (>=3.1.1,<4.0.0)
+Project-URL: Repository, https://github.com/johanvergeer/python-markdown-comments
+Project-URL: Source, https://github.com/johanvergeer/python-markdown-comments
+Project-URL: Tracker, https://github.com/johanvergeer/python-markdown-comments/issues
+Description-Content-Type: text/markdown
+
+mkdcomments
+===========
+
+Original plugin was created by [ryneeverett](https://github.com/ryneeverett/python-markdown-comments).
+
+A [Python-Markdown](https://github.com/waylan/Python-Markdown) preprocessor extension to ignore html comments opened by three dashes and any whitespace prior to them. I believe pandoc has similar functionality.
+
+```html
+<!-- This is a standard html comment which will remain in the output. -->
+<!--- This is a markdown comment which this extension removes. -->
+```
+
+Installation
+------------
+
+```sh
+pip install python-markdown-comments
+```
+
+Example
+-------
+```python
+>>> import markdown
+>>> from python_markdown_comments import CommentsExtension
+>>> comments = CommentsExtension()
+>>> markdowner = markdown.Markdown(extensions=[comments])
+>>> markdowner.convert("""\
+... blah blah blah  <!--- inline comment -->
+...
+... <!---multiline comment
+... multiline comment
+... multiline comment-->
+...
+... even more text.""")
+u'<p>blah blah blah</p>\n<p>even more text.</p>'
+```
+
+Infrequently Asked Questions
+----------------------------
+
+### How can I write about markdown comments without them being removed?
+
+In order to render markdown comments, you must *(a)*use them in an html block (which are not processed as markdown) and *(b)*escape the brackets so the browser won't think they're html comments. E.g.:
+
+```html
+<pre>
+&lt;!--- meta markdown comment --&gt;
+</pre>
+```
+
