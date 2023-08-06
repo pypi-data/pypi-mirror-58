@@ -1,0 +1,13 @@
+nostalgia_chrome/__init__.py,sha256=IHru_zrPr_Qz3CMeaNFZl0Yyu_ZyknLZIASeHS_EXUo,793
+nostalgia_chrome/__main__.py,sha256=5nfac6Uw3xjoJQjPA_Hb0ZYKgflW2BU8YyxygwknBFw,209
+nostalgia_chrome/store_backup.py,sha256=pI2JVjNcUANViiVSr9muLWQsNqVKwm5ufmwJD853aKk,1893
+nostalgia_chrome/utils.py,sha256=3DOPEGHnvAMOQk7sQYhFW3KuGQZonrLeV0zZq8Pcobk,198
+nostalgia_chrome/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nostalgia_chrome/server/app.py,sha256=GKjaaQ_J3uKNU9IVRjmQTeKuLAo84Kwi3tHRX07hXcw,3698
+nostalgia_chrome/server/cors.py,sha256=-fe_iwLH8fFmxBKm4X8ftg6RWZgdnhbstsu_8aZM0pw,1609
+nostalgia_chrome/server/utils.py,sha256=f-Jo-4F6QGcUli0dSZ1Wav4ON2tHCeIsUdg6kLXWiRQ,571
+nostalgia_chrome-0.0.20.dist-info/METADATA,sha256=VloVRO2DdTnfqy-aDA9_wREPHg2QeuG4n4ne77DFX10,4267
+nostalgia_chrome-0.0.20.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+nostalgia_chrome-0.0.20.dist-info/entry_points.txt,sha256=K8rrCnB38g_wAg5RI4Jpd5WNZDJNqzOZSGT4Phht7lA,70
+nostalgia_chrome-0.0.20.dist-info/top_level.txt,sha256=ENTLddvEJqryOAa1X4J1Vfy2Vdps0ARXd4QuUghKowY,17
+nostalgia_chrome-0.0.20.dist-info/RECORD,,
