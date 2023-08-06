@@ -1,0 +1,14 @@
+azubi_timesheet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azubi_timesheet/azubi_timesheet.py,sha256=Qa8J63FPqhkeAbQSsKOFj0X16yrPOY8Vagzq9HUWu3I,11010
+azubi_timesheet/timesheet.py,sha256=ZT9GFbfq_E5yPx6Dw50ddxGYaMWFDyRPYc29o8xbWM8,12680
+azubi_timesheet/data/templates/template_timesheet_19_days.xlsx,sha256=YjfM2uW5VpsezSgGjRGJSQJ2yvPc1TM2A77n-1UbPoM,220000
+azubi_timesheet/data/templates/template_timesheet_20_days.xlsx,sha256=I7y5TItVoAts3NuNRMYqFEo736OEjk5aJVFD5feNgtM,220204
+azubi_timesheet/data/templates/template_timesheet_21_days.xlsx,sha256=3iZmF_uCa4UQAd-1qpjbn1Lb5-oWGR1HLt4WRgYNSL8,220129
+azubi_timesheet/data/templates/template_timesheet_22_days.xlsx,sha256=Wugl2WBq8EGoMsEDkPVEkGP7exq8XkcHyBQGZ2CnRVs,220339
+azubi_timesheet/data/templates/template_timesheet_23_days.xlsx,sha256=UVG_MB4OJ6CWksho5VBbjCXtH1GkN7DYbB7CS0BlB5M,220276
+azubi_timesheet-0.9.0.dist-info/LICENSE,sha256=RcIBeQ5DWTcTr3dQwswfryUZChwNL8l5W_oLUolfwk8,1068
+azubi_timesheet-0.9.0.dist-info/METADATA,sha256=1YAkcJtOXkALhqClDf2p02BpVxNGKAJXRagqQk0VvoI,4833
+azubi_timesheet-0.9.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+azubi_timesheet-0.9.0.dist-info/entry_points.txt,sha256=rxxAQXwHB3sjyxeoi5JsEZmtVMqzYM8CNneQgd92Rx4,74
+azubi_timesheet-0.9.0.dist-info/top_level.txt,sha256=zVlDP5iOyrNsl9YLlpPRXmSq9NO0l0H_joKA4e35EoA,16
+azubi_timesheet-0.9.0.dist-info/RECORD,,
