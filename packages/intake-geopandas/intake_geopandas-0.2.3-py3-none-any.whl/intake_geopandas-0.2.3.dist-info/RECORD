@@ -1,0 +1,13 @@
+intake_geopandas/__init__.py,sha256=glQQ8mwqIjRghpVACYf7xvfm34wv22-y97CvGyobloI,340
+intake_geopandas/_version.py,sha256=u5cj7Bv-vdQyqbSZ21xdONBG89hnUXDJ3aEXsv_LyoE,497
+intake_geopandas/geopandas.py,sha256=a1T204Lsy3skmtmOPwLOAiD9rsYlrF23KIrBa431PnQ,3998
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/test_file_source.py,sha256=zY9kt422Fg-Qst7gbrTSMSzv94voR_ZFydWnaeRcZuo,1409
+tests/test_sql_source.py,sha256=bjHv8BKJSt5wW6NxP3XokSerSPxzxE-xGx-iaJ8Ly5s,2004
+tests/data/stations.html,sha256=DZlEHOJvgBV-Sqg9rrKdI2IxN6H6AmOcokAiO66G4L0,24985
+intake_geopandas-0.2.3.dist-info/LICENSE,sha256=fUH-19QZWQKsVH2vOE1QVACzdzwVgvkNBOePhR9d7AU,1330
+intake_geopandas-0.2.3.dist-info/METADATA,sha256=7v7_ogy7mCpoMIAdeJ6buZJNxuxsBmX8Q69Hr-KtK60,1069
+intake_geopandas-0.2.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+intake_geopandas-0.2.3.dist-info/entry_points.txt,sha256=Il_QHcMn0eZfOrbNo-XpqmD5ejtakVYIRgmbcxDVaOE,232
+intake_geopandas-0.2.3.dist-info/top_level.txt,sha256=RX0r6boENbk-frtVr-KGTO-KJ5nZPlw3LBrlVYkeR8A,23
+intake_geopandas-0.2.3.dist-info/RECORD,,
