@@ -1,0 +1,6 @@
+fastai>=1.0.59
+gym[atari,box2d]
+jupyter
+
+[all]
+gym-minigrid
