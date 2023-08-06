@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyrainsty
+Version: 0.0.2
+Summary: The toolset.
+Home-page: https://github.com/Rainstyed/pyrainsty
+Author: Residual Mark
+Author-email: 1285679912@qq.com
+License: UNKNOWN
+Description: # pyrainsty
+        The toolset.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
