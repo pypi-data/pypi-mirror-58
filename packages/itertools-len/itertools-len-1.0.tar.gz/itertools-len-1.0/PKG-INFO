@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: itertools-len
+Version: 1.0
+Summary: Building blocks for iterators, preserving their :func:`len`\ s.
+Home-page: https://github.com/flying-sheep/itertools-len
+Author: Philipp A.
+Author-email: flying-sheep@web.de
