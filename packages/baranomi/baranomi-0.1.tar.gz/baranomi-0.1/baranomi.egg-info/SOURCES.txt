@@ -1,0 +1,8 @@
+README.md
+setup.py
+baranomi/__init__.py
+baranomi/pirates.py
+baranomi.egg-info/PKG-INFO
+baranomi.egg-info/SOURCES.txt
+baranomi.egg-info/dependency_links.txt
+baranomi.egg-info/top_level.txt
