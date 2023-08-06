@@ -1,0 +1,14 @@
+actionkit/__init__.py,sha256=22FJZNPoVmL9bAioog4MVbvbxOn32BFUbMj__RdRHGs,1231
+actionkit/context_processors.py,sha256=VRCL_ngDsHQswPkFqop9ZONaYzzRfg4ekR1I4jA8NsY,133
+actionkit/models.py,sha256=d3zmeMxNqIE5I8xcn10jdH8Sr3-aolt8ZcASzwrX-CI,20283
+actionkit/rest.py,sha256=BhgK8lChXDmUzVvrqQGDjxHC4r8WGHVPoTORDEykZqc,10440
+actionkit/urls.py,sha256=1ivoV8jMFDrLS26ojG-TEoO6QYb80pRULlfTAq3AgSY,244
+actionkit/utils.py,sha256=AILCGydYxCNaDwgnVR2uKemZm4zYAj0blr8_FZc--OQ,868
+actionkit/views.py,sha256=aC84oQnlLCdUDsc5aTkxH3VWYKG1c3bcYCQl0qBakRk,2227
+django_actionkit_client-0.19.dist-info/LICENSE.txt,sha256=ensb62i4XUuEQYJE8Ty23AdOAlluxjfEEYwFE6F4TVA,1437
+django_actionkit_client-0.19.dist-info/LICENSE.txt~,sha256=CcLvsOooyDbKObnNhEajgWXGm0YMDC2F_8RWwvQxU5s,1432
+django_actionkit_client-0.19.dist-info/METADATA,sha256=NwwUEIme_FEWqpROUZMIy3ebDIUW6xg3Sg8uDeQkfFQ,281
+django_actionkit_client-0.19.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_actionkit_client-0.19.dist-info/entry_points.txt,sha256=lJ0aSD7Mxk5NZp6MT4awa20kJ1WcLhtF6oZZ2o6GG-4,58
+django_actionkit_client-0.19.dist-info/top_level.txt,sha256=02xYGlT4klcTae0h9aymCVYmYKNSNk5NburdsQny_Kc,10
+django_actionkit_client-0.19.dist-info/RECORD,,
