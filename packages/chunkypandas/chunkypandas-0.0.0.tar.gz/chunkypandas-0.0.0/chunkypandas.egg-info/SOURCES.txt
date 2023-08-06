@@ -1,0 +1,15 @@
+setup.py
+chunkypandas/__init__.py
+chunkypandas/version.py
+chunkypandas.egg-info/PKG-INFO
+chunkypandas.egg-info/SOURCES.txt
+chunkypandas.egg-info/dependency_links.txt
+chunkypandas.egg-info/requires.txt
+chunkypandas.egg-info/top_level.txt
+chunkypandas.egg-info/zip-safe
+chunkypandas/core/__init__.py
+chunkypandas/core/base.py
+chunkypandas/core/dataframe.py
+chunkypandas/core/series.py
+chunkypandas/utilities/__init__.py
+chunkypandas/utilities/utilities.py
