@@ -1,0 +1,3 @@
+[console_scripts]
+api-base = api_base.redis.utils.redis_connect:main
+
