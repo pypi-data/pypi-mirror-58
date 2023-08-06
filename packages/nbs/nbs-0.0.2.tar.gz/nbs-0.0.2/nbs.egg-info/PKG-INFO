@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: nbs
+Version: 0.0.2
+Summary: Book information crawler using 'NAVER BOOKS API'
+Home-page: https://github.com/jchrys/NBCrawler
+Author: JCHRYS
+Author-email: jchrys@me.com
+License: UNKNOWN
+Description:  File              : README.md
+         Author            : JCHRYS <jchrys@me.com>
+         Date              : 06.01.2020
+         Last Modified Date: 06.01.2020
+         Last Modified By  : JCHRYS <jchrys@me.com>
+        
+        This is naver book crawler
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
