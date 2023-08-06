@@ -1,0 +1,8 @@
+bitarray_hardbyte-1.1.1.dist-info/RECORD,,
+bitarray_hardbyte-1.1.1.dist-info/top_level.txt,sha256=cLdoeIHotTwh4eHSe8qy8umF7zzyxUM90I8zFb2_xhg,9
+bitarray_hardbyte-1.1.1.dist-info/METADATA,sha256=udg2tuhH7qsGuvXrVUwuM0trKFrnAoL2ABrXhHA4bKk,19170
+bitarray_hardbyte-1.1.1.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+bitarray/test_bitarray.py,sha256=Hkr8xETVri-ayBEn8bcQWtte9yZNxEr4c_BGACG_wfI,73707
+bitarray/_bitarray.c,sha256=pfStuBxE94FkpyiNKXwt79dMPVXzxYzpcgiJjTBS4FI,89880
+bitarray/__init__.py,sha256=A72Zjt_SF3uB5fDq79JflBj3Or0CwQwrKOFSSm46Rbo,2597
+bitarray/_bitarray.cpython-36m-x86_64-linux-gnu.so,sha256=lmQi8labp_lHOn2-fe0KBi_uqUzVtr9udd4hr9pqyxg,284006
