@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: smartpost
+Version: 0.1.0
+Summary: Python library to interact with Itella Smartpost API
+License: MIT
+Author: Rao Zvorovski
+Author-email: rao.zvorovski@codeduf.eu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.22,<3.0)
