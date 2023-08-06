@@ -1,0 +1,45 @@
+# `richcontext.scholapi` changelog
+
+## 1.0.4
+
+2020-01-02
+
+  - resolved errors in PubMed fulltext search
+  - Dimensions full text search now returns all fields
+  - Dimensions login verbose flag turned off
+  - added PubMed (NCBI) journal lookups via ISSN
+  - adding deterministic profiling tools
+  - improved unit tests
+
+
+## 1.0.3
+
+2019-12-15
+
+  - resolved PyPi upload errors
+
+
+## 1.0.2
+
+2019-12-15
+
+  - added publication search and title search for Crossref, PubMed, SSRN
+  - improved defensive handling for: connection errors, null responses to API calls, returned error messages
+  - reduced Dimensions API excessive log statements (due to repeated logins)
+  - resolved errors in handling responses from EuropePMC
+
+
+## 1.0.1
+
+2019-11-30
+
+  - EuropePMC: resolved edge case where returned titles could be null, causing exceptions
+
+
+## 1.0.0
+
+2019-11-23
+
+  - first release on PyPi
+  - supports `title_search()` and `publication_lookup()` using several discovery APIs for Scholarly Infrastructure
+  - aligned with Community session goals from 2019 Rich Context Workshop (notes by Samuel Klein)
