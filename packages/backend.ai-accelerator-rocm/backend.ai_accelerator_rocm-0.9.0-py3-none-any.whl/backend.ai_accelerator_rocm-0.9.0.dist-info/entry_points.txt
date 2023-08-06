@@ -1,0 +1,3 @@
+[backendai_accelerator_v12]
+rocm = ai.backend.accelerator.rocm.plugin
+
