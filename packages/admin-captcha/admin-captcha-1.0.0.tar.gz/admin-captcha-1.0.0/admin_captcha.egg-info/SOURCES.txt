@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+admin-captcha/__init__.py
+admin-captcha/admin.py
+admin-captcha/forms.py
+admin_captcha.egg-info/PKG-INFO
+admin_captcha.egg-info/SOURCES.txt
+admin_captcha.egg-info/dependency_links.txt
+admin_captcha.egg-info/requires.txt
+admin_captcha.egg-info/top_level.txt
