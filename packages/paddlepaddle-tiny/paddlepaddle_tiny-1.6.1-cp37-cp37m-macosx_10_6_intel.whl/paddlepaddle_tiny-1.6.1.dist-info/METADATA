@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: paddlepaddle-tiny
+Version: 1.6.1
+Summary: Parallel Distributed Deep Learning
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.0.0)
+Requires-Dist: protobuf (>=3.1.0)
+Requires-Dist: graphviz
+Requires-Dist: six
+Requires-Dist: objgraph
+Requires-Dist: decorator
+Requires-Dist: numpy (<=1.16.4,>=1.12) ; python_version < "3.5"
+Requires-Dist: numpy (>=1.12) ; python_version >= "3.5"
+
+UNKNOWN
+
+
