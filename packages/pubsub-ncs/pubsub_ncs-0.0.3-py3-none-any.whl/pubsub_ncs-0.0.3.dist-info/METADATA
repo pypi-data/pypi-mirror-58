@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pubsub-ncs
+Version: 0.0.3
+Summary: PubSubサーバー接続モジュール
+Home-page: https://gitlab.com/python-utils1/tornado-broker.git
+Author: nozomi.nishinohara
+Author-email: nozomi.nishinohara@n-creativesystem.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+UNKNOWN
+
+
