@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: AIserver
+Version: 0.0.3
+Summary: This is a packege for AI 
+Home-page: UNKNOWN
+Author: 快乐风男
+Author-email: 1959983286@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+欲练神功，八脉齐通。九阴九阳，天下称王。好了，介绍一下本仓库的使用吧
+—————————————————————————————————
+1.主要是用于AI模型的模型接入和一键生成后端服务器，可以直接使用create_ai_server的方法启用模型文件，自动生成后端代码。默认开启端口8888
+2.传入connect_type="https",可以开启https，否则默认http
+3.尽量不要使用中文目录，有可能会因此解码出错
+4.请使用help查看具体函数方法，我懒得打字介绍了
+
