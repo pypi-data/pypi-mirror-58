@@ -1,0 +1,6 @@
+requests
+fake_useragent
+hashlib
+json
+uuid
+pandas
