@@ -1,0 +1,3 @@
+#!python
+
+import tv2test.tv2test_run

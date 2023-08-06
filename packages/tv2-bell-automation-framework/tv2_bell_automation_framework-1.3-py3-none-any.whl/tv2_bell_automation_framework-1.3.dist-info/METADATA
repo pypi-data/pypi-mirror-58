@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: tv2-bell-automation-framework
+Version: 1.3
+Summary: TV2 Bell Automation test framework
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: boto3 (==1.9.180)
+Requires-Dist: botocore (==1.12.180)
+Requires-Dist: certifi (==2019.6.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: docutils (==0.14)
+Requires-Dist: elasticsearch (==7.1.0)
+Requires-Dist: future (==0.17.1)
+Requires-Dist: idna (==2.8)
+Requires-Dist: imutils (==0.5.2)
+Requires-Dist: jmespath (==0.9.4)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: opencv-python (==4.1.0.25)
+Requires-Dist: Pillow (==6.0.0)
+Requires-Dist: pkg-resources (==0.0.0)
+Requires-Dist: playsound (==1.2.2)
+Requires-Dist: psutil (==5.6.3)
+Requires-Dist: PyAudio (==0.2.11)
+Requires-Dist: pycairo (==1.18.1)
+Requires-Dist: PyGObject (==3.32.2)
+Requires-Dist: pynput (==1.6.0)
+Requires-Dist: pytesseract (==0.2.7)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: python-xlib (==0.26)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: s3transfer (==0.2.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: SpeechRecognition (==3.8.1)
+Requires-Dist: urllib3 (==1.25.3)
+
+UNKNOWN
+
+
