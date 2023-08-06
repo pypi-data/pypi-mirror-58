@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "recipe-cli"
+version = "0.1.0"
+description = "Recipe CLI tool"
+authors = ["Iman Kamyabi <contact@imankamyabi.com>"]
+
+license = "MIT"
+readme = "README.md"
+homepage = "https://recipe.io"
+repository = "https://github.com/imankamyabi/recipe-cli"
+keywords = ["data-science", "notebook", "repository", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+recipe = 'recipe_cli:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
