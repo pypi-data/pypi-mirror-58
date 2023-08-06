@@ -1,0 +1,12 @@
+README.md
+setup.py
+edit/__init__.py
+edit/edit.py
+edit.egg-info/PKG-INFO
+edit.egg-info/SOURCES.txt
+edit.egg-info/dependency_links.txt
+edit.egg-info/top_level.txt
+sample/__init__.py
+sample/sample.py
+test/__init__.py
+test/edit.py
