@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+mathgenproject/__init__.py
+mathgenproject/items.py
+mathgenproject/middlewares.py
+mathgenproject/pipelines.py
+mathgenproject/settings.py
+mathgenproject/utils.py
+mathgenproject/spiders/__init__.py
+mathgenproject/spiders/math_gen_project_spider.py
+mathgenproject_jgolden17.egg-info/PKG-INFO
+mathgenproject_jgolden17.egg-info/SOURCES.txt
+mathgenproject_jgolden17.egg-info/dependency_links.txt
+mathgenproject_jgolden17.egg-info/top_level.txt
