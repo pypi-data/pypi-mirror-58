@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fight-day
+Version: 0.0.2
+Summary: Daily sentence
+Home-page: UNKNOWN
+Author: Go_Fight_Now
+Author-email: gofightnow.dev@gmail.com
+License: UNKNOWN
+Description: 可以在程序运行时，在开头生成 -->每日一句话
+        You can generate a daily sentence at the beginning of a program while it is running
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

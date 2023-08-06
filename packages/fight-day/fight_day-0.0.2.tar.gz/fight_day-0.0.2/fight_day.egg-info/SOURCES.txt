@@ -1,0 +1,8 @@
+README.md
+setup.py
+fight_day/__init__.py
+fight_day/daily.py
+fight_day.egg-info/PKG-INFO
+fight_day.egg-info/SOURCES.txt
+fight_day.egg-info/dependency_links.txt
+fight_day.egg-info/top_level.txt
