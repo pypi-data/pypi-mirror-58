@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: jsonstore-socket
+Version: 0.0.1
+Summary: A socket-like connection over jsonstore.io
+Home-page: https://github.com/AgeOfMarcus/jsonstore-socket
+Author: Marcus Weinberger
+Author-email: marcus@marcusweinberger.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: json-store-client
+
+# jsonstore-socket
+A socket-like connection over jsonstore.io
+
