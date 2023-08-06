@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tornado-discovery
+Version: 0.0.2
+Summary: service discovery based on tornado
+Home-page: https://github.com/fiefdx/tornado_discovery
+Author: fiefdx
+Author-email: fiefdx@163.com
+License: MIT
+Description: # tornado_discovery
+        
+        Just a pure python3 module for service discovery.
+        
+        # install
+        ```bash
+        $ cd ./tornado_discovery
+        $ python3 ./setup.py install
+        ```
+        
+        # test
+        ```bash
+        # run listener
+        $ cd ./tornado_discovery/test
+        $ python3 ./test_discovery_listener.py
+        
+        # run registrant
+        $ cd ./tornado_discovery/test
+        $ python3 ./test_discovery_registrant.py
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

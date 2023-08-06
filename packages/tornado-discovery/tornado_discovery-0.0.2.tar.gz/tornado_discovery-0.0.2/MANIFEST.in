@@ -1,0 +1,4 @@
+include README.md
+include ChangeLog
+include TODO
+recursive-include test *.py
