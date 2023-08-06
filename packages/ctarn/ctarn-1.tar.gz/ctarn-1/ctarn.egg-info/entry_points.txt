@@ -1,0 +1,4 @@
+[console_scripts]
+ctarn-data = ctarn.util.dataset:main
+ctarn-rc = ctarn.demo.rc:main
+
