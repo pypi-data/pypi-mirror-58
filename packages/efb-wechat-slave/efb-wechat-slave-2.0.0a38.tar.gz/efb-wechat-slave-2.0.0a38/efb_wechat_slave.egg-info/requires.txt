@@ -1,0 +1,14 @@
+ehforwarderbot>=2.0.0b24
+itchat>=1.3.10
+python-magic
+pillow
+pyqrcode
+PyYaml
+requests>=2.22.0
+typing_extensions
+bullet
+cjkwrap
+
+[tests]
+pytest
+mypy
