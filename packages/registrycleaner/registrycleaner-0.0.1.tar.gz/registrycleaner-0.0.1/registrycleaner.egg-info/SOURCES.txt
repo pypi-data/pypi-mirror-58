@@ -1,0 +1,10 @@
+README.md
+setup.py
+registrycleaner.egg-info/PKG-INFO
+registrycleaner.egg-info/SOURCES.txt
+registrycleaner.egg-info/dependency_links.txt
+registrycleaner.egg-info/entry_points.txt
+registrycleaner.egg-info/requires.txt
+registrycleaner.egg-info/top_level.txt
+src/__init__.py
+src/registrycleaner.py
