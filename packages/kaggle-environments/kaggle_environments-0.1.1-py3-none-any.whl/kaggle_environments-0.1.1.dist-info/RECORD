@@ -1,0 +1,11 @@
+kaggle_environments/__init__.py,sha256=Hi-YhTWEpvlf00a9G1LcIBFGIFSww_USOv1yZ5gVerU,1253
+kaggle_environments/core.py,sha256=R4eNHsKczS3dhLW2PG0QSPeOAKQnp621VSzXRMa151c,17729
+kaggle_environments/errors.py,sha256=gKgOb2_JcOuBMLw3Ol_NZ4arlsvzBm3xV9fqZN3jeeY,3336
+kaggle_environments/main.py,sha256=JQTR9HHOpL1zNj0jUn6p5ppAryEmZ-_bUuWDYiFKvtI,5747
+kaggle_environments/utils.py,sha256=--z0hlOdnhfvly14pTsUIvUTXRjT17Sq19cvIQJcpkY,6708
+kaggle_environments-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kaggle_environments-0.1.1.dist-info/METADATA,sha256=rDSEEG0vqBj3NGOaRFIC17beRvenGEjZPckwZn3LhSY,1047
+kaggle_environments-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kaggle_environments-0.1.1.dist-info/entry_points.txt,sha256=SblqSc9cehdfGIc8QMCJU9vE4oxe7rBctjpm8f9rONw,71
+kaggle_environments-0.1.1.dist-info/top_level.txt,sha256=v3MMWIPMQFcI-WuF_dJngHWe9Bb2yH_6p4wat1x4gAc,20
+kaggle_environments-0.1.1.dist-info/RECORD,,
