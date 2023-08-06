@@ -1,0 +1,9 @@
+hydra_plugins/__init__.py,sha256=iPA4WAXjY_pL8e4BP_2Epk8CAGv_r6fkwg4xM8mqwAM,136
+hydra_plugins/ray_launcher_badr/__init__.py,sha256=nob97zFV36j8ZzOP-1m-ZPyYmpdrO59WhmJ_O28Ry9M,136
+hydra_plugins/ray_launcher_badr/ray_launcher.py,sha256=mMGOmOw6IezBOIRY3Ga_ZtAJqAATs4rNxbY0B8PKt04,4452
+hydra_plugins/ray_launcher_badr/conf/__init__.py,sha256=nlNcRa8JrCTvjVYxoVH3f-uv5yqSrWv-stlB8MSlTjU,71
+hydra_plugins/ray_launcher_badr/conf/hydra/launcher/ray.yaml,sha256=iX4ZbUPt_pEeoW-YIKjXUpdV8yLIO_Bsa2ATiYWZud8,73
+hydra_ray_launcher_badr-0.1.1.dist-info/METADATA,sha256=41fMuffnhCFdZqmPbf9_VCOZOIzOn1cKBrpe9HQixSg,831
+hydra_ray_launcher_badr-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hydra_ray_launcher_badr-0.1.1.dist-info/top_level.txt,sha256=0-LcYpEmzatUy2K5F7jmqcMfBL2RdB7k9nM_8zGFzhI,14
+hydra_ray_launcher_badr-0.1.1.dist-info/RECORD,,
