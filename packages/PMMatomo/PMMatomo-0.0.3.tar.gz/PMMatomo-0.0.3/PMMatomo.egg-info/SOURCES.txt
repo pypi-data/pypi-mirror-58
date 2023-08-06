@@ -1,0 +1,8 @@
+README.md
+setup.py
+PMMatomo/__init__.py
+PMMatomo.egg-info/PKG-INFO
+PMMatomo.egg-info/SOURCES.txt
+PMMatomo.egg-info/dependency_links.txt
+PMMatomo.egg-info/requires.txt
+PMMatomo.egg-info/top_level.txt
