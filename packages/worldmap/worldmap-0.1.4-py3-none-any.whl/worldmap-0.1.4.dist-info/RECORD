@@ -1,0 +1,15 @@
+worldmap/__init__.py,sha256=nFxVwrJ8XyEhMKcVqlPS_TaAOrJJPOqdiBgFm6sSLlU,539
+worldmap/_version.py,sha256=nz4hxH2CUaQNrbodrLjtn2ty0vYCAZZV455Vw1rwxys,18970
+worldmap/deepStringMatching.py,sha256=EUdMDSAjWD38C9iPOpwQYx_VZvg6QOO7VYvyk3Z_iew,12480
+worldmap/stringPreprocessing.py,sha256=z8-ZfLOcrBPB5Ikr3Q378558AtC1gfub63mMMFAJo0M,10342
+worldmap/strtricks.py,sha256=XVpefM9VTDGzsSHesu9aygzlJA28jEIoEE45_cZ5-pY,2162
+worldmap/worldmap.py,sha256=3lxWzkUR8VLLoqGJOIzB-9ZN29gnSaZTrYkUaQir4Ck,13353
+worldmap/zip_extract.py,sha256=di0JoQiRvR6oTc9SZyv6xfLVUznkJ_3_5V1dBzS8HMM,2106
+worldmap/data/SVG_MAPS.zip,sha256=PdQLbIj3GnPbM-J0FMWCjQGFZHKKKdrxpgPtxMxbKOA,9373152
+worldmap/data/citycode.txt,sha256=W1HA-ONFN4JRzZ_HnW2yfdfGxnabNI-FvjzDw_2PjfY,2793
+worldmap-0.1.4.dist-info/LICENCE.txt,sha256=bGpDguGm5o4PTgiXYOCir_USsWVKnf_--B1AhM-p_CI,684
+worldmap-0.1.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+worldmap-0.1.4.dist-info/METADATA,sha256=-zGJeSprI15wxG9nb2X1YPGgFXTtAM3iRlhpCunwnRI,3271
+worldmap-0.1.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+worldmap-0.1.4.dist-info/top_level.txt,sha256=tQ1lU9VJHphD-1aFOE0rxQy8cdrEc5LozllAKmW88eo,9
+worldmap-0.1.4.dist-info/RECORD,,
