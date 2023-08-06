@@ -1,0 +1,11 @@
+README.md
+setup.py
+BiliDrive/__init__.py
+BiliDrive/__main__.py
+BiliDrive/bilibili.py
+BiliDrive.egg-info/PKG-INFO
+BiliDrive.egg-info/SOURCES.txt
+BiliDrive.egg-info/dependency_links.txt
+BiliDrive.egg-info/entry_points.txt
+BiliDrive.egg-info/requires.txt
+BiliDrive.egg-info/top_level.txt

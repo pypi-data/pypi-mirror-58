@@ -1,0 +1,3 @@
+[console_scripts]
+BiliDrive = BiliDrive.__main__:main
+
