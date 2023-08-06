@@ -1,0 +1,11 @@
+quantastica_qconvert-0.9.8-py3.7-nspkg.pth,sha256=p3lUkxQeaITkL9noRZHPwywH5LnTQq6Cn9tbiQK2jbM,564
+quantastica/qconvert/__init__.py,sha256=xDeQO7ScIuP5JG8WgALrNrRka5lrniHNSmZfe4JFfJs,626
+quantastica/qconvert/convert.py,sha256=O39-xnAyX1QWTkB5Sc8LtuQdUYb7HQRwyxjluFZ9JB4,1789
+quantastica/qconvert/gate_defs.json,sha256=zUJImbyL0A6tEzyFA171Ur1e0lFafOG9LsS3mHTx4I4,39400
+quantastica/qconvert/qobj_to_pyquil.py,sha256=o4f09ncUGNITVXVYTFtDDfY1xTYUXWe5LavA_7e8ynA,9062
+quantastica_qconvert-0.9.8.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+quantastica_qconvert-0.9.8.dist-info/METADATA,sha256=0iqGwHLfttOHs-lxyDJnxpWkWGlvYC46ConkquXpJp4,2305
+quantastica_qconvert-0.9.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+quantastica_qconvert-0.9.8.dist-info/namespace_packages.txt,sha256=RVPTJvDEHMqmQsKjXPyvPZid65gHTI1ZpjdHtihbE2M,12
+quantastica_qconvert-0.9.8.dist-info/top_level.txt,sha256=RVPTJvDEHMqmQsKjXPyvPZid65gHTI1ZpjdHtihbE2M,12
+quantastica_qconvert-0.9.8.dist-info/RECORD,,
