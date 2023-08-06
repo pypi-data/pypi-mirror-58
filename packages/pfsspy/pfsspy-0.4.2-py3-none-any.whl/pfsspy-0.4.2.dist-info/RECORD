@@ -1,0 +1,13 @@
+pfsspy/__init__.py,sha256=9jtSggpnyt5wOVrcADaCc8ZoyBxTZenKAXa5Y3jwbds,19298
+pfsspy/_version.py,sha256=ojEJYB6hCZR0hmauKkGsmy0wGcxo82Ct8Ks5Cs31PNU,497
+pfsspy/coords.py,sha256=X3087roYAfdIpjmR3yGOi3G_HVPhDA2GdekXnlCvjEw,1298
+pfsspy/fieldline.py,sha256=2tlRRN5xI6D3Sk955YfxYNbyl07CGL_B21_jpPGwRAY,7745
+pfsspy/grid.py,sha256=5PVjSXhAa1IWO-iD6r4kXppB5n2yJI68BPOqodZo85A,2367
+pfsspy/interpolator.py,sha256=w2p4iWJoExMCKFMv7nKNtrHqql74C54C7XGCMP_aQuk,5565
+pfsspy/plot.py,sha256=i0s2hdith_mLmHp_6XVLNQ6iEN7D5EB2uVrLbSaeol0,1139
+pfsspy/tracing.py,sha256=NPUUXVFZSQrcQY6bHVBi_8EFtb39aziNu_9GM93Dij4,5170
+pfsspy-0.4.2.dist-info/LICENSE,sha256=TC_6ubYJdEqU7z1opeWUT_koxvjzWAYQSTl8-A2nHqM,35288
+pfsspy-0.4.2.dist-info/METADATA,sha256=1Zp6ZizgB6w23yp-MeKrLo9wC34eWrT-zZTK2B7xzEc,660
+pfsspy-0.4.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pfsspy-0.4.2.dist-info/top_level.txt,sha256=5Guj9NoLVpfAJ165p0xdv2oNVa43zLXMHWjH_3VkWzE,7
+pfsspy-0.4.2.dist-info/RECORD,,
