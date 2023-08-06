@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/__init__.py
+bin/create-genome-phylogeny
+bin/search-custom-markers
+bin/single-marker-phylogeny
+bin/summarize-metabolism
+metabolisHMM.egg-info/PKG-INFO
+metabolisHMM.egg-info/SOURCES.txt
+metabolisHMM.egg-info/dependency_links.txt
+metabolisHMM.egg-info/not-zip-safe
+metabolisHMM.egg-info/requires.txt
+metabolisHMM.egg-info/top_level.txt
