@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pstools
+Version: 0.5.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=2.7
+Requires-Dist: meander
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: healpy
+Requires-Dist: matplotlib
+Requires-Dist: astroquery
+
+UNKNOWN
+
+
