@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: testjx
+Version: 0.0.1
+Summary: used to describe uncertainty in financial data
+Home-page: https://github.com/XuanLyu/SLE
+Author: Xuan Ji
+Author-email: jixuan_1021@163.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.3

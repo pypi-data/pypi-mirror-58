@@ -1,0 +1,8 @@
+README.md
+setup.py
+testjx/__init__.py
+testjx/testjx.py
+testjx.egg-info/PKG-INFO
+testjx.egg-info/SOURCES.txt
+testjx.egg-info/dependency_links.txt
+testjx.egg-info/top_level.txt
