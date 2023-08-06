@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xadmin-captcha
+Version: 1.0.1
+Summary: captcha for django xadmin
+Home-page: https://github.com/kauzhu
+Author: chenniantao
+Author-email: 76876201@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: django-simple-captcha
+
+# this a xadmin captcha package
+
+
