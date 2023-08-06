@@ -1,0 +1,8 @@
+setup.py
+fileguard/__init__.py
+fileguard/fileguard.py
+fileguard/largefileguard.py
+pyfileguard.egg-info/PKG-INFO
+pyfileguard.egg-info/SOURCES.txt
+pyfileguard.egg-info/dependency_links.txt
+pyfileguard.egg-info/top_level.txt
