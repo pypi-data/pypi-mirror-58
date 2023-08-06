@@ -1,0 +1,9 @@
+numpy
+matplotlib
+shapely
+pandas
+geopandas
+hvplot
+cartopy
+geoviews
+pyproj
