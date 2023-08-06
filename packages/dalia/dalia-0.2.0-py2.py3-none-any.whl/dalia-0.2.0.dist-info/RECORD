@@ -1,0 +1,12 @@
+dalia/__init__.py,sha256=EgASIBDhiTyqPjiOGHIK16TVdi0C614pTslObRYZOio,115
+dalia/csvv.py,sha256=0pV7Q5lU-9bmwskqKzHu--VYnp85nOYxlk-YRyerXWo,3907
+dalia/hierarchy.py,sha256=PRCB3geRxAEGoPQDpMX2nndDrYKBbQCiQXkOUHpnmKI,1325
+dalia/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dalia/tests/test_csvv.py,sha256=5d3fFLvo5wGqnu5Ky-7w1ai8FqSQN4f-EifAgtHqkhg,1566
+dalia/tests/test_hierarchy.py,sha256=tR9D3pACXqP-r-6BgO8RSoCcVeXGh7nf36TNoYsSd2s,660
+dalia-0.2.0.dist-info/AUTHORS.rst,sha256=yxAS4D0B5Nv_5fg17m08WlvsVxZDODslA8Bf-94aupc,160
+dalia-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dalia-0.2.0.dist-info/METADATA,sha256=jaWV1xmqdZS4yACM2ze3Q8fnXKTOLE-Hhc0ef982Cy0,2544
+dalia-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dalia-0.2.0.dist-info/top_level.txt,sha256=loie3TmAfW15h-6DZ41u3c2iwyDfTxMJ6S9aYk8j4XI,6
+dalia-0.2.0.dist-info/RECORD,,
