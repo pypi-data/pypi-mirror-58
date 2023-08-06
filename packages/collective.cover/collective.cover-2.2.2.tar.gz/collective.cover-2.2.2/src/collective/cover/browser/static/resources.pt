@@ -1,0 +1,6 @@
+
+  <link rel="stylesheet" tal:attributes="href string:${view/site_url}/++resource++collective.cover/cover-a92bc36.css" />
+
+
+  <script defer tal:attributes="src string:${view/site_url}/++resource++collective.cover/cover-a92bc36.js"></script>
+
