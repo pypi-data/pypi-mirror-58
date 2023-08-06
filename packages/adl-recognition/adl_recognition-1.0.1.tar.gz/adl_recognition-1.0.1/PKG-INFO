@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: adl_recognition
+Version: 1.0.1
+Summary: Classification of Activities of Daily Living(ADL) using depth videos and audio
+Home-page: https://github.com/RivinduM/AdlRecognition
+Author: Rivindu Madushan <rivindum.15@cse.mrt.ac.lk>, Danushka Madhuranga <danushka.15@cse.mrt.ac.lk>, Chathuranga Siriwwardana <chathuranga.15@cse.mrt.ac.lk>
+Author-email: rivindum.15@cse.mrt.ac.lk
+License: UNKNOWN
+Description: # AssistedLivingSystem
+        Recognition of Activities of Daily Living(ADL) with privacy protection using depth and audio data. 
+        
+        ## Activities
+        Making a phone call, clapping, drinking, eating, entering from door, exiting from door, falling, lying down, opening pill container, picking object, reading, sit still, sitting down, sleeping, standing up, sweeping, using laptop, using phone, wake up, walking, washing hand, watching TV, water pouring and writing
+        
+        ## Dependencies
+        * python >= 2.7
+        * numpy
+        * librosa
+        * noisereduce
+        * cv2
+        * keras
+        
+        This project is developed as a FYP, UoM, 2019.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

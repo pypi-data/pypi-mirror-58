@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+adl_recognition/__init__.py
+adl_recognition/audio_data.py
+adl_recognition/depth_data.py
+adl_recognition/model.py
+adl_recognition/predict.py
+adl_recognition.egg-info/PKG-INFO
+adl_recognition.egg-info/SOURCES.txt
+adl_recognition.egg-info/dependency_links.txt
+adl_recognition.egg-info/requires.txt
+adl_recognition.egg-info/top_level.txt
+adl_recognition/models/15_07_14_acc_92.h5
+adl_recognition/models/15_07_14_acc_92.json
+adl_recognition/models/2019_09_27_02_56_29_2.h5
+adl_recognition/models/2019_09_27_02_56_29_2.json
