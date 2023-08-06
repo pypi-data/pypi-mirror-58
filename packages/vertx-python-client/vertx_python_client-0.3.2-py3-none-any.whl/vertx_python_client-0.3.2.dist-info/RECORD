@@ -1,0 +1,8 @@
+vertx/__init__.py,sha256=0t0hU9E49U5kSzyYlUD2ag5Wx4Cy09q-ihV2JxarRGk,80
+vertx/__main__.py,sha256=yteSXYKeveC2nV40540zLzTf0h_ltMJ7mP1RTmhIgWw,1392
+vertx/eventbus.py,sha256=bcAXT3sQwV00xMePz5rnnnFOZy22kIr7ly1pq-cvkxM,4958
+vertx_python_client-0.3.2.dist-info/LICENSE,sha256=n8Ir3KRcESSSYmtNAq3BDzqYnnkOVx7swbTWUsYZPk4,1066
+vertx_python_client-0.3.2.dist-info/METADATA,sha256=lFlXuspwjtiTI7uBYMIjUlf2fSr4A6jpqhXwTG3JYB8,1479
+vertx_python_client-0.3.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vertx_python_client-0.3.2.dist-info/top_level.txt,sha256=Jzr7-zseGQtpJlkRmbsTpOnImHBj3Mu5xlxqE8_15bQ,6
+vertx_python_client-0.3.2.dist-info/RECORD,,
