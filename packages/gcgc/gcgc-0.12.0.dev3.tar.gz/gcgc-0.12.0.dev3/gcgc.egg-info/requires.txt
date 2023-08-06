@@ -1,0 +1,5 @@
+pydantic~=1.1
+
+[sentencepiece]
+sentencepiece~=0.1
+biopython
