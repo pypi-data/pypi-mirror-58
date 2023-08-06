@@ -1,0 +1,6 @@
+README.md
+setup.py
+example_pkg_MZorumski.egg-info/PKG-INFO
+example_pkg_MZorumski.egg-info/SOURCES.txt
+example_pkg_MZorumski.egg-info/dependency_links.txt
+example_pkg_MZorumski.egg-info/top_level.txt
