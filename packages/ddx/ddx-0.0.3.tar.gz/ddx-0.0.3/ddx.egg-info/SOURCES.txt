@@ -1,0 +1,9 @@
+README.md
+ddx.py
+setup.py
+ddx.egg-info/PKG-INFO
+ddx.egg-info/SOURCES.txt
+ddx.egg-info/dependency_links.txt
+ddx.egg-info/entry_points.txt
+ddx.egg-info/requires.txt
+ddx.egg-info/top_level.txt
