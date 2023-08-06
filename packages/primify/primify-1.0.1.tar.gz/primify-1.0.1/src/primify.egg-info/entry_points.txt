@@ -1,0 +1,3 @@
+[console_scripts]
+primify = primify.cli:run
+
