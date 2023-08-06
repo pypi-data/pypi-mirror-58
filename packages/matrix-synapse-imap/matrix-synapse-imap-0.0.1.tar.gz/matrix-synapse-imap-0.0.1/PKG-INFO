@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: matrix-synapse-imap
+Version: 0.0.1
+Summary: IMAP auth provider for Synapse
+Home-page: https://github.com/bit/matrix-synapse-imap
+Author: Jan Gerber
+Author-email: j@mailb.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
