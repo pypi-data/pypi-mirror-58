@@ -1,0 +1,19 @@
+arctic
+Flask
+Flask-Compress
+future
+itsdangerous
+pandas
+requests
+scipy
+six
+
+[:python_version < "3.0"]
+lz4<=2.2.1
+
+[:python_version > "3.0"]
+lz4
+
+[flasgger]
+jsonschema<3.0.0
+flasgger==0.9.3
