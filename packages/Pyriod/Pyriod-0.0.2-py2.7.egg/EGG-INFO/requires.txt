@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+lightkurve
+lmfit
+matplotlib
+ipympl
+ipywidgets
+qgrid
