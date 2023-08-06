@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ImageTools/__init__.py
+ImageToolsMadeEasy.egg-info/PKG-INFO
+ImageToolsMadeEasy.egg-info/SOURCES.txt
+ImageToolsMadeEasy.egg-info/dependency_links.txt
+ImageToolsMadeEasy.egg-info/requires.txt
+ImageToolsMadeEasy.egg-info/top_level.txt
