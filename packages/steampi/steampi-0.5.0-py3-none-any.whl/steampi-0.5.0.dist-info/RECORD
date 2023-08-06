@@ -1,0 +1,12 @@
+steampi/__init__.py,sha256=lCqUHNOMhLCG9r6y6yBa6i2uquX1Ca9zWEgIZ6m9bVw,167
+steampi/api.py,sha256=nuGZaZ3bEiDDrNctIjLmXgJWAZnLkh0Fr80k90Msvp4,1748
+steampi/calendar.py,sha256=xLoFGiAhFXkQtdPVhD4S-VJEXvl2zop1MyE2usDilxQ,1243
+steampi/difflib_utils.py,sha256=_SHzQfH1CPWavf0kqcg0MH-DrDfBE58js8FVSnLObsk,4111
+steampi/json_utils.py,sha256=7F2S2ZC9uBdVhOstdZiT24OssbpaXQNviQWlTp-0YTI,839
+steampi/levenshtein_utils.py,sha256=UyEi-G-6pj5FEyOv0fBKCPDAr9-mE2NWreghQzapn5s,647
+steampi/text_distances.py,sha256=oSqsfXRAdkSldNOhSfy-xJfB5ryia2HZgQknn9FIC5U,2051
+steampi-0.5.0.dist-info/LICENSE,sha256=ln9EsOxSeQ54i_BgZ3mAXL_0_pGWjdXKU0e0fili5xI,1081
+steampi-0.5.0.dist-info/METADATA,sha256=oWbsQljeBVbbA8QFqpcFLU3FUlxEYfHQ0zZTchTFalg,661
+steampi-0.5.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+steampi-0.5.0.dist-info/top_level.txt,sha256=DzhHUrZ3gGR7Gbgx2OMZVmlAX_5bHg1s7sUouR3XFHo,8
+steampi-0.5.0.dist-info/RECORD,,
