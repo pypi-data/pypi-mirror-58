@@ -1,0 +1,13 @@
+composite_field/__init__.py,sha256=i-TLUyNqSeaxwHA7nGEv4VE6GJ6t-KUCgOpk0HAj_zE,163
+composite_field/base.py,sha256=uh8LETy7AQVwyaAlcsbpvHWPKHga2D24QkD9R3toVXk,6612
+composite_field/complex.py,sha256=Dfe1clmNu_37aMG_Nu1eXWuS_TNb7By4wnTWpHqL-jc,1389
+composite_field/l10n.py,sha256=imV8folPZu-EUMIoBwzJ1bZm8dt3pXZVp2XHwQEeEIQ,4820
+composite_field/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+composite_field/rest_framework_support.py,sha256=jECtEDW7hd93kMzi5QvMGlGIa9A8NrPFepWsIx68wFI,1161
+composite_field/tests.py,sha256=iotNx9NGmzLLpcYE98ENnjcuE4-AwiccLLM4Ws2hW3U,18268
+django_composite_field-1.1.0.dist-info/AUTHORS,sha256=qkb39IFekyaVd78K7HrfyQy5mzdLqo8ON4JlZng2sqk,226
+django_composite_field-1.1.0.dist-info/LICENSE,sha256=doKPPkKpEY5qDB3pocHxI7zD3EMsN6vsAQIXKhrWZrM,1312
+django_composite_field-1.1.0.dist-info/METADATA,sha256=zjVClJyvPUlJj2DVkVZ-BkoJQN4rYArKYkdF9RyY5Ro,3505
+django_composite_field-1.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_composite_field-1.1.0.dist-info/top_level.txt,sha256=i1Y5zqz7Kf4G5klF9WWrmQ8RqzkvV3rS39utW7Cp16o,16
+django_composite_field-1.1.0.dist-info/RECORD,,
