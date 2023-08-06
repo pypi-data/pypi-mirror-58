@@ -1,0 +1,17 @@
+nostalgia_fitbit/__init__.py,sha256=FiFr_PNGnkDYD4u_icbTqMsEM-YxN5JyXIOsgZKczVs,5694
+nostalgia_fitbit/__main__.py,sha256=neddblSGNSlVqPI31qxF_dkHS5gnfeOs2KSMwe6sSvI,1654
+nostalgia_fitbit/_version.py,sha256=A7R_eToY0QP-WBdA6ZnucgtTatUfDqc71xevSxTovPE,32
+nostalgia_fitbit/auth.py,sha256=fkDthMkvMXJXArR2R7UNnKZ6Aq5FqZoehPX1f58yQcY,4805
+nostalgia_fitbit/client.py,sha256=Z5OgQy2dEF7YZpFce9JkjQgfFh4M4ERB2Pn5Vk9NQVk,2111
+nostalgia_fitbit/datastore.py,sha256=5nNMRzjcOdahy_chTIjLVOoFCnA1exUhUFLRX2LDp8k,3230
+nostalgia_fitbit/export.py,sha256=P7eZzZe9ljo8VbazQlQkL-0nttdoykrWf1eAKWJcb34,4397
+nostalgia_fitbit/report.py,sha256=trr58DhiB7qin3gydweej-B6caec8tkLpR2E6-_urlA,1444
+nostalgia_fitbit/sync.py,sha256=o6GbPzaOU31_dM4dPciQLYt_1Y4e1ltRfgnb-cTEmyY,2873
+nostalgia_fitbit/static/chart.js,sha256=C4Xrt4KbSqKgpM17KKNii2zffu2KW9WelXWsMkvC2co,6793
+nostalgia_fitbit/static/report.css,sha256=UKsRC0Y-hqZ14_VWfHbcbpLtwFYiVNexinpFhQJxS_8,235
+nostalgia_fitbit-0.6.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+nostalgia_fitbit-0.6.0.dist-info/METADATA,sha256=VZ9hN-eWsq6m4d_4Yd1WyIhIZFoE2xRd-ejrguW_y9c,2989
+nostalgia_fitbit-0.6.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+nostalgia_fitbit-0.6.0.dist-info/entry_points.txt,sha256=8TCy9TFsAHm9UGy3jCwknKh-WrVWQrlG7KoDjrBnQx0,69
+nostalgia_fitbit-0.6.0.dist-info/top_level.txt,sha256=JEDRb6xWUUvtlSbCBUUuKd5Wsfghx0emZ-o5t9mEYZ8,17
+nostalgia_fitbit-0.6.0.dist-info/RECORD,,
