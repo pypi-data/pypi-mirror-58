@@ -1,0 +1,2 @@
+oasys1>=1.2.28
+PyQtWebEngine>=5.14
