@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package tantivy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>tantivy</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/poljar/werk/misc/tantivy-py/tantivy/__init__.py">/home/poljar/werk/misc/tantivy-py/tantivy/__init__.py</a></font></td></tr></table>
+    <p><tt>Python&nbsp;bindings&nbsp;for&nbsp;the&nbsp;search&nbsp;engine&nbsp;library&nbsp;Tantivy.<br>
+&nbsp;<br>
+Tantivy&nbsp;is&nbsp;a&nbsp;full&nbsp;text&nbsp;search&nbsp;engine&nbsp;library&nbsp;written&nbsp;in&nbsp;rust.<br>
+&nbsp;<br>
+It&nbsp;is&nbsp;closer&nbsp;to&nbsp;Apache&nbsp;Lucene&nbsp;than&nbsp;to&nbsp;Elasticsearch&nbsp;and&nbsp;Apache&nbsp;Solr&nbsp;in<br>
+the&nbsp;sense&nbsp;it&nbsp;is&nbsp;not&nbsp;an&nbsp;off-the-shelf&nbsp;search&nbsp;engine&nbsp;server,&nbsp;but&nbsp;rather<br>
+a&nbsp;library&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;build&nbsp;such&nbsp;a&nbsp;search&nbsp;engine.<br>
+Tantivy&nbsp;is,&nbsp;in&nbsp;fact,&nbsp;strongly&nbsp;inspired&nbsp;by&nbsp;Lucene's&nbsp;design.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;import&nbsp;json<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;import&nbsp;tantivy<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;builder&nbsp;=&nbsp;tantivy.SchemaBuilder()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;title&nbsp;=&nbsp;builder.add_text_field("title",&nbsp;stored=True)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;body&nbsp;=&nbsp;builder.add_text_field("body")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;schema&nbsp;=&nbsp;builder.build()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;index&nbsp;=&nbsp;tantivy.Index(schema)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;doc&nbsp;=&nbsp;tantivy.Document()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;doc.add_text(title,&nbsp;"The&nbsp;Old&nbsp;Man&nbsp;and&nbsp;the&nbsp;Sea")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;doc.add_text(body,&nbsp;("He&nbsp;was&nbsp;an&nbsp;old&nbsp;man&nbsp;who&nbsp;fished&nbsp;alone&nbsp;in&nbsp;a&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"skiff&nbsp;in&nbsp;the&nbsp;Gulf&nbsp;Stream&nbsp;and&nbsp;he&nbsp;had&nbsp;gone&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"eighty-four&nbsp;days&nbsp;now&nbsp;without&nbsp;taking&nbsp;a&nbsp;fish."))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;writer.add_document(doc)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;doc&nbsp;=&nbsp;schema.parse_document(json.dumps({<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title":&nbsp;["Frankenstein",&nbsp;"The&nbsp;Modern&nbsp;Prometheus"],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"body":&nbsp;("You&nbsp;will&nbsp;rejoice&nbsp;to&nbsp;hear&nbsp;that&nbsp;no&nbsp;disaster&nbsp;has&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"accompanied&nbsp;the&nbsp;commencement&nbsp;of&nbsp;an&nbsp;enterprise&nbsp;which&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"you&nbsp;have&nbsp;regarded&nbsp;with&nbsp;such&nbsp;evil&nbsp;forebodings.&nbsp;&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"I&nbsp;arrived&nbsp;here&nbsp;yesterday,&nbsp;and&nbsp;my&nbsp;first&nbsp;task&nbsp;is&nbsp;to&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"assure&nbsp;my&nbsp;dear&nbsp;sister&nbsp;of&nbsp;my&nbsp;welfare&nbsp;and&nbsp;increasing&nbsp;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"confidence&nbsp;in&nbsp;the&nbsp;success&nbsp;of&nbsp;my&nbsp;undertaking.")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;writer.add_document(doc)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;writer.commit()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;reader&nbsp;=&nbsp;index.reader()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;searcher&nbsp;=&nbsp;reader.searcher()<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;query_parser&nbsp;=&nbsp;tantivy.QueryParser.for_index(index,&nbsp;[title,&nbsp;body])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;query&nbsp;=&nbsp;query_parser.parse_query("sea&nbsp;whale")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;top_docs&nbsp;=&nbsp;tantivy.TopDocs.with_limit(10)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;result&nbsp;=&nbsp;searcher.search(query,&nbsp;top_docs)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;assert&nbsp;len(result)&nbsp;==&nbsp;1</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tantivy.tantivy.html">tantivy</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table>
+</body></html>
