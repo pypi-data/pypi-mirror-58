@@ -1,0 +1,6 @@
+xlrd
+xlwt
+openpyxl
+xlutils
+pprint
+textgrid

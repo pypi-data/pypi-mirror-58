@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: kog-lib
+Version: 0.2.1
+Summary: Simple python lib, processing csv,excel,mail,textgrid,metadata,wav; using for SurfingTech or others
+Home-page: UNKNOWN
+Author: KOG
+Author-email: 52204413@qq.com
+License: BSD License
+Description: # surfing_pylib
+        
+        #### Description
+        
+        冲浪科技python 库
+        公司的Python库都在这个仓库中维护统一管理
+        
+        #### Software Architecture
+        
+        Software architecture description
+        
+        #### Installation
+        
+        1. xxxx
+        2. xxxx
+        3. xxxx
+        
+        #### Instructions
+        
+        1. xxxx
+        2. xxxx
+        3. xxxx
+        
+        #### Contribution
+        
+        1. Fork the repository
+        2. Create Feat_xxx branch
+        3. Commit your code
+        4. Create Pull Request
+        
+        #### Gitee Feature
+        
+        1. You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
+        2. Gitee blog [blog.gitee.com](https://blog.gitee.com)
+        3. Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
+        4. The most valuable open source project [GVP](https://gitee.com/gvp)
+        5. The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
+        6. The most popular members  [https://gitee.com/gitee-stars/](
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
