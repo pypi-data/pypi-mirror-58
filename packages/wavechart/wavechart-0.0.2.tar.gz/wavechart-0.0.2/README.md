@@ -1,0 +1,27 @@
+# WaveChart
+a chart util to show audio wave
+# Usage
+### Install
+```
+pip install wavechart
+```
+
+### Static chart
+Display the waveform of a sound file
+```python
+import wavechart
+chart = wavechart.StaticWaveChart(path='audio.wav')
+chart.show()
+```
+
+### Dynamic chart
+Display the waveform of a sound queue in the format of numpy array
+```python
+from recorder import Recorder
+import wavechart
+
+r = Recorder()
+wave_queue = r.get_wave_queue()
+chart = wavechart.DynamicWaveChart(wave_queue=wave_queue)
+chart.show()
+```

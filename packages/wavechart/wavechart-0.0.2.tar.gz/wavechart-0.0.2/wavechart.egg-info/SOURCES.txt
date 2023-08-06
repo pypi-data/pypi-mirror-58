@@ -1,0 +1,8 @@
+README.md
+setup.py
+wavechart.py
+wavechart.egg-info/PKG-INFO
+wavechart.egg-info/SOURCES.txt
+wavechart.egg-info/dependency_links.txt
+wavechart.egg-info/requires.txt
+wavechart.egg-info/top_level.txt
