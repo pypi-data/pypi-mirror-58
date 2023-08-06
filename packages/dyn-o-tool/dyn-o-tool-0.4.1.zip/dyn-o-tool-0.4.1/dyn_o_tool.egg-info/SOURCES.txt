@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+setup.cfg
+setup.py
+dyn_o_tool.egg-info/PKG-INFO
+dyn_o_tool.egg-info/SOURCES.txt
+dyn_o_tool.egg-info/dependency_links.txt
+dyn_o_tool.egg-info/entry_points.txt
+dyn_o_tool.egg-info/not-zip-safe
+dyn_o_tool.egg-info/requires.txt
+dyn_o_tool.egg-info/top_level.txt
+dynotool/__init__.py
+dynotool/functions.py
+dynotool/main.py
+dynotool/utils.py

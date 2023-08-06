@@ -1,0 +1,36 @@
+Metadata-Version: 1.2
+Name: dyn-o-tool
+Version: 0.4.1
+Summary: Tools for better living with DynamoDB
+Home-page: https://github.com/Cloudzero/dynotool
+Author: CloudZero
+Author-email: support@cloudzero.com
+License: MIT
+Description: [![Build Status](https://travis-ci.org/Cloudzero/dynotool.svg?branch=master)](https://travis-ci.org/Cloudzero/dynotool)
+        
+        # Dyn-O-Tool
+        
+        Tools for easier living with AWS DynamoDB
+        
+        
+        Features
+        --------
+        
+        * Get a quick informational summary of any table
+        * Quickly grab 10 records from any table
+        * Export all or a subset of any DynamoDB table to CSV or TSV
+        
+        
+        Copyright &copy; 2017 CloudZero, Inc.
+Keywords: CloudZero DynamoDB
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
