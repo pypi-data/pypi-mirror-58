@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: docx2pdf
+Version: 0.1.0
+Summary: 
+Author: Al Johri
+Author-email: al.johri@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pywin32 (>=227,<228); sys_platform == "win32"
+Requires-Dist: tqdm (>=4.41.0,<5.0.0)
