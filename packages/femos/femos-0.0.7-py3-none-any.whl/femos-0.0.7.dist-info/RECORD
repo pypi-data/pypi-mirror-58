@@ -1,0 +1,16 @@
+femos/__init__.py,sha256=1XTubF8gd4bPFR3b6DbJ2dQ5lXkI1erQEjz6Hgi2VLw,14
+femos/core.py,sha256=UQp4e0u4xcttBwvAjDnok2FgjXseECzNLBGSb7yuDbM,5947
+femos/genotypes.py,sha256=lTuxIyHwa0wlFNaR4QaQ_W80T3DzE6xkZzo1P04d7Ec,6072
+femos/parser.py,sha256=DyfKv1VoUXFcU-lWRS9iop_FmJ8e5cg5OI14k2CQMRA,14706
+femos/phenotypes.py,sha256=BGH1H8hx8SVPvDebnNnDU4Nci_9Flw0TG-vpowVkt7o,1472
+femos/selections.py,sha256=luu_u28Au8RcFDmceKfjGHWXPg_xF_JPgUNEMjfIQqc,1483
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=2PWoWzRaM8c1rTIzV2mamAVIKA3cOJtv0c7zO5THzR8,7192
+tests/test_genotypes.py,sha256=qcYUmvuAvMXSPLh4Ci4nuMLhWY8GSJo6xxFgtRI4QzQ,9151
+tests/test_phenotype.py,sha256=U0YZoiIyF3daAAj_t-fWB3UWyMR3xczk37IH6wmziMI,1998
+tests/test_selections.py,sha256=ZCf-GE2uTrC90EjG0Z_TPZpniW8k_vGjOfqvnH-944E,1158
+femos-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+femos-0.0.7.dist-info/METADATA,sha256=iSLtoV7O-Bh49bxvts22Ff80Sk4YMwgfg1wbaunR1pQ,770
+femos-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+femos-0.0.7.dist-info/top_level.txt,sha256=m7is4xCj9u06TNwnsgDDfw8qkVhBGeInqA8jVanUnp0,12
+femos-0.0.7.dist-info/RECORD,,
