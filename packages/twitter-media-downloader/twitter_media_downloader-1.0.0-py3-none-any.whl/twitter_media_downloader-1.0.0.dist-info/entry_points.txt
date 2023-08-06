@@ -1,0 +1,3 @@
+[console_scripts]
+twitter-media-dl = downloader.__main__:main
+

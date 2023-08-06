@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: twitter-media-downloader
+Version: 1.0.0
+Summary: Download images and videos belonging to a particular twitter account
+Home-page: https://github.com/sauravbiswasiupr/twitter-media-downloader
+Author: sauravbiswas
+Author-email: sauravmaximus@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Dist: tweepy
+
+UNKNOWN
+
+
