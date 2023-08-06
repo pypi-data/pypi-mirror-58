@@ -1,0 +1,6 @@
+psycopg2-binary
+sqlalchemy
+alembic
+jinja2
+pytz
+tzlocal
