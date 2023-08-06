@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+intervalmath/__init__.py
+intervalmath/interval.py
+intervalmath.egg-info/PKG-INFO
+intervalmath.egg-info/SOURCES.txt
+intervalmath.egg-info/dependency_links.txt
+intervalmath.egg-info/top_level.txt
