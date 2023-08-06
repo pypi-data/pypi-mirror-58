@@ -1,0 +1,2 @@
+briefcase>=0.3.0.dev3
+toga>=0.3.0.dev17
