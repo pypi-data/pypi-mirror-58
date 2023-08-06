@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+key_pressed_count/keycount.py
+key_pressed_count.egg-info/PKG-INFO
+key_pressed_count.egg-info/SOURCES.txt
+key_pressed_count.egg-info/dependency_links.txt
+key_pressed_count.egg-info/entry_points.txt
+key_pressed_count.egg-info/requires.txt
+key_pressed_count.egg-info/top_level.txt

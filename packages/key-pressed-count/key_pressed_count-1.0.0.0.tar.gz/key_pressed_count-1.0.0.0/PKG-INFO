@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: key_pressed_count
+Version: 1.0.0.0
+Summary: A Python package which will count your all keypressed and mouse touch
+Home-page: https://github.com/Vijayraj72/keylogger-app
+Author: vijay saw
+Author-email: imvijayraj72@gmail.com
+License: MIT
+Description: # Keyboard press count and Mouse event count 
+        
+        A Python package which will count your daily keyboard press as well as mouse 
+        
+        ## Usage
+        
+        Following query on terminal will help you to enable your application to count your key pressed
+        ```
+        install : sudo apt-get python3-tk
+        keylogger-app
+        
+        in case tkinter gui close then plz press ('+') or plus key to pop-up result with gui
+        
+        ```
+        # Autostart-app
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
