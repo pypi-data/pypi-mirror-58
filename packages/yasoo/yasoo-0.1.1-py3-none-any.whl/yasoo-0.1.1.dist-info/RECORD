@@ -1,0 +1,10 @@
+yasoo/__init__.py,sha256=ioSnTwCk0iS7iXqkZb7zcFAQRnzpOPlcwKIKv_j46L8,442
+yasoo/constants.py,sha256=fardYCLxeqKamHxxXkA2ckjRA0KNSstPx3boxs9iVhM,24
+yasoo/deserialization.py,sha256=4pMqS_nqlMqh_bcZCEI5zzrTKiSCWuFxTVFnmGki1t8,4535
+yasoo/serialization.py,sha256=UMSNkeF8TOddiyxEvg8an9LG5oQkBKprM1_R_jYtSas,2854
+yasoo/utils.py,sha256=lWMZXx0LnTqMoYMDuD8ZHZ--E9c6Eyyrkn3J6-9gci4,1022
+yasoo-0.1.1.dist-info/LICENSE,sha256=ia4BLLM7PsbRtu_z8T1grquh_Ps-0_hQhqSMCw34BDI,1072
+yasoo-0.1.1.dist-info/METADATA,sha256=n1-uz1PPXzemkRjfojLJmfF7TyYOK4FGJTtF0AtvL1g,501
+yasoo-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+yasoo-0.1.1.dist-info/top_level.txt,sha256=EgctOZeVgojL4SgH9TIgyg6kAhr0GD0LEGR301NFtOs,6
+yasoo-0.1.1.dist-info/RECORD,,
