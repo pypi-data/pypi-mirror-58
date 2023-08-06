@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=edeJlnZdrwsCc7ju1Jq6xXqrMiyuMrjqFjgUTj2J-Tg,23
+examples/config.py,sha256=AHMsnaYzGR40KC9GPrGGjwIGswHbgj_vNPj1s1VnIUM,205
+examples/confirm_edit_profile.py,sha256=QzL2-dNiiOZW28Z3xyJHXReP0RDwfCrxKJgdln4nq5o,750
+examples/edit_profile_with_confirmation.py,sha256=GJnTP_d9C2dT2XFl_X8toEKsJvXRMU_extEagnHoNGA,1446
+examples/get_profile.py,sha256=lmTTSX3x-OGs6T4IbnKSifQzmAE8imSpf9YcHQfKMQ4,758
+examples/list_address.py,sha256=IpjYunPXcRf4sAH_ruRSByrLaSXx6LvFFibBlqwc44I,721
+user_operation/__init__.py,sha256=iVGuLwwjePMfnvlHSD2CF47HLnMxSgcD_rYhPEzorfw,37
+user_operation/json_schema.json,sha256=Q_xD8NtZ_zMGbqHCg8oYLUJMiZhC-W3s-XnVFs_asMk,4197
+user_operation/main.py,sha256=yx_TU00MO61zDYQrHvLW0KGlJ5EYWzl2Ynp6pQWBVC4,3481
+user_operation/services.ini,sha256=jogPCAu8vpiI_1XeGDweed5r3cir7CZFM96vHCtRYGU,423
+user_operation/version.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+pod_user_operation-1.0.1.dist-info/LICENSE,sha256=raj9px8_cKcZYQYhL3J_LY-_1hP4Lrkyrj5Um-ajWzI,1066
+pod_user_operation-1.0.1.dist-info/METADATA,sha256=3M5p6tqDu5ZMeNMJcSLyx1pqL49pbWHRPMgG5Q2dzr0,1637
+pod_user_operation-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pod_user_operation-1.0.1.dist-info/top_level.txt,sha256=J8tA_CiFX_1uAiXdbBcWpzulg2KCn5TUcVi-RbLySNI,24
+pod_user_operation-1.0.1.dist-info/RECORD,,
