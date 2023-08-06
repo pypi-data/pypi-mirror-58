@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        cronyo=cronyo.cli:cli
+    
