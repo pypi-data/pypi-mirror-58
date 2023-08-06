@@ -1,0 +1,8 @@
+click>=6.7
+minio
+numpy
+pandas
+pyyaml
+tabulate
+graphviz
+joblib
