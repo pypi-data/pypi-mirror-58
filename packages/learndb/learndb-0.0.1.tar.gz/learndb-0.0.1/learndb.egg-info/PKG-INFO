@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: learndb
+Version: 0.0.1
+Summary: TBA
+Home-page: https://azuredata.microsoft.com/labs/gsl
+Author: Microsoft Gray Systems Laboratory
+Author-email: learndb@microsoft.com
+License: UNKNOWN
+Description: TBA
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

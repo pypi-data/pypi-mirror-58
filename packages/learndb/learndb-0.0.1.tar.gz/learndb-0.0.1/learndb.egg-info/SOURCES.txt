@@ -1,0 +1,8 @@
+README.md
+setup.py
+learndb/__init__.py
+learndb/database.py
+learndb.egg-info/PKG-INFO
+learndb.egg-info/SOURCES.txt
+learndb.egg-info/dependency_links.txt
+learndb.egg-info/top_level.txt
