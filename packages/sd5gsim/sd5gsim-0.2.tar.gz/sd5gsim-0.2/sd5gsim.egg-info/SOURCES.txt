@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+sd5gsim/__init__.py
+sd5gsim/clear.png
+sd5gsim/exit.png
+sd5gsim/gen.png
+sd5gsim/icon1.png
+sd5gsim/icon2.png
+sd5gsim/icon3.png
+sd5gsim/icon4.png
+sd5gsim/icon5.png
+sd5gsim/run.png
+sd5gsim.egg-info/PKG-INFO
+sd5gsim.egg-info/SOURCES.txt
+sd5gsim.egg-info/dependency_links.txt
+sd5gsim.egg-info/top_level.txt
