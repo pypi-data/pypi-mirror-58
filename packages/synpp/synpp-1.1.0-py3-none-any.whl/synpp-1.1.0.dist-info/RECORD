@@ -1,0 +1,11 @@
+synpp/__init__.py,sha256=dOAHhAI8Ud8yqnIJ6ish3OVX3hbs-GfO0b6zKcd2h1A,48
+synpp/__main__.py,sha256=PWloKKfQKU9axoiU3z5HltotJg9Kl57FXmN_e8LWgJQ,369
+synpp/general.py,sha256=oFNqiXBH8UGiVk87D3-IOLf6g7Ez0NTV4BTBMSeL0x4,92
+synpp/parallel.py,sha256=zf3GUU93DROLoqUQAPYjfWpbAbuiM9ssBz7UKB15kXE,3336
+synpp/pipeline.py,sha256=D_0d1pqgKWxVyTIG0o64YWA1JjoYQnkFuImNbhBxJXg,19754
+synpp/progress.py,sha256=zpxq4wmnlm0FNHbCyiWoRby3nDfJM1lCLjOMESm98M0,4059
+synpp-1.1.0.dist-info/LICENSE,sha256=-674NeGRlFZ-vO7MH40bmrFJZZPsRvWVpm5RA8A7zrk,1072
+synpp-1.1.0.dist-info/METADATA,sha256=uddSyfVuX7jgjBEP1AoSB_EcRSmy32BZBTENrDTq0Po,15112
+synpp-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+synpp-1.1.0.dist-info/top_level.txt,sha256=cK0TaOmXGHQxyvfP18Z_DS6UTJAWLWYdm0Hy3wk3BN0,6
+synpp-1.1.0.dist-info/RECORD,,
