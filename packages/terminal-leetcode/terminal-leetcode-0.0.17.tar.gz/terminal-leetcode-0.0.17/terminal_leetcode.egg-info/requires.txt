@@ -1,0 +1,6 @@
+urwid
+requests
+bs4
+lxml
+decorator
+pycookiecheat
