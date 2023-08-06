@@ -1,0 +1,11 @@
+freshen/__init__.py,sha256=k6-taqdMTAI8DfoJHeXszNPjGeufgmRP_hdz9RBfd00,203
+freshen/main.py,sha256=9OyS2PIXmj6jccID2jBYtBN20VvyFr8JHnHtW1WW9bE,1595
+freshen/manual_parser.py,sha256=ru355CGhWOcoaldVRf9uhsUbNXYO57MZ1TduUg5Q_jE,1986
+freshen/modules.py,sha256=sVFpSibRCblLnpArDIjorDTGKHpsznAbgNBWnwBu85g,5424
+freshen/reginstall.py,sha256=zdlzvKyLr-UEcewzk7_6X6KL0ZY662vFw6V_ZlQGatk,3031
+freshen/config/filegroups.yml,sha256=cawfAZDzaVsUQDN72zbMlulUjGKyOBZPcoK4rjrTL4A,1593
+freshen_sorter-1.4.0.dist-info/METADATA,sha256=ja4kYaVTQx824-MSEey_qnJrnNHrtSyZvQ_4F8I2a04,5661
+freshen_sorter-1.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+freshen_sorter-1.4.0.dist-info/entry_points.txt,sha256=PKz-GbPGbO7pb7A_iha1b58_j2XpwFzD1D0JadWP784,56
+freshen_sorter-1.4.0.dist-info/top_level.txt,sha256=pMvY73OgKZMFfwGGGnu_AcBFqoXKxjypzoruIeRGoXI,8
+freshen_sorter-1.4.0.dist-info/RECORD,,
