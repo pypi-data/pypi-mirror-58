@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "quantworks-twitter"
+version = "1.0"
+description = "Twitter integration for quantworks"
+authors = ["ttymck <tyler@tylerkontra.com>"]
+license = "Apache-2.0"
+packages = [
+  { include = 'quantworks' }
+]
+exclude = [
+  "quantworks/ext/testcases/**"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+quantworks = {version = "==0.21", allow-prereleases = true}
+six = "^1.13.0"
+tweepy = "^3.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

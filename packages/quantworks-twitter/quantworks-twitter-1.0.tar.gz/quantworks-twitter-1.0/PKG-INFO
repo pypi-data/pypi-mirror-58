@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quantworks-twitter
+Version: 1.0
+Summary: Twitter integration for quantworks
+License: Apache-2.0
+Author: ttymck
+Author-email: tyler@tylerkontra.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: quantworks (==0.21)
+Requires-Dist: six (>=1.13.0,<2.0.0)
+Requires-Dist: tweepy (>=3.8.0,<4.0.0)
