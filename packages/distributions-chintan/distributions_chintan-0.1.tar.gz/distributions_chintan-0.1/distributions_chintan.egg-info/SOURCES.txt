@@ -1,0 +1,10 @@
+setup.py
+distributions_chintan/Binomialdistribution.py
+distributions_chintan/Gaussiandistribution.py
+distributions_chintan/Generaldistribution.py
+distributions_chintan/__init__.py
+distributions_chintan.egg-info/PKG-INFO
+distributions_chintan.egg-info/SOURCES.txt
+distributions_chintan.egg-info/dependency_links.txt
+distributions_chintan.egg-info/not-zip-safe
+distributions_chintan.egg-info/top_level.txt
