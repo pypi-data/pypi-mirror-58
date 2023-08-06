@@ -1,0 +1,15 @@
+pyannotables/__init__.py,sha256=yDukY9dEzWyKj7CgC0y1-e6dyEaiDwsIwIISw0dcWmE,462
+pyannotables/pyannotables.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+pyannotables/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyannotables/data/datafile_homo_sapiens-ensembl75-GRCh37-tx2gene.pkl.xz,sha256=2ISpf0oAN0uC_G5m2yfFLEy39Oe1VeGaJtqYqHTVebs,597024
+pyannotables/data/datafile_homo_sapiens-ensembl75-GRCh37.pkl.xz,sha256=oOCeI5SLFed8IpqyRKAoOHey2RWOULBrnMvxEZ3KlXQ,813156
+pyannotables/data/datafile_homo_sapiens-ensembl97-GRCh38-tx2gene.pkl.xz,sha256=Hx-0u4JNgQSZ0x6CgIjptYJl6kaP59YV_r9ig-Q_fe0,634004
+pyannotables/data/datafile_homo_sapiens-ensembl97-GRCh38.pkl.xz,sha256=UKtSL_e6wzdBiLasZz29bqK1KDOgxOF1GNnbPsFpvcc,744196
+pyannotables/data/datafile_mus_musculus-ensembl97-GRCm38-tx2gene.pkl.xz,sha256=vAbDsetmxdYxC60mla-B7xVakHTM1S8MyZfUrtPQbD4,384764
+pyannotables/data/datafile_mus_musculus-ensembl97-GRCm38.pkl.xz,sha256=gwYA1e2u6xbqi0_3zbdFxaDY-EXhYgDan6-rbw2tWPQ,672352
+pyannotables-0.1.1.dist-info/AUTHORS.rst,sha256=LqsVQHLZ6X79RXKV7W3LRGXm80eWfkN68IEMTjn_7mU,167
+pyannotables-0.1.1.dist-info/LICENSE,sha256=3UUJjMS0qDGsEbMsrxCkNgfuZ7OX3ORbirqvjxLmNnE,586
+pyannotables-0.1.1.dist-info/METADATA,sha256=NWHtigRacmBJRkvC4cePmu398e3zED39NW35-HHc1Do,1530
+pyannotables-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyannotables-0.1.1.dist-info/top_level.txt,sha256=UwY78LRVWyi_Uc8qNjX50kv0TmUZ_pVUn-Ae96W1_0s,13
+pyannotables-0.1.1.dist-info/RECORD,,
