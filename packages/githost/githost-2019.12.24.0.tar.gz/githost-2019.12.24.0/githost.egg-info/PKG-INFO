@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: githost
+Version: 2019.12.24.0
+Summary: A command-line interface to various git repository hosting services
+Home-page: https://github.com/erjoalgo/githost
+Author: Ernesto Alfonso
+Author-email: erjoalgo@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
