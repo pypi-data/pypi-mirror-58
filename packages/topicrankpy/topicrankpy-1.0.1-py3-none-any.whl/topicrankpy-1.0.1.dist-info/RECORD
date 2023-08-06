@@ -1,0 +1,12 @@
+topicrankpy/__init__.py,sha256=GUCxFAkXvPxG67iroR1VQ7lcDpujLeDdbE3TreYlo8o,506
+topicrankpy/base.py,sha256=c6gRY_qhgTIKKVWQQsoY8u67pQ8bhi1P2iDSQLNqa00,19498
+topicrankpy/data_structures.py,sha256=y6N13qEdKOiSDgxCr7R1kb1-aNzrS5sSVU3-pdc2RTg,3833
+topicrankpy/extract-information.py,sha256=A4wxp-KI5HNd5cKOqySg_Z1JUk_kPmVlUQyWfdavRgs,3205
+topicrankpy/readers.py,sha256=V1571lkgmNuXeoVKgqocDgD9OSknXGbijn_XMOdE0pk,2930
+topicrankpy/topicrank.py,sha256=UT5q09BFcva_TIrMpeJ-XueP-GmYu2rWlx0LulQASTc,8266
+topicrankpy/utils.py,sha256=4IAxECLoMAHYloXjPuquFIt1a6Kg000ByemacV07Mpc,20963
+topicrankpy-1.0.1.dist-info/LICENSE,sha256=dfpWw3mogGuGv1sNhfAwOAV-Ur1o2m5m4rsh48DSksw,1051
+topicrankpy-1.0.1.dist-info/METADATA,sha256=WoTmI6IclQniu2X81Lqb0HAiA4V1PGnLbIYfB29Rvrk,5178
+topicrankpy-1.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+topicrankpy-1.0.1.dist-info/top_level.txt,sha256=-UWc5XYSdbPik7-ZfqIFoHnf77OH-l17RJJixBxKdhc,12
+topicrankpy-1.0.1.dist-info/RECORD,,
