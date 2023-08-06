@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: sweet-sqlasync
+Version: 0.0.1b2
+Summary: Syntax sugar for SQLAlchemy + aiopg
+Home-page: https://github.com/aCLr/sweet-sqlasync
+Author: antonio_antuan
+Author-email: a.ch.clr@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
