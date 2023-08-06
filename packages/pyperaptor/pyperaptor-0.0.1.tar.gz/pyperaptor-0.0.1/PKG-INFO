@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyperaptor
+Version: 0.0.1
+Summary: Small pipeline organizer for multiprocessing execution
+Home-page: https://github.com/fsan/pyperaptor
+Author: fsan
+Author-email: pabyo.sansinaeti@gmail.com
+License: MIT
+Download-URL: https://github.com/fsan/pyperaptor/releases/download/0.0.1-beta/pyperaptor-0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: pipeline,dinossaurs,threading
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
