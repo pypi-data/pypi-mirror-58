@@ -1,0 +1,4 @@
+[console_scripts]
+yamily-dot = yamily._cli:_dot
+yamily-list = yamily._cli:_list
+
