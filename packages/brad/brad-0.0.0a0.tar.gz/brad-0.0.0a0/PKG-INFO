@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: brad
+Version: 0.0.0a0
+Summary: Brad is a Python package for Bootstrap, permutation tests and other resampling functions.
+License: MIT
+Author: tcbegley
+Author-email: tomcbegley@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
