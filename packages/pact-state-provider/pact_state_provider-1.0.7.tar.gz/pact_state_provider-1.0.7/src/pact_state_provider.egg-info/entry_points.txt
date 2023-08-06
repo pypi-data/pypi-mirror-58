@@ -1,0 +1,3 @@
+[console_scripts]
+pact-state-provider = pact_state_provider:pact_state_provider
+
