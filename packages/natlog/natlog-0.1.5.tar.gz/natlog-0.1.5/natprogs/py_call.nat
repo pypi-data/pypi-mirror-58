@@ -1,0 +1,13 @@
+a 1.
+a 2.
+
+b X : a X.
+b X : `sum (1 2 3) X, #print sum is X.
+
+c 1 : ^just yielding 42 .
+c 3.
+
+goal X : b X, #print 'printing b =' X, c X.
+goal X : ``iter hello X. 
+goal X : `` range 1000 1005 X.
+goal no_more : #print done.
