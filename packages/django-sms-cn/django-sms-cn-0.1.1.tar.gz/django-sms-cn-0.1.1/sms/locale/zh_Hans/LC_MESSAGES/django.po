@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-28 17:29+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: sms/apps.py:7
+msgid "sms"
+msgstr "短信"
+
+#: sms/forms.py:8 sms/models.py:114
+msgid "mobile"
+msgstr "手机号码"
+
+#: sms/forms.py:9
+msgid "captcha"
+msgstr ""
+
+#: sms/models.py:16
+msgid "label"
+msgstr "名称"
+
+#: sms/models.py:17
+msgid "code"
+msgstr "编码"
+
+#: sms/models.py:18 sms/models.py:116
+msgid "content"
+msgstr "内容"
+
+#: sms/models.py:24 sms/models.py:25
+msgid "sms template"
+msgstr "短信模板"
+
+#: sms/models.py:115
+msgid "logs"
+msgstr "记录"
+
+#: sms/models.py:117
+msgid "is success"
+msgstr "是否成功"
+
+#: sms/models.py:118
+msgid "created"
+msgstr ""
+
+#: sms/models.py:126 sms/models.py:127
+msgid "sms log"
+msgstr "短信记录"
