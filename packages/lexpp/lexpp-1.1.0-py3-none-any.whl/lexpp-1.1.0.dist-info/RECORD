@@ -1,0 +1,12 @@
+lexpp/__init__.py,sha256=obgXOaxP73_tb53j3OFFLv4QCblnW3zByCKXmFcUY_E,25
+lexpp/dict_builder.py,sha256=kQV8MEpATAc4Sbq8FxhIptbxx2YMCfcMBPqb5uda3Aw,3616
+lexpp/dictionary.py,sha256=VOK1-kfpREqJROgRV0j_QKcBlW9KkFbeIkW2MZHptYs,517
+lexpp/entry.py,sha256=kD7GoH82qrQ5Xnbf6Z7o9i1hpPv-Shuzs9ApTcxGA9o,584
+lexpp/lexpp.py,sha256=43cT1G90Jn4-UjPaC9mXoTDe5AXHvC1RlDVOtLER6sE,3531
+lexpp/res/synonyms.dict,sha256=Ey3kXJ343Kr287zGEpUZ8d8TISC9kwIu2oz_epmehlg,6893905
+lexpp-1.1.0.dist-info/DESCRIPTION.rst,sha256=cDV4cZppcd4C1Lif-F_DKjK891OojuSnNi3UVN2ZQxc,5458
+lexpp-1.1.0.dist-info/METADATA,sha256=fTrg8UeFRqwJdaWiLGtEU_jEMswaI5BSfhG_ESw3q6o,5740
+lexpp-1.1.0.dist-info/RECORD,,
+lexpp-1.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+lexpp-1.1.0.dist-info/metadata.json,sha256=JOVrQF_arP59qjHZ4gBI9thd28lBKLBTyteO4jiemPA,473
+lexpp-1.1.0.dist-info/top_level.txt,sha256=RAjoYvWoAZTmVuPxpP9adeArjqYxjhwRhZEn6p-3pbU,6
