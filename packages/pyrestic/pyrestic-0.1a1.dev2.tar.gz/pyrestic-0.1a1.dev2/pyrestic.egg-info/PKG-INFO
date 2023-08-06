@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pyrestic
+Version: 0.1a1.dev2
+Summary: Restic backup Python wrapper
+Home-page: https://github.com/jstzwj/PyRestic.git
+Author: JunWang
+Author-email: jstzwj@aliyun.com
+License: MIT
+Description: UNKNOWN
+Keywords: backup
+Platform: UNKNOWN
+Requires-Python: >=3.7

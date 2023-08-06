@@ -1,0 +1,15 @@
+README.md
+setup.py
+pyrestic.egg-info/PKG-INFO
+pyrestic.egg-info/SOURCES.txt
+pyrestic.egg-info/dependency_links.txt
+pyrestic.egg-info/top_level.txt
+restic/__init__.py
+restic/config.py
+restic/core.py
+restic/repo.py
+restic/snapshot.py
+restic/test/__init__.py
+restic/test/test_backup.py
+restic/test/test_init.py
+restic/test/test_version.py
