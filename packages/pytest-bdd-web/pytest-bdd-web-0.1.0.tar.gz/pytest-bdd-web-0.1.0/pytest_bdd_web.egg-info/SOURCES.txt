@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_bdd_web.py
+setup.cfg
+setup.py
+pytest_bdd_web.egg-info/PKG-INFO
+pytest_bdd_web.egg-info/SOURCES.txt
+pytest_bdd_web.egg-info/dependency_links.txt
+pytest_bdd_web.egg-info/entry_points.txt
+pytest_bdd_web.egg-info/requires.txt
+pytest_bdd_web.egg-info/top_level.txt

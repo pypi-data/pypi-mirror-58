@@ -1,0 +1,4 @@
+pytest>=3.5.0
+pytest_bdd>=3.2
+mechanize>=0.4.5
+pyquery>=1.4.1
