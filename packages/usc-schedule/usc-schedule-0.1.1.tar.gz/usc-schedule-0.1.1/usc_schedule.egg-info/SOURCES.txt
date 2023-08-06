@@ -1,0 +1,12 @@
+README.md
+setup.py
+usc_schedule.egg-info/PKG-INFO
+usc_schedule.egg-info/SOURCES.txt
+usc_schedule.egg-info/dependency_links.txt
+usc_schedule.egg-info/requires.txt
+usc_schedule.egg-info/top_level.txt
+uscschedule/__init__.py
+uscschedule/exceptions.py
+uscschedule/models.py
+uscschedule/schedule.py
+uscschedule/util.py
