@@ -1,0 +1,17 @@
+future
+numpy
+tabulate
+terminaltables
+colorama
+tqdm
+requests
+scipy
+scikit-learn
+
+[tests]
+pytest
+flake8
+mock
+portpicker
+pytest-xdist
+pytest-cov
