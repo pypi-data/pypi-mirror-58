@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: thumoon
+Version: 0.0.2
+Summary: A python toolbox for hypergraph learning
+Home-page: https://github.com/iMoonLab/THU-Moon
+Author: Haojie Lin
+Author-email: linhj18@mails.tsinghua.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
