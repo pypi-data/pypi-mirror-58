@@ -1,0 +1,1 @@
+git+git://github.com/asappresearch/sru@custom-submodules#egg=sru
