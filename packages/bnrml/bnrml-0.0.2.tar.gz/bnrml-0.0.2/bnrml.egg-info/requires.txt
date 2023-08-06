@@ -1,0 +1,6 @@
+click<8,>=7.0
+frozenordereddict<2,>=1.2.0
+phonetics<2,>=1.0.5
+pytypewriter<0.1,>=0.0.7
+textdistance<5,>=4.1.4
+toml
