@@ -1,0 +1,13 @@
+
+[dev]
+releasecmd<1,>=0.2.0
+twine
+wheel
+autoflake
+black
+isort
+pylama
+pytest
+
+[test]
+pytest
