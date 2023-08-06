@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: polyutils
+Version: 1.3.3
+Summary: This package contains some useful functions for 3D cutting and packing problems like a 3D Visualizer, placement rules for objects etc...
+Home-page: https://github.com/gstfrr/polyutils
+Author: Augusto Ferreira
+Author-email: gstfrr@gmail.com
+License: MIT
+Download-URL: https://github.com/gstfrr/polyutils/archive/v1.3.3.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
