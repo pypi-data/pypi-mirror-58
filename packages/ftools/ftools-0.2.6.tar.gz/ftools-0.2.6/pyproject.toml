@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ftools"
+version = "0.2.6"
+description = "Functional programming utilities"
+authors = ["Iddan Aaronsohn <mail@aniddan.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cardinality = "^0.1.1"
+mypy_extensions = "^0.4.3"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.740.0"
+pylint = "^2.4"
+pytest = "^5.3"
+pytest-cov = "^2.8"
+pytest-xdist = "^1.30"
+rope = "^0.14.0"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
