@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Bitmasher
+Version: 0.0.1
+Summary: Bit rotational encryption with steganography
+Home-page: https://github.com/vulogov/Bitmasher
+Author: Vladimir Ulogov
+Author-email: vladimir.ulogov@me.com
+License: MPL+2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Arpeggio (==1.9.0)
+Requires-Dist: astropy (==3.2.3)
+Requires-Dist: bitstring (==3.1.6)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: Click (==7.0)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: Cython (==0.29.13)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: importlib-metadata (==1.3.0)
+Requires-Dist: keyring (==20.0.0)
+Requires-Dist: kiwisolver (==1.1.0)
+Requires-Dist: Logbook (==1.4.3)
+Requires-Dist: matplotlib (==3.1.2)
+Requires-Dist: more-itertools (==8.0.2)
+Requires-Dist: numpy (==1.17.4)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: photutils (==0.7.1)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: protobuf (==3.10.0)
+Requires-Dist: Pygments (==2.5.2)
+Requires-Dist: pyparsing (==2.4.5)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: scipy (==1.3.3)
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: textX (==2.0.1)
+Requires-Dist: tqdm (==4.41.0)
+Requires-Dist: twine (==3.1.1)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: virtualenv (==16.7.2)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==0.6.0)
+
+UNKNOWN
+
+
