@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aioboot
+Version: 0.3.0
+Summary: Python asynchronous application framework.
+Home-page: https://github.com/antonrh/aioboot
+Author: Anton Ruhlov
+Author-email: antonruhlov@gmail.com
+License: MIT
+Description: AIOBoot - Python asynchronous application framework, built on top of famous libraries.
+        ======================================================================================
+        
+        [![Build Status](https://travis-ci.com/antonrh/aioboot.svg?branch=master)](https://travis-ci.com/antonrh/aioboot.svg?branch=master)
+        [![Code coverage](https://codecov.io/gh/antonrh/aioboot/branch/master/graph/badge.svg)](https://codecov.io/gh/antonrh/aioboot)
+        [![Documentation Status](https://readthedocs.org/projects/aioboot/badge/?version=latest)](https://aioboot.readthedocs.io/en/latest/?badge=latest)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+        
+        ---
+        
+        **Documentation:** https://aioboot.readthedocs.io/en/latest/
+        
+Keywords: starlette,asgi,click,web,api,async
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: lint
+Provides-Extra: docs
+Provides-Extra: dev
