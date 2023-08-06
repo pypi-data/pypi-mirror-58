@@ -1,0 +1,9 @@
+README.md
+setup.py
+p4f/__init__.py
+p4f/core.py
+p4f.egg-info/PKG-INFO
+p4f.egg-info/SOURCES.txt
+p4f.egg-info/dependency_links.txt
+p4f.egg-info/not-zip-safe
+p4f.egg-info/top_level.txt
