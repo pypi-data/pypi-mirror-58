@@ -1,0 +1,14 @@
+alignak_module_mongo_logs/__init__.py,sha256=a1Ko_XMU_vQw-qGdiZaZ5XbemW70rLgzBPR7cbqovKk,1086
+alignak_module_mongo_logs/logevent.py,sha256=lG9cfNBBpjbysNI7oxdX8nzHPmWYjOP0MFb1rtZV_HA,14530
+alignak_module_mongo_logs/logs.py,sha256=uE3uFnwmZSXOgpH9kPrBOCYMZTn6Ka7hp7Zk4GQ0n0Q,17823
+alignak_module_mongo_logs/etc/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+alignak_module_mongo_logs/etc/alignak.d/alignak-module-mongo-logs.ini,sha256=PdrUYYKWbuiyngudgButi4wE6_Kn3YdRUfx2zNGZIII,3306
+alignak_module_mongo_logs/etc/arbiter/modules/mod-mongo-logs.cfg,sha256=5pfjZNvDyQM80MIFdnk0cIBGvz_cR3ir59mk0tEBM3g,3507
+alignak_module_mongo_logs-1.1.0.data/data/share/alignak/etc/alignak.d/alignak-module-mongo-logs.ini,sha256=PdrUYYKWbuiyngudgButi4wE6_Kn3YdRUfx2zNGZIII,3306
+alignak_module_mongo_logs-1.1.0.data/data/share/alignak/etc/arbiter/modules/mod-mongo-logs.cfg,sha256=5pfjZNvDyQM80MIFdnk0cIBGvz_cR3ir59mk0tEBM3g,3507
+alignak_module_mongo_logs-1.1.0.dist-info/AUTHORS,sha256=hU9LxjpGcCxBwb0zbBBhLG_NQq8kHnlLTsLOqT5K0zY,88
+alignak_module_mongo_logs-1.1.0.dist-info/LICENSE,sha256=EO3mE8zoHcU4HsnBoI3P3NQl0qGGo--yUjHuO6MIWFo,34521
+alignak_module_mongo_logs-1.1.0.dist-info/METADATA,sha256=o-VRqTeBuNMX07X6frNoWlMB2YTfWn0L9AlrPEpWh4s,5646
+alignak_module_mongo_logs-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+alignak_module_mongo_logs-1.1.0.dist-info/top_level.txt,sha256=20ImhLac3YWDY_CBomWS4MxfgA1acUVZLvFEze-GP0w,26
+alignak_module_mongo_logs-1.1.0.dist-info/RECORD,,
