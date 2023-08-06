@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: statsapiclient
+Version: 0.1.4
+Summary: A wrapper around the NHL’s JSON API.
+Home-page: https://github.com/bplabombarda/statsapiclient
+License: MPL-2.0
+Keywords: nhl,hockey
+Author: Brett LaBombarda
+Author-email: bplabombarda@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: beautifulsoup4 (>=4.8.2,<5.0.0)
+Requires-Dist: requests (>=2.22,<3.0)
+Project-URL: Documentation, https://github.com/bplabombarda/statsapiclient#README.md
+Project-URL: Repository, https://github.com/bplabombarda/statsapiclient
+Description-Content-Type: text/markdown
+
+# statsapiclient: A client for the NHL stats API
+
+[![PyPI version](https://badge.fury.io/py/statsapiclient.svg)](https://pypi.org/project/statsapiclient)
+
+[![CircleCI](https://circleci.com/gh/bplabombarda/statsapiclient.svg?style=svg)](https://circleci.com/gh/bplabombarda/statsapiclient)
+
+## Purpose
+
+To provide a Python client to access the NHL's JSON API including game, play, and player data.
+
+
+## Installation
+
+    pip install statsapiclient
+
+
+## Modules
+
+### Schedule
+
+`games`
+
+A list of games contained within the instantiated date or date range.
+
+
+### Games
+
+#### game
+
+`json`
+
+Raw JSON response data.
+
+`box_score`
+
+Box score object.
+
+`line_score`
+
+Line score object.
+
+`plays`
+
+Play object.
+
+
+### Team
+
+`get_active`
+
+Returns a list of all active teams.
+
+`get_active_by_conference`
+
+Returns a list of all active teams in a given conference.
+
+`get_active_by_division`
+
+Returns a list of all active teams in a given division.
+
+
+### Examples
+
+Games from date:
+      
+    from statsapiclient.schedule import Schedule
+
+
+    s = Schedule('2019-01-01')
+    print(s.games[0]['gamePk'])    # 2018020612
+
+Game data:
+
+    from statsapiclient.games.game import Game
+
+    g = Game('2018020612')
+
+    box_score = g.box_score
+    line_score = g.line_score
+    play_by_play = g.plays
+
+Play data:
+
+    g.plays.all_plays                   # All plays
+    g.plays.get_plays_by_period(1)      # All plays in the first period
+    g.plays.get_penalty_plays()         # All penalty plays
+    g.plays.get_scoring_plays()         # All scoring plays
+
