@@ -1,0 +1,4 @@
+aiosmtpd>=1.2
+pyyaml
+sdnotify
+setproctitle
