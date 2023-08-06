@@ -1,0 +1,4 @@
+[console_scripts]
+abbreviate-journals = franklin.journals:abbreviate_journals_cli
+fetch-doi = franklin.fetch_doi:main
+

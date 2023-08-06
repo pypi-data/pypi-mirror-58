@@ -1,0 +1,13 @@
+franklin/__init__.py,sha256=fZ_ImCG8Vjo2n2W7DXQyrV3wUopUDrLmbpwEvwjldio,106
+franklin/article.py,sha256=sHD8e_VdD-J_Bz54Ixk6uE2M5k6ReBjWV_K8-bfVCiU,3917
+franklin/exceptions.py,sha256=GUw1T2M8NDymkBFQFN6ZLzLUTrbFHD9ZSJsj-TeRHUA,552
+franklin/fetch_doi.py,sha256=Vk01WGus1BSNCv85fL8OEAxicJQKOZOhDiHujQLKSYk,8180
+franklin/journals.py,sha256=F_6kA9x8YzIoqYQZ3RP7cA83x7ApZ8OZrZWiFwREq9U,14063
+franklin/publishers.py,sha256=UmFMnt-s5ryTu1mtUIXMgPzEm_Q3P014PkSwyIiVvdg,8197
+franklin/version.py,sha256=4FdYq1QhEnfseFtVXCMw_8wLQbaC3UXVBIhzGsP6C-8,20
+franklin-0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+franklin-0.5.dist-info/METADATA,sha256=dSF8IsEuZdfJEkdu597g26nBUu2ByTqxsHe5NxOdQWY,1792
+franklin-0.5.dist-info/WHEEL,sha256=YO0P_oFqt6DWX0LhbH7jsyzb3BUtoq2kERtqGsXDJHs,92
+franklin-0.5.dist-info/entry_points.txt,sha256=8wXVEOen8l51mEOm5qXEPcpa3W7DJhkvENr86MjHwDU,119
+franklin-0.5.dist-info/top_level.txt,sha256=vHPL804nwadrF1YjwonJqxXDYVmhyUO7iab4oy84Oh0,9
+franklin-0.5.dist-info/RECORD,,
