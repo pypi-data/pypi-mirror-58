@@ -1,0 +1,10 @@
+soco_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soco_core/convertors.py,sha256=IuFXvWWHLYGt42rK455jrYMeqKBkbLlcKCBj206wwKM,5139
+soco_core/examples.py,sha256=MaK5WJVS-ab6_nxAsKNHDNgak-v5RCE8DH-caxgFVAs,853
+soco_core/sentence_splitter.py,sha256=4injkIgGuCJjXqjl5y7YTd8CpGKPieWDHMno7LUQKno,5963
+soco_core/soco_client.py,sha256=2Ci_4JD7KlS5XzkWo6WvSW4q795nvpr0QGcdy2fH7Yo,5192
+soco_core_python-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+soco_core_python-0.1.2.dist-info/METADATA,sha256=ZE24wD5fkxR3pClq4p0s7959Apr3LXNEy4BCtAE_7Lg,1764
+soco_core_python-0.1.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+soco_core_python-0.1.2.dist-info/top_level.txt,sha256=NU2v_7k5G02ittrxfBATwYT7z3_Qu_7qdjQySlyVvlQ,10
+soco_core_python-0.1.2.dist-info/RECORD,,
