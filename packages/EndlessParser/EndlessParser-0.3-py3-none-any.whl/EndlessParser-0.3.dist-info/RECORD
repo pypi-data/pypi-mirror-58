@@ -1,0 +1,12 @@
+endlessparser/__init__.py,sha256=SFS6Hgp7SBxNKBHqjkFec2t2EaqeebBiSiz_hQZiRig,117
+endlessparser/globals.py,sha256=4YJi9Rm5JY0YUHaJy95LqNYeY-euKkiYIrfu_VAuBC4,25
+endlessparser/parse.py,sha256=6LroHNcYaaEUOItmbvdHzVpf3hOESdInz17ok-OTBJE,2357
+endlessparser/write.py,sha256=OwTsjzpDlangEWLV_xwSVevQHclXeUlB6qy-i1b94hY,202
+endlessparser/datatypes/Basic.py,sha256=R9pESDr5NnCSZ21Jwnh5wOS1iavXLDBJI660YEZN20o,2415
+endlessparser/datatypes/Map.py,sha256=H42k72Y1uLCb6uZvtBHT5TL-Vh3ttUau3ahqXAhf21U,4108
+endlessparser/datatypes/__init__.py,sha256=evt2pCWuSwAudmYY1US5wvgRDNJ2kD5rTAnjpyZZs18,86
+EndlessParser-0.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+EndlessParser-0.3.dist-info/METADATA,sha256=Ljw9cqTo72ueG1nqI8Xwbm0sb74IbwAodaoTHbROjEU,1361
+EndlessParser-0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+EndlessParser-0.3.dist-info/top_level.txt,sha256=opBIIG7GscuWMtovuyZ1dHWWp2C5LI2NdocXsLa65Bc,14
+EndlessParser-0.3.dist-info/RECORD,,
