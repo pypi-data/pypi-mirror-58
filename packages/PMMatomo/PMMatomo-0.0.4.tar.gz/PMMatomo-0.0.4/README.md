@@ -1,0 +1,46 @@
+# PMMatomo
+
+A Python wrapper for the Matomo HTTP reporting API.
+
+# Run the test suite
+```bash
+python3 -m unittest
+```
+
+# Installation
+
+```bash
+pip3 install PMMatomo
+```
+
+# Usage
+
+```python
+import datetime
+from PMMatomo import Matomo, MatomoReportPeriod
+
+m = Matomo(url=YOUR_MATOMO_API_URL,
+           token=YOUR_MATOMO_AUTHENTICATION_TOKEN,
+           siteId=YOUR_SITE_ID)
+
+
+m.enableFilterLimit(False)
+m.setReportPeriod(MatomoReportPeriod.month)
+
+# since we set the report period to .month we get a report of the mont that this date is in
+date = datetime.datetime.strptime("2019-01-26", '%Y-%m-%d')
+m.setReportDateFromDatetime(date)
+
+
+visitorDetails = m.genReportLiveGetLastVisistsDetails()
+print(visitorDetails)
+```
+
+# Upload to PIP
+```
+python3 -m venv venv
+source venv/bin/activate
+pip3 install twine
+python3 setup.py sdist
+twine upload dist/*
+```
