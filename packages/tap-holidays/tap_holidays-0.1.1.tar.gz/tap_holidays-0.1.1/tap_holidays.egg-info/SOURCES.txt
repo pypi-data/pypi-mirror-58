@@ -1,0 +1,12 @@
+README.md
+setup.py
+tap_holidays/__init__.py
+tap_holidays/client.py
+tap_holidays/version.py
+tap_holidays.egg-info/PKG-INFO
+tap_holidays.egg-info/SOURCES.txt
+tap_holidays.egg-info/dependency_links.txt
+tap_holidays.egg-info/entry_points.txt
+tap_holidays.egg-info/requires.txt
+tap_holidays.egg-info/top_level.txt
+tap_holidays/schemas/holidays.json
