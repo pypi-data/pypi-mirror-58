@@ -1,0 +1,9 @@
+pygithub
+pyyaml
+jsonpatch
+deepdiff
+
+[test]
+pytest-cov
+pytest-runner
+flake8
