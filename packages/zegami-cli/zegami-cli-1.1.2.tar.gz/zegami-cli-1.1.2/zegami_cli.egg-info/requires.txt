@@ -1,0 +1,14 @@
+appdirs==1.4.3
+colorama==0.3.9
+jsonschema==3.1.0
+PyYaml==5.2
+requests<3.0,>=2.15.0
+tqdm==4.20.0
+azure==4.0.0
+
+[sql]
+pyodbc==4.0.24
+SQLAlchemy==1.2.6
+
+[test]
+flake8==3.5.0
