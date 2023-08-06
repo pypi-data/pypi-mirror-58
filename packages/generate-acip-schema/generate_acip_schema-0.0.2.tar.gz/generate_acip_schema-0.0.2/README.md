@@ -1,0 +1,3 @@
+# Generate ACIP Schema
+
+## To do: write content for this file...

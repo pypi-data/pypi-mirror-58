@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: generate_acip_schema
+Version: 0.0.2
+Summary: A small package mapping BDRC schema to ACIP's current Elasticsearch database
+Home-page: https://github.com/joelcrawford/generate-acip-schema
+Author: Joel Crawford
+Author-email: joelrootcrawford@gmail.com
+License: UNKNOWN
+Description: # Generate ACIP Schema
+        
+        ## To do: write content for this file...
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
