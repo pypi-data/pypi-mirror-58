@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: tiddlypy
+Version: 0.0.6
+Summary: Simple server for local TiddlyWiki
+Home-page: https://github.com/user/reponame
+Author: octopus.io
+Author-email: pypi@octopus.io
+License: wtfpl
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: TiddlyWiki
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
