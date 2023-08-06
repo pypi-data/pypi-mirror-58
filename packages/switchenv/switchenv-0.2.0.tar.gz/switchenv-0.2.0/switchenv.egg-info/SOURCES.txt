@@ -1,0 +1,16 @@
+CONTRIBUTORS.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+switchenv/__init__.py
+switchenv/switchenv.py
+switchenv/version.py
+switchenv.egg-info/PKG-INFO
+switchenv.egg-info/SOURCES.txt
+switchenv.egg-info/dependency_links.txt
+switchenv.egg-info/entry_points.txt
+switchenv.egg-info/not-zip-safe
+switchenv.egg-info/requires.txt
+switchenv.egg-info/top_level.txt

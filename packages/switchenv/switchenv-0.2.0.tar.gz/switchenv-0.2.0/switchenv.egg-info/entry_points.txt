@@ -1,0 +1,4 @@
+[console_scripts]
+sw = switchenv.switchenv:main
+switchenv = switchenv.switchenv:main
+
