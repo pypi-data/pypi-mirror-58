@@ -1,0 +1,10 @@
+rpn_calculator/__init__.py,sha256=w2ibUjKKs2wg-vOJh2vXgy1lnfVZUXlrNE4AvaCyYn0,100
+rpn_calculator/calculator.py,sha256=ZKVIjvtInTusejgdN8Oguk-7hR-BPtJRF0mXiXKYsM0,14069
+rpn_calculator/main.py,sha256=8IHP1X3C8BxnGXVf-uPmfbRYcME7VhQzsUzdC53S3Rc,1786
+rpn_calculator/version.py,sha256=MOY9l-gfVohMBBDpBAy0iwKpDO2JAOcvGlZlCkYXC7I,36
+rpn_calc-0.1.4.dist-info/LICENSE,sha256=a0PbfWepp4lS-iOiTLv8VDMYK33ItVo7ItUtClE8oZ4,1065
+rpn_calc-0.1.4.dist-info/METADATA,sha256=ciL20efOZKPc4rDRYU5QQpdr94nI9m9AmJw3vqWgzkQ,5163
+rpn_calc-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rpn_calc-0.1.4.dist-info/entry_points.txt,sha256=DwqBmlEONdQY8i12f6m1YIE3TZkZ78t0XZyUrVYW7KM,50
+rpn_calc-0.1.4.dist-info/top_level.txt,sha256=3fkDev-VacOl8S50NiWZ6eC3BcIgoMYcJxs6OJ2SC5Q,15
+rpn_calc-0.1.4.dist-info/RECORD,,
