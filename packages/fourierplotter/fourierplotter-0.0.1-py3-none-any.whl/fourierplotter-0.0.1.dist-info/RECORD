@@ -1,0 +1,11 @@
+fourierplotter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fourierplotter/__main__.py,sha256=YSot10OAFd5Gt4fJxDNBdBSBjGPfLLgAuZykax2f8AM,2152
+fourierplotter/fourier_solver.py,sha256=VlVQz7rrBWjmWmtmVCKp93nq9frFq_UeOQ1MEZamEs8,747
+fourierplotter/plotter.py,sha256=d8cfpsvF2j7KyTUBaIpriW5gffaGFiNS858EuhYPLUo,5638
+fourierplotter/svg_to_pts.py,sha256=idUWkYvtIqpDMDm303nXZU1W5_FcmopV91gI60KipE4,3715
+fourierplotter-0.0.1.dist-info/LICENSE,sha256=yIIgAq_FBLdNWU0LDwWXLV6f7sAeP8E5YWc1tLeJYEA,1065
+fourierplotter-0.0.1.dist-info/METADATA,sha256=kqpS4JsuqtRXu4aiuLLPnD9YkJ0o2gmaEp1bWxtwUvE,434
+fourierplotter-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fourierplotter-0.0.1.dist-info/entry_points.txt,sha256=4zNPy-1QKQYBBeVhXhPQ4DqAtI03Fs4zceRZNhGJhc4,76
+fourierplotter-0.0.1.dist-info/top_level.txt,sha256=1qc16JrLN4e3AZgAbYWlRwupVaAEP7UVYjJmAVnHXy4,15
+fourierplotter-0.0.1.dist-info/RECORD,,
