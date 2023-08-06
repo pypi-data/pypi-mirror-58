@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fireflyai
+Version: 0.0.35
+Summary: Python client for Firefly.ai API
+Home-page: UNKNOWN
+Author: Firefly.ai
+License: UNKNOWN
+Description: # Firefly.ai Python SDK
+        Firefly.ai python SDK 
+        
+        ## Documentation
+        https://firefly-python-sdk.readthedocs.io/en/latest/
+        
+        ### Example Notebook: 
+        https://github.com/NeuralAlgorithms/firefly-python-sdk/blob/add-example/examples/SDK_example.ipynb
+        
+        
+        ## Installation:
+        
+        `pip install fireflyai`
+        
+        ## Usage:
+        
+        ```
+        import fireflyai as firefly
+        
+        firefly.authenticate(USER, PASSWORD)
+        ```
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
