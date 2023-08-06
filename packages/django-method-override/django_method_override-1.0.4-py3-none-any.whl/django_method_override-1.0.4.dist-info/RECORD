@@ -1,0 +1,10 @@
+method_override/__init__.py,sha256=VgGvjwOxPQbwKs_gn3ZDbuLMuQ2Ir470NOLlRFnBNps,187
+method_override/middleware.py,sha256=IGfGv-jiACReHaUs6yFrJhXW3HePqnN9zZE7BES4M0E,815
+method_override/settings.py,sha256=srVPcqxPP9UVM5Heu57wJ9-lvlCvcKyGXqEdFsfybSQ,525
+method_override/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+method_override/templatetags/method_override.py,sha256=EWDuj5KC8qQfOgqERkqrR_zRSvzelrdAqQwIxU945Yg,456
+django_method_override-1.0.4.dist-info/LICENSE,sha256=nrKJruCCigyAB9we1dSWLiBm1KnBTblXHSPJ_ot_-K8,1058
+django_method_override-1.0.4.dist-info/METADATA,sha256=6ZFIGS0vi0j52hVWPxCwkk901oYpzOH_f5mZ0CO3yUs,3145
+django_method_override-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_method_override-1.0.4.dist-info/top_level.txt,sha256=qhkZtxFrReqvrivwSq8FPNwrmSrA_nD5jD38VZZ4kWQ,16
+django_method_override-1.0.4.dist-info/RECORD,,
