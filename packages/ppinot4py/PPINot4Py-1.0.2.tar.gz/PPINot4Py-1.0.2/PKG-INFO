@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PPINot4Py
+Version: 1.0.2
+Summary: Python version of PPINot
+Home-page: https://github.com/isa-group/ppinot4py
+Author: Alejandro Gomez Caballero
+Author-email: agcaballero@us.es
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/isa-group/ppinot4py/archive/v_01.tar.gz
+Description: User guide : https://github.com/isa-group/ppinot4py/wiki
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.5
+Description-Content-Type: text/markdown
