@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PEQNP
+Version: 0.1.0
+Summary: General Constrained Diophantine Equation Solver
+Home-page: https://github.com/maxtuno/PEQNP
+Author: Oscar Riveros
+Author-email: contact@peqnp.science
+License: copyright (c) 2012-2020 Oscar Riveros. All rights reserved.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
