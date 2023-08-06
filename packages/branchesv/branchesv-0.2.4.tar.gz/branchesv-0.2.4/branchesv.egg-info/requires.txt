@@ -1,0 +1,6 @@
+gitpython
+click==6.6
+simplejson==3.11.1
+spur==0.3.18
+chardet
+six==1.12.0
