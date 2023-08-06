@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wacks
+Version: 0.1.0b2
+Summary: UNKNOWN
+Home-page: https://github.com/waynew/wax
+Author: Wayne Werner
+Author-email: wayne@waynewerner.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+
+
+---
+
+
+
