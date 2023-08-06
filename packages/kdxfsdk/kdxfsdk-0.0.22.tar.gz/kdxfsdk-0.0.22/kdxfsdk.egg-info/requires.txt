@@ -1,0 +1,4 @@
+requests
+websocket
+cos-python-sdk-v5
+websocket-client
