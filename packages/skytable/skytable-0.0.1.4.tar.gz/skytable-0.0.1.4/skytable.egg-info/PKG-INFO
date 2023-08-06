@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: skytable
+Version: 0.0.1.4
+Summary: Python API Wrapper for the MongoDB
+Home-page: https://github.com/mindey/skytable
+Author: Mindey I.
+Author-email: mindey@qq.com
+License: The MIT License (MIT)
+Description: # Skytable
+        
+        MongoDB Client Wrapper for Python
+        
+        
+        
+        # 0.0.1
+        * Initial Work
+        
+Keywords: skytable,mongodb
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
