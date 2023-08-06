@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+nicely/__init__.py
+nicely/formatters.py
+nicely/printer.py
+nicely/utils.py
+nicely.egg-info/PKG-INFO
+nicely.egg-info/SOURCES.txt
+nicely.egg-info/dependency_links.txt
+nicely.egg-info/top_level.txt
+test/test.py
