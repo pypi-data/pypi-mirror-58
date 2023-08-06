@@ -1,0 +1,9 @@
+protomate/__init__.py,sha256=igSqIqNQSKsC1iZTTjHa5ndn-6Ho9lvzsg22CYRVia0,51
+protomate/languages.py,sha256=V_mA_Q4eX8V8RqoU0Mp9eCbzfoKim1a1KeAwCI1mjHY,7654
+protomate/script.py,sha256=w-4QgpbuI0XhL0vRrtovrBFo2d2PHvpr8oLXpv-qyW0,6771
+protomate/settings.py,sha256=NvXGNCil-t3CXwgGH7pgrE0LbjpbAyKzeZ2-kB6RtSc,73
+protomate/utils.py,sha256=mYaCYzd4Tlso0_J6cBo-164MCgMFx0YNPcf-a6Z-K-4,1435
+protomate-1.0.3.dist-info/entry_points.txt,sha256=DbGs4HN7UtbWo0eTPwq0gfHDK1swjxY_RzZ5srmo0QI,51
+protomate-1.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+protomate-1.0.3.dist-info/METADATA,sha256=7WPvMVdLtmvTaQ4TOqAnUkt6mkqJ7aGFK6g9rhXDOs4,2871
+protomate-1.0.3.dist-info/RECORD,,
