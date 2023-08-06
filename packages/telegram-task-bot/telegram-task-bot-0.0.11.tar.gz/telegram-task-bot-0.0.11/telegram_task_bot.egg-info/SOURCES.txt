@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+telegram_task_bot.egg-info/PKG-INFO
+telegram_task_bot.egg-info/SOURCES.txt
+telegram_task_bot.egg-info/dependency_links.txt
+telegram_task_bot.egg-info/requires.txt
+telegram_task_bot.egg-info/top_level.txt
+telegramtaskbot/Bot.py
+telegramtaskbot/__init__.py
+telegramtaskbot/Tasks/GenericTask.py
+telegramtaskbot/Tasks/Task.py
+telegramtaskbot/Tasks/UrlTask.py
+telegramtaskbot/Tasks/__init__.py
