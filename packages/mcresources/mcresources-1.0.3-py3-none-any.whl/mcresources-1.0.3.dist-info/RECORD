@@ -1,0 +1,9 @@
+mcresources/__init__.py,sha256=DfrqmWYPDRzPTETSdq1WKIDQU66tQ7oH9FtsqQZN6H8,249
+mcresources/parts.py,sha256=lkaSP-_zVdpaASS7HEZ6SDopuKaOH2ecb94nm-8C4CE,6154
+mcresources/resource_manager.py,sha256=ELDLzfVHrme7i8LQe8VFRP8a7Weeuupu1_xjgjd0Gq8,10243
+mcresources/util.py,sha256=m-_W7j5JvcaZ-1FnZfYDKYB8MztLmOz-gkHZBDMUAE8,3712
+mcresources-1.0.3.dist-info/LICENSE.txt,sha256=ZoGEtRl9nLi4neCu2lNatiMOh9_XaOEA5qEry8TmFEM,1091
+mcresources-1.0.3.dist-info/METADATA,sha256=xjwgxW2tL-BTt0jBTR0J75CKMYmqJ41HlobTwAJxtq0,7152
+mcresources-1.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mcresources-1.0.3.dist-info/top_level.txt,sha256=__2NF1ugqcQ1S9ZVl5fwcWolweVu7lBp64ZfxZl6dqM,12
+mcresources-1.0.3.dist-info/RECORD,,
