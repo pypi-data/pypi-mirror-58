@@ -1,0 +1,7 @@
+README.md
+luxand.py
+setup.py
+luxand.egg-info/PKG-INFO
+luxand.egg-info/SOURCES.txt
+luxand.egg-info/dependency_links.txt
+luxand.egg-info/top_level.txt
