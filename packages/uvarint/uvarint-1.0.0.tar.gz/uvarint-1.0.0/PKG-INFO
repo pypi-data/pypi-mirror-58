@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: uvarint
+Version: 1.0.0
+Summary: Unsigned variable-length integers
+Home-page: https://github.com/matheusmoreira/uvarint.py
+Author: Matheus Afonso Martins Moreira
+Author-email: matheus.a.m.moreira@gmail.com
+License: UNKNOWN
+Description: # uvarint
+        
+        Unsigned variable-length integers.
+        
+        # Usage
+        
+            import uvarint
+        
+            buffer = uvarint.encode(16384)                  # b'\x80\x80\x01'
+            integer, bytes_read = uvarint.decode(buffer)    # 16384
+        
+            big = uvarint.encode(2 ** 63)
+            uvarint.decode(big)              # Raises OverflowError; decoder limited to 9 bytes by default
+            uvarint.decode(big, limit=16)    # Success; use math.inf for unlimited decoding
+        
+            multiple  = uvarint.encode(100)
+            multiple += uvarint.encode(200)
+            multiple += uvarint.encode(300)
+            uvarint.expect(3, multiple).integers    # [100, 200, 300]
+        
+        # References
+        
+         - [Specification]
+        
+        # License
+        
+        This module is licensed under the MIT license.
+        
+        [Specification]: https://github.com/multiformats/unsigned-varint
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
