@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+area_under_curve/__init__.py
+area_under_curve/area_under_curve.py
+area_under_curve.egg-info/PKG-INFO
+area_under_curve.egg-info/SOURCES.txt
+area_under_curve.egg-info/dependency_links.txt
+area_under_curve.egg-info/not-zip-safe
+area_under_curve.egg-info/top_level.txt
+tests/demo.py
+tests/unit_test.py
