@@ -1,0 +1,11 @@
+spelling/.pyspelling.yml,sha256=V26YabHGtRiZTYtcFLrXvZL04SXbTZ5ed1L7vvLVdms,2077
+spelling/__init__.py,sha256=gy3P0icNqJ4-W0pG_E7eEEgkIpm67INRw99kOScE6hg,87
+spelling/__main__.py,sha256=bP-ZlpjL7EJqRfVvtAWX8PgqMjzzapoLJfXxQVMXZpc,1782
+spelling/check.py,sha256=a5F-Zt5VcBHhxTv6ldO9WlUs3y19-A99m26yjtIsFJ8,1546
+spelling/version.py,sha256=qMFadzsgwf0AS-oG9rVnQ9A_Z5zl_CwA8XJCn2FTyns,63
+spelling/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spelling/filters/filtererr.py,sha256=VPzKAe2d6ZZEDO5RB79_nzkV__d7vO78Yp0BjjGyY3o,628
+spelling-0.4.1.dist-info/METADATA,sha256=FAcY5_T2poSfQQWNJH_bgoqMoNcYFnIHsfDuFjQpbWI,4484
+spelling-0.4.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+spelling-0.4.1.dist-info/top_level.txt,sha256=Z6lczfd9aoqsPVyamINve53fI_ir6FmEY0hVfOG1LM0,9
+spelling-0.4.1.dist-info/RECORD,,
