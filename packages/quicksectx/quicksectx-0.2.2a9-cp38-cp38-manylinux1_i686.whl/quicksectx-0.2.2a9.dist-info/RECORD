@@ -1,0 +1,9 @@
+quicksectx-0.2.2a9.dist-info/top_level.txt,sha256=o8dXViMTxrzvR5DKnQIrsSn9ueqN-11mmzSwBqgkdgk,11
+quicksectx-0.2.2a9.dist-info/RECORD,,
+quicksectx-0.2.2a9.dist-info/METADATA,sha256=ff2st-iEm5AKbecTwCQyxV3OK-kwelY5WTUaKQHhqJk,5932
+quicksectx-0.2.2a9.dist-info/WHEEL,sha256=JVrb0so3H039vZ-RN438T5nx-dEJ4STwolVEH9Y2doY,106
+quicksectx/quicksect1.pyx,sha256=N1Oo9LzBnVdFHG9Log-QT6fVEvuTIP__LuuyaJGD7WU,14279
+quicksectx/quicksect2.pyx,sha256=WMsRXmJLIs8fEEh5o6f_hAjLBF2umTASn7Jedii9Zfs,17219
+quicksectx/extension.cpython-38-i386-linux-gnu.so,sha256=tg91t8JykOORxmxWlQOPz1qC2d9szdNJwbJJF5IlkQg,1192860
+quicksectx/version.py,sha256=gpkYTVI6qPdhnFUStPNikc6OEw0w1JwjLdMwoBoul5k,73
+quicksectx/__init__.py,sha256=8_t7IzQicuAhaNFo0qR1rqysiI6xX2IUqhjrqmktMmI,326
