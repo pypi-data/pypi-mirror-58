@@ -1,0 +1,7 @@
+setup.py
+asdfg/__init__.py
+asdfg/arithmetic.py
+asdfg.egg-info/PKG-INFO
+asdfg.egg-info/SOURCES.txt
+asdfg.egg-info/dependency_links.txt
+asdfg.egg-info/top_level.txt
