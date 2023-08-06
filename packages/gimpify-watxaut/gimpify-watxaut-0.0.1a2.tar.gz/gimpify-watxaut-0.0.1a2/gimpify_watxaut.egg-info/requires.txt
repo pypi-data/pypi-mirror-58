@@ -1,0 +1,2 @@
+face-recognition>=1.2.3
+Pillow>=7.0.0
