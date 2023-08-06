@@ -1,0 +1,8 @@
+README.md
+setup.py
+CovarianceDescriptor/CovD.py
+CovarianceDescriptor/__init__.py
+Covariance_Descriptor.egg-info/PKG-INFO
+Covariance_Descriptor.egg-info/SOURCES.txt
+Covariance_Descriptor.egg-info/dependency_links.txt
+Covariance_Descriptor.egg-info/top_level.txt
