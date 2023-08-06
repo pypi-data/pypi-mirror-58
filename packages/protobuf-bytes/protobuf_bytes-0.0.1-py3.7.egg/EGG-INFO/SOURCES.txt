@@ -1,0 +1,8 @@
+README.md
+setup.py
+protobuf_bytes/__init__.py
+protobuf_bytes.egg-info/PKG-INFO
+protobuf_bytes.egg-info/SOURCES.txt
+protobuf_bytes.egg-info/dependency_links.txt
+protobuf_bytes.egg-info/requires.txt
+protobuf_bytes.egg-info/top_level.txt
