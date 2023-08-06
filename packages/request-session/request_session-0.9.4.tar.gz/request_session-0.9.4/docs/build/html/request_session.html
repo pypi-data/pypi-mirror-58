@@ -1,0 +1,823 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>request_session package &mdash; request_session  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to Contribute" href="how_to_contribute.html" />
+    <link rel="prev" title="Metrics" href="metrics.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> request_session
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retry.html">Automatic Retries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">request_session package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-request_session.request_session">request_session</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#additional-requests-parameters">Additional <code class="docutils literal notranslate"><span class="pre">requests</span></code> parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-request_session.protocols">protocols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-request_session.utils">utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="how_to_contribute.html">How to Contribute</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">request_session</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>request_session package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/request_session.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="request-session-package">
+<h1>request_session package<a class="headerlink" href="#request-session-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-request_session.request_session">
+<span id="request-session"></span><h2>request_session<a class="headerlink" href="#module-request_session.request_session" title="Permalink to this headline">¶</a></h2>
+<p>Main RequestSession module.</p>
+<dl class="class">
+<dt id="request_session.request_session.RequestSession">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.request_session.</code><code class="sig-name descname">RequestSession</code><span class="sig-paren">(</span><em class="sig-param">host=None, headers: dict = None, auth: tuple = None, timeout: Union[float, Tuple[float, float], request_session.request_session.Timeout] = 10, verify: Union[bool, str] = True, max_retries: int = 0, verbose_logging: bool = False, request_category: str = None, raise_for_status: bool = True, user_agent: str = None, user_agent_components: request_session.utils.UserAgentComponents = None, session_instances: List[requests.sessions.Session] = [], ddtrace: request_session.protocols.Ddtrace = None, datadog_service_name: str = None, statsd: request_session.protocols.Statsd = None, sentry_client: request_session.protocols.SentryClient = None, logger: Callable = None, log_prefix: str = 'requestsession', allowed_log_levels: Tuple[str] = ('debug', 'info', 'warning', 'error', 'critical', 'exception', 'log')</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Helper class for HTTP requests with common settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> (<em>str</em>) – Host name</p></li>
+<li><p><strong>headers</strong> (<em>dict</em>) – (optional) Dictionary of HTTP headers to be used.</p></li>
+<li><p><strong>auth</strong> (<em>tuple</em>) – (optional) Authorization tuple to enable
+Basic/Digest/Custom HTTP Auth.</p></li>
+<li><p><strong>timeout</strong> (<em>[</em><em>float</em><em>, </em><a class="reference internal" href="#request_session.request_session.Timeout" title="request_session.request_session.Timeout"><em>Timeout</em></a><em>, </em><em>Tuple</em><em>[</em><em>float</em><em>, </em><em>float</em><em>]</em><em>]</em>) – (optional) How many seconds to wait until retrying.
+Defaults to 10.</p></li>
+<li><p><strong>verify</strong> (<em>[</em><em>bool</em><em>, </em><em>str</em><em>]</em>) – (optional) Either a boolean, in which case it controls whether
+to verify the servers TLS certificate, or a string, in which case it must
+be a path to a CA bundle to use. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p><strong>max_retries</strong> (<em>int</em>) – (optional) Number of retries if the execution fails with
+server error. Defaults to 0.</p></li>
+<li><p><strong>verbose_logging</strong> (<em>bool</em>) – (optional) If true, add request’s parameters to event
+being logged. Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>request_category</strong> (<em>str</em>) – (optional) Name of the event. <code class="docutils literal notranslate"><span class="pre">request_category</span></code> has
+to passed to the object or as an argument when calling some HTTP method.</p></li>
+<li><p><strong>raise_for_status</strong> (<em>bool</em>) – (optional) Raise an exception in case of an error.
+Defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>user_agent</strong> (<em>str</em>) – (optional) User-Agent to be set in headers.</p></li>
+<li><p><strong>session_instances</strong> (<em>list</em><em>[</em><em>requests.Session</em><em>]</em>) – (optional) A list of
+<code class="docutils literal notranslate"><span class="pre">requests.Session</span></code> to be used to make the HTTP requests.</p></li>
+<li><p><strong>ddtrace</strong> (<a class="reference internal" href="#request_session.protocols.Ddtrace" title="request_session.protocols.Ddtrace"><em>Ddtrace</em></a>) – (optional) DataDog function to be used to trace, track and
+send metrics for individual HTTP requests. If set, <code class="docutils literal notranslate"><span class="pre">datadog_service_name</span></code>
+must be set too. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p><strong>datadog_service_name</strong> (<em>str</em>) – (optional) Name of the service in DataDog.</p></li>
+<li><p><strong>statsd</strong> (<a class="reference internal" href="#request_session.protocols.Statsd" title="request_session.protocols.Statsd"><em>Statsd</em></a>) – (optional) Datadog module to log metrics.</p></li>
+<li><p><strong>sentry_client</strong> (<a class="reference internal" href="#request_session.protocols.SentryClient" title="request_session.protocols.SentryClient"><em>SentryClient</em></a>) – (optional) Sentry module to log exceptions.</p></li>
+<li><p><strong>logger</strong> (<em>Callable</em>) – (optional) Logger to be used when logging to <cite>stdout</cite>
+and <cite>stderr</cite>. If none is set, <cite>builtin_logger</cite> is used. Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p><strong>log_prefix</strong> (<em>str</em>) – (optional) Prefix to be used when logging to <cite>stdout</cite>
+and <cite>stderr</cite>. Defaults to <code class="docutils literal notranslate"><span class="pre">requestsession</span></code>.</p></li>
+<li><p><strong>allowed_log_levels</strong> (<em>Tuple</em><em>[</em><em>str</em><em>]</em>) – (optional) Log levels that are supported by
+the <cite>logger</cite> used. Defaults to
+<code class="docutils literal notranslate"><span class="pre">(&quot;debug&quot;,</span> <span class="pre">&quot;info&quot;,</span> <span class="pre">&quot;warning&quot;,</span> <span class="pre">&quot;error&quot;,</span> <span class="pre">&quot;critical&quot;,</span> <span class="pre">&quot;exception&quot;,</span> <span class="pre">&quot;log&quot;)</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.close_all_sessions">
+<code class="sig-name descname">close_all_sessions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.close_all_sessions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close and remove all sessions in self.session_instances.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete request against a service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – URL path, will be combined with <code class="docutils literal notranslate"><span class="pre">self.host</span></code> to build whole
+request url.</p></li>
+<li><p><strong>**kwargs</strong> – Optional arguments that request takes
+- check request_session and requests packages documentation for further reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return requests.Response</dt>
+<dd class="field-even"><p>HTTP Response Object</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>requests.RequestException</strong> – server error on operation
+(if raise_for_status is True).</p></li>
+<li><p><a class="reference internal" href="#request_session.utils.APIError" title="request_session.utils.APIError"><strong>APIError</strong></a> – client error on operation (if raise_for_status is True)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get request against a service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – URL path, will be combined with <code class="docutils literal notranslate"><span class="pre">self.host</span></code> to build whole
+request URL.</p></li>
+<li><p><strong>**kwargs</strong> – Optional arguments that request takes
+- check request_session and requests packages documentation for further reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return requests.Response</dt>
+<dd class="field-even"><p>HTTP Response Object</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>requests.RequestException</strong> – server error on operation
+(if raise_for_status is True).</p></li>
+<li><p><a class="reference internal" href="#request_session.utils.APIError" title="request_session.utils.APIError"><strong>APIError</strong></a> – client error on operation (if raise_for_status is True)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.get_response_text">
+<em class="property">static </em><code class="sig-name descname">get_response_text</code><span class="sig-paren">(</span><em class="sig-param">response</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.get_response_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return response text if exists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>response</strong> (<em>request.Response</em>) – HTTP Response Object</p>
+</dd>
+<dt class="field-even">Return str</dt>
+<dd class="field-even"><p>response text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.is_server_error">
+<em class="property">static </em><code class="sig-name descname">is_server_error</code><span class="sig-paren">(</span><em class="sig-param">error</em>, <em class="sig-param">http_code</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.is_server_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exception type and response code match server error.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>error</strong> (<em>requests.RequestException</em>) – exception</p></li>
+<li><p><strong>http_code</strong> (<em>int</em>) – (optional) response HTTP status code</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return bool</dt>
+<dd class="field-even"><p>whether error is server error</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.log">
+<code class="sig-name descname">log</code><span class="sig-paren">(</span><em class="sig-param">level</em>, <em class="sig-param">event</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proxy to log with provided logger.</p>
+<p>Builtin logging library is used otherwise.
+:param level: string describing log level
+:param event: event (&lt;request_category&gt; or &lt;request_category&gt;.&lt;action&gt;)
+:param **kwargs: kw arguments to be logged</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.metric_increment">
+<code class="sig-name descname">metric_increment</code><span class="sig-paren">(</span><em class="sig-param">metric</em>, <em class="sig-param">request_category</em>, <em class="sig-param">tags</em>, <em class="sig-param">attempt=None</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.metric_increment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metric request increment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metric</strong> (<em>str</em>) – Name of the metric to be incremented.</p></li>
+<li><p><strong>request_category</strong> (<em>str</em>) – request category</p></li>
+<li><p><strong>tags</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Tags to increment metric with.</p></li>
+<li><p><strong>attempt</strong> (<em>int</em>) – Number of attempt of the request.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.patch">
+<code class="sig-name descname">patch</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.patch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Patch request against a service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – URL path, will be combined with <code class="docutils literal notranslate"><span class="pre">self.host</span></code> to build whole
+request url.</p></li>
+<li><p><strong>**kwargs</strong> – Optional arguments that request takes
+- check request_session and requests packages documentation for further reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return requests.Response</dt>
+<dd class="field-even"><p>HTTP Response Object</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>requests.RequestException</strong> – server error on operation
+(if raise_for_status is True).</p></li>
+<li><p><a class="reference internal" href="#request_session.utils.APIError" title="request_session.utils.APIError"><strong>APIError</strong></a> – client error on operation (if raise_for_status is True)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.post">
+<code class="sig-name descname">post</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post request against a service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – url path, will be combined with <code class="docutils literal notranslate"><span class="pre">self.host</span></code> to build whole
+request url.</p></li>
+<li><p><strong>**kwargs</strong> – Optional arguments that request takes
+- check request_session and requests packages documentation for further reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return requests.Response</dt>
+<dd class="field-even"><p>HTTP Response Object</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>requests.RequestException</strong> – Server error on operation
+(if raise_for_status is True).</p></li>
+<li><p><a class="reference internal" href="#request_session.utils.APIError" title="request_session.utils.APIError"><strong>APIError</strong></a> – Client error on operation (if raise_for_status is True).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.prepare_new_session">
+<code class="sig-name descname">prepare_new_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.prepare_new_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepare new configured session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.put">
+<code class="sig-name descname">put</code><span class="sig-paren">(</span><em class="sig-param">path</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.put" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put request against a service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – URL path, will be combined with <code class="docutils literal notranslate"><span class="pre">self.host</span></code> to build whole
+request url.</p></li>
+<li><p><strong>**kwargs</strong> – Optional arguments that request takes
+- check request_session and requests packages documentation for further reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return requests.Response</dt>
+<dd class="field-even"><p>HTTP Response Object</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>requests.RequestException</strong> – server error on operation
+(if raise_for_status is True).</p></li>
+<li><p><a class="reference internal" href="#request_session.utils.APIError" title="request_session.utils.APIError"><strong>APIError</strong></a> – client error on operation (if raise_for_status is True)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.remove_session">
+<code class="sig-name descname">remove_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.remove_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close session and remove it from list of session instances.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.set_user_agent">
+<code class="sig-name descname">set_user_agent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.set_user_agent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set proper user-agent string to header according to RFC22.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.RequestSession.sleep">
+<code class="sig-name descname">sleep</code><span class="sig-paren">(</span><em class="sig-param">seconds</em>, <em class="sig-param">request_category</em>, <em class="sig-param">tags</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.RequestSession.sleep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call sleep function and send metrics to datadog.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seconds</strong> (<em>float</em>) – float or int number of seconds to sleep</p></li>
+<li><p><strong>request_category</strong> (<em>str</em>) – request category</p></li>
+<li><p><strong>tags</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – tags for datadog</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.request_session.Timeout">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.request_session.</code><code class="sig-name descname">Timeout</code><span class="sig-paren">(</span><em class="sig-param">connection_timeout</em>, <em class="sig-param">read_timeout</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.request_session.Timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="method">
+<dt id="request_session.request_session.Timeout.connection_timeout">
+<em class="property">property </em><code class="sig-name descname">connection_timeout</code><a class="headerlink" href="#request_session.request_session.Timeout.connection_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.request_session.Timeout.read_timeout">
+<em class="property">property </em><code class="sig-name descname">read_timeout</code><a class="headerlink" href="#request_session.request_session.Timeout.read_timeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="additional-requests-parameters">
+<h3>Additional <code class="docutils literal notranslate"><span class="pre">requests</span></code> parameters<a class="headerlink" href="#additional-requests-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Since <code class="docutils literal notranslate"><span class="pre">RequestSession</span></code> uses <code class="docutils literal notranslate"><span class="pre">requests.Session</span></code>,
+you can pass any parameters that <code class="docutils literal notranslate"><span class="pre">requests.Session</span></code>
+takes to any of the <code class="docutils literal notranslate"><span class="pre">GET</span></code>, <code class="docutils literal notranslate"><span class="pre">POST</span></code>, <code class="docutils literal notranslate"><span class="pre">PUT</span></code> and <code class="docutils literal notranslate"><span class="pre">DELETE</span></code>
+methods as a keyword argument:</p>
+<ul class="simple">
+<li><p>url: (<em>optional</em>) To override <code class="docutils literal notranslate"><span class="pre">url</span></code> param.</p></li>
+<li><p>params: (<em>optional</em>) Dictionary or bytes to be sent in the query string for
+the Request.</p></li>
+<li><p>data: (<em>optional</em>) Dictionary or list of tuples <code class="docutils literal notranslate"><span class="pre">[(key,</span> <span class="pre">value)]</span></code>
+(which is form-encoded by <a class="reference external" href="https://requests.kennethreitz.org/en/master/">requests</a>), bytes, or file-like object to send
+in the body of the Request.</p></li>
+<li><p>json: (<em>optional</em>) A JSON serializable Python object to send in the body of
+the Request.</p></li>
+<li><p>headers: (<em>optional</em>) Dictionary of HTTP Headers to send with the Request.</p></li>
+<li><p>cookies: (<em>optional</em>) Dict or CookieJar object to send with the Request.</p></li>
+<li><p>files: (<em>optional</em>) Dictionary of <code class="docutils literal notranslate"><span class="pre">'name':</span> <span class="pre">file-like-objects</span></code></p></li>
+<li><p>auth: (<em>optional</em>) Auth tuple to enable Basic/Digest/Custom HTTP Auth.</p></li>
+<li><p>timeout: (<em>optional</em>) How many seconds to wait for the server to send data
+before giving up, as a float, or a <code class="docutils literal notranslate"><span class="pre">(connect</span> <span class="pre">timeout,</span> <span class="pre">read</span> <span class="pre">timeout)</span>
+<span class="pre">&lt;timeouts&gt;</span></code> tuple.</p></li>
+<li><p>allow_redirects: (<em>optional</em>) Boolean.
+Enable/disable GET/OPTIONS/POST/PUT/PATCH/DELETE/HEAD redirection.
+Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p>proxies: (<em>optional</em>) Dictionary mapping protocol to the URL of the proxy.</p></li>
+<li><p>verify: (<em>optional</em>) Can be either:</p>
+<ul>
+<li><p>A boolean, in which case it controls whether we
+verify the TLS certificate of the server.</p></li>
+<li><p>A string, in which case it must be a path to
+a CA bundle to use. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+</ul>
+</li>
+<li><p>stream: (<em>optional</em>) If it is <code class="docutils literal notranslate"><span class="pre">False</span></code>, the response content is immediately
+downloaded.</p></li>
+<li><p>cert: (<em>optional</em>) If it is a <code class="docutils literal notranslate"><span class="pre">String</span></code>, path to ssl client cert file (.pem).
+If it is a <code class="docutils literal notranslate"><span class="pre">Tuple</span></code>, (‘cert’, ‘key’) pair.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-request_session.protocols">
+<span id="protocols"></span><h2>protocols<a class="headerlink" href="#module-request_session.protocols" title="Permalink to this headline">¶</a></h2>
+<p>Simple protocols to duck type dependency injections.</p>
+<dl class="class">
+<dt id="request_session.protocols.Config">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">Config</code><a class="headerlink" href="#request_session.protocols.Config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Statsd Config protocol.</p>
+<dl class="method">
+<dt id="request_session.protocols.Config.get_from">
+<code class="sig-name descname">get_from</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.Config.get_from" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the configuration for the given object.</p>
+<p>Any object that has an attached <cite>Pin</cite> must have a configuration
+and if a wrong object is given, an empty <cite>dict</cite> is returned
+for safety reasons.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.protocols.Ddtrace">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">Ddtrace</code><a class="headerlink" href="#request_session.protocols.Ddtrace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ddtrace protocol.</p>
+<dl class="attribute">
+<dt id="request_session.protocols.Ddtrace.config">
+<code class="sig-name descname">config</code><em class="property"> = None</em><a class="headerlink" href="#request_session.protocols.Ddtrace.config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.Ddtrace.tracer">
+<code class="sig-name descname">tracer</code><em class="property"> = None</em><a class="headerlink" href="#request_session.protocols.Ddtrace.tracer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.protocols.SentryClient">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">SentryClient</code><a class="headerlink" href="#request_session.protocols.SentryClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SentryClient protocol.</p>
+<dl class="method">
+<dt id="request_session.protocols.SentryClient.captureException">
+<code class="sig-name descname">captureException</code><span class="sig-paren">(</span><em class="sig-param">exc_info=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.SentryClient.captureException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an event from an exception.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">exc_info</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">client</span><span class="o">.</span><span class="n">captureException</span><span class="p">(</span><span class="n">exc_info</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">finally</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">del</span> <span class="n">exc_info</span>
+</pre></div>
+</div>
+<p>If exc_info is not provided, or is set to True, then this method will
+perform the <code class="docutils literal notranslate"><span class="pre">exc_info</span> <span class="pre">=</span> <span class="pre">sys.exc_info()</span></code> and the requisite clean-up
+for you.</p>
+<p><code class="docutils literal notranslate"><span class="pre">kwargs</span></code> are passed through to <code class="docutils literal notranslate"><span class="pre">.capture</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.protocols.Span">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">Span</code><span class="sig-paren">(</span><em class="sig-param">tracer: request_session.protocols.Tracer = None</em>, <em class="sig-param">name: str = None</em>, <em class="sig-param">service: str = None</em>, <em class="sig-param">resource: str = None</em>, <em class="sig-param">span_type: str = None</em>, <em class="sig-param">trace_id: int = None</em>, <em class="sig-param">parent_id: int = None</em>, <em class="sig-param">span_id: int = None</em>, <em class="sig-param">start: int = None</em>, <em class="sig-param">context: object = None</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.Span" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Span protocol.</p>
+<dl class="method">
+<dt id="request_session.protocols.Span.set_metas">
+<code class="sig-name descname">set_metas</code><span class="sig-paren">(</span><em class="sig-param">kvs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.Span.set_metas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set metas.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.protocols.Statsd">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">Statsd</code><a class="headerlink" href="#request_session.protocols.Statsd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Statsd protocol.</p>
+<dl class="attribute">
+<dt id="request_session.protocols.Statsd.config">
+<code class="sig-name descname">config</code><a class="headerlink" href="#request_session.protocols.Statsd.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#request_session.protocols.Config" title="request_session.protocols.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="request_session.protocols.Statsd.increment">
+<code class="sig-name descname">increment</code><span class="sig-paren">(</span><em class="sig-param">metric</em>, <em class="sig-param">value=1</em>, <em class="sig-param">tags=None</em>, <em class="sig-param">sample_rate=1</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.Statsd.increment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increment a counter, optionally setting a value, tags and a sample rate.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">statsd</span><span class="o">.</span><span class="n">increment</span><span class="p">(</span><span class="s1">&#39;page.views&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">statsd</span><span class="o">.</span><span class="n">increment</span><span class="p">(</span><span class="s1">&#39;files.transferred&#39;</span><span class="p">,</span> <span class="mi">124</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.Statsd.namespace">
+<code class="sig-name descname">namespace</code><em class="property"> = None</em><a class="headerlink" href="#request_session.protocols.Statsd.namespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="request_session.protocols.Statsd.timed">
+<code class="sig-name descname">timed</code><span class="sig-paren">(</span><em class="sig-param">metric=None</em>, <em class="sig-param">tags=None</em>, <em class="sig-param">sample_rate=1</em>, <em class="sig-param">use_ms=None</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.Statsd.timed" title="Permalink to this definition">¶</a></dt>
+<dd><p>A decorator or context manager that will measure the distribution of a function’s/context’s run time.</p>
+<p>Optionally specify a list of tags or a
+sample rate. If the metric is not defined as a decorator, the module
+name and function name will be used. The metric is required as a context
+manager.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@statsd</span><span class="o">.</span><span class="n">timed</span><span class="p">(</span><span class="s1">&#39;user.query.time&#39;</span><span class="p">,</span> <span class="n">sample_rate</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">get_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">):</span>
+    <span class="c1"># Do what you need to ...</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Is equivalent to ...</span>
+<span class="k">with</span> <span class="n">statsd</span><span class="o">.</span><span class="n">timed</span><span class="p">(</span><span class="s1">&#39;user.query.time&#39;</span><span class="p">,</span> <span class="n">sample_rate</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="c1"># Do what you need to ...</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Is equivalent to ...</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">get_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">statsd</span><span class="o">.</span><span class="n">timing</span><span class="p">(</span><span class="s1">&#39;user.query.time&#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.Statsd.tracer">
+<code class="sig-name descname">tracer</code><a class="headerlink" href="#request_session.protocols.Statsd.tracer" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#request_session.protocols.Tracer" title="request_session.protocols.Tracer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tracer</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.protocols.TimedContextManagerDecorator">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">TimedContextManagerDecorator</code><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>TimedContextManagerDecorator protocol.</p>
+<dl class="attribute">
+<dt id="request_session.protocols.TimedContextManagerDecorator.elapsed">
+<code class="sig-name descname">elapsed</code><em class="property"> = _CountingAttr(counter=28, _default=None, repr=True, cmp=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator.elapsed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.TimedContextManagerDecorator.metric">
+<code class="sig-name descname">metric</code><em class="property"> = _CountingAttr(counter=24, _default=None, repr=True, cmp=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator.metric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.TimedContextManagerDecorator.sample_rate">
+<code class="sig-name descname">sample_rate</code><em class="property"> = _CountingAttr(counter=26, _default=None, repr=True, cmp=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator.sample_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.TimedContextManagerDecorator.statsd">
+<code class="sig-name descname">statsd</code><em class="property"> = _CountingAttr(counter=23, _default=None, repr=True, cmp=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator.statsd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.TimedContextManagerDecorator.tags">
+<code class="sig-name descname">tags</code><em class="property"> = _CountingAttr(counter=25, _default=None, repr=True, cmp=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator.tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="request_session.protocols.TimedContextManagerDecorator.use_ms">
+<code class="sig-name descname">use_ms</code><em class="property"> = _CountingAttr(counter=27, _default=None, repr=True, cmp=True, hash=None, init=True, metadata={})</em><a class="headerlink" href="#request_session.protocols.TimedContextManagerDecorator.use_ms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.protocols.Tracer">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.protocols.</code><code class="sig-name descname">Tracer</code><a class="headerlink" href="#request_session.protocols.Tracer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Statsd Tracer protocol.</p>
+<dl class="method">
+<dt id="request_session.protocols.Tracer.trace">
+<code class="sig-name descname">trace</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">service=None</em>, <em class="sig-param">resource=None</em>, <em class="sig-param">span_type=None</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.protocols.Tracer.trace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a span that will trace an operation called <cite>name</cite>.</p>
+<p>The context that created the span as well as the span parenting,
+are automatically handled by the tracing function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – the name of the operation being traced</p></li>
+<li><p><strong>service</strong> (<em>str</em>) – the name of the service being traced. If not set,
+it will inherit the service from its parent.</p></li>
+<li><p><strong>resource</strong> (<em>str</em>) – an optional name of the resource being tracked.</p></li>
+<li><p><strong>span_type</strong> (<em>str</em>) – an optional operation type.</p></li>
+</ul>
+</dd>
+</dl>
+<p>You must call <cite>finish</cite> on all spans, either directly or with a context
+manager:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">span</span> <span class="o">=</span> <span class="n">tracer</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;web.request&#39;</span><span class="p">)</span>
+<span class="go">    try:</span>
+<span class="go">        # do something</span>
+<span class="go">    finally:</span>
+<span class="go">        span.finish()</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;web.request&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">span</span><span class="p">:</span>
+<span class="go">        # do something</span>
+</pre></div>
+</div>
+<p>Trace will store the current active span and subsequent child traces will
+become its children:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">parent</span> <span class="o">=</span> <span class="n">tracer</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;parent&#39;</span><span class="p">)</span>     <span class="c1"># has no parent span</span>
+<span class="n">child</span>  <span class="o">=</span> <span class="n">tracer</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">)</span>      <span class="c1"># is a child of a parent</span>
+<span class="n">child</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+<span class="n">parent</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+
+<span class="n">parent2</span> <span class="o">=</span> <span class="n">tracer</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;parent2&#39;</span><span class="p">)</span>   <span class="c1"># has no parent span</span>
+<span class="n">parent2</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-request_session.utils">
+<span id="utilities"></span><h2>utilities<a class="headerlink" href="#module-request_session.utils" title="Permalink to this headline">¶</a></h2>
+<p>Utilites used in RequestSession.</p>
+<dl class="exception">
+<dt id="request_session.utils.APIError">
+<em class="property">exception </em><code class="sig-prename descclassname">request_session.utils.</code><code class="sig-name descname">APIError</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.utils.APIError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Base error for API mishandling.</p>
+<dl class="attribute">
+<dt id="request_session.utils.APIError.default_message">
+<code class="sig-name descname">default_message</code><em class="property"> = 'API error occured.'</em><a class="headerlink" href="#request_session.utils.APIError.default_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="request_session.utils.InvalidUserAgentString">
+<em class="property">exception </em><code class="sig-prename descclassname">request_session.utils.</code><code class="sig-name descname">InvalidUserAgentString</code><a class="headerlink" href="#request_session.utils.InvalidUserAgentString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Provided user agent string is not in correct format.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="request_session.utils.UserAgentComponents">
+<em class="property">class </em><code class="sig-prename descclassname">request_session.utils.</code><code class="sig-name descname">UserAgentComponents</code><span class="sig-paren">(</span><em class="sig-param">service_name: str</em>, <em class="sig-param">version: str</em>, <em class="sig-param">organization: str</em>, <em class="sig-param">environment: str</em>, <em class="sig-param">sys_info: str = None</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.utils.UserAgentComponents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Helper class to wrap user-agent items into one object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="request_session.utils.dict_to_string">
+<code class="sig-prename descclassname">request_session.utils.</code><code class="sig-name descname">dict_to_string</code><span class="sig-paren">(</span><em class="sig-param">dictionary</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.utils.dict_to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert dictionary to key=value pairs separated by a space.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="request_session.utils.reraise_as_third_party">
+<code class="sig-prename descclassname">request_session.utils.</code><code class="sig-name descname">reraise_as_third_party</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#request_session.utils.reraise_as_third_party" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add tags to raised exception for Sentry.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="request_session.utils.split_tags_and_update">
+<code class="sig-prename descclassname">request_session.utils.</code><code class="sig-name descname">split_tags_and_update</code><span class="sig-paren">(</span><em class="sig-param">dictionary</em>, <em class="sig-param">tags</em><span class="sig-paren">)</span><a class="headerlink" href="#request_session.utils.split_tags_and_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update dict with tags from string.</p>
+<p>Individual tags must be in format of &lt;key&gt;:&lt;value&gt;.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="How to Contribute" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="metrics.html" class="btn btn-neutral float-left" title="Metrics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Booking Backend
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
