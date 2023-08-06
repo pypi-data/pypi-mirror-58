@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: infrastructure-diagrams
+Version: 0.0.6
+Summary: Create infrastructure diagrams from configuration files (YAML and JSON) by using Graphviz
+Home-page: https://github.com/kotlarz/infrastructure-diagrams
+Author: Marius Kotlarz
+Author-email: marius@kotlarz.no
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: graphviz (>=0.13.2)
+Requires-Dist: PyYAML (>=5.2)
+Requires-Dist: python-magic (>=0.4.15)
+Requires-Dist: colour (>=0.1.5)
+Requires-Dist: SecretColors (>=1.1.0)
+
+infrastructure-diagrams
+=======================
+
+infrastructure-diagrams is a python package that allows creating
+infrastructure diagrams/graphs from configuration files (YAML and JSON).
+The package utilizes `Graphviz <https://www.graphviz.org/>`__ to
+generate the diagrams. The functionality is exposed in the command line
+by the Unix command file.
+
+*Note: Some features are currently undocumented.*
+
+Requirements
+------------
+
+The package requires ``python >= 3.6``. It has only been tested on Linux
+as the intended use was for automatically generating diagrams in a CI.
+
+Installation
+------------
+
+The current stable version of infrastructure-daigrams is available on
+pypi and can be installed by running
+``pip install infrastructure-diagrams``.
+
+Other sources:
+
+-  pypi: http://pypi.python.org/pypi/infrastructure-diagrams/
+-  github: https://github.com/kotlarz/infrastructure-diagrams/
+
+Usage
+-----
+
+.. code:: bash
+
+    $ infrastructure-diagrams
+    usage: infrastructure-diagrams [-h] [-d DISPLAY] [-o OUTPUT] [-r RENDERER] file
+
+    positional arguments:
+      file                  path to diagram file
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -d DISPLAY, --display DISPLAY
+                            display the diagram after rendering
+      -o OUTPUT, --output OUTPUT
+                            output path for the diagram, including filetype (.svg, .png, etc.)
+      -r RENDERER, --renderer RENDERER
+                            output renderer used for rendering (cairo, gd, etc.)
+
+Example:
+``$ infrastructure-diagrams -o example.png examples/example.yaml``
+
+Configuration files
+-------------------
+
+The configuration files extend the Graphviz `Node, Edge and Graph
+Attributes <https://www.graphviz.org/doc/info/attrs.html>`__, meaning
+you can customize the diagram / graph as needed.
+
+Examples:
+
+-  ``example.yaml`` |Output of example.yaml|
+
+-  ``misc.yaml`` |Output of misc.yaml|
+
+-  ``iot.yaml`` |Output of iot.yaml|
+
+Example diagram configuration files can be found under the
+`examples/ <https://github.com/kotlarz/infrastructure-diagrams/>`__
+directory.
+
+.. |Output of example.yaml| image:: https://raw.githubusercontent.com/kotlarz/infrastructure-diagrams/master/examples/example.png
+.. |Output of misc.yaml| image:: https://raw.githubusercontent.com/kotlarz/infrastructure-diagrams/master/examples/misc.png
+.. |Output of iot.yaml| image:: https://raw.githubusercontent.com/kotlarz/infrastructure-diagrams/master/examples/iot.png
+
+
+
