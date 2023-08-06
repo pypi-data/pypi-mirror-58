@@ -1,0 +1,3 @@
+[console_scripts]
+thunes_manage = manage:main
+
