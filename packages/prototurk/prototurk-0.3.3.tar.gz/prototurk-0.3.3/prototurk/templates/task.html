@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProtoTurk - Task {{ task_id }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" href="/static/bootstrap-4.3.1.min.css">
+    <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-flow: column;
+    }
+    .content {
+      flex: 1;
+    }
+    </style>
+    <script src="/static/jquery-3.4.1.js"></script>
+    <script>
+    $(function () {
+      $('#task_iframe').focus();
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid content">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <span class="navbar-brand mr-auto">
+          ProtoTurk - Task {{ task_id }}
+        </span>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/task/{{ previous_task_id }}">Previous Task</a>
+          <a class="nav-item nav-link" href="/task/{{ next_task_id }}">Next Task</a>
+          <a class="nav-item nav-link" href="/">Task List</a>
+        </div>
+      </nav>
+      <iframe src="/task/{{ task_id }}/iframe"
+              id="task_iframe"
+              style="top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0; box-sizing: inherit; display: block;">
+      </iframe>
+    </div><!-- /.container-fluid -->
+  </body>
+</html>
