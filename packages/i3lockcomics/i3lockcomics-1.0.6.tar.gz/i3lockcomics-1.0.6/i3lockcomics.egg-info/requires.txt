@@ -1,0 +1,7 @@
+Pillow
+bs4
+colorama
+html5lib
+pendulum
+requests
+screeninfo
