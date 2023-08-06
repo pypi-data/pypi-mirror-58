@@ -1,0 +1,14 @@
+Flask
+boto3
+dataclasses-json
+sqlalchemy
+requests
+furl
+flask-jwt-extended
+flask-sqlalchemy
+marshmallow-sqlalchemy
+flask-smorest
+Flask-Cors
+marshmallow-enum
+marshmallow
+aws-xray-sdk
