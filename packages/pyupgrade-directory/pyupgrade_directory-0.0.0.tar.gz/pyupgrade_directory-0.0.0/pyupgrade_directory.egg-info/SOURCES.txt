@@ -1,0 +1,9 @@
+pyupgrade_directory.py
+setup.cfg
+setup.py
+pyupgrade_directory.egg-info/PKG-INFO
+pyupgrade_directory.egg-info/SOURCES.txt
+pyupgrade_directory.egg-info/dependency_links.txt
+pyupgrade_directory.egg-info/entry_points.txt
+pyupgrade_directory.egg-info/requires.txt
+pyupgrade_directory.egg-info/top_level.txt
