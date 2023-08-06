@@ -1,0 +1,9 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+stabilofont/__init__.py
+stabilofont.egg-info/PKG-INFO
+stabilofont.egg-info/SOURCES.txt
+stabilofont.egg-info/dependency_links.txt
+stabilofont.egg-info/top_level.txt
