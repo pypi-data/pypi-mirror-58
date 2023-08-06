@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/matteo
+matteopy/__init__.py
+matteopy/__version__.py
+matteopy/play.py
+matteopy.egg-info/PKG-INFO
+matteopy.egg-info/SOURCES.txt
+matteopy.egg-info/dependency_links.txt
+matteopy.egg-info/requires.txt
+matteopy.egg-info/top_level.txt
+matteopy/utils/__init__.py
+matteopy/utils/package_data.py
