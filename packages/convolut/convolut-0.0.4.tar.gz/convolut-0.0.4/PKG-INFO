@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: convolut
+Version: 0.0.4
+Summary: Distributed development and modularity for deep learning
+Home-page: https://github.com/convolut/convolut
+Author: Andrey Avdeev
+Author-email: seorazer@gmail.com
+License: Apache 2.0
+Description: # Convolut
+        ```shell script
+        pip install convolut
+        ```
+        ![convolut](https://raw.githubusercontent.com/convolut/convolut/master/docs/img/logo.png)
+        
+Keywords: convolut modularity decoupled dl
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
