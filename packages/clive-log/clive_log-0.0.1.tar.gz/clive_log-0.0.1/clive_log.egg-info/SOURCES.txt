@@ -1,0 +1,9 @@
+README.md
+setup.py
+clive_log/__init__.py
+clive_log/context.py
+clive_log/fields.py
+clive_log.egg-info/PKG-INFO
+clive_log.egg-info/SOURCES.txt
+clive_log.egg-info/dependency_links.txt
+clive_log.egg-info/top_level.txt
