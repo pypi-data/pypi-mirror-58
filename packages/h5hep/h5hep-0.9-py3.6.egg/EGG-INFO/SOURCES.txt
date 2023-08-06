@@ -1,0 +1,10 @@
+README.md
+setup.py
+h5hep/__init__.py
+h5hep/read.py
+h5hep/write.py
+h5hep.egg-info/PKG-INFO
+h5hep.egg-info/SOURCES.txt
+h5hep.egg-info/dependency_links.txt
+h5hep.egg-info/requires.txt
+h5hep.egg-info/top_level.txt
