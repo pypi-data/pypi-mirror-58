@@ -1,0 +1,17 @@
+README.md
+setup.py
+mediawikiTool/__init__.py
+mediawikiTool/console.py
+mediawikiTool.egg-info/PKG-INFO
+mediawikiTool.egg-info/SOURCES.txt
+mediawikiTool.egg-info/dependency_links.txt
+mediawikiTool.egg-info/entry_points.txt
+mediawikiTool.egg-info/not-zip-safe
+mediawikiTool.egg-info/requires.txt
+mediawikiTool.egg-info/top_level.txt
+mediawikiTool/conf/__init__.py
+mediawikiTool/conf/config.xml
+mediawikiTool/i18n/__init__.py
+mediawikiTool/i18n/message_zh_cn.json
+mediawikiTool/lib/__init__.py
+mediawikiTool/lib/mediawiki_cmd.py

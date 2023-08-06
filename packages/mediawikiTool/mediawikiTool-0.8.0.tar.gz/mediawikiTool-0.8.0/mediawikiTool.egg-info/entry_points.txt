@@ -1,0 +1,3 @@
+[console_scripts]
+wikitool = mediawikiTool.console:main
+

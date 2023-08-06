@@ -1,0 +1,4 @@
+HiveNetLib>=0.7.5
+mwclient
+xlrd
+prompt-toolkit>=2.0.0
