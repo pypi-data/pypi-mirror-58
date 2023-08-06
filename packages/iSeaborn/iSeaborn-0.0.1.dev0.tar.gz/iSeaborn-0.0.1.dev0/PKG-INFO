@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: iSeaborn
+Version: 0.0.1.dev0
+Summary: UNKNOWN
+Home-page: https://iseaborn.readthedocs.io/en/latest/
+Author: Golam Mostaeen
+Author-email: golammostaeen@gmail.com
+Maintainer: Golam Mostaeen
+Maintainer-email: golammostaeen@gmail.com
+License: BSD (3-clause)
+Download-URL: https://github.com/pseudoPixels/iSeaborn
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
