@@ -1,0 +1,14 @@
+README.md
+setup.py
+eve_s3storage/__init__.py
+eve_s3storage/s3_file.py
+eve_s3storage/s3_storage.py
+eve_s3storage.egg-info/PKG-INFO
+eve_s3storage.egg-info/SOURCES.txt
+eve_s3storage.egg-info/dependency_links.txt
+eve_s3storage.egg-info/not-zip-safe
+eve_s3storage.egg-info/requires.txt
+eve_s3storage.egg-info/top_level.txt
+eve_s3storage/tests/__init__.py
+eve_s3storage/tests/test_s3_storage.py
+eve_s3storage/tests/utils.py
