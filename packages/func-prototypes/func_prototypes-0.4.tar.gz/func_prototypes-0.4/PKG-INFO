@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: func_prototypes
+Version: 0.4
+Summary: library which helps people constrain python functions by type.
+Home-page: https://github.com/andrewguy9/func_prototypes
+Author: andrew thomson
+Author-email: athomsonguy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 2.7
