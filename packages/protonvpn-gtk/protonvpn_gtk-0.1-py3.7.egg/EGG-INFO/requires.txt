@@ -1,0 +1,2 @@
+PyGObject>=3.34.0
+protonvpn-cli>=2.2.0

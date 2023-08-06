@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: protonvpn-gtk
+Version: 0.1
+Summary: Unofficial GTK 3 client for ProtonVPN.
+Home-page: https://github.com/karmadonov/protonvpn-gtk
+Author: Kirill Karmadonov
+Author-email: kirill@live.com
+License: GPLv3
+Description: # ProtonVPN-GTK
+        Unofficial GTK 3 client for ProtonVPN
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
