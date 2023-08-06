@@ -1,0 +1,35 @@
+{% extends "emailhub/base.html" %}
+{% load emailhub_tags %}
+
+{% block content %}
+<div class="content">
+  <div class="row">
+    <div class="col s4 m4 l4 center">
+      {% with previous=object|get_previous_for:request.user %}
+      {% if previous %}
+      <a href="{{ previous.get_absolute_url }}" data-turbolinks="false" class="green-text left" title="{{ previous }}">Previous</a>
+      {% endif %}
+      {% endwith %}
+    </div>
+    <div class="col s4 m4 l4 center">
+      <a href="{% url 'emailhub:emailmessage_list' %}" data-turbolinks="false" class="green-text" title="Inbox">Inbox</a>
+    </div>
+    <div class="col s4 m4 l4 center">
+      {% with next=object|get_next_for:request.user %}
+      {% if next %}
+      <a href="{{ next.get_absolute_url }}" data-turbolinks="false" class="green-text right" title="{{ next }}">Next</a>
+      {% endif %}
+      {% endwith %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <h1>{{ object.subject }}</h1>
+      <p>From: {{ object.email_from|urlize }}</p>
+      <p>To: {{ object.to|urlize}}</p>
+      <p>Date: {{ object.date_created|date }}</p>
+      <pre>{{ object.body_text|urlize }}</pre>
+    </div>
+  </div>
+</div>
+{% endblock %}

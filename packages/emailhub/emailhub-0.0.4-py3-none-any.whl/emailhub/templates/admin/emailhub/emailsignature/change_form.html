@@ -1,0 +1,45 @@
+{% extends "admin/change_form.html" %}
+
+{% block extrahead %}{{ block.super }}
+{% include "admin/codemirror.inc.html" %}
+<script type="text/javascript">
+(function($){
+  var opts = {
+    lineNumbers: true,
+    jumpToLine: true,
+    tabSize: 2,
+    mode: 'django'
+  };
+  $(function(){
+    // fix for overlapping labels
+    $('label[for="id_text_content"], label[for="id_html_content"]').css('display', 'none');
+    // Text (for variables highlighting)
+    CodeMirror.fromTextArea($('#id_text_content').get(0), opts);
+    // HTML
+    CodeMirror.fromTextArea($('#id_html_content').get(0), opts);
+  });
+})(jQuery || django.jQuery);
+</script>
+{% include "admin/emailhub/styles.inc.html" %}
+{% endblock %}
+
+{% block  object-tools %}
+{{ block.super }}
+{% if original.translations.exists %}
+<div>
+  <fieldset id="emailhub-translations" class="module aligned">
+    <h2>Translations</h2>
+    <ol>
+      <li>
+        <a href="#" class="disabled">{{ original.get_language_display }}</a>
+      </li>
+      {% for trans in original.translations %}
+      <li>
+        <a href="{% url "admin:emailhub_emailsignature_change" trans.pk %}">{{ trans.get_language_display }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </fieldset>
+</div>
+{% endif %}
+{% endblock %}
