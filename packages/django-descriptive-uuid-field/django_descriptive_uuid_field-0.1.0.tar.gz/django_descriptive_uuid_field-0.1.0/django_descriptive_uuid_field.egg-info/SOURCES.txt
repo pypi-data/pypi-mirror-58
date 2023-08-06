@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+descriptive_uuid_field/__init__.py
+descriptive_uuid_field/fields.py
+django_descriptive_uuid_field.egg-info/PKG-INFO
+django_descriptive_uuid_field.egg-info/SOURCES.txt
+django_descriptive_uuid_field.egg-info/dependency_links.txt
+django_descriptive_uuid_field.egg-info/top_level.txt
