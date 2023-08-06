@@ -1,0 +1,3 @@
+[console_scripts]
+nbs = nbs.main:main
+
