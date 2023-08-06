@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: atriumsports-sdk
+Version: 0.0.5
+Summary: Python module for integration to Atrium Sports APIs
+Home-page: https://github.com/Keemotion/datacore_sdk_python
+Author: Atrium Sports
+Author-email: python_dev@atriumsports.com
+License: UNKNOWN
+Description: # Atrium Sports API SDK
+        
+        Python module to make use of the Atrium Sports Datacore API
+        
+        
+        ```python
+        import atriumsports
+        
+        atrium = AtriumSports({
+            'sport': 'basketball',
+            'credential_id': 'XXXXX',
+            'credential_secret': 'YYYY',
+            'organizations': ['b1e34'],
+        })
+        datacore = atrium.client('datacore')
+        response = datacore.get('/o/b1a23/competitions', limit=500)
+        for data in response.data():
+            print(data)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
