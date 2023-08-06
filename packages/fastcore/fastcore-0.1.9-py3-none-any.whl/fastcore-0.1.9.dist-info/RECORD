@@ -1,0 +1,15 @@
+fastcore/__init__.py,sha256=XIaxbMbyiP-L3kguR1GhxirFblTXiHR1lMfDVITvHUI,22
+fastcore/_nbdev.py,sha256=JpAFxfalXj-oX0t02e67-fhHCg0rWtcTAMuDqc-J_3c,6007
+fastcore/all.py,sha256=A31SuKUyzaI-9Au9bFxUkxhZVZI9ygRyQknhnthe4f8,139
+fastcore/dispatch.py,sha256=0m06AKj0x38AjK4MmQPhEtC0EDTibCAt2Mkzij4k-Ws,5560
+fastcore/foundation.py,sha256=5BGFsptA6O1ErygeJFJLdUTvZ5wIRCoY-3I8Eoh5RE4,17736
+fastcore/imports.py,sha256=GTmMxHmoMBWwoRAa118kjvE-5DeMw50kJyIlALlmWvk,2486
+fastcore/test.py,sha256=-CdBsZxiJInGOfqoCfmHgT_sKUYysXlUJlBAicWxMyk,2791
+fastcore/transform.py,sha256=YJt1iMMJ4h7jdB7xdvhTL8f1bg23Dy9JqH-VzaVtqRQ,7664
+fastcore/utils.py,sha256=pOFDlnDwTZYwmrV1x-8ugz0r2cteKb3LG1LTwzv8nmE,17449
+fastcore-0.1.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastcore-0.1.9.dist-info/METADATA,sha256=BecLQkHSxtmfXRwxJSDUfCAHlZXyVHk3Vev9LObQD-Q,2479
+fastcore-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fastcore-0.1.9.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fastcore-0.1.9.dist-info/top_level.txt,sha256=_fKfpMk13ZtJcFCe8Z30RaNZ1B55A6njRs9ZFfgDAfI,9
+fastcore-0.1.9.dist-info/RECORD,,
