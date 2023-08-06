@@ -1,0 +1,10 @@
+checklist/__init__.py,sha256=nxdDLv4IeuZJfDVAIz4rAV2iw-kuCGKvYRJCTzdMApk,81
+checklist/admin.py,sha256=N34aY9FVgVJ014Ovrj_R_ebsOv9mzSrlmwO2ZEbtL64,13348
+checklist/checklist.py,sha256=e8s6BGxwDdIswpruaYpwnROGqcbl700FZeBW1335tlQ,22209
+checklist/utils.py,sha256=vVcmP9EYkVK_BcgCIlPn0Ow_LW1F1dF25prnlB_l6GE,1845
+oucass_checklist-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+oucass_checklist-0.1.0.dist-info/MANIFEST.py,sha256=0wPzXvB2Vzib0geRIZG0FmyaRDv2paEnTdrSsJBPSK4,24
+oucass_checklist-0.1.0.dist-info/METADATA,sha256=QLsnzex-nrlIrBfP-L-2PP6DVFkaF3b3L-dzbzer41g,2096
+oucass_checklist-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+oucass_checklist-0.1.0.dist-info/top_level.txt,sha256=ttL_jG5IT4NsolPsOuNvVx_4MGgAgMvsOYZZUOpko0g,10
+oucass_checklist-0.1.0.dist-info/RECORD,,
