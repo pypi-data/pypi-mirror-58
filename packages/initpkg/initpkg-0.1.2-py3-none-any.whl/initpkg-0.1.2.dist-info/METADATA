@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: initpkg
+Version: 0.1.2
+Summary: python package creator
+Home-page: http://github.com/wlongxiang/initpkg
+Author: Benjamin Wang
+Author-email: wlongxiang1119@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Introduction
+
+*initpkg* is a python package that creates a python package structure for you.
+
+# Installation
+
+```
+pip install initpkg
+```
+
+# Getting started
+
+In command line, run:
+```
+initpkg <your-package-name>
+```
+
+
+
