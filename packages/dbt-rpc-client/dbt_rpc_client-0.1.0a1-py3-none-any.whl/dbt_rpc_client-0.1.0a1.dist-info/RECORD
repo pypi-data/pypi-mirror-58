@@ -1,0 +1,8 @@
+dbt_rpc_client/__init__.py,sha256=SJHfYzn0qY3dWX3hhG_PGW6NAznpW3Kh1x4GLWdVkAc,55
+dbt_rpc_client/client.py,sha256=59FOrKnN1E7SsBsvBHYg44nohYsqwhk7znmv9GY7RjQ,7293
+dbt_rpc_client/version.py,sha256=oklfaV_M5bvHU9tWlv1O9c7sfWaYAf07dMBUHZ3wLHs,24
+dbt_rpc_client-0.1.0a1.dist-info/LICENSE,sha256=4wO_DSP6uSkoieMARQ3X5ko-txgo-VSh1nrn6Wyw32M,1081
+dbt_rpc_client-0.1.0a1.dist-info/METADATA,sha256=URXkHGJ4a0NCvi61LsIg0tIZrr-HRU8hiY1rdrsnQ8g,3720
+dbt_rpc_client-0.1.0a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dbt_rpc_client-0.1.0a1.dist-info/top_level.txt,sha256=72ifPCLS8h-BluDA1m0qWFhjy30nnd4LVnDDg__T6C4,15
+dbt_rpc_client-0.1.0a1.dist-info/RECORD,,
