@@ -1,0 +1,12 @@
+README.md
+setup.py
+item_based_recommender/__init__.py
+item_based_recommender/_nbdev.py
+item_based_recommender/core.py
+item_based_recommender/model.py
+item_based_recommender.egg-info/PKG-INFO
+item_based_recommender.egg-info/SOURCES.txt
+item_based_recommender.egg-info/dependency_links.txt
+item_based_recommender.egg-info/entry_points.txt
+item_based_recommender.egg-info/not-zip-safe
+item_based_recommender.egg-info/top_level.txt
