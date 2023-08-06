@@ -1,0 +1,4 @@
+nicfit.py
+Pillow
+pylast
+requests
