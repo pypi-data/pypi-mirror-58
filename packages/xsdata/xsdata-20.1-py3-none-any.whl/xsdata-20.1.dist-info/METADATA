@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: xsdata
+Version: 20.1
+Summary: Python XML Binding
+Home-page: https://github.com/tefra/xsdata
+Author: Christodoulos Tsoulloftas
+Author-email: "chris@komposta.net",
+License: MIT
+Project-URL: Source, https://github.com/tefra/xsdata
+Project-URL: Documentation, https://xsdata.readthedocs.io/
+Keywords: xml,binding,xsd,schema,cli,dataclass
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: lxml
+Requires-Dist: click
+Requires-Dist: click-log
+Requires-Dist: toposort
+Requires-Dist: docformatter
+Requires-Dist: jinja2
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: codecov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-material ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinxcontrib-apidoc ; extra == 'docs'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+Requires-Dist: sphinxcontrib-osexample ; extra == 'docs'
+
+.. image:: https://github.com/tefra/xsdata/raw/master/docs/_static/logo.png
+    :target: https://xsdata.readthedocs.io/
+
+xsData naive XML Bindings for python
+
+.. image:: https://travis-ci.org/tefra/xsdata.svg?branch=master
+        :target: https://travis-ci.org/tefra/xsdata
+
+.. image:: https://readthedocs.org/projects/pytuber/badge
+    :target: https://pytuber.readthedocs.io/en/latest
+
+.. image:: https://codecov.io/gh/tefra/xsdata/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/tefra/xsdata
+
+.. image:: https://img.shields.io/github/languages/top/tefra/pytuber.svg
+    :target: https://pytuber.readthedocs.io/
+
+.. image:: https://api.codacy.com/project/badge/Grade/1248c5bc72684854899a043986d4fa06
+   :target: https://www.codacy.com/manual/tefra/xsdata?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tefra/xsdata&amp;utm_campaign=Badge_Grade
+
+.. image:: https://img.shields.io/pypi/pyversions/xsdata.svg
+    :target: https://pypi.org/pypi/xsdata/
+
+.. image:: https://img.shields.io/pypi/v/xsdata.svg
+    :target: https://pypi.org/pypi/xsdata/
+
+-------
+
+Features
+--------
+
+- Generate code for XML Schema 1.0 definitions
+- Generate namespaces all qualified elements and attributes
+- Generate Enum and inner classes
+- Generate restrictions and rules (validations coming)
+- Reduce schemas overhead by flattening common types
+- Preserve embedded documentation and references
+- Pluggable code writer to support multiple formats
+- Format: Python Data Classes
+
+  - PEP8 naming conventions and code output
+  - Full support for type hints even with forward references
+  - XML Parser & Serializer based on lxml with type casting
+  - JSON Parser & Serializer with type casting
+  - Serializer/Parser for xml and json
+
+
+.. image:: https://github.com/tefra/xsdata/raw/master/docs/_static/demo.gif
+
+Check the `samples repo <https://github.com/tefra/xsdata-samples>`_ for more ✨✨✨
+
+
