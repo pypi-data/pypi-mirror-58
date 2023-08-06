@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pt6312
+Version: 0.1.1
+Summary: Pure Python driver for PT6312-based VFD displays.
+Home-page: https://github.com/JokerQyou/pt6312
+Author: Joker Qyou
+License: UNKNOWN
+Description: # pt6312
+        适用于 PT6312 VFD 的 Python 驱动
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown
