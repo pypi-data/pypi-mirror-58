@@ -1,0 +1,11 @@
+README.md
+setup.py
+KerasGA/Crossover.py
+KerasGA/GeneticAlgorithm.py
+KerasGA/Mutation.py
+KerasGA/Selection.py
+KerasGA/__init__.py
+KerasGA.egg-info/PKG-INFO
+KerasGA.egg-info/SOURCES.txt
+KerasGA.egg-info/dependency_links.txt
+KerasGA.egg-info/top_level.txt
