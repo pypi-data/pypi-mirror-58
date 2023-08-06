@@ -1,0 +1,8 @@
+README.md
+setup.py
+spineapi/__init__.py
+spineapi.egg-info/PKG-INFO
+spineapi.egg-info/SOURCES.txt
+spineapi.egg-info/dependency_links.txt
+spineapi.egg-info/requires.txt
+spineapi.egg-info/top_level.txt
