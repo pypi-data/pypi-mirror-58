@@ -1,0 +1,3 @@
+[console_scripts]
+getserv = getserv.__main__:main
+
