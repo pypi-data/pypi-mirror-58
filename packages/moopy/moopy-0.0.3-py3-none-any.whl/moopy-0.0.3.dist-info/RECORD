@@ -1,0 +1,10 @@
+moopy/__init__.py,sha256=jWQ5hIHHphVXopM-uO5KPfR5nVajjOYw8MutwGCnUns,995
+moopy/core.py,sha256=uILHwef1dAwQnDRMLGhArcbH3NhKi61kzKVmdReazv0,33727
+moopy/moopy.py,sha256=Wl8A3cNM22vyg2r2fxzOUlTYyCn9zO4fCcyViBpCkqE,27
+moopy/show_results.py,sha256=5exkHBfuqBFtEhd-Q9f2ETsAO5bKwy6z8BUiQdYapKM,17096
+moopy/test_cases.py,sha256=Lv6NVPCMH87Ztn852qItyd_tjv9iSh0SSj0J6x65lNE,48788
+moopy-0.0.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+moopy-0.0.3.dist-info/METADATA,sha256=iAnF1dQBsfocOJUu0xhHIXhuo1pnHYt-sBQI6RQCIUM,814
+moopy-0.0.3.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+moopy-0.0.3.dist-info/top_level.txt,sha256=FExYItVvoEMC700j31Pj7xCLp5rKrN9_2lCckddIsW0,6
+moopy-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: moopy
+Version: 0.0.3
+Summary: A package for Multi-Objective Optimization tools
+Home-page: https://github.com/moo4all/MooPy.git
+Author: Derk Kappelle
+Author-email: 20672345+dkappelle@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+# MooPy
+Multi-Objective Optimization tools
+
+### What is MooPy?
+MooPy is a framework for Multi-Objective Optimization (MOO) 
+tools in Python. It differs from existing optimization 
+libraries, including PyGMO, Inspyred, DEAP, and Platypus, 
+by focussing on non-nature-based optimization techniques.
+
+
+
+### License
+
+MooPy is released under the GNU General Public License v3.0.
+
+
