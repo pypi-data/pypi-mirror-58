@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+flask_sspi.py
+setup.py
+Flask_SSPI.egg-info/PKG-INFO
+Flask_SSPI.egg-info/SOURCES.txt
+Flask_SSPI.egg-info/dependency_links.txt
+Flask_SSPI.egg-info/not-zip-safe
+Flask_SSPI.egg-info/requires.txt
+Flask_SSPI.egg-info/top_level.txt
