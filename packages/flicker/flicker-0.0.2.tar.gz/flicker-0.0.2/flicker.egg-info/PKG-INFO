@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: flicker
+Version: 0.0.2
+Summary: Provides FlickerDataFrame, a wrapper over Pyspark DataFrame to provide a pandas-like API
+Home-page: https://github.com/ankur-gupta/flicker
+Author: Ankur Gupta
+Author-email: ankur@perfectlyrandom.org
+License: UNKNOWN
+Description: # Flicker
+        
+        This python package provides a `FlickerDataFrame` object. `FlickerDataFrame` 
+        is a wrapper over `pyspark.sql.DataFrame`. The aim of `FlickerDataFrame` is to 
+        provide a more Pandas-like dataframe API.
+        
+Keywords: pyspark,pandas
+Platform: UNKNOWN
