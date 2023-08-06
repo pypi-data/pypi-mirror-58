@@ -1,0 +1,8 @@
+README.md
+setup.py
+longeni.egg-info/PKG-INFO
+longeni.egg-info/SOURCES.txt
+longeni.egg-info/dependency_links.txt
+longeni.egg-info/top_level.txt
+robots/__init__.py
+robots/firefox_robot.py
