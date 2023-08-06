@@ -1,0 +1,17 @@
+numpy
+missingno
+pandas
+seaborn
+matplotlib
+scikit-learn
+scipy
+IPython
+ipywidgets
+pprint
+tzlocal
+pyperclip
+pandas_profiling
+wordcloud
+selenium
+fake_useragent
+lxml
