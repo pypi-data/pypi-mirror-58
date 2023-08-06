@@ -1,0 +1,7 @@
+README.md
+setup.py
+hime/__init__.py
+hime.egg-info/PKG-INFO
+hime.egg-info/SOURCES.txt
+hime.egg-info/dependency_links.txt
+hime.egg-info/top_level.txt
