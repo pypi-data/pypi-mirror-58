@@ -1,0 +1,4 @@
+ck
+click>=7.0
+requests
+virtualenv
