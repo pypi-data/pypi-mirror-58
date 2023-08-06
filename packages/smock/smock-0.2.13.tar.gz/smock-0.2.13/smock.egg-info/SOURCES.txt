@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+smock/__init__.py
+smock.egg-info/PKG-INFO
+smock.egg-info/SOURCES.txt
+smock.egg-info/dependency_links.txt
+smock.egg-info/requires.txt
+smock.egg-info/top_level.txt
