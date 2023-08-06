@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: comicdl
+Version: 0.1.1
+Summary: A cli comic downloader.
+Home-page: http://github.com/oluwafenyi/comic-dl/
+Author: oluwafenyi
+Author-email: o.enyioma@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: comics comic download cli
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >3.5
