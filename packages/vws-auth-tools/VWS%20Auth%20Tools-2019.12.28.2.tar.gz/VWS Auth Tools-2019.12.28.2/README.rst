@@ -1,0 +1,67 @@
+|Build Status| |codecov| |Updates| |PyPI| |Documentation Status|
+
+VWS Auth Tools
+==============
+
+Authentication and authorization tools for interacting with the Vuforia Web Services (VWS) API.
+
+Installation
+------------
+
+.. code:: sh
+
+   pip install vws-auth-tools
+
+This is tested on Python 3.8+.
+
+Usage
+-----
+
+.. code:: python
+
+   import requests
+   from vws_auth_tools import authorization_header, rfc_1123_date
+
+   target_id = '...'
+   request_path = f'/duplicates/{target_id}'
+   content = b''
+   method = 'GET'
+   date = rfc_1123_date()
+   authorization_header = authorization_header(
+       access_key='my_access_key',
+       secret_key='my_secret_key',
+       method=method,
+       content=content,
+       content_type='',
+       date=date,
+       request_path=request_path,
+   )
+
+   headers = {'Authorization': authorization_string, 'Date': date}
+
+   response = requests.request(
+        method=method,
+        url=urljoin(base='https://vws.vuforia.com', url=request_path),
+        headers=headers,
+        data=content,
+    )
+
+    assert response.status_code == 200
+
+
+Full Documentation
+------------------
+
+See the `full documentation <https://vws-auth-tools.readthedocs.io/en/latest>`__.
+
+.. |Build Status| image:: https://travis-ci.com/adamtheturtle/vws-auth-tools.svg?branch=master
+   :target: https://travis-ci.com/adamtheturtle/vws-auth-tools
+.. |codecov| image:: https://codecov.io/gh/adamtheturtle/vws-auth-tools/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/adamtheturtle/vws-auth-tools
+.. |Updates| image:: https://pyup.io/repos/github/adamtheturtle/vws-auth-tools/shield.svg
+   :target: https://pyup.io/repos/github/adamtheturtle/vws-auth-tools/
+.. |Documentation Status| image:: https://readthedocs.org/projects/vws-auth-tools/badge/?version=latest
+   :target: https://vws-auth-tools.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+.. |PyPI| image:: https://badge.fury.io/py/VWS-Auth-Tools.svg
+   :target: https://badge.fury.io/py/VWS-Auth-Tools
