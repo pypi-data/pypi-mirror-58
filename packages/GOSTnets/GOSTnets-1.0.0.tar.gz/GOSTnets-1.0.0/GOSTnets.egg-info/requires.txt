@@ -1,0 +1,8 @@
+geopandas>=0.4.0
+networkx
+numpy
+osmnx
+pandas>=0.23.5
+pyproj
+scipy
+shapely
