@@ -1,0 +1,3 @@
+[console_scripts]
+xmindtotestlink = XmindToTestlink.main:main
+
