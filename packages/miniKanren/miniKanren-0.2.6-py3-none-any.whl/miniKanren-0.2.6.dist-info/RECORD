@@ -1,0 +1,15 @@
+kanren/__init__.py,sha256=HXR6wHC6rA6sbvXtI-CmTa1gyVxXyyoFXutUPkDwojE,507
+kanren/_version.py,sha256=qT81oxDAuO2P3SK1rqv7jEYaFYkEOT-_1wF1-jyvBm0,497
+kanren/arith.py,sha256=thi02tXcWpcDMiNdLL1wQbiqpODj9l6YuqxI0cX1l1c,1826
+kanren/assoccomm.py,sha256=sJbKzLUFtzcIgH90S6cFtUiYlg14-JHK11yyOfR0gbM,7902
+kanren/core.py,sha256=46QtiQrc5oNc136ow4hW1ky9RkEsEsMVs5_80WZQoxc,7496
+kanren/dispatch.py,sha256=160yMEIIG_j2n1ky2RFopemV6CMpWzRFoH0eLIGO-r0,139
+kanren/facts.py,sha256=vARbl8pfKmeI3WcdhCVveoG0FRzaj-Ql4VSDjogubXQ,2702
+kanren/goals.py,sha256=trOgIhCgcqest5S0mI9iXczmmCYSUYn5LPJJuoHsQ1s,5703
+kanren/term.py,sha256=ZHEkqAgXlY7blRTz0Q51w40PM2nFT34zjZe49zNjGuk,839
+kanren/util.py,sha256=hwSWBG3Hc4X7z_bQjBnInq7t3UsOt8fk9_OBUyLI858,2938
+miniKanren-0.2.6.dist-info/LICENSE.txt,sha256=15tFRFphG0ggz23rcUuhybvdAHCLyJMGV1bfZxovcdg,1531
+miniKanren-0.2.6.dist-info/METADATA,sha256=EKg3HOS3c6eFZ-clJl5g89YNPGQRF15z7hajsS9qgpc,6324
+miniKanren-0.2.6.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+miniKanren-0.2.6.dist-info/top_level.txt,sha256=1WI3tMuxZdlK6u5CJAwjG-CQ5Oxq_I0se-JgdYEB70g,7
+miniKanren-0.2.6.dist-info/RECORD,,
