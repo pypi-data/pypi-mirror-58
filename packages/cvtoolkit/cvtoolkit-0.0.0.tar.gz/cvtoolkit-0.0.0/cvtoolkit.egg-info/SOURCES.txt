@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+cvtoolkit/__init__.py
+cvtoolkit.egg-info/PKG-INFO
+cvtoolkit.egg-info/SOURCES.txt
+cvtoolkit.egg-info/dependency_links.txt
+cvtoolkit.egg-info/top_level.txt
