@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: GOSTnets
+Version: 1.0.0
+Summary: Networkx wrapper to simplify network analysis using geospatial data
+Home-page: https://github.com/worldbank/GOSTnets
+Author: Benjamin P. Stewart
+Author-email: ben.gis.stewart@gmail.com
+License: PSF
+Project-URL: Bug Tracker, https://github.com/worldbank/GOSTnets/issues
+Project-URL: Documentation, https://github.com/worldbank/GOSTnets
+Project-URL: Source Code, https://github.com/worldbank/GOSTnets
+Keywords: networkx networks OSM
+Platform: UNKNOWN
+Requires-Dist: geopandas (>=0.4.0)
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: osmnx
+Requires-Dist: pandas (>=0.23.5)
+Requires-Dist: pyproj
+Requires-Dist: scipy
+Requires-Dist: shapely
+
+UNKNOWN
+
+
