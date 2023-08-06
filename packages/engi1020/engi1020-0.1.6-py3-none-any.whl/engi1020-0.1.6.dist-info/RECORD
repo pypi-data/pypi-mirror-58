@@ -1,0 +1,12 @@
+engi1020/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+engi1020/arduino.py,sha256=6wSSWAXrmVK5Kbz9JP1RnB0vTOZCQZ6lKBhLMJwjGHU,13
+engi1020/plotting.py,sha256=5UmyTFDNk9ALh2Y3YdrDq_vYLNbhRng2XzOaAMPx9Os,32
+engi1020/arduino/__init__.py,sha256=qhS0YWGFj2NXvU_MS6hcl4bMGKHs_-_AT91rJxY-uwo,1504
+engi1020/arduino/cli.py,sha256=uDRDXyWUI0_MTreWifFFB9i3DbS2_PVJR9Q24BXNGMs,1489
+engi1020/arduino/lcd.py,sha256=NynAZr78wGfYyXEOUfupxONpugaOEbVCkPU8r53SR8I,1618
+engi1020/arduino/rgb_lcd.py,sha256=ZYbwbPCASCHKqrKW6eHuLvVWnHVmIysyPvsjWKGott4,630
+engi1020-0.1.6.dist-info/METADATA,sha256=uSm6g8mpGFlQmBybsbulwUj1aY3pkpnUPjNSS4dYNsI,1023
+engi1020-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+engi1020-0.1.6.dist-info/entry_points.txt,sha256=yjMr9MpjrcTBRIkuImJAnJR2W2vLdSYEpKnUzLr4wHw,72
+engi1020-0.1.6.dist-info/top_level.txt,sha256=UVN__8X1rfKdkGIjBxVslVe_6Wjbo2cw3xnoWIi8bEc,9
+engi1020-0.1.6.dist-info/RECORD,,
