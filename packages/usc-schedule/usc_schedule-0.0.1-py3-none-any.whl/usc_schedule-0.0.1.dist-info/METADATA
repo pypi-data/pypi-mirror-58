@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: usc-schedule
+Version: 0.0.1
+Summary: A USC Class Schedule API wrapper
+Home-page: https://github.com/TrickRoom/USC-schedule
+Author: Swapnil Patel
+Author-email: swapnil@usc.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: json
+
+# USC-schedule
+USC Schedule of Classes API wrapper
+
+
