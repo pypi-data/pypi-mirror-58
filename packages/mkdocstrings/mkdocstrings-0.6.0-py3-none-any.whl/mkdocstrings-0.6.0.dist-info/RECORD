@@ -1,0 +1,13 @@
+README.md,sha256=Tjk8VpxeMcwpCU9RPpIggazkXz0XQ5ndlngR_RABV4Y,4862
+mkdocstrings/__init__.py,sha256=t6IrugL1D58miGOeqhBb4-iKHtGT4zeCNRvVseYUMTw,363
+mkdocstrings/docstrings.py,sha256=VM_BL-KRu4cdCavfBrvE4vjJ_MaDCkM7nOpYeBptHv8,7681
+mkdocstrings/documenter.py,sha256=I0KCE4mRdMgXlE8010GNXo6_vfbjDK0rhSWGGUHZGPY,20842
+mkdocstrings/plugin.py,sha256=rzYZdwfDYA-LYehGBwkTer8ZXyytGnCF_ZUDMn3peDk,4469
+mkdocstrings/renderer.py,sha256=YVTDJbE06StHgo2d-cw_GuZiQ6_5NPShHc5PObhNxuU,7115
+mkdocstrings/utils.py,sha256=oh50Bl6Ihj3341XlSiCClyt4YZhpaOMevxAKcKPrqUk,398
+pyproject.toml,sha256=VrPO3cK2pfIoZAhpVEd3vO4aaWgkGUNMphAy1HlC-Ms,1762
+mkdocstrings-0.6.0.dist-info/entry_points.txt,sha256=D0c-fMWL7lyomCmv4uhero_LHu-CsPfGOy0okqsi_To,124
+mkdocstrings-0.6.0.dist-info/LICENSE,sha256=CWPhZO4wCQgGXLc5hPRozRbGdwSWXL0exgU76L4yUvI,754
+mkdocstrings-0.6.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mkdocstrings-0.6.0.dist-info/METADATA,sha256=GwTJSCS9wyO58hIbkgqzugbM8bPXLY9VdU3d6KEUwN4,5472
+mkdocstrings-0.6.0.dist-info/RECORD,,
