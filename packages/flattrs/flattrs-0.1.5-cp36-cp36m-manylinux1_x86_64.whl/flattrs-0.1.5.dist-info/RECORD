@@ -1,0 +1,16 @@
+flattrs-0.1.5.dist-info/top_level.txt,sha256=x109NdMxXwQ2UiFi9PVk1jTNi66_Syp293dZtgBapnE,7
+flattrs-0.1.5.dist-info/WHEEL,sha256=AKoo51LvHJJJz3_DqlQwz4MB2e4xQub2c35_Bx40pVs,109
+flattrs-0.1.5.dist-info/LICENSE,sha256=9fudHt43qIykf0IMSZ3KD0oFvJk-Esd9I1IKrSkcAb8,1074
+flattrs-0.1.5.dist-info/RECORD,,
+flattrs-0.1.5.dist-info/METADATA,sha256=EKBH-IovosgupePcQ3YBDfGOdCUyE-qh6zjVwkzLVCM,355
+flattr/_fb_attrs.py,sha256=6C4AR6pNW-xHQyDKjoNj0FtROUJLaUz2r7qY1gCE1Os,27453
+flattr/__init__.py,sha256=AKyA30kPK1_4ictWzbr2WkwqkUbkCun46zQk-SFvct8,133
+flattr/_compat.py,sha256=9pOcG8CHOJeIbk1T6RkkWXdCn4zskEySPzQ39N__D_4,86
+flattr/cflattr/number_types.pxd,sha256=6qv2uIGx4TPfEYxZEioJg0eyaI6o_mQN_o-wxRrTXFo,351
+flattr/cflattr/number_types.cpython-36m-x86_64-linux-gnu.so,sha256=G80pUQ5HS3TuWIvlAjWsj7lxBG32eMDcCsvWdYgPzTs,363502
+flattr/cflattr/builder.cpython-36m-x86_64-linux-gnu.so,sha256=lIwqAgYFrUgwnFgBBZwTBvq5Gkp5xDrQnKPdE8koO3M,593317
+flattr/cflattr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flattr/cflattr/encode.cpython-36m-x86_64-linux-gnu.so,sha256=bWJSB056qsbCkcDLWttbeO8xj1atCiYQDCq3uC4uFaQ,130374
+flattr/cflattr/number_types.pyx,sha256=zov8FPD5VwEvhArj7shKVzGaB9hdVGtK3JHTGo_uRB4,2081
+flattr/cflattr/builder.pyx,sha256=zZSObxoSeJyD83HofMIVAjf0s-yk4eijTODWAkju1Hg,28921
+flattr/cflattr/encode.pyx,sha256=nUYKQIT4cZRDrJV81PJhevzgX6ryWiZ56xjNT63tPpE,1443
