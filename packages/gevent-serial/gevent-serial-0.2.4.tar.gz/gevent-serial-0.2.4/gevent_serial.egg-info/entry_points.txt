@@ -1,0 +1,3 @@
+[console_scripts]
+ser2tcp = gserial.ser2tcp:main [ser2tcp]
+
