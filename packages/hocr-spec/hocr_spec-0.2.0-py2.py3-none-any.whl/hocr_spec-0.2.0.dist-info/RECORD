@@ -1,0 +1,12 @@
+hocr_spec/__init__.py,sha256=GqVZjvNG9JV9UBmIwLtis64JmqIR_j4rcdqH-Cmmv6c,157
+hocr_spec/cli.py,sha256=ThTbPK38C3u-UqbQkRXdRzS1o7O21SAdEwf_WZ1yfMI,2031
+hocr_spec/spec.py,sha256=GxwQenicpkT9FEaH93I68c1yrYwGAiqu8Vyf7_rH36U,28023
+hocr_spec/validate.py,sha256=KhTF22lDG7nBLfa-2JxHPNS9s0mWDuQVvp0StDXYnuE,4461
+hocr_spec-0.2.0.dist-info/AUTHORS,sha256=AZlmk7jNqyImW6KrpIPGmyyBl6EJTjN5TJ4MDEfNz1Q,185
+hocr_spec-0.2.0.dist-info/LICENSE,sha256=wqFulrRC4p1GelG-hQ7-ckB7xEj5u7aF-lWlbe-SuhU,1075
+hocr_spec-0.2.0.dist-info/METADATA,sha256=MV19X0m9AcoFWO-iMZKdwYG6sbvoCe8uDkKB1BAhO9E,4089
+hocr_spec-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+hocr_spec-0.2.0.dist-info/entry_points.txt,sha256=OR3KVc_dFCqNNfKNpO1TgPx0w3WiI-8lGhEyWfyvT0o,50
+hocr_spec-0.2.0.dist-info/pbr.json,sha256=e8ZK1zfKO6B1QKH2xKesuOgktcCk5E6kccySE_8UJKI,47
+hocr_spec-0.2.0.dist-info/top_level.txt,sha256=-5D3G_xT6U_Fhg6yqeKbkBvVuKSPK7q_7sMkwkkWsTA,10
+hocr_spec-0.2.0.dist-info/RECORD,,
