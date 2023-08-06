@@ -1,0 +1,2 @@
+pod-base<2,>=1
+pycrypto>=2.6.1
