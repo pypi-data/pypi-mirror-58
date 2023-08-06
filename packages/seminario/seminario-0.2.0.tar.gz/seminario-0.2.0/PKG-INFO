@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: seminario
+Version: 0.2.0
+Summary: Python package for seminar organization.
+Home-page: https://github.com/simaki/seminario
+Author: Shota Imaki
+Author-email: shota.imaki@icloud.com
+Maintainer: Shota Imaki
+Maintainer-email: shota.imaki@icloud.com
+License: UNKNOWN
+Description: # Seminario
+        
+        [![version](https://img.shields.io/pypi/v/seminario.svg)](https://test.pypi.org/project/fracdiff/)
+        [![Build Status](https://travis-ci.org/simaki/seminario.svg?branch=master)](https://travis-ci.com/simaki/fracdiff)
+        [![LICENSE](https://img.shields.io/github/license/simaki/seminario)](LICENSE)
+        
+        Python package for seminar organization.
+        
+        ## Installation
+        
+        ```sh
+        $ pip install seminario
+        ```
+        
+        ## Usage
+        
+        ```sh
+        $ cd seminar/
+        $ python main.py
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
