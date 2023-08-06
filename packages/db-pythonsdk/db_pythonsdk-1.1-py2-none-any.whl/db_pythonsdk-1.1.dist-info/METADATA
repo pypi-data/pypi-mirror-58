@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: db-pythonsdk
+Version: 1.1
+Summary: Python SDK to access Postgrest endpoints for analysis.
+Home-page: UNKNOWN
+Author: Kaushik Visvanathan
+Author-email: kaushik.visvanathan@shield.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Requires-Dist: requests
+Requires-Dist: requests-jwt
+
+UNKNOWN
+
+

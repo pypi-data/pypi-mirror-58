@@ -1,0 +1,15 @@
+db_pythonsdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_pythonsdk/filter_operators.py,sha256=JZO-IkNWReOXgPbfubz-4sesRcyR2Kt07MYxlS60ucY,1361
+db_pythonsdk/logical_operators.py,sha256=QE7JFObZrnZ5JX-BlbzxLt01WPmDEVIVQNDootTgxYE,1639
+db_pythonsdk/operators.py,sha256=IrBfwCqIuGzBZHmkL2KN-OZb6rMEkmBDcFlFVlhT4-I,2957
+db_pythonsdk/query_i.py,sha256=5XDfVzUAryoml8VPISnac1JAhRH0zqtyH-JJ0XbivvQ,883
+db_pythonsdk/sdk.py,sha256=B7Vn2Ok_e-A7fKukAXXiocoZRbFW33AgqL7BNhY8TU4,5218
+db_pythonsdk/sdk_i.py,sha256=zhK6t_OrlPuZ_XH2U_acd3LU5-ccGa9G7RLjd-zdT34,2442
+db_pythonsdk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_pythonsdk/tests/filter_test.py,sha256=fRb-htBje_wOKIzmcFfPPleyK2Yj-bcrFFDkud1jE2g,1755
+db_pythonsdk/tests/logical_test.py,sha256=ObcXfQAiBkXS0FNf3pY7c5RRIHmRAiUcW9O3rwVZ0Ro,2053
+db_pythonsdk/tests/sdk_test.py,sha256=-hmeOnMUoErqsXsW1d6X65I83Y-cAVTH77z2UrfPyKQ,9122
+db_pythonsdk-1.1.dist-info/METADATA,sha256=vyshuv0wVypwZJTjMcHr2yAuGm0kIcwZPlW_iw7lh4k,473
+db_pythonsdk-1.1.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+db_pythonsdk-1.1.dist-info/top_level.txt,sha256=tUWOz3XR0Vgpc4AbrhDF_MzIP-jzSf2wbbr08VUmXO8,13
+db_pythonsdk-1.1.dist-info/RECORD,,
