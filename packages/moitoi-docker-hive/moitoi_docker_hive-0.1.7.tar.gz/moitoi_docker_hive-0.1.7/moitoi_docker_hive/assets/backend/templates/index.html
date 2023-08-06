@@ -1,0 +1,59 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}MDH example page{% endblock %}
+{% block navbar %}
+{{nav.frontend_top.render()}}
+{% endblock %}
+
+{% block scripts %}
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script src="{{url_for('.static', filename='script.js')}}"></script>
+{{super()}}
+{% endblock %}
+
+{% block content %}
+
+<main role="main" class="container">
+
+  <div class="starter-template">
+      <h1>Hello!</h1>
+    <p class="lead">My name is {{hostname}} and I'm from {{mdh_cluster_id}}</p>
+  </div>
+
+    <div class="container">
+    <hr>
+    <form id="clusterCreateForm" action="#" method="post" class="form" role="form">
+      {{ form.csrf_token() }}
+     <d1>
+      {{ wtf.form_field(form.clusters, class='form-control', placeholder='Number of services') }}
+      {{ wtf.form_field(form.replicas, class='form-control', placeholder='Number of replicas') }}
+     </d1>
+     <p><input type=submit class='btn btn-warning btn-block' data-toggle="modal" data-target="#resultModal">
+    </form>
+    <hr>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Cluster info</h4>
+          </div>
+          <div id="result" class="modal-body">
+              <p>Please wait!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</main>
+
+{% endblock %}
