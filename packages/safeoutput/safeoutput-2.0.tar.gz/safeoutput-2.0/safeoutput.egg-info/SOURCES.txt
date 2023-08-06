@@ -1,0 +1,10 @@
+README.md
+setup.py
+safeoutput/__init__.py
+safeoutput.egg-info/PKG-INFO
+safeoutput.egg-info/SOURCES.txt
+safeoutput.egg-info/dependency_links.txt
+safeoutput.egg-info/entry_points.txt
+safeoutput.egg-info/requires.txt
+safeoutput.egg-info/top_level.txt
+safeoutput.egg-info/zip-safe
