@@ -1,0 +1,8 @@
+setup.py
+lai/__init__.py
+lai/__main__.py
+lai.egg-info/PKG-INFO
+lai.egg-info/SOURCES.txt
+lai.egg-info/dependency_links.txt
+lai.egg-info/requires.txt
+lai.egg-info/top_level.txt
