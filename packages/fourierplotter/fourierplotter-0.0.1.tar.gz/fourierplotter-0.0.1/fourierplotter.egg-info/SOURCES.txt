@@ -1,0 +1,12 @@
+README.md
+setup.py
+fourierplotter/__init__.py
+fourierplotter/__main__.py
+fourierplotter/fourier_solver.py
+fourierplotter/plotter.py
+fourierplotter/svg_to_pts.py
+fourierplotter.egg-info/PKG-INFO
+fourierplotter.egg-info/SOURCES.txt
+fourierplotter.egg-info/dependency_links.txt
+fourierplotter.egg-info/entry_points.txt
+fourierplotter.egg-info/top_level.txt
