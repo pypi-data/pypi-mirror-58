@@ -1,0 +1,17 @@
+drcom/__init__.py,sha256=jha_c8zi6_gOkhohbnm-nSI00V5FKxAD5Zu3QMRdB40,232
+drcom/__main__.py,sha256=1DRKxLKQ6ZedI3s7BPRlUdjC0j_j8fk9zrdXOnS3owQ,519
+drcom/configs/__init__.py,sha256=jha_c8zi6_gOkhohbnm-nSI00V5FKxAD5Zu3QMRdB40,232
+drcom/configs/settings.py,sha256=pb9aocTHnuOMeYHO_3kLafTYEW3JtwzY5r7qKUgrhcI,920
+drcom/gui/__init__.py,sha256=MqsGpkIuKrnllQcTuNGZDjqLnPiafkr5UdbzKwqNFqw,181
+drcom/gui/window.py,sha256=V3P02e_elZqBj1K1wPu0uXbm3zAr3-ygRm3_NicdU5s,15021
+drcom/main/__init__.py,sha256=jha_c8zi6_gOkhohbnm-nSI00V5FKxAD5Zu3QMRdB40,232
+drcom/main/client.py,sha256=7ped3Dh2Lr9v7_FNMS45k-ErWc4-OS4OtKWTzDuDRdM,14151
+drcom/main/excepts.py,sha256=zqD6CB346z_-hdX-d3KcGwZ_Peuld3kJ6Ou2l5J0qUU,892
+drcom/main/logger.py,sha256=4lONIByPCBCO9zn3uDkaz-QdT_AXw6X2l_9kalAthaU,786
+drcom/main/tool.py,sha256=5gg9TOlNZZZK06NifrGlGWfX2nfgFAp4Xc2bCK5jhAw,20618
+drcom/main/utils.py,sha256=4hl_ddhOKJvvgu2z4x4-diiI1GEdNWTM1Y_dSQA3EU4,2472
+MagicDrCOM-1.2.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+MagicDrCOM-1.2.0.dist-info/METADATA,sha256=vhSL5F5r6UZzXcCoZxiWHJCASNisb_a8MhKjwigL1xU,5500
+MagicDrCOM-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+MagicDrCOM-1.2.0.dist-info/top_level.txt,sha256=rHFlQKh0a0PWf0H-NaMGGcI17Waj4-lUG17fPfH4GHo,6
+MagicDrCOM-1.2.0.dist-info/RECORD,,
