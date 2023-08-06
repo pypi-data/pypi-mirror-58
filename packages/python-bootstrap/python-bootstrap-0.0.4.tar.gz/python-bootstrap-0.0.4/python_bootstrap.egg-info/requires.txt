@@ -1,0 +1,6 @@
+requests
+PyLogrus
+shortuuid
+kubernetes
+google
+protobuf
