@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: json_extended
+Version: 0.0.3
+Summary: json module with ``datetime``, ``date`` and ``uuid`` support
+Home-page: https://gitlab.com/point1304/json_extended
+Author: Gyeongsu Yim
+Author-email: point1304@gmail.com
+License: UNKNOWN
+Description: ### Description
+        extended version of default `json` module with `datetime`, `date` and `uuid` support
+        
+        ### Supported Platform
+        * __Python__ : cPython >= 3.6
+        
+        ### Install
+        #### via `pip` (recommended)
+        * __When python3 is the only python distribution installed on the system:__
+        ```shell
+        pip install json_extended
+        ```
+        * __With multiple versions of python distributions:__
+        ```shell
+        python3 -m pip install json_extended
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
