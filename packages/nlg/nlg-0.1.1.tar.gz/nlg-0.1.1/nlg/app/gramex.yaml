@@ -1,0 +1,96 @@
+# Configurable variables:
+# $NLG_AUTH:
+#   Authentication is needed for saving and sharing narratives.
+#   Set this variable to any valid auth configuration to use it
+#   within the NLG app.
+
+import:
+  ui:
+    path: $GRAMEXAPPS/ui/gramex.yaml
+    YAMLURL: $YAMLURL/ui/
+  languagetool:
+    path: $GRAMEXAPPS/languagetool/gramex.yaml
+    YAMLURL: $YAMLURL/languagetool/
+
+url:
+  nlg-home-$*:
+    pattern: /$YAMLURL/
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/index.html
+      transform:
+        "index.html":
+          function: template
+  nlg-data-selector-$*:
+    pattern: /$YAMLURL/initform
+    handler: FunctionHandler
+    kwargs:
+      headers:
+        Cache-Control: no-store
+      xsrf_cookies: false
+      function: nlg.webapp.init_form
+      redirect:
+        query: next
+  tablepreview-$*:
+    pattern: /$YAMLURL/preview/(.*)/(.*)
+    handler: FormHandler
+    kwargs:
+      url: $GRAMEXDATA/nlg/{_0}/{_1}
+      headers:
+        Cache-Control: no-store
+  nlg-static_files-$*:
+    pattern: /$YAMLURL/(.*)
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH
+  nlg-config-handler-$*:
+    pattern: /$YAMLURL/initconf
+    handler: FunctionHandler
+    kwargs:
+      function: nlg.webapp.get_init_config
+      headers:
+        Content-Type: application/json
+  textproc-$*:
+    pattern: /$YAMLURL/textproc
+    handler: FunctionHandler
+    kwargs:
+      function: nlg.webapp.process_text
+      xsrf_cookies: false
+      headers:
+        Content-Type: application/json
+  rendertmpl-$*:
+    pattern: /$YAMLURL/render-template
+    handler: FunctionHandler
+    kwargs:
+      function: nlg.webapp.render_template
+      xsrf_cookies: false
+      headers:
+        Content-Type: application/json
+  nlg_gramopts-$*:
+    pattern: /$YAMLURL/get-gramopts
+    handler: FunctionHandler
+    kwargs:
+      function: nlg.webapp.get_gramopts
+      xsrf_cookies: false
+      headers:
+        Content-Type: application/json
+  save-config-$*:
+    pattern: /$YAMLURL/save-config
+    handler: FunctionHandler
+    kwargs:
+      function: nlg.webapp.save_config
+      auth: $NLG_AUTH
+  edit-narrative-$*:
+    pattern: /$YAMLURL/edit-narrative
+    handler: FunctionHandler
+    kwargs:
+      function: nlg.webapp.edit_narrative
+      auth: $NLG_AUTH
+      redirect:
+        url: /$YAMLURL/
+  render-live-template-$*:
+    pattern: /$YAMLURL/render-live-template
+    handler: FunctionHandler
+    kwargs:
+      auth: $NLG_AUTH
+      function: nlg.webapp.render_live_template
