@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ecnet
+Version: 3.3.0
+Summary: UMass Lowell Energy and Combustion Research Laboratory Neural Network Software
+Home-page: https://github.com/ecrl/ecnet
+Author: Travis Kessler, John Hunter Mack
+Author-email: Travis_Kessler@student.uml.edu, Hunter_Mack@uml.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
