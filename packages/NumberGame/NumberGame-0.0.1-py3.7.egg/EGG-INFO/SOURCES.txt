@@ -1,0 +1,7 @@
+setup.py
+NumberGame.egg-info/PKG-INFO
+NumberGame.egg-info/SOURCES.txt
+NumberGame.egg-info/dependency_links.txt
+NumberGame.egg-info/top_level.txt
+number/__init__.py
+number/game.py
