@@ -1,0 +1,57 @@
+{% extends 'corpstat/base.html' %}
+{% load i18n %}
+{% load humanize %}
+{% block member_data %}
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <table class="table">
+                <tr>
+                    <td class="text-center col-lg-6 col-lg-offset-3">
+                        <img class="ra-avatar" src="https://image.eveonline.com/Alliance/{{alliance_id}}_128.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center"><h4>{{ alliance_name }}</h4></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<div class="row"><h3 class="text-center">Corporation Breakdown</h3>
+    <table class="table table-striped datatables" id="table-corps">
+        <thead>
+            <th>Corporation</th>
+            <th>Auth'd Mains</th>
+            <th>Auth'd Alts</th>
+            <th>Member Count</th>
+            <th>Registered</th>
+        </thead>
+        <tbody>
+            {% for corp, cs in corp_breakdown.items %}
+                <tr>
+                    <td>{{corp}}</td>
+                    <td class="text-center">{{ cs.mains }} </td>
+                    <td class="text-center">{{ cs.alts }}</td>
+                    <td class="text-center">{{ cs.total }} </td>
+                    <td class="text-center">{% if cs.total %}{% widthratio cs.members cs.total 100 %}%{% endif %} </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+   </table>
+</div>
+{% endblock %}
+{% block extra_javascript %}
+    {% include 'bundles/datatables-js.html' %}
+{% endblock %}
+{% block extra_css %}
+    {% include 'bundles/datatables-css.html' %}
+{% endblock %}
+{% block extra_script %}
+    $(document).ready(function() {
+        $('#table-corps').DataTable({
+            "order": [
+                [0, "desc"]
+            ],
+            "pageLength": 100
+        });
+    });
+{% endblock %}
