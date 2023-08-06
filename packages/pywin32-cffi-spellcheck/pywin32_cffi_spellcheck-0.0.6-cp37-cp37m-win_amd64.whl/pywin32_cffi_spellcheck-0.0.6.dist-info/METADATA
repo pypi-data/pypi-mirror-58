@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pywin32-cffi-spellcheck
+Version: 0.0.6
+Summary: cffi bindings for Spellcheck.h on Windows
+Home-page: https://github.com/pyenchant/pywin32-cffi-spellcheck
+Author: Dimitri Merejkowsky
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: cffi (>=1.12)
+
+win32 cffi spellchecker
+========================
+
+This is a thin wrapper on top of the `Spellcheck.h <https://docs.microsoft.com/en-us/windows/win32/api/spellcheck/>`_ 
+win32 API.
+
+It is used as a backend of `PyEnchant <https://github.com/pyenchant/pyenchant>`_ on Windows.
+
+Usage
+-----
+
+.. code-block:: python
+
+    checker = SpellChecker("en-US")
+    ok = checker.check("helo")
+    assert not ok
+    suggestions = checker.suggest("helo")
+    print(suggestions)
+
+    # outputs:
+    # ['hello', 'halo', 'helot', 'hele', 'help', 'hell', 'held', 'hellos', 'hero', 'helm']
+
+
