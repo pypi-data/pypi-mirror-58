@@ -1,0 +1,9 @@
+README.md
+setup.py
+aws-ic/__init__.py
+aws-ic/aws-ic
+aws_ic.egg-info/PKG-INFO
+aws_ic.egg-info/SOURCES.txt
+aws_ic.egg-info/dependency_links.txt
+aws_ic.egg-info/requires.txt
+aws_ic.egg-info/top_level.txt

@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: aws-ic
+Version: 1.0.1
+Summary: A wrapper for EC2 Instance Connect to make a ssh connection to keyless EC2 instances more streamlined and secure.
+Home-page: https://github.com/johnbarney/aws-ic
+Author: John Barney
+Author-email: john.barney@johnbarney.co
+License: Apache 2.0
+Description: # aws-ic
+        
+        A wrapper for EC2 Instance Connect to make a ssh connection to keyless EC2 instances more streamlined and secure.
+        
+        ## Requirements
+        
+        * Python3 w/ pip
+        * [Proper IAM Permissions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html#ec2-instance-connect-configure-IAM-role)
+        
+        ## Setup
+        
+        * `pip install awc-ic`
+        * [Configure AWS credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration)
+        
+        ## Usage
+        
+        aws-ic takes two ordered arguments:
+        
+        `aws-ic <ssh_user> <instance_id>`
+        
+        Example:
+        
+        `aws-ic ec2-user i-abcd1234`
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
