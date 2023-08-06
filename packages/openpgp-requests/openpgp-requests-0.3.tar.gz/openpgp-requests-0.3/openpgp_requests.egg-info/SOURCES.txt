@@ -1,0 +1,9 @@
+setup.py
+openpgp_requests/__init__.py
+openpgp_requests/openpgprequests.py
+openpgp_requests.egg-info/PKG-INFO
+openpgp_requests.egg-info/SOURCES.txt
+openpgp_requests.egg-info/dependency_links.txt
+openpgp_requests.egg-info/not-zip-safe
+openpgp_requests.egg-info/requires.txt
+openpgp_requests.egg-info/top_level.txt
