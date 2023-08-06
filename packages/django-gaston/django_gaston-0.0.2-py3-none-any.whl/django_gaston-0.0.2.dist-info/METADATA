@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-gaston
+Version: 0.0.2
+Summary: A django menu generator
+Home-page: UNKNOWN
+Author: Hyde Tek
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+A django menu generator.
+
+
