@@ -1,0 +1,16 @@
+setup.py
+django_sqltemplate.egg-info/PKG-INFO
+django_sqltemplate.egg-info/SOURCES.txt
+django_sqltemplate.egg-info/dependency_links.txt
+django_sqltemplate.egg-info/requires.txt
+django_sqltemplate.egg-info/top_level.txt
+django_sqltemplate.egg-info/zip-safe
+djsqltemplate/__init__.py
+djsqltemplate/engines.py
+djsqltemplate/loader.py
+djsqltemplate/models.py
+djsqltemplate/settings.py
+djsqltemplate/loaders/__init__.py
+djsqltemplate/loaders/app_directories.py
+djsqltemplate/templatetags/__init__.py
+djsqltemplate/templatetags/psycopg2_tags.py
