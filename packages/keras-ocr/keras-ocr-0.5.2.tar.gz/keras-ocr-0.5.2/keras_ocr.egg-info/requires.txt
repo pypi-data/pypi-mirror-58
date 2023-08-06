@@ -1,0 +1,8 @@
+essential_generators
+tqdm
+imgaug
+validators
+fonttools
+editdistance
+pyclipper
+efficientnet==1.0.0
