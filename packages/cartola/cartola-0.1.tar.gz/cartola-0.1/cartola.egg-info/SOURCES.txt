@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cartola/__init__.py
+cartola/fs.py
+cartola/security.py
+cartola/sysexits.py
+cartola.egg-info/PKG-INFO
+cartola.egg-info/SOURCES.txt
+cartola.egg-info/dependency_links.txt
+cartola.egg-info/top_level.txt
