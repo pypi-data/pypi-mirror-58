@@ -1,0 +1,8 @@
+[backendai_scheduler_v10]
+drf = ai.backend.manager.scheduler.drf:DRFScheduler
+fifo = ai.backend.manager.scheduler.fifo:FIFOSlotScheduler
+lifo = ai.backend.manager.scheduler.fifo:LIFOSlotScheduler
+
+[console_scripts]
+backend.ai-manager = ai.backend.manager.cli.__main__:main
+
