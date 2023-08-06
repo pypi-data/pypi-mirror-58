@@ -1,0 +1,16 @@
+bas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bas/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bas/cli/cli.py,sha256=G9OwhzBSsZP6LTfZs7LoblhP4VTVRyu78Yf0axD1DXw,195
+bas/cli/g2p.py,sha256=svctoGpEZrGmXb4DrOy-qHKJXoMTZXt8icROQNiFk9s,421
+bas/cli/maus.py,sha256=zEvgTSBFNh8hjpkeFPrViPnyhD02_HJ1AOm0JBfjIsY,594
+bas/cli/subtitle.py,sha256=TjdHCtiS7e8erNpLK8AZ0PloyF3HVzJBZF7jCuPKeY8,589
+bas/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bas/services/g2p.py,sha256=EARcJ79KwY13LM7zdkBPXmhbwWdXxnk6fDUqK76H91s,1153
+bas/services/maus.py,sha256=nHn-vOHZO9JRNPsc-rehL33YXn9oRpYY-ZIcoc_GVbI,1103
+bas/services/subtitle.py,sha256=ge6Ga6HeRHO-WGTmgJKwguDFsZ3nK4CrhWg9mUqh9QY,700
+bas/services/utils.py,sha256=FSipNAI426r8ILYK-lhNJCHv27S7AwBDCAoMrR62cds,419
+bas-0.0.1.dist-info/METADATA,sha256=PlIIc4qnhz3G27I4mv7jZ2Pf3266TJ-PTAGJ7OXZl4M,374
+bas-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bas-0.0.1.dist-info/entry_points.txt,sha256=nt5QjEYUnOlpSrMu5FGiOBBHSF5n8n5DihCFKrWO7ss,59
+bas-0.0.1.dist-info/top_level.txt,sha256=S9cL0YK79L2dJ5G1qJm0zZafXxIbyJJbez7wd3ha5-0,4
+bas-0.0.1.dist-info/RECORD,,
