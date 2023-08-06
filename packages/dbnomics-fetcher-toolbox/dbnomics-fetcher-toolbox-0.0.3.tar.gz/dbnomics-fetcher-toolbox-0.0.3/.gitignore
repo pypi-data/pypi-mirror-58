@@ -1,0 +1,15 @@
+__pycache__/
+*.egg-info/
+.cache/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.tox/
+build/
+dist/
+doc/_build/
+.coverage
+coverage.xml
+*.pyc
+*.pyo
+requirements.txt
