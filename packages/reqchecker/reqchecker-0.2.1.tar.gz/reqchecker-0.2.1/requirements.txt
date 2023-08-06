@@ -1,0 +1,4 @@
+
+coloredlogs==6.1
+pygithub==1.44.1
+requests==2.20.1
