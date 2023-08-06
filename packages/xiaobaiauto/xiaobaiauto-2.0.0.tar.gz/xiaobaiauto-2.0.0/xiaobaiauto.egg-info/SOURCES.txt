@@ -1,0 +1,14 @@
+README.md
+setup.py
+xiaobaiAuto_setup.py
+CTPC/__init__.py
+CTPC/ctpc.py
+CTPC/indexPage.py
+CTPC/xiaobaiAuto.py
+xiaobaiauto/HTMLTestRunner.py
+xiaobaiauto/__init__.py
+xiaobaiauto.egg-info/PKG-INFO
+xiaobaiauto.egg-info/SOURCES.txt
+xiaobaiauto.egg-info/dependency_links.txt
+xiaobaiauto.egg-info/requires.txt
+xiaobaiauto.egg-info/top_level.txt
