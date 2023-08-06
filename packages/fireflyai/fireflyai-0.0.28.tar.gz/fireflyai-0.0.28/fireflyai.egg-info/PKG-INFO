@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: fireflyai
+Version: 0.0.28
+Summary: Python client for Firefly.ai API
+Home-page: UNKNOWN
+Author: Firefly.ai
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # firefly-python-sdk
+        Firefly.ai python SDK
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
