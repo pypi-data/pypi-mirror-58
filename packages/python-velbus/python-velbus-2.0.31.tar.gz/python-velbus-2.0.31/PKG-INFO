@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: python-velbus
+Version: 2.0.31
+Summary: Python Library for the Velbus protocol
+Home-page: https://github.com/thomasdelaet/python-velbus
+Author: Thomas Delaet
+Author-email: thomas@delaet.org
+License: MIT
+Description: UNKNOWN
+Platform: any
