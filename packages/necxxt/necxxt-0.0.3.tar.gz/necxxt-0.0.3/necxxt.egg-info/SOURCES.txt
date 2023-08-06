@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+bin/necxxt
+necxxt/__init__.py
+necxxt/version.py
+necxxt.egg-info/PKG-INFO
+necxxt.egg-info/SOURCES.txt
+necxxt.egg-info/dependency_links.txt
+necxxt.egg-info/top_level.txt
+necxxt/dependencies/__init__.py
+necxxt/repositories/__init__.py
+necxxt/utils/__init__.py
