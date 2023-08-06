@@ -1,0 +1,9 @@
+README.md
+setup.py
+rainbowspiderproxy.egg-info/PKG-INFO
+rainbowspiderproxy.egg-info/SOURCES.txt
+rainbowspiderproxy.egg-info/dependency_links.txt
+rainbowspiderproxy.egg-info/top_level.txt
+spider/__init__.py
+spider/__main__.py
+spider/proxy.py
