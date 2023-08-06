@@ -1,0 +1,12 @@
+flask>=1.1.1
+blinker
+requests
+simplejson
+lxml
+pandas
+colour_printing>=0.3.16
+ctpbee_api
+
+[QA_SUPPORT]
+quantaxis
+pandas<=0.24.2,>=0.16.2
