@@ -1,0 +1,4 @@
+[console_scripts]
+dspace-stats-collector = dspace_stats_collector.collector:main
+dspace-stats-cronify = dspace_stats_collector.croninstaller:maindspace-stats-configure = dspace_stats_collector.configure:main
+
