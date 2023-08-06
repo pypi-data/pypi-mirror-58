@@ -1,0 +1,15 @@
+shopify_webhook/__init__.py,sha256=aUwJogmlAGfx5q-Esv9mDx0_tMzORZfegj3Nu5WgYos,949
+shopify_webhook/decorators.py,sha256=7ACiwOQHZXDUoL4vEVVJTEwEaYcpxgTX29WnRN0rXHg,3260
+shopify_webhook/helpers.py,sha256=qFh1nGi8DVDaJ0qz__Weq3s_As4RyVW_k4G_oo9Xf80,2798
+shopify_webhook/signals.py,sha256=mZkRgVcsuv_NlqIwWkpBseZXaJ2WGCARXLTfXlu_loY,1658
+shopify_webhook/views.py,sha256=NRf81YRV5ixANePCXcoc60E-G2Rr9cF16TX_18kHer0,2215
+shopify_webhook/tests/__init__.py,sha256=tMvjkg3uL9UN6MRE17Ki59g5MsyFBb38jtytA4xkQKs,2141
+shopify_webhook/tests/test_app_proxy.py,sha256=k5E5dIHcQ5p1HbXUfUB6oNx0cxznefV7UevM8UEkykw,2267
+shopify_webhook/tests/test_webhook.py,sha256=4GT4dYi3MzAJ4EkO7tUoSjdKvOFEl6NG6cRhXUWo1BY,3132
+shopify_webhook/tests/urls.py,sha256=kZQWblHbeqIO5huRsvfr5C9eyG9dWoxzmnkF-380nW8,148
+django_shopify_webhook-0.5.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_shopify_webhook-0.5.1.dist-info/METADATA,sha256=qbVmEuJuVl7ayqkGSPNjsNiOX_a8wDmixqmGd0rL1YM,1319
+django_shopify_webhook-0.5.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_shopify_webhook-0.5.1.dist-info/top_level.txt,sha256=cesDDwXTNG9P4UOPcObzLSPQSyF9Yh98mMePipzQCDA,16
+django_shopify_webhook-0.5.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_shopify_webhook-0.5.1.dist-info/RECORD,,
