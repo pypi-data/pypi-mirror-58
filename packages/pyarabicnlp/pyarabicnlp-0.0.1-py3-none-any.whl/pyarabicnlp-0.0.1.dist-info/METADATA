@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyarabicnlp
+Version: 0.0.1
+Summary: PyArabicNLP: A Python library for Arabic NLP
+Home-page: https://github.com/ChadiHelwe/PyArabicNLP/
+Author: Chadi Helwe
+Author-email: chadi.helwe@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: snowballstemmer (==2.0.0)
+Requires-Dist: PyStemmer (==1.3.0)
+Requires-Dist: cython (==0.29.14)
+Requires-Dist: nltk (==3.4.5)
+Requires-Dist: pytest (==5.1.2)
+
+# PyArabicNLP
+
+A Python library for Arabic NLP
+

@@ -1,0 +1,12 @@
+pyarabicnlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyarabicnlp/stemmer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyarabicnlp/stemmer/abstract_stemmer.py,sha256=W6e7XsvJzvT03eaMswBq7bqcE8NDDG-lfB_jpaXBg8k,1026
+pyarabicnlp/stemmer/isri_stemmer.py,sha256=3GJFDapG8CGFhH4siNdMp77TwB7t_-7rwZ9sWP6dEK0,1126
+pyarabicnlp/stemmer/snowball_stemmer.py,sha256=-HUlSVr8DuAOtPukFw-j9C16Ve_iUpwMeElPZAfLapU,1102
+pyarabicnlp/transliteration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyarabicnlp/transliteration/buckwalter.py,sha256=KOxdgnvJiLr-Z1gpK0zsKFQAy4KpVsvsDL2Imu45AWA,2894
+pyarabicnlp-0.0.1.dist-info/LICENCE,sha256=WEeSqcVuX5wQkjvcPgnji3ySDW5qnErOkYGH_93sZjE,1067
+pyarabicnlp-0.0.1.dist-info/METADATA,sha256=Nik1JBOQ3rSCvO6JaPCMzWlQti8r0ulcVVDPRmZowWc,684
+pyarabicnlp-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyarabicnlp-0.0.1.dist-info/top_level.txt,sha256=88M0FHnRA3A0SYeP1Fvh7DqK0OJrprUfYi2ozB9eIFo,12
+pyarabicnlp-0.0.1.dist-info/RECORD,,
