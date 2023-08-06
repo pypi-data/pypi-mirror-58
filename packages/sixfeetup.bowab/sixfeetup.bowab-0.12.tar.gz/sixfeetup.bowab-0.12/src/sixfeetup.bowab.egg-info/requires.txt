@@ -1,0 +1,14 @@
+setuptools
+pyramid
+deform
+colander
+requests
+SQLAlchemy
+alembic
+gaq_hub
+zope.sqlalchemy>=1.2
+psycopg2
+
+[test]
+coverage
+mock
