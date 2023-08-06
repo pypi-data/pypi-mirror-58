@@ -1,0 +1,8 @@
+opencv-contrib-python-headless<4.1,>=4.0
+cached-property>=1.5
+coordinates>=0.3.0
+fastcache>=1.1
+ujson>=1.35
+
+[rpi]
+picamera[array]>=1.13

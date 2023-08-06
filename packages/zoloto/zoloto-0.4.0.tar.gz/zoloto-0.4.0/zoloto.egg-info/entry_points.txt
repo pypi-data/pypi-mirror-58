@@ -1,0 +1,4 @@
+[console_scripts]
+zoloto-calibrate = zoloto.cli.calibrate:main
+zoloto-preview = zoloto.cli.preview:main
+
