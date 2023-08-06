@@ -1,0 +1,10 @@
+README.md,sha256=9t81G83nO0AiLs1JMw0uWAMVh47gl--FT7fyMLPUKpg,2488
+mkdocstrings/__init__.py,sha256=t6IrugL1D58miGOeqhBb4-iKHtGT4zeCNRvVseYUMTw,363
+mkdocstrings/documenter.py,sha256=sfXB3dSJekw3kXIpZgPBoHet6nEQLOuroyMNuJ0o-gc,25756
+mkdocstrings/plugin.py,sha256=rW6YvhRlI2MTUIKDpiqg7g323SWAUbuFvwsm8lzn5I0,5324
+pyproject.toml,sha256=VaiPWunkiCTjeUzQ3d4l_mKGXDANI8p6xbUm8wZnw_s,1762
+mkdocstrings-0.5.0.dist-info/entry_points.txt,sha256=D0c-fMWL7lyomCmv4uhero_LHu-CsPfGOy0okqsi_To,124
+mkdocstrings-0.5.0.dist-info/LICENSE,sha256=CWPhZO4wCQgGXLc5hPRozRbGdwSWXL0exgU76L4yUvI,754
+mkdocstrings-0.5.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mkdocstrings-0.5.0.dist-info/METADATA,sha256=LDvudUm5fe4mHqbk0Cqwo6TLVOX9jNsNRV3fwbjCJ2s,3098
+mkdocstrings-0.5.0.dist-info/RECORD,,
