@@ -1,0 +1,164 @@
+name: Build and test Python package
+
+on: [push]
+
+jobs:
+  build_docker_prereq:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: whoan/docker-build-with-cache-action@v2
+      with:
+        username: "${{ secrets.DOCKER_USERNAME }}"
+        password: "${{ secrets.DOCKER_PASSWORD }}"
+        image_name: "mkoeppe/conda-sagemath-coinor"
+  docker_build_and_test:
+    needs: [build_docker_prereq]
+    runs-on: ubuntu-latest
+    container: "mkoeppe/conda-sagemath-coinor"
+    steps:
+      - uses: actions/checkout@v1
+      - name: Test package
+        shell: bash -l {0}
+        run: |
+          conda activate sagecoin
+          sage --version
+          python3 setup.py test
+  homebrew_build_and_test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install homebrew cbc and sage
+        run: |
+          brew cask install sage --no-quarantine
+          brew install pkg-config coin-or-tools/coinor/cbc
+      - name: Test package
+        run: |
+          sage --version
+          PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ sage setup.py test
+      - name: Install package
+        run: |
+          PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/ sage -python -m pip install --no-dependencies -v -v .
+      - name: Patch in
+        run: |
+          sage patch_into_sage_module.py
+          sage check_get_solver_with_name.py
+  conda_build_and_test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: goanpeca/setup-miniconda@v1
+      with:
+        auto-update-conda: true
+        activate-environment: sagecoin
+        environment-file: environment.yml
+        python-version: 3.7
+        auto-activate-base: false
+    - name: Test package
+      shell: bash -l {0}
+      run: |
+        sage --version
+        python3 setup.py test
+    - name: Install package
+      shell: bash -l {0}
+      # sage -pip does not work on Ubuntu bionic
+      run: |
+        sage -python -m pip install .
+    - name: Patch in, run parts of the Sage testsuite
+      shell: bash -l {0}
+        # On Ubuntu, the following fails:
+        #   sage patch_into_sage_module.py
+        #   sage -python patch_into_sage_module.py
+        # with ImportError: No module named coin_backend.
+        # Hence we workaround as follows.
+      run: |
+        sage -c 'load("patch_into_sage_module.py")'
+        sage -c 'load("check_get_solver_with_name.py")'
+        (cd $(sage -c 'print(sage.env.SAGE_LIB)') && cd sage && sage -t -p graphs/ sat/ geometry/polyhedron/base.py geometry/cone.py homology/simplicial_complex.py knots/ matroids/ coding/ game_theory/ numerical/*.py* combinat/designs/ combinat/integer_vector.py combinat/posets/) || true
+  ubuntu_sagemath_build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install SageMath and CBC
+      run: |
+        sudo DEBIAN_FRONTEND=noninteractive apt-get update
+        sudo DEBIAN_FRONTEND=noninteractive apt-get install sagemath coinor-cbc coinor-libcbc-dev python-pkgconfig python-setuptools python-sphinx cython
+    - name: Show package info
+      run: |
+        sage -python -m pip list
+    - name: Test package
+      run: |
+        sage --version
+        sage setup.py test
+    - name: Install package
+      run: |
+        sage -python -m pip install --no-dependencies -v -v .
+    - name: Patch in
+      run: |
+        sudo sage patch_into_sage_module.py
+        sage check_get_solver_with_name.py
+  docker_ubuntu_sagemath_build_and_test:
+    runs-on: ubuntu-latest
+    container: ${{ matrix.container }}
+    strategy:
+      matrix:
+        # debian:oldstable = stretch only has Sage 7.4, too old.
+        container: [ "ubuntu:disco", "ubuntu:devel", "debian:stable", "debian:unstable" ]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install SageMath and CBC
+      run: |
+        DEBIAN_FRONTEND=noninteractive apt-get update
+        DEBIAN_FRONTEND=noninteractive apt-get --yes install sagemath coinor-cbc coinor-libcbc-dev coinor-libcgl-dev  coinor-libclp-dev cython g++ python-pip python3-pip libpari-dev
+    - name: Show package info
+      run: |
+        sage -python -m pip list
+    - name: Test package
+      run: |
+        sage --version
+        sage setup.py test
+    - name: Install package
+      run: |
+        sage -python -m pip install --no-dependencies -v -v .
+    - name: Patch in
+      # The following works, but "sage patch_into_sage_module.py" fails
+      run: |
+        sage -c 'load("patch_into_sage_module.py")'
+        sage -c 'load("check_get_solver_with_name.py")'
+  docker_fedora_sagemath_build_and_test:
+    runs-on: ubuntu-latest
+    container: ${{ matrix.container }}
+    strategy:
+      matrix:
+        container: [ "fedora:latest" ]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install SageMath and CBC
+        # Bizarre - the Sage doctester fails if the ipywidgets package is not installed. It is not in Fedora.
+        #   File "/usr/lib64/python3.7/site-packages/sage/doctest/forker.py", line 172, in init_sage
+        #     import sage.repl.ipython_kernel.all_jupyter
+        #   File "/usr/lib64/python3.7/site-packages/sage/repl/ipython_kernel/all_jupyter.py", line 7, in <module>
+        #     from .widgets_sagenb import (input_box, text_control, slider,
+        #   File "/usr/lib64/python3.7/site-packages/sage/repl/ipython_kernel/widgets_sagenb.py", line 30, in <module>
+        #     from ipywidgets.widgets import (IntSlider, IntRangeSlider, FloatSlider,
+        # ModuleNotFoundError: No module named 'ipywidgets'
+      run: |
+        yum install -y sagemath coin-or-Cbc-devel python-pip pkg-config python-pkgconfig python3-cysignals-devel gcc-c++ pari-devel
+        sage -python -m pip install ipywidgets
+    - name: Show package info
+      run: |
+        sage -python -m pip list
+    - name: Test package
+      run: |
+        sage --version
+        sage setup.py test
+    - name: Install package
+      run: |
+        sage -python -m pip install --no-dependencies -v -v .
+    - name: Patch in
+      run: |
+        sage -c 'load("patch_into_sage_module.py")'
+        sage -c 'load("check_get_solver_with_name.py")'
