@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import re
+import os
+import logging
+import argparse
+
+
+def parse_args():
+    """
+    处理命令行参数
+    """
+    # 得到文件名
+    name, *_ = os.path.basename(__file__).split('.')
+
+    # 创建 parser 对象
+    parser = argparse.ArgumentParser(name)
+
+    # markdown 文件所在的目录
+    parser.add_argument(
+        '--project-dir', help="markdown project dir", default="/markdows/leorg")
+    parser.add_argument('')

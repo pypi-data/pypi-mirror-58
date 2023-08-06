@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin/mdparser
+mdparser/__init__.py
+mdparser/defaults.py
+mdparser/errors.py
+mdparser/messages.py
+mdparser/parser.py
+mdparser/version.py
+mdparser.egg-info/PKG-INFO
+mdparser.egg-info/SOURCES.txt
+mdparser.egg-info/dependency_links.txt
+mdparser.egg-info/requires.txt
+mdparser.egg-info/top_level.txt
