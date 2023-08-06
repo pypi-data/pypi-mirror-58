@@ -1,0 +1,15 @@
+odoo8_addon_rma-8.0.1.0.0.99.dev2-nspkg.pth,sha256=byZRehCeET5bIG0AMyMXPLGoXAE887IW4f1j_Rh4alU,564
+odoo_addons/rma/README.rst,sha256=8fwWiUC_jlcNcqLsSwo7hJ8Wo5vmNH4Daljyn3Bn9-A,2095
+odoo_addons/rma/__init__.py,sha256=z47TjE4i9HbHcTFsUko59K7VAt9mWPzi5KLM2vaTgso,939
+odoo_addons/rma/__openerp__.py,sha256=nQ8uPrnWzTWTWgUyStqPGK15RgvxVjS-CSV6pC8HnGA,1583
+odoo_addons/rma/i18n/es.po,sha256=BF4p0N0Qjts9ARz0JLL5m2KzxOcTC8iGfxNmbnJ-cCo,446
+odoo_addons/rma/i18n/es_MX.po,sha256=BF4p0N0Qjts9ARz0JLL5m2KzxOcTC8iGfxNmbnJ-cCo,446
+odoo_addons/rma/i18n/es_PA.po,sha256=BF4p0N0Qjts9ARz0JLL5m2KzxOcTC8iGfxNmbnJ-cCo,446
+odoo_addons/rma/i18n/es_VE.po,sha256=BF4p0N0Qjts9ARz0JLL5m2KzxOcTC8iGfxNmbnJ-cCo,446
+odoo_addons/rma/i18n/rma.pot,sha256=KCc6I3RrqFemiPMhZYF63NV9O40fJb4gusZ6aGnhMGE,343
+odoo_addons/rma/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo8_addon_rma-8.0.1.0.0.99.dev2.dist-info/METADATA,sha256=xio2bFoStDa2c4jcdUIhGON5pkv_jRq7oQc0I2Qxlqk,3043
+odoo8_addon_rma-8.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+odoo8_addon_rma-8.0.1.0.0.99.dev2.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_rma-8.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_rma-8.0.1.0.0.99.dev2.dist-info/RECORD,,
