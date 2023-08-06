@@ -1,0 +1,113 @@
+{% extends "bee_django_crm/base.html" %}
+{% load bee_django_crm_filter %}
+{% load static %}
+{% block styles %}
+    <style>
+        .wx_info img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    {% include 'bee_django_crm/logo.html' %}
+    {% include 'bee_django_crm/nav.html' %}
+    {% include 'bee_django_crm/messages.html' %}
+
+    <h4>微信详情</h4>
+
+    <table class="table wx_info">
+        <tr>
+            <td class="col-sm-3">id</td>
+            <td>{{ record.id }}</td>
+        </tr>
+        <tr>
+            <td>昵称</td>
+            <td>{{ record.wxuser }}</td>
+        </tr>
+        <tr>
+            <td>头像</td>
+            <td>
+                {% if record.wxuser.avatar_url %}
+                    <img src="{{ record.wxuser.avatar_url }}" alt="">
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>{{ record.wxuser.get_gender }}</td>
+        </tr>
+
+        <tr>
+            <td>地区</td>
+            <td>{{ record.wxuser.country|default:"" }} - {{ record.wxuser.province|default:"" }}
+                - {{ record.wxuser.city|default:"" }}</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>参加活动详情</h4>
+
+    <table class="table wx_info">
+        <tr>
+            <td class="col-sm-3">奖品名称</td>
+            <td>{{ record.reward }}</td>
+        </tr>
+        <tr>
+            <td>参加时间</td>
+            <td>{{ record.created_at }}</td>
+        </tr>
+        <tr>
+            <td>来源</td>
+            <td>{{ record.wxuser.user|default:"" }}</td>
+        </tr>
+        <tr>
+            <td>当前结果</td>
+            <td>{{ record.result }}</td>
+        </tr>
+        <tr>
+            <td>状态</td>
+            <td>{{ record.get_status }}
+                {% if perms.bee_django_crm.change_campaignrecord %}
+                    {% if not record.status == 3 %}
+                        <a href="{% url 'bee_django_crm:campaign_record_update' record.id %}"
+                           class="btn btn-danger">消费</a>
+                    {% endif %}
+                {% endif %}
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>绑定用户</td>
+            <td>{% if record.is_mk and record.bind_user %}
+                <a href="{{ record.bind_user.get_user_search_link }}">{{ record.bind_user }}</a>
+            {% endif %}
+                {% if not record.is_mk and record.bind_preuser %}
+                    <a href="{% url 'bee_django_crm:preuser_detail' record.bind_preuser.id %}">{{ record.bind_preuser.name }}</a>
+                {% endif %}</td>
+        </tr>
+        <tr>
+            <td>历史记录</td>
+            <td>{{ record.history|default:""|safe }}</td>
+        </tr>
+
+    </table>
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+        {#function click_del(_this) {#}
+        {#    if (!confirm('确认要执行这个操作？')) {#}
+        {#        return false;#}
+        {#    }#}
+        {#    var url = $(_this).attr('data-confirm');#}
+        {#    $.post(url).done(function (data) {#}
+        {#        alert('删除成功!');#}
+        {#        location.href = "{% url 'bee_django_crm:contract_list' %}";#}
+        {#    });#}
+        {
+        #}#}
+    </script>
+{% endblock %}

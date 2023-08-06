@@ -1,0 +1,45 @@
+{% extends "bee_django_crm/custom_base.html" %}
+{% load bee_django_crm_filter %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        我的参加记录
+    </h3>
+    </div>
+
+    <div>共{{ paginator.count }}个</div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+{#            <th></th>#}
+{#            <th>微信昵称</th>#}
+            <th>参加时间</th>
+            <th>奖品</th>
+            <th>进度</th>
+            <th>状态</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for r in campaign_list %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+{#                <td>{% if not r.is_mk %}新用户{% endif %}</td>#}
+{#                <td>{{ r.wxuser }}</td>#}
+                <td>{{ r.created_at }}</td>
+                <td>{{ r.reward }}</td>
+                <td>{{ r.result }}</td>
+                <td>{{ r.get_status }}</td>
+
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+    {% include 'bee_django_crm/paginator.html' %}
+{% endblock %}
+{% block scripts %}
+    <script>
+    </script>
+{% endblock %}
