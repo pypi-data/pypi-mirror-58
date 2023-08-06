@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: plinux
+Version: 1.0.2
+Summary: The cross-platform tool to execute bash commands remotely.
+Home-page: https://github.com/agegemon/plinux
+Author: Andrey Komissarov
+Author-email: a.komisssarov@gmail.com
+License: GNU General Public License v3.0
+Description: **Plinux**
+        
+        Cross-platform tool to work with remote Linux OS.
+        
+        Plinux based on paramiko project. It can establish ssh connection to a remote server, execute command as user or with sudo rights. Plinux returns object with exit code, sent command, stdout/sdtderr response.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
