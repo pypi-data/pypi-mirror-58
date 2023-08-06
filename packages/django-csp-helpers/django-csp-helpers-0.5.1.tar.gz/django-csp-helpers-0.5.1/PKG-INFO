@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-csp-helpers
+Version: 0.5.1
+Summary: A set of template tags (and mixins!) to assist in building CSP-enabled websites.
+Home-page: https://github.com/dmptrluke/django-csp-helpers
+Author: Luke Rogers
+Author-email: luke@dmptr.com
