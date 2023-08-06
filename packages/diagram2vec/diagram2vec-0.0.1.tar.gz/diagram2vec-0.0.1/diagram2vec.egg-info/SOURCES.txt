@@ -1,0 +1,8 @@
+README.md
+setup.py
+diagram2vec/__init__.py
+diagram2vec/diagram2vec.py
+diagram2vec.egg-info/PKG-INFO
+diagram2vec.egg-info/SOURCES.txt
+diagram2vec.egg-info/dependency_links.txt
+diagram2vec.egg-info/top_level.txt
