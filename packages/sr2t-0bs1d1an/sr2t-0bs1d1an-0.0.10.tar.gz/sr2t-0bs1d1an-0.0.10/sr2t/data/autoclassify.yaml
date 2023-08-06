@@ -1,0 +1,251 @@
+# DNS Server BIND version Directive Remote Version Detection
+'10028': 'Version information disclosure'
+
+# FTP Server Detection
+'10092': 'Administrative interfaces available on the Internet'
+
+# HTTP Server Type and Version
+'10107': 'Version information disclosure'
+
+# SSH Server Type and Version Information
+'10267': 'Administrative interfaces available on the Internet'
+
+# DNS Server Zone Transfer Information Disclosure (AXFR)
+'10595': 'Insecure DNS server configuration'
+
+# PPTP Detection
+'10622': 'Insecure VPN authentication protocol'
+
+# Web Server HTTP Header Internal IP Disclosure
+'10759': 'Internal IP address or hostname disclosed'
+
+# Web Server info.php / phpinfo.php Detection
+'11229': 'Obsolete files identified'
+
+# Web Server Unconfigured - Default Install Page Present
+'11422': 'Obsolete files identified'
+
+# DNS Server Cache Snooping Remote Information Disclosure
+'12217': 'Insecure DNS server configuration'
+
+# Microsoft Outlook Web Access (OWA) Version Detection
+'14255': 'Version information disclosure'
+
+# POP3 Cleartext Logins Permitted
+'15855': 'Sensitive data sent unencrypted'
+
+# SSL Certificate Expiry
+'15901': 'Weaknesses in X.509 certificate'
+
+# phpMyAdmin Detection
+'17219': 'Administrative interfaces available on the Internet'
+
+# Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness
+'18405': 'Insecure RDP configuration'
+
+# SSL Version 2 and 3 Protocol Detection
+'20007': 'Insecure TLS / SSL configuration'
+
+# F5 BIG-IP Cookie Remote Information Disclosure
+'20089': 'Internal IP address or hostname disclosed'
+
+# Web Server Transmits Cleartext Credentials
+'26194': 'Sensitive data sent unencrypted'
+
+# Microsoft Windows SMB NULL Session Authentication
+'26920': 'Insecure SMB configuration'
+
+# SSL Weak Cipher Suites Supported
+'26928': 'Insecure TLS / SSL configuration'
+
+# Terminal Services Encryption Level is not FIPS-140 Compliant
+'30218': 'Insecure RDP configuration'
+
+# SSL Anonymous Cipher Suites Supported
+'31705': 'Insecure TLS / SSL configuration'
+
+# FTP Supports Cleartext Authentication
+'34324': 'Sensitive data sent unencrypted'
+
+# Web Server Uses Basic Authentication Without HTTPS
+'34850': 'Sensitive data sent unencrypted'
+
+# SSL Certificate Signed Using Weak Hashing Algorithm
+'35291': 'Weaknesses in X.509 certificate'
+
+# DNS Server Spoofed Request Amplification DDoS
+'35450': 'Insecure DNS server configuration'
+
+# Unencrypted Telnet Server
+'42263': 'Sensitive data sent unencrypted'
+
+# SSL Medium Strength Cipher Suites Supported (SWEET32)
+'42873': 'Insecure TLS / SSL configuration'
+
+# SSL / TLS Renegotiation Handshakes MiTM Plaintext Data Injection
+'42880': 'Insecure TLS / SSL configuration'
+
+# TYPO3 Detection
+'44117': 'Administrative interfaces available on the Internet'
+
+# SSL Certificate with Wrong Hostname
+'45411': 'Weaknesses in X.509 certificate'
+
+# PHP expose_php Information Disclosure
+'46803': 'Obsolete files identified'
+
+# Apache HTTP Server Version
+'48204': 'Version information disclosure'
+
+# PHP Version Detection
+'48243': 'Version information disclosure'
+
+# Missing or Permissive Content-Security-Policy frame-ancestors HTTP Response Header
+'50344': 'Insecure HTTP response header configuration'
+
+# Missing or Permissive X-Frame-Options HTTP Response Header
+'50345': 'Insecure HTTP response header configuration'
+
+# SSL Certificate Cannot Be Trusted
+'51192': 'Weaknesses in X.509 certificate'
+
+# RPC portmapper (TCP)
+'53335': 'Unnecessary services accessible from the Internet'
+
+# SMTP Service Cleartext Login Permitted
+'54582': 'Sensitive data sent unencrypted'
+
+# Oracle GlassFish HTTP Server Version
+'55930': 'Version information disclosure'
+
+# OpenSSL Version Detection
+'57323': 'Version information disclosure'
+
+# SSL Self-Signed Certificate
+'57582': 'Weaknesses in X.509 certificate'
+
+# SMB Signing not required
+'57608': 'Insecure SMB configuration'
+
+# Terminal Services Encryption Level is Medium or Low
+'57690': 'Insecurew RDP configuration'
+
+# Terminal Services Doesn't Use Network Level Authentication (NLA) Only
+'58453': 'Insecurew RDP configuration'
+
+# SSL/TLS Protocol Initialization Vector Implementation Information Disclosure
+# Vulnerability (BEAST)
+'58751': 'Insecurew RDP configuration'
+
+# PHP Unsupported Version Detection
+'58987': 'Outdated and vulnerable software versions identified'
+
+# SSL Certificate Chain Contains Weak RSA Keys
+'60108': 'Weaknesses in X.509 certificate'
+
+# Transport Layer Security (TLS) Protocol CRIME Vulnerability
+'62565': 'Insecure TLS / SSL configuration'
+
+# Internet Key Exchange (IKE) Aggressive Mode with Pre-Shared Key
+'62694': 'Insecure VPN authentication protocol'
+
+# SSL RC4 Cipher Suites Supported (Bar Mitzvah)
+'65821': 'Insecure TLS / SSL configuration'
+
+# SSL Null Cipher Suites Supported
+'66848': 'Insecure TLS / SSL configuration'
+
+# SSL Certificate Chain Contains RSA Keys Less Than 2048 bits
+'69551': 'Weaknesses in X.509 certificate'
+
+# SSH Server CBC Mode Ciphers Enabled
+'70658': 'Insecure SSH configuration'
+
+# SSH Weak MAC Algorithms Enabled
+'71049': 'Insecure SSH configuration'
+
+# DNS Server Version Detection
+'72779': 'Version information disclosure'
+
+# OpenSSL Heartbeat Information Disclosure (Heartbleed)
+'73412': 'Insecure TLS / SSL configuration'
+
+# OpenSSL 'ChangeCipherSpec' MiTM Potential Vulnerability
+'74326': 'Insecure TLS / SSL configuration'
+
+# Microsoft Exchange Client Access Server Information Disclosure
+'77026': 'Internal IP address or hostname disclosed'
+
+# OpenSSL 'ChangeCipherSpec' MiTM Vulnerability
+'77200': 'Insecure TLS / SSL configuration'
+
+# SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability
+# (POODLE)
+'78479': 'Insecure TLS / SSL configuration'
+
+# TLS Padding Oracle Information Disclosure Vulnerability (TLS POODLE)
+'80035': 'Insecure TLS / SSL configuration'
+
+# SSL/TLS EXPORT_RSA <= 512-bit Cipher Suites Supported (FREAK)
+'81606': 'Insecure TLS / SSL configuration'
+
+# SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam)
+'83875': 'Insecure TLS / SSL configuration'
+
+# SSL/TLS EXPORT_DHE <= 512-bit Export Cipher Suites Supported (Logjam)
+'83738': 'Insecure TLS / SSL configuration'
+
+# HSTS Missing From HTTPS Server
+'84502': 'Insecure HTTP response headers'
+
+# Web Application Potentially Vulnerable to Clickjacking
+'85582': 'Insecure HTTP response headers'
+
+# SSL Certificate Signed Using SHA-1 Algorithm
+'86067': 'Weaknesses in X.509 certificate'
+
+# SSL DROWN Attack Vulnerability (Decrypting RSA with Obsolete and Weakened
+# eNcryption)
+'89058': 'Insecure TLS / SSL configuration'
+
+# WordPress User Enumeration
+'90067': 'User enumeration via application functions'
+
+# SSH Weak Algorithms Supported
+'90317': 'Insecure SSH configuration'
+
+# SSL 64-bit Block Size Cipher Suites Supported (SWEET32)
+'94437': 'Insecure TLS / SSL configuration'
+
+# MS17-010: Security Update for Microsoft Windows SMB Server (4013389)
+'97833': 'Outdated and vulnerable software identified'
+
+# Microsoft IIS 6.0 Unsupported Version Detection
+'97994': 'Outdated and vulnerable software versions identified'
+
+# Microsoft Windows SMBv1 Multiple Vulnerabilities
+'100464': 'Insecure SMB configuration'
+
+# TLS Version 1.0 Protocol Detection
+'104743': 'Insecure TLS / SSL configuration'
+
+# Samba Version
+'104887': 'Version information disclosure'
+
+# Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure
+'105415': 'Insecure TLS / SSL configuration'
+
+# Unsupported Windows OS (remote)
+'108797': 'Outdated and vulnerable software versions identified'
+
+# Windows Terminal Services Enabled
+'10940': 'Administrative interfaces available on the Internet'
+
+# SSL/TLS Certificate RSA Keys Less Than 2048 bits
+'112540': 'Weaknesses in X.509 certificate'
+
+# TLS Version 1.1 Protocol Detection
+'121010': 'Insecure TLS / SSL configuration'
+
+# Microsoft RDP RCE (CVE-2019-0708) (BlueKeep) (uncredentialed check)
+'125313': 'Outdated and vulnerable software identified'
