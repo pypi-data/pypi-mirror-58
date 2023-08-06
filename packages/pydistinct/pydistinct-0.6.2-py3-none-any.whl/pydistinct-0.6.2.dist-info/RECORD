@@ -1,0 +1,13 @@
+pydistinct/__init__.py,sha256=WT0AvEbvRFzvCGaMLj2CU_2ZwPK2tXycwQfE_HEtnco,21
+pydistinct/bootstrap.py,sha256=7avwlwiu9DZsOJ2GYEFE38IdhoSR4LcQMASoI9lmaw8,13897
+pydistinct/ensemble_estimators.py,sha256=OXECgxCfYHOfdcWhyNwlioXa1LSA_NJKvDjhy_RGz8I,5396
+pydistinct/sampling.py,sha256=nkEGr3tdq5-HR4DhgcVnsJcwBylYDIjCQnySUZ6rCLg,3243
+pydistinct/stats_estimators.py,sha256=ckf_6qvmRnKVLJi6Os15MjAegtySjrnOyQKEu5OLsFM,30432
+pydistinct/test.py,sha256=qFnEpXv7NmHPQlXQBXOi4-sR_RiGF_-fxe7g58OuSNQ,14090
+pydistinct/utils.py,sha256=uzBUfpJC_DZA3nlJ8DggpRgVrjX8H43uc6nhn5tKjjA,6054
+pydistinct-0.6.2.dist-info/DESCRIPTION.rst,sha256=KaLigBw0r7lFZ9oleQnYz3n6keXrbsJ0HSovXBt607o,688
+pydistinct-0.6.2.dist-info/METADATA,sha256=6QVoFMjAkR_rZJhNJ0dNALPd1515zB-HuD30EUbPofU,1370
+pydistinct-0.6.2.dist-info/RECORD,,
+pydistinct-0.6.2.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+pydistinct-0.6.2.dist-info/metadata.json,sha256=__nEtx2fVvA7aXn-unnZEqwTPPcboiUYx-DdIChwbkM,853
+pydistinct-0.6.2.dist-info/top_level.txt,sha256=NFS-upA1eI3_It2pnJp7d62UFXmKsXgZL6CWzH-gKFs,11
