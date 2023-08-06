@@ -1,0 +1,6 @@
+#!python
+
+import awsrds
+
+if __name__ == "__main__":
+    awsrds.main()

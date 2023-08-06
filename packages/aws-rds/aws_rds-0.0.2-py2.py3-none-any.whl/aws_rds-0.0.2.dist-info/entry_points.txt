@@ -1,0 +1,3 @@
+[console_scripts]
+aws-rds = awsrds:main
+
