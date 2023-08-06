@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: buienradar
+Version: 1.0.3
+Summary: Library and CLI tools for interacting with buienradar.
+Home-page: https://github.com/mjj4791/python-buienradar
+Author: mjj4791
+Author-email: 
+License: MIT
+Requires-Dist: docopt
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: xmltodict
+Requires-Dist: vincenty
+
+Python buienradar library
+
+
