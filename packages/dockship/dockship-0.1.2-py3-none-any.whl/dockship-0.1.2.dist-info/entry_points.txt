@@ -1,0 +1,3 @@
+[console_scripts]
+dockship = dockship.__main__:main
+
