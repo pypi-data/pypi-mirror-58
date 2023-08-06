@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wbgt
+Version: 0.2
+Summary: calculate WBGT
+Home-page: https://github.com/satotake/wbgt-py
+Author: satotake
+Author-email: doublequotation@gmial.com
+License: UNKNOWN
+Download-URL: https://github.com/satotake/wbgt-py/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: climate,WBGT,meteorology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
