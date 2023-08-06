@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: d-snek
+Version: 1.2.4
+Summary: Discord SNEK framework
+Home-page: https://git.jboi.dev/ShadowJonathan/SNEK
+Author: Jonathan de Jong
+Author-email: jonathan@automatia.nl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: lint
