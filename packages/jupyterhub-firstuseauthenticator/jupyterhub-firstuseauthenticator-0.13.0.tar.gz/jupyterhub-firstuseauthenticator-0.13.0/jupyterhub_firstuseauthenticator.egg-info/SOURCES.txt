@@ -1,0 +1,12 @@
+README.md
+setup.py
+firstuseauthenticator/__init__.py
+firstuseauthenticator/_version.py
+firstuseauthenticator/firstuseauthenticator.py
+firstuseauthenticator/templates/__init__.py
+firstuseauthenticator/templates/reset.html
+jupyterhub_firstuseauthenticator.egg-info/PKG-INFO
+jupyterhub_firstuseauthenticator.egg-info/SOURCES.txt
+jupyterhub_firstuseauthenticator.egg-info/dependency_links.txt
+jupyterhub_firstuseauthenticator.egg-info/requires.txt
+jupyterhub_firstuseauthenticator.egg-info/top_level.txt

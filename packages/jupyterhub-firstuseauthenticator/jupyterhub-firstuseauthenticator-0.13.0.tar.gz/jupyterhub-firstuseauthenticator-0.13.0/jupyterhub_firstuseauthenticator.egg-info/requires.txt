@@ -1,0 +1,2 @@
+bcrypt
+jupyterhub>=0.8
