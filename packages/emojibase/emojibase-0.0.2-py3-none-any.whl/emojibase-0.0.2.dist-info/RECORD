@@ -1,0 +1,12 @@
+BaseEmoji/__init__.py,sha256=uiTZ2bIz91Rb3gDgpFiZ5Jms0mi1S5KH2VpTjjGzTtc,787
+BaseEmoji/codecs/BaseEmojiAbstract.py,sha256=Qyxc6puxK4fSscCgcg7rTwgyq4nEqi53dng3KQZfpfY,1538
+BaseEmoji/codecs/__init__.py,sha256=2v3B4tsJI-Ptl-Y1h28DcMq558AJpIhumPARZKD_G_U,44
+BaseEmoji/codecs/anybase.py,sha256=0wtHLd4gW_HOep1RhvPJ_sKDoGM3T1MIyC3v7fN2i2c,3388
+BaseEmoji/codecs/group256.py,sha256=vAeQTEWq44O_sjBYiEQXDWgqbhQ-Ph8huiVCcwgLgZg,1624
+BaseEmoji/data/emojis.json,sha256=RNg5-iyoDJ5rFh3WFX2PIgW01_qBTo4ey8j2hoavVtU,295822
+emojibase-0.0.2.data/data/x/emojis.json,sha256=RNg5-iyoDJ5rFh3WFX2PIgW01_qBTo4ey8j2hoavVtU,295822
+emojibase-0.0.2.dist-info/LICENSE,sha256=_v9EzyIIrrfMK2lVtSKaZuu453sL0hiMjyjHwyxwSHA,1069
+emojibase-0.0.2.dist-info/METADATA,sha256=yPKA8V4nKzH8JN-8njJa_UXzQOeFUDcKROVlbNCumGU,2556
+emojibase-0.0.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+emojibase-0.0.2.dist-info/top_level.txt,sha256=EvYqDAoWWysAGvN-KUlk1QpcwmiOu6k6HS3ve7dRrN0,10
+emojibase-0.0.2.dist-info/RECORD,,
