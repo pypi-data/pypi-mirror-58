@@ -1,0 +1,8 @@
+README.md
+setup.py
+panel_indicator/__init__.py
+panel_indicator.egg-info/PKG-INFO
+panel_indicator.egg-info/SOURCES.txt
+panel_indicator.egg-info/dependency_links.txt
+panel_indicator.egg-info/requires.txt
+panel_indicator.egg-info/top_level.txt
