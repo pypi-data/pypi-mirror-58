@@ -1,0 +1,10 @@
+logbook
+PyYaml
+prettytable
+rpyc
+wrapt
+paramiko
+apscheduler
+# six
+marshmallow == 3.0.0b13
+better_exceptions == 0.2.1
