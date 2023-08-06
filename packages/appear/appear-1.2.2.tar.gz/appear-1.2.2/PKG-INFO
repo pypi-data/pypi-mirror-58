@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: appear
+Version: 1.2.2
+Summary: Make program internals appear in the browser
+Home-page: https://github.com/andrew-houghton/appear
+Author: Andrew Houghton
+Author-email: houghtonandrew0@gmail.com
+License: UNKNOWN
+Description: # appear
+        
+        A python package for making hidden details of your application magically appear by streaming them to the browser.
+        
+        ## Parts
+        
+        1. Appear helper function. Insert this into your application code to send data to the browser.
+        2. Appear server. Run this to facilitate streaming to the browser
+        3. Appear frontend. Write your own visualizations for data coming from your applications.
+        
+        ## Installation
+        
+        ## Testing
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

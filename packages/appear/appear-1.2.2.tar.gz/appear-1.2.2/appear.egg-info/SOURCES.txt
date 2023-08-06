@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+appear/__init__.py
+appear/app.py
+appear/helper.py
+appear.egg-info/PKG-INFO
+appear.egg-info/SOURCES.txt
+appear.egg-info/dependency_links.txt
+appear.egg-info/requires.txt
+appear.egg-info/top_level.txt
+appear/static/vis_server.js
