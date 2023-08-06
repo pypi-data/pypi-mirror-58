@@ -1,0 +1,105 @@
+site_name: Typer
+site_description: Typer, build great CLIs. Easy to code. Based on Python type hints.
+site_url: https://typer.tiangolo.com/
+
+theme:
+    name: 'material'
+    palette:
+        primary: 'black'
+        accent: 'teal'
+    logo: 'img/icon-white.svg'
+    favicon: 'img/favicon.png'
+
+repo_name: tiangolo/typer
+repo_url: https://github.com/tiangolo/typer
+edit_uri: ''
+google_analytics:
+    - 'UA-155009830-1'
+    - 'auto'
+
+nav:
+    - Typer: 'index.md'
+    - Features: 'features.md'
+    - Tutorial - User Guide:
+        - Tutorial - User Guide - Intro: 'tutorial/index.md'
+        - First Steps: 'tutorial/first-steps.md'
+        - Printing and Colors: 'tutorial/printing.md'
+        - Terminating: 'tutorial/terminating.md'
+        - CLI Arguments: 'tutorial/arguments.md'
+        - CLI Options:
+            - CLI Options Intro: 'tutorial/options/index.md'
+            - CLI Options with Help: 'tutorial/options/help.md'
+            - Required CLI Options: 'tutorial/options/required.md'
+            - CLI Option Prompt: 'tutorial/options/prompt.md'
+            - CLI Option Name: 'tutorial/options/name.md'
+        - Commands:
+            - Commands Intro: 'tutorial/commands/index.md'
+            - Command CLI Arguments: 'tutorial/commands/arguments.md'
+            - Command CLI Options: 'tutorial/commands/options.md'
+            - Command Help: 'tutorial/commands/help.md'
+            - Custom Command Name: 'tutorial/commands/name.md'
+            - Typer Callback: 'tutorial/commands/callback.md'
+            - One or Multiple Commands: 'tutorial/commands/one-or-multiple.md'
+        - CLI Parameter Types:
+            - CLI Parameter Types Intro: 'tutorial/parameter-types/index.md'
+            - Number: 'tutorial/parameter-types/number.md'
+            - Boolean CLI Options: 'tutorial/parameter-types/bool.md'
+            - UUID: 'tutorial/parameter-types/uuid.md'
+            - DateTime: 'tutorial/parameter-types/datetime.md'
+            - Enum - Choices: 'tutorial/parameter-types/enum.md'
+            - Path: 'tutorial/parameter-types/path.md'
+            - File: 'tutorial/parameter-types/file.md'
+        - SubCommands - Command Groups:
+            - SubCommands - Command Groups - Intro: 'tutorial/subcommands/index.md'
+            - Add Typer: 'tutorial/subcommands/add-typer.md'
+            - SubCommands in a Single File: 'tutorial/subcommands/single-file.md'
+            - Nested SubCommands: 'tutorial/subcommands/nested-subcommands.md'
+            - Sub-Typer Callback Override: 'tutorial/subcommands/callback-override.md'
+            - SubCommand Name and Help: 'tutorial/subcommands/name-and-help.md'
+        - Multiple Values:
+            - Multiple Values Intro: 'tutorial/multiple-values/index.md'
+            - Multiple CLI Options: 'tutorial/multiple-values/multiple-options.md'
+            - CLI Options with Multiple Values: 'tutorial/multiple-values/options-with-multiple-values.md'
+            - CLI Arguments with Multiple Values: 'tutorial/multiple-values/arguments-with-multiple-values.md'
+        - Ask with Prompt: 'tutorial/prompt.md'
+        - Progress Bar: 'tutorial/progressbar.md'
+        - CLI Application Directory: 'tutorial/app-dir.md'
+        - Launching Applications: 'tutorial/launch.md'
+    - Alternatives, Inspiration and Comparisons: 'alternatives.md'
+    - Help Typer - Get Help: 'help-typer.md'
+    - Development - Contributing: 'contributing.md'
+    - Release Notes: release-notes.md
+
+markdown_extensions:
+    - toc:
+        permalink: true
+    - markdown.extensions.codehilite:
+        guess_lang: false
+    - markdown_include.include:
+        base_path: docs
+    - admonition
+    - codehilite
+    - extra
+
+extra:
+    social:
+        - type: 'github'
+          link: 'https://github.com/tiangolo/typer'
+        - type: 'twitter'
+          link: 'https://twitter.com/tiangolo'
+        - type: 'linkedin'
+          link: 'https://www.linkedin.com/in/tiangolo'
+        - type: 'rss'
+          link: 'https://dev.to/tiangolo'
+        - type: 'medium'
+          link: 'https://medium.com/@tiangolo'
+        - type: 'globe'
+          link: 'https://tiangolo.com'
+
+extra_css:
+    - 'css/termynal.css'
+    - 'css/custom.css'
+
+extra_javascript:
+    - 'js/termynal.js'
+    - 'js/custom.js'
