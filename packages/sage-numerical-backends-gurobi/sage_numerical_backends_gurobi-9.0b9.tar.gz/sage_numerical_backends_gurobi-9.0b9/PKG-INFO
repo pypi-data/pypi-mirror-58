@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sage_numerical_backends_gurobi
+Version: 9.0b9
+Summary: Gurobi backend for Sage MixedIntegerLinearProgram
+Home-page: https://github.com/mkoeppe/sage-numerical-backends-gurobi
+Author: Nathann Cohen, Martin Albrecht, Matthias Koeppe, John Perry, David Coudert, Jori Mäntysalo, Jeroen Demeyer, Erik M. Bray, Emil R. Vaughan, and others
+Author-email: mkoeppe@math.ucdavis.edu
+License: GPLv2+
+Description: # sage-numerical-backends-gurobi
+        Gurobi backend for Sage
+        
+        To install, either
+        - set compiler/linker flags,
+        - make the `gurobi.sh` script available in your `PATH`,
+        - or set the `GUROBI_HOME` environment variable.
+        
+Keywords: milp,linear-programming,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

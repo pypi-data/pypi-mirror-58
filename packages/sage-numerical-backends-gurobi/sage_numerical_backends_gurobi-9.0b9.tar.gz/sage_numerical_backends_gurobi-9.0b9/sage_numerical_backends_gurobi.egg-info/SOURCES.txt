@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.py
+sage_numerical_backends_gurobi/__init__.py
+sage_numerical_backends_gurobi/gurobi_backend.c
+sage_numerical_backends_gurobi/gurobi_backend.pxd
+sage_numerical_backends_gurobi/gurobi_backend.pyx
+sage_numerical_backends_gurobi.egg-info/PKG-INFO
+sage_numerical_backends_gurobi.egg-info/SOURCES.txt
+sage_numerical_backends_gurobi.egg-info/dependency_links.txt
+sage_numerical_backends_gurobi.egg-info/requires.txt
+sage_numerical_backends_gurobi.egg-info/top_level.txt
