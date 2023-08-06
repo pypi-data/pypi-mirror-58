@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: squash-tf-services
+Version: 1.0.0
+Summary: This package allows to use test parameters from Squash directly in tests.
+Home-page: https://squash-tf.readthedocs.io/projects/runner-robotframework/en/doc-stable/tf-param-service.html
+Author: Henix
+Author-email: faq-python@squashtest.com
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Keywords: automated_testing robotframework SquashTM Squash TF
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+
+This package gives acces to parameters transmitted from Squash TM when issuing the test suite execution order.
+
+
