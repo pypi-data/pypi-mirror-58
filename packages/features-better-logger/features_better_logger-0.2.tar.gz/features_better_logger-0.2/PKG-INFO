@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: features_better_logger
+Version: 0.2
+Summary: Find Features Better Logging Package
+Home-page: https://github.com/findfeatures/better-logger
+Author: Calum Webb
+Author-email: calumpeterwebb@icloud.com
+License: MIT
+Download-URL: https://github.com/findfeatures/better-logger/archive/v0.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
