@@ -1,0 +1,11 @@
+README.rst
+setup.py
+texstrip/__init__.py
+texstrip/__main__.py
+texstrip/strip_comments.py
+texstrip.egg-info/PKG-INFO
+texstrip.egg-info/SOURCES.txt
+texstrip.egg-info/dependency_links.txt
+texstrip.egg-info/entry_points.txt
+texstrip.egg-info/requires.txt
+texstrip.egg-info/top_level.txt
