@@ -1,0 +1,2 @@
+smbus2==0.3.0
+stickytoe-device==0.0.1

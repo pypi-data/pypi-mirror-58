@@ -1,0 +1,9 @@
+README.md
+setup.py
+sht3x/__init__.py
+sht3x/sht3x.py
+sht3x.egg-info/PKG-INFO
+sht3x.egg-info/SOURCES.txt
+sht3x.egg-info/dependency_links.txt
+sht3x.egg-info/requires.txt
+sht3x.egg-info/top_level.txt
