@@ -1,0 +1,12 @@
+neumf/__init__.py,sha256=cyxOmI48Un0cUvNFaAGBUB57u3-3kg6isKk_g6r_jwk,491
+neumf/settings.py,sha256=smPeKZpknOZ2N0RBv_CqSbUvtBimT4_3t84PvmSx9AA,581
+neumf/utils.py,sha256=2L__hklkODxI5j2W2RNUE2BRQw37Naf7vyzt50DXES0,56
+neumf/keras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neumf/keras/data.py,sha256=XNJqiUJYePInpj6yUIUJce3Hl0zul4lYVHxjxh45LmQ,6285
+neumf/keras/layers.py,sha256=9Rb8WRqtNxmI374aXEbjRmtISk5R4wLVkY5ehtYl4NU,1370
+neumf/keras/model.py,sha256=OKAoj-FXA3wkVA5LjiakQOxABr269sPjPdo2vh5iL6Q,7772
+neumf/keras/utils.py,sha256=p2xMr4NnjyxgTLRtqioJ68Ik-Dl5UR8t8ObpzaqPCwA,3760
+neumf-0.0.1.dist-info/METADATA,sha256=RisFXY_rik1EQuNdLVEHKz77t7clN5jaShEIU7j8cGI,689
+neumf-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+neumf-0.0.1.dist-info/top_level.txt,sha256=1kVSWXqu-MehAmXhKX7wZ3RUGHs8qc4WCzQlPxS4vZU,6
+neumf-0.0.1.dist-info/RECORD,,
