@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ProxyManager
+Version: 0.0.1
+Summary: A description of your project
+Home-page: https://github.com/ecatkins/ProxyManager
+Author: Edward Atkins
+Author-email: ecatkins@gmail.com
+License: Apache Software License 2.0
+Description: # nbdev template
+        
+        Use this template to more easily create your nbdev project.
+        
+        
+Keywords: proxy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
