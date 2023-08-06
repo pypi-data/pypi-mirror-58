@@ -1,0 +1,11 @@
+README.md
+setup.py
+torch_maml/__init__.py
+torch_maml/maml.py
+torch_maml/optimizers.py
+torch_maml/utils.py
+torch_maml.egg-info/PKG-INFO
+torch_maml.egg-info/SOURCES.txt
+torch_maml.egg-info/dependency_links.txt
+torch_maml.egg-info/requires.txt
+torch_maml.egg-info/top_level.txt

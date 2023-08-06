@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: torch_maml
+Version: 1.0
+Summary: Gradient checkpointing technique for Model Agnostic Meta Learning
+Home-page: UNKNOWN
+Author: Dmitry Baranchuk
+Author-email: dmitry.baranchuk@graphics.cs.msu.ru
+License: MIT
+Description: PyTorch implementation of Model Agnostic Meta Learning with gradient checkpointing. Allows you to perform way (~10-100x) more MAML steps with the same GPU memory budget.
+Keywords: meta-learning,maml,pytorch,torch,deep learning,machine learning,gradient checkpointing,gpu
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
