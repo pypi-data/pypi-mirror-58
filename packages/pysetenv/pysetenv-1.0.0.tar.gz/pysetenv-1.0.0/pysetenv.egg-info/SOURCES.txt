@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pysetenv/__init__.py
+pysetenv/version.py
+pysetenv.egg-info/PKG-INFO
+pysetenv.egg-info/SOURCES.txt
+pysetenv.egg-info/dependency_links.txt
+pysetenv.egg-info/entry_points.txt
+pysetenv.egg-info/requires.txt
+pysetenv.egg-info/top_level.txt
+test/test_pysetenv.py

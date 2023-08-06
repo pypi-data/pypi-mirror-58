@@ -1,0 +1,3 @@
+[console_scripts]
+pysetenv = pysetenv:main
+
