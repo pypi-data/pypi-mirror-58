@@ -1,0 +1,16 @@
+#include AUTHORS.rst
+#include CONTRIBUTING.rst
+#include HISTORY.rst
+include LICENSE
+include README.md
+
+
+recursive-include . *.py
+recursive-include tests *
+recursive-include docs *.md
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude tests/test_data *
+#recursive-exclude development *
+prune ./development
