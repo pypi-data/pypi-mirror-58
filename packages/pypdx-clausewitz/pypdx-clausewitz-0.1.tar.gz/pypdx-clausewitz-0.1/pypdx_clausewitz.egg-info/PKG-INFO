@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pypdx-clausewitz
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/PyPDX/clausewitz
+Author: PyPDX
+Author-email: pypdx@michaelkim0407.com
+License: PyPDX
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: ci
