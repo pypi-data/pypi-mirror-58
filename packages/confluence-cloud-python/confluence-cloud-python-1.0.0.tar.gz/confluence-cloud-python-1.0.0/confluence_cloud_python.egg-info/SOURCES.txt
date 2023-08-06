@@ -1,0 +1,15 @@
+README.md
+setup.py
+confluence-cloud-ashwani/__init__.py
+confluence-cloud-ashwani/client.py
+confluence-cloud-ashwani/exceptions.py
+confluence-cloud-ashwani/issues.py
+confluence-cloud-ashwani/permissions.py
+confluence-cloud-ashwani/projects.py
+confluence-cloud-ashwani/spaces.py
+confluence-cloud-ashwani/users.py
+confluence-cloud-ashwani/webhooks.py
+confluence_cloud_python.egg-info/PKG-INFO
+confluence_cloud_python.egg-info/SOURCES.txt
+confluence_cloud_python.egg-info/dependency_links.txt
+confluence_cloud_python.egg-info/top_level.txt
