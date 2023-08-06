@@ -1,0 +1,5 @@
+dnspython
+ipaddress
+ipwhois
+pythonwhois
+tldextract
