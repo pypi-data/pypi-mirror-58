@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ovopy
+Version: 0.0.1
+Summary: Unofficial OVO Payment API SDK
+Home-page: https://github.com/MuhBayu/ovopy
+Author: MuhBayu <bnugraha00@gmail.com>
+Author-email: bnugraha00@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
