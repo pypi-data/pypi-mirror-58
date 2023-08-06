@@ -1,0 +1,10 @@
+channels:
+  - defaults
+dependencies:
+  - pip
+  - scipy
+  - numpy
+  - matplotlib
+  - python=3.7
+  - astropy
+  - pandas
