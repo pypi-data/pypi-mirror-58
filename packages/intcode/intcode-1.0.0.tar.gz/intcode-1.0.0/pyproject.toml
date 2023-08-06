@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "intcode"
+version = "1.0.0"
+description = "Intcode interpreter for Advent of Code 2019"
+authors = ["Javier Luna molina <javierlunamolina@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3"
+flake8 = "^3.7.9"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
