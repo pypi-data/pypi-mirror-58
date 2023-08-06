@@ -1,0 +1,4 @@
+azureml-telemetry
+azureml-automl-core
+azureml-train-automl-client
+azureml-core
