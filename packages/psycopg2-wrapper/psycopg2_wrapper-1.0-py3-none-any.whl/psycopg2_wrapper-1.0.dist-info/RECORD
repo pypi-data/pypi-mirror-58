@@ -1,0 +1,8 @@
+psycopg2_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psycopg2_wrapper/database.py,sha256=6n4rsFJdzrq5hfQ9QTXNutOcLU7go174BBTUh04eero,2704
+psycopg2_wrapper/validator.py,sha256=199hK93uN_XcsjRSNAYkV4VI0hKEF9gCuKt5E0yXkSU,567
+psycopg2_wrapper-1.0.dist-info/LICENSE,sha256=OH2GR5gdjroTL1a90OpC7CYz5hc_sm7XqKM-IQYGNs0,1074
+psycopg2_wrapper-1.0.dist-info/METADATA,sha256=Gc3psS56O4Kr_q7j2cX3d926ZXzqjsTDm5UN-QZpgKs,976
+psycopg2_wrapper-1.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+psycopg2_wrapper-1.0.dist-info/top_level.txt,sha256=ZvqB87Ja2dMSsEM7XHlKG_NcmK8krJQhNLTbSUnfHsM,17
+psycopg2_wrapper-1.0.dist-info/RECORD,,
