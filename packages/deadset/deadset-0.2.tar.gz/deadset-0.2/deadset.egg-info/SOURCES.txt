@@ -1,0 +1,10 @@
+README.md
+setup.py
+deadset/__init__.py
+deadset/deadset.py
+deadset.egg-info/PKG-INFO
+deadset.egg-info/SOURCES.txt
+deadset.egg-info/dependency_links.txt
+deadset.egg-info/not-zip-safe
+deadset.egg-info/requires.txt
+deadset.egg-info/top_level.txt

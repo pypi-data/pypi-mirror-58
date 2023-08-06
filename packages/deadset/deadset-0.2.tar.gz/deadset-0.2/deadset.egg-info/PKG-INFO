@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: deadset
+Version: 0.2
+Summary: Deadset is a Python 3 module that implements expiration for Redis Keys items.
+Home-page: https://github.com/buanzo/deadset
+Author: Arturo "Buanzo" Busleiman
+Author-email: buanzo@buanzo.com.ar
+License: UNKNOWN
+Description: # deadset
+        
+        A python class that provides item level expiration functionality for redis.
+        
+        # Links to inspiration sources:
+        
+        [TTL for a Set Member](https://stackoverflow.com/questions/17060672/ttl-for-a-set-member)
+        [How to expire List Items inRedis](https://quickleft.com/blog/how-to-create-and-expire-list-items-in-redis/)
+        
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
