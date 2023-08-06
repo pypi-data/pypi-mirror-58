@@ -1,0 +1,13 @@
+asdil/__init__.py,sha256=3-QfCLwDxiztQ4OlOWAi8kzcviZzLuT2ZGtVpQn5OXM,355
+asdil/code.py,sha256=4WyfaTLMaa0MbGfetHCeCQn6oqTzoN5ysB1ZpaJccnE,3086
+asdil/fo.py,sha256=t1FAt79DyWNdW4PjviFc9FS0RgRKlIrq6poQUXC77hk,4260
+asdil/log.py,sha256=28tNyQ18jUI6awWrjIYVak0ZU-cjnEsNaep_QX-pbWc,2043
+asdil/mail.py,sha256=h8am4cFuBHoWdkDPW-gTisQAcaTO9hWj3gyY0gpluVg,2051
+asdil/mysql.py,sha256=_Od_QeCwr_j2xjENFK7Y9ZfH5sKvK29EnQ4LMWg3yc0,2881
+asdil/ssh.py,sha256=90IDv5ojWETWuZ6Ny-B2kOXlGBAdsH2hUQb_Mm59-qM,7237
+asdil/tab.py,sha256=GHCMb8uOjhUGbuS4B1rLOYEzNhUTTvQ-rH0N5fT5xJQ,397
+asdil/tool.py,sha256=pTydf0kgeW5MgpJzHsDGvbnmxNOjGQo-BDVD4CURoBA,16776
+asdil-1.7.4.2.dist-info/entry_points.txt,sha256=M_M2Jfw04tMpb1-SnBRvGvlSeQ7u0RHOdwNwlkg9eUk,36
+asdil-1.7.4.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+asdil-1.7.4.2.dist-info/METADATA,sha256=VzyrOpHbWSrNBbd917OGeS477Ry0am0XQzSso9mhnxE,1373
+asdil-1.7.4.2.dist-info/RECORD,,

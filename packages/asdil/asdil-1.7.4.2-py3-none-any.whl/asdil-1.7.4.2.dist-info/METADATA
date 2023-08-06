@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: asdil
+Version: 1.7.4.2
+Summary: Asdil's personal tool package
+Home-page: https://github.com/Asdil/Asdil
+License: MIT
+Author: Asdil Fibrizo
+Author-email: jpl4job@126.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Requires-Dist: ConcurrentLogHandler (>=0.9,<0.10)
+Requires-Dist: crypto (>=1.4,<2.0)
+Requires-Dist: mailthon (>=0.1,<0.2)
+Requires-Dist: paramiko (>=2.6,<3.0)
+Requires-Dist: psutil (>=5.6,<6.0)
+Requires-Dist: pymysql (>=0.9,<0.10)
+Requires-Dist: pymysql-pooling (>=1.0,<2.0)
+Requires-Dist: rsa (>=4.0,<5.0)
+Requires-Dist: scp (>=0.13,<0.14)
+Requires-Dist: tqdm (>=4.32,<5.0)
+Project-URL: Repository, https://github.com/Asdil/Asdil
+Description-Content-Type: text/markdown
+
+# Asdil
+我的自用库
+
