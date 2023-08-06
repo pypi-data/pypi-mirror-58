@@ -1,0 +1,12 @@
+README.md
+setup.py
+conversion_metrics/__init__.py
+conversion_metrics/_nbdev.py
+conversion_metrics/plot.py
+conversion_metrics/ratio.py
+conversion_metrics.egg-info/PKG-INFO
+conversion_metrics.egg-info/SOURCES.txt
+conversion_metrics.egg-info/dependency_links.txt
+conversion_metrics.egg-info/entry_points.txt
+conversion_metrics.egg-info/not-zip-safe
+conversion_metrics.egg-info/top_level.txt
