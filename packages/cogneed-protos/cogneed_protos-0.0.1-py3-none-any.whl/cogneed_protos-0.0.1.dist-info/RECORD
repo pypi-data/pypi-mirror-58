@@ -1,0 +1,12 @@
+proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proto/ks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proto/ks/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proto/ks/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proto/ks/service/forward_audio_pb2.py,sha256=76K8Xqsb6ChynAt_EbrLWZPqWNDQvPl13lzhrpevbVs,5429
+proto/ks/service/forward_audio_pb2_grpc.py,sha256=RdL74vaT16UTidQnwe1TFFr7cTU2ilDikdl5EEQsTTI,1740
+proto/ks/service/predict_pb2.py,sha256=53EoaxJCIGcvJkF5z6Y_Akf4NpROxNdVgkHJOxxh2kk,4799
+proto/ks/service/predict_pb2_grpc.py,sha256=9C93wXyLyshYNKpqKT3KEf4KRJY_PNoGQbRsFpK4tsU,1653
+cogneed_protos-0.0.1.dist-info/METADATA,sha256=dPdAERUNbtzrOBnlx0K1ayGXAUYIMgbMexzH6sc5ev4,206
+cogneed_protos-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cogneed_protos-0.0.1.dist-info/top_level.txt,sha256=HFg_NW9VxhDySzqGDmUxqUh6w8QZlVLh4ZDIxYksTCM,6
+cogneed_protos-0.0.1.dist-info/RECORD,,
