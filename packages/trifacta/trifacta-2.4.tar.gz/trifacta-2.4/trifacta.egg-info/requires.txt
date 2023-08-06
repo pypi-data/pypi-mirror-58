@@ -1,0 +1,7 @@
+requests
+pywebhdfs
+pandas
+boto3
+ipywidgets
+ijson
+simplejson

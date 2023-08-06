@@ -1,0 +1,8 @@
+README.md
+setup.py
+trifacta/__init__.py
+trifacta.egg-info/PKG-INFO
+trifacta.egg-info/SOURCES.txt
+trifacta.egg-info/dependency_links.txt
+trifacta.egg-info/requires.txt
+trifacta.egg-info/top_level.txt
