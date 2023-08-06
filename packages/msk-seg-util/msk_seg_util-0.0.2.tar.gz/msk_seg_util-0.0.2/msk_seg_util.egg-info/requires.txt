@@ -1,0 +1,9 @@
+h5py
+matplotlib
+medpy
+numpy
+opencv-python
+pandas
+pyvisstats
+scipy
+seaborn

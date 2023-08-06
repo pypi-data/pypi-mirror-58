@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: msk-seg-util
+Version: 0.0.2
+Summary: Python package for MSK segmentation utilities
+Home-page: https://github.com/ad12/msk_seg_util
+Author: Arjun Desai
+Author-email: arjundd@stanford.edu
+License: MIT
+Description: MskSegUtil
+        ==========
+        
+        A Python package for MSK segmentation and anaylsis utilities.
+        
+        Installation
+        ------------
+        
+        MskSegUtil requires Python version >= 3.6.
+        
+        Via ``pip``
+        *************
+        
+        We recommend installing MskSegUtil through ``pip``::
+        
+            pip install msk_seg_util
+        
+        Via ``conda``
+        *************
+        
+        MskSegUtil can also be installed through ``conda``::
+        
+            conda install -c arjundd msk_seg_util
+            # (required for statistics) pip install scikit-posthocs
+            # (required for segmentation metrics) pip install medpy
+            # (required for visualization) pip install opencv-python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
