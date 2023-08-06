@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+docs/requirements.txt
+nyaggle/__init__.py
+nyaggle/constants.py
+nyaggle/environment.py
+nyaggle/version.py
+nyaggle.egg-info/PKG-INFO
+nyaggle.egg-info/SOURCES.txt
+nyaggle.egg-info/dependency_links.txt
+nyaggle.egg-info/requires.txt
+nyaggle.egg-info/top_level.txt

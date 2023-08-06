@@ -1,0 +1,10 @@
+catboost>=0.17category_encoders
+lightgbm
+matplotlib
+more-itertools
+numpy
+pandas
+seaborn
+sklearn
+tqdm
+transformers>=2.3.0
