@@ -1,0 +1,9 @@
+aursync/__init__.py,sha256=FmsDIly7iGUvqQ-yePaqdO6wERcUFTKgJuw1DsRhFT0,29
+aursync/config_proxy.py,sha256=1Fkoz192vRl6NCMP-rOeFIaiAAAF1j9XQshsIyT9Yeo,1593
+aursync/flattener.py,sha256=df5UEK3sdtQHJtrMvOchLxjVACPIn-zwaTZxvZ8Wd80,3532
+aursync/mpmc.py,sha256=C-WnniQcY7FwhXcmseNu3OqSVfHdllH_FM09aC5hVXc,3983
+aursync/sync.py,sha256=kTaPxmVzob_p1ofVa1-HwMYUPtM4cl4NlwJebIbWAoE,10831
+aursync-0.0.3.dist-info/METADATA,sha256=E0l3nnePb48nV4DFKHtfv7mfpMrngGiyc5GNUf0BfAA,487
+aursync-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+aursync-0.0.3.dist-info/top_level.txt,sha256=OPGMqBPJ81VGuOtQm-zyK4Kq39eufLCEQOqFQvq2FzU,8
+aursync-0.0.3.dist-info/RECORD,,
