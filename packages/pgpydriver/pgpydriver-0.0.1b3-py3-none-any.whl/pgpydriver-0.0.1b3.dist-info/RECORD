@@ -1,0 +1,10 @@
+pgpydriver/__init__.py,sha256=rrU9qZS00yErWiXPVbbTFMxph7MotJyFufgng-djBR0,200
+pgpydriver/_querydata.py,sha256=Xmy-WB2lSm9fq10rjuS33kp3d_YL-5IsA7yLPFWIGgs,477
+pgpydriver/driver.py,sha256=zoeTRuoqs7KKwVW8rlMUD2j3nszHg4dgsMtk3HcHRwY,14064
+pgpydriver/querydata.py,sha256=4wFAALNpa_XO6ZLmNmc2ZArBzXgfhU-d2ga5j49V44s,190
+pgpydriver/querytype.py,sha256=ItO3I2RR37xe3ZXW3xv08WQ6rFUfZBWu0WCOsD2zQO4,156
+pgpydriver/sqlbuilder.py,sha256=AwBqowAXk8Wo148JZwwBNAeBf9tjjfYRyuvfB7Hs_fI,5420
+pgpydriver-0.0.1b3.dist-info/METADATA,sha256=1czzXB3pReoFFfEB3WxF9KXdyn4LtmG3361u_-qhQ58,475
+pgpydriver-0.0.1b3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pgpydriver-0.0.1b3.dist-info/top_level.txt,sha256=4C1nE16D5e_NQVwMlQg4ez_Z7AuTJtZymSg56B4dMr4,11
+pgpydriver-0.0.1b3.dist-info/RECORD,,
