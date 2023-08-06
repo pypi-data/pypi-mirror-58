@@ -1,0 +1,28 @@
+<div class="game" id="game">
+  <div>
+    <p>
+		{% for let_col in letters_colors.new %}
+		<span class="skatebox">&nbsp<span style="color: {{ let_col.color }}">
+				{{ let_col.letter }}
+			</span>&nbsp</span>
+		{% endfor %}
+		New You, vs.
+	</p>
+	<p>
+		{% for let_col in letters_colors.past %}
+		<span class="skatebox">&nbsp<span style="color: {{ let_col.color }}">
+				{{ let_col.letter }}
+			</span>&nbsp</span>
+		{% endfor %}
+   		Past You
+	</p>
+  </div>
+  <div class="gamefeed">
+    <ul class="list-group">
+      <!-- classes should be list-group-item and optionally active li -->
+	  {% for turn_line in turn_lines %}
+        <li class="{{ turn_line.classes }}">{{ turn_line.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
