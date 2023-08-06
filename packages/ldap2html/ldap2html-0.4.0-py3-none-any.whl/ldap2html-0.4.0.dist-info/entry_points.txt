@@ -1,0 +1,4 @@
+[console_scripts]
+html2ldif=ldap2html.html2ldif:main
+ldap2html=ldap2html.ldap2html:main
+
