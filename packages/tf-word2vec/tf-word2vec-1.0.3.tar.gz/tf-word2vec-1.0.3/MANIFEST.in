@@ -1,0 +1,2 @@
+include word2vec/logging/logging.yml
+include word2vec/resources/MEN_dataset_natural_form_full
