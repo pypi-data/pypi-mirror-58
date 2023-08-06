@@ -1,0 +1,15 @@
+leonardo/Colour.py,sha256=QGuzu_S6Vf3_I2AX1jV8ISULnNWX7FkVlfC8ZkwLODg,17335
+leonardo/Gradient.py,sha256=oGqUnZ-jHROawNv0h1s4nk2o_kOZYNoG4XG7kr6cJ0M,831
+leonardo/Scheme.py,sha256=-s2sfwlu17axH7YdOR4G81f9fU2rp7OEoXDDHMNWra0,6006
+leonardo/__init__.py,sha256=Oyc9Yx7iXLgXml_iqZElSfVmFYkowBKlVi-c4Zwc0z0,164
+leonardo/colour_schemes.py,sha256=zMjca014w7g8xh2I6keqdh_Tj2KQiVTrQjb3D2HYXCk,1120
+leonardo/colourize.py,sha256=9SLOLj793B9T8_RJPCz4xkT_r1ucYAv2fQQ0lSzrAI8,1023
+leonardo/convert_rgb_to_hsl.py,sha256=NDsjTxZTqWmT4Lm1Yp0-P2CWSVtXyPV4n-3Jh0Nxfgs,699
+leonardo/data_files/colour_schemes.pickle,sha256=Jb_gC_nel1HG4M6qjdYhIzRK6asJaP-8znfFS6InySA,20341
+leonardo/data_files/svg_colours.pickle,sha256=ZJtC2nYuAV6QV1O3JgzlLEz7k-2CANnaZpV-H85oTjA,3044
+leonardo/data_files/x11_colours.pickle,sha256=5Tkty_nJLBQ4xL0TX7Y0HPlfSXadd_0TTmt2TSLk7yQ,11016
+leonardo-2019.12.30.1.dist-info/METADATA,sha256=uTQJPn2eLRll1N0ElSdsMwACZ1qur_UvhynZ7eDjbsc,682
+leonardo-2019.12.30.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+leonardo-2019.12.30.1.dist-info/top_level.txt,sha256=iVj3FRSJhuEHN5yMhD463m4mh34nub5D-GpO4_a87fs,9
+leonardo-2019.12.30.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+leonardo-2019.12.30.1.dist-info/RECORD,,
