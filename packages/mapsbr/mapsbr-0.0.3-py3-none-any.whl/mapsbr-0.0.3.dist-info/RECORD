@@ -1,0 +1,12 @@
+mapsbr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapsbr/arcgis.py,sha256=eydNQTSkOOYvQCCm7XXU2a6tZ4puHYfA6jV4M6c1tqk,4453
+mapsbr/ibgemaps.py,sha256=_2bfo66I30OI9-GBsIUxU2PV_JzSN6oZXVlKql5G4ac,3483
+mapsbr/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapsbr/helpers/ibgetools.py,sha256=Dm0VsdTQL3s33tPBhbrAihBd7SKhK0CKXMACeo28rpU,2922
+mapsbr/helpers/request.py,sha256=L5qhm3eMeRRYen-p5LPgF6kJEl8NWF2KvkzUPXtSNl4,364
+mapsbr/helpers/utils.py,sha256=GULyv8_e72QrWNkV81laRdqjwW1Shs0NvPIjaPmQ4pM,1335
+mapsbr-0.0.3.dist-info/LICENSE,sha256=ndTz1_QBw1HNBe11YJYKYTSTuH_byfgtIKV1HD1b8pg,1079
+mapsbr-0.0.3.dist-info/METADATA,sha256=ILmwiRebe8n1s34Ut7Ekf2v-cUDqSEI8AqYM6FbGkNY,1003
+mapsbr-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mapsbr-0.0.3.dist-info/top_level.txt,sha256=as_H2juFJW11Noz6MoBMwqfqh5sHNYDlUusn9h6EpVQ,7
+mapsbr-0.0.3.dist-info/RECORD,,
