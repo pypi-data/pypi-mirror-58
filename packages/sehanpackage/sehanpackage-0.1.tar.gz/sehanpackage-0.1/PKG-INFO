@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sehanpackage
+Version: 0.1
+Summary: This is just to get started with Pypi
+Home-page: https://github.com/sehanfarooqui
+Author: sehan
+Author-email: sehan_ahmed@live.com
+License: MIT
+Download-URL: https://github.com/sehanfarooqui/HelloPypi/archive/sehanpackage.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
