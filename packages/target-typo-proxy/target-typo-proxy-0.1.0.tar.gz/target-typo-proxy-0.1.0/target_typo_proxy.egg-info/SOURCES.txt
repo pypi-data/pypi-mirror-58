@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+target_typo_proxy/__init__.py
+target_typo_proxy/typo.py
+target_typo_proxy.egg-info/PKG-INFO
+target_typo_proxy.egg-info/SOURCES.txt
+target_typo_proxy.egg-info/dependency_links.txt
+target_typo_proxy.egg-info/entry_points.txt
+target_typo_proxy.egg-info/requires.txt
+target_typo_proxy.egg-info/top_level.txt
+test/__init__.py
+test/test.py
