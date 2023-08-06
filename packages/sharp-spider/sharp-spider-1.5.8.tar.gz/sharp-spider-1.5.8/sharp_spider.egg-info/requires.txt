@@ -1,0 +1,9 @@
+lxml
+bs4
+tornado
+bs4
+redis>=2.10.5
+uuid
+selenium
+requests
+six
