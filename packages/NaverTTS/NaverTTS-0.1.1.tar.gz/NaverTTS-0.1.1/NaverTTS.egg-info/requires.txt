@@ -1,0 +1,11 @@
+six
+beautifulsoup4
+click
+requests
+
+[test]
+pytest>=3.9
+pytest-cov
+flake8
+testfixtures
+mock
