@@ -1,0 +1,4 @@
+robotframework
+sphinxcontrib-robotdoc<0.12.0,>=0.11.0
+mlx.traceability
+mako
