@@ -1,0 +1,12 @@
+README.md
+setup.py
+androidautotest/__init__.py
+androidautotest/api.py
+androidautotest/errors.py
+androidautotest/logger.py
+androidautotest/tool.py
+androidautotest.egg-info/PKG-INFO
+androidautotest.egg-info/SOURCES.txt
+androidautotest.egg-info/dependency_links.txt
+androidautotest.egg-info/requires.txt
+androidautotest.egg-info/top_level.txt
