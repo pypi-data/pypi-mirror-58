@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: configtools
+Version: 0.3.3
+Summary: Simple set of tools to read and parse configuration files for use by shell scripts
+Home-page: https://github.com/distributed-system/analysis/configtools
+Author: Nick Dokos
+Author-email: ndokos@redhat.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
