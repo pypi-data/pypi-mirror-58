@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dir2pdf
+Version: 0.0.2
+Summary: Convert directories of images to PDFs
+Home-page: https://github.com/jirassimok/dir2pdf
+Author: Jacob Komissar
+License: UNKNOWN
+Description: # dir2pdf
+        
+        `dir2pdf` is a simple tool for converting image directories into PDFs.
+        
+        Refer to the command help (`dir2pdf --help`) for additional information.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev

@@ -1,0 +1,9 @@
+README.md
+dir2pdf.py
+setup.py
+dir2pdf.egg-info/PKG-INFO
+dir2pdf.egg-info/SOURCES.txt
+dir2pdf.egg-info/dependency_links.txt
+dir2pdf.egg-info/entry_points.txt
+dir2pdf.egg-info/requires.txt
+dir2pdf.egg-info/top_level.txt
