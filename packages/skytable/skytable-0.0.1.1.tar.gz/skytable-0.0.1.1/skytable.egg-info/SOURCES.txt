@@ -1,0 +1,16 @@
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+skytable/__init__.py
+skytable/__version__.py
+skytable/auth.py
+skytable/params.py
+skytable/skytable.py
+skytable.egg-info/PKG-INFO
+skytable.egg-info/SOURCES.txt
+skytable.egg-info/dependency_links.txt
+skytable.egg-info/requires.txt
+skytable.egg-info/top_level.txt
