@@ -1,0 +1,40 @@
+Match based on,ID,If value not matching for "severity" xor matching for "finding",Column name
+finding,DNS_CAArecord,--,No CAA RR
+finding,OCSP_stapling,not offered,No OCSP stapling
+finding,TLS1,offered,TLSv1.0
+finding,TLS1_1,offered,TLSv1.1
+finding,TLS1_2,not offered,No TLSv1.2
+finding,TLS1_3,not offered,No TLSv1.3
+finding,cert_chain_of_trust,self signed,Self signed
+finding,cert_commonName,*,Wildcard
+finding,cert_mustStapleExtension,--,No OCSP Must-Staple
+finding,cert_revocation,Neither CRL nor OCSP URI provided,No revocation checking
+finding,fallback_SCSV,offered,TLS_FALLBACK_SCSV
+severity,ALPN_HTTP2,OK,No HTTP/2
+severity,BEAST,OK,BEAST
+severity,BREACH,OK,BREACH
+severity,CRIME_TLS,OK,CRIME
+severity,CSS,OK,CSS
+severity,DROWN,OK,DROWN
+severity,FREAK,OK,FREAK
+severity,HSTS,OK,No HSTS
+severity,LOGJAM,OK,LOGJAM
+severity,LUCKY13,OK,LUCKY13
+severity,PFS,OK,No PFS
+severity,POODLE_SSL,OK,POODLE
+severity,RC4,OK,RC4
+severity,ROBOT,OK,ROBOT
+severity,SSLv2,OK,SSLv2
+severity,SSLv3,OK,SSLv3
+severity,SWEET32,OK,SWEET32
+severity,cert_caIssuers,INFO,No trusted CA
+severity,cert_commonName,OK,Incorrect CN
+severity,cert_expirationStatus,OK,Expired
+severity,cert_keySize,INFO,Weak key size
+severity,cert_signatureAlgorithm,OK,Weak signature
+severity,cert_subjectAltName,INFO,Missing SAN
+severity,cipherlist_aNULL,OK,Anonymous DH
+severity,heartbleed,OK,heartbleed
+severity,secure_client_renego,OK,Insecure client renegotiation
+severity,secure_renego,OK,Insecure renegotiation
+severity,ticketbleed,OK,ticketbleed
