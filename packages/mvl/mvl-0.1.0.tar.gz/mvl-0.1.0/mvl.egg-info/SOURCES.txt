@@ -1,0 +1,16 @@
+README.md
+setup.py
+mvl/__init__.py
+mvl/bochvar.py
+mvl/kleene.py
+mvl/lukasiewicz.py
+mvl/priest.py
+mvl/tvl_operators.py
+mvl/types.py
+mvl.egg-info/PKG-INFO
+mvl.egg-info/SOURCES.txt
+mvl.egg-info/dependency_links.txt
+mvl.egg-info/top_level.txt
+test/__init__.py
+test/test_lukasiewicz.py
+test/test_tvl.py
