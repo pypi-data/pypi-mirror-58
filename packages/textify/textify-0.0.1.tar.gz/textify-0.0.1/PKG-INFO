@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: textify
+Version: 0.0.1
+Summary: A Simple Text Cleaning Package  For cleaning text during NLP
+Home-page: https://github.com/Jcharis/textify
+License: MIT
+Keywords: textify,jcharistech,clean text,NLP,text preprocessing,text cleaning
+Author: Jesse E.Agbe(JCharis)
+Author-email: jcharistech@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/Jcharis/textify
+Description-Content-Type: text/markdown
+
+# textify
+A Simple Text Cleaning and Normalization Package For NLP
+
+
+#### Installation
+```bash
+pip install textify
+```
+
+### Usage
+#### Clean Text
++ Clean text by removing emails,numbers,etc
+```python
+>>> from textify import TextCleaner
+>>> docx = TextCleaner()
+>>> docx.text = "your text goes here"
+>>> docx.clean_text()
+```
+
+#### Remove Emails,Numbers,Phone Numbers 
+```python
+>>> docx.remove_emails()
+>>> docx.remove_numbers()
+>>> docx.remove_phone_numbers()
+```
+
+
+#### Remove Special Characters
+```python
+>>> docx.remove_special_characters()
+```
+
+#### Replace Emails,Numbers,Phone Numbers
+```python
+>>> docx.replace_emails()
+>>> docx.replace_numbers()
+>>> docx.replace_phone_numbers()
+```
+
+### Using TextExtractor
++ To Extract emails,phone numbers,numbers from text
+```python
+>>> from textify import TextExtractor
+>>> docx = TextExtractor()
+>>> docx.text = "your text with example@gmail.com goes here"
+>>> docx.extract_emails()
+```
+
+#### By 
++ Jesse E.Agbe(JCharis)
++ Jesus Saves @JCharisTech
+
+
+#### NB
++ Contributions Are Welcomed
++ Notice a bug, please let us know.
++ Thanks A lot
+
