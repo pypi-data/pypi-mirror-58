@@ -1,0 +1,16 @@
+stumpy/__init__.py,sha256=_3YZwokCQGB9ZVjnZzJgl4WAwW8purwqWFP_o2wzB_E,1841
+stumpy/chains.py,sha256=VtJqoGrpQuvbmRPm7IPXRSD2pCa4Y_4-6psHnZbqE9c,2751
+stumpy/core.py,sha256=CYC40RLGnFWhfjpNvy5oKobRazmCJDRNX7_S8DHM6Y0,12129
+stumpy/floss.py,sha256=H1-9HTS3TLz9cPU1p7gREOJaIq1mIcDFACj9ZE4VR8k,15439
+stumpy/gpu_stump.py,sha256=punMR6Fi6g_zmPTpsMu-22ckm5U-4Jxhy59bZZ3Fmis,19997
+stumpy/mstump.py,sha256=EiVo6PcMQ7vsnMyZXZrU29a63Fcdb6IZ3mZqmIOLTwM,13809
+stumpy/mstumped.py,sha256=VQvuB5U1rulrszvJHesgm4Y5Bqpgq0yXhJ6-LgAh2KA,5037
+stumpy/stamp.py,sha256=CAB7hYZqIWnwc9D7jlD6S1CeA4o66YK53wODNAhUGm4,4171
+stumpy/stomp.py,sha256=kuAqqIM78j8eLhcSxAHQpr8CEy837MMS7E-rom4M9Xg,4985
+stumpy/stump.py,sha256=ZAOh5p-cRjRcr8j0QdCEDwOEhoaPd5rcO5OprWnfsos,15174
+stumpy/stumped.py,sha256=H8QlGaTNmXhkb9x92GRnTg-CYjpT0rGgNnaDMm-3afw,6835
+stumpy-1.3.0.dist-info/LICENSE.txt,sha256=Nq8QeQzMj6p0G15IP2SNEB9N-XleSF4rAbCJA5o4ik8,1604
+stumpy-1.3.0.dist-info/METADATA,sha256=tEzgRXo4cH9qXxEdJtKe6Y8Pe7xC6P-OBK1TBm7-5Ig,25827
+stumpy-1.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+stumpy-1.3.0.dist-info/top_level.txt,sha256=01huWzXqUkpAfpKz5tWkb7FzjPQie1wEaeuA57dgDc8,7
+stumpy-1.3.0.dist-info/RECORD,,
