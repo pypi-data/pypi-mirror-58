@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: actuarialCalculations
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/francose/acturialcalculations
+Author: Sadik Erisen
+Author-email: fserisen@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/francose/acturialcalculations/archive/master.zip
+Description: 
+        This package includes financial math calculations for actuarial calculations such as annuity calculations, amortization schedule, sinking fund calculations and constructing tables with those formulas.
+        
+        Installation
+        ============
+        
+        - pip install actuarialCalculations
+        
+        
+        Annuity Calculations
+        ====================
+        
+        Calcuating present value
+        Assuming our user would like to know the downpayment amount with provided kwargs below;
+        
+        Logic
+        terms, period and interest amount rate. Price - (presentValue* _N _ Repay Amount ) = Down payment
+        
+        Calculating the future value
+        Assuming our user pays at the end of the given period, so our program should accumulate the value with gthe iven interest rate;
+        
+        Logic
+        Accumulated Down payment(1+i)**N = Accumulated Price(1+i)**N - (AccumulatedValue*_N _ Repay Amount)
+        
+        Calculating The Down Payment with Given Time Value
+        Assuming our user wants to calculate the downpayment with the given period of time
+        
+        Logic
+        Accumulated Down payment = Accumulated Price ** T -(presentValue * Repay Amount ) ** T- (AccumulatedValue * Repay Amount)**-(N+T) / (1+i)**T
+        
+        USAGE
+        =====
+        
+        .. code:: python
+        
+        '''
+        Present Value method takes 5 parameters as intergers and returns downpayment amount
+        '''
+        presentValue = PresentValue(
+            InterestRate, effectiveInterestTerms, fixedPeriod, repayAmount, price)
+        
+        '''
+        Accumulated Value method takes 5 parameters as intergers and returns downpayment amount (future value)
+        '''
+        accumulatedValue = AccumulatedValue(
+            InterestRate, effectiveInterestTerms, fixedPeriod, repayAmount, price)
+        
+        '''
+        Calculate Given Time method takes 5 parameters as intergers and returns downpayment amount at any given time.
+        '''
+        calculateGivenTime = CalculateGivenTime(
+            InterestRate, effectiveInterestTerms, fixedPeriod, repayAmount, price)
+        
+        
+        
+        Amortization Schedule Calculation
+        ==================================
+        method takes 4 parameters
+        
+        Interest rate
+        Years
+        Frequency of the interest that hits in that period of time
+        Loan Amount
+        
+        
+        
+        
+        USAGE
+        =====
+        .. code:: python
+        
+        '''Create an instance of CalctulateAmortization class and pass the parameters as intergers '''
+        calculate = CalctulateAmortization(interestRate, years, frequency, loanAmount)
+        '''To run the calculations we need to call execute funtion '''
+        calculate.execute()
+        
+        
+        
+        Sinking Fund Calculation
+        ==================================
+        method takes 4 parameters
+        
+        Interest rate
+        Years
+        Frequency of the interest that hits in that period of time
+        Amount
+        
+        
+        USAGE
+        =====
+        .. code:: python
+        
+        ''' Create an instance of CalculateSinkingFund class and pass the parameters as integers'''
+        calculate = CalculateSinkingFund(interestRate, years, frequency, amount)
+        '''To run the calculations we need to call execute funtion '''
+        calculate.execute()
+        
+        
+        CONTACT
+        =======
+        
+        The package is created by Sadik Erisen. Please send email to fserisen@gmail.com if you have questions or comments.
+        
+        LICENCE
+        =======
+        
+        MIT
+Keywords: finance,annuity calculations,actuarial math,financial math,amortization schedule,sinking fund,present value,accumulated value
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
