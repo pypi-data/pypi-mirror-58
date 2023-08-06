@@ -1,0 +1,16 @@
+satnogsconfig/__init__.py,sha256=OdLyQhuVofBfXdxz4ca9PD7gU_Gkj7rCpxtslL7D9Gg,570
+satnogsconfig/__main__.py,sha256=dE9r-aRPbeQ13mR0SiVdwF6Fq3spA678fDo7o69NoDY,140
+satnogsconfig/_version.py,sha256=unf8_sGSM1jkE3JjSAYu_HKbDfJzijeBMykAPpw8uCI,497
+satnogsconfig/config.py,sha256=7gWEh_Mgqpsfm4kytsdzXg3vaqjXouab1fsfFHLrN9U,2488
+satnogsconfig/menu.py,sha256=XJdSRqQ1q8WVdB68ZGQgb-DuZ3AUprsZLx2reQsJcjw,8106
+satnogsconfig/menu.yml,sha256=8QvHCT-EGRo8OpEQFE83i1dmfPTdElgLi7qYtNrftps,13305
+satnogsconfig/settings.py,sha256=rVrV9-5jx30IB0pS5GYrVl-EWLfq-QCGKXGk58TH1eY,811
+satnogsconfig/helpers/__init__.py,sha256=DSR6cRx3n78rmSMFy4HR9PxpRro18GA1uOBbQBv-svk,147
+satnogsconfig/helpers/grsatnogs.py,sha256=ILaiyxJwP0yH_4_SrVbG19cV4i693fQbqOJd9g8Inr0,362
+satnogsconfig/helpers/satnogssetup.py,sha256=d0PwijryWICkcMhCztJj-HbQYWLhrq4b-sNRQ6BNePU,1521
+satnogs_config-0.1.1.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+satnogs_config-0.1.1.dist-info/METADATA,sha256=i6YxMcgoLvoyUkfpLdmIrsjfb_HUKpYWsvS0qxQsrQY,785
+satnogs_config-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+satnogs_config-0.1.1.dist-info/entry_points.txt,sha256=N04YpcchQtUCIJ-lWx5BXmhMAydO16zU9ixx_NRnUdc,55
+satnogs_config-0.1.1.dist-info/top_level.txt,sha256=4wh55z8_A-LIm8MVKIfqB_-qKrquHUlQ6Mck1cD8VwY,14
+satnogs_config-0.1.1.dist-info/RECORD,,
