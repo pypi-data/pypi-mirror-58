@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: nidhoggr
+Version: 0.1.0
+Summary: Yggdrasil protocol implementation
+Home-page: https://github.com/Orhideous/nidhoggr
+Author: Andriy Kushnir (Orhideous)
+Author-email: me@orhideous.name
+License: MIT
+Description: UNKNOWN
+Keywords: Minecraft,Yggdrasil,Authentication
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Utilities
