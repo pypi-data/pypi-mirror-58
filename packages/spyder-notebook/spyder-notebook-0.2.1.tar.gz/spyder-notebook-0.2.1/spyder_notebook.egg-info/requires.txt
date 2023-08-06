@@ -1,0 +1,6 @@
+spyder>=4
+notebook>=4.3
+qtpy
+requests
+psutil
+nbformat
