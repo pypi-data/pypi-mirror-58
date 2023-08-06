@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pycoders-toolbox=cli:main
+    
