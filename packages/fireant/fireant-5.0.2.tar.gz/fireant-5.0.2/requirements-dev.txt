@@ -1,0 +1,14 @@
+-r requirements.txt
+-r requirements-extras-vertica.txt
+-r requirements-extras-snowflake.txt
+-r requirements-extras-mysql.txt
+-r requirements-extras-redshift.txt
+-r requirements-extras-postgresql.txt
+-r requirements-extras-ipython.txt
+mock
+bumpversion==0.5.3
+wheel==0.30.0
+watchdog==0.8.3
+flake8==3.5.0
+sphinx==2.2.0
+sphinx-rtd-theme==0.4.3
