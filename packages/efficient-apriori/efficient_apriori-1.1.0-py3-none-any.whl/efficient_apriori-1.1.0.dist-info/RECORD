@@ -1,0 +1,9 @@
+efficient_apriori/__init__.py,sha256=GqPBLPaxdpxi2yefCJHc1tnIAEGSZtnDvUhtwuqXrx0,696
+efficient_apriori/apriori.py,sha256=DpEselIk60qU3XDINvrAzg07aFDmnDsydnsy-Gvyqwo,3590
+efficient_apriori/itemsets.py,sha256=_zILVOa9-USgYXgXvdHuKsegw6aUYq1Huo03Fx4Ia28,15935
+efficient_apriori/rules.py,sha256=Nmfo5lCuCUzyY8PXGquTDVtKmTkxc156U4yiqCpZ50A,14673
+efficient_apriori-1.1.0.dist-info/LICENSE,sha256=QZIuV0etvkDx3-UDaAvB3TcOHOZDqzIVZxIF52cITBY,1062
+efficient_apriori-1.1.0.dist-info/METADATA,sha256=2b1BxUS83pFDliReb6YZBlPrqzsELoBXPBrFHR_BjS0,5365
+efficient_apriori-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+efficient_apriori-1.1.0.dist-info/top_level.txt,sha256=pCpU4jUGr3CqqGF9VbgdOdKKYg8kWjD8K7NkEuYqUSY,18
+efficient_apriori-1.1.0.dist-info/RECORD,,
