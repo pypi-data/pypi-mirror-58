@@ -1,0 +1,3 @@
+[PhiSpy]
+eggsecutable = PhiSpy.py:main
+

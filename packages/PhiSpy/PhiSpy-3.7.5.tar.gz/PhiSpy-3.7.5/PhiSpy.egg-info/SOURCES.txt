@@ -1,0 +1,10 @@
+PhiSpy.py
+README.txt
+setup.py
+PhiSpy.egg-info/PKG-INFO
+PhiSpy.egg-info/SOURCES.txt
+PhiSpy.egg-info/dependency_links.txt
+PhiSpy.egg-info/entry_points.txt
+PhiSpy.egg-info/top_level.txt
+PhiSpy.egg-info/zip-safe
+src/repeatFinder.cpp
