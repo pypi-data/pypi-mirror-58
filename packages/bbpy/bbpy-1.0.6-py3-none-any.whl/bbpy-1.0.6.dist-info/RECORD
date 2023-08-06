@@ -1,0 +1,10 @@
+bbpy/__init__.py,sha256=Ht0DwcnSFbZfgxLpMtHHRgLDBz9_KIKDrFeXTKtpvMU,38
+bbpy/bbpy.py,sha256=7ODBPE9teW-TuC3LVn-uex81NjhAira6vXy-_yv5w4s,21406
+bbpy/pbuf/app_pb2.py,sha256=KaSx5bxvV9K1F3NPROdaWk25NKrpTgubB27My51cecA,57432
+bbpy/pbuf/app_pb2_grpc.py,sha256=uKeNKQwfeaolKNCtd2iRUM9YkfOEWAGwOadLfzOCYN0,6125
+bbpy/pbuf/attr_pb2.py,sha256=rplB-svUTor4gWIfeHdr-YWfWHJaWQez9jgs3vV7mgI,120722
+bbpy-1.0.6.dist-info/LICENSE,sha256=sMdE81kJ41JxYBq_uVh8nPANNhI2bRudcQoVP20OzCg,1067
+bbpy-1.0.6.dist-info/METADATA,sha256=D6ptiwoZ-BH7rD4McUznI-V-1I91QAVhMMo5psi6FuQ,454
+bbpy-1.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bbpy-1.0.6.dist-info/top_level.txt,sha256=pBtFmFbQ6NRfi9mwQLY54UTLHDesiIR2_ltMzVAAGcQ,5
+bbpy-1.0.6.dist-info/RECORD,,
