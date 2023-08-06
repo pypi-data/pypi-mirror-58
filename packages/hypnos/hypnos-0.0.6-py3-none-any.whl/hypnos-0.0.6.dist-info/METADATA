@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hypnos
+Version: 0.0.6
+Summary: Tools related to sleep research
+Home-page: https://github.com/RafalZajac/hypnos
+Author: Rafal Zajac
+Author-email: rafal@xiontz.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.25.1)
+Requires-Dist: numpy (>=1.16.5)
+Requires-Dist: mne (>=0.19.1)
+Requires-Dist: lxml (>=4.4.1)
+Requires-Dist: xlrd (>=1.0.0)
+Requires-Dist: plotly (>=4.2.1)
+Requires-Dist: graphviz (>=0.10.1)
+Requires-Dist: scipy (>=1.3.1)
+
+# hypnos
+## UNDER HEAVY DEVELOPMENT
+
+Python package containing helper tools used in sleep research. Please use as a reference only.
+
