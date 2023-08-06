@@ -1,0 +1,9 @@
+greetings/hello.py,sha256=xGiAQf12wE3iEwaohkD7gNHK2cwFdoOCDVK6a0tNlXw,39
+greetings/world.py,sha256=PhIp7QE8lw7kGidtG9L6zBjX5u7dVZTJSTBmAeJ6em4,44
+greetings/__init__.py,sha256=tM6FGf9UoPLpY-IqUhDf2Y67aUAGNuATa8i6XgVZSMg,23
+HelloTestPackage-3.0.0.dist-info/DESCRIPTION.rst,sha256=tyWCD1Mz69wwOIW1ysV4jxDKtzeC0j20WHEu5CExlwU,55
+HelloTestPackage-3.0.0.dist-info/METADATA,sha256=u6-NSz6_0wKv6QH8NjOzI7hUTFjmDLM0pjGfTU-Hjvs,266
+HelloTestPackage-3.0.0.dist-info/metadata.json,sha256=GpScjDOZfLoKejM4N3-HOiWP64LvQRcI-xHw81wSSyo,289
+HelloTestPackage-3.0.0.dist-info/RECORD,,
+HelloTestPackage-3.0.0.dist-info/top_level.txt,sha256=kAHNfVPEL72jZ8lOqf3CtbtDIflpWxCm_W2owovavZQ,10
+HelloTestPackage-3.0.0.dist-info/WHEEL,sha256=yQ-3ZyLDH3k1FCM26sbLtVJj6esUkskPIGqk1VjeEgg,97

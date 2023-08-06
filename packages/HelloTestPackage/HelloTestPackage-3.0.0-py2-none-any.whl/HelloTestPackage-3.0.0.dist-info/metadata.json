@@ -1,0 +1,1 @@
+{"document_names": {"description": "DESCRIPTION.rst"}, "name": "HelloTestPackage", "metadata_version": "2.0", "contacts": [{"role": "author", "email": "example@example.com", "name": "smd"}], "generator": "bdist_wheel (0.23.0)", "summary": "This is a test distribution", "version": "3.0.0"}

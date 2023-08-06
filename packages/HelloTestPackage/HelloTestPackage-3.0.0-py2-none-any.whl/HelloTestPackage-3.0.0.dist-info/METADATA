@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: HelloTestPackage
+Version: 3.0.0
+Summary: This is a test distribution
+Home-page: UNKNOWN
+Author: smd
+Author-email: example@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+This is the long descriptidon of a test distribution
+
+
