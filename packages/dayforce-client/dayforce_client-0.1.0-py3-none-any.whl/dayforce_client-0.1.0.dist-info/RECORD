@@ -1,0 +1,9 @@
+dayforce_client/__init__.py,sha256=ZJM4mZQ9P8LMFeqqqkiRYp4prV8CfaEvJcdzC3ZinSs,72
+dayforce_client/client.py,sha256=ahxkIhqGY9Stlgco0Ey26qcY9Rpp0Ga1qRlnarfnIR4,5682
+dayforce_client/response.py,sha256=FokqVFIxo8GSIiycPvhvhInCRcyDTNzGapMt84tsVsk,3394
+dayforce_client/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dayforce_client-0.1.0.dist-info/LICENSE,sha256=ay2qBAE7oxLxf3i-_mOGTJ7JDq-pZVHTvQ6rAw8_NqM,1086
+dayforce_client-0.1.0.dist-info/METADATA,sha256=2yWz375NTGBz0pTjbbELuFBDuwT5NLkSUwDf4cLsyaY,5570
+dayforce_client-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dayforce_client-0.1.0.dist-info/top_level.txt,sha256=2psWQVtRpj6TVMSDfdkKtiShRMTlOAPpazBAtmQlpmM,16
+dayforce_client-0.1.0.dist-info/RECORD,,
