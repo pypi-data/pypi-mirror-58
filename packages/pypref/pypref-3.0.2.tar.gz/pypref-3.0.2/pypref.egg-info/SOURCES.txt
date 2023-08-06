@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+./Preferences.py
+./__init__.py
+./__pkginfo__.py
+pypref.egg-info/PKG-INFO
+pypref.egg-info/SOURCES.txt
+pypref.egg-info/dependency_links.txt
+pypref.egg-info/top_level.txt
