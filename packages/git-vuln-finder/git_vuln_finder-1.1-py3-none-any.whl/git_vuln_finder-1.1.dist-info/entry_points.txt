@@ -1,0 +1,3 @@
+[console_scripts]
+git-vuln-finder=bin.finder:main
+
