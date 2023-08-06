@@ -1,0 +1,10 @@
+target_typo_proxy/__init__.py,sha256=-uKyxxWHg6gDBZouG9DfLLLodmraqxoKzOvjAICSJbg,10257
+target_typo_proxy/typo.py,sha256=XU-SDzF2aQwa-dV250DHpYpYruSSFi1ZX6VigD6FS4o,11951
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=BwvuEErznYiNV562QhrvlYzcmIwK__Ukh2Gtq0P7r4g,10252
+target_typo_proxy-0.1.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+target_typo_proxy-0.1.0.dist-info/METADATA,sha256=4tt6JTU3AEwcoxJOVQ7rrE0TZh5kfwTSZ8EBOWYulM4,4048
+target_typo_proxy-0.1.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+target_typo_proxy-0.1.0.dist-info/entry_points.txt,sha256=iPPsrhErzbwoGzwUR06qyiMLrgTNxbiyZ8NdhpOlSyI,62
+target_typo_proxy-0.1.0.dist-info/top_level.txt,sha256=jWrEvMFc-LEX-onRCxnKzn6VDxmytcVWiuuAlqryePE,23
+target_typo_proxy-0.1.0.dist-info/RECORD,,
