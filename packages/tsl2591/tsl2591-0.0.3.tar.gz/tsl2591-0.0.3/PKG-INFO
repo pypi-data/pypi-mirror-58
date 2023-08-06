@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tsl2591
+Version: 0.0.3
+Summary: tsl2591 python driver for stickytoe framework
+Home-page: https://github.com/ryanchaiyakul/sht3x
+Author: Ryan Chaiyakul
+License: UNKNOWN
+Description: # tsl2591
+        tsl2591 python driver for stickytoe framework
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
