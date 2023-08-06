@@ -1,0 +1,10 @@
+pydicom_seg/__init__.py,sha256=2OciW329ewiQFLsIkTg4PtyFwuB6XZoKz7Tux6RMEqI,135
+pydicom_seg/reader.py,sha256=0Evuww6JbuT4TMK8k5-QpOngmgC3t7cqE6qCdQxYDvM,11341
+pydicom_seg/reader_utils.py,sha256=sbI9iLf8uDwL20NbXq3d6-JgwBUcqOdgzMbhJ9xkpMs,3331
+pydicom_seg/template.py,sha256=ld5FrEHVR3Iuptb2STLCOW9tuTTl16yjYpnJTHvCqY4,7284
+pydicom_seg/writer.py,sha256=iqkmOFe58PluFMyC6IiS_9o3qugeztS41ls9X0Wo7sY,13260
+pydicom_seg/writer_utils.py,sha256=qR4uSSxlNSVk_Us4MKQymzhmHAKS5lGq36sR5I5wFPw,7438
+pydicom_seg-0.1.0.dist-info/LICENSE,sha256=bRz2Btg0DywwqmOaOppGmvXSDcr6vbAbjlL7u5a3oYQ,1072
+pydicom_seg-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydicom_seg-0.1.0.dist-info/METADATA,sha256=vFyzUQYbpiarORZrBmFQktFrZbefg3hHWGJJw3kCozU,4588
+pydicom_seg-0.1.0.dist-info/RECORD,,
