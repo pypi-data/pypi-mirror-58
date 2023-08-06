@@ -1,0 +1,8 @@
+SCYN-1.0.0.dist-info/METADATA,sha256=AeytggggJQQKU7_dhLunOhKC7Qhw4GOq_VNd65kif0Y,2789
+SCYN-1.0.0.dist-info/RECORD,,
+SCYN-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+SCYN-1.0.0.dist-info/top_level.txt,sha256=kFBQ73giyuWvp999i1wPvuqGVcrVMlKWDPmjoitPeE0,5
+scyn/__init__.py,sha256=FnfxQ9mZnLUH2j9_2oYiCUChikayNpwgylMf2651D_4,71
+scyn/scyn.py,sha256=Ut-g7nbA-KrwFp9sX-h_WcTlqy7OLe2O01ruWHu_ToE,12203
+scyn/utils.py,sha256=5A0L0oS9kdFUYmw0XT1ZQMVdWt_3rxWOEGE04yDVW48,2240
+scyn/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
