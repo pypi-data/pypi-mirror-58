@@ -1,0 +1,14 @@
+acequia/##__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acequia/#__init__.py,sha256=IetGctYIUnu_wuD8nrRqHyfTLLL-mzHKbWSCQBST2Eo,949
+acequia/__init__.py,sha256=xXmZBpW1MaDIEWlwSUieUlgGZzXosHZTdBasSi-GnaM,400
+acequia/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acequia/core/gwlist.py,sha256=EopVSaXgPrNymq84Ztuwn1wF7M_rrLnxEwmsngLNNro,672
+acequia/core/gwseries.py,sha256=IVbMPdlbGNtogmx1O5vAH1Db5_Ylo8xPF_t0BJz5qn4,6349
+acequia/read/#__init__.py,sha256=e7v98YLc-QoFG_nmzimwsVpNvVILGPtyUvNLfYjVJyw,66
+acequia/read/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acequia/read/dinogws.py,sha256=WYFZYsUvayLHhgXI_BNyWttIZDwGB2fRlXJVFh0ERoc,25907
+acequia/read/hydromonitor.py,sha256=3sGndRS0WLWC2ley4qFYzgTwEwCOKXA2GxF44uxpxlk,10230
+acequia-0.0.1.dist-info/METADATA,sha256=IaUBevQ6Ic_kYYhX8SuPuFBWYpImPcQ7UJ-S2b-ysRk,523
+acequia-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+acequia-0.0.1.dist-info/top_level.txt,sha256=Ka3JV4FAfKNc2TCLRQ33wykKzbQ7JfmEh-NH3p--J7U,8
+acequia-0.0.1.dist-info/RECORD,,
