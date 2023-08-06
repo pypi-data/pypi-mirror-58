@@ -1,0 +1,6 @@
+capacity
+distro
+infi.exceptools
+infi.execute
+infi.pyutils
+setuptools
