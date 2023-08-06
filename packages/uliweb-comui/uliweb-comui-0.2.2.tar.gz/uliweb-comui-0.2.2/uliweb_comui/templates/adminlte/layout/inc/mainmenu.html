@@ -1,0 +1,11 @@
+{{block mainmenu_config}}
+{{mainmenu_name,mainmenu_active='MAINMENU','home'}}
+{{end mainmenu_config}}
+
+<ul class="nav navbar-nav ">
+  {{for t,m in functions.iter_menu(mainmenu_name,mainmenu_active):}}
+    {{if t=="item":}}
+  <li name="{{=m['name']}}" {{='class="active"' if m['active'] else ''}}><a href="{{=m.get('link','/')}}">{{=m['title']}}</a></li>
+    {{pass #if}}
+  {{pass #for}}
+</ul>

@@ -1,0 +1,63 @@
+{{extend "iview/layout/basic.html"}}
+
+{{block resources}}
+    {{include "iview/layout/inc/common.html"}}
+{{end}}
+
+{{block body}}
+<body>
+
+{{block container}}
+<div id="mainapp">
+    <div class="layout">
+        <layout>
+            {{block topbar}}
+                <i-header>
+                    {{block mainmenu}}
+                    {{include "iview/layout/inc/mainmenu.html"}}
+                    {{end mainmenu}}
+                </i-header>
+            {{end topbar}}
+
+            {{block flash}}
+                {{include "iview/layout/inc/flash.html"}}
+            {{end flash}}
+
+            {{block content_wrapper}}
+            <layout>
+                {{block sidebar}}{{end sidebar}}
+                <layout>
+                {{block content_breadcrumb}}
+                <i-content :style="{padding: '0 40px'}">
+                    <breadcrumb :style="{margin: '8px 0'}">
+                        <breadcrumb-item>Home</breadcrumb-item>
+                        <breadcrumb-item>Layout</breadcrumb-item>
+                    </breadcrumb>
+                {{end content_breadcrumb}}
+                {{block content}}
+                <card>
+                    <div style="min-height: 600px;">
+                    </div>
+                </card>
+                {{end content}}
+                </i-content>
+                {{end content_wrapper}}
+                {{block footer}}
+                {{include "iview/layout/inc/footer.html"}}
+                {{end footer}}
+                </layout>
+            </layout>
+        </layout>
+    </div>
+</div>
+{{block mainapp_vue}}
+<script>
+new Vue({
+    el: '#mainapp'
+})
+</script>
+{{end mainapp_vue}}
+{{end container}}
+
+</body>
+{{end body}}

@@ -1,0 +1,40 @@
+{{extend "adminlte/layout/basic.html"}}
+
+{{block resources}}
+    {{include "adminlte/layout/inc/common.html"}}
+{{end}}
+
+{{block body}}
+<body id="layout-body" class="{{block skin}}{{=settings.LAYOUT.get('skin', 'skin-blue-light')}}{{end}} {{block body_class}}{{end}} full layout-top-nav">
+
+{{block container}}
+<div class="wrapper">
+    {{block topbar}}
+        {{include "adminlte/layout/inc/container_topbar.html"}}
+    {{end}}
+
+    {{block flash}}
+        {{include "adminlte/layout/inc/flash.html"}}
+    {{end}}
+
+    {{block content_wrapper}}
+        <div class="content-wrapper">
+            <div class="container">
+                {{include "adminlte/layout/inc/1column_content_wrapper.html"}}
+            </div>
+        </div>
+    {{end}}
+
+    {{block footer}}
+    <footer class="main-footer">
+        <div class="container">
+            {{include "adminlte/layout/inc/footer.html"}}
+        </div>
+    </footer>
+    {{end}}
+
+</div>
+{{end}}
+
+</body>
+{{end}}

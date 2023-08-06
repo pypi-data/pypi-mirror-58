@@ -1,0 +1,25 @@
+{{msg = get_flashed_messages()}}
+{{if msg:}}
+  <script>
+  function show_message(message, category) {
+    category = category || "success"
+    var dtime = 8
+    if (category == "success") {
+      this.$Message.success({content: message,duration: dtime})
+    } else if (category == "error") {
+      this.$Message.error({content: message,duration: dtime})
+    } else if (category == "info") {
+      this.$Message.info({content: message,duration: dtime})
+    } else if (category == "warning") {
+      this.$Message.warning({content: message,duration: dtime})
+    } else {
+      this.$Message.info({content: message,duration: dtime})
+    }
+  }
+  $(function(){
+      {{for _c, _m in msg:}}
+          show_message("{{<<_m}}", '{{=_c}}');
+      {{pass}}
+  });
+  </script>
+{{pass}}
