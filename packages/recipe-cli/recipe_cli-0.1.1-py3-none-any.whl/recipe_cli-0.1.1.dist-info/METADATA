@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: recipe-cli
+Version: 0.1.1
+Summary: Recipe CLI tool
+Home-page: https://recipe.io
+License: MIT
+Keywords: data-science,notebook,repository,cli
+Author: Iman Kamyabi
+Author-email: contact@imankamyabi.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/imankamyabi/recipe-cli
+Description-Content-Type: text/markdown
+
+# Recipe-cli
+
+Recipe CLI tool
