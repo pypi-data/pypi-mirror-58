@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ganutils
+Version: 0.8
+Summary: This is an installable python package for scripts I wrote for myself.
+Home-page: https://github.com/Michael-Tu/ganutils
+Author: Gan Tu
+Author-email: tugan0329@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: tugan,utils,tools
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
