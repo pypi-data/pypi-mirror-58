@@ -1,0 +1,90 @@
+
+.. _fc-bench: http://www.math.univ-paris13.fr/~cuvelier/software/Python/fc-bench.html 
+   
+.. _www.python.org: http://www.python.org/
+
+.. _Miniconda: https://conda.io/miniconda.html
+
+.. _Anaconda: https://www.anaconda.com
+
+.. _Canopy: https://www.enthought.com/product/canopy/
+
+.. _Mayavi: http://docs.enthought.com/mayavi/mayavi/
+
+.. _Matplotlib: https://matplotlib.org/
+    
+.. image:: http://www.math.univ-paris13.fr/~cuvelier/software/codes/Python/fc-bench/pyfc-bench_400.png
+  :width: 400px
+  :align: center
+
+The **fc\_bench** Python package allows to benchmark functions and much more
+   
+
+   
+Introduction:
+------------- 
+
+.. _fc\_bench Python package: http://www.math.univ-paris13.fr/~cuvelier/software/Python/fc-bench.html 
+
+.. _User's Guide: http://www.math.univ-paris13.fr/~cuvelier/software/codes/Python/fc-bench/0.2.0/fc_bench-0.2.0.pdf
+   
+More documentation is available on `fc\_bench Python package`_ dedicated web page with an `User's Guide`_ (pdf).
+
+Installation:
+-------------
+
+The **fc\_bench** Python package is available from the Python Package Index, so to install/upgrade simply type
+
+.. code:: 
+
+    pip install fc_bench -U
+      
+Testing :
+---------      
+  There are demos functions in the ``fc_bench.demos`` module named ``bench_*``.
+  For example, run the following code under Python:
+  
+  .. code:: python
+  
+      from fc_bench import demos
+      demos.bench_Lagrange()
+      
+  The output of this code is::
+  
+      #---------------------------------------------------------------------------
+      # Setting inputs of Lagrange polynomial functions: y=LAGRANGE(X,Y,x)
+      # where X is numpy.linspace(a,b,n+1), Y=fun(X) and x is random values on [a,b]
+      #   n is the order of the Lagrange polynomial
+      #   fun function is: lambda x: np.sin(x)
+      #   [a,b]=[-1,1]
+      #   X: (n+1,) numpy array
+      #   Y: (n+1,) numpy array
+      #   x: (m,)   numpy array
+      #   Error[i] computed with fun[i] output:
+      #     lambda y: np.linalg.norm(y-fun(x),np.inf)
+      #---------------------------------------------------------------------------
+      # Benchmarking functions:
+      #   fun[0],            Lag: fc_bench.demos.Lagrange
+      #   fun[1],         lagint: fc_bench.demos.lagint
+      #---------------------------------------------------------------------------
+      # Comparative functions:
+      #   comp[i-1,0], compares outputs of fun[0] and fun[i]
+      #       lambda o1,o2: np.linalg.norm(o1-o2,np.inf)
+      #    For each comparative function:
+      #      - 1st input parameter is the output of fun[0]
+      #      - 2nd input parameter is the output of fun[i]
+      #---------------------------------------------------------------------------
+      #date:2019-12-21_16-56-34
+      #nbruns:5
+      #numpy:     <i8    <i8       f8           f8          f8           f8          f8
+      #format:  {:>5}  {:>5}  {:6.3f}     {:10.3e}     {:9.3f}     {:10.3e}     {:9.3e}
+      #labels:      m      n   Lag(s)     Error[0]   lagint(s)     Error[1]     comp[0]
+                  100      3    0.014    1.218e-03       0.019    1.218e-03   2.220e-16
+                  100      5    0.021    1.162e-05       0.028    1.162e-05   4.441e-16
+                  100      7    0.030    6.999e-08       0.037    6.999e-08   3.331e-16
+                  100     11    0.048    8.699e-13       0.056    8.689e-13   2.554e-15
+                  500      3    0.068    1.218e-03       0.095    1.218e-03   3.331e-16
+                  500      5    0.108    1.163e-05       0.144    1.163e-05   6.661e-16
+                  500      7    0.152    7.004e-08       0.190    7.004e-08   8.882e-16
+                  500     11    0.244    8.766e-13       0.282    8.766e-13   2.887e-15
+
