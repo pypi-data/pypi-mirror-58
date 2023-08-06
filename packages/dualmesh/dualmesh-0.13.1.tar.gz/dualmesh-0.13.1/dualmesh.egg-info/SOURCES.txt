@@ -1,0 +1,9 @@
+README.md
+setup.py
+dualmesh/__init__.py
+dualmesh/dualmesh.py
+dualmesh.egg-info/PKG-INFO
+dualmesh.egg-info/SOURCES.txt
+dualmesh.egg-info/dependency_links.txt
+dualmesh.egg-info/requires.txt
+dualmesh.egg-info/top_level.txt
