@@ -1,0 +1,6 @@
+README.md
+setup.py
+vimo_utils.egg-info/PKG-INFO
+vimo_utils.egg-info/SOURCES.txt
+vimo_utils.egg-info/dependency_links.txt
+vimo_utils.egg-info/top_level.txt
