@@ -1,0 +1,6 @@
+README.md
+setup.py
+flask_file_upload.egg-info/PKG-INFO
+flask_file_upload.egg-info/SOURCES.txt
+flask_file_upload.egg-info/dependency_links.txt
+flask_file_upload.egg-info/top_level.txt
