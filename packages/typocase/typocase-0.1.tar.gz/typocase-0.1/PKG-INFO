@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: typocase
+Version: 0.1
+Summary: Lightweight library written in idiomatic Python (no regular expressions), that aims to translate string into various typography conventions.
+Home-page: https://github.com/mtovmassian/typocase
+Author: Martin Tovmassian
+Author-email: martin.tovmassian@protonmail.com
+License: UNKNOWN
+Description: # Typocase
+        
+        ![](static/printer.png)
+        
+        ___
+        
+        Lightweight library written in idiomatic Python (no regular expressions), that aims to translate string into various typography conventions.
+        
+        ## How it works
+        
+        - Accept any string as input.
+        - Detect substrings based on special chars or uppercase letters as separators.
+        - Join substrings based on the typography convention selected:
+          - snake case
+          - pascal case
+          - camel case
+          - kebab case
+          - dot case
+          - path case
+          - ...
+        
+        ## Install
+        
+        
+        
+        ## Usage
+        
+        ```python
+        >>> from typocase import TypoCase
+        
+        >>> TypoCase("abc def ghi").snake_case()
+        'abc_def_ghi'
+        
+        >>> TypoCase("abc def ghi").camel_case()
+        'abcDefGhi'
+        
+        >>> TypoCase("abc def ghi").kebab_case()
+        'abc-def-ghi'
+        ```
+        
+        ## License
+        This software is released under the MIT LICENSE.
+        
+        ## Author
+        Martin Tovmassian
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

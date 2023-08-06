@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+static/printer.png
+tests/__init__.py
+tests/test_string_compounds.py
+tests/test_typo_case.py
+typocase/__init__.py
+typocase/models.py
+typocase/string_compounds.py
+typocase/typo_case.py
+typocase.egg-info/PKG-INFO
+typocase.egg-info/SOURCES.txt
+typocase.egg-info/dependency_links.txt
+typocase.egg-info/top_level.txt
