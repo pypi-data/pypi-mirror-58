@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dictxml
+Version: 0.0.2
+Summary: xml和dict互相转换
+Home-page: https://github.com/l616769490/dictxml
+Author: lijin
+Author-email: lijin@dingtalk.com
+License: MIT Licence
+Description: xml和dict互相转换
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any

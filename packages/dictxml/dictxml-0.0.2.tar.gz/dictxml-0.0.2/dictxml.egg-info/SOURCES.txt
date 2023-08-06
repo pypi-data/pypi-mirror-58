@@ -1,0 +1,10 @@
+README.md
+setup.py
+dictxml.egg-info/PKG-INFO
+dictxml.egg-info/SOURCES.txt
+dictxml.egg-info/dependency_links.txt
+dictxml.egg-info/top_level.txt
+xmldict/__init__.py
+xmldict/dict2xml.py
+xmldict/wx_utils.py
+xmldict/xml2dict.py
