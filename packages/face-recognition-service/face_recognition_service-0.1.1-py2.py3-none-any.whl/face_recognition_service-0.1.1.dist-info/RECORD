@@ -1,0 +1,11 @@
+face_recognition_service/__init__.py,sha256=-2oYjS3H8w53iPhUAuBwVpGyMfbnlc5hPydnprX_h58,161
+face_recognition_service/api.py,sha256=uJykX3Yf1BIfGxriwY26AjZdUZpVA1SInHGxK9Z0LwI,2014
+face_recognition_service/cli.py,sha256=KCQs-maW7F_s7iC5cyATCwGf-Wup860sOi0raaZi44A,391
+face_recognition_service/face_engine.py,sha256=5A2nuVgt9d5dT_jSI0UrUVQ8IiHJ-WGPVDQ8OZfaTsg,2753
+face_recognition_service-0.1.1.dist-info/AUTHORS.rst,sha256=sDpy4jOc7wk25CD35zCh-SnyXv2DCrQhlIN_g1WouEc,150
+face_recognition_service-0.1.1.dist-info/LICENSE,sha256=2MjjFC-cQorNLoKIV2It9A_xYt4pPJYxVgL0fqPkcM8,1067
+face_recognition_service-0.1.1.dist-info/METADATA,sha256=6Yjx5pnx1OB7NQNhltZxei5KPKW0uhdWj_MZ41-gkgI,1774
+face_recognition_service-0.1.1.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+face_recognition_service-0.1.1.dist-info/entry_points.txt,sha256=pm08crKG8xSuzbd3iDCqEZujX9s-1KHvw3yTvuLp3pA,80
+face_recognition_service-0.1.1.dist-info/top_level.txt,sha256=1zV8kVFQQ0AShG57xOlCX8T_JTYniYvJVUE7bQl4DvQ,25
+face_recognition_service-0.1.1.dist-info/RECORD,,
