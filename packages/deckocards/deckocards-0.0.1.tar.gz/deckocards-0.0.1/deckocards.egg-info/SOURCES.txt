@@ -1,0 +1,9 @@
+README.md
+setup.py
+deckocards/__init__.py
+deckocards/card.py
+deckocards/deck.py
+deckocards.egg-info/PKG-INFO
+deckocards.egg-info/SOURCES.txt
+deckocards.egg-info/dependency_links.txt
+deckocards.egg-info/top_level.txt
