@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: iris-grib
+Version: 0.15.0
+Summary: GRIB loading for Iris
+Home-page: https://github.com/SciTools/iris-grib
+Author: UK Met Office
+Author-email: scitools-iris@googlegroups.com
+License: LGPL
+Keywords: iris,GRIB
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: scitools-iris (>=2.0.*)
+Requires-Dist: eccodes-python
+
+
+Iris loading of GRIB files
+==========================
+
+With this package, iris is able to load GRIB files:
+
+```
+my_data = iris.load(path_to_grib_file)
+```
+
+
