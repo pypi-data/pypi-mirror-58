@@ -1,0 +1,9 @@
+README.md
+setup.py
+rwspider/__init__.py
+rwspider.egg-info/PKG-INFO
+rwspider.egg-info/SOURCES.txt
+rwspider.egg-info/dependency_links.txt
+rwspider.egg-info/entry_points.txt
+rwspider.egg-info/requires.txt
+rwspider.egg-info/top_level.txt
