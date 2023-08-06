@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: plottool-ibeis
+Version: 2.1.2
+Summary: Plottool - tools matplotlib computer vision plots
+Home-page: https://github.com/Erotemic/plottool_ibeis
+Author: Jon Crall
+Author-email: erotemic@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+Requires-Dist: six
+Requires-Dist: ubelt
+Requires-Dist: matplotlib
+Requires-Dist: utool
+Requires-Dist: vtool-ibeis
+Requires-Dist: guitool-ibeis
+Requires-Dist: cachetools
+Requires-Dist: pyqt5 ; python_version > "2.7"
+Provides-Extra: all
+Requires-Dist: six ; extra == 'all'
+Requires-Dist: ubelt ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: utool ; extra == 'all'
+Requires-Dist: vtool-ibeis ; extra == 'all'
+Requires-Dist: guitool-ibeis ; extra == 'all'
+Requires-Dist: cachetools ; extra == 'all'
+Requires-Dist: xdoctest ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: coverage ; extra == 'all'
+Requires-Dist: codecov ; extra == 'all'
+Requires-Dist: pyqt5 ; (python_version > "2.7") and extra == 'all'
+Provides-Extra: optional
+Requires-Dist: pygraphviz ; extra == 'optional'
+Provides-Extra: tests
+Requires-Dist: xdoctest ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+
+plottool_ibeis
+==============
+
+|ReadTheDocs| |Pypi| |Downloads| |Codecov| |CircleCI| |Travis| |Appveyor| 
+
+Helpers for matplotlib computer vision plots for the IBEIS / WildMe project
+
+.. |CircleCI| image:: https://circleci.com/gh/Erotemic/plottool.svg?style=svg
+    :target: https://circleci.com/gh/Erotemic/plottool
+.. |Travis| image:: https://img.shields.io/travis/Erotemic/plottool/master.svg?label=Travis%20CI
+   :target: https://travis-ci.org/Erotemic/plottool?branch=master
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/github/Erotemic/plottool?branch=master&svg=True
+   :target: https://ci.appveyor.com/project/Erotemic/plottool/branch/master
+.. |Codecov| image:: https://codecov.io/github/Erotemic/plottool/badge.svg?branch=master&service=github
+   :target: https://codecov.io/github/Erotemic/plottool?branch=master
+.. |Pypi| image:: https://img.shields.io/pypi/v/plottool_ibeis.svg
+   :target: https://pypi.python.org/pypi/plottool_ibeis
+.. |Downloads| image:: https://img.shields.io/pypi/dm/plottool_ibeis.svg
+   :target: https://pypistats.org/packages/plottool_ibeis
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/plottool_ibeis/badge/?version=latest
+    :target: http://plottool_ibeis.readthedocs.io/en/latest/
+
+
