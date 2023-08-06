@@ -1,0 +1,6 @@
+pydantic~=1.1
+click~=7.0
+
+[sentencepiece]
+sentencepiece~=0.1
+biopython
