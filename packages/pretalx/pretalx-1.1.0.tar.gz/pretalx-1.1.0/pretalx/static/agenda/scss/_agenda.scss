@@ -1,0 +1,506 @@
+#main-container.container {
+  &.container-wide #main-card main, &.container-semi-wide #main-card main, &.container-narrow #main-card main {
+    padding: 0;
+  }
+  &.container-wide {
+    max-width: 100%;
+  }
+  &.container-semi-wide {
+    max-width: 1400px;
+  }
+}
+#legend {
+  position: fixed;
+  left: 0;
+  margin-top: 100px;
+  background-color: $offwhite;
+  padding: 8px 16px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 5px 8px 0 rgba(0, 0, 0, 0.12);
+  z-index: 50;
+
+  &:hover {
+    ul.tracks {
+      margin-top: 4px;
+      margin: 0;
+      padding: 0 8px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  ul.tracks {
+    display: none;
+  }
+}
+header {
+  word-break: normal;
+}
+.schedule-header {
+  display: flex;
+  align-items: flex-end;
+  > span,
+  > a,
+  > div {
+    margin-left: 8px;
+  }
+  a i.fa {
+    padding-right: 0;
+  }
+}
+
+#schedule-nav {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  a {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    &.active {
+    }
+  }
+
+  form {
+    max-width: 250px;
+  }
+
+  .header-right {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    & > * {
+      margin-right: 8px;
+      height: 90%;
+      &.dropdown {
+        height: 100%;
+        #exportDropdown {
+          height: 90%;
+          margin-bottom: 3px;
+        }
+      }
+      .input-group-append button {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.pretalx-tabbed {
+  display: flex;
+  flex-direction: column-reverse;
+  input[name=tabs] {
+    display: none;
+
+    &:not(:checked) + .pretalx-tab-content {
+      display: none;
+    }
+  }
+  .pretalx-tab-content {
+    margin : 0 0 0 -100%;
+  }
+}
+.pretalx-tabs {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $gray-lighter;
+  position: sticky;
+  top: 0;
+  background-color: $white;
+  z-index: 200;
+
+  h4, h3, h2, h1, .pretalx-tab {
+    padding: 8px 24px;
+    font-size: 14pt;
+    overflow: hidden;
+    border: 1px solid $gray-lighter;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0 0 0.5em $gray-lightest;
+    cursor: pointer;
+    &.active {
+      border-top: 4px solid $brand-primary;
+    }
+    label {
+      margin-bottom: 0; /* container .pretalx-tab takes care of the spacing */
+      user-select: none;
+      cursor: pointer;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  }
+}
+
+#fahrplan, .pretalx-schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  float: left;
+  width: 100%;
+  .pretalx-schedule-day {
+    background: $gray-lightest;
+    float: right;
+    width: 100%;
+    margin-bottom: 16px;
+    overflow-y: hidden; /* This hides the .nowline element. */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-type: x mandatory; /* Safari/MacOS in general */
+    -webkit-overflow-scrolling: touch; /* Safari/MacOS in general */
+
+    .pretalx-schedule-day-header-row {
+      background: $gray-lightest;
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+
+      .pretalx-schedule-day-header {
+        border-bottom: 4px solid $brand-primary;
+        background: inherit;
+      }
+
+      .pretalx-schedule-day-room-header {
+        border-left: 2px solid lighten($gray-800, 55%);
+        border-bottom: 4px solid $brand-primary;
+        flex: 1 0;
+        font-size: 16pt;
+        text-align: center;
+        padding: 8px 0;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        min-width: 150px;
+      }
+    }
+
+    .pretalx-schedule-time-column {
+      flex: 0 0 4em;
+      position: sticky;
+      left: 0px;
+      z-index: 40;
+      border-right: 2px solid lighten($gray-800, 55%);
+
+      .pretalx-schedule-hour {
+        height: 120px;
+        line-height: 30px;
+        padding-right: 8px;
+        text-align: right;
+      }
+
+      background: repeating-linear-gradient(
+        to bottom,
+        $gray-200,
+        $gray-200 2px,
+        $white 2px,
+        $white 30px,
+        $gray-200 30px,
+        $gray-200 31px,
+        $white 31px,
+        $white 60px
+      );
+    }
+
+    .pretalx-schedule-rooms, .pretalx-schedule-day-header-row {
+      min-width: min-content;
+    }
+
+    .pretalx-schedule-rooms {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      .pretalx-schedule-nowline {
+        position: absolute;
+        width: 100%;
+      }
+
+      .pretalx-schedule-room {
+        border-left: 2px solid #ccc;
+        flex: 1 0;
+        min-width: 150px;
+        scroll-snap-align: none center;
+        -webkit-scroll-snap-coordinate: 50% 0%; /* older (Safari) */
+        scroll-snap-stop: always;
+        background: repeating-linear-gradient(
+          to bottom,
+          $gray-200,
+          $gray-200 2px,
+          $white 2px,
+          $white 30px,
+          $gray-200 30px,
+          $gray-200 31px,
+          $white 31px,
+          $white 60px
+        );
+
+        .pretalx-schedule-talk-container {
+          position: relative;
+        }
+
+        .pretalx-schedule-talk {
+          border: 1px solid lighten($brand-primary, 25%);
+          border-left: 4px solid lighten($brand-primary, 25%);
+          background-color: rgba(255, 255, 255, 0.76);
+          box-sizing: border-box;
+          color: rgba(0, 0, 0, 0.87);
+          display: block;
+          padding: 5px 10px;
+          padding-top: 0;
+          position: absolute;
+          margin: 0 8px;
+          width: calc(100% - 16px);
+
+          &:hover .popover {
+            display: block;
+          }
+
+          .pretalx-schedule-talk-content {
+            height: 100%;
+            overflow: hidden;
+
+            .do-not-record {
+              color: rgba(180, 20, 23, 0.87);
+            }
+
+            .pretalx-schedule-talk-title {
+              line-height: 26px;
+              font-weight: bold;
+            }
+
+            .pretalx-schedule-talk-speakers {
+              line-height: 26px;
+            }
+          }
+
+          &.accepted {
+            background-image: repeating-linear-gradient(
+              135deg,
+              $gray-lighter,
+              $gray-lighter 10px,
+              white 10px,
+              white 20px
+            );
+          }
+
+          &:hover {
+            background-color: $gray-200;
+            height: auto !important;
+            z-index: 6;
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16),
+              0 5px 8px 0 rgba(0, 0, 0, 0.12);
+
+            &::before {
+              position: absolute;
+              background-color: $brand-primary;
+              border-radius: 2px;
+              color: rgba(255, 255, 255, 0.87);
+              content: attr(data-time);
+              font-weight: bold;
+              line-height: 1;
+              padding: 8px 16px;
+              top: -44px;
+              white-space: nowrap;
+            }
+
+            &::after {
+              position: absolute;
+              content: "";
+              left: 24px;
+              width: 0;
+              height: 0;
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-top: 8px solid $brand-primary;
+              top: -14px;
+            }
+          }
+        }
+
+        .pretalx-schedule-talk.talk-personal,
+        .pretalx-schedule-talk.active {
+          background-color: rgba(155, 255, 155, 0.76);
+        }
+
+        .pretalx-schedule-talk.search-fail {
+          color: $gray-light;
+          border-color: $gray-light;
+        }
+
+        .pretalx-schedule-talk.break {
+          margin: 0;
+          width: 100%;
+          background-color: $gray-lightest;
+          color: $gray;
+          border: 0;
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+          .pretalx-schedule-talk-content {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+          }
+          .pretalx-schedule-break-title {
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 16px;
+          }
+          &:hover {
+            box-shadow: none;
+            height: auto !important;
+          }
+        }
+      }
+    }
+
+    .no-talks {
+      text-align: center;
+    }
+  }
+}
+#talk-buttons {
+  display: flex;
+  justify-content: flex-end;
+  .btn {
+    margin-left: 8px;
+  }
+}
+
+.btn-sm .fa:not(:only-child) {
+  padding-right: 5px;
+}
+
+#exporttimestamp {
+  margin-bottom: 1em;
+}
+
+.export-icon {
+  width: 1.5em;
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  header {
+    text-align: right;
+    flex-direction: column;
+  }
+  #legend {
+    top: 50px;
+    margin-top: 0;
+  }
+  #fahrplan {
+    width: 100%;
+
+    #schedule-nav {
+      align-items: baseline;
+
+      &>.navigation {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: stretch;
+      }
+      .header-right {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        .btn-outline-info {
+          display: none;
+        }
+      }
+    }
+    .pretalx-schedule-day {
+      .pretalx-schedule-rooms .pretalx-schedule-room,
+      .pretalx-schedule-day-header-row .pretalx-schedule-day-room-header {
+        min-width: 200px;
+      }
+
+      .no-talks {
+        margin-top: 0;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #fahrplan #schedule-nav {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  body {
+    background: none;
+    overflow: visible !important;
+    height: auto;
+  }
+  #legend,
+  #schedule-nav,
+  #main-card .user-row,
+  header,
+  footer,
+  .schedule-header .btn,
+  #event-nonpublic {
+    display: none;
+  }
+  h3:not(:first-of-type) {
+    /* improve look of day captions after page break */
+    margin-top: 5em;
+  }
+  .container {
+    max-width: 100%;
+  }
+  #fahrplan, .pretalx-schedule-wrapper,
+  .card {
+    display: block;
+    overflow: visible !important;
+  }
+  .pretalx-schedule-day {
+    page-break-after: always;
+    overflow: visible !important;
+  }
+}
+.heading-with-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  & > :last-child {
+    margin-left: auto;
+  }
+}
+.pretalx-schedule-wrapper { // widget specific styling
+  position: relative;
+  margin-bottom: 60px;
+
+  .pretalx-schedule-day-wrapper {
+    border-bottom: 1px solid $gray-lighter;
+    overflow-y: auto;
+    .pretalx-schedule-day {
+      margin-bottom: 0;
+    }
+  }
+  .pretalx-tab {
+    height: auto;
+  }
+
+  &.mobile {
+    .pretalx-schedule-day {
+      .rooms .pretalx-schedule-room,
+      .pretalx-schedule-day-header-row .pretalx-schedule-day-room-header {
+        min-width: 200px;
+      }
+
+      .no-talks {
+        margin-top: 0;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
