@@ -1,0 +1,14 @@
+django_pg_bulk_update/__init__.py,sha256=-Plm4T06mi9sSjukZA-cSZTJOQrCSZ9uvePzJPP511g,46
+django_pg_bulk_update/clause_operators.py,sha256=R9BCZHCX6BofiuDu7ARzzJPkARA7MONDPnf4fRAKF0U,7981
+django_pg_bulk_update/compatibility.py,sha256=Tqfjz5MX5t0poIu42R8syhkftAksiJQpWzEcZvB59Bs,6481
+django_pg_bulk_update/exceptions.py,sha256=Zn_P6ikDXSBF7eqckvc2wKfOCAOFSmI0_wb525nH4XI,58
+django_pg_bulk_update/manager.py,sha256=IGp_0B1Ihxv_dKNkGTw8e-Tcus57fj32My2f4lLt7f8,14316
+django_pg_bulk_update/query.py,sha256=BeEJUM3aQZXupUeapwE9SE9gendNydR1IUrxmWM4hII,39492
+django_pg_bulk_update/set_functions.py,sha256=FPcMAFDfcmQsMAnbK9p4xl2Gd9H7VPnGvi-WyVPmjtw,14539
+django_pg_bulk_update/types.py,sha256=ZudRbIvvmfYdtnsAQ0Ln3ttm7d7hPZ7m4Yp4Kfyl_X8,4652
+django_pg_bulk_update/utils.py,sha256=zfJy7PiyjAfH_zxtJi7v3ZDV8YveeyXlvOXvbYeEEnE,7002
+django_pg_bulk_update-3.1.1.dist-info/LICENSE,sha256=JEGgxSAbhKAHy7yZinugTlz2loBADP4Hk_RFOvODY-M,1538
+django_pg_bulk_update-3.1.1.dist-info/METADATA,sha256=gA4bhbx11mBYyP4hYmck17wFmDWTgU97eru9zczDs-4,22520
+django_pg_bulk_update-3.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_pg_bulk_update-3.1.1.dist-info/top_level.txt,sha256=D62wlmWrMFQcYzPmw6kAgXM7FpbsoGewgDATJF7twy0,22
+django_pg_bulk_update-3.1.1.dist-info/RECORD,,
