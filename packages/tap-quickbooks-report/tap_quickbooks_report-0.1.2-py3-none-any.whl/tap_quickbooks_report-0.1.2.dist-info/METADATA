@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: tap-quickbooks-report
+Version: 0.1.2
+Summary: Singer.io tap for extracting data from Quickbooks REST API v1
+Home-page: https://github.com/goodeggs/tap-quickbooks-report
+Author: David Wallace
+Author-email: david.wallace@goodeggs.com
+License: GPLv3
+Keywords: singer tap python quickbooks report
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: singer-python (==5.8.1)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: intuit-oauth (==1.2.3)
+Requires-Dist: rollbar (==0.14.7)
+Requires-Dist: backoff (==1.8.0)
+
+# tap-quickbooks-report
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python Versions](https://img.shields.io/badge/python-3.6%20%7C%203.7-blue.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![Build Status](https://travis-ci.com/goodeggs/tap-quickbooks-report.svg?branch=master)](https://travis-ci.com/goodeggs/tap-quickbooks-report.svg?branch=master)
+
+A [Singer](https://www.singer.io/) tap for extracting data from the Report Entities in the [Quickbooks Online API](https://developer.intuit.com/app/developer/qbo/docs/api/accounting/report-entities).
+
+## Configuration
+
+The Quickbooks Online API provides authentication via OAuth2.0. The tap expects the user to provide a valid Refresh Token via a config file. You can kick off
+a OAuth2.0 User Consent process using the `--auth` argument while running the tap:
+
+```bash
+(tap-quickbooks-report) bash-3.2$ tap-quickbooks-report --auth
+```
+
+If you are an admin of the Quickbooks account, you will be able to authorize the Singer Tap application to access your account. You will then be redirected to a developer portal where you can access a valid Authentication Code and Realm ID. Copy and paste these values into the corresponding prompts in your terminal:
+
+```bash
+(tap-quickbooks-report) bash-3.2$ tap-quickbooks-report --auth
+INFO Starting User Consent process..
+Enter the Authorization Code: <auth-code>
+Enter the Realm ID: <realm-id>
+```
+
+After entering the Authorization Code and Realm ID values, the tap will write the Realm ID, Refresh Token, and Refresh Token Expiration Date to the existing Config file:
+
+```
+(tap-quickbooks-report) bash-3.2$ tap-quickbooks-report --auth
+INFO Starting User Consent process..
+Enter the Authorization Code: <auth-code>
+Enter the Realm ID: <realm-id>
+INFO Generating new config..
+```
+
+
