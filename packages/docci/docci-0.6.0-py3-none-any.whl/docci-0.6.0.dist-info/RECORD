@@ -1,0 +1,8 @@
+docci/__init__.py,sha256=yDhynioOeFS0wJPjIbEQ3_mbI5gyi_oD_GG_6nU_yQY,23
+docci/config.py,sha256=IvyJjp1fSGQRyZ2ksjgrvSon18WrhI5Lyy1spzj3k-I,159
+docci/file.py,sha256=2CUNbLew3g6NTQUdBE1bMp4x6xDI9fz05ThgPooNOEg,4288
+docci/xlsx.py,sha256=TU4Tf0TQkcZU3zp9uRiMFfOdIlIgdiQSF_cS4vDDQpU,1107
+docci/zip.py,sha256=HIA91oA3x0Ts1xiAAnFW3MLfMuvgWbed6fL23X1pqZg,1971
+docci-0.6.0.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+docci-0.6.0.dist-info/METADATA,sha256=O3xQjtnjkAOxIlH0XnLXSMtmB_HOjnGf1ttKxIG8ohY,675
+docci-0.6.0.dist-info/RECORD,,
