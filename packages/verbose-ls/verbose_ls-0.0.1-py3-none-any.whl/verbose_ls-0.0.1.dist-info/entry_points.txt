@@ -1,0 +1,3 @@
+[console_scripts]
+verbose_ls = verbose_ls:main
+
