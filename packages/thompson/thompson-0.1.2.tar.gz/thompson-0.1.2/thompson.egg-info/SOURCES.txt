@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+thompson/__init__.py
+thompson/_version.py
+thompson/thompson.py
+thompson.egg-info/PKG-INFO
+thompson.egg-info/SOURCES.txt
+thompson.egg-info/dependency_links.txt
+thompson.egg-info/requires.txt
+thompson.egg-info/top_level.txt
+thompson/data/ads_data.zip
