@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+poetry.lock
+setup.py
+sigaa/__init__.py
+sigaa/api.py
+sigaa_cli.egg-info/PKG-INFO
+sigaa_cli.egg-info/SOURCES.txt
+sigaa_cli.egg-info/dependency_links.txt
+sigaa_cli.egg-info/requires.txt
+sigaa_cli.egg-info/top_level.txt
