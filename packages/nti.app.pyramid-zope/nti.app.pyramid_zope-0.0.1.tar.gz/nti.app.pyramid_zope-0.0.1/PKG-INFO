@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: nti.app.pyramid_zope
+Version: 0.0.1
+Summary: Support for a more Zope-like pyramid.
+Home-page: https://github.com/NextThought/nti.app.pyramid_zope
+Author: Jason Madden
+Author-email: jason@nextthought.com
+License: Apache
+Description: ======================
+         nti.app.pyramid_zope
+        ======================
+        
+        .. image:: https://travis-ci.org/NextThought/nti.app.pyramid_zope.svg?branch=master
+            :target: https://travis-ci.org/NextThought/nti.app.pyramid_zope
+        
+        .. image:: https://coveralls.io/repos/github/NextThought/nti.app.pyramid_zope/badge.svg?branch=master
+            :target: https://coveralls.io/github/NextThought/nti.app.pyramid_zope?branch=master
+        
+        This library provides a set of components (often in the
+        ``zope.interface`` and ``zope.component`` meanings) to integrate Zope3
+        technologies into a modern Pyramid application.
+        
+        
+        =========
+         Changes
+        =========
+        
+        
+        0.0.1 (2020-01-01)
+        ==================
+        
+        - Initial release.
+        
+Keywords: pyramid zope
+Platform: UNKNOWN
+Classifier: Framework :: Pyramid
+Classifier: Framework :: Zope :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: test
