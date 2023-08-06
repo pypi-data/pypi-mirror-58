@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gumbelcodes
+Version: 0.2
+Summary: Neural compression for word embeddings
+Home-page: https://github.com/ruanchaves/gumbelcodes
+Author: Ruan Chaves Rodrigues
+Author-email: ruanchaves93@gmail.com
+License: MIT
+Description: Based on the original neuralcompressor repository ( https://github.com/zomux/neuralcompressor ).
+Keywords: NLP embeddings compression
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Provides-Extra: training

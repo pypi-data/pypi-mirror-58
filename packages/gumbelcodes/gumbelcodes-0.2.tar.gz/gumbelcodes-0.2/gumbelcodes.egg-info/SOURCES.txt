@@ -1,0 +1,15 @@
+README.md
+setup.py
+gumbelcodes/__init__.py
+gumbelcodes.egg-info/PKG-INFO
+gumbelcodes.egg-info/SOURCES.txt
+gumbelcodes.egg-info/dependency_links.txt
+gumbelcodes.egg-info/not-zip-safe
+gumbelcodes.egg-info/requires.txt
+gumbelcodes.egg-info/top_level.txt
+gumbelcodes/models/__init__.py
+gumbelcodes/models/keyedvectors.py
+gumbelcodes/models/matutils.py
+gumbelcodes/nncompress/__init__.py
+gumbelcodes/nncompress/embed_compress.py
+gumbelcodes/nncompress/workflow.py
