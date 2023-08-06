@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: seastream
+Version: 0.0.1
+Summary: Smoother reading and writing of types with binary streams
+Home-page: https://github.com/pushfoo/seastream
+Author: pushfoo
+License: BSD 2-Clause
+Keywords: binary struct stream read write
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+
+# Seastream
+Smoother reading and writing types with binary streams
+
+
