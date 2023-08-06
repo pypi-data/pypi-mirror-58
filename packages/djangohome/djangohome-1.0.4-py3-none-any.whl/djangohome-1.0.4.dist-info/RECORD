@@ -1,0 +1,15 @@
+djangohome/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangohome/admin.py,sha256=WaAg0riV2o2eVj0POIC_mQOowTyE9m_FnU_RzOdfT_4,68
+djangohome/apps.py,sha256=eSJTbkF7nSDc48RYsf0e6dZTWuqNUTr6HPfF8iUYJkI,100
+djangohome/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangohome/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+djangohome/urls.py,sha256=6jkSS8nAw-eMCovaB0f5Ch4dgBKx45umWzXvn0m80y4,1896
+djangohome/views.py,sha256=4Cfa_BlrZoUG5TZaaXu8BA-6SWQL19OG1DnE-c_et3Q,1391
+djangohome/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangohome/migrations/__pycache__/__init__.cpython-37.pyc,sha256=vN8WyoYBBUJLyK1TOX81D_tz3H6Q93-u0k6H3KLzvo4,138
+djangohome/templates/djangoadmin/djangohome/homepage_view.html,sha256=5_pd-m-WXEJknKcwJQ5Z_HjN9SziOIG5v24M9x1wSLo,461
+djangohome-1.0.4.dist-info/License,sha256=dYHjBiv9OJ4Lao2opkH3bvliwnNQDmX9j9Pl8QV_Xmo,1092
+djangohome-1.0.4.dist-info/METADATA,sha256=hPY27lgUFNEekHwEzq_M3leoJkUT4qKeyoZB9c-ax20,3443
+djangohome-1.0.4.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+djangohome-1.0.4.dist-info/top_level.txt,sha256=oWEpJLzV-Mx8KwQvWUWvwbPWLb931rm8oTPDCbPlPyg,11
+djangohome-1.0.4.dist-info/RECORD,,
