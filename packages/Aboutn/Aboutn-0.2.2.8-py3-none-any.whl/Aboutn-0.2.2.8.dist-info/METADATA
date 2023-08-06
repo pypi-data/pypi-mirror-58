@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Aboutn
+Version: 0.2.2.8
+Summary: An Art and Genetic Algorithms Exploration Package based on Russian Constructivism bidimensional graphic works, ideas and method; 
+Home-page: https://github.com/AkiraDemenech/About-n-Squares/
+Author: Guilherme Akira Demenech Mori
+Author-email: akira.demenech@gmail.com
+License: MIT License
+Keywords: art constructivism game
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# a História de n Quadrados
+
+    About n [Squares]
+
+projeto de pesquisa/software de TCC sobre este Pacote de Exploração de Algoritmos Genéticos e Arte baseado em obras, ideias e métodos gráficos bidimensionais do Construtivismo Russo;
+
