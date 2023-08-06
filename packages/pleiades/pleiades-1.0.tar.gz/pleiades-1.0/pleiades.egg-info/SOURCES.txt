@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+pleiades/__init__.py
+pleiades/_version.py
+pleiades.egg-info/PKG-INFO
+pleiades.egg-info/SOURCES.txt
+pleiades.egg-info/dependency_links.txt
+pleiades.egg-info/requires.txt
+pleiades.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pleiades
+Version: 1.0
+Summary: Pleiades: Metapackage for Reconstruction, Calibration, and Analysis of Rule-Based Models
+Home-page: https://github.com/glucksfall/pleiades
+Author: Rodrigo Santibáñez
+Author-email: glucksfall@users.noreply.github.com
+License: GPLv3+
+Project-URL: Manual, https://pleiades.readthedocs.io
+Project-URL: Bug Reports, https://github.com/glucksfall/pleiades/issues
+Project-URL: Source, https://github.com/glucksfall/pleiades
+Description: # pleiades
+        
+        <a href="https://orcid.org/0000-0003-0075-4921" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0003-0075-4921</a>
+        
+        <!---[![DOI](https://zenodo.org/badge/95315412.svg)](https://zenodo.org/badge/latestdoi/95315412)--->
+        
+        [![Join the chat at https://gitter.im/glucksfall/pleiades](https://badges.gitter.im/glucksfall/pleiades.svg)](https://gitter.im/glucksfall/pleiades?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+        
+Keywords: systems biology,stochastic modeling,parameter analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Operating System :: Unix
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
