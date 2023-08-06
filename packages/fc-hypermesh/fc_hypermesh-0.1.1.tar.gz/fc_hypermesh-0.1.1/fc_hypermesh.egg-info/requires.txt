@@ -1,0 +1,3 @@
+numpy
+fc_tools>=0.0.24
+fc_bench>=0.2.0
