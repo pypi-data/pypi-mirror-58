@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rrev
+Version: 0.1
+Summary: A reverse text utility package
+Home-page: https://github.com/ricksy
+Author: Ahmed
+Author-email: ricksy@mailbox.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Test Project #
+Testing building a python package
+the program itself is a python script to reverse input string.
+Following the tutorial in [this page](https://dzone.com/articles/executable-package-pip-install)
+
+
+
