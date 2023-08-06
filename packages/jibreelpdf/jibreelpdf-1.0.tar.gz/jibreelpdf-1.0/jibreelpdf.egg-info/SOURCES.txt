@@ -1,0 +1,9 @@
+README.md
+setup.py
+jibreelpdf/__init__.py
+jibreelpdf/pdf2image.py
+jibreelpdf/pdf2text.py
+jibreelpdf.egg-info/PKG-INFO
+jibreelpdf.egg-info/SOURCES.txt
+jibreelpdf.egg-info/dependency_links.txt
+jibreelpdf.egg-info/top_level.txt
