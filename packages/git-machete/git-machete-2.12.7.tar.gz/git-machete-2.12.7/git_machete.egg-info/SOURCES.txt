@@ -1,0 +1,12 @@
+README.md
+setup.py
+git_machete/__init__.py
+git_machete/cmd.py
+git_machete.egg-info/PKG-INFO
+git_machete.egg-info/SOURCES.txt
+git_machete.egg-info/dependency_links.txt
+git_machete.egg-info/entry_points.txt
+git_machete.egg-info/top_level.txt
+git_machete/tests/__init__.py
+git_machete/tests/functional/__init__.py
+git_machete/tests/functional/test_machete.py
