@@ -1,0 +1,3 @@
+[console_scripts]
+siglent = siglent.__main__:main
+
