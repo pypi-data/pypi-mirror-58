@@ -1,0 +1,3 @@
+[zc.buildout]
+default = kitconcept.recipe.solr:Recipe
+

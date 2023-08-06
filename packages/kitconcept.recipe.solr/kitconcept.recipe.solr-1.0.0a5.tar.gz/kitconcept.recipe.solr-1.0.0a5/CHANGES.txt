@@ -1,0 +1,29 @@
+Changelog
+=========
+
+1.0.0a4 (2019-12-23)
+--------------------
+
+- Use configured port in solr-forground
+  [csenger]
+
+
+1.0.0a3 (2019-03-23)
+--------------------
+
+- Fix README.rst.
+  [kitconcept]
+
+
+1.0.0a2 (2019-03-23)
+--------------------
+
+- Make config variable optional.
+  [kitconcept]
+
+
+1.0.0a1 (2019-02-07)
+--------------------
+
+- Initial release.
+  [kitconcept]
