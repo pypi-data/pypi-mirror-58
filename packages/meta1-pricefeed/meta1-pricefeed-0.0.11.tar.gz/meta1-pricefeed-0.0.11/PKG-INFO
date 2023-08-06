@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: meta1-pricefeed
+Version: 0.0.11
+Summary: Command line tool to assist with price feed generation
+Home-page: http://www.github.com/meta1-blockchain/meta1-pricefeed
+Author: Rostislav Gogolauri
+Author-email: rostislav@meta1.io
+Maintainer: Rostislav Gogolauri
+Maintainer-email: rostislav@meta1.io
+License: UNKNOWN
+Download-URL: https://github.com/meta1-blockchain/meta1-pricefeed/tarball/0.0.11
+Description: Command line tool to assist with price feed generation
+Keywords: meta1,price,feed,cli
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
