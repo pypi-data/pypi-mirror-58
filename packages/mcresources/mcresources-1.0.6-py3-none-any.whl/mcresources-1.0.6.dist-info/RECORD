@@ -1,0 +1,9 @@
+mcresources/__init__.py,sha256=wabg0mUBJcZehQDeWp_dhht4GSViPzzRd0_XrCrfGgQ,297
+mcresources/loot_tables.py,sha256=c6FizvEP-wXUpIFh9BInzmaG70muL9R2i5XdX34wTCw,1344
+mcresources/resource_manager.py,sha256=BPu8PkDLWXy1tQ23NiyLBWzMLwa6XQPJezLdB7tivtA,13320
+mcresources/utils.py,sha256=QlkAAMy50EeULvvLx2RJ6hjmIDSglsVAPMNXSUAShKw,10343
+mcresources-1.0.6.dist-info/LICENSE.txt,sha256=ZoGEtRl9nLi4neCu2lNatiMOh9_XaOEA5qEry8TmFEM,1091
+mcresources-1.0.6.dist-info/METADATA,sha256=G3heiZzs_x_0QGZYKxQt87IsEKw5wneFDjNGmrXNIEE,7335
+mcresources-1.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mcresources-1.0.6.dist-info/top_level.txt,sha256=__2NF1ugqcQ1S9ZVl5fwcWolweVu7lBp64ZfxZl6dqM,12
+mcresources-1.0.6.dist-info/RECORD,,
