@@ -1,0 +1,9 @@
+pytest_gitcov/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_gitcov/plugin.py,sha256=zZhSESJWt_g34TcOMUeTxT5Evt2hjOc4B3jcr_vaaOU,1365
+pytest_gitcov-0.0.8.data/scripts/git-py-coverage,sha256=uTPLPZAaCQKnLemNODs2SmPneFOm8_2DTpQmy7R-Uno,118
+pytest_gitcov-0.0.8.dist-info/LICENSE,sha256=R-NraY1cncEEEGmmUlt3D4O_SSvIrn08I7NtdzAlcWk,1071
+pytest_gitcov-0.0.8.dist-info/METADATA,sha256=V7qiWtZo7YfhBXBPC7_2IF9x4hYxJiMhWajHUre-Zs4,894
+pytest_gitcov-0.0.8.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pytest_gitcov-0.0.8.dist-info/entry_points.txt,sha256=CMTDeRM2bShva8I7yeIAv7gIYv3g6tXmaCzNMbl7b7E,49
+pytest_gitcov-0.0.8.dist-info/top_level.txt,sha256=QtwtYOAtR6OEITmeupDScoJdetCbDu73PiG4xooLc-0,14
+pytest_gitcov-0.0.8.dist-info/RECORD,,
