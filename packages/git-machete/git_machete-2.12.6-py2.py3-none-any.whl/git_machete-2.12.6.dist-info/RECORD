@@ -1,0 +1,13 @@
+git_machete/__init__.py,sha256=K250lj60ExhFVTDbZ8xFTLjSXIbSvUqQc6dY8jCkCCE,23
+git_machete/cmd.py,sha256=pDwnxaj6KXBlPpDUVTBJVkZq6nupzXpxu8bGfCe7jq8,94275
+git_machete/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_machete/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_machete/tests/unit/test_unit.py,sha256=JF2zrar4H6baTKTJ8tIIDxJsbXVr_qyZjLLWm7Lp_8U,157
+git_machete-2.12.6.dist-info/AUTHORS,sha256=svpbohwr8NoF8AiFMrVCV7g92AGsSFU1A0G0LBdVK2E,274
+git_machete-2.12.6.dist-info/LICENSE,sha256=zqYne6HDvkofjSeB8uz65ab4nhOnCGLYQ5gsmzpGPOM,1075
+git_machete-2.12.6.dist-info/METADATA,sha256=S_ysP1j5I01_N37ftuqwMveUfSdM_fXMmdGpiz070Zg,4820
+git_machete-2.12.6.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+git_machete-2.12.6.dist-info/entry_points.txt,sha256=dPMUvWu0SsoBUV-uMLf6Ps5pc2dpOFeb9WrKFF0YaQU,54
+git_machete-2.12.6.dist-info/pbr.json,sha256=I-BUjDyqLx2BlroJr3Tp4ttgsgCdeDkdrNZFGqJYVP8,47
+git_machete-2.12.6.dist-info/top_level.txt,sha256=_vVPtsfs8dQ2BnfAlQNaJMAJHW5_ZY4pB0qG5L5KMnA,12
+git_machete-2.12.6.dist-info/RECORD,,
