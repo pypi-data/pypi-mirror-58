@@ -1,0 +1,13 @@
+infi.recipe.python-0.6.25-py3.7-nspkg.pth,sha256=g6Xvnc7jzht-Unt9ETYZeBg0a-fin_uNfPd0yGdlm7M,1672
+infi/recipe/python/__init__.py,sha256=q3JNmHn0CMPtEqkMR40lkjKQzuWUtT39xIFUYJ-MKIE,56
+infi/recipe/python/__version__.py,sha256=0O83LLA0wu-g5yCfzfQ54CQ4h1Zxg6fsOPfr5PgQ5a4,463
+infi/recipe/python/download/__init__.py,sha256=CjZz4mf-QzpvZXx99AN7nemFybFoH4xwkT2q0dkeY1o,2629
+infi/recipe/python/pack/__init__.py,sha256=g5b7nk6U4kmJE9aUcJxbkV-0RFnu52jPyubrVnYqJa8,3345
+infi/recipe/python/tests/__init__.py,sha256=SUCZyR8S2PbvVZCeMSBY0vSAcP0_sbOH8xsTwc9CNfc,1062
+infi.recipe.python-0.6.25.dist-info/LICENSE,sha256=-9Uy-R2R7bZjSp8m31SUjOX8_6Og1laqYUB8npdzUHI,1473
+infi.recipe.python-0.6.25.dist-info/METADATA,sha256=CoFyTymt46GnEsckoAK-PjN2mkBIYxMt-01qroqOlqM,895
+infi.recipe.python-0.6.25.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+infi.recipe.python-0.6.25.dist-info/entry_points.txt,sha256=CjoDB9RnK4mnc0gEa1zZCDHlY747M_Ff6pbdAc5fbfI,144
+infi.recipe.python-0.6.25.dist-info/namespace_packages.txt,sha256=o80dT8wHd6HfYzs8LSAisfHEuaGlz3bW9jvmaYhv3mQ,17
+infi.recipe.python-0.6.25.dist-info/top_level.txt,sha256=dXIyYv_pNwpGguxzqhrAAmEyFWegZ_kDeqe_z8cMR5g,5
+infi.recipe.python-0.6.25.dist-info/RECORD,,
