@@ -1,0 +1,6 @@
+setup.py
+infinity4py/__init__.py
+infinity4py.egg-info/PKG-INFO
+infinity4py.egg-info/SOURCES.txt
+infinity4py.egg-info/dependency_links.txt
+infinity4py.egg-info/top_level.txt
