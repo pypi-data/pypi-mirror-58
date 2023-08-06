@@ -1,0 +1,8 @@
+.gitignore
+Makefile
+setup.py
+malie/__init__.py
+malie.egg-info/PKG-INFO
+malie.egg-info/SOURCES.txt
+malie.egg-info/dependency_links.txt
+malie.egg-info/top_level.txt
