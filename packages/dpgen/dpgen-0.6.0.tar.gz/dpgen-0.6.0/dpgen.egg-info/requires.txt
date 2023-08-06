@@ -1,0 +1,7 @@
+numpy>=1.14.3
+dpdata>=0.1.10
+pymatgen>=2017.9.1
+ase
+monty>2.0.0
+paramiko
+custodian
