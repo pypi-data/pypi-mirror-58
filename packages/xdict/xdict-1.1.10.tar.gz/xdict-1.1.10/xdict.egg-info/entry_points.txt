@@ -1,0 +1,8 @@
+[console_scripts]
+hentry = xdict.bin.hentry:main
+ide_apis_from_strblk = xdict.bin.creat_apis_from_strblk:main
+ide_apis_from_verb = xdict.bin.creat_apis_from_verb:main
+ide_indent = xdict.bin.ide_indent:main
+jsonq = xdict.bin.jsonq:main
+pobj = xdict.bin.pobj:main
+
