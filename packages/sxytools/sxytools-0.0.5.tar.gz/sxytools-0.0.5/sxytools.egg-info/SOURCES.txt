@@ -1,0 +1,12 @@
+setup.py
+sxytools/__init__.py
+sxytools.egg-info/PKG-INFO
+sxytools.egg-info/SOURCES.txt
+sxytools.egg-info/dependency_links.txt
+sxytools.egg-info/not-zip-safe
+sxytools.egg-info/requires.txt
+sxytools.egg-info/top_level.txt
+sxytools/CreateRandomFiles/CreateRandomFiles.py
+sxytools/CreateRandomFiles/__init__.py
+sxytools/OracleDBTest/OracleDBTest.py
+sxytools/OracleDBTest/__init__.py
