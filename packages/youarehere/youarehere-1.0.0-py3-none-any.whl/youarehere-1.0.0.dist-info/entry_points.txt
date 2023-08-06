@@ -1,0 +1,3 @@
+[console_scripts]
+youarehere=youarehere:cli
+
