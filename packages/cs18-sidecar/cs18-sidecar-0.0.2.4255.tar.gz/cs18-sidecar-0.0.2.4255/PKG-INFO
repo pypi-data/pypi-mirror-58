@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: cs18-sidecar
+Version: 0.0.2.4255
+Summary: Sidecar - The CS18 instance
+Home-page: UNKNOWN
+Author: Quali
+Author-email: support@qualisystems.com
+License: UNKNOWN
+Description: ================================
+        Sidecar - The CS18 instance api
+        ================================
+        
+        
+        Build Info:
+        
+        .. code-block:: ini
+        
+            version = 0.0.2.4255
+            branch = refs/heads/master
+            changeset = b2bf559b6859cce8be96532f65a4370f9f97fd18
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
