@@ -1,0 +1,17 @@
+pipenv
+ipython
+vulture
+safety
+pre-commit
+twine
+sphinx
+recommonmark
+pytest
+pytest-cov
+pytest-xdist
+pytest-sugar
+pytest-travis-fold
+tox-travis
+coveralls
+pylint
+autopep8
