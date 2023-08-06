@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: scrapy-job-parameters
+Version: 0.1.10
+Summary: Scrapy downloader middleware to enable persistent storage.
+Home-page: http://github.com/kpler/scrapy-job-parameters-extension
+Author: Kpler engineering
+Author-email: engineering@kpler.com
+License: Copyright (c) 2014-2017 Kpler S.A.S., all right reserved. Proprietary and confidential, not for distribution.
+Description: 
+        # Scrapy Metas Extension
+        
+        [![CircleCI](https://circleci.com/gh/Kpler/scrapy-job-parameters-extension.svg?style=svg)](https://circleci.com/gh/Kpler/scrapy-job-parameters-extension)
+        
+        > Scrapy extension to make env meta information available as spider fields.
+        
+        Current implementation exposes to the spider a `meta` object with the
+        following attributes:
+        
+        - `project_id` - as defined by Scrapinghub
+        - `spider_id` -
+        - `job_id` -
+        - `job_name` - raw job id from Scrapinghub or uuid v4
+        - `job_time` - excecution time
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Provides-Extra: test
