@@ -1,0 +1,11 @@
+awkwardql/__init__.py,sha256=o27yFyiXH4HnT06xF1MqYNNXhvpkj7_s6ULmYYyGhVQ,53
+awkwardql/data.py,sha256=SqV4zOOGosQmRHxte9WQhnzb8vPSTnNz9CE8dMfNOhI,12711
+awkwardql/index.py,sha256=k9synL7A3yx5XDOv1BfvvcODVqpdpQ4EpwdIvkIM4RI,6250
+awkwardql/interpreter.py,sha256=39MTEMg1uB3XDavP8Q5nJMvr9Zds_0vXhJdf3Zzi7Xc,59932
+awkwardql/parser.py,sha256=t7GvB2BRdNya1odjqwh63XF87CM-KKepKsYeGg41bD4,39521
+awkwardql/version.py,sha256=vl8zLjPhYxV6tA0G1spPDGHCKcFcyEGv-wYSZ3p9uoE,122
+awkwardql-0.0.1.dev0.dist-info/LICENSE,sha256=r-pBiwRDUQB7HWR9BHEaUbqSWvoeS7b52AIyDkrPLZI,1534
+awkwardql-0.0.1.dev0.dist-info/METADATA,sha256=n25GtDiBzFGFu8o6TGS9KPtyPF1gkZCB0a4qOFQyvs8,2204
+awkwardql-0.0.1.dev0.dist-info/WHEEL,sha256=QrCxIurdO0_icqgdsR8nJ8vSjsjC1s_oWmDPOvzyxCw,110
+awkwardql-0.0.1.dev0.dist-info/top_level.txt,sha256=OV8TXMrBxamEQQ0iyXPnQ4vF3F4Y5vENnLIZVQq4PZ0,10
+awkwardql-0.0.1.dev0.dist-info/RECORD,,
