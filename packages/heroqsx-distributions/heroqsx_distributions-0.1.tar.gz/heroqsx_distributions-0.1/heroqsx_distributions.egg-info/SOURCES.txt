@@ -1,0 +1,10 @@
+setup.py
+heroqsx_distributions/Binomialdistribution.py
+heroqsx_distributions/Gaussiandistribution.py
+heroqsx_distributions/Generaldistribution.py
+heroqsx_distributions/__init__.py
+heroqsx_distributions.egg-info/PKG-INFO
+heroqsx_distributions.egg-info/SOURCES.txt
+heroqsx_distributions.egg-info/dependency_links.txt
+heroqsx_distributions.egg-info/not-zip-safe
+heroqsx_distributions.egg-info/top_level.txt
