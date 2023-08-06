@@ -1,0 +1,8 @@
+jupyter_omero_authenticator/__init__.py,sha256=5FCJBzH3Kp2BH9c33Zc2ngq6NNVR-0ZypliABnBxtX4,78
+jupyter_omero_authenticator/auth.py,sha256=6afdbCiPy28cUJ823cYl1aRtNUz9vpdTnc7689tKNgI,6651
+jupyter_omero_authenticator-0.0.0.data/data/share/jupyterhub/templates/omero_authenticator/omerologin.html,sha256=IHoCV-bt2yHbmgeJxxoTv64Qve5zDubmXfPAgOMTsNg,1476
+jupyter_omero_authenticator-0.0.0.dist-info/LICENSE,sha256=ha9ViKPFI7792pUKhGjDj3jXO8_Xq5f-BBrCtv1mweY,1065
+jupyter_omero_authenticator-0.0.0.dist-info/METADATA,sha256=kqHf9kkkHGH4G3zl8FDbGrGB854lg83fJIsRmcr6SpA,1265
+jupyter_omero_authenticator-0.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jupyter_omero_authenticator-0.0.0.dist-info/top_level.txt,sha256=q7LcVAAhyAef_c0KqiVVgb-Vkxzv0eOX5doMw-kPZ9M,28
+jupyter_omero_authenticator-0.0.0.dist-info/RECORD,,

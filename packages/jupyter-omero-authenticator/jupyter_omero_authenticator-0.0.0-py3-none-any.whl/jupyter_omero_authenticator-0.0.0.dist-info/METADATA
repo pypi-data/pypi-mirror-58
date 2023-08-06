@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: jupyter-omero-authenticator
+Version: 0.0.0
+Summary: Jupyterhub OMERO authenticator
+Home-page: https://github.com/manics/jupyter-omero-authenticator
+Author: Simon Li
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: jupyterhub
+Requires-Dist: omero-py (>=5.6.dev9)
+
+# Jupyter OMERO Authenticator
+
+Use [OMERO](https://www.openmicroscopy.org/omero/) to authenticate with [JupyterHub](https://jupyter.org/hub).
+
+## Example
+
+You are strongly recommended to enable auth_state persistence so that OMERO session-ids can be checked and refreshed.
+
+`jupyterhub_config.py`:
+```python
+c.JupyterHub.authenticator_class = 'jupyter_omero_authenticator.OmeroAuthenticator'
+c.OmeroAuthenticator.omero_host = 'omero.example.org'
+
+c.Authenticator.auth_refresh_age = 300
+c.Authenticator.enable_auth_state = True
+c.Authenticator.refresh_pre_spawn = True
+```
+```bash
+export JUPYTERHUB_CRYPT_KEY=$(openssl rand -hex 32)
+jupyterhub
+```
+
