@@ -1,0 +1,7 @@
+README.txt
+recursive.py
+setup.py
+recursive_aronr.egg-info/PKG-INFO
+recursive_aronr.egg-info/SOURCES.txt
+recursive_aronr.egg-info/dependency_links.txt
+recursive_aronr.egg-info/top_level.txt
