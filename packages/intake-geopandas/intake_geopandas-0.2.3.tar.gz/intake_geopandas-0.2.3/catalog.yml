@@ -1,0 +1,36 @@
+sources:
+  flights:
+    driver: csv
+    description: Flights
+    args:
+      urlpath: '{{CATALOG_DIR}}/flight_data_sampled.csv'
+    cache:
+      - argkey: urlpath
+        type: file
+  bikeways:
+    driver: geojson
+    description: Bikeways
+    args:
+      urlpath: '{{CATALOG_DIR}}/bikeways.geojson'
+    cache:
+      - argkey: urlpath
+        type: file
+  metro_bus_lines:
+    driver: shapefile
+    description: Metro bus lines
+    args:
+      urlpath: '{{CATALOG_DIR}}/data/metro_bus_lines/Metro_Bus_Lines.shp'
+  fortune500:
+    driver: postgis
+    args:
+      uri: 'postgresql://postgres@localhost:5432/postgres'
+      table: fortune500
+      geopandas_kwargs:
+        geom_col: location
+  test:
+    driver: spatialite
+    args:
+      uri: 'sqlite:///test-2.3.sqlite'
+      table: towns
+      geopandas_kwargs:
+        geom_col: Geometry
