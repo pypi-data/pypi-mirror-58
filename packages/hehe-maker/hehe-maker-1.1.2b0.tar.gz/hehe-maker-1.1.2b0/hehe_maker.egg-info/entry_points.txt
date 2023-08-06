@@ -1,0 +1,3 @@
+[console_scripts]
+hehe_maker = hehe_maker.__main__:main
+
