@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ndx-point-cloud-table
+Version: 0.1.0
+Summary: An extension for storing point clouds in an NWB file
+Home-page: https://github.com/ben-dichter-consulting/ndx-point-cloud-table
+Author: Ben Dichter
+Author-email: ben.dichter@gmail.com
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: open3d
+Requires-Dist: pynwb
+
+UNKNOWN
+
+

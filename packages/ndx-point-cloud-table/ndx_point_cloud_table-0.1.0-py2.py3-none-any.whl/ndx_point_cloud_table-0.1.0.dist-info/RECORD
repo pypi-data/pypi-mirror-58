@@ -1,0 +1,11 @@
+ndx_point_cloud_table/__init__.py,sha256=ETZuGEyz-2GVLcrA5Vx-swAQ0Tvq6aJ6HXJykT1umD0,47
+ndx_point_cloud_table/point_cloud_table.py,sha256=w52FUqtZ4QYm92xqU6Glz0Ok8PMPGrQd0EgUsKYZ3V0,1520
+ndx_point_cloud_table/spec/ndx-point-cloud-table.extensions.yaml,sha256=C2brQZtV1T_St55-zGr3xFroOsxUTiR7yerMSXIcDYA,1226
+ndx_point_cloud_table/spec/ndx-point-cloud-table.namespace.yaml,sha256=wLN45lmnVhAb48JADJpHXDHVzaWUltPoshvi6vFRZYs,339
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=6e03dQUgRx6fQQQRRmJkOn67i5PP4yxuTEwl13dE9kc,664
+ndx_point_cloud_table-0.1.0.dist-info/LICENSE,sha256=O1OGyvvN5p0DLHMzdv8j6GJMoxRPxFTJWFgIfum6Yig,1530
+ndx_point_cloud_table-0.1.0.dist-info/METADATA,sha256=PRjSJWWfOe5tO75C3qVQOMDhJgLQXy1jJQJ9sN5lwNE,446
+ndx_point_cloud_table-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ndx_point_cloud_table-0.1.0.dist-info/top_level.txt,sha256=bUSOkPtLzoEllF7tHJdt2lP6IHjuPfbJZcg4nnw5s1k,28
+ndx_point_cloud_table-0.1.0.dist-info/RECORD,,
