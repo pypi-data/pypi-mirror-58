@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: devicesinlan
+Version: 1.8.0
+Summary: Find devices in a lan
+Home-page: https://github.com/turulomio/devicesinlan
+Author: turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Description: Project web page is at https://github.com/turulomio/devicesinlan/
+Keywords: network monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
