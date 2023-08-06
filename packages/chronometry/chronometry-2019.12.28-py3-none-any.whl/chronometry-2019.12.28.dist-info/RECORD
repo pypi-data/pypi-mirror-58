@@ -1,0 +1,9 @@
+progress/Iterable.py,sha256=c7fhqUn3aRSW9FV7FSW86kiFvqYGvPynRtW4F1oFeeA,1478
+progress/ProgressBar.py,sha256=CCkUvU8Lxv5WV_mqtfZWHX7CU0s4sjzXdIHnQsjybx8,14345
+progress/__init__.py,sha256=fnS1rpz4c8bOs1BT8jRIdirkzOKbwVgiJU_1FUA8iqM,67
+progress/colour.py,sha256=KzM-31LAIth0ubI09d8SXkbsJpiufV8KlB43vd38ZIA,181
+progress/map.py,sha256=llyeRBI-018UWYJQtqHLBKWyWUYJCQq_ga3WbSayfa8,1805
+chronometry-2019.12.28.dist-info/METADATA,sha256=RDAX-19EI3t8Y46y-sL2UYdmLa6r4_UYHzSPg8usrcM,403
+chronometry-2019.12.28.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+chronometry-2019.12.28.dist-info/top_level.txt,sha256=deWgGnjsbS4Te_YRxD6BN8yoqv0q8sH67UsBKNCcyJ8,9
+chronometry-2019.12.28.dist-info/RECORD,,
