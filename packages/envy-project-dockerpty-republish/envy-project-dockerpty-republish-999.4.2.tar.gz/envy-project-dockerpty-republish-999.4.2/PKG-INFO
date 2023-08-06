@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: envy-project-dockerpty-republish
+Version: 999.4.2
+Summary: Python library to use the pseudo-tty of a docker container republish by envy-project
+Home-page: https://github.com/d11wtq/dockerpty
+Author: Chris Corbyn
+Author-email: chris@w3style.co.uk
+License: Apache 2.0
+Description: Republish of dockerpty by envy-project, who does not claim authorship
+Keywords: docker,tty,pty,terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Terminals
+Classifier: Topic :: Terminals :: Terminal Emulators/X Terminals
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

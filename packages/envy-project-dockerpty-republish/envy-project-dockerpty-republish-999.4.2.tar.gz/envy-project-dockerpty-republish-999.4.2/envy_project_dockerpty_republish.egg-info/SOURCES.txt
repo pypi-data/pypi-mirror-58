@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+dockerpty/__init__.py
+dockerpty/io.py
+dockerpty/pty.py
+dockerpty/tty.py
+envy_project_dockerpty_republish.egg-info/PKG-INFO
+envy_project_dockerpty_republish.egg-info/SOURCES.txt
+envy_project_dockerpty_republish.egg-info/dependency_links.txt
+envy_project_dockerpty_republish.egg-info/requires.txt
+envy_project_dockerpty_republish.egg-info/top_level.txt
