@@ -1,0 +1,17 @@
+auto_tag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_tag/__main__.py,sha256=pqLMHQbFMJr0KmQsS54i0x-a5votbpRcXZpOdkKhW2A,230
+auto_tag/cli.py,sha256=dX8lpK1LoZcp6R2zcrl8hItuQbGNN_W1V0h4eH0GMU8,2228
+auto_tag/constants.py,sha256=XnLII4oNrogRGqyKsm10iSifBExY4ViazfSaAf125CQ,1208
+auto_tag/core.py,sha256=yFXn9a-4RsS3FNgqGgwjteuICNRv4UpJcegQYrDjx80,6478
+auto_tag/detectors.py,sha256=9nnwAmCVEtAMjVEtfbJW2cZPM1BQw676krIPTPkupiQ,7917
+auto_tag/detectors_config.py,sha256=xjEZscC15EqtlHyhHOQpf0cAdW7-VatXh31KVnIolQI,2933
+auto_tag/entrypoint.py,sha256=2AowCzpt8pGEsphMeVJUmfzDfA_tqK8WNKO4t--apxY,1531
+auto_tag/exception.py,sha256=6PIh_4noIkut_HXPgFUbghKPNqEngSMOFBLQAXjMUMU,616
+auto_tag/git_custom_env.py,sha256=L2L1UmvJQ1U1o3MQ-C5Mct5Wj7wVs9thtn5pDRoadb0,1596
+auto_tag/tag_search_strategy.py,sha256=cMv9nQHiJrkd1lgkhfpOnge0FdIzY3EMj_IczxKZjMM,4339
+auto_tag-0.8.0.dist-info/LICENSE.md,sha256=UfTlXgLoZsP76dUyi_Y8XGLA8FDzURlzFTbk3_Cf6K4,1193
+auto_tag-0.8.0.dist-info/METADATA,sha256=CM7L2ubcW0ufFgpCow7EI6HJtd3GP4WDHj_4jDpmitQ,10573
+auto_tag-0.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+auto_tag-0.8.0.dist-info/entry_points.txt,sha256=HQwv4IrCQ5B2UBS60QZBWWcfmZw-Jh0Q2paL6jYDcXA,53
+auto_tag-0.8.0.dist-info/top_level.txt,sha256=rkWUZwj3YPPPJGA5bNR7p6YqYO_qhWmwrRf_AWsfk9A,9
+auto_tag-0.8.0.dist-info/RECORD,,
