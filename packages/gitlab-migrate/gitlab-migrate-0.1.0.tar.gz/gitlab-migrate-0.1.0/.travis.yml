@@ -1,0 +1,35 @@
+dist: xenial
+language: python
+cache: pip
+stages:
+- quick-checks
+- test
+- if: tag =~ ^v\d
+  name: deploy
+script:
+- python -m pip install -e .[tests]
+- make $CHECK
+matrix:
+  fast_finish: true
+  include:
+  - python: 3.6
+    stage: quick-checks
+    env: CHECK="lint"
+  - python: 3.6
+    stage: test
+    env: CHECK="test"
+  - python: 3.7
+    stage: test
+    env: CHECK="test"
+  - python: 3.7
+    stage: deploy
+    env: DEPLOY_TO_PYPI=yes
+deploy:
+  provider: pypi
+  on:
+    tags: true
+    branch: master
+    condition: "$DEPLOY_TO_PYPI = yes"
+    skip_existing: true
+  user:
+    secure: TObDGKESp1dsl3G5mF6rQ6tmvhOdMmTzN3EkZ2IqWdPMJ5m/PMDgJASgO9KHSGR6B0mBL2Zw2CKHlzNWO03nFvw8N0q8xLqfxUGjPOKwWXUoIDuOxInd0i6z60yGu+1QNg65/UARZlU1o1WGj+JZmbP7NHHUSrvxkJyVnxrvggoaFr5w6oKUpfaPDLKX6Lu96zI74v78lK9HhuDIJx9NdfNG/z8DwKFkLTwD9CAhQPB2PQdW2wlPBt+xZCNJPNjcCVgd2NBGcz9JzOVoEnmE+8Nt/U69ibky+UOaYhXrlMRX7AxSvPhAeN3yAhYfzTF9F5whEpR4ilGMIbRx5+KiKj/5pW2811XNSo12WgbvoXEQPHJQdpJ2MKNdcz6aX6dNBQpAEO9osGuhXd1U+iHuiX+T3KlKYCxQNi1atv55KqAn2lRa8+2Ftj6X8ls357EXI61hmEr7rYXoVBzVbRQYOp4MnM/Wg6a+0VHQKg3cuSBo4682g2tl009/EerQkW4osNrBq9FAkt6R1LA3DVQxSfeJLa/LH7OmLi1leEG5/hVnx45lRa4VZ8y50HZSHR9Kh+tsFEcdBE46lq6n+mEZw2FH6sZsDMohS8OvF0PkGsG4hAl4FiitH/c9ze0/OnNZKpXMwpwQyPozOztaf38dac0aggNlasHDtdbXrpWgFvU=
