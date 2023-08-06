@@ -1,0 +1,15 @@
+MagicBaidu==0.0.9
+Whoosh==2.7.4
+beautifulsoup4==4.7.1
+bs4==0.0.1
+cacheout==0.11.2
+harvesttext==0.5.4.2
+html2text==2019.9.26
+plyvel==1.1.0
+pyltp==0.2.1
+readability-lxml==0.7.1
+requests==2.21.0
+sqlitedict==1.6.0
+textrank4zh==0.3
+tqdm==4.38.0
+unqlite==0.7.1
