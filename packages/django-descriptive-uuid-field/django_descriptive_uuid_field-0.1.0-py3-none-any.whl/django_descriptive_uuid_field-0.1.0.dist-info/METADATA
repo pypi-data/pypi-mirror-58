@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-descriptive-uuid-field
+Version: 0.1.0
+Summary: django-descriptive-uuid is a field that you can use on your models to give them a human-readable, unique identifier.
+Home-page: https://github.com/bentleycook/django-descriptive-uuid-field
+Author: Bentley Cook
+Author-email: hello@bentleycook.com
+License: MIT
+Download-URL: https://github.com/bentleycook/django-descriptive-uuid/tarball/0.1
+Keywords: django,modelfield,uuid
+Platform: UNKNOWN
+
+UNKNOWN
+
+
