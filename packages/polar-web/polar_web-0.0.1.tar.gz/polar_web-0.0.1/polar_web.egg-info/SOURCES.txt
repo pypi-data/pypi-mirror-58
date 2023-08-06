@@ -1,0 +1,10 @@
+README.md
+setup.py
+polar_web.egg-info/PKG-INFO
+polar_web.egg-info/SOURCES.txt
+polar_web.egg-info/dependency_links.txt
+polar_web.egg-info/not-zip-safe
+polar_web.egg-info/requires.txt
+polar_web.egg-info/top_level.txt
+polarweb/__init__.py
+polarweb/main.py
