@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: tooncher
+Version: 1.0.0
+Summary: automates toontown rewritten's login process
+Home-page: https://github.com/fphammerle/tooncher
+Author: Fabian Peter Hammerle
+Author-email: fabian.hammerle@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/fphammerle/tooncher/tarball/0.3.1
+Description: UNKNOWN
+Keywords: game,launcher,toontown rewritten,ttr
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Utilities
