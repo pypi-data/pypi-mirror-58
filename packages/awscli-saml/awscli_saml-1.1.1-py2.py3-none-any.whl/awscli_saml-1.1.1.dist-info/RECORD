@@ -1,0 +1,9 @@
+awscli_saml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awscli_saml/assume_role.py,sha256=vWOmrUA6z424U9b_zOxYge0yfiSZvtXQ3HZUC5Uknn4,2098
+awscli_saml/main.py,sha256=5bqZfDNUe9klMvHFKY7Jn2fKajOE-N4YC-n1x2aM6CI,1077
+awscli_saml-1.1.1.dist-info/LICENSE.txt,sha256=xfsgamRJTz41f1tx44um-fr1Wo9PX66o3IhLdh1G4oo,1069
+awscli_saml-1.1.1.dist-info/METADATA,sha256=jWJ7AuumwkIVDS9lh3DyS5eL8BG5s6RV1Bt7UqobhzU,2250
+awscli_saml-1.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+awscli_saml-1.1.1.dist-info/entry_points.txt,sha256=lyZ1f70rwbfjGwOyBy4pua7N9XUrj9TimorC3RL3fSE,52
+awscli_saml-1.1.1.dist-info/top_level.txt,sha256=bTlrbsZcwPS1D0dJKDfoAiedhbpgxp5nITN_I6nOYd4,12
+awscli_saml-1.1.1.dist-info/RECORD,,
