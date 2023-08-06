@@ -1,0 +1,12 @@
+annofabapi>=0.23.2
+requests
+pillow
+pyyaml
+dictdiffer
+more-itertools
+jmespath
+pyquery
+pandas
+isodate
+bokeh>=1.4.0
+holoviews
