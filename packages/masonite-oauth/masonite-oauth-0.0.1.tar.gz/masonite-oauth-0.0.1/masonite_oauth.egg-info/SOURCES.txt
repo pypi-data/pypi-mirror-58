@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+masonite-oauth/__init__.py
+masonite-oauth/integration.py
+masonite_oauth.egg-info/PKG-INFO
+masonite_oauth.egg-info/SOURCES.txt
+masonite_oauth.egg-info/dependency_links.txt
+masonite_oauth.egg-info/requires.txt
+masonite_oauth.egg-info/top_level.txt
