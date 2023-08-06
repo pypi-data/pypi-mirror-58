@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pydantic_odm/__init__.py
+pydantic_odm/db.py
+pydantic_odm/errors.py
+pydantic_odm/mixins.py
+pydantic_odm/types.py
+pydantic_odm.egg-info/PKG-INFO
+pydantic_odm.egg-info/SOURCES.txt
+pydantic_odm.egg-info/dependency_links.txt
+pydantic_odm.egg-info/not-zip-safe
+pydantic_odm.egg-info/top_level.txt
