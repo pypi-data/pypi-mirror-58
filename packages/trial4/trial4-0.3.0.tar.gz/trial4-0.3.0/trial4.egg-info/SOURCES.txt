@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+test/test_trial4_first_assignment.py
+test/test_trial4_second_assignment.py
+trial4/__init__.py
+trial4/trail4_second_assignment.py
+trial4/trial4.py
+trial4.egg-info/PKG-INFO
+trial4.egg-info/SOURCES.txt
+trial4.egg-info/dependency_links.txt
+trial4.egg-info/requires.txt
+trial4.egg-info/top_level.txt
