@@ -1,0 +1,8 @@
+py_wave_runup/__init__.py,sha256=Mg4-EW082jxAfpWnFo7n0bCQ-uRnlgrNQLuqQc1Xp8I,91
+py_wave_runup/datasets/power18.csv,sha256=SwpKIG3CEyBTWBCz3gyvw4SHOQnBRubRFrLbmmB69tA,111502
+py_wave_runup/datasets.py,sha256=p3nM8SM3Cdtnes9fBGk1wc5Ia7uMSlf37d_tOxCx4sA,2151
+py_wave_runup/ensembles.py,sha256=J8o6kEJqGbHpduSOFPagXVriP_6q1mQnT4iTc45uSKQ,4761
+py_wave_runup/models.py,sha256=KIT6tqAja_MEVbNQUrFgRqfjn5o_C95DATOc-rO6XVc,19793
+py_wave_runup-0.1.7.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+py_wave_runup-0.1.7.dist-info/METADATA,sha256=-0f3tpi-wbSyuJGfwtiUl-lF4k-spKZWqzqnCWFd-XQ,6913
+py_wave_runup-0.1.7.dist-info/RECORD,,
