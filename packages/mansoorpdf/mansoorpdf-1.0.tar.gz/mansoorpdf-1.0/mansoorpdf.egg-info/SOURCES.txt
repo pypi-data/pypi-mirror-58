@@ -1,0 +1,6 @@
+README.md
+setup.py
+mansoorpdf.egg-info/PKG-INFO
+mansoorpdf.egg-info/SOURCES.txt
+mansoorpdf.egg-info/dependency_links.txt
+mansoorpdf.egg-info/top_level.txt
