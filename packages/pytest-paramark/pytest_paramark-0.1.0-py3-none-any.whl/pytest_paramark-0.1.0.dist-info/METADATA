@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pytest-paramark
+Version: 0.1.0
+Summary: Configure pytest fixtures using a combination of"parametrize" and markers
+Home-page: https://github.com/mrzechonek/pytest-paramark
+Author: Michał Lowas-Rzechonek
+Author-email: michal@rzechonek.net
+Maintainer: Michał Lowas-Rzechonek
+Maintainer-email: michal@rzechonek.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.4
+Requires-Dist: pytest (>=4.5.0)
+
+===============
+pytest-paramark
+===============
+
+.. image:: https://img.shields.io/pypi/v/pytest-paramark.svg
+    :target: https://pypi.org/project/pytest-paramark
+    :alt: PyPI version
+
+.. image:: https://img.shields.io/pypi/pyversions/pytest-paramark.svg
+    :target: https://pypi.org/project/pytest-paramark
+    :alt: Python versions
+
+.. image:: https://travis-ci.org/mrzechonek/pytest-paramark.svg?branch=master
+    :target: https://travis-ci.org/mrzechonek/pytest-paramark
+    :alt: See Build Status on Travis CI
+
+Configure pytest fixtures using combination of parametrize and markers
+
+----
+
+
+Installation
+------------
+
+You can install "pytest-paramark" via `pip`_ from `PyPI`_::
+
+    $ pip install pytest-paramark
+
+
+Usage
+-----
+
+* TODO
+
+
+Contributing
+------------
+Contributions are very welcome. Tests can be run with `tox`_, please ensure
+the coverage at least stays the same before you submit a pull request.
+
+
+License
+-------
+
+Distributed under the terms of the `MIT`_ license, "pytest-paramark" is free and open source software
+
+
+Issues
+------
+
+If you encounter any problems, please `file an issue`_ along with a detailed description.
+
+.. _`MIT`: http://opensource.org/licenses/MIT
+.. _`file an issue`: https://github.com/mrzechonek/pytest-paramark/issues
+.. _`pytest`: https://github.com/pytest-dev/pytest
+.. _`tox`: https://tox.readthedocs.io/en/latest/
+.. _`pip`: https://pypi.org/project/pip/
+.. _`PyPI`: https://pypi.org/project
+
+
