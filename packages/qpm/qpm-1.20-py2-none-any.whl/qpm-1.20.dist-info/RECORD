@@ -1,0 +1,16 @@
+qpm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qpm/__main__.py,sha256=1PGIIvcJfP88-TUgjavrX_WlaLRsY2R9eUd5EudHCws,405
+qpm/packaging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qpm/packaging/auto_argument_parser.py,sha256=bWvjnFC8-uBdUqnmi1a0ifqG1Z00e9Dy9ACrNiimtsg,1484
+qpm/packaging/driver_packager.py,sha256=9-kHGQuyt83lBjGw6luVCc9SaiFwHSkaTymXsHPfsCM,5712
+qpm/packaging/drivers_packager.py,sha256=OpRZhk__zsXaj-WkOGsieirEY_z_H3p_CkkJqRoQVzk,588
+qpm/packaging/package_manager.py,sha256=-ZHTn0CfXF3ixALLHiEiZwDTvRLvhcspnQJNLYME6FU,699
+qpm/packaging/quali_api_client.py,sha256=-x5oskNBCNMmatZN5S3UBdl-85sEbDsCVd4vVJFkNAc,6013
+qpm/packaging/shell_installer.py,sha256=6kkqWCIMfBzWm_sg5QU-rbOTBd5Qeq6vNN0kouJC3co,892
+qpm/packaging/shell_packager.py,sha256=GFgeSD2PL8GOlstBxwl377psXXVEYqTIQrDW5ThPIbg,701
+qpm/packaging/shell_publisher.py,sha256=R0w4J9sOWJ1mjjxZr504c10Lz-weX7yXtGIb20qvAQA,198
+qpm-1.20.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+qpm-1.20.dist-info/METADATA,sha256=D3I4j4H8Mboj8zTf7JyecwGyUoK6HZV3Kscza915eIs,564
+qpm-1.20.dist-info/WHEEL,sha256=6EdtIfQmBpGgb6Y7UyywfQ8EO2xmaQlvEiD3D9cjVh4,97
+qpm-1.20.dist-info/top_level.txt,sha256=vWqtLOiB0kkkFxmzVRgz6SziXZ8ONZHjssBt3rfNXUk,4
+qpm-1.20.dist-info/RECORD,,

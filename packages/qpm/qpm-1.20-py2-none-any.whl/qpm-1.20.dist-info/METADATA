@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qpm
+Version: 1.20
+Summary: QPM is QualiSystems Package Manager
+Home-page: https://github.com/QualiSystems/qpm
+Author: Boris Modylevsky
+Author-email: borismod@gmail.com
+License: Apache 2.0
+Keywords: QualiSystems
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+QPM is QualiSystems Package Manager
+
+Usage:
+python -m qpm action [additional arguments]
+
+Examples:
+Creates pack
+python -m qpm pack --package_name vCenterShell
+
+Installs package into QualiSystems CloudShell
+python -m qpm install --package_name vCenterShell
+
+
