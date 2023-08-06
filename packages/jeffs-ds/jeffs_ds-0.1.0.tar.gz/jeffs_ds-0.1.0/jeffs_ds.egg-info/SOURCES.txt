@@ -1,0 +1,15 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+jeffs_ds/__init__.py
+jeffs_ds/jeffs_ds.py
+jeffs_ds.egg-info/PKG-INFO
+jeffs_ds.egg-info/SOURCES.txt
+jeffs_ds.egg-info/dependency_links.txt
+jeffs_ds.egg-info/not-zip-safe
+jeffs_ds.egg-info/top_level.txt
