@@ -1,0 +1,6 @@
+#!/bin/sh
+
+chmod a-X debian/*.desktop
+
+
+echo "Fixed-Lintian-Tags: executable-desktop-file"
