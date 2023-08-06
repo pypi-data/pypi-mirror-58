@@ -1,0 +1,3 @@
+IPython
+ipykernel
+jupyter_client
