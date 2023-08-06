@@ -1,0 +1,8 @@
+pylint
+pyflakes
+pydocstyle
+black
+pytest
+pytest-cov
+sphinx
+snakeviz
