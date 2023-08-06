@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ssmp/__init__.py
+ssmp/aws.py
+ssmp/main.py
+ssmp.egg-info/PKG-INFO
+ssmp.egg-info/SOURCES.txt
+ssmp.egg-info/dependency_links.txt
+ssmp.egg-info/entry_points.txt
+ssmp.egg-info/requires.txt
+ssmp.egg-info/top_level.txt
