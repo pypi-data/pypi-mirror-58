@@ -1,0 +1,8 @@
+torch
+torchvision
+numpy
+sklearn
+tqdm
+requests
+twilio
+pdoc3
