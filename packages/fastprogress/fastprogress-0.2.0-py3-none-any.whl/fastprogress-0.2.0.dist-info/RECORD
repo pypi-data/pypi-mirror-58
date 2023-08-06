@@ -1,0 +1,11 @@
+fastprogress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastprogress/_nbdev.py,sha256=qGUDgiaIMdB5kge02d-TMjVgBxuEIaFKnStz12-fyok,1368
+fastprogress/core.py,sha256=UqPE3rqkffgPXb0vuPNqy3N45dBbsthnxV2nLyiAMpM,2716
+fastprogress/fastprogress.py,sha256=9S5f-J00WwGSRRJffUPHz24IDRqWstafpB1S1rKNqjs,11688
+fastprogress/version.py,sha256=3_pPTcLhP2HDIxUvm4pSL9lof5EcjJz2Sg9h-29IBqc,90
+fastprogress-0.2.0.dist-info/LICENSE,sha256=9YbLZO3TVEygBO3bWa1WwA52kCXN7ocfsjTEKCdB7cw,9144
+fastprogress-0.2.0.dist-info/METADATA,sha256=qRD9j6URBF1QElSw6CBzsa3l24oPEdlSJlQ18YvRwEg,3794
+fastprogress-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fastprogress-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fastprogress-0.2.0.dist-info/top_level.txt,sha256=bzStkcsFbAbqewpPVxA0jCaKDEjMXyvTWXDEJARc__s,13
+fastprogress-0.2.0.dist-info/RECORD,,
