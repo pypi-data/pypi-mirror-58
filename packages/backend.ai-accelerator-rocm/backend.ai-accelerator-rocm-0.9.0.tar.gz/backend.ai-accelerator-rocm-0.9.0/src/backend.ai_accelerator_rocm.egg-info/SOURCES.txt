@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+src/ai/backend/accelerator/rocm/__init__.py
+src/ai/backend/accelerator/rocm/exception.py
+src/ai/backend/accelerator/rocm/hip.py
+src/ai/backend/accelerator/rocm/plugin.py
+src/ai/backend/accelerator/rocm/smi.py
+src/backend.ai_accelerator_rocm.egg-info/PKG-INFO
+src/backend.ai_accelerator_rocm.egg-info/SOURCES.txt
+src/backend.ai_accelerator_rocm.egg-info/dependency_links.txt
+src/backend.ai_accelerator_rocm.egg-info/entry_points.txt
+src/backend.ai_accelerator_rocm.egg-info/not-zip-safe
+src/backend.ai_accelerator_rocm.egg-info/requires.txt
+src/backend.ai_accelerator_rocm.egg-info/top_level.txt
