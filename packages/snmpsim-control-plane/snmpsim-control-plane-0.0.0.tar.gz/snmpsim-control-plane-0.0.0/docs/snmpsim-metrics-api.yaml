@@ -1,0 +1,471 @@
+openapi: 3.0.0
+info:
+  license:
+    name: BSD License
+  version: '1.0.0'
+  title: 'SNMP Simulator Metrics REST API'
+  description: >
+    Metrics API provides the insight for the operator to how SNMP Simulator
+    is doing. That includes health reporting and operational statistics.
+    The data is provided by running SNMP Simulator, REST API is essentially
+    read-only.
+
+
+    The `/processes` endpoint exposes the details on SNMP simulator health
+    as a set of UNIX processes. It's mostly concern with processes being
+    present, resources being consumed reasonably and internal faults noted.
+
+
+    Typical use of the `/processes` endpoint by some monitoring application
+    can be a parameterized REST API call designed to reveal crashing processes,
+    overly consumed system resources or serious application-specific errors
+    occurring in SNMP simulator.
+
+
+    The `/activity` endpoints report SNMP traffic counters optionally filtered
+    by one or more attributes. Conceptually, any SNMP command traverses simulator
+    subsystems in order
+
+    1. network transport
+
+    2. agent
+
+    3. recording
+
+    4. variation module
+
+
+    Each subsystem extract certain attributes from the passing traffic by
+    which `/activity/packets` and `/activity/messages` endpoints can filter
+    reported counters.
+
+
+    Available filters applicable to specific endpoint can be discovered via
+    `/activity/{packets, messages}/filters` endpoint.
+
+
+    For example, user can get packet count for all agents or for a single
+    specific agent, for agent+endpoint combination (an agent can listen on
+    multiple endpoints) or for agent+recording pair (any single recording can
+    be used by many agents).
+
+
+    The consumer of `/activity/*` endpoints is expected to poll the API
+    periodically pushing collected data into a time-series database for
+    dynamics computing and data aggregation.
+
+
+    Although reported counters are ever growing, the consumer should be
+    prepared to handle the situation when the counters are reset to zero
+    abruptly.
+
+servers:
+  - url: http://127.0.0.1:5001/snmpsim/metrics/v1
+
+paths:
+  /activity/packets:
+    get:
+      description: >
+        Activity report for a selection of network transport. Reports metrics
+        that reflect raw network packet counts i.e. includes both successful
+        and unsuccessful SNMP commands.
+
+      parameters:
+        - name: transport_protocol
+          in: query
+          description: >
+            Report activity for this transport protocol.
+          required: false
+          schema:
+            type: string
+            enum: ["udpv4", "udpv6"]
+        - name: endpoint
+          in: query
+          description: >
+            Report activity for this transport endpoint (local network address
+            SNMP command responder is listening at).
+          required: false
+          schema:
+            type: string
+        - name: peer
+          in: query
+          description: >
+            Report activity for this network peer (remote network address
+            SNMP command responder is receiving SNMP messages from).
+          required: false
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: SNMP simulation recording metrics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PacketMetrics"
+
+        default:
+          description: Unspecified error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /activity/packets/filters:
+    get:
+      description: >
+        List of known filters
+      responses:
+        '200':
+          description: Transport-level metrics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Filters"
+
+  /activity/messages:
+    get:
+      description: >
+        Activity report for a selection of network transport, SNMP parameters and
+        recordings. Reports metrics that only include successful SNMP commands,
+
+      parameters:
+        - name: transport_protocol
+          in: query
+          description: >
+            Report activity for this transport protocol.
+          required: false
+          schema:
+            type: string
+            enum: ["udpv4", "udpv6"]
+        - name: endpoint
+          in: query
+          description: >
+            Report activity for this transport endpoint (local network address
+            SNMP command responder is listening at).
+          required: false
+          schema:
+            type: string
+        - name: peer
+          in: query
+          description: >
+            Report activity for this network peer (remote network address
+            SNMP command responder is receiving SNMP messages from).
+          required: false
+          schema:
+            type: string
+        - name: engine
+          in: query
+          description: >
+            Report activity for this SNMP engine ID.
+          required: false
+          schema:
+            type: string
+        - name: security_model
+          in: query
+          description: >
+            Report activity for this SNMP security model (SNMP v1, v2c and v3
+            respectively).
+          required: false
+          schema:
+            type: string
+            enum: ["1", "2", "3"]
+        - name: security_level
+          in: query
+          description: >
+            Report activity for this SNMP security level (noAuthNoPriv,
+            authNoPriv and authPriv respectively). SNMPv1 and v2c can only
+            belong to noAuthNoPriv model.
+          required: false
+          schema:
+            type: string
+            enum: ["1", "2", "3"]
+        - name: context_engine
+          in: query
+          description: >
+            Report activity for this SNMP ContextEngineId. More often then not,
+            this value equals to SNMP EngineId of the command responder for
+            SNMPv3. For SNMPv1/v2c SnmpEngineId always equals to ContextEngineId.
+          required: false
+          schema:
+            type: string
+        - name: context_name
+          in: query
+          description: >
+            Report activity for this SNMP ContextName.
+          required: false
+          schema:
+            type: string
+        - name: pdu
+          in: query
+          description: >
+            Report activity for this SNMP PDU type.
+          required: false
+          schema:
+            type: string
+            enum: ["GetRequestPDU", "GetNextRequestPDU", "GetBulkRequestPDU",
+                   "SetRequestPDU"]
+        - name: recording
+          in: query
+          description: >
+            Report activity for this simulation recording file path.
+          required: false
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: SNMP simulation recording metrics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MessageMetrics"
+
+        default:
+          description: Unspecified error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /activity/messages/filters:
+    get:
+      description: >
+        List of known filters
+      responses:
+        '200':
+          description: Transport-level metrics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Filters"
+
+  /processes:
+    get:
+      description: >
+        Collection of SNMP simulator system process information.
+      summary: >
+        Search for and list process information.
+      parameters:
+        - name: newer
+          in: query
+          description: >
+            Select processes with uptime lesser than specified.
+          required: false
+          schema:
+            type: integer
+        - name: larger
+          in: query
+          description: >
+            Select processes with the amount of consumed memory larger
+            than specified.
+          required: false
+          schema:
+            type: integer
+        - name: hotter
+          in: query
+          description: >
+            Select processes with CPU utilization higher than specified.
+          required: false
+          schema:
+            type: integer
+        - name: sicker
+          in: query
+          description: >
+            Select processes with fatal, critical and warning counters
+            greater than specified.
+          required: false
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: >
+            An array of process information objects
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProcessesMetrics"
+        default:
+          description: Unspecified error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+  schemas:
+    PacketMetrics:
+      description: >
+        Transport endpoint related activity. Includes raw network packet counts
+        as well as SNMP messages failed to get processed at the later stages.
+      type: object
+      properties:
+        first_hit:
+          type: integer
+        last_hit:
+          type: integer
+        total:
+          description: >
+            Total number of requests.
+          type: integer
+          format: int64
+        parse_failures:
+          description: >
+            ASN.1 deserialization failure count.
+          type: integer
+          format: int64
+        auth_failures:
+          description: >
+            SNMPv3 authentication/encryption failures.
+          type: integer
+          format: int64
+        context_failures:
+          description: >
+            Unknown SNMPv1/v2c CommunityName and SNMPv3
+            ContextEngineId/ContextName counts. This metric reflects otherwise
+            valid queries that can't be routed to any recording.
+          type: integer
+          format: int64
+
+    MessageMetrics:
+      description: >
+        SNMP message level metrics.
+      type: object
+      properties:
+        first_hit:
+          type: integer
+        last_hit:
+          type: integer
+        pdus:
+          description: >
+            Total number of PDUs.
+          type: integer
+          format: int64
+        var_binds:
+          description: >
+            Total number of variable-bindings.
+          type: integer
+          format: int64
+        failures:
+          description: >
+            Total number of variable-bindings that failed to process.
+          type: integer
+          format: int64
+        variations:
+          description: >
+            Dictionary of variation modules metrics
+          type: array
+          items:
+            $ref: "#/components/schemas/VariationMetrics"
+
+    VariationMetrics:
+      description: >
+        Variation module metrics.
+      type: object
+      properties:
+        first_hit:
+          type: integer
+        last_hit:
+          type: integer
+        name:
+          description: >
+            Name of the variation module
+          type: string
+        total:
+          description: >
+            Total number of calls this variation module received.
+          type: integer
+          format: int64
+        failures:
+          description: >
+            Total number of variation module calls that failed.
+          type: integer
+          format: int64
+
+    Filter:
+      description: >
+        A hashmap of filter name and URI
+      type: object
+      additionalProperties:
+        type: string
+
+    Filters:
+      description: >
+        Array of Filters
+      type: array
+      items:
+        $ref: "#/components/schemas/Filter"
+
+    ProcessMetrics:
+      description: >
+        SNMP simulator system is composed of many running processes.
+        This object describes common properties of a process.
+      type: object
+      properties:
+        cmdline:
+          description: >
+            Path to process executable and its command-line parameters.
+          type: string
+        uptime:
+          description: >
+            How long this process has been up (in seconds).
+          type: integer
+        owner:
+          description: >
+            OS user:group owning this process.
+          type: string
+        memory:
+          description: >
+            How much virtual memory this process is consuming.
+          type: integer
+        cpu:
+          description: >
+            How much CPU this process is putting on CPU (last 1, 5, and
+            15 minutes).
+          type: integer
+        files:
+          description: >
+            How many open files this process has.
+          type: integer
+        stdout:
+          description: >
+            The latest collected process stdout data.
+          type: string
+        stderr:
+          description: >
+            The latests collected process stderr data.
+          type: string
+        lifecycle:
+          description: >
+            How this process has being doing.
+          type: object
+          properties:
+            exits:
+              description: >
+                How many times this process exited on its own and needed to be
+                started again.
+              type: integer
+            restarts:
+              description: >
+                How many times executable file changes have been noticed by the
+                supervisor that led to process restart by the supervisor.
+              type: integer
+
+    ProcessesMetrics:
+      description: >
+        An array of process information.
+      type: array
+      items:
+        $ref: "#/components/schemas/ProcessMetrics"
+
+    Error:
+      type: object
+      required:
+        - status
+        - message
+      properties:
+        status:
+          type: integer
+          format: int32
+        message:
+          type: string
