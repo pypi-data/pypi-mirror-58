@@ -1,0 +1,17 @@
+README.md
+setup.py
+wloc/__init__.py
+wloc/settings.py
+wloc.egg-info/PKG-INFO
+wloc.egg-info/SOURCES.txt
+wloc.egg-info/dependency_links.txt
+wloc.egg-info/entry_points.txt
+wloc.egg-info/requires.txt
+wloc.egg-info/top_level.txt
+wloc/app/__init__.py
+wloc/app/messages.py
+wloc/app/run.py
+wloc/app/settings.py
+wloc/fetcher/__init__.py
+wloc/fetcher/linux.py
+wloc/fetcher/windows.py
