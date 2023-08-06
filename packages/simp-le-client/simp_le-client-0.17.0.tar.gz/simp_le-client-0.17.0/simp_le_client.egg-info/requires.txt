@@ -1,0 +1,11 @@
+idna<2.8
+acme>=1.0.0
+cryptography
+josepy
+mock
+pyOpenSSL
+pytz
+
+[tests]
+pycodestyle
+pylint
