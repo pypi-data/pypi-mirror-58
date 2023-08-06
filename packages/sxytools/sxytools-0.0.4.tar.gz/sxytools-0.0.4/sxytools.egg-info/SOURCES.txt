@@ -1,0 +1,10 @@
+setup.py
+sxytools/__init__.py
+sxytools.egg-info/PKG-INFO
+sxytools.egg-info/SOURCES.txt
+sxytools.egg-info/dependency_links.txt
+sxytools.egg-info/not-zip-safe
+sxytools.egg-info/requires.txt
+sxytools.egg-info/top_level.txt
+sxytools/CreateFiles/CreateFiles.py
+sxytools/CreateFiles/__init__.py
