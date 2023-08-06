@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydish
+Version: 0.1
+Summary: No Dependency, cross platform, Display/Input driver shim for python3 using OpenGL (via websockets and webgl)
+Home-page: https://github.com/failsafe89/pydish
+Author: failsafe89
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: English
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+PyDish (a.k.a Pie Dish)
+===
+

@@ -1,0 +1,10 @@
+pydish/__init__.py,sha256=OB-b_GnUnTkECn1fwxl844UBmiui3mSWIvhBqMZY7Tc,22
+pydish/connector.py,sha256=gI0kWxQUBuIZBp6mNJLONS9Yw8z3Xhe3ypIh9Salb1M,8282
+pydish/device_server.py,sha256=qem31zsvLvyDL1_4T1E1dH476jymmuDLQSyi7ieNeuc,2997
+pydish/http_server.py,sha256=kUs8tpwiQgkXaE7wQKKD0PkFc5VuX7Bl4sS81Xph2s4,1848
+pydish/static/__init__.py,sha256=OB-b_GnUnTkECn1fwxl844UBmiui3mSWIvhBqMZY7Tc,22
+pydish-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pydish-0.1.dist-info/METADATA,sha256=QoDPP9wOMsEfPxIgc0P2t7CX2_WAxHbVrvzAMgXwP2g,682
+pydish-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pydish-0.1.dist-info/top_level.txt,sha256=nYFOEgESA5A9qgI_NBU0WVsoJQmq2Wn93R9SGlNC6ok,7
+pydish-0.1.dist-info/RECORD,,
