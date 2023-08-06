@@ -1,0 +1,17 @@
+excelrd/__init__.py,sha256=ll92VUQFDU2cVvqD2OIYaZHb7_yywSQW6BLEZK7a80Q,6752
+excelrd/biffh.py,sha256=IxMvyTvbsDI8zFFols5mVMBCAl1Ud_kr8FqOHKztyyc,16856
+excelrd/book.py,sha256=E-5ooqGIkwPO7zEDv4sozl7SQI7E4XJorDMSYD3rNJA,59966
+excelrd/compdoc.py,sha256=cEaNZBhYPX2oGDA7_Mb5cS0F5bLA34ud16WeikOEK2M,23116
+excelrd/formatting.py,sha256=sLyrwS4PilQI2fACclcuKHJBQ2HHmcwIGQ9Jjcv4T8k,47860
+excelrd/formula.py,sha256=0YSE5JECHnaEzgqD3hXBVe1PQJVPHioImBn3FF7VAxw,95266
+excelrd/info.py,sha256=AwsvL57Z-lmKDDaCBfUVokwMwPvJLn9jjGtqP9gevOw,36
+excelrd/sheet.py,sha256=4q-_xEfkexd4_CX423tc-5ROR8hZ1FXO-bdBXkM4LWA,112139
+excelrd/timemachine.py,sha256=PpRK9a44QYaKbbCTsYo2NTM1VMzbgA5933v-UNirvDc,771
+excelrd/xldate.py,sha256=ctX6qTl8FnEc_VGzsI2LcMbBGizmN78-smdfFM4WNbE,7942
+excelrd/xlsx.py,sha256=-wSbbi6Ktff8GebyIgShtK8H0Nyg4Cckwll9nZYv57U,32989
+excelrd-2.0.2.data/scripts/runxlrd.py,sha256=bQn6MP9FSRMoFbZDMwl5p-mgL2Jx5ro3DmErolklEg8,16809
+excelrd-2.0.2.dist-info/LICENSE,sha256=taXbzmAmXjBagVpsuD7QfyRRnYumRPKjB5lEiLztiBU,3771
+excelrd-2.0.2.dist-info/METADATA,sha256=icqDfQYMuSwh2zf0ak0h3-rN6TQu5vRekYwD5YvpvmE,4852
+excelrd-2.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+excelrd-2.0.2.dist-info/top_level.txt,sha256=4naGEjSjFUaSI2iuZD87fY-P6HY5JI6H5HjciobAuFE,8
+excelrd-2.0.2.dist-info/RECORD,,
