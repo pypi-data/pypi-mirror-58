@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/__init__.py
+src/main.py
+tfvars2markdown.egg-info/PKG-INFO
+tfvars2markdown.egg-info/SOURCES.txt
+tfvars2markdown.egg-info/dependency_links.txt
+tfvars2markdown.egg-info/entry_points.txt
+tfvars2markdown.egg-info/requires.txt
+tfvars2markdown.egg-info/top_level.txt
