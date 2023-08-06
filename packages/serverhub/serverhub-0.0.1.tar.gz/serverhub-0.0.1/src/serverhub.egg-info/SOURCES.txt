@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/serverhub/__init__.py
+src/serverhub/sysinfo.py
+src/serverhub.egg-info/PKG-INFO
+src/serverhub.egg-info/SOURCES.txt
+src/serverhub.egg-info/dependency_links.txt
+src/serverhub.egg-info/entry_points.txt
+src/serverhub.egg-info/top_level.txt
