@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: aioboot
+Version: 0.3.0
+Summary: Python asynchronous application framework.
+Home-page: https://github.com/antonrh/aioboot
+Author: Anton Ruhlov
+Author-email: antonruhlov@gmail.com
+License: MIT
+Keywords: starlette,asgi,click,web,api,async
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: starlette (==0.13.0)
+Requires-Dist: click (==7.0)
+Requires-Dist: injector (==0.18.2)
+Provides-Extra: dev
+Requires-Dist: pytest (==5.3.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (==0.10.0) ; extra == 'dev'
+Requires-Dist: asynctest (==0.13.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.761) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'dev'
+Requires-Dist: isort (==4.3.21) ; extra == 'dev'
+Requires-Dist: black (==19.10b0) ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (==1.0.4) ; extra == 'docs'
+Requires-Dist: mkdocs-material (==4.6.0) ; extra == 'docs'
+Requires-Dist: mkautodoc (==0.3.0) ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: mypy (==0.761) ; extra == 'lint'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'lint'
+Requires-Dist: isort (==4.3.21) ; extra == 'lint'
+Requires-Dist: black (==19.10b0) ; extra == 'lint'
+Provides-Extra: tests
+Requires-Dist: pytest (==5.3.2) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'tests'
+Requires-Dist: pytest-asyncio (==0.10.0) ; extra == 'tests'
+Requires-Dist: asynctest (==0.13.0) ; extra == 'tests'
+
+AIOBoot - Python asynchronous application framework, built on top of famous libraries.
+======================================================================================
+
+[![Build Status](https://travis-ci.com/antonrh/aioboot.svg?branch=master)](https://travis-ci.com/antonrh/aioboot.svg?branch=master)
+[![Code coverage](https://codecov.io/gh/antonrh/aioboot/branch/master/graph/badge.svg)](https://codecov.io/gh/antonrh/aioboot)
+[![Documentation Status](https://readthedocs.org/projects/aioboot/badge/?version=latest)](https://aioboot.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+---
+
+**Documentation:** https://aioboot.readthedocs.io/en/latest/
+
+
