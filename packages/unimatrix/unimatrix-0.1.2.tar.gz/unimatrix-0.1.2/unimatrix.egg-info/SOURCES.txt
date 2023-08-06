@@ -1,0 +1,8 @@
+setup.py
+unimatrix.egg-info/PKG-INFO
+unimatrix.egg-info/SOURCES.txt
+unimatrix.egg-info/dependency_links.txt
+unimatrix.egg-info/requires.txt
+unimatrix.egg-info/top_level.txt
+unimatrix/lib/__init__.py
+unimatrix/lib/environ.py
