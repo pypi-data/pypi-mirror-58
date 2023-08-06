@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fedora_checksum_tester
+Version: 1.0
+Summary: Image checksum tester for Fedora
+Home-page: https://github.com/lruzicka/checksum-tester
+Author: Lukáš Růžička
+Author-email: lruzicka@redhat.com
+License: UNKNOWN
+Description: # checksum-tester
+        This script downloads a Fedora iso and checks the checksums.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
