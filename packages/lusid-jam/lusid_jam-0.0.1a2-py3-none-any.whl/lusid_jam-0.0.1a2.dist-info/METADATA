@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lusid-jam
+Version: 0.0.1a2
+Summary: Jupyter Access Token Management for LUSID
+Home-page: https://github.com/finbourne/lusid-jam
+Author: FINBOURNE Technology
+Author-email: engineering@finbourne.com
+License: MIT
+Keywords: FINBOURNE,LUSID,LUSID API,python
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
