@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mindspace-web
+Version: 1.0.1
+Summary: An implementation of mindspace-protocol over websockets
+Home-page: https://github.com/chrisnorman7/
+Author: Chris Norman
+Author-email: chris.norman2@googlemail.com
+License: MPL-2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: twisted
+Requires-Dist: autobahn
+Requires-Dist: klein
+Requires-Dist: jinja2
+Requires-Dist: mindspace-protocol
+
+# -mindspace-web
+An implementation of mindspace-protocol over websockets
+
+## Usage
+See the example.* files for basic usage.
+
+
+
