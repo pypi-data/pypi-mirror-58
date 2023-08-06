@@ -1,0 +1,8 @@
+README.md
+setup.py
+test/test.py
+zqpy.egg-info/PKG-INFO
+zqpy.egg-info/SOURCES.txt
+zqpy.egg-info/dependency_links.txt
+zqpy.egg-info/top_level.txt
+zqpy.egg-info/zip-safe
