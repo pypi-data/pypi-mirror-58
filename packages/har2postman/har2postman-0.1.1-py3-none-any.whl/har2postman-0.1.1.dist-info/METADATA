@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: har2postman
+Version: 0.1.1
+Summary: Convert HAR(HTTP Archive) to Postman Collection
+Home-page: https://github.com/whitexie/Har2Postman
+License: MIT
+Keywords: har,postman
+Author: ysansan
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: jsonpath (>=0.82.0,<0.83.0)
+Project-URL: Repository, https://github.com/whitexie/Har2Postman
+Description-Content-Type: text/markdown
+
+## Har2Postman
+[![travis-ci](https://api.travis-ci.org/whitexie/Har2Postman.svg?branch=master)](https://travis-ci.org/whitexie/Har2toPostman)
+![coveralls](https://coveralls.io/repos/github/whitexie/Har2Postman/badge.svg?branch=master)
+> 将har文件转换为postman可导入文件
+
+## 安装
+```shell script
+pip isntall Har2toPostman
+```
+
+## 使用
+1.将har文件转换为postman可导入文件
+```shell script
+harto postman_echo.har
+
+# INFO:root:read postman_echo.har
+# INFO:root:Generate postman collection successfully: postman_echo.json
+```
+2.在postman中导入postman_echo.json文件
+![](https://github.com/whitexie/Har2Postman/blob/master/postman_collection1.png)
+

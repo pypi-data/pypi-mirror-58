@@ -1,0 +1,3 @@
+[console_scripts]
+harto=har2postman.cli:main
+
