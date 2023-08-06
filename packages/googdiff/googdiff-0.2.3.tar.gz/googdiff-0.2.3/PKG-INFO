@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: googdiff
+Version: 0.2.3
+Summary: A wrapper of Google's diff-match-patch module.
+Home-page: https://github.com/wixette/my-writing-toolchain/tree/master/googdiff
+Author: wixette
+Author-email: wixette@gmail.com
+License: apache-2.0
+Description: 
+        # googdiff: command-line diff tool, a wrapper of Google's diff-match-patch module.
+        
+        See [the API doc of Google's diff-match-patch
+        module](https://github.com/google/diff-match-patch).
+        
+        ## Install googdiff via pip:
+        
+        ```
+        pip install googdiff
+        ```
+        
+        ### Print usage info:
+        
+        ```
+        googdiff --help
+        ```
+        
+        ## Use googdiff when git diff something:
+        
+        ```
+        git difftool -y --extcmd=googdiff
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

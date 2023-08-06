@@ -1,0 +1,8 @@
+README.md
+googdiff
+setup.py
+googdiff.egg-info/PKG-INFO
+googdiff.egg-info/SOURCES.txt
+googdiff.egg-info/dependency_links.txt
+googdiff.egg-info/requires.txt
+googdiff.egg-info/top_level.txt
