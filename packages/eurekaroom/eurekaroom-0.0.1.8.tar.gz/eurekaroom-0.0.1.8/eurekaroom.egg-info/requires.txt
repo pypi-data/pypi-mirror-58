@@ -1,0 +1,7 @@
+configparser
+python-magic
+python-vlc
+Flask
+GPIOSimulator
+RPi.GPIO
+pillow

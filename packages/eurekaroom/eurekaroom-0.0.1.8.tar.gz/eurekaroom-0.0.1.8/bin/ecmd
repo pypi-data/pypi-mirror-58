@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+
+"""
+    Eurekanode
+    ~~~~~~~~~~
+
+    a command-processor and RESTful server for use in escapenodes on RaspberryPi systems
+
+    :copyright: 2019 YetiCraft
+    :license: GPL3
+    __version__ = "0.0.1.8"
+
+"""
+
+
+#####
+# Setup and initialization
+
+# Load our initial libraries and tools
+import logging
+from datetime import datetime
+from eurekaroom import args
+
+#####
+# Initialize logging 
+logging.basicConfig(filename='eurekanode.log',level=logging.DEBUG)
+
+# add a timestamp that we have begun a run
+logging.info("======== Run started at {}".format(datetime.today()))
+#
+#####
+
+#
+#####
+
+#####
+# GPIO Library selection
+# 
+# Check if we are running in emulator mode and then load the correct GPIO library and test 
+# access to it
+if args.emulategpio:
+	from RPiSim import GPIO
+else:
+    try:
+        import RPi.GPIO as GPIO
+    except RuntimeError:
+        print("Error importing RPi.GPIO!  This may be because you need superuser privileges or that you are on a non-RaspberryPi system.  You can use sudo for the former, and provide the '-e' flag for the later.")
+#
+#####
+
+
+#####
+# Serverode
+if args.servermode:
+    from eurekaroom import app
+
+    # Run the server
+    app.run(debug=True, host='0.0.0.0', port = args.port)
+#
+#####
+
+#####
+# End of run and cleanup
+logging.info("======== Run ended at {}".format(datetime.today()))
+#
+#####
