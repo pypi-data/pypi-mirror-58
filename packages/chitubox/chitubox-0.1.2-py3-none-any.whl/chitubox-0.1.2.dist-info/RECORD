@@ -1,0 +1,11 @@
+chitubox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chitubox/__main__.py,sha256=WSoGFOhaCdGSsir4zsSg0X3_WegycijQIFGIymgjK7Q,2761
+chitubox/network.py,sha256=zHvZkhZX8GDJ0dnV26T8eRPmyF8tRSF2KhOSlHa8E3A,1921
+chitubox/session.py,sha256=ZjJCEVr5ptgrAe1XhQIls-K5tsmFqJzpsNaESNi4BGM,5532
+chitubox-0.1.2.dist-info/LICENSE,sha256=EhDW-AyeIBjQNwgp-vFC4HK3PkxwBpuE4m3Kis9Jw_Q,1056
+chitubox-0.1.2.dist-info/METADATA,sha256=qL8PmkoZ061xrIw0SDQhTxFuDn1zcdkfYx6zIov3Kag,975
+chitubox-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+chitubox-0.1.2.dist-info/entry_points.txt,sha256=8-T-FuzWHTPk5GztJIqkV-4LYe26qZkKkreV01mmYUw,43
+chitubox-0.1.2.dist-info/top_level.txt,sha256=YQAD2ZgMIzi2ILIqJV2F0qloHwadE6Lk_ObQMI1ypZs,9
+chitubox-0.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+chitubox-0.1.2.dist-info/RECORD,,
