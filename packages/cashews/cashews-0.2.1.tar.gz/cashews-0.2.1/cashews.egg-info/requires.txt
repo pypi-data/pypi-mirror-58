@@ -1,0 +1,12 @@
+
+[dev]
+black
+codecov
+coverage
+flake8
+pytest
+isort
+pylintpytest-asyncio
+
+[redis]
+aioredis>=1.0.0
