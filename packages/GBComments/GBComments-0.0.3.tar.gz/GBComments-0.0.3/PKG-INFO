@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: GBComments
+Version: 0.0.3
+Summary: 用于生成好评差评的库
+Home-page: https://github.com/WRAllen/GBComments
+Author: WRAllen
+Author-email: 1072274105@qq.com
+License: UNKNOWN
+Description: # 这是一个用于自动生成好评差评的包
+        
+        ## data.json
+        
+        里面放置了好评差评的语句
+        
+        ## main.py
+        
+        里面放置了生成评论的逻辑
+Platform: UNKNOWN
