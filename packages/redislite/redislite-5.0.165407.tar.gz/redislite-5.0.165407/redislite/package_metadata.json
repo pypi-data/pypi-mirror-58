@@ -1,0 +1,7 @@
+{
+    "git_origin": "git@github.com:yahoo/redislite",
+    "git_branch": "master",
+    "git_hash": "0c2c31068b6cbbf11c540b00b35d19505fb72fd9",
+    "redis_server": {},
+    "redis_bin": ""
+}
