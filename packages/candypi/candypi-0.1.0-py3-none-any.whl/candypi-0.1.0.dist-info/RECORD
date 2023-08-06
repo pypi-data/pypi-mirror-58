@@ -1,0 +1,11 @@
+candypi/__init__.py,sha256=51P65o7C71orZ3CkL5pO5_eTPI1V6cWi81GtGfBA1Ew,98
+candypi/core.py,sha256=M2Gv8x4B_YitzsSsam7GIfj_RDnwYX4uz9sJlOFraHA,715
+candypi/server.py,sha256=abpgbrbZ5po3mM84V72RSEOhoYuaG3MHAqJoeq0wUY4,1290
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=9AbZco82JQDwufRFx0bzCgjTUa3q9aoFmz06hiXmPQ0,647
+candypi-0.1.0.dist-info/LICENSE,sha256=btXrZGPw1Q9zNM2fUSvXg1DWbHPbdUSQbTUTstDwGu8,1068
+candypi-0.1.0.dist-info/METADATA,sha256=T12SQceg2mvv-L5r5-poVlwNz5skO9gwXkMZEZ_88nc,337
+candypi-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+candypi-0.1.0.dist-info/entry_points.txt,sha256=4tzyYwXET3-7NSGcm_YnCKdln49qKaFpArJP7va172w,42
+candypi-0.1.0.dist-info/top_level.txt,sha256=tyY6OvKnbK9oM4vIZ8TNz2wlpLEQxJEFLZrsuW_8LhI,14
+candypi-0.1.0.dist-info/RECORD,,

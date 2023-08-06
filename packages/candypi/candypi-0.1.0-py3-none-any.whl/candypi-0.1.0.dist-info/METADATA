@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: candypi
+Version: 0.1.0
+Summary: Continuous Delivery tool for raspberry pi project
+Home-page: https://github.com/ta9ya/candypi
+Author: tiwa
+Author-email: t.iwasa0821@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: gitpython
+
+Continuous Delivery tool for raspberry pi project
+
+
