@@ -1,0 +1,12 @@
+bramin/__init__.py,sha256=9lv9JNIv6qKPtSnufBYoK1QJL9uWfKn_ytW5YwrrWJs,181
+bramin/_utils.py,sha256=f3X23C3Htp1CvjfEJLo2S6U5VlJBRiNoXFu325lJ1DU,11356
+bramin/curry.py,sha256=wSM-bapl0ZAF6EEJGc3yLQegVMz5Rkal8xpGLLCZyYI,4097
+bramin/io.py,sha256=rVBIsg2N1XBdwBO1O-2iKbeFu90d7COX1FC6aKXP6FM,3204
+bramin/patch.py,sha256=ZnV_4Ts_46Eu46xlxkxbbnBle09lZpd0F-kl9b_y9vY,634
+bramin/pipe.py,sha256=Nwf-hf1n7eUukdsb5erQoXu-4U51B5WPbTDGUMpegkI,8805
+bramin/subp.py,sha256=GNvql3vBHU9QDgzX_f1xHOLW9uKL762LmymE30UTXQ0,3500
+bramin-0.0.1.dist-info/LICENSE,sha256=YLbzFYPstUqINfMwohvAPo_Lax3Fnp_7mqMNLSBJGgQ,1512
+bramin-0.0.1.dist-info/METADATA,sha256=zqSiKR4uFpQqBHsVa1dUamxIU9wed_fjDcMnj6OYYuE,530
+bramin-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bramin-0.0.1.dist-info/top_level.txt,sha256=CK4L_cTaHDZS1X358tK66pqeC1D5XWXFmoC8Gn-bpeo,7
+bramin-0.0.1.dist-info/RECORD,,

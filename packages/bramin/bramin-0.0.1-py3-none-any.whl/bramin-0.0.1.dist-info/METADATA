@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bramin
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Nanguage/bramin
+Author: nanguage
+Author-email: nanguage@yahoo.com
+License: BSD-3-Clause
+Keywords: pipe operator,syntax
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: typing-inspect
+
+UNKNOWN
+
+
