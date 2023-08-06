@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: hypercluster
+Version: 0.0.1
+Summary: A package for automatic clustering hyperparameter optmization
+Home-page: https://github.com/liliblu/hypercluster
+Author: Lili Blumenberg, Ruggles Lab
+Author-email: lili.blumenberg@gmail.com
+License: UNKNOWN
+Description: # Autocluster
+        A package for clustering optimization with sklearn. 
+        
+        Install: 
+        ```
+        pip install autocluster-sklearn
+        ```
+        
+        Docs: https://autocluster.readthedocs.io/en/latest/
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
