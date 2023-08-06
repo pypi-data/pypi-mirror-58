@@ -1,0 +1,9 @@
+[run]
+source = zeroae
+
+[report]
+omit =
+    setup.py
+    zeroae/cli/__main__.py
+    zeroae/cli/_version.py
+    tests/*
