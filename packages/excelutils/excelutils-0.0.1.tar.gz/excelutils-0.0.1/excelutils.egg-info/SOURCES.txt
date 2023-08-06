@@ -1,0 +1,7 @@
+README.md
+setup.py
+excelutils/__init__.py
+excelutils.egg-info/PKG-INFO
+excelutils.egg-info/SOURCES.txt
+excelutils.egg-info/dependency_links.txt
+excelutils.egg-info/top_level.txt
