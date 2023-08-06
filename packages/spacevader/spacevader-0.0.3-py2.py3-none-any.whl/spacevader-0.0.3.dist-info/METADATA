@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: spacevader
+Version: 0.0.3
+Summary: A simple space invader game developed purely in Python
+Home-page: https://github.com/pratikms/spacevader
+Author: Pratik Shivaraikar
+Author-email: pratik.shivaraikar@gmail.com
+License: MIT
+Project-URL: Documentation, https://spacevader.readthedocs.io/
+Project-URL: Changelog, https://spacevader.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/pratikms/spacevader/issues
+Keywords: space,invader,vader,spaceinvader,space-invader,spacevader,space-vader,space vader,space invader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.6
+Requires-Dist: pygame (==1.9.6)
+Requires-Dist: psutil (==5.6.7)
+
+========
+Overview
+========
+
+
+
+A simple space invaders game developed purely in Python
+
+* Free software: MIT license
+
+.. image:: https://github.com/pratikms/spacevader/blob/master/screenshots/GameInProgress.png?raw=true "Game in progress")
+.. image:: https://github.com/pratikms/spacevader/blob/master/screenshots/GameOver.png?raw=true "Game over")
+
+Installation
+============
+
+::
+
+    pip install spacevader
+
+You can also install the in-development version with::
+
+    pip install https://github.com/pratikms/spacevader/archive/master.zip
+
+
+Documentation
+=============
+
+
+https://spacevader.readthedocs.io/
+
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.3 (2020-01-02)
+------------------
+
+* Provide restart option on game over
+
+0.0.2 (2019-12-18)
+------------------
+
+* Bugfix: change relative to absolute imports.
+
+0.0.1 (2019-12-18)
+------------------
+
+* First release on PyPI.
+
+
