@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+cropyble/__init__.py
+cropyble/cropyble.py
+cropyble.egg-info/PKG-INFO
+cropyble.egg-info/SOURCES.txt
+cropyble.egg-info/dependency_links.txt
+cropyble.egg-info/requires.txt
+cropyble.egg-info/top_level.txt
