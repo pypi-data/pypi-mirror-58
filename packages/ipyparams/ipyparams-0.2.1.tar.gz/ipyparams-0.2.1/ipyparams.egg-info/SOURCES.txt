@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ipyparams/__init__.py
+ipyparams.egg-info/PKG-INFO
+ipyparams.egg-info/SOURCES.txt
+ipyparams.egg-info/dependency_links.txt
+ipyparams.egg-info/top_level.txt
