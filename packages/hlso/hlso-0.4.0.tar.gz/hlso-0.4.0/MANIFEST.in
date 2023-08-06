@@ -1,0 +1,19 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include LICENSE
+include README.rst
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-include hlso/data *
+recursive-include hlso/web/assets *.css *.js *.png *.eot *.svg *.ttf *.woff *.woff2 *.zip
+recursive-include hlso/web/static *.md
+
+include versioneer.py
+recursive-include hlso *.py
+
+include requirements.txt requirements/*.txt
