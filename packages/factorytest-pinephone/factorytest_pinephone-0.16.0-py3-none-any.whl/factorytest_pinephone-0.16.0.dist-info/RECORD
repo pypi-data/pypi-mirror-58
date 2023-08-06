@@ -1,0 +1,14 @@
+factorytest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+factorytest/__main__.py,sha256=XLeeJJVc5oRx_ZWKANxGGpiGkU6JZZ6P81ZTFISKJ08,13380
+factorytest/audio.py,sha256=VhmTnleGDiArg3yt11QMXbZocNhes4aRGyGQ4zDa7jI,152
+factorytest/camera.py,sha256=lY57PrGFYuwjJ1kXWwJRg2YeOC4enjNg_a4NrnaLZ1U,1308
+factorytest/factorytest.glade,sha256=V1Xr2MrIntlwC5RIuDffvOt6K1jVLzb3Ou9BmTOfcTQ,54517
+factorytest/gpio.py,sha256=Nfg4VPfKFeaJM_BdNz6Nnv4ExHWZ-FuDCL2uLCsQYUg,1048
+factorytest/modem.py,sha256=vqLyMyn0ut8eWGWMtjYZipnHC0fMSJUU14U85Yw1w4o,4135
+factorytest/selftest.py,sha256=YF5UoTVwiJYfxzigXqQx7hgp9IZQAbAeVNAp2sztjD8,4726
+factorytest_pinephone-0.16.0.dist-info/METADATA,sha256=ZxAQYx2B41V8mc1bZ37SZeFhmVdPCkLQZt-yEqsnvm8,906
+factorytest_pinephone-0.16.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+factorytest_pinephone-0.16.0.dist-info/entry_points.txt,sha256=py8tVyBQo_UkzEWgggralH6Iw4GBD7TBLAUyRlVUrfg,55
+factorytest_pinephone-0.16.0.dist-info/top_level.txt,sha256=ECrnuvOWB3-kBDycuDkcmmjc267ABZ8Zc53IiMQ2jh0,12
+factorytest_pinephone-0.16.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+factorytest_pinephone-0.16.0.dist-info/RECORD,,
