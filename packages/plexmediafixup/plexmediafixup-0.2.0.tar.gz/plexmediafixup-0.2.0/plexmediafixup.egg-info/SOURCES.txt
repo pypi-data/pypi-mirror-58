@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+plexmediafixup/__init__.py
+plexmediafixup/cli.py
+plexmediafixup/fixup.py
+plexmediafixup/version.py
+plexmediafixup.egg-info/PKG-INFO
+plexmediafixup.egg-info/SOURCES.txt
+plexmediafixup.egg-info/dependency_links.txt
+plexmediafixup.egg-info/entry_points.txt
+plexmediafixup.egg-info/requires.txt
+plexmediafixup.egg-info/top_level.txt
+plexmediafixup.egg-info/zip-safe
