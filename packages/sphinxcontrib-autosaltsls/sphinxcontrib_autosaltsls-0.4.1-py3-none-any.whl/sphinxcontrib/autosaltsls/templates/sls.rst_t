@@ -1,0 +1,70 @@
+{%- if sls.parent_name or (sls.initfile and sls.child_count) -%}
+:orphan:
+{%- endif %}
+
+``{{ sls.title }}{{ ' [init]' if sls.initfile else '' }}``
+************{{ "*" * sls.title|length }}
+
+.. {{ sls.source_settings.cross_ref_role }}:: {{ sls.prefixed_name }}
+
+{%- if not sls.entries %}
+
+*No content*
+{%- else %}
+
+{%-   if sls.header.has_text %}
+
+*{{ sls.header.summary }}*
+
+{{ sls.header.content }}
+{%-   endif %}
+
+{%-   if sls.include %}
+
+Includes
+^^^^^^^^
+{{ sls.include.text }}
+
+{%-     for item in sls.include.includes %}
+    * :{{ sls.source_settings.cross_ref_role }}:`{{ item }}`
+{%-     endfor %}
+{%-   endif %}
+
+{%-   if sls.steps %}
+
+Steps
+^^^^^
+{%-     for entry in sls.steps %}
+{%-       if entry.step_id %}
+{{ loop.index }}. ``{{ entry.summary }}``
+{%-       else %}
+{{ loop.index }}. {{ entry.summary }}
+{%-       endif %}
+    {{ entry.content }}
+{%-     endfor %}
+{%-   endif %}
+
+{%-   for entry in sls.body %}
+{%     if not entry.is_step and not entry.include and entry.has_text %}
+{%-   if entry.summary|length < 80 %}
+{{ entry.summary }}
+~~~~~~~{{ "~" * entry.summary|length }}
+{%-   else %}
+{{ entry.summary }}
+{%-   endif %}
+
+{{ entry.content }}
+{%-     endif %}
+{%-   endfor %}
+{%- endif %}
+
+{%- if sls.source_url %}
+
+`[Source] <{{ sls.source_url }}>`_
+{%- endif %}
+{%- if sls.parent_name %}
+:doc:`[{{ sls.parent_name}} (main)] <main>`
+{%- endif %}
+{%- if sls.initfile and sls.child_count %}
+:doc:`[main] <main>`
+{%- endif %}
