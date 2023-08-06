@@ -1,0 +1,3 @@
+[console_scripts]
+testkraken = testkraken.cli:main
+

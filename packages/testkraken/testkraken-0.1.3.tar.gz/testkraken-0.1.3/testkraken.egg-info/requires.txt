@@ -1,0 +1,13 @@
+altair
+beautifulsoup4
+click
+pydra
+matplotlib
+nibabel
+pandas
+neurodocker
+PyYAML
+etelemetry
+
+[dev]
+pytest
