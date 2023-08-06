@@ -1,0 +1,8 @@
+Number,Recommendation,Complexity,Risk mitigation
+1,Improve the patching policy,L,H
+2,Sanitise user input,L,H
+3,Improve the SSH configuration,L,M
+4,Sanitise user input,L,M
+5,Do not disclose the existence of users,L,L
+6,Improve the SSL/TLS configuration,L,L
+7,Do not disclose any version information,L,L

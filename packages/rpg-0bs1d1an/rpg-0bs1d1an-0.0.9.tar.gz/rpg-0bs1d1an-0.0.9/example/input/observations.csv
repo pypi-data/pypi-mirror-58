@@ -1,0 +1,9 @@
+Number,Observation,Likelihood,Impact,Risk,Fixed
+1,"Outdated and vulnerable
+software versions identified",H,H,H,1
+2,Stored cross-site scripting,H,H,H,0
+3,Insecure SSH configuration,L,H,M,0
+4,Formula injection,M,M,M,1
+5,Username enumeration,H,L,M,0
+6,Insecure SSL/TLS configuration,L,M,L,0
+7,Version information disclosure,L,L,L,1
