@@ -1,0 +1,3 @@
+include versioneer.py
+include caerus/_version.py
+include caerus/data/*.csv
