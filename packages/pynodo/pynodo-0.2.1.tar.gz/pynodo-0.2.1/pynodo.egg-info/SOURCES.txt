@@ -1,0 +1,7 @@
+README.md
+setup.py
+pynodo/__init__.py
+pynodo.egg-info/PKG-INFO
+pynodo.egg-info/SOURCES.txt
+pynodo.egg-info/dependency_links.txt
+pynodo.egg-info/top_level.txt
