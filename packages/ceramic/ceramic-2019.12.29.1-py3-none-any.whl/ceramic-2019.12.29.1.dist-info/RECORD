@@ -1,0 +1,13 @@
+ceramic/IdData.py,sha256=dQXU3B2N9j0ULIDciW3n8uvovfEtIvZ32iG5jhkbAmo,102
+ceramic/Mosaic.py,sha256=97Y1ECAq8ZZSRCGUsxMrmnpy8UntLPxPbN75Z6mVBS4,5466
+ceramic/Tile.py,sha256=ixgNyUrShCRsNPzQmudo7HZbidPQ-e4wt9xk0KZV2mg,1486
+ceramic/TrainingTestXy.py,sha256=oGOGNFSuzpg8VyppYhwifen4UXzyyRoyrsRAPeeAYeI,2034
+ceramic/ValidationXy.py,sha256=KsuUg6CPkxZ_SV-I2MbaELHtRuxLCxuFM1Mvx7uOUgY,11555
+ceramic/Xy.py,sha256=rkFOMLd7kfC9nRRjWmBP-QAIlUTVElum5Ld-JRZcvL8,4020
+ceramic/XyRegression.py,sha256=ZCkrs0SuneY3qIFrvlH-ZN8szHLXvGLoW6ku2_Vq7dE,2664
+ceramic/__init__.py,sha256=qdzzbzDM-wKJbGO8EuVv-RoV3AEhqLqsm-XvgkSRDic,195
+ceramic/get_cross_validation_by_group.py,sha256=Kxv0KBO4CSwYt6f3CdyJs8rpJTdRhC3QV_Z1T97lGxI,2686
+ceramic-2019.12.29.1.dist-info/METADATA,sha256=pR5r1aWK0XPeUhs8BCCy6_WtO4kvosXpRqkh3u-1NVI,1033
+ceramic-2019.12.29.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+ceramic-2019.12.29.1.dist-info/top_level.txt,sha256=Dd-BpBLTo2IdGi8UC60Sl1VkMA0yjsA8DjBl0s462Dk,8
+ceramic-2019.12.29.1.dist-info/RECORD,,
