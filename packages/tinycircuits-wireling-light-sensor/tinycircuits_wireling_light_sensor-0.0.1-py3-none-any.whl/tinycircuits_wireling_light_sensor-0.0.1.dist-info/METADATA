@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tinycircuits-wireling-light-sensor
+Version: 0.0.1
+Summary: Wireling Python library v0.0.1
+Home-page: https://github.com/TinyCircuits/TinyCircuits-Wireling-Light-Sensor-Python-AST1012
+Author: TinyCircuits
+Author-email: info@tinycircuits.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# TinyCircuits Wireling Light Sensor Python AST1012
+
+This repository holds a python example meant for using a TinyCircuits Ambient Light Sensor Wireling with a Raspberry Pi and Wireling Pi Hat.
+
+To install, use 
+
+```
+pip3 install tinycircuits-wireling-light-sensor
+```
+
+or if your default is Python 3:
+
+```
+pip install tinycircuits-wireling-light-sensor
+```
+
+Software written by: [TinyCircuits](https://tinycircuits.com/) for use with TinyCircuits hardware 
+
+
+
