@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+permissive_dict/__init__.py
+permissive_dict.egg-info/PKG-INFO
+permissive_dict.egg-info/SOURCES.txt
+permissive_dict.egg-info/dependency_links.txt
+permissive_dict.egg-info/top_level.txt
