@@ -1,0 +1,3 @@
+[console_scripts]
+gerritqueue = gerritqueue.main:main
+
