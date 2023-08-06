@@ -1,0 +1,11 @@
+csp_helpers/__init__.py,sha256=qwD6qcnVC1qbvK-DPZDxBtumt60exZuVWLp6r5uR-_0,171
+csp_helpers/apps.py,sha256=wP2xtGp-6F29L_w5Jy4TuI4wQ7N5CXQ8f2Wk1Okp04w,135
+csp_helpers/classes.py,sha256=oETIOwccX0RpOxz3ag46t-LNdRtGy0ATXeJWkkjGIsU,2051
+csp_helpers/mixins.py,sha256=t2F0cYSUq0m0UgrnblE38ckcu35MVFAI_KltKoQDW9g,1054
+csp_helpers/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csp_helpers/templatetags/media_csp.py,sha256=aLMSNAbR8vubakTbbKXJweT8oZXhGMfXRxDNqmrMTJQ,1121
+csp_helpers/templatetags/render_bundle_csp.py,sha256=jRX189SBAAKO7N1I5Xggx1kRIcdvOBZXjpEOE7bvWiQ,688
+django_csp_helpers-0.5.1.dist-info/LICENSE,sha256=4l8ZV2uKlMrp-9Nw-UO_bzMGOBE3cNI0iVgspZRukjI,1072
+django_csp_helpers-0.5.1.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+django_csp_helpers-0.5.1.dist-info/METADATA,sha256=cwlVbEVnuPtRIRD0gsrW3x0ABzPhiaxRFky3XAVlq7M,4143
+django_csp_helpers-0.5.1.dist-info/RECORD,,
