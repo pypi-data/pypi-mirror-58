@@ -1,0 +1,3 @@
+[console_scripts]
+protonvpn-gtk = protonvpn_gtk.run:main
+
