@@ -1,0 +1,13 @@
+bowie/make_plot.py,sha256=GbDVi1JY6fD8564_TWj0kLBOBpE0tvdH6KkUwxJhojc,3254
+bowie/makeplot_dict_info.txt,sha256=fjTnknXgloIO-elSMPWE4sHLOlFtTHMAVH-GH1yN1xg,12167
+bowie/plotutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bowie/plotutils/baseplot.py,sha256=46zsB-ZpDnJyi_O2ZMZxVgpTMMJMuO1U8kR-rFuOVNk,16607
+bowie/plotutils/forminput.py,sha256=N5i0mMORiIwpb3suXhEURaiRKmvr88HCw83QmJREtLY,52269
+bowie/plotutils/makeprocess.py,sha256=XamwRAnAL3Bflb4FSVDBBPxSoKAvIxxFykw3mGm2FsQ,11510
+bowie/plotutils/plottypes.py,sha256=5pJHTGaTfwaIll8j5Pv17MWWIkaQyK3qVGEn0MCXQL0,8880
+bowie/plotutils/readdata.py,sha256=5KL8vvCUt8ZaLUeDzJdWJOVr8QQ4aFYFAPiaXhRvEQ8,4581
+bowie-2.0.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+bowie-2.0.1.dist-info/METADATA,sha256=faQ4GD9H86cfVTzf3rsks89cV0R3ZNUvo3CBPOkJFCc,6420
+bowie-2.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bowie-2.0.1.dist-info/top_level.txt,sha256=gxgiBNC6xJCSH4TZKok1Lm-Krvo8TX0pmUszep2FTbY,6
+bowie-2.0.1.dist-info/RECORD,,
