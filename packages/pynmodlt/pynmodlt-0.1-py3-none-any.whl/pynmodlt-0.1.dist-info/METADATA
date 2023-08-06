@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pynmodlt
+Version: 0.1
+Summary: NMODL parsing and compiling tools, updated fork from borismarin pynmodl (http://github.com/borismarin/pynmodl)
+Home-page: http://github.com/tjbanks/pynmodl
+Author: Tyler Banks
+Author-email: tyler@tylerbanks.net
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: textx (==1.6.1)
+Requires-Dist: xmltodict
+
+UNKNOWN
+
+
