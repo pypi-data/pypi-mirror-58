@@ -1,0 +1,9 @@
+setup.py
+intents_classifier_beta2/__init__.py
+intents_classifier_beta2/module.py
+intents_classifier_beta2.egg-info/PKG-INFO
+intents_classifier_beta2.egg-info/SOURCES.txt
+intents_classifier_beta2.egg-info/dependency_links.txt
+intents_classifier_beta2.egg-info/not-zip-safe
+intents_classifier_beta2.egg-info/requires.txt
+intents_classifier_beta2.egg-info/top_level.txt
