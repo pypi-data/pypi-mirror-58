@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gryibwc
+Version: 0.9.3
+Summary: Get a word count for books read in a year
+Home-page: https://github.com/lolei/gryibwc
+Author: Lorenz Leitner
+Author-email: lrnz.ltnr@gmail.com
+License: UNKNOWN
+Description: # gryibwc
+        Goodreads Year In Books Word Count
+        
+        # Installation
+        `pip install gryibwc`
+        
+        ## Dependencies
+        * Beautiful Soup
+        * https://github.com/LoLei/goodreads-api-client-python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
