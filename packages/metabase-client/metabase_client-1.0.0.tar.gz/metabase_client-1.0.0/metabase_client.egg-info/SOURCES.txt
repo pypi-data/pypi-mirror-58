@@ -1,0 +1,12 @@
+README.md
+setup.py
+metabase_client/__init__.py
+metabase_client/client.py
+metabase_client/exceptions.py
+metabase_client/http.py
+metabase_client/resources.py
+metabase_client.egg-info/PKG-INFO
+metabase_client.egg-info/SOURCES.txt
+metabase_client.egg-info/dependency_links.txt
+metabase_client.egg-info/requires.txt
+metabase_client.egg-info/top_level.txt

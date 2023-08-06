@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: metabase_client
+Version: 1.0.0
+Summary: A production-ready metabase client to spare you from handling HTTP requests directly
+Home-page: https://github.com/Onyo/metabase_client
+Author: Victor Martinez
+Author-email: vcrmartinez@gmail.com
+License: MIT
+Description: # Metabase Client
+        A production-ready metabase client to spare you from handling HTTP requests directly.
+        
+        ## Install
+        
+        ```
+        $ pip install metabase_client
+        ```
+        
+        ## Start
+        
+        You can provide username and password to authenticate...
+        
+        ```
+        from metabase_client import MetabaseClient
+        
+        client = MetabaseClient("http://my-metabase-service.com", username="user", password="pass")
+        client.auth()
+        ```
+        
+        ... or just provide an already-authenticated token.
+        
+        ```
+        from metabase_client import MetabaseClient
+        
+        client = MetabaseClient("http://my-metabase-service.com", token="mytoken1q2w3e4r")
+        ```
+        
+        **Obs:** Since metabase limits the number of logins made through its API, using the second approach enables you to cache the token and avoid many logins.
+        
+        ## Contributions
+        Any contributions are welcome. Fork this project and follow the steps below:
+        
+        1. Create a virtual env.
+        2. Implement the feature along with the automated tests.
+        3. Apply makefile commands (`make [test|flake|black]`)
+        4. Open a Pull Request.
+        
+        ## Help or Suggestions 
+        Please, open an issue at the [Github Issues page](https://github.com/victormartinez/metabase_client/issues).
+        
+Keywords: metabase client api wrapper
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
