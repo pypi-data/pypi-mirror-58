@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: procrust
+Version: 0.1.0
+Summary: Limit the time you procrastinate by blocking websites via the hosts file
+Home-page: https://github.com/yaph/procrust
+Author: Ramiro Gómez
+Author-email: code@ramiro.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: python-hosts
+
+# procrust
+
+Limit the time you procrastinate by blocking websites via the hosts file.
+
+# Usage
+
+## Edit block list
+
+Open the list of host names to block when not procrastinating for editing:
+
+    procrust edit
+
+Add one host name per line.
+
+## Start and stop procrastinating
+
+When you start and stop procrastinating the hosts file will be changed, so you need to run the command with root privileges. If you ran the `edit` command without `sudo` you need to preserve the environment with the `-E` option.
+
+    sudo -E procrust start
+
+    sudo -E procrust stop
+
+# Installation
+
+Install the `procrust` command globally so it is accessible by the root user.
+
+    git clone https://github.com/yaph/procrust.git
+    cd procrust
+    sudo python3 setup.py install
+
+## Authors
+
+`procrust` was written by [Ramiro Gómez](https://ramiro.org/).
+
