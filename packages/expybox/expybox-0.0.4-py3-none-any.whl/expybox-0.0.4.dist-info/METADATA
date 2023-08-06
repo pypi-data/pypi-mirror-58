@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: expybox
+Version: 0.0.4
+Summary: Jupyter notebook toolbox for model interpretability/explainability
+Home-page: https://github.com/Kukuksumusu/expybox
+Author: Jakub Štercl
+Author-email: stercjak@fit.cvut.cz
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: shap
+Requires-Dist: pdpbox
+Requires-Dist: lime
+Requires-Dist: alibi
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: ipywidgets
+
+## ExpyBox
+ExpyBox is a Jupyter toolbox for model interpretability/explainability.
+It lets you create interactive Jupyter notebooks to explain your model.
+
+TBD 
+
