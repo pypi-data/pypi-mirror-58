@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pynufft
+Version: 2019.2.3
+Summary: Python non-uniform fast Fourier transform (PyNUFFT)
+Home-page: https://github.com/jyhmiinlin/pynufft
+Author: Jyh-Miin Lin
+Author-email: jyhmiinlin@gmail.com
+License: LGPLv3
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
