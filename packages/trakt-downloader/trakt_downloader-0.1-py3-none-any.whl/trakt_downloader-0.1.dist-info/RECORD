@@ -1,0 +1,13 @@
+trakt_downloader/TraktPuller.py,sha256=dQjqhANeS_6La_JL7roABxbtaYn1lq4aVaXKViwm2pk,2584
+trakt_downloader/__init__.py,sha256=U_CUQBzms7LYrHEK-5Dl4nchkAkEYOlDXfAvZbqSfCQ,56
+trakt_downloader/configuration.py,sha256=aX7WbLqKNweHlz2fUYsI9SiwiLah51DdXQGD2wo81Y8,1951
+trakt_downloader/deluge_connection.py,sha256=WYOOXTCll1G7Rxhrhy62PLA_cTBpMfESn-2uAXK5zX8,2032
+trakt_downloader/scraper.py,sha256=UwEEzphsMCIhcw0ZzbZ_ipdoViA-brf-ZTeYchs88v4,4578
+trakt_downloader/tracker_db.py,sha256=8m_IUZj1iAA5vTiX_Z3_taOupuXjIS_v8G9ATVtKHbg,8944
+trakt_downloader/trakt_connection.py,sha256=Vw_TDDYM9JoIySNvJ3pX92dZD0vqYen1TSz8M7orsKw,716
+trakt_downloader/trakt_pull.py,sha256=ifq4DhKAn1ITyybRgIxBwZvE1_wqaV8_Ci0AYvRWQbQ,124
+trakt_downloader-0.1.dist-info/METADATA,sha256=3w7i3y4etKnqvYnAfBrpBjo1N271ZHkIw5dIKPFu0kQ,425
+trakt_downloader-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+trakt_downloader-0.1.dist-info/entry_points.txt,sha256=rbf8ly0ellrO63ecfKjSJSiuxtasAtm_a61rRIoRnZ4,63
+trakt_downloader-0.1.dist-info/top_level.txt,sha256=IgCXMXDOBZqjrXBK2VkVE8_xfm9vTrAOG7iOTVYVR34,17
+trakt_downloader-0.1.dist-info/RECORD,,

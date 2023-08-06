@@ -1,0 +1,3 @@
+[console_scripts]
+trakt-pull = trakt_downloader.trakt_pull:go
+
