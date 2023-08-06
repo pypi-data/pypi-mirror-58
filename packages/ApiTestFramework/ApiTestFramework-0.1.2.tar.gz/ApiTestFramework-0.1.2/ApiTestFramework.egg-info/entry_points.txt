@@ -1,0 +1,3 @@
+[console_scripts]
+atf-exec = ApiTestFramework.atf_exec:main
+

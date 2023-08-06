@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ApiTestFramework
+Version: 0.1.2
+Summary: Api test framework in Linux
+Home-page: https://github.com/seoktaehyeon/api-test-framework
+Author: Will
+Author-email: v.stone@163.com
+Maintainer: Will
+Maintainer-email: v.stone@163.com
+License: MIT
+Description: # Mini API Test Framework
+        > It is not smart, just a hard worker.
+         
+        ```text
+        .
+        ├── ApiTestFramework
+        │   ├── __init__.py
+        │   ├── CaseExecutor.py
+        │   ├── CodeGenerator.py
+        │   ├── SwaggerParser.py
+        │   └── atf_exec.py
+        ├── Dockerfile
+        ├── README.md
+        ├── docker-compose.yaml
+        ├── requirements.txt
+        └── setup.py
+        ```
+        
+        ## Installation
+        ```bash
+        pip install ApiTestFramework
+        ```
+        
+        ## Usage
+        ```text
+        Usage: atf-exec <command>
+        command:
+            init    Init framework
+            prepare Generate test case in test_case dir and data template in data_template dir
+            run     Run test case
+            clean   Cleanup workspace
+        ```
+        
+        ## Quick Start
+        ```bash
+        # 1. Install ATF
+        pip install ApiTestFramework
+        # 2. Init ATF
+        mkdir api_test
+        cd api_test
+        atf-exec init
+        # 3. Put swagger YAML into atf_api_docs
+        wget http://xxxx/xxx.yaml -O atf_api_docs/xxx.yaml 
+        # 4. Prepare for running
+        atf-exec prepare
+        # 5. Add test data into atf_test/data refer to atf_test/data_template
+        # 6. Execute testing
+        atf-exec run
+        ```
+        
+Platform: linux
+Description-Content-Type: text/markdown
