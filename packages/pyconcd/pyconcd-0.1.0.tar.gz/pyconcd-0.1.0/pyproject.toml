@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pyconcd"
+author = "Bryan W. Weber"
+author-email = "bryan.w.weber@gmail.com"
+home-page = "https://github.com/bryanwweber/pyconcd"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+
+]
+requires = [
+    "python-dateutil >=2.8.0",
+    "pyfiglet >=0.8",
+]
+description-file = "README.md"
+requires-python = "~=3.5"
+
+[tool.flit.entrypoints.console_scripts]
+pyconcd = "pyconcd:main"
