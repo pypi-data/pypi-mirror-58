@@ -1,0 +1,4 @@
+superjson
+wrapt
+matplotlib
+numpy
