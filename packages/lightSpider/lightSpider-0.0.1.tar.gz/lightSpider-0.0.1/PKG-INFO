@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lightSpider
+Version: 0.0.1
+Summary: lightsmile's personal spider for crawling data
+Home-page: https://github.com/smilelight/lightSpider
+Author: lightsmile
+Author-email: iamlightsmile@gmail.com
+License: Apache-2.0
+Description: # lightSpider
+        lightsmile's personal spider for crawling data
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

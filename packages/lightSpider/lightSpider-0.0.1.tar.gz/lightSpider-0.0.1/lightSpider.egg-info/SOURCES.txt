@@ -1,0 +1,8 @@
+README.md
+setup.py
+lightSpider.egg-info/PKG-INFO
+lightSpider.egg-info/SOURCES.txt
+lightSpider.egg-info/dependency_links.txt
+lightSpider.egg-info/requires.txt
+lightSpider.egg-info/top_level.txt
+lightspider/__init__.py
