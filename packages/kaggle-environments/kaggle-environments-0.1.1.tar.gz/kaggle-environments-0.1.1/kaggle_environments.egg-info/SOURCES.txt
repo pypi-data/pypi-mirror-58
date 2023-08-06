@@ -1,0 +1,13 @@
+README.md
+setup.py
+kaggle_environments/__init__.py
+kaggle_environments/core.py
+kaggle_environments/errors.py
+kaggle_environments/main.py
+kaggle_environments/utils.py
+kaggle_environments.egg-info/PKG-INFO
+kaggle_environments.egg-info/SOURCES.txt
+kaggle_environments.egg-info/dependency_links.txt
+kaggle_environments.egg-info/entry_points.txt
+kaggle_environments.egg-info/requires.txt
+kaggle_environments.egg-info/top_level.txt
