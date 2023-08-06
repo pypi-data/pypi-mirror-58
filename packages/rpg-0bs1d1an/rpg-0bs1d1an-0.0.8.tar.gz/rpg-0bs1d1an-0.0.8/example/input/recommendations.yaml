@@ -1,0 +1,36 @@
+---
+
+1:
+  name: Improve the patching policy
+  complexity: L
+  risk_mitigation: H
+
+2:
+  name: Sanitise user input
+  complexity: L
+  risk_mitigation: H
+
+3:
+  name: Improve the SSH configuration
+  complexity: L
+  risk_mitigation: M
+
+4:
+  name: Sanitise user input
+  complexity: L
+  risk_mitigation: M
+
+5:
+  name: Do not disclose the existence of users
+  complexity: L
+  risk_mitigation: L
+
+6:
+  name: Improve the SSL/TLS configuration
+  complexity: L
+  risk_mitigation: L
+
+7:
+  name: Do not disclose any version information
+  complexity: L
+  risk_mitigation: L
