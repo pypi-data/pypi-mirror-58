@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: orgformat
+Version: 2019.12.28.1
+Summary: Utility library for providing functions to generate and modify Org mode syntax elements like links, time-stamps, or date-stamps.
+Home-page: https://github.com/novoid/orgformat
+Author: Karl Voit
+Author-email: tools@Karl-Voit.at
+License: GPLv3
+Download-URL: https://github.com/novoid/orgformat/zipball/master
+Keywords: orgmode,datestamps,timestamps,links
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
