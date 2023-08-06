@@ -1,0 +1,3 @@
+[console_scripts]
+dataflow-cookiecutter = cookiecutter.cli:main
+

@@ -1,0 +1,9 @@
+README.md
+setup.py
+cookiecutter/__init__.py
+dataflow_cookiecutter.egg-info/PKG-INFO
+dataflow_cookiecutter.egg-info/SOURCES.txt
+dataflow_cookiecutter.egg-info/dependency_links.txt
+dataflow_cookiecutter.egg-info/entry_points.txt
+dataflow_cookiecutter.egg-info/requires.txt
+dataflow_cookiecutter.egg-info/top_level.txt
