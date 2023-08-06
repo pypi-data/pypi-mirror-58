@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: RpiSerial
+Version: 0.0.1
+Summary: All Serial Device Interface with Raspberry Pi, Jetson nano, etc
+Home-page: UNKNOWN
+Author: Ashish Sharma
+Author-email: ashishbhardwaj023@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# RpiSerial
+All Serial Device Interface with Raspberry Pi, Jetson nano, etc
+For Example Bluetooth, RFID, GPS, GSM, etc
+
