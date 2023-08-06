@@ -1,0 +1,10 @@
+README.md
+setup.py
+streamtracer/__init__.py
+streamtracer/streamline.py
+streamtracer.egg-info/PKG-INFO
+streamtracer.egg-info/SOURCES.txt
+streamtracer.egg-info/dependency_links.txt
+streamtracer.egg-info/requires.txt
+streamtracer.egg-info/top_level.txt
+streamtracer/fortran/Streamtracer.f90
