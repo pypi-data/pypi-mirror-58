@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: foliantcontrib.testcoverage
+Version: 0.1.0
+Summary: Foliant Meta Command which collects test data.
+Home-page: https://github.com/foliant-docs/foliantcontrib.testcoverage
+Author: Daniil Minukhin
+Author-email: ddddsa@gmail.com
+License: MIT
+Description: ![](https://img.shields.io/pypi/v/foliantcontrib.test_coverage.svg)
+        
+        # TestCoverage
+        
+        Foliant Meta Command which collects information about functionality and its test cases from the metadata and saves it into a yaml-file. This file then may be fed to a template to render test coverage table, for example.
+        
+        (under construction)
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

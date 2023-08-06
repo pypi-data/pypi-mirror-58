@@ -1,0 +1,8 @@
+README.md
+setup.py
+foliant/meta_commands/collect_test_data.py
+foliantcontrib.testcoverage.egg-info/PKG-INFO
+foliantcontrib.testcoverage.egg-info/SOURCES.txt
+foliantcontrib.testcoverage.egg-info/dependency_links.txt
+foliantcontrib.testcoverage.egg-info/requires.txt
+foliantcontrib.testcoverage.egg-info/top_level.txt
