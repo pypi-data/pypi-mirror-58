@@ -1,0 +1,11 @@
+slime.cpython-36m-x86_64-linux-gnu.so,sha256=kjABzsA8d44LKBSV6je1rnRSVoaWpET3uhrgddCV2KA,87731
+PEQNP-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+PEQNP-0.1.1.dist-info/METADATA,sha256=Bv5oasT0tSZc0W0MYTqgaUxFX8c98YgzfVHJ7JQBrP4,329
+PEQNP-0.1.1.dist-info/RECORD,,
+PEQNP-0.1.1.dist-info/WHEEL,sha256=eLnmevQHpRJB2D5amvQXLJk8sVHtrot0xAEnYEBfQYM,104
+PEQNP-0.1.1.dist-info/metadata.json,sha256=FO-f3w_EiTtVP2V1drh6l_knkHZJ1EZ1II09F_Ll6XE,510
+PEQNP-0.1.1.dist-info/top_level.txt,sha256=5N6pXMCgt5YCAyzrAM5E6NjaaMQqtukhv1NvnCvZIT8,12
+peqnp/__init__.py,sha256=tcnzrTSPh1wXKA6CPBh46J4Kk68CzdyJaMEu3b7OvPs,935
+peqnp/entity.py,sha256=7JwGocN2LD-R9PPNYV303ybXropBrAi5MYyQsA0UEOA,12056
+peqnp/solver.py,sha256=GMnQ-eMFtBf9E3DOeDAYqErJDzqkYAvNK0T2ddgOXdI,20108
+peqnp/stdlib.py,sha256=vx_sNzDmsG72pCFLYTPJVG7pTAgu-v14az7vQqH98Js,3606
