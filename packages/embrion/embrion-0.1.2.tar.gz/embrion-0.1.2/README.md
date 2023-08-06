@@ -1,0 +1,56 @@
+# Embrion
+
+Embrion is a project aimed at isolating development environments of repositories.
+
+## Limitations
+
+This project only supports conda environment files with a name. Support for requirements.txt
+will be added later.
+
+## Installation
+
+Run
+    
+    pip install embrion
+
+Change directory to where your environment.yml file is. Then start the server using:
+
+    embrion up
+ 
+## Usage   
+
+To remove everything run:
+   
+    embrion down
+
+To refresh the environment run:
+
+    embrion refresh
+    
+To temporarily stop run:
+
+    embrion stop
+
+To start again run:
+
+    embrion start
+
+To restart run:
+    
+    embrion restart
+
+To open jupyter notebook run:
+
+    embrion open-jupyter
+
+To open vs code run:
+
+    embrion open-vscode
+    
+To open terminal run:
+
+    embrion shell
+
+To connect through ssh run:
+
+    ssh root@localhost -p 20022 (Password is embrion)

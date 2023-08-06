@@ -1,0 +1,18 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: dev/Dockerfile
+    image: registry.gitlab.com/izel93/embrion:0.1.2
+    ports:
+     - "28888:8888"
+     - "20022:22"
+     - "28443:8443"
+    volumes:
+      - ${PWD}:/app
+#      - .:/embrion
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
+    entrypoint: "/embrion/dev/startup.sh"
