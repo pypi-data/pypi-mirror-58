@@ -1,0 +1,6 @@
+[pyppl_runner]
+pyppl_runner_dry=pyppl_runners:dry
+pyppl_runner_sge=pyppl_runners:sge
+pyppl_runner_slurm=pyppl_runners:slurm
+pyppl_runner_ssh=pyppl_runners:ssh
+
