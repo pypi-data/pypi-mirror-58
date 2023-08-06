@@ -1,0 +1,8 @@
+---
+exclude_paths:
+  - 'zeroae/cli/_version.py'
+  - 'tests/**/*'
+  - 'tests/*'
+  - 'benchmarks/**/*'
+  - 'setup.py'
+  - '.github/**'
