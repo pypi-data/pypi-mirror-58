@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: neographviz
+Version: 0.2.6
+Summary: Graph display package for py2neo graphs forked from https://github.com/nicolewhite/neo4j-jupyter
+Home-page: https://github.com/icfly2/neo4j-jupyter
+Author: Ruben Menke
+Author-email: ruben.m.menke@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: py2neo
+Requires-Dist: IPython
+Requires-Dist: jinja2
+Requires-Dist: pyjokes
+
+# NEOGRAPHVIZ 
+
+A draw function for neo4j graphs, usable as html or in jupyter notebooks.
+
+Derived from Nicole White's work, she get's all the credit I practically did nothing.
+
