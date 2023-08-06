@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/importresource-testdata/__init__.py
+src/importresource-testdata/rf-resources/test.resource
+src/robotframework_importresource_testdata.egg-info/PKG-INFO
+src/robotframework_importresource_testdata.egg-info/SOURCES.txt
+src/robotframework_importresource_testdata.egg-info/dependency_links.txt
+src/robotframework_importresource_testdata.egg-info/top_level.txt
