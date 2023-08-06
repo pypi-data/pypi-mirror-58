@@ -1,0 +1,3 @@
+[console_scripts]
+easy_manage = easy_manage.__init__:main
+
