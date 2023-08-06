@@ -1,0 +1,8 @@
+README.md
+setup.py
+Flask_Sqlalchemy_QueryLog.egg-info/PKG-INFO
+Flask_Sqlalchemy_QueryLog.egg-info/SOURCES.txt
+Flask_Sqlalchemy_QueryLog.egg-info/dependency_links.txt
+Flask_Sqlalchemy_QueryLog.egg-info/requires.txt
+Flask_Sqlalchemy_QueryLog.egg-info/top_level.txt
+flask_sqlalchemy_querylog/__init__.py
