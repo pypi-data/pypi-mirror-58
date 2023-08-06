@@ -1,0 +1,7 @@
+README.md
+setup.py
+simple_pyspin/__init__.py
+simple_pyspin.egg-info/PKG-INFO
+simple_pyspin.egg-info/SOURCES.txt
+simple_pyspin.egg-info/dependency_links.txt
+simple_pyspin.egg-info/top_level.txt
