@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: oligo
+Version: 1.0.1
+Summary: UNOFFICIAL Python client for i-DE
+Home-page: https://github.com/blackleg/python-oligo
+Author: blackleg
+Author-email: hectorespertpardo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# python-oligo
+
+## [ES] Cliente Python (NO OFICIAL) para i-DE (Iberdrola distribución).
+### Instalación:
+
+```
+pip install oligo
+```
+### Ejemplos:
+#### Consultar consumo actual:
+
+```python
+from oligo import Iber
+
+connection = Iber()
+connection.login("user", "password")
+
+watt = connection.watthourmeter()
+print(watt)
+```
+#### Consultar estado ICP interno:
+
+```python
+from oligo import Iber
+connection = Iber()
+connection.login("user", "password")
+status = connection.icpstatus()
+print(status)
+```
+## [EN] Python client (UNOFFICIAL) for i-DE (Iberdrola distribución).
+### Install:
+
+```
+pip install oligo
+```
+### Example:
+#### Obtain current consumption:
+
+```python
+from oligo import Iber
+
+connection = Iber()
+connection.login("user", "password")
+
+watt = connection.watthourmeter()
+print(watt)
+```
+#### Get ICP status:
+
+```python
+from oligo import Iber
+connection = Iber()
+connection.login("user", "password")
+status = connection.icpstatus()
+print(status)
+```
+
+
