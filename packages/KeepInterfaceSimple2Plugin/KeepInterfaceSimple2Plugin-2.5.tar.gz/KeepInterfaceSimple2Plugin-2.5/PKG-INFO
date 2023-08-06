@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: KeepInterfaceSimple2Plugin
+Version: 2.5
+Summary: Makes it easier for users when tickets have a complex workflow. Fields that don't need to be completed at a given time can be hidden, and commits can be prevented if not all the information required has been provided.
+Home-page: UNKNOWN
+Author: Jonathan Ashley <trac@ifton.co.uk>
+Author-email: UNKNOWN
+License: GPLv3
+Description: A plugin for the Trac issue tracking system. Makes it easier for users when tickets have a complex workflow. Fields that don't need to be completed at a given time can be hidden, and commits can be prevented if not all the information required has been provided.
+Platform: UNKNOWN

@@ -1,0 +1,11 @@
+setup.py
+KeepInterfaceSimple2Plugin.egg-info/PKG-INFO
+KeepInterfaceSimple2Plugin.egg-info/SOURCES.txt
+KeepInterfaceSimple2Plugin.egg-info/dependency_links.txt
+KeepInterfaceSimple2Plugin.egg-info/entry_points.txt
+KeepInterfaceSimple2Plugin.egg-info/top_level.txt
+kis2/__init__.py
+kis2/kis.py
+kis2/htdocs/bind.js
+kis2/htdocs/bluebird.min.js
+kis2/htdocs/kis.js
