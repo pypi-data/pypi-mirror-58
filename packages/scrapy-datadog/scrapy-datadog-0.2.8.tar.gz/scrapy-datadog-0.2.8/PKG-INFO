@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: scrapy-datadog
+Version: 0.2.8
+Summary: Scrapy extension to send scrapy stats to Datadog.
+Home-page: http://github.com/kpler/scrapy-datadog-extension
+Author: Kpler engineering
+Author-email: engineering@kpler.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Provides-Extra: test
