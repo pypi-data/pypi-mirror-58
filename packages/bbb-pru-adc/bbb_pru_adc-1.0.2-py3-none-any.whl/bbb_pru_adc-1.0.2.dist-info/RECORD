@@ -1,0 +1,17 @@
+bbb_pru_adc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bbb_pru_adc/capture.py,sha256=BuyMGtjfU9HQoCnBR6rq5DDthZxQo6NVXY2AqyD12WE,4285
+bbb_pru_adc/driver.py,sha256=zleNCX5M7hppQxGlzTu7c5vChZFeejAlfIeoFDzzohE,4450
+bbb_pru_adc/main.py,sha256=WfxQWr7ZPR9uJabg86h3aO4GeNSshjWj5Lt_eUfecZU,885
+bbb_pru_adc/resources/am335x-pru0.fw,sha256=SXEZfbXkC1njC3rwgcvulgtWRl1mmy4Nu14LyWtTYBU,112272
+bbb_pru_adc/resources/libdriver.so,sha256=X7JAE5N3q81LIv_Fu9FL0BPQuvbzSIK0F5Iti_sDUE8,8348
+bbb_pru_adc-1.0.2.data/data/src/common.h,sha256=l_rjf-MPLuEp2dLv3YbbOGLIP9lOsDexfY85d0vZwmc,932
+bbb_pru_adc-1.0.2.data/data/src/driver.c,sha256=99hPgVNqJ2IC1Lx9xWBUu_--_Blt0d5W3mQqo15yjLQ,4616
+bbb_pru_adc-1.0.2.data/data/src/driver.h,sha256=yIXMBzBhISVfwWytHvWUe15JtGCDrDyax2b-uhv80G0,543
+bbb_pru_adc-1.0.2.data/data/src/firmware.c,sha256=TU6QkmuRunGpZXZQ6jbqcCEcK0F_IEiWBgkrzHfCrT8,12811
+bbb_pru_adc-1.0.2.data/data/src/firmware.cmd,sha256=nJghiLpPDWDQwGezT8razkFfQqzBRwLaJ_CH0YCFt8M,3505
+bbb_pru_adc-1.0.2.data/data/src/firmware_resource_table.h,sha256=e13TBLdZnU5ZrnOiy1Jfh7rjUsXLDL75d96U2agPPqQ,4718
+bbb_pru_adc-1.0.2.dist-info/LICENSE,sha256=-szHdHvYzu7DNX2pbUmPmdU7EGuwgQp9fh7nlIOuzgs,1071
+bbb_pru_adc-1.0.2.dist-info/METADATA,sha256=MrokCVT8VYmL8gmgqw8eiVAIta_47STnUnjMGbirQ8Q,8347
+bbb_pru_adc-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bbb_pru_adc-1.0.2.dist-info/top_level.txt,sha256=ClwV3iI2sfbOdU1jO-nqGnBs2Cx2lyu4oIaUUxsgiWc,12
+bbb_pru_adc-1.0.2.dist-info/RECORD,,
