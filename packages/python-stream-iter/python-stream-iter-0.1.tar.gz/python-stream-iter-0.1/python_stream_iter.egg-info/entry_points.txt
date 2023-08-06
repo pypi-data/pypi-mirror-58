@@ -1,0 +1,10 @@
+[console_scripts]
+ftp-download = stream.io.ftp:download_cmd
+ftp-get = stream.io.ftp:get_cmd
+http-download = stream.io.http:download_cmd
+http-get = stream.io.http:get_cmd
+s3-copy = stream.io.s3:copy_cmd
+s3-download = stream.io.s3:download_cmd
+s3-get = stream.io.s3:get_cmd
+s3-upload = stream.io.s3:upload_cmd
+
