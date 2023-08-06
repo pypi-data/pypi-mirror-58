@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aiomcache-multi
+Version: 0.1.0
+Summary: a minimal aiomcache wrapper to bring memcached distributed storage capabilities
+Home-page: https://github.com/viert/aiomcache-multi
+Author: Pavel Vorobyov
+Author-email: aquavitale@yandex.ru
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
