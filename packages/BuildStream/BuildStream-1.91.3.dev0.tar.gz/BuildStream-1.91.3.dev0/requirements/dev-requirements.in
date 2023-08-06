@@ -1,0 +1,8 @@
+pexpect
+pylint
+pytest >= 3.9
+pytest-datafiles >= 2.0
+pytest-env
+pytest-xdist
+pytest-timeout
+pyftpdlib
