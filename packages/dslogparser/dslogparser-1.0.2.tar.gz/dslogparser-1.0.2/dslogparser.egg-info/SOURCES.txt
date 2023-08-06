@@ -1,0 +1,11 @@
+README.md
+dslog2csv.py
+setup.py
+dslogparser/__init__.py
+dslogparser/dslogparser.py
+dslogparser/version.py
+dslogparser.egg-info/PKG-INFO
+dslogparser.egg-info/SOURCES.txt
+dslogparser.egg-info/dependency_links.txt
+dslogparser.egg-info/requires.txt
+dslogparser.egg-info/top_level.txt

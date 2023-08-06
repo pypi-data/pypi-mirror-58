@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dslogparser
+Version: 1.0.2
+Summary: FIRST FRC Driver Station logs parser
+Home-page: http://github.com/ligerbots/dslogparser
+Author: Paul Rensing
+Author-email: prensing@ligerbots.org
+License: MIT
+Description: # dslogparser
+        Parse FIRST FRC Driver Station log files.
+        
+        The DSLogParser class can parse FRC .dslog files and extract each entry, which are returned as dictionaries.
+        
+        The DSEventParser class parses FRC .dsevents, including extracting the match information.
+        
+        The script dslog2csv.py can read one or many .dslog files to produce CSV file(s).
+        It can combine .dslog and .dsevents files if the filenames match. See ```dslog2csv.py -h``` for usage information.
+        
+Keywords: FRC,logfiles
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
