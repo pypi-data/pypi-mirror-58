@@ -1,0 +1,8 @@
+_zstd_cffi.cpython-37m-x86_64-linux-gnu.so,sha256=usVE2K69mdsttHpSOAVaD2GWLDQKJna8UXrVkDfbMLI,7781352
+zstd.cpython-37m-x86_64-linux-gnu.so,sha256=ehOz6aAk-_lev1qguWt7nBTuLpLubQir5l9fZ4FTUIc,8444072
+zstandard-0.13.0.dist-info/RECORD,,
+zstandard-0.13.0.dist-info/WHEEL,sha256=Wzr7ustLd3r5KN3AVdAm7EECHYuYQiejXMdpS694wLU,112
+zstandard-0.13.0.dist-info/top_level.txt,sha256=lnNgWkJr7yZ_Y2icf7CeCpjILnorYdtVRTichbXIwvY,26
+zstandard-0.13.0.dist-info/METADATA,sha256=v01-iBhoY8V60bMaNXF3YQSVEfkXrS7qTnU6QJpX1Cw,63241
+zstandard/__init__.py,sha256=6g25jGL01oHfIKMq4A0XA9TqvHbcIexwA4UlkKf5mCQ,2447
+zstandard/cffi.py,sha256=SeRL8Xz1tPlvG7_UF_HogsR87K9RMA0XU6BOArsUXmQ,80832
