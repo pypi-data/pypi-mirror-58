@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: finbert-embedding
+Version: 0.1.2
+Summary: Embeddings from Financial BERT
+Home-page: https://github.com/abhijeet3922/finbert_embedding
+Author: Abhijeet Kumar
+Author-email: abhijeetchar@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/abhijeet3922/finbert_embedding/archive/v0.1.2.tar.gz
+Description: # finbert_embedding
+        Token and sentence level embeddings from FinBERT model (Finance Domain)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
