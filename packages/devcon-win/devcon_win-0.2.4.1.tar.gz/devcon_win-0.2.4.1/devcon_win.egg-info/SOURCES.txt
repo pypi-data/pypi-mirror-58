@@ -1,0 +1,9 @@
+README
+setup.cfg
+setup.py
+devcon_win/__init__.py
+devcon_win/devcon_win.py
+devcon_win.egg-info/PKG-INFO
+devcon_win.egg-info/SOURCES.txt
+devcon_win.egg-info/dependency_links.txt
+devcon_win.egg-info/top_level.txt
