@@ -1,0 +1,6 @@
+[kwiver.cpp_search_paths]
+simple_detector = external_arrow.register_cpp_arrow:get_cpp_path
+
+[kwiver.python_plugin_registration]
+simple_detector = external_arrow.arrow.test_object_detector
+
