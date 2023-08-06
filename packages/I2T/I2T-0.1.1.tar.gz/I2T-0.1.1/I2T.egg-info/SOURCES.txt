@@ -1,0 +1,9 @@
+README.md
+setup.py
+I2T/ImageTextConverter.py
+I2T/__init__.py
+I2T.egg-info/PKG-INFO
+I2T.egg-info/SOURCES.txt
+I2T.egg-info/dependency_links.txt
+I2T.egg-info/requires.txt
+I2T.egg-info/top_level.txt
