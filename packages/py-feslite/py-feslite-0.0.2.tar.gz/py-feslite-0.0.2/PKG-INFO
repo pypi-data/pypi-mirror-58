@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: py-feslite
+Version: 0.0.2
+Summary: A wrapper for libfes-lite
+Home-page: https://github.com/cbouilla/pyfeslite
+Author: Charles Bouillaguet
+Author-email: charles.bouillaguet@univ-lille.fr
+License: UNKNOWN
+Description: This is a python wrapper around [libfes-lite](https://github.com/cbouilla/libfes-lite).
+        
+        libfes-lite contains highly optimized C/assembler kernels to solve quadratic
+        boolean systems of (at most) 32 equations in (at most) 32 variables. This
+        python wrapper makes it much easier to use this high-performance code.
+        
+        Add more doc here...
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
