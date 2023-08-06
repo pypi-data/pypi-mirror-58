@@ -1,0 +1,9 @@
+django_simple_task/__init__.py,sha256=C1YfuHSm76WlXhfgKpUxESOxfIlrDWLluTE4Fizkr_k,223
+django_simple_task/apps.py,sha256=T6MpVD8uzPm-AMdtrKUqOs24xnaIjsPpcObgF11CO8A,222
+django_simple_task/middleware.py,sha256=0FRacWNC3cTwAFfVBFQ7XY_y7H0QZXk6RZaqlFnxx64,1313
+django_simple_task/task.py,sha256=rzey6rXv5xjN1Ka9R_DY2wlynEodgg2r4FuRG_KD9WY,489
+django_simple_task/worker.py,sha256=9iD8e_2SzLa_70iCngSH8GYnnYGdA-yPNS929i4npEA,1273
+django_simple_task-0.1.0.dist-info/LICENSE,sha256=nw9aqBensnzv5GvlGJMzRMhsySvDJcHFuvWOcM8ynDs,1064
+django_simple_task-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_simple_task-0.1.0.dist-info/METADATA,sha256=sCXd9hSXSNvh0ArBSZLPKo20Dv4xMLzNHXMHXAlD39E,2298
+django_simple_task-0.1.0.dist-info/RECORD,,
