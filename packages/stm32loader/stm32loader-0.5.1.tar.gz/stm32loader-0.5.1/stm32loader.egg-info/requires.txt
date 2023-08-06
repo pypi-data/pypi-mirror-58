@@ -1,0 +1,11 @@
+pyserial
+progress
+
+[dev]
+setuptools
+wheel
+twine
+pylint
+flake8
+flake8-isort
+black
