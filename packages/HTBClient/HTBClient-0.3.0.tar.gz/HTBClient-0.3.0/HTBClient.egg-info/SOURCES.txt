@@ -1,0 +1,16 @@
+README.md
+setup.py
+HTBClient/__init__.py
+HTBClient/__main__.py
+HTBClient/assigned.py
+HTBClient/client.py
+HTBClient/machine.py
+HTBClient/machinedetails.py
+HTBClient/own.py
+HTBClient/spawned.py
+HTBClient/terminating.py
+HTBClient.egg-info/PKG-INFO
+HTBClient.egg-info/SOURCES.txt
+HTBClient.egg-info/dependency_links.txt
+HTBClient.egg-info/entry_points.txt
+HTBClient.egg-info/top_level.txt
