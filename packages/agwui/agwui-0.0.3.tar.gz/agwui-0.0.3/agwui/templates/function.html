@@ -1,0 +1,26 @@
+<html>
+    <body>
+       <article>
+           <form action="{{action_path}}" method="POST">
+                <div>
+                    <h1>{{function_definition.name}}</h1>
+                    <p>{{function_definition.description}}</p>
+                </div>
+                {% for parameter in function_definition.parameters %}
+                    <div>
+                        <h2>{{parameter.name}}</h2>
+                        <p>type: {{parameter.arg_type}}</p>
+                        {% if parameter.default != None %}
+                            <input type="text" name="{{parameter.name}}" value="{{parameter.default}}">
+                        {% else %}
+                            <input type="text" name="{{parameter.name}}">
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                <div>
+                    <input type="submit" value="Execute">
+                </div>
+           </form>
+       </article> 
+    </body>
+</html>

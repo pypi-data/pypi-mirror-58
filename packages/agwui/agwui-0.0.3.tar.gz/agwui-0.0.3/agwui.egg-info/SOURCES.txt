@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+agwui/FunctionDefinition.py
+agwui/FunctionEntrypoint.py
+agwui/FunctionParameter.py
+agwui/Injector.py
+agwui/__init__.py
+agwui/inspect_test.py
+agwui.egg-info/PKG-INFO
+agwui.egg-info/SOURCES.txt
+agwui.egg-info/dependency_links.txt
+agwui.egg-info/requires.txt
+agwui.egg-info/top_level.txt
+agwui/templates/class.html
+agwui/templates/function.html
