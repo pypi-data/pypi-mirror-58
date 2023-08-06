@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: atlas-rbm
+Version: 1.0
+Summary: Atlas: Reconstruction of Rule-Based Models from biological networks
+Home-page: https://github.com/glucksfall/atlas
+Author: Rodrigo Santibáñez
+Author-email: glucksfall@users.noreply.github.com
+License: GPLv3+
+Project-URL: Manual, https://atlas.readthedocs.io
+Project-URL: Bug Reports, https://github.com/glucksfall/atlas/issues
+Project-URL: Source, https://github.com/glucksfall/atlas
+Description: # atlas
+        Automatic Rule-Based modeling
+        
+Keywords: systems biology,stochastic modeling
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

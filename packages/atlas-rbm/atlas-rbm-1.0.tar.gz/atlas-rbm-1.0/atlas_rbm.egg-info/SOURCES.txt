@@ -1,0 +1,18 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+atlas-rbm/__init__.py
+atlas-rbm/_version.py
+atlas_rbm.egg-info/PKG-INFO
+atlas_rbm.egg-info/SOURCES.txt
+atlas_rbm.egg-info/dependency_links.txt
+atlas_rbm.egg-info/top_level.txt
+notebooks/Expand Metabolic Network.ipynb
+notebooks/Monomer+Initials+Observables from metabolic network.ipynb
+notebooks/Rules from SigmaFactors x Architecture.ipynb
+notebooks/Rules from genome architecture.ipynb
+notebooks/Rules from metabolic network.ipynb
+notebooks/Rules from protein-protein.ipynb
+notebooks/Rules from protein-small compounds.ipynb
+notebooks/Rules from tf-tfbs.ipynb
