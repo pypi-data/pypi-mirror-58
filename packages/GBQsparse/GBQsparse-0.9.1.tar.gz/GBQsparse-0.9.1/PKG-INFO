@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: GBQsparse
+Version: 0.9.1
+Summary: Batched QR factorization of sparse matrices on GPUs. Wrapper of the CUDA library cusolverSpDcsrqrsvBatched()
+Home-page: UNKNOWN
+Author: Giuseppe Romano
+Author-email: romanog@mit.edu
+License: GPLv2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6

@@ -1,0 +1,10 @@
+README.md
+setup.py
+GBQsparse.egg-info/PKG-INFO
+GBQsparse.egg-info/SOURCES.txt
+GBQsparse.egg-info/dependency_links.txt
+GBQsparse.egg-info/not-zip-safe
+GBQsparse.egg-info/requires.txt
+GBQsparse.egg-info/top_level.txt
+gbqsparse/GQsparse.py
+gbqsparse/__init__.py
