@@ -1,0 +1,3 @@
+[console_scripts]
+restaround = restaround:exec_main
+
