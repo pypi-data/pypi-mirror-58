@@ -1,0 +1,11 @@
+README.md
+setup.py
+pg_logical_manager.egg-info/PKG-INFO
+pg_logical_manager.egg-info/SOURCES.txt
+pg_logical_manager.egg-info/dependency_links.txt
+pg_logical_manager.egg-info/entry_points.txt
+pg_logical_manager.egg-info/requires.txt
+pg_logical_manager.egg-info/top_level.txt
+pglogicalmanager/__init__.py
+pglogicalmanager/__main__.py
+pglogicalmanager/manager.py
