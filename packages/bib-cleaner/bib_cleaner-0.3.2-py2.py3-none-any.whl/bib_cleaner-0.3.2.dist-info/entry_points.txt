@@ -1,0 +1,3 @@
+[console_scripts]
+bib_cleaner = bib_cleaner.cli:main
+
