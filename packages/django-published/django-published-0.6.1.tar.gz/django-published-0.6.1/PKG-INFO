@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: django-published
+Version: 0.6.1
+Summary: Control public visibility of model instances.
+Home-page: https://github.com/dmptrluke/django-published
+Author: Luke Rogers
+Author-email: luke@dmptr.com
