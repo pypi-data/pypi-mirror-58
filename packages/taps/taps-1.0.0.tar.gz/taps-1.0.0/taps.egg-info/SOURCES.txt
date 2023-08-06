@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+bin/taps
+taps/__init__.py
+taps/attribute_format.py
+taps/config.py
+taps/json_fetch.py
+taps/pacman.py
+taps/taps.conf
+taps/text_format.py
+taps.egg-info/PKG-INFO
+taps.egg-info/SOURCES.txt
+taps.egg-info/dependency_links.txt
+taps.egg-info/requires.txt
+taps.egg-info/top_level.txt
