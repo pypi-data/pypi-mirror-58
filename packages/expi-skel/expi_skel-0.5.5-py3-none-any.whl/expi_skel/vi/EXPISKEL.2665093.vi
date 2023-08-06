@@ -1,0 +1,54 @@
+[MODULE]
+id=EXPISKEL
+name=expi skel package example module.
+desc=expi skel package example module.
+company=2665093 Ontario Inc.
+version=1.0
+website=https://2665093.ca/
+
+[SCRIPT]
+FILENAME=EXPISKEL.viewscript.py
+>>> SCRIPT >>>
+################################################################################
+#  RotoID - View Script Title
+#
+#  Description
+#
+#  Version: 
+#
+#  author: 
+#  email: 
+#  copyright 
+#
+#  License/Disclaimers
+#
+################################################################################
+from accpac import *
+
+def onBeforeCompose(e):
+    global oehdr
+    if e.views[0] is None:
+        oehdr = None
+    else:
+        oehdr = e.views[0]
+
+    return Continue
+
+def onOpen():
+    # Check parameters and check values in DB
+    if rotoID != ROTOID:
+        return 1
+
+    return Continue
+
+def onBeforeInsert(event):
+    pass
+
+<<< SCRIPT <<<
+
+[VIEWSCRIPT]
+VIEWID={ROTOID}
+UNIQID=2019050100000004
+ACTIVE=1
+ORDER=0
+SCRIPT=EXPISKEL.viewscript
