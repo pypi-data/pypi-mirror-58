@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: dastr
+Version: 0.2.1
+Summary: A tool for translating between scientific data structures
+Home-page: https://github.com/kinleyid/dastr
+Author: Isaac Kinley
+Author-email: isaac.kinley@gmail.com
+License: MIT
+Download-URL: https://github.com/kinleyid/dastr/archive/v_021.tar.gz
+Description: UNKNOWN
+Keywords: data,structure,translator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
