@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: pyTails
+Version: 0.0.3
+Summary: Python DB tailer
+Home-page: UNKNOWN
+Author: Atharva Inamdar
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <3.8
