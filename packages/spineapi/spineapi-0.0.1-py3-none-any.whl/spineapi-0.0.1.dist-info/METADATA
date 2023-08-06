@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: spineapi
+Version: 0.0.1
+Summary: A simple machine learning inference library.
+Home-page: https://github.com/spineapi/spine-api
+Author: northfoxz
+Author-email: firstera15@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-socketio[client]
+
+# Spine API
+Access your ML models through HTTP requests.
+
+It is simple, clean, and easy to use. It works with jupyter notebooks too.
+
+```console
+POST http://your_server_ip/api/your_project/your_function => your_result
+```
+```
+
+### Installation
+```bash
+$ pip instal spine-api
+```
+
+## Usage
+**1. Import the library**
+```Python
+from spine import Connection
+```
+
+**2. Define your inference function**
+```Python
+def hello_function (input):
+  # ...
+  # do something with input
+  # ...
+  return output
+```
+
+**3. Specify ```name``` and ```description``` to initialize your project**
+```Python
+spine_connection = Connection(
+  project_name="hello_project",
+  description="An inference API for my ML model",
+  author="", # Optional
+  link="" # Optional
+)
+```
+
+**4. Register your function(s)**
+```Python
+spine_connection.register_function(
+  pathname='hello_function',
+  function=hello_function,
+  # ============ Optional ==================
+  # Set True if you want to protect this API
+  requiresAuth=False,
+  authToken="xxx",
+  # ========================================
+)
+```
+The function will be accessible through ```/api/hello_project/hello_function```
+
+**5. Run**
+```
+spine_connection.run()
+```
+That's it! You can now communicate with your ML model through HTTP post requests.
+
+**6. Send requests**
+
+**Note** You have to first run ```JSON.stringify(input)``` for the request data.
+```javascript
+const data = {
+  input: JSON.stringify(YOUR_INPUT)
+  // ============ Optional ==================
+  // Required if the API is protected
+  authToken: "xxx",
+  // ========================================
+}
+```
+
+Post request body to the endpoint.
+```javascript
+const url = 'https://spineapi.com/api/hello_function';
+
+fetch(
+  url,
+  {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: new Headers({ 'Content-Type': 'application/json' })
+  }
+)
+.then(res => res.json())
+.catch(error => console.error('Error:', error))
+.then(response => console.log('Success:', response));
+```
+
+## Self hosted server
+**Prerequisites**
+1. Make sure your server is accessible through port 3000
+2. Have Node.js installed on your server
+
+**Installation**
+```bash
+$ git clone https://github.com/spineapi/spine-api
+$ cd spine-api/server
+$ npm install
+```
+
+**Run server**
+```bash
+$ node server.js
+```
+Now you can access your server through http://YOUR_SERVER_IP:3000. Copy the passcode.
+
+**Specify url and passcode**
+For self hosted server, you'll have to specify url and passcode.
+```Python
+from spine import Connection
+spine_connection = Connection(
+  name="hello_project",
+  description="a demo app for my ML model",
+  url="http://YOUR_SERVER_IP:3000",
+  passcode="YOUR_PASSCODE"
+)
+```
+For other steps, it's all the same.
+
+# License
+[MIT](https://github.com/spineapi/spine-api/blob/master/LICENSE)
+
