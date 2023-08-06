@@ -1,0 +1,13 @@
+mathgenproject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mathgenproject/items.py,sha256=LslwdzP5qXuW5wq0xoaR-cWK1gSsV30gLBHYN6hd1zQ,658
+mathgenproject/middlewares.py,sha256=oX7lHrlSRQsEmmSaXhmuUFo2QqKUZl1y1lwgKqtiXss,3613
+mathgenproject/pipelines.py,sha256=TXHVm9yZkxykPreiKwWloS8afe_DVMEp4rTf8GkO5RY,296
+mathgenproject/settings.py,sha256=BoRaQV_Hruscf5nmmgqF3IeuAbontKqrpQY_3NCeeLM,3170
+mathgenproject/utils.py,sha256=Ne4NCZFFdLIBlYRcV1dXiP9PCUPQOylbZYRnEzdXnGk,489
+mathgenproject/spiders/__init__.py,sha256=YxLnbHmqvZmhI4LwaoCTgKgAHzBLA4HIRBV6JJlqCac,219
+mathgenproject/spiders/math_gen_project_spider.py,sha256=_cA32L18OFeXeV3XkMbtSzXT7hgoYWVoZlT8gOuVSGI,1935
+mathgenproject_jgolden17-0.1.0.dist-info/LICENSE,sha256=aTiuqRYXZv9nhm5VUp4HyjzOU0q0nbNnNuEEH10CKlo,1079
+mathgenproject_jgolden17-0.1.0.dist-info/METADATA,sha256=zqMXDoBCNRuqjDSnSDQ3Hytngv9hYC8XwsUCUkWlPGk,1656
+mathgenproject_jgolden17-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+mathgenproject_jgolden17-0.1.0.dist-info/top_level.txt,sha256=ogwL5ne9HSJWLkDuaVdiOIoAhsllsbyhGAgHxmxcDPs,15
+mathgenproject_jgolden17-0.1.0.dist-info/RECORD,,
