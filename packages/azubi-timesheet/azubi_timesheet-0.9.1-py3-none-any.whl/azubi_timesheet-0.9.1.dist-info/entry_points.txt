@@ -1,0 +1,3 @@
+[console_scripts]
+azubi-timesheet = azubi_timesheet.azubi_timesheet:main
+
