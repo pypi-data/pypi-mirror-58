@@ -1,0 +1,4 @@
+netifaces
+digimat.crypto
+requests[security]
+setuptools
