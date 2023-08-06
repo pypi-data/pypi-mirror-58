@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+KartRider/__init__.py
+KartRider/__main__.py
+KartRider/apiwrapper.py
+KartRider/basedata.py
+KartRider/match.py
+KartRider/metadata.py
+KartRider/user.py
+KartRider/utils.py
+KartRider.egg-info/PKG-INFO
+KartRider.egg-info/SOURCES.txt
+KartRider.egg-info/dependency_links.txt
+KartRider.egg-info/not-zip-safe
+KartRider.egg-info/requires.txt
+KartRider.egg-info/top_level.txt
