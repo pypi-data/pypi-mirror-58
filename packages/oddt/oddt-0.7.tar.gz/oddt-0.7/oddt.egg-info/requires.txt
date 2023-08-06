@@ -1,0 +1,7 @@
+numpydoc
+six
+numpy>=1.11
+scipy>=0.17
+scikit-learn>=0.18
+joblib>=0.9.4
+pandas>=0.19.2
