@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: albert-pytorch
+Version: 0.0.1.2
+Summary: albert_pytorch
+Home-page: https://github.com/napoler/albert_pytorch
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: 
+        这是一个包
+        albert_pytorch
+        
+        
+        # fix
+        修正提交错误
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
