@@ -1,0 +1,15 @@
+asyncio_rpc/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+asyncio_rpc/client.py,sha256=g_WdYpiSFNa1if8NmERV9-V2mWi3hskQwWz4MPTb4LM,8236
+asyncio_rpc/models.py,sha256=JUzI6gRM9Nbo7JZnT9Q3zigSrjGcTW4uHARdWyjCYE4,2331
+asyncio_rpc/server.py,sha256=9uZMQqmGjUhBofbsnuaCeWUhu9xkTBA3iJGYj8Gpuw4,6447
+asyncio_rpc/commlayers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncio_rpc/commlayers/base.py,sha256=GZ7UgtbGQgzVQjDpIV4nn70fWxZv16SpORuVFh1yaCc,1111
+asyncio_rpc/commlayers/redis.py,sha256=jS83UbcUtbNWlS_Jae_mIWa6JvA4XeFbs7houj-q-0c,6049
+asyncio_rpc/serialization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncio_rpc/serialization/msgpack.py,sha256=lPcw8d1BE3QBb4RVNIOFCYARAISvVI705WwXD75ZQ48,5954
+asyncio_rpc-0.1.5.dist-info/DESCRIPTION.rst,sha256=Ucmw-eCxlmkKeQh0ERpWzEFQKY9XIEoe47fU1M5WhWc,1834
+asyncio_rpc-0.1.5.dist-info/METADATA,sha256=k563lRyRi5Dplmmfh5Eo9-NLxVfw2nMIt0XMaLVFoTk,2576
+asyncio_rpc-0.1.5.dist-info/RECORD,,
+asyncio_rpc-0.1.5.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+asyncio_rpc-0.1.5.dist-info/metadata.json,sha256=ferXdH91KvDyo2oV_1doWDKZLdxJ9L9Sw_LKNHeUk3c,947
+asyncio_rpc-0.1.5.dist-info/top_level.txt,sha256=56tiR40lnTZ1BB9kKON-v9-MBQY_LAHqBXClpm11vbo,12
