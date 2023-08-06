@@ -1,0 +1,10 @@
+detritalpy/__init__.py,sha256=hL_rel9m9z0hr6bQEfBTq449BWgpclPUneOLj0guYfQ,96
+detritalpy/adaptiveKDE.py,sha256=1Ubi67xvGAXhxzt3iXM9x2Xw8YtMFtxacRhnYrO-V0g,20735
+detritalpy/detritalFuncs.py,sha256=OdRqH6Mh4O_4ghyAlLuZw80v-jaXP4M_pAN5MshRYCw,156950
+detritalpy-1.2.0.data/scripts/adaptiveKDE.py,sha256=1Ubi67xvGAXhxzt3iXM9x2Xw8YtMFtxacRhnYrO-V0g,20735
+detritalpy-1.2.0.data/scripts/detritalFuncs.py,sha256=OdRqH6Mh4O_4ghyAlLuZw80v-jaXP4M_pAN5MshRYCw,156950
+detritalpy-1.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+detritalpy-1.2.0.dist-info/METADATA,sha256=1Q4pZ8Xeio0meeRgmn-47hrh2ZN_3N2S-KO0GGQNr3g,6664
+detritalpy-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+detritalpy-1.2.0.dist-info/top_level.txt,sha256=6qwkzlB7GxrvG0HSYjnslXcExTJlitoCdk8ATKYXwNM,11
+detritalpy-1.2.0.dist-info/RECORD,,
