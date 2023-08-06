@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pymail-io
+Version: 0.0.1
+Summary: An asynchronous mail server
+Home-page: https://github.com/joegasewicz/pymail_io
+Author: Joe Gasewicz
+Author-email: joegasewicz@gmail.com
+License: UNKNOWN
+Description: # PyMailIO
+        
+        An Asynchronous mail server.
+        
+        Work in progress... please call back soon!
+        
+        
+        ## Built With
+        
+        * [PyTaskIO](https://github.com/joegasewicz/pytask_io) - Asynchronous Tasks Library using asyncio
+        
+        
+        ## Authors
+        
+        * **Joe Gasewicz** - *Initial work* - [JoeGasewicz](https://github.com/joegasewicz/)
+        
+        ## License
+        
+        This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+        
+        ## Acknowledgments
+        
+        ...
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
