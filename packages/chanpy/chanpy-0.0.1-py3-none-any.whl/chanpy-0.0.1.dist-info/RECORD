@@ -1,0 +1,10 @@
+chanpy/__init__.py,sha256=YMXuuisR2nvCdvOFHDx7JNhQvhNwKfHx2ylMQZHVkXY,622
+chanpy/_buffers.py,sha256=9n_G7jx9GYXeQ1PbKuxJASGmWUSH7v6LywGpW7myosQ,1900
+chanpy/_channel.py,sha256=cELecdxiQzB4Tx3eVK_Z8r9TIkVF4tKYO38V7k-T0e0,24530
+chanpy/core.py,sha256=fFX6rqXH-watm5wYpWLL9iGPaD0ZliFyHgA85pxiFqg,32656
+chanpy/transducers.py,sha256=oEpkV77wQ-ws4KrrNZobmAouGPXaHXhLYw3SscXG0-0,25241
+chanpy-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+chanpy-0.0.1.dist-info/METADATA,sha256=HnGUVdFnM-Ini7uhXCPoHPOVm7ADdTT-S889SpIqu10,1365
+chanpy-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+chanpy-0.0.1.dist-info/top_level.txt,sha256=6c2JffI9gC9d5HY13BZHF4j50kQMCzO91-EU56tt4EI,7
+chanpy-0.0.1.dist-info/RECORD,,
