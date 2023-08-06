@@ -1,0 +1,8 @@
+README.md
+amr.py
+setup.py
+smatch.py
+smatch.egg-info/PKG-INFO
+smatch.egg-info/SOURCES.txt
+smatch.egg-info/dependency_links.txt
+smatch.egg-info/top_level.txt
