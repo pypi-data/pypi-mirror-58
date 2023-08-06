@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: texplain
+Version: 0.3.2
+Summary: Create directory with TeX-file and only dependencies.
+Home-page: https://github.com/tdegeus/texplain
+Author: Tom de Geus
+Author-email: tom@geus.me
+License: MIT
+Keywords: LaTeX
+Platform: UNKNOWN
+Requires-Dist: docopt (>=0.6.2)
+Requires-Dist: click (>=4.0)
+Requires-Dist: numpy (>=0.0.1)
+
+Create directory with TeX-file and only dependencies.
+
+
