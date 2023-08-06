@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dod
+Version: 0.0.1
+Summary: Simple package to manage datasets.
+Home-page: UNKNOWN
+Author: Yohan Foucade
+Author-email: foucade@lipn.fr
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: wget
+
+UNKNOWN
+
+
