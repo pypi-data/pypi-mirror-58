@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+opendata_transport/__init__.py
+opendata_transport/exceptions.py
+python_opendata_transport.egg-info/PKG-INFO
+python_opendata_transport.egg-info/SOURCES.txt
+python_opendata_transport.egg-info/dependency_links.txt
+python_opendata_transport.egg-info/requires.txt
+python_opendata_transport.egg-info/top_level.txt
+python_opendata_transport.egg-info/zip-safe
