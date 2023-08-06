@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: crafty-client
+Version: 1.0.0
+Summary: A python library for talking to Crafty Web minecraft server control panel
+Home-page: https://gitlab.com/crafty-controller/crafty-client
+Author: kevdagoat
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+UNKNOWN
+
+
