@@ -1,0 +1,3 @@
+[console_scripts]
+seqfold = seqfold.fold:run
+
