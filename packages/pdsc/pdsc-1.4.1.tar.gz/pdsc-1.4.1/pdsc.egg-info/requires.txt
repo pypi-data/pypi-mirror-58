@@ -1,0 +1,17 @@
+numpy
+scipy
+scikit-learn
+Polygon3
+progressbar
+PyYAML
+geographiclib
+CherryPy
+requests
+future
+
+[devel]
+pytest
+pytest-cov
+mock
+sphinx
+sphinx_rtd_theme
