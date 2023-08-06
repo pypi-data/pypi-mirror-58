@@ -1,0 +1,5 @@
+include LICENSE
+include MANIFEST.ini
+include README.md
+
+include yfile/default_config.ini
