@@ -1,0 +1,10 @@
+README.md
+setup.py
+dbt_rpc_client/__init__.py
+dbt_rpc_client/client.py
+dbt_rpc_client/version.py
+dbt_rpc_client.egg-info/PKG-INFO
+dbt_rpc_client.egg-info/SOURCES.txt
+dbt_rpc_client.egg-info/dependency_links.txt
+dbt_rpc_client.egg-info/requires.txt
+dbt_rpc_client.egg-info/top_level.txt
