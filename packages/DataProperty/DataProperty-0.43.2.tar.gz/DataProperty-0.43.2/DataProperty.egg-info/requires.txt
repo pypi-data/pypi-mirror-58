@@ -1,0 +1,33 @@
+setuptools>=38.3.0
+mbstrdecoder<1.0.0,>=0.8.3
+six<2.0.0,>=1.10.0
+typepy[datetime]<1.0.0,>=0.6.4
+
+[:python_version < "3.2"]
+futures
+
+[:python_version < "3.3"]
+ipaddress
+
+[:python_version < "3.4"]
+enum34
+
+[dev]
+releasecmd<1,>=0.1.0
+twine
+wheel
+autoflake
+black
+isort
+codespell
+pylama
+path.py
+sphinx_rtd_theme
+Sphinx
+
+[logging]
+Logbook<2.0.0,>=0.12.3
+
+[test]
+termcolor
+pytest
