@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+chatovod.py.egg-info/PKG-INFO
+chatovod.py.egg-info/SOURCES.txt
+chatovod.py.egg-info/dependency_links.txt
+chatovod.py.egg-info/not-zip-safe
+chatovod.py.egg-info/top_level.txt
