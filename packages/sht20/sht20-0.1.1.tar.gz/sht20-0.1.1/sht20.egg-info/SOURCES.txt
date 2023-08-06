@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/run-sht20
+sht20/__init__.py
+sht20/sht20.py
+sht20.egg-info/PKG-INFO
+sht20.egg-info/SOURCES.txt
+sht20.egg-info/dependency_links.txt
+sht20.egg-info/top_level.txt
