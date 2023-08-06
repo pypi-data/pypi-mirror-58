@@ -1,0 +1,14 @@
+cloud/__init__.py,sha256=chdeah9mzWEjGTkX2g7WoR-9YzBM7HG7iABfDSUdcz8,1001
+cloud/cloud.py,sha256=llUbI21_GOZNj2DIh30Oblf-gm7BcQFzyI_LtBRcv5U,976
+cloud/envs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/envs/aws.py,sha256=cZ5DaLVwIyO3-xwG1yrLTO1aaJTJHMPTBhfZU60egiQ,968
+cloud/envs/azure.py,sha256=wbBCxqh49_8lIY9-4xzNwMkztRsdyFR848sjr1BDVjw,949
+cloud/envs/env.py,sha256=BO9e67QYsLK77t_b0GhRh_ccR1xpwODMJrQUdwscGTo,3560
+cloud/envs/gcp.py,sha256=iOhMqb0pte4xT6_aN2mDwvGTDX4CGZsq_YGwfQX2FpE,8127
+cloud/envs/registry.py,sha256=888oUWb7-aqm0bKHsGkiMBcZjafyE7n5efB2kcHOUIA,216
+cloud/envs/utils.py,sha256=BEqrJLDRsHP7GP_UV-jcNVjFKbiA5K2SOi0ZguOsFoA,2368
+dl_cloud-0.1.5.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+dl_cloud-0.1.5.dist-info/METADATA,sha256=ubJnU-XwrzHeAVXSUXzsbPfx-T7nKP42l3Uy6-MnAJg,6539
+dl_cloud-0.1.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+dl_cloud-0.1.5.dist-info/top_level.txt,sha256=lBiHHi76sKOBY-DmE0iDypxZxv-TTCnvHeiFleC_PuA,6
+dl_cloud-0.1.5.dist-info/RECORD,,
