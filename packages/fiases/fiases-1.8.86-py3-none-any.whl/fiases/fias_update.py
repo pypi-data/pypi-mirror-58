@@ -1,0 +1,66 @@
+import fiases.fias_data
+from time import sleep
+from fiases.address import import_address
+from fiases.houses import import_houses
+from fiases.fias_delta_update import update
+from fiases.fias_data import ES
+from fiases.snapshot import createFullSnapshot
+from elasticsearch.client import IndicesClient
+from elasticsearch.client import SnapshotClient
+from elasticsearch.client import TasksClient
+
+ADDR_UPDATE_CNT=0
+
+def importFull():
+    houses = fiases.fias_data.Houses()
+    import_houses(houses=houses)
+    refreshIndex()
+
+    address = fiases.fias_data.Address()
+    import_address(address=address)
+    refreshIndex()
+
+def getSnapshotStatus():
+    sn =  SnapshotClient(ES) 
+    status = sn.get(repository="fias",snapshot="fias_full")
+    return status;
+
+def getRestoreStatus():
+    ELASTIC_SERVER="es01"
+
+    ts = TasksClient(ES)
+    while [ "$SNAP_STATUS" == "INDEX" ] || [ "$SNAP_STATUS" == "INIT" ] && [ "$counter" -lt 550 ]
+    do
+        sleep 60
+        
+        SNAP_STATUS=$(curl -s -G $ELASTIC_SERVER:9200/_recovery | jq '.houses["shards"][0] | .stage')
+        echo "SNAPSHOT NAME: $SNAPSHOT - STATUS: $SNAP_STATUS"
+        counter=$(( $counter + 1 ))
+        echo $counter
+    done
+
+    if [[ "$SNAP_STATUS" == "DONE" ]] ; then
+        echo "YAY!"
+    else
+        echo "BOO..."
+    fi
+
+
+
+def updateFias():
+    if not ES.indices.exists(fiases.fias_data.ADDRESS_INDEX):
+        print("No ADDR index found. Start import full...")
+        importFull()
+    else:
+        ADDR_UPDATE_CNT=update(isDebug=True)
+    createFullSnapshot()
+    refreshIndex()
+    fiases.fias_data.createTmpDir();
+    return ADDR_UPDATE_CNT
+
+
+def refreshIndex():
+    IndicesClient(ES).refresh()
+    IndicesClient(ES).flush()
+    IndicesClient(ES).forcemerge()
+# updateFias()
