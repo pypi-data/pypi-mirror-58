@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: py-feslite
+Version: 0.0.1
+Summary: A wrapper for libfes-lite
+Home-page: UNKNOWN
+Author: Charles Bouillaguet
+Author-email: charles.bouillaguet@univ-lille.fr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
