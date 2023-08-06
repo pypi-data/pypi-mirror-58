@@ -1,0 +1,3 @@
+robotframework
+pdfminer2
+chardet

@@ -1,0 +1,9 @@
+README.rst
+setup.py
+src/Pdf2TextLibrary/__init__.py
+src/robotframework_pdf2textlibrary.egg-info/PKG-INFO
+src/robotframework_pdf2textlibrary.egg-info/SOURCES.txt
+src/robotframework_pdf2textlibrary.egg-info/dependency_links.txt
+src/robotframework_pdf2textlibrary.egg-info/not-zip-safe
+src/robotframework_pdf2textlibrary.egg-info/requires.txt
+src/robotframework_pdf2textlibrary.egg-info/top_level.txt
