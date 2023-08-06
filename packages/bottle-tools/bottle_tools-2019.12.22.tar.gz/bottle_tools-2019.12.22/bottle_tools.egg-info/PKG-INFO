@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: bottle-tools
+Version: 2019.12.22
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Arjoonn Sharma
+License: UNKNOWN
+Project-URL: Source, https://github.com/thesage21/bottle_tools
+Description: Bottle-Tools
+        ============
+        
+        A set of tools to make things easier to work with when using Bottle.
+        [Full Documentation](https://bottle-tools.readthedocs.io/en/latest/)
+        
+        
+        Autofill APIs with typed information
+        
+        ```python
+        
+        import bottle_tools as bt
+        
+        bt.common_kwargs.update({"User": UserTable})
+        
+        @app.post('/calculate')
+        @bt.fill_args(coerce_types=True)
+        def login(usrname: str, pwd: str, User):
+            user = User.get_or_404(usrname=usrname)
+            if not user.password_is_correct(pwd):
+                raise HttpNotFound()
+            return 'ok'
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
