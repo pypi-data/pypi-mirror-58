@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: telegram-task-bot
+Version: 0.0.3
+Summary: rpi-radio-alarm library
+Home-page: https://github.com/bb4L/telegram-task-bot-pip
+Author: bb4L
+Author-email: 39266013+bb4L@users.noreply.github.com
+License: BSD-3
+Description: # telegram-task-bot
+        Telegrambot to ease the setup of recurring tasks.
+        
+        ## Usage
+        `pip install telegram-task-bot`
+        
+        ### `.env` Variables
+        1) `ALLOWED_USERS` specifies the users which are allowed, if `any`, every one is allowed to use the bot.
+        1) `BOT_TOKEN` the token of the bot.
+        
+Keywords: Telegram,Bot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
