@@ -1,0 +1,12 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscrapper/scrapper.py,sha256=1QiT630Wa4QFv6prNjtref6iyty0Zr6-Sidhd4SyO-8,8595
+pyscrapper/utilities.py,sha256=HFgYJDATEc3ExYuEtC-vLBLQASF6TiBS7JyTYjv0iaI,4281
+pyscrapper/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscrapper/resources/phantomjs,sha256=T2PmBVwyO4ZX8KVG1N02r9pc1Olhw3XzG0jVBqfEKW8,67932064
+pyscrapper/resources/resource_manager.py,sha256=hUzfcf0sqvzTGqxleJT74FPMw3JSTVSjR6HcfJs7tns,247
+pyscrapper-0.1.1.dist-info/LICENSE,sha256=1RunP6VbgdGqv875f02WeNjK5Hy1VXwNKKgewhZb8vc,1076
+pyscrapper-0.1.1.dist-info/METADATA,sha256=KzvODPFxRgCuqYejT43jYclAR3b9P_umoSYe1yq_Nwo,3411
+pyscrapper-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyscrapper-0.1.1.dist-info/top_level.txt,sha256=4DwQmYBBU9eW5bsalFVsLDczT4OegPb-5-Pn6RkkdDk,11
+pyscrapper-0.1.1.dist-info/RECORD,,
