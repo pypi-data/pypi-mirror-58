@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: robotframework-secretslibrary
+Version: 0.1.0
+Summary: Robot framework test library to manage secrets
+Home-page: https://github.com/mpstella/robotframework-secrets-library
+Author: Mark Stella
+Author-email: mark.p.stella@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: robotframework (>=3.1.2)
+Requires-Dist: cryptography (>=2.7)
+
+
+SecretsLibrary
+================
+A Robot Framework library to help with secrets management
+
+
