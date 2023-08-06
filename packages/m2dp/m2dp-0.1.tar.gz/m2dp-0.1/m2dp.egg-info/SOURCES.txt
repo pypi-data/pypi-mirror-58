@@ -1,0 +1,8 @@
+README.md
+setup.py
+m2dp/M2DP.py
+m2dp/__init__.py
+m2dp.egg-info/PKG-INFO
+m2dp.egg-info/SOURCES.txt
+m2dp.egg-info/dependency_links.txt
+m2dp.egg-info/top_level.txt
