@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rbcde/__init__.py
+rbcde/matrix.py
+rbcde.egg-info/PKG-INFO
+rbcde.egg-info/SOURCES.txt
+rbcde.egg-info/dependency_links.txt
+rbcde.egg-info/requires.txt
+rbcde.egg-info/top_level.txt
