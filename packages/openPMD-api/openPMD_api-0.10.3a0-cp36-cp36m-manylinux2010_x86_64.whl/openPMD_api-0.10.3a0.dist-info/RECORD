@@ -1,0 +1,7 @@
+libopenPMD.ADIOS1.Serial.so,sha256=QebnrBsIJ9G2l2Y-3P_uN55SAcD90WztpavrQAedw7c,2112352
+libopenPMD.ADIOS1.Parallel.so,sha256=jy-mJvFnmDwWRrFJl2hyA7nx7IhMWavrD5NcpZuU7U4,140784
+openpmd_api.cpython-36m-x86_64-linux-gnu.so,sha256=N9bbKf_N5Zy3nkD-nwy72ED_lEmRLFPTxvES-OfbFss,13913376
+openPMD_api-0.10.3a0.dist-info/METADATA,sha256=e7Y2mCKXS1YgHTO-9vnrtbeyEdkIrqCIM8YeQh3uVEk,20841
+openPMD_api-0.10.3a0.dist-info/top_level.txt,sha256=AAvO0LhABvBBr9hAQoqmr5xKjuQbMxi_su-wyuVs0nM,12
+openPMD_api-0.10.3a0.dist-info/WHEEL,sha256=6qsdB1jNczZt0uWpsegNTq1KITMHdnt6wZgsGus-kwY,112
+openPMD_api-0.10.3a0.dist-info/RECORD,,
