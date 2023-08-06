@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+coelho/__init__.py
+coelho/ampq.py
+coelho/message_rpc.py
+coelho.egg-info/PKG-INFO
+coelho.egg-info/SOURCES.txt
+coelho.egg-info/dependency_links.txt
+coelho.egg-info/requires.txt
+coelho.egg-info/top_level.txt
+tests/__init__.py
+tests/ampq_test.py
+tests/runtests.py
