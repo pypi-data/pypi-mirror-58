@@ -1,0 +1,10 @@
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+lzb_distributions.egg-info/PKG-INFO
+lzb_distributions.egg-info/SOURCES.txt
+lzb_distributions.egg-info/dependency_links.txt
+lzb_distributions.egg-info/not-zip-safe
+lzb_distributions.egg-info/top_level.txt
