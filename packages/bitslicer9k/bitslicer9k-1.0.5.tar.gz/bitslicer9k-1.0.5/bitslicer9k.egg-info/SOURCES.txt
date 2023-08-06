@@ -1,0 +1,8 @@
+README.md
+setup.py
+bitslicer9k/__init__.py
+bitslicer9k/bitslicer9k.py
+bitslicer9k.egg-info/PKG-INFO
+bitslicer9k.egg-info/SOURCES.txt
+bitslicer9k.egg-info/dependency_links.txt
+bitslicer9k.egg-info/top_level.txt
