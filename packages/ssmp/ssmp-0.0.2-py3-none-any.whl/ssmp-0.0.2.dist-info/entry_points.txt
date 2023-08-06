@@ -1,0 +1,3 @@
+[console_scripts]
+ssmp = ssmp.main:ssm
+
