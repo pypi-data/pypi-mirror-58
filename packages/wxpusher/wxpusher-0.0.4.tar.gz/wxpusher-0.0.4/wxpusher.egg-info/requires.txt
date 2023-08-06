@@ -1,0 +1,10 @@
+requests
+
+[dev]
+pycodestyle
+pyflakes
+pylint
+
+[test]
+coverage
+nose
