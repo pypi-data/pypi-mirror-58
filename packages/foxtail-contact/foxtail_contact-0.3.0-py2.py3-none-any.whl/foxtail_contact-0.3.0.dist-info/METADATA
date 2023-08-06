@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: foxtail-contact
+Version: 0.3.0
+Summary: A simple contact form for Django 
+Home-page: https://github.com/dmptrluke/foxtail-contact
+License: UNKNOWN
+Author: Luke Rogers
+Author-email: luke@dmptr.com
+Requires-Python: >-3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: django>=2.2
+Requires-Dist: django-mail-templated-simple
+Requires-Dist: django-crispy-forms
+Requires-Dist: django-recaptcha
+Requires-Dist: django-csp-helpers>=0.3
+
+# foxtail-contact  [![PyPI](https://img.shields.io/pypi/v/foxtail-contact)](https://pypi.org/project/foxtail-contact/)
+A simple, reusable Django contact form application.
+
