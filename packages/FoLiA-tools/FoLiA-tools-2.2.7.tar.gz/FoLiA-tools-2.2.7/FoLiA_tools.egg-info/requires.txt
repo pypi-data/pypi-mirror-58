@@ -1,0 +1,6 @@
+folia>=2.2.3
+lxml>=2.2
+docutils
+pyyaml
+langid
+conllu
