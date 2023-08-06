@@ -1,0 +1,17 @@
+ssd_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssd_project/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssd_project/functions/detection.py,sha256=XlAu2zY08MnL7lfq-sU08hwDHwYCNBaHHWCw8xzuagQ,11086
+ssd_project/functions/multiboxloss.py,sha256=7pyBD20bL42SOGgJmkbdG_1wlb9yqELiIq6DOAa9Lek,6403
+ssd_project/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssd_project/model/ssd.py,sha256=kr-z5A35dG5F2-oEF1dycc5m2KDITa7jPIcx1sRATd0,11722
+ssd_project/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssd_project/utils/global_variables.py,sha256=5q_feeRfr8pTzvtkirBzqHDZoe62azSBUZNRncNg3aI,929
+ssd_project/utils/helpers.py,sha256=4wcjMCTtwaDARvfvHGCRzXPsa3HWp2HqKncLhLckP5M,4509
+ssd_project/utils/metrics.py,sha256=QF0AFNOC10BINS_gbZxeUbqDv_TB5ywnyhPFkxfRyVM,7644
+ssd_project/utils/transformations.py,sha256=LIvFuUUhaQRiCPFb0VpcmiHTVLjfLCIxUSDigvGX7BY,9955
+ssd_project/utils/utils.py,sha256=jPfrKu1xkskxGJ1pEY7oknSmmb1OJspj8EewFbw8z2M,4555
+ssd_project-1.0.dist-info/LICENSE,sha256=9lbu8xrSOt-vTQbCQGW_woZXRfWKC81fFUvLy0gM6Go,1072
+ssd_project-1.0.dist-info/METADATA,sha256=6D2GWIfqHQGmKR5MCM_I_exN-cqRWgEAnY9ou98lmpg,2931
+ssd_project-1.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+ssd_project-1.0.dist-info/top_level.txt,sha256=V_Ao0xy9c8XTNzKZCzmmtFB9MIWjix6dHcB5IzedBqA,12
+ssd_project-1.0.dist-info/RECORD,,
