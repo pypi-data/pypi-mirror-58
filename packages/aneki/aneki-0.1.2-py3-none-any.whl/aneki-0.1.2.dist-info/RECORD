@@ -1,0 +1,9 @@
+aneki/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aneki/main.py,sha256=PbqOWa-4zIIckum2LcK_rCzy7ImKoaHKoFZNoxB5Iuc,868
+aneki/parsers.py,sha256=R5LvIcvO9pvQyd5Lk1Ns4PqHZm8OtShfJReCdIGWc_s,6842
+aneki/shytok_net.cert,sha256=BnsuGJQjPReS0Xs6TUOF6bW7COMUDcPy4j6v5yZmP70,6648
+aneki-0.1.2.dist-info/METADATA,sha256=NwBxkL2bnd4Mo1sjc1TfeswcM27HFLzsAfrMFYgc_M8,1064
+aneki-0.1.2.dist-info/RECORD,,
+aneki-0.1.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aneki-0.1.2.dist-info/entry_points.txt,sha256=5J2VhYkJsf4bN3IW17Gs3j9jwxFP4-5xH-ZWsAuQinA,43
+aneki-0.1.2.dist-info/top_level.txt,sha256=6jzpnV_imIGmnHeBzeowWdUYdn3z0-M1TtCoruGrWjw,6
