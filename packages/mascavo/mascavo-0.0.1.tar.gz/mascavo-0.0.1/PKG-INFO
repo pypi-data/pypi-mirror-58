@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: mascavo
+Version: 0.0.1
+Summary: mascavo
+Home-page: https://github.com/jonatasrenan/mascavo
+Author: Jônatas Renan Camilo Alves
+Author-email: jonatasrenan@gmail.com
+License: UNKNOWN
+Description: # mascavo
+        Mascavo is a utility library focused on simplifying tasks for users unfamiliar 
+        with programming.
+        
+Keywords: Mascavo library
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
