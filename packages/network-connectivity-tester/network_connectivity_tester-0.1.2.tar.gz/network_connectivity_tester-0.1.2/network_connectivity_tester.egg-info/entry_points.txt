@@ -1,0 +1,3 @@
+[console_scripts]
+network-connectivity-tester-aws-client = network_connectivity_tester.cli.awsclient:main
+
