@@ -1,0 +1,11 @@
+kerasadf/__init__.py,sha256=-1mBi466mQW277x_URAH9TWFrdg338eBi8YT0diPSDU,968
+kerasadf/activations.py,sha256=HlopB-ywkUxiG0rXByn9c_ULxtZ0JWRDV5yG34Q3nuQ,6936
+kerasadf/layers/__init__.py,sha256=SSYZTX57POJN07EfUNnfd0jUKMWDEXUDNE4-NrrB5ak,811
+kerasadf/layers/convolutional.py,sha256=FtxqKPJEWa-JUZufbYx4PSlKesfAtB9S06Pq9Mg_mls,26700
+kerasadf/layers/core.py,sha256=ogFMarRxa2ATLZet5xT2W2qbUTQ6ZMrISwG90INc26I,17912
+kerasadf/layers/pooling.py,sha256=KX1PRNFMFUHrXmqjpETofVH2BnI0g5opXd4i3DUEgv0,33837
+keras_adf-19.1.0.dist-info/LICENSE,sha256=ApvPrA5VCo_36cLJv6OxNnFLosG7erCvBnHmPBORecc,1063
+keras_adf-19.1.0.dist-info/METADATA,sha256=afz4NvWet-7XQWEqIifI9QN9nKmcyi2bj55-OYhUy5w,6158
+keras_adf-19.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+keras_adf-19.1.0.dist-info/top_level.txt,sha256=mbgnbBcZ0veNc-M7ooIfeMy4RMazPqx6-FTbxsNzOPY,9
+keras_adf-19.1.0.dist-info/RECORD,,
