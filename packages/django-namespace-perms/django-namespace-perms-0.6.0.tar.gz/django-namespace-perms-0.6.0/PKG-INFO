@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: django-namespace-perms
+Version: 0.6.0
+Summary: granular permissions for django
+Home-page: https://github.com/20c/django-namespace-perms
+Author: 20C
+Author-email: code@20c.com
+License: LICENSE.txt
+Download-URL: https://github.com/20c/django-namespace-perms/0.6.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
