@@ -1,0 +1,11 @@
+fastscript/__init__.py,sha256=4CJtRRssYt_12aHq_TwpLiI_oQM5LVnL--Z4UTtQZIo,43
+fastscript/_nbdev.py,sha256=R0yCMFk5khp_w6wYtyyj9pYq89LTm0rXLOp3R18ngfI,477
+fastscript/core.py,sha256=vrhaW5zGNd00wplFpbcQrvHyrg1840hpOuqrOq6A2So,2788
+fastscript/fastscript.py,sha256=BOi4xaOXROLeOjCQel7rg0ZJwXS83_RjeZo3boDphMM,1819
+fastscript/test_cli.py,sha256=sXRlEfQFUHyERb0AfOz61x-VK5zClAy7CqL1MvEIdCc,179
+fastscript-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastscript-0.1.4.dist-info/METADATA,sha256=GDMT38phxEUBGf-uuzd8T9V_6F0FZrZFCMtMbd3wIlY,5614
+fastscript-0.1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fastscript-0.1.4.dist-info/entry_points.txt,sha256=QzSL7lal_EaI8Ng40fEzjBYlwAgqxvgYoixu2Gm40Zg,62
+fastscript-0.1.4.dist-info/top_level.txt,sha256=i51fOgYsht2mhgxDiJI4D1QrW3ByoCgI7yUwrFHCdHA,11
+fastscript-0.1.4.dist-info/RECORD,,
