@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pyviz3d
+Version: 0.1.2
+Summary: PyViz3D is a Python package to visualize 3D point clouds.
+Home-page: https://github.com/francisengelmann/pyviz3d
+Author: Francis Engelmann
+Author-email: francis.engelmann@gmail.com
+License: MIT
+Download-URL: https://github.com/francisengelmann/pyviz3d/archive/0.1.2.tar.gz
+Description: PyViz3D is a Python package to visualize 3D point clouds.
+Platform: UNKNOWN
