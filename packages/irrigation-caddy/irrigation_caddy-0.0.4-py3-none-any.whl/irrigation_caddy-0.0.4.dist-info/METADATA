@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: irrigation-caddy
+Version: 0.0.4
+Summary: Irrigation Caddy Control
+Home-page: https://github.com/sampscl/irrigation_caddy
+Author: Clay Sampson
+Author-email: pdgeek@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Irrigation Caddy
+Dynamically control irrigation caddy devices. ICETHS1 has been tested to work,
+the IC-W1 should work as well but is untested.
+
+
