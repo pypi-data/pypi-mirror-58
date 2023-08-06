@@ -1,0 +1,10 @@
+README.md
+setup.py
+finbert_embedding/__init__.py
+finbert_embedding/downloader.py
+finbert_embedding/finbert_embedding.py
+finbert_embedding.egg-info/PKG-INFO
+finbert_embedding.egg-info/SOURCES.txt
+finbert_embedding.egg-info/dependency_links.txt
+finbert_embedding.egg-info/requires.txt
+finbert_embedding.egg-info/top_level.txt
