@@ -1,0 +1,15 @@
+disk/Box.py,sha256=mn_DACwV3rZkCDnPnaUpXfBJn2DN5CobD01M2M88iFs,2558
+disk/Buffer.py,sha256=y_lfB8j2ljux7sis8BNuONOWR5A9aXT2xHE7wprxy1g,1514
+disk/Cache.py,sha256=iXJBNT4SrTIiu_gbCmxA4HzcwWnNbQbBvlwnpzbL970,6812
+disk/HardFolder.py,sha256=RvSG13v2pyraW0kWXiD9ez-ueflaH1sqBX1s-71h7ck,5554
+disk/NestedBoxes.py,sha256=YQl1WXofHT-MPaWq-0G97C1Prhtum1f884aa30cv3FQ,842
+disk/Path.py,sha256=pyDytMlC8lObHgz5QIE4s4E5JuHdr7YLLezG6eMp5Wg,10410
+disk/__init__.py,sha256=b838as5lWXGkcMbGi-nCgypLonfj0-QjB0i4F2Ui_QA,273
+disk/individual_functions.py,sha256=kij0jqp0gXfJHIszP1e7UYtR1qj6OPQiCUlb54wQUs0,1548
+disk/pickle_function.py,sha256=h6aHySlh9w1Yg5WFgy0NVkgV1tPfU5tdss76Yy41ndY,1238
+disk/zip.py,sha256=4O9zaTF9Sy5SZ-MR5Ml56LY03xFev9w9d3WoKtHH5t0,1082
+disk-2019.12.29.3.dist-info/LICENSE,sha256=uww8wNRuFn46-WFLqnEjAtt1-_uantZ-19scpxlh1dw,1064
+disk-2019.12.29.3.dist-info/METADATA,sha256=W-3kfUiMc7aayl_ukeaqm1KVSNVgTWobNkzwaDN4IOM,3578
+disk-2019.12.29.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+disk-2019.12.29.3.dist-info/top_level.txt,sha256=5K-hRrbKyEEHE0xpoSyTuYPUoJ1fYo8yXRGqc0eo6JU,5
+disk-2019.12.29.3.dist-info/RECORD,,
