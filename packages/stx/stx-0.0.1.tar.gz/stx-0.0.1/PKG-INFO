@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: stx
+Version: 0.0.1
+Summary: Simple markup language for creating documents
+Home-page: https://github.com/bakasoft/stx
+Author: Sergio Pedraza
+Author-email: sergio.uriel.ph@gmail.com
+License: MIT
+Description: # STX
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

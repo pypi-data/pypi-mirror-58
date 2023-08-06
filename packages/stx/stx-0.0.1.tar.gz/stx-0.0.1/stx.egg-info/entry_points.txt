@@ -1,0 +1,3 @@
+[console_scripts]
+stx = stx.__main__:main
+
