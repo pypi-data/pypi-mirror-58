@@ -1,0 +1,6 @@
+backtrader
+bokeh~=1.4.0
+jinja2
+pandas
+matplotlib
+markdown2
