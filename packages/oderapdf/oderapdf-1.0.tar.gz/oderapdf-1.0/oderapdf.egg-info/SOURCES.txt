@@ -1,0 +1,9 @@
+README.md
+setup.py
+oderapdf/__init__.py
+oderapdf/pdf2image.py
+oderapdf/pdf2text.py
+oderapdf.egg-info/PKG-INFO
+oderapdf.egg-info/SOURCES.txt
+oderapdf.egg-info/dependency_links.txt
+oderapdf.egg-info/top_level.txt
