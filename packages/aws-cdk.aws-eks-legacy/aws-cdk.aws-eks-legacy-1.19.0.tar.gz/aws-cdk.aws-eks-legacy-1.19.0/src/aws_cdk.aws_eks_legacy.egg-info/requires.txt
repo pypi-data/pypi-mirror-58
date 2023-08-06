@@ -1,0 +1,9 @@
+jsii~=0.20.11
+publication>=0.0.3
+aws-cdk.aws-autoscaling>=1.19.0,~=1.19
+aws-cdk.aws-cloudformation>=1.19.0,~=1.19
+aws-cdk.aws-ec2>=1.19.0,~=1.19
+aws-cdk.aws-iam>=1.19.0,~=1.19
+aws-cdk.aws-lambda>=1.19.0,~=1.19
+aws-cdk.aws-ssm>=1.19.0,~=1.19
+aws-cdk.core>=1.19.0,~=1.19
