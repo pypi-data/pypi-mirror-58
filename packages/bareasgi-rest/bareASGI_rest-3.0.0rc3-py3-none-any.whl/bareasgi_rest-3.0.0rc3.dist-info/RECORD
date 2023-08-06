@@ -1,0 +1,11 @@
+bareasgi_rest/__init__.py,sha256=bw7eEDN1mH86X1j8QkfHP7QZJ8DZj_E91RdFf3Mtnn8,258
+bareasgi_rest/config.py,sha256=SHPaQBskYunC2f-563c0G6bIpas4jt6VCoZwcHm1Wio,1552
+bareasgi_rest/constants.py,sha256=8gCcIs-CODHQLtioxAP-JIPr4zeGHFTcyKxHECOjPP8,203
+bareasgi_rest/helpers.py,sha256=TmpDjlCiO55kh2XjyfZ2QdN1_9rzoemmlnggI6L-bVo,556
+bareasgi_rest/rest_router.py,sha256=piTgrprVd4sR6FbMYev_80_2pIDWMBkdIqXM3JV2UsU,12460
+bareasgi_rest/swagger.py,sha256=jiq5RjQZMXf6a0sOCJ3gi9kazQ1VRn0VAhkYnQe_3mY,11227
+bareasgi_rest/templates/swagger.html,sha256=GHv5T9DEBYaSfRadble7EDJcUnev9auQd5QDFTDq5dU,4487
+bareasgi_rest/utils.py,sha256=lmgcwGwTtUFFOgTV_46ZFJ2FzYQNif21hH55twwSEkc,8290
+bareasgi_rest-3.0.0rc3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+bareasgi_rest-3.0.0rc3.dist-info/METADATA,sha256=A3rzkkcVf61jAE0QHn992cfZZO8wDQLdsoAL_SFgwdA,6389
+bareasgi_rest-3.0.0rc3.dist-info/RECORD,,
