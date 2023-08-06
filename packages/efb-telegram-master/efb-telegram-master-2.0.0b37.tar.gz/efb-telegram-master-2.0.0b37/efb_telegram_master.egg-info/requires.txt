@@ -1,0 +1,17 @@
+ehforwarderbot>=2.0.0b24
+python-telegram-bot>=12.1.0
+python-magic
+moviepy
+peewee
+requests
+pydub
+ruamel.yaml
+pillow
+language-tags
+retrying
+bullet
+cjkwrap
+humanize
+tgs
+typing-extensions>=3.7.4.1
+cairosvg
