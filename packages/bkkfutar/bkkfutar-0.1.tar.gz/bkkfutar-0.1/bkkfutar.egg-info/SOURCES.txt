@@ -1,0 +1,8 @@
+README.md
+setup.py
+bkkfutar.egg-info/PKG-INFO
+bkkfutar.egg-info/SOURCES.txt
+bkkfutar.egg-info/dependency_links.txt
+bkkfutar.egg-info/requires.txt
+bkkfutar.egg-info/top_level.txt
+futar/__init__.py
