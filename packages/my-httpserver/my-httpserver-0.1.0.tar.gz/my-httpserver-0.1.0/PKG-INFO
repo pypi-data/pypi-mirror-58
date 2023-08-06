@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: my-httpserver
+Version: 0.1.0
+Summary: my python httpserver.
+Home-page: https://github.com/yahaa/httpserver
+Author: yahaa
+Author-email: yuanzihua0@gmail.com
+License: MIT
+Description: 
+        ### httpserver
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
