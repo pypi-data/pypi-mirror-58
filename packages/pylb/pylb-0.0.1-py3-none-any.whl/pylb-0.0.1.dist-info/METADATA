@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: pylb
+Version: 0.0.1
+Summary: This is a library loading tool that supports relative reference and conflict detection.
+Home-page: https://github.com/not_exists_yet
+Author: g_tiger
+Author-email: g.tiger.ml@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+
+This is a library loading tool that supports relative reference and conflict detection.
+
+
