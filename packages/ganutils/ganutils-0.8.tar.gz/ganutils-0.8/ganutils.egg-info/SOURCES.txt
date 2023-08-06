@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+ganutils/__init__.py
+ganutils.egg-info/PKG-INFO
+ganutils.egg-info/SOURCES.txt
+ganutils.egg-info/dependency_links.txt
+ganutils.egg-info/requires.txt
+ganutils.egg-info/top_level.txt
