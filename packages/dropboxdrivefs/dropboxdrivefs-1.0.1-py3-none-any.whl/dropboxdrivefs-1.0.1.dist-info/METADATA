@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dropboxdrivefs
+Version: 1.0.1
+Summary: Dropbox implementation for Intake module
+Home-page: UNKNOWN
+Author: Marine Chaput
+Author-email: marine.chaput@hotmail.fr
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Requires-Dist: fsspec
+Requires-Dist: requests
+Requires-Dist: dropbox
+
+UNKNOWN
+
+
