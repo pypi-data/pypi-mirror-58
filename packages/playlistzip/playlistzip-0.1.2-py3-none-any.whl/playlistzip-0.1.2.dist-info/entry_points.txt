@@ -1,0 +1,3 @@
+[console_scripts]
+plz=playlistzip.cli:main
+
