@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>poplar_isocc.tests.extest_poplar_isocc &mdash; poplar_isocc 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> poplar_isocc
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../src/poplar_isocc.html">poplar_isocc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../src/tests.html">Testing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">poplar_isocc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../../poplar_isocc.html">poplar_isocc</a> &raquo;</li>
+        
+      <li>poplar_isocc.tests.extest_poplar_isocc</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for poplar_isocc.tests.extest_poplar_isocc</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Extender unit and acceptance tests for the POISOCC module.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">extools.extest</span> <span class="k">import</span> <span class="n">ExTestCase</span>
+<span class="kn">from</span> <span class="nn">extools.exview</span> <span class="k">import</span> <span class="n">exview</span>
+
+<span class="n">VALID_CC_CUSTID</span> <span class="o">=</span> <span class="s2">&quot;1400&quot;</span>
+<span class="sd">&quot;&quot;&quot;Customer in SAMINC with valid ISO-3166 code.&quot;&quot;&quot;</span>
+
+<span class="n">INVALID_CC_CUSTID</span> <span class="o">=</span> <span class="s2">&quot;1200&quot;</span>
+<span class="sd">&quot;&quot;&quot;Customer in SAMINC with invalid ISO-3166 code.&quot;&quot;&quot;</span>
+
+<span class="n">EMPTY_CC_CUSTID</span> <span class="o">=</span> <span class="s2">&quot;1210&quot;</span>
+<span class="sd">&quot;&quot;&quot;Customer in SAMINC with empty ISO-3166 code.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="IsoCountryCodeTestCase"><a class="viewcode-back" href="../../../src/tests.html#poplar_isocc.tests.extest_poplar_isocc.IsoCountryCodeTestCase">[docs]</a><span class="k">class</span> <span class="nc">IsoCountryCodeTestCase</span><span class="p">(</span><span class="n">ExTestCase</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Unit tests for ISO country code validation.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="IsoCountryCodeTestCase.test_is_valid_iso_cc"><a class="viewcode-back" href="../../../src/tests.html#poplar_isocc.tests.extest_poplar_isocc.IsoCountryCodeTestCase.test_is_valid_iso_cc">[docs]</a>    <span class="k">def</span> <span class="nf">test_is_valid_iso_cc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Passes iff the validation works for a valid, invalid and empty</span>
+<span class="sd">        country code in SAMINC.</span>
+
+<span class="sd">        1. Open a record with a valid country code, verify it validates.</span>
+<span class="sd">        2. Open a record with an invalid country code, verify validation fails.</span>
+<span class="sd">        3. Open a record with an empty country code, verify validation fails.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">with</span> <span class="n">exview</span><span class="p">(</span><span class="n">AR_CUSTOMER_VIEW</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                    <span class="n">seek_to</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;CUSTID&#39;</span><span class="p">:</span> <span class="n">VALID_CC_CUSTID</span><span class="p">})</span> <span class="k">as</span> <span class="n">exv</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assert_true</span><span class="p">(</span><span class="n">is_valid_iso_cc</span><span class="p">(</span><span class="n">exv</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CODECTRY&quot;</span><span class="p">)))</span>
+
+        <span class="k">with</span> <span class="n">exview</span><span class="p">(</span><span class="n">AR_CUSTOMER_VIEW</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                    <span class="n">seek_to</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;CUSTID&#39;</span><span class="p">:</span> <span class="n">INVALID_CC_CUSTID</span><span class="p">})</span> <span class="k">as</span> <span class="n">exv</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assert_true</span><span class="p">(</span><span class="ow">not</span> <span class="n">is_valid_iso_cc</span><span class="p">(</span><span class="n">exv</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CODECTRY&quot;</span><span class="p">)))</span>
+
+        <span class="k">with</span> <span class="n">exview</span><span class="p">(</span><span class="n">AR_CUSTOMER_VIEW</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                    <span class="n">seek_to</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;CUSTID&#39;</span><span class="p">:</span> <span class="n">EMPTY_CC_CUSTID</span><span class="p">})</span> <span class="k">as</span> <span class="n">exv</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assert_true</span><span class="p">(</span><span class="ow">not</span> <span class="n">is_valid_iso_cc</span><span class="p">(</span><span class="n">exv</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CODECTRY&quot;</span><span class="p">)))</span></div></div>
+
+<div class="viewcode-block" id="IsoCountryCodeAcceptanceTestCase"><a class="viewcode-back" href="../../../src/tests.html#poplar_isocc.tests.extest_poplar_isocc.IsoCountryCodeAcceptanceTestCase">[docs]</a><span class="k">class</span> <span class="nc">IsoCountryCodeAcceptanceTestCase</span><span class="p">(</span><span class="n">ExTestCase</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Acceptance tests for ISO country code validation.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="IsoCountryCodeAcceptanceTestCase.test_is_valid_iso_enforced_in_view"><a class="viewcode-back" href="../../../src/tests.html#poplar_isocc.tests.extest_poplar_isocc.IsoCountryCodeAcceptanceTestCase.test_is_valid_iso_enforced_in_view">[docs]</a>    <span class="k">def</span> <span class="nf">test_is_valid_iso_enforced_in_view</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Verify that a ISO code validation is enforced at the view.</span>
+
+<span class="sd">        1. Navigate to a record with an empty country code.</span>
+<span class="sd">        2. Put an invalid country code in the field (raises ExViewError).</span>
+<span class="sd">        3. Put a valid country code in the field (succeeds).</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">invalid_code</span> <span class="o">=</span> <span class="s2">&quot;ZZ&quot;</span>
+        <span class="n">valid_code</span> <span class="o">=</span> <span class="s2">&quot;CA&quot;</span>
+
+        <span class="k">with</span> <span class="n">exview</span><span class="p">(</span><span class="n">AR_CUSTOMER_VIEW</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+                    <span class="n">seek_to</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;CUSTID&#39;</span><span class="p">:</span><span class="n">EMPTY_CC_CUSTID</span><span class="p">})</span> <span class="k">as</span> <span class="n">exv</span><span class="p">:</span>
+
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assert_raises</span><span class="p">(</span><span class="n">ExViewError</span><span class="p">):</span>
+                <span class="n">exv</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;CODECTRY&quot;</span><span class="p">,</span> <span class="n">invalid_code</span><span class="p">)</span>
+
+            <span class="n">exv</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;CODECTRY&quot;</span><span class="p">,</span> <span class="n">valid_code</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, 2665093 Ontario Inc.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
