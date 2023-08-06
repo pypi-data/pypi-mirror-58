@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: flask-themer
+Version: 1.0.0
+Summary: Simple theme mechanism for Flask
+Home-page: https://github.com/tktech/flask-themer
+Author: Tyler Kennedy
+Author-email: tk@tkte.ch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
