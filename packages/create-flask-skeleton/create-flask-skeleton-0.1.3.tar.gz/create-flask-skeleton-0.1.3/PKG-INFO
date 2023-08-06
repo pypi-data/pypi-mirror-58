@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: create-flask-skeleton
+Version: 0.1.3
+Summary: Quick bootstrap A Flask Project
+Home-page: https://github.com/moonshadow/create-flask-skeleton/
+License: MIT
+Author: Ryan Wang
+Author-email: hwwangwang@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Project-URL: Documentation, https://github.com/moonshadow/create-flask-skeleton/
+Project-URL: Repository, https://github.com/moonshadow/create-flask-skeleton/
+Description-Content-Type: text/markdown
+
+# create-flask-skeleton
+
+Quick bootstrap A new flask project.
+
+- 🔥 Minimal boilerplate
+- 🐍 Modern Python Toolchain (Black, Flake8, Mypy, Pytest)
+- 🎗 CORS support on the fly
+- 🔧 Basic JWT auth with different audience
+- 💽 Data Validation by Volupulous
+
+
+## Only python3.7 and above are supported.
+
+## Install
+
+    pip3 install create-flask-skeleton
+
+## Quick start a flask project
+
+    create-flask-skeleton yourappname
+
+
+
