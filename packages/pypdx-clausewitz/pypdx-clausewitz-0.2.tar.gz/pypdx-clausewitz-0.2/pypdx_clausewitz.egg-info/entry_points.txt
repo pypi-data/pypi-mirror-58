@@ -1,0 +1,4 @@
+[console_scripts]
+pdx-jsonify = clausewitz.parse:parse_cmd
+tokenize-prepare = clausewitz.util.tokenize:prepare_cmd
+
