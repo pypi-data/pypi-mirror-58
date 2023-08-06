@@ -1,0 +1,27 @@
+project: your_project
+region: your_default_region
+
+allow-invoke:
+  - user:your_user@domain.com
+  - group:your_group@domain.com
+
+service1:
+  authenticated: 'false'
+  dir: apps/service1
+  image: gcr.io/${project}/service1:latest
+  concurrency: 30
+  links:
+  - service2
+
+service2:
+  dir: apps/service2
+  image: gcr.io/${project}/service2:latest
+  links:
+  - service3
+
+service3:
+  dir: apps/service3
+  image: gcr.io/${project}/service3:latest
+  cron:
+    schedule: 0 * * * *
+    http-method: get
