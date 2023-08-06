@@ -1,0 +1,15 @@
+LICENSE,sha256=ZYdgNc6JH2arXnsHd-359O8pVZzpknz3JYgpbF6o6ao,14978
+statsapiclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statsapiclient/box_score.py,sha256=NJrqP9Q01Vc8dZ7TAvuM5RsBQ8FWL9P2k4f_41LfWBk,200
+statsapiclient/constants.py,sha256=L0kxXzOKXx19gAL35W9A6BzNTcPCRwvAq0fQdPwLeng,522
+statsapiclient/game.py,sha256=l1iBHz3EH43QQbyvHlmQVigJgSQFY7STSmUH5KPrHjw,2393
+statsapiclient/line_score.py,sha256=CSnAE-5UwR9-g7ATseDDxjmhUVSa3KbWLvcwAWc0OPk,364
+statsapiclient/plays.py,sha256=rHHDyfWijYPRtKXgzCed1Yt-b1YAi0DvO8vtQ0Zh7Oc,2108
+statsapiclient/schedule.py,sha256=JfWaSgnhzoseNZaoXXwK5oH03Mkl005kYFEiesCN-vI,1009
+statsapiclient/summary.py,sha256=0WGeVCf1q3CdTP090l9cfgspwD9eJSbZ4bVrfD19CAY,1362
+statsapiclient/teams.py,sha256=3SuXnjxgwZRQs-LWXCGTQLnv9sweQMXcwyUr3-HwKk4,1614
+statsapiclient/utils.py,sha256=NVbXlsCvYp5G_fOuvFku5pjq34lLhJv-fTxVvVnk-Yc,1230
+statsapiclient-0.1.3.dist-info/LICENSE,sha256=ZYdgNc6JH2arXnsHd-359O8pVZzpknz3JYgpbF6o6ao,14978
+statsapiclient-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+statsapiclient-0.1.3.dist-info/METADATA,sha256=jqU8gixPcHUQaWqBfN4WapvMXFOzjB5WldcsfuI5z84,2161
+statsapiclient-0.1.3.dist-info/RECORD,,
