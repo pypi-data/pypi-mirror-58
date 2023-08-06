@@ -1,0 +1,7 @@
+orangecontrib
+orangecontrib.shadow
+orangecontrib.shadow.als
+orangecontrib.shadow.als.widgets
+orangecontrib.xoppy
+orangecontrib.xoppy.als
+orangecontrib.xoppy.als.widgets
