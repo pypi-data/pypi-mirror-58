@@ -1,0 +1,10 @@
+LICENSE,sha256=RWUdavRcZ0s53o-1lRPPAyyF7RUS7lf1I8xblQ-AUGY,1070
+pydrugshortagesca/__init__.py,sha256=Gj0X2HpxvJj3wHiZDyGDDeHXfc5f-clUYJYpkBiL_bs,70
+pydrugshortagesca/api.py,sha256=j-bST1TrD6ZyYxueXlHJ2Xdbksn1dEd4_SGhQEhhB6E,3866
+pydrugshortagesca/cli.py,sha256=vhFZgoT469lPA2lhpE9ZPFyw6jFXNC7G-tiRUnwbtXI,2753
+pydrugshortagesca/export.py,sha256=PhV_2506WknS9rILHaIsyyd5qCD1NMK8iS2MxbrHOck,2187
+pydrugshortagesca-0.1.1.dist-info/entry_points.txt,sha256=1oOXXQUzUlPYvyyaarb6MP7nhMrRiKBt2HXVsaETssY,63
+pydrugshortagesca-0.1.1.dist-info/LICENSE,sha256=RWUdavRcZ0s53o-1lRPPAyyF7RUS7lf1I8xblQ-AUGY,1070
+pydrugshortagesca-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydrugshortagesca-0.1.1.dist-info/METADATA,sha256=o3qPseVkUDiUG2EX8fAWybkAZALWxzMgpbksnTwbe_4,3264
+pydrugshortagesca-0.1.1.dist-info/RECORD,,
