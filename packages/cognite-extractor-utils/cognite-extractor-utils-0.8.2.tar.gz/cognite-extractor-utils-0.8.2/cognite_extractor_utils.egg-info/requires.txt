@@ -1,0 +1,4 @@
+cognite-sdk>=1.0.0
+typing
+prometheus-client
+arrow
