@@ -1,0 +1,8 @@
+pelican/plugins/pelican_cite/__init__.py,sha256=AFn3zDmqHzWt002hkWW1ln8vNfFn5rs_dk1dCcK3VrE,36
+pelican/plugins/pelican_cite/author_year.py,sha256=tjYYOT-mqQ87gkxHY3ZbHtLOlow681L1dfNXqurj_yo,6714
+pelican/plugins/pelican_cite/pelican_cite.py,sha256=dZdvHuTdV5g-7NGx-NjRiIv7xU-fBViqIJ-ZVpTT0Xg,6538
+pelican/plugins/pelican_cite/test_pelican_cite.py,sha256=K2a3GIfR08LM7mau4OkXHrrdYHrmu3GBTcufNVc84tc,470
+pelican_cite-0.1.0.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+pelican_cite-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pelican_cite-0.1.0.dist-info/METADATA,sha256=KyCs672jv499s7WHnuL4MdI4s6n9Qt8VGVtPF7YDcWs,2801
+pelican_cite-0.1.0.dist-info/RECORD,,
