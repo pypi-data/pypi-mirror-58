@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: graphlet_laplacian_counter
+Version: 0.34
+Summary: Wrapper C++ Graphlet Laplacian Counter
+Home-page: UNKNOWN
+Author: Sam F. L. Windels
+Author-email: sam.windels@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
