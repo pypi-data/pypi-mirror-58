@@ -1,0 +1,13 @@
+README.md
+setup.py
+jupyter_pyfilesystem/__init__.py
+jupyter_pyfilesystem/contents.py
+jupyter_pyfilesystem.egg-info/PKG-INFO
+jupyter_pyfilesystem.egg-info/SOURCES.txt
+jupyter_pyfilesystem.egg-info/dependency_links.txt
+jupyter_pyfilesystem.egg-info/requires.txt
+jupyter_pyfilesystem.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pyfilesystem.py
+tests/todo-test_hybrid_manager.py
+tests/utils.py
