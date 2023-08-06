@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: filenamelength
+Version: 0.1.0
+Summary: Admin options to work with the max length of the name of your files
+Home-page: https://too-many-files.sourceforge.io/
+Author: Turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Description: # filenamelength
+        Admin options to work with the max length of the name of your files
+        
+        # Changelong
+        ## 0.1.0
+        - Basic features
+Keywords: remove files datetime patterns
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-26 08:41+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "New Release:"
+msgstr ""
+
+msgid "  * Change version and date in version.py"
+msgstr ""
+
+msgid "  * Edit Changelog in README"
+msgstr ""
+
+msgid "If changed restart from first python setup.py doc"
+msgstr ""
+
+msgid "  * Make a new tag in github"
+msgstr ""
+
+msgid "  * Create a new gentoo ebuild with the new version"
+msgstr ""
+
+msgid "  * Upload to portage repository"
+msgstr ""
+
+msgid "Uninstall command only works in Linux"
+msgstr ""
+
+msgid "DESCRIPTION"
+msgstr ""
+
+msgid "Admin options to work with the max length of the name of your files"
+msgstr ""
+
+msgid "This app has the following mandatory parameters:"
+msgstr ""
+
+msgid "With --pretend and --remove you can use this parameters:"
+msgstr ""
+
+msgid "FilenameLength list"
+msgstr ""
+
+msgid "{} files found {}"
+msgstr ""
+
+msgid "Different examples have been created in the directory 'filenamelength_examples'"
+msgstr ""
+
+msgid "'filenamelength_examples' directory removed"
+msgstr ""
+
+msgid "I can't remove 'filenamelength_examples' directory"
+msgstr ""
+
+msgid "Minimum length for windows is 247"
+msgstr ""
+
+msgid "Developed by Mariano Muñoz 2019-{}"
+msgstr ""
+
+msgid "Create example directories"
+msgstr ""
+
+msgid "Remove example directories'"
+msgstr ""
+
+msgid "List files with a minimum length"
+msgstr ""
