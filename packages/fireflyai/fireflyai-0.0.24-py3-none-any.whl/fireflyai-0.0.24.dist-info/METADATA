@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: fireflyai
+Version: 0.0.24
+Summary: Python client for Firefly.ai API
+Home-page: UNKNOWN
+Author: Firefly.ai
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: boto3 (==1.10.39)
+Requires-Dist: requests (==2.20.0)
+
+# firefly-python-sdk
+Firefly.ai python SDK
+
+
