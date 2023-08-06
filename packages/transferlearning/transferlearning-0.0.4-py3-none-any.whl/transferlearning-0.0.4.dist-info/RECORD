@@ -1,0 +1,12 @@
+transferlearning/__init__.py,sha256=FbzTwjzZTgADCMitML39P0lbUURBWRMy-5YRXyHxqdM,45
+transferlearning/deep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transferlearning/nn/__init__.py,sha256=pG-YPVG0gJIJ6s4xcAz9S_CnUxpUcz33wl9eNUSgxGk,20
+transferlearning/nn/utils.py,sha256=1xJFhyIhD_lKoOdnCb4ZnhgiJIveh1G8zU4UqfASGE4,1761
+transferlearning/traditional/__init__.py,sha256=WmFb3H1zJkBHnFrugiVGQGJKHIBdI001kC_j61tCSjo,18
+transferlearning/traditional/jda.py,sha256=5cVgsHO3KSq0V4vUEluvGBS6WP1hLRAUfm6KCk8Ycmg,3999
+transferlearning-0.0.4.dist-info/DESCRIPTION.rst,sha256=yFE-KFaD2rtsSeVFpAdJFE-Z6ahGntB4C4ZMH1aTrV0,113
+transferlearning-0.0.4.dist-info/METADATA,sha256=Dd7V4Fah1Mr1KXgRQuATOICe_i3C4eaRST5rFXRJyic,576
+transferlearning-0.0.4.dist-info/RECORD,,
+transferlearning-0.0.4.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+transferlearning-0.0.4.dist-info/metadata.json,sha256=a0k3Rzi3ek0kJC4CQAeoJIqdC-9tFOqhCyvQyq1Hlvc,645
+transferlearning-0.0.4.dist-info/top_level.txt,sha256=aG6bDq0xmchCBZ4cnRn5IRI969iedLnQDuR8Tqvsgio,17
