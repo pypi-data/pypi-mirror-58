@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MyFirstPyPi-schauha
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/jhonti034/MyFirstPyPi
+Author: Shubham Chauhan
+Author-email: shubham.09.06.90@gmail.com
+License: UNKNOWN
+Description: MyFirstPyPi
+        My First PyPi package, Providing number of lines in a given text file Input- text file location output- number of lines
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
