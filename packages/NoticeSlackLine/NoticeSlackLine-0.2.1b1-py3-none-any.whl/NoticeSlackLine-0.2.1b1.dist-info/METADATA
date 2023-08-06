@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: NoticeSlackLine
+Version: 0.2.1b1
+Summary: Notice to Slack or LINE.
+Home-page: https://github.com/yoshida121/NoticeSlackLine
+Author: yoshida
+Author-email: yoshida.pypi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
