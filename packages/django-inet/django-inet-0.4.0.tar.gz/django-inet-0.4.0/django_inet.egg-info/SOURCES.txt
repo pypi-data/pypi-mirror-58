@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Ctl/VERSION
+Ctl/requirements-test.txt
+Ctl/requirements.txt
+django_inet/__init__.py
+django_inet/models.py
+django_inet/rest.py
+django_inet.egg-info/PKG-INFO
+django_inet.egg-info/SOURCES.txt
+django_inet.egg-info/dependency_links.txt
+django_inet.egg-info/requires.txt
+django_inet.egg-info/top_level.txt
+django_inet.egg-info/zip-safe
