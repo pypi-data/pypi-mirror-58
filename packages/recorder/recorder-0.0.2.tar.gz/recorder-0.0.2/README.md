@@ -1,0 +1,60 @@
+# recorder
+A simple audio recorder which is Based on PyAudio
+# Usage
+### install
+```
+pip install recorder
+```
+### get device info
+get all device info
+```python
+from recorder import Recorder
+r = Recorder()
+print(r.get_device_info())  
+```
+get specified device info
+```python
+from recorder import Recorder
+r = Recorder()
+print(r.get_device_info(index=0))  
+```
+### record
+record for 5 seconds and return the data as numpy array
+```python
+from recorder import Recorder
+r = Recorder()
+np_data = r.record(5)  
+print(np_data) 
+```
+
+record for 5 seconds and save the data to file `out.wav` 
+```python
+from recorder import Recorder
+r = Recorder()
+r.record(5, output='out.wav')  
+```
+
+### get wave data with queue
+get wave data from queue and print data
+```python
+from recorder import Recorder
+r = Recorder()
+q = r.get_wave_queue()
+while True:
+    print(q.get())
+```
+
+
+### play
+play a piece of sound
+```python
+from recorder import Recorder
+Recorder.play('out.wav')
+```
+### close
+close the recorder
+```python
+from recorder import Recorder
+r = Recorder()
+r.close()
+```
