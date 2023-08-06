@@ -1,0 +1,34 @@
+# binary (compiled) files
+*.o
+#*.mo
+*.py[co]
+
+# OSX specific junk
+.DS_Store
+
+# Windows specific junk
+[Dd]esktop.ini
+[Tt]humbs.db
+
+# editor files
+.vscode
+*.swp
+*.orig
+*~
+\#*
+.\#*
+
+# Old files and backup stuff
+*.old
+*.bak
+
+# virtual environment
+.venv
+
+# build
+/.eggs
+/.tox
+/build
+/dist
+/django_composite_field.egg-info
+/db.sqlite
