@@ -1,0 +1,13 @@
+osxphotos/__init__.py,sha256=D4BkzF--SDGEb89LO2kdmeVQ7TAYCp4Z-jJAl8zlhCU,682
+osxphotos/__main__.py,sha256=IRXW6qJPtLkfjfbD_ATA28sAk5kj2PG9KVcmecA3HhQ,27179
+osxphotos/_constants.py,sha256=bAj1w7Em86iVEoQMluXFmnaeP29CaQ96a9rFTIxZN6o,926
+osxphotos/_version.py,sha256=gAT68Nx4fQb7sq7iLoVL4EcH_o6EPJMT4yE7YQ7S5jE,46
+osxphotos/photoinfo.py,sha256=I_PPVBfPTxcsZ61wV1oLfRo14Oc7huS1OUEu3Lcs2YI,22397
+osxphotos/photosdb.py,sha256=CZJsETuh70IkU3RYI_bFzmw1dBXcQgOf1nlTcArReeM,51033
+osxphotos/utils.py,sha256=TMCbvRKAWTzTOTd8-blGqKI2AQfLOMArV4VUCdtLtnw,8426
+osxphotos-0.20.0.dist-info/LICENSE,sha256=BErJzcJjyzF1vsEVjmPeg9XKFHv_zFJM5BPnEP7K-f8,1070
+osxphotos-0.20.0.dist-info/METADATA,sha256=l2DoNxaxVZG9ydyNWb_OWm0WSIgl-TRY4KQODDcvHug,31867
+osxphotos-0.20.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+osxphotos-0.20.0.dist-info/entry_points.txt,sha256=PDBQ_n4uI189YLNdy9DiNksR719VXJTdRKl37z6FQTg,54
+osxphotos-0.20.0.dist-info/top_level.txt,sha256=qandbNCa2Gq-Q_PH8zqkKFbe_PMROhRzvmpHscUskCE,10
+osxphotos-0.20.0.dist-info/RECORD,,
