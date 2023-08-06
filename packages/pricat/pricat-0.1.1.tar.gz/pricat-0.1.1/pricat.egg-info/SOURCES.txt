@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pricat/__init__.py
+pricat/file.py
+pricat/list.py
+pricat.egg-info/PKG-INFO
+pricat.egg-info/SOURCES.txt
+pricat.egg-info/dependency_links.txt
+pricat.egg-info/requires.txt
+pricat.egg-info/top_level.txt
