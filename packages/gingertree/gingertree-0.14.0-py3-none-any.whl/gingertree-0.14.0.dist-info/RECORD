@@ -1,0 +1,11 @@
+ginger/__init__.py,sha256=EVkhkQ4Bbkx92jXuCmt2_JDjQExgnrq2d3eBQIP9UAo,23
+ginger/libginger.py,sha256=u6RKg6TDkRc5cYCHdy6g800Rb8zUN_3N6Dkli-klXr4,7126
+ginger/libtreebank.py,sha256=cgBS1j9T987axpHFZSMEp0amCbVnCaQFjJJfk-QTNXU,25584
+ginger/libtreerender.py,sha256=fpZYNKeQk96vKg2HkRJUq20VNdFrvuqHCuz5-sbL9CA,16896
+ginger/main.py,sha256=84jJUh-0vtWpfMU05C_0j6bRafgAeIghfCE-irmBnMk,7238
+gingertree-0.14.0.dist-info/LICENSE.md,sha256=06MCP6hv-3Wt8IWpkDiLZh7BaEBDgDPtjpW-rq0CTgU,1161
+gingertree-0.14.0.dist-info/METADATA,sha256=9_jhgfjWfdKuGFefEzUSjzcZlrv2zcIEb17PQNl6lcI,8844
+gingertree-0.14.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gingertree-0.14.0.dist-info/entry_points.txt,sha256=UmDzQz3UUZqF4pM063tPE5MbL-7uED4MpA_5qwTdm2I,57
+gingertree-0.14.0.dist-info/top_level.txt,sha256=JVoSzyIMV3cVdO3mzGiHZDpmpgu1VnfBE2kHyEki89A,7
+gingertree-0.14.0.dist-info/RECORD,,
