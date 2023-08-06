@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: ptrender
+Version: 0.0.3
+Summary: Conveniences for rendering text files from pyratemp templates and json or yaml var files
+Home-page: https://github.com/andydecleyre/ptrender
+Author: Andy Kluger
+Author-email: None
