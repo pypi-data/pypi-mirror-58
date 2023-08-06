@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sc4net
+Version: 0.1.2
+Summary: Shortcuts for user with requests and requests_ftp
+Home-page: https://github.com/kelsoncm/sc4
+Author: Kelson da Costa Medeiros
+Author-email: kelsoncm@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kelsoncm/pyatalhos/releases/tag/sc4net-v0.1.2
+Description: UNKNOWN
+Keywords: shortcuts,requests,requests_ftp
+Platform: UNKNOWN

@@ -1,0 +1,9 @@
+README
+setup.cfg
+setup.py
+sc4net/__init__.py
+sc4net.egg-info/PKG-INFO
+sc4net.egg-info/SOURCES.txt
+sc4net.egg-info/dependency_links.txt
+sc4net.egg-info/requires.txt
+sc4net.egg-info/top_level.txt
