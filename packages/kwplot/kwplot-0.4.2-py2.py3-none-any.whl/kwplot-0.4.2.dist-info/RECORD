@@ -1,0 +1,14 @@
+kwplot/__init__.py,sha256=cIkY7Z5FVFbAbqV6OEt5SebAJyAOjYBaoB8muJOENQ0,1329
+kwplot/auto_backends.py,sha256=zCFJzwG1H8hfIPoa1nguyXYV-7GYHsB3jRvGwtEvIjw,5112
+kwplot/draw_conv.py,sha256=XimWVOHkrTiTTSlc6VQIAs1YXojBc4HwcwHIBB99Vzc,12422
+kwplot/mpl_3d.py,sha256=C7jw_dE0CbTQVJhWMgvGx7-H-bnvO5mebaUboMROoEE,3424
+kwplot/mpl_color.py,sha256=B8Ga7gJ_OavXNxrKaLTqRX90-_EzQUU4RFFr_OkrTAI,4400
+kwplot/mpl_core.py,sha256=pwbuYMaBt4aXU74RY2Txk3mIEVP1KjSp-BfrNtNMqM0,21087
+kwplot/mpl_draw.py,sha256=eSWKg8PzNlfkOU-UVj5okgjAEls5vehF7Q2XfQUpBjg,8513
+kwplot/mpl_make.py,sha256=pomZllq6IYaEOVaveIpbl_r4rBBa-jma4p67lLzb7M8,7575
+kwplot/mpl_multiplot.py,sha256=Y4KbbSlb6t0gncCt1ii5UkSJ6y9os426B2jlFTdewfI,29328
+kwplot/mpl_plotnums.py,sha256=siyFF3bp733P3UaTlUfHfjE68sDbRpnMAFEmcGIuTaA,6224
+kwplot-0.4.2.dist-info/METADATA,sha256=G7ohGa9DXvlueP5jbVHJMfIS5hcKH7CnNKi_eoAFw9g,4126
+kwplot-0.4.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+kwplot-0.4.2.dist-info/top_level.txt,sha256=Rk-9ZyY0zItConZnOEDOJzbqL4x3DPGdARfSAwQ6s8A,7
+kwplot-0.4.2.dist-info/RECORD,,
