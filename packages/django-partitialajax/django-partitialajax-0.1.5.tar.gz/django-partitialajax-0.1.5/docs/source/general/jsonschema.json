@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "required": [
+    "content",
+    "options"
+  ],
+  "properties": {
+    "content": {
+      "$id": "#/properties/content",
+      "type": "object",
+      "properties": {
+        "#akhjlasdkg": {
+          "$id": "#/properties/content/properties/selector",
+          "type": "string",
+          "default": null,
+          "pattern": "\\#([a-z0-9]+)|\\.([a-z0-9]+)|(\\[([a-z0-9\\-]*)\\=\\\"(\\S+)\\\"\\])"
+        }
+      }
+    },
+    "options": {
+      "$id": "#/properties/options",
+      "type": "object",
+      "required": [
+        "reregister"
+      ],
+      "properties": {
+        "reregister": {
+          "$id": "#/properties/options/properties/reregister",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}
