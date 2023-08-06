@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+juliart/__init__.py
+juliart/client.py
+juliart/main.py
+juliart/namer.py
+juliart/version.py
+juliart.egg-info/PKG-INFO
+juliart.egg-info/SOURCES.txt
+juliart.egg-info/dependency_links.txt
+juliart.egg-info/entry_points.txt
+juliart.egg-info/not-zip-safe
+juliart.egg-info/requires.txt
+juliart.egg-info/top_level.txt
+juliart/__pycache__/namer.cpython-37.pyc
