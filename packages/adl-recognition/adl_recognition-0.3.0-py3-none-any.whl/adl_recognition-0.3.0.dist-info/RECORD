@@ -1,0 +1,14 @@
+adl_recognition/__init__.py,sha256=Ok1Qb8G2gNiTIadVaB0LTSV7wVyLzLfNjOJ2AOmauqM,1520
+adl_recognition/audio_data.py,sha256=Ue7RykjyJ-rabi6-XkWfBZ7apFZmZk5jP2Ww3yxNz7A,1303
+adl_recognition/depth_data.py,sha256=2aStKtkcSAnpYsY-x-MaExfAXPDqopSEVzNoAp4rXx8,1880
+adl_recognition/model.py,sha256=iPgC80Grzz2kqb5fQ1aRlf2x7pX5d37NmsqkZp41RdU,391
+adl_recognition/predict.py,sha256=ZhaftFAhPT7PWjZ-G8HfqiyYOh4_d7HhNbKuP09xGT0,3242
+adl_recognition/models/15_07_14_acc_92.h5,sha256=d6NldcWR7vN_uRpChO1uF2BjwEfz_iKetrSh75XYMLk,110067128
+adl_recognition/models/15_07_14_acc_92.json,sha256=Sp0nPe9sHe2gSSLjOHWDwVeans5nAhpOp7itMjSt_TY,10231
+adl_recognition/models/2019_09_27_02_56_29_2.h5,sha256=XyAPTiHnuBj36ItBXHg_TwipBgVdfjwfA-4Z-DuRryI,8738680
+adl_recognition/models/2019_09_27_02_56_29_2.json,sha256=CrTHTS1SUAE2_SJPST8kxebVp-btuXilTZhrvJB_zvI,23573
+adl_recognition-0.3.0.dist-info/LICENCE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+adl_recognition-0.3.0.dist-info/METADATA,sha256=U9GoXKJKof7wz8oN5A57jLUoY8dYcgtDEHq4vmsx73k,1461
+adl_recognition-0.3.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+adl_recognition-0.3.0.dist-info/top_level.txt,sha256=ZHnyt9UAiylXDScZ5PdICRxbOmy2NZX4jnfVrpOZtEk,16
+adl_recognition-0.3.0.dist-info/RECORD,,
