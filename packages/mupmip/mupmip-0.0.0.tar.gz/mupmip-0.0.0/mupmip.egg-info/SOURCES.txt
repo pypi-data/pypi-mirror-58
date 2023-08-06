@@ -1,0 +1,7 @@
+README.md
+setup.py
+mupmip/__init__.py
+mupmip.egg-info/PKG-INFO
+mupmip.egg-info/SOURCES.txt
+mupmip.egg-info/dependency_links.txt
+mupmip.egg-info/top_level.txt
