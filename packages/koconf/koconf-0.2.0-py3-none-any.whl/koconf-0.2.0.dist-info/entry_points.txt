@@ -1,0 +1,3 @@
+[console_scripts]
+koconf = koconf.cli:main
+

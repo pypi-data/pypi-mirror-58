@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: koconf
+Version: 0.2.0
+Summary: Korea IT conference manager with terminal
+Home-page: https://github.com/lntuition/koconf
+Author: Intuition
+Author-email: ekffu200098@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: beautifultable (>=0.8.0)
+Requires-Dist: colored (>=1.4.2)
+Requires-Dist: click (>=7.0)
+Requires-Dist: humanfriendly (>=4.18)
+Requires-Dist: python-crontab (>=2.4.0)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: tinydb (>=3.15.1)
+Requires-Dist: wcwidth (>=0.1.7)
+
+UNKNOWN
+
+
