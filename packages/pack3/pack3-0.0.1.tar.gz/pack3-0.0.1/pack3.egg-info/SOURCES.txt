@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pack3/__init__.py
+pack3/calculate.py
+pack3.egg-info/PKG-INFO
+pack3.egg-info/SOURCES.txt
+pack3.egg-info/dependency_links.txt
+pack3.egg-info/top_level.txt
