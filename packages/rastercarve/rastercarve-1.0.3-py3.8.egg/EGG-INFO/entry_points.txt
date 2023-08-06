@@ -1,0 +1,3 @@
+[console_scripts]
+rastercarve = rastercarve.__main__:main
+
