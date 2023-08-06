@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tornado_sqlalchemy_login
+Version: 0.1.0
+Summary: Simple Python Utilities
+Home-page: https://github.com/timkpaine/tornado_sqlalchemy_login
+Author: Tim Paine
+Author-email: timothy.k.paine@gmail.com
+License: Apache 2.0
+Description: # tornado_sqlalchemy_login
+        SQLAlchemy helpers doing login/logout/register in Tornado
+        
+Keywords: utilities for python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
