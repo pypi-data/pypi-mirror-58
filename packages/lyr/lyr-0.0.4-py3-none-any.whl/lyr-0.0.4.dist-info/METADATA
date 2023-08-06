@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lyr
+Version: 0.0.4
+Summary: lyrics providers
+Home-page: https://github.com/youkaclub/lyr
+Author-email: youka.club@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: requests (==2.21.0)
+
+# lyr
+
+lyrics providers.
+
