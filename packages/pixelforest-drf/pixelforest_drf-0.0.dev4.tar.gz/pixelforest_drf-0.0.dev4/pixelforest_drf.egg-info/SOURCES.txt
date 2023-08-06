@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+pixelforest_drf/__init__.py
+pixelforest_drf.egg-info/PKG-INFO
+pixelforest_drf.egg-info/SOURCES.txt
+pixelforest_drf.egg-info/dependency_links.txt
+pixelforest_drf.egg-info/top_level.txt
