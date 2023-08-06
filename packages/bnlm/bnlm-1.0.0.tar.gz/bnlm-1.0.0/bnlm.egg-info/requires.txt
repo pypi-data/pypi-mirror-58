@@ -1,0 +1,23 @@
+aiohttp>=3.5.4
+async-timeout>=3.0.1
+bottleneck
+fastprogress>=0.1.19
+matplotlib
+numexpr
+numpy>=1.15
+nvidia-ml-py3
+packaging
+pandas
+pyyaml
+requests
+scipy
+spacy>=2.0.18
+typing
+fastai==1.0.57
+sentencepiece
+
+[:platform_system == "Darwin"]
+pynvx>=1.0.0
+
+[:python_version < "3.7"]
+dataclasses
