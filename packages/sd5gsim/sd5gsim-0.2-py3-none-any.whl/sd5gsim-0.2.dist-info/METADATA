@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: sd5gsim
+Version: 0.2
+Summary: SD5GSim is a 5G network simulator to simulate 5G networks performance under different circumstances using different simulation parameters.
+Home-page: https://github.com/sarahsaeed-tarining/sd5gsim
+Author: Sarah Saeed
+Author-email: sara.saeed.doulat@gmail.com
+License: Duquesne
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
