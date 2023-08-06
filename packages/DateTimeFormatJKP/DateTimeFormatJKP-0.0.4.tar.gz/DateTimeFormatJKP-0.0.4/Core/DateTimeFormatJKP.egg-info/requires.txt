@@ -1,0 +1,4 @@
+DateTime
+DocumentTemplate>=3.0b9
+setuptools>=36.2
+six
