@@ -1,0 +1,16 @@
+roleml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roleml/role_identification_model_32bits.sav,sha256=-Q_1YNSKjgw9oBjTUY6NywL6ObmQR90QbqYRTl1ODLI,7814620
+roleml/role_identification_model_64bits.sav,sha256=TByTq7knxKeiuI_nPb9k-wM-mPqIP5BNp5uM3AqkWIM,8868736
+roleml/roleml.py,sha256=p_A4faR7xb6PjiW8XC7KEwycLhawNFEOJjO2BEXeYyg,16859
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_fix_and_upgrade.py,sha256=wethy-fDItckWCJCJPK7aHKG8kNbAFoBHqu3c_G5QEA,4874
+test/test_fix_frame.py,sha256=CBs-3aVKtaqmzxUu80nAr4J8PNvso7n0SZlrlN9X4RU,966
+test/test_get_features.py,sha256=7DuBGC0e9zacFlqbHDt1XEhQTc89j5qqyPqNU1Uu_o4,877
+test/test_get_stats.py,sha256=106vPbqgq0d6Bzdj4giEDMObVxjjs5Q7xMd4vrw9S9E,2308
+test/test_positions.py,sha256=Fjuu5IWslWLM2FAybbtE2v9UeWwTs2Rkwi4rLdNnZbE,2532
+test/test_predict.py,sha256=aOCcFwo_Oll_vCoMSn9FdZYLtCVQNIvGUfSuRMT6f24,1132
+roleml-0.1.12.dist-info/LICENSE,sha256=wLxu0tmZ0a6G50jEwm4ZE2wlqKGEY56VwXtxHKDf4Gg,1066
+roleml-0.1.12.dist-info/METADATA,sha256=gtAapfJv_MiMI0S2s4lfVZU7stV_AyAqjP4McjTHweo,3944
+roleml-0.1.12.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+roleml-0.1.12.dist-info/top_level.txt,sha256=B05VWZi7BpftNl5PcEZ0NLQbxY8O6cqKU2lwKz5yS1I,12
+roleml-0.1.12.dist-info/RECORD,,
