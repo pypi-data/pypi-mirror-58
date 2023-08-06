@@ -1,0 +1,11 @@
+pygitgrab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygitgrab/__main__.py,sha256=s9ndstbuJHFlyDYie8BJYpC5XcCJ9QbJtssS1QBQ7f4,5130
+pygitgrab/configreader.py,sha256=RmkBogtJbdH-z6F6O7UAeXpARn8WrN02Qc76Hf0Dj1o,1590
+pygitgrab/extract.py,sha256=7Ij-qKKlpfVva7MnJ7JcznezqBe2drP8-maCalvdJoc,446
+pygitgrab/gitgrab.py,sha256=sfD45IPHOL0rcrtp186tEi4cjzkbDAMoMXzMoQ9gmQA,1903
+pygitgrab/readuserinfo.py,sha256=Vdg7CFqe_FYRr2_eVEFK6N4mPoUAn98JTIeEiKM2pXY,490
+pygitgrab-0.0.11.dist-info/LICENSE,sha256=UaNffOmFTsVL_0kAzEGZLOfV5Udz9-HP7ZrwOhth9aQ,1068
+pygitgrab-0.0.11.dist-info/METADATA,sha256=HOt-Rz76F7kNeSeGZxf2QSj-kAjNjrYl1T-Cf6UuvNg,4394
+pygitgrab-0.0.11.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pygitgrab-0.0.11.dist-info/top_level.txt,sha256=j-Wm4k3d4Pui2P0LtuL34lKw-GoPKzt_4iULMBo1plc,10
+pygitgrab-0.0.11.dist-info/RECORD,,
