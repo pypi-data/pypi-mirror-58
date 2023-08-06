@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: entity-resolver
+Version: 0.3.1
+Summary: A python package for collective entity resolution
+Home-page: https://github.com/Terry1004/EntityResolution_Capstone
+Author: Yijie Cao, Kai Kang, Xinxin Huang, Yiming Huang, Yiran Wang
+Author-email: hym961004@gmail.com
+License: MIT
+Description: # EntityResolution_Capstone
+        Final Capstone Project of Data Science Master Program
+        
+        ## Installation
+        
+        This package is available on pip.
+        ```
+        $ pip install entity-resolver
+        ```
+        
+        ## Usage
+        Please refer to our [documentation page](https://terry1004.github.io/EntityResolution_Capstone/) for details.
+Platform: UNKNOWN
+Requires-Python: >=3.6.5
+Description-Content-Type: text/markdown
