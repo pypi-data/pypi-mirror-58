@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autograd_lib/__init__.py
+autograd_lib/_version.py
+autograd_lib/autograd_lib.py
+autograd_lib/util.py
+autograd_lib.egg-info/PKG-INFO
+autograd_lib.egg-info/SOURCES.txt
+autograd_lib.egg-info/dependency_links.txt
+autograd_lib.egg-info/requires.txt
+autograd_lib.egg-info/top_level.txt
