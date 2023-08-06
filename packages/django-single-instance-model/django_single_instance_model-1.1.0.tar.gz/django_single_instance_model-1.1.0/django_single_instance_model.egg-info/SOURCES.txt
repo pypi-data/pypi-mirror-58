@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+VERSION.txt
+requirements.txt
+setup.py
+django_single_instance_model.egg-info/PKG-INFO
+django_single_instance_model.egg-info/SOURCES.txt
+django_single_instance_model.egg-info/dependency_links.txt
+django_single_instance_model.egg-info/not-zip-safe
+django_single_instance_model.egg-info/top_level.txt
+single_instance_model/__init__.py
+single_instance_model/admin.py
+single_instance_model/apps.py
+single_instance_model/models.py
+single_instance_model/tests.py
+single_instance_model/views.py
+single_instance_model/migrations/__init__.py

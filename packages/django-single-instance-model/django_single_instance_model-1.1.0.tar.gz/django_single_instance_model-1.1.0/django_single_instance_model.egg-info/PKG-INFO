@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-single-instance-model
+Version: 1.1.0
+Summary: Always have exactly one instance of a model.
+Home-page: https://github.com/matix-io/django-single-instance-model
+Author: Connor Bode
+Author-email: connor@matix.io
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
