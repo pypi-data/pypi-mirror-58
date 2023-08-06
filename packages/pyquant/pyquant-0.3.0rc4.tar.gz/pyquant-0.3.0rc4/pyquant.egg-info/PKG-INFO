@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyquant
+Version: 0.3.0rc4
+Summary: A framework for the analysis of quantitative mass spectrometry data
+Home-page: http://www.github.com/chris7/pyquant
+Author: Chris Mitchell <chris.mit7@gmail.com>
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
