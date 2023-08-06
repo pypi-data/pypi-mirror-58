@@ -1,0 +1,10 @@
+filehash/__init__.py,sha256=BaTv3Z9hxqSKhFPjeLPOso0MAXZW-DlhDLMQrdBlTY0,186
+filehash/filehash.py,sha256=N59cH1xWSJrMXm2iPYzluuFjjyKyAElUEaaMHk2sekE,11495
+filehash/filehash_cli.py,sha256=U4cZgKeOaxHi5GEKRHjMLGimhzOCo8Z4o1zb8TpFCvg,3236
+filehash-0.1.dev4.dist-info/AUTHORS.rst,sha256=5LDaIhKSHLFm-ZmiV4Xkse-OemDTg0sWl6gnIxpuM9A,192
+filehash-0.1.dev4.dist-info/LICENSE,sha256=79HwZ7qGfYkIJ5xBLM8TZfSD6ASyWZtrDOuT1OJQyxM,1082
+filehash-0.1.dev4.dist-info/METADATA,sha256=ywyA_6egcBMFjOPeKxCVLumWbvYFUFWf1BuB8mTpZs4,6111
+filehash-0.1.dev4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+filehash-0.1.dev4.dist-info/entry_points.txt,sha256=iwqHUUJrxRj3GQGaDZh2CIkPfAGc0D9JLdn22rTCDU4,60
+filehash-0.1.dev4.dist-info/top_level.txt,sha256=xp0g9y7dp3NfqpxnuCsgrwTa0eGjRlkKs7tMpiEn7PE,9
+filehash-0.1.dev4.dist-info/RECORD,,
