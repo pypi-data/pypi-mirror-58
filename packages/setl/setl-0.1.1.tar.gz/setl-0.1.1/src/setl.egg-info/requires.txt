@@ -1,0 +1,7 @@
+pep517
+pip
+toml
+twine
+
+[test]
+pytest
