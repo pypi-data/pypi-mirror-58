@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mypytex
+Version: 0.4
+Summary: Writing latex files and compile it with python and jinja2
+Home-page: https://git.opytex.org/lafrite/Pytex
+Author: Bertrand Benjamin
+Author-email: benjamin.bertrand@opytex.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
