@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: django-personal-finances
+Version: 0.4
+Summary: A Django app to track personal finances
+Home-page: UNKNOWN
+Author: Wade Roberts
+Author-email: waderoberts123@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 3.0
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Django
+
+Personal Finance
+================
+
+Personal Finance is a Django app to keep track of your personal
+finances. It allows users to set budgeting goals and track how 
+they are doing over time.
+
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+#. Add "finances" to your INSTALLED\_APPS setting like this:
+
+.. code:: python
+
+    INSTALLED_APPS = [
+        ...
+        'finances',
+    ]
+
+#. Include the polls URLconf in your project urls.py like this:
+
+.. code:: python
+
+    path('', include("finances.urls")),
+
+#. Run ``python manage.py migrate`` to create the polls models.
+
+

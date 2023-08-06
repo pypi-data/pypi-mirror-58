@@ -1,0 +1,133 @@
+{% extends "finances/layout.html" %}
+{% load finances_tags %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Add a Transaction
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    {# Main Body #}
+    <div class="col-md-8">
+        <h3>Add a transaction here.</h3>
+
+        <form method="POST" id="transaction-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+        </form>
+
+        <button class="btn btn-outline-secondary" id="submit-form-button">
+            Add Transaction
+        </button>
+
+        <br><br><br><br>
+
+        <h2>Transactions</h2>
+        <p class="text-muted">
+            The last 5 added transactions are shown here, plus any you add in 
+            this current session. If you would like to view all transactions, visit
+            the <a href="#">Historic Transactions</a> page. {# TODO: Add a link here. #}
+        </p>
+
+        <table id="table" class="table">
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Payment Method</th>
+                <th>Notes</th>
+            </tr>
+            {% for transaction in transactions %}
+            <tr>
+                <td>{{ transaction.date }}</td>
+                <td>{{ transaction.amount|currency }}</td>
+                <td>{{ transaction.category }}</td>
+                <td>{{ transaction.payment_method }}</td>
+                <td>{{ transaction.notes }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+
+    {# Sidebar #}
+    <div class="col-md-4">
+        <div class="content-section">
+            <h3>Summary</h3>
+            <p class='text-muted'>You can put any information here you'd like.
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-light">Latest Posts</li>
+                    <li class="list-group-item list-group-item-light">Announcements</li>
+                    <li class="list-group-item list-group-item-light">Calendars</li>
+                    <li class="list-group-item list-group-item-light">etc</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Currency Formatter
+    var currencyFormatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    });
+
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function (xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+            }
+        }
+    });
+
+    $(document).ready(function () {
+
+        $('#submit-form-button').click(function () {
+            var form = $("form") // Only one form so this works in this page
+
+            $.ajax({
+                url: "{% url 'finances-save_transaction_form' %}",
+                type: "POST",
+                data: $(form).serialize(),
+                success: function (data) {
+                    if (!(data['success'])) {
+                        // Here we replace the form, for the error version
+                        $(form).replaceWith(data['form_html']);
+                    }
+                    else {
+
+                        var table = document.getElementById("table");
+                        var row = table.insertRow(-1);
+                        var cell1 = row.insertCell(0);
+                        var cell2 = row.insertCell(1);
+                        var cell3 = row.insertCell(2);
+                        var cell4 = row.insertCell(3);
+                        var cell5 = row.insertCell(4);
+                        cell1.innerHTML = data["date"];
+                        cell2.innerHTML = currencyFormatter.format(data["amount"]);
+                        cell3.innerHTML = data["category"];
+                        cell4.innerHTML = data["payment_method"];
+                        cell5.innerHTML = data["notes"];
+
+                        // Clear the old form input and replace errors
+                        $(form).replaceWith(data['form_html']);
+                    }
+                },
+                error: function () {
+                    // TODO: Add an error message here
+                }
+            });
+        });
+    });
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+.body-content {
+    padding: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+ /* Change the color of the NavBar */
+.bg-light {
+    background-color: #a6f5a5!important;
+}
+
+/* Progress Bar */
+/* .progress .bar {
+    position: relative;
+    background-color: #ccc;
+}
+
+.progress .bar .percent {
+    color: white;
+    background-color: #0c0;
+    width: 70%;
+} */
+
+.progress .progress-bar .ref {
+    position: absolute;
+    left: 80%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+/* .progress .bar .ref:before {
+    content: attr(data-ref);
+    position: absolute;
+    width: 100px;
+    left: -50px;
+    top: 100%;
+    color: #888;
+    text-align: center;
+} */

@@ -1,0 +1,85 @@
+{% extends "finances/layout.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Add Payment Methods
+{% endblock %}
+
+{% block content %}
+
+<h2>Add Payment Methods</h2>
+<hr>
+
+<form method="POST" id="payment-method-form">
+    {% csrf_token %}
+    {{ form|crispy }}
+</form>
+
+<button class="btn btn-outline-secondary" id="submit-form-button">
+    Add Payment Method
+</button>
+
+<br><br><br><br>
+
+<h2>Current Payment Methods</h2>
+
+<table id="table" class="table">
+    <tr>
+        <th>Payment Method</th>
+    </tr>
+    {% for payment_method in payment_methods %}
+    <tr>
+        <td>{{ payment_method.payment_method }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<script>
+
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function (xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+            }
+        }
+    });
+
+    $(document).ready(function () {
+
+        $('#submit-form-button').click(function () {
+            var form = $('#payment-method-form');
+
+            $.ajax({
+                url: "{% url 'finances-save_payment_methods_form' %}",
+                type: "POST",
+                data: $(form).serialize(),
+                success: function (data) {
+                    if (!(data['success'])) {
+                        // Here we replace the form, for the error version
+                        $(form).replaceWith(data['form_html']);
+                    }
+                    else {
+                        var table = document.getElementById("table");
+                        var row = table.insertRow(-1);
+                        var cell1 = row.insertCell(0);
+                        cell1.innerHTML = data["payment_methods_last"];
+
+                        // Clear the old form input
+                        $('#payment-method-form').trigger("reset");
+                    }
+                },
+                error: function () {
+                    // TODO: Add an error message here
+                }
+            });
+        });
+    });
+
+
+</script>
+
+{% endblock %}
