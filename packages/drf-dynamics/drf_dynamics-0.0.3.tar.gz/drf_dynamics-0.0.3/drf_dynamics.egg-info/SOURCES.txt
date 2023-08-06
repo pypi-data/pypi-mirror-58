@@ -1,0 +1,11 @@
+README.md
+setup.py
+drf_dynamics/__init__.py
+drf_dynamics/helpers.py
+drf_dynamics/mixins.py
+drf_dynamics/specs.py
+drf_dynamics.egg-info/PKG-INFO
+drf_dynamics.egg-info/SOURCES.txt
+drf_dynamics.egg-info/dependency_links.txt
+drf_dynamics.egg-info/requires.txt
+drf_dynamics.egg-info/top_level.txt
