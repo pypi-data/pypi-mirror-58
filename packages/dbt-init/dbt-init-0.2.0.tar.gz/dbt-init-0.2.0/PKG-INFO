@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dbt-init
+Version: 0.2.0
+Summary: Create a dbt project the way Fishtown Analytics would
+Home-page: https://github.com/fishtown-analyics/dbt-init
+Author: Claire Carroll
+Author-email: claire@fishtownanalytics.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
