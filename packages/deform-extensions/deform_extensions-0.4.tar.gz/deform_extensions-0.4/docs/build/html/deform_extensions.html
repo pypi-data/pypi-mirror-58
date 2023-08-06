@@ -1,0 +1,902 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>deform_bootstrap_extensions package &#8212; deform_extensions 0.0.1a documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to deform_extensions’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to deform_extensions’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">deform_extensions 0.0.1a documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="deform-bootstrap-extensions-package">
+<h1>deform_bootstrap_extensions package<a class="headerlink" href="#deform-bootstrap-extensions-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-deform_extensions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-deform_extensions" title="Permalink to this headline">¶</a></h2>
+<p>Provide custom colander schemas and associated widgets to render forms
+differently</p>
+<dl class="class">
+<dt id="deform_extensions.AccordionFormWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">AccordionFormWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.AccordionFormWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deform_extensions.GridFormWidget" title="deform_extensions.GridFormWidget"><code class="xref py py-class docutils literal"><span class="pre">deform_extensions.GridFormWidget</span></code></a></p>
+<p>AccordionFormWidget is supposed to be combined with colanderalchemy</p>
+<p>The way it works:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="n">your</span> <span class="n">SqlAlchemy</span> <span class="n">models</span><span class="p">,</span> <span class="n">enter</span> <span class="n">the</span> <span class="n">__colanderalchemy__</span> <span class="n">key</span> <span class="n">under</span> <span class="n">the</span>
+<span class="n">info</span> <span class="n">attribute</span><span class="o">.</span>  <span class="n">All</span> <span class="n">columns</span> <span class="n">of</span> <span class="n">a</span> <span class="n">single</span> <span class="n">model</span> <span class="n">can</span> <span class="n">have</span> <span class="n">a</span> <span class="n">section</span> <span class="n">key</span><span class="o">.</span>
+<span class="n">If</span> <span class="n">so</span><span class="p">,</span> <span class="n">an</span> <span class="n">accordion</span> <span class="n">will</span> <span class="n">contain</span> <span class="nb">all</span> <span class="n">columns</span> <span class="n">under</span> <span class="n">the</span> <span class="n">same</span> <span class="n">section</span> <span class="n">key</span>
+
+<span class="n">If</span> <span class="n">you</span> <span class="n">want</span> <span class="n">each</span> <span class="n">accordion</span> <span class="n">to</span> <span class="n">be</span> <span class="n">rendered</span> <span class="k">as</span> <span class="n">a</span> <span class="n">grid</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">optionnaly</span>
+<span class="k">pass</span> <span class="n">a</span> <span class="n">grids</span> <span class="ow">or</span> <span class="n">named_grids</span> <span class="n">argument</span> <span class="n">that</span> <span class="n">should</span> <span class="n">be</span> <span class="n">a</span> <span class="nb">dict</span> <span class="p">:</span>
+    <span class="p">{</span><span class="o">&lt;</span><span class="n">section_name</span><span class="o">&gt;</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">associated_grid_object</span><span class="o">&gt;</span><span class="p">}</span>
+
+<span class="n">The</span> <span class="n">associated_grid_object</span> <span class="n">should</span> <span class="n">be</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">same</span> <span class="nb">format</span> <span class="k">as</span> <span class="k">for</span> <span class="n">the</span>
+<span class="n">GridMappingWidget</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">DBBASE</span><span class="p">):</span>
+    <span class="n">coordonnees_emergency_name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span>
+        <span class="n">String</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+        <span class="n">info</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;colanderalchemy&#39;</span><span class="p">:{</span>
+                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;Contact urgent : Nom&quot;</span><span class="p">,</span>
+                <span class="s1">&#39;section&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Coordonnées&#39;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">coordonnees_emergency_phone</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span>
+        <span class="n">String</span><span class="p">(</span><span class="mi">14</span><span class="p">),</span>
+        <span class="n">info</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;colanderalchemy&#39;</span><span class="p">:{</span>
+                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Contact urgent : Téléphone&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;section&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Coordonnées&#39;</span><span class="p">,</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+
+    <span class="c1"># STATUT</span>
+    <span class="n">statut_social_status_id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span>
+        <span class="n">ForeignKey</span><span class="p">(</span><span class="s1">&#39;social_status_option.id&#39;</span><span class="p">),</span>
+        <span class="n">info</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;colanderalchemy&#39;</span><span class="p">:</span>
+            <span class="p">{</span>
+                <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;Statut social à l&#39;entrée&quot;</span><span class="p">,</span>
+                <span class="s1">&#39;section&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Statut&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;widget&#39;</span><span class="p">:</span> <span class="n">get_deferred_select</span><span class="p">(</span><span class="n">SocialStatusOption</span><span class="p">),</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">SQLAlchemySchemaNode</span><span class="p">(</span><span class="n">Model</span><span class="p">)</span>
+<span class="n">form</span> <span class="o">=</span> <span class="n">Form</span><span class="p">(</span><span class="n">schema</span><span class="p">)</span>
+<span class="n">form</span><span class="o">.</span><span class="n">widget</span> <span class="o">=</span> <span class="n">AccordionFormWidget</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="deform_extensions.AccordionFormWidget.accordions">
+<code class="descname">accordions</code><span class="sig-paren">(</span><em>form</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.AccordionFormWidget.accordions" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the chlidren of the given form in a dict allowing to render them
+in accordions with a grid layout
+:param form: the form object</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.AccordionFormWidget.default_item_template">
+<code class="descname">default_item_template</code><em class="property"> = 'mapping_item'</em><a class="headerlink" href="#deform_extensions.AccordionFormWidget.default_item_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.AccordionFormWidget.num_cols">
+<code class="descname">num_cols</code><em class="property"> = 12</em><a class="headerlink" href="#deform_extensions.AccordionFormWidget.num_cols" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.AccordionFormWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/accordion_form.pt'</em><a class="headerlink" href="#deform_extensions.AccordionFormWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.AccordionFormWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/accordion_form.pt'</em><a class="headerlink" href="#deform_extensions.AccordionFormWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.AccordionMappingWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">AccordionMappingWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.AccordionMappingWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deform_extensions.GridMappingWidget" title="deform_extensions.GridMappingWidget"><code class="xref py py-class docutils literal"><span class="pre">deform_extensions.GridMappingWidget</span></code></a></p>
+<p>Render a mapping as an accordion and places inner fields in a grid</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Mapping</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">MappingSchema</span><span class="p">):</span>
+    <span class="n">field</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Schema</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">Schema</span><span class="p">):</span>
+    <span class="n">mymapping</span> <span class="o">=</span> <span class="n">Mapping</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;The accordion header&#39;</span><span class="p">,</span>
+        <span class="n">widget</span> <span class="o">=</span> <span class="n">AccordionMappingWidget</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="n">GRID</span><span class="p">)</span>
+        <span class="p">)</span>
+</pre></div>
+</div>
+<p>you’ll need to set the bootstrap_form_style to ‘form-grid’</p>
+<p>Form(schema=Schema(), bootstrap_form_style=’form-grid’)</p>
+<dl class="attribute">
+<dt id="deform_extensions.AccordionMappingWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/accordion_mapping.pt'</em><a class="headerlink" href="#deform_extensions.AccordionMappingWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.AccordionMappingWidget.tag_id">
+<code class="descname">tag_id</code><a class="headerlink" href="#deform_extensions.AccordionMappingWidget.tag_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a unique tag id for this mapping</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.AccordionMappingWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/accordion_mapping.pt'</em><a class="headerlink" href="#deform_extensions.AccordionMappingWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.CheckboxToggleWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">CheckboxToggleWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.CheckboxWidget</span></code></p>
+<p>Renders an <code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type=&quot;checkbox&quot;/&gt;</span></code> widget.</p>
+<p><strong>Attributes/Arguments</strong></p>
+<dl class="docutils">
+<dt>true_val</dt>
+<dd>The value which should be returned during deserialization if
+the box is checked.  Default: <code class="docutils literal"><span class="pre">true</span></code>.</dd>
+<dt>false_val</dt>
+<dd>The value which should be returned during deserialization if
+the box was left unchecked.  Default: <code class="docutils literal"><span class="pre">false</span></code>.</dd>
+<dt>template</dt>
+<dd>The template name used to render the widget.  Default:
+<code class="docutils literal"><span class="pre">checkbox</span></code>.</dd>
+<dt>readonly_template</dt>
+<dd>The template name used to render the widget in read-only mode.
+Default: <code class="docutils literal"><span class="pre">readonly/checkbox</span></code>.</dd>
+</dl>
+<p>true_target</p>
+<blockquote>
+<div>The item that should be displayed on true value</div></blockquote>
+<p>false_target</p>
+<blockquote>
+<div>The item that should be displayed on false value</div></blockquote>
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.false_target">
+<code class="descname">false_target</code><em class="property"> = ''</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.false_target" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.false_val">
+<code class="descname">false_val</code><em class="property"> = 'false'</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.false_val" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/checkbox_toggle.pt'</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.requirements">
+<code class="descname">requirements</code><em class="property"> = (('checkbox_toggle', None),)</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.requirements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.CheckboxToggleWidget.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>field</em>, <em>cstruct</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/checkbox_toggle.pt'</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.true_target">
+<code class="descname">true_target</code><em class="property"> = ''</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.true_target" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CheckboxToggleWidget.true_val">
+<code class="descname">true_val</code><em class="property"> = 'true'</em><a class="headerlink" href="#deform_extensions.CheckboxToggleWidget.true_val" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.CustomDateInputWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">CustomDateInputWidget</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CustomDateInputWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.Widget</span></code></p>
+<p>Renders a JQuery UI date picker widget
+(<a class="reference external" href="http://jqueryui.com/demos/datepicker/">http://jqueryui.com/demos/datepicker/</a>).  Most useful when the
+schema node is a <code class="docutils literal"><span class="pre">colander.Date</span></code> object.
+alt Tag is used to allow full customization of the displayed input</p>
+<p><strong>Attributes/Arguments</strong></p>
+<dl class="docutils">
+<dt>size</dt>
+<dd>The size, in columns, of the text input field.  Defaults to
+<code class="docutils literal"><span class="pre">None</span></code>, meaning that the <code class="docutils literal"><span class="pre">size</span></code> is not included in the
+widget output (uses browser default size).</dd>
+<dt>template</dt>
+<dd>The template name used to render the widget.  Default:
+<code class="docutils literal"><span class="pre">dateinput</span></code>.</dd>
+<dt>options</dt>
+<dd>Options for configuring the widget (eg: date format)</dd>
+<dt>readonly_template</dt>
+<dd>The template name used to render the widget in read-only mode.
+Default: <code class="docutils literal"><span class="pre">readonly/textinput</span></code>.</dd>
+</dl>
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateInputWidget.default_options">
+<code class="descname">default_options</code><em class="property"> = (('dateFormat', 'dd/mm/yy'),)</em><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.default_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.CustomDateInputWidget.deserialize">
+<code class="descname">deserialize</code><span class="sig-paren">(</span><em>field</em>, <em>pstruct</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateInputWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'readonly/textinput.pt'</em><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateInputWidget.requirements">
+<code class="descname">requirements</code><em class="property"> = (('modernizr', None), ('jqueryui', None), ('custom_dates', None))</em><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.requirements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.CustomDateInputWidget.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>field</em>, <em>cstruct</em>, <em>readonly=False</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateInputWidget.size">
+<code class="descname">size</code><em class="property"> = None</em><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateInputWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/dateinput.pt'</em><a class="headerlink" href="#deform_extensions.CustomDateInputWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.CustomDateTimeInputWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">CustomDateTimeInputWidget</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deform_extensions.CustomDateInputWidget" title="deform_extensions.CustomDateInputWidget"><code class="xref py py-class docutils literal"><span class="pre">deform_extensions.CustomDateInputWidget</span></code></a></p>
+<p>Renders a datetime picker widget.</p>
+<p>The default rendering is as a native HTML5 datetime  input widget,
+falling back to jQuery UI date picker with a JQuery Timepicker add-on
+(<a class="reference external" href="http://trentrichardson.com/examples/timepicker/">http://trentrichardson.com/examples/timepicker/</a>).</p>
+<p>Used for <code class="docutils literal"><span class="pre">colander.DateTime</span></code> schema nodes.</p>
+<p><strong>Attributes/Arguments</strong></p>
+<dl class="docutils">
+<dt>options</dt>
+<dd>A dictionary of options that’s passed to the datetimepicker.</dd>
+<dt>size</dt>
+<dd>The size, in columns, of the text input field.  Defaults to
+<code class="docutils literal"><span class="pre">None</span></code>, meaning that the <code class="docutils literal"><span class="pre">size</span></code> is not included in the
+widget output (uses browser default size).</dd>
+<dt>style</dt>
+<dd>A string that will be placed literally in a <code class="docutils literal"><span class="pre">style</span></code> attribute on
+the text input tag.  For example, ‘width:150px;’.  Default: <code class="docutils literal"><span class="pre">None</span></code>,
+meaning no style attribute will be added to the input tag.</dd>
+<dt>template</dt>
+<dd>The template name used to render the widget.  Default:
+<code class="docutils literal"><span class="pre">dateinput</span></code>.</dd>
+<dt>readonly_template</dt>
+<dd>The template name used to render the widget in read-only mode.
+Default: <code class="docutils literal"><span class="pre">readonly/textinput</span></code>.</dd>
+</dl>
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.default_options">
+<code class="descname">default_options</code><em class="property"> = (('dateFormat', 'dd/mm/yy'), ('timeFormat', 'HH:mm'), ('separator', ' '))</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.default_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.CustomDateTimeInputWidget.deserialize">
+<code class="descname">deserialize</code><span class="sig-paren">(</span><em>field</em>, <em>pstruct</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'readonly/textinput.pt'</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.requirements">
+<code class="descname">requirements</code><em class="property"> = (('modernizr', None), ('jqueryui', None), ('datetimepicker', None), ('custom_dates', None))</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.requirements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.CustomDateTimeInputWidget.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>field</em>, <em>cstruct</em>, <em>readonly=False</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.size">
+<code class="descname">size</code><em class="property"> = None</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.style">
+<code class="descname">style</code><em class="property"> = None</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/datetimeinput.pt'</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.CustomDateTimeInputWidget.type_name">
+<code class="descname">type_name</code><em class="property"> = 'datetime'</em><a class="headerlink" href="#deform_extensions.CustomDateTimeInputWidget.type_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.DisabledInput">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">DisabledInput</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.DisabledInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.Widget</span></code></p>
+<p>A non editable input</p>
+<dl class="method">
+<dt id="deform_extensions.DisabledInput.deserialize">
+<code class="descname">deserialize</code><span class="sig-paren">(</span><em>field</em>, <em>pstruct</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.DisabledInput.deserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.DisabledInput.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>field</em>, <em>cstruct=None</em>, <em>readonly=True</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.DisabledInput.serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.DisabledInput.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/disabledinput.pt'</em><a class="headerlink" href="#deform_extensions.DisabledInput.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.GridFormWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">GridFormWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.GridFormWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deform_extensions.GridMappingWidget" title="deform_extensions.GridMappingWidget"><code class="xref py py-class docutils literal"><span class="pre">deform_extensions.GridMappingWidget</span></code></a></p>
+<p>Render a form as a grid</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CompanyMainInformations</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">MappingSchema</span><span class="p">):</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span>
+        <span class="n">colander</span><span class="o">.</span><span class="n">String</span><span class="p">(),</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;Nom entreprise&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span>
+        <span class="n">colander</span><span class="o">.</span><span class="n">String</span><span class="p">(),</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;Adresse&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="n">LAYOUT</span> <span class="o">=</span> <span class="p">(((</span><span class="mi">2</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">True</span><span class="p">),),)</span>
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">CompanyMainInformations</span><span class="p">()</span>
+<span class="n">form</span> <span class="o">=</span> <span class="n">Form</span><span class="p">(</span><span class="n">schema</span><span class="p">)</span>
+<span class="n">form</span><span class="o">.</span><span class="n">widget</span> <span class="o">=</span> <span class="n">GridFormWidget</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="n">LAYOUT</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Here you need to set the widget after you initialize the form object</p>
+</div>
+<dl class="attribute">
+<dt id="deform_extensions.GridFormWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/grid_form.pt'</em><a class="headerlink" href="#deform_extensions.GridFormWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.GridFormWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/grid_form.pt'</em><a class="headerlink" href="#deform_extensions.GridFormWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.GridMappingWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">GridMappingWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.GridMappingWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deform_extensions.TableMappingWidget" title="deform_extensions.TableMappingWidget"><code class="xref py py-class docutils literal"><span class="pre">deform_extensions.TableMappingWidget</span></code></a></p>
+<p>A custom mapping widget rendering it as a grid</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>grid</strong> (<em>tuple</em>) – A matrix describing the grid we want. The matrix should</td>
+</tr>
+</tbody>
+</table>
+<p>be composed of two dimensionnal vectors (width, filled) where filled is a
+boolean.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>named_grid</strong> (<em>tuple</em>) – A matrix describing the grid we want. The matrix</td>
+</tr>
+</tbody>
+</table>
+<p>should be composed of two dimensionnal vectors (name, width).</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CompanyMainInformations</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">MappingSchema</span><span class="p">):</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span>
+        <span class="n">colander</span><span class="o">.</span><span class="n">String</span><span class="p">(),</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;Nom entreprise&#39;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">address</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span>
+        <span class="n">colander</span><span class="o">.</span><span class="n">String</span><span class="p">(),</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;Adresse&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">lon_coord</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span>
+        <span class="n">colander</span><span class="o">.</span><span class="n">Float</span><span class="p">(),</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;Longitude&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">lat_coord</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">SchemaNode</span><span class="p">(</span>
+        <span class="n">colander</span><span class="o">.</span><span class="n">Float</span><span class="p">(),</span>
+        <span class="n">title</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;Latitude&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="n">GRID</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span> <span class="p">),</span>
+    <span class="p">((</span><span class="mi">6</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">True</span><span class="p">)),</span>
+    <span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">CompanySchema</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">Schema</span><span class="p">):</span>
+    <span class="n">tab</span> <span class="o">=</span> <span class="n">CompanyMainInformations</span><span class="p">(</span>
+        <span class="n">widget</span><span class="o">=</span><span class="n">GridMappingWidget</span><span class="p">(</span><span class="n">grid</span><span class="o">=</span><span class="n">GRID</span><span class="p">)</span>
+    <span class="p">)</span>
+
+<span class="n">NAMED_GRID</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">((</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">),</span>
+    <span class="p">((</span><span class="s1">&#39;address&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lon_coord&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lat_coord&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">CompanySchema</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">Schema</span><span class="p">):</span>
+    <span class="n">tab</span> <span class="o">=</span> <span class="n">CompanyMainInformations</span><span class="p">(</span>
+        <span class="n">widget</span><span class="o">=</span><span class="n">GridMappingWidget</span><span class="p">(</span><span class="n">named_grid</span><span class="o">=</span><span class="n">NAMED_GRID</span><span class="p">)</span>
+        <span class="p">)</span>
+</pre></div>
+</div>
+<p>Here, in both cases, we’ve got a two lines grid with 1 element on the first
+line and 3 on the second one. The second element of the second line will be
+a void cell of 2 units width</p>
+<p>You can also pass StaticWidget instances in both cases
+This way static html datas can be inserted in forms</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">NAMED_GRID</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">((</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">),</span>
+    <span class="p">(</span>
+        <span class="p">(</span><span class="n">StaticWidget</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello&lt;/div&gt;&quot;</span><span class="p">),</span> <span class="mi">6</span><span class="p">),</span>
+        <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lon_coord&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lat_coord&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+     <span class="p">),</span>
+<span class="p">)</span>
+
+<span class="n">GRID</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span> <span class="p">),</span>
+    <span class="p">(</span>
+        <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">StaticWidget</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;Hello&lt;/div&gt;&quot;</span><span class="p">)),</span>
+        <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="deform_extensions.GridMappingWidget.childgroup">
+<code class="descname">childgroup</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.GridMappingWidget.childgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of fields stored by row regarding the configured grid</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>field</strong> – The original field this widget is attached to</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.GridMappingWidget.num_cols">
+<code class="descname">num_cols</code><em class="property"> = 12</em><a class="headerlink" href="#deform_extensions.GridMappingWidget.num_cols" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.HiddenLocalizationWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">HiddenLocalizationWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.HiddenLocalizationWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.TextInputWidget</span></code></p>
+<p>A hidden version</p>
+<dl class="attribute">
+<dt id="deform_extensions.HiddenLocalizationWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/hidden_localization.pt'</em><a class="headerlink" href="#deform_extensions.HiddenLocalizationWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.HiddenLocalizationWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/hidden_localization.pt'</em><a class="headerlink" href="#deform_extensions.HiddenLocalizationWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.Inline">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">Inline</code><span class="sig-paren">(</span><em>unknown='ignore'</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.Inline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">colander.Mapping</span></code></p>
+<p>Inline schema type, necessary to avoid our mapping to be render as tabs
+(see deform_bootstrap.utils.tabify function )</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.InlineMappingSchema">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">InlineMappingSchema</code><span class="sig-paren">(</span><em>*arg</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.InlineMappingSchema" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">colander.Schema</span></code></p>
+<p>Schema providing inline rendering of form elements</p>
+<dl class="attribute">
+<dt id="deform_extensions.InlineMappingSchema.schema_type">
+<code class="descname">schema_type</code><a class="headerlink" href="#deform_extensions.InlineMappingSchema.schema_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#deform_extensions.Inline" title="deform_extensions.Inline"><code class="xref py py-class docutils literal"><span class="pre">Inline</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.InlineMappingSchema.widget">
+<code class="descname">widget</code><em class="property"> = &lt;deform_extensions.InlineMappingWidget object&gt;</em><a class="headerlink" href="#deform_extensions.InlineMappingSchema.widget" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.InlineMappingWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">InlineMappingWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.InlineMappingWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.MappingWidget</span></code></p>
+<p>The custom widget we use to render our mapping</p>
+<dl class="attribute">
+<dt id="deform_extensions.InlineMappingWidget.item_template">
+<code class="descname">item_template</code><em class="property"> = 'deform_extensions:templates/inline_mapping_item.pt'</em><a class="headerlink" href="#deform_extensions.InlineMappingWidget.item_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.InlineMappingWidget.readonly_item_template">
+<code class="descname">readonly_item_template</code><em class="property"> = 'deform_extensions:templates/inline_mapping_item.pt'</em><a class="headerlink" href="#deform_extensions.InlineMappingWidget.readonly_item_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.InlineMappingWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/inline_mapping.pt'</em><a class="headerlink" href="#deform_extensions.InlineMappingWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.InlineMappingWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/inline_mapping.pt'</em><a class="headerlink" href="#deform_extensions.InlineMappingWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.LocalizationWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">LocalizationWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.LocalizationWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.TextInputWidget</span></code></p>
+<p>A widget with a link for configuring localization picking it from a map
+A link will be provided, by clicking on it, we do some fancy html
+manipulation to replace the fields and have a pretty layout</p>
+<p>e.g:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">widget</span> <span class="o">=</span> <span class="n">LocalizationWidget</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">lat_field_name</span><span class="o">=</span><span class="s1">&#39;lat_coord&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">lon_field_name</span><span class="o">=</span><span class="s1">&#39;lon_coord&#39;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Schema</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="n">lat_coord</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">Schema</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">Float</span><span class="p">())</span>
+<span class="gp">... </span>    <span class="n">lon_coord</span> <span class="o">=</span> <span class="n">colander</span><span class="o">.</span><span class="n">Schema</span><span class="p">(</span><span class="n">colander</span><span class="o">.</span><span class="n">Float</span><span class="p">(),</span> <span class="n">widget</span><span class="o">=</span><span class="n">widget</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="deform_extensions.LocalizationWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/localization.pt'</em><a class="headerlink" href="#deform_extensions.LocalizationWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.LocalizationWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/localization.pt'</em><a class="headerlink" href="#deform_extensions.LocalizationWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.RadioChoiceToggleWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">RadioChoiceToggleWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.RadioChoiceToggleWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.RadioChoiceWidget</span></code></p>
+<p>Renders a sequence of <code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type=&quot;radio&quot;/&gt;</span></code> buttons based on a
+predefined set of values.</p>
+<p><strong>Attributes/Arguments</strong></p>
+<dl class="docutils">
+<dt>values</dt>
+<dd>A sequence of three-tuples (the first value must be of type
+string, unicode or integer, the second value must be string or
+unicode) indicating allowable, displayed values, e.g. <code class="docutils literal"><span class="pre">(</span>
+<span class="pre">('true',</span> <span class="pre">'True',</span> <span class="pre">'otherformelement1'),</span> <span class="pre">('false',</span> <span class="pre">'False',</span>
+<span class="pre">'otherformelement2')</span> <span class="pre">)</span></code>.
+The first element is the value that will be submitted by the form
+The second is the display value.
+The third element in the tuple is the colande name of the form item that
+will be shown when the radio is checked if the void string ‘’ is
+provided, only all other elements will be hidden.</dd>
+<dt>template</dt>
+<dd>The template name used to render the widget.  Default:
+<code class="docutils literal"><span class="pre">radio_choice_toggle</span></code>.</dd>
+<dt>null_value</dt>
+<dd>The value used to replace the <code class="docutils literal"><span class="pre">colander.null</span></code> value when it
+is passed to the <code class="docutils literal"><span class="pre">serialize</span></code> or <code class="docutils literal"><span class="pre">deserialize</span></code> method.
+Default: the empty string.</dd>
+<dt>inline</dt>
+<dd>If true, choices will be rendered on a single line.
+Otherwise choices will be rendered one per line.
+Default: false.</dd>
+</dl>
+<dl class="attribute">
+<dt id="deform_extensions.RadioChoiceToggleWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/radio_choice_toggle.pt'</em><a class="headerlink" href="#deform_extensions.RadioChoiceToggleWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.RadioChoiceToggleWidget.requirements">
+<code class="descname">requirements</code><em class="property"> = (('radio_choice_toggle', None),)</em><a class="headerlink" href="#deform_extensions.RadioChoiceToggleWidget.requirements" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="deform_extensions.RadioChoiceToggleWidget.serialize">
+<code class="descname">serialize</code><span class="sig-paren">(</span><em>field</em>, <em>cstruct</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.RadioChoiceToggleWidget.serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.RadioChoiceToggleWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/radio_choice_toggle.pt'</em><a class="headerlink" href="#deform_extensions.RadioChoiceToggleWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.RadioChoiceToggleWidget.values">
+<code class="descname">values</code><em class="property"> = ()</em><a class="headerlink" href="#deform_extensions.RadioChoiceToggleWidget.values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.StaticWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">StaticWidget</code><span class="sig-paren">(</span><em>html_str</em>, <em>width=1</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.StaticWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.Widget</span></code></p>
+<p>Static widget used to insert static html in grids</p>
+<dl class="method">
+<dt id="deform_extensions.StaticWidget.render_template">
+<code class="descname">render_template</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.StaticWidget.render_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a div of class col-md-&lt;width&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.TableFormWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">TableFormWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.TableFormWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deform_extensions.TableMappingWidget" title="deform_extensions.TableMappingWidget"><code class="xref py py-class docutils literal"><span class="pre">deform_extensions.TableMappingWidget</span></code></a></p>
+<dl class="attribute">
+<dt id="deform_extensions.TableFormWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/grid_form.pt'</em><a class="headerlink" href="#deform_extensions.TableFormWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableFormWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/grid_form.pt'</em><a class="headerlink" href="#deform_extensions.TableFormWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.TableMappingWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">TableMappingWidget</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.TableMappingWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.MappingWidget</span></code></p>
+<p>A custom widget rendering a mapping as a table</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cols</strong> – number of columns we want</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="deform_extensions.TableMappingWidget.childgroup">
+<code class="descname">childgroup</code><span class="sig-paren">(</span><em>field</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.TableMappingWidget.childgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return children grouped regarding the grid description</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableMappingWidget.default_cols">
+<code class="descname">default_cols</code><em class="property"> = 3</em><a class="headerlink" href="#deform_extensions.TableMappingWidget.default_cols" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableMappingWidget.item_template">
+<code class="descname">item_template</code><em class="property"> = 'deform_extensions:templates/grid_mapping_item.pt'</em><a class="headerlink" href="#deform_extensions.TableMappingWidget.item_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableMappingWidget.num_cols">
+<code class="descname">num_cols</code><em class="property"> = 12</em><a class="headerlink" href="#deform_extensions.TableMappingWidget.num_cols" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableMappingWidget.readonly_item_template">
+<code class="descname">readonly_item_template</code><em class="property"> = 'deform_extensions:templates/grid_mapping_item.pt'</em><a class="headerlink" href="#deform_extensions.TableMappingWidget.readonly_item_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableMappingWidget.readonly_template">
+<code class="descname">readonly_template</code><em class="property"> = 'deform_extensions:templates/grid_mapping.pt'</em><a class="headerlink" href="#deform_extensions.TableMappingWidget.readonly_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="deform_extensions.TableMappingWidget.template">
+<code class="descname">template</code><em class="property"> = 'deform_extensions:templates/grid_mapping.pt'</em><a class="headerlink" href="#deform_extensions.TableMappingWidget.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deform_extensions.VoidWidget">
+<em class="property">class </em><code class="descclassname">deform_extensions.</code><code class="descname">VoidWidget</code><span class="sig-paren">(</span><em>width=1</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.VoidWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">deform.widget.Widget</span></code></p>
+<p>Void widget used to fill our grid</p>
+<dl class="method">
+<dt id="deform_extensions.VoidWidget.render_template">
+<code class="descname">render_template</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.VoidWidget.render_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a div of class col-md-&lt;width&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="deform_extensions.add_resources_to_registry">
+<code class="descclassname">deform_extensions.</code><code class="descname">add_resources_to_registry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.add_resources_to_registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add resources to the deform registry</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deform_extensions.gen_random_string">
+<code class="descclassname">deform_extensions.</code><code class="descname">gen_random_string</code><span class="sig-paren">(</span><em>size=15</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.gen_random_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate random string</p>
+<blockquote>
+<div><p>size</p>
+<blockquote>
+<div>size of the resulting string</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="deform_extensions.grouper">
+<code class="descclassname">deform_extensions.</code><code class="descname">grouper</code><span class="sig-paren">(</span><em>iterable</em>, <em>items</em>, <em>fillvalue=None</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.grouper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect data into fixed-length chunks or blocks</p>
+<p>e.g:</p>
+<blockquote>
+<div>grouper(‘ABCDEFG’, 3, ‘x’) –&gt; ABC DEF Gxx</div></blockquote>
+<p>Got it from <a class="reference external" href="https://docs.python.org/2/library/itertools.html#recipes">https://docs.python.org/2/library/itertools.html#recipes</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deform_extensions.includeme">
+<code class="descclassname">deform_extensions.</code><code class="descname">includeme</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.includeme" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="deform_extensions.random_tag_id">
+<code class="descclassname">deform_extensions.</code><code class="descname">random_tag_id</code><span class="sig-paren">(</span><em>size=15</em><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.random_tag_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a random string supposed to be used as tag id</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deform_extensions.set_default_widgets">
+<code class="descclassname">deform_extensions.</code><code class="descname">set_default_widgets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deform_extensions.set_default_widgets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set custom date and datetime input widgets for a better user-experience</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">deform_bootstrap_extensions package</a><ul>
+<li><a class="reference internal" href="#module-deform_extensions">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to deform_extensions’s documentation!</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/deform_extensions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to deform_extensions’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">deform_extensions 0.0.1a documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Gaston Tjebbes - Majerti.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+    </div>
+  </body>
+</html>
