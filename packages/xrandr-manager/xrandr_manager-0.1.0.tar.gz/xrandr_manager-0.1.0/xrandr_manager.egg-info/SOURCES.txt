@@ -1,0 +1,15 @@
+README.md
+setup.py
+xrandr_manager/__init__.py
+xrandr_manager/console.py
+xrandr_manager/executor.py
+xrandr_manager/manager.py
+xrandr_manager/model.py
+xrandr_manager/parser.py
+xrandr_manager/prompt.py
+xrandr_manager.egg-info/PKG-INFO
+xrandr_manager.egg-info/SOURCES.txt
+xrandr_manager.egg-info/dependency_links.txt
+xrandr_manager.egg-info/entry_points.txt
+xrandr_manager.egg-info/requires.txt
+xrandr_manager.egg-info/top_level.txt
