@@ -1,0 +1,10 @@
+zeroconf
+click
+numpy
+scipy
+pykalman
+munkres
+bson
+mock
+matplotlib
+setuptools-git-version

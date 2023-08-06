@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        circum-endpoint=circum.endpoint:cli
+        circum-service=circum.service:cli
+    

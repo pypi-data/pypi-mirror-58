@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: circum
+Version: 0.0.3
+Summary: Circum is a set of tools for detecting and tracking moving objectsvia a variety of distributed sensors.
+Home-page: https://github.com/LumineerLabs/circum
+Author: Lane Haury
+Author-email: lane@lumineerlabs.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
