@@ -1,0 +1,17 @@
+zuper-commons-z6>=6.0.2
+oyaml
+pybase64
+PyYAML
+validate_email
+mypy_extensions
+typing_extensions
+nose
+coverage>=1.4.33
+jsonschema
+cbor2
+numpy
+base58
+frozendict
+pytz
+termcolor
+numpy
