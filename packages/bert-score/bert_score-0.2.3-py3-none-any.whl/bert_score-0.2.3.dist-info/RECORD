@@ -1,0 +1,12 @@
+bert_score/__init__.py,sha256=yMobvaV8gQ14uITbYaLa4p2qzJCcwlqNQP0dD058pBA,64
+bert_score/score.py,sha256=DgtkAXL9lyn6oEWhpuA7WVkS6GZMp1LFnCMgj0Akn2s,7268
+bert_score/utils.py,sha256=UHc4MBSGzX1GEdgG5CC-Klu6VxXIOixh0-GgL5jkVKk,17766
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/score.py,sha256=6yLlADdt29FTnkXvB8c1OV6K3L3DvmehBxeVqSQ16BM,2488
+cli/visualize.py,sha256=cXw8ysM1B9mLjdWwV_WQmZqiQCHsId-2SX2ciGqTRT4,1225
+bert_score-0.2.3.dist-info/LICENSE,sha256=oERKY9Kp7qfzrWqRJwDK1MTl5Q6brDcapYSo4udw92Y,1134
+bert_score-0.2.3.dist-info/METADATA,sha256=4nOGqQIG8vElrD-S3FM3dTC8b8b-jk8FBPYudIAaBds,11276
+bert_score-0.2.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bert_score-0.2.3.dist-info/entry_points.txt,sha256=Xtm3ee17JD1YpPsFCiUS0ZFyRhAmH5OFdbj3uqo5XSw,84
+bert_score-0.2.3.dist-info/top_level.txt,sha256=kWzMQeKE7Mp3gCMWOtDSe1B8pxXQt8j0Z8ii6E9hFto,15
+bert_score-0.2.3.dist-info/RECORD,,
