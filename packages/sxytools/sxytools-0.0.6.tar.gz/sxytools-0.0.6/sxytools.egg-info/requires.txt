@@ -1,0 +1,2 @@
+cx_Oracle>=6.2.1
+paramiko>=2.4.1
