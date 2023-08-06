@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+PyFiFinder/__init__.py
+PyFiFinder/pyf.py
+PyFiFinder.egg-info/PKG-INFO
+PyFiFinder.egg-info/SOURCES.txt
+PyFiFinder.egg-info/dependency_links.txt
+PyFiFinder.egg-info/top_level.txt
