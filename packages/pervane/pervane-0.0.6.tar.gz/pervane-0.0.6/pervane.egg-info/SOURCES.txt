@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/pervane
+pervane.egg-info/PKG-INFO
+pervane.egg-info/SOURCES.txt
+pervane.egg-info/dependency_links.txt
+pervane.egg-info/requires.txt
+pervane.egg-info/top_level.txt
