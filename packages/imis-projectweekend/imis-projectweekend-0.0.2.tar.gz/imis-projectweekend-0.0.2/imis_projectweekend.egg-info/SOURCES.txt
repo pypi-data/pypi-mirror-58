@@ -1,0 +1,10 @@
+README.md
+setup.py
+imis/__init__.py
+imis/api.py
+imis/iqa.py
+imis_projectweekend.egg-info/PKG-INFO
+imis_projectweekend.egg-info/SOURCES.txt
+imis_projectweekend.egg-info/dependency_links.txt
+imis_projectweekend.egg-info/requires.txt
+imis_projectweekend.egg-info/top_level.txt
