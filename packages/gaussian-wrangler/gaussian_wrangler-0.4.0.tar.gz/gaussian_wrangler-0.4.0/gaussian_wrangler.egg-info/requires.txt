@@ -1,0 +1,5 @@
+numpy
+six
+matplotlib
+common-wrangler>=0.2.7
+jpype1

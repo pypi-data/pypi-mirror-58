@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: gaussian_wrangler
+Version: 0.4.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Heather B Mayes
+Author-email: hmayes@hmayes.com
+License: MIT
+Description: Scripts to set up Gaussian input files and analyze Gaussian output files
+        
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Windows
+Requires-Python: >=3.0
