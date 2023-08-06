@@ -1,0 +1,3 @@
+[console_scripts]
+yiff = yiffscraper.__main__:main
+

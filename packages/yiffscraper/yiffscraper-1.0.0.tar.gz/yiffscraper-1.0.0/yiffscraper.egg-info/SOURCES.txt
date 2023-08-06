@@ -1,0 +1,11 @@
+setup.py
+yiffscraper/__init__.py
+yiffscraper/__main__.py
+yiffscraper/downloader.py
+yiffscraper/yiffscraper.py
+yiffscraper.egg-info/PKG-INFO
+yiffscraper.egg-info/SOURCES.txt
+yiffscraper.egg-info/dependency_links.txt
+yiffscraper.egg-info/entry_points.txt
+yiffscraper.egg-info/requires.txt
+yiffscraper.egg-info/top_level.txt
