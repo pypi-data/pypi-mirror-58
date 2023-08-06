@@ -1,0 +1,17 @@
+wagtail_resume/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+wagtail_resume/apps.py,sha256=xpqkq5uY8Kmzid_vHoHekETzvDjygRlOGoHLYxi2A0M,268
+wagtail_resume/blocks.py,sha256=SgoTA-0rp2hpOhjG9udhlfkPTR8KBjGoP1-3mB8I3Cc,2346
+wagtail_resume/models.py,sha256=ta7vVu5ERkAg6VAo1B2bkG49tx-W3aPda0L8kgW-7Cw,2873
+wagtail_resume/signals.py,sha256=FRD_kYDTRTkJg9ISZ3ZyF2-m3Fp0Afy2O1DMw7eMS4I,36
+wagtail_resume/migrations/0001_initial.py,sha256=lr3GzIahDK2k8iewtJC5KisDwTos-RXcYy0JtYOr2TI,12635
+wagtail_resume/migrations/0002_auto_20191209_2007.py,sha256=_AxpxFffHuE_avaSXyfQysTKU3NwGc9IqjUP7TK9Pz0,9545
+wagtail_resume/migrations/0003_auto_20191210_0939.py,sha256=WMh6Rp0AdfJMN_c_DoxhX8oY24pENka9ARr_rg7mwH4,1092
+wagtail_resume/migrations/0004_auto_20191210_1057.py,sha256=fboucw_O0OW88vVYna4ENJU1uTpWJ_Hr2eFb0xDnrW0,8823
+wagtail_resume/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_resume/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_resume/templatetags/wagtail_resume_extras.py,sha256=unKCJzTfxnv_K0XmFqwn4UVsTRuRqcQT-diQeT-2KKU,139
+wagtail_resume-0.0.4.dist-info/LICENSE,sha256=vAZGXq3z1L_7cZJvkZ3zrjlDacdt1lxdC8s3v6ismD0,1069
+wagtail_resume-0.0.4.dist-info/METADATA,sha256=2H2Zah2Karp_b8Dlcw1Jsodl0w1DnC9RS63td1Hipbg,2831
+wagtail_resume-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wagtail_resume-0.0.4.dist-info/top_level.txt,sha256=rMKqSdsYnyY9vlwucdD92jHTiFWvbcmZBPBDUaDbnS8,15
+wagtail_resume-0.0.4.dist-info/RECORD,,
