@@ -1,0 +1,6 @@
+codeclimate-test-reporter
+coveralls
+pycodestyle
+pytest
+pytest-cov
+mock
