@@ -1,0 +1,10 @@
+rocks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rocks/__main__.py,sha256=qybuHPEpFyrnSrt2t9Su83VsNENVEsWPejDqP_yoJYc,2341
+rocks/client.py,sha256=JHkSpYYiq_4fFaTGWZF9il5TI7WS561PwQTY_QeY1mY,1491
+rocks/constants.py,sha256=ts2Bov3NABCnRuX4YO-eqv7oXZi-Tqbp4erEjni4eSc,524
+rocks/server.py,sha256=LPX0OczsdoW3mWP2vioksxstn5FwdOy-_xAZsHZFY1A,4336
+rocks-0.1.5.dist-info/METADATA,sha256=RUQl7mU5eN0Zixtx5MZFl4AHpDghyWandLOlY9NgEzY,435
+rocks-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rocks-0.1.5.dist-info/entry_points.txt,sha256=aFECqC82tCzBwieHfDp4kNdht0cbYGkfPv7raURN-nY,64
+rocks-0.1.5.dist-info/top_level.txt,sha256=syBOmD0-XuFlHyhW0P0uNXqdO_gyNC1Uo7msoKT6luE,6
+rocks-0.1.5.dist-info/RECORD,,
