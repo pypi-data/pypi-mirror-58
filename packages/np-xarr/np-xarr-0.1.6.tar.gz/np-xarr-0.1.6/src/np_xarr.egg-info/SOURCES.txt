@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/np_xarr.egg-info/PKG-INFO
+src/np_xarr.egg-info/SOURCES.txt
+src/np_xarr.egg-info/dependency_links.txt
+src/np_xarr.egg-info/requires.txt
+src/np_xarr.egg-info/top_level.txt
+src/npxarr/__init__.py
+src/npxarr/array2Ast.py
+src/npxarr/definedException.py
+src/npxarr/definedTypes.py
+src/npxarr/indexConverter.py
+src/npxarr/utils.py
+src/npxarr/xArray.py
