@@ -1,0 +1,8 @@
+README.md
+setup.py
+Flask_Dance_Google_Auth.egg-info/PKG-INFO
+Flask_Dance_Google_Auth.egg-info/SOURCES.txt
+Flask_Dance_Google_Auth.egg-info/dependency_links.txt
+Flask_Dance_Google_Auth.egg-info/requires.txt
+Flask_Dance_Google_Auth.egg-info/top_level.txt
+flask_dance_google_auth/__init__.py
