@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: devcon_win
+Version: 0.2.1
+Summary: With devcon_win, you can access all functions of devcon.exe. In addition, you can see all available drivers as a function.
+Home-page: https://github.com/Shivanshu26shiv/devcon_win
+Author: Shivanshu Srivastava
+Author-email: shivanshu26shiv@gmail.com
+License: MIT
+Download-URL: https://github.com/Shivanshu26shiv/devcon_win/archive/v_02.1.tar.gz
+Description: UNKNOWN
+Keywords: devcon,hardware drivers,device drivers,drivers
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
