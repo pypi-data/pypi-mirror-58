@@ -1,0 +1,4 @@
+Click
+psutil
+PyYAML
+paramiko
