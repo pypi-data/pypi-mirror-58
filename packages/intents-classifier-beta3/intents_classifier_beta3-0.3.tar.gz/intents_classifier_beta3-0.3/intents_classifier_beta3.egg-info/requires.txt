@@ -1,0 +1,8 @@
+pymorphy2
+nltk
+gensim
+keras
+sklearn
+numpy
+collections
+pickle
