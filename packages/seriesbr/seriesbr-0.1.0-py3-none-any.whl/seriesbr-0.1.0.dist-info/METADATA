@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: seriesbr
+Version: 0.1.0
+Summary: Get requests for brazilian economic time series databases
+Home-page: https://github.com/phelipetls/seriesbr
+Author: Phelipe Teles
+Author-email: phelipe_teles@hotmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://seriesbr.readthedocs.io/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+
+
+SeriesBR - A Python package to interact with brazilian time series databases
+
+It has functions to get time series data from Instituto de Pesquisa Econômica Aplicada (IPEA), Banco Central do Brasil (BCB) and Instituto Brasileiro de Geografia e Estatística (IBGE) databases into a DataFrame.
+
+Learn more about it in our [repository](https://github.com/phelipetls/seriesbr) or [documentation](https://seriesbr.readthedocs.io).
+
+
