@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: firestore-odm
+Version: 0.0.1.dev5
+Summary: Firestore Object Document Mapping. 
+Home-page: https://github.com/billyrrr/firestore-odm
+Author: Bill Rao
+Author-email: billrao@me.com
+License: MIT License
+Download-URL: https://github.com/billyrrr/firestore-odm/archive/0.0.1.dev5.tar.gz
+Description: UNKNOWN
+Keywords: firebase,firestore,ORM,backend,nosql
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
