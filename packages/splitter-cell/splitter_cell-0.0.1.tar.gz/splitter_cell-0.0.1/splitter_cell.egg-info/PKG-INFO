@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: splitter-cell
+Version: 0.0.1
+Summary: A tool to split files and combine them together again using the command-line.
+Home-page: UNKNOWN
+Author: Kevin Hill
+Author-email: kah.kevin.hill@gmail.com
+License: BSD
+Description: # Splitter Cell
+        
+        CLI tool to split files and stuff.
+Keywords: split any file
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License

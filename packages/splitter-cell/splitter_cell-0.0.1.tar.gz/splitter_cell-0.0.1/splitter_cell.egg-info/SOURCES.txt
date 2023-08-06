@@ -1,0 +1,9 @@
+README.md
+setup.py
+splitter_cell/__init__.py
+splitter_cell/main.py
+splitter_cell.egg-info/PKG-INFO
+splitter_cell.egg-info/SOURCES.txt
+splitter_cell.egg-info/dependency_links.txt
+splitter_cell.egg-info/requires.txt
+splitter_cell.egg-info/top_level.txt
