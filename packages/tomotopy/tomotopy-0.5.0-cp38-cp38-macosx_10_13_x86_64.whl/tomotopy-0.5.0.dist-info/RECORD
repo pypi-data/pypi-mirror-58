@@ -1,0 +1,11 @@
+_tomotopy.cpython-38-darwin.so,sha256=s40RdXP2rqkzZfMGpFZgzCPKJ2LQlqJoK5SraTIcj-A,29491652
+_tomotopy_avx.cpython-38-darwin.so,sha256=X8yDF1WDCjUOESd029LXD-DtSt52EuCWAc0BfLR_V5U,29475692
+_tomotopy_avx2.cpython-38-darwin.so,sha256=TNWonYpe8qxPGOkK1192zloqz-_xI8J5TQBRFJv7Oz8,29445540
+tomotopy/__init__.py,sha256=7nb9Yk-IhZDsJJeJHa52tQwIJQr1vCU-6guzVv_MwPQ,7255
+tomotopy/documentation.kr.rst,sha256=gdlPzIymOpwlHUmN5fbo2OrH6PakktNCKGWchlyBo00,16956
+tomotopy/documentation.rst,sha256=gYuT6J_UYj7ywramkeM2Pgz7xJl6k5B_7BUzdGc-4X0,14471
+tomotopy-0.5.0.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+tomotopy-0.5.0.dist-info/METADATA,sha256=uLhEQG8Kc5KdSo-B006Oos5s7sCwK7KMKoks7vYGKkE,12584
+tomotopy-0.5.0.dist-info/WHEEL,sha256=On5oAIy1J9a4Hi0rt5QD0bWplmqIZ3QT3y7T7yPgvQs,110
+tomotopy-0.5.0.dist-info/top_level.txt,sha256=xDsqdkjudfEXmavpqCETVotQQ96a_2zQspJmSFg8fQQ,48
+tomotopy-0.5.0.dist-info/RECORD,,
