@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: kong-batch
+Version: 0.1.9
+Summary: Batch job submission and management tool
+Home-page: http://github.com/paulgessinger/kong
+Author: Paul Gessinger
+Author-email: hello@paulgessinger.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: pyyaml
+Requires-Dist: halo
+Requires-Dist: sh
+Requires-Dist: python-dateutil
+Requires-Dist: peewee
+Requires-Dist: coloredlogs
+Requires-Dist: humanfriendly
+Requires-Dist: psutil
+Requires-Dist: schema
+Requires-Dist: tqdm
+Requires-Dist: notifiers
+Requires-Dist: jinja2
+Requires-Dist: pytimeparse
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: ipython
+Requires-Dist: ipython ; extra == 'ipython'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# Kong [![Build Status](https://travis-ci.com/paulgessinger/kong.svg?branch=master)](https://travis-ci.com/paulgessinger/kong) [![codecov](https://codecov.io/gh/paulgessinger/kong/branch/master/graph/badge.svg)](https://codecov.io/gh/paulgessinger/kong) [![pypi](https://img.shields.io/pypi/v/kong-batch)](https://pypi.org/project/kong-batch/)
+
+Kong is a batch job management software.
+
+
