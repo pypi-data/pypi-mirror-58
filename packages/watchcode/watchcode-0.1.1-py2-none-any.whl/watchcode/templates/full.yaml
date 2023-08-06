@@ -1,0 +1,23 @@
+filesets:
+  default:
+    include:
+      - ".watchcode.yaml"
+      {includes}
+    exclude:
+      - ".watchcode.log"
+      {excludes}
+    exclude_gitignore: true
+    match_mode: "gitlike"
+
+tasks:
+  default:
+    fileset: default
+    commands:
+      {commands}
+    clear_screen: true
+    queue_events: false
+
+default_task: default
+log: false
+sound: false
+notifications: false
