@@ -1,0 +1,1 @@
+git+https://github.com/adam2392/eegio#egg=eegio
