@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flake8-flask
+Version: 0.8.0b3
+Summary: Static analysis checks for Flask, by r2c. Available in our free program analysis tool, Bento. (ht
+Author: grayson
+Author-email: grayson@returntocorp.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: flake8 (>=3.7.9,<4.0.0)
+Requires-Dist: r2c-py-ast (==0.1.0b1)
