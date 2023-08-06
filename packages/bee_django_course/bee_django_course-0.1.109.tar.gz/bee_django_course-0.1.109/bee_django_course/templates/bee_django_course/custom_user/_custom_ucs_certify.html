@@ -1,0 +1,58 @@
+{% if user_course_section.check_certify_pass %}
+    <div class="bg-success" style="margin: 10px 0; padding: 10px;">
+        本课需【认证通过】，恭喜您已通过认证
+    </div>
+{% else %}
+    {% if user_course_section.is_learning %}
+        <div class="bg-warning" style="padding: 10px 5px;margin: 10px 0;">
+            本课需【认证通过】，时间达标后可开启，开启后的第一个录制视频为【认证视频】，只有一次机会。
+            您准备好后可
+            <a href="#" class="btn btn-warning"
+                    {% if user_course_section.is_open_certify %}
+               onclick="click_create('{{ user_course_section.id }}')"
+                    {% else %}
+               disabled="disabled"
+                    {% endif %}
+
+            >去开启认证</a>
+        </div>
+        {% if user_course_section.is_open_certify %}
+            <div>
+                如未通过认证，本课练习时间要求将变为
+                <span style="color: red"> {{ user_course_section.work_time }} +
+                    {{ user_course_section.section.video_length_req }}</span> 分钟。
+            </div>
+        {% endif %}
+    {% else %}
+        <div>您已通过该课件，无需认证</div>
+    {% endif %}
+{% endif %}
+<div>
+    {% for record in user_course_section.usercertifyrecord_set.all %}
+        {% if record.status == 0 or record.status == 1 %}
+            如未通过认证，本课练习时间要求将变为
+            <span style="color: red"> {{ record.detail.live_mins }} +
+                {{ user_course_section.section.video_length_req }}</span> 分钟。
+        {% endif %}
+        <div>开启时间：{{ record.created_at }}，状态： {{ record.get_status }}。
+            {% if record.user_live %}
+                <a href="{% url 'bee_django_course:user_live_video_detail' user_live_id=record.user_live.id %}">查看录播</a>
+            {% endif %}
+            {% if record.operator %}
+                &nbsp;&nbsp;操作人：{{ record.operator.first_name }}{% endif %}
+            {% if record.operated_at %}，{{ record.operated_at }}{% endif %}</div>
+
+    {% endfor %}
+</div>
+
+<script>
+    function click_create(ucs_id) {
+        var url = '{% url "bee_django_course:user_certify_create" %}';
+        $.post(url, {"ucs_id": ucs_id}).done(function (data) {
+            alert(data['message']);
+            if (data.error == 0) {
+                location.reload();
+            }
+        });
+    }
+</script>

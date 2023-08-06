@@ -1,0 +1,36 @@
+<div>
+
+    <h5>认证要求：需通过认证</h5>
+    <div style="margin: 10px 0;">共有{{ ucs.usercertifyrecord_set.all|length }}条记录</div>
+    {% for record in ucs.usercertifyrecord_set.all %}
+        <div style="border-top: 1px solid #cccccc;padding: 10px 0;">
+            开启时间：{{ record.created_at }}，状态： {{ record.get_status }}
+            {% if record.user_live %}
+                <a href="{% url 'bee_django_course:live_video_detail' user_live_id=record.user_live.id %}">查看</a> {% endif %}
+            {% if record.operator %} 。操作人：{{ record.operator.first_name }}{% endif %}{% if record.operated_at %}，
+            {{ record.operated_at }}{% endif %}
+            <div>
+                <div style="color: red;margin: 10px 0;">
+                    {% if record.status == 1 %}
+                        <a href="#" class="btn btn-success" onclick="update_certify_status('{{ record.id }}','pass')">
+                            通过
+                        </a>
+                        <a href="#" class="btn btn-danger"
+                           onclick="update_certify_status('{{ record.id }}','reject')">
+                            驳回
+                        </a>
+                    {% endif %}
+                    {% if record.status == 0 or record.status == 1 %}
+                        <a href="#" class="btn btn-default" onclick="update_certify_status('{{ record.id }}','close')">
+                            关闭
+                        </a>
+                    {% endif %}
+                </div>
+                {% if record.status == 1 %}
+                    <div style="color: red;margin: 10px 0;">注：驳回会导致本课练习时间变更为{{ record.detail.live_mins }} + {{ ucs.section.video_length_req }}分钟。
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
