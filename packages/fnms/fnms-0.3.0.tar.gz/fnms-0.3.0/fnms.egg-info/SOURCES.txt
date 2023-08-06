@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+fnms/__init__.py
+fnms/cpu_nms.pyx
+fnms/py_cpu_nms.py
+fnms.egg-info/PKG-INFO
+fnms.egg-info/SOURCES.txt
+fnms.egg-info/dependency_links.txt
+fnms.egg-info/requires.txt
+fnms.egg-info/top_level.txt
