@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+dedupe_hcluster.egg-info/PKG-INFO
+dedupe_hcluster.egg-info/SOURCES.txt
+dedupe_hcluster.egg-info/dependency_links.txt
+dedupe_hcluster.egg-info/requires.txt
+dedupe_hcluster.egg-info/top_level.txt
+hcluster/__init__.py
+hcluster/_hierarchy.c
+hcluster/_hierarchy.pyx
+hcluster/_hierarchy_distance_update.pxi
+hcluster/distance.py
+hcluster/distance_impl.h
+hcluster/distance_wrap.c
+hcluster/hierarchy.py
