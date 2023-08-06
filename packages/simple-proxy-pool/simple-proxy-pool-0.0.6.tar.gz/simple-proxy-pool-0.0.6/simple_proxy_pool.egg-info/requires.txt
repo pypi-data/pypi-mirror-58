@@ -1,0 +1,8 @@
+requests
+loguru
+httpx
+aiohttp
+multidict
+tqdm
+async_timeout
+html2text
