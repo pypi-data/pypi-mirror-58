@@ -1,0 +1,9 @@
+README.md
+setup.py
+long_gen/__init__.py
+long_gen.egg-info/PKG-INFO
+long_gen.egg-info/SOURCES.txt
+long_gen.egg-info/dependency_links.txt
+long_gen.egg-info/not-zip-safe
+long_gen.egg-info/requires.txt
+long_gen.egg-info/top_level.txt
