@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: birdparse
+Version: 0.4.2
+Summary: Generic object parser for python supporting yaml and json
+Home-page: https://pypi.python.org/pypi/birdparse
+Author: Anthony Casagrande
+Author-email: birdapi@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: yaml json birdapi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License

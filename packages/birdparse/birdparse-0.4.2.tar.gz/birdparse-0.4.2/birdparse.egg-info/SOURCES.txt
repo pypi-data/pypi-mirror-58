@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+birdparse/__init__.py
+birdparse.egg-info/PKG-INFO
+birdparse.egg-info/SOURCES.txt
+birdparse.egg-info/dependency_links.txt
+birdparse.egg-info/requires.txt
+birdparse.egg-info/top_level.txt

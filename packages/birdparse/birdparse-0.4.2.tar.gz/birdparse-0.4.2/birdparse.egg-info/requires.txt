@@ -1,0 +1,2 @@
+birdyaml>=0.2.2
+birdjson>=0.11.2
