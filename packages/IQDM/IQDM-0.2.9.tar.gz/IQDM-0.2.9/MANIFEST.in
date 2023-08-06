@@ -1,0 +1,4 @@
+recursive-include IQDM/*.py
+README.md
+LICENSE
+setup.py

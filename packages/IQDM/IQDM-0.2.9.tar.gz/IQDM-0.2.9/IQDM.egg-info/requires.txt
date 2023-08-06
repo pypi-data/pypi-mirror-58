@@ -1,0 +1,6 @@
+pdfminer.six
+pdfminer>19
+numpy
+python-dateutil
+chardet==3.0.4
+pathvalidate
