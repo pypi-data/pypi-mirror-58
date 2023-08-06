@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyMQL5/PyMQL5.py
+PyMQL5/Test.py
+PyMQL5/Tools.py
+PyMQL5/__init__.py
+PyMQL5.egg-info/PKG-INFO
+PyMQL5.egg-info/SOURCES.txt
+PyMQL5.egg-info/dependency_links.txt
+PyMQL5.egg-info/top_level.txt
