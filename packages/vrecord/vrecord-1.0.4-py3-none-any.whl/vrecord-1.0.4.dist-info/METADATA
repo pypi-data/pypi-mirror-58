@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vrecord
+Version: 1.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/cilame/vrecord
+Author: cilame
+Author-email: opaquisrm@hotmail.com
+License: MIT
+Keywords: vrecord
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Requires-Dist: pynput
+
+UNKNOWN
+
+
