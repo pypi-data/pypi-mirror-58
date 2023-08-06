@@ -1,0 +1,14 @@
+aiohubot/__init__.py,sha256=TSJUeDe-8vmGUghjMadHj6IAL3bqb6wmZ9TExjAAi9Q,337
+aiohubot/__main__.py,sha256=j-0bVao7GMECrd1nGgmKapedJddHeAH3m4elmFPpQ8M,4054
+aiohubot/core.py,sha256=zKfbslitJutcUmU6yBshNZVLWFKoOQ8Jlp_mNwvfKr0,13352
+aiohubot/plugins.py,sha256=aNo21sTbViVRA5PBuDlmkyRpTtKm9rQNlAz-d3HQLzU,6538
+aiohubot/robot.py,sha256=Pd9H2tPBETiOjy-MWnlUcCcLXeJLdXcotHgtwgMFrO8,22054
+aiohubot/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohubot/adapters/shell.py,sha256=gaAqhdK85Vb1bSEndT3RS8Gbn_ShrF9cOHYNEIfbTBw,2014
+aiohubot/datastores/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiohubot/datastores/memory.py,sha256=jPmbvWUhBUBbgNF9hKyqaBiGKujAUZNfmnP6USW9xzE,548
+aiohubot-0.4.7.dist-info/LICENSE,sha256=wLK-OdAKb3Ae9bTusMNDbfV5-X8k0BJpG4B6zc5VYsU,1082
+aiohubot-0.4.7.dist-info/METADATA,sha256=UzGy-PUizWw3KeCi93ukDj-PFb-4sdBIuOZUQ1Z71sQ,748
+aiohubot-0.4.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aiohubot-0.4.7.dist-info/top_level.txt,sha256=brZAm7EBUyjulnQrX2D78rls-3rgNdfattVL6hKrc-Y,9
+aiohubot-0.4.7.dist-info/RECORD,,
