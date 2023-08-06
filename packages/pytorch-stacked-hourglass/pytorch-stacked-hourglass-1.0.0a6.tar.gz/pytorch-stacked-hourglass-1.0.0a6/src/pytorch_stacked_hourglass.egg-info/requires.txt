@@ -1,0 +1,5 @@
+importlib_resources
+Pillow
+scipy
+tabulate
+torch
