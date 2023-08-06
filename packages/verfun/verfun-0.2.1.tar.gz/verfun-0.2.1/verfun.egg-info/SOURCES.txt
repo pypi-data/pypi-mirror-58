@@ -1,0 +1,7 @@
+README.md
+setup.py
+verfun.egg-info/PKG-INFO
+verfun.egg-info/SOURCES.txt
+verfun.egg-info/dependency_links.txt
+verfun.egg-info/requires.txt
+verfun.egg-info/top_level.txt
