@@ -1,0 +1,4 @@
+[console_scripts]
+BreachCompilationDatabase = CredentialDatabase.scripts.BreachCompilationDatabase:main
+PasswordDatabase = CredentialDatabase.scripts.PasswordDatabase:main
+
