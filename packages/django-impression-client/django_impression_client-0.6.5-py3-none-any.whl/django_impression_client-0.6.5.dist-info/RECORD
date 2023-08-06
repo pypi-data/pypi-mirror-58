@@ -1,0 +1,16 @@
+impression_client/__init__.py,sha256=BxpOQHQyg7sqoB2PdYgCZHpsUlxxv6W6kEUfebsObFw,84
+impression_client/admin.py,sha256=La1ESxuQ2y2kMZHOGSLJ8sNlPFf7kGmlYmTFAgss93E,316
+impression_client/apps.py,sha256=v77XRPuPpcOz3aA_CfM3_lRvNwh3hPfy2AmU132j02w,172
+impression_client/backends.py,sha256=AktYe9dK4B8CkGW7nn81KiQCccxFbu0G7pidqcLFM9E,2287
+impression_client/models.py,sha256=7vsYA9w8GHhtN5nBDUdG_mOfgTO8OOHDuYvJECawptM,2056
+impression_client/settings.py,sha256=ZEgWKC_2RkIFTRi2XcMyS5xwk8SQC-7xNf_qlRHs5RA,3495
+impression_client/tests.py,sha256=LAnl04z6TOie8GCkQWk6Gg7zxcF-aAuaazJtuS6L7SY,5686
+impression_client/urls.py,sha256=UIGRrID_O0Mm9YH5N95ViswoLRwD7AEbdDUR-wvRMzo,112
+impression_client/wsgi.py,sha256=QTSxHAYaZib9PTEsf9Vc83jQiOfAtHrlPmwtHji10e4,177
+impression_client/migrations/0001_initial.py,sha256=30eVNjPadmSRAq-18bvozQ2dnV6JnddNV8F0eJkB1og,1073
+impression_client/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_impression_client-0.6.5.dist-info/LICENSE,sha256=i6KYKElsx1_aia5LlJzYJByZKl4qyZhaUgeSLL95K_U,1074
+django_impression_client-0.6.5.dist-info/METADATA,sha256=KqqCTwDn9iXj3LahL8hk_A6QMKTdvdmaAMVTJTciwhw,2642
+django_impression_client-0.6.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_impression_client-0.6.5.dist-info/top_level.txt,sha256=8fXNh9sMXDNcFh7vW3Bg1NpNucr9_BshV0ZIh-hpO4s,18
+django_impression_client-0.6.5.dist-info/RECORD,,
