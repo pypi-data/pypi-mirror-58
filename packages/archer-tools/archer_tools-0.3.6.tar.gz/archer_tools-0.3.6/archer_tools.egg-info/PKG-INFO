@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: archer-tools
+Version: 0.3.6
+Summary: Archer Tools CLI for multiple things!.
+Home-page: https://github.com/kylecribbs/archer_tools
+Author: Kyle Cribbs
+Author-email: kylecribbs@outlook.com
+License: MIT
+Description: 
+        
+        # History
+        
+        0.0.1 (2019-09-11)
+        
+        ----------------
+        
+        * First release on PyPI
+Keywords: archer_tools
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: docs
+Provides-Extra: cli
