@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rbcde
+Version: 1.0.0
+Summary: Rank-biserial correlation
+Home-page: https://github.com/Teichlab/rbcde
+Author: Krzysztof Polanski
+Author-email: kp9@sanger.ac.uk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
