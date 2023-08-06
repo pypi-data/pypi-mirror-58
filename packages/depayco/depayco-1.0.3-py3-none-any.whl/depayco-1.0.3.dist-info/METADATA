@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: depayco
+Version: 1.0.3
+Summary: Django integration with ePayco (epayco.co)
+Home-page: https://github.com/ma1onso/depayco
+Author: Alonso
+Author-email: alons45@gmail.com
+License: GPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyepayco (==1.0.0)
+Requires-Dist: requests (>=2.4.3)
+Requires-Dist: pycrypto (>=2.3)
+
+Django integration with ePayco ([epayco.co](https://www.epayco.co)), Colombian payment gateway.
+
+## Installation
+- `pip install depayco`.
+
+- Set _depayco_ on INSTALLED_APPS.
+
+- Run `python manage.py migrate`.
+
+## Configurations (settings.py)
+
+**EPAYCO_PUBLIC_KEY**: String
+
+**EPAYCO_SECRET_KEY**: String
+
+**DEBUG_EPAYCO**: Boolean
+
+**PLANS**
+```
+PLANS = (
+    {
+        'id_plan': 'love2d_course',
+        'name': 'love2d Course',
+        'description': 'The most beautiful love2d course',
+        'amount': 29.99,
+        'currency': 'USD',
+        'interval': 'month',
+        'interval_count': 1,
+        'trial_days': 14,
+    },
+    {
+        'id_plan': 'defold_course',
+        'name': 'defold Course',
+        'description': 'The most mad defold course',
+        'amount': 29.99,
+        'currency': 'USD',
+        'interval': 'month',
+        'interval_count': 1,
+        'trial_days': 14,
+    }
+)
+```
+
+## How to use
+
+`python manage.py sync_plans` to create plans on epayco.co
+
+## Buy me a coffee
+
+[![](https://cdn4.iconfinder.com/data/icons/simple-peyment-methods/512/paypal-64.png)](https://paypal.me/alonsoenrique)
+
+
