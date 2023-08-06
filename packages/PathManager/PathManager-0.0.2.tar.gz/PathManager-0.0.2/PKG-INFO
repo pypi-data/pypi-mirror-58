@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: PathManager
+Version: 0.0.2
+Summary: This module allows you to input a file path, step back n-levels toward
+the root directory, and append an optional sub folder string.
+Home-page: https://github.com/alvaroluna/PathManager.git
+Author: ALVARO LUNA
+Author-email: aluna@objectiveapplications.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers, PyRevit users
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: IronPython :: 2
