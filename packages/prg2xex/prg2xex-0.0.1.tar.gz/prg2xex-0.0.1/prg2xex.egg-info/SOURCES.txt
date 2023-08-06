@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+bin/prg2xex
+prg2xex/__init__.py
+prg2xex/prg2xex.py
+prg2xex.egg-info/PKG-INFO
+prg2xex.egg-info/SOURCES.txt
+prg2xex.egg-info/dependency_links.txt
+prg2xex.egg-info/requires.txt
+prg2xex.egg-info/top_level.txt
