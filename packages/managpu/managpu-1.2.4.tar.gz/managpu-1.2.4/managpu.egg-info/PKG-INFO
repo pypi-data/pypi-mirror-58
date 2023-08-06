@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: managpu
+Version: 1.2.4
+Summary: managpu: for choosing gpus
+Home-page: https://github.com/perryupan/managpu
+Author: Perry
+Maintainer: Perry
+License: GPLv3
+Description: Make setting gpus more easy.
+Platform: any

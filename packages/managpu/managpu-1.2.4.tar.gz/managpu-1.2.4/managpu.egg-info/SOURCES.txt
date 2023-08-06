@@ -1,0 +1,10 @@
+setup.py
+managpu/__init__.py
+managpu.egg-info/PKG-INFO
+managpu.egg-info/SOURCES.txt
+managpu.egg-info/dependency_links.txt
+managpu.egg-info/requires.txt
+managpu.egg-info/top_level.txt
+managpu/_choice/__init__.py
+managpu/_choice/_gpu_manager.py
+managpu/_choice/_gpu_utils.py
