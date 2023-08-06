@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+numeral_system_py.egg-info/PKG-INFO
+numeral_system_py.egg-info/SOURCES.txt
+numeral_system_py.egg-info/dependency_links.txt
+numeral_system_py.egg-info/not-zip-safe
+numeral_system_py.egg-info/requires.txt
+numeral_system_py.egg-info/top_level.txt
+src/numeral_system/__init__.py
+src/numeral_system/exceptions.py
+src/numeral_system/positional.py
+src/numeral_system/roman.py
