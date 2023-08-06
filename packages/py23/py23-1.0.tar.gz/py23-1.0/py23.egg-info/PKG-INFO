@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py23
+Version: 1.0
+Summary: Python 2/3 compatible functions pack
+Home-page: https://github.com/vb64/py23
+Author: Vitaly Bogomolov
+Author-email: mail@vitaly-bogomolov.ru
+License: UNKNOWN
+Download-URL: https://github.com/vb64/py23/archive/v1.0.tar.gz
+Description: 
+        # Py23
+        
+        Python 2/3 compatible functions pack
+        
+Keywords: python,load_module_by_path
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
