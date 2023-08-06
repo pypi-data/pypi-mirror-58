@@ -1,0 +1,144 @@
+%%% Start:
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[a4paper,]{report}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Europeean Materials Modelling Ontology},
+            pdfauthor={Emanuele Ghedini, Gerhard Goldbeck, Adham Hashibon, Georg Schmitz, Jesper Friis},
+            pdfkeywords={EMMO, materials science, modelling, characterisation, materials, ontology},
+            colorlinks=true,
+            linkcolor=Maroon,
+            filecolor=Maroon,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=2cm]{geometry}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{Europeean Materials Modelling Ontology}
+\author{Emanuele Ghedini \and Gerhard Goldbeck \and Adham Hashibon \and Georg Schmitz \and Jesper Friis}
+\providecommand{\institute}[1]{}
+\institute{European Materials Modelling Counsil (EMMC)}
+\date{December 27, 2019}
+
+\begin{document}
+%\maketitle
+% Create our custom title page
+\begin{titlepage}
+  \centering
+      {\huge\bfseries Europeean Materials Modelling Ontology\par}\vspace{0.4cm}
+        {\scshape\LARGE Version 0.9.10\par}\vspace{1cm}
+    \par
+    {\Large European Materials Modelling Counsil (EMMC)\par}\vspace{0.2cm}
+    %  %{\itshape By Emanuele Ghedini, Gerhard Goldbeck, Adham Hashibon, Georg Schmitz, Jesper Friis\par}\vspace{0.3cm}
+  %  \par
+    \includegraphics[width=0.12\textwidth]{figs/emmc-logo.png}\par\vspace{1cm}
+      {\large December 27, 2019\par}\vspace{2cm}
+      \includegraphics{figs/emmo-multidisciplinary.png}\par\vspace{0.5cm}
+  \end{titlepage}
+\thispagestyle{empty}
+\begin{abstract}
+EMMO is an ontology that is created by the Europeean Materials Modelling
+Council (EMMC) to provide a formal way to describe the fundamental
+concepts of physics, chemistry and materials science. EMMO is designed
+to pave the road for semantic interoperability providing a generic
+common ground for describing materials, models and data that can be
+adapted by all domains.
+
+It is a representational framework of predefined classes and axioms
+(ontology) provided by experts (EMMC) that enables end users (industry,
+research, academy) to represent real life physical entities (materials,
+devices), models and properties using ontological signs (individuals) in
+a standard way to facilitate interactions and exchanges (data, software,
+knowledge) between all involved material modelling and characterization
+communities and stakeholders.
+{%
+  \par\vspace{1cm}
+  {\bf Keywords:} EMMO, materials science, modelling, characterisation, materials, ontology
+}
+{
+  \par\vspace{4cm}
+  \raggedleft
+  Authors:\par
+  \itshape
+  Emanuele Ghedini, University of Bologne\par Gerhard Goldbeck, Goldbeck Consulting\par Adham Hashibon, Fraunhofer IWM\par Georg Schmitz, ACCESS\par Jesper Friis, SINTEF\par 
+}
+\end{abstract}
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{relations}{%
+\chapter{Relations}\label{relations}}
+
+\hypertarget{entity-branch}{%
+\section{entity branch}\label{entity-branch}}
+
+\hypertarget{entities}{%
+\chapter{Entities}\label{entities}}
+
+\hypertarget{entity-branch-1}{%
+\section{entity branch}\label{entity-branch-1}}
+
+\hypertarget{individuals}{%
+\chapter{Individuals}\label{individuals}}
+
+\hypertarget{entity-branch-2}{%
+\section{entity branch}\label{entity-branch-2}}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,50 @@
+Generate documentation for EMMO
+===============================
+This directory contains the needed templates, introductory text and
+figures for generating the full EMMO documentation using `ontodoc`.
+Since the introduction is written in markdown, pandoc is required for
+both pdf and html generation.
+
+For a standalone html documentation including all inferred relations,
+enter this directory and run
+
+    ontodoc --template=emmo.md emmo-inferred.owl emmo.html
+
+Pandoc options may be adjusted with the files
+[pandoc-args.yaml](pandoc-args.yaml) and
+[pandoc-html-args.yaml](pandoc-html-args.yaml).
+
+Similarly, for generating pdf documentation, enter this directory and run
+
+    ontodoc --template=emmo.md emmo-inferred.owl emmo.pdf
+
+By default, we have configured pandoc to use xelatex for better unicode
+support.  It is possible to change these settings in
+[pandoc-args.yaml](pandoc-args.yaml) and
+[pandoc-pdf-args.yaml](pandoc-pdf-args.yaml).
+
+
+Content of this directory
+-------------------------
+
+## `ontodoc` templates with introductory text and document layout
+  * [emmo.md](emmo.md): Main template for EMMO. It includes the other
+    templates.
+  * [introduction.md](introduction.md): Introductory text.
+  * [relations.md](relations.md): Introduction and sections for Relations
+    chapter.
+  * [classes.md](classes.md): Introduction and sections for Classes
+  * [figs](figs): Figures used in the introduction.
+
+## `pandoc` configuration files
+  * [pandoc-args.yaml](pandoc-args.yaml): General pandoc options.
+  * [pandoc-html-args.yaml](pandoc-html-args.yaml): Additional pandoc options
+    for html generation.
+  * [pandoc-pdf-args.yaml](pandoc-pdf-args.yaml): Additional pandoc options
+    for pdf generation.
+
+
+emmodoc.css
+emmodoc-meta.yaml
+emmodoc-template.html
+emmodoc-template.tex
