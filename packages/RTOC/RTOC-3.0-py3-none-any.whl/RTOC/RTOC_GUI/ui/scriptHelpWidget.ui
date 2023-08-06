@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1263</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Script Help</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Logger-Funktions</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Automatically imported libraries:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>import numpy as np</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>import scipy as sp</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>import math</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget_default_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <item>
+          <property name="text">
+           <string>global VARNAME = 0 # Define global variables !!Use them with self.VARNAME!!</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>trig LOGIC_EXPRESSION: #Use like &quot;if&quot; but with only one execution on change</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>stream(y=0, sname=&quot;noName&quot;, dname=&quot;noDevice&quot;, unit=&quot;&quot;) </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>plot([x],[y],sname=&quot;noName&quot;,dname=&quot;noDevice&quot;,unit=&quot;&quot;) </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>plot([y],sname=&quot;noName&quot;,dname=&quot;noDevice&quot;,unit=&quot;&quot;)  # X-Werte = range(len(y))</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>event(text=&quot;&quot;, sname=&quot;noName&quot;, dname=&quot;noDevice&quot;, x=clock, priority=0) </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>{ans} = sendTCP(hostname = &quot;localhost&quot;, *args, **kwargs)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>print() </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>clearData() # Delete all data</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>exportData(Filetype=&quot;json&quot;, filename=AUTO) # Exports all data</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Default-Functions</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget_default">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <item>
+          <property name="text">
+           <string>[x], [[y], [y2],...] = rtoc.combine([[x],[y], [x2],[y2], ...], n=10) # Resample multiple signals to have same X-values</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[x], [y] = rtoc.resample([x], [y], n=10) # Resample signal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[x], [y] = rtoc.resampleFourier([x], [y], n=10) # Resample signal using fourier</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[x], [y] = rtoc.mean([x], [y], n= 40) # Mean of latest n y-values</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[x], [y] = rtoc.runningMean([x], [y], n=40) # Running mean of signal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[x], [y], [params] = rtoc.lsfit([x], [y] , DEF, x0, n) # LeastSquare fit with userdefined DEF, or predefined: DEF = &quot;linear&quot; or &quot;quad&quot;</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>dy = rtoc.d([x], [y]) # Derivative of signal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>[x], [dy] = rtoc.diff([x], [y]) </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>t = rtoc.PID([x], [y], Sollwert, kp=1, kd=0) # PD-Control</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>t, newI = rtoc.PID([x], [y], Sollwert, kp=1, kd=0, ki=0, lastI) # PID-Control</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Devices</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Signal = x,y</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>X-Values: Device.Signal.x</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Latest Y-Value: Device.Signal.latest</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Y-Values: Device.Signal.y</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="signalListWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
