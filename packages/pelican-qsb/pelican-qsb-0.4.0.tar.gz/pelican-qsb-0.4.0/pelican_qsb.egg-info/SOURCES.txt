@@ -1,0 +1,10 @@
+README.md
+setup.py
+pelican_qsb.egg-info/PKG-INFO
+pelican_qsb.egg-info/SOURCES.txt
+pelican_qsb.egg-info/dependency_links.txt
+pelican_qsb.egg-info/entry_points.txt
+pelican_qsb.egg-info/requires.txt
+pelican_qsb.egg-info/top_level.txt
+qsb/__init__.py
+qsb/make_site.py
