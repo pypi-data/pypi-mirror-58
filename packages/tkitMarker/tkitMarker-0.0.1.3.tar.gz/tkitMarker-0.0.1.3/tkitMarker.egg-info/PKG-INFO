@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: tkitMarker
+Version: 0.0.1.3
+Summary: Terry Auto Marker
+Home-page: https://github.com/napoler/AlBert-BiLSTM-CRF-pytorch
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: 
+        
+        这里是说明
+        用于自动标记文本内容
+        使用albert
+        
+        自动标记文本
+        自动会下载模型
+        
+        可自己训练
+        
+        
+        ~~~
+        
+        # 安装
+        
+        
+        pip install tkitMarker  -i https://pypi.org/simple
+        
+        
+        
+        
+        from tkitMarker import *
+        
+        def pre_one():
+        
+            content="柯基犬性格活泼可爱，但是饲养柯基犬会有着六个坏处，你还敢饲养柯基犬吗？"
+        
+            P=Pre()
+        
+            result=P.pre([content])
+        
+            print(result)
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
