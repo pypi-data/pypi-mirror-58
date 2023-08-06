@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: testpoetrypypi
+Version: 0.1.12
+Summary: 
+License: Apache-2.0
+Author: Jeff
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: poetry-version (>=0.1.5,<0.2.0)
+Description-Content-Type: text/markdown
+
+# testpoetrypypi
+A reference-ish implementation of a Python project that uses Poetry (and pyproject.toml), CircleCI, Git Flow (i.e. `master` + `develop` + feature branches) and semantic-release to compute the next version and publish to PyPI upon merging `develop` into `master`.
+
+
+## Some useful Poetry commands for me to remember:
+`poetry install`
+
+`poetry run pytest`
+
+`poetry run testpoetrypypi`
+
+`poetry run semantic-release version --noop`
+
