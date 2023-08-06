@@ -1,0 +1,12 @@
+ppdire/__init__.py,sha256=fIuvSGTXCD0ZeQ4S3k-lVMZNduZFQhqu2A9Mq8xzKUc,326
+ppdire/_dicomo_utils.py,sha256=_X5CTboedLW4Cd4EqsLBt-L5tAac6_zQY-5IWlCqJTg,2487
+ppdire/_ppdire_tryout.py,sha256=AMs6pJbD0WxnA3zrV4EjOqLpAlKb5pHnzNePlxQ_sm0,1561
+ppdire/_ppdire_utils.py,sha256=TQt9WgXoFKJ7PDFYwENJBZQmLV9q3CXwaobDom34bbw,6064
+ppdire/capi.py,sha256=C5vtIkdxOPV4Ps5Gl5SoFkuNzQUbECMlIDpRNQPe5rQ,7103
+ppdire/dicomo.py,sha256=-KySMxGoCy0T7t8sAkIE3akPto9gC5vfvHFclEibM_s,11537
+ppdire/ppdire.py,sha256=ZnGHv3VqL5izF4iK99qCrc2vMVaIi0Shc3vmwjjTiw0,30035
+ppdire-0.1.0.dist-info/LICENSE,sha256=ZoP_Jki06HxtrcnlmAEPVrc7c2nwogPmVbUeFAiHfIY,32485
+ppdire-0.1.0.dist-info/METADATA,sha256=2P4v0zCOF4TfUen36uiA3hguMKTmvAH9vHUTRBIazoc,18614
+ppdire-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ppdire-0.1.0.dist-info/top_level.txt,sha256=7HyeG-lcI-bnOKi0Lx0kToT9K7-E0BEMeH3xVom-pnE,7
+ppdire-0.1.0.dist-info/RECORD,,
