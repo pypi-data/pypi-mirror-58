@@ -1,0 +1,12 @@
+iminspect/__init__.py,sha256=OHbtmiZpS_NKxyPTofZWawyDBLx50vo4XuRSLTldKzA,429
+iminspect/colormaps.py,sha256=0mt1gzAEZ78X6j4KpPqKmKPCOlH2fEGVdwKmD8mbJ7Y,74425
+iminspect/imgview.py,sha256=X5Yw5E9M4F48272j-xtmhDphcSN5ACrOnIDYHc9WTqE,11372
+iminspect/inputs.py,sha256=lFZ7lEqcnIoulHuyKhaKx2JrpOyJmi1jgdl3l4Fp0mc,18997
+iminspect/inspector.py,sha256=cLDnwFzJhW8N32iuOWg7unxqLJdJGpVXLSd91LCSIwc,23478
+iminspect/utils.py,sha256=5gHemgAsNgaxwYE_2y546mKfsVmWP28ZBO0nrvs4V5A,3903
+iminspect/version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+iminspect-0.1.0.dist-info/LICENSE,sha256=YarcpiS1q54UyYIFJgCPfCo7ew3IvyA1XkVKbGf_RI8,1066
+iminspect-0.1.0.dist-info/METADATA,sha256=PLxn7nlzFanPYIjPUVojm49-r-WvCG6V9J75SelswBU,1286
+iminspect-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iminspect-0.1.0.dist-info/top_level.txt,sha256=JfJm7USi_KgjDM1NnMNv8JIFIIYcDqJ5Zl6EEKQAEwU,10
+iminspect-0.1.0.dist-info/RECORD,,
