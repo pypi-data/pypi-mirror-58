@@ -1,0 +1,23 @@
+2 + 3,dummy_root,1.0,0,1.0
+
+5 + 2,dummy_root,1.0,0,1.0
+
+5 + 3,dummy_root,1.0,0,1.0
+
+5 + 9,dummy_root,1.0,0,1.0
+
+6 + 2,dummy_root,0.0001503864364758628,1,0.0005012881215862093
+
+6 + 3,dummy_root,9.027021634021959e-17,1,4.756825062233557e-16
+
+6 + 5,dummy_root,1.0,0,1.0
+
+6 + 9,dummy_root,1.0,0,1.0
+
+9 + 2,dummy_root,1.0,0,1.0
+
+9 + 3,dummy_root,9.513650124467115e-17,1,4.756825062233557e-16
+
+dummy_root,,0.0,1,0.0
+
+name,parent_name,p-value-losses,rejected_status,adjusted_p-value
