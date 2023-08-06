@@ -1,0 +1,12 @@
+libtvdb/__init__.py,sha256=_WPKsT6Ezs0g5LQM3TPB2JzGtL2Tvvgf7ImADTN1AX8,10278
+libtvdb/exceptions.py,sha256=0E7kOE339FDNIwplM8fEdERDe49yy1RXStNpXX4zeM8,325
+libtvdb/model/__init__.py,sha256=Ke1Up4adJ48PGDAEsPbYThVojDHhq7igMYS7V_YRoK4,46
+libtvdb/model/actor.py,sha256=NTX5nUvxuAHk-L2O3vhlSdXd0jOxfb98Trql89oJAFc,1182
+libtvdb/model/enums.py,sha256=go7bP9kNpbot0bJWw5nEykw7eVgg8b9itvGAR1V6Qpg,445
+libtvdb/model/episode.py,sha256=Klza30hMnp6gGBRpDAWHTg2HdcUWHXBX496aLjFEZM0,4279
+libtvdb/model/show.py,sha256=A5nsjid7KbyCwfSgxK73m9sL6hcY6KNDacZtb9hQE9Q,2840
+libtvdb/utilities.py,sha256=Cj3F3SpXIX2QHtBcvxJVvaUKnBp5LjrvLk96QUrer6A,2075
+libtvdb-0.4.0.dist-info/LICENSE,sha256=VIJZiHOwptD3w3pzdVeHswYInRxaSiUbGLqeJC27-7k,1082
+libtvdb-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+libtvdb-0.4.0.dist-info/METADATA,sha256=eUVkhETsCsHd9WtzC1qy8UC59RAjPWyej--KgZCYTqo,1429
+libtvdb-0.4.0.dist-info/RECORD,,

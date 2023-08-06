@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: libtvdb
+Version: 0.4.0
+Summary: A wrapper around the TVDB API.
+Home-page: https://github.com/dalemyers/libtvdb
+License: MIT
+Keywords: tvdb,tv,tv database,tv show
+Author: Dale Myers
+Author-email: dale@myers.io
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: deserialize (>=1.2,<2.0)
+Requires-Dist: requests (>=2.22,<3.0)
+Project-URL: Repository, https://github.com/dalemyers/libtvdb
+Description-Content-Type: text/markdown
+
+# libtvdb
+
+A wrapper around the [TVDB API](https://api.thetvdb.com/swagger).
+
+## Examples:
+
+Searching for shows:
+
+```
+import libtvdb
+client = libtvdb.TVDBClient(api_key="...", user_key="...", user_name="...")
+shows = client.search_show("Doctor Who")
+
+for show in shows:
+    print(show.name)
+```
+
+## Advanced
+
+You can set `libtvdb_api_key`, `libtvdb_user_key` and `libtvdb_user_name` in your OS X keychain if you don't want to supply these every time. If any of the values supplied to the `TVDBClient` constructor are `None`, it will look into your keychain and load the appropriate value. If it can't find them, it will throw an exception.
+
