@@ -1,0 +1,49 @@
+{
+    "get_tag_tree_list": {
+        "type": "object",
+        "oneOf": [
+            {
+                "properties": {
+                    "categoryId": {
+                        "type": "number"
+                    },
+                    "levelCount": {
+                        "type": "number"
+                    },
+                    "level": {
+                        "type": "number"
+                    }
+                },
+                "required": ["categoryId", "levelCount", "level"]
+            },
+            {
+                "properties": {
+                    "categoryId": {
+                        "type": "number"
+                    },
+                    "parentId": {
+                        "type": "number"
+                    },
+                    "level": {
+                        "type": "number"
+                    }
+                },
+                "required": ["categoryId", "levelCount", "parentId"]
+            },
+            {
+                "properties": {
+                    "id": {
+                        "type": "number"
+                    },
+                    "parentId": {
+                        "type": "number"
+                    },
+                    "level": {
+                        "type": "number"
+                    }
+                },
+                "required": ["id"]
+            }
+        ]
+    }
+}
