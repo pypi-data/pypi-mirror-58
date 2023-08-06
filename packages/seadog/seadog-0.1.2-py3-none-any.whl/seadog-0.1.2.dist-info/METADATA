@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: seadog
+Version: 0.1.2
+Summary: Statistical data visualization from the command line
+Home-page: https://github.com/leonhfr/seadog
+Author: leonhfr
+Author-email: hello@leonh.fr
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: matplotlib (>=3.1.2,<4.0.0)
+Requires-Dist: numpy (>=1.18.0,<2.0.0)
+Requires-Dist: pandas (>=0.25.3,<0.26.0)
+Requires-Dist: seaborn (>=0.9.0,<0.10.0)
+Requires-Dist: tabulate (>=0.8.6,<0.9.0)
+Requires-Dist: termplotlib (>=0.2.3,<0.3.0)
+Project-URL: Documentation, https://github.com/leonhfr/seadog
+Project-URL: Repository, https://github.com/leonhfr/seadog
+Description-Content-Type: text/markdown
+
+# seadog
+
+Seadog helps you generate statistical data visualizations directly from the command line. 
+
+It aims to allow quick analyses of data, and while it is essentially a wrapper for [matplotlib](https://github.com/matplotlib/matplotlib) and [seaborn](https://github.com/mwaskom/seaborn), it does not intend to cover all options and capabilities. 
+
+The word seadog may be slang for either a veteran sailor or seals. 
+
+Supports Python 3.7+.
+
+## Installation
+
+Using `pip` to install `seadog`:
+
+```bash
+pip install --user seadog
+```
+
+## Quick start
+
+This section will be updated once `seadog` provides some functionality. Features will be added as I need them.
+
+## Todo
+
+- Data description
+- Data sample (n)
+- Data correlation
+- Data NaN detection (graph in terminal)
+- Data NaN removal
+- Bar chart (and horizontal option)
+- Histogram
+- Dist plot with KDE
+- Logarithmic scales for x and y
+- Axes labels
+- Scatter plots
+- Pie charts?
+
+
