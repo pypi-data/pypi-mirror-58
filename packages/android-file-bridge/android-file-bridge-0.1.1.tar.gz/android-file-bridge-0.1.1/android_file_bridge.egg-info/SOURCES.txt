@@ -1,0 +1,11 @@
+README.md
+requirements.txt
+setup.py
+android_file_bridge/__init__.py
+android_file_bridge/device.py
+android_file_bridge/error.py
+android_file_bridge.egg-info/PKG-INFO
+android_file_bridge.egg-info/SOURCES.txt
+android_file_bridge.egg-info/dependency_links.txt
+android_file_bridge.egg-info/requires.txt
+android_file_bridge.egg-info/top_level.txt
