@@ -1,0 +1,8 @@
+README.md
+setup.py
+pytest_log_report.egg-info/PKG-INFO
+pytest_log_report.egg-info/SOURCES.txt
+pytest_log_report.egg-info/dependency_links.txt
+pytest_log_report.egg-info/entry_points.txt
+pytest_log_report.egg-info/requires.txt
+pytest_log_report.egg-info/top_level.txt
