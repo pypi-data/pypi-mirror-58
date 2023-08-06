@@ -1,0 +1,101 @@
+==================================================================
+thescheduler: A Declarative Task Scheduling Engine built on Celery
+==================================================================
+
+.. image:: https://img.shields.io/pypi/v/thescheduler.svg
+        :target: https://pypi.python.org/pypi/thescheduler
+
+.. image:: https://img.shields.io/travis/ehm-are/thescheduler.svg
+        :target: https://travis-ci.org/ehm-are/thescheduler
+
+.. image:: https://readthedocs.org/projects/thescheduler/badge/?version=latest
+        :target: https://thescheduler.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+**This project is in pre-alpha, early development, and subject to fast (read: breaking) changes**
+
+A proof-of-concept **Distributed Task/Job Scheduler**, designed largely for batch-driven environments.
+
+thescheduler exposes built-in functionality of Celery through "tags", declarative syntax used to create job definitions.
+
+It also implements additional features (e.g. centralized logging, log rotation) to cover extended use-cases.
+
+Features
+--------
+
+- Write job definitions using a simple yaml-based syntax.
+
+- Definitions are file based, so that they can be incorporated into existing development workflows (CI/CD). 
+  Write/commit/deploy your job definitions alongside your code.
+
+- thescheduler will read and parse valid definitions, add them to the schedule, and send to the pool of workers for execution.
+
+- Build workflows/pipelines by linking jobs using the dependency tag.
+
+
+External Dependencies
+---------------------
+
+- redis
+
+
+Installation
+------------
+
+- Development version:
+
+  ::
+
+    $ git clone git@github.com:ehm-are/thescheduler.git
+    $ cd thescheduler
+    $ pip install -e .
+
+
+- or direct from the repository:
+
+  ::
+
+    pip install git+https://github.com/ehm-are/thescheduler.git
+
+Docker
+------
+
+::
+    
+  TODO
+
+
+Usage
+-----
+
+1. Configure settings
+    ``TODO``
+2. Start thescheduler
+    ``TODO``
+3. Start the workers
+    ``TODO``
+4. Create a job definition in your configured job path ``ex: /jobs/test/job_3``
+    ::
+
+        runcmd:      python3 hello_world.py
+        startat:     13:00 US/Pacific
+        failat:      13:05 US/Pacific
+        runday:      mon, wed, fri
+        pool:        us-west-1-dev
+        env:         PATH="/home/user/.local/bin"
+        dependon:    /test/job_1, /test/job_2
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+-----------------------------------------------------
+
+* Free software: Mozilla Public License 2.0 (MPL 2.0)
+* Documentation: https://thescheduler.readthedocs.io.
+
+-----------------------------------------------------
