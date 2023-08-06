@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: olaii-stripe
+Version: 0.1.4
+Summary: Simple Django wrapper for Stripe
+Home-page: UNKNOWN
+Author: Boris Savic
+Author-email: boris@olaii.com
+License: MIT
+Description: # Django Olaii Stripe
+        
+        Stripe wrapper we use at Olaii.com for payment processing. 
+        
+        
+        ## Quick Start
+        
+        1. Add olaii_stripe to your INSTALLED_APPS settings
+        
+        ```python
+        INSTALLED_APPS = [
+                ...
+                'olaii_stripe',
+            ]
+        
+        ```
+        
+        2. Run `python manage.py migrate` to create Stripe models.
+        
+        3. Add your Stripe API Key to `settings.py`
+        
+        ```python
+        STRIPE_API_KEY = 'my-api-key'
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
