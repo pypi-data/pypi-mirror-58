@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mkmapi
+Version: 1.0.0
+Summary: A full wrapper for the MKM API 2.0
+Home-page: https://github.com/matnad/mkmapi
+Author: Matthias Nadler
+Author-email: matnad@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
