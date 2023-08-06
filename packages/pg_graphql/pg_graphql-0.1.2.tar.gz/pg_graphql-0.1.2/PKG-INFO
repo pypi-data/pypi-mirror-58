@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pg_graphql
+Version: 0.1.2
+Summary: pg_graphql: GraphQL support for PostgreSQL
+Home-page: UNKNOWN
+Author: Oliver Rice
+Author-email: oliver@oliverrice.com
+License: TBD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: SQL
+Requires-Python: >=3.6
+Provides-Extra: nvim
+Provides-Extra: dev
