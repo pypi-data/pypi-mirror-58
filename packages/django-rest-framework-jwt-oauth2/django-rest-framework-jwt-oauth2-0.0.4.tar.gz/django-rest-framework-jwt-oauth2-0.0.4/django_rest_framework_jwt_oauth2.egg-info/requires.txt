@@ -1,0 +1,6 @@
+six
+django
+djangorestframework<4.0,>=3.7
+drf-yasg<2.0,>=1.4
+djangorestframework-jwt<2.0,>=1.11
+django-allauth<1.0,>=0.36
