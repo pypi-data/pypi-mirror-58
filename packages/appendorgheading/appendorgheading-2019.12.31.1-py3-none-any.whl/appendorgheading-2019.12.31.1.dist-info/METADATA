@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: appendorgheading
+Version: 2019.12.31.1
+Summary: Append a new Org mode heading to an existing Org mode file
+Home-page: https://github.com/novoid/appendorgheading
+Author: Karl Voit
+Author-email: tools@Karl-Voit.at
+License: UNKNOWN
+Download-URL: https://github.com/novoid/appendorgheading/zipball/master
+Keywords: org mode,orgmode,CLI,logging,shell
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Dist: orgformat
+
+This tool appends Org mode formatted headings to existing Org mode files.
+
+The author is using this to log events to some kind of 'errors.org' which is part
+of his Org mode agenda.
+
+Command line parameters override configuration file entries.
+- Hosted and documented on github: https://github.com/novoid/appendorgheading
+
+
