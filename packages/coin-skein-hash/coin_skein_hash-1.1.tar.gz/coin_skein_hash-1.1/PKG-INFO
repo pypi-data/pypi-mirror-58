@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: coin_skein_hash
+Version: 1.1
+Summary: Binding for CHIPO skein proof of work hashing.
+Home-page: https://github.com/CHIPO-Project/skein-hash-python
+Author: nakkie
+Author-email: nakkie@linux.jpn.com
+Maintainer: nakkie
+Maintainer-email: nakkie@linux.jpn.com
+License: MIT
+Download-URL: https://github.com/CHIPO-Project/skein-hash-python/archive/v1.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
