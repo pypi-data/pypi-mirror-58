@@ -1,0 +1,14 @@
+bitarray/__init__.py,sha256=Cm93asxUT7YWa7_IbjotSbdjNtd0DdGXL2qpbWfn3Is,3266
+bitarray/_bitarray.c,sha256=IOpBPB5QAP30U_z8joAdnbUWSBCZ4IEB951Fsec2jRU,92087
+bitarray/_bitarray.so,sha256=gpLGSVMi8UsnKA-MX0UF6Wv0Oh0KIIhu5vFx5Pd3Mqw,153756
+bitarray/_util.c,sha256=gOfK94JrpapgDKhtZ_i_D8gJDJKrs9NSzI2honDFEMg,11552
+bitarray/_util.so,sha256=16TS74l-DIaKb0Dw9BspHgJ0PqcM3cLB49F40PHZdeE,35500
+bitarray/test_bitarray.py,sha256=KBJdjX0aDiwrcSELRAtHaOEpGa5G7PlweRO2pBUcCyM,78356
+bitarray/test_util.py,sha256=8-I3GadRsSz1S2yLbsSIXh7qSWUE80dAMx5Nuuqqb-o,21941
+bitarray/util.py,sha256=iLPoWZx6lzkxui2WTR3Swf1RTv6ndD_reHhAUfJM1Vk,8402
+bitarray_hardbyte-1.2.1.dist-info/AUTHORS,sha256=_amKkgZtL9mvQ-efLhwunZJgexq6qYh6QXqdiTqvuFI,616
+bitarray_hardbyte-1.2.1.dist-info/LICENSE,sha256=hcprq4m_9xCuseB--rc8JZ7nxT1H9sIZQWdCJLqgOg4,2388
+bitarray_hardbyte-1.2.1.dist-info/METADATA,sha256=BSe4CEcNcXnmuCjdDsSive_F1Q22IXED8WBaRxB0kR8,22445
+bitarray_hardbyte-1.2.1.dist-info/WHEEL,sha256=xXLh9cPe0tokYy9744GIeqoVKAcD7Pfk_W9A2z39mbY,109
+bitarray_hardbyte-1.2.1.dist-info/top_level.txt,sha256=cLdoeIHotTwh4eHSe8qy8umF7zzyxUM90I8zFb2_xhg,9
+bitarray_hardbyte-1.2.1.dist-info/RECORD,,
