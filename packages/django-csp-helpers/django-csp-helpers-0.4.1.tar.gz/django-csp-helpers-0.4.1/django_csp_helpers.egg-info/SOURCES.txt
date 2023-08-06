@@ -1,0 +1,14 @@
+README.md
+setup.py
+csp_helpers/__init__.py
+csp_helpers/classes.py
+csp_helpers/mixins.py
+csp_helpers/version.py
+csp_helpers/templatetags/__init__.py
+csp_helpers/templatetags/media_csp.py
+csp_helpers/templatetags/render_bundle_csp.py
+django_csp_helpers.egg-info/PKG-INFO
+django_csp_helpers.egg-info/SOURCES.txt
+django_csp_helpers.egg-info/dependency_links.txt
+django_csp_helpers.egg-info/requires.txt
+django_csp_helpers.egg-info/top_level.txt
