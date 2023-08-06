@@ -1,0 +1,14 @@
+README.md
+setup.py
+aiodxf/__init__.py
+aiodxf/__main__.py
+aiodxf/exceptions.py
+aiodxf/main.py
+aiodxf.egg-info/PKG-INFO
+aiodxf.egg-info/SOURCES.txt
+aiodxf.egg-info/dependency_links.txt
+aiodxf.egg-info/entry_points.txt
+aiodxf.egg-info/requires.txt
+aiodxf.egg-info/top_level.txt
+test/test_cli.py
+test/test_module.py
