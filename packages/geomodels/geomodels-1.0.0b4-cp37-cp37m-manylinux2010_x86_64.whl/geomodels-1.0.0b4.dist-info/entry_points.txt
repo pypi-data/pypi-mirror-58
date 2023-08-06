@@ -1,0 +1,3 @@
+[console_scripts]
+geomodels-cli = geomodels.__main__:main
+
