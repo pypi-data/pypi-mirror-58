@@ -1,0 +1,3 @@
+sploitkit
+tinyscript
+pygments>=2.5.2
