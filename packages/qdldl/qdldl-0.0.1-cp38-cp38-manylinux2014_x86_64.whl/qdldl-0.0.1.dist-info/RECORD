@@ -1,0 +1,10 @@
+qdldl/_qdldl.cpython-38-x86_64-linux-gnu.so,sha256=yHtiAE1BwAw9QWKDl8F9E2djRsliJ5f8e-MdrcQxvgA,1867744
+qdldl/_qdldl.c,sha256=srbiV8RwG309e87ksVZzpya7YBHAB43a8cm1AYb2Sng,907064
+qdldl/__init__.py,sha256=73VvVkbclHlW-py5OadQin2BwmlmwXJzNmZVZFDfOsY,40
+qdldl/tests/test_solve_ls.py,sha256=lNjEU-UYW5GGa24NVcYVDf8PkyNAn6QrLpcaTO5Fgw4,957
+qdldl/tests/utils.py,sha256=VnsDf3pl5_w0oFKqQTNW8T-Wf-gJtE4V8kGoGAy-80g,114
+qdldl/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qdldl-0.0.1.dist-info/top_level.txt,sha256=cfcVd2gDnrQ_k51fMVwR-2FG-7xFJDEAcTA7o6ppv-A,6
+qdldl-0.0.1.dist-info/RECORD,,
+qdldl-0.0.1.dist-info/METADATA,sha256=BzMPV-lUluGMD8oRUv1Dtb9X1Bx7ywJIB_-O9GyvX9w,1083
+qdldl-0.0.1.dist-info/WHEEL,sha256=BR_6Zt1LhAFaGND0vBMNdFwXf3zdE13_fxqi7hz_Z90,111
