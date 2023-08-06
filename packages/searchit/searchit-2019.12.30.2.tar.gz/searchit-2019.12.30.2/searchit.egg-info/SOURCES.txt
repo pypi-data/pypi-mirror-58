@@ -1,0 +1,15 @@
+README.md
+setup.py
+searchit/__init__.py
+searchit.egg-info/PKG-INFO
+searchit.egg-info/SOURCES.txt
+searchit.egg-info/dependency_links.txt
+searchit.egg-info/requires.txt
+searchit.egg-info/top_level.txt
+searchit/exceptions/__init__.py
+searchit/scrapers/__init__.py
+searchit/scrapers/bing.py
+searchit/scrapers/google.py
+searchit/scrapers/qwant.py
+searchit/scrapers/scraper.py
+searchit/scrapers/yandex.py
