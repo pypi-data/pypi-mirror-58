@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: lunuan
+Version: 0.1.3
+Summary: A small example package
+Home-page: 
+Author: huaxing
+Author-email: huaxing@lunuan.com.cn
+Maintainer: huaxing
+Maintainer-email: huaxing@lunuan.com.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 开发中常用的Python类
+
+
+## CNANGE_LOG
+- 2019-12-08: 0.1.0
+  - 加入预定义的日志格式化类LogFormater
+
