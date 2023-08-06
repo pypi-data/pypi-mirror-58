@@ -1,0 +1,3 @@
+[console_scripts]
+paa = audio_analyser.cli:main
+
