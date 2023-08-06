@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: robotframework-corerpahive
+Version: 1.2.0
+Summary: CoreRPAHive is a Robotic Process Automation library that allow the developer create RPA script easier and reduce complexity under robot script layer.
+Home-page: https://github.com/qahive/robotframework-CoreRPAHive
+Author: Atthaboon Sanurt
+Author-email: UNKNOWN
+License: Apache License 2.0
+Description: QAHive RPA library
+Keywords: robotframework testing automation rpa qahive
+Platform: any
+Classifier: Programming Language :: Python :: 3.6
