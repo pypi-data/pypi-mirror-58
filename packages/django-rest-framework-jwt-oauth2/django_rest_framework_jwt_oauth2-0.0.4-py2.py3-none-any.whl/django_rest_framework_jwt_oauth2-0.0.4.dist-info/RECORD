@@ -1,0 +1,17 @@
+rest_framework_jwt_oauth2/__init__.py,sha256=DP8MA4rmPfn4pfq4Dz2pOgq9rXp2JfCzTsiqdDCrC98,131
+rest_framework_jwt_oauth2/app_settings.py,sha256=VB-T1n0tPEKdAWE_7wl2YUu7uWKZc8U_aZSOaVJh53w,294
+rest_framework_jwt_oauth2/apps.py,sha256=_8PoBGJpIabl5M-xSH8nuz-6HZija-i16_q1KqJIVFQ,243
+rest_framework_jwt_oauth2/middlewares.py,sha256=yEqonu3IfS3_mMRkEcU5XN5oBVFukeqlq6aj70vLYMk,1222
+rest_framework_jwt_oauth2/serializers.py,sha256=J4LRc4m8OmN0hxU46pWr2MiWp82QuQXf1oOrEU2JFSc,3231
+rest_framework_jwt_oauth2/urls.py,sha256=WEHlMW_Ccrg0nI6XA57JuJslcAnqQxQHlRjB5XiZaD4,490
+rest_framework_jwt_oauth2/views.py,sha256=-NH2XEf7l2HYMOOJ_L4qOZWKlYqTanMPRYIeH1oTehI,4976
+rest_framework_jwt_oauth2/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_framework_jwt_oauth2/tests/api_fixtures.py,sha256=JtxAFRVSy6-GrmVuK7kqxg_0ef2ESBXrQdh_qVq6O30,5249
+rest_framework_jwt_oauth2/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_framework_jwt_oauth2/utils/adapter.py,sha256=Kh6YqC_MVV4dFfjgOGH2Eu22m20SRWjjUfHyCjRaS80,522
+rest_framework_jwt_oauth2/utils/serializers.py,sha256=By4luTjieOwVW4cIKXXWR-IGwteQejA3Tf4xGC0Mjoo,186
+django_rest_framework_jwt_oauth2-0.0.4.dist-info/LICENSE,sha256=p2Pc8h8dnZN8NxLnKB7BQDpDrQtET3UoYwb7UiK2CGg,1090
+django_rest_framework_jwt_oauth2-0.0.4.dist-info/METADATA,sha256=skKcCJCW_smdQR6U1ShW3uOulS-rwV8WklGMhc3ClPQ,3786
+django_rest_framework_jwt_oauth2-0.0.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_rest_framework_jwt_oauth2-0.0.4.dist-info/top_level.txt,sha256=CPz1Gg5itm3aW5Bt3W-_AF-APJqU2K9ymgxGhA2Skso,26
+django_rest_framework_jwt_oauth2-0.0.4.dist-info/RECORD,,
