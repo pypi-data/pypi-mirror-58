@@ -1,0 +1,13 @@
+managpu/__init__.py,sha256=ZUAcGgQrC8j8eUo4n-ckShMMV92H7H5do__tS9FZftE,88
+managpu/_choice/__init__.py,sha256=JDTDwr4bwSJalbASHMMnqlIAJX-D_w8vKrBjl9Q8318,56
+managpu/_choice/_gpu_manager.py,sha256=oMxcYELPKhkJrF4TmyBh2SyB6F065BvkZubZtvV6lxw,1164
+managpu/_choice/_gpu_utils.py,sha256=Te92y8GfomyC6YukynckTex5F0i_7gbmv7dw10Vz5qo,5866
+managpu/pytorch_tool/__init__.py,sha256=Y7gj5XHwT1hMjqpT0yAxk8MS5GYqyonnFQLU1xBXDhs,59
+managpu/pytorch_tool/_pt_tool.py,sha256=Mps1e-3qASZf0nx1iwQKiYRqKVF1lgPYW39z0plFGgA,782
+managpu/tensorflow_tool/__init__.py,sha256=QWT2CI_z02X2bnWLsOY0lfUFVoZGD7i7dtApaYQiUU0,70
+managpu/tensorflow_tool/_tf_tool.py,sha256=s02sY2i43WjaNYTr7jFsqode7gDvUY-ncxZnjy_-Y04,340
+managpu-1.2.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+managpu-1.2.4.dist-info/METADATA,sha256=thoonOK77BDU7x3dp801RCPPFW_VhItl5U4nwdIw9QI,260
+managpu-1.2.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+managpu-1.2.4.dist-info/top_level.txt,sha256=_MQMW18hdc9NAHWC28tiJZ5qZon8Wa-XGcRjulfJhT0,8
+managpu-1.2.4.dist-info/RECORD,,
