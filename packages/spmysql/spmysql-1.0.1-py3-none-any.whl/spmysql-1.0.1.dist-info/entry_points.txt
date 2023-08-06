@@ -1,0 +1,3 @@
+[console_scripts]
+spmsql = spmysql.cli:main
+
