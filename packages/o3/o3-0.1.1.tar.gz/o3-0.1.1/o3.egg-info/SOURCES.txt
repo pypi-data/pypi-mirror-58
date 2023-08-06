@@ -1,0 +1,13 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.rst
+o3.py
+setup.cfg
+setup.py
+o3.egg-info/PKG-INFO
+o3.egg-info/SOURCES.txt
+o3.egg-info/dependency_links.txt
+o3.egg-info/not-zip-safe
+o3.egg-info/pbr.json
+o3.egg-info/top_level.txt

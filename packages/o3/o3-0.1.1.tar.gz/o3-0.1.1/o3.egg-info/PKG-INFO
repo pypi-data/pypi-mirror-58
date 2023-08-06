@@ -1,0 +1,51 @@
+Metadata-Version: 1.1
+Name: o3
+Version: 0.1.1
+Summary: Comfotly and quickly access environment variables
+Home-page: https://gitlab.com/oz123/o3
+Author: Oz N Tiram
+Author-email: oz.tiram@gmail.com
+License: UNKNOWN
+Description: o3 - reads configuration from environment variables
+        ====================================================
+        
+        The quick summary:
+        
+        Ozone or trioxide, is an allotrope of Oxygen. It's found in the higher
+        atmosphere, and can also be smelled after rain.
+        Ozone configuration library is meant to be used when building cloud native
+        applications (or 12 Factor applications).
+        
+        Usually these application are configured with environment variables. These in
+        turn are constants usually typed as SOME-VARIABLE. To read this in Python you
+        would do this::
+        
+        
+          >>> import os
+          >>> os.getenv("SHIFTSOME_VARIABLE")
+        
+        I got tired of this and I want to access SOME-VARIABLE as an attribute, so::
+        
+          export SOME_VARIABLE=magic
+        
+          >>> from o3 import Config
+          >>> c = Config()
+          >>> c.some_variable
+          magic
+        
+        
+        Notice, access is done via attribue instead of dictionary lookup.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Topic :: Software Development
