@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pubxml
+Version: 0.2.2
+Summary: Publishing XML datamodels, methods, and functions
+Home-page: https://gitlab.com/blackearth/
+Author: Sean Harrison
+Author-email: sah@bookgenesis.com
+License: MPL 2.0
+Description: # pubxml
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
