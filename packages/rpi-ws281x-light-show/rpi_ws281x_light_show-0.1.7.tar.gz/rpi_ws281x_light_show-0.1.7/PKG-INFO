@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: rpi_ws281x_light_show
+Version: 0.1.7
+Summary: Cool animations for led matrixes of the family rpi_ws281x on Raspbian
+Home-page: http://github.com/RiccardoCereghino/rpi_ws281x_light_show
+Author: Riccardo Cereghino
+Author-email: riccardo.cereghino@gmail.com
+License: MIT
+Description: Cool animations for led matrixes of the family rpi_ws281x on Raspbian
+Keywords: raspberry raspbian matrix rpi_ws281x animations
+Platform: UNKNOWN
