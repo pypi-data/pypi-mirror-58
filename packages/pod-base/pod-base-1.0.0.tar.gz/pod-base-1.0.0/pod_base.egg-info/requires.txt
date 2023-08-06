@@ -1,0 +1,2 @@
+requests>=2.22
+jsonschema>=3.2
