@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lights/__init__.py
+lights.egg-info/PKG-INFO
+lights.egg-info/SOURCES.txt
+lights.egg-info/dependency_links.txt
+lights.egg-info/entry_points.txt
+lights.egg-info/requires.txt
+lights.egg-info/top_level.txt
