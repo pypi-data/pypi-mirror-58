@@ -1,0 +1,10 @@
+target_typo/__init__.py,sha256=0De7W38j7tt-S2eY2-hfE1y0xz5cexHV17yc3U-rcwQ,8967
+target_typo/typo.py,sha256=kQBFWxzpA8qUM7K7w7z4trQgVRo7V8y7H63twDlaE2U,5432
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=NIRyDbd1w1Cjnd4mDQrqIOWM8HH9LlyM5sfxpT4-ys0,13339
+target_typo-0.1.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+target_typo-0.1.0.dist-info/METADATA,sha256=sVM46wcrLlSUwOEERxqo8LzuGKOgLK87XY7eKWpP0Ik,3061
+target_typo-0.1.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+target_typo-0.1.0.dist-info/entry_points.txt,sha256=rxKWFBzLdit87kdoYqP4M-EnH8Tm2t080tkn2o3hVow,50
+target_typo-0.1.0.dist-info/top_level.txt,sha256=apfBM3lrbU_0MXfQaGrMNjOdI6BuecFki_ek179RdbE,17
+target_typo-0.1.0.dist-info/RECORD,,
