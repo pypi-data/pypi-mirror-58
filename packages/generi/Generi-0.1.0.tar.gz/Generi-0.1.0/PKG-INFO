@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: generi
+Version: 0.1.0
+Summary: Manage huge sets of Docker images using matrix builds
+Author: Nick Lehmann
+Author-email: nick@lehmann.sh
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Jinja2 (>=2.10.3,<3.0.0)
+Requires-Dist: aiodocker (>=0.17.0,<0.18.0)
+Requires-Dist: fire (>=0.2.1,<0.3.0)
+Requires-Dist: pyyaml (>=5.2,<6.0)
