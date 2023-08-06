@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: domainbigdata
+Version: 1.1.0
+Summary: Python wrapper for DomainBigData.com (no API available)
+Home-page: https://github.com/wesinator/domainbigdata-python
+Author: wesinator
+License: UNKNOWN
+Keywords: domainbigdata
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4click
+Requires-Dist: requests
+
+# domainbigdata-python
+Pull search results from DomainBigData (no API available)
+
+Adopted from https://github.com/crits/crits_services/blob/3dff56e7111439c4156a8408f178fd484df76feb/domainbigdata_service/domainbigdata.py
+
+### Installation
+```sh
+pip install --user domainbigdata
+```
+
+### Usage
+```python
+import domainbigdata
+import json
+
+email = "dns-admin@google.com"
+email_registrations = domainbigdata.email_lookup(email)
+json.dumps(email_registrations.domains)
+
+# domains may not always have full registrant info
+domain = "example.com"
+domain_reg = domainbigdata.domain_lookup(domain)
+json.dumps(domain_reg.registrant_info)
+```
+
+
