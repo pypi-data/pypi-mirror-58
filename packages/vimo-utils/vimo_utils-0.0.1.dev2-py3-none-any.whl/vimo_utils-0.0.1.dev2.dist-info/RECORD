@@ -1,0 +1,13 @@
+cloud/__init__.py,sha256=L7p4j75k7dHNLRomC6s7DkQO7b-iiq0YPPD4vf3JRbQ,42
+cloud/vimo/__init__.py,sha256=L7p4j75k7dHNLRomC6s7DkQO7b-iiq0YPPD4vf3JRbQ,42
+cloud/vimo/utils/__init__.py,sha256=L7p4j75k7dHNLRomC6s7DkQO7b-iiq0YPPD4vf3JRbQ,42
+cloud/vimo/utils/excel/__init__.py,sha256=L7p4j75k7dHNLRomC6s7DkQO7b-iiq0YPPD4vf3JRbQ,42
+cloud/vimo/utils/properties/PropertiesUtil.py,sha256=8NFO75DG-EyZ0JsTKe8CkM1LkoCSVu1mi4vVDuN6GPo,923
+cloud/vimo/utils/properties/__init__.py,sha256=L7p4j75k7dHNLRomC6s7DkQO7b-iiq0YPPD4vf3JRbQ,42
+cloud/vimo/utils/xemail/EmailUtil.py,sha256=y2n4XT2NNkqBKnyUgHR8dlzVEV5KgWLPkbEIfdMDthI,1990
+cloud/vimo/utils/xemail/__init__.py,sha256=L7p4j75k7dHNLRomC6s7DkQO7b-iiq0YPPD4vf3JRbQ,42
+vimo_utils-0.0.1.dev2.dist-info/LICENSE,sha256=F5PjXOnhjjMdLbKlT35b3vyLLNqApG0L_14fBrpeeHA,1532
+vimo_utils-0.0.1.dev2.dist-info/METADATA,sha256=SNLHe3Uscg_A2qL-SidoJXeNZH01ElXnTVMBdijecC4,445
+vimo_utils-0.0.1.dev2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vimo_utils-0.0.1.dev2.dist-info/top_level.txt,sha256=lBiHHi76sKOBY-DmE0iDypxZxv-TTCnvHeiFleC_PuA,6
+vimo_utils-0.0.1.dev2.dist-info/RECORD,,
