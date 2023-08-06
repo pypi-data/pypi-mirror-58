@@ -1,0 +1,11 @@
+unischeduler/__init__.py,sha256=BVKmeKncRPQNsgJjb78uErJ0vvLnugPNlH3bPlyhg2s,77
+unischeduler/models.py,sha256=TGElVsoeiqbwROpHjmFk3ocqXUDrfLMlPgcfNCRDP_M,3843
+unischeduler/scheduler.py,sha256=r5N8MZfkcmvq7EsDPCj8wgUR9yLnKlTLqVL7GPS4q_M,2130
+unischeduler/scrapper.py,sha256=KEZikRTAXJiT48Sx9EjuQHk7VrJqC52l0InVGiX5-Bs,2435
+unischeduler/text_parser.py,sha256=satnFDVJBLoIjm7mnwObGMzvBsLumqa4qqXfHnnPa9I,1937
+unischeduler/util.py,sha256=GFzCDqvDwLYVKwtNZmVB7O193JJn2vlm4vIG1uW8vOw,955
+unischeduler-0.1.dist-info/LICENSE,sha256=GeK0l4tkuj_pwDtKifUj6GbufItBd10N0DSOgkWgCYs,1093
+unischeduler-0.1.dist-info/METADATA,sha256=OZvMlog44z31t0OAHPWpvLIAYrUEZHedyN5d-b2qI1U,893
+unischeduler-0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+unischeduler-0.1.dist-info/top_level.txt,sha256=yGC9MRk1vm0pKlpPokYTMydjI6DuVCGUPkwAyc5UIRc,13
+unischeduler-0.1.dist-info/RECORD,,
