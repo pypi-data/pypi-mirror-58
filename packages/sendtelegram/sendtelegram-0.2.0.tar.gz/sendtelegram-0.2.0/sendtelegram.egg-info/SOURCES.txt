@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sendtelegram/__init__.py
+sendtelegram/cli.py
+sendtelegram/commands.py
+sendtelegram.egg-info/PKG-INFO
+sendtelegram.egg-info/SOURCES.txt
+sendtelegram.egg-info/dependency_links.txt
+sendtelegram.egg-info/entry_points.txt
+sendtelegram.egg-info/not-zip-safe
+sendtelegram.egg-info/requires.txt
+sendtelegram.egg-info/top_level.txt
