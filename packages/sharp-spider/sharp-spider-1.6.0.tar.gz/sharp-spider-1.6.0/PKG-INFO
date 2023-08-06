@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sharp-spider
+Version: 1.6.0
+Summary: Distributed crawler based on async tornado redis
+Home-page: https://github.com/pypa/sampleproject
+Author: wangzongzhe
+Author-email: 17184032534@163.com
+License: Free
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
