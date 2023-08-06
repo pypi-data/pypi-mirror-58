@@ -1,0 +1,9 @@
+GaborNet/GaborLayers.py,sha256=LHNYy8QEMs1WgdYV0ch9BBiuhh8kWcIUCx_CPAsoV04,2535
+GaborNet/__init__.py,sha256=LENl4_dbctYnOTHM4xSKxDOU64oQi-kz5XCuqXv_pAw,36
+GaborNet/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GaborNet/tests/test_gabor_net.py,sha256=52AgCizIfGYKPDfW2Ymwx6S064JUHi3Cm3KOwbFIuME,966
+GaborNet-0.1.0.dist-info/LICENSE,sha256=TTeK9DTE9d8RgtrUVMDNKimYT719V03b7ZiR1bYd4SE,1102
+GaborNet-0.1.0.dist-info/METADATA,sha256=HpkXCc-HX_3sQbi0CRv_hpapNp6WjvyX-G1JAO-LwkE,1319
+GaborNet-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+GaborNet-0.1.0.dist-info/top_level.txt,sha256=6z_PK-p-lO8mMOv7ZQjMSWvZg_eKP0aN90b4ak9dYvg,9
+GaborNet-0.1.0.dist-info/RECORD,,
