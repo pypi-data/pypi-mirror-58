@@ -1,0 +1,9 @@
+elasticsearch>=7.1.0
+elasticsearch-dsl>=7.1.0
+hurry.filesize>=0.9
+rarfile>=3.1
+tqdm>=4.40.1
+urllib3>=1.25.7
+lxml>=4.4.2
+py-dateutil>=2.2
+requests>=2.22.0
