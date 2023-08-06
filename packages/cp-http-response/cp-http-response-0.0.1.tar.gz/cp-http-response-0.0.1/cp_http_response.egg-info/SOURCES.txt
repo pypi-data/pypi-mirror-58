@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+cp_http_response.egg-info/PKG-INFO
+cp_http_response.egg-info/SOURCES.txt
+cp_http_response.egg-info/dependency_links.txt
+cp_http_response.egg-info/entry_points.txt
+cp_http_response.egg-info/not-zip-safe
+cp_http_response.egg-info/top_level.txt
+httpresponse/__init__.py
+httpresponse/standard_response.py
