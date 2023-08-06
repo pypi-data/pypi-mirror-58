@@ -1,0 +1,10 @@
+README.md
+setup.py
+tesseract2dict/__init__.py
+tesseract2dict/tess2dict.py
+tesseract2dict.egg-info/PKG-INFO
+tesseract2dict.egg-info/SOURCES.txt
+tesseract2dict.egg-info/dependency_links.txt
+tesseract2dict.egg-info/not-zip-safe
+tesseract2dict.egg-info/requires.txt
+tesseract2dict.egg-info/top_level.txt

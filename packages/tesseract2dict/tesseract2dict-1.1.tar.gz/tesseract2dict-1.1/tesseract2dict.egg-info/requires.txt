@@ -1,0 +1,6 @@
+beautifulsoup4
+MakeTreeDir
+numpy
+opencv-python
+pandas
+pytesseract
