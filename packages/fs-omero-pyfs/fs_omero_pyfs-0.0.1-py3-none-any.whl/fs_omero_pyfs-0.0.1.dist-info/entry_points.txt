@@ -1,0 +1,5 @@
+[fs.opener]
+omero = fs_omero_pyfs:OmeroFSOpener
+omero+ws = fs_omero_pyfs:OmeroFSOpener
+omero+wss = fs_omero_pyfs:OmeroFSOpener
+
