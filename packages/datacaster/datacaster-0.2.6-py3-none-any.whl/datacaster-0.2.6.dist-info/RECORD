@@ -1,0 +1,10 @@
+datacaster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacaster/annotations.py,sha256=in54zgbFjUE2ar92eISB2lkeobexu7OlYoldHHKKLso,2646
+datacaster/decorators.py,sha256=q0GFq40YV1Nm3Wfv5hm4Qkpm16w82oit683huuA8amo,8330
+datacaster/exceptions.py,sha256=qxovDO281El59NuwshncLvIFVoVNKl4wlNgsKL9KBD4,134
+datacaster/values.py,sha256=UfjPRwCEjxYnaFwsTsszKlIcPOCM2WgiPzE1dz9Y3m0,1367
+datacaster-0.2.6.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+datacaster-0.2.6.dist-info/METADATA,sha256=DTSTOfiw_-Rz_fBS7tvsyVUwsDgOH1HnQjE_dAjMcIo,707
+datacaster-0.2.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+datacaster-0.2.6.dist-info/top_level.txt,sha256=i1ObtR-jRMMyNmCebShG6ZHjKztTjo10Um-oS7b_rbk,11
+datacaster-0.2.6.dist-info/RECORD,,
