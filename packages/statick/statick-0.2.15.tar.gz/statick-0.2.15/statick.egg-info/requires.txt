@@ -1,0 +1,17 @@
+PyYAML
+bandit
+cmakelint
+flawfinder
+lizard
+pycodestyle
+pydocstyle
+pyflakes
+pylint
+xmltodict
+yamllint
+yapsy
+
+[test]
+backports.tempfile
+mock
+pytest
