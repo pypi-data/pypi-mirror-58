@@ -1,0 +1,10 @@
+README.md
+setup.py
+88orm.egg-info/PKG-INFO
+88orm.egg-info/SOURCES.txt
+88orm.egg-info/dependency_links.txt
+88orm.egg-info/requires.txt
+88orm.egg-info/top_level.txt
+orm88/__init__.py
+orm88/connector.py
+orm88/models.py
