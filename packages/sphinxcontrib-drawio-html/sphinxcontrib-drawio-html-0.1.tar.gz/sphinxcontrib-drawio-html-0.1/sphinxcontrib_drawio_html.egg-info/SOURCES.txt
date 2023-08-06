@@ -1,0 +1,8 @@
+README.md
+setup.py
+sphinxcontrib_drawio_html.egg-info/PKG-INFO
+sphinxcontrib_drawio_html.egg-info/SOURCES.txt
+sphinxcontrib_drawio_html.egg-info/dependency_links.txt
+sphinxcontrib_drawio_html.egg-info/top_level.txt
+sphinxdrawio/__init__.py
+sphinxdrawio/drawio_html.py
