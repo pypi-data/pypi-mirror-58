@@ -1,0 +1,8 @@
+README.md
+setup.py
+Core/DateTimeFormatJKP.egg-info/PKG-INFO
+Core/DateTimeFormatJKP.egg-info/SOURCES.txt
+Core/DateTimeFormatJKP.egg-info/dependency_links.txt
+Core/DateTimeFormatJKP.egg-info/not-zip-safe
+Core/DateTimeFormatJKP.egg-info/requires.txt
+Core/DateTimeFormatJKP.egg-info/top_level.txt

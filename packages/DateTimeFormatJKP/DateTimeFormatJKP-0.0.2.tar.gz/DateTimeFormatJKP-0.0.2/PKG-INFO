@@ -1,0 +1,36 @@
+Metadata-Version: 1.2
+Name: DateTimeFormatJKP
+Version: 0.0.2
+Summary: Library for robot framework
+Home-page: https://github.com/praveenjkp/DateFormat
+Author: Praveen Kumar Kanagaraj
+Author-email: pk292695@gmail.com
+License: apache 2.0 Software License
+Description: R
+        
+        E
+        
+        A
+        
+        D
+        
+        M
+        
+        E
+        
+        .
+        
+        M
+        
+        D
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >= 3.6
