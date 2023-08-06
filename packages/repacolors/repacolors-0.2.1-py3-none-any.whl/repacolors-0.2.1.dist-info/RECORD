@@ -1,0 +1,11 @@
+repacolors/__init__.py,sha256=sSrWlqQZ1NYFiEQcc2s6qoXIPINv3xVopWSk4BSFgms,64
+repacolors/colors.py,sha256=u38Gg0MqI6MVj0SdtPv1DtplZr5DZysSplyXSWnMWQA,18168
+repacolors/command/repacolor.py,sha256=dHavKC5Y9wzvia4mfmpxjLNPyAMGrvQTbp5mKNmtv88,534
+repacolors/convert.py,sha256=7DFvd1krbiMSdA_OyLC7GRhuMFdLAa911wJl6ylGIM4,7001
+repacolors/css-color-names.json,sha256=0epMnPuEYsrE_hy2KSlpbaqVufpfb8TKxeh5ivxE7rc,3841
+repacolors/terminal.py,sha256=MKCB59A9JLeMKgbPeAe793-URAa89Jbs1E3JUw2BUj0,2088
+repacolors-0.2.1.dist-info/entry_points.txt,sha256=RZdUBeK2Il5lfhftAxfGPQWNOJtgQPa-bGYXEoD3_AE,64
+repacolors-0.2.1.dist-info/LICENSE,sha256=UT_mYR8guLkY9yVM0m5CzQbUFPBctQkTgPv2viM0pmQ,1068
+repacolors-0.2.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+repacolors-0.2.1.dist-info/METADATA,sha256=sFVrfL69GC_NzbEMgXBcX8iD7UzTezKV7Ni8DWhobWI,1275
+repacolors-0.2.1.dist-info/RECORD,,
