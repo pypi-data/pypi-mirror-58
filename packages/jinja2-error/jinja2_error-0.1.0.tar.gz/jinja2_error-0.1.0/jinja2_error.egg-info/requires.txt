@@ -1,0 +1,10 @@
+jinja2
+
+[:python_version<='3.4']
+arrow<=0.13.2
+
+[:python_version=='2.7']
+arrow
+
+[:python_version>='3.5']
+arrow
