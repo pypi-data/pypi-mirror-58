@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bfseg
+Version: 0.0.7
+Summary: a segmentation algorithm to find cell borders in bright-field images
+Home-page: UNKNOWN
+Author: Tong LI
+Author-email: tongli.bioinfo@gmail.com
+License: UNKNOWN
+Description: # bfseg
+        
+        
+        [![DOI](https://zenodo.org/badge/177211034.svg)](https://zenodo.org/badge/latestdoi/177211034)
+        
+        
+Keywords: microscope segmentation bright-field binary
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0.*
+Description-Content-Type: text/markdown
