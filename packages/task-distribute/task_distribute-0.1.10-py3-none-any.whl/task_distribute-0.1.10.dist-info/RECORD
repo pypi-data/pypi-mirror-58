@@ -1,0 +1,8 @@
+task_distribute/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+task_distribute/locker.py,sha256=SduOVw1NWbaPyvdaX9GFSKU3IHAhTjsqjWxbN5r2A-Y,7606
+task_distribute/test_locker.py,sha256=gVrIMoTAswU5qljcmkkYboW3sO81t7zxkIlBBEu9500,294
+task_distribute/test_sacred.py,sha256=gkv4Rf6hP-7I7WL2EyZA503uajvPm_7Ky8x1W8RoL2M,627
+task_distribute-0.1.10.dist-info/METADATA,sha256=zsuwwFXz5X45t2OB5SULDtlxz9esEdkZhXC2y_MvPJc,468
+task_distribute-0.1.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+task_distribute-0.1.10.dist-info/top_level.txt,sha256=CWWznYfY9vKPvETkgq5ie7u9x5Iy87OUPdoNBq3P6YQ,16
+task_distribute-0.1.10.dist-info/RECORD,,
