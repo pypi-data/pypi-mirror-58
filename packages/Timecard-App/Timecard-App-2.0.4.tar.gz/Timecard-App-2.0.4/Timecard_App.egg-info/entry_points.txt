@@ -1,0 +1,3 @@
+[gui_scripts]
+timecard-app = timecard.__main__:main
+
