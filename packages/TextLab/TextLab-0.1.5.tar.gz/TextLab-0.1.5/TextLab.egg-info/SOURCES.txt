@@ -1,0 +1,17 @@
+README.md
+setup.py
+TextLab.egg-info/PKG-INFO
+TextLab.egg-info/SOURCES.txt
+TextLab.egg-info/dependency_links.txt
+TextLab.egg-info/requires.txt
+TextLab.egg-info/top_level.txt
+textlab/__init__.py
+textlab/classification.py
+textlab/email.py
+textlab/mining.py
+textlab/ocr.py
+textlab/process.py
+textlab/scrape.py
+textlab/server.py
+textlab/similarity.py
+textlab/utility.py
