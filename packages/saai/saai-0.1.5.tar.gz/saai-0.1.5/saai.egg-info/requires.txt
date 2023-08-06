@@ -1,0 +1,4 @@
+jieba
+simplejson
+paddlepaddle-tiny
+sagas>=0.1.1
