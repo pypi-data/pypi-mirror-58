@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: django-ip-geolocation
+Version: 0.0.6
+Summary: Django hook (Middleware and Decorator) to geolocate visitors using their IP address
+Home-page: https://github.com/rednaks/django-ip-geolocation
+Author: Skander Ben Mahmoud
+Author-email: skander.bmahmoud@gmail.com
+License: MIT
+Description: 
+        ## Django Ip Geolocation:
+        Django request/response hooks to geolocate visitors by their ip address
+        
+        ## Usage:
+        ### Decorator:
+        Use decorators to decorate views :
+        ```python
+        from django_ip_geolocation.decorators import with_ip_geolocation
+        
+        @with_ip_geolocation
+        def api_view(request):
+           location = request.location
+           ...
+        ```
+        
+        ### Middleware:
+        
+        First you need to add the middleware into your `settings.py`
+        ```python
+        MIDDLEWARE = [
+            ...
+            'django_ip_geolocation.middleware.IpGeolocationMiddleware',
+            ...
+        ]
+        ```
+        
+        Then the location is available to all views in request and response:
+        ```python
+        def api_view(request):
+           location = request.location
+           ...
+           
+        def other_view(request):
+          location = request.location
+          ...
+        ```
+        
+        ### Settings
+        You can configure backend for your hook in the `settings.py` as follow:
+        ```python
+        
+        GEOLOCATION_BACKEND = 'django_ip_geolocation.backends.IPGeolocationAPI'
+        ```
+        
+        #### Available Backends:
+        * `django_ip_geolocation.backends.IPGeolocationAPI` : (Default) Using https://ipgeolocationapi.com/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Description-Content-Type: text/markdown
