@@ -1,0 +1,10 @@
+snowpy/__init__.py,sha256=aaRRLavaqBi4oEBapO6orQ7iiDPE0YIocaVe2YOYMk8,3666
+snowpy/datatools.py,sha256=iSnyR9z8MuG_6yYwgafqxBOcga_leCj_S3CASgp8NzQ,37780
+snowpy/emailtools.py,sha256=4d-EM_7sAmv6T3e7_OrmsTEDMT_11RykPEV8hQtbDFc,20690
+snowpy/ocrtools.py,sha256=29BO6N4O8onmxt_JbNfqKWxpKe_qUWFQMF5dpdvMfOQ,31502
+snowpy/process.py,sha256=iad56r8kIWH3zIhZVOo3RShOoxN0V1Oje4XoCD8uDvs,657
+snowpy-0.1.3.dist-info/LICENSE,sha256=fYgQQqrUVtroBbNRX6qzTrB3KCikONseL3s9aAKlS-8,11350
+snowpy-0.1.3.dist-info/METADATA,sha256=MWi9AEBOXLsSoWsRP9l76d7MHPaU-JPl5QB8F1R6Jrs,6919
+snowpy-0.1.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+snowpy-0.1.3.dist-info/top_level.txt,sha256=re1jsgwNT5yw5l-xknu2uFoTn5nOAJ8RXDupaCC_eIc,7
+snowpy-0.1.3.dist-info/RECORD,,
