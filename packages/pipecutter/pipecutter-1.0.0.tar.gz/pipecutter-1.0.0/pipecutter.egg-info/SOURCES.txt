@@ -1,0 +1,10 @@
+README.md
+setup.py
+pipecutter/__init__.py
+pipecutter/deps_tree.py
+pipecutter/interface.py
+pipecutter/targets.py
+pipecutter.egg-info/PKG-INFO
+pipecutter.egg-info/SOURCES.txt
+pipecutter.egg-info/dependency_links.txt
+pipecutter.egg-info/top_level.txt
