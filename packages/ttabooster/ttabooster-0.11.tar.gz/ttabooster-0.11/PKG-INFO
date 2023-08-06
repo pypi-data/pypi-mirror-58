@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: ttabooster
+Version: 0.11
+Summary: Boost pretrained models with test time augmentation selection
+Home-page: https://github.com/OmriKaduri/ttabooster
+Author: Seffi Cohen, Omri Kaduri
+Author-email: Kaduriomri@gmail.com
+License: MIT
+Download-URL: https://github.com/OmriKaduri/ttabooster/archive/0.01.tar.gz
+Description: # TTABoost - Boost Your  pre-trained Model With Test Time Augmentation Selection #
+        
+        Test time augmentation selection for image detection and classification.
+        
+        ### How to #1 ###
+        
+        
+        ### How to #2 ###
+        
+        
+        ### How to #3 ###
+        
+Platform: UNKNOWN
