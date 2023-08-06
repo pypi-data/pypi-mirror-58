@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "protomate"
+version = "1.0.3"
+description = "Python built CLI tool for automated github project initialization."
+authors = ["Redowan Delowar"]
+license = "MIT"
+
+readme = "README.md"
+repository = "https://github.com/rednafi/protomate"
+documentation = "https://rednafi.github.io/protomate/"
+
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: Python :: Implementation :: PyPy"
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+art="4.4"
+colorama="0.4.3"
+PyGithub="1.44.1"
+sty= "1.0.0b12"
+termcolor="1.1.0"
+click="^7.0"
+
+[tool.poetry.scripts]
+protomate = 'protomate.script:main'
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
