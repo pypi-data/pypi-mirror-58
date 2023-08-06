@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+sight/__init__.py
+sight/image.py
+sight/window.py
+sight.egg-info/PKG-INFO
+sight.egg-info/SOURCES.txt
+sight.egg-info/dependency_links.txt
+sight.egg-info/not-zip-safe
+sight.egg-info/requires.txt
+sight.egg-info/top_level.txt
