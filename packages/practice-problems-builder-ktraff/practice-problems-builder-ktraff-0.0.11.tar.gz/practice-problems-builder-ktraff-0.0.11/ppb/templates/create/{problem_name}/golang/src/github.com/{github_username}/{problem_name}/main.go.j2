@@ -1,0 +1,12 @@
+package main
+
+import (
+    "fmt"
+    nstring "github.com/{{ github_username }}/naive/string"
+    ostring "github.com/{{ github_username }}/optimized/string"
+)
+
+func main() {
+    fmt.Printf(nstring.Reverse("Hello World Naive!"))
+    fmt.Printf(ostring.Reverse("Hello World Optimized!"))
+}

@@ -1,0 +1,55 @@
+# {{ title }}
+
+> Description
+
+> {{ description }}
+
+
+**Tags**
+{% for tag in tags %}
+- {{ tag }}
+{%- endfor %}
+
+## Table of Contents
+
+> If your `README` has a lot of info, section headers might be nice.
+
+- [Problem Description](#problem-description)
+- [Naive Solution](#naive-solution)
+- [Optimized Solution](#optimized-solution)
+- [FAQ](#faq)
+- [Tests](#tests)
+- [License](#license)
+- [Resources](#resources)
+
+## Problem
+
+- Helpful images of what the problem looks like
+- Historical background
+
+### Naive Solution
+
+- A description of the most obvious, usually suboptimal solution
+- Runtime and space complexity
+
+### Optimized Solution
+
+- Description of optimizations to improve complexity
+- Runtime and space complexity
+
+## FAQ
+## Tests
+
+- Run `make test` to run all relevant test cases
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+
+## Resources
+
+{% for resource in resources -%}
+  - {{ resource }}
+{% endfor -%}
