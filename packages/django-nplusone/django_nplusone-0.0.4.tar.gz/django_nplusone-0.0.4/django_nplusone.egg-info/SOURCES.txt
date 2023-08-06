@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_nplusone.egg-info/PKG-INFO
+django_nplusone.egg-info/SOURCES.txt
+django_nplusone.egg-info/dependency_links.txt
+django_nplusone.egg-info/requires.txt
+django_nplusone.egg-info/top_level.txt
+nplusone/__init__.py
+nplusone/base.py
