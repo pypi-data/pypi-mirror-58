@@ -1,0 +1,1 @@
+recursive-include ihsm_analytics *.pyd *.csv
