@@ -1,0 +1,12 @@
+README.md
+setup.py
+cook/__init__.py
+cook/__main__.py
+cook/file_server.py
+cook/version.py
+cook_file_server.egg-info/PKG-INFO
+cook_file_server.egg-info/SOURCES.txt
+cook_file_server.egg-info/dependency_links.txt
+cook_file_server.egg-info/entry_points.txt
+cook_file_server.egg-info/requires.txt
+cook_file_server.egg-info/top_level.txt
