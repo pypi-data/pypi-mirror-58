@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: tobe
+Version: 0.1.1
+Summary: A small ssh display tool
+Home-page: https://github.com/PoplarYang
+Author: hiyang
+Author-email: echohiyang@foxmail.com
+License: UNKNOWN
+Description: # A small ssh list tool
+        ## Background
+        I need a light-weight tool to list the servers that can be connected via ssh. However, I find no one. Therefore, I create it.
+        
+        It's only a small tool.
+        
+        ## Principle
+        Read configration from `$HOME/.ssh/config`.
+        
+        ## Installation
+        
+        ```python
+        pip install tobe
+        ```
+        
+        ## Usages
+        ```bash
+        ➜  tobe python tobe.py
+                   Command Line SSH Quick Link to Server
+          ID   Hostname            Host
+           1   dev            39.10.14.9
+           2   prod           192.68.5.31
+        version: 0.1.1
+        date: 2019-12-21
+        ```
+        
+Keywords: ssh
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Description-Content-Type: text/markdown
