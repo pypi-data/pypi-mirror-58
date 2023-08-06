@@ -1,0 +1,53 @@
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]
+
+[tool.black]
+line-length = 100
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+
+[tool.coverage.run]
+branch = true
+command_line = "-m pytest"
+omit = ["**/main.py"]
+source = ["yamltable"]
+
+[tool.isort]
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 100
+multi_line_output = 3
+use_parentheses = true
+
+[tool.poetry]
+authors = ["Macklan Weinstein <wolfgangwazzlestrauss@gmail.com>"]
+description = "Command line utility for list organized YAML files."
+homepage = "https://github.com/wolfgangwazzlestrauss/yamltable"
+keywords = ["yaml"]
+license = "MIT"
+name = "yamltable"
+readme = "readme.md"
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyyaml = "^5.2"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+coverage = { version = "^5.0.1", extras = ["toml"] }
+flake8 = "^3.7.9"
+isort = "^4.3.21"
+mypy = "^0.761"
+pre-commit = "^1.21.0"
+pytest = "^5.2"
+pytest-cov = "^2.8.1"
+sphinx = "^2.3.1"
+sphinx_rtd_theme = "^0.4.3"
+tox = "^3.14.3"
+
+[tool.poetry.scripts]
+yamltable = "yamltable.main:main"
