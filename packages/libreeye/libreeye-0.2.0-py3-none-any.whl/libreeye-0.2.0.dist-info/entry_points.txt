@@ -1,0 +1,3 @@
+[console_scripts]
+lectl = libreeye.daemon.control:main
+
