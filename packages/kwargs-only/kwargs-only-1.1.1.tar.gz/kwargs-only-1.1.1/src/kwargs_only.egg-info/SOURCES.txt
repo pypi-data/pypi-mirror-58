@@ -1,0 +1,13 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/kwargs_only.py
+src/kwargs_only.egg-info/PKG-INFO
+src/kwargs_only.egg-info/SOURCES.txt
+src/kwargs_only.egg-info/dependency_links.txt
+src/kwargs_only.egg-info/not-zip-safe
+src/kwargs_only.egg-info/top_level.txt
+tests/test_kwargs_only.py
