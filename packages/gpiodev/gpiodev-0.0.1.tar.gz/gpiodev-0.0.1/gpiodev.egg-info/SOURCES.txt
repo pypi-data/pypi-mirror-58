@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gpiodev/__init__.py
+gpiodev/gpio.py
+gpiodev/lcd7.py
+gpiodev.egg-info/PKG-INFO
+gpiodev.egg-info/SOURCES.txt
+gpiodev.egg-info/dependency_links.txt
+gpiodev.egg-info/top_level.txt
+gpiodev/src/gpioctl.c
+gpiodev/src/gpioctl.h
