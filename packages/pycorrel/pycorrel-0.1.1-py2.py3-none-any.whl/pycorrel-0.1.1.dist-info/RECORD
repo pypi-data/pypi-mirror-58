@@ -1,0 +1,10 @@
+pycorrel/__init__.py,sha256=v4hbrDkdSim6EOfg7dGbfyOJMq6m6dS54TifnHvJyVo,138
+pycorrel/copulas.py,sha256=DEGGKo2i5l3QlfgsUUml2e7zl5q82P21l_zk8UDkUV0,1413
+pycorrel/pycorrel.py,sha256=B8EhJSN8Pz4HCCLTYyuo3VjVQUKBqBlwbl29BIEss74,1210
+pycorrel/utils.py,sha256=jqdc5FbcjcZh8pcIVxXI4nM1uim3ppOSd1Xi32Ci1Bw,3556
+pycorrel-0.1.1.dist-info/AUTHORS.rst,sha256=hUsBpRIe0gKbReEtNPeXwwEyOMuBNgBvFAU04x8EJjI,168
+pycorrel-0.1.1.dist-info/LICENSE,sha256=FR8fy9XSrqyAKz6QXmZv8HH6zcKdvnjPrzgwxZOANGk,1071
+pycorrel-0.1.1.dist-info/METADATA,sha256=p7tt3zu24KBLDl-RV978DCJiMN9PpXqXy-OroZL8wCk,1847
+pycorrel-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pycorrel-0.1.1.dist-info/top_level.txt,sha256=AmqsBJGtiXcT0QQL2nOE-ZKXakAU4x35yBmUFssyALA,9
+pycorrel-0.1.1.dist-info/RECORD,,
