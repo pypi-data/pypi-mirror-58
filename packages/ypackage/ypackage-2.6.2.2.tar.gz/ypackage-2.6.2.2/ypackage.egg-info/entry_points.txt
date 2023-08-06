@@ -1,0 +1,5 @@
+[console_scripts]
+ygitbookintegration = ypackage.integrate:main
+ygoogledrive = ypackage.gdrive:main
+ygooglesearch = ypackage.gsearch:main
+
