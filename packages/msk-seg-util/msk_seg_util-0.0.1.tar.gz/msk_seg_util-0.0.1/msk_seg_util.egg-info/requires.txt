@@ -1,0 +1,10 @@
+h5py
+matplotlib
+medpy
+numpy
+opencv-python
+pandas
+pystats
+scipy
+scikit-posthocs
+seaborn
