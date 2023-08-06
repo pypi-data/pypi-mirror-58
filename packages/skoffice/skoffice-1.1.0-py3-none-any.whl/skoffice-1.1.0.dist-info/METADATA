@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: skoffice
+Version: 1.1.0
+Summary: Assistant Tool for MS Office
+Home-page: https://user.qzone.qq.com/2078766287/infocenter
+Author: Shu Kougetsu
+Author-email: zefuirusu@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: python-docx (>=0.8.10)
+Requires-Dist: xlrd (>=1.2.0)
+Requires-Dist: xlwt (>=1.3.0)
+Requires-Dist: openpyxl (>=2.6.1)
+Requires-Dist: selenium (>=3.141.0)
+
+UNKNOWN
+
+
