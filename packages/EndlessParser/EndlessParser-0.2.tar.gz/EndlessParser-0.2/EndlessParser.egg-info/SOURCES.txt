@@ -1,0 +1,13 @@
+README.md
+setup.py
+EndlessParser.egg-info/PKG-INFO
+EndlessParser.egg-info/SOURCES.txt
+EndlessParser.egg-info/dependency_links.txt
+EndlessParser.egg-info/not-zip-safe
+EndlessParser.egg-info/top_level.txt
+endlessparser/__init__.py
+endlessparser/parser.py
+endlessparser/datatypes/Basic.py
+endlessparser/datatypes/Map.py
+endlessparser/datatypes/__init__.py
+test/test_parser.py
