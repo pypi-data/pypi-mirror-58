@@ -1,0 +1,3 @@
+[console_scripts]
+ctr = ctr.cli:main
+
