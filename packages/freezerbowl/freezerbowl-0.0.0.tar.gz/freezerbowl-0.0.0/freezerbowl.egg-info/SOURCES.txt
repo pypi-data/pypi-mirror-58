@@ -1,0 +1,6 @@
+README.md
+setup.py
+freezerbowl.egg-info/PKG-INFO
+freezerbowl.egg-info/SOURCES.txt
+freezerbowl.egg-info/dependency_links.txt
+freezerbowl.egg-info/top_level.txt
