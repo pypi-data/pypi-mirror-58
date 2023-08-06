@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: piglatin
+Version: 1.0.6
+Summary: Converts text to Pig Latin
+Home-page: https://github.com/bpabel/piglatin
+License: UNKNOWN
+Keywords: piglatin,translate,cypher,secret,language
+Author: Brendan Abel
+Author-email: 007brendan@gmail.com
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+
+# piglatin
+
+Converts english text to piglatin.
+
+## Installation
+
+`piglatin` can be installed from PyPI using `pip`.
+
+    pip install piglatin
+
+## Usage
+
+```python
+>>> import piglatin
+>>> piglatin.translate("hello world!")
+'ello-hay orld-way!'
+```
+
+## Command Line Usage
+
+`piglatin` can also be used as a command line tool.
+
+```bash    
+$ python -m piglatin "hello world!"
+ello-hay orld-way
+```
+
+Or read and write to files.
+
+```bash
+$ python -m piglatin -i input.txt -o output.txt
+```
+
+
