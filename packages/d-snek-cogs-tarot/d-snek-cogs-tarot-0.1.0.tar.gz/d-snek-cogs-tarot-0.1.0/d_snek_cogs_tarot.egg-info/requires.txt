@@ -1,0 +1,6 @@
+snek>=1.2.3
+discord.py>=1.2.5
+
+[dev]
+ipython
+twine

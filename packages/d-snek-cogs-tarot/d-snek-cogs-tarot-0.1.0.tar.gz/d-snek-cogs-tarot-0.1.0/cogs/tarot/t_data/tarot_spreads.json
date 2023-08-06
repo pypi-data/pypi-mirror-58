@@ -1,0 +1,32 @@
+{
+  "three": {
+    "each": [
+      "First card",
+      "Second card",
+      "Third card"
+    ]
+  },
+  "seven": {
+    "each": [
+      "First card",
+      "Second card",
+      "Third card",
+      "Fourth card",
+      "Fifth card",
+      "Sixth card",
+      "Seventh card"
+    ]
+  },
+  "horse shoe": {
+    "each": [
+      "Base card",
+      "First card",
+      "Second card",
+      "Third card",
+      "Fourth card",
+      "Fifth card",
+      "Sixth card",
+      "Seventh card"
+    ]
+  }
+}
