@@ -1,0 +1,8 @@
+README.md
+setup.py
+pycompomics/__init__.py
+pycompomics/pycompomics.py
+pycompomics.egg-info/PKG-INFO
+pycompomics.egg-info/SOURCES.txt
+pycompomics.egg-info/dependency_links.txt
+pycompomics.egg-info/top_level.txt
