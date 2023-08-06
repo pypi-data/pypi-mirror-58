@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kong-batch
+Version: 0.1.9
+Summary: Batch job submission and management tool
+Home-page: http://github.com/paulgessinger/kong
+Author: Paul Gessinger
+Author-email: hello@paulgessinger.com
+License: MIT
+Description: # Kong [![Build Status](https://travis-ci.com/paulgessinger/kong.svg?branch=master)](https://travis-ci.com/paulgessinger/kong) [![codecov](https://codecov.io/gh/paulgessinger/kong/branch/master/graph/badge.svg)](https://codecov.io/gh/paulgessinger/kong) [![pypi](https://img.shields.io/pypi/v/kong-batch)](https://pypi.org/project/kong-batch/)
+        
+        Kong is a batch job management software.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: ipython
