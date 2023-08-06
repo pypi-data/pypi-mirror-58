@@ -1,0 +1,7 @@
+filebeat_oracle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filebeat_oracle/__main__.py,sha256=xcHEtw_9342Sd0c29H3aPvTGFyNxTLoLjKE8Knno7Cs,81
+filebeat_oracle/filebeat_oracle.py,sha256=AwuSiJgGk6nDIq-v3OW9Cl3P3UDXXDwC_-7G0ZdQVro,5056
+filebeat_oracle-0.1.5.dist-info/METADATA,sha256=DXKAJuhI4HkPHLdSMMzRnBxafJocynOlermqEGegoxc,191
+filebeat_oracle-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+filebeat_oracle-0.1.5.dist-info/top_level.txt,sha256=ghUcLiuVOoV33i8tdi-tp0_iaQGZ-geo0gkOmmaqoP8,16
+filebeat_oracle-0.1.5.dist-info/RECORD,,
