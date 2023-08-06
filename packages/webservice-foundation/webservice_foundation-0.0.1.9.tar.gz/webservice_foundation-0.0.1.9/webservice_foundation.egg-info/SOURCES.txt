@@ -1,0 +1,15 @@
+README.md
+setup.py
+webservice_foundation/__init__.py
+webservice_foundation/baserequest.py
+webservice_foundation/bodydata.py
+webservice_foundation/caseInsensitivedict.py
+webservice_foundation/error.py
+webservice_foundation/originaljsonencoder.py
+webservice_foundation/webservice.py
+webservice_foundation.egg-info/PKG-INFO
+webservice_foundation.egg-info/SOURCES.txt
+webservice_foundation.egg-info/dependency_links.txt
+webservice_foundation.egg-info/entry_points.txt
+webservice_foundation.egg-info/requires.txt
+webservice_foundation.egg-info/top_level.txt
