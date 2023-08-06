@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pypi-downloader
+Version: 1.0.5
+Summary: This project can be used to mirror the pypi index using the new warehouse api.
+Home-page: UNKNOWN
+Author: Patrick Chandler
+Author-email: pc.seanmckay@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2019.3.9)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: lxml (==4.3.3)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: urllib3 (==1.24.2)
+
+# pypi-downloader
+
+This project can be used to mirror the pypi index using the new warehouse API.
+
+This project consists of three scripts:
+
+1. the main single threaded script pypi-downloader.py
+1. a multithreaded version of the main script, pypi-downloader-mt.py
+1. a helper script to get the current list of packages from the pypi index site currently located at: <https://pypi.org/>
+
+

@@ -1,0 +1,8 @@
+pypi_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_downloader/pypi_downloader_mt.py,sha256=ABWnWZVVHTLbp4QsekUXbHOOld0n5CV3Suupe63ijeQ,22825
+pypi_downloader/pypi_packages.py,sha256=7fgZBsiNs9HZIs6bg55_z3WQO7z6qABLuM4hFFLuzOU,1416
+pypi_downloader-1.0.5.dist-info/METADATA,sha256=mEnVSyXHBEC0fgdG-11V9u2HUSqEYL3WcwcvYfMRyWs,907
+pypi_downloader-1.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pypi_downloader-1.0.5.dist-info/entry_points.txt,sha256=6fl9fwLLdg2VkkkqVjWMmPpLbQk_BlX712jujBLqXH8,128
+pypi_downloader-1.0.5.dist-info/top_level.txt,sha256=oqScvyvIwX1IgS3jlabBlaU5DQoISmFYpCQu8tNGFIM,16
+pypi_downloader-1.0.5.dist-info/RECORD,,
