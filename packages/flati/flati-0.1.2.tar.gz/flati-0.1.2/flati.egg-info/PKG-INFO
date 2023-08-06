@@ -1,0 +1,108 @@
+Metadata-Version: 1.1
+Name: flati
+Version: 0.1.2
+Summary: Flatten nested iterable object (Pure-Python)
+Home-page: https://github.com/ikegami-yukino/flati
+Author: Yukino Ikegami
+Author-email: yknikgm@gmail.com
+License: MIT License
+Description: flati
+        ==========
+        |travis| |coveralls| |pyversion| |version| |license|
+        
+        Flatten nested iterable object (Pure-Python implementation)
+        
+        
+        Installation
+        ==============
+        
+        ::
+        
+         $ pip install flati
+        
+        
+        Usage
+        ============
+        
+        .. code:: python
+        
+          import flati
+        
+          iterable = [(1, 2, 3), (4, (5, 6))]
+          list(flati.flatten(iterable))
+          # => [1, 2, 3, 4, 5, 6]
+        
+          # flati.flatten() returns a generator
+          import types
+          isinstance(flati.flatten(iterable), types.GeneratorType)
+          # => True
+        
+          # If you want to avoid flattening specific type, then use "ignore" parameter
+          iterable = [('abc'), ('def', ('g', 'hi'))]
+          list(flati.flatten(iterable, ignore=str))
+          # => ['abc', 'def', 'g', 'hi']
+        
+        Tips
+        ------
+        If you want to flatten numpy.ndarray, I recommend using following methods:
+        
+        * numpy.ravel()
+        * ndarray.reshape(-1)
+        * ndarray.flatten()  # This method is a bit slow because it makes a copy
+        
+        
+        .. |travis| image:: https://travis-ci.org/ikegami-yukino/flati.svg?branch=master
+            :target: https://travis-ci.org/ikegami-yukino/flati
+            :alt: travis-ci.org
+        
+        .. |coveralls| image:: https://coveralls.io/repos/ikegami-yukino/flati/badge.svg?branch=master&service=github
+            :target: https://coveralls.io/github/ikegami-yukino/flati?branch=master
+            :alt: coveralls.io
+        
+        .. |pyversion| image:: https://img.shields.io/pypi/pyversions/flati.svg
+        
+        .. |version| image:: https://img.shields.io/pypi/v/flati.svg
+            :target: http://pypi.python.org/pypi/flati/
+            :alt: latest version
+        
+        .. |license| image:: https://img.shields.io/pypi/l/flati.svg
+            :target: http://pypi.python.org/pypi/flati/
+            :alt: license
+        
+        
+        CHANGES
+        =======
+        
+        0.1.2 (2019-12-31)
+        ------------------
+        
+        - Support Python 3.8
+        
+        0.1.1 (2019-1-28)
+        ------------------
+        
+        - Support Python 2.7
+        
+        0.1 (2019-1-27)
+        ------------------
+        
+        - First release
+        
+Keywords: flatten,generator,pure-python
+Platform: POSIX
+Platform: Windows
+Platform: Unix
+Platform: MacOS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
