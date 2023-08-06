@@ -1,0 +1,3 @@
+[console_scripts]
+dir2pdf = dir2pdf:main
+
