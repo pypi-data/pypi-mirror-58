@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: aiolxd
+Version: 0.0.1
+Summary: Async IO LXD Client based on aiohttp.
+Home-page: http://github.com/an-otter-world/aiolxd/
+Author: An Otter World
+Author-email: an-otter-world@ki-dour.org
+License: WTFPL
+Description: # AIOLXD
+        
+        ## Overview
+        
+        Async IO LXD Client based on aiohttp.
+        
+        ## Installation
+        
+        Just use pip :
+        
+        ```bash
+            pip install aiolxd
+        ```
+        
+Keywords: LXD,container,deployment
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
