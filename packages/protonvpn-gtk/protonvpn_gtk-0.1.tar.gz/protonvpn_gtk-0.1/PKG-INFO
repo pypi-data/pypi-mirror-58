@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: protonvpn_gtk
+Version: 0.1
+Summary: Unofficial GTK 3 client for ProtonVPN.
+Home-page: https://github.com/karmadonov/protonvpn-gtk
+Author: Kirill Karmadonov
+Author-email: kirill@live.com
+License: GPLv3
+Description: <h1 align="center">ProtonVPN-GTK</h1>
+        
+        <b style="color:red">❗️ In development ❗️ See [status](#status).</b>
+        
+        An unofficial GTK 3 client for ProtonVPN. It's just GTK+ frontend for [ProtonVPN/protonvpn-cli-ng](https://github.com/ProtonVPN/protonvpn-cli-ng/).
+        
+        ## Installation
+        ### Requirements
+        * Python 3.6+
+        * protonvpn-cli-ng
+        
+        ### Installing
+        * install [protonvpn-cli-ng](https://github.com/ProtonVPN/protonvpn-cli-ng/) with all dependencies.
+        * install [PyGObjects](https://python-gtk-3-tutorial.readthedocs.io/en/latest/install.html).
+        * install [ProtonVPN-GTK](https://github.com/karmadonov/protonvpn-gtk): `sudo python3 setup.py install`
+        
+        ### Usage
+        Run `protonvpn-gtk`.
+        
+        ### Status
+        
+        Implementation ToDO:
+        
+        - [X] Show connection status.
+        - [ ] Connect to server.
+        - [ ] Disconnect the current session.
+        - [ ] Edit configuration.
+        - [ ] Add tests.
+        - [ ] Add logging.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
