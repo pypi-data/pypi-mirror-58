@@ -1,0 +1,14 @@
+pymaths/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymaths/constants/all.py,sha256=2FxY9Fg7eQrklzMgb4a-ZEWIC8qS6liPEzJVyoRnJV4,934
+pymaths/constants/chemistry.py,sha256=XRWgagrevlQzGL86iR4gVynFDlo2kR5tChO_YfZURPs,218
+pymaths/constants/maths.py,sha256=-dwHQTEFaTULSuk4AJcWpttRx4Cs62ZgamQBu80eZ5Q,841
+pymaths/constants/physics.py,sha256=_OqYzttzL1PD9WZMo7azGRG2zMEAz-G3D_htKC8c0ys,193
+pymaths/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymaths/functions/calculus.py,sha256=wxEcQ1AKNG6GHwUxe0rOh8nFirzWESBUmsx2n1kjtUw,3711
+pymaths/functions/pure.py,sha256=D7BSUeorEkO9f5GZS-lQJRgx8GZiSAB_11-Au4CmgaE,1831
+pymaths/functions/statistics.py,sha256=j3CtnjDbGVInRdGgAP9wWlkzD0R6Wju3ttx1O3wf90Q,1483
+pymaths-1.4.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pymaths-1.4.dist-info/METADATA,sha256=q7155oDzupjYw3cz0rxC7SnINL1hoZLf3UDAKNfxNu0,259
+pymaths-1.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pymaths-1.4.dist-info/top_level.txt,sha256=E6tXS-bWIncpmAamxUYQ1LRcrOd3y-7zMjlDwedZNME,8
+pymaths-1.4.dist-info/RECORD,,
