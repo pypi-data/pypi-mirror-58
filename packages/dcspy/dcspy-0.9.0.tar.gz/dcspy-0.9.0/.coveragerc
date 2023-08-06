@@ -1,0 +1,5 @@
+[run]
+source = dcspy
+
+[report]
+omit = tests/*
