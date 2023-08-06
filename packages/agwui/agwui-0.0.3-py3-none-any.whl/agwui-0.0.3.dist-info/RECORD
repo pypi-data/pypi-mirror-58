@@ -1,0 +1,10 @@
+agwui/FunctionDefinition.py,sha256=w1fnObUeg_j3e91oc6o8fct2cHGfPH66rjUiYok8bKQ,1292
+agwui/FunctionEntrypoint.py,sha256=xAuQ8aa1RG5JZ92VVlO3rsIJrDEYaZ6Q1NuWREWF7vA,576
+agwui/FunctionParameter.py,sha256=FWlBSIh7ruk0PUx1ES9fQplRprfdR_dpL6ZyJTPt-88,396
+agwui/Injector.py,sha256=H-ZDY7ERoUoZYbzWvKG8uLO_X4dzT7TN9Smz9dbzWLE,2371
+agwui/__init__.py,sha256=CNTPSJz4a9Ook-yS4iCmdvXzRdrl9PKeurIVizoA8fA,108
+agwui/inspect_test.py,sha256=lhlQ4VbxAP0uefXRZ2MLmfzYXyEL6NKcztDBQHG_52o,142
+agwui-0.0.3.dist-info/METADATA,sha256=XGnlPMnUIDZ3pcfhBye_uxeTkhJcahVo0MT0MoVUfKk,901
+agwui-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+agwui-0.0.3.dist-info/top_level.txt,sha256=8dSBydIad_Rwx8V2gyxlw-GV_dxDyM-vsbPvuheGNZ8,6
+agwui-0.0.3.dist-info/RECORD,,

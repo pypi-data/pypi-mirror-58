@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: agwui
+Version: 0.0.3
+Summary: agwui is a library for Automatically Generating Web User Interface for any Python object.
+Home-page: https://github.com/kotauchisunsun/agwui
+Author: kotauchisunsun
+Author-email: kotauchisunshine@hotmail.co.jp
+Maintainer: kotauchisunsun
+Maintainer-email: kotauchisunshine@hotmail.co.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Click (==7.0)
+Requires-Dist: Flask (==1.1.1)
+Requires-Dist: Jinja2 (==2.10.3)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: Werkzeug (==0.16.0)
+Requires-Dist: itsdangerous (==1.1.0)
+
+# SampleCode
+
+sample.py
+
