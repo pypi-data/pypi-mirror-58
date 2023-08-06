@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+{%block head%}
+
+{%endblock%}
+{%block body%}
+<script>
+    var QWindow = winjs.QWindow;
+    var getDir = panjs.getDir;
+    var getFile = panjs.getFile;
+    var newFile = panjs.newFile;
+    var newDir = panjs.newDir;
+    var Editor = edjs.Editor;
+    var T = wpjs.T;
+    var genUid = wpjs.genUid;
+    wpjs.disable_ctrl_s();
+
+</script>
+
+<div id="editor"></div>
+<div id="explorer"></div>
+<script style="background-color: cornflowerblue">
+    var Explorer=explorerjs.Explorer;
+    var explorer=new Explorer($('#explorer'));
+</script>
+
+
+{%endblock%}
