@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pypeds
+Version: 0.102
+Summary: A python package to help expedite insight generate from publicly available higher education datasets. 
+Home-page: https://github.com/Btibert3/pypeds
+Author: Brock Tibert
+Author-email: btibert3@gmail.com
