@@ -1,0 +1,9 @@
+README.md
+setup.py
+AudioToText/AudioTextConverter.py
+AudioToText/__init__.py
+AudioToText.egg-info/PKG-INFO
+AudioToText.egg-info/SOURCES.txt
+AudioToText.egg-info/dependency_links.txt
+AudioToText.egg-info/requires.txt
+AudioToText.egg-info/top_level.txt
