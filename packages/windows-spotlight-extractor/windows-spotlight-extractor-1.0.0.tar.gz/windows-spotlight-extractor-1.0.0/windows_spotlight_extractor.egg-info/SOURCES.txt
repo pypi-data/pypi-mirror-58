@@ -1,0 +1,9 @@
+README.md
+setup.py
+spotlight/extractor.py
+windows_spotlight_extractor.egg-info/PKG-INFO
+windows_spotlight_extractor.egg-info/SOURCES.txt
+windows_spotlight_extractor.egg-info/dependency_links.txt
+windows_spotlight_extractor.egg-info/entry_points.txt
+windows_spotlight_extractor.egg-info/requires.txt
+windows_spotlight_extractor.egg-info/top_level.txt
