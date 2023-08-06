@@ -1,0 +1,785 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Copyright 2016 Adrien Vergé
+# All rights reserved
+
+import argparse
+import base64
+import configparser
+from datetime import datetime
+import fileinput
+import getpass
+from io import BytesIO
+import json
+import logging
+import math
+import multiprocessing
+import os
+import queue
+import random
+import re
+import resource
+import shutil
+import socket
+import string
+import subprocess
+import sys
+import tarfile
+import tempfile
+import threading
+import time
+from urllib.parse import quote, urlparse, urlsplit, urlunsplit
+import urllib.request
+
+import couchdb
+
+
+MAX_NUMBER_OF_WORKERS = 128
+
+
+def _canonical_couchdb_url(url):
+    url = url if url.startswith('http://') else 'http://' + url
+
+    parts = list(urlsplit(url))
+    server = parts[1]
+    username, password = None, None
+    if '@' in server:
+        credentials, server = server.rsplit('@', 1)
+        credentials = credentials.split(':', 1)
+        username = credentials.pop(0)
+        password = credentials.pop(0) if credentials else None
+    while not username:
+        print('CouchDB admin for %s: ' % server, end='', file=sys.stderr)
+        username = input()
+    while not password:
+        password = getpass.getpass(
+            'CouchDB password for %s@%s: ' % (username, server), sys.stderr)
+
+    parts[1] = server
+    url = urlunsplit(parts)       # http://server/db/
+    parts[1] = '%s:%s@%s' % (quote(username, safe=[]),
+                             quote(password, safe=[]),
+                             server)
+    auth_url = urlunsplit(parts)  # http://user:pass@server/db/
+    return auth_url
+
+
+def _couchdb_request(url):
+    parts = list(urlsplit(url))
+    credentials, server = parts[1].rsplit('@', 1)
+    username, password = credentials.split(':', 1)
+    auth = base64.b64encode(('%s:%s' % (username, password))
+                            .encode('utf-8')).decode('utf-8')
+    parts[1] = server
+    url = urlunsplit(parts)
+    req = urllib.request.Request(url,
+                                 headers={'Authorization': 'Basic %s' % auth})
+    response = urllib.request.urlopen(req)
+    return json.loads(response.read().decode('utf-8'))
+
+
+def _check_couchdb_connection(url):
+    try:
+        data = _couchdb_request(url)
+        assert 'couchdb' in data and data['couchdb'] == 'Welcome', data
+    except Exception as e:
+        logging.error('Cannot connect to CouchDB server: %s' % e)
+        sys.exit(1)
+
+
+class CouchDBInstance(object):
+    def __init__(self, erlang_node, standalone_server=False):
+        self.erlang_node = erlang_node
+        self.tempdir = tempfile.TemporaryDirectory(prefix='coucharchive-')
+        self.thread = None
+        self.url = None
+        self.standalone_server = standalone_server
+
+        self._setup()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, type, value, traceback):
+        if self.thread is not None:
+            self.stop()
+
+    @property
+    def confdir(self):
+        return self.tempdir.name + '/etc'
+
+    @property
+    def datadir(self):
+        return self.tempdir.name + '/data'
+
+    def _random_credential(self):
+        return 'root', ''.join(
+            random.choice(string.ascii_letters + string.digits)
+            for _ in range(10))
+
+    def _two_unused_ports(self):
+        s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s1.bind(('localhost', 0))
+        _, port1 = s1.getsockname()
+        s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s2.bind(('localhost', 0))
+        _, port2 = s2.getsockname()
+        s1.close()
+        s2.close()
+        return port1, port2
+
+    def _try_to_increase_rlimit_nofile(self):
+        MAX_NOFILE = 4096
+        # Try to increase the allowed number of open files, to avoid CouchDB
+        # errors:
+        soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+        if soft < MAX_NOFILE and soft < hard:
+            logging.debug('Trying to increase the max number of open files '
+                          '(currently %d)...' % soft)
+            resource.setrlimit(resource.RLIMIT_NOFILE,
+                               (min(MAX_NOFILE, hard), hard))
+            soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+        if soft < MAX_NOFILE:
+            logging.warning(
+                ('WARNING: Max number of open files is low (%d), it could '
+                 'result in server errors. If you have errors, consider '
+                 'increasing the system hard limit.') % soft)
+
+    def _setup(self):
+        self._try_to_increase_rlimit_nofile()
+
+        os.mkdir(self.confdir)
+        os.mkdir(self.confdir + '/local.d')
+        os.mkdir(self.datadir)
+
+        self.creds = self._random_credential()
+        self.ports = self._two_unused_ports()
+
+        for file in ('vm.args', 'default.ini', 'local.ini'):
+            shutil.copy('/etc/couchdb/' + file, self.confdir + '/' + file)
+
+        for line in fileinput.input(self.confdir + '/vm.args', inplace=True):
+            if re.match(r'^-name \S+$', line):
+                print('-name ' + self.erlang_node)
+            else:
+                print(line, end='')
+
+        with open(self.confdir + '/local.d/coucharchive.ini', 'w') as f:
+            f.write('[chttpd]\n'
+                    'port = %d\n' % self.ports[0] +
+                    '\n'
+                    '[httpd]\n'
+                    'port = %d\n' % self.ports[1] +
+                    '\n'
+                    '[couchdb]\n'
+                    'database_dir = %s\n' % self.datadir +
+                    'view_index_dir = %s\n' % self.datadir +
+                    'max_dbs_open = 2000\n'
+                    '\n'
+                    '[cluster]\n'
+                    'q=1\n'  # ideal for a small, 1-node setup
+                    'n=1\n'
+                    '\n'
+                    '[replicator]\n'
+                    'use_checkpoints = false\n'  # only one-shot replications
+                    'connection_timeout = 120000\n'  # avoid req_timedout
+                    'worker_processes = 1\n'
+                    '\n'
+                    '[admins]\n'
+                    '%s = %s\n' % self.creds)
+
+    def start(self):
+        env = dict(os.environ,
+                   COUCHDB_ARGS_FILE=self.confdir + '/vm.args',
+                   COUCHDB_INI_FILES=(self.confdir + '/default.ini ' +
+                                      self.confdir + '/local.ini ' +
+                                      self.confdir + '/local.d'))
+        log = open(self.tempdir.name + '/log', 'w')
+
+        class CouchDBRunnerThread(threading.Thread):
+            def __init__(self):
+                super().__init__()
+                self.process = None
+
+            def run(self):
+                self.process = subprocess.Popen('couchdb', env=env,
+                                                stdout=log, stderr=log)
+                self.process.wait()
+
+            def terminate(self):
+                self.process.terminate()
+
+        self.thread = CouchDBRunnerThread()
+        self.thread.start()
+
+        self.url = 'http://%s:%s@localhost:%d' % (self.creds + self.ports[:1])
+
+        if self.standalone_server:
+            return
+
+        for i in range(25):
+            if not self.thread.is_alive():
+                raise Exception('CouchDB process died')
+            try:
+                self.version = (urllib.request.urlopen('http://localhost:%d'
+                                                       % self.ports[0])
+                                .read().decode('utf-8'))
+                if '"couchdb":"Welcome"' in self.version:
+                    return
+
+                self.thread.terminate()
+                raise Exception('CouchDB answered: %s' % self.version)
+            except urllib.error.URLError:
+                time.sleep(0.2)
+
+        self.thread.terminate()
+        raise Exception('CouchDB server does not answer after 5 seconds')
+
+    def stop(self):
+        logging.info('Terminating local CouchDB instance')
+        self.thread.terminate()
+        self.thread.join()
+        self.thread = None
+
+
+class ReplicationControl(object):
+    def __init__(self, total_replications, ideal_duration):
+        self.total_replications = total_replications
+        self.running_replications = multiprocessing.Manager().Value('i', 0)
+        self.completed_replications = multiprocessing.Manager().Value('i', 0)
+
+        self.ideal_duration = ideal_duration or 0
+        self._start_time = int(time.time())
+        self.ideal_speed = 0
+        self.current_avge_speed = 0
+
+        self._last_successes = multiprocessing.Manager().list()
+        self._last_errors = multiprocessing.Manager().list()
+
+    def report_success(self):
+        self._last_successes.append((int(time.time()),
+                                     self.running_replications.value))
+
+    def report_error(self):
+        self._last_errors.append((int(time.time()),
+                                  self.running_replications.value))
+
+    def _drop_old_events(self):
+        ten_min_ago = time.time() - 10 * 60
+        self._last_successes[:] = [e for e in self._last_successes
+                                   if e[0] > ten_min_ago]
+        self._last_errors[:] = [e for e in self._last_errors
+                                if e[0] > ten_min_ago]
+
+    def recent_errors(self):
+        self._drop_old_events()
+        return len(self._last_errors)
+
+    def _ideal_number_of_replications_for_ideal_duration(self):
+        if not len(self._last_successes):
+            # We do not have enough data yet to return anything useful.
+            # Start with 4 concurrent replications:
+            return 4
+        else:
+            # Compute the ideal number of concurrent replications, to finish in
+            # ideal_duration:
+            databases_left = (self.total_replications -
+                              self.completed_replications.value)
+            time_left = max(
+                1, self._start_time + self.ideal_duration - time.time())
+            self.ideal_speed = databases_left / time_left
+            self.current_avge_speed = (
+                len(self._last_successes) /
+                min(time.time() - self._start_time, 5 * 60))
+            current_avge_replications = (
+                sum(e[1] for e in self._last_successes) /
+                len(self._last_successes))
+            ideal_number = round(current_avge_replications *
+                                 self.ideal_speed / self.current_avge_speed)
+
+            # But do not increase too rapidly: never go above 2 × the best
+            # known successful value:
+            best_successful_number = max(e[1] for e in self._last_successes)
+            return min(ideal_number, 2 * best_successful_number)
+
+    def ideal_number_of_replications(self):
+        self._drop_old_events()
+
+        # Choose the value to achieve replication in ideal_duration:
+        ideal_number = self._ideal_number_of_replications_for_ideal_duration()
+
+        # ... but if there were errors, compute an age-weighted average
+        # between past errors and ideal_number:
+        #
+        #                      ideal
+        #                      target
+        #       last errors,
+        #       age-weighted   +
+        #                      |
+        #                  +   |          new target = weighted average
+        #                  |   |
+        #           +      |   |
+        #    +    + +      +   +
+        #  ----------------------> t
+        #        10 minutes
+        now = time.time()
+        weights = []
+        weighted_values = []
+        target = [(now, ideal_number)]
+        # Lower last errors values a bit (× 0.9) so we stay just below the
+        # "error zone":
+        last_errors_lowered = [(i[0], i[1] * 0.9) for i in self._last_errors]
+        for i in last_errors_lowered + target:
+            age = now - i[0]
+            # Weight for an old event is 0, weight for a recent event is 1,
+            # between the two it is an exponential curve.
+            weight = math.exp(- age / 120)
+            weights.append(weight)
+            weighted_values.append(weight * i[1])
+        ideal_number = sum(weighted_values) / sum(weights)
+
+        # ... and stay within [1, MAX_NUMBER_OF_WORKERS]
+        ideal_number = max(1, min(MAX_NUMBER_OF_WORKERS, ideal_number))
+
+        return ideal_number
+
+    def ideal_sleep_value(self):
+        self._drop_old_events()
+
+        # If there was 1 error within last 5 minutes, pause for 5 seconds,
+        # if there were 2 errors within last 5 minutes, pause for 10 seconds,
+        # if there were 3 errors within last 5 minutes, pause for 15 seconds...
+        wait = 5 * len(self._last_errors)
+        return min(60, wait)  # stay within [5 s, 60 s]
+
+
+def replicate_couchdb_server(source_url, target_url,
+                             reuse_db_if_exist=False,
+                             ignore_dbs=[],
+                             ideal_duration=None):
+    while source_url.endswith('/'):
+        source_url = source_url[:-1]
+    while target_url.endswith('/'):
+        target_url = target_url[:-1]
+
+    ignore_dbs += ('_global_changes', '_metadata', '_replicator')
+    dbs = [db for db in list(couchdb.Server(source_url))
+           if db not in ignore_dbs]
+
+    in_queue = multiprocessing.Queue()
+    out_queue = multiprocessing.Queue()
+    control = ReplicationControl(len(dbs), ideal_duration)
+    pool = multiprocessing.Pool(MAX_NUMBER_OF_WORKERS, replicate_databases,
+                                (in_queue, out_queue, control, source_url,
+                                 target_url, reuse_db_if_exist))
+    error = None
+
+    while len(dbs) and not error:
+        ideal = control.ideal_number_of_replications()
+        while len(dbs) and control.running_replications.value < ideal:
+            in_queue.put(dbs.pop(0))
+            control.running_replications.value += 1
+
+        logging.debug('Currently running %d replication workers'
+                      % control.running_replications.value)
+        logging.debug('Ideal speed = ' + ('%.1f rep/s' % control.ideal_speed
+                                          if ideal_duration else 'fastest') +
+                      '; current average speed = %.1f rep/s' %
+                      control.current_avge_speed)
+        n = control.recent_errors()
+        if n:
+            logging.debug(('There were %d CouchDB errors encountered in the '
+                           'last 5 minutes') % n)
+
+        time.sleep(1)
+
+        while True:
+            try:
+                result = out_queue.get_nowait()
+            except queue.Empty:
+                break
+
+            if result is True:
+                control.running_replications.value -= 1
+                control.completed_replications.value += 1
+            else:
+                logging.error('A replication failed, stopping...')
+                error = result
+                break
+
+    for i in range(MAX_NUMBER_OF_WORKERS):
+        in_queue.put(None)  # message to workers to say "it's over"
+    in_queue.close()
+    pool.close()
+    pool.join()
+
+    if error:
+        raise error
+
+
+def replicate_databases(in_queue, out_queue, control, source_url, target_url,
+                        reuse_db_if_exist):
+    # Create one TCP connection per worker process:
+    source = couchdb.Server(source_url)
+    target = couchdb.Server(target_url)
+    source_host = (urlparse(source_url).netloc
+                   .rsplit('@', 1)[-1].rsplit(':', 1)[0])
+    source_is_local = source_host in ('localhost', '127.0.0.1', '::1')
+
+    while True:
+        try:
+            item = in_queue.get(True, 1)
+        except queue.Empty:
+            continue
+
+        if item is None:  # message saying "it's over"
+            break
+
+        try:
+            replicate_one_database(control, source, source_url,
+                                   source_is_local, target, target_url,
+                                   reuse_db_if_exist, item)
+            out_queue.put(True)  # message to report success to the parent
+        except Exception as e:
+            out_queue.put(e)  # message to report failure to the parent
+            raise
+
+
+def replicate_one_database(control, source, source_url, source_is_local,
+                           target, target_url, reuse_db_if_exist, db):
+    retries = 10
+
+    try:
+        target.create(db)
+    except couchdb.http.PreconditionFailed as e:
+        if e.args[0][0] == 'file_exists' and db in ('_users',):
+            pass
+        elif e.args[0][0] == 'file_exists' and reuse_db_if_exist:
+            pass
+        else:
+            logging.error('Failed to create database %s' % db)
+            raise
+
+    server = source if source_is_local else target
+    server.replicate(source_url + '/' + db, target_url + '/' + db)
+
+    source_db = couchdb.Database(source_url + '/' + db)
+    target_db = couchdb.Database(target_url + '/' + db)
+
+    while True:
+        try:
+            target_db.security = source_db.security
+            break
+        except socket.gaierror as e:
+            if retries == 0:
+                raise e
+            control.report_error()
+            time.sleep(control.ideal_sleep_value())
+            retries -= 1
+        except couchdb.http.ServerError as e:
+            if retries == 0:
+                if e.args[0][1][1] in ('no_majority', 'no_ring'):
+                    logging.error('Retry with a greater ulimit (e.g. '
+                                  '`ulimit -n 8192`)')
+                raise
+            control.report_error()
+            time.sleep(control.ideal_sleep_value())
+            retries -= 1
+
+    # Check if source and target have the same number of documents. If not, it
+    # can be explained by two reasons: source db had a new document created
+    # during replication, or bug #1418 happened.
+    while True:
+        try:
+            source_len, target_len = len(source_db), len(target_db)
+            if source_len == target_len:
+                break
+            elif source_len > target_len:
+                # Overcome bug https://github.com/apache/couchdb/issues/1418
+                bug_1418_create_missing_documents(source_db, target_db)
+                server.replicate(source_url + '/' + db, target_url + '/' + db)
+        except couchdb.http.ServerError:
+            pass
+
+        if retries == 0:
+            raise Exception(
+                '%s: replicated database has %d docs, source has %d'
+                % (db, target_len, source_len))
+        control.report_error()
+        time.sleep(control.ideal_sleep_value())
+        retries -= 1
+
+    logging.info('%s: done' % db)
+
+    control.report_success()
+
+
+def bug_1418_create_missing_documents(source_db, target_db):
+    # Temporary function to be deleted when CouchDB team fixes the bug.
+    # It manually creates document on the target database that where
+    # previously deleted and re-created on the source.
+    #
+    # If the bug #1418 occured for a document, the situation should be as
+    # followed: on target, doc is deleted (its last revision is a tombstone
+    # with `_deleted: true`). On source, this tombstone revision is followed by
+    # one or more non-tombstone revisions.
+    #
+    #                      tombstone rev
+    #       first rev     (last common ancestor)     latest rev on source
+    #          ↘               ↓                    ↙
+    # SOURCE    o----o----o----o----o----o----o----o
+    # TARGET    o----o----o----o
+    #                           ↖
+    #                            tombstone rev (latest rev on target)
+
+    missing_documents = [doc for doc in source_db if doc not in target_db]
+
+    for doc_id in missing_documents:
+        source_info = source_db.get(doc_id, revs_info=True)['_revs_info']
+        target_doc = target_db.get(doc_id, revs=True, open_revs='all')
+        if not target_doc:
+            continue  # not bug #1418
+        target_doc = target_doc[0]['ok']
+        if not target_doc['_deleted']:
+            continue  # not bug #1418
+        common_ancestor = target_doc['_rev']  # e.g. '6-0ebc2b61b51eb4ed'
+        if common_ancestor not in [i['rev'] for i in source_info]:
+            continue  # not bug #1418
+
+        # e.g. ['7-f031bf11190de325', '8-a50a40b72aaea825']
+        revisions_to_catch_up = []
+        for info in source_info:
+            if info['rev'] == common_ancestor:
+                break
+            if info['status'] not in ('available', 'deleted'):
+                raise Exception('bug_1418_create_missing_documents: a source '
+                                'rev is not available anymore! '
+                                '%s/%s, source %s target %s'
+                                % (source_db.name, doc_id, info['rev'],
+                                   common_ancestor))
+            revisions_to_catch_up.insert(0, info['rev'])
+
+        prev_target_rev = None
+        for rev in revisions_to_catch_up:
+            doc = source_db.get(doc_id, rev=rev)
+            if prev_target_rev:
+                doc['_rev'] = prev_target_rev
+            else:
+                del doc['_rev']
+            _, target_rev = target_db.save(doc)
+            if target_rev != rev:
+                raise Exception('bug_1418_create_missing_documents: bug in the'
+                                'bug-solving code! %s/%s, source %s target %s'
+                                % (source_db.name, doc_id, rev, target_rev))
+            if doc.get('_deleted', False):
+                prev_target_rev = None
+            else:
+                prev_target_rev = rev
+
+
+def create(source, filename, ignore_dbs=[], ideal_duration=None):
+    erlang_node = 'coucharchive-%s@localhost' % ''.join(
+        random.choice(string.ascii_letters + string.digits) for _ in range(10))
+
+    with CouchDBInstance(erlang_node) as local_couchdb:
+        local_couchdb.start()
+        logging.info('Launched CouchDB instance at %s' % local_couchdb.url)
+
+        replicate_couchdb_server(source, local_couchdb.url,
+                                 ignore_dbs=ignore_dbs,
+                                 ideal_duration=ideal_duration)
+
+        local_couchdb.stop()
+
+        logging.info('Creating backup archive at %s' % filename)
+        with tarfile.open(filename, 'w:gz') as tar:
+            tar.add(local_couchdb.confdir, arcname='etc')
+            tar.add(local_couchdb.datadir, arcname='data')
+
+            file = tarfile.TarInfo('erlang_node_name')
+            file.size = len(erlang_node)
+            tar.addfile(file, BytesIO(erlang_node.encode('utf-8')))
+
+            info = (
+                'CouchDB backup made on %s\n' % datetime.now().isoformat() +
+                'with CouchDB version %s\n' % local_couchdb.version
+            ).encode('utf-8')
+            file = tarfile.TarInfo('info')
+            file.size = len(info)
+            tar.addfile(file, BytesIO(info))
+
+
+def _load_archive(filename, callback):
+    if not os.path.isfile(filename):
+        raise Exception('File "%s" does not exist' % filename)
+
+    with tarfile.open(filename) as tar, \
+            tempfile.TemporaryDirectory(prefix='coucharchive-') as tmp:
+        logging.info('Extracting backup archive from %s' % filename)
+        tar.extractall(path=tmp)
+
+        if os.path.isfile(tmp + '/erlang_node_name'):
+            with open(tmp + '/erlang_node_name', 'r') as f:
+                erlang_node = f.read().strip()
+        else:  # for archives made before coucharchive 1.2.1
+            erlang_node = 'coucharchive@localhost'
+
+        with CouchDBInstance(erlang_node) as local_couchdb:
+            os.rmdir(local_couchdb.datadir)
+            os.rename(tmp + '/data', local_couchdb.datadir)
+
+            local_couchdb.start()
+            logging.info('Launched CouchDB instance at %s' % local_couchdb.url)
+
+            callback(local_couchdb.url)
+
+
+def load(filename):
+    def callback(local_couch_server_url):
+        logging.info('Ready!')
+        try:
+            time.sleep(365 * 24 * 3600)
+        except KeyboardInterrupt:
+            pass
+
+    _load_archive(filename, callback)
+
+
+def restore(target, filename, reuse_db_if_exist=False, ignore_dbs=[],
+            ideal_duration=None):
+    def callback(local_couch_server_url):
+        replicate_couchdb_server(local_couch_server_url, target,
+                                 reuse_db_if_exist=reuse_db_if_exist,
+                                 ignore_dbs=ignore_dbs,
+                                 ideal_duration=ideal_duration)
+
+    _load_archive(filename, callback)
+
+
+def main():
+    # Get action and archive file from command line
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-v', '--verbose', action='count',
+                        help='be more verbose (can be used multiple times)')
+    parser.add_argument('-q', '--quiet', action='count',
+                        help='be more quiet (can be used multiple times)')
+    parser.add_argument('-c', '--config', dest='config_file',
+                        action='store', help='path to config file')
+    subparsers = parser.add_subparsers(dest='action')
+    sub = {}
+
+    def check_ideal_duration(value):
+        if value == 'fastest':
+            return 0
+        if value.isdigit() and int(value) >= 0:
+            return int(value)
+        raise argparse.ArgumentTypeError(
+            'must be a positive integer or "fastest"')
+
+    sub['create'] = subparsers.add_parser('create')
+    sub['create'].add_argument(
+        '--from', dest='source_server', action='store',
+        help='source CouchDB server to create archive from')
+    sub['create'].add_argument(
+        '-o', '--output', dest='output', action='store', required=True,
+        help='path to archive to create')
+    sub['create'].add_argument(
+        '--ideal-duration', dest='ideal_duration', action='store',
+        help='optimize concurrent replications and server load to finish in N '
+        'seconds', default='fastest', type=check_ideal_duration)
+
+    sub['restore'] = subparsers.add_parser('restore')
+    sub['restore'].add_argument(
+        '--to', dest='target_server', action='store',
+        help='target CouchDB server to restore archive to')
+    sub['restore'].add_argument(
+        '-i', '--input', dest='input', action='store', required=True,
+        help='path to archive to restore')
+    sub['restore'].add_argument(
+        '--reuse-db-if-exist', dest='reuse_db_if_exist',
+        action='store_true', default=False,
+        help='continue restoration even if database exists on target')
+    sub['restore'].add_argument(
+        '--ideal-duration', dest='ideal_duration', action='store',
+        help='optimize concurrent replications and server load to finish in N '
+        'seconds', default='fastest', type=check_ideal_duration)
+
+    sub['load'] = subparsers.add_parser('load')
+    sub['load'].add_argument(
+        '-i', '--input', dest='input', action='store', required=True,
+        help='path to archive to load')
+
+    sub['replicate'] = subparsers.add_parser('replicate')
+    sub['replicate'].add_argument(
+        '--from', dest='source_server', action='store',
+        help='source CouchDB server to replicate from')
+    sub['replicate'].add_argument(
+        '--to', dest='target_server', action='store',
+        help='target CouchDB server to replicate to')
+    sub['replicate'].add_argument(
+        '--reuse-db-if-exist', dest='reuse_db_if_exist',
+        action='store_true', default=False,
+        help='continue replication even if database exists on target')
+    sub['replicate'].add_argument(
+        '--ideal-duration', dest='ideal_duration', action='store',
+        help='optimize concurrent replications and server load to finish in N '
+        'seconds', default='fastest', type=check_ideal_duration)
+
+    args = parser.parse_args()
+
+    # https://docs.python.org/fr/3/library/logging.html#levels
+    loglevel = 10 * (2 + (args.quiet or 0) - (args.verbose or 0))
+    logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s',
+                        datefmt="%Y-%m-%dT%H:%M:%S%z",
+                        level=loglevel)
+
+    config = configparser.ConfigParser()
+    if args.config_file:
+        config.read(args.config_file)
+
+    if args.action in ('create', 'replicate'):
+        if not args.source_server and 'source' in config.sections():
+            args.source_server = config['source'].get('url', '')
+        if not args.source_server:
+            sub[args.action].print_help()
+            parser.exit(1)
+    if args.action in ('restore', 'replicate'):
+        if not args.target_server and 'target' in config.sections():
+            args.target_server = config['target'].get('url', '')
+        if not args.target_server:
+            sub[args.action].print_help()
+            parser.exit(1)
+
+    ignore_dbs = []
+    if 'replication' in config.sections():
+        ignore_dbs = config['replication'].get('ignore_dbs', '').split(',')
+        ignore_dbs = [db.strip() for db in ignore_dbs if db.strip()]
+
+    if getattr(args, 'source_server', None):
+        args.source_server = _canonical_couchdb_url(args.source_server)
+        _check_couchdb_connection(args.source_server)
+    if getattr(args, 'target_server', None):
+        args.target_server = _canonical_couchdb_url(args.target_server)
+        _check_couchdb_connection(args.target_server)
+
+    if args.action == 'create':
+        create(args.source_server, args.output, ignore_dbs=ignore_dbs,
+               ideal_duration=args.ideal_duration)
+    elif args.action == 'restore':
+        restore(args.target_server, args.input,
+                reuse_db_if_exist=args.reuse_db_if_exist,
+                ignore_dbs=ignore_dbs, ideal_duration=args.ideal_duration)
+    elif args.action == 'load':
+        load(args.input)
+    elif args.action == 'replicate':
+        replicate_couchdb_server(args.source_server, args.target_server,
+                                 reuse_db_if_exist=args.reuse_db_if_exist,
+                                 ignore_dbs=ignore_dbs,
+                                 ideal_duration=args.ideal_duration)
+    else:
+        parser.print_help()
+        parser.exit(1)
+
+
+if __name__ == '__main__':
+    main()
