@@ -1,0 +1,26 @@
+# python_arango_engine
+this is a quering and creation engine for integration with arangodb databases
+
+this use pyArango backend 
+the target of writing this was using in django project
+
+its syntax will be like the django quering API syntax like this :
+
+    models.question.objects.get(name="hooman")
+
+    
+# installition
+
+because of being small it is not installable but after a while i will add path to install it
+
+
+# TODO
+
+ [] complete the quering system for normal NoSQL
+
+ [] complete the quering system for graph store DB
+
+ [] add Inserting system for both normal and graph store systems
+ 
+ [] add to django project
+

@@ -1,0 +1,6 @@
+README.md
+setup.py
+arango_query_engine.egg-info/PKG-INFO
+arango_query_engine.egg-info/SOURCES.txt
+arango_query_engine.egg-info/dependency_links.txt
+arango_query_engine.egg-info/top_level.txt
