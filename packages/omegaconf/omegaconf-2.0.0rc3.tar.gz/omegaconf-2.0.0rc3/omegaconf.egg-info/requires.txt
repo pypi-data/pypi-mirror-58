@@ -1,0 +1,27 @@
+PyYAML
+typing-extensions
+
+[:python_version == "3.6"]
+dataclasses
+
+[coverage]
+coveralls
+
+[dev]
+black
+coveralls
+flake8
+pre-commit
+pytest
+pytest-mock
+nox
+towncrier
+twine
+sphinx
+mypy
+
+[lint]
+pytest
+black
+flake8
+mypy
