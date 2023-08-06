@@ -1,0 +1,19 @@
+INFO: 2: [2019-12-17 12:10:17]: module: __main__: succes starting tests now
+INFO: 4: [2019-12-17 12:10:17]: module: __main__: test
+INFO: 6: [2019-12-17 12:10:17]: module: __main__: <__main__.gui_logger object at 0x0000024A52431888>
+INFO: 8: [2019-12-17 12:10:17]: module: __main__: normal
+INFO: 10: [2019-12-17 12:10:17]: module: __main__: this is from get logger
+INFO: 12: [2019-12-17 12:10:17]: module: __main__: GUI
+WARNING: 15: [2019-12-17 12:10:17]: module: __main__: warning
+INFO: 17: [2019-12-17 12:10:17]: module: __main__: succes
+WARNING: 20: [2019-12-17 12:10:18]: module: __main__: not normal
+INFO: 22: [2019-12-17 12:10:18]: module: __main__: normal again
+INFO: 24: [2019-12-17 12:10:18]: module: __main__: showing GUI for one second
+INFO: 26: [2019-12-17 12:10:19]: module: __main__: again a test
+INFO: 28: [2019-12-17 12:10:19]: module: __main__: test int converter
+WARNING: 31: [2019-12-17 12:10:19]: module: __main__: expected an int got an <class 'str'>
+WARNING: 34: [2019-12-17 12:10:20]: module: __main__: expected an int between 1 and 5 got number 6
+WARNING: 37: [2019-12-17 12:10:20]: module: __main__: expected an int between 1 and 5 got number -1
+DEBUG: 40: [2019-12-17 12:10:20]: module: __main__: error next
+ERROR: 42: [2019-12-17 12:10:20]: module: __main__: no fatal error
+FATAL ERROR: 44: [2019-12-17 12:10:21]: module: __main__: fatal error
