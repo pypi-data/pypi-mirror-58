@@ -1,0 +1,3 @@
+[console_scripts]
+dumpwallet = walletlib.scripts.dumpwallet:main
+
