@@ -1,0 +1,121 @@
+{
+  "authorize": {
+    "type": "object",
+    "properties": {
+      "identity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "identityType": {
+        "type": "string",
+        "enum": [
+          "phone_number",
+          "email"
+        ]
+      },
+      "keyId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "response_type": {
+        "type": "string",
+        "enum": [
+          "code",
+          "token",
+          "id_token"
+        ],
+        "description": "روش دریافت کد اعتبارسنجی از سرور SSO"
+      },
+      "loginAsUserId": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string",
+        "description": "سرور SSO مقدار این فیلد را به همان صورتی که دریافت کند به شما باز میگرداند"
+      },
+      "client_id": {
+        "type": "string"
+      },
+      "redirect_uri": {
+        "type": "string",
+        "format": "uri",
+        "title": "آدرس بازگشت",
+        "description": "این آدرس باید در سرور SSO ثبت شده باشد"
+      },
+      "scope": {
+        "type": "string",
+        "description": "اسکوپ هایی که نیاز دارید. اسکوپ ها را با ، (+ یا space) از یکدیگر جدا کنید"
+      },
+      "callback_uri": {
+        "type": "string"
+      },
+      "code_challenge": {
+        "type": "string"
+      },
+      "code_challenge_method": {
+        "type": "string",
+        "title": "روش تولید Code Challenge"
+      },
+      "referrerType": {
+        "type": "string",
+        "enum": [
+          "id",
+          "username",
+          "phone_number",
+          "email",
+          "nationalcode"
+        ]
+      },
+      "referrer": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "identity",
+      "response_type",
+      "keyId"
+    ],
+    "additionalProperties": false
+  },
+  "handshake": {
+    "type": "object",
+    "properties": {
+      "device_name": {
+        "type": "string",
+        "title": "نام دستگاه"
+      },
+      "device_uid": {
+        "type": "string",
+        "minLength": 1,
+        "title": "شناسه یکتا دستگاه"
+      },
+      "device_lat": {
+        "type": "number",
+        "title": "عرض جغرافیایی موقعیت دستگاه"
+      },
+      "device_lon": {
+        "type": "number",
+        "title": "طول جغرافیایی موقعیت دستگاه"
+      },
+      "device_type": {
+        "type": "string",
+        "enum": [
+          "Mobile Phone",
+          "Desktop",
+          "Tablet",
+          "Console",
+          "TV Device"
+        ],
+        "title": "نوع دستگاه"
+      },
+      "device_os_version": {
+        "type": "string",
+        "title": "نسخه سیستم عامل دستگاه"
+      }
+    },
+    "required": [
+      "device_uid"
+    ],
+    "additionalProperties": false
+  }
+}

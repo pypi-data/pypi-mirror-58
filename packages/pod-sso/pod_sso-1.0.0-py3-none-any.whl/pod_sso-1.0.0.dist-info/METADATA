@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pod-sso
+Version: 1.0.0
+Summary: This package for implementation of POD platform SSO APIs
+Home-page: https://github.com/FanapSoft/pod-sso-python-sdk
+Author: ReZa ZaRe
+Author-email: rz.zare@gmail.com
+License: MIT
+Project-URL: Documentation, http://docs.pod.ir/v1.0.0.2/PODSDKs/python/5233/user
+Project-URL: Source, https://github.com/FanapSoft/pod-sso-python-sdk
+Project-URL: Tracker, https://github.com/FanapSoft/pod-sso-python-sdk/issues
+Keywords: pod,single sign on,sso,pod sdk
+Platform: UNKNOWN
+Classifier: Natural Language :: Persian
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: pod-base (<2,>=1)
+Requires-Dist: pycrypto (>=2.6.1)
+
+<div dir="rtl">
+
+# احراز هویت کاربران
+
+با استفاده از این پکیج می توانید کاربران خود را احراز هویت کنید و از سیستم مدیریت کاربران پلتفرم پاد استفاده نمایید
+
+# نصب
+
+برای نصب کافیست دستور زیر را اجرا کنید
+
+```
+pip install pod-sso
+```
+
+# نمونه کد
+نمونه کد ها و مثال هایی از تمام متدهای این پکیج را می توانید 
+[اینجا](examples)
+پیدا کنید.
+
+</div>
+
