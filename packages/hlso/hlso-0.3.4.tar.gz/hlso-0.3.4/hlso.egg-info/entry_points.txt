@@ -1,0 +1,3 @@
+[console_scripts]
+hlso = hlso.__main__:main
+

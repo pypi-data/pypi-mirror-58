@@ -1,0 +1,17 @@
+logzero
+pyopenssl
+cryptography
+requests
+attr
+cattrs
+bioconvert
+xlsxwriter
+dash
+dash-renderer
+dash-html-components
+dash-core-components
+dash-bootstrap-components
+dash_table
+plotly
+Sphinx
+sphinx-rtd-theme
