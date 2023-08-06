@@ -1,0 +1,3 @@
+[console_scripts]
+aneki = aneki.main:main
+
