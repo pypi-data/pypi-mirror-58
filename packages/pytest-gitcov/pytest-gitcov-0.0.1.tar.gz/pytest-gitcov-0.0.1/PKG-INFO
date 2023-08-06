@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytest-gitcov
+Version: 0.0.1
+Summary: Pytest plugin for reporting on coverage of the last git commit.
+Home-page: UNKNOWN
+Author: David James McCorrie
+License: MIT
+Description: # pytest-git-coverage
+        Extension for pytest to report on the coverage for the lines modified in a given commit or commit range
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
