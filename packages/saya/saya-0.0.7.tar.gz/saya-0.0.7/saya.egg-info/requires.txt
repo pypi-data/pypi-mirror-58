@@ -1,0 +1,4 @@
+requests
+regex
+beautifulsoup4
+retranslator
