@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+tox.ini
+.github/workflows/publishpackage.yml
+.github/workflows/runtests.yml
+src/metaforward.py
+src/metaforward.egg-info/PKG-INFO
+src/metaforward.egg-info/SOURCES.txt
+src/metaforward.egg-info/dependency_links.txt
+src/metaforward.egg-info/requires.txt
+src/metaforward.egg-info/top_level.txt
+tests/test_metaforward.py

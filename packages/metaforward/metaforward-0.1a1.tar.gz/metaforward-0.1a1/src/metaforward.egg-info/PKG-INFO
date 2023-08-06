@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: metaforward
+Version: 0.1a1
+Summary: Data structures that forward attribute and method access to their contents
+Home-page: https://github.west.isilon.com/masenf/metaforward
+Author: Masen Furer
+Author-email: m_github@0x26.net
+License: UNKNOWN
+Description: # metaforward
+        
+        Data structures that forward attribute and method access to their contents
+        
+        # License
+        
+        BSD 2-clause
+        
+        # Status
+        
+        Alpha. This software is not approved for production use
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<4
+Description-Content-Type: text/markdown
