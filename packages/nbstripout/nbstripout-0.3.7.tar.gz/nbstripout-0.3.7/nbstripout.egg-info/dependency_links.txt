@@ -1,0 +1,1 @@
+https://github.com/kynan/pytest-cram/archive/nbstripout.zip#egg=pytest-cram-0.2.1.dev0
