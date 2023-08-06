@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Jinja2 Template</title>
+</head>
+<body>
+<h1>{{ word }}</h1>
+<ul>
+    {%for rd in rds%}
+    <li>{{rd.context}}</li>
+    {%endfor%}
+</ul>
+</body>
+</html>
