@@ -1,0 +1,13 @@
+README.md
+setup.py
+case_style_changer/__init__.py
+case_style_changer/case_changer.py
+case_style_changer/case_guesser.py
+case_style_changer/case_style.py
+case_style_changer/cli.py
+case_style_changer/text_splitter.py
+case_style_changer.egg-info/PKG-INFO
+case_style_changer.egg-info/SOURCES.txt
+case_style_changer.egg-info/dependency_links.txt
+case_style_changer.egg-info/entry_points.txt
+case_style_changer.egg-info/top_level.txt
