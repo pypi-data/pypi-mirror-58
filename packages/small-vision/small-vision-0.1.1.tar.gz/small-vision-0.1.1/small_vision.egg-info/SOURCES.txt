@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+small-vision/__init__.py
+small-vision/image.py
+small-vision/window.py
+small_vision.egg-info/PKG-INFO
+small_vision.egg-info/SOURCES.txt
+small_vision.egg-info/dependency_links.txt
+small_vision.egg-info/requires.txt
+small_vision.egg-info/top_level.txt
