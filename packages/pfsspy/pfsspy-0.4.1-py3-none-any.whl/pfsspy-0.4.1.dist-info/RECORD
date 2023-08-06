@@ -1,0 +1,13 @@
+pfsspy/__init__.py,sha256=nWHgXsIXX11k5hJtF8oRRzxYSc4QsZRE-eX8gNb6OjA,19244
+pfsspy/_version.py,sha256=jd4xkMVT4L12LibReOlFmNt7Wfto7EUArRYxkdSPimc,497
+pfsspy/coords.py,sha256=X3087roYAfdIpjmR3yGOi3G_HVPhDA2GdekXnlCvjEw,1298
+pfsspy/fieldline.py,sha256=2tlRRN5xI6D3Sk955YfxYNbyl07CGL_B21_jpPGwRAY,7745
+pfsspy/grid.py,sha256=5PVjSXhAa1IWO-iD6r4kXppB5n2yJI68BPOqodZo85A,2367
+pfsspy/interpolator.py,sha256=w2p4iWJoExMCKFMv7nKNtrHqql74C54C7XGCMP_aQuk,5565
+pfsspy/plot.py,sha256=i0s2hdith_mLmHp_6XVLNQ6iEN7D5EB2uVrLbSaeol0,1139
+pfsspy/tracing.py,sha256=X09AYInvtxJf9B1WRfeNpH_6oOernCZdMq1LFP40d20,5163
+pfsspy-0.4.1.dist-info/LICENSE,sha256=TC_6ubYJdEqU7z1opeWUT_koxvjzWAYQSTl8-A2nHqM,35288
+pfsspy-0.4.1.dist-info/METADATA,sha256=S_m1Z1S3VA9CJDf_GPAx3fIsabNrd3RrcgfH0bfLhQo,660
+pfsspy-0.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pfsspy-0.4.1.dist-info/top_level.txt,sha256=5Guj9NoLVpfAJ165p0xdv2oNVa43zLXMHWjH_3VkWzE,7
+pfsspy-0.4.1.dist-info/RECORD,,
