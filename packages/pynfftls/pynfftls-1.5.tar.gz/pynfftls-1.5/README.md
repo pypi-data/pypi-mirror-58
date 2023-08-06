@@ -1,0 +1,36 @@
+# PyNFFTls Package
+
+                      PyNFFTls
+
+This Python module provides the Fast Lomb-Scargle periodogram
+developed by B. Leroy (2012, Astron. Astrophys. 545, A50)
+
+It is based on the Non-equispaced Fast Fourier Transform (NFFTn http://www-user.tu-chemnitz.de/~potts/nfft/) as well as the FFTW3 library (http://www.fftw.org/).
+Both librairies must be installed.
+
+Calling sequence:
+    (f,p) = period(t,y,ofac,hifac)
+
+For more details, see the associated documentation
+For a complete example, see nfftls_test.py
+
+
+This Python module also provides the following methods:
+- the Non-equidistant Fast Fourier Transform (NFFT) of a time series: (f,A) = nfft(t,y,p,d)
+
+For more details, see the associated documentation
+
+- the Discrete  Fourier Transform  (DFT) of a time series: A = dft(t,y,f)
+
+For more details, see the associated documentation
+
+For a complete example, see nfftls_test2.py
+
+Change history:
+1.4 (11/04/2019): interface of nfft() changed, this function can now compute an over-sampled fourier transform
+1.3 (10/04/2019):  correct a bug that lead to over-estimate the frequency by a relative factor of 1e-5
+1.2 (4/06/2013): 
+1.1 (18/01/2013):
+1.0 (3/01/2013): initial version
+
+R. Samadi, LESIA (http://lesia.obspm.fr), Observatoire de Paris, 22 Dec. 2012
