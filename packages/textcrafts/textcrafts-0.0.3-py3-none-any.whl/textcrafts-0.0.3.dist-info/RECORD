@@ -1,0 +1,13 @@
+textcrafts/__init__.py,sha256=DrjEULup96XvEAorANln_Z6mQ2MYFgZs4UlFraiz9d0,93
+textcrafts/corenlp_api.py,sha256=O0wtgj7cohUtWf2NCEeLxGFMczgVEEZYvYqaItQfj6w,1960
+textcrafts/deepRank.py,sha256=SOePgM4s-1L4Vx4U5mtdZOXa37LWYBbDnLnCOaJ6qYQ,22551
+textcrafts/down.py,sha256=6Nyf0J8T7gYn-tp5yojhLyMQq_uVhMhSOTbe-i3ai2Q,227
+textcrafts/params.py,sha256=DIZpP4_Xy0DCsYVblblVUdViaqC--ioHnDB-R7hdEcE,587
+textcrafts/parser_api.py,sha256=MyKwWFTX88ROqnkN_Bj1PUjKUV8crVscAUaCusOxyd0,604
+textcrafts/sim.py,sha256=InnKiry9d1opNahoy7QJmEU-UwqNgL7UPdRVz7N_AiI,2762
+textcrafts/stanfordnlp_api.py,sha256=rpZwBMvpcDlk2Q-rDPESqnYoycVA_SvE2g9vzYop2TE,3059
+textcrafts-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+textcrafts-0.0.3.dist-info/METADATA,sha256=zGtk1Sfk895ZBp5QoKUnNaFV4YbB9odsIH2BvYM55fY,2927
+textcrafts-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+textcrafts-0.0.3.dist-info/top_level.txt,sha256=CszPo0027qjIX2VdRG6qiA0qrXNjTpgDT6S21fFQnAQ,11
+textcrafts-0.0.3.dist-info/RECORD,,
