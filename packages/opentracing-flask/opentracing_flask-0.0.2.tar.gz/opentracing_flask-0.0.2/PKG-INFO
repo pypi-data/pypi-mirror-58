@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: opentracing_flask
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/darinautilus/opentracing-flask
+Author: BattleScars
+Author-email: battlescars@qq.com
+License: MIT License
+Description: UNKNOWN
+Keywords: opentracing,python,flask
+Platform: any
