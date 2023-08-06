@@ -1,0 +1,12 @@
+dbnd_hdfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbnd_hdfs/_plugin.py,sha256=9hhhuQncwpzOwBCogchxjGvSCSXdNdTe-tcvogVB6qg,258
+dbnd_hdfs/fs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbnd_hdfs/fs/hdfs.py,sha256=rNzmE05MiRsDlGeeEtc94SrPiYqtG91uuCTRTZTHRas,252
+dbnd_hdfs/fs/hdfs_hdfscli.py,sha256=KE3HaOdnLvhMpq8Ln2xNEoExBxggVSYrvbM65WV5rTg,7453
+dbnd_hdfs/fs/hdfs_pyox.py,sha256=OBu9buIoCBHW-jsYXmOZaReor0txsz2wDLg8c-c4oBA,8092
+dbnd_hdfs-0.24.11.dist-info/LICENSE,sha256=NTQpxZnv9-qzYsCvtrlPEYNXNQZB-zK-DQEMaaqWpTM,11346
+dbnd_hdfs-0.24.11.dist-info/METADATA,sha256=Ij8CctAL8EJuwqQekPBPEIgCbEOgOrOvPWgglh-_wvo,1631
+dbnd_hdfs-0.24.11.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dbnd_hdfs-0.24.11.dist-info/entry_points.txt,sha256=R5dUg3dfk0AeOnZkpiJ_3iUlmRF1JQOGQiVuhOFz5gQ,38
+dbnd_hdfs-0.24.11.dist-info/top_level.txt,sha256=eF9a-9Ntn1Kv_svvbQJmOwrHb8YLmSB3SXrCrqlkk20,10
+dbnd_hdfs-0.24.11.dist-info/RECORD,,
