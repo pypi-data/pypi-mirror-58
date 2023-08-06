@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: switchenv
+Version: 0.2.0
+Summary: Manager for bash environments
+Home-page: https://github.com/robdmc/switchenv
+Author: Rob deCarvalho
+Author-email: unlisted@unlisted.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: fuzzypicker
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: nose ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+Manger for bash environments
+
+

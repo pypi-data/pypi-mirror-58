@@ -1,0 +1,11 @@
+switchenv/__init__.py,sha256=IvA-6XBEdYOj5uxVS7CcxlPLDmuNpvqf3EiA47kj7D8,48
+switchenv/switchenv.py,sha256=DHfIa2Xjxq0J0p1mEZunpodfC9iB5b7jspDfug-Yoq4,13806
+switchenv/version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+switchenv/tests/__init__.py,sha256=qz883Zaw3nFKv2fDVMng2TsY9FxY7ujvkYw3_RDTsUM,15
+switchenv/tests/tests.py,sha256=TLY670Ad80pqubWRXbCu_s2X7FwMw0EOmTN17jiGiWE,123
+switchenv-0.2.0.dist-info/LICENSE,sha256=0abLHtp4igkKsLeZnLhZ151PIT8teBJB6uK6guWBT-A,1081
+switchenv-0.2.0.dist-info/METADATA,sha256=9R-UPsUQbdc5fbMNAa4BWKEqHX4IrVxV7oHt_vXFWC8,941
+switchenv-0.2.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+switchenv-0.2.0.dist-info/entry_points.txt,sha256=tm1ZR9bprBsLcJxSOi0mFHkAt4EzHYC7jni2wqoGDaY,86
+switchenv-0.2.0.dist-info/top_level.txt,sha256=GU7bEZAy-OFTjAeEjFLF3WHp7AtDqH5nhdFxuru_vos,10
+switchenv-0.2.0.dist-info/RECORD,,
