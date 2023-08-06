@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: math22
+Version: 2.1
+Summary: open it!
+Home-page: https://baidu.com
+Author: math22
+Author-email: 2691475984@qq.com
+License: UNKNOWN
+Description: some math and password functions
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
