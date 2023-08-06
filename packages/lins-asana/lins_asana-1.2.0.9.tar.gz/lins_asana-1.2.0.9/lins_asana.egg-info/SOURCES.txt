@@ -1,0 +1,8 @@
+README.md
+setup.py
+lins_asana/__init__.py
+lins_asana/api_asana.py
+lins_asana.egg-info/PKG-INFO
+lins_asana.egg-info/SOURCES.txt
+lins_asana.egg-info/dependency_links.txt
+lins_asana.egg-info/top_level.txt
