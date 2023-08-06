@@ -1,0 +1,12 @@
+py_parser_sber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_parser_sber/abstract.py,sha256=cfZUhMP6y5TcvlPe1wLworrlgnfftatX3zMjDmdeMqQ,7607
+py_parser_sber/logging.json,sha256=HhQbBDahgo6yC_kYKS8lwMH8v3vy_rziWCeao5NCXl0,725
+py_parser_sber/main.py,sha256=L4g8q4udK2mm9RJDTagRXPRAStvD4UfuQ3-gcDx4poc,1868
+py_parser_sber/sberbank_parse.py,sha256=PZSeLrXJ6CItLmfUAQ70TL5QGo9I9k52fF-hayI4uKQ,12920
+py_parser_sber/utils.py,sha256=A_DuwiJIJBK-XJGbynfwPnCCABF64gvwqEhKQVUz5jU,4064
+py_parser_sber-0.0.13.dist-info/LICENSE.md,sha256=6Xc4E-c74dKVpKq_IB9K0PMwQq412zE_CMvwdPDOrYU,1094
+py_parser_sber-0.0.13.dist-info/METADATA,sha256=57mlnatR1neskU5kra1ib82Ke-iCGpXH4nUCebJwh1M,3834
+py_parser_sber-0.0.13.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+py_parser_sber-0.0.13.dist-info/entry_points.txt,sha256=Wbtetk5dC0mbyckeM84WexwU0VSBXI72LZ1oXZJdARo,167
+py_parser_sber-0.0.13.dist-info/top_level.txt,sha256=3bpsFDSUkyXpAOnexfqVzlFzsY0E72L8s6-VsMN3ffk,15
+py_parser_sber-0.0.13.dist-info/RECORD,,
