@@ -1,0 +1,16 @@
+transformer_korean/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformer_korean/attention.py,sha256=u77fwkBE9ZOTjr-14CJ4tfKPgu6NNRJAKD6IseUzunU,4811
+transformer_korean/custom_scheduler.py,sha256=SoCf_oXEIbeZJ7ouq86yhyIk7xnCLejyYPOvvZck5E0,695
+transformer_korean/decoder.py,sha256=omVZT17RggUhGO3s3RRPCR1qzhI1dHc5lL5wpk8kBQ4,1930
+transformer_korean/decoder_layer.py,sha256=Q3fzqzqxvM_HmdAHSQQA3_3Ou0ZtDmzpIVEDNFnBrHM,2086
+transformer_korean/encoder.py,sha256=eyDF4PhFJGaymvIrg7VNKx3OYFd1X-VT41c6ypDOgnI,1663
+transformer_korean/encoder_layer.py,sha256=8OADKEBo5PDBT2t49u1YnEmbhXqZu_Snjhyx3Rif0J0,1715
+transformer_korean/masker.py,sha256=0BytuhBbvYN7LAiPb70kyQOFoI43ExJSFS8Ht_kifUc,1824
+transformer_korean/positional_encoder.py,sha256=NVT4aDAhU4-13UCnhlFxe3GYyPGIwtgC81hc3T1QSMc,1295
+transformer_korean/preprocess.py,sha256=cKWk8Kj8dmdTT2G4ChxAX_FhZXMpNHdhRRVnUw_BqAY,9233
+transformer_korean/run_training.py,sha256=EEP-5R__sUNpqIdEsg_R8thy6l-G-YMhnTyQBhw6g3Q,4777
+transformer_korean/transformer.py,sha256=53YjFKaeth1_7LkM0uKS3JrbZmXRd6TacT6-uzZ-KDA,1179
+transformer_korean-0.0.3.dist-info/METADATA,sha256=cyHYPK54QOrNdE5WF7Pdrn5_9wPpig-_7xL9bljzugE,620
+transformer_korean-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+transformer_korean-0.0.3.dist-info/top_level.txt,sha256=lxyNOlgt0kA75vmg1pAa8fFsP5TMrOCGzCModst87I8,19
+transformer_korean-0.0.3.dist-info/RECORD,,
