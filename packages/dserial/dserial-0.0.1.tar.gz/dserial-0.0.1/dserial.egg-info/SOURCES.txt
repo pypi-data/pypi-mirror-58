@@ -1,0 +1,17 @@
+README.md
+setup.py
+dserial/__init__.py
+dserial/dserial.py
+dserial.egg-info/PKG-INFO
+dserial.egg-info/SOURCES.txt
+dserial.egg-info/dependency_links.txt
+dserial.egg-info/not-zip-safe
+dserial.egg-info/top_level.txt
+tests/__init__.py
+tests/__main__.py
+tests/test_default_type.py
+tests/test_default_type_strict.py
+tests/test_nested_type.py
+tests/test_nested_type_strict.py
+tests/test_repeated_nested_type.py
+tests/test_repeated_type.py
