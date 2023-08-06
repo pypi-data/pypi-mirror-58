@@ -1,0 +1,11 @@
+*.pyc
+/__pycache__
+/.pytest_cache
+/my_tests
+/.idea
+/build
+/dist
+/harvesttext.egg-info
+*.tar
+*.gz
+*ht_model1
