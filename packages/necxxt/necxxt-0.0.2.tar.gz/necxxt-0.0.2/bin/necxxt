@@ -1,0 +1,229 @@
+#!/usr/bin/env python3
+import json
+import necxxt
+import os
+import pathlib
+import shutil
+import subprocess
+import sys
+
+__executable__ = os.path.basename(__file__)
+
+__env__ = {
+    "CXX": "docker run -ti -v {}:/necxxt --rm necxxt/clang".format(os.getcwd()),
+    "CXXFLAGS": "-std=c++2a -fmodules-ts"
+}
+
+
+def readModule(dependency=None):
+    if dependency:
+        module_file = os.path.join(
+            os.getcwd(), "necxxt_modules", dependency, "necxxt.json")
+    else:
+        module_file = os.path.join(os.getcwd(), "necxxt.json")
+
+    if not os.path.isfile(module_file):
+        print("ENOENT: no such file or directory, open '{}'".format(module_file))
+        exit(1)
+
+    module = {}
+    with open(module_file, "r") as f:
+        module = json.load(f)
+
+    return module
+
+
+def listFiles(d, filters=[]):
+    fs = []
+
+    for path, subdirs, files in os.walk(d):
+        for name in files:
+            add = False
+            if len(filters) == 0:
+                add = True
+            else:
+                for f in filters:
+                    if name.endswith(f):
+                        add = True
+
+            if add:
+                fs.append(os.path.relpath(os.path.join(path, name), d))
+
+    return fs
+
+
+def help(args):
+    print()
+    print("Usage: {} <command>".format(__executable__))
+    print()
+    print("where <command> is one of:")
+    print("    build, help, install")
+    print()
+    print("Specify configs in the ini-formatted file:")
+    print("    {}".format(os.path.join(
+        pathlib.Path.home(), ".{}rc".format(__executable__))))
+    print("or on the command line via: {} < command > --key value".format(__executable__))
+    print("Config info can be viewed via: {} help config".format(__executable__))
+    print()
+    print("{}@{} {}".format(__executable__, necxxt.__version__, __file__))
+
+
+def runCompiler(cmds):
+    proc = subprocess.Popen(cmds)
+    proc.communicate()
+
+    if proc.returncode != 0:
+        exit(proc.returncode)
+
+
+def precompileModules(args):
+    for f in listFiles(os.getcwd(), filters=[".cxxm"]):
+        i = f
+        d = os.path.dirname(f)
+        f = os.path.basename(f)
+        name, extension = os.path.splitext(f)
+        o = os.path.join("build", d, name + ".pcm")
+        pathlib.Path(os.path.dirname(o)).mkdir(parents=True)
+
+        modules = []
+        for _f in listFiles(os.getcwd(), filters=[".pcm"]):
+            if _f not in modules:
+                modules.append(_f)
+
+        cmds = __env__["CXX"].split(" ")
+        cmds.extend(__env__["CXXFLAGS"].split(" "))
+        cmds.append("--precompile")
+        cmds.append(i)
+
+        for m in modules:
+            cmds.append("-fmodule-file={}".format(m))
+
+        cmds.append("-o")
+        cmds.append(o)
+
+        print(" ".join(cmds))
+        runCompiler(cmds)
+
+
+def compileModules(args):
+    for f in listFiles(os.getcwd(), filters=[".pcm"]):
+        i = f
+        d = os.path.dirname(f)
+        f = os.path.basename(f)
+        name, extension = os.path.splitext(f)
+        o = os.path.join(d, name + ".pcm.o")
+
+        cmds = __env__["CXX"].split(" ")
+        cmds.extend(__env__["CXXFLAGS"].split(" "))
+        cmds.append("-c")
+        cmds.append(i)
+        cmds.append("-o")
+        cmds.append(o)
+
+        print(" ".join(cmds))
+        runCompiler(cmds)
+
+
+def compileSources(args):
+    modules = []
+    for f in listFiles(os.getcwd(), filters=[".pcm"]):
+        if f not in modules:
+            modules.append(f)
+
+    for f in listFiles(os.getcwd(), filters=[".cxx"]):
+        i = f
+        d = os.path.dirname(f)
+        f = os.path.basename(f)
+        name, extension = os.path.splitext(f)
+        o = os.path.join("build", d, name + ".cxx.o")
+        pathlib.Path(os.path.dirname(o)).mkdir(parents=True)
+
+        cmds = __env__["CXX"].split(" ")
+        cmds.extend(__env__["CXXFLAGS"].split(" "))
+        cmds.append("-c")
+        cmds.append(i)
+
+        for m in modules:
+            cmds.append("-fmodule-file={}".format(m))
+
+        cmds.append("-o")
+        cmds.append(o)
+
+        print(" ".join(cmds))
+        runCompiler(cmds)
+
+
+def buildStatic(args):
+    cmds = __env__["CXX"].split(" ")
+    cmds.extend(__env__["CXXFLAGS"].split(" "))
+
+    module_paths = []
+    objects = []
+    for f in listFiles(os.getcwd(), filters=[".pcm.o"]):
+        d = os.path.dirname(f)
+        if d not in module_paths:
+            module_paths.append(d)
+
+        if f not in objects:
+            objects.append(f)
+
+    for f in listFiles(os.getcwd(), filters=[".cxx.o"]):
+        if f not in objects:
+            objects.append(f)
+
+    for p in module_paths:
+        cmds.append("-fprebuilt-module-path={}".format(p))
+
+    for o in objects:
+        cmds.append(o)
+
+    cmds.append("-o")
+
+    module = readModule()
+    cmds.append(os.path.join("build", module["name"]))
+    cmds.append("-static")
+
+    print(" ".join(cmds))
+    runCompiler(cmds)
+
+
+def build(args):
+    if os.path.isdir("build"):
+        shutil.rmtree("build")
+
+    precompileModules(args)
+    compileModules(args)
+    compileSources(args)
+    buildStatic(args)
+
+
+def install(args):
+    module = readModule()
+
+    if os.path.isdir("necxxt_modules"):
+        shutil.rmtree("necxxt_modules")
+
+    pathlib.Path("necxxt_modules").mkdir(parents=True, exist_ok=True)
+
+    for dependency, version in module["dependencies"].items():
+        if os.path.isdir(version):
+            shutil.copytree(version, os.path.join(
+                "necxxt_modules", dependency))
+
+
+def main(args):
+    if len(args) == 0 or args[0] == "help":
+        help(args)
+    elif args[0] == "build":
+        build(args)
+    elif args[0] == "install":
+        install(args)
+    else:
+        help(args)
+        exit(1)
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+
+    main(args)

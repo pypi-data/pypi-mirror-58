@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: necxxt
+Version: 0.0.2
+Summary: The package manager for next level C++ projects
+Home-page: https://github.com/necxxt/cli
+Author: Marius Meisenzahl
+Author-email: mariusmeisenzahl@gmail.com
+License: MIT
+Description: # necxxt
+        
+        The package manager for next level C++ projects
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
