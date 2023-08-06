@@ -1,0 +1,3 @@
+[console_scripts]
+mergecat = mergecat.__main__:mergecat
+

@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mergecat
+Version: 0.0.5
+Summary: Automatic voice line clip extractor
+Home-page: https://github.com/yttrian/mergecat
+Author: Ian Moore
+Author-email: mergecat@yttr.org
+License: UNKNOWN
+Description: # mergecat
+        
+        Automatic voice line clip extractor
+        
+        ## How to use
+        
+        1. Install the package via `pip install mergecat`
+        2. Create a timing file in a format like this (using seconds)  
+           Example:
+           ```
+           2 24
+           60 75
+           92 103
+           128 135
+           ```
+        3. Run mergecat via `mergecat video_file timing_file`  
+           Example: `mergecat something.mp4 timing.txt`
+           
+        ## Goals
+        
+        - Automate the process instead of requiring timing files
+        - Allow batch processing
+        - Handle temporary file cleanup better
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

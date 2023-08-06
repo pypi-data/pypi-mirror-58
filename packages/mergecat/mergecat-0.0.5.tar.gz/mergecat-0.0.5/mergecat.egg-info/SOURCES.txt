@@ -1,0 +1,10 @@
+README.md
+setup.py
+mergecat/__init__.py
+mergecat/__main__.py
+mergecat.egg-info/PKG-INFO
+mergecat.egg-info/SOURCES.txt
+mergecat.egg-info/dependency_links.txt
+mergecat.egg-info/entry_points.txt
+mergecat.egg-info/requires.txt
+mergecat.egg-info/top_level.txt
