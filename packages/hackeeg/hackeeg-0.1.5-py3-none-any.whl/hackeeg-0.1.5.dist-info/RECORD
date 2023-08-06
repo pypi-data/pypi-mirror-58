@@ -1,0 +1,16 @@
+hackeeg/__init__.py,sha256=eYkeT5ERcF14NznbIYtYCtdsmPSdZLWSGTAjNl3Rr6E,112
+hackeeg/__version__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+hackeeg/ads1299.py,sha256=gRpkToA73JyprzemGxZDRg85Ofu5h0r1veqe1hxvlgI,7391
+hackeeg/driver.py,sha256=QhJXStRgZpWT5x3jYlyU71H_8bUhl5GgCbKgM2-VvnU,12398
+hackeeg-0.1.5.data/scripts/example.py,sha256=CFiJxCfW1xl9IdQHvzZbZA6Kegw1RXnTXZspxT0MS3o,1875
+hackeeg-0.1.5.data/scripts/hackeeg_shell,sha256=Hhld6yeK-z6GMYxpYk6e_Q745laXbLBFz_g80E1Xjb0,410
+hackeeg-0.1.5.data/scripts/hackeeg_shell.py,sha256=hOvL9dH9oEMwqoxdGhFlI_4REHFJeg-vTnei0_FENd8,10813
+hackeeg-0.1.5.data/scripts/hackeeg_stream,sha256=JnsASaf_3oURa_dapufTbI4Eh3MZvZ2qDuLD9MQG-SQ,556
+hackeeg-0.1.5.data/scripts/hackeeg_stream.py,sha256=W_CENjaxgkpxiu7yetR4k0w6xSAndEurBfIF_Btaizo,11368
+hackeeg-0.1.5.data/scripts/lsl_receive_data.py,sha256=SKgjpBho73qsx69WSsytDHHWB_sxsAuKNTTkZt1Z0S0,524
+hackeeg-0.1.5.data/scripts/simple_lsl_receive_and_plot.py,sha256=qfBXNRo4xfvSXu9pDtLfVll5BVxY8mpN_bYcVQDR3Kk,1931
+hackeeg-0.1.5.dist-info/LICENSE,sha256=GYM4-rHTOfvs4mUZ0IT5AdlgmS1gJnNBI7UnFnN8gNo,11348
+hackeeg-0.1.5.dist-info/METADATA,sha256=Pol61jcpgQHjy_x3F999JB6yr2z6Z0lvVHm45w-TE54,942
+hackeeg-0.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hackeeg-0.1.5.dist-info/top_level.txt,sha256=CsmJ6kys2RkWSDLne9p9LpcHERxAREgQrhia-fIu5F4,8
+hackeeg-0.1.5.dist-info/RECORD,,
