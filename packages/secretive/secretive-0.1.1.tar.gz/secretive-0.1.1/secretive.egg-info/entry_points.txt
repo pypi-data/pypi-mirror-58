@@ -1,0 +1,4 @@
+[console_scripts]
+secretfrom = secretive.command_line:password_from
+secretgen = secretive.command_line:password_gen
+

@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+secretive/__init__.py
+secretive/command_line.py
+secretive/cypher.py
+secretive/gen.py
+secretive/rules.py
+secretive.egg-info/PKG-INFO
+secretive.egg-info/SOURCES.txt
+secretive.egg-info/dependency_links.txt
+secretive.egg-info/entry_points.txt
+secretive.egg-info/not-zip-safe
+secretive.egg-info/requires.txt
+secretive.egg-info/top_level.txt
