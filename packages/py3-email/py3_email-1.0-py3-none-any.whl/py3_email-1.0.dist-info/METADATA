@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: py3-email
+Version: 1.0
+Summary: A very simple module for send email
+Home-page: https://github.com/vfrtgb158/email
+Author: Squidward
+Author-email: vzhyu@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Requires: smtplib
+Requires: email
+
+UNKNOWN
+
+
