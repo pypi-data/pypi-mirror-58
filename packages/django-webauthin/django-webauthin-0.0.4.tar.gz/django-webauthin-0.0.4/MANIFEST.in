@@ -1,0 +1,2 @@
+recursive-include webauthin *.py *.html *.txt
+include README.md LICENSE
