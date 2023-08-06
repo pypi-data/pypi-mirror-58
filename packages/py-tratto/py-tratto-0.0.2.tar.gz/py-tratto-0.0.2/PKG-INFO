@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: py-tratto
+Version: 0.0.2
+Summary: Pytratto is a framework built to issue commands to cisco or huawei routers over ssh and telnet which requires pexpect.
+Home-page: https://github.com/HoxinhLuo/pytratto
+Author: HoxinhLuo
+Author-email: 2577229471@qq.com
+License: BSD 3-clause
+Description: UNKNOWN
+Platform: UNKNOWN

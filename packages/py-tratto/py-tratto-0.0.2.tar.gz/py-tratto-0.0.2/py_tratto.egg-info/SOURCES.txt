@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+py_tratto.egg-info/PKG-INFO
+py_tratto.egg-info/SOURCES.txt
+py_tratto.egg-info/dependency_links.txt
+py_tratto.egg-info/requires.txt
+py_tratto.egg-info/top_level.txt
+pytratto/__init__.py
+pytratto/connectivity/Connectivity.py
+pytratto/connectivity/__init__.py
+pytratto/systems/Systems.py
+pytratto/systems/__init__.py
