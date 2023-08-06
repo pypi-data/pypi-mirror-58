@@ -1,0 +1,3 @@
+[console_scripts]
+aws-mfa-util = aws_mfa_util:main
+
