@@ -1,0 +1,7 @@
+docopt
+infi.execute
+infi.pyutils
+PrettyTable
+requests
+setuptools
+six
