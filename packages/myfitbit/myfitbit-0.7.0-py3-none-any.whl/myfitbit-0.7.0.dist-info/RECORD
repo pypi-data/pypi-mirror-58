@@ -1,0 +1,14 @@
+myfitbit/__init__.py,sha256=9jnl_NoMxxRzEqBSmSAN9_uKe_v2liovu7RgEN72g2Q,187
+myfitbit/__main__.py,sha256=0C3wsYjxinZBt4GM4tgnKxEGEZNU26gFMdFC1EvSDmQ,1086
+myfitbit/_version.py,sha256=YYSGsQMA-pwCVTEJmN15uHKiR3fE6ZeomnlU2UFqsnI,32
+myfitbit/auth.py,sha256=FsdSR_Z-2crXg5-MaalJhJJPAn12oW9DMkAtQldtrJk,4623
+myfitbit/client.py,sha256=f2R6OIJxIctq2Tn6ZlpIYIfxwDcUcLLVaycc4RksCwY,2387
+myfitbit/datastore.py,sha256=-GdbK0P7zxV6rXvdjZDV_0Gfx1czZLhSNAucN5n6-QQ,3727
+myfitbit/report.py,sha256=5yMKa_h3ni4Me-VX3YmwJCcyUfDHYw55tUXy-MVhaUU,1506
+myfitbit/sync.py,sha256=OWwBcq2SPuUi3y8eRaMDWsXCYnzE2YQ-aSKaaCWKbxw,3145
+myfitbit/static/chart.js,sha256=C4Xrt4KbSqKgpM17KKNii2zffu2KW9WelXWsMkvC2co,6793
+myfitbit/static/report.css,sha256=UKsRC0Y-hqZ14_VWfHbcbpLtwFYiVNexinpFhQJxS_8,235
+myfitbit-0.7.0.dist-info/METADATA,sha256=-BvUWCzJobxlmnZAYWgRY_Ce5PAz96Dd5br2UBUvW_g,3376
+myfitbit-0.7.0.dist-info/RECORD,,
+myfitbit-0.7.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+myfitbit-0.7.0.dist-info/top_level.txt,sha256=bXP36CFTSlbQsGWcRPGC0xjBKDJVbTanvrxgmVspGZA,9
