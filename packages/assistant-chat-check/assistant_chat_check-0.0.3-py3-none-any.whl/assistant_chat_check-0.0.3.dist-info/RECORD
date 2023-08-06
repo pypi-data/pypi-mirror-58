@@ -1,0 +1,8 @@
+assistant_chat_check/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+assistant_chat_check/main.py,sha256=MwS5o4xHoe4iIkACCeYQgADMSxVcNqTJ1R1JoEhA5d4,3188
+assistant_chat_check/tf_config.py,sha256=voPe5mWJTjPlTzWJMq81z4B7eCKFc3CDn_a6Q4qM49M,104
+assistant_chat_check-0.0.3.dist-info/METADATA,sha256=iefEnAjN5pkZJhi5uEr8CZ7XZQzOoed7Wp3nKjSgCf8,476
+assistant_chat_check-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+assistant_chat_check-0.0.3.dist-info/entry_points.txt,sha256=0hoLm3L6p1gU-nLcdeTbG7GYqMEnjWQCbFCIJnfa1gk,63
+assistant_chat_check-0.0.3.dist-info/top_level.txt,sha256=gcbuXzOkg0bwoRMwwB-4nvlqqHmBdECB2flBYx61yHE,21
+assistant_chat_check-0.0.3.dist-info/RECORD,,

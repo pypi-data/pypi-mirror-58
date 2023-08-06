@@ -1,0 +1,3 @@
+[console_scripts]
+chat_check = assistant_chat_check.main:main
+
