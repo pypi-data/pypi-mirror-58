@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: bsdownloader
+Version: 0.2.1
+Summary: Song downloader for Beat Saber
+Home-page: https://github.com/Norne9/beatsaber-downloader
+Author: Aleksey Pestov
+Author-email: aleksey191295@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (==4.8.1)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: numpy (==1.17.4)
+Requires-Dist: Pillow (==6.2.1)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: soupsieve (==1.9.5)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: wxPython (==4.0.7.post2)
+
+# Beat Saber - Downloader
+
+Allows you to download songs, which gives most <abbr title="Performance Points">PP</abbr>. And creates playlist with that songs, sorted by given PP.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Norne9/beatsaber-downloader/master/etc/screenshot.png" align="center" />
+</p>
+
+[![PyPI version](https://badge.fury.io/py/bsdownloader.svg)](https://badge.fury.io/py/bsdownloader)
+
+## How to use on Windows
+
+Download program from [Releases](https://github.com/Norne9/beatsaber-downloader/releases/latest) page, unpack and run it.
+
+Select your game folder and enter how many songs you want to download. Press *Start* and wait until program write *Done!*.
+
+Songs will be automatically downloaded from [BeatSaver](https://beatsaver.com/) and unpacked to CustomLevels folder.
+
+## Install from PyPI (for all other systems)
+
+You need Python 3.7 or later
+
+Install app from PyPI:
+
+```console
+pip install bsdownloader
+```
+
+And run it by command `bsdownloader` or `bs-downloader`
+
+## How to build from source
+
+You can build standalone app using PyInstaller. Install PyInstaller first:
+
+```console
+pip install pyinstaller
+```
+
+Install dependencies:
+
+```console
+pip install -r requirements.txt
+```
+
+Build app:
+
+```console
+pyinstaller --window --onefile --name bs-downloader ./start.py
+```
+
+Executable file will be in *dist* folder.
+
+

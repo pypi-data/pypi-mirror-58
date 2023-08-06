@@ -1,0 +1,16 @@
+bsdownloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bsdownloader/__main__.py,sha256=pDA6rwIPctxnTFYUtuE5mualK1npynjTJU2JgQ35hp4,187
+bsdownloader/config.py,sha256=PKBckzPhsgJGfMBPv9GUyyWmGpnk9hZnTaTi3MWss7U,768
+bsdownloader/download.py,sha256=aRlb2Guj1Ycoxb_IWpYyJfyNh2MRNKOtJs7IW8atuXI,4328
+bsdownloader/gui.py,sha256=cMsj7sjiUV25xjDjwxNL8FtwNir53oCB1LzUODPN5u8,7296
+bsdownloader/http_get.py,sha256=6B01RtV8Zs4eBGDnL7UcFWIFNdfeRpM6PMhnaOkN7AQ,1709
+bsdownloader/image.py,sha256=-e5o_2yN16UMEEN36WP4e3s8dJ5mLpW9fanDA07fMzQ,36071
+bsdownloader/song.py,sha256=-ADcVboBc8v5tG7nllBlfTfvXjefTp_GEyxXfOuxrhw,3996
+bsdownloader/timed_progress.py,sha256=OKc53yd4GUSfFvRibBg9r52mOm6du5xSWccXTmZLskY,2362
+bsdownloader/user.py,sha256=SXhK9D3XzWVfU8g8KUvfSwc3vnyQ42PPss5ivjJ_bOM,1881
+bsdownloader-0.2.1.dist-info/LICENSE,sha256=U_bwsb0FCsUIgNbWeBvO-YH8Pj1VDoFmn36fD6ADJNw,1519
+bsdownloader-0.2.1.dist-info/METADATA,sha256=DGiO8Vxa1nB6TIDZ5hwLFp0Vs0A2snb2R1Db2PRbspU,2199
+bsdownloader-0.2.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+bsdownloader-0.2.1.dist-info/entry_points.txt,sha256=fFxsZJNLzTx859qTats1LjSYren3Xh-sWCjpwHemYJE,104
+bsdownloader-0.2.1.dist-info/top_level.txt,sha256=cR7HnscJ8C5dhAZoIItCwebkrZcnwNN9hpgOrzeGF6Y,13
+bsdownloader-0.2.1.dist-info/RECORD,,
