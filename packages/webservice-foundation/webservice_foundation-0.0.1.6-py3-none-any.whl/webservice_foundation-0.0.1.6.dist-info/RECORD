@@ -1,0 +1,11 @@
+webservice_foundation/__init__.py,sha256=_qsZPA-NJSK39Bpz1-Bx7GKaT5oa7aWWtgtDtEVzGBI,24
+webservice_foundation/baserequest.py,sha256=WwiCJwJ4vQw1nAn9NmnR_F1m2SI9EJF-KgIKlyFaPmk,2234
+webservice_foundation/bodydata.py,sha256=3Gke5lRiSVxIB3KtL0TWE2BpxLL-KCUKW9yYmY-Wgvc,477
+webservice_foundation/error.py,sha256=h_RL00GuBzpj9yrfB0tEpgxKSQRY1G-CSNGYy20IrGU,988
+webservice_foundation/originaljsonencoder.py,sha256=hSg0T-EAUYCfj4M35aYsljz9RmqYpV3OPjcxWV_uASQ,262
+webservice_foundation/webservice.py,sha256=VuEo4F-SolrHHMuf9v9Wys_2iwuYqwtnB_JECrvGUpw,4539
+webservice_foundation-0.0.1.6.dist-info/METADATA,sha256=WTEHa9ExUCXOBeHuLHilGd3NvxTi6dsgaBWOgmMyIvk,454
+webservice_foundation-0.0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+webservice_foundation-0.0.1.6.dist-info/entry_points.txt,sha256=5wepRisgJbcLpixqQ3iQ6DfRqoMhLcVWTVJ8grJXRO8,74
+webservice_foundation-0.0.1.6.dist-info/top_level.txt,sha256=-qWboanCrW1wLc3u9FOZUN6wmmq0p3iqFpjKjIfnFBo,22
+webservice_foundation-0.0.1.6.dist-info/RECORD,,
