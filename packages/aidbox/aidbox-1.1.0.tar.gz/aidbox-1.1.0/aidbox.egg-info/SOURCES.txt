@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aidbox.egg-info/PKG-INFO
+aidbox.egg-info/SOURCES.txt
+aidbox.egg-info/dependency_links.txt
+aidbox.egg-info/not-zip-safe
+aidbox.egg-info/requires.txt
+aidbox.egg-info/top_level.txt
+aidboxpy/__init__.py
