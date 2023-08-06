@@ -1,0 +1,12 @@
+bwpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bwpy/__main__.py,sha256=l4Zn3QNgQW7dHZDLV3-uZeniIhhHB3XLjlUvX9wijLY,249
+bwpy/bitwarden/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bwpy/bitwarden/collection.py,sha256=yrYHY7xgwWBN4ChvCAk5aYDYcQv6qBpTYaYEdejYnhU,1219
+bwpy/bitwarden/item.py,sha256=oUo90Ibz4gNwu_Kx_8_BiA3zYwlu3PSDS8lXBad_D6w,2360
+bwpy/bitwarden/org.py,sha256=2NQCpmKwfMNPNQLAg-NM2Rqhc4QGhmHudN5ARE0jchM,533
+bwpy/bwpy.py,sha256=emDyan38oDVh-S-xzj97Lw4hog_5GdefbeQJjQEixOM,739
+bwpy/cli.py,sha256=9QGcMEJ6Mp49JziBmzzQXhLXRYesVbjD7UqiFxoKCso,2359
+bwpy-0.1.0.dist-info/entry_points.txt,sha256=hCQjjJPl2_MyoK3A691vRat8M6_PJSUPyw1BxJdUdRI,43
+bwpy-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+bwpy-0.1.0.dist-info/METADATA,sha256=_CM28dwyuWpyXlfAxMMAckB6LIk_NfPuTB9G0vlJWwo,322
+bwpy-0.1.0.dist-info/RECORD,,
