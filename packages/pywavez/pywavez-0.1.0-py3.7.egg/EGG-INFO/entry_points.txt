@@ -1,0 +1,3 @@
+[console_scripts]
+pywavez-remote-serial-server = pywavez.RemoteSerialDevice:main
+
