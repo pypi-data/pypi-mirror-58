@@ -1,0 +1,5 @@
+DictObject
+requests
+requests[security]
+python-magic
+libmagic
