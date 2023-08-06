@@ -1,0 +1,490 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels.data &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for geomodels.data</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="sd">&quot;&quot;&quot;Tools for geographic models data download and installation.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">enum</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">tempfile</span>
+<span class="kn">import</span> <span class="nn">contextlib</span>
+
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="k">import</span> <span class="n">urlsplit</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="k">import</span> <span class="n">urlretrieve</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Callable</span>
+
+<span class="kn">from</span> <span class="nn">._typing</span> <span class="k">import</span> <span class="n">PathType</span>
+
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;EModelGroup&#39;</span><span class="p">,</span> <span class="s1">&#39;EModelType&#39;</span><span class="p">,</span> <span class="s1">&#39;EGeoidModel&#39;</span><span class="p">,</span> <span class="s1">&#39;EGravityModel&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EMagneticModel&#39;</span><span class="p">,</span> <span class="s1">&#39;EArchiveType&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;get_default_data_path&#39;</span><span class="p">,</span> <span class="s1">&#39;get_model_url&#39;</span><span class="p">,</span> <span class="s1">&#39;install&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+
+<div class="viewcode-block" id="EModelGroup"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EModelGroup">[docs]</a><span class="k">class</span> <span class="nc">EModelGroup</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Model groups.&quot;&quot;&quot;</span>
+
+    <span class="n">ALL</span> <span class="o">=</span> <span class="s1">&#39;all&#39;</span>
+    <span class="n">MINIMAL</span> <span class="o">=</span> <span class="s1">&#39;minimal&#39;</span>
+    <span class="n">RECOMMENDED</span> <span class="o">=</span> <span class="s1">&#39;recommended&#39;</span></div>
+
+
+<div class="viewcode-block" id="EModelType"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EModelType">[docs]</a><span class="k">class</span> <span class="nc">EModelType</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enumerate geographic model types.&quot;&quot;&quot;</span>
+
+    <span class="n">GEOID</span> <span class="o">=</span> <span class="s1">&#39;geoids&#39;</span>
+    <span class="n">GRAVITY</span> <span class="o">=</span> <span class="s1">&#39;gravity&#39;</span>
+    <span class="n">MAGNETIC</span> <span class="o">=</span> <span class="s1">&#39;magnetic&#39;</span></div>
+
+
+<div class="viewcode-block" id="EGeoidModel"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EGeoidModel">[docs]</a><span class="k">class</span> <span class="nc">EGeoidModel</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enumerate geoid models.&quot;&quot;&quot;</span>
+
+    <span class="n">EGM84_30</span> <span class="o">=</span> <span class="s1">&#39;egm84-30&#39;</span>
+    <span class="n">EGM84_15</span> <span class="o">=</span> <span class="s1">&#39;egm84-15&#39;</span>
+    <span class="n">EGM96_15</span> <span class="o">=</span> <span class="s1">&#39;egm96-15&#39;</span>
+    <span class="n">EGM96_5</span> <span class="o">=</span> <span class="s1">&#39;egm96-5&#39;</span>
+    <span class="n">EGM2008_5</span> <span class="o">=</span> <span class="s1">&#39;egm2008-5&#39;</span>
+    <span class="n">EGM2008_2_5</span> <span class="o">=</span> <span class="s1">&#39;egm2008-2_5&#39;</span>
+    <span class="n">EGM2008_1</span> <span class="o">=</span> <span class="s1">&#39;egm2008-1&#39;</span>
+
+<div class="viewcode-block" id="EGeoidModel.get_model_type"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EGeoidModel.get_model_type">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_model_type</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EModelType</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return the model type corresponding to the enumeration.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">EModelType</span><span class="o">.</span><span class="n">GEOID</span></div></div>
+
+
+<div class="viewcode-block" id="EGravityModel"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EGravityModel">[docs]</a><span class="k">class</span> <span class="nc">EGravityModel</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enumerate gravity models.&quot;&quot;&quot;</span>
+
+    <span class="n">EGM84</span> <span class="o">=</span> <span class="s1">&#39;egm84&#39;</span>
+    <span class="n">EGM96</span> <span class="o">=</span> <span class="s1">&#39;egm96&#39;</span>
+    <span class="n">EGM2008</span> <span class="o">=</span> <span class="s1">&#39;egm2008&#39;</span>
+    <span class="c1"># GRS80 = &#39;grs80&#39;</span>
+    <span class="n">WGS84</span> <span class="o">=</span> <span class="s1">&#39;wgs84&#39;</span>
+
+<div class="viewcode-block" id="EGravityModel.get_model_type"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EGravityModel.get_model_type">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_model_type</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EModelType</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return the model type corresponding to the enumeration.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">EModelType</span><span class="o">.</span><span class="n">GRAVITY</span></div></div>
+
+
+<div class="viewcode-block" id="EMagneticModel"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EMagneticModel">[docs]</a><span class="k">class</span> <span class="nc">EMagneticModel</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enumerate magnetic field models.&quot;&quot;&quot;</span>
+
+    <span class="n">WMM2010</span> <span class="o">=</span> <span class="s1">&#39;wmm2010&#39;</span>
+    <span class="n">WMM2015</span> <span class="o">=</span> <span class="s1">&#39;wmm2015&#39;</span>
+    <span class="n">WMM2020</span> <span class="o">=</span> <span class="s1">&#39;wmm2020&#39;</span>  <span class="c1"># new in GeographicLib v1.50.1</span>
+    <span class="n">IGRF11</span> <span class="o">=</span> <span class="s1">&#39;igrf11&#39;</span>
+    <span class="n">IGRF12</span> <span class="o">=</span> <span class="s1">&#39;igrf12&#39;</span>
+    <span class="n">EMM2010</span> <span class="o">=</span> <span class="s1">&#39;emm2010&#39;</span>
+    <span class="n">EMM2015</span> <span class="o">=</span> <span class="s1">&#39;emm2015&#39;</span>
+    <span class="n">EMM2017</span> <span class="o">=</span> <span class="s1">&#39;emm2017&#39;</span>
+
+<div class="viewcode-block" id="EMagneticModel.get_model_type"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EMagneticModel.get_model_type">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">get_model_type</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EModelType</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return the model type corresponding to the enumeration.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">EModelType</span><span class="o">.</span><span class="n">MAGNETIC</span></div></div>
+
+
+<div class="viewcode-block" id="EArchiveType"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.EArchiveType">[docs]</a><span class="k">class</span> <span class="nc">EArchiveType</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Enumerate the archive type.&quot;&quot;&quot;</span>
+
+    <span class="n">ZIP</span> <span class="o">=</span> <span class="s1">&#39;.zip&#39;</span>
+    <span class="n">BZ2</span> <span class="o">=</span> <span class="s1">&#39;.tar.bz2&#39;</span></div>
+
+
+<span class="n">GenericModelType</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">EGeoidModel</span><span class="p">,</span> <span class="n">EGravityModel</span><span class="p">,</span> <span class="n">EMagneticModel</span><span class="p">]</span>
+<span class="n">ReportHookType</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span> <span class="kc">None</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="get_default_data_path"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.get_default_data_path">[docs]</a><span class="k">def</span> <span class="nf">get_default_data_path</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Return the default data path.</span>
+
+<span class="sd">    The `GEOGRAPHICLIB_DATA` environment variable is used if available</span>
+<span class="sd">    to locate the location where the geographic model data are installed.</span>
+
+<span class="sd">    If `GEOGRAPHICLIB_DATA` is not set, then then it is returned the</span>
+<span class="sd">    path configured at build time.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;GEOGRAPHICLIB_DATA&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">path</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">MagneticFieldModel</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">MagneticFieldModel</span><span class="o">.</span><span class="n">default_magnetic_path</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">path</span></div>
+
+
+<span class="n">_BASE_URL</span> <span class="o">=</span> <span class="s1">&#39;https://downloads.sourceforge.net/project/geographiclib/&#39;</span>
+<span class="n">_URL_PATH_TEMPLATE</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{basepath}</span><span class="s1">/</span><span class="si">{modeltype}</span><span class="s1">-distrib/</span><span class="si">{filename}{ext}</span><span class="s1">&#39;</span>
+<span class="n">_URL_QUERY</span> <span class="o">=</span> <span class="s1">&#39;use_mirror=autoselect&#39;</span>
+<span class="n">_URL_FRAGMENT</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+
+<span class="k">def</span> <span class="nf">get_base_url</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Return the base URL for data download.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">_BASE_URL</span>
+
+
+<div class="viewcode-block" id="get_model_url"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.get_model_url">[docs]</a><span class="k">def</span> <span class="nf">get_model_url</span><span class="p">(</span><span class="n">model</span><span class="p">:</span> <span class="n">GenericModelType</span><span class="p">,</span> <span class="n">base_url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                  <span class="n">archive_type</span><span class="p">:</span> <span class="n">EArchiveType</span> <span class="o">=</span> <span class="n">EArchiveType</span><span class="o">.</span><span class="n">BZ2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Return the download URL for the specified geographic model.</span>
+
+<span class="sd">    :param model:</span>
+<span class="sd">        the enumeration corresponding to the desired geographic model.</span>
+<span class="sd">        It can be one of the enumerates defined in :class:`EGeoidModel`,</span>
+<span class="sd">        :class:`EGravityModel` or :class:`EMagneticModel`.</span>
+<span class="sd">    :param str base_url:</span>
+<span class="sd">        (optional) base URL for data download.</span>
+<span class="sd">        The full URL is build from this function starting form base_url</span>
+<span class="sd">        and model information.</span>
+<span class="sd">    :param EArchiveType archive_type:</span>
+<span class="sd">        specifies the archive type that should be downloaded.</span>
+<span class="sd">        Default: `data:`EArchiveType.BZ2`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">base_url</span><span class="p">:</span>
+        <span class="n">base_url</span> <span class="o">=</span> <span class="n">get_base_url</span><span class="p">()</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="n">_URL_QUERY</span>
+        <span class="n">fragment</span> <span class="o">=</span> <span class="n">_URL_FRAGMENT</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">fragment</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="n">urlsplit</span><span class="p">(</span><span class="n">base_url</span><span class="p">)</span>
+    <span class="n">urlpath</span> <span class="o">=</span> <span class="n">_URL_PATH_TEMPLATE</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">basepath</span><span class="o">=</span><span class="n">url</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">),</span>
+        <span class="n">modeltype</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">get_model_type</span><span class="p">()</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+        <span class="n">filename</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+        <span class="n">ext</span><span class="o">=</span><span class="n">archive_type</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">_replace</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">urlpath</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">fragment</span><span class="o">=</span><span class="n">fragment</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">url</span><span class="o">.</span><span class="n">geturl</span><span class="p">()</span></div>
+
+
+<span class="n">InstallableModelType</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">EModelGroup</span><span class="p">,</span> <span class="n">EModelType</span><span class="p">,</span> <span class="n">GenericModelType</span><span class="p">]</span>
+
+
+<span class="n">_MODELTYPE_MAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">EModelType</span><span class="o">.</span><span class="n">GEOID</span><span class="p">:</span> <span class="n">EGeoidModel</span><span class="p">,</span>
+    <span class="n">EModelType</span><span class="o">.</span><span class="n">GRAVITY</span><span class="p">:</span> <span class="n">EGravityModel</span><span class="p">,</span>
+    <span class="n">EModelType</span><span class="o">.</span><span class="n">MAGNETIC</span><span class="p">:</span> <span class="n">EMagneticModel</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">_get_url_map</span><span class="p">(</span><span class="n">model</span><span class="p">:</span> <span class="n">InstallableModelType</span><span class="p">,</span>
+                 <span class="n">base_url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">archive_type</span><span class="p">:</span> <span class="n">EArchiveType</span> <span class="o">=</span> <span class="n">EArchiveType</span><span class="o">.</span><span class="n">BZ2</span>
+                 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="n">GenericModelType</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="n">model</span> <span class="ow">is</span> <span class="n">EModelGroup</span><span class="o">.</span><span class="n">ALL</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">modeltype</span> <span class="ow">in</span> <span class="n">EModelType</span><span class="p">:</span>
+            <span class="n">urls</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">_get_url_map</span><span class="p">(</span><span class="n">modeltype</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">archive_type</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">model</span> <span class="ow">is</span> <span class="n">EModelGroup</span><span class="o">.</span><span class="n">MINIMAL</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">GeoidModel</span><span class="p">,</span> <span class="n">GravityModel</span><span class="p">,</span> <span class="n">MagneticFieldModel</span>
+        <span class="n">models</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">EGeoidModel</span><span class="p">(</span><span class="n">GeoidModel</span><span class="o">.</span><span class="n">default_geoid_name</span><span class="p">()),</span>
+            <span class="n">EGravityModel</span><span class="p">(</span><span class="n">GravityModel</span><span class="o">.</span><span class="n">default_gravity_name</span><span class="p">()),</span>
+            <span class="n">EMagneticModel</span><span class="p">(</span><span class="n">MagneticFieldModel</span><span class="o">.</span><span class="n">default_magnetic_name</span><span class="p">()),</span>
+        <span class="p">]</span>
+        <span class="k">for</span> <span class="n">model_</span> <span class="ow">in</span> <span class="n">models</span><span class="p">:</span>
+            <span class="n">urls</span><span class="p">[</span><span class="n">model_</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_model_url</span><span class="p">(</span><span class="n">model_</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">archive_type</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">model</span> <span class="ow">is</span> <span class="n">EModelGroup</span><span class="o">.</span><span class="n">RECOMMENDED</span><span class="p">:</span>
+        <span class="n">urls</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">_get_url_map</span><span class="p">(</span><span class="n">EModelGroup</span><span class="o">.</span><span class="n">MINIMAL</span><span class="p">))</span>
+        <span class="n">extra_models</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">EGeoidModel</span><span class="o">.</span><span class="n">EGM96_5</span><span class="p">,</span>
+            <span class="n">EGravityModel</span><span class="o">.</span><span class="n">EGM96</span><span class="p">,</span>
+            <span class="n">EMagneticModel</span><span class="o">.</span><span class="n">IGRF12</span><span class="p">,</span>
+            <span class="n">EMagneticModel</span><span class="o">.</span><span class="n">WMM2015</span><span class="p">,</span>
+        <span class="p">]</span>
+        <span class="k">for</span> <span class="n">model_</span> <span class="ow">in</span> <span class="n">extra_models</span><span class="p">:</span>
+            <span class="n">urls</span><span class="p">[</span><span class="n">model_</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_model_url</span><span class="p">(</span><span class="n">model_</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">archive_type</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">_MODELTYPE_MAP</span><span class="p">:</span>
+        <span class="n">modelenum</span> <span class="o">=</span> <span class="n">_MODELTYPE_MAP</span><span class="p">[</span><span class="n">model</span><span class="p">]</span>
+        <span class="n">urls</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">item</span><span class="p">:</span> <span class="n">get_model_url</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">archive_type</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">modelenum</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">urls</span><span class="p">[</span><span class="n">model</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_model_url</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">archive_type</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">urls</span>
+
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">tqdm</span>
+
+    <span class="k">class</span> <span class="nc">TqdmReportHook</span><span class="p">(</span><span class="n">tqdm</span><span class="o">.</span><span class="n">tqdm</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Tqdm based report hook for urllib.request.urlretrieve.&quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s1">&#39;iterable&#39;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                    <span class="s1">&#39;</span><span class="si">{!r}</span><span class="s1"> argument is not allowed by TqdmReportHook.&#39;</span><span class="p">)</span>
+
+            <span class="c1"># set defaults</span>
+            <span class="n">kargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span>
+                <span class="n">unit_scale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">unit_divisor</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span>
+                <span class="n">miniters</span><span class="o">=</span><span class="mi">1</span>
+            <span class="p">)</span>
+            <span class="n">kargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+            <span class="nb">super</span><span class="p">(</span><span class="n">TqdmReportHook</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">block_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">total_size</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">total_size</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">total</span> <span class="o">=</span> <span class="n">total_size</span>
+
+            <span class="c1"># will also set: self.n = cont * block_size</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">count</span> <span class="o">*</span> <span class="n">block_size</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">__bool__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="c1"># needed by urllib.request.urlretrieve</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">tqdm</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="n">PathType</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span>
+             <span class="n">progress</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="n">ReportHookType</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+             <span class="n">force</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Download the specified URL.</span>
+
+<span class="sd">    :param str url:</span>
+<span class="sd">        the url of the file to be downloaded (simple file names are also OK)</span>
+<span class="sd">    :param str path:</span>
+<span class="sd">        (optional) target download location (filename or directory).</span>
+<span class="sd">        Default: &quot;.&quot;.</span>
+<span class="sd">    :param progress:</span>
+<span class="sd">        boolean to enable/disable the display of progress information</span>
+<span class="sd">        (default: True).</span>
+<span class="sd">        Please note that default progress reporting uses the &#39;tqdm&#39;</span>
+<span class="sd">        library, if it is not available progress display is switched off.</span>
+<span class="sd">        It `progress` is set to a callable it is used ar reporthook to show</span>
+<span class="sd">        progress information.</span>
+<span class="sd">        Please refer to the :func:`urllib.request.urlretrieve` for</span>
+<span class="sd">        details about the reporthook function.</span>
+<span class="sd">    :param bool force:</span>
+<span class="sd">        overwrite existing files (default: False)</span>
+<span class="sd">    :returns:</span>
+<span class="sd">        pathname of the downloaded file</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">urlobj</span> <span class="o">=</span> <span class="n">urlsplit</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">urlobj</span><span class="o">.</span><span class="n">scheme</span><span class="p">:</span>
+        <span class="n">urlobj</span> <span class="o">=</span> <span class="n">urlobj</span><span class="o">.</span><span class="n">_replace</span><span class="p">(</span><span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;file&#39;</span><span class="p">)</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+        <span class="n">path</span> <span class="o">/=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">urlobj</span><span class="o">.</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">name</span>
+
+    <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">force</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
+            <span class="s1">&#39;download target path already exists: &quot;</span><span class="si">{}</span><span class="s1">&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">progress</span> <span class="ow">is</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">tqdm</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">base_width</span> <span class="o">=</span> <span class="mi">50</span>
+            <span class="n">ncols</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">get_terminal_size</span><span class="p">()</span><span class="o">.</span><span class="n">columns</span>
+            <span class="n">ncols</span> <span class="o">=</span> <span class="n">ncols</span> <span class="o">-</span> <span class="n">base_width</span> <span class="k">if</span> <span class="n">ncols</span> <span class="o">&gt;=</span> <span class="n">base_width</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+            <span class="n">ncols</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">desc</span> <span class="o">=</span> <span class="n">urlsplit</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">_replace</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">fragment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">geturl</span><span class="p">()</span>
+        <span class="n">reporthook</span> <span class="o">=</span> <span class="n">TqdmReportHook</span><span class="p">(</span><span class="n">desc</span><span class="o">=</span><span class="n">desc</span><span class="p">[</span><span class="o">-</span><span class="n">ncols</span><span class="p">:],</span> <span class="n">leave</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">callable</span><span class="p">(</span><span class="n">progress</span><span class="p">):</span>
+        <span class="n">reporthook</span> <span class="o">=</span> <span class="n">progress</span>
+    <span class="c1"># elif progress is False:</span>
+    <span class="c1">#     reporthook = None  # type: ignore</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">reporthook</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># type: ignore</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reporthook</span><span class="p">,</span> <span class="n">contextlib</span><span class="o">.</span><span class="n">AbstractContextManager</span><span class="p">):</span>
+        <span class="k">with</span> <span class="n">reporthook</span><span class="p">:</span>
+            <span class="n">outpath</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">urlretrieve</span><span class="p">(</span><span class="n">urlobj</span><span class="o">.</span><span class="n">geturl</span><span class="p">(),</span> <span class="n">path</span><span class="p">,</span> <span class="n">reporthook</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">outpath</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">urlretrieve</span><span class="p">(</span><span class="n">urlobj</span><span class="o">.</span><span class="n">geturl</span><span class="p">(),</span> <span class="n">path</span><span class="p">,</span> <span class="n">reporthook</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">outpath</span>
+
+
+<div class="viewcode-block" id="install"><a class="viewcode-back" href="../../api/geomodels.data.html#geomodels.data.install">[docs]</a><span class="k">def</span> <span class="nf">install</span><span class="p">(</span><span class="n">model</span><span class="p">:</span> <span class="n">InstallableModelType</span> <span class="o">=</span> <span class="n">EModelGroup</span><span class="o">.</span><span class="n">MINIMAL</span><span class="p">,</span>
+            <span class="n">datadir</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PathType</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">archive_type</span><span class="p">:</span> <span class="n">EArchiveType</span> <span class="o">=</span> <span class="n">EArchiveType</span><span class="o">.</span><span class="n">BZ2</span><span class="p">,</span>
+            <span class="n">progress</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Install the specified geographic model data.</span>
+
+<span class="sd">    :param model:</span>
+<span class="sd">        the enumeration corresponding to the desired geographic model.</span>
+<span class="sd">        It can be one of the enumerates defined in :class:`EGeoidModel`,</span>
+<span class="sd">        :class:`EGravityModel`, :class:`EMagneticModel`, or one of the</span>
+<span class="sd">        enumerates defined in :class:`EModelType` to indicate that all</span>
+<span class="sd">        geographic models of the specified type shall be installed,</span>
+<span class="sd">        or one of the enumerates defined in :class:`EModelGroup` to</span>
+<span class="sd">        indicate that a specific group of model data shall be installed:</span>
+<span class="sd">        :data:`EModelGroup.ALL` (all available models of any kind),</span>
+<span class="sd">        :data:`EModelGroup.MINIMAL` (only the default model for each type)</span>
+<span class="sd">        or :data:`EModelGroup.RECOMMENDED`.</span>
+<span class="sd">    :param PathType datadir:</span>
+<span class="sd">        (optional) specify the target location where geographic model</span>
+<span class="sd">        data shall be installed. If not specified that the path returned</span>
+<span class="sd">        by :func:`get_default_data_path` is assumed.</span>
+<span class="sd">    :param str base_url:</span>
+<span class="sd">        (optional) base URL for data download.</span>
+<span class="sd">        The full URL is built from this function starting form base_url</span>
+<span class="sd">        and model information.</span>
+<span class="sd">    :param EArchiveType archive_type:</span>
+<span class="sd">        specifies the archive type that should be downloaded.</span>
+<span class="sd">        Default: :data:`EArchiveType.BZ2`.</span>
+<span class="sd">    :param bool progress:</span>
+<span class="sd">        enable/disable progress information display (default: True)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">urls</span> <span class="o">=</span> <span class="n">_get_url_map</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">archive_type</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">datadir</span><span class="p">:</span>
+        <span class="n">datadir</span> <span class="o">=</span> <span class="n">get_default_data_path</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">datadir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;no default data location found&#39;</span><span class="p">)</span>
+
+        <span class="n">datadir</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">datadir</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">datadir</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">NotADirectoryError</span><span class="p">(</span>
+                <span class="s1">&#39;&quot;</span><span class="si">{}</span><span class="s1">&quot; is not a directory&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">datadir</span><span class="p">))</span>
+
+    <span class="n">datadir</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">datadir</span><span class="p">)</span>
+    <span class="n">datadir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">TemporaryDirectory</span><span class="p">()</span> <span class="k">as</span> <span class="n">tempdir</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">progress</span> <span class="ow">and</span> <span class="n">tqdm</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">urls</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">urliterator</span> <span class="o">=</span> <span class="n">tqdm</span><span class="o">.</span><span class="n">tqdm</span><span class="p">(</span><span class="n">urls</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;download&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">urliterator</span> <span class="o">=</span> <span class="n">urls</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">model</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urliterator</span><span class="p">:</span>
+            <span class="n">target</span> <span class="o">=</span> <span class="n">datadir</span> <span class="o">/</span> <span class="n">model</span><span class="o">.</span><span class="n">get_model_type</span><span class="p">()</span><span class="o">.</span><span class="n">value</span> <span class="o">/</span> <span class="n">model</span><span class="o">.</span><span class="n">value</span>
+            <span class="n">matches</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">target</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{target.name}</span><span class="s1">*&#39;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">matches</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; already exists: skip download&#39;</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">tempdir</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="n">progress</span><span class="p">)</span>
+            <span class="c1"># @CMPATIBILITY: shutil.unpack_archive accepts pathlib.Path</span>
+            <span class="c1">#                parameters since Python 3.7</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">unpack_archive</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span> <span class="n">extract_dir</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">datadir</span><span class="p">))</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/geomodels.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

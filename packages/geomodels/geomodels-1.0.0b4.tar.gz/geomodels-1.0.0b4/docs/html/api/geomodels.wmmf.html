@@ -1,0 +1,349 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels.wmmf module &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Release history" href="../NEWS.html" />
+    <link rel="prev" title="geomodels.error module" href="geomodels.error.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-geomodels.wmmf">
+<span id="geomodels-wmmf-module"></span><h1>geomodels.wmmf module<a class="headerlink" href="#module-geomodels.wmmf" title="Permalink to this headline">¶</a></h1>
+<p>World Magnetic Model Format tools.</p>
+<p>Classes and function for reading and writing files in World Magnetic
+Model Format and in IGRF text format.</p>
+<p>See: <a class="reference external" href="https://geographiclib.sourceforge.io/html/magnetic.html#magneticformat">https://geographiclib.sourceforge.io/html/magnetic.html#magneticformat</a>
+and <a class="reference external" href="https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html">https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html</a>.</p>
+<dl class="class">
+<dt id="geomodels.wmmf.MetaData">
+<em class="property">class </em><code class="descclassname">geomodels.wmmf.</code><code class="descname">MetaData</code><span class="sig-paren">(</span><em>Name: str = 'N/A'</em>, <em>Description: str = 'International Geomagnetic Reference Field'</em>, <em>URL: str = 'http://ngdc.noaa.gov/IAGA/vmod/igrf.html'</em>, <em>Publisher: str = 'International Association of Geomagnetism and Aeronomy'</em>, <em>ReleaseDate: str = 'N/A'</em>, <em>DataCutOff: str = 'N/A'</em>, <em>ConversionDate: str = 'N/A'</em>, <em>DataVersion: int = 1</em>, <em>Radius: int = 6371200</em>, <em>NumModels: int = 0</em>, <em>Epoch: int = 1900</em>, <em>DeltaEpoch: int = 5</em>, <em>MinTime: int = 0</em>, <em>MaxTime: int = 0</em>, <em>MinHeight: int = -1000</em>, <em>MaxHeight: int = 600000</em>, <em>NumConstants: int = 0</em>, <em>Normalization: int = 1</em>, <em>ID: str = 'N/A'</em>, <em>N: int = 0</em>, <em>M: int = 0</em>, <em>FORMAT_VERSION: int = 1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/wmmf.html#MetaData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.MetaData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>World Magnetic Model Format metadata.</p>
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.ByteOrder">
+<code class="descname">ByteOrder</code><em class="property"> = 'little'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.ByteOrder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.ConversionDate">
+<code class="descname">ConversionDate</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.ConversionDate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.DataCutOff">
+<code class="descname">DataCutOff</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.DataCutOff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.DataVersion">
+<code class="descname">DataVersion</code><em class="property"> = 1</em><a class="headerlink" href="#geomodels.wmmf.MetaData.DataVersion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.DeltaEpoch">
+<code class="descname">DeltaEpoch</code><em class="property"> = 5</em><a class="headerlink" href="#geomodels.wmmf.MetaData.DeltaEpoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Description">
+<code class="descname">Description</code><em class="property"> = 'International Geomagnetic Reference Field'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Epoch">
+<code class="descname">Epoch</code><em class="property"> = 1900</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Epoch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.FORMAT_VERSION">
+<code class="descname">FORMAT_VERSION</code><em class="property"> = 1</em><a class="headerlink" href="#geomodels.wmmf.MetaData.FORMAT_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.ID">
+<code class="descname">ID</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.ID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.M">
+<code class="descname">M</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.wmmf.MetaData.M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.MaxHeight">
+<code class="descname">MaxHeight</code><em class="property"> = 600000</em><a class="headerlink" href="#geomodels.wmmf.MetaData.MaxHeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.MaxTime">
+<code class="descname">MaxTime</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.wmmf.MetaData.MaxTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.MinHeight">
+<code class="descname">MinHeight</code><em class="property"> = -1000</em><a class="headerlink" href="#geomodels.wmmf.MetaData.MinHeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.MinTime">
+<code class="descname">MinTime</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.wmmf.MetaData.MinTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.N">
+<code class="descname">N</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.wmmf.MetaData.N" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Name">
+<code class="descname">Name</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Normalization">
+<code class="descname">Normalization</code><em class="property"> = 1</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Normalization" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.NumConstants">
+<code class="descname">NumConstants</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.wmmf.MetaData.NumConstants" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.NumModels">
+<code class="descname">NumModels</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.wmmf.MetaData.NumModels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Publisher">
+<code class="descname">Publisher</code><em class="property"> = 'International Association of Geomagnetism and Aeronomy'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Publisher" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Radius">
+<code class="descname">Radius</code><em class="property"> = 6371200</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Radius" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.ReleaseDate">
+<code class="descname">ReleaseDate</code><em class="property"> = 'N/A'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.ReleaseDate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.Type">
+<code class="descname">Type</code><em class="property"> = 'linear'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.Type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.MetaData.URL">
+<code class="descname">URL</code><em class="property"> = 'http://ngdc.noaa.gov/IAGA/vmod/igrf.html'</em><a class="headerlink" href="#geomodels.wmmf.MetaData.URL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomodels.wmmf.MetaData.get_id">
+<code class="descname">get_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/geomodels/wmmf.html#MetaData.get_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.MetaData.get_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the model ID (eventually inferred by the model name).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.wmmf.MetaData.get_years">
+<code class="descname">get_years</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[int]<a class="reference internal" href="../_modules/geomodels/wmmf.html#MetaData.get_years"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.MetaData.get_years" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list of years associated to teh models.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.wmmf.MetaData.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>filename: Union[str, os.PathLike]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/geomodels/wmmf.html#MetaData.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.MetaData.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a metadata file in WMM format and return a MetaData object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.wmmf.MetaData.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>filename: Union[str, os.PathLike]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/geomodels/wmmf.html#MetaData.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.MetaData.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.wmmf.SphCoeffSet">
+<em class="property">class </em><code class="descclassname">geomodels.wmmf.</code><code class="descname">SphCoeffSet</code><span class="sig-paren">(</span><em>C</em>, <em>S</em><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.wmmf.SphCoeffSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<dl class="attribute">
+<dt id="geomodels.wmmf.SphCoeffSet.C">
+<code class="descname">C</code><a class="headerlink" href="#geomodels.wmmf.SphCoeffSet.C" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.wmmf.SphCoeffSet.S">
+<code class="descname">S</code><a class="headerlink" href="#geomodels.wmmf.SphCoeffSet.S" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.wmmf.WmmData">
+<em class="property">class </em><code class="descclassname">geomodels.wmmf.</code><code class="descname">WmmData</code><span class="sig-paren">(</span><em>filename: Union[str</em>, <em>os.PathLike</em>, <em>None] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/wmmf.html#WmmData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.WmmData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Magnetic field data.</p>
+<dl class="classmethod">
+<dt id="geomodels.wmmf.WmmData.from_metadata_and_coeffs">
+<em class="property">classmethod </em><code class="descname">from_metadata_and_coeffs</code><span class="sig-paren">(</span><em>medadata: geomodels.wmmf.MetaData, coeffs: OrderedDict[str, geomodels.wmmf.SphCoeffSet]</em><span class="sig-paren">)</span> &#x2192; geomodels.wmmf.WmmData<a class="reference internal" href="../_modules/geomodels/wmmf.html#WmmData.from_metadata_and_coeffs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.WmmData.from_metadata_and_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomodels.wmmf.WmmData.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>filename: Union[str, os.PathLike]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/geomodels/wmmf.html#WmmData.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.WmmData.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load metadata and spherical harmonics coefficients.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.wmmf.WmmData.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>outpath: Union[str, os.PathLike], force: bool = False</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="../_modules/geomodels/wmmf.html#WmmData.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.WmmData.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save data in WMM format (metadata and binary).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.wmmf.import_igrf_txt">
+<code class="descclassname">geomodels.wmmf.</code><code class="descname">import_igrf_txt</code><span class="sig-paren">(</span><em>path: Union[str, os.PathLike]</em><span class="sig-paren">)</span> &#x2192; geomodels.wmmf.WmmData<a class="reference internal" href="../_modules/geomodels/wmmf.html#import_igrf_txt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.wmmf.import_igrf_txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode a spherical harmonics coefficient file in IGRF text format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> – the path to a local filename or a remote URL.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command line interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="geomodels.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#geoid-model">Geoid model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#graviti-model">Graviti model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#magnetic-filed-model">Magnetic filed model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#functions">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="geomodels.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="geomodels.cli.html">geomodels.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.data.html">geomodels.data module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.error.html">geomodels.error module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">geomodels.wmmf module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="geomodels.html">geomodels package</a><ul>
+      <li>Previous: <a href="geomodels.error.html" title="previous chapter">geomodels.error module</a></li>
+      <li>Next: <a href="../NEWS.html" title="next chapter">Release history</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/api/geomodels.wmmf.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

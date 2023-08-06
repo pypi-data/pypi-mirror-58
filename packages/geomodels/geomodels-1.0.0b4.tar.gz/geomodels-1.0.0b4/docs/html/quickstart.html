@@ -1,0 +1,210 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Quickstart &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation and Testing" href="installation.html" />
+    <link rel="prev" title="GeoModels Documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>GeoModels provides tools for the management of Earth models like
+geoids, gravity models, and magnetic field models.</p>
+<p>It also provides some utility function to download and install support
+data to that are necessary for Earth models computation.</p>
+<p>It is basically a <a class="reference external" href="https://cython.org">Cython</a> wrapper for part of the the <a class="reference external" href="https://geographiclib.sourceforge.io">GeographicLib</a>
+C++ library.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>The GeoModels requires <a class="reference external" href="https://www.python.org">Python</a> &gt;= 3.6.
+To use GeoModels depends on the following <a class="reference external" href="https://www.python.org">Python</a> packages:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://numpy.org">numpy</a></li>
+<li><a class="reference external" href="https://github.com/tqdm/tqdm">tqdm</a> (optional)</li>
+<li><a class="reference external" href="https://github.com/kislyuk/argcomplete">argcomplete</a> (optional)</li>
+</ul>
+<p>The required <a class="reference external" href="https://www.python.org">Python</a> packages are automatically installed installed by
+<a class="reference external" href="https://pip.pypa.io">Pip</a> and <a class="reference external" href="https://github.com/pypa/setuptools">setuptools</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m pip install geomodels
+</pre></div>
+</div>
+<p>Please refer to the <a class="reference external" href="https://pip.pypa.io">Pip</a> user manual for details about installation
+options and to the <a class="reference internal" href="installation.html"><span class="doc">Installation and Testing</span></a> section in the documentation
+for details about installation form sources.</p>
+</div>
+<div class="section" id="model-data-installation">
+<h2>Model data installation<a class="headerlink" href="#model-data-installation" title="Permalink to this headline">¶</a></h2>
+<p>GeoModels uses external data to perform geoid, gravity and magnetic
+field computations.</p>
+<p>If required data are not already available on the system than they can
+be downloaded and installed using the command line interface provided
+by the GeoModels package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -m geomodels install-data [-d DATADIR] recommended
+</pre></div>
+</div>
+<p>The above command installs the <cite>recommended</cite> subset of data (about 20MB)
+into the specified <cite>DATAROOT`folder.
+If `DATAROOT</cite> is not explicitly specified using the <cite>-d</cite> (or <cite>–datadir</cite>)
+option then the default system path is used (e.g.
+<cite>/usr/local/share/GeographicLib</cite>).</p>
+<p>In any case it is necessary to have write permission on the <cite>DATADIR</cite>
+folder, so to install into the default system path it will be probably
+necessary to use <cite>sudo</cite> or some equivalent method.</p>
+<p>If data are not installed into the default system folder than it is
+necessary to set the <cite>GEOGRAPHICLIB_DATA</cite> environment variable to the
+data installation path to allow <a class="reference external" href="https://geographiclib.sourceforge.io">GeographicLib</a> to find data.
+E.g., on systems using bash one can use the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">GEOGRAPHICLIB_DATA</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Once the GeoModels package and necessary data have been installed, it
+is possible to run the test suite to be sure that all works correctly.
+The recommended way to test GeoModels with using <a class="reference external" href="http://pytest.org">PyTest</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ env GEOGRAPHICLIB_DATA=/path/to/data \
+  python3 -m pytest --pyargs geomodels
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage-example">
+<h2>Usage example<a class="headerlink" href="#usage-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geomodels</span> <span class="kn">import</span> <span class="n">GeoidModel</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">geoid</span> <span class="o">=</span> <span class="n">GeoidModel</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">geoid</span><span class="o">.</span><span class="n">description</span><span class="p">()</span>
+<span class="go">&#39;WGS84 EGM96, 5-minute grid&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">geoid</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mf">40.667</span><span class="p">,</span> <span class="n">lon</span><span class="o">=</span><span class="mf">16.6</span><span class="p">)</span>  <span class="c1"># -&gt; geoid height</span>
+<span class="go">45.914894760480024</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>GeoModels is released under the terms of the <a class="reference external" href="https://opensource.org/licenses/MIT">MIT/X11 License</a>
+(see LICENSE file).</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#about">About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#model-data-installation">Model data installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-example">Usage example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/geomodels.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">GeoModels Documentation</a></li>
+      <li>Next: <a href="installation.html" title="next chapter">Installation and Testing</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/quickstart.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

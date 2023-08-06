@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels package &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="geomodels.cli module" href="geomodels.cli.html" />
+    <link rel="prev" title="Command line interface" href="../cli.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-geomodels">
+<span id="geomodels-package"></span><h1>geomodels package<a class="headerlink" href="#module-geomodels" title="Permalink to this headline">¶</a></h1>
+<p>Geographic data models.</p>
+<div class="section" id="geoid-model">
+<h2>Geoid model<a class="headerlink" href="#geoid-model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="geomodels.GeoidModel">
+<em class="property">class </em><code class="descclassname">geomodels.</code><code class="descname">GeoidModel</code><a class="headerlink" href="#geomodels.GeoidModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Geoid model.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> – the name of the geoid</li>
+<li><strong>path</strong> – (optional) directory for data file</li>
+<li><strong>cubic</strong> – (optional) interpolation method; false means <cite>bilinear</cite>,
+true (the default) means <cite>cubic</cite>.</li>
+<li><strong>threadsafe</strong> – (optional), if true, construct a thread safe object.
+The default is false</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if the data file cannot be found, is unreadable, or is corrupt</li>
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if <cite>threadsafe</cite> is True but the memory necessary for caching
+the data can’t be allocated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The data file is formed by appending “.pgm” to the name.
+If <cite>path</cite> is specified (and is non-empty), then the file is loaded
+from directory, <cite>path</cite>.
+Otherwise the path is given by <a class="reference internal" href="#geomodels.GeoidModel.default_geoid_path" title="geomodels.GeoidModel.default_geoid_path"><code class="xref py py-meth docutils literal notranslate"><span class="pre">default_geoid_path()</span></code></a>.
+If the <cite>threadsafe</cite> parameter is True, the data set is read into
+memory, the data file is closed, and single-cell caching is turned
+off; this results in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Geoid</span></code> object which is thread safe.</p>
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache">
+<code class="descname">cache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if a data cache is active.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_all">
+<code class="descname">cache_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cache all the data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if the memory necessary for caching the data can’t be
+allocated (in this case, you will have no cache and can try
+again with a smaller area).</li>
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if there’s a problem reading the data.</li>
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if this is called on a threadsafe <code class="xref py py-class docutils literal notranslate"><span class="pre">Geoid</span></code>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>On most computers, this is fast for data sets with grid
+resolution of 5’ or coarser. For a 1’ grid, the required RAM is
+450MB; a 2.5’ grid needs 72MB; and a 5’ grid needs 18MB.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_area">
+<code class="descname">cache_area</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up a cache.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>south</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – south latitude (degrees) of the south edge of the cached area.</li>
+<li><strong>west</strong> – west longitude (degrees) of the west edge of the cached area.</li>
+<li><strong>north</strong> – north latitude (degrees) of the north edge of the cached area.</li>
+<li><strong>east</strong> – east longitude (degrees) of the east edge of the cached area.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if the memory necessary for caching the data can’t be
+allocated (in this case, you will have no cache and can try
+again with a smaller area).</li>
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if there’s a problem reading the data.</li>
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if this is called on a threadsafe <code class="xref py py-class docutils literal notranslate"><span class="pre">Geoid</span></code>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Cache the data for the specified “rectangular” area bounded by
+the parallels <cite>south</cite> and <cite>north</cite> and the meridians <cite>west</cite> and
+<cite>east</cite>.
+<cite>east</cite> is always interpreted as being east of <cite>west</cite>, if
+necessary by adding 360 deg; to its value.
+<cite>south</cite> and <cite>north</cite> should be in the range [-90 deg, +90 deg].</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_clear">
+<code class="descname">cache_clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the cache.</p>
+<p>This never throws an error.
+This does nothing with a thread safe <code class="xref py py-class docutils literal notranslate"><span class="pre">Geoid</span></code>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_east">
+<code class="descname">cache_east</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_east" title="Permalink to this definition">¶</a></dt>
+<dd><p>East edge of the cached area.</p>
+<p>The cache excludes this edge.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_north">
+<code class="descname">cache_north</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_north" title="Permalink to this definition">¶</a></dt>
+<dd><p>North edge of the cached area.</p>
+<p>The cache includes this edge.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_south">
+<code class="descname">cache_south</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_south" title="Permalink to this definition">¶</a></dt>
+<dd><p>South edge of the cached area.</p>
+<p>The cache excludes this edge unless it’s the south pole.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.cache_west">
+<code class="descname">cache_west</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.cache_west" title="Permalink to this definition">¶</a></dt>
+<dd><p>West edge of the cached area.</p>
+<p>The cache includes this edge.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.convert_height">
+<code class="descname">convert_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.convert_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a height above the geoid to a height above the
+ellipsoid and vice versa.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> – latitude of the point (degrees).</li>
+<li><strong>lon</strong> – longitude of the point (degrees).</li>
+<li><strong>h</strong> – height of the point (meters).</li>
+<li><strong>direction</strong> – a <a class="reference internal" href="#geomodels.EHeightConvDir" title="geomodels.EHeightConvDir"><code class="xref py py-class docutils literal notranslate"><span class="pre">EHeightConvDir</span></code></a> specifying the direction of the
+conversion; <a class="reference internal" href="#geomodels.EHeightConvDir.GEOIDTOELLIPSOID" title="geomodels.EHeightConvDir.GEOIDTOELLIPSOID"><code class="xref py py-data docutils literal notranslate"><span class="pre">EHeightConvDir.GEOIDTOELLIPSOID</span></code></a> means
+convert a height above the geoid to a height above the
+ellipsoid; <code class="xref py py-data docutils literal notranslate"><span class="pre">Geoid.ELLIPSOIDTOGEOID</span></code> means convert a
+height above the ellipsoid to a height above the geoid.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if there’s a problem reading the data; this never happens
+if (<cite>lat</cite>, <cite>lon</cite>) is within a successfully cached area.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">converted height (meters).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.datetime">
+<code class="descname">datetime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return date of the data file.</p>
+<p>If absent, return “UNKNOWN”.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.GeoidModel.default_geoid_name">
+<em class="property">static </em><code class="descname">default_geoid_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.default_geoid_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default name for the geoid.</p>
+<p>This is the value of the environment variable
+<cite>GEOGRAPHICLIB_GEOID_NAME</cite>, if set; otherwise, it is “egm96-5”.
+The GeoidModel class does not use this function; it is just
+provided as a convenience for a calling program when
+constructing a <a class="reference internal" href="#geomodels.GeoidModel" title="geomodels.GeoidModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoidModel</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.GeoidModel.default_geoid_path">
+<em class="property">static </em><code class="descname">default_geoid_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.default_geoid_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default path for geoid data files.</p>
+<p>This is the value of the environment variable
+<cite>GEOGRAPHICLIB_GEOID_PATH</cite>, if set; otherwise, it is
+<cite>${GEOGRAPHICLIB_DATA}/geoids</cite> if the environment variable
+<cite>GEOGRAPHICLIB_DATA</cite> is set; otherwise, it is a compile-time
+default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.description">
+<code class="descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return geoid description, if available, in the data file.</p>
+<p>If the geoid description is absent in the data file
+return “NONE”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.equator_radius">
+<code class="descname">equator_radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.equator_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>The equatorial radius of the ellipsoid (meters).</p>
+<p>(The WGS84 value is returned because the supported geoid
+models are all based on this ellipsoid.)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.flattening">
+<code class="descname">flattening</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.flattening" title="Permalink to this definition">¶</a></dt>
+<dd><p>The flattening of the ellipsoid.</p>
+<p>(The WGS84 value is returned because the supported geoid
+models are all based on this ellipsoid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.geoid_directory">
+<code class="descname">geoid_directory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.geoid_directory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the directory used to load the geoid data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.geoid_file">
+<code class="descname">geoid_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.geoid_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return full file name used to load the geoid data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.geoid_name">
+<code class="descname">geoid_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.geoid_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the “name” used to load the geoid data.</p>
+<p>“name” is the first argument of the constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.interpolation">
+<code class="descname">interpolation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.interpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return interpolation method (“cubic” or “bilinear”).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.max_error">
+<code class="descname">max_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.max_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an estimate of the maximum interpolation and
+quantization error [m].</p>
+<p>This relies on the value being stored in the data file.
+If the value is absent, return -1.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.offset">
+<code class="descname">offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.offset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Offset (meters).</p>
+<p>This in used in converting from the pixel values in the data
+file to geoid heights.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.rms_error">
+<code class="descname">rms_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.rms_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an estimate of the RMS interpolation and
+quantization error [m].</p>
+<p>This relies on the value being stored in the data file.
+If the value is absent, return -1.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.scale">
+<code class="descname">scale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scale (meters).</p>
+<p>This in used in converting from the pixel values in the data
+file to geoid heights.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GeoidModel.threadsafe">
+<code class="descname">threadsafe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GeoidModel.threadsafe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if the object is constructed to be thread safe.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.EHeightConvDir">
+<em class="property">class </em><code class="descclassname">geomodels.</code><code class="descname">EHeightConvDir</code><a class="headerlink" href="#geomodels.EHeightConvDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="geomodels.EHeightConvDir.ELLIPSOIDTOGEOID">
+<code class="descname">ELLIPSOIDTOGEOID</code><em class="property"> = -1</em><a class="headerlink" href="#geomodels.EHeightConvDir.ELLIPSOIDTOGEOID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.EHeightConvDir.GEOIDTOELLIPSOID">
+<code class="descname">GEOIDTOELLIPSOID</code><em class="property"> = 1</em><a class="headerlink" href="#geomodels.EHeightConvDir.GEOIDTOELLIPSOID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.EHeightConvDir.NONE">
+<code class="descname">NONE</code><em class="property"> = 0</em><a class="headerlink" href="#geomodels.EHeightConvDir.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="graviti-model">
+<h2>Graviti model<a class="headerlink" href="#graviti-model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="geomodels.GravityModel">
+<em class="property">class </em><code class="descclassname">geomodels.</code><code class="descname">GravityModel</code><a class="headerlink" href="#geomodels.GravityModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Gravity model.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the model</li>
+<li><strong>path</strong> – (optional) directory for data file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if the data file cannot be found, is unreadable, or is corrupt</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.8)"><strong>MemoryError</strong></a> – if the memory necessary for storing the model can’t be
+allocated</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A filename is formed by appending “.egm” (World Gravity Model) to
+the name.  If <cite>path</cite> is specified (and is non-empty), then the file
+is loaded from directory, <cite>path</cite>.  Otherwise the path is given by
+<a class="reference internal" href="#geomodels.GravityModel.default_gravity_path" title="geomodels.GravityModel.default_gravity_path"><code class="xref py py-meth docutils literal notranslate"><span class="pre">default_gravity_path()</span></code></a>.</p>
+<p>This file contains the metadata which specifies the properties of
+the model.  The coefficients for the spherical harmonic sums are
+obtained from a file obtained by appending “.cof” to metadata file
+(so the filename ends in “.egm.cof”).</p>
+<dl class="method">
+<dt id="geomodels.GravityModel.angular_velocity">
+<code class="descname">angular_velocity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.angular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The angular velocity of the model and the reference ellipsoid.</p>
+<p><img class="math" src="../_images/math/d585301c90903b190630f5e220dbb3014976db61.png" alt="[\omega] = rad/s"/></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.datetime">
+<code class="descname">datetime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Date of the gravity model.</p>
+<p>If absent, return “UNKNOWN”.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.GravityModel.default_gravity_name">
+<em class="property">static </em><code class="descname">default_gravity_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.default_gravity_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default name for the gravity model.</p>
+<p>This is the value of the environment variable
+<cite>GEOGRAPHICLIB_GRAVITY_NAME</cite>, if set; otherwise, it is “egm96”.
+The <a class="reference internal" href="#geomodels.GravityModel" title="geomodels.GravityModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GravityModel</span></code></a> class does not use this function;
+it is just provided as a convenience for a calling program when
+constructing a <a class="reference internal" href="#geomodels.GravityModel" title="geomodels.GravityModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">GravityModel</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.GravityModel.default_gravity_path">
+<em class="property">static </em><code class="descname">default_gravity_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.default_gravity_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>the default path for gravity model data files.</p>
+<p>This is the value of the environment variable
+<cite>GEOGRAPHICLIB_GRAVITY_PATH</cite>, if set; otherwise, it is
+<cite>$GEOGRAPHICLIB_DATA/gravity</cite> if the environment variable
+<cite>GEOGRAPHICLIB_DATA</cite> is set; otherwise, it is a compile-time
+default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.description">
+<code class="descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>The description of the gravity model.</p>
+<p>If the gravity model description is absent in the data file
+return “NONE”.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.disturbance">
+<code class="descname">disturbance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.disturbance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the gravity disturbance vector at an arbitrary
+point above (or below) the ellipsoid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> – the geographic latitude (degrees)</li>
+<li><strong>lon</strong> – the geographic longitude (degrees)</li>
+<li><strong>h</strong> – the height above the ellipsoid (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>T the corresponding disturbing potential ([m**2 / s**2])</li>
+<li>deltax the easterly component of the disturbance vector
+([m / s**2])</li>
+<li>deltay the northerly component of the disturbance vector
+([m / s**2])</li>
+<li>deltaz the upward component of the disturbance vector
+([m / s**2])</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.equatorial_radius">
+<code class="descname">equatorial_radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.equatorial_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>The equatorial radius of the ellipsoid (meters).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.flattening">
+<code class="descname">flattening</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.flattening" title="Permalink to this definition">¶</a></dt>
+<dd><p>The flattening of the ellipsoid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.geoid_height">
+<code class="descname">geoid_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.geoid_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the geoid height.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> – the geographic latitude (degrees)</li>
+<li><strong>lon</strong> – the geographic longitude (degrees)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><cite>N</cite> the height of the geoid above the reference ellipsoid
+(meters)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Some approximations are made in computing the geoid height so that the
+results of the NGA codes are reproduced accurately.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.gravity">
+<code class="descname">gravity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.gravity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the gravity at an arbitrary point above (or below)
+the ellipsoid.</p>
+<p>The function includes the effects of the earth’s rotation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> – the geographic latitude (degrees)</li>
+<li><strong>lon</strong> – the geographic longitude (degrees)</li>
+<li><strong>h</strong> – the height above the ellipsoid (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>W the sum of the gravitational and centrifugal potentials
+([m**2 / s**2])</li>
+<li>gx the easterly component of the acceleration ([m / s**2])</li>
+<li>gy the northerly component of the acceleration ([m / s**2])</li>
+<li>gz the upward component of the acceleration ([m / s**2]);
+this is usually negative</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.gravity_file">
+<code class="descname">gravity_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.gravity_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Full file name used to load the gravity model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.gravity_model_directory">
+<code class="descname">gravity_model_directory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.gravity_model_directory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the directory used to load the gravity model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.gravity_model_name">
+<code class="descname">gravity_model_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.gravity_model_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the “name” used to load the gravity model.</p>
+<p>“name” is the first argument of the constructor, but this may
+be overridden by the model file).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.mass_constant">
+<code class="descname">mass_constant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.mass_constant" title="Permalink to this definition">¶</a></dt>
+<dd><p>The mass constant of the model ([GM] = m**3 /s**2).</p>
+<p>It is the product of <cite>G</cite> the gravitational constant and <cite>M</cite> the
+mass of the earth (usually including the mass of the earth’s
+atmosphere).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.phi">
+<code class="descname">phi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.phi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the centrifugal acceleration in geocentric coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>y</strong> – geocentric coordinate of point (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>Phi, the centrifugal potential ([m**2 / s**2])</li>
+<li>fx the x component of the centrifugal acceleration (m / s**2])</li>
+<li>fy the y component of the centrifugal acceleration (m / s**2])</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.reference_mass_constant">
+<code class="descname">reference_mass_constant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.reference_mass_constant" title="Permalink to this definition">¶</a></dt>
+<dd><p>The mass constant of the reference ellipsoid.</p>
+<p>[GM] = m**3 / s**2.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.spherical_anomaly">
+<code class="descname">spherical_anomaly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.spherical_anomaly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the components of the gravity anomaly vector using
+the spherical approximation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lat</strong> – the geographic latitude (degrees)</li>
+<li><strong>lon</strong> – the geographic longitude (degrees)</li>
+<li><strong>h</strong> – the height above the ellipsoid (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>Dg01 the gravity anomaly ([m / s**2])</li>
+<li>xi the northerly component of the deflection of the
+vertical (degrees)</li>
+<li>eta the easterly component of the deflection of the
+vertical (degrees).</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The spherical approximation (see Heiskanen and Moritz,
+Sec 2-14) is used so that the results of the NGA codes are
+reproduced accurately.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.t">
+<code class="descname">t</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate disturbing potential in geocentric coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>y</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>z</strong> – geocentric coordinate of point (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">T = W - U, the disturbing potential (also called the
+anomalous potential) ([m**2 / s**2])</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.t_components">
+<code class="descname">t_components</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.t_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the components of the gravity disturbance in
+geocentric coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>y</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>z</strong> – geocentric coordinate of point (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>T = W - U, the disturbing potential (also called the
+anomalous potential) ([m**2 / s**2])</li>
+<li>deltaX the x component of the gravity disturbance
+([m / s**2])</li>
+<li>deltaY the Y component of the gravity disturbance
+([m / s**2])</li>
+<li>deltaZ the Z component of the gravity disturbance
+([m / s**2])</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.u">
+<code class="descname">u</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.u" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the components of the acceleration due to normal
+gravity and the centrifugal acceleration in geocentric coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>y</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>z</strong> – geocentric coordinate of point (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>U = V0 + Phi, the sum of the normal gravitational and
+centrifugal potentials ([m**2 / s**2])</li>
+<li>gammaX the x component of the normal acceleration ([m / s**2])</li>
+<li>gammaY the y component of the normal acceleration ([m / s**2])</li>
+<li>gammaZ the z component of the normal acceleration ([m / s**2])</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.v">
+<code class="descname">v</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the components of the gravity disturbance in
+geocentric coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>y</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>z</strong> – geocentric coordinate of point (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>V = W - Phi, the gravitational potential ([m**2 /  s**2])</li>
+<li>gx the x component of the acceleration ([m / s**2])</li>
+<li>gy the y component of the acceleration ([m / s**2])</li>
+<li>gz the z component of the acceleration ([m / s**2])</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.GravityModel.w">
+<code class="descname">w</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.GravityModel.w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the components of the acceleration due to gravity
+and the centrifugal acceleration in geocentric coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>y</strong> – geocentric coordinate of point (meters)</li>
+<li><strong>z</strong> – geocentric coordinate of point (meters)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>W = V + Phi, the sum of the gravitational and centrifugal
+potentials ([m**2 /  s**2])</li>
+<li>gx the x component of the acceleration ([m / s**2])</li>
+<li>gy the y component of the acceleration ([m / s**2])</li>
+<li>gz the z component of the acceleration ([m / s**2])</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="magnetic-filed-model">
+<h2>Magnetic filed model<a class="headerlink" href="#magnetic-filed-model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="geomodels.MagneticFieldModel">
+<em class="property">class </em><code class="descclassname">geomodels.</code><code class="descname">MagneticFieldModel</code><a class="headerlink" href="#geomodels.MagneticFieldModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Magnetic Field Model.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – the name of the model</li>
+<li><strong>path</strong> – (optional) directory for data file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="geomodels.error.html#geomodels.error.GeographicErr" title="geomodels.error.GeographicErr"><strong>GeographicErr</strong></a> – if the data file cannot be found, is unreadable, or is corrupt</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.8)"><strong>MemoryError</strong></a> – if the memory necessary for storing the model can’t be allocated</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>A filename is formed by appending “.wmm” (World Magnetic Model) to
+the name.  If path is specified (and is non-empty), then the file
+is loaded from directory, path.  Otherwise the path is given by the
+<a class="reference internal" href="#geomodels.MagneticFieldModel.default_magnetic_path" title="geomodels.MagneticFieldModel.default_magnetic_path"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MagneticFieldModel.default_magnetic_path()</span></code></a>.</p>
+<p>This file contains the metadata which specifies the properties of the
+model.  The coefficients for the spherical harmonic sums are obtained
+from a file obtained by appending “.cof” to metadata file (so the
+filename ends in “.wwm.cof”).</p>
+<p>The model is not tied to a particular ellipsoidal model of the earth.
+The final earth argument to the constructor specifies an ellipsoid to
+allow geodetic coordinates to the transformed into the spherical
+coordinates used in the spherical harmonic sum.</p>
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.datetime">
+<code class="descname">datetime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return date of the model.</p>
+<p>Return date of the model, if available, from the ReleaseDate
+field in the data file; if absent, return “UNKNOWN”.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.MagneticFieldModel.default_magnetic_name">
+<em class="property">static </em><code class="descname">default_magnetic_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.default_magnetic_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default name for the magnetic model.</p>
+<p>This is the value of the environment variable
+<cite>GEOGRAPHICLIB_MAGNETIC_NAME</cite>, if set; otherwise,
+it is “wmm2015”.
+The <a class="reference internal" href="#geomodels.MagneticFieldModel" title="geomodels.MagneticFieldModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">MagneticFieldModel</span></code></a> class does not use this function;
+it is just provided as a convenience for a calling program
+when constructing a <a class="reference internal" href="#geomodels.MagneticFieldModel" title="geomodels.MagneticFieldModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">MagneticFieldModel</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.MagneticFieldModel.default_magnetic_path">
+<em class="property">static </em><code class="descname">default_magnetic_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.default_magnetic_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the default path for magnetic model data files.</p>
+<p>This is the value of the environment variable
+<cite>GEOGRAPHICLIB_MAGNETIC_PATH</cite>, if set; otherwise, it is
+<cite>$GEOGRAPHICLIB_DATA/magnetic</cite> if the environment variable
+<cite>GEOGRAPHICLIB_DATA</cite> is set; otherwise, it is a compile-time
+default.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.description">
+<code class="descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the description of the magnetic model.</p>
+<p>Return the description of the magnetic model if available,
+from the <a class="reference internal" href="#geomodels.MagneticFieldModel.description" title="geomodels.MagneticFieldModel.description"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MagneticFieldModel.description()</span></code></a> file in the
+data file; if absent, return “NONE”.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="geomodels.MagneticFieldModel.field_components">
+<em class="property">static </em><code class="descname">field_components</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.field_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute various quantities dependent on the magnetic field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>Bx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – the x (easterly) component of the magnetic field (nT)</li>
+<li><strong>By</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – the y (northerly) component of the magnetic field (nT)</li>
+<li><strong>Bz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – the z (vertical, up positive) component of the magnetic field (nT)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>H the horizontal magnetic field (nT)</li>
+<li>F the total magnetic field (nT)</li>
+<li>D the declination of the field (degrees east of north)</li>
+<li>I the inclination of the field (degrees down from horizontal)</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.flattening">
+<code class="descname">flattening</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.flattening" title="Permalink to this definition">¶</a></dt>
+<dd><p>The flattening of the ellipsoid.</p>
+<p>This is the value inherited from the Geocentric object
+used in the constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.magnetic_file">
+<code class="descname">magnetic_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.magnetic_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Full file name used to load the magnetic model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.magnetic_model_directory">
+<code class="descname">magnetic_model_directory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.magnetic_model_directory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Directory used to load the magnetic model.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.magnetic_model_name">
+<code class="descname">magnetic_model_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.magnetic_model_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name used to load the magnetic model.</p>
+<p>The ‘name’ used to load the magnetic model (from the first
+argument of the constructor, but this may be overridden by
+the model file).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.major_radius">
+<code class="descname">major_radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.major_radius" title="Permalink to this definition">¶</a></dt>
+<dd><p>The equatorial radius of the ellipsoid (meters).</p>
+<p>This is the value of ‘a’ inherited from the Geocentric object
+used in the constructor.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.max_height">
+<code class="descname">max_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.max_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum height.</p>
+<p>The maximum height above the ellipsoid (in meters) for which
+this MagneticModel should be used.</p>
+<p>Because the model will typically provide useful results
+slightly outside the range of allowed heights,
+no check of t argument is made by the
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">MagneticFieldModel.__call__()</span></code> operator.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.max_time">
+<code class="descname">max_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.max_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum time (in years) for which this model should be used.</p>
+<p>Because the model will typically provide useful results
+slightly outside the range of allowed times,
+no check of the <cite>t</cite> argument is made by the
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">MagneticFieldModel.__call__()</span></code> operator.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.min_height">
+<code class="descname">min_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.min_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum height.</p>
+<p>The minimum height above the ellipsoid (in meters) for which
+this MagneticModel should be used.</p>
+<p>Because the model will typically provide useful results
+slightly outside the range of allowed heights,
+no check of t argument is made by the
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">MagneticFieldModel.__call__()</span></code> operator.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomodels.MagneticFieldModel.min_time">
+<code class="descname">min_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.MagneticFieldModel.min_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum time (in years) for which this model should be used.</p>
+<p>Because the model will typically provide useful results
+slightly outside the range of allowed times,
+no check of t argument is made by the
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">MagneticFieldModel.__call__()</span></code> operator.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="geomodels.lib_version_info">
+<code class="descclassname">geomodels.</code><code class="descname">lib_version_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.lib_version_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the (major, minor, patch) version of GeographicLib.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">the returned information refers to the version of the
+GeographicLib library used at build time.
+The version of the shared library actually used at runtime could
+be different.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.lib_version_str">
+<code class="descclassname">geomodels.</code><code class="descname">lib_version_str</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomodels.lib_version_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the version string of GeographicLib.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">the returned information refers to the version of the
+GeographicLib library used at build time.
+The version of the shared library actually used at runtime could
+be different.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.test">
+<code class="descclassname">geomodels.</code><code class="descname">test</code><span class="sig-paren">(</span><em>verbosity: int = 1</em>, <em>failfast: bool = False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/tests.html#test"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the test suite for the geomodels package.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>verbosity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – verbosity level (higher is more verbose).
+Default: 1.</li>
+<li><strong>failfast</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – stop the test run on the first error or failure.
+Default: False.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="geomodels.cli.html">geomodels.cli module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geomodels.data.html">geomodels.data module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geomodels.error.html">geomodels.error module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geomodels.wmmf.html">geomodels.wmmf module</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command line interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#geoid-model">Geoid model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graviti-model">Graviti model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#magnetic-filed-model">Magnetic filed model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.cli.html">geomodels.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.data.html">geomodels.data module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.error.html">geomodels.error module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.wmmf.html">geomodels.wmmf module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../cli.html" title="previous chapter">Command line interface</a></li>
+      <li>Next: <a href="geomodels.cli.html" title="next chapter">geomodels.cli module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/api/geomodels.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

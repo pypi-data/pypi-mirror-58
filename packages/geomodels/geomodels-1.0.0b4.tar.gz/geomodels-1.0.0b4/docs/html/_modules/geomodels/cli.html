@@ -1,0 +1,498 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels.cli &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for geomodels.cli</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="sd">&quot;&quot;&quot;Command Line Interface (CLI) for the geomodels package.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">enum</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Optional</span>
+
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">__version__</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">tests</span>
+<span class="kn">from</span> <span class="nn">.data</span> <span class="k">import</span> <span class="n">get_default_data_path</span><span class="p">,</span> <span class="n">get_base_url</span><span class="p">,</span> <span class="n">install</span>
+<span class="kn">from</span> <span class="nn">.data</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">EModelGroup</span><span class="p">,</span> <span class="n">EModelType</span><span class="p">,</span> <span class="n">EGeoidModel</span><span class="p">,</span> <span class="n">EGravityModel</span><span class="p">,</span> <span class="n">EMagneticModel</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">.wmmf</span> <span class="k">import</span> <span class="n">import_igrf_txt</span>
+<span class="kn">from</span> <span class="nn">.tests</span> <span class="k">import</span> <span class="n">print_versions</span>
+<span class="kn">from</span> <span class="nn">._typing</span> <span class="k">import</span> <span class="n">PathType</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">argcomplete</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">argcomplete</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<span class="n">EX_FAILURE</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">EX_INTERRUPT</span> <span class="o">=</span> <span class="mi">130</span>
+
+
+<span class="n">PROG</span> <span class="o">=</span> <span class="n">__package__</span> <span class="o">+</span> <span class="s1">&#39;-cli&#39;</span>
+<span class="n">LOGFMT</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%(levelname)s</span><span class="s1">: </span><span class="si">%(message)s</span><span class="s1">&#39;</span>
+
+
+<div class="viewcode-block" id="EInfoMode"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.EInfoMode">[docs]</a><span class="k">class</span> <span class="nc">EInfoMode</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">INFO</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+    <span class="n">DATA</span> <span class="o">=</span> <span class="s1">&#39;data&#39;</span>
+    <span class="n">ALL</span> <span class="o">=</span> <span class="s1">&#39;all&#39;</span></div>
+
+
+<span class="k">def</span> <span class="nf">_format_data_info</span><span class="p">(</span><span class="n">datadir</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">datadir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">datadir</span> <span class="o">=</span> <span class="n">get_default_data_path</span><span class="p">()</span>
+
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="s1">&#39;data directory: </span><span class="si">{datadir!r}</span><span class="s1">&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">modelenum</span> <span class="ow">in</span> <span class="p">(</span><span class="n">EGeoidModel</span><span class="p">,</span> <span class="n">EGravityModel</span><span class="p">,</span> <span class="n">EMagneticModel</span><span class="p">):</span>
+        <span class="n">modeltype</span> <span class="o">=</span> <span class="n">modelenum</span><span class="o">.</span><span class="n">get_model_type</span><span class="p">()</span><span class="o">.</span><span class="n">value</span>
+        <span class="n">modeltype_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">datadir</span><span class="p">,</span> <span class="n">modeltype</span><span class="p">)</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;* model: </span><span class="si">{modeltype}</span><span class="s1"> (</span><span class="si">{modeltype_dir!r}</span><span class="s1">)&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">modelenum</span><span class="p">:</span>
+            <span class="n">pattern</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">modeltype_dir</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">value</span> <span class="o">+</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+            <span class="n">installed</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">pattern</span><span class="p">))</span>
+            <span class="n">installed</span> <span class="o">=</span> <span class="s1">&#39;INSTALLED &#39;</span> <span class="k">if</span> <span class="n">installed</span> <span class="k">else</span> <span class="s1">&#39;NOT INSTALLED&#39;</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;  </span><span class="si">{item.name:12s}</span><span class="s1"> - </span><span class="si">{installed}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="info"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.info">[docs]</a><span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">EInfoMode</span><span class="o">.</span><span class="n">ALL</span><span class="p">,</span> <span class="n">datadir</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Provide information about the platform, library versions and</span>
+<span class="sd">    installed data.&quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">mode</span> <span class="ow">in</span> <span class="p">(</span><span class="n">EInfoMode</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span> <span class="n">EInfoMode</span><span class="o">.</span><span class="n">ALL</span><span class="p">):</span>
+        <span class="n">print_versions</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">mode</span> <span class="ow">in</span> <span class="p">(</span><span class="n">EInfoMode</span><span class="o">.</span><span class="n">DATA</span><span class="p">,</span> <span class="n">EInfoMode</span><span class="o">.</span><span class="n">ALL</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">_format_data_info</span><span class="p">(</span><span class="n">datadir</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="install_data"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.install_data">[docs]</a><span class="k">def</span> <span class="nf">install_data</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">datadir</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">base_url</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">no_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Download and install the data necessary for models computation.</span>
+
+<span class="sd">    GeoModels uses external data to perform geoid, gravity and magnetic</span>
+<span class="sd">    field computations.</span>
+
+<span class="sd">    It is possible to install different subsets of data:</span>
+
+<span class="sd">    :minimal:</span>
+<span class="sd">        only data for the default model of each kind (geoid,</span>
+<span class="sd">        gravity and magnetic field) are installed,</span>
+<span class="sd">    :recommended:</span>
+<span class="sd">        install the `minimal` set of data (see above) plus few</span>
+<span class="sd">        additional and commonly used data (it is guaranteed that</span>
+<span class="sd">        the `recommended` subset always includes all data that</span>
+<span class="sd">        are necessary to run the test suite),</span>
+<span class="sd">    :all:</span>
+<span class="sd">        install all available data (about 670MB of disk space</span>
+<span class="sd">        required),</span>
+<span class="sd">    :geoids:</span>
+<span class="sd">        install data for all supported geoids,</span>
+<span class="sd">    :gravity:</span>
+<span class="sd">        install data for all supported gravity models,</span>
+<span class="sd">    :magnetic:</span>
+<span class="sd">        install data for all supported magnetic field models.</span>
+
+<span class="sd">    Additionally the it is possible to install data for a single model.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">datadir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">datadir</span> <span class="o">=</span> <span class="n">get_default_data_path</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">base_url</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">base_url</span> <span class="o">=</span> <span class="n">get_base_url</span><span class="p">()</span>
+
+    <span class="n">enums</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">EModelGroup</span><span class="p">,</span>
+        <span class="n">EModelType</span><span class="p">,</span>
+        <span class="n">EGeoidModel</span><span class="p">,</span>
+        <span class="n">EGravityModel</span><span class="p">,</span>
+        <span class="n">EMagneticModel</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">enumtype</span> <span class="ow">in</span> <span class="n">enums</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">model</span> <span class="o">=</span> <span class="n">enumtype</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;unexpected model: </span><span class="si">{model!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="n">progress</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">no_progress</span>
+    <span class="n">install</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">datadir</span><span class="p">,</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="n">progress</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="import_igrf"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.import_igrf">[docs]</a><span class="k">def</span> <span class="nf">import_igrf</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">PathType</span><span class="p">,</span> <span class="n">outpath</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PathType</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">force</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Import magnetic field data from IGRF text format.</span>
+
+<span class="sd">    Import Spherical Harmonics coefficients for the IGRF magnetic field</span>
+<span class="sd">    model from text file in IGRF standard format.</span>
+
+<span class="sd">    See: https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">wmmdata</span> <span class="o">=</span> <span class="n">import_igrf_txt</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">outpath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">outpath</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">get_default_data_path</span><span class="p">())</span> <span class="o">/</span> <span class="s1">&#39;magnetic&#39;</span>
+
+    <span class="n">wmmdata</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">outpath</span><span class="p">,</span> <span class="n">force</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="test"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.test">[docs]</a><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">datadir</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PathType</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+         <span class="n">verbosity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">failfast</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Run the test suite for the geomodels package.&quot;&quot;&quot;</span>
+    <span class="n">old_geographiclib_data</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;GEOGRAPHICLIB_DATA&#39;</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">datadir</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;GEOGRAPHICLIB_DATA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datadir</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">tests</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">verbosity</span><span class="p">,</span> <span class="n">failfast</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">old_geographiclib_data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;GEOGRAPHICLIB_DATA&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;GEOGRAPHICLIB_DATA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">old_geographiclib_data</span></div>
+
+
+<span class="k">def</span> <span class="nf">_set_logging_control_args</span><span class="p">(</span><span class="n">parser</span><span class="p">,</span> <span class="n">default_loglevel</span><span class="o">=</span><span class="s1">&#39;WARNING&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Setup command line options for logging control.&quot;&quot;&quot;</span>
+
+    <span class="n">loglevels</span> <span class="o">=</span> <span class="p">[</span><span class="n">logging</span><span class="o">.</span><span class="n">getLevelName</span><span class="p">(</span><span class="n">level</span><span class="p">)</span> <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">10</span><span class="p">)]</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--loglevel&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">default_loglevel</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">loglevels</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;logging level (default: </span><span class="si">%(default)s</span><span class="s1">)&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-q&#39;</span><span class="p">,</span> <span class="s1">&#39;--quiet&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;loglevel&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span>
+        <span class="n">const</span><span class="o">=</span><span class="s1">&#39;ERROR&#39;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;suppress standard output messages, only errors are printed &#39;</span>
+             <span class="s1">&#39;to screen (set &quot;loglevel&quot; to &quot;ERROR&quot;)&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="s1">&#39;--verbose&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;loglevel&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="s1">&#39;INFO&#39;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;print verbose output messages (set &quot;loglevel&quot; to &quot;INFO&quot;)&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--debug&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;loglevel&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="s1">&#39;DEBUG&#39;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;print debug messages (set &quot;loglevel&quot; to &quot;DEBUG&quot;)&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">parser</span>
+
+
+<div class="viewcode-block" id="get_info_parser"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.get_info_parser">[docs]</a><span class="k">def</span> <span class="nf">get_info_parser</span><span class="p">(</span><span class="n">parser</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span>
+    <span class="n">synopsis</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="vm">__doc__</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">doc</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="vm">__doc__</span>
+
+    <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">prog</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="n">synopsis</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">set_defaults</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">info</span><span class="p">)</span>
+
+    <span class="c1"># command line options</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-d&#39;</span><span class="p">,</span> <span class="s1">&#39;--datadir&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">get_default_data_path</span><span class="p">(),</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specifies where the model data are stored &#39;</span>
+             <span class="s1">&#39;(default: </span><span class="si">%(default)r</span><span class="s1">).&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-a&#39;</span><span class="p">,</span> <span class="s1">&#39;--all&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;mode&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="n">EInfoMode</span><span class="o">.</span><span class="n">ALL</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="n">EInfoMode</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;show both versions and platform info and also information &#39;</span>
+             <span class="s1">&#39;about installed data&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--data&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;mode&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_const&#39;</span><span class="p">,</span> <span class="n">const</span><span class="o">=</span><span class="n">EInfoMode</span><span class="o">.</span><span class="n">DATA</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;show info about installed data&#39;</span><span class="p">)</span>
+
+    <span class="c1"># positional arguments</span>
+    <span class="c1"># ...</span>
+
+    <span class="k">return</span> <span class="n">parser</span></div>
+
+
+<div class="viewcode-block" id="get_install_data_parser"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.get_install_data_parser">[docs]</a><span class="k">def</span> <span class="nf">get_install_data_parser</span><span class="p">(</span><span class="n">parser</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;install-data&#39;</span>
+    <span class="n">synopsis</span> <span class="o">=</span> <span class="n">install_data</span><span class="o">.</span><span class="vm">__doc__</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">doc</span> <span class="o">=</span> <span class="n">install_data</span><span class="o">.</span><span class="vm">__doc__</span>
+
+    <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
+            <span class="n">prog</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">,</span>
+            <span class="n">formatter_class</span><span class="o">=</span><span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span>
+            <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="n">synopsis</span><span class="p">,</span>
+            <span class="n">formatter_class</span><span class="o">=</span><span class="n">argparse</span><span class="o">.</span><span class="n">RawDescriptionHelpFormatter</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">set_defaults</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">install_data</span><span class="p">)</span>
+
+    <span class="c1"># command line options</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-b&#39;</span><span class="p">,</span> <span class="s1">&#39;--base-url&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">get_base_url</span><span class="p">(),</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specifies the base URL for the download (default: </span><span class="si">%(default)r</span><span class="s1">).&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-d&#39;</span><span class="p">,</span> <span class="s1">&#39;--datadir&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">get_default_data_path</span><span class="p">(),</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specifies where the datasets should be stored &#39;</span>
+             <span class="s1">&#39;(default: </span><span class="si">%(default)r</span><span class="s1">).&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--no-progress&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;suppress progress bar display&#39;</span><span class="p">)</span>
+
+    <span class="c1"># positional arguments</span>
+    <span class="n">choices</span> <span class="o">=</span> <span class="p">[</span><span class="n">model</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">EModelGroup</span><span class="p">]</span>
+    <span class="n">choices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">EModelType</span><span class="p">)</span>
+    <span class="n">choices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">EGeoidModel</span><span class="p">)</span>
+    <span class="n">choices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">EGravityModel</span><span class="p">)</span>
+    <span class="n">choices</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">EMagneticModel</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">choices</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;model(s) to be installed&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">parser</span></div>
+
+
+<div class="viewcode-block" id="get_import_igrf_parser"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.get_import_igrf_parser">[docs]</a><span class="k">def</span> <span class="nf">get_import_igrf_parser</span><span class="p">(</span><span class="n">parser</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;import-igrf&#39;</span>
+    <span class="n">doc</span> <span class="o">=</span> <span class="n">import_igrf</span><span class="o">.</span><span class="vm">__doc__</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">synopsis</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">prog</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="n">synopsis</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">set_defaults</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">import_igrf</span><span class="p">)</span>
+
+    <span class="c1"># command line options</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="s1">&#39;--outpath&#39;</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">get_default_data_path</span><span class="p">())</span> <span class="o">/</span> <span class="s1">&#39;magnetic&#39;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specifies the output data path (default: &quot;</span><span class="si">%(default)s</span><span class="s1">&quot;).&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--force&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;overwrite existing files (default: </span><span class="si">%(default)s</span><span class="s1">).&#39;</span><span class="p">)</span>
+
+    <span class="c1"># positional arguments</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;path&#39;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;path or URL of the IGRF text file&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">parser</span></div>
+
+
+<div class="viewcode-block" id="get_test_parser"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.get_test_parser">[docs]</a><span class="k">def</span> <span class="nf">get_test_parser</span><span class="p">(</span><span class="n">parser</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;test&#39;</span>
+    <span class="n">doc</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="vm">__doc__</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">synopsis</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">prog</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_parser</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">doc</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="n">synopsis</span><span class="p">)</span>
+
+    <span class="n">parser</span><span class="o">.</span><span class="n">set_defaults</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">test</span><span class="p">)</span>
+
+    <span class="c1"># command line options</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;-d&#39;</span><span class="p">,</span> <span class="s1">&#39;--datadir&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">get_default_data_path</span><span class="p">(),</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;specifies where the model data are stored &#39;</span>
+             <span class="s1">&#39;(default: </span><span class="si">%(default)r</span><span class="s1">).&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--verbosity&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;verbosity level for the unittest runner (default: </span><span class="si">%(default)s</span><span class="s1">).&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--failfast&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;stop the test run on the first error or failure &#39;</span>
+             <span class="s1">&#39;(default: </span><span class="si">%(default)s</span><span class="s1">).&#39;</span><span class="p">)</span>
+
+    <span class="c1"># positional arguments</span>
+    <span class="c1"># ...</span>
+
+    <span class="k">return</span> <span class="n">parser</span></div>
+
+
+<div class="viewcode-block" id="get_parser"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.get_parser">[docs]</a><span class="k">def</span> <span class="nf">get_parser</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Instantiate the command line argument parser.&quot;&quot;&quot;</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="vm">__doc__</span><span class="p">,</span> <span class="n">prog</span><span class="o">=</span><span class="n">PROG</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s1">&#39;--version&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;version&#39;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(prog)s</span><span class="s1"> v&#39;</span> <span class="o">+</span> <span class="n">__version__</span><span class="p">)</span>
+
+    <span class="c1"># Command line options</span>
+    <span class="n">_set_logging_control_args</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
+
+    <span class="c1"># Positional arguments</span>
+    <span class="c1"># ...</span>
+
+    <span class="c1"># Sub-command management</span>
+    <span class="n">subparsers</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">add_subparsers</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;sub-commands&#39;</span><span class="p">)</span>  <span class="c1"># dest=&#39;func&#39;</span>
+    <span class="n">get_info_parser</span><span class="p">(</span><span class="n">subparsers</span><span class="p">)</span>
+    <span class="n">get_install_data_parser</span><span class="p">(</span><span class="n">subparsers</span><span class="p">)</span>
+    <span class="n">get_import_igrf_parser</span><span class="p">(</span><span class="n">subparsers</span><span class="p">)</span>
+    <span class="n">get_test_parser</span><span class="p">(</span><span class="n">subparsers</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">argcomplete</span><span class="p">:</span>
+        <span class="n">argcomplete</span><span class="o">.</span><span class="n">autocomplete</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">parser</span></div>
+
+
+<div class="viewcode-block" id="parse_args"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.parse_args">[docs]</a><span class="k">def</span> <span class="nf">parse_args</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">parser</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse command line arguments.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">parser</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parser</span> <span class="o">=</span> <span class="n">get_parser</span><span class="p">()</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)</span>
+
+    <span class="c1"># Common pre-processing of parsed arguments and consistency checks</span>
+    <span class="c1"># ...</span>
+
+    <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s1">&#39;func&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;no sub-commnd specified.&#39;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">args</span></div>
+
+
+<span class="k">def</span> <span class="nf">_get_kwargs</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">kwargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">_get_kwargs</span><span class="p">())</span>
+    <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;loglevel&#39;</span><span class="p">)</span>
+    <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;func&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">kwargs</span>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../api/geomodels.cli.html#geomodels.cli.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">argv</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Main CLI interface.&quot;&quot;&quot;</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="n">LOGFMT</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">captureWarnings</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_args</span><span class="p">(</span><span class="n">argv</span> <span class="k">if</span> <span class="n">argv</span> <span class="k">else</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">loglevel</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;args: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+
+        <span class="n">func</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">func</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="n">_get_kwargs</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{!r}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">exc</span><span class="p">))</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;stacktrace:&#39;</span><span class="p">,</span> <span class="n">exc_info</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">EX_FAILURE</span>
+    <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;Keyboard interrupt received: exit the program&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">EX_INTERRUPT</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/geomodels.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

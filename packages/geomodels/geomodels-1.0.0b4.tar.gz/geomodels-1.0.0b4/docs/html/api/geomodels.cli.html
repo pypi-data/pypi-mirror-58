@@ -1,0 +1,254 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels.cli module &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="geomodels.data module" href="geomodels.data.html" />
+    <link rel="prev" title="geomodels package" href="geomodels.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-geomodels.cli">
+<span id="geomodels-cli-module"></span><h1>geomodels.cli module<a class="headerlink" href="#module-geomodels.cli" title="Permalink to this headline">¶</a></h1>
+<p>Command Line Interface (CLI) for the geomodels package.</p>
+<dl class="class">
+<dt id="geomodels.cli.EInfoMode">
+<em class="property">class </em><code class="descclassname">geomodels.cli.</code><code class="descname">EInfoMode</code><a class="reference internal" href="../_modules/geomodels/cli.html#EInfoMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.EInfoMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="geomodels.cli.EInfoMode.ALL">
+<code class="descname">ALL</code><em class="property"> = 'all'</em><a class="headerlink" href="#geomodels.cli.EInfoMode.ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.cli.EInfoMode.DATA">
+<code class="descname">DATA</code><em class="property"> = 'data'</em><a class="headerlink" href="#geomodels.cli.EInfoMode.DATA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.cli.EInfoMode.INFO">
+<code class="descname">INFO</code><em class="property"> = 'info'</em><a class="headerlink" href="#geomodels.cli.EInfoMode.INFO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.get_import_igrf_parser">
+<code class="descclassname">geomodels.cli.</code><code class="descname">get_import_igrf_parser</code><span class="sig-paren">(</span><em>parser=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#get_import_igrf_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.get_import_igrf_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.get_info_parser">
+<code class="descclassname">geomodels.cli.</code><code class="descname">get_info_parser</code><span class="sig-paren">(</span><em>parser=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#get_info_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.get_info_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.get_install_data_parser">
+<code class="descclassname">geomodels.cli.</code><code class="descname">get_install_data_parser</code><span class="sig-paren">(</span><em>parser=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#get_install_data_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.get_install_data_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.get_parser">
+<code class="descclassname">geomodels.cli.</code><code class="descname">get_parser</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#get_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.get_parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiate the command line argument parser.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.get_test_parser">
+<code class="descclassname">geomodels.cli.</code><code class="descname">get_test_parser</code><span class="sig-paren">(</span><em>parser=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#get_test_parser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.get_test_parser" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.import_igrf">
+<code class="descclassname">geomodels.cli.</code><code class="descname">import_igrf</code><span class="sig-paren">(</span><em>path: Union[str, os.PathLike], outpath: Union[str, os.PathLike, None] = None, force: bool = False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#import_igrf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.import_igrf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import magnetic field data from IGRF text format.</p>
+<p>Import Spherical Harmonics coefficients for the IGRF magnetic field
+model from text file in IGRF standard format.</p>
+<p>See: <a class="reference external" href="https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html">https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html</a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.info">
+<code class="descclassname">geomodels.cli.</code><code class="descname">info</code><span class="sig-paren">(</span><em>mode=&lt;EInfoMode.ALL: 'all'&gt;</em>, <em>datadir=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide information about the platform, library versions and
+installed data.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.install_data">
+<code class="descclassname">geomodels.cli.</code><code class="descname">install_data</code><span class="sig-paren">(</span><em>model</em>, <em>datadir=None</em>, <em>base_url=None</em>, <em>no_progress=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#install_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.install_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download and install the data necessary for models computation.</p>
+<p>GeoModels uses external data to perform geoid, gravity and magnetic
+field computations.</p>
+<p>It is possible to install different subsets of data:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Minimal:</th><td class="field-body">only data for the default model of each kind (geoid,
+gravity and magnetic field) are installed,</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Recommended:</th><td class="field-body">install the <cite>minimal</cite> set of data (see above) plus few
+additional and commonly used data (it is guaranteed that
+the <cite>recommended</cite> subset always includes all data that
+are necessary to run the test suite),</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">All:</th><td class="field-body">install all available data (about 670MB of disk space
+required),</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Geoids:</th><td class="field-body">install data for all supported geoids,</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Gravity:</th><td class="field-body">install data for all supported gravity models,</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Magnetic:</th><td class="field-body">install data for all supported magnetic field models.</td>
+</tr>
+</tbody>
+</table>
+<p>Additionally the it is possible to install data for a single model.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.main">
+<code class="descclassname">geomodels.cli.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*argv</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main CLI interface.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.parse_args">
+<code class="descclassname">geomodels.cli.</code><code class="descname">parse_args</code><span class="sig-paren">(</span><em>args=None</em>, <em>namespace=None</em>, <em>parser=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#parse_args"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.parse_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse command line arguments.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.cli.test">
+<code class="descclassname">geomodels.cli.</code><code class="descname">test</code><span class="sig-paren">(</span><em>datadir: Union[str</em>, <em>os.PathLike</em>, <em>None] = None</em>, <em>verbosity: int = 1</em>, <em>failfast: bool = False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/cli.html#test"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.cli.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the test suite for the geomodels package.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command line interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="geomodels.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#geoid-model">Geoid model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#graviti-model">Graviti model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#magnetic-filed-model">Magnetic filed model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#functions">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="geomodels.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">geomodels.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.data.html">geomodels.data module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.error.html">geomodels.error module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.wmmf.html">geomodels.wmmf module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="geomodels.html">geomodels package</a><ul>
+      <li>Previous: <a href="geomodels.html" title="previous chapter">geomodels package</a></li>
+      <li>Next: <a href="geomodels.data.html" title="next chapter">geomodels.data module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/api/geomodels.cli.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

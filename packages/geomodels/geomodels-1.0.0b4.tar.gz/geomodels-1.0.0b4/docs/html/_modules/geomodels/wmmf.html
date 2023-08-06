@@ -1,0 +1,533 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels.wmmf &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for geomodels.wmmf</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="sd">&quot;&quot;&quot;World Magnetic Model Format tools.</span>
+
+<span class="sd">Classes and function for reading and writing files in World Magnetic</span>
+<span class="sd">Model Format and in IGRF text format.</span>
+
+<span class="sd">See: https://geographiclib.sourceforge.io/html/magnetic.html#magneticformat</span>
+<span class="sd">and https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">typing</span>
+<span class="kn">import</span> <span class="nn">struct</span>
+<span class="kn">import</span> <span class="nn">fnmatch</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">OrderedDict</span><span class="p">,</span> <span class="n">namedtuple</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="k">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="k">import</span> <span class="n">urlsplit</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="k">import</span> <span class="n">urlopen</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">._typing</span> <span class="k">import</span> <span class="n">PathType</span>
+
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;MetaData&#39;</span><span class="p">,</span> <span class="s1">&#39;SphCoeffSet&#39;</span><span class="p">,</span> <span class="s1">&#39;WmmData&#39;</span><span class="p">,</span> <span class="s1">&#39;import_igrf_txt&#39;</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="MetaData"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.MetaData">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">MetaData</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;World Magnetic Model Format metadata.&quot;&quot;&quot;</span>
+
+    <span class="n">Name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;N/A&#39;</span>
+    <span class="n">Description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;International Geomagnetic Reference Field&#39;</span>
+    <span class="n">URL</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;http://ngdc.noaa.gov/IAGA/vmod/igrf.html&#39;</span>
+    <span class="n">Publisher</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;International Association of Geomagnetism and Aeronomy&#39;</span>
+    <span class="n">ReleaseDate</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;N/A&#39;</span>
+    <span class="n">DataCutOff</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;N/A&#39;</span>
+    <span class="n">ConversionDate</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;N/A&#39;</span>
+    <span class="n">DataVersion</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">Radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">6371200</span>
+    <span class="n">NumModels</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Epoch</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1900</span>
+    <span class="n">DeltaEpoch</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">MinTime</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">MaxTime</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">MinHeight</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1000</span>
+    <span class="n">MaxHeight</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">600000</span>
+    <span class="n">NumConstants</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Normalization</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">ID</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;N/A&#39;</span>
+    <span class="n">Type</span> <span class="o">=</span> <span class="s1">&#39;linear&#39;</span>
+    <span class="n">ByteOrder</span> <span class="o">=</span> <span class="s1">&#39;little&#39;</span>
+    <span class="n">N</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">M</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">FORMAT_VERSION</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="n">_DATEFMT</span> <span class="o">=</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span>
+
+<div class="viewcode-block" id="MetaData.load"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.MetaData.load">[docs]</a>    <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="n">PathType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Load a metadata file in WMM format and return a MetaData object.&quot;&quot;&quot;</span>
+        <span class="n">type_map</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">get_type_hints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
+            <span class="n">format_</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">format_</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;WMMF-1&#39;</span><span class="p">,</span> <span class="s1">&#39;WMMF-2&#39;</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;invalid format: </span><span class="si">{format_!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">FORMAT_VERSION</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">format_</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fd</span><span class="p">:</span>
+                <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+                <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+                    <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;unexpected field: </span><span class="si">{name!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+                    <span class="k">continue</span>
+                <span class="k">if</span> <span class="n">callable</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)):</span>
+                    <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+                        <span class="n">f</span><span class="s1">&#39;field name conflicts with method name: </span><span class="si">{name!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+                    <span class="k">continue</span>
+                <span class="n">field_type</span> <span class="o">=</span> <span class="n">type_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+                <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">field_type</span><span class="p">(</span><span class="n">value</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="MetaData.get_years"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.MetaData.get_years">[docs]</a>    <span class="k">def</span> <span class="nf">get_years</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Return the list of years associated to teh models.&quot;&quot;&quot;</span>
+        <span class="n">years</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Epoch</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Epoch</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">DeltaEpoch</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">NumModels</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">DeltaEpoch</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">years</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_generation_str</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="o">!=</span> <span class="s1">&#39;N/A&#39;</span><span class="p">:</span>
+            <span class="n">generation</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Name</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">generation</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
+                <span class="n">generation</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{generation}</span><span class="s1">st Generation&#39;</span>
+            <span class="k">elif</span> <span class="n">generation</span> <span class="o">==</span> <span class="s1">&#39;2&#39;</span><span class="p">:</span>
+                <span class="n">generation</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{generation}</span><span class="s1">nd Generation&#39;</span>
+            <span class="k">elif</span> <span class="n">generation</span> <span class="o">==</span> <span class="s1">&#39;3&#39;</span><span class="p">:</span>
+                <span class="n">generation</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{generation}</span><span class="s1">rd Generation&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">assert</span> <span class="s1">&#39;0&#39;</span> <span class="o">&lt;=</span> <span class="n">generation</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="s1">&#39;9&#39;</span>
+                <span class="n">generation</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{generation}</span><span class="s1">th Generation&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">generation</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">generation</span>
+
+<div class="viewcode-block" id="MetaData.get_id"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.MetaData.get_id">[docs]</a>    <span class="k">def</span> <span class="nf">get_id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return the model ID (eventually inferred by the model name).&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">ID</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">ID</span> <span class="o">==</span> <span class="s1">&#39;N/A&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">Name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;igrf&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">6</span><span class="p">:</span>
+                <span class="n">id_</span> <span class="o">=</span> <span class="s1">&#39;N/A&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">id_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;-A&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">id_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ID</span>
+        <span class="k">return</span> <span class="n">id_</span></div>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">upper_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+        <span class="n">description</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Description</span>
+        <span class="k">if</span> <span class="n">description</span> <span class="o">==</span> <span class="s1">&#39;International Geomagnetic Reference Field&#39;</span><span class="p">:</span>
+            <span class="n">gen</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generation_str</span><span class="p">()</span>
+            <span class="n">description</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;</span><span class="si">{description}</span><span class="s1"> </span><span class="si">{gen}</span><span class="s1">&#39;</span>
+
+        <span class="n">id_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_id</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">f</span><span class="s1">&#39;&#39;&#39;</span><span class="se">\</span>
+<span class="s1">WMMF-</span><span class="si">{self.FORMAT_VERSION}</span><span class="s1"></span>
+<span class="s1"># A World Magnetic Model (Format </span><span class="si">{self.FORMAT_VERSION}</span><span class="s1">) file.  </span><span class="se">\</span>
+<span class="s1">For documentation on the</span>
+<span class="s1"># format of this file see</span>
+<span class="s1"># http://geographiclib.sf.net/html/magnetic.html#magneticformat</span>
+<span class="s1">Name            </span><span class="si">{self.Name}</span><span class="s1"></span>
+<span class="s1">Description     </span><span class="si">{description}</span><span class="s1"></span>
+<span class="s1">URL             </span><span class="si">{self.URL}</span><span class="s1"></span>
+<span class="s1">Publisher       </span><span class="si">{self.Publisher}</span><span class="s1"></span>
+<span class="s1">ReleaseDate     </span><span class="si">{self.ReleaseDate}</span><span class="s1"></span>
+<span class="s1">DataCutOff      </span><span class="si">{self.DataCutOff}</span><span class="s1"></span>
+<span class="s1">ConversionDate  </span><span class="si">{self.ConversionDate}</span><span class="s1"></span>
+<span class="s1">DataVersion     </span><span class="si">{self.DataVersion}</span><span class="s1"></span>
+<span class="s1">Radius          </span><span class="si">{self.Radius}</span><span class="s1"></span>
+<span class="s1">NumModels       </span><span class="si">{self.NumModels}</span><span class="s1"></span>
+<span class="s1">Epoch           </span><span class="si">{self.Epoch}</span><span class="s1"></span>
+<span class="s1">DeltaEpoch      </span><span class="si">{self.DeltaEpoch}</span><span class="s1"></span>
+<span class="s1">MinTime         </span><span class="si">{self.MinTime}</span><span class="s1"></span>
+<span class="s1">MaxTime         </span><span class="si">{self.MaxTime}</span><span class="s1"></span>
+<span class="s1">MinHeight       </span><span class="si">{self.MinHeight}</span><span class="s1"></span>
+<span class="s1">MaxHeight       </span><span class="si">{self.MaxHeight}</span><span class="s1"></span>
+
+<span class="s1"># The coefficients are stored in a file obtained by appending &quot;.cof&quot; to</span>
+<span class="s1"># the name of this file.  The coefficients were obtained from </span><span class="si">{upper_name}</span><span class="s1">.COF</span>
+<span class="s1"># in the geomag70 distribution.</span>
+<span class="s1">ID              </span><span class="si">{id_}</span><span class="s1"></span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<div class="viewcode-block" id="MetaData.save"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.MetaData.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="n">PathType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+            <span class="n">fd</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span></div></div>
+
+
+<span class="n">SphCoeffSet</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;SphCoeffSet&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">])</span>
+
+<span class="c1"># @COMPATIBILITY: typing.OrderedDict is new in Python v3.7.2</span>
+<span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">typing</span><span class="p">,</span> <span class="s1">&#39;OrderedDict&#39;</span><span class="p">):</span>
+    <span class="n">SphCoeffsType</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">OrderedDict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SphCoeffSet</span><span class="p">]</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">SphCoeffsType</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SphCoeffSet</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="WmmData"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.WmmData">[docs]</a><span class="k">class</span> <span class="nc">WmmData</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Magnetic field data.&quot;&quot;&quot;</span>
+
+    <span class="c1"># @COMPATIBILITY: output type is a string (forward declaration)</span>
+    <span class="c1">#                 Python 3.7 implements PEP 563:</span>
+    <span class="c1">#                 &quot;Postponed evaluation of annotations&quot;</span>
+    <span class="c1">#</span>
+    <span class="c1">#                 from __future__ import annotations</span>
+<div class="viewcode-block" id="WmmData.from_metadata_and_coeffs"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.WmmData.from_metadata_and_coeffs">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_metadata_and_coeffs</span><span class="p">(</span>
+            <span class="bp">cls</span><span class="p">,</span> <span class="n">medadata</span><span class="p">:</span> <span class="n">MetaData</span><span class="p">,</span> <span class="n">coeffs</span><span class="p">:</span> <span class="n">SphCoeffsType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;WmmData&#39;</span><span class="p">:</span>
+        <span class="n">wmmdata</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">()</span>
+        <span class="n">wmmdata</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">medadata</span>
+        <span class="n">wmmdata</span><span class="o">.</span><span class="n">coeffs</span> <span class="o">=</span> <span class="n">coeffs</span>
+        <span class="n">wmmdata</span><span class="o">.</span><span class="n">_check</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">wmmdata</span></div>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">PathType</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">MetaData</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">coeffs</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">filename</span><span class="p">:</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_check</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">years</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">coeffs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="n">rate</span> <span class="o">=</span> <span class="n">years</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">rate</span> <span class="o">!=</span> <span class="s1">&#39;rate&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;rate coefficients not found&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">years</span> <span class="o">!=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get_years</span><span class="p">()]:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;coefficient years does not match metadata&#39;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_load_sph_coeff_set</span><span class="p">(</span><span class="n">fd</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">IO</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SphCoeffSet</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;ii&#39;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+        <span class="n">nc</span> <span class="o">=</span> <span class="p">(</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromfile</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="n">nc</span><span class="p">)</span>
+        <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">triu_indices</span><span class="p">(</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="n">data</span>
+
+        <span class="n">nc</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromfile</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="n">nc</span><span class="p">)</span>
+        <span class="n">S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">S</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span> <span class="mi">1</span><span class="p">:][</span><span class="n">np</span><span class="o">.</span><span class="n">triu_indices</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">)]</span> <span class="o">=</span> <span class="n">data</span>
+
+        <span class="k">return</span> <span class="n">SphCoeffSet</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">S</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_load_sph_coeffs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="n">PathType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SphCoeffsType</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Load spherical harmonics coeffs from a binary file in WMM format.&quot;&quot;&quot;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">years</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get_years</span><span class="p">()</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+            <span class="n">id_</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">id_</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">ID</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
+                    <span class="n">f</span><span class="s1">&#39;data ID (</span><span class="si">{id_}</span><span class="s1">) does not match &#39;</span>
+                    <span class="n">f</span><span class="s1">&#39;metadata ID (</span><span class="si">{self.metadata.ID}</span><span class="s1">)&#39;</span><span class="p">)</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_sph_coeff_set</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">[</span><span class="s1">&#39;rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_sph_coeff_set</span><span class="p">(</span><span class="n">fd</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">data</span>
+
+<div class="viewcode-block" id="WmmData.load"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.WmmData.load">[docs]</a>    <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="n">PathType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Load metadata and spherical harmonics coefficients.&quot;&quot;&quot;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="c1"># self.metadata = MetaData()  # @TODO: check</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">bin_filename</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">suffix</span> <span class="o">+</span> <span class="s1">&#39;.cof&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">coeffs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_sph_coeffs</span><span class="p">(</span><span class="n">bin_filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_check</span><span class="p">()</span></div>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_save_sph_coeff_set</span><span class="p">(</span><span class="n">fd</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">IO</span><span class="p">,</span> <span class="n">coeffs</span><span class="p">:</span> <span class="n">SphCoeffSet</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="n">ndim</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;coefficients are not 2d arrays&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">S</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;C and S coefficient do not have the same shape &#39;</span>
+                <span class="s1">&#39;(C: </span><span class="si">{}</span><span class="s1">, S: </span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">coeffs</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">S</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+        <span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="n">shape</span>
+        <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="n">m</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                <span class="n">f</span><span class="s1">&#39;invalid shape of coefficient arrays: &#39;</span>
+                <span class="n">f</span><span class="s1">&#39;n=</span><span class="si">{n}</span><span class="s1">, m=</span><span class="si">{m}</span><span class="s1">, expected m &lt;= n&#39;</span><span class="p">)</span>
+
+        <span class="c1"># compute the effective size (n, m)</span>
+        <span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">coeffs</span><span class="o">.</span><span class="n">C</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">coeffs</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">n</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&lt;ii&#39;</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+        <span class="n">fd</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">triu_indices</span><span class="p">(</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ascontiguousarray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;f8&#39;</span><span class="p">)</span>
+        <span class="n">fd</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">tobytes</span><span class="p">())</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">coeffs</span><span class="o">.</span><span class="n">S</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span> <span class="mi">1</span><span class="p">:][</span><span class="n">np</span><span class="o">.</span><span class="n">triu_indices</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">)]</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ascontiguousarray</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;f8&#39;</span><span class="p">)</span>
+        <span class="n">fd</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">tobytes</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">_save_sph_coeffs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="n">PathType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Store spherical harmonics coefficients in binary WMM format.&quot;&quot;&quot;</span>
+        <span class="n">id_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get_id</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">id_</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;invalid id_ ({id_:r}): expected len(id_) == 8&#39;</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+            <span class="n">fd</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">id_</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">coeffs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">coeffs</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_save_sph_coeff_set</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">coeffs</span><span class="p">)</span>
+
+<div class="viewcode-block" id="WmmData.save"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.WmmData.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outpath</span><span class="p">:</span> <span class="n">PathType</span><span class="p">,</span> <span class="n">force</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Save data in WMM format (metadata and binary).&quot;&quot;&quot;</span>
+        <span class="n">outpath</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">outpath</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">outpath</span><span class="o">.</span><span class="n">is_dir</span><span class="p">():</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">outpath</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">Name</span> <span class="o">+</span> <span class="s1">&#39;.wmm&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">outpath</span>
+        <span class="n">bin_filename</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">with_suffix</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">suffix</span> <span class="o">+</span> <span class="s1">&#39;.cof&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">force</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;&quot;</span><span class="si">{filename}</span><span class="s1">&quot; already exists&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">bin_filename</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;&quot;</span><span class="si">{bin_filename}</span><span class="s1">&quot; already exists&#39;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_save_sph_coeffs</span><span class="p">(</span><span class="n">bin_filename</span><span class="p">)</span></div></div>
+
+
+<span class="k">def</span> <span class="nf">_metadata_from_txt_header</span><span class="p">(</span><span class="n">header</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MetaData</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Build a MataData object from the header of a coeffs file</span>
+<span class="sd">    in text IGRF format.&quot;&quot;&quot;</span>
+    <span class="n">parts</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">parts</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">!=</span> <span class="p">[</span><span class="s1">&#39;g/h&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">]</span> <span class="ow">or</span> <span class="s1">&#39;-&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;invalid header line: </span><span class="si">{header!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+
+    <span class="c1"># check uniform time sampling</span>
+    <span class="n">dyears</span> <span class="o">=</span> <span class="p">[</span><span class="n">b</span> <span class="o">-</span> <span class="n">a</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">years</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">years</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])]</span>
+    <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="n">dyears</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dyears</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;non uniform time sampling detected&#39;</span><span class="p">)</span>
+
+    <span class="n">metadata</span> <span class="o">=</span> <span class="n">MetaData</span><span class="p">()</span>
+    <span class="n">metadata</span><span class="o">.</span><span class="n">ConversionDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">MetaData</span><span class="o">.</span><span class="n">_DATEFMT</span><span class="p">)</span>
+    <span class="n">metadata</span><span class="o">.</span><span class="n">NumModels</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">years</span><span class="p">)</span>
+    <span class="n">metadata</span><span class="o">.</span><span class="n">Epoch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">years</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">metadata</span><span class="o">.</span><span class="n">DeltaEpoch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">years</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">years</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">metadata</span><span class="o">.</span><span class="n">MinTime</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">years</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">metadata</span><span class="o">.</span><span class="n">MaxTime</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">years</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="n">metadata</span><span class="o">.</span><span class="n">DeltaEpoch</span>
+
+    <span class="k">return</span> <span class="n">metadata</span>
+
+
+<div class="viewcode-block" id="import_igrf_txt"><a class="viewcode-back" href="../../api/geomodels.wmmf.html#geomodels.wmmf.import_igrf_txt">[docs]</a><span class="k">def</span> <span class="nf">import_igrf_txt</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">PathType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">WmmData</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Decode a spherical harmonics coefficient file in IGRF text format.</span>
+
+<span class="sd">    :param path:</span>
+<span class="sd">        the path to a local filename or a remote URL.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">urlobj</span> <span class="o">=</span> <span class="n">urlsplit</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">fspath</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">urlobj</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+
+    <span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;igrf[0-9][0-9]coeffs.txt&#39;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">fnmatch</span><span class="o">.</span><span class="n">fnmatch</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="n">f</span><span class="s1">&#39;invalid file name (&quot;</span><span class="si">{filename}</span><span class="s1">&quot;), expected pattern: </span><span class="si">{pattern!r}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">urlobj</span><span class="o">.</span><span class="n">scheme</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;file&#39;</span><span class="p">):</span>
+        <span class="n">fd</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fd</span> <span class="o">=</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="n">fd</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fd</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;g/h&#39;</span><span class="p">):</span>
+                <span class="k">assert</span> <span class="n">filename</span><span class="o">.</span><span class="n">stem</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;coeffs&#39;</span><span class="p">)</span>
+                <span class="n">metadata</span> <span class="o">=</span> <span class="n">_metadata_from_txt_header</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="n">metadata</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">stem</span><span class="p">[:</span><span class="o">-</span><span class="mi">6</span><span class="p">]</span>
+                <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;header line not found in </span><span class="si">{filename}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="n">years</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">get_years</span><span class="p">()</span>
+        <span class="n">dtype</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;S1&#39;</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">),</span>
+        <span class="p">]</span> <span class="o">+</span> <span class="p">[(</span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{year}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;float64&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;rate&#39;</span><span class="p">,</span> <span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+        <span class="p">]</span>
+        <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
+
+        <span class="n">coeffs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+
+    <span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">coeffs</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">])</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">coeffs</span><span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">])</span>
+
+    <span class="n">g_idx</span> <span class="o">=</span> <span class="n">coeffs</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;g&#39;</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">coeffs</span><span class="p">[</span><span class="n">g_idx</span><span class="p">]</span>
+    <span class="n">h_idx</span> <span class="o">=</span> <span class="n">coeffs</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;h&#39;</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">coeffs</span><span class="p">[</span><span class="n">h_idx</span><span class="p">]</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years</span><span class="p">:</span>
+        <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">C</span><span class="p">[</span><span class="n">g</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)]</span>
+
+        <span class="n">S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">S</span><span class="p">[</span><span class="n">h</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">],</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)]</span>
+
+        <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)]</span> <span class="o">=</span> <span class="n">SphCoeffSet</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">S</span><span class="p">)</span>
+
+    <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">C</span><span class="p">[</span><span class="n">g</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="s1">&#39;rate&#39;</span><span class="p">]</span>
+
+    <span class="n">S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">S</span><span class="p">[</span><span class="n">h</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">],</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;rate&#39;</span><span class="p">]</span>
+
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">SphCoeffSet</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">S</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">WmmData</span><span class="o">.</span><span class="n">from_metadata_and_coeffs</span><span class="p">(</span><span class="n">metadata</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command line interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/geomodels.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

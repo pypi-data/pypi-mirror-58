@@ -1,0 +1,400 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>geomodels.data module &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="geomodels.error module" href="geomodels.error.html" />
+    <link rel="prev" title="geomodels.cli module" href="geomodels.cli.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-geomodels.data">
+<span id="geomodels-data-module"></span><h1>geomodels.data module<a class="headerlink" href="#module-geomodels.data" title="Permalink to this headline">¶</a></h1>
+<p>Tools for geographic models data download and installation.</p>
+<dl class="class">
+<dt id="geomodels.data.EModelGroup">
+<em class="property">class </em><code class="descclassname">geomodels.data.</code><code class="descname">EModelGroup</code><a class="reference internal" href="../_modules/geomodels/data.html#EModelGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EModelGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Model groups.</p>
+<dl class="attribute">
+<dt id="geomodels.data.EModelGroup.ALL">
+<code class="descname">ALL</code><em class="property"> = 'all'</em><a class="headerlink" href="#geomodels.data.EModelGroup.ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EModelGroup.MINIMAL">
+<code class="descname">MINIMAL</code><em class="property"> = 'minimal'</em><a class="headerlink" href="#geomodels.data.EModelGroup.MINIMAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EModelGroup.RECOMMENDED">
+<code class="descname">RECOMMENDED</code><em class="property"> = 'recommended'</em><a class="headerlink" href="#geomodels.data.EModelGroup.RECOMMENDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.data.EModelType">
+<em class="property">class </em><code class="descclassname">geomodels.data.</code><code class="descname">EModelType</code><a class="reference internal" href="../_modules/geomodels/data.html#EModelType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EModelType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Enumerate geographic model types.</p>
+<dl class="attribute">
+<dt id="geomodels.data.EModelType.GEOID">
+<code class="descname">GEOID</code><em class="property"> = 'geoids'</em><a class="headerlink" href="#geomodels.data.EModelType.GEOID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EModelType.GRAVITY">
+<code class="descname">GRAVITY</code><em class="property"> = 'gravity'</em><a class="headerlink" href="#geomodels.data.EModelType.GRAVITY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EModelType.MAGNETIC">
+<code class="descname">MAGNETIC</code><em class="property"> = 'magnetic'</em><a class="headerlink" href="#geomodels.data.EModelType.MAGNETIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.data.EGeoidModel">
+<em class="property">class </em><code class="descclassname">geomodels.data.</code><code class="descname">EGeoidModel</code><a class="reference internal" href="../_modules/geomodels/data.html#EGeoidModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EGeoidModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Enumerate geoid models.</p>
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM2008_1">
+<code class="descname">EGM2008_1</code><em class="property"> = 'egm2008-1'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM2008_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM2008_2_5">
+<code class="descname">EGM2008_2_5</code><em class="property"> = 'egm2008-2_5'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM2008_2_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM2008_5">
+<code class="descname">EGM2008_5</code><em class="property"> = 'egm2008-5'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM2008_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM84_15">
+<code class="descname">EGM84_15</code><em class="property"> = 'egm84-15'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM84_15" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM84_30">
+<code class="descname">EGM84_30</code><em class="property"> = 'egm84-30'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM84_30" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM96_15">
+<code class="descname">EGM96_15</code><em class="property"> = 'egm96-15'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM96_15" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.EGM96_5">
+<code class="descname">EGM96_5</code><em class="property"> = 'egm96-5'</em><a class="headerlink" href="#geomodels.data.EGeoidModel.EGM96_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGeoidModel.get_model_type">
+<code class="descname">get_model_type</code><em class="property"> = &lt;function EGeoidModel.get_model_type&gt;</em><a class="reference internal" href="../_modules/geomodels/data.html#EGeoidModel.get_model_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EGeoidModel.get_model_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.data.EGravityModel">
+<em class="property">class </em><code class="descclassname">geomodels.data.</code><code class="descname">EGravityModel</code><a class="reference internal" href="../_modules/geomodels/data.html#EGravityModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EGravityModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Enumerate gravity models.</p>
+<dl class="attribute">
+<dt id="geomodels.data.EGravityModel.EGM2008">
+<code class="descname">EGM2008</code><em class="property"> = 'egm2008'</em><a class="headerlink" href="#geomodels.data.EGravityModel.EGM2008" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGravityModel.EGM84">
+<code class="descname">EGM84</code><em class="property"> = 'egm84'</em><a class="headerlink" href="#geomodels.data.EGravityModel.EGM84" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGravityModel.EGM96">
+<code class="descname">EGM96</code><em class="property"> = 'egm96'</em><a class="headerlink" href="#geomodels.data.EGravityModel.EGM96" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGravityModel.WGS84">
+<code class="descname">WGS84</code><em class="property"> = 'wgs84'</em><a class="headerlink" href="#geomodels.data.EGravityModel.WGS84" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EGravityModel.get_model_type">
+<code class="descname">get_model_type</code><em class="property"> = &lt;function EGravityModel.get_model_type&gt;</em><a class="reference internal" href="../_modules/geomodels/data.html#EGravityModel.get_model_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EGravityModel.get_model_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.data.EMagneticModel">
+<em class="property">class </em><code class="descclassname">geomodels.data.</code><code class="descname">EMagneticModel</code><a class="reference internal" href="../_modules/geomodels/data.html#EMagneticModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EMagneticModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Enumerate magnetic field models.</p>
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.EMM2010">
+<code class="descname">EMM2010</code><em class="property"> = 'emm2010'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.EMM2010" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.EMM2015">
+<code class="descname">EMM2015</code><em class="property"> = 'emm2015'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.EMM2015" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.EMM2017">
+<code class="descname">EMM2017</code><em class="property"> = 'emm2017'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.EMM2017" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.IGRF11">
+<code class="descname">IGRF11</code><em class="property"> = 'igrf11'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.IGRF11" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.IGRF12">
+<code class="descname">IGRF12</code><em class="property"> = 'igrf12'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.IGRF12" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.WMM2010">
+<code class="descname">WMM2010</code><em class="property"> = 'wmm2010'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.WMM2010" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.WMM2015">
+<code class="descname">WMM2015</code><em class="property"> = 'wmm2015'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.WMM2015" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.WMM2020">
+<code class="descname">WMM2020</code><em class="property"> = 'wmm2020'</em><a class="headerlink" href="#geomodels.data.EMagneticModel.WMM2020" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EMagneticModel.get_model_type">
+<code class="descname">get_model_type</code><em class="property"> = &lt;function EMagneticModel.get_model_type&gt;</em><a class="reference internal" href="../_modules/geomodels/data.html#EMagneticModel.get_model_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EMagneticModel.get_model_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="geomodels.data.EArchiveType">
+<em class="property">class </em><code class="descclassname">geomodels.data.</code><code class="descname">EArchiveType</code><a class="reference internal" href="../_modules/geomodels/data.html#EArchiveType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.EArchiveType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
+<p>Enumerate the archive type.</p>
+<dl class="attribute">
+<dt id="geomodels.data.EArchiveType.BZ2">
+<code class="descname">BZ2</code><em class="property"> = '.tar.bz2'</em><a class="headerlink" href="#geomodels.data.EArchiveType.BZ2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomodels.data.EArchiveType.ZIP">
+<code class="descname">ZIP</code><em class="property"> = '.zip'</em><a class="headerlink" href="#geomodels.data.EArchiveType.ZIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.data.get_default_data_path">
+<code class="descclassname">geomodels.data.</code><code class="descname">get_default_data_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/geomodels/data.html#get_default_data_path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.get_default_data_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the default data path.</p>
+<p>The <cite>GEOGRAPHICLIB_DATA</cite> environment variable is used if available
+to locate the location where the geographic model data are installed.</p>
+<p>If <cite>GEOGRAPHICLIB_DATA</cite> is not set, then then it is returned the
+path configured at build time.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.data.get_model_url">
+<code class="descclassname">geomodels.data.</code><code class="descname">get_model_url</code><span class="sig-paren">(</span><em>model: Union[geomodels.data.EGeoidModel, geomodels.data.EGravityModel, geomodels.data.EMagneticModel], base_url: Optional[str] = None, archive_type: geomodels.data.EArchiveType = &lt;EArchiveType.BZ2: '.tar.bz2'&gt;</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/geomodels/data.html#get_model_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.get_model_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the download URL for the specified geographic model.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>model</strong> – the enumeration corresponding to the desired geographic model.
+It can be one of the enumerates defined in <a class="reference internal" href="#geomodels.data.EGeoidModel" title="geomodels.data.EGeoidModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EGeoidModel</span></code></a>,
+<a class="reference internal" href="#geomodels.data.EGravityModel" title="geomodels.data.EGravityModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EGravityModel</span></code></a> or <a class="reference internal" href="#geomodels.data.EMagneticModel" title="geomodels.data.EMagneticModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EMagneticModel</span></code></a>.</li>
+<li><strong>base_url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – (optional) base URL for data download.
+The full URL is build from this function starting form base_url
+and model information.</li>
+<li><strong>archive_type</strong> (<a class="reference internal" href="#geomodels.data.EArchiveType" title="geomodels.data.EArchiveType"><em>EArchiveType</em></a>) – specifies the archive type that should be downloaded.
+Default: <cite>data:`EArchiveType.BZ2</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="geomodels.data.install">
+<code class="descclassname">geomodels.data.</code><code class="descname">install</code><span class="sig-paren">(</span><em>model: Union[geomodels.data.EModelGroup</em>, <em>geomodels.data.EModelType</em>, <em>geomodels.data.EGeoidModel</em>, <em>geomodels.data.EGravityModel</em>, <em>geomodels.data.EMagneticModel] = &lt;EModelGroup.MINIMAL: 'minimal'&gt;</em>, <em>datadir: Union[str</em>, <em>os.PathLike</em>, <em>None] = None</em>, <em>base_url: str = None</em>, <em>archive_type: geomodels.data.EArchiveType = &lt;EArchiveType.BZ2: '.tar.bz2'&gt;</em>, <em>progress: bool = True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/geomodels/data.html#install"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#geomodels.data.install" title="Permalink to this definition">¶</a></dt>
+<dd><p>Install the specified geographic model data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>model</strong> – the enumeration corresponding to the desired geographic model.
+It can be one of the enumerates defined in <a class="reference internal" href="#geomodels.data.EGeoidModel" title="geomodels.data.EGeoidModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EGeoidModel</span></code></a>,
+<a class="reference internal" href="#geomodels.data.EGravityModel" title="geomodels.data.EGravityModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EGravityModel</span></code></a>, <a class="reference internal" href="#geomodels.data.EMagneticModel" title="geomodels.data.EMagneticModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">EMagneticModel</span></code></a>, or one of the
+enumerates defined in <a class="reference internal" href="#geomodels.data.EModelType" title="geomodels.data.EModelType"><code class="xref py py-class docutils literal notranslate"><span class="pre">EModelType</span></code></a> to indicate that all
+geographic models of the specified type shall be installed,
+or one of the enumerates defined in <a class="reference internal" href="#geomodels.data.EModelGroup" title="geomodels.data.EModelGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">EModelGroup</span></code></a> to
+indicate that a specific group of model data shall be installed:
+<a class="reference internal" href="#geomodels.data.EModelGroup.ALL" title="geomodels.data.EModelGroup.ALL"><code class="xref py py-data docutils literal notranslate"><span class="pre">EModelGroup.ALL</span></code></a> (all available models of any kind),
+<a class="reference internal" href="#geomodels.data.EModelGroup.MINIMAL" title="geomodels.data.EModelGroup.MINIMAL"><code class="xref py py-data docutils literal notranslate"><span class="pre">EModelGroup.MINIMAL</span></code></a> (only the default model for each type)
+or <a class="reference internal" href="#geomodels.data.EModelGroup.RECOMMENDED" title="geomodels.data.EModelGroup.RECOMMENDED"><code class="xref py py-data docutils literal notranslate"><span class="pre">EModelGroup.RECOMMENDED</span></code></a>.</li>
+<li><strong>datadir</strong> (<em>PathType</em>) – (optional) specify the target location where geographic model
+data shall be installed. If not specified that the path returned
+by <a class="reference internal" href="#geomodels.data.get_default_data_path" title="geomodels.data.get_default_data_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_default_data_path()</span></code></a> is assumed.</li>
+<li><strong>base_url</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – (optional) base URL for data download.
+The full URL is built from this function starting form base_url
+and model information.</li>
+<li><strong>archive_type</strong> (<a class="reference internal" href="#geomodels.data.EArchiveType" title="geomodels.data.EArchiveType"><em>EArchiveType</em></a>) – specifies the archive type that should be downloaded.
+Default: <a class="reference internal" href="#geomodels.data.EArchiveType.BZ2" title="geomodels.data.EArchiveType.BZ2"><code class="xref py py-data docutils literal notranslate"><span class="pre">EArchiveType.BZ2</span></code></a>.</li>
+<li><strong>progress</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – enable/disable progress information display (default: True)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation and Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command line interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="geomodels.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#geoid-model">Geoid model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#graviti-model">Graviti model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#magnetic-filed-model">Magnetic filed model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geomodels.html#functions">Functions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="geomodels.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="geomodels.cli.html">geomodels.cli module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">geomodels.data module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.error.html">geomodels.error module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="geomodels.wmmf.html">geomodels.wmmf module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="geomodels.html">geomodels package</a><ul>
+      <li>Previous: <a href="geomodels.cli.html" title="previous chapter">geomodels.cli module</a></li>
+      <li>Next: <a href="geomodels.error.html" title="next chapter">geomodels.error module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="../_sources/api/geomodels.data.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

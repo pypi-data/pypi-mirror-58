@@ -1,0 +1,384 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Command line interface &#8212; GeoModels 1.0.0b4 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="geomodels package" href="api/geomodels.html" />
+    <link rel="prev" title="Installation and Testing" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="command-line-interface">
+<h1>Command line interface<a class="headerlink" href="#command-line-interface" title="Permalink to this headline">¶</a></h1>
+<p>The GeoModel package also provides a command line interface that can be
+used to:</p>
+<ul class="simple">
+<li>display information about the:<ul>
+<li>GeoModels version and <a class="reference external" href="https://geographiclib.sourceforge.io">GeographicLib</a> library version</li>
+<li>platform and environment info</li>
+<li>data directory and installed model data</li>
+</ul>
+</li>
+<li>install model data that are used by the GeoModels and by the
+underlying <a class="reference external" href="https://geographiclib.sourceforge.io">GeographicLib</a> library to perform geographic models
+computations</li>
+<li>import magnetic field spherical harmonics coefficients for IGRF format</li>
+<li>run the test suite</li>
+</ul>
+<div class="section" id="invocation">
+<h2>Invocation<a class="headerlink" href="#invocation" title="Permalink to this headline">¶</a></h2>
+<p>The GeoModels package provides a script named <cite>geomodels-cli</cite> which can
+be run as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli [OPTIONS] ARGS
+</pre></div>
+</div>
+<p>An alternative invocation method is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m geomodels [OPTIONS] ARGS
+</pre></div>
+</div>
+</div>
+<div class="section" id="main-command-line-interface">
+<h2>Main command line interface<a class="headerlink" href="#main-command-line-interface" title="Permalink to this headline">¶</a></h2>
+<p>The online help of the main command line interface can be obtained as
+follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli -h
+
+usage: geomodels [-h] [--version]
+                 [--loglevel {DEBUG,INFO,WARNING,ERROR,CRITICAL}]
+                 [-q] [-v] [--debug]
+                 {info,install-data,import-igrf,test} ...
+
+Command Line Interface (CLI) for the geomodels package.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program&#39;s version number and exit
+  --loglevel {DEBUG,INFO,WARNING,ERROR,CRITICAL}
+                        logging level (default: WARNING)
+  -q, --quiet           suppress standard output messages, only
+                        errors are printed to screen (set
+                        &quot;loglevel&quot; to &quot;ERROR&quot;)
+  -v, --verbose         print verbose output messages (set
+                        &quot;loglevel&quot; to &quot;INFO&quot;)
+  --debug               print debug messages (set &quot;loglevel&quot; to
+                        &quot;DEBUG&quot;)
+
+sub-commands:
+  {info,install-data,test}
+    info                Provide information about the platform,
+                        library versions and
+    install-data        Download and install the data necessary for
+                        models computation.
+    import-igrf         import magnetic field data from igrf text format.
+    test                run the test suite for the geomodels
+                        package.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Please note that options for logging level configuration shall
+precede the sub-command name and specific sub-command options,
+e.g.:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli --debug test
+</pre></div>
+</div>
+</div>
+<p>Example output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli --version
+
+geomodels v1.0.0
+</pre></div>
+</div>
+</div>
+<div class="section" id="info-tool">
+<h2>Info tool<a class="headerlink" href="#info-tool" title="Permalink to this headline">¶</a></h2>
+<p>The online help of the “info” tool:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli info -h
+
+usage: geomodels info [-h] [-d DATADIR] [-a] [--data]
+
+Provide information about the platform, library versions and
+installed data.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DATADIR, --datadir DATADIR
+                        specifies where the model data are stored
+                        (default: &#39;/usr/local/share/GeographicLib&#39;).
+  -a, --all             show both versions and platform info and
+                        also information about installed data
+  --data                show info about installed data
+</pre></div>
+</div>
+<p>Sample output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli info --all
+
+geomodels version:     1.0.0
+GeographicLib version: 1.50.1
+Python version:        3.7.5
+Platform:              Linux-5.3.0-26-generic-x86_64-with-Ubuntu-19.10-eoan
+Byte-ordering:         little
+Default encoding:      utf-8
+Default FS encoding:   utf-8
+Default locale:        (it_IT, UTF-8)
+
+data directory: &#39;data/&#39;
+* model: geoids (&#39;data/geoids&#39;)
+  EGM84_30     - NOT INSTALLED
+  EGM84_15     - NOT INSTALLED
+  EGM96_15     - NOT INSTALLED
+  EGM96_5      - INSTALLED
+  EGM2008_5    - NOT INSTALLED
+  EGM2008_2_5  - NOT INSTALLED
+  EGM2008_1    - NOT INSTALLED
+* model: gravity (&#39;data/gravity&#39;)
+  EGM84        - NOT INSTALLED
+  EGM96        - INSTALLED
+  EGM2008      - NOT INSTALLED
+  WGS84        - NOT INSTALLED
+* model: magnetic (&#39;data/magnetic&#39;)
+  WMM2010      - NOT INSTALLED
+  WMM2015      - INSTALLED
+  WMM2020      - INSTALLED
+  IGRF11       - NOT INSTALLED
+  IGRF12       - INSTALLED
+  EMM2010      - NOT INSTALLED
+  EMM2015      - NOT INSTALLED
+  EMM2017      - NOT INSTALLED
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-data-tool">
+<h2>Install data tool<a class="headerlink" href="#install-data-tool" title="Permalink to this headline">¶</a></h2>
+<p>The online help of the “install-data” tool:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli install-data -h
+
+usage: geomodels install-data [-h] [-b BASE_URL] [-d DATADIR]
+                              {all,minimal,recommended,geoids,
+                               gravity, magnetic,egm84-30,egm84-15,
+                               egm96-15,egm96-5, egm2008-5,
+                               egm2008-2_5,egm2008-1,egm84,egm96,
+                               egm2008,wgs84,wmm2010,wmm2015,
+                               wmm2020,igrf11, igrf12,emm2010,
+                               emm2015,emm2017}
+
+Download and install the data necessary for models computation.
+GeoModels uses external data to perform geoid, gravity and magnetic
+field computations. It is possible to install different subsets of
+data:
+`minimal` only data for the default model of each kind
+(geoid, gravity and magnetic field) are installed,
+`recommended` install the `minimal` set of data (see above) plus
+few additional and commonly used data (it is guaranteed that the
+`recommended` subset always includes all data that are necessary to
+run the test suite),
+`all` install all available data (about 670MB of disk space
+required),
+`geoids` install data for all supported geoids,
+`gravity` install data for all supported gravity models,
+`magnetic` install data for all supported magnetic field models.
+Additionally the it is possible to install data for a single model.
+
+positional arguments:
+  {all,minimal,recommended,geoids,gravity,magnetic,egm84-30,
+   egm84-15,egm96-15,egm96-5,egm2008-5,egm2008-2_5,egm2008-1,egm84,
+   egm96,egm2008, wgs84,wmm2010,wmm2015,wmm2020,igrf11,igrf12,
+   emm2010,emm2015,emm2017}
+                        model(s) to be installed
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b BASE_URL, --base-url BASE_URL
+                        specifies the base URL for the download
+                        (default:
+                         &#39;https://downloads.sourceforge.net/project/geographiclib&#39;).
+  -d DATADIR, --datadir DATADIR
+                        specifies where the datasets should be
+                        stored (default:
+                        &#39;/usr/local/share/GeographicLib&#39;).
+</pre></div>
+</div>
+</div>
+<div class="section" id="import-igrf-data-tool">
+<h2>Import IGRF data tool<a class="headerlink" href="#import-igrf-data-tool" title="Permalink to this headline">¶</a></h2>
+<p>The online help of the “import-igrf” tool:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -m geomodels import-igrf -h
+usage: geomodels-cli import-igrf [-h] [-o OUTPATH] [--force] path
+
+Import magnetic field data from IGRF text format.
+
+positional arguments:
+  path                  path or URL of the IGRF text file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTPATH, --outpath OUTPATH
+                        specifies the output data path (default:
+                        &quot;/usr/share/GeographicLib/magnetic&quot;).
+  --force               overwrite existing files (default: False).
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-tool">
+<h2>Test tool<a class="headerlink" href="#test-tool" title="Permalink to this headline">¶</a></h2>
+<p>The online help of the “test” tool:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli test -h
+
+usage: geomodels test [-h] [-d DATADIR] [--verbosity VERBOSITY]
+                      [--failfast]
+
+Run the test suite for the geomodels package.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DATADIR, --datadir DATADIR
+                        specifies where the model data are stored
+                        (default: &#39;/usr/local/share/GeographicLib&#39;).
+  --verbosity VERBOSITY
+                        verbosity level for the unittest runner
+                        (default: 1).
+  --failfast            stop the test run on the first error or
+                        failure (default: False).
+</pre></div>
+</div>
+<p>Sample output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ geomodels-cli test
+
+geomodels version:     1.0.0
+GeographicLib version: 1.50.1
+Python version:        3.7.5
+Platform:              Linux-5.3.0-26-generic-x86_64-with-Ubuntu-19.10-eoan
+Byte-ordering:         little
+Default encoding:      utf-8
+Default FS encoding:   utf-8
+Default locale:        (it_IT, UTF-8)
+
+............................................................................
+............................................................................
+........
+----------------------------------------------------------------------
+Ran 160 tests in 0.450s
+
+OK
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">GeoModels</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=avalentino&repo=geomodels&type=watch&count=True&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Testing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command line interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#invocation">Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-command-line-interface">Main command line interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#info-tool">Info tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-data-tool">Install data tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#import-igrf-data-tool">Import IGRF data tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-tool">Test tool</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/geomodels.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NEWS.html">Release history</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/geomodels">GeoModels on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://geographiclib.sourceforge.io/html">GeoGraphicLib</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation and Testing</a></li>
+      <li>Next: <a href="api/geomodels.html" title="next chapter">geomodels package</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Antonio Valentino.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/cli.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/avalentino/geomodels" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
