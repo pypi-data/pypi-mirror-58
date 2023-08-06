@@ -1,0 +1,9 @@
+README.md
+setup.py
+spider3/__init__.py
+spider3/__main__.py
+spider3/proxy.py
+spider3.egg-info/PKG-INFO
+spider3.egg-info/SOURCES.txt
+spider3.egg-info/dependency_links.txt
+spider3.egg-info/top_level.txt
