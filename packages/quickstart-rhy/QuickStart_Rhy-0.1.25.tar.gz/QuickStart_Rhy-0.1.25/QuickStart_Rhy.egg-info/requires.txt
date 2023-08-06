@@ -1,0 +1,6 @@
+pyperclip
+requests
+psutil
+matplotlib
+numpy
+urllib3
