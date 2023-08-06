@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PushedPy
+Version: 0.0.1
+Summary: A Python wrapper for the Pushed.co API
+Home-page: https://github.com/mickras/PushedPy
+Author: Mick Rasmussen
+Author-email: mira19@guldborgsund.dk
+License: UNKNOWN
+Description: # PushedPy
+        PushedPy is a simple Python wrapper for the Pushed.co API, that allows you to send push notifications, in real-time, to iOS and Android devicesÂ + Chrome, Firefox and Safari browsers.
+        
+        ## Usage
+        
+        ```
+        import Pushed
+        
+        pushed_obj = Pushed("MyAppKey", "MyAppSecret")
+        r = pushed_obj.Notification("My message to send as a push notification")
+        print(r)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
