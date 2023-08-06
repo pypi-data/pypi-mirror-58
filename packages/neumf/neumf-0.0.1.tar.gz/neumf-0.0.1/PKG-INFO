@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: neumf
+Version: 0.0.1
+Summary: neumf module
+Home-page: https://pypi.org/project/neumf/
+Author: Sumner Magruder
+Author-email: sumner.magruder@zmnh.uni-hamburg.de
+License: UNKNOWN
+Description: # Custom Library
+        
+        This is a custom python library. Depending on the nature of the project, it may
+        not be uploaded or publicly accessible via pypi or GitLab. Since I am bad
+        with Docker, the project is put here, and installed  via `pip install -e`
+        in the `backened/Dockerfile`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
