@@ -1,0 +1,8 @@
+README.md
+setup.py
+carcass/__init__.py
+carcass/carcass.py
+carcass.egg-info/PKG-INFO
+carcass.egg-info/SOURCES.txt
+carcass.egg-info/dependency_links.txt
+carcass.egg-info/top_level.txt
