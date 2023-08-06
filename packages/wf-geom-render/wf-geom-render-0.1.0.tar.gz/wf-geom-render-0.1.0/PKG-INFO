@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wf-geom-render
+Version: 0.1.0
+Summary: A library for projecting 3D geoms into 2D videos
+Home-page: https://github.com/WildflowerSchools/wf-geom-render
+Author: Theodore Quinn
+Author-email: ted.quinn@wildflowerschools.org
+License: UNKNOWN
+Description: # geom_render
+        
+        A library for projecting 3D geoms onto 2D videos
+        
+Keywords: opencv,cv
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
