@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyprofile/__init__.py
+pyprofile/profiler.py
+pyprofile.egg-info/PKG-INFO
+pyprofile.egg-info/SOURCES.txt
+pyprofile.egg-info/dependency_links.txt
+pyprofile.egg-info/top_level.txt
+pyprofile/contrib/__init__.py
+pyprofile/contrib/django/__init__.py
+pyprofile/contrib/django/middleware.py
+pyprofile/contrib/django/sql_profiler.py
+pyprofile/fixtures/__init__.py
