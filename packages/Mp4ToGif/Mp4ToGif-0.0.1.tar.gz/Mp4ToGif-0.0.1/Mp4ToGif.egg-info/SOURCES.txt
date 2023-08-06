@@ -1,0 +1,7 @@
+README.md
+setup.py
+Mp4ToGif/__init__.py
+Mp4ToGif.egg-info/PKG-INFO
+Mp4ToGif.egg-info/SOURCES.txt
+Mp4ToGif.egg-info/dependency_links.txt
+Mp4ToGif.egg-info/top_level.txt
