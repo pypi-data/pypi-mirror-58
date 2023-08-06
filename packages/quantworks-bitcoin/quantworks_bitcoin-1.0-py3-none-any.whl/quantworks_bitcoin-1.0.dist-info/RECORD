@@ -1,0 +1,13 @@
+quantworks/ext/bitcoincharts/__init__.py,sha256=1NDWi39qjy-cP2IGHUKkd5Hzz89caJY38eJzn16iJV0,784
+quantworks/ext/bitcoincharts/barfeed.py,sha256=GkkMw8mGlu4eixHxsqK50OdHd7YvsWj0DSJSrWU9wpI,6654
+quantworks/ext/bitstamp/__init__.py,sha256=1NDWi39qjy-cP2IGHUKkd5Hzz89caJY38eJzn16iJV0,784
+quantworks/ext/bitstamp/barfeed.py,sha256=EGKqL2pLViA8fH-Mj0ClKoKYlHkeEE0B3K1k-LqMBo8,850
+quantworks/ext/bitstamp/broker.py,sha256=VWXv2VFfResTAKc9zlEF3SDYqpmK6K6tCwNPyzEukWs,4754
+quantworks/ext/bitstamp/common.py,sha256=L4e69Pccfbn7p3wywRUf4jIEXIS6JWblKyA_nQ8RL3k,1027
+quantworks/ext/bitstamp/httpclient.py,sha256=5upquRsv8_KL1u0NxZTaP5ltNS0nmoOuUuy8nzD_67I,7003
+quantworks/ext/bitstamp/livebroker.py,sha256=k__ass0MZs_PMssl7qQSAn9pg9mSvfu2oJbK4bjg1yo,12076
+quantworks/ext/bitstamp/livefeed.py,sha256=LzZsnab2O4drz5d-VZQXZDuTL4jG35yj6FTgYFLobtA,8627
+quantworks/ext/bitstamp/wsclient.py,sha256=SYvtc18sa-eu-cYRZHO1dBeCSo-sAVVKN-PjqqxYIaU,6558
+quantworks_bitcoin-1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+quantworks_bitcoin-1.0.dist-info/METADATA,sha256=2Mzf7rrE4qIelez1-Y6TMUJlMeGmOcPhdXAprdneUSU,529
+quantworks_bitcoin-1.0.dist-info/RECORD,,
