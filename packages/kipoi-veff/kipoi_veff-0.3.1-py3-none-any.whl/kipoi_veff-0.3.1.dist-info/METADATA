@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: kipoi-veff
+Version: 0.3.1
+Summary: kipoi_veff: variant effect prediction plugin for Kipoi
+Home-page: https://github.com/kipoi/kipoi-veff
+Author: Kipoi team
+Author-email: avsec@in.tum.de
+License: MIT license
+Keywords: variant effect prediction,model zoo,deep learning,computational biology,bioinformatics,genomics
+Platform: UNKNOWN
+Requires-Dist: kipoi (>=0.6.12)
+Requires-Dist: kipoi-utils (>=0.1.12)
+Requires-Dist: pyvcf
+Requires-Dist: cyvcf2
+Requires-Dist: pybedtools
+Requires-Dist: pysam
+Requires-Dist: intervaltree (<3)
+Requires-Dist: deepdish
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: shapely
+Requires-Dist: descartes
+Requires-Dist: future
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: related (>=0.6.0)
+Requires-Dist: enum34
+Requires-Dist: colorlog
+Requires-Dist: cookiecutter
+Requires-Dist: h5py
+Requires-Dist: urllib3 (>=1.21.1)
+Provides-Extra: develop
+Requires-Dist: bumpversion ; extra == 'develop'
+Requires-Dist: wheel ; extra == 'develop'
+Requires-Dist: jedi ; extra == 'develop'
+Requires-Dist: epc ; extra == 'develop'
+Requires-Dist: pytest (>=3.3.1) ; extra == 'develop'
+Requires-Dist: pytest-xdist ; extra == 'develop'
+Requires-Dist: pytest-pep8 ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: coveralls ; extra == 'develop'
+Requires-Dist: scikit-learn ; extra == 'develop'
+Requires-Dist: cython ; extra == 'develop'
+Requires-Dist: keras ; extra == 'develop'
+Requires-Dist: tensorflow ; extra == 'develop'
+Requires-Dist: kipoiseq ; extra == 'develop'
+
+kipoi_veff: variant effect prediction plugin for Kipoi
+
+
