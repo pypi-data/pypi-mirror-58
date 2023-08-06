@@ -1,0 +1,6 @@
+pelican/plugins/timegraphics/__init__.py,sha256=bxIn7wqcKnKHkQeAsgppt1CnaDveRRXAtWoTnGsLQeI,36
+pelican/plugins/timegraphics/test_timegraphics.py,sha256=5EF8Zsu8iBD8UQy7x7U2YxMKtMY8VDHahMAHGJm3004,2653
+pelican/plugins/timegraphics/timegraphics.py,sha256=FyhVITJD7WJrR6YF5c29xlJisgfTVJdg9GlbCo0xwXI,4798
+pelican_timegraphics_plugin-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pelican_timegraphics_plugin-1.0.0.dist-info/METADATA,sha256=mpJ5v97YvVfGasNxqAX_J1PJ2eEf_4U2XYdKDZJ7Xq8,3931
+pelican_timegraphics_plugin-1.0.0.dist-info/RECORD,,
