@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: api-basic-lib
+Version: 1.0
+Summary: python接口自动化开发基础库
+Home-page: UNKNOWN
+Author: wu weiping
+Author-email: 115773673@qq.com  
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: django,jaeger,jaegertracing
+Platform: UNKNOWN
+Requires-Python: >=3.6
