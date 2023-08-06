@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: django-partitialajax
+Version: 0.1.5
+Summary: Simple reloading of HTML partitials via Ajax
+Home-page: https://github.com/eieste/django-partitialajax
+Author: Stefan Eiermann
+Author-email: pypi@ultraapp.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+
+# Django Partitial Ajax
+
+[![CircleCI](https://circleci.com/gh/eieste/django-partitialajax/tree/development.svg?style=svg)](https://circleci.com/gh/eieste/django-partitialajax/tree/development)
+
+[![Coverage Status](https://coveralls.io/repos/github/eieste/django-partitialajax/badge.svg?branch=development)](https://coveralls.io/github/eieste/django-partitialajax?branch=development)
+
+![PyPI - License](https://img.shields.io/pypi/l/django-partitialajax)
+
+![NPM](https://img.shields.io/npm/l/django-partitialajax)
+
+![Read the Docs](https://img.shields.io/readthedocs/django-partitialajax)
+
+![npm](https://img.shields.io/npm/v/django-partitialajax)
+
+![PyPI](https://img.shields.io/pypi/v/django-partitialajax)
+
+
+This libary can you help to load Django-Rendered Partitials and embedd this into your page.
+
+This libary consists of two parts: python/django and js lib;
+you can install it via
+```bash
+pip3 install django-partitialajax
+npm install django-partitialajax
+
+```
+
+For more Information read the docs
+
