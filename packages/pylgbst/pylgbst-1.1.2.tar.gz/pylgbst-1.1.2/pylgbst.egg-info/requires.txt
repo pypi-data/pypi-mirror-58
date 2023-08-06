@@ -1,0 +1,15 @@
+
+[bluepy]
+bluepy
+
+[gatt]
+dbus
+gatt
+gi
+
+[gattlib]
+gattlib
+
+[pygatt]
+pexpect
+pygatt
