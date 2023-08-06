@@ -1,0 +1,10 @@
+PyYAML
+docopt
+importlib_resources
+PyGObject
+
+[config]
+xdg
+
+[password_cache]
+keyutils==0.3
