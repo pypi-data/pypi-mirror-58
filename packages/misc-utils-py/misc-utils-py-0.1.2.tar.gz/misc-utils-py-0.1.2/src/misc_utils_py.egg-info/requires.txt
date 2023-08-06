@@ -1,0 +1,3 @@
+pylibversion>=0.1
+python-json-logger>=0.1
+structlog>=19
