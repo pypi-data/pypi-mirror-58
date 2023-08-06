@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: check-type
+Version: 0.0.1
+Summary: Runtime Python type checking
+Home-page: https://github.com/jsh9/PySeismoSoil
+Author: jsh9
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
