@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+license
+setup.py
+win_cpusage/___init__.py
+win_cpusage/cli.py
+win_cpusage.egg-info/PKG-INFO
+win_cpusage.egg-info/SOURCES.txt
+win_cpusage.egg-info/dependency_links.txt
+win_cpusage.egg-info/requires.txt
+win_cpusage.egg-info/top_level.txt
