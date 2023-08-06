@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: GeneralNewsExtractor
+Version: 0.1.0
+Summary: General extractor of news pages.
+Home-page: https://github.com/kingname/GeneralNewsExtractor
+Author: Kingname
+Author-email: contact@kingname.info
+License: MIT
+Description: UNKNOWN
+Keywords: python,webcrawler,webspider
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
