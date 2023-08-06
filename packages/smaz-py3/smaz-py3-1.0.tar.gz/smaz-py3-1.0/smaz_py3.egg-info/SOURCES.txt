@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+/home/runner/work/smaz-py3/smaz-py3/smazmodule.c
+/home/runner/work/smaz-py3/smaz-py3/smaz/smaz.c
+smaz_py3.egg-info/PKG-INFO
+smaz_py3.egg-info/SOURCES.txt
+smaz_py3.egg-info/dependency_links.txt
+smaz_py3.egg-info/top_level.txt
