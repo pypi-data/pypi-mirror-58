@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.cfg
+setup.py
+rhasspy_silence.egg-info/PKG-INFO
+rhasspy_silence.egg-info/SOURCES.txt
+rhasspy_silence.egg-info/dependency_links.txt
+rhasspy_silence.egg-info/requires.txt
+rhasspy_silence.egg-info/top_level.txt
+rhasspysilence/__init__.py
+rhasspysilence/const.py
+rhasspysilence/test/__init__.py

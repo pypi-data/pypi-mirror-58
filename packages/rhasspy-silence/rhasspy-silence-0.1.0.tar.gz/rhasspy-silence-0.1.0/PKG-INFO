@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rhasspy-silence
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/synesthesiam/rhasspy-silence
+Author: Michael Hansen
+Author-email: hansen.mike@gmail.com
+License: UNKNOWN
+Description: # Rhasspy Silence
+        
+        Detect speech/silence in voice commands with [webrtcvad](https://github.com/wiseman/py-webrtcvad).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
