@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: nti.traversal
+Version: 0.0.1
+Summary: NTI Traversal
+Home-page: https://github.com/NextThought/nti.traversal
+Author: Jason Madden
+Author-email: jason@nextthought.com
+License: Apache
+Description: ===============
+         nti.traversal
+        ===============
+        
+        .. image:: https://travis-ci.org/NextThought/nti.traversal.svg?branch=master
+            :target: https://travis-ci.org/NextThought/nti.traversal
+        
+        .. image:: https://coveralls.io/repos/github/NextThought/nti.traversal/badge.svg?branch=master
+            :target: https://coveralls.io/github/NextThought/nti.traversal?branch=master
+        
+        .. image:: https://readthedocs.org/projects/ntitraversal/badge/?version=latest
+           :target: https://ntitraversal.readthedocs.io/en/latest/?badge=latest
+           :alt: Documentation Status
+        
+        Support for `resource tree traversal
+        <https://pyramid.readthedocs.io/en/latest/narr/muchadoabouttraversal.html>`_
+        using `zope.traversing <https://zopetraversing.readthedocs.io>`_.
+        
+        
+        =========
+         Changes
+        =========
+        
+        
+        0.0.1 (2020-01-02)
+        ==================
+        
+        - Add support for Python 3.
+        
+Keywords: Traversal
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: test
+Provides-Extra: docs
