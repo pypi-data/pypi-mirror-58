@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lights
+Version: 0.0.1
+Summary: Command Line Utility for controlling phillips hue lights
+Home-page: https://github.com/spyoungtech/lights
+Author: Spencer Young
+Author-email: spencer.young@spyoung.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: phue
+Requires-Dist: fire
+
+# lights
+quick scripts for controlling my phue lights from CLI
+
+## Installation
+
+Clone the repo and install using pip
+
+```
+git clone https://github.com/spyoungtech/lights.git
+cd lights
+pip install . 
+```
+
+## Usage
+
+```
+lights [COMMAND]
+```
+
+The `--help` flag can be used to get more information about available commands
+
