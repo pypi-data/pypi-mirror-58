@@ -1,0 +1,3 @@
+[console_scripts]
+leviosar = clitt.__main__:main
+

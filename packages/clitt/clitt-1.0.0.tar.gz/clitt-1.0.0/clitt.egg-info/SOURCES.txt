@@ -1,0 +1,15 @@
+README.md
+setup.py
+clitt/__init__.py
+clitt/__main__.py
+clitt/actions.py
+clitt/auth.py
+clitt/enviroment.py
+clitt.egg-info/PKG-INFO
+clitt.egg-info/SOURCES.txt
+clitt.egg-info/dependency_links.txt
+clitt.egg-info/entry_points.txt
+clitt.egg-info/requires.txt
+clitt.egg-info/top_level.txt
+tests/__init__.py
+tests/test_tt.py
