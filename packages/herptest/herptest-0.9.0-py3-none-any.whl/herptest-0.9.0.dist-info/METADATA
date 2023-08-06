@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: herptest
+Version: 0.9.0
+Summary: Test suite tools for instructors
+Home-page: https://github.com/cacticouncil/herptest
+Author: Jeremiah Blanchard
+Author-email: jjb@eng.ufl.edu
+License: GPL 3
+Platform: UNKNOWN
+Requires-Dist: zipfile
+Requires-Dist: tempfile
+Requires-Dist: glob
+Requires-Dist: os
+Requires-Dist: shutil
+Requires-Dist: argparse
+Requires-Dist: sys
+Requires-Dist: ctypes
+
+UNKNOWN
+
+
