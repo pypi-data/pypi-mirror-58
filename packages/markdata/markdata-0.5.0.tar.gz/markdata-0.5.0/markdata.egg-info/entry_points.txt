@@ -1,0 +1,3 @@
+[console_scripts]
+markdata = markdata.cli:cli
+
