@@ -1,0 +1,10 @@
+slime.cpython-38-darwin.so,sha256=omRfpUgmSnOdkujj6cr-Gw8YPKXuwfIeyykrcf6hliA,71576
+peqnp/__init__.py,sha256=tcnzrTSPh1wXKA6CPBh46J4Kk68CzdyJaMEu3b7OvPs,935
+peqnp/entity.py,sha256=7JwGocN2LD-R9PPNYV303ybXropBrAi5MYyQsA0UEOA,12056
+peqnp/solver.py,sha256=GMnQ-eMFtBf9E3DOeDAYqErJDzqkYAvNK0T2ddgOXdI,20108
+peqnp/stdlib.py,sha256=vx_sNzDmsG72pCFLYTPJVG7pTAgu-v14az7vQqH98Js,3606
+PEQNP-0.1.1.dist-info/LICENCE.txt,sha256=z0LTuKJTIWmzawhbghtmjF4t5E44v6Qj526Msv9AYqs,2488
+PEQNP-0.1.1.dist-info/METADATA,sha256=xeDdVLGs662iQqEyn0W91kvLaq6yk4Ocm34Ba-IG6SQ,329
+PEQNP-0.1.1.dist-info/WHEEL,sha256=Q2jwauV7SdXlb20cz-bh9vn-BQ4tlA1IGNkj_GWnse8,109
+PEQNP-0.1.1.dist-info/top_level.txt,sha256=5N6pXMCgt5YCAyzrAM5E6NjaaMQqtukhv1NvnCvZIT8,12
+PEQNP-0.1.1.dist-info/RECORD,,
