@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: signaler
+Version: 0.0.2
+Summary: Simple signal handling
+Home-page: https://github.com/ypcrts/signaler
+Author: ypcrts
+Author-email: ypcrts@users.noreply.github.com
+License: MPL 2.0
+Keywords: signal,sigint
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: six
+
+UNKNOWN
+
+
