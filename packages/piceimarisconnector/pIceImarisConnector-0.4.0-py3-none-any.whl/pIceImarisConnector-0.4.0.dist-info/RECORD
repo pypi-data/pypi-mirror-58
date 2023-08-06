@@ -1,0 +1,14 @@
+pIceImarisConnector/__init__.py,sha256=cI6R0aqN9HjsTjqJGVszT7d84k5CX5_N2PAVGszRuRU,54
+pIceImarisConnector/pIceImarisConnector.py,sha256=XePFX94R3bVa1F9NRhs2TAVTJm4WEHX0FwR5IdYV5TE,91432
+pIceImarisConnector/test/HelloWorldXT.py,sha256=_COVGpc0VW_Bz5JjpwTzbK1qGU4QWkMi5KI-72bE1qs,744
+pIceImarisConnector/test/PyramidalCell.ims,sha256=pi-qBOd90hKSmLx_2oYSjcfzAw5uP3g7dSFMS8Z_F4I,4856792
+pIceImarisConnector/test/SwimmingAlgae.ims,sha256=ytcvWYdml6Rr6DfOrHFS-bHsR_iXNAzU1yFhnrzoIFU,365970
+pIceImarisConnector/test/TestPIcePyramidalCellXT.py,sha256=n4i8dhUJFamZ0meYxqg3ydktFpGLWE498BwQd-XUJxo,13462
+pIceImarisConnector/test/TestPIceSwimmingAlgaeXT.py,sha256=zGksyJmyJtZal3H2KxDVpLmpsjZ1iNO8ZxEgNQeAols,2652
+pIceImarisConnector/test/TestStaticMethods.py,sha256=MWpAa7uf8pDPzngywX-Uvnetp1sxQKKxgRgnyThEv3s,7282
+pIceImarisConnector/test/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pIceImarisConnector-0.4.0.dist-info/LICENSE.txt,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+pIceImarisConnector-0.4.0.dist-info/METADATA,sha256=-daqfuE0mU_WOmSwJCMz9nZPdNCYRF8RmMMFPZfOk6M,1301
+pIceImarisConnector-0.4.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pIceImarisConnector-0.4.0.dist-info/top_level.txt,sha256=F4TIamdn3ZiVLPkInHhssXuexqD-7IRjgNn7RnmABNs,20
+pIceImarisConnector-0.4.0.dist-info/RECORD,,

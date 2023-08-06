@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pIceImarisConnector
+Version: 0.4.0
+Summary: Easier communication between Bitplane Imaris and python over ImarisXT.
+Home-page: https://github.com/aarpon/pIceImarisConnector
+Author: Aaron Ponti
+Author-email: aaron.ponti@bsse.ethz.ch
+License: GPL2.0
+Download-URL: https://github.com/aarpon/pIceImarisConnector/releases
+Project-URL: Bug Tracker, https://github.com/aarpon/pIceImarisConnector/issues
+Project-URL: Documentation, https://piceimarisconnector.readthedocs.io/
+Project-URL: Source Code, https://github.com/aarpon/pIceImarisConnector
+Keywords: Imaris ImarisXT python Ice
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Provides: pIceImarisConnector
+
+IceImarisConnector for python (pIceImarisConnector) is a simple commodity class that eases communication between Bitplane Imaris and python using the Imaris XT interface.
+
+
