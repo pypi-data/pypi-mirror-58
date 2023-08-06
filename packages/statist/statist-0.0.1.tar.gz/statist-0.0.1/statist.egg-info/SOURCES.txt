@@ -1,0 +1,12 @@
+README.md
+setup.py
+statist/__init__.py
+statist/__main__.py
+statist/graph.py
+statist/statist.py
+statist.egg-info/PKG-INFO
+statist.egg-info/SOURCES.txt
+statist.egg-info/dependency_links.txt
+statist.egg-info/entry_points.txt
+statist.egg-info/requires.txt
+statist.egg-info/top_level.txt

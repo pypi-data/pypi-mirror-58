@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: statist
+Version: 0.0.1
+Summary: Get Todoist user stats in CLI
+Home-page: https://yoginth.com
+Author: Yoginth
+Author-email: yoginth@protonmail.com
+License: UNKNOWN
+Project-URL: Source, https://gitlab.com/yo/statist
+Description: # Statist
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
