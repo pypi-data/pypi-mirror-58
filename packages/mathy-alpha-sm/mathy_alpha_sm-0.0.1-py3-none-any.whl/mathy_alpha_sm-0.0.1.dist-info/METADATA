@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mathy-alpha-sm
+Version: 0.0.1
+Summary: Mathy.ai trained model
+Home-page: https://mathy.ai
+Author: Justin DuJardin
+Author-email: justin@dujardinconsulting.com
+License: CC BY-SA 3.0
+Platform: UNKNOWN
+Requires-Dist: mathy (<1.0.0,>=0.0.0)
+
+UNKNOWN
+
+
