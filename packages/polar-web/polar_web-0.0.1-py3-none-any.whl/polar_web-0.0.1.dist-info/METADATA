@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: polar-web
+Version: 0.0.1
+Summary: Python wrapper for Polar Web API.
+Home-page: https://github.com/burnnat/polar_web
+Author: Nat Burns
+Author-email: nbaccount@burnskids.com
+License: MIT license
+Keywords: polar_web
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# polar_web
+Python client for Polar web API.
+
+
