@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pykzee-inspector
+Version: 0.1.0
+Summary: Web interface for inspecting the Pykzee state
+Home-page: https://github.com/spacedentist/pykzee-inspector
+Author: Sven Over
+Author-email: sp@cedenti.st
+License: MIT
+Download-URL: https://github.com/spacedentist/pykzee-inspector/archive/0.1.0.tar.gz
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: aiohttp
+Requires-Dist: pykzee
+
+pykzee-inspector
+================
+
+A plug-in for Pykzee that launches a web server, serving a browser application for inspecting the Pykzee state.
+
+Installation
+------------
+
+.. code-block:: shell-session
+
+   pip install pykzee-inspector
+
+Then, add this object somewhere in your Pykzee configuration:
+
+.. code-block:: json
+
+   {
+     "__plugin__": "pykzee.inspector.InspectorPlugin",
+     "port": 8000
+   }
+
+Open ``http://localhost:8000`` in a web browser to see the whole Pykzee state.
+
+

@@ -1,0 +1,13 @@
+pykzee/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+pykzee/inspector/InspectorPlugin.py,sha256=wmC4tJlILArZchIK67WVeQzq5v0CGMaP_j23phiLNO8,7634
+pykzee/inspector/__init__.py,sha256=Drq-z-16a1lbM44OgUwrWNwguJNr59qUXLspwQrNBrE,59
+pykzee/inspector/__version__.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+pykzee/inspector/resources/index.html,sha256=0hLrZl3d-UsxjruYJzJWPR7tf9v6KHpegWdKbbiyBZc,588
+pykzee/inspector/resources/static/inspector.js,sha256=ZAyW_kF5ptiRfLhlmJpXNyVZ4ZJ7Z1RI2dWdQIXoWXI,194597
+pykzee/inspector/resources/static/licenses.txt,sha256=xXxpGE5uxJ3RRNPvxu5NIhoy3geN6DwftsTRY99gefU,6134
+pykzee/inspector/resources/static/style.css,sha256=jR6-OxKIp3c1wbvyrM1-nxFzYV19cAlcM6xvID-nAjk,10406
+pykzee_inspector-0.1.0.dist-info/LICENSE,sha256=uJTa9i4tY8fgDePmiCWJ0gKzR_CCYkmWOm2r-A6rPCE,1082
+pykzee_inspector-0.1.0.dist-info/METADATA,sha256=zgHdqghivMj3JxmplzfIXGHZDFEJ8LFVniiXlTmsJXw,908
+pykzee_inspector-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pykzee_inspector-0.1.0.dist-info/top_level.txt,sha256=wkL8qIstsesiMOYkDy1tCRu33IkpMj5M5CfVNwZ0h-E,7
+pykzee_inspector-0.1.0.dist-info/RECORD,,
