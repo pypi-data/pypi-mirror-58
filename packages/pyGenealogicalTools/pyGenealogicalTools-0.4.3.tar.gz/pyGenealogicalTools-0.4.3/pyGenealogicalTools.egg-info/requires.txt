@@ -1,0 +1,11 @@
+requests
+openpyxl
+pyexcel
+pyexcel-xls
+python-Levenshtein
+pyexcel-xlsx
+metaphone
+langdetect
+mapbox
+geotext
+python-dateutil
