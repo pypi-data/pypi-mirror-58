@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: py-nhl
+Version: 0.0.1
+Summary: NHL API Client
+Home-page: http://pypi.python.org/pypi/py-nhl/
+Author: Brian Devins-Suresh
+Author-email: badevins@gmail.com
+License: Apache-2.0
+Description: # py-nhl
+Platform: UNKNOWN
