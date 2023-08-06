@@ -1,0 +1,11 @@
+presto_chango/__init__.py,sha256=4q8a4W2sUVFFLKRFAIocElYiiqTfVod7v4sDD_2RiRU,772
+presto_chango/app.py,sha256=jFtcBOxwLDoBxgt8rPXU8pj8IXSXRwb_RxGvGieBvAE,3744
+presto_chango/database.py,sha256=5UZRIP_brMmYXyp1tE7ywXUl_z9qN520SOIjfo94IGg,5492
+presto_chango/song.py,sha256=SoXdGDQtEOhERm6KCg-IkfUtiIltFnw8vhkJTQhHtkM,7968
+presto_chango/tester.py,sha256=XMIwDiSnjFT0NV02U3dfpO4Es_5nyLilGNqmr1HA4z4,2456
+Presto_Chango-1.0.1.dist-info/LICENSE,sha256=7LO9XAObuQN8mabf4eTCkpdacE5DNuQZglOwEhAaANM,1073
+Presto_Chango-1.0.1.dist-info/METADATA,sha256=Mp2qyvo2awq-im3jGcHmkt7EQx13UgrsGoKNNuCeLLE,4508
+Presto_Chango-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+Presto_Chango-1.0.1.dist-info/entry_points.txt,sha256=-COklr8LJJD7FMmc6c71WYq_PAY3a4UOcxFuRo8C5zw,53
+Presto_Chango-1.0.1.dist-info/top_level.txt,sha256=CFj-Ri9vMpywWPqRtECb9cSTpvrcDPf25zJdIA8RMzA,14
+Presto_Chango-1.0.1.dist-info/RECORD,,
