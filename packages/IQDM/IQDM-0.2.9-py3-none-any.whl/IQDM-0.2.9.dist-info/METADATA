@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: IQDM
+Version: 0.2.9
+Summary: Scans a directory for IMRT QA results
+Home-page: https://github.com/cutright/IMRT-QA-Data-Miner/
+Author: Dan Cutright
+Author-email: dan.cutright@gmail.com
+License: MIT License
+Download-URL: https://github.com/cutright/IMRT-QA-Data-Miner/archive/master.zip
+Keywords: radiation therapy,qa,research
+Platform: UNKNOWN
+Requires-Dist: pdfminer.six
+Requires-Dist: pdfminer (>19)
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: pathvalidate
+
+IMRT QA Data Miner
+
+This software will iteratively scan all files with in a directory to extract data from IMRT QA reports 
+and generate a csv file.
+
+
