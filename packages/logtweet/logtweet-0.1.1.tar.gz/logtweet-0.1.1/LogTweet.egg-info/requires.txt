@@ -1,0 +1,7 @@
+bs4
+requests
+tweepy
+
+[develop]
+wheel
+twine
