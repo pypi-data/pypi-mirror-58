@@ -1,0 +1,8 @@
+README.rst
+setup.py
+yamkix
+yamkix.egg-info/PKG-INFO
+yamkix.egg-info/SOURCES.txt
+yamkix.egg-info/dependency_links.txt
+yamkix.egg-info/requires.txt
+yamkix.egg-info/top_level.txt
