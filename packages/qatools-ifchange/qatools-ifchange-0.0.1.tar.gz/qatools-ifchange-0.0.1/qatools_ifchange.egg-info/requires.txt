@@ -1,0 +1,9 @@
+tensorflow>=1.12.0
+pyyaml
+requests
+sklearn
+rank_bm25
+jieba
+gensim
+faiss-cpu
+tornado==5.0.2

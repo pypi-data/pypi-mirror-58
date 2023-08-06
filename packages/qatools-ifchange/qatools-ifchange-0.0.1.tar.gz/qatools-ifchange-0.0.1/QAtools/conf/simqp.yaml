@@ -1,0 +1,97 @@
+#
+dict_config:
+    - name: punction
+      path: ./data/punction.txt
+    - name: prefix
+      path: ./data/prefix.txt
+    - name: suffix
+      path: ./data/suffix.txt
+    - name: stopwords
+      path: ./data/stopwords.txt
+    - name: user_dict_path
+      path: ./data/user_dict.txt
+
+analysis_config:
+        dataclean:
+                name: src.analysis.dataclean
+                use: True
+                type: BathroomSSC
+                use_dict_name:
+                    - puction
+                    - prefix
+                    - suffix
+        segment:
+                name: src.analysis.wordseg
+                type: SegmentJiebaSSC
+                use: True
+                user_dict_path: data/user_dict.txt
+                use_dict_name:
+                    - stopwords
+                prefilter: False
+                ifremove: True
+                iflower: True
+        embedding:
+                name: src.analysis.senemb
+                type: SenEmbeddingSSC
+                use: True
+                vec_path: data/embedding.txt
+                remote_path: /user/kdd_wangpeng/data/embedding/qasearch/embedding.txt
+                userdict_path: data/user_dict.txt
+                sen_vec_size: 200 
+retrieval_config:
+        faiss:
+                name: src.retrieval.semantic.faiss_index
+                type: FaissIndex
+                top_k: 10
+                vec_size: 200
+                use: True
+        annoy:
+                name: src.retrieval.semantic.annoy_index
+                type: AnnoyIndex
+                top_k: 50
+                vec_size: 200
+                n_trees: 15
+                use: False
+
+matching_config:
+  bert:
+    max_seq_length: 512
+    type: BertMatcher
+    server_ip: 192.168.7.215
+    server_port: 8503
+    vocab_file: ./data/vocab.txt
+    model_name: matching
+    model_version: 1
+    use: True
+  char_jaccard:
+    type: CharJaccardMatcher
+    use: False
+  word_jaccard:
+    type: WordJaccardMatcher
+    use: False
+  tfidf:
+    type: TfidfCosineMatcher
+    use: False
+  embeddding:
+    type: EmbeddingCosineMatcher
+    use: False
+  bm25:
+    type: BM25Matcher
+    use: False
+
+rank_config:
+    bert: 
+      name: src.rank.predictor.bert_model
+      type: BertRank
+      use: True
+        
+server_response_format:
+        query_response: 
+
+logger:
+        appname:
+        logfile:
+        logformat:
+        loglevel_file:
+        loglevel_console:
+

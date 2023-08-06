@@ -1,0 +1,4 @@
+include QAtools/data/*
+include QAtools/conf/*
+include README.md
+
