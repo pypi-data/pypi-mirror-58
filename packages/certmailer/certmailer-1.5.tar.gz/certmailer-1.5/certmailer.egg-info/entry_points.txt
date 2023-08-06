@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        certmail=certmail:cli
+    
