@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-localizer
+Version: 0.1.4
+Summary: A library for making localizing django apps easier
+Author: Timofey Danshin
+Author-email: t.danshin@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Django (>=3.0.1,<4.0.0)
+Requires-Dist: stew (>=0.1.2,<0.2.0)
