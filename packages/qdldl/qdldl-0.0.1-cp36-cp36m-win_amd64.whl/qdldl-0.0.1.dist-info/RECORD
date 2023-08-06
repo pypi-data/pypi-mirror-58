@@ -1,0 +1,11 @@
+qdldl/__init__.py,sha256=1oGSzDrUBnlSovcRom-wrg7cMNYVDws_5nMxg9x0Vl0,41
+qdldl/_qdldl.c,sha256=iKJzoJrBXvSxMLdL3eeFe62YMB2xQ1gMs-Ko1QhWsu4,907082
+qdldl/_qdldl.cp36-win_amd64.pyd,sha256=wipFw2r9ktdrA6jF-jLyq-Xw-kLIiW5t74EzS3l4R0U,196096
+qdldl/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qdldl/tests/test_solve_ls.py,sha256=vSOBpWnLJjfAb8fZjH_WZiM1tsl6akIXxqhYd_V6zW0,998
+qdldl/tests/utils.py,sha256=j0oSHfimNNffcW_4VR_2n33fXAMjJUu-EEshnOTE0iI,122
+qdldl-0.0.1.dist-info/LICENSE,sha256=zslIgwaLgxnh9m2DdnUgHqgCv2DM4jKaJ-DhyX5nPYs,11577
+qdldl-0.0.1.dist-info/METADATA,sha256=BzMPV-lUluGMD8oRUv1Dtb9X1Bx7ywJIB_-O9GyvX9w,1083
+qdldl-0.0.1.dist-info/WHEEL,sha256=uQaeujkjkt7SlmOZGXO6onhwBPrzw2WTI2otbCZzdNI,106
+qdldl-0.0.1.dist-info/top_level.txt,sha256=cfcVd2gDnrQ_k51fMVwR-2FG-7xFJDEAcTA7o6ppv-A,6
+qdldl-0.0.1.dist-info/RECORD,,
