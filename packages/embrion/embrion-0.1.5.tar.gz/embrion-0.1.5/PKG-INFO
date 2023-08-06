@@ -1,0 +1,84 @@
+Metadata-Version: 1.0
+Name: embrion
+Version: 0.1.5
+Summary: UNKNOWN
+Home-page: https://gitlab.com/izel93/embrion
+Author: Izel Levy
+Author-email: izel93@gmail.com
+License: MIT
+Description: # Embrion
+        
+        Embrion is a project aimed at isolating development environments of repositories. It creates a docker container
+        to jump start development. Currently environment has a Jupyterlab UI, Visual Studio Code UI and SSH access. You can also
+        develop using PyCharm connecting through SSH to the docker. 
+        
+        ## Requirements
+        
+        You need to have docker and docker-compose installed on your computer. 
+        
+        ## Limitations
+        
+        This project only supports conda environment files (environment.yml) with a name. Support for requirements.txt
+        will be added later. For now you can list all your requirements as a pip dependency in your environment.yml file.
+        See https://stackoverflow.com/questions/35245401/combining-conda-environment-yml-with-pip-requirements-txt for more info.
+        
+        ## Installation
+        
+        Go to your main project directory where your environment.yml file is.
+         
+        Run:
+            
+            pip install embrion
+        
+        Then start the development server using:
+        
+            embrion up
+        
+        Then open Jupyterlab UI using,
+        
+            embrion open-jupyter
+        
+        or Visual Studio Code using,
+        
+            embrion open-vscode
+            
+        ## Usage   
+        
+        To remove everything run:
+           
+            embrion down
+        
+        To refresh the environment run:
+        
+            embrion refresh
+            
+        To temporarily stop run:
+        
+            embrion stop
+        
+        To start again run:
+        
+            embrion start
+        
+        To restart run:
+            
+            embrion restart
+        
+        To open jupyter notebook run:
+        
+            embrion open-jupyter
+        
+        To open vs code run:
+        
+            embrion open-vscode
+            
+        To open terminal run:
+        
+            embrion shell
+        
+        To connect through ssh run:
+        
+            ssh root@localhost -p 20022 (Password is embrion)
+        
+Keywords: development,environment,docker
+Platform: UNKNOWN
