@@ -1,0 +1,12 @@
+ffi_navigator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffi_navigator/import_resolver.py,sha256=Vv-X3Zsmar-L4u5loRaxRoi8PPifYkTxTstpchfwvz4,4304
+ffi_navigator/langserver.py,sha256=uJQPKt4DBh3daGphNHAKI0G3j36k3r4FOuCiyehgO4A,4303
+ffi_navigator/lsp.py,sha256=i0WaofhuyEqWgFwQY4haPzbXRdcV6n4z9KnU1cZKNts,524
+ffi_navigator/pattern.py,sha256=RXn4wTLYtm8zP_tSoZb5hEUdcoOqeD_oBJXXXsC2o50,12331
+ffi_navigator/workspace.py,sha256=Hj-LdGzdkER0jGqlDdN_abcM1zX03kfIByrIZM0wyv8,5833
+ffi_navigator/dialect/__init__.py,sha256=u6UrP8pXWBCl6NK2IjgiiApfzGXotRU3DYuvg7g6w0Y,40
+ffi_navigator/dialect/tvm.py,sha256=qPrIX63rVC1rrx4kFcEgZ0vL3aZc1vyy5QRk6f1iNWw,5412
+ffi_navigator-0.3.dist-info/METADATA,sha256=EA_IHxpeW7UYUEjA7CULytudFYxSZ2U-k-Bf3E4RXUM,3908
+ffi_navigator-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ffi_navigator-0.3.dist-info/top_level.txt,sha256=NNw1oCRKnZoIzJoZvMdNxHSsxid4ctoi_USCqV1gJsA,14
+ffi_navigator-0.3.dist-info/RECORD,,
