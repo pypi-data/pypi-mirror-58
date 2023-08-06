@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: spoofbot
+Version: 0.1
+Summary: A python requests wrapper for spoofing common browser behaviour
+Home-page: https://github.com/raember/webot
+Author: raember
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Webot
+Web bot for spoofing browser behaviour when using python requests.
+Supports Firefox and Chrome browser on most generic Windows, MacOS and Linux spoofing.
+
