@@ -1,0 +1,8 @@
+pypermedia~=0.4.2
+python-json-logger==0.1.11
+requests~=2.22.0
+requests-toolbelt~=0.9.1
+deprecated~=1.2
+tqdm==4.33.0
+pyjwt~=1.7.1
+s3fs
