@@ -1,0 +1,2 @@
+include README.md
+include adl_recognition/models/*
