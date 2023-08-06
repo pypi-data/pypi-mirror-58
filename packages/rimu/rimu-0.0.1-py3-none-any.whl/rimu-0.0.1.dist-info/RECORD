@@ -1,0 +1,12 @@
+rimu/__init__.py,sha256=MopJkVezUbggLlCbd2CCcZeKCUvxQBX4vL4ehdxVqEo,67
+rimu/options.py,sha256=nqBxvh2Ee7B9YX9jGWP90dxaSv5JBP9dXdqDCqryeeM,29
+rimu/rimu.py,sha256=YCr-OAFtmr3j-t70TZQcmCWGDtlq5Ch1lTKm90YxHI8,117
+rimuc/__init__.py,sha256=Nl_L93yJZl0TeICUkET64QoUNtpCgDeGqLBpjxpDr_s,28
+rimuc/__main__.py,sha256=k2nCtIw8-WHldpY8wMvEWH3WxNujGS45w-vkfxsyY7g,68
+rimuc/rimuc.py,sha256=59cOVixVjaAMH_AT77kBOnoZH5YBCK8gHYUp-rXr6iE,87
+rimu-0.0.1.dist-info/LICENSE,sha256=e6CsAVn1TRSIRBNLQFrvmeKIyAahcTJcv7f4o0-7eas,1054
+rimu-0.0.1.dist-info/METADATA,sha256=afaYm-Pnw3tYQ-lqhafvsbECNvoVA7Pl5EPL2G5ABDw,2172
+rimu-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rimu-0.0.1.dist-info/entry_points.txt,sha256=7DozF9ufoMGnl7BwT2PLpWSHvEkHzndha_Jdq9_O2Uw,45
+rimu-0.0.1.dist-info/top_level.txt,sha256=J-F_TVitjqHjxiIuOJCb3N3c406aETvOK_d448sRRXs,11
+rimu-0.0.1.dist-info/RECORD,,
