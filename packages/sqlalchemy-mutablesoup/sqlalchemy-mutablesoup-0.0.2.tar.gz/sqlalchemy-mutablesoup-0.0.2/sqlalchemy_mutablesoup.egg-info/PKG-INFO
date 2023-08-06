@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-mutablesoup
+Version: 0.0.2
+Summary: Mutable BeautifulSoup database type
+Home-page: https://github.com/dsbowen/sqlalchemy-mutablesoup
+Author: Dillon Bowen
+Author-email: dsbowen@example.com
+License: UNKNOWN
+Description: # SQLAlchemy-MutableSoup
+        
+        SQLAlchemy-MutableSoup defines a mutable BeautifulSoup SQLAlchemy database type.
+        
+        ## License
+        
+        This project is licensed under the MIT License [LICENSE](https://github.com/dsbowen/sqlalchemy-mutablesoup/blob/master/LICENSE).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
