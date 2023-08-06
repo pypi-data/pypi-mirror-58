@@ -1,0 +1,9 @@
+pervane/__init__.py,sha256=oGB6W1cvI4U0MOMXTs8Ef123sSI8xopRh_kHCJLQPj8,28
+pervane/cli.py,sha256=mWbRBtQ-NnDmGt8YviWTifO2GW0_MQK8hambWFZNDSs,235
+pervane/serve.py,sha256=yubHiPPEm6Iy9MxDiAJlA3Cvw-hV8qATx_viIh_Gp0g,17088
+pervane-0.0.16.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pervane-0.0.16.dist-info/METADATA,sha256=TXdG_ralNcuFAxsH6XjTGul1_YXg2MB0hWCbyPf9EOM,5897
+pervane-0.0.16.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pervane-0.0.16.dist-info/entry_points.txt,sha256=S7vd6enT_B6EQWsg9s36yg297hldva9V0IFC8hDP2jo,46
+pervane-0.0.16.dist-info/top_level.txt,sha256=eJcFCQd5zqL_KxS7YM0itBL_HNOw8k6dvpDjXnBZ8UA,8
+pervane-0.0.16.dist-info/RECORD,,
