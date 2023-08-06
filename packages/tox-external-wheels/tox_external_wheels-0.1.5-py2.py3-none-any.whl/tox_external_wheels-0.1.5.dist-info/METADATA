@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: tox-external-wheels
+Version: 0.1.5
+Summary: Use externally created wheels with Tox
+Home-page: http://tox-external-wheels.readthedocs.org
+Author: Mark Tamas Keller
+Author-email: markooo.keller@gmail.com
+Maintainer: Mark Tamas Keller
+Maintainer-email: markooo.keller@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/keller00/tox-external-wheels
+Project-URL: Tracker, https://github.com/keller00/tox-external-wheels/issues
+Keywords: virtual,environments,isolated,testing
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: tox
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: tox (>=3.12.2)
+Provides-Extra: docs
+Requires-Dist: sphinx (<3,>=2.0.0) ; extra == 'docs'
+Requires-Dist: towncrier (>=18.5.0) ; extra == 'docs'
+Requires-Dist: pygments-github-lexers (>=0.0.5) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-autoprogram (>=0.1.5) ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest (<6,>=4.0.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (<3,>=2.5.1) ; extra == 'testing'
+Requires-Dist: pytest-mock (<2,>=1.10.0) ; extra == 'testing'
+Requires-Dist: pytest-xdist (<2,>=1.22.2) ; extra == 'testing'
+
+[![Latest version on PyPi](https://badge.fury.io/py/tox-external-wheels.svg)](https://badge.fury.io/py/tox-external-wheels)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/tox-external-wheels.svg)](https://pypi.org/project/tox-external-wheels/)
+[![Build Status](https://dev.azure.com/markoookeller/tox-external-wheels/_apis/build/status/keller00.tox-external-wheels?branchName=master)](https://dev.azure.com/markoookeller/tox-external-wheels/_build/latest?definitionId=2&branchName=master)
+[![Documentation status](https://readthedocs.org/projects/tox-external-wheels/badge/?version=latest&style=flat-square)](https://tox-external-wheels.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+
+# tox-external-wheels
+
+Use externally created wheels with Tox
+
+Features
+--------
+
+* The ability to define external wheel files to tests in the tox config (example tox file):
+
+```
+[tox]
+envlist = py-{a,b,c}
+[testenv]
+external_wheels =
+    a: {toxinidir}/dist/*py27*.whl
+    b: {toxinidir}/dist/*py37*.whl
+commands =
+    a,b: pytest test
+    c: pip list
+```
+
+Or defined in a command line argument
+
+```
+tox -e 'py-{a,b,c}' --external_wheels 'a:{toxinidir}/dist/*py27*.whl;b:{toxinidir}/dist/*py37*.whl'
+```
+
+**Note**: In this case `py-c` falls back to installing from source.
+
+
+Requirements
+------------
+
+* None
+
+
+Installation
+------------
+
+You can install "tox-external-wheels" via [pip](https://pypi.org/project/pip/) from [PyPI](https://pypi.org):
+
+```
+pip install tox-external-wheels
+```
+
+Usage
+-----
+
+Use the `external_wheel` option. Like shown in [usage](#usage)
+
+Contributing
+------------
+Contributions are very welcome. Tests can be run with [tox](https://tox.readthedocs.io/en/latest/), please ensure
+the coverage at least stays the same before you submit a pull request.
+
+License
+-------
+
+Distributed under the terms of the **MIT** license, `tox-external-wheels` is
+free and open source software.
+
+
+Issues
+------
+
+If you encounter any problems, please
+[file an issue](https://github.com/keller00/tox-external-wheels/issues)
+along with a detailed description.
+
+
