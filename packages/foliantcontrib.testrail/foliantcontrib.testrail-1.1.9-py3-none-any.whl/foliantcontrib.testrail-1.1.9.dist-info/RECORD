@@ -1,0 +1,11 @@
+foliant/preprocessors/testrail/__init__.py,sha256=gMZKzEWc2vKPgGRwxguJu3K5qeUQ2-NeSFDNr6AZE64,35
+foliant/preprocessors/testrail/testrail.py,sha256=T2fhz0Qlwg2GPWgWuQoAG-wxbLjkMz1t2_x3doHI0VA,24413
+foliant/preprocessors/testrail/case_templates/1.j2,sha256=yLmwFxSccGk5Vhs6GjMYNHW251UZ8q1-rs4g0o_-JqQ,316
+foliant/preprocessors/testrail/case_templates/2.j2,sha256=2nooxQh3q9DXni1sMGCAYIRrEfQa1E6_3Ja0bwFE7QY,389
+foliant/preprocessors/testrail/testrailapi/__init__.py,sha256=FjbVy32R3Trg7NCPZwIcd-IgXK65szIePO7Ab3E3pfI,25
+foliant/preprocessors/testrail/testrailapi/testrailapi.py,sha256=CcHDPYMaHbK1D101QlhUPfK6LbQqQ2urCLMXy0ZOCJw,2210
+foliantcontrib.testrail-1.1.9.dist-info/LICENSE,sha256=DtYEQuxhTOx_zqX-H_w6JNoLKlb-xQm0p8Hh_gj73tM,1069
+foliantcontrib.testrail-1.1.9.dist-info/METADATA,sha256=xENoBug675YB9gezSyMH7CA9OoxCSdiVHLDKX9ONAwQ,18156
+foliantcontrib.testrail-1.1.9.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+foliantcontrib.testrail-1.1.9.dist-info/top_level.txt,sha256=5uvI8ZIgBWKY09Z8Xs4ESLGD7yAEGbiLvIrdHdaC9mE,8
+foliantcontrib.testrail-1.1.9.dist-info/RECORD,,
