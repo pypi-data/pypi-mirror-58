@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+opsdroid_homeassistant/__init__.py
+opsdroid_homeassistant/_version.py
+opsdroid_homeassistant.egg-info/PKG-INFO
+opsdroid_homeassistant.egg-info/SOURCES.txt
+opsdroid_homeassistant.egg-info/dependency_links.txt
+opsdroid_homeassistant.egg-info/entry_points.txt
+opsdroid_homeassistant.egg-info/not-zip-safe
+opsdroid_homeassistant.egg-info/requires.txt
+opsdroid_homeassistant.egg-info/top_level.txt
