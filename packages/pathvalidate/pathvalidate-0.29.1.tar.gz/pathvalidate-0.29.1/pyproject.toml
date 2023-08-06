@@ -1,0 +1,89 @@
+[tool.black]
+line-length = 100
+exclude = '''
+/(
+      \.eggs
+    | \.git
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+| setup.py
+| docs/conf.py
+'''
+
+[tool.isort]
+dont_skip = "*/**/__init__.py"
+known_third_party = [
+    "readmemaker",
+]
+include_trailing_comma = true
+line_length = 100
+lines_after_imports = 2
+multi_line_output = 3
+skip_glob = [
+    '*/.eggs/*',
+    '*/.tox/*',
+]
+
+[tool.coverage.run]
+source = ["pathvalidate"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+precision = 1
+
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    "except ImportError",
+    "raise NotImplementedError",
+    "pass",
+]
+
+[tool.poetry]
+name = "pathvalidate"
+version = "0.29.0"
+description = "pathvalidate is a Python library to sanitize/validate a string such as filenames/file-paths/etc."
+license = "MIT"
+authors = ["Tsuyoshi Hombashi <tsuyoshi.hombashi@gmail.com>"]
+keywords = ["file", "path", "validation", "sanitization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing",
+]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+[tool.poetry.dev-dependencies]
+coverage = {extras = ["toml"], version = ">=5.0.1"}
+faker = ">=3"
+pytest = ">=5"
+pytest-cov = ">=2.8.1"
+readmemaker = {version = "<1.0.0,>=0.7.3", optional = true}
+releasecmd = {version = "<0.1.0,>=0.0.18", optional = true}
+#setuptools = ">=38.3.0"
+twine = "*"
+sphinx = {version = "^2", optional = true}
+sphinx-rtd-theme = {version = "^0.4.3", optional = true}
+wheel = "*"
+
+[tool.poetry.extras]
+docs = ["readmemaker", "sphinx", "sphinx-rtd-theme"]
+release = ["releasecmd"]
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
