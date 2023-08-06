@@ -1,0 +1,8 @@
+README.md
+setup.py
+smartwrappers/__init__.py
+smartwrappers/constants.py
+smartwrappers.egg-info/PKG-INFO
+smartwrappers.egg-info/SOURCES.txt
+smartwrappers.egg-info/dependency_links.txt
+smartwrappers.egg-info/top_level.txt
