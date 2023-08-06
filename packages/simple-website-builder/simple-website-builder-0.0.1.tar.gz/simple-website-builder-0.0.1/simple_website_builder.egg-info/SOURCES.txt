@@ -1,0 +1,11 @@
+README.md
+setup.py
+simple-website-builder/__init__.py
+simple-website-builder/build.py
+simple-website-builder/html_utils.py
+simple-website-builder/unix.py
+simple-website-builder/utils.py
+simple_website_builder.egg-info/PKG-INFO
+simple_website_builder.egg-info/SOURCES.txt
+simple_website_builder.egg-info/dependency_links.txt
+simple_website_builder.egg-info/top_level.txt

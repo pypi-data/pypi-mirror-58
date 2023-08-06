@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple-website-builder
+Version: 0.0.1
+Summary: A website builder
+Home-page: https://github.com/takekoputa/simple-website-builder
+Author: Hoa Nguyen
+Author-email: hoanguyen@ucdavis.edu
+License: UNKNOWN
+Description: ### simple-website-builder 
+        The approach is to use CSS grid to determine the layout, and to fill each grid with content. 
+        The builder does not do more than that, including supporting nested layout. 
+        More documentation later.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
