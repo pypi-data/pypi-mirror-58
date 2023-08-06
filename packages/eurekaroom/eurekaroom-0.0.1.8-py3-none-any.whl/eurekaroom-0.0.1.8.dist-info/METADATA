@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: eurekaroom
+Version: 0.0.1.8
+Summary: A command-processor and RESTful server for use in escapenodes on RaspberryPi systems.
+Home-page: https://gitlab.com/growlf/eurekaroom.git
+Author: Daniel Eguia
+Author-email: eguiamotion@gmail.com
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.0.0
+Description-Content-Type: text/markdown
+Requires-Dist: configparser
+Requires-Dist: python-magic
+Requires-Dist: python-vlc
+Requires-Dist: Flask
+Requires-Dist: GPIOSimulator
+Requires-Dist: RPi.GPIO
+Requires-Dist: pillow
+
+# SpaceRoom
+
+By [YetiCraft](https://www.yeticraft.net) and @jscott for [Eureka Room](http://www.theeurekaroombham.com/)
+
+Code for running escape room hardware comprised of Arduinos and Raspberry Pi's running Rasbian.
+
+
+
+## NOTICE
+
+This project is currently set to private and is only available to the members listed in the repo-settings.  This allows some of the more-proprietary bits to exist within the code repository while not making them available to the general public.  Primarily, this prevents accidental inclusion of 'secrets' (such as passwords, access tokens, or similar) from becoming permanently available via the Google Wayback machine after such an accidental posting into the repo.
+
+That said - **please do not include secure information of any kind within any uploads into the repository**.  This includes passwords, authentication tokens, IP addresses, email or text message accounts, etc.  Use the local config tools such as the commandline tool's (`ecmd`) local and non-git-tracked config.ini file to store and load such bits.  You can also use commandline parameters to specify such things at execution time.  Never hardcode 'secrets' into things. There is never a good reason to embed them and it is VERY hard to completely remove them from the internet once it has happened.
+
+Additionally, and in general, do not include dynamic media such as videos or images that are just for "this escape room, but will not be used for any other afterwards".  This sort of media is considered dynamic and should be supplied from other sourced than the code repository.  Adding such media to the code-repository makes it bloat and slow down - it can also cause the free-account to tip into the paid-account requirements unnecessarily.
+
+At some point, The NetYeti would like to fully OpenSource the resultant code (in a completely generic form) for the community as a whole to participate in, and to allow the more powerful evolution of its abilities and improvements with the help of the OS Community.
+
+## Setup and Installation
+
+For a DEVELOPMENT system, clone this repo or copy the code to the target linux system.  To clone the repo to a Linux system, ensure that you have `git` installed properly and then use the following command from a terminal:
+
+    git clone git@gitlab.com:growlf/eurekaroom.git
+
+This will expect that your SSH keys are installed on this system in the correct path.  
+
+> **NOTE:**  If you are installing on a NON-development system (i.e. a Production/Live system that is used in the live Escape Room), you can either:
+>
+>    `pip install eurekaroom`
+>
+> 1. Copy the entire directory over manually (minus the .git directory)
+> 2. Or create a read-only GIT member in the project, add that system's `/root/.ssh/id_rsa.pub` key to the repository member that is allowed READ ONLY access, and then clone as above.  **DO NOT** , however, use your own personal git credentials on a Production/Live system.  Ever.  Please.
+
+Next, open a terminal shell within the code directory to execute the following commands:
+
+    sudo apt install -y python3-venv python3-tk vlc
+    python3 -m venv .py3
+    . .py3/bin/activate
+
+This will create and activate a local Python3 virtual environment that allows isolation from the system's copy of Python and it's libraries.  This Python environment will be completely dedicated to this project and will not affect the system Python interpreter - nor be affected by it.
+
+Next, add your media files (Images and Videos folders) into system.  It is recommended to use a layout similar to the following for default configuration:
+
+    eurekaroom (project root, created from the git clone operation)
+    |
+    +-/.py3 (python virtual environment)
+    | | ...(environment files and modules)
+    |
+    +-/eurekaroom (module folder)
+    | | ...(class definition files)  
+    |
+    +-/Media
+    | | ... (misc media - should be none)
+    | +-/Images
+    | | ... (image files)
+    | +-/Videos
+    |   ... (video files)
+    |
+    +-/config.ini
+    +-/ecmd (commandline tool)
+    +-/eurekanode.log
+    +-/README.md
+    +-/requirements.txt
+
+Next, make sure that you have both the Python3 Developer libraries installed and VLC player (should be default on all Debian/Gnome systems like Raspberry Pi Raspbian), and then install the project Python requirements like so:
+
+    pip3 install --upgrade pip wheel
+    pip3 install -r requirements.txt
+
+## Usage
+
+To use the command utility, simply execute the following on the linux system in a terminal where you have installed the code:
+
+    ./ecmd -h
+
+This will display a short description and command help content.
+
+## Setup the Pi
+
+For production purposes, each Eurekaroom node will run on a Raspberry Pi (version 3b or higher) with Raspbian (latest) as the OS.  The following section describes the setup process in generic detail (for now - more detail later, as other developers fill it in).
+
+First, create an SD card with the Raspbian OS (latest) image using the methods found online.
+
+Write ssh and wifi configs to the /boot partition so that both will be available upon first boot (with or without a screen attached)
+
+Insert the prepared card and boot the device.
+
+Connect to the device over SSH, then install the necessary application as follows:
+
+    pip install eurekaroom
+
+Create a config file with the node specific info (`ecmd -a -w -m PATH_TO_MEDIA -n displayname `) and ensure that the system runs the service correctly and as desired.
+
+Enable auto-login with `raspi-config`.
+
+### Auto start
+
+If eurekaroom was installed with the `pip install eurekaroom` command you can run: 
+
+    ecmd --installservice
+
+Else, set the autostart application in the auto-login account to be the `/full/path/to/ecmd -s` command.
+
+Reboot and ensure the system is responding on the expected wen port and to commandline execution.
+
+## Developer Notes
+
+The following are mostly links and random bits of info that the developers thought were important or needed to shared with each other.
+
+- https://sourceforge.net/projects/raspberry-gpio-python/ - library to allow using the code on a NON-Raspberry Pi during development.
+- https://blog.withcode.uk/wp-content/uploads/2016/10/RPi_GPIO_python_quickstart_guide.pdf
+- https://gitlab.com/shezi/GPIOSimulator - gpiosimulator- https://docs.python.org/3/howto/argparse.html - Option parsing library for commandline processing
+- https://docs.python.org/3/library/configparser.html - configuration file library
+- https://docs.python.org/3/howto/logging.html - how to for logging with python
+- https://code.visualstudio.com/docs/python/testing - adding tests to python code with Visual Code
+- https://code.visualstudio.com/download - Get Visual Code
+- https://realfavicongenerator.net/ - favicon generator
+- https://wiki.videolan.org/PythonBinding - VLC video player bindings
+- https://realpython.com/working-with-files-in-python/ - Working with files in Python
+- https://www.riverbankcomputing.com/software/pyqt/intro - GUI framework for graphical interfaces using QT5 (cross platform library)
+
+
