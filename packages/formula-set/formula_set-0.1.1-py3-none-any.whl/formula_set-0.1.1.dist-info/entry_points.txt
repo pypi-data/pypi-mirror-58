@@ -1,0 +1,3 @@
+[console_scripts]
+formula_set = formula_set.formula_set:main
+
