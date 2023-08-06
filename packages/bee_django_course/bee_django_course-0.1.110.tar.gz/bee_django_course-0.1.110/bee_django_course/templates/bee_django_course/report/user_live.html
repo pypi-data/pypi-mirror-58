@@ -1,0 +1,132 @@
+{% extends "bee_django_course/base.html" %}
+{% load bee_django_course_filter %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        班级录播统计
+    </h3>
+    </div>
+    <div style="margin: 10px auto;">
+        {% include 'bee_django_course/report/user_live_search.html' %}
+    </div>
+    {% if user_class %}
+        <div><h3>{{ user_class.name }} <span style="color: red">当前学生</span></h3></div>
+    {% endif %}
+    <div style="margin-bottom: 10px;">{{ start_dt|date:"Y-m-d H:i:s"|default:'' }}
+        - {{ end_dt|date:"Y-m-d H:i:s"|default:'' }}</div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>学生</th>
+            <th>进度</th>
+            <th>学生录播</th>
+            <th>助教观看</th>
+            {#            <th></th>#}
+        </tr>
+        </thead>
+        <tbody>
+        {% for student in user_list %}
+            <tr>
+                <td>
+                    <a href="{{ student.get_user_search_link }}">{{ student }}</a>
+                    <span style="color: red">{{ student.get_user_status }}</span>
+                </td>
+                <td>
+                    {% get_user_last_course_section student None end_dt as ucs %}
+                    <p>{{ ucs.user_course.course.name }}</p>
+                    {{ ucs.section.name }}
+                </td>
+                {% get_user_live_report student start_dt end_dt as detail %}
+                <td>{{ detail.0 }}分钟 / {{ detail.1 }}次 / {{ detail.2 }}天</td>
+                <td> {{ detail.3 }}次 / {{ detail.4 }}天</td>
+                {#                <td><a href="{% url 'bee_django_course:live_list' student.id %}">录播记录</a></td>#}
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    {% include 'bee_django_course/paginator.html' %}
+
+    {% if mentor and user_class %}
+        <div>
+            <h3>{{ user_class.name }} <span style="color: red">当前助教</span></h3>
+        </div>
+
+        <div style="margin: 20px 0;">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>助教</th>
+                    <th>进度</th>
+                    <th>助教录播</th>
+                    {#            <th></th>#}
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        {{ mentor }}
+                        <span style="color: red">{{ mentor.get_user_status }}</span>
+                    </td>
+                    <td>
+                        {% get_user_last_course_section mentor None end_dt as ucs %}
+                        <p>{{ ucs.user_course.course.name }}</p>
+                        {{ ucs.section.name }}
+                    </td>
+                    {% get_user_live_report mentor start_dt end_dt as detail %}
+                    <td>{{ detail.0 }}分钟 / {{ detail.1 }}次 / {{ detail.2 }}天</td>
+                    {#                <td><a href="{% url 'bee_django_course:live_list' student.id %}">录播记录</a></td>#}
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+    {% if perms.bee_django_user.view_user_class_remove_records %}
+        <h3>班级学生转入转出记录</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th>学生</th>
+                <th>原班级</th>
+                <th>新班级</th>
+                <th></th>
+                {#            <th></th>#}
+            </tr>
+            {% for record in remove_records %}
+                <tr>
+                    <td>{{ record.student }} <span style="color: red">{{ record.student.get_user_status }}</span></td>
+                    <td>{{ record.old_class|default:"" }}</td>
+                    <td>{{ record.new_class |default:"" }}</td>
+                    <td>【{{ record.created_by }}】 于 【 {{ record.created_at }}】操作</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+            $.datetimepicker.setLocale('ch');
+            $('#id_start_time').datetimepicker({
+                format: 'Y-m-d',
+                timepicker: false,
+                scrollMonth: false,
+                scrollTime: false,
+                scrollInput: false
+            });
+            $('#id_start_time').attr("autocomplete", "off");
+            $('#id_end_time').datetimepicker({
+                format: 'Y-m-d',
+                timepicker: false,
+                scrollMonth: false,
+                scrollTime: false,
+                scrollInput: false
+            });
+            $('#id_end_time').attr("autocomplete", "off");
+        });
+    </script>
+{% endblock %}

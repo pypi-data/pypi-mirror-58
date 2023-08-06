@@ -1,0 +1,2 @@
+Django>=1.11
+bee_django_object_field>=0.0.1

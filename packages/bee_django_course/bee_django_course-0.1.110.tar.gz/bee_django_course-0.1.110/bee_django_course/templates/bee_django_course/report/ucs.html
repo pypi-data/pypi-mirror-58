@@ -1,0 +1,53 @@
+{% extends "bee_django_course/base.html" %}
+{% load bee_django_course_filter %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        课程课件学习统计
+    </h3>
+    </div>
+    <div style="margin: 10px auto;">
+        {% include 'bee_django_course/report/ucs_search.html' %}
+    </div>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>学生</th>
+            <th>课程</th>
+            <th>课件</th>
+            <th>开始时间</th>
+            <th>通过时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for ucs in ucs_list %}
+            <tr>
+                <td>
+                    <a href="{{ ucs.user_course.user.get_user_search_link }}">{{ ucs.user_course.user }}</a>
+                    <span style="color: red">{{ ucs.user_course.user.get_user_status }}</span>
+                </td>
+                <td>
+                    {{ ucs.user_course.course.name }}
+
+                </td>
+
+                <td>{{ ucs.section.name }}</td>
+                <td>
+                    {{ ucs.learned_at|default:"" }}
+                </td>
+                <td>
+                    {{ ucs.passed_at|default:"" }}
+                </td>
+                {#                <td><a href="{% url 'bee_django_course:live_list' student.id %}">录播记录</a></td>#}
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+    {% include 'bee_django_course/paginator.html' %}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
