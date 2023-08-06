@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: chariothy-common
+Version: 0.1.0
+Summary: Common code for myself.
+Home-page: https://github.com/chariothy/pycommon.git
+Author: Henry TIAN
+Author-email: chariothy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
