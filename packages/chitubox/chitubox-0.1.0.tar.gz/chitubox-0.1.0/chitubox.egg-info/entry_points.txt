@@ -1,0 +1,3 @@
+[console_scripts]
+chitubox = chitubox:cli
+
