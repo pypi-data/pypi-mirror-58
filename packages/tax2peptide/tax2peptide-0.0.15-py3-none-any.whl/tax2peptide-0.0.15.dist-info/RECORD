@@ -1,0 +1,15 @@
+tax2peptide/Accession.py,sha256=xqslfIk--yr7EDFOHx37vcr1GWoloOorxNhaKL9X-Cw,5172
+tax2peptide/DatabaseCleaner.py,sha256=w0OCzoFmeO4nw2iwIEaxK-9IvMGQpdjmlcyuKSn1lvk,3449
+tax2peptide/Download.py,sha256=j20xfCMcDp9tiI9rAYPsjJlu9tKlzewgFp299NSO6QU,7262
+tax2peptide/Output.py,sha256=qLw2PZ9SRhNG5KU4cU8wSky5fIdHzu0-eFw8FmO8Ihc,3680
+tax2peptide/TaxonGraph.py,sha256=gLuafnFI7BIldu0OG7SZ_bYakYQQbEbQesmD83QRvOk,9926
+tax2peptide/TestFile.py,sha256=AkNzltVm5tafdYfMvVJVmSq6cwdQPpos5I0a1XQasIg,1850
+tax2peptide/WriteCustomDB.py,sha256=v73CkjP5XEGV5nGQuLqcxwNPZ2zRyZI75zB0_EJvYLs,10141
+tax2peptide/__init__.py,sha256=0rpEvXKaWSUDXXP16mgakQQ6i1yTFMjKAmj-o3nFkpE,43
+tax2peptide/__main__.py,sha256=2XXDrLqLsg_nmIKGrsaRBmwm_zw3C_14JBmBFg3R3mY,26874
+tax2peptide/version.py,sha256=YtkQ0xJuRN_ZjjhJ2kXBIkzEenORzuw78h9h_vJ-MGY,22
+tax2peptide-0.0.15.dist-info/LICENSE,sha256=Y44iYmoVX3fb4fvI0_iJ26xVsZgMK3jP9k_NWvRXV9w,1083
+tax2peptide-0.0.15.dist-info/METADATA,sha256=u-EG2h62lz3mD3JW2QnQ_dGot_N-XhSMKNQI5OS9_PE,8709
+tax2peptide-0.0.15.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tax2peptide-0.0.15.dist-info/top_level.txt,sha256=vfVssy_GLVlyA-5-IfPJBmeEPW7upM8K3XFbGUS9n5o,12
+tax2peptide-0.0.15.dist-info/RECORD,,
