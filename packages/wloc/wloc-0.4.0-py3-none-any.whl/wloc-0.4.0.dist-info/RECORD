@@ -1,0 +1,15 @@
+wloc/__init__.py,sha256=RnK2buqXfbaYSTKdV66AxNHaLHQswUtAOuvJB05cJEI,7132
+wloc/settings.py,sha256=os3q61n8RcIVGUxvZf0jzPu9CQl8OcEQOkqBEzsjcBk,994
+wloc/app/__init__.py,sha256=-_bw6-PPcmhgcSDV01bRi7OX7YBf_pD4iFYETvZdFtE,4320
+wloc/app/messages.py,sha256=orR80MON8fOC-EoV531vz0p0-3-PmM9pujve7wcgVr0,1073
+wloc/app/run.py,sha256=JkyGYzRl1-lmiuz3AGh8G5GdOs6a43Sm48pp1ZLrhA4,957
+wloc/app/settings.py,sha256=f2xxXZNfeT2WzbFtBf9MtlSGRJXqrZccvWU-623jzmU,858
+wloc/fetcher/__init__.py,sha256=dm0gfYprujTkuvuXXB8oKaA7xDaDByPYw016bGeAm50,1357
+wloc/fetcher/linux.py,sha256=j_I7tC_4JqRgNnFvZX8qzBRxVTJQdAKGZ_uyHQmtlqs,1573
+wloc/fetcher/windows.py,sha256=b4SXCy4v8F_OOGvZ-VvoJNyaPmQ1Xk89e18VUI1EQJs,1191
+wloc-0.4.0.dist-info/COPYING,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+wloc-0.4.0.dist-info/METADATA,sha256=YNs5bjtrRuxhFtmsrlZT5D3frTYl1Su-wLWnvsTZOAo,1512
+wloc-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+wloc-0.4.0.dist-info/entry_points.txt,sha256=h_NfNuM7xu8u7iZhiFIrvXCtLCYu9LJl-svW8mPY4ak,44
+wloc-0.4.0.dist-info/top_level.txt,sha256=xdDIE5fqKOqemOvDFFc4qb002CtUNo3Ud_hJecRFffM,5
+wloc-0.4.0.dist-info/RECORD,,
