@@ -1,0 +1,4 @@
+quicktions==1.9
+musicscore==1.0.0
+prettytable==0.7.2
+fpdf2==2.0.3
