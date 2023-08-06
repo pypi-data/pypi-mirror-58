@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+pure_eval/__init__.py
+pure_eval/core.py
+pure_eval/my_getattr_static.py
+pure_eval/utils.py
+pure_eval.egg-info/PKG-INFO
+pure_eval.egg-info/SOURCES.txt
+pure_eval.egg-info/dependency_links.txt
+pure_eval.egg-info/requires.txt
+pure_eval.egg-info/top_level.txt
