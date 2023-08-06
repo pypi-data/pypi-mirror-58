@@ -1,0 +1,17 @@
+pyyaml
+jinja2
+tqdm
+termcolor
+yapsy
+gensim
+toposort
+Pygments
+pytz
+diskcache
+xxhash
+pillow
+perfcounters
+terminaltables
+textacy
+spacy
+mistune==0.8.4
