@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: koe-acoustic-features
+Version: 0.0.2
+Summary: Implementation of acoustic features used by Koe
+Home-page: https://github.com/fzyukio/koe-acoustic-features
+Author: Yukio Fukuzawa
+Author-email: y.fukuzawa@massey.ac.nz
+License: UNKNOWN
+Description: # Install
+        ```bash
+        pip install koe-acoustic-features 
+        ```
+        
+        
+        # Usage
+        ```python
+        from koe_acoustic_features import AcousticExtractor
+        extractor = AcousticExtractor.from_file('audio.wav', 120, 500)
+        f0 = extractor.fundamental_frequency()
+        
+        # Full list of supported features see implementation
+        
+        ```
+        
+        # Test
+        ```bash
+        nosetests --nocapture -v
+        ``` 
+         
+        # Check coding standard:
+        ```bash
+        gitlab-runner exec docker check-coding-standard-compliance
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
