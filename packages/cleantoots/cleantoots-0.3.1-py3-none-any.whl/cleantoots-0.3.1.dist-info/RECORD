@@ -1,0 +1,10 @@
+cleantoots/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+cleantoots/clean.py,sha256=LVbRpJqhQPPatnHnJltDkM26Dlu0jIQYDL_HEdQAZ8U,2266
+cleantoots/config.py,sha256=P2b557kgiIyOLdt6q2uH4NrN4t2uReGoyzR3QWa4zeA,2910
+cleantoots/main.py,sha256=vw9_01CNTK8KK2oKuSHYKFZ_T6awP_n6rAsvWlaEyNs,1594
+cleantoots/utils.py,sha256=fa9zCk4flUgCQXqumq-XwATlsuF3Iy2rzg5zAEyUXrM,1431
+cleantoots-0.3.1.dist-info/entry_points.txt,sha256=e8b3fmmj5nKTApOyTjFTvqkNzLDQ6U568BX0jXjEOmg,50
+cleantoots-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cleantoots-0.3.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cleantoots-0.3.1.dist-info/METADATA,sha256=_UWplgGptNg2PXm1rs9sOu_Iq9p5cgLkhxI3ZWMXhuE,3371
+cleantoots-0.3.1.dist-info/RECORD,,
