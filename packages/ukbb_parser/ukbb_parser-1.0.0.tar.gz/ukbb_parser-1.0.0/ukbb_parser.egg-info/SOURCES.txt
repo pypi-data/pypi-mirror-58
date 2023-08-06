@@ -1,0 +1,14 @@
+README.rst
+setup.py
+bin/create_ukbb_genotype_spec_file
+bin/create_ukbb_phenotype_dataset
+ukbb_parser/__init__.py
+ukbb_parser/ukbb_parser.py
+ukbb_parser/ukbb_phenotype_dataset.py
+ukbb_parser.egg-info/PKG-INFO
+ukbb_parser.egg-info/SOURCES.txt
+ukbb_parser.egg-info/dependency_links.txt
+ukbb_parser.egg-info/requires.txt
+ukbb_parser.egg-info/top_level.txt
+ukbb_parser/shared_utils/__init__.py
+ukbb_parser/shared_utils/util.py

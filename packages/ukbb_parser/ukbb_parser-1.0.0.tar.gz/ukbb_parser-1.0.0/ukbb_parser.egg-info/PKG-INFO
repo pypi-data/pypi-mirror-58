@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ukbb-parser
+Version: 1.0.0
+Summary: A Python module for loading phenotypic and genetic data from the UK Biobank.
+Home-page: https://github.com/nadavbra/ukbb_parser
+Author: Nadav Brandes
+Author-email: nadav.brandes@mail.huji.ac.il
+License: MIT
+Description: ukbb_parser: TODO
+        
+Platform: UNKNOWN
