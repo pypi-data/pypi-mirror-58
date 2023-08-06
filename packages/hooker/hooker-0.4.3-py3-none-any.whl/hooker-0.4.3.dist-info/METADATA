@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hooker
+Version: 0.4.3
+Summary: An arcane-powered python hooking library for sane humans
+Home-page: https://github.com/satori-ng/hooker
+Author: Satori-NG org
+Author-email: satori_ng@email.com
+License: UNKNOWN
+Keywords: hook,event,plugin,extension,module
+Platform: UNKNOWN
+
+https://github.com/satori-ng/hooker/blob/master/README.md
+
+
