@@ -1,0 +1,10 @@
+README.md
+setup.py
+junk_email_collector/__init__.py
+junk_email_collector/junk_email_collector.py
+junk_email_collector.egg-info/PKG-INFO
+junk_email_collector.egg-info/SOURCES.txt
+junk_email_collector.egg-info/dependency_links.txt
+junk_email_collector.egg-info/requires.txt
+junk_email_collector.egg-info/top_level.txt
+junk_email_collector.egg-info/zip-safe
