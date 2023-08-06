@@ -1,0 +1,10 @@
+work_calendar_ru/__init__.py,sha256=K_rnF3w0uxfqGvibqbH5uEFR1rsGZOcWYVQzbXuesGY,22
+work_calendar_ru/core.py,sha256=l-fywm8k5lz8X01UGODiYwI4kExkFqATP0s0VyOd5jI,1840
+work_calendar_ru/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+work_calendar_ru/data/holidays.py,sha256=jI16CaVGoSMls1ULKTkRgEScKTpN5UO2HLWrn8uChiM,693
+work_calendar_ru/data/time.py,sha256=9YzSVg3_nh3p_cQJZcgVxi1x-c4Px0EFHEJqC3ntUL8,105
+work_calendar_ru-1.1.2.dist-info/LICENSE.txt,sha256=HYs_4gquB8xlQDkFMCbId9KQ-byFTV6-o6kiKkyVhWg,1068
+work_calendar_ru-1.1.2.dist-info/METADATA,sha256=G_vp4FBfr_FeT2dAk82Q-jpJOOOcWOBCh2Pe159Z7pk,1204
+work_calendar_ru-1.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+work_calendar_ru-1.1.2.dist-info/top_level.txt,sha256=qe_gIrM0CZXzaghxXZ2Yn0Aaozn-Yj5N5F1i8d8RZSI,17
+work_calendar_ru-1.1.2.dist-info/RECORD,,
