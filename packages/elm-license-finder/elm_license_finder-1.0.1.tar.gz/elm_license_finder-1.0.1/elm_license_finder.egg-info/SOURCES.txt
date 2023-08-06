@@ -1,0 +1,9 @@
+README.md
+setup.py
+elm_license_finder/__init__.py
+elm_license_finder/find_licenses.py
+elm_license_finder/main.py
+elm_license_finder.egg-info/PKG-INFO
+elm_license_finder.egg-info/SOURCES.txt
+elm_license_finder.egg-info/dependency_links.txt
+elm_license_finder.egg-info/top_level.txt
