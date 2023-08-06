@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tinycircuits-wireling
+Version: 0.0.1
+Summary: Wireling Python library
+Home-page: https://github.com/TinyCircuits/TinyCircuits-Wireling-Python-Lib
+Author: TinyCircuits
+Author-email: info@tinycircuits.com
+License: UNKNOWN
+Description: # TinyCircuits Wireling Python Lib
+        
+        This Python package includes some Wireling helper functions to make using them easier. This library is used with all Wireling examples.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
