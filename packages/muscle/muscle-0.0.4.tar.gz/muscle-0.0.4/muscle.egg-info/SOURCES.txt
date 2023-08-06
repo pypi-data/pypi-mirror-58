@@ -1,0 +1,7 @@
+README.md
+setup.py
+muscle/__init__.py
+muscle.egg-info/PKG-INFO
+muscle.egg-info/SOURCES.txt
+muscle.egg-info/dependency_links.txt
+muscle.egg-info/top_level.txt
