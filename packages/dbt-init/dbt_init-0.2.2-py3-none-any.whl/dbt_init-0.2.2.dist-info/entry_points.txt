@@ -1,0 +1,3 @@
+[console_scripts]
+dbt-init = core.main:main
+
