@@ -1,0 +1,8 @@
+pluggy>=0.13.1
+daiquiri
+
+[TEST]
+pytest>=4.0.0
+pytest-cov
+codecov
+tox
