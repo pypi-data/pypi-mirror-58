@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gitpipe
+Version: 0.0.6
+Summary: Connect to git through subprocess in Python
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Description: Connect to git through subprocess in Python
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
