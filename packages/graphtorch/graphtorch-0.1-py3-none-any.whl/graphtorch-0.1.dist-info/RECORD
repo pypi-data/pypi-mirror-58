@@ -1,0 +1,8 @@
+graphtorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graphtorch/matrix.py,sha256=lS5tRgc554iVB2xvB5_jkrDg5aMSpCRilFQYWmFE9DQ,2085
+graphtorch/model.py,sha256=X1l09GpqLgaE_CH2wF06jTd9BAm25U2slpflOcKatCg,9508
+graphtorch/neat_graphtorch.py,sha256=DYBQkpGhLXpZZMl-FVzVazNDWklxGOC6t4Jrv59UJCY,9409
+graphtorch-0.1.dist-info/METADATA,sha256=E2fDelyDYxsVkolltX3Wo8qlZnydAtzu3C1Kwz2P_Go,350
+graphtorch-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+graphtorch-0.1.dist-info/top_level.txt,sha256=EGF4L-6cLR6K5kzaQWZfjketchzajF3riPQhmezvPL0,11
+graphtorch-0.1.dist-info/RECORD,,
