@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pyMetaClasses
+Version: 1.0.2
+Summary: A collection of MetaClasses for Python.
+Home-page: https://github.com/Paebbels/pyMetaClasses
+Author: Patrick Lehmann
+Author-email: Paebbels@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://pyMetaClasses.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/Paebbels/pyMetaClasses
+Project-URL: Issue Tracker, https://github.com/Paebbels/pyMetaClasses/issues
+Description: ![PyPI - License](https://img.shields.io/pypi/l/pymetaclasses)
+        ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Paebbels/pyMetaClasses) 
+        ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Paebbels/pyMetaClasses)
+        [![Documentation Status](https://readthedocs.org/projects/pymetaclasses/badge/?version=latest)](https://pyMetaClasses.readthedocs.io/en/latest/?badge=latest)
+        [![PyPI](https://img.shields.io/pypi/v/pyMetaClasses)](https://pypi.org/project/pyMetaClasses/)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyMetaClasses)
+        ![PyPI - Wheel](https://img.shields.io/pypi/wheel/pyMetaClasses)
+        ![PyPI - Status](https://img.shields.io/pypi/status/pyMetaClasses)
+        
+        # pyMetaClasses
+        
+        A collection of MetaClasses for Python.
+        
+        
+        ## Contributors:
+        
+        * [Patrick Lehmann](https://github.com/Paebbels) (Maintainer)
+        
+        
+        ## License
+        
+        This library is licensed under [Apache License 2.0](LICENSE.md)
+        
+        -------------------------
+        
+        SPDX-License-Identifier: Apache-2.0
+        
+Keywords: Python3 Path Generic-Library
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
