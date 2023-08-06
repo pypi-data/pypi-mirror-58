@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fonetic/__init__.py
+fonetic/fonetic.py
+fonetic.egg-info/PKG-INFO
+fonetic.egg-info/SOURCES.txt
+fonetic.egg-info/dependency_links.txt
+fonetic.egg-info/top_level.txt

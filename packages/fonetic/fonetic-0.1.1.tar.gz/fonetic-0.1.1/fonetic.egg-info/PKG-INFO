@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: fonetic
+Version: 0.1.1
+Summary: Assess pronouncibility of text
+Home-page: https://github.com/s0md3v/fonetic
+Author: Somdev Sangwan
+Author-email: s0md3v@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/s0md3v/fonetic/tarball/master
+Description: UNKNOWN
+Keywords: fonetic,linguistic,entropy,spell check
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2
