@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "flake8-boto3"
+version = "0.3.0"
+description = "Checks for boto3, by r2c. Available in [Bento](https://bento.dev)."
+authors = ["R2C <hello@returntocorp.com>"]
+readme = "README.md"
+homepage = "https://bento.dev"
+classifiers=[
+  "Programming Language :: Python :: 3",
+  "License :: Other/Proprietary License",
+  "Operating System :: OS Independent",
+]
+packages = [
+  { include = "flake8_boto3"},
+]
+exclude = ["tests/**"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+flake8 = "^3.7.9"
+boto3 = "^1.10.21"
+r2c-py-ast = "0.1.0b1"
+
+[tool.poetry.plugins]
+[tool.poetry.plugins."flake8.extension"]
+r2c-boto3 = "flake8_boto3.main:Flake8Boto3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
