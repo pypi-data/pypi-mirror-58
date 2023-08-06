@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: keras-batchflow
+Version: 0.1
+Summary: Batch generation framework for Keras
+Home-page: https://github.com/maxsch3/batchflow
+Author: Maxim Scherbak
+Author-email: maxim.scherbak@gmail.com
+License: MIT
+Download-URL: https://github.com/maxsch3/batchflow
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy (>=1.9.1)
+Requires-Dist: scipy (>=0.14)
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: keras
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: markdown ; extra == 'tests'
+Provides-Extra: visualize
+Requires-Dist: pydot (>=1.2.4) ; extra == 'visualize'
+
+
+Batch generation framework for Keras designed as a convenient and flexible tool
+for making keras-ready batch generators from pandas DataFrames and a bunch of
+sklearn transformers of your choice 
+
+
