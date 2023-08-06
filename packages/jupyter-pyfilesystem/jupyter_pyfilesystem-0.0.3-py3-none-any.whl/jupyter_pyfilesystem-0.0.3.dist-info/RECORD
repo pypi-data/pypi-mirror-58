@@ -1,0 +1,11 @@
+jupyter_pyfilesystem/__init__.py,sha256=gP-lw2UOTAPDxPts7moieevcnyBOLqtqmQF2tFSjXWI,129
+jupyter_pyfilesystem/contents.py,sha256=eguqnX7PogD5pBm5m4Bl72jGcK0Gojbtjm-EV-eo5x4,17871
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pyfilesystem.py,sha256=yIJDVOjlwkXkoIDMPfTCRQjIoOKsWhH1NPgJDevgMxU,12898
+tests/todo-test_hybrid_manager.py,sha256=kkMVPnMVR_IAdTe6x4kqCFqXe66Gd9qUh9D94ga-Lss,10323
+tests/utils.py,sha256=vkdVsjFqId2Zex7isSeFy9JBS-O7bl31bnoESu2e_tg,3373
+jupyter_pyfilesystem-0.0.3.dist-info/LICENSE,sha256=ha9ViKPFI7792pUKhGjDj3jXO8_Xq5f-BBrCtv1mweY,1065
+jupyter_pyfilesystem-0.0.3.dist-info/METADATA,sha256=4iK938y8Xbul7GH8pRoRa8eOO73zb3gdmJRzdqairs8,2535
+jupyter_pyfilesystem-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jupyter_pyfilesystem-0.0.3.dist-info/top_level.txt,sha256=5xtxPaS1ZudzVF8vPyNvSBwtdSY8zENzxK1AjF1Tj8I,27
+jupyter_pyfilesystem-0.0.3.dist-info/RECORD,,
