@@ -1,0 +1,10 @@
+conversion_metrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conversion_metrics/_nbdev.py,sha256=yNDlyh-hnZnOk2MBt_Nqg9yXQ2mF8KRQrUE4vvXXRtA,467
+conversion_metrics/plot.py,sha256=uUdQUMI56BIr-P1PzR02rY9KkXXrdyvEtYz1BdNNuhE,1246
+conversion_metrics/ratio.py,sha256=9oEl2gLGLlAGGdjsH76JicUqI3-FdQz_P12NEYLGjp4,3675
+conversion_metrics-2.0.0.dist-info/LICENSE,sha256=bKv4IRyQ9zuwThPiXYemcNE-8Yly42XgGs_YVvfP7v0,1091
+conversion_metrics-2.0.0.dist-info/METADATA,sha256=SE7KljISKvFMXNp7VkY-9GGhMln2w4tE4bPw4e6Y49U,1157
+conversion_metrics-2.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+conversion_metrics-2.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+conversion_metrics-2.0.0.dist-info/top_level.txt,sha256=RHyh6EyMUGOXqEGsL3GXT-rjE6SFbNeSAW80Sz0-gtk,19
+conversion_metrics-2.0.0.dist-info/RECORD,,
