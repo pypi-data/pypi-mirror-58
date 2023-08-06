@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: zk_rn_lib_maker
+Version: 1.0.0
+Summary: Tool to create react-native lib for zhike
+Home-page: https://gitee.com/smartstudy/zk_rn_lib_maker.git
+Author: JeffreyCao
+Author-email: jeffreycao1024@gmail.com
+License: MIT Licence
+Description: Tool to create react-native lib for zhike
+Keywords: pip,zk_rn_lib_maker
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
