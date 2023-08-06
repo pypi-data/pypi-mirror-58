@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: freq-used
+Version: 0.1
+Summary: Frequently used code pieces
+Home-page: https://github.com/sungheeyun/FrequentlyUsed
+Author: Sunghee Yun
+Author-email: sunghee.yun@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# FrequentlyUsed
+Frequently used code pieces
+
+
