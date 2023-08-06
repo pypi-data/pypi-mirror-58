@@ -1,0 +1,13 @@
+caerus/__init__.py,sha256=AzOTKT1-XFfXZWjrcCaCsNmI9jWMQBNTvossGP_D_Z4,1001
+caerus/_version.py,sha256=nz4hxH2CUaQNrbodrLjtn2ty0vYCAZZV455Vw1rwxys,18970
+caerus/caerus.py,sha256=pykEH1T4KIZNZ1Ju6tZYVr4CVJvycTWn1ihSU6iVcB8,16555
+caerus/ones2idx.py,sha256=n1v0NyRTnWPRHzpdYLgS-1oPfUkliN804OGRpF-1VL8,2726
+caerus/risk_performance_metrics.py,sha256=kioWJMcxhe8mhWEk-JkSEtUU5jD7QfAB4S1pEDWrxCY,8504
+caerus/data/btc.csv,sha256=2xkSABz-ngm4V1kZYye1j3tkrauT_Yr2e0ctHsnA6dE,57942
+caerus/data/fb.csv,sha256=A1f8Cr7ht12uF0a9a5WMb5hlB6dtwFWWaE2Y1rHsb4k,211877
+caerus-0.1.1.dist-info/LICENCE.txt,sha256=iPmsG8r2coguFVKc2nysBb-f5F5yh3_8wHtNn6BFCXA,660
+caerus-0.1.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+caerus-0.1.1.dist-info/METADATA,sha256=hJxsM3L6C7CrPHL3QLCY43c-9685ccZmIgE6rEwtk7c,4784
+caerus-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+caerus-0.1.1.dist-info/top_level.txt,sha256=sVfDU5ITG08hdDzYLQwwCrD82c171pTOwdXAw4OyxTo,7
+caerus-0.1.1.dist-info/RECORD,,
