@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "elasticedge"
+version = "0.2.0"
+description = ""
+authors = ["Marco Acierno <marcoaciernoemail@gmail.com>"]
+packages = [
+    { include = "elasticedge" },
+    { include = "elasticedge/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cleo = "^0.7.6"
+pyyaml = "^5.2"
+requests = "^2.22.0"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+[tool.poetry.scripts]
+elasticedge = "elasticedge.console:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
