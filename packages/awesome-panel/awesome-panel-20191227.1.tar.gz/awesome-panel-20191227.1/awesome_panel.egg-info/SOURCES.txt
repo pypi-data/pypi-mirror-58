@@ -1,0 +1,9 @@
+README.md
+setup.py
+awesome_panel/__init__.py
+awesome_panel.egg-info/PKG-INFO
+awesome_panel.egg-info/SOURCES.txt
+awesome_panel.egg-info/dependency_links.txt
+awesome_panel.egg-info/not-zip-safe
+awesome_panel.egg-info/requires.txt
+awesome_panel.egg-info/top_level.txt
