@@ -1,0 +1,3 @@
+[console_scripts]
+makeReact = makeReact.script:main
+

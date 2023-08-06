@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+makeReact/__init__.py
+makeReact/__main__.py
+makeReact/script.py
+makeReact.egg-info/PKG-INFO
+makeReact.egg-info/SOURCES.txt
+makeReact.egg-info/dependency_links.txt
+makeReact.egg-info/entry_points.txt
+makeReact.egg-info/top_level.txt
