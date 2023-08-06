@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pytask-io
+Version: 0.0.1
+Summary: An asynchronous mail server
+Home-page: https://github.com/joegasewicz/pytask_io
+Author: Joe Gasewicz
+Author-email: joegasewicz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Pytask IO
+
+Asynchronous Tasks Library using asyncio
+
+![PyTask IO](assets/Group.png?raw=true "Title")
+
+## Authors
+
+* **joegasewicz** - *Initial work* - [@joegasewicz](https://twitter.com/joegasewicz)
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
