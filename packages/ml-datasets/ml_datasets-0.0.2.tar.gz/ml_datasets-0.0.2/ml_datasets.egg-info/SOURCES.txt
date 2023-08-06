@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+ml_datasets.egg-info/PKG-INFO
+ml_datasets.egg-info/SOURCES.txt
+ml_datasets.egg-info/dependency_links.txt
+ml_datasets.egg-info/requires.txt
+ml_datasets.egg-info/top_level.txt
+ml_datasets.egg-info/zip-safe
