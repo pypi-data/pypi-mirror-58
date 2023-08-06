@@ -1,0 +1,14 @@
+Installation
+============
+
+
+Python ``pip`` package is required to install ``spb``.
+
+
+From PyPI
+---------
+
+Alternatively you can install ``spb`` from PyPI:
+
+    pip3 install --user
+
