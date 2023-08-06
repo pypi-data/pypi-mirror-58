@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: dramatiq-abort
+Version: 0.1b1
+Summary: Dramatiq middleware to abort tasks.
+Home-page: https://github.com/flared/dramatiq_abort
+Author: Flare Systems Inc.
+Author-email: oss@flare.systems
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: dramatiq
+Provides-Extra: all
+Requires-Dist: redis (<4.0,>=2.0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: redis (<4.0,>=2.0) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-quotes ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: redis
+Requires-Dist: redis (<4.0,>=2.0) ; extra == 'redis'
+
+# dramatiq-abort
+
+Add the aborting feature to [dramatiq] through a simple middleware with flexible backend.
+
+Current version support aborting using the [Redis] store.
+
+
+## Installation
+
+Since the only available backend right now is [Redis]:
+
+    pip install dramatiq_abort[redis]
+
+
+## Quickstart
+
+```python
+
+from dramatiq import get_broker
+from dramatiq_abort import Abortable, backends, abort
+
+abortable = Abortable(backend=backends.RedisBackend())
+get_broker.add_middleware(abortable)
+
+# ...
+
+import dramatiq
+
+@dramatiq.actor
+def my_long_running_task(): ...
+
+message = my_long_running_task.send()
+
+# Now abort the message.
+abort(message.message_id)
+```
+
+[Redis]: https://redis.io
+[dramatiq]: https://dramatiq.io/
+
+
+
