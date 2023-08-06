@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rush-cli
+Version: 0.2.0
+Summary: Minimalistic bash task runner
+License: MIT
+Author: rednafi
+Author-email: redowan.nafi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: pyyaml (>=5.2,<6.0)
