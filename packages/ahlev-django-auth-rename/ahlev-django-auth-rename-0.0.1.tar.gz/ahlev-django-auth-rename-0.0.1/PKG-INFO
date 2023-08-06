@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ahlev-django-auth-rename
+Version: 0.0.1
+Summary: to rename authentication and authorization
+Home-page: https://github.com/ohahlev/ahlev-django-auth-rename/tree/0.0.1
+Author: ahlev
+Author-email: ohahlev@gmail.com
+License: UNKNOWN
+Description: to rename authentication and authorization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst
