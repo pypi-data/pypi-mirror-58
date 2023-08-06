@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: BrainRender
+Version: 0.2.0
+Summary: Python scripts to use Allen Brain Map data for analysis and rendering
+Home-page: https://github.com/BrancoLab/BrainRender
+Author: Federico Claudi
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: vtkplotter
+Requires-Dist: vtk
+Requires-Dist: allensdk
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: scikit-image
+Requires-Dist: brainio (>=0.0.9)
+Provides-Extra: nb
+Requires-Dist: jupyter ; extra == 'nb'
+Requires-Dist: k3d ; extra == 'nb'
+
+UNKNOWN
+
+
