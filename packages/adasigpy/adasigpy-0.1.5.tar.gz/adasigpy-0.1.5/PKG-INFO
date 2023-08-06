@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: adasigpy
+Version: 0.1.5
+Summary: Adaptive Signal Processing Package in Python
+License: MIT
+Author: borley1211
+Author-email: km.isetan@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy (>=1.17.4,<2.0.0)
+Requires-Dist: scipy (>=1.4.0,<2.0.0)
+Requires-Dist: stft (>=0.5.2,<0.6.0)
