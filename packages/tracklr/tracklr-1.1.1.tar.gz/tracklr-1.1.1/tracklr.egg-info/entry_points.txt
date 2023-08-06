@@ -1,0 +1,10 @@
+[console_scripts]
+tracklr = tracklr.main:main
+
+[tracklr]
+info = tracklr.info:Info
+init = tracklr.init:Init
+ls = tracklr.ls:Ls
+pdf = tracklr.pdf:Pdf
+tag = tracklr.tag:Tag
+
