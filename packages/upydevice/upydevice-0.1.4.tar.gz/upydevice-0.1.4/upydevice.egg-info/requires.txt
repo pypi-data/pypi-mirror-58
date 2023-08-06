@@ -1,0 +1,4 @@
+upydev
+pyserial
+dill
+pexpect
