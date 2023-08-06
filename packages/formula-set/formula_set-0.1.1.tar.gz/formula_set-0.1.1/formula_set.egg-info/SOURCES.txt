@@ -1,0 +1,9 @@
+README.md
+setup.py
+formula_set/formula_set.py
+formula_set/test_formula_set.py
+formula_set.egg-info/PKG-INFO
+formula_set.egg-info/SOURCES.txt
+formula_set.egg-info/dependency_links.txt
+formula_set.egg-info/entry_points.txt
+formula_set.egg-info/top_level.txt
