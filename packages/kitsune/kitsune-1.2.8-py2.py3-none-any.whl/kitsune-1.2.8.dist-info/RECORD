@@ -1,0 +1,17 @@
+kitsune/__init__.py,sha256=pxTpvWcXQeeLbdKgJgNKj_njzBMHfVLKRCZNlNSsqPg,210
+kitsune/acf.py,sha256=r0GwsWgnV8HWH5jdNWv4Zn0buEvdYFuAsF7i_ziLTFY,1741
+kitsune/cre.py,sha256=v1Kj59eComwaB-jJ6fgfpWOsK3spOZB1yId0h2azm5c,2114
+kitsune/kitsunejf.py,sha256=AyJso4Iu_rt9iq5ZkpBJU1laU9xqdWDGZBZqcO4E7wY,8540
+kitsune/kopt.py,sha256=J9LOoPumzMArNCL29huFo1yJ5YDdvpGOG06pn-EedaQ,4237
+kitsune/main.py,sha256=uKf9ZW1rAAyrox2wCtf8iUkAXlj1daVuOS2fWwj3D-U,13055
+kitsune/matrix.py,sha256=hc4ygVq3jkUBnXgzUTUB-J-iyOiBAlLi0RHZvjSeE1w,1196
+kitsune/ofc.py,sha256=yKdmYnsvrQqo_HFA-8P9TXUhLJbfB3nJp0UT3VLlfs4,1085
+kitsune/version.py,sha256=pBUQk77r6B_0TgFAlB9g_ywr0AGGi7k8b7kPyDzBO-U,85
+kitsune/modules/jellyfish-linux,sha256=2Lci91FuKdhy8AY8LrqRzlXr4cB4W6p9bsjxU9le8Kg,8388952
+kitsune/modules/jellyfish-macosx,sha256=9m02_M0NLLQTug4HiHncbHHDqn4lyKi8UKc_9Z1p1LE,638208
+kitsune-1.2.8.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+kitsune-1.2.8.dist-info/METADATA,sha256=GjDReRpWBpdekGpVfqvCR5fq_C3xfSxNG0PB1LzgIwA,1453
+kitsune-1.2.8.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+kitsune-1.2.8.dist-info/entry_points.txt,sha256=jyhMYQfCn8cA5vx3QhkiKP8G75H3Ht_Bftre4Igx4EY,47
+kitsune-1.2.8.dist-info/top_level.txt,sha256=NlBQntv95dg3z7IabciEzMDAwr_vuYzioTMnCDW6wEY,8
+kitsune-1.2.8.dist-info/RECORD,,
