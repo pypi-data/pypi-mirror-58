@@ -1,0 +1,9 @@
+README.md
+setup.py
+ogpparser/__init__.py
+ogpparser/ogpparser.py
+ogpparser.egg-info/PKG-INFO
+ogpparser.egg-info/SOURCES.txt
+ogpparser.egg-info/dependency_links.txt
+ogpparser.egg-info/requires.txt
+ogpparser.egg-info/top_level.txt
