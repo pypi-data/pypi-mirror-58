@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: python-request-fanout
+Version: 1.0.1
+Summary: make multiple requests concurrently and get their responses
+Home-page: https://github.com/Eitol/python_request_fanout
+Author: Hector Oliveros
+Author-email: hector.oliveros.leon@gmail.com
+License: MIT
+Description: It allows multiple requests to be made asynchronously.
+        
+        This can be done.
+        
+        ```bash
+        pip3 install python-request-fanout
+        ```
+        
+        ###Example:
+         
+        ```python
+        import requests
+        
+        from python_request_fanout.requester import HTTPMethod, Requester
+        request_array = [
+            requests.Request(
+                HTTPMethod.GET.name,
+                url="https://www.google.com"
+            ),
+            requests.Request(
+                HTTPMethod.GET.name,
+                url="https://www.udemy.com"
+            ),
+            requests.Request(
+                HTTPMethod.GET.name,
+                url="https://www.youtube.com"
+            ),
+            requests.Request(
+                HTTPMethod.POST.name,
+                url="https://www.github.com"
+            ),
+        ]
+        response_array = Requester.do_requests(request_array)
+        assert len(response_array) == 4
+        ```
+        
+        #### Sample diagram
+        [![diagram](doc/diagram.png)](doc/diagram.png)
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
