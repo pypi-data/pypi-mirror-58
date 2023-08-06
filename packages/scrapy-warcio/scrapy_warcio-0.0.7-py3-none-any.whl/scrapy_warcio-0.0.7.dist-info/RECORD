@@ -1,0 +1,8 @@
+scrapy_warcio/__init__.py,sha256=YZ_1BsgKWGPjIMOiZUjCf5krj_KxohSvcAeNTJQkDTI,149
+scrapy_warcio/warcio.py,sha256=xNdMGCB86xv5I7XXPHYB4wAoccZ4g9WsJZOSlRiAkX4,9748
+scrapy_warcio-0.0.7.data/data/middlewares.py,sha256=wDojlfkiopnoOM-I6rlANM1ZDOlYPrZ8HuAk7FMfDVM,392
+scrapy_warcio-0.0.7.data/data/settings.yml,sha256=CblqRkhU9ESWWh_L3YnSaeNnPKXyl1YSh5KuDjRJu2Q,436
+scrapy_warcio-0.0.7.dist-info/METADATA,sha256=vYL1BX8KcBHricVPZn7u9wbh9XSDDv8DvLyCa_Rn_mM,2645
+scrapy_warcio-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+scrapy_warcio-0.0.7.dist-info/top_level.txt,sha256=x5dDQidND-NjSSVaFoc7EsUugFZbITlZNn4Wt5s9ZuE,14
+scrapy_warcio-0.0.7.dist-info/RECORD,,
