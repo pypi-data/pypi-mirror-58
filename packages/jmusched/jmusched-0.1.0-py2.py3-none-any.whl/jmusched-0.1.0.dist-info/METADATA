@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jmusched
+Version: 0.1.0
+Summary: JMU class schedule
+Home-page: https://github.com/kylelaker/jmusched
+Author: Kyle Laker
+Author-email: kyle@laker.email
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.0)
+Requires-Dist: tabulate
+
+
+# jmu-sched
+
+Tells you when the next "standard" class time ends.
+
+## Data
+
+Date comes from the
+[JMU Class Scheduling Policy](https://www.jmu.edu/academic-affairs/policies-and-reports/class-schedule.shtml).
+
+

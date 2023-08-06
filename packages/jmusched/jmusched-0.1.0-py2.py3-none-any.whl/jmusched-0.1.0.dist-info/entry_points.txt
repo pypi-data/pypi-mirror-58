@@ -1,0 +1,3 @@
+[console_scripts]
+jmusched = jmusched.main:main
+
