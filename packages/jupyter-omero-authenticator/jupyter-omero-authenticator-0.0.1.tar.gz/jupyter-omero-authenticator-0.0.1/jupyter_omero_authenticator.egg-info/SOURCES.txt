@@ -1,0 +1,11 @@
+README.md
+setup.py
+jupyter_omero_authenticator/__init__.py
+jupyter_omero_authenticator/auth.py
+jupyter_omero_authenticator.egg-info/PKG-INFO
+jupyter_omero_authenticator.egg-info/SOURCES.txt
+jupyter_omero_authenticator.egg-info/dependency_links.txt
+jupyter_omero_authenticator.egg-info/not-zip-safe
+jupyter_omero_authenticator.egg-info/requires.txt
+jupyter_omero_authenticator.egg-info/top_level.txt
+jupyter_omero_authenticator/templates/omerologin.html
