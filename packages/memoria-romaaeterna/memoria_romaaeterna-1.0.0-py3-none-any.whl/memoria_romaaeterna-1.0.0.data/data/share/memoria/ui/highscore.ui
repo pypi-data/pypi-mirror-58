@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface domain="memoria">
+  <requires lib="gtk+" version="3.16"/>
+  <!-- interface-local-resource-path ../pixmaps -->
+  <!-- interface-css-provider-path memoria.css -->
+  <object class="GtkImage" id="imgDeleteHighScore">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">user-trash-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <object class="GtkListStore" id="listHighScore">
+    <columns>
+      <!-- column-name Place -->
+      <column type="gchararray"/>
+      <!-- column-name Player -->
+      <column type="gchararray"/>
+      <!-- column-name Victories -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="winHighScore">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="type_hint">dialog</property>
+    <signal name="delete-event" handler="on_winHighScore_delete_event" swapped="no"/>
+    <signal name="show" handler="on_winHighScore_show" swapped="no"/>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="headHighScore">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="title" translatable="yes">High Score</property>
+        <property name="show_close_button">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkGrid" id="gridHighScore">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="margin_left">18</property>
+        <property name="margin_right">18</property>
+        <property name="margin_top">18</property>
+        <property name="margin_bottom">18</property>
+        <child>
+          <object class="GtkLabel" id="lblHighScore">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="margin_right">18</property>
+            <property name="margin_bottom">18</property>
+            <property name="wrap">True</property>
+            <property name="ellipsize">middle</property>
+            <property name="max_width_chars">25</property>
+            <property name="xalign">0</property>
+            <style>
+              <class name="labelXXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="imgHighScore">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">end</property>
+            <property name="margin_bottom">18</property>
+            <property name="pixbuf">../pixmaps/victory.png</property>
+            <property name="use_fallback">True</property>
+            <property name="icon_size">3</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTreeView" id="treeHighScore">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="margin_bottom">18</property>
+            <property name="model">listHighScore</property>
+            <child internal-child="selection">
+              <object class="GtkTreeSelection"/>
+            </child>
+            <child>
+              <object class="GtkTreeViewColumn" id="treecolHighScorePlace">
+                <property name="sizing">autosize</property>
+                <property name="title">#</property>
+                <child>
+                  <object class="GtkCellRendererText" id="celltxtHighScorePlace"/>
+                  <attributes>
+                    <attribute name="text">0</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkTreeViewColumn" id="treecolHighScorePlayer">
+                <property name="sizing">autosize</property>
+                <property name="title" translatable="yes">Player</property>
+                <property name="expand">True</property>
+                <child>
+                  <object class="GtkCellRendererText" id="celltxtHighScorePlayer"/>
+                  <attributes>
+                    <attribute name="text">1</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkTreeViewColumn" id="treecolHighScoreVictories">
+                <property name="sizing">autosize</property>
+                <property name="title" translatable="yes">Victories</property>
+                <child>
+                  <object class="GtkCellRendererText" id="celltxtHighScoreVictories"/>
+                  <attributes>
+                    <attribute name="text">2</attribute>
+                  </attributes>
+                </child>
+              </object>
+            </child>
+            <style>
+              <class name="comboboxL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnDeleteHighScore">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="halign">start</property>
+            <property name="valign">center</property>
+            <property name="margin_right">18</property>
+            <property name="image">imgDeleteHighScore</property>
+            <signal name="clicked" handler="on_btnDeleteHighScore_clicked" swapped="no"/>
+            <style>
+              <class name="buttonXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblCongratulations">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">end</property>
+            <property name="label" translatable="yes">Congratulations!</property>
+            <property name="single_line_mode">True</property>
+            <style>
+              <class name="labelXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkPopoverMenu" id="popmenHighScore">
+    <property name="can_focus">False</property>
+    <property name="relative_to">btnDeleteHighScore</property>
+    <child>
+      <object class="GtkBox" id="boxHighScore">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="margin_left">6</property>
+        <property name="margin_right">6</property>
+        <property name="margin_top">6</property>
+        <property name="margin_bottom">6</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkModelButton" id="menuDeleteSelectedPlayer">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">Delete selected player</property>
+            <signal name="clicked" handler="on_menuDeleteSelectedPlayer_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="menuDeleteAllPlayers">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="text" translatable="yes">Delete all players</property>
+            <signal name="clicked" handler="on_menuDeleteAllPlayers_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="submenu">main</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+</interface>
