@@ -1,0 +1,13 @@
+djpymemcache/__init__.py,sha256=UDufrCZCObnNBq7EsfAm7rCY3n2IM0yEjP1yK0gQLtA,62
+djpymemcache/backend.py,sha256=PmWT9rWknsTNuKQu4dtQn8S1KMx42Hxmp_SNrRBpeTM,972
+djpymemcache/client.py,sha256=WKXgDN3hSf9FQJqgksEtV6bmjYZsYHw-HLfgOSNgobA,1586
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=6uYVW2FelOfOWugEmen4i2FG0RdxxYgRIO0yfpxMY54,390
+tests/settings.py,sha256=CiZCeRZayTur_maZcOEV1LCRZtyZOTlimm6L1U5l8Sw,506
+tests/test_cache.py,sha256=O-EROOIsTOD8NahZsTXXFdTkYlhSvkuLozmHlCrFzRk,7671
+tests/test_sessions.py,sha256=uOfjNZ42ovYFRheriqxuRHWKRaBsSCICqeYScEtQuL4,2187
+django_pymemcache-0.3.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+django_pymemcache-0.3.1.dist-info/METADATA,sha256=hr7tVqqtxejFxS0A-EDcJCRcXNEbzq7bN95hYZCLnFw,2297
+django_pymemcache-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_pymemcache-0.3.1.dist-info/top_level.txt,sha256=U8S7rQX6xkGArqjtsuuakAJrhYK0FkE9S7z7Dkg6b0c,19
+django_pymemcache-0.3.1.dist-info/RECORD,,
