@@ -1,0 +1,54 @@
+Metadata-Version: 1.1
+Name: djangosweet-jwt
+Version: 0.0.1
+Summary: JSON Web Token based authentication for Django REST framework
+Home-page: https://github.com/ConfiYobo/django-sweet-jwt
+Author: Confidence Yobo
+Author-email: confiyobo@gmail.com
+License: MIT
+Description: =======================
+        SweetJWT
+        =======================
+        
+        Overview
+        --------
+        
+        This package provides JSON Web Token Authentication support for
+        Django REST framework.
+        
+        Requirements
+        ------------
+        
+        -  Python (2.7, 3+)
+        -  Django (1.8, 1.9, 1.10, 1.11, 2+)
+        -  Django REST Framework (3.1, 3.2, 3.3, 3.4, 3.5, 3.6, +)
+        
+        Installation
+        ------------
+        
+        Install using ``pip``\ ...
+        
+        .. code:: bash
+        
+            $ pip install djangosweet-jwt
+        
+        Credit to
+        ----------
+        - jpadilla author of djangorestframework-jwt
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
