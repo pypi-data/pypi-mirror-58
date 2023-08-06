@@ -1,0 +1,49 @@
+---
+
+1:
+  name: Outdated and vulnerable software versions identified
+  likelihood: H
+  impact: H
+  risk: H
+  fixed: 1
+
+2:
+  name: Stored cross-site scripting
+  likelihood: H
+  impact: H
+  risk: H
+  fixed: 0
+
+3:
+  name: Insecure SSH configuration
+  likelihood: L
+  impact: H
+  risk: M
+  fixed: 0
+
+4:
+  name: Formula injection
+  likelihood: M
+  impact: M
+  risk: M
+  fixed: 1
+
+5:
+  name: Username enumeration
+  likelihood: H
+  impact: L
+  risk: M
+  fixed: 0
+
+6:
+  name: Insecure SSL/TLS configuration
+  likelihood: L
+  impact: M
+  risk: L
+  fixed: 0
+7:
+  name: Version information disclosure
+  likelihood: L
+  impact: L
+  risk: L
+  fixed: 1
