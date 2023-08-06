@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: flake8-click
+Version: 0.3.1
+Summary: Checks for click, by r2c. Available in [Bento](https://bento.dev).
+Home-page: https://bento.dev
+Author: R2C
+Author-email: hello@returntocorp.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: flake8 (>=3.7,<4.0)
+Requires-Dist: libcst (>=0.2.4,<0.3.0)
+Description-Content-Type: text/markdown
+
+# flake8-click
+
+Flake8 plugin for detecting [Click](https://click.palletsprojects.com/en/7.x/) best practices, by [r2c](https://r2c.dev). Available by default alongside other great tools in [Bento](https://bento.dev).
+
+## Checks
+
+- `r2c-click-option-function-argument-check`: missing a matching function argument for options defined with `click.option`
+- `r2c-click-names-are-well-formed`: checks for
+  - click option name does not begin with '-'
+  - click argument name begins with '-'
+  - click parameter is missing name
+- `r2c-click-launch-uses-literal`: `click.launch` may be called with user input, leading to a security
+  vulnerability
+
+## Installing
+
+```console
+$ pip install flake8-click
+```
+
+_Specify `python2` or `python3` to install for a specific Python version._
+
+And double check that it was installed correctly:
+
+```console
+$ flake8 --version
+3.7.9 (flake8-click: 0.2.5, mccabe: 0.6.1, pycodestyle: 2.5.0, pyflakes: 2.1.1)
+```
+
+## Usage
+
+```console
+$ flake8 --select=r2c-click /path/to/code
+```
