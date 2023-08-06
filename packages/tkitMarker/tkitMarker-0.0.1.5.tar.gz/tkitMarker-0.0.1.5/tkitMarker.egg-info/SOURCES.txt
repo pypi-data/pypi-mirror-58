@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+tkitMarker/__init__.py
+tkitMarker/config.py
+tkitMarker/marker.py
+tkitMarker/utils.py
+tkitMarker.egg-info/PKG-INFO
+tkitMarker.egg-info/SOURCES.txt
+tkitMarker.egg-info/dependency_links.txt
+tkitMarker.egg-info/requires.txt
+tkitMarker.egg-info/top_level.txt
+tkitMarker/model/__init__.py
+tkitMarker/model/albert_lstm_crf.py
+tkitMarker/model/bert_lstm_crf.py
+tkitMarker/model/crf.py
