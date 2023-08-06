@@ -1,0 +1,15 @@
+phantominator/__init__.py,sha256=hWhign_cWyAscNjD3V_ZQnKo86xM55ziZK4KDcw2aUs,426
+phantominator/ct_shepp_logan.py,sha256=oEorRxXdjNI1pYxR0jyD_qt3SljDoRV7C1Zp__LyC6I,8871
+phantominator/dynamic.py,sha256=T3UQHVDhXjRzb9N6psCw4giYVu8CuHdwjXfoXlzfeSo,1183
+phantominator/kspace.py,sha256=fRyZEN4WEVfxyCe4fhUjN5LECGoy83Ed169ts9L8UeI,6776
+phantominator/mr_shepp_logan.py,sha256=-Tyy2errkBOP_XvY5tlVkMo7mWC_W1dL7afKOfy2wpQ,7837
+phantominator/sens_coeffs.py,sha256=ZioNdY0g8EjT5RgICbLvTWPwi549PPVibDdPLESfd-E,17431
+phantominator/shepp_logan.py,sha256=HRYMYy3x_jZbel88LD0xyBxiLGYcW1Hm7vil4-ih_6E,676
+phantominator/traj.py,sha256=-_PqyA9lXX6Q0ZmSX-R1xXNdXLF8_7eD7rjwO2PPfXM,1326
+utils/__init__.py,sha256=W2EVx6w7m90cfCW5uiUPO6akHGqjoAT9B8iFsmB2xZw,79
+utils/sens_coeffs.py,sha256=ooOnkgWRaXn23-I4AHkwnoWNnw2TKBVXF_t7hsMMxas,17429
+phantominator-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phantominator-0.6.0.dist-info/METADATA,sha256=oENsTCdlKwg9hi0Lg9ihXt6zZGJre34PINyCK-B9stA,3093
+phantominator-0.6.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+phantominator-0.6.0.dist-info/top_level.txt,sha256=0bt_3wbAQgrYBAxOXX6Aa3BejdtxjeY3iNI0JYxslzk,14
+phantominator-0.6.0.dist-info/RECORD,,
