@@ -1,0 +1,10 @@
+README.md
+setup.py
+SCYN.egg-info/PKG-INFO
+SCYN.egg-info/SOURCES.txt
+SCYN.egg-info/dependency_links.txt
+SCYN.egg-info/top_level.txt
+scyn/__init__.py
+scyn/scyn.py
+scyn/utils.py
+scyn/version.py
