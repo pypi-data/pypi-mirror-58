@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: task_distribute
+Version: 0.1.10
+Summary: Simple way to distribute task to diff server
+Home-page: https://github.com/Flyfoxs/task_distribute.git
+Author: Felix Li
+Author-email: lilao@163.com
+License: MIT
+Description: Simple way to distribute task to diff server
+Keywords: task_distribute
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
