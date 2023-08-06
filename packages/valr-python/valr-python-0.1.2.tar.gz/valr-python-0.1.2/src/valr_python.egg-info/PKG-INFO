@@ -1,0 +1,97 @@
+Metadata-Version: 1.2
+Name: valr-python
+Version: 0.1.2
+Summary: Python SDK for the VALR REST API
+Home-page: https://github.com/jonathanelscpt/valr-python
+Author: Jonathan Els
+Author-email: jonathanelscpt@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/jonathanelscpt/valr-python/blob/master/CHANGELOG.rst
+Project-URL: Issue Tracker, https://github.com/jonathanelscpt/valr-python/issues
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        Python SDK for the VALR REST API
+        
+        * Free software: MIT license
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install valr-python
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/jonathanelscpt/valr-python/archive/master.zip
+        
+        
+        Documentation
+        =============
+        
+        
+        To use the project:
+        
+        .. code-block:: python
+        
+            from valr_python.client import Client
+        
+            c = Client(api_key='api_key', api_secret='api_secret')
+            try:
+                res = c.get_market_summary()
+                print(res)
+            except Exception as e:
+                print(e)
+        
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.0.0 (2019-12-27)
+        ------------------
+        
+        * Alpha-only. Not released on PyPI.
+        
+Keywords: VALR,REST,API,Bitcoin,Ethereum
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
