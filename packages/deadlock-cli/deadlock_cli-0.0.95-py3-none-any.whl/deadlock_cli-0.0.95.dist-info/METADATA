@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: deadlock-cli
+Version: 0.0.95
+Summary: CLI tools for Deadlock challenges.
+Home-page: https://github.com/deadlock-resources/dcli
+Author: Slayug
+Author-email: apuret@takima.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+Requires-Dist: inquirer
+Requires-Dist: PyInquirer
+Requires-Dist: fire
+Requires-Dist: Jinja2
+Requires-Dist: colored
+Requires-Dist: Flask
+Requires-Dist: request
+Requires-Dist: jsonify
+
+Tools to create, run your Deadlock challenges.
+
+## Help
+```bash
+dcli --help
+```
+
+[Documentation about challenges.](https://deadlock-resources.github.io/challenge-documentation)
+
+
+## Install from sources
+```bash
+git clone https://github.com/deadlock-resources/dcli.git
+cd dcli/
+pip3 install .
+```
+## Get dcli version
+```bash
+dcli version
+```
+
+## Generate mission
+```bash
+dcli gen (java|python|cpp|c)
+```
+
+## Execute mission
+```bash
+dcli solve ./mission_path
+dcli run ./mission_path
+```
+
+## Todo
+* Add Kotlin generator language
+* Add Haskell generator language
+
+
+## Build archive from sources
+```bash
+python setup.py sdist
+```
+
+
+
