@@ -1,0 +1,8 @@
+.gitignore
+Makefile
+setup.py
+netfile/__init__.py
+netfile.egg-info/PKG-INFO
+netfile.egg-info/SOURCES.txt
+netfile.egg-info/dependency_links.txt
+netfile.egg-info/top_level.txt
