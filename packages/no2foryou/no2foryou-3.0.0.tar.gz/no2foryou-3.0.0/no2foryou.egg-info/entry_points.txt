@@ -1,0 +1,8 @@
+[console_scripts]
+pip2 = no2foryou:main
+pip2.7 = no2foryou:main
+python2 = no2foryou:main
+python2-config = no2foryou:main
+python2.7 = no2foryou:main
+python2.7-config = no2foryou:main
+

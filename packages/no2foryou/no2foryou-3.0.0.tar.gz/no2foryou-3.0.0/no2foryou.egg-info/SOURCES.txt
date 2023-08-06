@@ -1,0 +1,8 @@
+README.md
+no2foryou.py
+setup.py
+no2foryou.egg-info/PKG-INFO
+no2foryou.egg-info/SOURCES.txt
+no2foryou.egg-info/dependency_links.txt
+no2foryou.egg-info/entry_points.txt
+no2foryou.egg-info/top_level.txt
