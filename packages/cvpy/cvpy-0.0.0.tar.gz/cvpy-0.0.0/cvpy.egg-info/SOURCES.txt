@@ -1,0 +1,7 @@
+MANIFEST.in
+setup.py
+cvpy/__init__.py
+cvpy.egg-info/PKG-INFO
+cvpy.egg-info/SOURCES.txt
+cvpy.egg-info/dependency_links.txt
+cvpy.egg-info/top_level.txt
