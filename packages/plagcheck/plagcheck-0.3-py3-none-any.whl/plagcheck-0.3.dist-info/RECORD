@@ -1,0 +1,9 @@
+plagcheck/__init__.py,sha256=pfqACGaquyDkV-Db1NBPszqUg0G2cStF3eUoNlxzYSs,89
+plagcheck/analyze.py,sha256=r0b1mUvv8NtdShm5xzD54eJa5SITJaniKlvupugV-kc,3898
+plagcheck/plagcheck.py,sha256=s64xWxBayXAzgvrqsJLDVEQblnysNQ5hYxcIUezwTtw,4942
+plagcheck/plagcheck_test.py,sha256=9Qo8uPCxQODzSRzqVXSXHOyv1A8JIVtVVQhHABlOsZg,1530
+plagcheck-0.3.dist-info/LICENSE,sha256=QpaxQ_UFkzlOB3-DBzDxN68VQfo9QdCtj8EYOB88I28,1073
+plagcheck-0.3.dist-info/METADATA,sha256=wVNUnbvHkQE4jvilWwx2wH6FLL3HqA9gSdvbsrNrWsg,4975
+plagcheck-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+plagcheck-0.3.dist-info/top_level.txt,sha256=iVexBO5d6Tm0dFYlc85e_lbQ2pW2SVd3hLFqqSBttgw,10
+plagcheck-0.3.dist-info/RECORD,,
