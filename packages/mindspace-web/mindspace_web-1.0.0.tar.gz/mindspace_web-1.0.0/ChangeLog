@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Removed the parser argument for MindspaceParser
+
+0.0.2
+-----
+
+* Added more docs and JavaScript example
+* Use the mindspace.js package
+
+0.0.1
+-----
+
+* Separate out index and javascript functions, so they can be overridden
+* Ignore PBR files
+* Fixed name
+* Added tests
+* Renamed test.py
+* Working commit
+* Initial commit
