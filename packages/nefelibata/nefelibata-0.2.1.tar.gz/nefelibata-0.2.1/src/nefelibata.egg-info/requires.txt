@@ -1,0 +1,16 @@
+botocore
+boto3
+libgravatar
+requests
+Markdown
+docopt
+Jinja2
+beautifulsoup4
+python_dateutil
+PyYAML
+twitter
+pyperclip
+
+[testing]
+pytest
+pytest-cov
