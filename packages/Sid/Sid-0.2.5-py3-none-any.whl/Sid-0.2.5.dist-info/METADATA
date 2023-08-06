@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Sid
+Version: 0.2.5
+Summary: Image processing for seed images
+Home-page: https://github.com/yoavram/Sid
+Author: Yoav Ram
+Author-email: yoav@yoavram.com
+License: MIT
+Keywords: biology image-processing plant-science
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+Requires-Dist: pillow
+Requires-Dist: watchdog
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: pypiwin32 ; sys_platform == "win32"
+Provides-Extra: docs
+Requires-Dist: sphinx (>=1.3.0) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: nose ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+Python script for image processing of plant seed images, specifically *Lamium amplexicaule*.
+
+See https://github.com/yoavram/Sid.
+
+
