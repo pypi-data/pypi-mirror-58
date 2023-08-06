@@ -1,0 +1,8 @@
+async_bgm_api/__init__.py,sha256=QShzm0PGKBc2suN0tqlssxz98gySfRmUfKSg26nTCzU,155
+async_bgm_api/api.py,sha256=QLEPp8lIPl6-kVfQDFWQL4kcB-bDUaZkJATfSFk1iFw,4330
+async_bgm_api/exceptions.py,sha256=-zV-c5BSzVUh0z3Ao1R7_PnDBHQ2aw31YvrlHPqD3YE,634
+async_bgm_api/models/__init__.py,sha256=pTuqQrzCCBvN7oOuqUNwoL7OzmuwoItZiZaw1__h_LQ,2605
+async_bgm_api/models/subject.py,sha256=6vQGYxmZ2vTzM3d558dACwwoK89jz1hKYBnG_4LB-pk,1893
+async_bgm_api-0.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+async_bgm_api-0.0.4.dist-info/METADATA,sha256=-kdLeRiLeI-LGP84SfxwWSd7p6PTfJzQN-We-JIxKgg,565
+async_bgm_api-0.0.4.dist-info/RECORD,,
