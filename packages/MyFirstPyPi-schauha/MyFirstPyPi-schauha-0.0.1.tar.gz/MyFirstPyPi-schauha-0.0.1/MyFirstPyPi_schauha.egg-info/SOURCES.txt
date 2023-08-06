@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+MyFirstPyPi/HandleTextFile.py
+MyFirstPyPi/__init__.py
+MyFirstPyPi_schauha.egg-info/PKG-INFO
+MyFirstPyPi_schauha.egg-info/SOURCES.txt
+MyFirstPyPi_schauha.egg-info/dependency_links.txt
+MyFirstPyPi_schauha.egg-info/top_level.txt
