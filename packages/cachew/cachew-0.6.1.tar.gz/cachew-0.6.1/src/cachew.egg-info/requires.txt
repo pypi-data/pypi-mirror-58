@@ -1,0 +1,12 @@
+sqlalchemy
+
+[:python_version<"3.7"]
+dataclasses
+
+[testing]
+bandit
+mypy
+patchy
+pylint
+pytest
+pytz
