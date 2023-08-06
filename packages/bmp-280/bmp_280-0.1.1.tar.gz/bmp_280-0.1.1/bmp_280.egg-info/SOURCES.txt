@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/run-bmp280
+bmp_280/__init__.py
+bmp_280/bmp_280.py
+bmp_280.egg-info/PKG-INFO
+bmp_280.egg-info/SOURCES.txt
+bmp_280.egg-info/dependency_links.txt
+bmp_280.egg-info/top_level.txt
