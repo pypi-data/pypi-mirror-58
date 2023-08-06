@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: carcass
+Version: 0.0.1
+Summary: A Python package to generate python package scaffolding based on best practices
+Home-page: https://github.com/msadministrator/carcass
+Author: MSAdministrator
+Author-email: rickardja@live.com
+License: MIT
+Keywords: scaffolding,scaffold,python
+Platform: UNKNOWN
+Requires-Python: >=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4
+Description-Content-Type: text/markdown
+
+# carcass
+carcass is a Python package to generate python package scaffolding based on best practices
+
+
