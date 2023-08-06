@@ -1,0 +1,10 @@
+firstuseauthenticator/__init__.py,sha256=A0vyGEajo_g7MZm_nr8byRRuibZWWyFtZUo2fGHiKGQ,329
+firstuseauthenticator/_version.py,sha256=YJWGFHm1jvpEJFdq4tVP-rtugHSuvuZ8JdJtOSm3KaU,372
+firstuseauthenticator/firstuseauthenticator.py,sha256=McmQ02hPmevm5i5wNKjGG4VQRoH8Ei6wk5gj_3JdLAo,4433
+firstuseauthenticator/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+firstuseauthenticator/templates/reset.html,sha256=2TloSYDWh3p-MzpD4MGwydVZY23caznCzL6lp-PKA0I,841
+jupyterhub_firstuseauthenticator-0.13.0.dist-info/LICENSE,sha256=8mkBCwpTwezEr91F5vzGUNN72yD3dE-cJv1K_B12U-E,1501
+jupyterhub_firstuseauthenticator-0.13.0.dist-info/METADATA,sha256=xSU4b7_C8ZCCxBli1vPUzSJkyrt1PwUlIFNKw2RuONI,387
+jupyterhub_firstuseauthenticator-0.13.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jupyterhub_firstuseauthenticator-0.13.0.dist-info/top_level.txt,sha256=My94ezNy7BElES1H_6x13By_Ih5Mpne7nmJZv_o58k4,22
+jupyterhub_firstuseauthenticator-0.13.0.dist-info/RECORD,,
