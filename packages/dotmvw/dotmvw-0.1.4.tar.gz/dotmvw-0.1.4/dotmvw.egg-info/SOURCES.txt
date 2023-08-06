@@ -1,0 +1,8 @@
+setup.py
+dotmvw/__init__.py
+dotmvw/dotmvw.py
+dotmvw.egg-info/PKG-INFO
+dotmvw.egg-info/SOURCES.txt
+dotmvw.egg-info/dependency_links.txt
+dotmvw.egg-info/requires.txt
+dotmvw.egg-info/top_level.txt
