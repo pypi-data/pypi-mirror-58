@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: simple-address-checker
+Version: 0.1.1
+Summary: A Simple Address checker
+Home-page: https://github.com/xhijack/simple-address-checker
+Author: ramdani muksin
+Author-email: ramd4ni@gmail.com
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/xhijack/simple-address-checker/)
+        to write your content.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
