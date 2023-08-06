@@ -1,0 +1,3 @@
+[console_scripts]
+tap-wonolo = tap_wonolo:main
+
