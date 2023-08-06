@@ -1,0 +1,3 @@
+[console_scripts]
+hocr-spec = hocr_spec.cli:main
+

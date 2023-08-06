@@ -1,0 +1,51 @@
+CHANGES
+=======
+
+v0.2.0
+------
+
+* :package: v0.2.0
+* :memo: changelog
+* range checks should include the outer limits, fix #4
+* re to raw string to shut up python 3.6
+
+v0.1.0
+------
+
+* Fix console\_script for global install
+
+v0.0.6
+------
+
+* Make hocr-spec py3 compatible
+*  Switch to setup.cfg file and reformat cli script
+* Make hocr-spec py3 compatible
+* Fix typo, #1
+
+v0.0.5
+------
+
+* v0.0.5
+* Make empty attributes an error (should be \`unknown\`)
+
+v0.0.4
+------
+
+* v0.0.4
+* Add --filename option to specify report filename
+
+v0.0.3
+------
+
+* Fix main script
+
+v0.0.2
+------
+
+* update readme
+
+v0.0.1
+------
+
+* initial commit
+* Initial commit
