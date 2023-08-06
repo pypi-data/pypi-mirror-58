@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: plotbox2
+Version: 0.1.1
+Summary: Plot Bounding Box in CV object detection.
+Home-page: https://github.com/DataXujing/plotbox2
+Author: DataXujing
+Author-email: 274762204@qq.com
+License: Apache License, Version 2.0
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+
+plotbox
+
+
