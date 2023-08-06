@@ -1,0 +1,1 @@
+from model.functionsFrame import auxFunctions
