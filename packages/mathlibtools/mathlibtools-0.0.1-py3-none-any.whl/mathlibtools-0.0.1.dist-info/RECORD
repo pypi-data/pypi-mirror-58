@@ -1,0 +1,14 @@
+mathlibtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mathlibtools/auth_github.py,sha256=kuJtTSXh7vkcjd315H-bTuxBpzgZRSTOZ6CJJ3xxzhc,1078
+mathlibtools/delayed_interrupt.py,sha256=J-j76x1A6lCOEPjLQ0p4Jr2rkfZVXs76yQLdijC3b4s,1241
+mathlibtools/fetching.py,sha256=Tws4yWN3zvbh_pVOg5TRFLjk83wkAOgCjPmdKXvBnEw,1938
+mathlibtools/post-checkout,sha256=A_S_8wL3xe6UEUupuPIwmpfzH2ZrAIJMo_FQ4V6rA_o,438
+mathlibtools/post-commit,sha256=2F7BBS71NWUXr16LjbuqWhpbn_c45GVHgjYpd1yVKEk,456
+mathlibtools-0.0.1.data/scripts/cache-olean,sha256=a0zrl0RQRhWM4UQtnJVkL-tdmsvuJT-6_tfFm7Vxrr4,3684
+mathlibtools-0.0.1.data/scripts/setup-lean-git-hooks,sha256=_xHwyKxdOezL1rQEQr1F6m_oYRBydPE1hF3f4dDWs4s,675
+mathlibtools-0.0.1.data/scripts/update-mathlib,sha256=Zfgp62eCQw9zwhk4NxiTLljOcvDOL-lPtpM5WqNwfYs,1331
+mathlibtools-0.0.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+mathlibtools-0.0.1.dist-info/METADATA,sha256=yuvDE-5Wf5sBVt86kAS2f_Kv1EnH6ajYUCS2GkErs5w,968
+mathlibtools-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mathlibtools-0.0.1.dist-info/top_level.txt,sha256=brGGC9pxR_sK99cJQWnT5p8mM3IPag8Zin40phD4X2k,13
+mathlibtools-0.0.1.dist-info/RECORD,,
