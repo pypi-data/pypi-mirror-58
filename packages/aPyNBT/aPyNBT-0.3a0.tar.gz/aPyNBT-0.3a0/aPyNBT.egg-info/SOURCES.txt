@@ -1,0 +1,9 @@
+README.md
+setup.py
+aPyNBT/__init__.py
+aPyNBT/nbt.py
+aPyNBT/region.py
+aPyNBT.egg-info/PKG-INFO
+aPyNBT.egg-info/SOURCES.txt
+aPyNBT.egg-info/dependency_links.txt
+aPyNBT.egg-info/top_level.txt

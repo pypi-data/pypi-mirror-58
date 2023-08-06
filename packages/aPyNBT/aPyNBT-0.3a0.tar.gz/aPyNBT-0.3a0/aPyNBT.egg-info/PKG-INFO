@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: aPyNBT
+Version: 0.3a0
+Summary: Deserializer and serializer for Minecraft binary formats
+Home-page: https://github.com/xSetech/aPyNBT
+Author: Seth Junot
+Author-email: xsetech@gmail.com
+License: UNKNOWN
+Description: A deserializer and serializer for Minecraft binary formats, specifically NBT and Region/Anvil.
+Keywords: nbt region anvil minecraft python3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
