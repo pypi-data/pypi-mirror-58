@@ -1,0 +1,10 @@
+README.md
+setup.py
+ONVIFCameraControl/ONVIFCameraControl.py
+ONVIFCameraControl/__init__.py
+ONVIFCameraControl/example.py
+ONVIFCameraControl.egg-info/PKG-INFO
+ONVIFCameraControl.egg-info/SOURCES.txt
+ONVIFCameraControl.egg-info/dependency_links.txt
+ONVIFCameraControl.egg-info/requires.txt
+ONVIFCameraControl.egg-info/top_level.txt
