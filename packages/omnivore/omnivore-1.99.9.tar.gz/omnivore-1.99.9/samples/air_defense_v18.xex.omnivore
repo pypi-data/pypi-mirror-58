@@ -1,0 +1,67 @@
+{
+    "atrip_session": {
+        "archiver": {"py/object": "atrip.archiver.PlainFileArchiver"},
+        "containers": [{"py/object": "atrip.container.Container", "py/state": {"__size__": 3040, "comments": [[347, "display list"]], "decompression_order": [{"py/type": "atrip.compressor.Uncompressed"}], "default_disasm_type": 128, "disasm_type": [[0, 0, 6], [128, 6, 3040]], "error": null, "filesystem": {"boot": null, "directory": null, "media": {"py/object": "atrip.media_type.Media", "py/state": {"__size__": 3040, "container_offset": [[0, 3040]], "error": null, "name": "Unknown media", "origin": 0, "segments": [{"py/object": "atrip.file_types.atari_xex.AtariObjectFile", "py/state": {"__size__": 3040, "container_offset": [[0, 3040]], "error": null, "name": "air_defense_v18.xex", "origin": 0, "segments": [{"py/object": "atrip.file_types.atari_xex.ObjSegment", "py/state": {"__size__": 6, "container_offset": [[2, 8]], "error": null, "name": "Segment #1", "origin": 0, "segments": [{"py/object": "atrip.file_types.atari_xex.RunAddressSegment", "py/state": {"__size__": 2, "container_offset": [[6, 8]], "error": null, "name": "RUNAD: JMP $6000", "origin": 736, "segments": [], "uuid": "b96e7304-3284-40ba-8fd6-4743a7c9b5c7", "verbose_name": null}}], "uuid": "19a74d8a-e7d0-415e-8d42-073888fc14a2", "verbose_name": null}}, {"py/object": "atrip.file_types.atari_xex.ObjSegment", "py/state": {"__size__": 3032, "container_offset": [[8, 3040]], "error": null, "name": "Segment #2", "origin": 0, "segments": [{"py/object": "atrip.segment.Segment", "py/state": {"__size__": 3028, "container_offset": [[12, 3040]], "error": null, "name": "[$6000-$6bd3]", "origin": 24576, "segments": [], "uuid": "b8327e84-a098-456b-a881-403f52af0bf3", "verbose_name": null}}], "uuid": "13ccf7fb-5735-4ddc-b31a-6a40d5e40330", "verbose_name": null}}], "uuid": "fb320a01-7a4b-4694-9acf-0a93b03690c3", "verbose_name": null}}], "uuid": "ccba70e3-d041-411d-828a-91f80df1bce1", "verbose_name": null}}, "py/object": "atrip.filesystem.NoFilesystem", "vtoc": null}, "header": null, "media": {"py/id": 10}, "memory_map": [], "name": "D1", "origin": 0, "uuid": "2d06db62-4578-4404-9fda-6ff02fe47ab9", "verbose_name": null}}],
+        "name": "",
+        "pathname": "samples/air_defense_v18.xex"
+    },
+    "document memory map": [],
+    "document uuid": "3b469974-6711-41f3-a4d6-6ae43b3e7124",
+    "omnivore.byte_edit": {
+        "center_base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+        "focused viewer": "64ed8426-00f3-43b3-8614-09d9490bd0f0",
+        "layout": {"sidebars": [{"side": 16, "views": [{"child_uuid": "d190c9b3-18b6-4b80-a1fe-463951c6553c", "show_title": true, "use_close_button": true}, {"child_uuid": "4f39aa80-3410-4488-bb54-755ee0abbda4", "show_title": true, "use_close_button": true}, {"child_uuid": "eecf8b21-54d0-461c-8d0b-f91672f92cb8", "show_title": true, "use_close_button": true}]}], "tile_manager": {"direction": 4, "ratio_in_parent": 1.0, "views": [{"child_uuid": "64ed8426-00f3-43b3-8614-09d9490bd0f0", "ratio_in_parent": 0.3224126985772676, "show_title": true, "use_close_button": true}, {"child_uuid": "2d624f5c-b826-41d3-9a69-eb90a18e98e9", "ratio_in_parent": 0.08986176550600734, "show_title": true, "use_close_button": true}, {"child_uuid": "ee6a177f-7fbd-44da-b164-2799ed947bc6", "ratio_in_parent": 0.263184786687984, "show_title": true, "use_close_button": true}, {"child_uuid": "07a96e5a-b8bc-4104-a45d-0c92c6d20673", "ratio_in_parent": 0.32454074922874093, "show_title": true, "use_close_button": true}]}},
+        "linked bases": [
+            {
+                "segment view params": {"ccba70e3-d041-411d-828a-91f80df1bce1": {"07a96e5a-b8bc-4104-a45d-0c92c6d20673": [114, 0], "2d624f5c-b826-41d3-9a69-eb90a18e98e9": [0, 0], "64ed8426-00f3-43b3-8614-09d9490bd0f0": [0, 0], "ee6a177f-7fbd-44da-b164-2799ed947bc6": [0, 0]}, "f55b2b2a-6804-40a9-964d-31bbb459ee6b": {"07a96e5a-b8bc-4104-a45d-0c92c6d20673": [0, 0], "2d624f5c-b826-41d3-9a69-eb90a18e98e9": [0, 0], "64ed8426-00f3-43b3-8614-09d9490bd0f0": [0, 0], "ee6a177f-7fbd-44da-b164-2799ed947bc6": [0, 0]}},
+                "segment_uuid": "ccba70e3-d041-411d-828a-91f80df1bce1",
+                "uuid": "55e5f38b-eff3-47c8-9069-fc45ac138e30"
+            }
+        ],
+        "viewers": [
+            {
+                "control": {"items_per_row": 16, "zoom": 2},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "char",
+                "uuid": "ee6a177f-7fbd-44da-b164-2799ed947bc6"
+            },
+            {
+                "control": {"items_per_row": 99, "zoom": 1},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "disasm",
+                "uuid": "07a96e5a-b8bc-4104-a45d-0c92c6d20673"
+            },
+            {
+                "control": {"items_per_row": 16, "zoom": 1},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "hex",
+                "uuid": "64ed8426-00f3-43b3-8614-09d9490bd0f0"
+            },
+            {
+                "control": {"items_per_row": 1, "zoom": 2},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "bitmap",
+                "uuid": "2d624f5c-b826-41d3-9a69-eb90a18e98e9"
+            },
+            {
+                "control": {},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "comments",
+                "uuid": "4f39aa80-3410-4488-bb54-755ee0abbda4"
+            },
+            {
+                "control": {},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "segments",
+                "uuid": "d190c9b3-18b6-4b80-a1fe-463951c6553c"
+            },
+            {
+                "control": {},
+                "linked base": "55e5f38b-eff3-47c8-9069-fc45ac138e30",
+                "name": "undo",
+                "uuid": "eecf8b21-54d0-461c-8d0b-f91672f92cb8"
+            }
+        ]
+    },
+    "serialized user segments": []
+}

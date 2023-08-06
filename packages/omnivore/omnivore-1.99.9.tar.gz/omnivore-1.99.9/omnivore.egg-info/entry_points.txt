@@ -1,0 +1,85 @@
+[atrip.archivers]
+tar = atrip.archivers.tar
+zip = atrip.archivers.zip
+
+[atrip.assemblers]
+mac65 = atrip.assemblers.mac65
+
+[atrip.compressors]
+Z = atrip.compressors.unix_compress
+bzip = atrip.compressors.bzip
+dcm = atrip.compressors.dcm
+gzip = atrip.compressors.gzip
+lz4 = atrip.compressors.lz4
+lzma = atrip.compressors.lzma
+zlib = atrip.compressors.zlib
+
+[atrip.file_types]
+apple_bsave = atrip.file_types.apple_dos33_bsave
+atari_xex = atrip.file_types.atari_xex
+
+[atrip.filesystems]
+apple_dos33 = atrip.filesystems.apple_dos33
+atari_cas = atrip.filesystems.atari_cas
+atari_dos = atrip.filesystems.atari_dos2
+atari_jumpman = atrip.filesystems.atari_jumpman
+kboot = atrip.filesystems.kboot
+
+[atrip.media_types]
+apple_disks = atrip.media_types.apple_disks
+atari_carts = atrip.media_types.atari_carts
+atari_disks = atrip.media_types.atari_disks
+atari_tapes = atrip.media_types.atari_tapes
+
+[atrip.signatures]
+atari2600_cart = atrip.signatures.atari2600_cart
+atari2600_starpath = atrip.signatures.atari2600_starpath
+atari5200_cart = atrip.signatures.atari5200_cart
+atari800_cart = atrip.signatures.atari800_cart
+vectrex = atrip.signatures.vectrex
+
+[atrip.stringifiers]
+basic_data = atrip.stringifiers.basic_data
+c_bytes = atrip.stringifiers.c_bytes
+hexify = atrip.stringifiers.hexify
+
+[omnivore.emulators]
+apple2 = omnivore.emulators.apple2.crabapple
+atari8bit = omnivore.emulators.atari8bit.atari800
+generic6502 = omnivore.emulators.generic6502.generic6502
+
+[omnivore.viewers]
+apple2 = omnivore.viewers.apple2
+bitmap = omnivore.viewers.bitmap
+char = omnivore.viewers.char
+disasm = omnivore.viewers.disasm
+emulator = omnivore.viewers.emulator
+hex = omnivore.viewers.hex
+history = omnivore.viewers.history
+info = omnivore.viewers.info
+jumpman = omnivore.viewers.jumpman
+labels = omnivore.viewers.labels
+map = omnivore.viewers.map
+memory = omnivore.viewers.memory
+pixelmap = omnivore.viewers.pixelmap
+skeleton = omnivore.viewers.skeleton
+
+[sawx.documents]
+00byte = omnivore.document
+99text = sawx.documents.text
+
+[sawx.editors]
+00byte = omnivore.editors.byte_editor
+00emu = omnivore.editors.emulation_editor
+html = sawx.editors.html_viewer
+text = sawx.editors.text_editor
+
+[sawx.loaders]
+00atrip = atrip.omnivore_loader
+98text = sawx.loaders.text
+99fleep = sawx.loaders.fleep
+
+[sawx.remember]
+app = sawx.application
+fonts = omnivore.arch.fonts
+

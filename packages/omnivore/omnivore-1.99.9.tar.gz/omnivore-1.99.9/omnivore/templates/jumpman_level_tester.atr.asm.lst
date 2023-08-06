@@ -1,0 +1,293 @@
+
+Source: /home/rob/src/omnivore/omnivore/templates/jumpman_level_tester.atr.asm
+00007 2900  AD BE 30                  LDA $30be    ;If JM is dead, exit
+00008 2903  C9 08                     CMP #$08
+00009 2905  B0 07                     BCS ?j9
+00010 2907  AD BD 30                  LDA $30bd
+00011 290A  C9 02                     CMP #$02
+00012 290C  D0 03                     BNE ?j3
+00014 290E  4C 1B 31                  JMP $311b
+00016 2911  AD 54 2B                  LDA pminit    ;Check Are Players Initialzied? byte
+00017 2914  D0 03                     BNE ?j4
+00018 2916  4C 3F 2A                  JMP initplayers    ;Nope: go setup
+00020 2919  A2 02                     LDX #$02     ;Move Cannons
+00022 291B  E8                        INX          ;FOR X=3 TO 4
+00023 291C  E0 05                     CPX #$05
+00024 291E  F0 2A                     BEQ movemissiles    ;JMP after loop
+00026 2920  BD 6E 30                  LDA $306e,x  ;cannon Y
+00027 2923  18                        CLC
+00028 2924  7D 48 2B                  ADC cannonychangetable,x  ;add cannon Y change
+00029 2927  C9 30                     CMP #$30
+00030 2929  B0 08                     BCS ?j10
+00031 292B  A9 02                     LDA #$02     ;if it's too high, switch to downward direction
+00032 292D  9D 48 2B                  STA cannonychangetable,x  ;new Y change
+00033 2930  4C 20 29                  JMP ?loop1
+00035 2933  C9 C0                     CMP #$c0
+00036 2935  90 08                     BCC ?j11
+00037 2937  A9 FE                     LDA #$fe     ;if it's too low, switch to upward
+00038 2939  9D 48 2B                  STA cannonychangetable,x  ;new Y change
+00039 293C  4C 20 29                  JMP ?loop1
+00041 293F  9D 6E 30                  STA $306e,x  ;Save Player Y
+00042 2942  4C 1B 29                  JMP ?nextx    ;NEXT X
+00043 2945  20 C0 41                  JSR $41c0
+00044 2948  F0 2C                     BEQ done
+00046 294A  A2 FF                     LDX #$ff     ;Move Missiles
+00048 294C  E8                        INX          ;FOR X=0 TO 3
+00049 294D  E0 04                     CPX #$04
+00050 294F  F0 25                     BEQ done    ;JMP when loop complete
+00051 2951  BD 4D 2B                  LDA missilexchangetable,x  ;get laser X change
+00052 2954  F0 F6                     BEQ ?nextmissile ;if its 0, Missile isn't in use, NEXT X
+00053 2956  BD A6 30                  LDA $30a6,x  ;get Missile X
+00054 2959  18                        CLC
+00055 295A  7D 4D 2B                  ADC missilexchangetable,x  ;add missile X change
+00056 295D  C9 26                     CMP #$26
+00057 295F  90 0A                     BCC ?destroy
+00058 2961  C9 D2                     CMP #$d2
+00059 2963  B0 06                     BCS ?destroy
+00060 2965  9D A6 30                  STA $30a6,x
+00061 2968  4C 4C 29                  JMP ?nextmissile
+00064 296B  A9 00                     LDA #$00     ;Destroy out of range Missile
+00065 296D  9D 4D 2B                  STA missilexchangetable,x
+00066 2970  9D A6 30                  STA $30a6,x
+00067 2973  4C 4C 29                  JMP ?nextmissile
+00069 2976  4C 1B 31                  JMP $311b
+00072 2979  AD 51 2B                  LDA leftshotcountdown    ;decrement shot countdowns
+00073 297C  F0 03                     BEQ ?j1
+00074 297E  CE 51 2B                  DEC leftshotcountdown
+00076 2981  AD 52 2B                  LDA rightshotcountdown
+00077 2984  F0 03                     BEQ ?j2
+00078 2986  CE 52 2B                  DEC rightshotcountdown    ;VECTOR #1
+00080 2989  AD BE 30                  LDA $30be
+00081 298C  C9 08                     CMP #$08
+00082 298E  B0 07                     BCS ?j11
+00083 2990  AD BD 30                  LDA $30bd
+00084 2993  C9 02                     CMP #$02
+00085 2995  D0 03                     BNE ?j5
+00087 2997  4C 1B 31                  JMP $311b
+00089 299A  AD 54 2B                  LDA pminit
+00090 299D  D0 03                     BNE ?j6
+00091 299F  4C 3F 2A                  JMP initplayers
+00093 29A2  A2 FF                     LDX #$ff
+00095 29A4  E8                        INX          ;FOR X=0 TO 3
+00096 29A5  E0 04                     CPX #$04
+00097 29A7  F0 23                     BEQ done2
+00098 29A9  BD 4D 2B                  LDA missilexchangetable,x
+00099 29AC  D0 F6                     BNE ?j7
+00103 29AE  38                        SEC
+00104 29AF  AD 6F 30                  LDA $306f
+00105 29B2  ED 71 30                  SBC $3071
+00106 29B5  C9 0F                     CMP #$0f
+00107 29B7  90 16                     BCC random
+00108 29B9  C9 F2                     CMP #$f2
+00109 29BB  B0 12                     BCS random
+00112 29BD  38                        SEC
+00113 29BE  AD 6F 30                  LDA $306f
+00114 29C1  ED 72 30                  SBC $3072
+00115 29C4  C9 0F                     CMP #$0f
+00116 29C6  90 07                     BCC random
+00117 29C8  C9 F3                     CMP #$f3
+00118 29CA  B0 03                     BCS random
+00120 29CC  4C 1B 31                  JMP $311b
+00123 29CF  AD 0A D2                  LDA $d20a    ;RANDOM
+00124 29D2  30 03                     BMI left
+00125 29D4  4C 00 2A                  JMP right
+00128 29D7  AD 51 2B                  LDA leftshotcountdown    ;SHOOT LEFT?
+00129 29DA  D0 21                     BNE j8 			;if countdown timer >0, don't shoot
+00130 29DC  AD 71 30                  LDA $3071
+00131 29DF  9D AA 30                  STA $30aa,x
+00132 29E2  A9 3C                     LDA #$3c
+00133 29E4  9D A6 30                  STA $30a6,x
+00134 29E7  A9 01                     LDA #$01
+00135 29E9  9D 4D 2B                  STA missilexchangetable,x
+00136 29EC  A9 40                     LDA #$40
+00137 29EE  8D 51 2B                  STA leftshotcountdown    ;set countdown timer
+00138 29F1  18                        CLC
+00139 29F2  AD 52 2B                  LDA rightshotcountdown
+00140 29F5  69 10                     ADC #$10
+00141 29F7  8D 52 2B                  STA rightshotcountdown    ;add to other cannon's timer
+00142 29FA  20 29 2A                  JSR pewpew
+00144 29FD  4C 1B 31                  JMP $311b
+00147 2A00  AD 52 2B                  LDA rightshotcountdown    ;SHOOT RIGHT?
+00148 2A03  D0 F8                     BNE j8			;if countdown timer >0, don't shoot
+00149 2A05  AD 72 30                  LDA $3072
+00150 2A08  9D AA 30                  STA $30aa,x
+00151 2A0B  A9 BB                     LDA #$bb
+00152 2A0D  9D A6 30                  STA $30a6,x
+00153 2A10  A9 FF                     LDA #$ff
+00154 2A12  9D 4D 2B                  STA missilexchangetable,x
+00155 2A15  A9 30                     LDA #$30
+00156 2A17  8D 52 2B                  STA rightshotcountdown    ;set countdown timer
+00157 2A1A  18                        CLC
+00158 2A1B  AD 51 2B                  LDA leftshotcountdown
+00159 2A1E  69 10                     ADC #$10
+00160 2A20  8D 51 2B                  STA leftshotcountdown    ;add to other cannon's timer
+00161 2A23  20 29 2A                  JSR pewpew
+00162 2A26  4C 1B 31                  JMP $311b
+00165 2A29  A9 42                     LDA #<pewpewsound     ;PEW PEW SOUND
+00166 2A2B  8D 40 30                  STA $3040
+00167 2A2E  A9 2B                     LDA #>pewpewsound
+00168 2A30  8D 41 30                  STA $3041
+00169 2A33  A9 EA                     LDA #$ea
+00170 2A35  8E 53 2B                  STX phxtemp
+00171 2A38  20 B0 32                  JSR $32b0
+00172 2A3B  AE 53 2B                  LDX phxtemp
+00173 2A3E  60                        RTS
+00176 2A3F  A2 02                     LDX #$02
+00177 2A41  8E 54 2B                  STX pminit    ;Set Are Players Initialized flag
+00179 2A44  E8                        INX          ;FOR X=3 TO 4
+00180 2A45  E0 05                     CPX #$05
+00181 2A47  F0 27                     BEQ ?afterloop    ;JMP After Loop
+00182 2A49  A9 34                     LDA #<pmart
+00183 2A4B  9D 5A 30                  STA $305a,x  ;Player Image Data LB
+00184 2A4E  A9 2B                     LDA #>pmart
+00185 2A50  9D 5F 30                  STA $305f,x  ;Player Image Data HB
+00186 2A53  A9 07                     LDA #$07
+00187 2A55  9D 64 30                  STA $3064,x  ;there are 7 bytes per image
+00188 2A58  9D 82 30                  STA $3082,x  ;stuff anything other than the startup image in the "old" image
+00189 2A5B  A9 38                     LDA #$38     ;Starting X
+00190 2A5D  9D 69 30                  STA $3069,x
+00191 2A60  A9 50                     LDA #$50
+00192 2A62  9D 6E 30                  STA $306e,x  ;Starting Y
+00193 2A65  A9 01                     LDA #$01
+00194 2A67  9D 73 30                  STA $3073,x  ;Start with Image 1
+00195 2A6A  9D 55 30                  STA $3055,x  ;Activate Player
+00196 2A6D  4C 44 2A                  JMP ?initnextx
+00198 2A70  A9 A0                     LDA #$a0     ;After loop
+00199 2A72  8D 72 30                  STA $3072
+00200 2A75  A9 C0                     LDA #$c0
+00201 2A77  8D 6D 30                  STA $306d    ;X for P3
+00202 2A7A  A9 02                     LDA #$02
+00203 2A7C  8D 77 30                  STA $3077    ;image data for P3
+00204 2A7F  A2 FF                     LDX #$ff     ;Now set up missiles
+00206 2A81  E8                        INX          ;FOR X=0 to 3
+00207 2A82  A9 00                     LDA #$00
+00208 2A84  9D A6 30                  STA $30a6,x  ;Missile X (offscreen to start)
+00209 2A87  A9 50                     LDA #$50
+00210 2A89  9D AA 30                  STA $30aa,x  ;Missile Y (whatever to start)
+00211 2A8C  A9 01                     LDA #$01
+00212 2A8E  9D A2 30                  STA $30a2,x  ;Missile enabled
+00213 2A91  E0 03                     CPX #$03
+00214 2A93  D0 EC                     BNE ?nextmissile
+00215 2A95  A9 FF                     LDA #$ff
+00216 2A97  8D 0C D0                  STA $d00c    ;Wide missiles
+00217 2A9A  A9 01                     LDA #$01
+00218 2A9C  8D B6 30                  STA $30b6    ;Missile height
+00219 2A9F  4C 1B 31                  JMP $311b
+00223 2AA2  AD F5 30                  LDA $30F5
+00224 2AA5  18                        CLC
+00225 2AA6  69 01                     ADC #1
+00226 2AA8  8D F5 30                  STA $30F5
+00227 2AAB  AD F6 30                  LDA $30F6
+00228 2AAE  69 00                     ADC #$00
+00229 2AB0  8D F6 30                  STA $30F6
+00230 2AB3  AD F7 30                  LDA $30F7
+00231 2AB6  69 00                     ADC #$00
+00232 2AB8  8D F7 30                  STA $30F7
+00233 2ABB  8E FF 2F                  STX $2fff
+00234 2ABE  20 E9 46                  JSR $46E9
+00235 2AC1  AE FF 2F                  LDX $2fff
+00236 2AC4  4C 00 42                  JMP $4200
+00239 2AC7  AD F5 30                  LDA $30F5
+00240 2ACA  18                        CLC
+00241 2ACB  69 0A                     ADC #10
+00242 2ACD  8D F5 30                  STA $30F5
+00243 2AD0  AD F6 30                  LDA $30F6
+00244 2AD3  69 00                     ADC #$00
+00245 2AD5  8D F6 30                  STA $30F6
+00246 2AD8  AD F7 30                  LDA $30F7
+00247 2ADB  69 00                     ADC #$00
+00248 2ADD  8D F7 30                  STA $30F7
+00249 2AE0  8E FF 2F                  STX $2fff
+00250 2AE3  20 E9 46                  JSR $46E9
+00251 2AE6  AE FF 2F                  LDX $2fff
+00252 2AE9  4C 80 45                  JMP $4580
+00255 2AEC  AD F5 30                  LDA $30F5
+00256 2AEF  18                        CLC
+00257 2AF0  69 64                     ADC #100
+00258 2AF2  8D F5 30                  STA $30F5
+00259 2AF5  AD F6 30                  LDA $30F6
+00260 2AF8  69 00                     ADC #$00
+00261 2AFA  8D F6 30                  STA $30F6
+00262 2AFD  AD F7 30                  LDA $30F7
+00263 2B00  69 00                     ADC #$00
+00264 2B02  8D F7 30                  STA $30F7
+00265 2B05  8E FF 2F                  STX $2fff
+00266 2B08  20 E9 46                  JSR $46E9
+00267 2B0B  AE FF 2F                  LDX $2fff
+00268 2B0E  4C 1B 31                  JMP $311b
+00271 2B11  AD F5 30                  LDA $30F5
+00272 2B14  18                        CLC
+00273 2B15  69 64                     ADC #100
+00274 2B17  8D F5 30                  STA $30F5
+00275 2B1A  AD F6 30                  LDA $30F6
+00276 2B1D  69 00                     ADC #$00
+00277 2B1F  8D F6 30                  STA $30F6
+00278 2B22  AD F7 30                  LDA $30F7
+00279 2B25  69 00                     ADC #$00
+00280 2B27  8D F7 30                  STA $30F7
+00281 2B2A  8E FF 2F                  STX $2fff
+00282 2B2D  20 E9 46                  JSR $46E9
+00283 2B30  AE FF 2F                  LDX $2fff
+00284 2B33  60                        rts
+00289 2B34  A0                		.BYTE %10100000
+00290 2B35  60                		.BYTE %01100000
+00291 2B36  50                		.BYTE %01010000
+00292 2B37  7C                		.BYTE %01111100
+00293 2B38  50                		.BYTE %01010000
+00294 2B39  60                		.BYTE %01100000
+00295 2B3A  A0                		.BYTE %10100000
+00297 2B3B  05                		.BYTE %00000101
+00298 2B3C  06                		.BYTE %00000110
+00299 2B3D  0A                		.BYTE %00001010
+00300 2B3E  3E                		.BYTE %00111110
+00301 2B3F  0A                		.BYTE %00001010
+00302 2B40  06                		.BYTE %00000110
+00303 2B41  05                		.BYTE %00000101
+00305 2B42  01                        .BYTE $01    ;  pew pew sound data
+00306 2B43  A4                        .BYTE $a4    ;
+00307 2B44  79                        .BYTE $79    ;
+00308 2B45  04                        .BYTE $04    ;
+00309 2B46  60                        .BYTE $60    ;
+00310 2B47  04                        .BYTE $04    ;
+00312 2B48  00                        .BYTE $00    ;  Cannon Y change table
+00313 2B49  00                        .BYTE $00    ;
+00314 2B4A  00                        .BYTE $00    ;
+00315 2B4B  FE                        .BYTE $fe    ;
+00316 2B4C  02                        .BYTE $02    ;
+00318 2B4D  00                        .BYTE $00    ;  Missile X change table
+00319 2B4E  00                        .BYTE $00    ;
+00320 2B4F  00                        .BYTE $00    ;
+00321 2B50  00                        .BYTE $00    ;
+00322 2B51  00                leftshotcountdown  .BYTE $00    ;  left turret shot countdown
+00323 2B52  00                rightshotcountdown .BYTE $00	 ;  right turret shot countdown
+00324 2B53  00                phxtemp        .BYTE $00    ;  PHX temp storage
+00325 2B54  00                pminit         .BYTE $00    ;  are Players initialized?
+
+
+Equates:
+
+
+Symbol table:
+CANNONYCHANGETABLE: 2b48
+DEAD_AT_BOTTOMDOESNT_WORK: 2aec
+DEAD_BEGIN: 2aa2
+DEAD_FALLING: 2ac7
+DONE: 2976
+DONE2: 29cc
+INITPLAYERS: 2a3f
+J8: 29fd
+LEFT: 29d7
+LEFTSHOTCOUNTDOWN: 2b51
+MISSILEXCHANGETABLE: 2b4d
+MOVEMISSILES: 294a
+PEWPEW: 2a29
+PEWPEWSOUND: 2b42
+PHXTEMP: 2b53
+PMART: 2b34
+PMINIT: 2b54
+RANDOM: 29cf
+RIGHT: 2a00
+RIGHTSHOTCOUNTDOWN: 2b52
+TRIGGER1: 2b11
+VBI1: 2979
+VBI2: 2900
