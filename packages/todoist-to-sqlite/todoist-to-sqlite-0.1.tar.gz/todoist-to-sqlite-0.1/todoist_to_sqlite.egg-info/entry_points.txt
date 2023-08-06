@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        todoist-to-sqlite=todoist_to_sqlite.cli:cli
+    

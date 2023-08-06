@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: todoist-to-sqlite
+Version: 0.1
+Summary: Save data from Todoist to a SQLite database
+Home-page: https://github.com/bcongdon/todoist-to-sqlite
+Author: Benjamin Congdon
+Author-email: me@bcon.gdn
+License: UNKNOWN
+Project-URL: Source, https://github.com/bcongdon/todoist-to-sqlite
+Project-URL: Issues, https://github.com/bcongdon/todoist-to-sqlite/issues
+Description: # todoist-to-sqlite
+        
+        [![PyPI](https://img.shields.io/pypi/v/todoist-to-sqlite.svg)](https://pypi.org/project/todoist-to-sqlite/)
+        [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/rixx/goodreads-to-sqlite/blob/master/LICENSE)
+        
+        Save data from Todoist to a SQLite database.
+        
+        ## How to install
+        
+            $ pip install todoist-to-sqlite
+        
+        ## Authentication
+        
+        Run this command and paste in your API token:
+        
+            $ todoist-to-sqlite auth
+        
+        This will create a file called `auth.json` in your current directory containing the required value. To save the file at
+        a different path or filename, use the `--auth=myauth.json` option.
+        
+        ## Thanks
+        
+        This package is heavily inspired by [goodreads-to-sqlite](https://github.com/rixx/goodreads-to-sqlite/) by [Tobias Kunze
+        ](https://github.com/rixx) and [github-to-sqlite](https://github.com/dogsheep/github-to-sqlite/) by [Simon
+        Willison](https://simonwillison.net/2019/Oct/7/dogsheep/).
+        
+Keywords: todoist sqlite export dogsheep
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Database
+Description-Content-Type: text/markdown
+Provides-Extra: test

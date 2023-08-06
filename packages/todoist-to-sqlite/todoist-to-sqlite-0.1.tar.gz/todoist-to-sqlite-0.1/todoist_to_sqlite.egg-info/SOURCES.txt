@@ -1,0 +1,11 @@
+README.md
+setup.py
+todoist_to_sqlite/__init__.py
+todoist_to_sqlite/cli.py
+todoist_to_sqlite/utils.py
+todoist_to_sqlite.egg-info/PKG-INFO
+todoist_to_sqlite.egg-info/SOURCES.txt
+todoist_to_sqlite.egg-info/dependency_links.txt
+todoist_to_sqlite.egg-info/entry_points.txt
+todoist_to_sqlite.egg-info/requires.txt
+todoist_to_sqlite.egg-info/top_level.txt

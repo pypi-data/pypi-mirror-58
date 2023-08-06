@@ -1,0 +1,8 @@
+click
+requests
+sqlite-utils~=1.11
+tqdm~=4.36
+pytodoist~=2.1
+
+[test]
+pytest
