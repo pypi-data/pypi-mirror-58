@@ -1,0 +1,3 @@
+[console_scripts]
+dcs_g13 = dcspy.dcs_g13:run
+
