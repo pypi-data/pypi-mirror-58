@@ -1,0 +1,11 @@
+pglogicalmanager/__init__.py,sha256=CLna-PxocmYg08h6zjh2SSv8f1unlE2z01Mqzk30z24,150
+pglogicalmanager/__main__.py,sha256=AbWS39AMUXF1mRU5Pw3SmCw4d4Nbs_Oei4PoIDAwQWo,59
+pglogicalmanager/manager.py,sha256=T7kBmnOvFLJxkRiaqUz4Z7JXKat2G8e2gXk39RDK9kI,28517
+pglogicalmanager/__pycache__/__init__.cpython-37.pyc,sha256=XYSmn8nF6e1qq2T1aKA05ns2Nx9z83uTfvwcM5AowxI,291
+pglogicalmanager/__pycache__/__main__.cpython-37.pyc,sha256=oMW95zwq5ETm5NbCpYThQcTqVjSrgkgk1JOyiwHuxmo,250
+pglogicalmanager/__pycache__/manager.cpython-37.pyc,sha256=a1N1WFJfLmrLDMok55zUYYjK3-edlzuIj-Ne0RYpl3M,27919
+pg_logical_manager-0.3.dist-info/LICENSE,sha256=QkUd_NDR0AiYSp_44yTorh80-YnvJGXiSgbxnpnGxrI,1060
+pg_logical_manager-0.3.dist-info/METADATA,sha256=w_mWK4odAvwBxbi7mnxjYgEAeL1cTBUP7Mp7qknaSQI,4251
+pg_logical_manager-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pg_logical_manager-0.3.dist-info/top_level.txt,sha256=6SqV2YmpHd7wsdkzX7A4RhJpPnaJ9EFxcBYUlH7QKjo,17
+pg_logical_manager-0.3.dist-info/RECORD,,
