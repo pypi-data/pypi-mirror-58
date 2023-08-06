@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: simple-address-checker
+Version: 0.1.2
+Summary: A Simple Address checker
+Home-page: https://github.com/xhijack/simple-address-checker
+Author: ramdani muksin
+Author-email: ramd4ni@gmail.com
+License: UNKNOWN
+Description: # simple-address-checker
+        Getting suggestion when you type typo address using Levenshtein Algorithm
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
