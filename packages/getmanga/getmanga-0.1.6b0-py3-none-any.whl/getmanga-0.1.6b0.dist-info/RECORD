@@ -1,0 +1,11 @@
+getmanga/__init__.py,sha256=IBMTsLhxxDhg1UeSt7TgB8txWVb5Y5SxzmZCJXinnBw,2808
+getmanga/loader/__init__.py,sha256=EQkBn7JxVFhzRnVZnRgjQ9CtYm4Kh3BQR07eXNv3IB8,3352
+getmanga/loader/mridecoder.py,sha256=cN8aGWe3AOkmtq5QGUCMIM-q8RC1jMa3au4BEHgjyC8,471
+getmanga/parsers/__init__.py,sha256=kQmgILbIfL_m8C16XuQOcGUwXVuYbFP3BsGt7zRklhg,157
+getmanga/parsers/mangalib.py,sha256=5K8m1jhPYXNDR21jq0wuQ0k_CA1vtTK0qSbZ6VAM3Ac,7237
+getmanga/parsers/mangarock.py,sha256=cMd8pUuX_M6p3FiR_3q3tJx44MY21GPIJGDHfPuXiK0,4647
+getmanga-0.1.6b0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+getmanga-0.1.6b0.dist-info/METADATA,sha256=zUyU6o9KSnClH2vl6uMQ8e7y7ZJ_N6vUbBjvbuFjaSs,1637
+getmanga-0.1.6b0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+getmanga-0.1.6b0.dist-info/top_level.txt,sha256=py-dp__2s1dRUWKICBKldaPOS_eyLOrvCLwZ6O4OBhE,9
+getmanga-0.1.6b0.dist-info/RECORD,,
