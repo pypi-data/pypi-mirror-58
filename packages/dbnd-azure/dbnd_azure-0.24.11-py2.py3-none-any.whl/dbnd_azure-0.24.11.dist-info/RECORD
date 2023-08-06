@@ -1,0 +1,10 @@
+dbnd_azure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbnd_azure/_plugin.py,sha256=ylsoIqXEcg1gNW99Y4xZTXZU0KPdFmKXbnAf46zDxTY,183
+dbnd_azure/azure_sync_ctrl.py,sha256=fwobtW2rYuqwjoswnGjBzqVa98YuArfle3DQfr8Zm0s,1175
+dbnd_azure/env.py,sha256=7JMkCQffmSxxBfs9sNQJaRIUwTSJ4deF-27emtMs8_M,233
+dbnd_azure-0.24.11.dist-info/LICENSE,sha256=NTQpxZnv9-qzYsCvtrlPEYNXNQZB-zK-DQEMaaqWpTM,11346
+dbnd_azure-0.24.11.dist-info/METADATA,sha256=mEhnpXHTMI8Jl80MeMzAEYff7WM_bPpPuob0ADWlamw,1504
+dbnd_azure-0.24.11.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+dbnd_azure-0.24.11.dist-info/entry_points.txt,sha256=1ErDHaYsNl-bFzwwFtDQH9OVM5FQYL8xKFtGe7GZimY,40
+dbnd_azure-0.24.11.dist-info/top_level.txt,sha256=5jHaZ1N3wGVgM85D--DgqIH2QHGkG_iVWTtUb1pjd8k,11
+dbnd_azure-0.24.11.dist-info/RECORD,,
