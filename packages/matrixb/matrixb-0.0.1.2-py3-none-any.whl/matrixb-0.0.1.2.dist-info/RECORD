@@ -1,0 +1,17 @@
+matrixb/__init__.py,sha256=yiKWj8BYAZQFsrQrs28iYfwf2Qto_Eo-Y0N0VYLBM1U,125
+matrixb/columnnormalizer.py,sha256=MUMyo0-gX5sYUlkWDZYApPc3GwUVt9z0Ye_wiHQPahg,2319
+matrixb/iterator.py,sha256=gjmoY7PcjHd-Inu39QhHK0P1voLcrsruW1jDwitbGaw,3223
+matrixb/matrix.py,sha256=iMINhVacSbQHuKJKrTCBWK7BWBN9WvEwliA3oOnemFE,59922
+matrixb/rowmap.py,sha256=wxuRM7QSw-XS7IAi1QEOCnD_QpCaR4cstoY1CV5CEbA,1338
+matrixb/source/__init__.py,sha256=Z0dkaEG7MhXKxsNIKcdce0h2Iiu1eIze-k2kIAkdq5U,2816
+matrixb/source/base.py,sha256=2hG8X_LO53zQeJz51NRgKxDHxTMybKGpYZHXKX15VCM,4540
+matrixb/source/csv.py,sha256=RlHiMd8f0TN_-xwUVvGW8OnIvL5LnZTWz0dMQeugj7U,2975
+matrixb/source/googlesheet.py,sha256=XJLwz56iOT0DrJLpUHhFMNCtFoj4jybx31XZzF3lRmk,3458
+matrixb/source/resident.py,sha256=3PQP-tdasfhQQjyMQK0faLGPRRO3B5KkWw9t2t9hnqs,1964
+matrixb/source/xls.py,sha256=mJ5lwve4uSH5XFojAJv6bRP8cxRIf4m30Xuozd-aF3E,2875
+matrixb/source/xlsx.py,sha256=S-mky-cToRBHdv61mhAwudNaXl3V2YIi67eY_6RRv6c,2814
+matrixb-0.0.1.2.dist-info/LICENSE.txt,sha256=ZwqlOVCHwwmf-_Ta0iFFppwh7Gi7ivQSFQlcv5pngP0,10338
+matrixb-0.0.1.2.dist-info/METADATA,sha256=KiQCoq9Fs6jAGdgndxNXiZTFeitaZ41mTa3Nd7xqnjg,3425
+matrixb-0.0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+matrixb-0.0.1.2.dist-info/top_level.txt,sha256=woYGWATiR8kENm2J6NuLXR_t5VhtaJz4Fg4o0Mtn45o,8
+matrixb-0.0.1.2.dist-info/RECORD,,
