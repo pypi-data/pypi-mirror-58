@@ -1,0 +1,8 @@
+ci/__init__.py,sha256=Q9SaevdY6VaHDPR0cKZuYyF4KdVPWkFVUjEavrKNlBM,198
+ci/ci.py,sha256=L7YtDzjT2UjCNWkVZiUKv3mzyWovFedW1PsbovzXIlI,6231
+ci/git.py,sha256=vVQWpd8QpiEz02aWPBeYDMep7Aq0twavkafgxQ9moO0,166
+ci_py-1.0.0.dist-info/LICENSE,sha256=EVd_7s8ORQ_sqcNJzPsoo-6UjH_jUTu6dIKabaEJ2is,1077
+ci_py-1.0.0.dist-info/METADATA,sha256=U9t9wasAl5rNu7VnxN2vuM2LbAkHy9EW4LvS1DB3tZs,1929
+ci_py-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ci_py-1.0.0.dist-info/top_level.txt,sha256=4Yz6-7DIt5CedRfM7s3dxN7HstNIP9KBMBXro1MaVu0,3
+ci_py-1.0.0.dist-info/RECORD,,
