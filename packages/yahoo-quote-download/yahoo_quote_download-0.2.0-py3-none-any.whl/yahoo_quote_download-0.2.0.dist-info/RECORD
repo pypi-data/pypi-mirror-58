@@ -1,0 +1,11 @@
+yahoo_quote_download/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yahoo_quote_download/downloader.py,sha256=n4knYifMl_NSP90_XTUXHg-UmxOJmazXXjVSH_BxQhw,1521
+yahoo_quote_download/validater.py,sha256=1LD9tuFCH9zb0o4KWQ4rceHm6AIgMgTMWBq_rRlGv54,1812
+yahoo_quote_download/yqd.py,sha256=kBFoqWKxg85s7xSJngPPar7P3DiVKq2Xl-tC1Y3DivU,3687
+yahoo_quote_download-0.2.0.dist-info/DESCRIPTION.rst,sha256=HmeOwUvkJKPQqGhds6R_13woGRWxkPpS1HEHTQfxujc,2056
+yahoo_quote_download-0.2.0.dist-info/METADATA,sha256=_KAipV8Pvt6gFHz1L3KELpDOtjvQzBkaDk_DYCKCuKo,2518
+yahoo_quote_download-0.2.0.dist-info/RECORD,,
+yahoo_quote_download-0.2.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+yahoo_quote_download-0.2.0.dist-info/entry_points.txt,sha256=NlqBEjhMSiQOI5YuqQsuimAnYE-N3XeGGPmR13CotGE,69
+yahoo_quote_download-0.2.0.dist-info/metadata.json,sha256=OBfoaU6HDvaz1uBKFYQqpgR2EVycWPWoBOgYFRgsX6w,838
+yahoo_quote_download-0.2.0.dist-info/top_level.txt,sha256=ZEG0woUtWuBOXVBjLHRJw00TveAzcmJBfeajxld1OzM,21
