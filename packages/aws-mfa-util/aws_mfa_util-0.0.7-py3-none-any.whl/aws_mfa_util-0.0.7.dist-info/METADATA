@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: aws-mfa-util
+Version: 0.0.7
+Summary: AWS CLIにMFA適用アカウントを作成・更新するためのツール
+Home-page: https://github.com/papi-tokei/aws-mfa-util
+Author: hiroya akita
+Author-email: akky.develop@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: PyInquirer
+
+# 概要
+
+AWS CLIをMFAの認証付きで利用する場合、少々手間がかかるので、
+MFA認証済みのクレデンシャルを発行する手順を自動化するツールを作成。
+
+MFA用プロファイルの新規作成とクレデンシャル情報の更新を行うことが可能です。
+MFA用プロファイルの認証情報は有効期限12時間で設定しています。
+
+依存するライブラリ一覧
+
+* boto3
+* PyInquirer
+
+
+
+# インストール方法
+
+```
+$ pip install aws-mfa-util
+```
+
+# 使い方
+
+まず、動作の前提条件は下記です。
+
+* ~/.aws/credentialファイルが存在する
+* ~/.aws/credentialファイル内に適切なプロファイルが設定されている
+* ~/.aws/credentialファイル内に、適切なmfa_serialが設定されている
+
+具体的には、下記のような設定が最低限必要です。
+以降の説明は、testAというプロファイルが設定されている想定で記載します。
+
+```
+[testA]
+aws_access_key_id=abcde1234
+aws_secret_access_key=abcde1234
+mfa_serial=arn:aws:iam::12345678:mfa/test1
+```
+
+## MFA用プロファルを新規作成する
+
+コマンドを実行します。
+
+```
+$ aws-mfa-util
+```
+
+すると、下記のような選択肢が表示されます。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください (Use arrow keys)
+> MFA用プロファイルを新規作成
+  MFA用プロファイルの認証情報を更新
+```
+
+新規作成する場合は、「MFA用プロファイルを新規作成」を選択し、Enterを押してください。
+すると、下記の様に表示されます。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください MFA用プロファイルを新規作成
+? MFA用に新規作成するプロファイルを選択してください (Use arrow keys)
+> testA
+```
+
+今回はtestAというプロファイル1つしか設定していませんが、複数設定している場合は、複数のプロファイルが表示されます。
+MFA用に新規作成したいプロファイルを選択して、Enterを押します。
+すると、下記のように表示されます。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください MFA用プロファイルを新規作成
+? MFA用に新規作成するプロファイルを選択してください testA
+? ワンタイムパスワードを入力してください
+```
+
+マネジメントコンソールに入力しているワンタイムパスワードを入力します。
+(Authyなどで表示するコードです)
+入力後、Enterを押します。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください MFA用プロファイルを新規作成
+? MFA用に新規作成するプロファイルを選択してください testA
+? ワンタイムパスワードを入力してください 123456
+MFA用プロファイルの新規作成が完了しました。
+```
+
+「MFA用プロファイルの新規作成が完了しました。」という表示が出ていれば、設定完了です。
+testA-mfaという形で、既存のプロファイル名の末尾に、「-mfa」がついたプロファイルが新規作成されます。
+
+## 既存のMFA用プロファイルの認証情報を更新する
+
+コマンドを実行します。
+
+```
+$ aws-mfa-util
+```
+
+すると、下記のような選択肢が表示されます。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください (Use arrow keys)
+  MFA用プロファイルを新規作成
+> MFA用プロファイルの認証情報を更新
+```
+
+「MFA用プロファイルの認証情報を更新」を選択し、Enterを押します。
+すると、下記のように表示されます。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください MFA用プロファイルの認証情報を更新
+? 更新するMFAプロファイルを選択してください (Use arrow keys)
+> testA-mfa
+```
+
+新規作成したMFA用プロファイルを選択し、Enterを押します。
+すると、下記のように表示されますので、ワンタイムパスワードを入力し、Enterを押します。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください MFA用プロファイルの認証情報を更新
+? 更新するMFAプロファイルを選択してください testA-mfa
+? ワンタイムパスワードを入力ください 123456
+```
+
+最終的に、下記のように表示されていれば、更新は完了です。
+
+```
+$ aws-mfa-util
+? 希望する処理を選択してください MFA用プロファイルの認証情報を更新
+? 更新するMFAプロファイルを選択してください testA-mfa
+? ワンタイムパスワードを入力ください 123456
+MFA用プロファイルの認証情報更新が完了しました。
+```
+
