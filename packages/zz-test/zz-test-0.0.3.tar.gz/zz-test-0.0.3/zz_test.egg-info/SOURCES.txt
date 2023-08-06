@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+zz_test/__init__.py
+zz_test/__main__.py
+zz_test/zz_test.py
+zz_test.egg-info/PKG-INFO
+zz_test.egg-info/SOURCES.txt
+zz_test.egg-info/dependency_links.txt
+zz_test.egg-info/requires.txt
+zz_test.egg-info/top_level.txt
