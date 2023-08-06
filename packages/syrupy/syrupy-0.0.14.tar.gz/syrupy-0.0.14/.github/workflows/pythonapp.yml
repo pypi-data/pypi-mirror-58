@@ -1,0 +1,39 @@
+name: Syrupy CICD
+
+on: [push]
+
+env:
+  CI: 1
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7]
+      fail-fast: true
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install python dev dependencies.
+      run: |
+        . script/bootstrap
+    - name: Lint
+      run: invoke lint
+    - name: Test
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      run: invoke test --coverage
+    - name: Build Python 3.x
+      if: matrix.python-version != '3.7'
+      run: invoke build
+    - name: Release Python 3.7
+      env:
+        TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+      if: matrix.python-version == '3.7'
+      run: invoke release --no-dry-run
