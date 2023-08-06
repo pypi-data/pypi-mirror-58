@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dynamic-nappy
+Version: 0.0.0
+Summary: dynamic non-atomic parser (python)
+Home-page: https://github.com/ep12/dynamic_nappy
+Author: Rodney Meredith McKay
+License: GNU AGPL v3
+Description: # dynamic nappy - dynamic <u>n</u>on-<u>a</u>tomic <u>pa</u>rser (<u>py</u>thon)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
