@@ -1,0 +1,4 @@
+Flask>=1.0
+pydantic[email]<1,>=0.13
+M2Crypto>=0.35
+Pillow>=6.2
