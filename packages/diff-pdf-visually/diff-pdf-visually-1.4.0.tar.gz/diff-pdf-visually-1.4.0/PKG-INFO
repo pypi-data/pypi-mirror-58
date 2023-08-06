@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: diff-pdf-visually
+Version: 1.4.0
+Summary: A simple script to test whether there is a significant difference between two PDFs using ImageMagick and pdftocairo.
+Home-page: https://github.com/bgeron/diff-pdf-visually
+Author: Bram Geron
+Author-email: bram@bram.xyz
+Requires-Python: >=3.0,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
