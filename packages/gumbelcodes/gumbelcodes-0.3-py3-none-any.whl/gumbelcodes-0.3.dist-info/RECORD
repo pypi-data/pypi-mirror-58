@@ -1,0 +1,12 @@
+gumbelcodes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gumbelcodes/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gumbelcodes/models/keyedvectors.py,sha256=RFLO8iy3Q6h3mTeRuIbD7ZP-48ho3wigLGPqr7Z6U6A,7491
+gumbelcodes/models/matutils.py,sha256=8MRt1FgyAGe4XM9XYRZpkbCHJVhnLHUW3sMEJLXcajs,2764
+gumbelcodes/nncompress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gumbelcodes/nncompress/embed_compress.py,sha256=36abrSF3UgOD-32aozSTSqhSZqARD16wUYo_8sz_Jzg,10322
+gumbelcodes/nncompress/workflow.py,sha256=sUCmem0A9OwaBjxJWfhof3WkwXvwvbGgKCc_eehpby0,4450
+gumbelcodes-0.3.dist-info/LICENSE,sha256=3hTTUNnAi0LGGMdFHqzr_zCJrU437IS-SE4goDHxBJ0,1068
+gumbelcodes-0.3.dist-info/METADATA,sha256=7cZ7h0bs7qcC2WX6Wop0ODJWx4Ew5VvqZ1nDTr93kPk,1772
+gumbelcodes-0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gumbelcodes-0.3.dist-info/top_level.txt,sha256=_9o9F-42z91P0h6TeEapBGpM1GZYE-Ns9nAALVL5rfI,12
+gumbelcodes-0.3.dist-info/RECORD,,
