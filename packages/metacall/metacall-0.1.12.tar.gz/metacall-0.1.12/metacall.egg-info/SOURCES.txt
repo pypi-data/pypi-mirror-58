@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+metacall/__init__.py
+metacall.egg-info/PKG-INFO
+metacall.egg-info/SOURCES.txt
+metacall.egg-info/dependency_links.txt
+metacall.egg-info/requires.txt
+metacall.egg-info/top_level.txt
