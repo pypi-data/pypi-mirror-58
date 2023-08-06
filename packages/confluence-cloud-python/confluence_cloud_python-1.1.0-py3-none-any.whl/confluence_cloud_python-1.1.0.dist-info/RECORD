@@ -1,0 +1,14 @@
+sigconfluence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sigconfluence/client.py,sha256=QqlfCPcBpNcPy-8Njvv5pSCtq87ytnux0cmpU_WiXjk,4519
+sigconfluence/exceptions.py,sha256=uku7vE67s3AF2GqAOKADWgpSFuDJuG6_LbuA2mX9qLQ,399
+sigconfluence/issues.py,sha256=hF_IpciDvf8SYF0D0xC_VmMnt8Wg75X1hWz3FGImjis,3797
+sigconfluence/permissions.py,sha256=Zv_2QXh_VZcUpnB4ZUbT0pMo4X09iwB7zaaZwzAmIKE,1716
+sigconfluence/projects.py,sha256=JBVDa-P-WMhBhQeSk4AKSjd3LccGoG48EW6iDJ7k61U,345
+sigconfluence/spaces.py,sha256=3ynNSgDObQgTFbzZbO4ah9Y6GnyuvkBba9NERSXqh3k,328
+sigconfluence/users.py,sha256=U-EBSU87UPVx9rO_z1QRDhQknGc9dFy5ZWi3j_cLloo,1010
+sigconfluence/webhooks.py,sha256=4HC-YYjOzGjG9u8BYMDIa858nbKAe5Bd-I9U9p4hdos,658
+confluence_cloud_python-1.1.0.dist-info/LICENCE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+confluence_cloud_python-1.1.0.dist-info/METADATA,sha256=qH0gjGWcSbag1qDUVXSi3Y4zIR-AV7QNrzaysTEepKQ,1855
+confluence_cloud_python-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+confluence_cloud_python-1.1.0.dist-info/top_level.txt,sha256=Nt2Mh2BkA-Awep2y5Oz3wTMCzFgjRihA4WJYq8CgXxA,14
+confluence_cloud_python-1.1.0.dist-info/RECORD,,
