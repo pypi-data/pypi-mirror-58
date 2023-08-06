@@ -1,0 +1,5 @@
+tensorflow>=2.0
+pandas
+tables
+google-cloud-storage
+python-speech-features>=0.6
