@@ -1,0 +1,8 @@
+README.rst
+imap_auth_provider.py
+setup.py
+matrix_synapse_imap.egg-info/PKG-INFO
+matrix_synapse_imap.egg-info/SOURCES.txt
+matrix_synapse_imap.egg-info/dependency_links.txt
+matrix_synapse_imap.egg-info/requires.txt
+matrix_synapse_imap.egg-info/top_level.txt
