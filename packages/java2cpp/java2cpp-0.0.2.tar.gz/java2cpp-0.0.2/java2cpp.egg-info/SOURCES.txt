@@ -1,0 +1,9 @@
+README.md
+setup.py
+java2cpp/Java2Cpp.py
+java2cpp/__init__.py
+java2cpp.egg-info/PKG-INFO
+java2cpp.egg-info/SOURCES.txt
+java2cpp.egg-info/dependency_links.txt
+java2cpp.egg-info/requires.txt
+java2cpp.egg-info/top_level.txt
