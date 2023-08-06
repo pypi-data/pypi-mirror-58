@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: vertx-python-client
+Version: 0.3.1
+Summary: An asynchronous TCP eventbus Python client
+Home-page: https://github.com/dapangmao/vertx-python-client
+Author: dapangmao
+Author-email: hchao8@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+vertx-python-client
+---
+
+An asynchronous TCP eventbus Python client other than the thread-based [official client](https://github.com/vert-x3/vertx-eventbus-bridge-clients/tree/master/python)
+
+
+### Feature
+
+1. Use the event loop from Python 3 for high performance
+2. Provide a command line interface
+
+
+### Install 
+
+
+```
+pip install vertx-python-client
+```
+
+### Usage 
+
+
+
+```python
+
+from vertx import EventBus, Payload
+
+eb = EventBus(host='localhost', port=1011)
+eb.connect()
+eb.add_listen_func(address="api.versions", action=lambda x: print(x))
+
+# Send the JSON binary
+reg = Payload(type="register", address="api.versions")
+eb.send(reg)
+pub = Payload(type="publish", address="api.versions.get", replyAddress="api.versions")
+eb.send(pub)
+
+# Quit the connection
+eb.disconnect()
+```
+
+Instead use the command line interface
+
+```
+python -m vertx localhost:1234
+> {"type": "register", "address": "discovery.versions"}
+
+> exit
+
+```
+
+
+### Test
+
+``` 
+pytest --log-cli-level=DEBUG tests
+```
+
+
