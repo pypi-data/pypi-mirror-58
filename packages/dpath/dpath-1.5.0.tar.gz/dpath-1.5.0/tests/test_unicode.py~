@@ -1,0 +1,13 @@
+import nose
+import dpath.path
+import dpath.util
+
+def test_unicode_merge():
+    a = {'中': ['zhong']}
+    b = {'文': ['wen']}
+    dpath.util.merge(a, b)
+
+def test_unicode_search():
+    a = {'中': ['zhong']}
+    results = [[x[0], x[1]] for x in dpath.util.search(a, '*', yielded=True)]
+    
