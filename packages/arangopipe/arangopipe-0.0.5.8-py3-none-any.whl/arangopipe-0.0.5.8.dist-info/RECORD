@@ -1,0 +1,15 @@
+arangopipe/__init__.py,sha256=DzdkbUbkYwdcU5L0HGFEk3ABQGa9aLWpi3NamCUUc7k,75
+arangopipe/arangopipe_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arangopipe/arangopipe_analytics/dataset_shift_detector.py,sha256=1SEJIN7GEUbwQVYNRE3CMQkmYloQg8bt8ywZ08jlnxE,311
+arangopipe/arangopipe_analytics/rf_dataset_shift_detector.py,sha256=Xo7wVTLQEwz4DsH34Q17WueXt2bcgQ_HYqccxvJLHrs,1282
+arangopipe/arangopipe_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arangopipe/arangopipe_storage/arangopipe_admin_api.py,sha256=zZr8tYnnfYJa9_l28lbatHLRaN483Dnx3JLuh1jspiU,21207
+arangopipe/arangopipe_storage/arangopipe_api.py,sha256=dTL3PB_x1aAM5MnupWAITEQbF4pbU45Y25tk4wEWNJo,15486
+arangopipe/arangopipe_storage/arangopipe_config.py,sha256=7uy3rTKpBb5KMdfFDUXV7JCQwhuoFLZCe1M-F-lWQNE,1412
+arangopipe/arangopipe_storage/arangopipe_config.yaml,sha256=XB_ZRn8YS9TYz9Pmac15D-e50QoULpJOP2MHMpZU-Vs,318
+arangopipe/arangopipe_storage/custom_http_client.py,sha256=QojWazvbqPosQWlFRRdjpZ1_yasNhGiMpBQr76c-YTg,1747
+arangopipe/arangopipe_storage/managed_service_conn_parameters.py,sha256=mZY4mDc0S-SUdeE11YAHnjwKd3YY9Ib0n6w9tEMcjMo,1075
+arangopipe-0.0.5.8.dist-info/METADATA,sha256=gdxvrhE6AuHckcRBtMRBCoQgzFhZ0KgGnwhqqebscBw,18886
+arangopipe-0.0.5.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+arangopipe-0.0.5.8.dist-info/top_level.txt,sha256=SCwqGJytU-i0adn7nDEt7IYpw0ic_dsAzywAsGUV3Pg,11
+arangopipe-0.0.5.8.dist-info/RECORD,,
