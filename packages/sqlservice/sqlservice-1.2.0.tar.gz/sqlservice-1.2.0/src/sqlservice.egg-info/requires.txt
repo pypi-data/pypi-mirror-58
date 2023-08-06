@@ -1,0 +1,14 @@
+SQLAlchemy>=1.0.0
+
+[dev]
+coverage
+flake8
+pydash
+pylint
+pytest
+pytest-cov
+Sphinx
+sphinx-rtd-theme
+tox
+twine
+wheel
