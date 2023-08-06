@@ -1,0 +1,4 @@
+sklearn
+pandas
+numpy
+tensorboardX>=1.6
