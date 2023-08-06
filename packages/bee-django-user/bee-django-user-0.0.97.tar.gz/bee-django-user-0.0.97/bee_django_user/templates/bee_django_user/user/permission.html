@@ -1,0 +1,92 @@
+{% extends "bee_django_user/base.html" %}
+{% load bee_django_user_filter %}
+{% block styles %}
+    <style>
+        .can_edit_False td {
+            background-color: #FEF2EB;
+        }
+
+        .odd {
+            background-color: #efefef;
+        }
+
+        .tips {
+
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    {% include 'bee_django_user/logo.html' %}
+    {% include 'bee_django_user/nav.html' %}
+
+    <div class="text-center"><h3>
+        用户组权限设置
+    </h3>
+
+    </div>
+    {#    <div class="text-right">#}
+    {#        <a class="btn btn-default" href="{% url 'bee_django_exam:notice_add' %}">添加须知</a>#}
+    {#    </div>#}
+    <div style="margin: 20px 0;">
+        <div class="tips">
+            {% if tips_group|length > 0 %}
+                {% for g in tips_group %}{{ g }}{% if not forloop.last %} / {% endif %}{% endfor %}
+                为特殊用户组，该用户组【查看学生/班级】的权限，请查阅帮助文档
+            {% endif %}
+            {#            <div>红色背景权限为重要权限，不支持线上修改</div>#}
+        </div>
+    </div>
+    <div>
+        {% include 'bee_django_user/user/permission_search.html' %}
+    </div>
+    {% if user.is_superuser %}
+        <div>
+            {% for group in group_list %}
+                {{ group.name }}
+                <a href="#" onclick="set_all_permission('{{ group.id }}')">全部权限</a>
+                |
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% for permission in permission_list %}
+        {#         {{forloop.counter|divisibleby:2}}#}
+        <div class="{% cycle 'odd' 'even' %}" style="padding: 10px;">
+            <h4>{{ permission.number }}：{{ permission }}
+                {% if not permission.can_edit %}
+                    <span style="color: red">（不支持在线修改）</span>
+                {% endif %}
+            </h4>
+            <div>
+                <table class="table table-bordered">
+                    <tr>
+                        {% for group in group_list %}
+                            <td>{{ group.name }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% for group in group_list %}
+                        <td>{% get_group_has_permission group.id permission.auth_permission.codename as has_permission %}
+                            {% if has_permission %} <span style="color: red;">√</span> {% endif %}
+                            {% if permission.can_edit or user.is_superuser %}
+                                <a href="{% url 'bee_django_user:user_permission_update' group_id=group.id pk=permission.id %}"><span><i
+                                        class="glyphicon glyphicon-edit"></i></span> </a>{% endif %}
+                        </td>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    {% endfor %}
+    {% include 'bee_django_user/paginator.html' %}
+{% endblock %}
+{% block scripts %}
+    <script>
+        function set_all_permission(group_id) {
+            var url = "{% url 'bee_django_user:user_permission_reset' %}";
+            if (confirm('确定操作？')) {
+                $.post(url, {"group_id": group_id}).done(function (data) {
+                    alert("操作成功");
+                    location.reload();
+                });
+            }
+        }
+    </script>
+{% endblock %}

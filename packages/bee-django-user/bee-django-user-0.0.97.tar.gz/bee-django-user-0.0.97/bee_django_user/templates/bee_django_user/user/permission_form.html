@@ -1,0 +1,24 @@
+{% extends "bee_django_user/base.html" %}
+{% load static %}
+{% load bootstrap3 %}
+{% block content %}
+    {% include 'bee_django_user/logo.html' %}
+    {% include 'bee_django_user/nav.html' %}
+    {% include 'bee_django_user/messages.html' %}
+    <h3>修改权限</h3>
+    <div>用户组:{{ group.name }}</div>
+    <div>权限:{{ custom_permission }}</div>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% bootstrap_button '提交' %}
+        </form>
+    </div>
+{% endblock %}
+
+
+{% block scripts %}
+    <script>
+    </script>
+{% endblock %}
