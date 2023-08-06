@@ -1,0 +1,3 @@
+[console_scripts]
+logmetrics_sdk = logmetrics_sdk.cli:main
+
