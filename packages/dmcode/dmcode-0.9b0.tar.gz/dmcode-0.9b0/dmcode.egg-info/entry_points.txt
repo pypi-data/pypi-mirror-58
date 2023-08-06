@@ -1,0 +1,3 @@
+[console_scripts]
+dmcode = dmcode.__main__:main
+
