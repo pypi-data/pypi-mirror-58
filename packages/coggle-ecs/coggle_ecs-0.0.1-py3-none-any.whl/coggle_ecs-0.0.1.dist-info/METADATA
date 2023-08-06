@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: coggle-ecs
+Version: 0.0.1
+Summary: Convert Coggle .mm files to ECS tables and whatnot
+Home-page: https://github.com/MrGVSV/coggle-ecs
+Author: Gino Valente
+Author-email: gino.valente.code@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pandas
+
+
+CoggleECS is a small tool used to parse `.mm` files created at [coggle.it]() for ECS data. It can then output ECS data as a tree or table. It can also be used to simply show links in your map.
+
+For instance, Coggle creates links between nodes using a markdown format: `Player [#](#5d3adc) [#](#78959d)`. CoggleECS will replace those links with their respective nodes: `Player <Move,  Transform>`.
+
+
