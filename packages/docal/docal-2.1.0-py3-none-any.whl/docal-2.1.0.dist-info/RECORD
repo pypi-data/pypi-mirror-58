@@ -1,0 +1,11 @@
+docal/__init__.py,sha256=3Ks6aiKuk5rl_kW4fqzD5CIZxmc6e4xCtmPtfSbF0aQ,147
+docal/__main__.py,sha256=1rFXZZG8EWEc-hj5_eMBjXlrufyp7RUJ9qKFA2-kKpI,2491
+docal/calculation.py,sha256=u98pAEikVIPdknvevlDZax5k-QdCGKx0ZpTBScZya-0,14630
+docal/document.py,sha256=KMv8Fzijn0VSRIZxbPXWMkHRa3lisYz3GvhmkU0HF6I,40541
+docal/parsing.py,sha256=BFpoTrfgtzOQVwgRapsaAFK00QfsHi0tZvR5Q5H90UI,30680
+docal-2.1.0.dist-info/LICENSE,sha256=SaxJB7NbVpK8A6tf4qdFsmNeavKKLZ8bgYadhQmgA-E,1093
+docal-2.1.0.dist-info/METADATA,sha256=YnkGx9QbsxWrL3SWCVptgIK0ZBkfEAwLfpELnH5BK5w,8901
+docal-2.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+docal-2.1.0.dist-info/entry_points.txt,sha256=U9LXr9dZJJ0l9PMv0EUCP1QbDEPzp85NEJgdQCJkPQ4,47
+docal-2.1.0.dist-info/top_level.txt,sha256=6zSaVcfQlO5xNU-bIxLMV-OFQKmYVId8BeuLJWdWoEE,6
+docal-2.1.0.dist-info/RECORD,,
