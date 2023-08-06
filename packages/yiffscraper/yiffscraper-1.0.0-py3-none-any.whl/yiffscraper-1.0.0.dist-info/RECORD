@@ -1,0 +1,10 @@
+yiffscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yiffscraper/__main__.py,sha256=HdWzZRzeRnK_4V661KTVFsQpq_ohnlGSPPnGzSM809A,3297
+yiffscraper/downloader.py,sha256=-spNJSDtauMo4hDFfKDu9v9TjAEK2PF0UiwNGLzOx-g,3686
+yiffscraper/yiffscraper.py,sha256=h8kF4C0UJEkksXxooe3SQz35GA7E4m4cEroo93IxW3s,5410
+yiffscraper-1.0.0.dist-info/LICENSE,sha256=uWrZyN1hEPvW6vcJ4tW1tXm1VdOHY50pBCAtp0-oRh8,1094
+yiffscraper-1.0.0.dist-info/METADATA,sha256=u8UVXPrqr14z_ea0IuMuFsgaOsHqt-HP4RBd4IyGdC0,2597
+yiffscraper-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+yiffscraper-1.0.0.dist-info/entry_points.txt,sha256=6I5A2UOElEjinmCr_U4jjOE_keJkDQOPducem1m9peE,52
+yiffscraper-1.0.0.dist-info/top_level.txt,sha256=ItiDIj238Is_o-K5GuVNpPkgcYYPppAkF0keSXu7wGo,12
+yiffscraper-1.0.0.dist-info/RECORD,,
