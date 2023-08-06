@@ -1,0 +1,4 @@
+bravado
+cached-property
+hypothesis>=4.56.1
+pyyaml
