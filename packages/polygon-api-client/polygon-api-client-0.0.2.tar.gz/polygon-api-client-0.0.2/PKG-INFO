@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: polygon-api-client
+Version: 0.0.2
+Summary: Polygon API client
+Home-page: https://github.com/Polygon-io/client-python
+Author: UNKNOWN
+Author-email: ricky@polygon.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
