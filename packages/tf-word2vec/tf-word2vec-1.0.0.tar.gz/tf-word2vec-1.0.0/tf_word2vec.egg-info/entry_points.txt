@@ -1,0 +1,3 @@
+[console_scripts]
+w2v = word2vec.main:main
+
