@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface domain="vocball">
+  <requires lib="gtk+" version="3.16"/>
+  <!-- interface-local-resource-path ../pixmaps -->
+  <!-- interface-css-provider-path vocball.css -->
+  <object class="GtkImage" id="imgAddUnit">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">list-add-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <object class="GtkImage" id="imgNew">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">document-new-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <object class="GtkImage" id="imgRemoveUnit">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">list-remove-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <object class="GtkImage" id="imgSaveAs">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">document-save-as-symbolic</property>
+    <property name="use_fallback">True</property>
+  </object>
+  <object class="GtkListStore" id="listEditorUnits">
+    <columns>
+      <!-- column-name UnitChecked -->
+      <column type="gboolean"/>
+      <!-- column-name UnitLabel -->
+      <column type="gchararray"/>
+      <!-- column-name UnitName -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="listEditorVocabulary">
+    <columns>
+      <!-- column-name Vocable -->
+      <column type="gchararray"/>
+      <!-- column-name Translation -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="winEditor">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="destroy_with_parent">True</property>
+    <signal name="delete-event" handler="on_winEditor_delete_event" swapped="no"/>
+    <signal name="show" handler="on_winEditor_show" swapped="no"/>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="headEditor">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="title" translatable="yes">Vocabulary Editor</property>
+        <property name="show_close_button">True</property>
+        <child>
+          <object class="GtkButton" id="btnEditorOpen">
+            <property name="label" translatable="yes">Open</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="has_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Open existing list</property>
+            <signal name="clicked" handler="on_btnEditorOpen_clicked" swapped="no"/>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnEditorNew">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Create new list</property>
+            <property name="image">imgNew</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="on_btnEditorNew_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnEditorSave">
+            <property name="label" translatable="yes">Save</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Save list</property>
+            <signal name="clicked" handler="on_btnEditorSave_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnEditorSaveAs">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Save list to new file</property>
+            <property name="image">imgSaveAs</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="on_btnEditorSaveAs_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkGrid" id="boxEditor">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="margin_left">18</property>
+        <property name="margin_right">18</property>
+        <property name="margin_top">18</property>
+        <property name="margin_bottom">18</property>
+        <child>
+          <object class="GtkLabel" id="lblEditorUnit">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_right">18</property>
+            <property name="margin_bottom">12</property>
+            <property name="label" translatable="yes">Unit</property>
+            <property name="xalign">0</property>
+            <style>
+              <class name="labelXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrlEditorUnits">
+            <property name="width_request">150</property>
+            <property name="height_request">250</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="margin_right">18</property>
+            <property name="margin_bottom">12</property>
+            <property name="hscrollbar_policy">never</property>
+            <property name="shadow_type">in</property>
+            <property name="min_content_width">125</property>
+            <property name="overlay_scrolling">False</property>
+            <child>
+              <object class="GtkTreeView" id="treeEditorUnits">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">listEditorUnits</property>
+                <property name="headers_visible">False</property>
+                <property name="headers_clickable">False</property>
+                <property name="reorderable">True</property>
+                <property name="enable_search">False</property>
+                <property name="search_column">0</property>
+                <property name="fixed_height_mode">True</property>
+                <property name="show_expanders">False</property>
+                <property name="enable_grid_lines">horizontal</property>
+                <property name="activate_on_single_click">True</property>
+                <signal name="row-activated" handler="on_treeEditorUnits_row_activated" swapped="no"/>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treecolEditorUnits">
+                    <property name="sizing">fixed</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="celltxtEditorUnits"/>
+                      <attributes>
+                        <attribute name="text">2</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="treeunitsM"/>
+                </style>
+              </object>
+            </child>
+            <style>
+              <class name="treeunitsXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">2</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblEditorVocabulary">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_bottom">12</property>
+            <property name="hexpand">True</property>
+            <property name="label" translatable="yes">Vocabulary</property>
+            <property name="xalign">0</property>
+            <style>
+              <class name="labelXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">0</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrlEditorVocabulary">
+            <property name="width_request">500</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="margin_bottom">12</property>
+            <property name="hexpand">True</property>
+            <property name="hscrollbar_policy">never</property>
+            <property name="shadow_type">in</property>
+            <property name="min_content_width">500</property>
+            <property name="overlay_scrolling">False</property>
+            <child>
+              <object class="GtkTreeView" id="treeEditorVocabulary">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">listEditorVocabulary</property>
+                <property name="headers_clickable">False</property>
+                <property name="enable_search">False</property>
+                <property name="fixed_height_mode">True</property>
+                <property name="show_expanders">False</property>
+                <property name="enable_grid_lines">both</property>
+                <signal name="focus-out-event" handler="on_treeEditorVocabulary_focus_out_event" swapped="no"/>
+                <signal name="key-release-event" handler="on_treeEditorVocabulary_key_release_event" swapped="no"/>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treecolEditorVocable">
+                    <property name="sizing">fixed</property>
+                    <property name="title" translatable="yes">Vocable</property>
+                    <property name="expand">True</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="celltxtEditorVocable">
+                        <property name="editable">True</property>
+                        <signal name="edited" handler="on_celltxtEditorVocable_edited" swapped="no"/>
+                      </object>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="treecolEditorTranslation">
+                    <property name="sizing">fixed</property>
+                    <property name="title" translatable="yes">Translation</property>
+                    <property name="expand">True</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="celltxtEditorTranslation">
+                        <property name="editable">True</property>
+                        <signal name="edited" handler="on_celltxtEditorTranslation_edited" swapped="no"/>
+                      </object>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+                <style>
+                  <class name="treeUnitsM"/>
+                </style>
+              </object>
+            </child>
+            <style>
+              <class name="treeunitsXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">1</property>
+            <property name="width">2</property>
+            <property name="height">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnEditorUnitAdd">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Add new unit</property>
+            <property name="halign">start</property>
+            <property name="margin_right">6</property>
+            <property name="image">imgAddUnit</property>
+            <signal name="clicked" handler="on_btnEditorUnitAdd_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnEditorUnitRemove">
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Remove selected unit</property>
+            <property name="halign">start</property>
+            <property name="hexpand">True</property>
+            <property name="image">imgRemoveUnit</property>
+            <signal name="clicked" handler="on_btnEditorUnitRemove_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblEditorFileName">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="label" translatable="yes">Untitled List</property>
+            <property name="ellipsize">middle</property>
+            <property name="single_line_mode">True</property>
+            <property name="xalign">1</property>
+            <style>
+              <class name="labelXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">3</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="imgVocabularyWarning">
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="margin_right">18</property>
+            <property name="icon_name">dialog-warning-symbolic</property>
+            <property name="use_fallback">True</property>
+            <property name="icon_size">3</property>
+          </object>
+          <packing>
+            <property name="left_attach">2</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entUnitName">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="margin_right">18</property>
+            <property name="margin_bottom">6</property>
+            <property name="max_length">5</property>
+            <signal name="changed" handler="on_entUnitName_changed" swapped="no"/>
+            <signal name="icon-press" handler="on_entUnitName_icon_press" swapped="no"/>
+            <signal name="key-press-event" handler="on_entUnitName_key_press_event" swapped="no"/>
+            <style>
+              <class name="entryXL"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkMessageDialog" id="dlgEditor">
+    <property name="can_focus">False</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="type_hint">dialog</property>
+    <property name="transient_for">winEditor</property>
+    <property name="attached_to">winEditor</property>
+    <property name="message_type">question</property>
+    <property name="text" translatable="yes">Do you want to save the current vocabulary list before closing?</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="boxDialogEditor">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="areaDialogEditor">
+            <property name="can_focus">False</property>
+            <property name="margin_top">10</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">expand</property>
+            <child>
+              <object class="GtkButton" id="btnDialogEditorNoSave">
+                <property name="label" translatable="yes">Close without Saving</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btnDialogEditorNoSave_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnDialogEditorCancel">
+                <property name="label" translatable="yes">Cancel</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btnDialogEditorCancel_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnDialogEditorSave">
+                <property name="label" translatable="yes">Save</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="has_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btnDialogEditorSave_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
