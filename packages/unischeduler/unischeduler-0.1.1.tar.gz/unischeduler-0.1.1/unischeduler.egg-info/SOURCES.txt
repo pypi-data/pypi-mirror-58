@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+unischeduler/__init__.py
+unischeduler/models.py
+unischeduler/scheduler.py
+unischeduler/scrapper.py
+unischeduler/text_parser.py
+unischeduler/util.py
+unischeduler.egg-info/PKG-INFO
+unischeduler.egg-info/SOURCES.txt
+unischeduler.egg-info/dependency_links.txt
+unischeduler.egg-info/requires.txt
+unischeduler.egg-info/top_level.txt
