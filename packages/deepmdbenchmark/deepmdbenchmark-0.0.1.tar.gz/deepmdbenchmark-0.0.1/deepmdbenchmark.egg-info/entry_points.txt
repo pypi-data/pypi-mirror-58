@@ -1,0 +1,3 @@
+[console_scripts]
+deepmdbenchmark = deepmdbenchmark.benchmark:run
+
