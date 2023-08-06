@@ -1,0 +1,10 @@
+xain_proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xain_proto/fl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xain_proto/fl/coordinator_pb2.py,sha256=hN2gdzQyKvWXXT37UbkOcndt9HPKTCcmy28LOcs1Xm8,20910
+xain_proto/fl/coordinator_pb2_grpc.py,sha256=yN4B7iA2_V0G3Eotf7hh6a1A9edxjTKWs8vtLZKPr54,4342
+xain_proto/fl/hellonumproto_pb2.py,sha256=_gArXxilb3PAX7UAlUhzoXirnv1TicpT0Hp4NxF6SxI,4456
+xain_proto/fl/hellonumproto_pb2_grpc.py,sha256=0dXKuXEVIvSzDFFTo2xIWGKxXCPdNkE_RRhHROhpEqU,1661
+xain_proto-0.1.0.dist-info/METADATA,sha256=bq3NcjKOput1j9nMfShjTZoBPsBKCBuN19aDg4b2qqg,1326
+xain_proto-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+xain_proto-0.1.0.dist-info/top_level.txt,sha256=ZtYPh--gxpwK5VuKfCtLPafyXw6i_gf47BGP6ckrnGc,11
+xain_proto-0.1.0.dist-info/RECORD,,
