@@ -1,0 +1,9 @@
+LICENSE
+README.md
+babel_utils.py
+setup.cfg
+setup.py
+babel_utils.egg-info/PKG-INFO
+babel_utils.egg-info/SOURCES.txt
+babel_utils.egg-info/dependency_links.txt
+babel_utils.egg-info/top_level.txt

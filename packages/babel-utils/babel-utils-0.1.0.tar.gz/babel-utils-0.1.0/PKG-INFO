@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: babel-utils
+Version: 0.1.0
+Summary: Utility library for the Python babel compiler.
+Home-page: https://github.com/gousaiyang/babel-utils
+Author: Saiyang Gou
+Author-email: gousaiyang223@gmail.com
+License: MIT
+Description: # babel-utils
+        
+        [![Travis CI - Status](https://img.shields.io/travis/com/gousaiyang/babel-utils.svg)](https://travis-ci.com/gousaiyang/babel-utils)
+        [![Codecov - Coverage](https://codecov.io/gh/gousaiyang/babel-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/gousaiyang/babel-utils)
+        
+        Utility library for the Python [babel](https://github.com/JarryShaw/babel) compiler.
+        
+        Currently, the three individual tools ([f2format](https://github.com/JarryShaw/f2format), [poseur](https://github.com/JarryShaw/poseur), [walrus](https://github.com/JarryShaw/walrus)) depend on this repo. The babel compiler is a work in progress.
+        
+Keywords: babel utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
