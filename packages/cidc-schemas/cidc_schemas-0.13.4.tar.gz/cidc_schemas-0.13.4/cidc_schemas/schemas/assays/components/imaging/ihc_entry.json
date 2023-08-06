@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ihc_assay_record",
+  "title": "IHC assay record",
+  "type": "object",
+  "description": "A single data record from IHC assay.",
+  "properties": {
+    "cimac_id": {
+        "$comment": "Id of an sample within this clinical trial, that this assay record is based upon.",
+        "$ref": "sample.json#properties/cimac_id"
+    },
+    "marker_positive": {
+        "description": "Indicates whether the marker is considered positive by clinical trial guidelines (if applicable).",
+        "type": "string",
+        "enum": [
+            "positive",
+            "negative",
+            "no_call"
+        ]
+    },
+    "tumor_proportion_score": {
+      "description": "Tumor Proportion Score (TPS) is the percentage of viable tumor cells showing marker staining relative to all viable tumor cells.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "combined_positive_score": {
+      "description": "Combined Positive Score (CPS) is the percentage of marker staining cells (tumor cells and cells that are non-tumor) relative to all viable tumor cells.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "inflammatory_cells": {
+      "description": "Percentage of inflammatory cells (non-tumor cells) showing marker staining relative to all inflammatory cells.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "positive_inflammatory_cell_area": {
+      "description": "Area of PD-L1+ Inflammatory Cells over the area of TSI + IT as a percentage.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "h_score": {
+      "description": "A semiquantitative approach used to assign score to tumor samples based on marker staining intensity (0, 1+, 2+, or 3+) for each cell in a fixed field.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "comment": {
+        "description": "A text comment regarding this slide.",
+        "type": "string"
+      },
+    "files": {
+      "$ref": "assays/components/imaging/ihc_input.json"
+    }
+  },
+  "mergeStrategy": "objectMerge",
+  "required": [
+    "cimac_id",
+    "files"
+  ],
+  "anyOf": [
+        {"required" : ["tumor_proportion_score"]},
+        {"required" : ["combined_positive_score"]},
+        {"required" : ["inflammatory_cells"]},
+        {"required" : ["positive_inflammatory_cell_area"]},
+        {"required" : ["h_score"]}        
+    ]
+}
