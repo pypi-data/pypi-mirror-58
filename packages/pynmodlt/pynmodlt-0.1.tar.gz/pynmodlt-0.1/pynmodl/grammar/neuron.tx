@@ -1,0 +1,20 @@
+import comment
+import variable
+import keyword
+
+Neuron: 'NEURON' '{' statements*=NRNStat '}';
+NRNStat: Threadsafe | Suffix | Global | Range | Pointer |
+		 External | Nonspecific | UseIon | Point_Process | Artificial_Cell;
+Suffix: 'SUFFIX' suffix=ID;
+Global: 'GLOBAL' globals+=[Variable][','];
+Range: 'RANGE' ranges+=[Variable][','];
+Pointer: 'POINTER' pointers+=ID[','];
+External: 'EXTERNAL' externals+=ID[','];
+Nonspecific: 'NONSPECIFIC_CURRENT' nonspecifics+=ID[','];
+
+UseIon: 'USEION' ion=ID (r=Read | w=Write | v=Valence)*;
+Read: 'READ' reads+=[Variable][','];
+Write: 'WRITE' writes+=[Variable][','];
+Valence: 'VALENCE' valence=INT;
+Point_Process: 'POINT_PROCESS' suffix=ID;
+Artificial_Cell: 'ARTIFICIAL_CELL' suffix=ID;
