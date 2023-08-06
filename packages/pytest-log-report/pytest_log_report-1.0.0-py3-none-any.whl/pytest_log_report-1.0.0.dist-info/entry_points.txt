@@ -1,0 +1,3 @@
+[console_scripts]
+pytest_log_report = report.__main__:main
+
