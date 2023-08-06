@@ -1,0 +1,3 @@
+[console_scripts]
+hugon = hugon.hugon:main
+
