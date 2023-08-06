@@ -1,0 +1,16 @@
+ms2pip-3.0.6.dist-info/entry_points.txt,sha256=BWvwMZLi1dU6Q86LP2qAscdrSmVSPwgOumUZs_N8dnc,98
+ms2pip-3.0.6.dist-info/RECORD,,
+ms2pip-3.0.6.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+ms2pip-3.0.6.dist-info/top_level.txt,sha256=b5yBkrAltPFCSHi_C-KVazKhfloaQFnSS0ZdRSC5fvU,21
+ms2pip-3.0.6.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ms2pip-3.0.6.dist-info/METADATA,sha256=OoREhQ7BJM2LTB5dqEoxTPqJCAMwP-YpQNKbn2gpGvo,13202
+fasta2speclib/fasta2speclib.py,sha256=bBA2tTn4xX612Q8IH2KGOpAsbxXJ5c168OxfQDATqUU,17121
+ms2pip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ms2pip/feature_names.py,sha256=aHzK7c7-EmNCf52v0C_fZ376Ci0V2h4CQExJ-PPcxhU,5691
+ms2pip/ms2pipC.py,sha256=dsehJ2ZmVnBuY9QMgfyiUwelr3sQnxEoVcHw8yLSm4w,40873
+ms2pip/__main__.py,sha256=8Lv_rkZBBwspL4Fo-IjgHN85K-TkrD6tHN6N1he-3vU,728
+ms2pip/cython_modules/ms2pip_pyx.cpython-37m-x86_64-linux-gnu.so,sha256=04CV7DfVfbgejNhklE_Ke5psBaql0ThbUummGhdS_nU,43258630
+ms2pip/ms2pip_tools/get_elude_predictions.py,sha256=UsMrSBnxa8r3Cu0RZXxy52OErv-Mjas4hiO2-kCTfKM,4331
+ms2pip/ms2pip_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ms2pip/ms2pip_tools/spectrum_output.py,sha256=mLARgvYlLQlwdmeMSgMkyBnYEPKKEyRcGpYsSwRwmrM,17296
+ms2pip/ms2pip_tools/calc_correlations.py,sha256=JodRWHBN0sKjBRiYmCbyJUhwKmJcUSHNlJwdkbLtzB0,1158
