@@ -1,0 +1,9 @@
+autograd_lib/__init__.py,sha256=9KOCUZDBuW3CwxjsVMoTGqIjxtUd4vg4cdEFV3v98RU,27
+autograd_lib/_version.py,sha256=CHUdJvPS3l7PphMt_r17ufrpB0TIJkmifpqmTNjwh84,22
+autograd_lib/autograd_lib.py,sha256=kuEy_XXwqpFoZyPFndsLz-M71j7gfrF7DDdv7l5eeyQ,7188
+autograd_lib/util.py,sha256=ZGkTxsEY9SNiLsZJgX7KqidrBHSvkUEZgMrg-Qj3sVI,9474
+autograd_lib-0.0.6.dist-info/LICENSE,sha256=BkLfmWuc4HPg2BkDEpxkapYZ63ceQcaJztuQTesJQjA,1057
+autograd_lib-0.0.6.dist-info/METADATA,sha256=srdwALgXQqIYXpc0fUqLAGRNdAYcDW8jfXJTp9IABlw,2851
+autograd_lib-0.0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+autograd_lib-0.0.6.dist-info/top_level.txt,sha256=r37WpUpooyfC-6d8eWXEUyxXiX57yxXppr123-8kFts,13
+autograd_lib-0.0.6.dist-info/RECORD,,
