@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: kikuchipy
+Version: 0.1.0
+Summary: Processing of electron backscatter diffraction (EBSD) patterns
+Home-page: https://github.com/kikuchipy/kikuchipy
+Author: KikuchiPy developers
+Author-email: hakon.w.anes@ntnu.no
+Maintainer: Håkon Wiik Ånes
+Maintainer-email: hakon.w.anes@ntnu.no
+License: UNKNOWN
+Keywords: EBSD,electron backscatter diffraction,EBSP,electron backscatter pattern,BKD,backscatter kikuchi diffraction,SEM,scanning electron microscopy,kikuchi pattern
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: dask[array]
+Requires-Dist: hyperspy (>=1.5.2)
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: pyxem (>=0.10)
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: black (>=19.3b0) ; extra == 'dev'
+Requires-Dist: pre-commit (>=1.16) ; extra == 'dev'
+Requires-Dist: sphinx (>=2.3.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.4.3) ; extra == 'dev'
+Requires-Dist: sphinx-copybutton (>=0.2.5) ; extra == 'dev'
+Requires-Dist: pytest (>=5.3.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.8.1) ; extra == 'dev'
+Requires-Dist: coverage (==4.5.4) ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx (>=2.3.1) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (>=0.4.3) ; extra == 'doc'
+Requires-Dist: sphinx-copybutton (>=0.2.5) ; extra == 'doc'
+Provides-Extra: tests
+Requires-Dist: pytest (>=5.3.2) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.8.1) ; extra == 'tests'
+Requires-Dist: coverage (==4.5.4) ; extra == 'tests'
+
+[![Build Status](https://api.travis-ci.org/kikuchipy/kikuchipy.svg?branch=master)](https://travis-ci.org/kikuchipy/kikuchipy) [![Coverage Status](https://coveralls.io/repos/github/kikuchipy/kikuchipy/badge.svg?branch=master)](https://coveralls.io/github/kikuchipy/kikuchipy?branch=master) [![Documentation Status](https://readthedocs.org/projects/kikuchipy/badge/?version=latest)](https://kikuchipy.readthedocs.io/en/latest/?badge=latest) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![DOI](https://zenodo.org/badge/160169099.svg)](https://zenodo.org/badge/latestdoi/160169099)
+
+*KikuchiPy is an open-source Python library for processing and analysis of
+electron backscatter diffraction (EBSD) patterns.*
+
+The library builds upon the tools for multi-dimensional data analysis provided
+by the [HyperSpy](https://hyperspy.org/) library. This means that the `EBSD`
+class, which has several common methods for processing of EBSD patterns, also
+inherits all relevant methods from HyperSpy's `Signal2D` and `Signal` classes.
+
+Note that the project is in an alpha stage, and there will likely be breaking
+changes with each release.
+
+KikuchiPy is released under the GPL v3 license.
+
+#### User guide
+
+Installation instructions, a user guide and the full API reference is available
+[here](https://kikuchipy.readthedocs.io) via Read the Docs.
+
+#### Contributing
+
+Everyone is welcome to contribute. Please read our
+[contributor guide](https://kikuchipy.readthedocs.io/en/latest/contributing.html)
+to get started!
+
+#### Cite
+
+If analysis using KikuchiPy forms a part of published work, please consider
+recognizing the code development by citing the DOI above.
+
+
