@@ -1,0 +1,20 @@
+
+
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "piglatin"
+author = "Brendan Abel"
+author-email = "007brendan@gmail.com"
+home-page = "https://github.com/bpabel/piglatin"
+description-file = "README.md"
+requires-python = ">=2.7"
+keywords = "piglatin,translate,cypher,secret,language"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Linguistic",
+]
