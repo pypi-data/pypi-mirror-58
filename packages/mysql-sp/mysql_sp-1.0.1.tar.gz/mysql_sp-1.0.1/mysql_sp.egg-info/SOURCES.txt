@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+mysql_sp/sp_mysql.py
+mysql_sp.egg-info/PKG-INFO
+mysql_sp.egg-info/SOURCES.txt
+mysql_sp.egg-info/dependency_links.txt
+mysql_sp.egg-info/entry_points.txt
+mysql_sp.egg-info/requires.txt
+mysql_sp.egg-info/top_level.txt
