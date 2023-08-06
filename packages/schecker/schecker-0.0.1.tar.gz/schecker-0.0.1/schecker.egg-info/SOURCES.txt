@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+schecker/__init__.py
+schecker/__main__.py
+schecker/schecker.py
+schecker.egg-info/PKG-INFO
+schecker.egg-info/SOURCES.txt
+schecker.egg-info/dependency_links.txt
+schecker.egg-info/entry_points.txt
+schecker.egg-info/not-zip-safe
+schecker.egg-info/top_level.txt
