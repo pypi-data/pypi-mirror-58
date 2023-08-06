@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyvagrant
+Version: 0.1
+Summary: Python wrapper around Vagrant.
+Home-page: https://github.com/bannsec/pyvagrant
+Author: Michael Bann
+Author-email: self@bannsecurity.com
+License: MIT
+Description: See website for more info.
+Keywords: vagrant
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Provides-Extra: dev
