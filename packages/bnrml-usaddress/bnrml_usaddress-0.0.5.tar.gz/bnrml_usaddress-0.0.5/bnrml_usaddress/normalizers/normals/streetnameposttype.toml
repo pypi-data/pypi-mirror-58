@@ -1,0 +1,824 @@
+[normalizer]
+type = 'bnrml.normalizers.SimpleNormalizer'
+
+    [normalizer.args.normals]
+
+        [normalizer.args.normals.Alley]
+        abbreviation = 'Aly'
+        aliases = ['Ally']
+
+        [normalizer.args.normals.Anex]
+        abbreviation = 'Anx'
+        aliases = ['Annx', 'Annex']
+
+        [normalizer.args.normals.Arcade]
+        abbreviation = 'Arc'
+        aliases = []
+
+        [normalizer.args.normals.Avenue]
+        abbreviation = 'Ave'
+        aliases = ['Aven', 'Avenu', 'Avn', 'Avnue']
+
+        [normalizer.args.normals.Bayou]
+        abbreviation = 'Byu'
+        aliases = []
+
+        [normalizer.args.normals.Beach]
+        abbreviation = 'Bch'
+        aliases = []
+
+        [normalizer.args.normals.Bend]
+        abbreviation = 'Bnd'
+        aliases = []
+
+        [normalizer.args.normals.Bluff]
+        abbreviation = 'Blf'
+        aliases = ['Bluf']
+
+        [normalizer.args.normals.Bluffs]
+        abbreviation = 'Blfs'
+        aliases = []
+
+        [normalizer.args.normals.Bottom]
+        abbreviation = 'Btm'
+        aliases = ['Bottm']
+
+        [normalizer.args.normals.Boulevard]
+        abbreviation = 'Blvd'
+        aliases = ['Boulv', 'Boul']
+
+        [normalizer.args.normals.Branch]
+        abbreviation = 'Br'
+        aliases = ['Brnch']
+
+        [normalizer.args.normals.Bridge]
+        abbreviation = 'Brg'
+        aliases = []
+
+        [normalizer.args.normals.Brook]
+        abbreviation = 'Brk'
+        aliases = []
+
+        [normalizer.args.normals.Brooks]
+        abbreviation = 'Brks'
+        aliases = []
+
+        [normalizer.args.normals.Burg]
+        abbreviation = 'Bg'
+        aliases = []
+
+        [normalizer.args.normals.Burgs]
+        abbreviation = 'Bgs'
+        aliases = []
+
+        [normalizer.args.normals.Bypass]
+        abbreviation = 'Byp'
+        aliases = ['Bypas', 'Bypa', 'Byps']
+
+        [normalizer.args.normals.Camp]
+        abbreviation = 'Cp'
+        aliases = ['Cmp']
+
+        [normalizer.args.normals.Canyon]
+        abbreviation = 'Cyn'
+        aliases = ['Cnyn']
+
+        [normalizer.args.normals.Cape]
+        abbreviation = 'Cpe'
+        aliases = []
+
+        [normalizer.args.normals.Causeway]
+        abbreviation = 'Cswy'
+        aliases = ['Causwa']
+
+        [normalizer.args.normals.Center]
+        abbreviation = 'Ctr'
+        aliases = ['Cnter', 'Cntr', 'Centre', 'Centr', 'Cent']
+
+        [normalizer.args.normals.Centers]
+        abbreviation = 'Ctrs'
+        aliases = []
+
+        [normalizer.args.normals.Circle]
+        abbreviation = 'Cir'
+        aliases = ['Crcl', 'Circl', 'Circ', 'Crcle']
+
+        [normalizer.args.normals.Circles]
+        abbreviation = 'Cirs'
+        aliases = []
+
+        [normalizer.args.normals.Cliff]
+        abbreviation = 'Clf'
+        aliases = []
+
+        [normalizer.args.normals.Cliffs]
+        abbreviation = 'Clfs'
+        aliases = []
+
+        [normalizer.args.normals.Club]
+        abbreviation = 'Clb'
+        aliases = []
+
+        [normalizer.args.normals.Common]
+        abbreviation = 'Cmn'
+        aliases = []
+
+        [normalizer.args.normals.Commons]
+        abbreviation = 'Cmns'
+        aliases = []
+
+        [normalizer.args.normals.Corner]
+        abbreviation = 'Cor'
+        aliases = []
+
+        [normalizer.args.normals.Corners]
+        abbreviation = 'Cors'
+        aliases = []
+
+        [normalizer.args.normals.Course]
+        abbreviation = 'Crse'
+        aliases = []
+
+        [normalizer.args.normals.Court]
+        abbreviation = 'Ct'
+        aliases = []
+
+        [normalizer.args.normals.Courts]
+        abbreviation = 'Cts'
+        aliases = []
+
+        [normalizer.args.normals.Cove]
+        abbreviation = 'Cv'
+        aliases = []
+
+        [normalizer.args.normals.Coves]
+        abbreviation = 'Cvs'
+        aliases = []
+
+        [normalizer.args.normals.Creek]
+        abbreviation = 'Crk'
+        aliases = []
+
+        [normalizer.args.normals.Crescent]
+        abbreviation = 'Cres'
+        aliases = ['Crsnt', 'Crsent']
+
+        [normalizer.args.normals.Crest]
+        abbreviation = 'Crst'
+        aliases = []
+
+        [normalizer.args.normals.Crossing]
+        abbreviation = 'Xing'
+        aliases = ['Crssng']
+
+        [normalizer.args.normals.Crossroad]
+        abbreviation = 'Xrd'
+        aliases = []
+
+        [normalizer.args.normals.Crossroads]
+        abbreviation = 'Xrds'
+        aliases = []
+
+        [normalizer.args.normals.Curve]
+        abbreviation = 'Curv'
+        aliases = []
+
+        [normalizer.args.normals.Dale]
+        abbreviation = 'Dl'
+        aliases = []
+
+        [normalizer.args.normals.Dam]
+        abbreviation = 'Dm'
+        aliases = []
+
+        [normalizer.args.normals.Divide]
+        abbreviation = 'Dv'
+        aliases = ['Dvd']
+
+        [normalizer.args.normals.Drive]
+        abbreviation = 'Dr'
+        aliases = ['Driv', 'Drv']
+
+        [normalizer.args.normals.Drives]
+        abbreviation = 'Drs'
+        aliases = []
+
+        [normalizer.args.normals.Estate]
+        abbreviation = 'Est'
+        aliases = []
+
+        [normalizer.args.normals.Estates]
+        abbreviation = 'Ests'
+        aliases = []
+
+        [normalizer.args.normals.Expressway]
+        abbreviation = 'Expy'
+        aliases = ['Expw', 'Express', 'Expr']
+
+        [normalizer.args.normals.Extension]
+        abbreviation = 'Ext'
+        aliases = ['Extnsn', 'Extn']
+
+        [normalizer.args.normals.Extensions]
+        abbreviation = 'Exts'
+        aliases = []
+
+        [normalizer.args.normals.Fall]
+        abbreviation = 'Fall'
+        aliases = []
+
+        [normalizer.args.normals.Falls]
+        abbreviation = 'Fls'
+        aliases = []
+
+        [normalizer.args.normals.Ferry]
+        abbreviation = 'Fry'
+        aliases = ['Frry']
+
+        [normalizer.args.normals.Field]
+        abbreviation = 'Fld'
+        aliases = []
+
+        [normalizer.args.normals.Fields]
+        abbreviation = 'Flds'
+        aliases = []
+
+        [normalizer.args.normals.Flat]
+        abbreviation = 'Flt'
+        aliases = []
+
+        [normalizer.args.normals.Flats]
+        abbreviation = 'Flts'
+        aliases = []
+
+        [normalizer.args.normals.Ford]
+        abbreviation = 'Frd'
+        aliases = []
+
+        [normalizer.args.normals.Fords]
+        abbreviation = 'Frds'
+        aliases = []
+
+        [normalizer.args.normals.Forest]
+        abbreviation = 'Frst'
+        aliases = ['Forests']
+
+        [normalizer.args.normals.Forge]
+        abbreviation = 'Frg'
+        aliases = []
+
+        [normalizer.args.normals.Forges]
+        abbreviation = 'Frgs'
+        aliases = []
+
+        [normalizer.args.normals.Fork]
+        abbreviation = 'Frk'
+        aliases = []
+
+        [normalizer.args.normals.Forks]
+        abbreviation = 'Frks'
+        aliases = []
+
+        [normalizer.args.normals.Fort]
+        abbreviation = 'Ft'
+        aliases = ['Frt']
+
+        [normalizer.args.normals.Freeway]
+        abbreviation = 'Fwy'
+        aliases = ['Freewy', 'Frwy', 'Frway']
+
+        [normalizer.args.normals.Garden]
+        abbreviation = 'Gdn'
+        aliases = ['Grden', 'Grdn', 'Gardn']
+
+        [normalizer.args.normals.Gardens]
+        abbreviation = 'Gdns'
+        aliases = ['Grdns']
+
+        [normalizer.args.normals.Gateway]
+        abbreviation = 'Gtwy'
+        aliases = ['Gatewy', 'Gtway', 'Gatway']
+
+        [normalizer.args.normals.Glen]
+        abbreviation = 'Gln'
+        aliases = []
+
+        [normalizer.args.normals.Glens]
+        abbreviation = 'Glns'
+        aliases = []
+
+        [normalizer.args.normals.Green]
+        abbreviation = 'Grn'
+        aliases = []
+
+        [normalizer.args.normals.Greens]
+        abbreviation = 'Grns'
+        aliases = []
+
+        [normalizer.args.normals.Grove]
+        abbreviation = 'Grv'
+        aliases = []
+
+        [normalizer.args.normals.Groves]
+        abbreviation = 'Grvs'
+        aliases = []
+
+        [normalizer.args.normals.Harbor]
+        abbreviation = 'Hbr'
+        aliases = ['Hrbor', 'Harbr']
+
+        [normalizer.args.normals.Harbors]
+        abbreviation = 'Hbrs'
+        aliases = []
+
+        [normalizer.args.normals.Haven]
+        abbreviation = 'Hvn'
+        aliases = []
+
+        [normalizer.args.normals.Heights]
+        abbreviation = 'Hts'
+        aliases = []
+
+        [normalizer.args.normals.Highway]
+        abbreviation = 'Hwy'
+        aliases = ['Hway', 'Hiwy', 'Hiway', 'Highwy']
+
+        [normalizer.args.normals.Hill]
+        abbreviation = 'Hl'
+        aliases = []
+
+        [normalizer.args.normals.Hills]
+        abbreviation = 'Hls'
+        aliases = []
+
+        [normalizer.args.normals.Hollow]
+        abbreviation = 'Holw'
+        aliases = ['Holws', 'Hollows']
+
+        [normalizer.args.normals.Inlet]
+        abbreviation = 'Inlt'
+        aliases = []
+
+        [normalizer.args.normals.Island]
+        abbreviation = 'Is'
+        aliases = ['Islnd']
+
+        [normalizer.args.normals.Islands]
+        abbreviation = 'Iss'
+        aliases = ['Islnds']
+
+        [normalizer.args.normals.Isle]
+        abbreviation = 'Isle'
+        aliases = ['Isles']
+
+        [normalizer.args.normals.Junction]
+        abbreviation = 'Jct'
+        aliases = ['Juncton', 'Junctn', 'Jction', 'Jctn']
+
+        [normalizer.args.normals.Junctions]
+        abbreviation = 'Jcts'
+        aliases = []
+
+        [normalizer.args.normals.Key]
+        abbreviation = 'Ky'
+        aliases = []
+
+        [normalizer.args.normals.Keys]
+        abbreviation = 'Kys'
+        aliases = []
+
+        [normalizer.args.normals.Knoll]
+        abbreviation = 'Knl'
+        aliases = ['Knol']
+
+        [normalizer.args.normals.Knolls]
+        abbreviation = 'Knls'
+        aliases = []
+
+        [normalizer.args.normals.Lake]
+        abbreviation = 'Lk'
+        aliases = []
+
+        [normalizer.args.normals.Lakes]
+        abbreviation = 'Lks'
+        aliases = []
+
+        [normalizer.args.normals.Land]
+        abbreviation = 'Land'
+        aliases = []
+
+        [normalizer.args.normals.Landing]
+        abbreviation = 'Lndg'
+        aliases = ['Lndng']
+
+        [normalizer.args.normals.Lane]
+        abbreviation = 'Ln'
+        aliases = []
+
+        [normalizer.args.normals.Light]
+        abbreviation = 'Lgt'
+        aliases = []
+
+        [normalizer.args.normals.Lights]
+        abbreviation = 'Lgts'
+        aliases = []
+
+        [normalizer.args.normals.Loaf]
+        abbreviation = 'Lf'
+        aliases = []
+
+        [normalizer.args.normals.Lock]
+        abbreviation = 'Lck'
+        aliases = []
+
+        [normalizer.args.normals.Locks]
+        abbreviation = 'Lcks'
+        aliases = []
+
+        [normalizer.args.normals.Lodge]
+        abbreviation = 'Ldg'
+        aliases = ['Lodg', 'Ldge']
+
+        [normalizer.args.normals.Loop]
+        abbreviation = 'Loop'
+        aliases = ['Loops']
+
+        [normalizer.args.normals.Mall]
+        abbreviation = 'Mall'
+        aliases = []
+
+        [normalizer.args.normals.Manor]
+        abbreviation = 'Mnr'
+        aliases = []
+
+        [normalizer.args.normals.Manors]
+        abbreviation = 'Mnrs'
+        aliases = []
+
+        [normalizer.args.normals.Meadow]
+        abbreviation = 'Mdw'
+        aliases = []
+
+        [normalizer.args.normals.Meadows]
+        abbreviation = 'Mdws'
+        aliases = ['Medows']
+
+        [normalizer.args.normals.Mews]
+        abbreviation = 'Mews'
+        aliases = []
+
+        [normalizer.args.normals.Mill]
+        abbreviation = 'Ml'
+        aliases = []
+
+        [normalizer.args.normals.Mills]
+        abbreviation = 'Mls'
+        aliases = []
+
+        [normalizer.args.normals.Mission]
+        abbreviation = 'Msn'
+        aliases = ['Mssn']
+
+        [normalizer.args.normals.Motorway]
+        abbreviation = 'Mtwy'
+        aliases = []
+
+        [normalizer.args.normals.Mount]
+        abbreviation = 'Mt'
+        aliases = []
+
+        [normalizer.args.normals.Mountain]
+        abbreviation = 'Mtn'
+        aliases = ['Mntn', 'Mountin', 'Mtin']
+
+        [normalizer.args.normals.Mountains]
+        abbreviation = 'Mtns'
+        aliases = []
+
+        [normalizer.args.normals.Neck]
+        abbreviation = 'Nck'
+        aliases = []
+
+        [normalizer.args.normals.Orchard]
+        abbreviation = 'Orch'
+        aliases = ['Orchrd']
+
+        [normalizer.args.normals.Oval]
+        abbreviation = 'Oval'
+        aliases = ['Ovl']
+
+        [normalizer.args.normals.Overpass]
+        abbreviation = 'Opas'
+        aliases = []
+
+        [normalizer.args.normals.Park]
+        abbreviation = 'Park'
+        aliases = ['Prk']
+
+        [normalizer.args.normals.Parks]
+        abbreviation = 'Park'
+        aliases = []
+
+        [normalizer.args.normals.Parkway]
+        abbreviation = 'Pkwy'
+        aliases = ['Pky', 'Pkway', 'Parkwy']
+
+        [normalizer.args.normals.Parkways]
+        abbreviation = 'Pkwy'
+        aliases = ['Pkwys']
+
+        [normalizer.args.normals.Pass]
+        abbreviation = 'Pass'
+        aliases = []
+
+        [normalizer.args.normals.Passage]
+        abbreviation = 'Psge'
+        aliases = []
+
+        [normalizer.args.normals.Path]
+        abbreviation = 'Path'
+        aliases = ['Paths']
+
+        [normalizer.args.normals.Pike]
+        abbreviation = 'Pike'
+        aliases = ['Pikes']
+
+        [normalizer.args.normals.Pine]
+        abbreviation = 'Pne'
+        aliases = []
+
+        [normalizer.args.normals.Pines]
+        abbreviation = 'Pnes'
+        aliases = []
+
+        [normalizer.args.normals.Place]
+        abbreviation = 'Pl'
+        aliases = []
+
+        [normalizer.args.normals.Plain]
+        abbreviation = 'Pln'
+        aliases = []
+
+        [normalizer.args.normals.Plains]
+        abbreviation = 'Plns'
+        aliases = []
+
+        [normalizer.args.normals.Plaza]
+        abbreviation = 'Plz'
+        aliases = ['Plza']
+
+        [normalizer.args.normals.Point]
+        abbreviation = 'Pt'
+        aliases = []
+
+        [normalizer.args.normals.Points]
+        abbreviation = 'Pts'
+        aliases = []
+
+        [normalizer.args.normals.Port]
+        abbreviation = 'Prt'
+        aliases = []
+
+        [normalizer.args.normals.Ports]
+        abbreviation = 'Prts'
+        aliases = []
+
+        [normalizer.args.normals.Prairie]
+        abbreviation = 'Pr'
+        aliases = ['Prr']
+
+        [normalizer.args.normals.Radial]
+        abbreviation = 'Radl'
+        aliases = ['Radiel']
+
+        [normalizer.args.normals.Ramp]
+        abbreviation = 'Ramp'
+        aliases = []
+
+        [normalizer.args.normals.Ranch]
+        abbreviation = 'Rnch'
+        aliases = ['Rnchs', 'Ranches']
+
+        [normalizer.args.normals.Rapid]
+        abbreviation = 'Rpd'
+        aliases = []
+
+        [normalizer.args.normals.Rapids]
+        abbreviation = 'Rpds'
+        aliases = []
+
+        [normalizer.args.normals.Rest]
+        abbreviation = 'Rst'
+        aliases = []
+
+        [normalizer.args.normals.Ridge]
+        abbreviation = 'Rdg'
+        aliases = ['Rdge']
+
+        [normalizer.args.normals.Ridges]
+        abbreviation = 'Rdgs'
+        aliases = []
+
+        [normalizer.args.normals.River]
+        abbreviation = 'Riv'
+        aliases = ['Rvr', 'Rivr']
+
+        [normalizer.args.normals.Road]
+        abbreviation = 'Rd'
+        aliases = []
+
+        [normalizer.args.normals.Roads]
+        abbreviation = 'Rds'
+        aliases = []
+
+        [normalizer.args.normals.Route]
+        abbreviation = 'Rte'
+        aliases = []
+
+        [normalizer.args.normals.Row]
+        abbreviation = 'Row'
+        aliases = []
+
+        [normalizer.args.normals.Rue]
+        abbreviation = 'Rue'
+        aliases = []
+
+        [normalizer.args.normals.Run]
+        abbreviation = 'Run'
+        aliases = []
+
+        [normalizer.args.normals.Shoal]
+        abbreviation = 'Shl'
+        aliases = []
+
+        [normalizer.args.normals.Shoals]
+        abbreviation = 'Shls'
+        aliases = []
+
+        [normalizer.args.normals.Shore]
+        abbreviation = 'Shr'
+        aliases = []
+
+        [normalizer.args.normals.Shores]
+        abbreviation = 'Shrs'
+        aliases = []
+
+        [normalizer.args.normals.Skyway]
+        abbreviation = 'Skwy'
+        aliases = []
+
+        [normalizer.args.normals.Spring]
+        abbreviation = 'Spg'
+        aliases = ['Sprng', 'Spng']
+
+        [normalizer.args.normals.Springs]
+        abbreviation = 'Spgs'
+        aliases = ['Spngs', 'Sprngs']
+
+        [normalizer.args.normals.Spur]
+        abbreviation = 'Spur'
+        aliases = []
+
+        [normalizer.args.normals.Spurs]
+        abbreviation = 'Spur'
+        aliases = []
+
+        [normalizer.args.normals.Square]
+        abbreviation = 'Sq'
+        aliases = ['Sqr', 'Squ', 'Sqre']
+
+        [normalizer.args.normals.Squares]
+        abbreviation = 'Sqs'
+        aliases = []
+
+        [normalizer.args.normals.Station]
+        abbreviation = 'Sta'
+        aliases = ['Stn', 'Statn']
+
+        [normalizer.args.normals.Stravenue]
+        abbreviation = 'Stra'
+        aliases = ['Stravn', 'Strav', 'Strvnue', 'Straven', 'Strvn']
+
+        [normalizer.args.normals.Stream]
+        abbreviation = 'Strm'
+        aliases = ['Streme']
+
+        [normalizer.args.normals.Street]
+        abbreviation = 'St'
+        aliases = ['Str', 'Strt']
+
+        [normalizer.args.normals.Streets]
+        abbreviation = 'Sts'
+        aliases = []
+
+        [normalizer.args.normals.Summit]
+        abbreviation = 'Smt'
+        aliases = ['Sumit', 'Sumitt']
+
+        [normalizer.args.normals.Terrace]
+        abbreviation = 'Ter'
+        aliases = ['Terr']
+
+        [normalizer.args.normals.Throughway]
+        abbreviation = 'Trwy'
+        aliases = []
+
+        [normalizer.args.normals.Trace]
+        abbreviation = 'Trce'
+        aliases = ['Traces']
+
+        [normalizer.args.normals.Track]
+        abbreviation = 'Trak'
+        aliases = ['Trks', 'Trk', 'Tracks']
+
+        [normalizer.args.normals.Trafficway]
+        abbreviation = 'Trfy'
+        aliases = []
+
+        [normalizer.args.normals.Trail]
+        abbreviation = 'Trl'
+        aliases = ['Trails', 'Trls']
+
+        [normalizer.args.normals.Trailer]
+        abbreviation = 'Trlr'
+        aliases = ['Trlrs']
+
+        [normalizer.args.normals.Tunnel]
+        abbreviation = 'Tunl'
+        aliases = ['Tunnl', 'Tunls', 'Tunnels']
+
+        [normalizer.args.normals.Turnpike]
+        abbreviation = 'Tpke'
+        aliases = ['Turnpk']
+
+        [normalizer.args.normals.Underpass]
+        abbreviation = 'Upas'
+        aliases = []
+
+        [normalizer.args.normals.Union]
+        abbreviation = 'Un'
+        aliases = []
+
+        [normalizer.args.normals.Unions]
+        abbreviation = 'Uns'
+        aliases = []
+
+        [normalizer.args.normals.Valley]
+        abbreviation = 'Vly'
+        aliases = ['Vlly', 'Vally']
+
+        [normalizer.args.normals.Valleys]
+        abbreviation = 'Vlys'
+        aliases = []
+
+        [normalizer.args.normals.Viaduct]
+        abbreviation = 'Via'
+        aliases = ['Viadct']
+
+        [normalizer.args.normals.View]
+        abbreviation = 'Vw'
+        aliases = []
+
+        [normalizer.args.normals.Views]
+        abbreviation = 'Vws'
+        aliases = []
+
+        [normalizer.args.normals.Village]
+        abbreviation = 'Vlg'
+        aliases = ['Villag', 'Villg', 'Villiage']
+
+        [normalizer.args.normals.Villages]
+        abbreviation = 'Vlgs'
+        aliases = []
+
+        [normalizer.args.normals.Ville]
+        abbreviation = 'Vl'
+        aliases = []
+
+        [normalizer.args.normals.Vista]
+        abbreviation = 'Vis'
+        aliases = ['Vsta', 'Vist', 'Vst']
+
+        [normalizer.args.normals.Walk]
+        abbreviation = 'Walk'
+        aliases = []
+
+        [normalizer.args.normals.Walks]
+        abbreviation = 'Walk'
+        aliases = []
+
+        [normalizer.args.normals.Wall]
+        abbreviation = 'Wall'
+        aliases = []
+
+        [normalizer.args.normals.Way]
+        abbreviation = 'Way'
+        aliases = []
+
+        [normalizer.args.normals.Ways]
+        abbreviation = 'Ways'
+        aliases = []
+
+        [normalizer.args.normals.Well]
+        abbreviation = 'Wl'
+        aliases = []

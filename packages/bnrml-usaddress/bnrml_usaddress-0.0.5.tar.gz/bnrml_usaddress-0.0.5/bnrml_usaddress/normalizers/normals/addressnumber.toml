@@ -1,0 +1,4 @@
+[normalizer]
+type = 'bnrml_usaddress.normalizers.addrnums.AddressNumberNormalizer'
+
+    [normalizer.args]
