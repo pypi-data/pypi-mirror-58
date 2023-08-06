@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jrpytensorflow"
+version = "0.1.1"
+description = ""
+authors = ["Jamie <jamie@jumpingrivers.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pip = "^19"
+tensorflow = "2.1.0rc1"
+scikit-learn = "^0.22"
+tensorflow_datasets = "^1.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
