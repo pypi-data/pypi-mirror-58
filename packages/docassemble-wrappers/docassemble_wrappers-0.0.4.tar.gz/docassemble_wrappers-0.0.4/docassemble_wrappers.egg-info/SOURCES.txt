@@ -1,0 +1,9 @@
+README.rst
+setup.py
+docassemble_wrappers/__init__.py
+docassemble_wrappers/validator_collection_br.py
+docassemble_wrappers.egg-info/PKG-INFO
+docassemble_wrappers.egg-info/SOURCES.txt
+docassemble_wrappers.egg-info/dependency_links.txt
+docassemble_wrappers.egg-info/requires.txt
+docassemble_wrappers.egg-info/top_level.txt
