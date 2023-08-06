@@ -1,0 +1,3 @@
+[console_scripts]
+bwpy=bwpy.bwpy:main
+
