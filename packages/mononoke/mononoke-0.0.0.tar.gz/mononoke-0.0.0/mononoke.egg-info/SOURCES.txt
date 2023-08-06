@@ -1,0 +1,7 @@
+README.md
+setup.py
+mononoke/__init__.py
+mononoke.egg-info/PKG-INFO
+mononoke.egg-info/SOURCES.txt
+mononoke.egg-info/dependency_links.txt
+mononoke.egg-info/top_level.txt
