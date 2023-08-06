@@ -1,0 +1,7 @@
+README.md
+setup.py
+cointanalysis.egg-info/PKG-INFO
+cointanalysis.egg-info/SOURCES.txt
+cointanalysis.egg-info/dependency_links.txt
+cointanalysis.egg-info/requires.txt
+cointanalysis.egg-info/top_level.txt
