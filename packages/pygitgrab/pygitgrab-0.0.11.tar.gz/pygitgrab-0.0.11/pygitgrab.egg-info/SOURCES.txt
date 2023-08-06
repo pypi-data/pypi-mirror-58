@@ -1,0 +1,13 @@
+README.md
+setup.py
+pygitgrab/__init__.py
+pygitgrab/__main__.py
+pygitgrab/configreader.py
+pygitgrab/extract.py
+pygitgrab/gitgrab.py
+pygitgrab/readuserinfo.py
+pygitgrab.egg-info/PKG-INFO
+pygitgrab.egg-info/SOURCES.txt
+pygitgrab.egg-info/dependency_links.txt
+pygitgrab.egg-info/requires.txt
+pygitgrab.egg-info/top_level.txt
