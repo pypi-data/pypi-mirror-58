@@ -1,0 +1,14 @@
+slime.cpython-37m-darwin.so,sha256=aHDTFJcW7MC_z14kIfpTFbFlpqh6MU6OCinKRTZx_go,71796
+peqnp/__init__.py,sha256=guxy_pwNzbbfOjQnYqq0MTQRJH5rWLTQTnLjU1WYjHE,4578
+peqnp/entity.py,sha256=HKTd3AhGAL_McnLTKFpXz64rsK3h2XlccHb4tTjPmeM,51147
+peqnp/solver.py,sha256=5szVPB8t__8qmvNIwDJOOCXGjHlU7fJjOyQyqboI68E,141347
+peqnp/stdlib.py,sha256=WvGoGHlZrvmx8NvdYY5nYj-vDZq43xBwdgl6dByKvFY,27015
+peqnp/pytransform/__init__.py,sha256=px9wIBa0ERw5bXKxaDDJNI2-jtLqmR-8Dl3R6x9XGNI,10488
+peqnp/pytransform/_pytransform.dylib,sha256=I5Vb2mewDeGlBMf0Rz7Y1ynqI0o-YRSA_QrgYz86Ups,994080
+peqnp/pytransform/license.lic,sha256=WHonFyeYxXd9PjJVq_7YmS97dGKnFdyQLnkfzEi0mHs,380
+peqnp/pytransform/pytransform.key,sha256=UOHlYoHnU-Xh2kAmphuEY8N_ACub4VDH7-k9fGsbxkE,547
+PEQNP-0.0.1.dist-info/LICENCE.txt,sha256=z0LTuKJTIWmzawhbghtmjF4t5E44v6Qj526Msv9AYqs,2488
+PEQNP-0.0.1.dist-info/METADATA,sha256=fkWIgEPcmiRrc1yaDyVlbkI_YHrxoySQMnwXcTYaKKM,326
+PEQNP-0.0.1.dist-info/WHEEL,sha256=PJpvlWYoaC6URR0LWg8CW_GxFlQ7xrZNRTDuqcfncbQ,110
+PEQNP-0.0.1.dist-info/top_level.txt,sha256=5N6pXMCgt5YCAyzrAM5E6NjaaMQqtukhv1NvnCvZIT8,12
+PEQNP-0.0.1.dist-info/RECORD,,
