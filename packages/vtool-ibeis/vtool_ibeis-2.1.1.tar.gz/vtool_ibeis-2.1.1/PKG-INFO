@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: vtool_ibeis
+Version: 2.1.1
+Summary: vision tools
+Home-page: https://github.com/Erotemic/vtool_ibeis
+Author: Avi Weinstock, Chuck Stewart, Hendrik WeidemanJason ParhamJon CrallZackary Rutfield
+Author-email: erotemic@gmail.com
+License: Apache 2
+Description: vtool_ibeis
+        ===========
+        
+        |ReadTheDocs| |Pypi| |Downloads| |Codecov| |CircleCI| |Travis| |Appveyor| 
+        
+        Vision Tools - tools for computer vision. Part of the WildMe / IBEIS Project.
+        
+        
+        .. |CircleCI| image:: https://circleci.com/gh/Erotemic/vtool.svg?style=svg
+            :target: https://circleci.com/gh/Erotemic/vtool
+        .. |Travis| image:: https://img.shields.io/travis/Erotemic/vtool/master.svg?label=Travis%20CI
+           :target: https://travis-ci.org/Erotemic/vtool?branch=master
+        .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/github/Erotemic/vtool?branch=master&svg=True
+           :target: https://ci.appveyor.com/project/Erotemic/vtool/branch/master
+        .. |Codecov| image:: https://codecov.io/github/Erotemic/vtool/badge.svg?branch=master&service=github
+           :target: https://codecov.io/github/Erotemic/vtool?branch=master
+        .. |Pypi| image:: https://img.shields.io/pypi/v/vtool_ibeis.svg
+           :target: https://pypi.python.org/pypi/vtool_ibeis
+        .. |Downloads| image:: https://img.shields.io/pypi/dm/vtool_ibeis.svg
+           :target: https://pypistats.org/packages/vtool_ibeis
+        .. |ReadTheDocs| image:: https://readthedocs.org/projects/vtool_ibeis/badge/?version=latest
+            :target: http://vtool_ibeis.readthedocs.io/en/latest/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: build
+Provides-Extra: runtime
+Provides-Extra: tests
+Provides-Extra: all
