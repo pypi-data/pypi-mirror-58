@@ -1,0 +1,3 @@
+[console_scripts]
+ksub = ksub.get_subtitles:main
+
