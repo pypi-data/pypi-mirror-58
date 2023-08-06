@@ -1,0 +1,7 @@
+setup.py
+pack2/__init__.py
+pack2/test1.py
+pack2.egg-info/PKG-INFO
+pack2.egg-info/SOURCES.txt
+pack2.egg-info/dependency_links.txt
+pack2.egg-info/top_level.txt
