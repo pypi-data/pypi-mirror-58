@@ -1,0 +1,7 @@
+numpy>=1.16
+torch
+plum-dispatch
+backends
+backends-matrix
+stheno
+varz
