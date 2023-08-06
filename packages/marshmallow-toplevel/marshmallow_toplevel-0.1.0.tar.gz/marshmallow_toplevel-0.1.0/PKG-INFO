@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: marshmallow-toplevel
+Version: 0.1.0
+Summary: Validate top-level lists with all the power of marshmallow
+License: MIT
+Author: Andrey Semakin
+Author-email: and-semakin@ya.ru
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: marshmallow (>=3.0.0,<4.0.0)
+Requires-Dist: pytest (>=5.3.2,<6.0.0)
