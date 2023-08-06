@@ -1,0 +1,17 @@
+README.md
+setup.py
+lightSpider.egg-info/PKG-INFO
+lightSpider.egg-info/SOURCES.txt
+lightSpider.egg-info/dependency_links.txt
+lightSpider.egg-info/requires.txt
+lightSpider.egg-info/top_level.txt
+lightspider/__init__.py
+lightspider/downloader.py
+lightspider/scheduler.py
+lightspider/spider.py
+lightspider/worker.py
+lightspider/writer.py
+lightspider/base/__init__.py
+lightspider/utils/__init__.py
+lightspider/utils/log.py
+lightspider/utils/proxy.py
