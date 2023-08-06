@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: chatovod.py
+Version: 0.1.0
+Summary: Chatovod Python library for bot lovers.
+Home-page: https://github.com/Henriquetf/chatovod.py
+Author: Henrique Torres
+License: Apache Software License 2.0
+Keywords: chatovod.py
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+
+===========
+chatovod.py
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/chatovod_py.svg
+        :target: https://pypi.python.org/pypi/chatovod_py
+
+.. image:: https://img.shields.io/travis/Henriquetf/chatovod_py.svg
+        :target: https://travis-ci.org/Henriquetf/chatovod_py
+
+
+
+Chatovod Python library for bot lovers.
+
+License
+-------
+Apache Software License 2.0
+
+
