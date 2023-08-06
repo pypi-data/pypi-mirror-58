@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: celery-sandbox
+Version: 0.2.0
+Summary: An environment with test Celery configurations and sample tasks package.
+Home-page: https://github.com/matteius/celery_sandbox
+Author: Matt Davis
+Author-email: matteius@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# celery_sandbox
+Personal sandbox for Celery project development
+
+

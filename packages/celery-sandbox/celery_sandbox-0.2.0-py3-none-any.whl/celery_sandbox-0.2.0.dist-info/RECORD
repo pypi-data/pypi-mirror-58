@@ -1,0 +1,8 @@
+celery_sandbox/__init__.py,sha256=SbnaY6rCdEQD6NACTg7UD5uKNgjJNdd9MT95kS3IwQY,20
+celery_sandbox/app.py,sha256=xkvjTTKIEK_8Hw-EuNL9ci64hBdNNrSpHcJw3xxZP20,257
+celery_sandbox/celeryconfig.py,sha256=VDTYRcD_9GGMxk6hNZqyOwdkmh3rU0fyaJZaAEh3JKI,194
+celery_sandbox/tasks.py,sha256=qdm7Dgg0cjnupabZVj7vtvQLJGuMzoMZxosxQ6j9zBI,180
+celery_sandbox-0.2.0.dist-info/METADATA,sha256=0_aU24eZL0Cn_6kdheTb0TG_z_KX7soW2BCAA6SL8I4,535
+celery_sandbox-0.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+celery_sandbox-0.2.0.dist-info/top_level.txt,sha256=aMPQiIUVgXEhDCPnE8Rqvfj-NOKLLta5r2cfIqRkLmg,15
+celery_sandbox-0.2.0.dist-info/RECORD,,
