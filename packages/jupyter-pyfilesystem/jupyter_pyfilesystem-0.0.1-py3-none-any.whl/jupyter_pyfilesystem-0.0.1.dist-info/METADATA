@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jupyter-pyfilesystem
+Version: 0.0.1
+Summary: Jupyter Notebook PyFilesystem Contents Manager
+Home-page: https://github.com/manics/jupyter-pyfilesystem
+Author: Simon Li
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Requires-Python: >=3.5
+Requires-Dist: notebook
+Requires-Dist: fs (>=2)
+
+UNKNOWN
+
+
