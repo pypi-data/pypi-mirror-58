@@ -1,0 +1,10 @@
+txs/__init__.py,sha256=h6mIpLCvupQugC3JRxFbhUDuETqzuW7JpI3ObNRIPYM,86
+txs/ffmpeg.py,sha256=0QdlOfOAqGESuvbTRChoR7FmXmmBgiQWDUam5qVpE-c,4256
+txs/main.py,sha256=GjosB5ls81CTmr4Ict9ZAikhsv0vHxWNA1UEYsr-wKc,16687
+txs/utils.py,sha256=owH7_jXGCar8Jcib0v9Ei-80QclmVukPA28fx3dkmkk,10566
+txs-0.0.3.data/data/share/txs/lua/txs-compare.lua,sha256=odedUcjJ5UTRG4fnlApd1IAcjj8u2-ge3EOv8zkz4_Y,20859
+txs-0.0.3.dist-info/METADATA,sha256=SPXNBhryc7rS29zDWOYrHKSkkmGhcqCzdWWHz4V-y6g,4720
+txs-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+txs-0.0.3.dist-info/entry_points.txt,sha256=Aa-3ll2RjcCY4uLvxS0-XJ5mApHZI6oHhgvQex0Oeyo,56
+txs-0.0.3.dist-info/top_level.txt,sha256=Wg1zaJITs9A4ZjNCgE5PhTSrNAtfjIcL3uZwCvgWWKA,4
+txs-0.0.3.dist-info/RECORD,,
