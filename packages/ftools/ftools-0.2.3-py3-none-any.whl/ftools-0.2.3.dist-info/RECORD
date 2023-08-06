@@ -1,0 +1,9 @@
+ftools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftools/callable.py,sha256=6yzMSLQVUvcdgQyKkvXmsFDopDRNxpyuJi8MZieX464,4915
+ftools/collection.py,sha256=El0EKDR4D3KZAe1sdEdpIxUE98CJEdQGDlXF3PFjjRk,5654
+ftools/iterable.py,sha256=jbO4cekRT79Udz5QI8Dk71HA19jbL_N_2_Ow96A4Mf8,5581
+ftools/mapping.py,sha256=3RStuNG2LHFCBBzWExGl0Pio54FhHU7UsMAnQ5ZNj7U,2815
+ftools/sequence.py,sha256=mCA8ohU52QFCyTp5PbIToWw2yhHPyekrZMJyUehvlZs,1477
+ftools-0.2.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ftools-0.2.3.dist-info/METADATA,sha256=fzBb78kUjCByFjcLtIiNX5Ytq6-D3huxhWOEXXCxW3Q,529
+ftools-0.2.3.dist-info/RECORD,,
