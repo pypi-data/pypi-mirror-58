@@ -1,0 +1,6 @@
+dicey
+discord.py
+python-dotenv
+pynacl
+fuzzywuzzy
+python-levenshtein

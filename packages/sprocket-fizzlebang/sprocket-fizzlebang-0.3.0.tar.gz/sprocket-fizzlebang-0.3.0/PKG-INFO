@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: sprocket-fizzlebang
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: https://github.com/gnullbyte/sprocket
+Author: Chase Franklin
+Author-email: gnullbyte@gmail.com
+License: UNKNOWN
+Description: # Sprocket
+        version 0.3.0
+        
+        ## Description
+        A simple discord bot for rolling dice.
+        
+        ## Installation
+        ```bash
+        pip install sprocket-fizzlebang
+        ```
+        
+        ## Config
+        
+        ### Connecting
+        
+        The environment variable `DISCORD_BOT_SECRET` must be set
+        to the value of your discord bot token.
+        
+        Bash:
+        ```bash
+        export DISCORD_BOT_SECRET=xyz
+        ```
+        
+        Or using `.env`:
+        ```bash
+        DISCORD_BOT_SECRET=xyz
+        ```
+        
+        Then to start:
+        
+        ```bash
+        python -m sprocket
+        ```
+        or simply
+        ```bash
+        sprocket
+        ```
+        
+        ### Quotes
+        
+        Sprocket will parse all `*.txt` files present in its `<sprocket-root>/data/text` directory.
+        The file will be split on each pair of consecutive newlines. So:
+        
+        ```
+        This is
+        some text
+        
+        This is
+        some other text
+        ```
+        
+        Will be parsed as 2 mutliline quote strings.
+        
+        
+        ### Audio
+        
+        Audio files placed in `<sprocket-root>/data/audio` will be made avaiable for playing
+        provide you have ffmpeg and opus installed.
+        
+        ## Commands
+        ```
+        !roll <expression>
+        !reroll
+        !reroll list
+        !reroll <selection>
+        
+        !join - sprocket will join the voice channel you are currently connected to
+        !leave
+        !sounds - sprocket will private message a list of all audio files it can play
+        !play filename_without_extension
+        !pause
+        !stop
+        ```
+        
+        ### Examples
+        ```
+        !roll 1d20 + 1d4 - 1
+        !roll 1d100 {2}
+        !roll 2d8 + 3 - 1d10
+        
+        !reroll list
+        !reroll 2
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
