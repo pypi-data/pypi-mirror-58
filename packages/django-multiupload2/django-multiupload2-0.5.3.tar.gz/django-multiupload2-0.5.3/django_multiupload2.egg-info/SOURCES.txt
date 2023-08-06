@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_multiupload2.egg-info/PKG-INFO
+django_multiupload2.egg-info/SOURCES.txt
+django_multiupload2.egg-info/dependency_links.txt
+django_multiupload2.egg-info/not-zip-safe
+django_multiupload2.egg-info/requires.txt
+django_multiupload2.egg-info/top_level.txt
+multiupload/__init__.py
+multiupload/fields.py
+multiupload/tests/__init__.py
+multiupload/tests/test_field.py
+multiupload/tests/utils.py
