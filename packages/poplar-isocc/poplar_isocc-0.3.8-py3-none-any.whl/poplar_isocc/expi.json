@@ -1,0 +1,30 @@
+{
+    "module": "POISOCC",
+    "sage": {
+        "version": 2019,
+        "product_update": 3.0,
+        "edition": "Premium"
+    },
+    "extender": {
+        "version": 2019,
+        "product_update": 7.1,
+        "edition": "Developer"
+    },
+    "programs": [
+        "*"
+    ],
+    "views": [
+        "*"
+    ],
+    "screens": [],
+    "workflows": [],
+    "access": "public",
+    "visibility": "public",
+    "pricing": {
+    },
+    "install_module_files": [
+        "vi/POPISOCC.vi"
+    ],
+    "install_script_files": [],
+    "email": "contact@2665093.ca"
+}

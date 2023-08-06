@@ -1,0 +1,88 @@
+[MODULE]
+id=POPISOCC
+name=POPISOCC
+desc=Enforce ISO-3166-1 country codes on any view field.
+company=2665093 Ontario Inc.
+version=0.3.8
+website=https://2665093.ca/
+
+[SCRIPT]
+FILENAME=POPISOCC.enforce_iso_cc.py
+>>> SCRIPT >>>
+###############################################################################
+# Enforce ISO-3166-1 Country Code
+#
+# Use this view script to enforce that any field use a valid ISO-3166-1
+# country code.
+#
+# Parameters:
+#   Parameter 1: Field Name to enforce the use of ISO codes in.
+#
+# author: Chris Binckly
+# email: cbinckly@gmail.com
+# copyright 2019 2665093 Ontario Inc.
+#
+# This file is provided under a Creative Commons 4 Sharealike license. 
+# See https://creativecommons.org/licenses/by-sa/4.0/ for details.
+#
+###############################################################################
+from accpac import *
+from extools.message import ExMessages
+
+from poplar_isocc import is_valid_iso_cc
+
+exm = ExMessages(__name__, ExMessages.INFO)
+
+def onOpen():
+    exm.debug("Starting with Parameter1 {}".format(Parameter1))
+    return Continue
+
+def onBeforePut(e):
+    if Parameter1 and e.field.strip() == Parameter1:
+        valid, matches = is_valid_iso_cc(e.value)
+        if not valid:
+            exm.error("{} is not a valid ISO-3166-1 country code. "
+                      "Did you mean:\n\t-{}".format(
+                            e.value,
+                            "\n\t- ".join(matches), ))
+            return 1
+    return Continue
+
+def onBeforeInsert():
+    exm.debug("onBeforeInsert: {} = {} [{}]".format(
+        Parameter1, me.get(Parameter1), is_valid_iso_cc(me.get(Parameter1))))
+
+    if Parameter1:
+        cc = me.get(Parameter1)
+        valid, matches = is_valid_iso_cc(cc)
+        if not valid:
+            exm.error("{} is not a valid ISO-3166-1 country code. "
+                      "Did you mean:\n\t-{}".format(
+                            e.value,
+                            "\n\t- ".join(matches), ))
+            return Abort
+    return Continue
+
+def onBeforeUpdate():
+    exm.debug("onBeforeUpdate: {} = {} [{}]".format(
+        Parameter1, me.get(Parameter1), is_valid_iso_cc(me.get(Parameter1))))
+
+    if Parameter1:
+        cc = me.get(Parameter1)
+        valid, matches = is_valid_iso_cc(cc)
+        if not valid:
+            exm.error("{} is not a valid ISO-3166-1 country code. "
+                      "Did you mean:\n\t- {}".format(
+                            me.get(Parameter1),
+                            "\n\t- ".join(matches), ))
+            return Abort
+    return Continue
+<<< SCRIPT <<<
+
+[VIEWSCRIPT]
+VIEWID=AR0024
+UNIQID=2019050100000004
+ACTIVE=1
+ORDER=0
+SCRIPT=POPISOCC.enforce_iso_cc.py
+P1=CODECTRY

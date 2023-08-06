@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: poplar-isocc
+Version: 0.3.8
+Summary: Enforce the use of ISO-3166-1 compliant country codes on anyView field.
+Home-page: https://2665093.ca
+Author: 2665093 Ontario Inc.
+Author-email: chris@2665093.ca
+License: UNKNOWN
+Download-URL: https://pypi.org/project/poplar_isocc
+Keywords: Orchid,Extender,Sage 300,Automation,Country,Code,ISO-3166,ISO,3166
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: extools
+Requires-Dist: iso3166
+Requires-Dist: fuzzywuzzy
+
+=======================
+poplar_isocc
+=======================
+
+----------------------------
+ISO Country Code Enforcement
+----------------------------
+
+This package contains an Extender module and accompanying
+Python code that can be used to enforce the use of an 
+ISO-3166-1 ISO code in any text field in Sage.
+
+More generally, this package serves to demonstrate how to
+build Python packages for use with the Python Package
+Manager for Orchid Extender.
+
+
