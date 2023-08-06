@@ -1,0 +1,11 @@
+seminario/__init__.py,sha256=2yiQ-i1ixkpQOBrzrH-oeUSBl7r4CsdtzURfF6fyZWc,133
+seminario/_io.py,sha256=uICzK0gnzP-D-Dw1QsU2L5sIKZ2gzG_ZMPGHTF8l-ls,3448
+seminario/database.py,sha256=Es1Yt2yevxa23z1bb_SswAEE64T7x3zFS-KidVkmoRQ,972
+seminario/interactive.py,sha256=nqMjXN5biMk--ZDct-gwr-B1_sNz63Bl0IH9gk60QWI,1954
+seminario/poster.py,sha256=oqlWqwkZR0wK6-B4NIUBu3pO20JGE2B50Izk14QaYis,4692
+seminario/seminar.py,sha256=9iNq8vyIUeDsUXLuoPVSnKLPPFjn35_WKeZk1BssaCo,3760
+seminario-0.2.0.dist-info/LICENSE,sha256=jEEe24J1LXCaWMt8Nrad5pcp2gNVAgSPYllsZcrMT3M,1516
+seminario-0.2.0.dist-info/METADATA,sha256=9WfyL8NJ9Qhs0Vncr3mjex6CfXQ6TD0VAG8DE95GrDk,1037
+seminario-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+seminario-0.2.0.dist-info/top_level.txt,sha256=_8kWQwu8fi1rLkYuKxK-cHWEZkXUmLMInRlMfQ_JX9Q,10
+seminario-0.2.0.dist-info/RECORD,,
