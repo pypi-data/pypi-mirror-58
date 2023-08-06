@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: graphio
+Version: 0.0.6
+Summary: Library to load data sets to Neo4j.
+Home-page: http://github.com/kaiser_preusse
+Author: Martin Preusse
+Author-email: martin.preusse@gmail.com
+License: Apache license 2.0
+Description: UNKNOWN
+Keywords: NEO4J
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
