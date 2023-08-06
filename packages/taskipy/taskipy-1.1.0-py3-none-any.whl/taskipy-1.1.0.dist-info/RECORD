@@ -1,0 +1,8 @@
+taskipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskipy/cli.py,sha256=JKo5ZwUtRufxtJIa4vcuTyt1TTMwLSfYcL9UTxXXR10,481
+taskipy/run.py,sha256=jt-aTS4-KDZ_L0613v_W5E1btynSzZkAR9lP6INl5EE,1479
+taskipy-1.1.0.dist-info/entry_points.txt,sha256=FEpsSdW9ruHniyv5bHNUzi8hYaYgzmxU6qUmlF6QJZ8,41
+taskipy-1.1.0.dist-info/LICENSE,sha256=4aIfdOofqr1ABucXdEz95WE7CrYRmzE0E3P4s7ubTQ4,1066
+taskipy-1.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+taskipy-1.1.0.dist-info/METADATA,sha256=AlgGsVsCNf9Hb8lQ1k6D5uh3UluJEMg66nvyAQdh3zU,5397
+taskipy-1.1.0.dist-info/RECORD,,
