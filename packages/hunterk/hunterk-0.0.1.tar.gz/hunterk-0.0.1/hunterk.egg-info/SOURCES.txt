@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ContentData/IMDbScrape.py
+ContentData/WikiScrape.py
+ContentData/__init__.py
+hunterk.egg-info/PKG-INFO
+hunterk.egg-info/SOURCES.txt
+hunterk.egg-info/dependency_links.txt
+hunterk.egg-info/top_level.txt
