@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: web3quorum
+Version: 1.1.1
+Summary: A library to interact with Quorum API
+License: MIT
+Author: Chainstack
+Author-email: dev@chainstack.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: web3 (>=5.4,<6.0)
