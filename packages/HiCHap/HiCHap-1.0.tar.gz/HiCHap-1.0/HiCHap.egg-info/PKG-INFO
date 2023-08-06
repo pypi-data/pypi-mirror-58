@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: HiCHap
+Version: 1.0
+Summary: A Library of Hi-C data processing, bias correction and structural analysis for phased haplotype
+Home-page: https://github.com/Prayforhanluo/HiCHap_master
+Author: Han Luo
+Author-email: hluo_lc@outlook.com
+License: UNKNOWN
+Description: HiCHap
+        ******
+        A Library of Hi-C data processing, bias correction and structural analysis for phased haplotype
+        
+        Introduction
+        ============
+        HiCHap is a Python package designed to process and analyze Hi-C data, primarily for diploid Hi-C by using phased SNPs. 
+        First, the Hi-C reads are split in ligation junction sites, and then all split parts are used in mapping to maximumly utilize SNPs in allele assignment, 
+        thus improving the ratios of allele-assigned reads. The noisy reads are further eliminated. Second, except for traditional data bias caused by Hi-C experiments, 
+        the unevenly distributed genetic variants lead to additional bias in reconstructed Hi-C haplotype because it is potentially easier to assign allelic contacts in the chromatin regions with denser genetic variants. 
+        HiCHap utilizes a two-step strategy to reduce these two types of data biases by using the mapped and allele-assigned contacts only. 
+        Third, with the improved quality of reconstructed Hi-C haplotype, HiCHap can identify compartments, topological domains/boundaries and chromatin loops at haplotype level, 
+        and also provide testing on the allelic specificity for these structures. 
+        Finally, HiCHap  supports data processing, bias correction and structural analysis for traditional Hi-C without separating homologous chromosomes.
+        
+        
+        Requirements
+        ============
+        HiCHap is developed and tested on Unix systems. HiCHap utilizes HDF5 and cooler as default data format to keep consistent with 4DN standards. 
+        To summarize, the following packages are required in installation.
+        
+        
+        python packages:
+        
+        1.  Python 2.7+
+        2.  Multiprocess 
+        3.  Numpy
+        4.  Scipy
+        5.  statsmodels
+        6.  Scikit-Learn
+        7.  xml
+        8.  pysam
+        9.  ghmm
+        10. Bio
+        11. cooler
+        
+        others:
+        
+        1.  bowtie2 (version 2.2.9 is tested)
+        2.  samtools (version 1.5 is tested)
+        
+        
+        Downloads
+        =========
+        - `Source code and manual  here <https://pypi.org/project/HiCHap/#files>`_
+        - `Code and manual Repository <https://github.com/Prayforhanluo/HiCHap_master>`_ (At GitHub, Track the package issue)
+        
+        Citation
+        ========
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/x-rst
