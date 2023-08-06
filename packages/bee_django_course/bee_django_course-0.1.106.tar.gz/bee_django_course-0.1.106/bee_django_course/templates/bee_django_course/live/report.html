@@ -1,0 +1,38 @@
+{% extends "bee_django_course/base.html" %}
+{% load bee_django_course_filter %}
+
+{% block content %}
+    <div class="text-center"><h3>
+        录播统计
+    </h3>
+    </div>
+    <div style="margin: 10px auto;">
+        {% include 'bee_django_course/live/report_search.html' %}
+    </div>
+    {% if user_class %}
+        <div><h3>班级：{{ user_class.name }}</h3></div>
+    {% endif %}
+
+        <table class="table table-bordered">
+            <tbody>
+            {% for student in user_list %}
+                <tr>
+                    <td>
+                        <a href="{{ student.get_user_search_link }}">{{ student.username }} {{ student.first_name }}</a>
+                    </td>
+                    {% get_user_live_report student None None as detail %}
+                    <td>录播：{{ detail.0 }}分钟</td>
+                    <td>录播：{{ detail.1 }}次</td>
+                    <td>助教观看{{ detail.2 }}次</td>
+                    <td><a href="{% url 'bee_django_course:live_list' student.id %}">录播记录</a></td>
+
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    {% include 'bee_django_course/paginator.html' %}
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

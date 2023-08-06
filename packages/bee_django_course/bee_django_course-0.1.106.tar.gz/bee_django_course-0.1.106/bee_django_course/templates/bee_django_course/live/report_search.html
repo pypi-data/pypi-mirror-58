@@ -1,0 +1,38 @@
+<div style="margin: 10px 0;">
+    <form method="get">
+        {{ search_form }}
+        <input type="hidden" name="export" id="export">
+        {% if user_class %}
+            <input type="hidden" name="class_id" id="class_id" value="{{ user_class.id }}">
+        {% endif %}
+        {#    <input type="submit" value="查询"/>#}
+
+        <button class="" onclick="click_search()">查询</button>
+        {#        <button class="" onclick="click_export()">导出</button>#}
+    </form>
+</div>
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+
+
+        });
+
+        function click_search() {
+            var $form = $("form");
+            var $export = $("#export");
+            $export.attr("value", "");
+            $form.submit()
+
+        }
+
+        function click_export() {
+            var $form = $("form");
+            var $export = $("#export");
+            $export.attr("value", "1");
+            $form.submit()
+
+        }
+    </script>
+
+{% endblock %}
