@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/run-lis3dh
+lis3dh/__init__.py
+lis3dh/lis3dh.py
+lis3dh.egg-info/PKG-INFO
+lis3dh.egg-info/SOURCES.txt
+lis3dh.egg-info/dependency_links.txt
+lis3dh.egg-info/top_level.txt
