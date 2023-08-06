@@ -1,0 +1,8 @@
+README.md
+setup.py
+dghello/Hello.py
+dghello/__init__.py
+dghello.egg-info/PKG-INFO
+dghello.egg-info/SOURCES.txt
+dghello.egg-info/dependency_links.txt
+dghello.egg-info/top_level.txt
