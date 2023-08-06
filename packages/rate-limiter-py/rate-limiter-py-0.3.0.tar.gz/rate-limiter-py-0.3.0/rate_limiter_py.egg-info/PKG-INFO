@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: rate-limiter-py
+Version: 0.3.0
+Summary: Rate-limiter module which leverages DynamoDB to enforce resource limits.
+Home-page: https://github.com/lifeomic/rate-limiter-py
+Author: Matthew Tieman
+Author-email: mjtieman55@gmail.com
+License: MIT
+Download-URL: https://github.com/lifeomic/rate-limiter-py/archive/0.3.0.tar.gz
+Description: UNKNOWN
+Keywords: lifeomic,dynamodb,rate,limit
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
