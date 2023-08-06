@@ -1,0 +1,2 @@
+cmdkit>=1.0.0
+logalpha>=2.0.0

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: hyper-shell
+Version: 1.5.1
+Summary: Distributed, asynchronous shell execution across a cluster of nodes.
+Home-page: https://github.com/glentner/hyper-shell
+Author: Geoffrey Lentner
+Author-email: glentner@purdue.edu
+License: Apache Software License
+Description: hyper-shell
+        ========
+        
+        Distributed, asynchronous shell execution across a cluster of nodes.
+        
+        [![GitHub License](http://img.shields.io/badge/license-Apache-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+        
+        ---
+        
+        Installation
+        ------------
+        
+        To install _hyper-shell_ for general purposes use Pip:
+        
+        ```
+        pip install git+https://github.com/glentner/hyper-shell.git
+        ```
+        
+        
+        Documentation
+        -------------
+        
+        Documentation will be available here via the hyper-shell Wiki.
+        
+        
+        Contributions
+        -------------
+        
+        Contributions are welcome  in the form of  suggestions for additional features,  pull requests with
+        new features or  bug fixes, etc. If you find  bugs or have questions, open an  _Issue_ here. If and
+        when the project grows, a  code of conduct will be provided along side  a more comprehensive set of
+        guidelines for contributing; until then, just be nice.
+        
+Keywords: distributed-computing command-line-tool shell-scripting high-performance-computing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown

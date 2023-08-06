@@ -1,0 +1,3 @@
+[console_scripts]
+hyper-shell = hypershell:main
+
