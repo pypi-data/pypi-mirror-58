@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: selenium_library
+Version: 0.0.1
+Summary: A human readable wrapper class for selenium
+Home-page: https://github.com/janmarkuslanger/selenium-library
+Author: Jan-Markus Langer
+Author-email: janmarkuslanger10121994@gmail.com
+License: UNKNOWN
+Description: Module selenium_library
+        =======================
+        
+        Sub-modules
+        -----------
+        * selenium_library.base
+        
+        Classes
+        -------
+        
+        `Base(browser='chrome', headless=True, window_width=1920, window_height=1080)`
+        :   Init session vars
+            
+            Args:
+            browser (str): Browser name
+            headlesss (boolean): Hide browser
+            window_width (int): Window width
+            window_height (int): Window height
+        
+            ### Methods
+        
+            `clear_keys(self, selector_or_element)`
+            :   Clear keys from element
+                
+                Args:
+                    selector_or_element [str, WebElement]
+        
+            `click(self, selector_or_element)`
+            :   Try to click on an element
+                
+                Args:
+                    selector_or_element [str, WebElement]
+        
+            `close(self)`
+            :   Close the current session
+        
+            `element(self, selector)`
+            :   Try to find an element in dom
+                
+                Returns [None]: Element or None
+        
+            `elements(self, selector)`
+            :   Try to find every element in dom
+                    If there is no element it returns None
+                
+                Args:
+                    selector (str): DOM selector
+                
+                
+                Returns [None, list]: List of elements or None
+        
+            `get_url(self)`
+            :   Get the current url from the session
+                
+                Returns (str): Current url
+        
+            `launch_browser(self)`
+            :   Launch browser and create a session
+        
+            `open(self, url)`
+            :   Open a new url in the session
+        
+            `send_keys(self, selector_or_element, keys)`
+            :   Send keys to an element
+                
+                Args:
+                    selector_or_element [str, WebElement]
+                    keys (str): Keys to send
+        
+            `wait(self, time=1, is_random=False, min=1, max=10)`
+            :   Wait a specific time or random
+                
+                Args:
+                    time (int): Time to stop script
+                    is_random (boolean): Waits a random time if true
+                    min (int): Minium time to wait if random
+                    max (int): Max time to wait if random
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
