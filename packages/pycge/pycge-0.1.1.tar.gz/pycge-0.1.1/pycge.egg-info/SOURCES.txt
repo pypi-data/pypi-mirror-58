@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+pycge.egg-info/PKG-INFO
+pycge.egg-info/SOURCES.txt
+pycge.egg-info/dependency_links.txt
+pycge.egg-info/top_level.txt
