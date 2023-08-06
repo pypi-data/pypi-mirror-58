@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="/pkg-resource/css/bootstrap.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+    <script src="/pkg-resource/js/jquery-3.4.1.js"></script>
+    <script src="/pkg-resource/js/popper.min.js"></script>
+    <script src="/pkg-resource/js/bootstrap.min.js"></script>
+    <script src="/pkg-resource/js/store.everything.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--    <script src="/pkg-resource/js/dragresize.js"></script>-->
+<!--    <script src="/pkg-resource/js/my.js"></script>-->
+    <script>{%include "wp.js"%}</script>
+    <script>{%include "switches.js"%}</script>
+<script>{%include "win.js"%}</script>
+    <script>{%include "system.js"%}</script>
+    <script>{%include "pan.js"%}</script>
+<script>{%include "editor.js"%}</script>
+    <script>{%include "explorer.js"%}</script>
+    <script>{%include "imview.js"%}</script>
+
+
+    <!--      在这里放脚本-->
+{% block head%}{% endblock %}
+
+    <!--      结束-->
+</head>
+<body>
+    {% block body%}
+
+    {% endblock %}
+
+</body>
+</html>
