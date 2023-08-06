@@ -1,0 +1,14 @@
+cubeai_model_runner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cubeai_model_runner/api.py,sha256=bUOy-S_s1RrtjPKACm6HAE2dBOroWuTl7odLmG18hWk,2865
+cubeai_model_runner/oas_gen.py,sha256=Ci1t5NF1V3UM0lWbF5TAOrcBIvjQJrIiFDlqJYSKckQ,6625
+cubeai_model_runner/proto_parser.py,sha256=s8n-Ez_WX-1W3WrNqrEoRZ0jQKCfu_ey7ca00wx7u1M,3612
+cubeai_model_runner/runner.py,sha256=BFWPvyYEIQl4r0Z7rxQnGtYtLf4BSE5hO8ymlnGvCAA,6286
+cubeai_model_runner/utils.py,sha256=a048Se6DxGFfxoTiF1HPBIpYU28zuJa0tZrW_h8vMU0,1564
+cubeai_model_runner/data/proto3.ebnf,sha256=D7RzHq2Z4SSKXPP4hHa6GM5wpLBqHIumybnK45gIwqM,3219
+cubeai_model_runner/data/templates/base.yaml,sha256=SfYdoAin-BKpTqYTGYJIVhF8Q3YouMKmuK7-_B65caM,1661
+cubeai_model_runner/data/templates/method.yaml,sha256=Fs-vjn-zPXe5-G1WMEzk2sDdnyMotSaJk9afpExw8jg,946
+cubeai_model_runner-0.2.5.dist-info/METADATA,sha256=4q2QTHMFvBsVIKxVfWPVtVWBqbiFKyj3q_3yW82fXls,1500
+cubeai_model_runner-0.2.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cubeai_model_runner-0.2.5.dist-info/entry_points.txt,sha256=o2G5ND6d_9ukK8lmFqQXd0kDuyeT8M-sE6fw__pp_8k,90
+cubeai_model_runner-0.2.5.dist-info/top_level.txt,sha256=Dv-t66BgrTReTTqzwgjbyiecXblh6uSD4i97xlqJxD0,20
+cubeai_model_runner-0.2.5.dist-info/RECORD,,
