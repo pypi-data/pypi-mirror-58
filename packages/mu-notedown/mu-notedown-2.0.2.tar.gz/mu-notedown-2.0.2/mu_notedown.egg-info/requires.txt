@@ -1,0 +1,4 @@
+nbformat<=4.4
+nbconvert
+pandoc-attributes
+six
