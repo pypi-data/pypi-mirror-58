@@ -1,0 +1,10 @@
+zeroae/cli/__init__.py,sha256=CXtrOVUh9zJw3VcQyzcys3PZTO6a36mLGe-GKqPbZWY,101
+zeroae/cli/__main__.py,sha256=gdptk8jOfWuM-CHvc5DXah4uyiwLz-8HHVHPFCHoFBc,29
+zeroae/cli/_version.py,sha256=i1yX3GxdXutI1YYCvUV8O7msNGXkA6ETlvkNrLCI_XM,116
+zeroae/cli/cli.py,sha256=zXuZb3p3jCVLRBahcMY-N2XkPOJuIvNQwMxhaX_qNZM,352
+zeroae_cli-0.0.2.dist-info/LICENSE,sha256=2OEzbEf2OAbqV_ZFCQMOKTjz6plz-tEKo2osEBxm6ZQ,1073
+zeroae_cli-0.0.2.dist-info/METADATA,sha256=rWqDq6uGg6-14iksvvND58XRL72mC3kcXX8VbLJkJyo,2193
+zeroae_cli-0.0.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+zeroae_cli-0.0.2.dist-info/entry_points.txt,sha256=WLFPxxDatknqPRy88VRIndFIRQpA0bOIp5O0C9I9yQs,47
+zeroae_cli-0.0.2.dist-info/top_level.txt,sha256=hcoTc23F7wtA9DkFWfnmUD-SKh7Ksf6L3YW1EhpW9Fo,7
+zeroae_cli-0.0.2.dist-info/RECORD,,
