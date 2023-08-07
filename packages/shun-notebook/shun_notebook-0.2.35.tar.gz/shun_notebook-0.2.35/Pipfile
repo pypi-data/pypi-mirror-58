@@ -1,0 +1,35 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==19.3b0"
+dvc = {extras = ["aws", "gs"],version = "*"}
+invoke = "*"
+isort = "*"
+jupyterlab = "*"
+jupyterlab-nvdashboard = "*"
+metaflow = "*"
+mypy = "*"
+pep8 = "*"
+python-language-server = {extras = ["all"],version = "*"}
+tox = "*"
+twine = "*"
+wheel = "*"
+secretstorage = "*"
+shun-notebook = "*"
+
+[packages]
+
+[pipenv]
+allow_prereleases = true
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+check = "invoke check"
+format = "invoke format"
+libs = "invoke libs"
+test = "tox -p all"
