@@ -1,0 +1,6 @@
+{
+  "html": "<h3 id=\"installation\">Installation</h3>\n\n<p>Using Gradle (Android Studio) in your <code class=\"highlighter-rouge\">app/build.gradle</code> add:</p>\n\n<pre class=\"highlight\"><code><span class=\"n\">implementation</span> <span class=\"s1\">'io.sentry:sentry-android:1.7.27'</span>\n\n<span class=\"c1\">// this dependency is not required if you are already using your own</span>\n<span class=\"c1\">// slf4j implementation</span>\n<span class=\"n\">implementation</span> <span class=\"s1\">'org.slf4j:slf4j-nop:1.7.25'</span>\n</code></pre>\n\n<p>For other dependency managers see the <a href=\"https://search.maven.org/#artifactdetails%7Cio.sentry%7Csentry-android%7C1.7.27%7Cjar\">central Maven repository</a>.\n<!-- TODO-ADD-VERIFICATION-EXAMPLE -->\n</p>", 
+  "link": "https://docs.sentry.io/clients/java/modules/android/", 
+  "id": "java-android", 
+  "name": "Android"
+}
